@@ -20,6 +20,17 @@ a:hover {
 	color: #999;
 }
 
+.work-a {
+    color: #fff;
+    font-size: 15px;
+}
+
+.work-a:hover {
+    color: #fff;
+    border: 0.2px solid #fff;
+    padding: 4px;
+}
+
 /* ---------------------------------------------- /*
  * Transition elsements
 /* ---------------------------------------------- */

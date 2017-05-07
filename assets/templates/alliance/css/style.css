@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+input[type=submit],
+input[type=text] {
+  -webkit-appearance: none;
+}
+
+body {
+  color: #000;
+  background-color: #fff;
+  font: 14px 'Raleway', sans-serif;
+  line-height: 1.42857143;
+}
+
+a, a:visited {
+	color: #7BD4F6;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #7BD4F6;
+	transition: 0.5s;
+	text-decoration: none;
+}
+
+a:focus, a:active {
+	color: #7BD4F6;
+	text-decoration: underline;
+}
+.header{
+	background-color: #2c1e28;
+	width: 100%;
+}
+.nav-menu{
+	font-size: 14px;
+	font-weight: 600;
+}
+.nav-menu li{
+}
+.nav-menu li a{
+	/*display: inline-block;*/
+	background: none !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	padding: 26px 0;
+	border-bottom: 5px solid transparent;
+	transition: 0.5s;
+	margin-bottom: 0;
+}
+.nav-menu li a:hover ,.nav-menu li a:focus ,.nav-menu li a:active{
+	border-bottom: 5px solid #ff7b7b;	
+}
+.content-slide{
+	background: url(../images/bg.jpg) no-repeat;
+	background-size: cover;
+}
+.content-slide .logo{
+	margin-top: 150px;
+	margin-bottom: 60px;	
+}
+.content-slide .logo img{
+	max-width: 100%;
+}
+.content-slide .text{
+	font-size: 16px;
+	font-weight: 300;
+	color: #fff;
+	text-align: center;
+	line-height: 27px;
+	margin-bottom: 150px;
+}
+.content-slide .button{
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	text-decoration: none;
+	background-color: #ff7b7b;
+	border-radius: 40px;
+	padding: 14px 66px 13px 66px;
+	margin-bottom: 200px;
+	transition: 0.4s;
+}
+.content-slide .button:hover{
+	background-color: #ff5050;
+}
+.content-slide .title{
+	font-size: 25px;
+	font-weight: 700;
+	color: #fff;
+	margin-top: 150px;
+	margin-bottom: 115px;
+	text-align: center;
+}
+.person img{
+	width: 160px;
+	margin: 0px auto;
+	display: block;
+	border-radius: 50%;
+	margin-bottom: 27px;
+}
+.person .name{
+	text-decoration: none;
+	color: #fff;
+	font-size: 23px;
+	font-weight: 600;
+	text-align: center;
+}
+.person span{
+	display: block;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 300;
+}
+.person .name{
+	transition: 0.5s;
+}
+.person .name:hover{
+	transition: 0.5s;
+	color: #ff7b7b;
+}
+.developer{
+	margin-bottom: 150px;
+}
+.work{
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.work img{
+	position: relative;
+	z-index: 1;
+}
+.work span{
+	display: block;
+	-webkit-transition: all 0.3s ease-in-out; 
+	-moz-transition: all 0.3s ease-in-out; 
+	-o-transition: all 0.3s ease-in-out; 
+	transition: all 0.3s ease-in-out;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 300;
+	color: #fff;
+	z-index: 3;
+	text-align: left;
+	position: absolute;	
+	left: 13px;
+	bottom: -500px;
+}
+.work:after{
+	position: absolute;
+	content: '';
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: transparent;
+	transition: 0.5s;
+	z-index: 2;
+}
+.work:hover span{	
+	bottom: 13px;
+}
+.work:hover:after{
+	background-color: rgba(0, 0, 0, 0.9);
+	transition: 0.5s;
+}
+.work:before{
+	content: '';
+	position: absolute;
+	z-index: 5;
+	background: url(../images/zoom-icon.png) 0 0 no-repeat;
+	width: 50px;
+	height: 50px;
+	top: -250px;
+	-webkit-transition: all 0.3s ease-in-out; 
+	-moz-transition: all 0.3s ease-in-out; 
+	-o-transition: all 0.3s ease-in-out; 
+	transition: all 0.3s ease-in-out;
+	left: 50%;
+	margin-left: -25px;
+}
+.work:hover:before{
+	top: 75px;
+}
+@media (min-width: 1200px) {}
+@media (max-width: 1199px) and (min-width: 992px) {}
+@media (max-width: 991px) and (min-width: 768px) {}
+@media (max-width: 991px) {
+	.work{
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 767px) {}
