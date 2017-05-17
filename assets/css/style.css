@@ -31,45 +31,15 @@ a:hover {
     padding: 4px;
 }
 
-/* ---------------------------------------------- /*
- * Transition elsements
-/* ---------------------------------------------- */
-
-
-.navbar a,
-.form-control {
-	-webkit-transition: all 0.4s ease-in-out 0s;
-	   -moz-transition: all 0.4s ease-in-out 0s;
-		-ms-transition: all 0.4s ease-in-out 0s;
-		 -o-transition: all 0.4s ease-in-out 0s;
-			transition: all 0.4s ease-in-out 0s;
-}
-
-a,
-.btn {
-	-webkit-transition: all 0.125s ease-in-out 0s;
-	   -moz-transition: all 0.125s ease-in-out 0s;
-		-ms-transition: all 0.125s ease-in-out 0s;
-		 -o-transition: all 0.125s ease-in-out 0s;
-			transition: all 0.125s ease-in-out 0s;
-}
-
-/* ---------------------------------------------- /*
- * Reset box-shadow
-/* ---------------------------------------------- */
-
 .btn,
 .form-control,
 .form-control:hover,
 .form-control:focus,
 .navbar-custom .dropdown-menu {
-	-webkit-box-shadow: none;
 			box-shadow: none;
 }
 
-/* ---------------------------------------------- /*
- * Typography
-/* ---------------------------------------------- */
+/*Типография*/
 
 h1, h2, h3, h4, h5, h6 {
 	font: 700 40px/1.2 'PT Sans Narrow', sans-serif;
@@ -107,10 +77,6 @@ h6 {
 	font-weight: 400;
 }
 
-/* ---------------------------------------------- /*
- * Reset border-radius
-/* ---------------------------------------------- */
-
 .btn,
 .iconbox,
 .progress,
@@ -118,16 +84,11 @@ h6 {
 .scroll-up a,
 .form-control,
 .input-group-addon {
-	-webkit-border-radius: 3px;
-	   -moz-border-radius: 3px;
-		 -o-border-radius: 3px;
 			border-radius: 3px;
 }
 
 
-/* ---------------------------------------------- /*
- * Input-group
-/* ---------------------------------------------- */
+/*Input*/
 
 .input-group .form-control {
 	z-index: auto;
@@ -140,9 +101,7 @@ h6 {
 	font-weight: 700;
 }
 
-/* ---------------------------------------------- /*
- * Inputs styles
-/* ---------------------------------------------- */
+/*Стили для input*/
 
 .form-control {
 	background: #FFF;
@@ -173,9 +132,7 @@ textarea.form-control {
     min-width: 100%;
 }
 
-/* ---------------------------------------------- /*
- * Custom button style
-/* ---------------------------------------------- */
+/*Кнопки*/
 
 .btn {
 	font-family: 'PT Sans Narrow', sans-serif;
@@ -193,7 +150,7 @@ textarea.form-control {
 	outline: inherit !important;
 }
 
-/* Button size */
+/* Размеры кнопок */
 
 .btn-lg,
 .btn-group-lg > .btn {
@@ -228,9 +185,7 @@ textarea.form-control {
 	margin-left: 6px;
 }
 
-/* ---------------------------------------------- /*
- * General Styles
-/* ---------------------------------------------- */
+/*Главные стили*/
 
 .pfblock {
 	padding: 120px 0 100px;
@@ -291,59 +246,7 @@ textarea.form-control {
 	margin: 30px auto;
 }
 
-.pfblock-icon {
-	font-size: 32px;
-}
-.calltoaction *{
-    text-align: center;
-}
-.calltoaction {
-    background: url(../images/item-3.jpg);
-	background-color: #222;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-		 -o-background-size: cover;
-			background-size: cover;
-	padding: 50px 0;
-	color: #999;
-}
-
-.calltoaction h2 {
-	font-size: 20px;
-	letter-spacing: 1px;
-	margin-bottom: 5px;
-}
-
-.calltoaction-decription{
-    padding-top: 20px;
-    padding-bottom: 30px;
-    font-size: 20px;
-    color: #fff;
-}
-
-.calltoaction-btn {
-	text-align: center;
-}
-
-.calltoaction-btn > .btn {
-    background: rgba(255, 255, 255, .8);
-    color: #111;
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-.calltoaction-btn > .btn:hover{
-    background: #fff;
-}
-
-.long-down {
-	margin-bottom: 40px;
-}
-
-/* ---------------------------------------------- /*
- * Home
-/* ---------------------------------------------- */
+/*Главная*/
 
 #home {
 	background: url(../images/cover.jpg);
@@ -351,10 +254,7 @@ textarea.form-control {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-		 -o-background-size: cover;
-			background-size: cover;
+    background-size: cover;
 	padding: 0;
 }
 
@@ -376,11 +276,7 @@ textarea.form-control {
 	top: 50%;
 	left: 0;
 	text-align: center;
-	-webkit-transform: translate(0%, -50%);
-	   -moz-transform: translate(0%, -50%);
-		-ms-transform: translate(0%, -50%);
-		 -o-transform: translate(0%, -50%);
-			transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
 	padding: 0 15px;
 }
 
@@ -396,32 +292,7 @@ textarea.form-control {
 	margin: 15px 0;
 }
 
-/* ---------------------------------------------- /*
- * Servise
-/* ---------------------------------------------- */
-
-.iconbox {
-	background: #fff;
-	border-bottom: 1px solid #d4d4d4;
-	text-align: center;
-	padding: 40px 20px;
-	margin: 0 0 20px;
-}
-
-.iconbox-icon {
-	margin: 0 0 15px;
-	font-size: 32px;
-	color: #222;
-}
-
-.iconbox-title {
-	margin: 0 0 15px;
-	padding: 0;
-}
-
-/* ---------------------------------------------- /*
- * Skills
-/* ---------------------------------------------- */
+/*Скиллы*/
 
 .chart {
     display: inline-block;
@@ -449,17 +320,13 @@ textarea.form-control {
     margin-left: 0.1em;
 }
 
-/* ---------------------------------------------- /*
- * Contact
-/* ---------------------------------------------- */
+/*Контакты ...*/
 
 .ajax-response {
 	text-align: center;
 }
 
-/* ---------------------------------------------- /*
- * Footer
-/* ---------------------------------------------- */
+/*Футер*/
 
 #footer {
 	background: #222;
@@ -478,9 +345,14 @@ textarea.form-control {
 
 #footer span{
     animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
     color: #ff5252;
 }
+
+.port {
+    font-size: 20px;
+}
+
+/*Для будущих иконок соц сетей*/
 
 .social-links {
 	list-style: none;
@@ -500,9 +372,7 @@ textarea.form-control {
 	line-height: 35px;
 	text-align: center;
 	border: 1px solid rgba(255, 255, 255, .1);
-	-webkit-border-radius: 3px;
-	   -moz-border-radius: 3px;
-			border-radius: 3px;
+    border-radius: 3px;
 	font-size: 14px;
 	color: rgba(255, 255, 255, .2);
 }
@@ -512,9 +382,7 @@ textarea.form-control {
 	color: rgba(255, 255, 255, .8);
 }
 
-/* ---------------------------------------------- /*
- * Navigation
-/* ---------------------------------------------- */
+/*Навигация*/
 
 .header {
 	border-bottom: 1px solid #f5f5f5;
@@ -580,9 +448,7 @@ textarea.form-control {
 	background: #222;
 }
 
-/* ---------------------------------------------- /*
- * Scroll to top
-/* ---------------------------------------------- */
+/*Скролл вверх*/
 
 .scroll-up {
 	position: fixed;
@@ -609,9 +475,7 @@ textarea.form-control {
 	color: #e7746f;
 }
 
-/* ---------------------------------------------- /*
- *Scroll Down
-/* ---------------------------------------------- */
+/*Скролл вниз*/
 
 .scroll-down {
 	position: absolute;
@@ -630,12 +494,6 @@ textarea.form-control {
 .scroll-down span{
     position: relative;
     color: #fff;
-    -webkit-animation-name: drop;
-	-webkit-animation-duration: 1s;
-	-webkit-animation-timing-function: linear;
-	-webkit-animation-delay: 0s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-play-state: running;
 	animation-name: drop;
 	animation-duration: 1s;
 	animation-timing-function: linear;
@@ -644,11 +502,7 @@ textarea.form-control {
 	animation-play-state: running;
 }
 
-@-webkit-keyframes drop	{
-	0%   { top:0px;  opacity: 0;}
-	30%  { top:10px; opacity: 1;}
-	100% { top:25px; opacity: 0;}
-}
+/*Разобрать код ниже*/
 
 @keyframes drop	{
 	0%   { top:0px;  opacity: 0;}
@@ -656,35 +510,7 @@ textarea.form-control {
 	100% { top:25px; opacity: 0;}
 }
 
-/* ---------------------------------------------- /*
- * Preloader
-/* ---------------------------------------------- */
-
-#preloader {
-	background: #FFF;
-	bottom: 0;
-	left: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 9999;
-}
-
-#status {
-	background-image: url(../images/preloader.gif);
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 200px;
-	left: 50%;
-	margin: -100px 0 0 -100px;
-	position: absolute;
-	top: 50%;
-	width: 200px;
-}
-
-/* ---------------------------------------------- /*
- * Media
-/* ---------------------------------------------- */
+/*Медиа запросы*/
 
 @media (max-width: 767px) {
 
@@ -709,10 +535,7 @@ textarea.form-control {
 
 }
 
-
-/*--------------------------------*/
-/***** Portfolio Common style *****/
-/*--------------------------------*/
+/*Портфолио*/
 
 .grid {
 	position: relative;
@@ -754,7 +577,6 @@ textarea.form-control {
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 1.25em;
-	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 
@@ -772,8 +594,6 @@ textarea.form-control {
 	height: 100%;
 }
 
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
 .grid figure figcaption > a {
 	z-index: 1000;
 	text-indent: 200%;
@@ -801,9 +621,7 @@ textarea.form-control {
 	font-size: 68.5%;
 }
 
-/*---------------*/
-/***** Bubba *****/
-/*---------------*/
+/*Разобрать код ниже*/
 
 figure.effect-bubba {
 	
@@ -811,7 +629,6 @@ figure.effect-bubba {
 
 figure.effect-bubba img {
 	opacity: 0.7;
-	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
 }
 
@@ -828,29 +645,24 @@ figure.effect-bubba figcaption::after {
 	left: 30px;
 	content: '';
 	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 }
 
 figure.effect-bubba figcaption::before {
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #fff;
-	-webkit-transform: scale(0,1);
 	transform: scale(0,1);
 }
 
 figure.effect-bubba figcaption::after {
 	border-right: 1px solid #fff;
 	border-left: 1px solid #fff;
-	-webkit-transform: scale(1,0);
 	transform: scale(1,0);
 }
 
 figure.effect-bubba h2 {
 	padding-top: 10%;
-	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,-20px,0);
 	transform: translate3d(0,-20px,0);
     color: #fff;
 }
@@ -858,29 +670,21 @@ figure.effect-bubba h2 {
 figure.effect-bubba p {
 	padding: 20px 2.5em;
 	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(0,20px,0);
 	transform: translate3d(0,20px,0);
 }
 
 figure.effect-bubba:hover figcaption::before,
 figure.effect-bubba:hover figcaption::after {
 	opacity: 1;
-	-webkit-transform: scale(1);
 	transform: scale(1);
 }
 
 figure.effect-bubba:hover h2,
 figure.effect-bubba:hover p {
 	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
-
-/*-----------------------*/
-/***** Quote Rotator *****/
-/*-----------------------*/
 
 .cbp-qtrotator {
 	position: relative;
@@ -959,7 +763,7 @@ figure.effect-bubba:hover p {
 	margin-left: 3em;
 }
 
-/* Example for media query */
+
 @media screen and (max-width: 30.6em) { 
 
 	.cbp-qtrotator {
@@ -972,6 +776,3 @@ figure.effect-bubba:hover p {
 
 }
 
-.port {
-    font-size: 20px;
-}
