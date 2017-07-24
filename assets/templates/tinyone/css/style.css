@@ -1,0 +1,187 @@
+header {
+    height: 741px;
+    background-color: #fcdb00;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+nav {
+    padding-top: 60px;
+}
+
+.logo-text {
+    display: inline;
+    padding-left: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #010101;
+}
+
+.menu li {
+    padding-right: 68px;
+    font-size: 22px;
+    font-weight: 700;
+    list-style: none;
+}
+
+li a {
+    color: #010101;
+}
+h1 {
+    padding-top: 134px;
+    margin-bottom: 22px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #010101;
+}
+
+.title-text {
+    margin-bottom: 23px;
+    font-size: 20px;
+    color: #313841;
+}
+
+.title-text + p {
+    color: #545454;
+}
+
+.images {
+    width: 316px;
+    height: 470px;
+    margin-top: 60px;
+    background: url(../img/Brandname.png) no-repeat 65% 45%,
+                url(../img/fingerprint-yellow.png) no-repeat 30% 45%,
+                url(../img/1024x768.png) no-repeat 50% 40%,
+                url(../img/Base.png);
+}
+
+.main-img {
+    padding-top: 40px;
+}
+
+.apple {
+    width: 33px;
+    height: 39px;
+    background: url(../img/icon-fa-apple.png);
+}
+
+.android {
+    width: 33px;
+    height: 39px;
+    margin-top: -38px;
+    margin-left: 65px;
+    background: url(../img/icon-fa-android.png);
+}
+
+.windows {
+    width: 39px;
+    height: 40px;
+    margin-top: -37px;
+    margin-left: 130px;
+    background: url(../img/icon-fa-windows.png);
+}
+
+section {
+    height: 850px;
+}
+
+h2 {
+    padding-top: 118px;
+    margin-bottom: 17px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #010101;
+}
+
+.section-text {
+    font-size: 20px;
+    text-align: center;
+    color: #313841;
+}
+
+.box {
+    width: 300px;
+    padding-top: 91px;
+}
+
+.title-box {
+    margin-top: -40px;
+    margin-bottom: 15px;
+    padding-left: 67px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #010101;
+}
+
+.desc-box {
+    padding-left: 67px;
+    font-size: 16px;
+    color: #898989;
+    line-height: 20px;
+}
+footer {
+    height: 767px;
+    background-color: #010101;
+}
+
+h3 {
+    padding-top: 96px;
+    margin-bottom: 17px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #fcdb00;
+}
+
+.footer-text {
+    margin-bottom: 41px;
+    font-size: 20px;
+    text-align: center;
+    color: #898989;
+}
+
+input[type="text"] {
+    width: 580px;
+    height: 50px;
+    margin-left: 250px;
+    margin-right: 21px;
+    padding-left: 24px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="submit"] {
+    width: 126px;
+    height: 50px;
+    border: 2px solid #010101;
+    border-radius: 5px;
+    background-color: #fcdb00;
+    font-size: 16px;
+    font-weight: 700;
+    color: #010101;
+}
+
+.image-box img {
+    margin-top: 79px;
+    margin-right: 33px;
+}
+
+.image-box {
+    margin-bottom: 134px;
+    text-align: center;
+}
+
+.footer-box a, p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+
+
+.navbar-header {
+    
+}
