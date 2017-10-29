@@ -21,14 +21,14 @@ a:hover {
 }
 
 .work-a {
-    color: #fff;
-    font-size: 15px;
+  color: #fff;
+  font-size: 15px;
 }
 
 .work-a:hover {
-    color: #fff;
-    border: 0.2px solid #fff;
-    padding: 4px;
+  color: #fff;
+  border: 0.2px solid #fff;
+  padding: 4px;
 }
 
 .btn,
@@ -36,11 +36,10 @@ a:hover {
 .form-control:hover,
 .form-control:focus,
 .navbar-custom .dropdown-menu {
-			box-shadow: none;
+	box-shadow: none;
 }
 
 /*Типография*/
-
 h1, h2, h3, h4, h5, h6 {
 	font: 700 40px/1.2 'PT Sans Narrow', sans-serif;
 	text-transform: uppercase;
@@ -84,12 +83,10 @@ h6 {
 .scroll-up a,
 .form-control,
 .input-group-addon {
-			border-radius: 3px;
+	border-radius: 3px;
 }
 
-
 /*Input*/
-
 .input-group .form-control {
 	z-index: auto;
 }
@@ -102,7 +99,6 @@ h6 {
 }
 
 /*Стили для input*/
-
 .form-control {
 	background: #FFF;
 	border: 1px solid #D8E1E4;
@@ -111,7 +107,7 @@ h6 {
 }
 
 .form-control:focus{
-    border-color: rgba(135, 135, 135, 0.7);
+  border-color: rgba(135, 135, 135, 0.7);
 }
 
 .input-lg,
@@ -128,12 +124,11 @@ h6 {
 
 textarea.form-control {
 	padding: 15px;
-    max-width: 100%;
-    min-width: 100%;
+  max-width: 100%;
+  min-width: 100%;
 }
 
 /*Кнопки*/
-
 .btn {
 	font-family: 'PT Sans Narrow', sans-serif;
 	text-transform: uppercase;
@@ -151,18 +146,17 @@ textarea.form-control {
 }
 
 /* Размеры кнопок */
-
 .btn-lg,
 .btn-group-lg > .btn {
 	padding: 10px 25px;
 	font-size: 13px;
-    background: rgba(17, 17, 17, 0.8);
-    color: #fff;
+  background: rgba(17, 17, 17, 0.8);
+  color: #fff;
 }
 .btn-lg:hover,
 .btn-group-lg > .btn:hover{
-    background: rgba(17, 17, 17, 1.8);
-    color: #fff;
+  background: rgba(17, 17, 17, 1.8);
+  color: #fff;
 }
 
 .btn-sm,
@@ -186,7 +180,6 @@ textarea.form-control {
 }
 
 /*Главные стили*/
-
 .pfblock {
 	padding: 120px 0 100px;
 }
@@ -230,7 +223,7 @@ textarea.form-control {
 }
 
 .pfblock-title{
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .pfblock-subtitle {
@@ -247,27 +240,26 @@ textarea.form-control {
 }
 
 /*Главная*/
-
 #home {
 	background: url(../images/cover.jpg);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-    background-size: cover;
+  background-size: cover;
 	padding: 0;
 }
 
 .home-overlay {
-    background-color: rgba(44, 62, 80, 0.3);
-    background-image: url("../images/pattern.png");
-    background-repeat: repeat;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 0;
+  background-color: rgba(44, 62, 80, 0.3);
+  background-image: url("../images/pattern.png");
+  background-repeat: repeat;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
 }
 
 .intro {
@@ -276,12 +268,12 @@ textarea.form-control {
 	top: 50%;
 	left: 0;
 	text-align: center;
-    transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
 	padding: 0 15px;
 }
 
 .intro h1{
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .start {
@@ -293,41 +285,41 @@ textarea.form-control {
 }
 
 /*Скиллы*/
-
 .chart {
-    display: inline-block;
-    height: 140px;
-    margin: 50px 0;
-    position: relative;
-    text-align: center;
-    width: 140px;
+  display: inline-block;
+  height: 140px;
+  margin: 50px 0;
+  position: relative;
+  text-align: center;
+  width: 140px;
 }
+
 .chart canvas {
-    left: 0;
-    position: absolute;
-    top: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
 }
+
 .percent {
-    display: inline-block;
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 140px;
-    z-index: 2;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 140px;
+  z-index: 2;
 }
+
 .percent:after {
-    content: "%";
-    font-size: 50%;
-    margin-left: 0.1em;
+  content: "%";
+  font-size: 50%;
+  margin-left: 0.1em;
 }
 
 /*Контакты ...*/
-
 .ajax-response {
 	text-align: center;
 }
 
 /*Футер*/
-
 #footer {
 	background: #222;
 	text-align: center;
@@ -340,20 +332,19 @@ textarea.form-control {
 }
 
 .copyright a{
-    border-bottom: 1px dotted #fff;
+  border-bottom: 1px dotted #fff;
 }
 
 #footer span{
-    animation-iteration-count: infinite;
-    color: #ff5252;
+  animation-iteration-count: infinite;
+  color: #ff5252;
 }
 
-.port {
-    font-size: 20px;
+.brief {
+  font-size: 20px;
 }
 
 /*Для будущих иконок соц сетей*/
-
 .social-links {
 	list-style: none;
 	padding: 0;
@@ -372,7 +363,7 @@ textarea.form-control {
 	line-height: 35px;
 	text-align: center;
 	border: 1px solid rgba(255, 255, 255, .1);
-    border-radius: 3px;
+  border-radius: 3px;
 	font-size: 14px;
 	color: rgba(255, 255, 255, .2);
 }
@@ -383,7 +374,6 @@ textarea.form-control {
 }
 
 /*Навигация*/
-
 .header {
 	border-bottom: 1px solid #f5f5f5;
 	position: relative;
@@ -425,7 +415,7 @@ textarea.form-control {
 .navbar-custom .navbar-brand {
 	font-weight: 700;
 	font-size: 22px;
-    font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .navbar-custom .dropdown-menu {
@@ -449,7 +439,6 @@ textarea.form-control {
 }
 
 /*Скролл вверх*/
-
 .scroll-up {
 	position: fixed;
 	display: none;
@@ -476,7 +465,6 @@ textarea.form-control {
 }
 
 /*Скролл вниз*/
-
 .scroll-down {
 	position: absolute;
 	left: 50%;
@@ -488,12 +476,12 @@ textarea.form-control {
 	margin-left: -15px;
 	display: block;
 	z-index: 10;
-    text-align: center;
+  text-align: center;
 }
 
 .scroll-down span{
-    position: relative;
-    color: #fff;
+  position: relative;
+  color: #fff;
 	animation-name: drop;
 	animation-duration: 1s;
 	animation-timing-function: linear;
@@ -502,26 +490,20 @@ textarea.form-control {
 	animation-play-state: running;
 }
 
-/*Разобрать код ниже*/
-
 @keyframes drop	{
 	0%   { top:0px;  opacity: 0;}
 	30%  { top:10px; opacity: 1;}
 	100% { top:25px; opacity: 0;}
 }
 
-/*Медиа запросы*/
-
+/*Медиа*/
 @media (max-width: 767px) {
-
 	.calltoaction {
 		text-align: center;
 	}
-
 }
 
 @media (max-width: 480px) {
-
 	h1 {
 		font-size: 34px;
 		letter-spacing: 3px;
@@ -532,11 +514,9 @@ textarea.form-control {
 		margin: 0 0 30px;
 		letter-spacing: 3px;
 	}
-
 }
 
 /*Портфолио*/
-
 .grid {
 	position: relative;
 	clear: both;
@@ -548,7 +528,7 @@ textarea.form-control {
 }
 
 .grid h2{
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .grid figure {
@@ -621,12 +601,6 @@ textarea.form-control {
 	font-size: 68.5%;
 }
 
-/*Разобрать код ниже*/
-
-figure.effect-bubba {
-	
-}
-
 figure.effect-bubba img {
 	opacity: 0.7;
 	transition: opacity 0.35s;
@@ -664,7 +638,7 @@ figure.effect-bubba h2 {
 	padding-top: 10%;
 	transition: transform 0.35s;
 	transform: translate3d(0,-20px,0);
-    color: #fff;
+  color: #fff;
 }
 
 figure.effect-bubba p {
@@ -739,8 +713,8 @@ figure.effect-bubba:hover p {
 .cbp-qtrotator blockquote {
 	margin: 0;
 	padding: 0;
-    border: 0;
-    font-size: 12px;
+  border: 0;
+  font-size: 12px;
 }
 
 .cbp-qtrotator blockquote p {
@@ -763,9 +737,7 @@ figure.effect-bubba:hover p {
 	margin-left: 3em;
 }
 
-
 @media screen and (max-width: 30.6em) { 
-
 	.cbp-qtrotator {
 		font-size: 70%;
 	}
@@ -773,6 +745,4 @@ figure.effect-bubba:hover p {
 	.cbp-qtrotator img {
 		width: 80px;
 	}
-
 }
-
