@@ -1,0 +1,30 @@
+@import "variables";
+@import "mixins";
+
+@import "global/base";
+@import "global/btn";
+@import "global/slider";
+@import "global/form";
+
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/stats";
+@import "blocks/advantages";
+@import "blocks/news";
+@import "blocks/reviews";
+@import "blocks/page-footer";
+@import "blocks/social-links";
+@import "blocks/inner-page";
+@import "blocks/entry";
+@import "blocks/work";
+@import "blocks/catalog";
+@import "blocks/price";
+
+@import "blocks/modal-login";
+@import "blocks/modal";
+
+
+@media (min-resolution: 144dpi),
+       (min-resolution: 1.5dppx) {
+
+}
