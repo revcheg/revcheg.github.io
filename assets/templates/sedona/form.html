@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Sedona - Форма отзыва</title>
+	<script>
+		document.createElement('picture');
+	</script>
+	<script src="js/picturefill.min.js" async></script>
+</head>
+<body>
+<div class="page">
+	<header class="header">
+		<nav class="navigation navigation--nojs">
+			<ul class="navigation__list">
+				<li class="navigation__item"><a href="index.html" class="navigation__link">Главная</a></li>
+				<li class="navigation__item"><a href="photo.html" class="navigation__link">Фото и видео</a></li>
+				<li class="navigation__item navigation__item--active"><a class="navigation__link">Форма отзыва</a></li>
+				<li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
+			</ul>
+			<button type="button" class="navigation__toggle"></button>
+		</nav>
+		<div class="header__logo header__logo--short"><img src="img/logo-text--short.svg" alt="Sedona" class="header__image" width="229" height="39"></div>
+	</header>
+	<section class="review">
+		<h1 class="review__title">Оставьте свой отзыв</h1>
+		<p class="review__content">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами достопримечательностях</p>
+		<form action="url" method="post" class="review__form">
+			<section class="personal-info">
+				<h2 class="personal-info__title">Представьтесь<span class="tablet-hidden">, пожалуйста</span>:</h2>
+					<label class="personal-info__label">
+						<span class="personal-info__key">Имя:</span>
+						<input type="text" class="personal-info__input" name="review-form__name" placeholder="Петр" required>
+					</label>
+					<label class="personal-info__label">
+						<span class="personal-info__key">Фамилия:</span>
+						<input type="text" class="personal-info__input" name="review-form__surname" placeholder="Иванов" required>
+					</label>
+					<label class="personal-info__label">
+						<span class="personal-info__key">Отчество:</span>
+						<input type="text" class="personal-info__input" name="review-form__patronymic" placeholder="Александрович">
+					</label>
+			</section>
+			<section class="contact-info">
+				<h2 class="contact-info__title">Контактная информация:</h2>
+					<div class="contact-info__wrapper">
+						<label class="contact-info__label">
+							<span class="contact-info__key"><span class="desktop-hidden">Контактный </span>телефон:</span>
+							<input type="tel" class="contact-info__input contact-info__input--phone" name="review-form__phone" placeholder="Введите телефон" required>
+							<span class="contact-info__notification">Ошибка, перепроверьте номер</span>
+						</label>
+						<label class="contact-info__label">
+							<span class="contact-info__key">Электронная почта:</span>
+							<input type="email" class="contact-info__input contact-info__input--mail" name="review-form__mail" placeholder="Введите e-mail" required>
+							<span class="contact-info__notification">Ошибка, перепроверьте электронный адрес</span>
+						</label>
+						</div>
+			</section>
+			<section class="evaluate">
+				<h2 class="evaluate__title">Ваше общее впечатление:</h2>
+					<label class="evaluate__label">
+						<input type="radio" class="evaluate__radio" id="evaluate__radio1" name="evaluate__radio">
+						<span class="evaluate__key">Скорее положительное</span>
+					</label>
+					<label class="evaluate__label">
+						<input type="radio" class="evaluate__radio" id="evaluate__radio2" name="evaluate__radio">
+						<span class="evaluate__key">Скорее отрицательное</span>
+					</label>
+					<label class="evaluate__label">
+						<input type="radio" class="evaluate__radio" id="evaluate__radio3" name="evaluate__radio">
+						<span class="evaluate__key">Затрудняюсь ответить</span>
+					</label>
+			</section>
+			<section class="visited">
+				<h2 class="visited__title">Посещенные достопримечательности:</h2>
+					<div class="visited__wrapper">
+						<label class="visited__label">
+							<input type="checkbox" class="visited__checkbox" name="visited__checkbox">
+							<span class="visited__key">Мост Дьявола</span>
+						</label>
+						<label class="visited__label">
+							<input type="checkbox" class="visited__checkbox" name="visited__checkbox">
+							<span class="visited__key">Слайд-парк</span>
+						</label>
+						<label class="visited__label">
+							<input type="checkbox" class="visited__checkbox" name="visited__checkbox">
+							<span class="visited__key">Гора-Колокол</span>
+						</label>
+						<label class="visited__label">
+							<input type="checkbox" class="visited__checkbox" name="visited__checkbox">
+							<span class="visited__key">Красные скалы</span>
+						</label>
+					</div>
+			</section>
+			<section class="comment">
+				<h2 class="comment__title">Опишите свои эмоции:</h2>
+					<textarea class="comment__textarea" name="comment__textarea" placeholder="Опишите подробно все свои восторги" required></textarea>
+			</section>
+			<button class="review__post" type="submit">Отправить отзыв</button>
+			<small class="review__small">* — обязательные поля</small>
+		</form>
+	</section>
+	<footer class="footer">
+		<ul class="twitter">
+			<li class="twitter__item"><a href="#" class="twitter__link">#VisitSedona</a></li>
+		</ul>
+		<ul class="social">
+			<li class="social__item"><a href="#" class="social__link social__link--twitter">Twitter</a></li>
+			<li class="social__item"><a href="#" class="social__link social__link--facebook">Facebook</a></li>
+			<li class="social__item"><a href="#" class="social__link social__link--youtube">Youtube</a></li>
+		</ul>
+		<ul class="copyright">
+			<li class="copyright__item"><a href="https://vk.com/revch" class="copyright__link" target="_blank">Max Sharing</a></li>
+		</ul>
+	</footer>
+	<div class="validation mobile-hidden">
+	<div class="validation__wrapper">
+		<h2 class="validation__title">Ваш отзыв отправлен!</h2>
+		<p class="validation__content">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+	</div>
+	<button class="validation__button">Закрыть окно</button>
+</div>
+<div class="validation validation--failed mobile-hidden">
+	<div class="validation__wrapper">
+		<h2 class="validation__title">Что-то пошло не так!</h2>
+		<p class="validation__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+	</div>
+	<button class="validation__button">Ок</button>
+</div>	
+</div>
+<script src="js/custom.js"></script>
+</body>
+</html>

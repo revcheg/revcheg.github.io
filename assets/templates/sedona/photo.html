@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Sedona - Фото и видео</title>	
+	<script>
+		document.createElement('picture');
+	</script>
+	<script src="js/picturefill.min.js" async></script>
+</head>
+<body>
+	<header class="header">
+		<nav class="navigation navigation--nojs">
+			<ul class="navigation__list">
+				<li class="navigation__item"><a href="index.html" class="navigation__link">Главная</a></li>
+				<li class="navigation__item navigation__item--active"><a class="navigation__link">Фото и видео</a></li>
+				<li class="navigation__item"><a href="form.html" class="navigation__link">Форма отзыва</a></li>
+				<li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
+			</ul>
+			<button type="button" class="navigation__toggle"></button>
+		</nav>
+		<div class="header__logo header__logo--short"><img src="img/logo-text--short.svg" alt="Sedona" class="header__image" width="229" height="39"></div>
+	</header>
+
+	<section class="photo">
+		<header class="photo__header">
+			<h2 class="photo__title">Фото и видео</h2>
+			<p class="photo__content">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+		</header>
+		<section class="gallery">
+			<figure class="gallery__figure gallery__figure--big">
+				<div class="gallery__photo">
+					<picture>
+					<source media="(min-width: 1200px)" srcset="img/photo-image1-d.jpg 1x, img/photo-image1-d@2x.jpg 2x">
+					<source media="(min-width: 768px)" srcset="img/photo-image1-t.jpg 1x, img/photo-image1-t@2x.jpg 2x">
+					<img src="img/photo-image1-m.jpg" srcset="img/photo-image1-m@2x.jpg 2x" alt="photo" class="gallery__image" width="280" height="280">
+					</picture>
+				</div>
+				<figcaption class="gallery__figcaption">
+					<div class="gallery__content">
+						<b class="gallery__title">Неродные просторы</b>
+						<p class="gallery__author">Автор фото: Борис</p>
+					</div>
+					<span class="gallery__like">1350</span>
+				</figcaption>
+			</figure>
+			<figure class="gallery__figure">
+				<div class="gallery__photo">
+					<picture>
+					<source media="(min-width: 1200px)" srcset="img/photo-image2-d.jpg 1x, img/photo-image2-d@2x.jpg 2x">
+					<source media="(min-width: 768px)" srcset="img/photo-image2-t.jpg 1x, img/photo-image2-t@2x.jpg 2x">
+					<img src="img/photo-image2-m.jpg" srcset="img/photo-image2-m@2x.jpg 2x" alt="photo" class="gallery__image" width="280" height="280">
+					</picture>
+				</div>
+				<figcaption class="gallery__figcaption">
+					<div class="gallery__content">
+						<b class="gallery__title">Местная растительность</b>
+						<p class="gallery__author">Автор фото: Сергей</p>
+					</div>
+					<span class="gallery__like">143</span>
+				</figcaption>
+			</figure>
+			<figure class="gallery__figure">
+				<div class="gallery__photo">
+					<picture>
+					<source media="(min-width: 1200px)" srcset="img/photo-image3-d.jpg 1x, img/photo-image3-d@2x.jpg 2x">
+					<source media="(min-width: 768px)" srcset="img/photo-image3-t.jpg 1x, img/photo-image3-t@2x.jpg 2x">
+					<img src="img/photo-image3-m.jpg" srcset="img/photo-image3-m@2x.jpg 2x" alt="photo" class="gallery__image" width="280" height="280">
+					</picture>
+				</div>
+				<figcaption class="gallery__figcaption">
+					<div class="gallery__content">
+						<b class="gallery__title">Дорога на север</b>
+						<p class="gallery__author">Автор фото: Петр</p>
+					</div>
+					<span class="gallery__like">96</span>
+				</figcaption>
+			</figure>
+			<figure class="gallery__figure">
+				<div class="gallery__photo">
+					<picture>
+					<source media="(min-width: 1200px)" srcset="img/photo-image4-d.jpg 1x, img/photo-image4-d@2x.jpg 2x">
+					<source media="(min-width: 768px)" srcset="img/photo-image4-t.jpg 1x, img/photo-image4-t@2x.jpg 2x">
+					<img src="img/photo-image4-m.jpg" srcset="img/photo-image4-m@2x.jpg 2x" alt="photo" class="gallery__image" width="280" height="280">
+					</picture>
+				</div>
+				<figcaption class="gallery__figcaption">
+					<div class="gallery__content">
+						<b class="gallery__title">Мост Дьявола</b>
+						<p class="gallery__author">Автор фото: Антон</p>
+					</div>
+					<span class="gallery__like">254</span>
+				</figcaption>
+			</figure>
+		</section>
+		<footer class="photo__footer">
+			<h2 class="photo__title">Все еще сомневаетесь?</h2>
+			<p class="photo__content">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+			<figure class="video">
+				<video src="video" class="video__item" width="320" height="200" preload="none">
+				</video>
+				<div class="video__controls">
+					<div class="video__progress"><div class="video__point"></div></div>
+					<button class="video__play" type="button" name="Play/Pause"></button>
+					<button class="video__subtitles" type="button" name="Subtitles on/off"></button>
+					<button class="video__fullscreen" type="button" name="Fullscreen mode"></button>
+				</div>
+			</figure>
+		</footer>
+	</section>
+	<footer class="footer">
+		<ul class="twitter">
+			<li class="twitter__item"><a href="#" class="twitter__link">#VisitSedona</a></li>
+		</ul>
+		<ul class="social">
+			<li class="social__item"><a href="#" class="social__link social__link--twitter">Twitter</a></li>
+			<li class="social__item"><a href="#" class="social__link social__link--facebook">Facebook</a></li>
+			<li class="social__item"><a href="#" class="social__link social__link--youtube">Youtube</a></li>
+		</ul>
+		<ul class="copyright">
+			<li class="copyright__item"><a href="https://vk.com/revch" class="copyright__link" target="_blank">Max Sharing</a></li>
+		</ul>
+	</footer>
+<script src="js/custom.js"></script>
+</body>
+</html>

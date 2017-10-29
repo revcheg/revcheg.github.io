@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Sedona - Главная</title>
+	<script>
+		document.createElement('picture');
+	</script>
+	<script src="js/picturefill.min.js" async></script>
+</head>
+<body>
+	<header class="header">
+		<nav class="navigation navigation--nojs">
+			<ul class="navigation__list">
+				<li class="navigation__item navigation__item--active"><a class="navigation__link">Главная</a></li>
+				<li class="navigation__item"><a href="photo.html" class="navigation__link">Фото и видео</a></li>
+				<li class="navigation__item"><a href="form.html" class="navigation__link">Форма отзыва</a></li>
+				<li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
+			</ul>
+			<button type="button" class="navigation__toggle" title="Открыть меню"></button>
+		</nav>
+		<div class="header__logo"><img src="img/logo-text.svg" alt="Sedona" class="header__image" width="282" height="214"></div>
+	</header>
+
+	<section class="intro">
+		<b class="intro__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+		<p class="intro__content">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+	</section>
+
+	<section class="advantages">
+		<ol class="advantages__list">
+			<li class="advantages__item advantages__item--big">
+				<div class="advantages__content">
+					<b class="advantages__title">Настоящий городок</b>
+					<p class="advantages__descr">Седона не аттракцион для туристов, там течет своя жизнь</p>
+				</div>
+				<figure class="advantages__photo">
+					<img src="img/photo-city.jpg" srcset="img/photo-city@2x.jpg 2x" alt="Town of Sedona" class="advantages__image" width="320" height="260">
+				</figure>
+				<ul class="features">
+					<li class="features__item features__item--accomodation">
+						<b class="features__title">Жилье</b>
+						<p class="features__content">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+					</li>
+					<li class="features__item features__item--gift">
+						<b class="features__title">Сувениры</b>
+						<p class="features__content">Не только китайского, но и местного производства!</p>
+					</li>
+					<li class="features__item features__item--food">
+						<b class="features__title">Еда</b>
+						<p class="features__content">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+					</li>
+				</ul>
+			</li>
+			<li class="advantages__item advantages__item--big">
+				<div class="advantages__content">	
+					<b class="advantages__title">Там есть мост дьявола</b>
+					<p class="advantages__descr">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				</div>
+				<figure class="advantages__photo">
+					<img src="img/photo-bridge.jpg" srcset="img/photo-bridge@2x.jpg 2x" alt="Town of Sedona" class="advantages__image" width="320" height="260">
+				</figure>
+			</li>
+			<li class="advantages__item">
+				<div class="advantages__content">	
+						<b class="advantages__title">Небольшая площадь</b>
+						<p class="advantages__descr">Все достопримечательности находятся очень близко</p>
+				</div>
+			</li>
+			<li class="advantages__item">
+				<div class="advantages__content">	
+					<b class="advantages__title">Красивая дорога</b>
+					<p class="advantages__descr">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+				</div>
+			</li>
+			<li class="advantages__item">
+				<div class="advantages__content">	
+					<b class="advantages__title">Мало туристов</b>
+					<p class="advantages__descr">Большинство едет в Гранд Каньон и толпится там</p>
+				</div>
+			</li>
+		</ol>
+	</section>
+
+	<section class="hotel">
+		<h2 class="hotel__title">Заинтересовались?</h2>
+		<p class="hotel__content">Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+		<button type="button" class="hotel__find" disabled>Найти гостиницу</button>
+		<div class="hotel__map hotel__map--nojs">
+			<picture>
+				<source media="(min-width: 321px)" srcset="img/map-t.jpg">
+				<source media="(min-width: 769px)" srcset="img/map-d.jpg">
+				<img src="img/map-m.jpg" alt="Map" class="hotel__map-image">
+			</picture>
+			<div class="hotel__map-map"></div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<ul class="twitter">
+			<li class="twitter__item"><a href="#" class="twitter__link">#VisitSedona</a></li>
+		</ul>
+		<ul class="social">
+			<li class="social__item"><a href="#" class="social__link social__link--twitter">Twitter</a></li>
+			<li class="social__item"><a href="#" class="social__link social__link--facebook">Facebook</a></li>
+			<li class="social__item"><a href="#" class="social__link social__link--youtube">Youtube</a></li>
+		</ul>
+		<ul class="copyright">
+			<li class="copyright__item"><a href="https://vk.com/revch" class="copyright__link" target="_blank">Max Sharing</a></li>
+		</ul>
+	</footer>
+	<script src="js/custom.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0_ymdh8_YvEnN-1hUe1lliLL9SQ226YY&callback=initMap"
+    async defer></script>
+</body>
+</html>
