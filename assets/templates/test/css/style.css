@@ -235,9 +235,11 @@ body {
 
 /*Пятая секция*/
 .graph {
-  min-height: 1000px;
-  background: url("../img/graph.png") no-repeat center;
-  background-size: contain; 
+  min-height: 700px;
+}
+
+.graph img {
+  max-width: 100%;
 }
 /*Шестая секция*/
 .coin__flex-container {
