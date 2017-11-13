@@ -1,0 +1,392 @@
+/*Основные*/
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+/*Шапка*/
+.page-header__flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header {
+  background: #000;
+}
+
+.page-header__logo {
+  width: 690px;
+}
+
+.page-header__logo-s {
+  display: none;
+}
+
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  margin-top: 50px;
+  list-style: none;
+}
+
+.main-nav__item {
+  font-size: 21px;
+  font-style: italic;
+}
+
+.main-nav__item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Инфо*/
+.info {
+  min-height: 577px;
+  background: url("../img/header.png") no-repeat center;
+  background-size: cover;
+  border-bottom: 10px solid black;
+}
+
+.info__title {
+  margin-top: 0;
+  padding-top: 65px;
+  color: #fff;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.info__text {
+  padding-top: 25px;
+  padding-left: 20px;
+  margin-bottom: 80px;
+  color: #fff;
+  font-size: 28px;
+  opacity: 0.4;
+  text-transform: uppercase;
+}
+
+.info__link {
+  color: #000;
+  padding: 20px 80px;
+  margin-left: 20px;
+  background: #bfa75f;
+  border-radius: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.info__link:hover {
+  color: #fff;
+}
+
+/*Вторая секция*/
+.read__flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.read {
+  min-height: 402px;
+  background: #bfa75f;
+}
+
+.read__more {
+  width: 400px;
+  height: 300px;
+  margin-top: 30px;
+  font-style: italic;
+}
+
+.read__more b {
+  color: #fff;
+  font-size: 37px;
+}
+
+.read__more p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.read__more a {
+  padding: 5px 40px;
+  color: #fff;
+  background: #000;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.read__more a:hover {
+  background: #5b0002;
+}
+
+.read__more--link1 {
+  margin-bottom: 35px;
+}
+
+.read__more--link2 {
+  margin-bottom: 70px;
+}
+
+.read__more--link3 {
+  margin-bottom: 85px;
+}
+
+/*Третья секция*/
+.adv__flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adv {
+  min-height: 400px;
+}
+
+.adv__box {
+  width: 250px;
+  margin-top: 40px;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.adv__box b {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.adv__box p {
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.3;
+}
+
+.adv__box--img1 {
+  background: url("../img/adv1.png") no-repeat top;
+}
+
+.adv__box--img2 {
+  background: url("../img/adv2.png") no-repeat top;
+}
+
+.adv__box--img3 {
+  background: url("../img/adv3.png") no-repeat top;
+}
+
+.adv__box--img4 {
+  background: url("../img/adv4.png") no-repeat top;
+}
+
+.adv__box--img5 {
+  background: url("../img/adv5.png") no-repeat top;
+}
+
+/*Четвертая секция*/
+.trading__flex-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.trading {
+  min-height: 885px;
+  background: url("../img/mac.png") no-repeat center;
+  background-size: cover;
+}
+
+.trading__title {
+  padding-top: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 73px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.trading__text {
+  width: 400px;
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.info__link--red {
+  color: #fff;
+  background: #8a0000;
+}
+
+.trading__flex-container--m {
+  margin-top: 100px;
+}
+
+/*Пятая секция*/
+.graph {
+  min-height: 800px;
+  background: url("../img/graph.png") no-repeat center;
+}
+/*Шестая секция*/
+.coin__flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coin {
+  min-height: 185px;
+  background: #bfa75f;
+}
+
+.coin__box {
+  width: 150px;
+  padding-top: 70px;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.coin__box span {
+  color: #330000;
+}
+
+.coin__box p {
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.coin__box--doge {
+  background: url("../img/doge.png") no-repeat top;
+}
+
+.coin__box--ripple {
+  background: url("../img/ripple.png") no-repeat top;
+}
+
+.coin__box--peer {
+  background: url("../img/peer.png") no-repeat top;
+}
+
+.coin__box--dash {
+  background: url("../img/dash.png") no-repeat top;
+}
+
+.coin__box--monero {
+  background: url("../img/monero.png") no-repeat top;
+}
+
+.coin__box--eth {
+  background: url("../img/eth.png") no-repeat top;
+}
+
+.coin__box--iota {
+  background: url("../img/iota.png") no-repeat top;
+}
+
+.coin__box--nem {
+  background: url("../img/nem.png") no-repeat top;
+}
+
+/*Седьмая секция*/
+.fly {
+  min-height: 805px;
+  color: #fff;
+  background: url("../img/fly.png") no-repeat top;
+  background-size: cover;
+}
+
+.fly h2 {
+  margin-top: 0;
+  padding-top: 70px;
+  font-size: 50px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.fly__text {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.fly__desc {
+  /*width: 550px;*/
+  max-width: 550px;
+  padding: 40px;
+  border-radius: 5px;
+  font-size: 27px;
+  font-style: italic;
+  background: #000;
+}
+
+/*Восьмая секция*/
+.pre-footer {
+  min-height: 600px;
+  background: url("../img/pfooter.png") no-repeat center;
+  background-size: cover;
+}
+
+.pre-footer h2 {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: -30px;
+  padding-top: 80px;
+  color: #fff;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+
+/*Футер*/
+.page-footer__flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer {
+  min-height: 500px;
+  background: #262626;
+}
+
+.page-footer__column {
+  padding-top: 65px;
+}
+
+.page-footer__column b {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.page-footer__column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.page-footer__column a {
+  color: #949494;
+  text-decoration: none;
+}
+
+.page-footer__column li {
+  padding-bottom: 15px;
+}
+
+.page-footer__select {
+  margin-top: 20px;
+  padding: 5px;
+  width: 200px;
+}

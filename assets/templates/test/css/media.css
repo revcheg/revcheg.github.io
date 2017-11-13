@@ -1,0 +1,282 @@
+@media only screen and (max-width : 1200px) {
+  /*Общие*/
+  .container {
+    width: 95%;
+  }
+  
+  /*Вторая секция*/
+  .read {
+    min-height: 430px;
+  }
+  
+  .read__more--link2 {
+    margin-bottom: 85px;
+  }
+  
+  .read__more--link3 {
+    margin-bottom: 102px;
+  }
+  
+  /*Пре-футер*/
+  .pre-footer h2 {
+    width: auto;
+  }
+  
+  /*Пятая секция*/
+  .graph {
+    display: none;
+  }
+  
+  .page-footer__flex-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  /*Шапка*/
+  .container {
+    width: 95%;
+  }
+  
+  .page-header__logo-full {
+    display: none;
+  }
+  
+  .page-header__logo-s {
+    display: block;
+  }
+  
+  /*Вторая секция*/
+  .read {
+    min-height: 500px;
+  }
+  
+  .read__more--link2 {
+    margin-bottom: 45px;
+  }
+  
+  .read__more--link3 {
+    margin-bottom: 125px;
+  }
+  
+  /*Третья секция*/
+  .adv__box b {
+    font-size: 20px;
+  }
+  
+  .adv__box p {
+    font-size: 18px;
+  }
+  
+  .coin__box--ripple,
+  .coin__box--monero {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  /*Шапка*/
+  .page-header__logo-s {
+    width: 400px;
+  }
+  
+  /*Вторая секция*/
+  .read {
+    min-height: 600px;
+  }
+  
+  .read__more--link2 {
+    margin-bottom: 125px;
+  }
+  
+  .read__more--link3 {
+    margin-bottom: 162px;
+  }
+  
+  .read__more b {
+    font-size: 32px;
+  }
+  
+  /*Третья секция*/
+  .adv {
+    min-height: 420px;
+  }
+  
+  /*Пятая секция*/
+  .coin__box span, p {
+    font-size: 22px;
+  }
+  
+  /*Пре-футер*/
+  .pre-footer h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  /*Шапка*/
+  .page-header__logo-s {
+    display: none;
+  }
+  
+  /*Вторая секция*/
+  .info {
+    min-height: 777px;
+  }
+  
+  .info__link {
+    padding: 20px 50px;
+    font-size: 25px;
+  }
+  
+  /*Третья секция*/
+  .read__flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .read__more {
+    width: 100%;
+    height: auto;
+  }
+  
+  .read {
+    min-height: 1050px;
+  }
+  
+  .read__more--pb {
+    margin-bottom: 40px;
+  }
+  
+  .read__more--link2 {
+    margin-bottom: 30px;
+  }
+  
+  .read__more--link3 {
+    margin-bottom: 30px;
+  }
+  
+  /*Четвертая секция*/
+  .adv__flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .adv {
+    min-height: 1590px;
+  }
+  
+  .adv__box {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  
+  /*Скрываем секции*/
+  .trading,
+  .coin {
+    display: none;
+  }
+  
+  /*Пятая секция*/
+  .fly {
+    min-height: 840px;
+  }
+  
+  .fly__desc {
+    font-size: 20px;
+  }
+  
+  /*Шестая секция*/
+  .pre-footer h2 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 568px) {  
+  .page-header__logo-s {
+    display: none;
+  }
+  
+  .info {
+    min-height: 820px;
+  }
+  
+  .read__flex-container {
+    flex-direction: column;
+  }
+  
+  .read__more {
+    margin-bottom: 40px;
+  }
+  
+  .read__more--link2,
+  .read__more--link3 {
+    margin-bottom: 30px;
+  }
+  
+  .adv__flex-container {
+    flex-direction: column;
+  }
+  
+  .adv {
+    min-height: 1600px;
+  }
+  
+  .adv__box {
+    margin: auto;
+    margin-top: 40px;
+  }
+  
+  .trading,
+  .coin {
+    display: none;
+  }
+  
+  .fly {
+    min-height: 900px;
+  }
+  
+  .pre-footer h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width : 320px) {  
+  .page-header__flex-container {
+    justify-content: flex-end;
+  }
+  
+  .info {
+    min-height: 600px;
+  }
+  
+  .info__link {
+    padding: 20px 20px;
+    font-size: 20px;
+  }
+  
+  .info__title {
+    font-size: 30px;
+  }
+  
+  .info__text {
+    font-size: 20px;
+  }
+  
+  .read__more {
+    width: 100%;
+    height: auto;
+  }
+  
+  .read {
+    min-height: 1250px;
+  }
+  
+  .fly {
+    min-height: 1000px;
+  }
+  
+  .pre-footer h2 {
+    font-size: 20px;
+  }
+}
