@@ -2,7 +2,8 @@
 body {
   min-width: 320px;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  /*font-family: 'PT Sans', sans-serif;*/
+  font-family: 'PT Sans', sans-serif;
 }
 
 .container {
@@ -30,14 +31,14 @@ body {
 
 .main-nav__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 270px;
   margin-top: 50px;
   list-style: none;
 }
 
 .main-nav__item {
-  font-size: 21px;
+  font-size: 18px;
   font-style: italic;
 }
 
@@ -48,7 +49,7 @@ body {
 
 /*Инфо*/
 .info {
-  min-height: 577px;
+  min-height: 470px;
   background: url("../img/header.png") no-repeat center;
   background-size: cover;
   border-bottom: 10px solid black;
@@ -58,7 +59,8 @@ body {
   margin-top: 0;
   padding-top: 65px;
   color: #fff;
-  font-size: 45px;
+  font-size: 35px;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
@@ -67,18 +69,18 @@ body {
   padding-left: 20px;
   margin-bottom: 80px;
   color: #fff;
-  font-size: 28px;
+  font-size: 20px;
   opacity: 0.4;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 .info__link {
   color: #000;
-  padding: 20px 80px;
+  padding: 5px 40px;
   margin-left: 20px;
   background: #bfa75f;
   border-radius: 50px;
-  font-size: 30px;
+  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -92,24 +94,25 @@ body {
 /*Вторая секция*/
 .read__flex-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .read {
-  min-height: 402px;
+  min-height: 450px;
   background: #bfa75f;
 }
 
 .read__more {
-  width: 400px;
-  height: 300px;
+  position: relative;
+  width: 300px;
+  /*height: 300px;*/
   margin-top: 30px;
   font-style: italic;
 }
 
 .read__more b {
   color: #fff;
-  font-size: 37px;
+  font-size: 25px;
 }
 
 .read__more p {
@@ -118,10 +121,12 @@ body {
 }
 
 .read__more a {
+  position: absolute;
+  bottom: -40px;
   padding: 5px 40px;
   color: #fff;
   background: #000;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   font-style: normal;
   text-decoration: none;
@@ -133,7 +138,7 @@ body {
   background: #5b0002;
 }
 
-.read__more--link1 {
+/*.read__more--link1 {
   margin-bottom: 35px;
 }
 
@@ -142,8 +147,8 @@ body {
 }
 
 .read__more--link3 {
-  margin-bottom: 85px;
-}
+  margin-bottom: 105px;
+}*/
 
 /*Третья секция*/
 .adv__flex-container {
@@ -157,18 +162,18 @@ body {
 
 .adv__box {
   width: 250px;
-  margin-top: 40px;
+  margin-top: 80px;
   padding-top: 150px;
   text-align: center;
 }
 
 .adv__box b {
-  font-size: 25px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
 .adv__box p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   opacity: 0.3;
 }
@@ -209,7 +214,7 @@ body {
   padding-top: 60px;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 73px;
+  font-size: 50px;
   font-weight: bold;
   font-style: italic;
   text-align: right;
@@ -217,9 +222,10 @@ body {
 }
 
 .trading__text {
+  padding-top: 100px;
   width: 400px;
   text-align: right;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
   font-style: italic;
 }
@@ -254,11 +260,11 @@ body {
 
 .coin__box {
   width: 150px;
-  padding-top: 70px;
-  margin-top: 20px;
+  padding-top: 80px;
+  margin-top: 30px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -305,7 +311,7 @@ body {
 
 /*Седьмая секция*/
 .fly {
-  min-height: 805px;
+  min-height: 660px;
   color: #fff;
   background: url("../img/fly.png") no-repeat top;
   background-size: cover;
@@ -314,30 +320,28 @@ body {
 .fly h2 {
   margin-top: 0;
   padding-top: 70px;
-  font-size: 50px;
+  font-size: 40px;
   font-style: italic;
   text-transform: uppercase;
 }
 
 .fly__text {
-  font-size: 40px;
+  font-size: 30px;
   font-style: italic;
-  font-weight: bold;
 }
 
 .fly__desc {
-  /*width: 550px;*/
   max-width: 550px;
-  padding: 40px;
+  padding: 30px;
   border-radius: 5px;
-  font-size: 27px;
+  font-size: 20px;
   font-style: italic;
   background: #000;
 }
 
 /*Восьмая секция*/
 .pre-footer {
-  min-height: 600px;
+  min-height: 400px;
   background: url("../img/pfooter.png") no-repeat center;
   background-size: cover;
 }
@@ -346,9 +350,9 @@ body {
   width: 1200px;
   margin: 0 auto;
   margin-top: -30px;
-  padding-top: 80px;
+  padding-top: 60px;
   color: #fff;
-  font-size: 36px;
+  font-size: 25px;
   font-style: italic;
   font-weight: normal;
   text-align: center;
