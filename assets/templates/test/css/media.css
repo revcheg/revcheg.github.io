@@ -166,10 +166,6 @@
     display: none;
   }
 
-  .page-header {
-    background: red;
-  }
-
   .info {
     min-height: 600px;
   }
