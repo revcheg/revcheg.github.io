@@ -157,7 +157,7 @@ body {
 }
 
 .adv {
-  min-height: 380px;
+  min-height: 270px;
 }
 
 .adv__box {
@@ -212,6 +212,7 @@ body {
 
 .trading__title {
   padding-top: 60px;
+  padding-right: 50px;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 50px;
@@ -223,6 +224,7 @@ body {
 
 .trading__text {
   padding-top: 100px;
+  padding-right: 50px;
   width: 400px;
   text-align: right;
   font-size: 20px;
