@@ -426,7 +426,7 @@ h1 a:hover {
 }
 
 .login {
-  width: 300px;
+  width: 400px;
   /*height: 400px;*/
   margin: 0 auto;
   margin-top: 100px;
@@ -449,6 +449,7 @@ form {
 }
 
 form label {
+  cursor: pointer;
   padding-left: 10px;
   font-size: 18px;
   font-weight: bold;
