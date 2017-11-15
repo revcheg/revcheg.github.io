@@ -485,6 +485,10 @@ h1 a:hover {
   cursor: pointer;
 }
 
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
 .form__have {
   margin-top: 20px;
   font-size: 14px;
@@ -550,10 +554,11 @@ form button {
   border: none;
   color: #000;
   margin: auto;
-  padding: 10px 30px;
+  padding: 10px 50px;
   border-radius: 5px;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: bold;
   background: #bfa75f;
   cursor: pointer;
   transition: 0.3s;
