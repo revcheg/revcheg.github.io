@@ -428,34 +428,58 @@ h1 a:hover {
 }
 
 .login {
-  width: 400px;
+  width: 450px;
   /*height: 400px;*/
   margin: 0 auto;
-  margin-top: 100px;
-  padding: 40px;
+  margin-top: 50px;
+  padding: 20px;
   border-radius: 5px;
   background: #fff;
 }
 
 .login h2 {
   text-align: center;
+  opacity: 0.8;
+}
+
+.form__name,
+.form__email,
+.form__password {
+  display: flex;
+  justify-content: space-between;
+}
+
+form hr {
+  width: 1px;
+  height: 25px;
+  margin-right: 20px;
+  background: gray;
+  opacity: 0.5;
+  border: none;
+}
+
+input::placeholder {
+  /*text-align: center;*/
+  opacity: 0.7;
 }
 
 form {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
-  text-align: center;
   margin: 0 auto;
   margin-top: 60px;
 }
 
 form label {
   cursor: pointer;
+  margin-right: 40px;
+  padding-top: 7px;
   padding-left: 10px;
   font-size: 18px;
   font-weight: bold;
   color: #000;
+  opacity: 0.8;
 }
 
 form input {
@@ -463,9 +487,14 @@ form input {
   outline: none;
   padding: 10px;
   border: none;
-  font-size: 20px;
+  font-size: 18px;
+  opacity: 0.6;
   margin-bottom: 30px;
-  border-bottom: 1px solid #888e96;
+  margin-left: 15px;
+}
+
+.modal-login__password {
+  margin-left: -15px;
 }
 
 form button {
@@ -478,4 +507,9 @@ form button {
   font-size: 18px;
   background: #bfa75f;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  color: #fff;
 }
