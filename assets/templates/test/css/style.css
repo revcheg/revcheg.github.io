@@ -11,6 +11,11 @@ body {
   margin: 0 auto;
 }
 
+.container__adv {
+  width: 70%;
+  margin: 0 auto;
+}
+
 /*Шапка*/
 .page-header__flex-container {
   display: flex;
@@ -94,7 +99,7 @@ body {
 /*Вторая секция*/
 .read__flex-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .read {
@@ -161,19 +166,19 @@ body {
 }
 
 .adv__box {
-  width: 250px;
+  width: 200px;
   margin-top: 80px;
   padding-top: 120px;
   text-align: center;
 }
 
 .adv__box b {
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
 .adv__box p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   opacity: 0.3;
 }
@@ -207,12 +212,12 @@ body {
 .trading {
   min-height: 885px;
   background: url("../img/mac.png") no-repeat center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .trading__title {
   padding-top: 60px;
-  padding-right: 50px;
+  /*padding-right: 50px;*/
   margin-top: 0;
   margin-bottom: 0;
   font-size: 50px;
@@ -223,11 +228,11 @@ body {
 }
 
 .trading__text {
-  padding-top: 100px;
-  padding-right: 50px;
-  width: 400px;
+  padding-top: 60px;
+  /*padding-right: 50px;*/
+  width: 500px;
   text-align: right;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   font-style: italic;
 }
@@ -250,6 +255,7 @@ body {
 .graph img {
   max-width: 100%;
 }
+
 /*Шестая секция*/
 .coin__flex-container {
   display: flex;

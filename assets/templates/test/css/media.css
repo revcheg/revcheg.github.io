@@ -1,14 +1,22 @@
 @media only screen and (min-width : 1500px) {
   .trading__title {
-    padding-top: 20px;
+    padding-top: 90px;
     font-size: 60px;
+  }
+
+  .info__link--red {
+    margin-top: 30px;
   }
 }
 
 @media only screen and (min-width : 1201px) {
   .trading__title {
-    padding-top: 170px;
+    padding-top: 90px;
     font-size: 60px;
+  }
+
+  .info__link--red {
+    margin-top: 40px;
   }
 }
 
@@ -123,6 +131,10 @@
     width: 400px;
   }
 
+  .container__adv {
+    width: 100%;
+  }
+
   /*Вторая секция*/
   .read {
     min-height: 270px;
@@ -146,27 +158,43 @@
 
   /*Третья секция*/
   .adv {
-    min-height: 420px;
+    min-height: 330px;
+  }
+
+  .adv__box {
+    margin-top: 40px;
+  }
+
+  .adv__box b {
+    font-size: 14px;
+  }
+
+  .adv__box p {
+    font-size: 12px;
   }
 
   .trading {
     min-height: 650px;
-    margin-top: -100px;
   }
 
   .trading__title {
     font-size: 40px;
-    padding-top: 160px;
+    padding-top: 60px;
   }
 
   .trading__text {
     width: 300px;
+    margin-top: 50px;
     font-size: 16px;
+  }
+
+  .info__link--red {
+    margin-top: 70px;
   }
 
   /*Пятая секция*/
   .coin__box span, p {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   /*Пре-футер*/
@@ -198,6 +226,7 @@
 
   .read__more {
     width: 100%;
+    align-self: center;
   }
 
   .read__more {
@@ -319,6 +348,10 @@
 
   .container {
     width: 90%;
+  }
+
+  .container__adv {
+    width: inherit;
   }
 
   .info {
