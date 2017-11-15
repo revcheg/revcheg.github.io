@@ -173,6 +173,10 @@
   .pre-footer h2 {
     font-size: 20px;
   }
+
+  .login {
+    margin-bottom: 50px;
+  }
 }
 
 @media only screen and (min-width : 320px) and (max-width : 568px) {
@@ -214,7 +218,8 @@
   }
 
   .trading,
-  .coin {
+  .coin,
+  .form__sign {
     display: none;
   }
 
@@ -361,5 +366,39 @@
 
   form button {
     font-size: 13px;
+  }
+
+  .form__body .container {
+    width: 100%;
+  }
+
+  form hr {
+    display: none;
+  }
+
+  .form__name,
+  .form__email,
+  .form__password {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  form input {
+    width: inherit;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .modal-login__password {
+    margin-left: 0;
+  }
+
+  input[type="checkbox"] {
+    left: 10px;
+  }
+
+  .form__check {
+    margin-bottom: 20px;
   }
 }

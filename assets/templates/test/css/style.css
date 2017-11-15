@@ -408,30 +408,37 @@ body {
 }
 
 /*Login*/
+.form__body .container {
+  width: 500px;
+}
+
 .modal-login h1 {
+  margin-top: 10px;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 50px;
 }
 
-h1 a {
+.modal-login h1 a {
   text-decoration: none;
   color: #fff;
   transition: 0.3s;
 }
 
-h1 a:hover {
+.modal-login h1 a:hover {
   color: #bfa75f;
 }
 
 .form__body {
-  background: #888e96;
+  background: #c2c3c4;
 }
 
 .login {
   width: 450px;
   /*height: 400px;*/
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 0;
+  margin-bottom: 50px;
   padding: 20px;
   border-radius: 5px;
   background: #fff;
