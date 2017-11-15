@@ -26,34 +26,51 @@
     width: 95%;
   }
 
+  .container__adv {
+    width: 80%;
+  }
+
   /*Вторая секция*/
   .read {
     min-height: 300px;
   }
 
-  /*.read__more--link1 {
-    margin-bottom: 25px;
+  .adv {
+    min-height: 350px;
   }
 
-  .read__more--link2 {
-    margin-bottom: 60px;
+  .adv__box {
+    margin-top: 60px;
   }
 
-  .read__more--link3 {
-    margin-bottom: 95px;
-  }*/
+  .adv__box b {
+    font-size: 14px;
+  }
 
   .trading {
     min-height: 700px;
-    margin-top: -50px;
+    margin-top: -60px;
+  }
+
+  .trading__text,
+  .trading__title,
+  .info__link--red {
+    margin-right: 40px;
   }
 
   .trading__title {
-    padding-top: 120px;
+    padding-top: 60px;
+    font-size: 40px;
   }
 
   .trading__text {
+    width: 300px;
     padding-top: 10px;
+    font-size: 20px;
+  }
+
+  .info__link--red {
+    margin-top: 0;
   }
 
   /*Пре-футер*/
@@ -90,21 +107,13 @@
     min-height: 300px;
   }
 
+  /*.read__more {
+    width: 100%;
+  }*/
+
   .trading__title {
     padding-top: 130px;
   }
-
-  /*.read__more--link1 {
-    margin-bottom: 30px;
-  }
-
-  .read__more--link2 {
-    margin-bottom: 65px;
-  }
-
-  .read__more--link3 {
-    margin-bottom: 100px;
-  }*/
 
   /*Третья секция*/
   .adv__box b {
