@@ -470,7 +470,7 @@ h1 a:hover {
 .form__check {
   position: relative;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .form__check input {
@@ -483,6 +483,17 @@ h1 a:hover {
   padding-left: 30px;
   font-size: 15px;
   cursor: pointer;
+}
+
+.form__have {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.form__have a {
+  text-decoration: none;
 }
 
 form hr {
