@@ -439,7 +439,25 @@ h1 a:hover {
 
 .login h2 {
   text-align: center;
+  font-weight: normal;
   opacity: 0.8;
+}
+
+.login h2 span {
+  font-weight: bold;
+}
+
+.form__sign {
+  padding: 1px 0;
+  padding-left: 30px;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  background: #bfa75f;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
 
 .form__name,
@@ -447,6 +465,24 @@ h1 a:hover {
 .form__password {
   display: flex;
   justify-content: space-between;
+}
+
+.form__check {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.form__check input {
+  position: absolute;
+  top: 2px;
+  left: -225px;
+}
+
+.form__check label {
+  padding-left: 30px;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 form hr {
@@ -468,7 +504,7 @@ form {
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 form label {
