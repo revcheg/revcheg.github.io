@@ -438,6 +438,7 @@ h1 a:hover {
 }
 
 .login h2 {
+  margin-top: 10px;
   text-align: center;
   font-weight: normal;
   opacity: 0.8;
