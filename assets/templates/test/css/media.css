@@ -1,4 +1,20 @@
 @media only screen and (min-width : 1500px) {
+  .container__adv {
+    width: 100%;
+  }
+
+  .read__flex-container {
+    justify-content: space-between;
+  }
+
+  .read__more {
+    width: 400px;
+  }
+
+  .adv__flex-container {
+    justify-content: space-between;
+  }
+
   .trading__title {
     padding-top: 90px;
     font-size: 60px;
@@ -9,7 +25,11 @@
   }
 }
 
-@media only screen and (min-width : 1201px) {
+@media only screen and (min-width : 1201px) and (max-width : 1499px){
+  .page-header__flex-container {
+    justify-content: center;
+  }
+
   .trading__title {
     padding-top: 90px;
     font-size: 60px;
@@ -21,6 +41,7 @@
 }
 
 @media only screen and (max-width : 1200px) {
+
   /*Общие*/
   .container {
     width: 95%;
@@ -95,7 +116,7 @@
   }
 
   .container__adv {
-    width: 100%;
+    width: 80%;
   }
 
   .page-header__logo-full {

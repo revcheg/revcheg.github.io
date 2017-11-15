@@ -71,7 +71,7 @@ body {
 
 .info__text {
   padding-top: 25px;
-  padding-left: 20px;
+  /*padding-left: 20px;*/
   margin-bottom: 60px;
   color: #fff;
   font-size: 20px;
@@ -82,7 +82,7 @@ body {
 .info__link {
   color: #000;
   padding: 10px 50px;
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   background: #bfa75f;
   border-radius: 50px;
   font-size: 30px;
@@ -99,7 +99,7 @@ body {
 /*Вторая секция*/
 .read__flex-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .read {
