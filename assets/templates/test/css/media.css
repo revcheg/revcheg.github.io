@@ -30,8 +30,16 @@
     justify-content: center;
   }
 
+  .adv {
+    min-height: 350px;
+  }
+
+  .trading {
+    background: url("../img/mac-s.png") no-repeat top;
+  }
+
   .trading__title {
-    padding-top: 90px;
+    padding-top: 60px;
     font-size: 60px;
   }
 
@@ -41,7 +49,6 @@
 }
 
 @media only screen and (max-width : 1200px) {
-
   /*Общие*/
   .container {
     width: 95%;
@@ -239,6 +246,10 @@
   }
 
   .info__title {
+    text-align: center;
+  }
+
+  .info__text {
     text-align: center;
   }
 
