@@ -1,0 +1,181 @@
+.team {
+  min-height: 1593px;
+  background: $bg;
+  margin-top: -30px; 
+  // Неприятный костыль ...
+  
+  &__title {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 65px;
+    padding-top: 103px;
+    color: $black;
+    font-size: $title;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 20px;
+      width: 98px;
+      height: 8px;
+      background: $orange;
+      border: none;
+      transform: rotate(130deg);
+    }
+  }
+}
+
+.team__flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.team__photo {
+  width: 299px;
+  height: 350px;
+  box-shadow: 8.6px 12.3px 40px 5px rgba(0, 0, 0, 0.2);
+  
+  &--frazer {
+    background: url("../img/frazer.png");
+  }
+  
+  &--mark {
+    background: url("../img/mark.png");
+  }
+  
+  &--peter {
+    background: url("../img/peter.png");
+  }
+}
+
+.team__desc {
+  padding-top: 265px;
+  padding-left: 38px;
+  color: $white;
+  font-size: 18px;
+  
+  & span {
+    font-size: $text;
+    font-weight: bold;
+  }
+}
+
+.team__text {
+  width: 590px;
+  color: $black;
+  font-size: $text;
+  
+  &--bold {
+    font-weight: bold;
+  }
+  
+  &--left {
+    text-align: right;
+  }
+  
+  & p {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .team {
+    min-height: 1700px;
+  }
+  
+  .team__text {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .team {
+    min-height: 1400px;
+  }
+  
+  .team__title {
+    padding-top: 40px;
+    padding-left: 10px;
+  }
+  
+  .team__text {
+    width: 400px;
+    font-size: 18px;
+  }
+  
+  .team__flex-container {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .team {
+    min-height: 2600px;
+  }
+  
+	.team__flex-container {
+    flex-direction: column;
+  }
+  
+  .team__photo {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  
+  .team__text {
+    margin: auto;
+  }
+  
+  .team__text--left {
+    order: 20;
+  }
+  
+  .team__photo--mark {
+    order: 10;
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  .team__title {
+    padding-top: 20px;
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  
+  .team__title::after {
+    top: 68px;
+    right: 0;
+  }
+  
+  .team__photo {
+    width: 270px;
+  }
+  
+  .team__text {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 568px) {
+  .team__flex-container {
+    flex-direction: column;
+  }
+  
+  .team__text--left {
+    order: 20;
+  }
+  
+  .team__photo--mark {
+    order: 10;
+  }
+  
+  .team__photo {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  
+  .team__text {
+    margin: auto;
+  }
+}
