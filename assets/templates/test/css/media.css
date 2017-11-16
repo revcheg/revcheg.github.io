@@ -402,13 +402,25 @@
     width: 85%;
     margin: 0 auto;
   }
+
+  form label {
+    margin-right: 20px;
+  }
+
+  form input {
+    margin-left: 0;
+  }
+
+  .modal-login__password {
+    margin-left: 0;
+  }
+
+  .form__check input {
+    left: -160px;
+  }
 }
 
 @media only screen and (max-width : 376px) {
-  input::placeholder {
-
-  }
-
   form label {
     margin-right: 0;
   }
