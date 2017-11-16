@@ -15,13 +15,17 @@
     justify-content: space-between;
   }
 
+  .trading {
+    min-height: 800px;
+  }
+
   .trading__title {
     padding-top: 90px;
     font-size: 60px;
   }
 
   .info__link--red {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 
@@ -38,13 +42,18 @@
     background: url("../img/mac-s.png") no-repeat top;
   }
 
+  .trading {
+    min-height: 730px;
+  }
+
   .trading__title {
     padding-top: 60px;
     font-size: 60px;
   }
 
   .info__link--red {
-    margin-top: 40px;
+    margin-top: 10px;
+    margin-right: 150px;
   }
 }
 
