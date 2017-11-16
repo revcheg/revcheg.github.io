@@ -264,8 +264,19 @@
     display: none;
   }
 
+  .flex-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
   .info {
     min-height: 600px;
+  }
+
+  .info__link {
+    margin: 0 40px;
+    font-size: 20px;
+    text-align: center;
   }
 
   .info__title {
@@ -346,9 +357,16 @@
     min-height: 550px;
   }
 
+  .flex-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
   /*Вторая секция*/
   .info__link {
+    margin: 0 40px;
     font-size: 18px;
+    text-align: center;
   }
 
   /*Третья секция*/
@@ -465,6 +483,7 @@
   }
 
   .info__link {
+    margin: 0;
     font-size: 20px;
   }
 
