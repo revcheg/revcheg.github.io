@@ -42,3 +42,51 @@
     }
   }
 }
+
+@media only screen and (max-width : 992px) {
+   .container {
+     width: 95%;
+   }
+}
+
+@media only screen and (max-width : 768px) {  
+  .page-header__nav-list  a {
+    padding: 15px 2px;
+  }
+  
+  .container {
+    width: 97%;
+  }
+  
+  .page-header__nav {
+    width: 100%; 
+  }
+  
+  .page-header__main-nav {
+    padding-left: 30px;
+  }
+  
+  .page-header__nav-list {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .page-header__main-nav {
+    padding-left: 15px;
+  }
+  
+  .page-header__nav-list {
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  
+  .page-header__nav-list a {
+    transition: 0.3s;
+  }
+  
+  .page-header__nav-list a:hover {
+    color: $g;
+    background: none;
+  }
+}

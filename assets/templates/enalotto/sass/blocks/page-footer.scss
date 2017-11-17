@@ -17,3 +17,36 @@
   color: $w;
   text-decoration: none;
 }
+
+@media only screen and (max-width : 992px) {
+   .page-footer__nav-item {
+     font-size: 15px;
+   }
+}
+
+@media only screen and (max-width : 768px) {
+  .page-footer__nav-item {
+    font-size: 13px;
+  }
+  
+  .page-footer__nav-item a {
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .page-footer__nav-list {
+    flex-wrap: wrap;
+  }
+  
+  .page-footer__nav-item a {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  body {
+    background: black;
+  }
+}
+// @media only screen and (min-width : 320px) and (max-width : 568px)
