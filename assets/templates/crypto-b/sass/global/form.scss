@@ -4,6 +4,13 @@
   margin-top: 40px;
 }
 
+.page-header__checkbox {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -11,10 +18,9 @@ form {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   border: 3px solid $b;
-  // opacity: 0.9;
 }
 
-form input {
+input {
   width: 350px;
   height: 40px;
   margin-bottom: 15px;
@@ -23,11 +29,57 @@ form input {
   font-size: 18px;
   border-radius: 10px;
   border: none;
-  background: black;
+  background: rgba(0, 0, 0, 0.9);
+  outline: none;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  margin: 0;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  color: $b;
+  font-size: 18px;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px solid $b;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  color: $w;
+  background: $b;
+  border: 2px solid $b;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 input::placeholder {
   color: $w;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+select {
+  height: 40px;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  color: $w;
+  font-size: 16px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.9);
+  outline: none;
+}
+
+form p {
+  text-align: center;
 }
