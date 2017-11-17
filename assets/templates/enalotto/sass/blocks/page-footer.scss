@@ -1,0 +1,19 @@
+.page-footer {
+  min-height: 80px;
+  background: #106800;
+}
+
+.page-footer__nav-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-left: 0;
+  color: $w;
+  list-style: none;
+}
+
+.page-footer__nav-item a {
+  margin-right: 15px;
+  color: $w;
+  text-decoration: none;
+}

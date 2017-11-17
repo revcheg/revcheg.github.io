@@ -5,27 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CryptoLogic</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
-    <nav class="page-header__nav">
-      <div class="container">
-        <div class="page-header__flex">
-          <div class="page-header__logo">
-            <a href="#">
-              <img src="" alt="">
-            </a>
-          </div>
-          <div class="page-header__main-nav">
-            <ul class="page-header__nav-list">
-              <li class="page-header__item"><a href="#"></a></li>
-              <li class="page-header__item"><a href="#"></a></li>
-              <li class="page-header__item"><a href="#"></a></li>
-            </ul>
+    <div class="page-header__head">
+      <nav class="page-header__nav">
+        <div class="container">
+          <div class="page-header__flex">
+            <div class="page-header__logo">
+              <a href="#">
+                <img src="img/logo.png" alt="CryptoLogic">
+              </a>
+            </div>
+            <div class="page-header__main-nav">
+              <ul class="page-header__nav-list">
+                <li class="page-header__item"><a href="#">Login</a></li>
+                <li class="page-header__item"><a href="#">Contacts</a></li>
+                <li class="page-header__item"><a href="#">Live Chat</a></li>
+              </ul>
+            </div>
           </div>
         </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="page-header__form">
+        <form action="">
+          <input type="text" placeholder="First Name" required>
+          <input type="text" placeholder="Last Name" required>
+          <input type="email" placeholder="E-Mail" required>
+          <input type="tel" placeholder="Phone" required>
+          <select>
+            <option>-Select Country-</option>
+            <option>Test</option>
+          </select>
+          <label for="check">I confirm I am over 18 years old<br>and that I have read, understood<br>and accept <a href="#">The Terms and<br>Conditions apply</a>.</label>
+          <input type="checkbox" id="check">
+        </form>
       </div>
-    </nav>
+    </div>
   </header>
 </body>
 </html>
