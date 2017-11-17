@@ -202,3 +202,7 @@ form p {
   justify-content: space-between;
   background: url("../img/edge.png") no-repeat top;
   margin-top: 80px; }
+
+.news {
+  min-height: 600px;
+  background: #00aeef; }
