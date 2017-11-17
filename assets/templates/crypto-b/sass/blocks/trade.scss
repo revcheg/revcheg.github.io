@@ -1,0 +1,26 @@
+.trade {
+  min-height: 170px;
+  background: black;
+}
+
+.trade__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trade__left-column,
+.trade__right-column {
+  color: $w;
+  font-weight: bold;
+}
+
+.trade__left-column {
+  margin-top: 30px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.trade__right-column {
+  margin-top: 20px;
+  font-size: 25px;
+}

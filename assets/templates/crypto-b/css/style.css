@@ -162,3 +162,29 @@ form p {
 .page-header__item a:hover {
   color: #070055;
   background: #fff; }
+
+.trade {
+  min-height: 170px;
+  background: black; }
+
+.trade__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.trade__left-column,
+.trade__right-column {
+  color: #fff;
+  font-weight: bold; }
+
+.trade__left-column {
+  margin-top: 30px;
+  font-size: 40px;
+  text-transform: uppercase; }
+
+.trade__right-column {
+  margin-top: 20px;
+  font-size: 25px; }
