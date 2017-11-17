@@ -1,0 +1,11 @@
+.edge {
+  min-height: 245px;
+}
+
+.edge__flex {
+  min-height: 160px;
+  display: flex;
+  justify-content: space-between;
+  background: url("../img/edge.png") no-repeat top;
+  margin-top: 80px;
+}
