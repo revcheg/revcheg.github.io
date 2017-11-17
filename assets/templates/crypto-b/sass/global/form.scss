@@ -8,15 +8,26 @@ form {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
-  border: 3px solid $w;
+  border: 3px solid $b;
+  // opacity: 0.9;
 }
 
 form input {
   width: 350px;
-  height: 30px;
+  height: 40px;
   margin-bottom: 15px;
+  padding: 0 20px;
+  color: $w;
+  font-size: 18px;
   border-radius: 10px;
   border: none;
+  background: black;
+}
+
+input::placeholder {
+  color: $w;
+  font-size: 16px;
+  text-transform: uppercase;
 }

@@ -24,16 +24,40 @@ form {
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 20px;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
-  border: 3px solid #fff; }
+  border: 3px solid #070055; }
 
 form input {
   width: 350px;
-  height: 30px;
+  height: 40px;
   margin-bottom: 15px;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 18px;
   border-radius: 10px;
-  border: none; }
+  border: none;
+  background: black; }
+
+input::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase; }
+
+input:-ms-input-placeholder {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase; }
+
+input::-ms-input-placeholder {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase; }
+
+input::placeholder {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase; }
 
 .page-header {
   min-height: 730px;
