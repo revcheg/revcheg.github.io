@@ -345,3 +345,42 @@ form p {
   margin-top: 120px;
   height: 150px;
   background: url("../img/coin.png") no-repeat top; }
+
+.coin {
+  min-height: 140px;
+  background: url("../img/bit.png") no-repeat center;
+  background-size: cover; }
+
+.page-footer {
+  min-height: 500px;
+  background: #0f0f0f; }
+
+.page-footer__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 65px; }
+
+.page-footer__column b {
+  color: #fff;
+  text-transform: uppercase; }
+
+.page-footer__column ul {
+  padding: 0;
+  list-style: none; }
+
+.page-footer__column a {
+  color: #949494;
+  text-decoration: none; }
+
+.page-footer__column li {
+  padding-bottom: 15px; }
+
+.page-footer__select {
+  padding: 5px;
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 5px; }
