@@ -133,10 +133,8 @@ form p {
 @media only screen and (max-width: 320px) {
   .page-header__form {
     margin-top: 30px; }
-  form {
-    padding: 20px 10px; }
   input {
-    width: 60%;
+    width: 85%;
     height: 30px;
     margin-bottom: 15px;
     padding: 0 20px;
