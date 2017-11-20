@@ -1,0 +1,40 @@
+.crypto {
+  min-height: 635px;
+  background: #000 url("../img/crypto-bg.png") no-repeat center;
+  background-size: cover;
+  
+  & h1 {
+    padding-top: 90px;
+    margin-top: 0;
+    color: $w;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  & p {
+    align-self: flex-end;
+    width: 75%;
+    color: $w;
+    font-size: 25px;
+    text-align: right;
+    text-transform: uppercase;
+  }
+  
+  & a {
+    align-self: flex-end;
+    color: #000;
+    background: #00ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+.container--crypto {
+  width: 820px;
+}
+
+.crypto__flex {
+  display: flex;
+  flex-direction: column;
+}
