@@ -24,3 +24,21 @@
   margin-top: 20px;
   font-size: 25px;
 }
+
+// Media
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .trade {
+    min-height: 380px;
+  }
+  
+  .trade__flex {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .trade__left-column,
+  .trade__right-column {
+    text-align: center;
+  }
+}

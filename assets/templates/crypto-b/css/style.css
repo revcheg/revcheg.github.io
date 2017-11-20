@@ -114,13 +114,24 @@ select {
 form p {
   text-align: center; }
 
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .page-header__form {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 30px; } }
+
 .page-header {
   min-height: 730px;
-  background: url("../img/header.jpg") top;
+  background: #070055 url("../img/header.jpg") top;
   background-size: cover; }
 
 .page-header__logo {
   margin-top: 20px; }
+
+.page-header__logo-s {
+  display: none; }
 
 .page-header__flex {
   display: -webkit-box;
@@ -136,6 +147,9 @@ form p {
 .page-header__nav {
   min-height: 80px;
   background: #070055; }
+
+.page-header__main-nav--s {
+  display: none; }
 
 .page-header__nav-list {
   display: -webkit-box;
@@ -166,6 +180,32 @@ form p {
   background: #fff; }
 
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .page-header__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .container {
+    width: 95%; }
+  .page-header {
+    min-height: 760px; }
+  .page-header__logo {
+    margin-top: 20px; }
+  .page-header__logo-b {
+    display: none; }
+  .page-header__logo-s {
+    display: block; }
+  .page-header__nav {
+    min-height: 125px; }
+  .page-header__main-nav {
+    display: none; }
+  .page-header__main-nav--s {
+    display: block; } }
+
 /* Smartphones (горизонтальная) ----------- */
 @media only screen and (min-width: 321px) {
   /* стили */ }
@@ -194,14 +234,7 @@ form p {
   /* стили */ }
 
 /* Настольные компьютеры и ноутбуки ----------- */
-@media only screen and (min-width: 1224px) {
-  /* стили */ }
-
 /* Большие экраны ----------- */
-@media only screen and (min-width: 1824px) {
-  body {
-    color: red; } }
-
 /* iPhone 4 ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   /* стили */ }
@@ -276,6 +309,22 @@ form p {
 .trade__right-column {
   margin-top: 20px;
   font-size: 25px; }
+
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .trade {
+    min-height: 380px; }
+  .trade__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .trade__left-column,
+  .trade__right-column {
+    text-align: center; } }
 
 .edge {
   min-height: 245px; }

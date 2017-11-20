@@ -1,11 +1,15 @@
 .page-header {
   min-height: 730px;
-  background: url("../img/header.jpg") top;
+  background: $b url("../img/header.jpg") top;
   background-size: cover;
 }
 
 .page-header__logo {
   margin-top: 20px;
+}
+
+.page-header__logo-s {
+  display: none;
 }
 
 .page-header__flex {
@@ -20,6 +24,10 @@
 .page-header__nav {
   min-height: 80px;
   background: $b;
+}
+
+.page-header__main-nav--s {
+  display: none;
 }
 
 .page-header__nav-list {
@@ -51,8 +59,44 @@
 
 // Media
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
-@media only screen and (min-width : 320px) and (max-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 480px) {  
+  .page-header__flex {
+    flex-direction: column;
+    align-items: center;
+  }
   
+  .container {
+    width: 95%;
+  }
+  
+  .page-header {
+    min-height: 760px;
+  }
+  
+  // Menu
+  .page-header__logo {
+    margin-top: 20px;
+  }
+  
+  .page-header__logo-b {
+    display: none;
+  }
+  
+  .page-header__logo-s {
+    display: block;
+  }
+  
+  .page-header__nav {
+    min-height: 125px;
+  }
+  
+  .page-header__main-nav {
+    display: none;
+  }
+  
+  .page-header__main-nav--s {
+    display: block;
+  }
 }
 
 /* Smartphones (горизонтальная) ----------- */
@@ -89,15 +133,13 @@
 }
 
 /* Настольные компьютеры и ноутбуки ----------- */
-@media only screen  and (min-width: 1224px) {
-/* стили */
+@media only screen and (min-width: 1224px) {
+  
 }
 
 /* Большие экраны ----------- */
-@media only screen  and (min-width: 1824px) {
-  body {
-    color: red;
-  }
+@media only screen and (min-width: 1824px) {
+  // больше 1800
 }
 
 /* iPhone 4 ----------- */

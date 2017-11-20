@@ -83,3 +83,12 @@ select {
 form p {
   text-align: center;
 }
+
+// Media
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {  
+  .page-header__form {
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
