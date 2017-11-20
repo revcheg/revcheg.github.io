@@ -104,7 +104,44 @@
   }
 }
 
+/* Smartphones (горизонтальная) ----------- */
+@media only screen and (min-width: 321px) {}
 
+/* Smartphones (вертикальная) ----------- */
+@media only screen and (max-width: 320px) {
+  .crypto {
+    min-height: 550px;
+    
+    &::after {
+      display: none;
+    }
+    
+    & h1 {
+      margin-top: 40px;
+      color: $w;
+      font-size: 40px;
+      background: transparent;
+    }
+    
+    & p {
+      align-self: center;
+      width: 100%;
+      font-size: 20px;
+      text-align: center;
+    }
+    
+    & a {
+      align-self: center;
+      margin-top: 50px;
+      color: #000;
+      font-size: 18px;
+    }
+  }
+  
+  .container--crypto {
+    width: 95%;
+  }
+}
 
 
 

@@ -91,4 +91,82 @@ form p {
     justify-content: center;
     margin-top: 30px;
   }
+  
+  input {
+    width: 85%;
+    height: 30px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    font-size: 16px;
+  }
+}
+
+/* Smartphones (горизонтальная) ----------- */
+@media only screen and (min-width: 321px) {}
+
+/* Smartphones (вертикальная) ----------- */
+@media only screen and (max-width: 320px) {
+  .page-header__form {
+    margin-top: 30px;
+  }
+  
+  form {
+    padding: 20px 10px;
+  }
+  
+  input {
+    width: 60%;
+    height: 30px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    font-size: 16px;
+  }
+  
+  input::placeholder {
+    font-size: 13px;
+  }
+  
+  input[type="checkbox"] {
+    width: 15px;
+  }
+  
+  input[type="submit"] {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    color: $b;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid $b;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    color: $w;
+    background: $b;
+    border: 2px solid $b;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  select {
+    height: 40px;
+    padding: 1px 20px;
+    margin-bottom: 20px;
+    color: $w;
+    font-size: 14px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    outline: none;
+  }
+  
+  form p {
+    text-align: center;
+  }
 }

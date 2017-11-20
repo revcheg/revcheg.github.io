@@ -29,12 +29,49 @@
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (min-width : 320px) and (max-width : 480px) {
   .trade {
-    min-height: 380px;
+    min-height: 220px;
   }
   
   .trade__flex {
     display: flex;
     flex-direction: column;
+  }
+  
+  .trade__left-column {
+    font-size: 20px;
+  }
+  
+  .trade__right-column {
+    font-size: 16px;
+  }
+  
+  .trade__left-column,
+  .trade__right-column {
+    text-align: center;
+  }
+}
+
+/* Smartphones (горизонтальная) ----------- */
+@media only screen and (min-width: 321px) {}
+
+/* Smartphones (вертикальная) ----------- */
+@media only screen and (max-width: 320px) {
+  .trade {
+    min-height: 340px;
+  }
+  
+  .trade__flex {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .trade__left-column {
+    font-size: 30px;
+  }
+  
+  .trade__right-column {
+    font-size: 20px;
+    font-weight: normal;
   }
   
   .trade__left-column,

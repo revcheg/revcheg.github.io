@@ -17,3 +17,13 @@
     display: none;
   }
 }
+
+/* Smartphones (горизонтальная) ----------- */
+@media only screen and (min-width: 321px) {}
+
+/* Smartphones (вертикальная) ----------- */
+@media only screen and (max-width: 320px) {
+  .edge {
+    display: none;
+  }
+}
