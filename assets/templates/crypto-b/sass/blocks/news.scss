@@ -1,4 +1,44 @@
 .news {
-  min-height: 600px;
+  min-height: 670px;
+  color: $w;
   background: #00aeef;
+  
+  & b {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  & a {
+    padding: 1px 40px;
+    color: $w;
+    font-size: 20px;
+    font-weight: bold;
+    background: $b;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+    
+    &:hover {
+      color: $b;
+      background: $w;
+    }
+  }
+}
+
+.news__flex {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+.news__left-column,
+.news__middle-column,
+.news__right-column {
+  width: 30%;
+}
+
+.news__left-column-first,
+.news__middle-column-first {
+  margin-bottom: 50px;
 }

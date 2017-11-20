@@ -204,5 +204,41 @@ form p {
   margin-top: 80px; }
 
 .news {
-  min-height: 600px;
+  min-height: 670px;
+  color: #fff;
   background: #00aeef; }
+  .news b {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold; }
+  .news a {
+    padding: 1px 40px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background: #070055;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .news a:hover {
+      color: #070055;
+      background: #fff; }
+
+.news__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 60px; }
+
+.news__left-column,
+.news__middle-column,
+.news__right-column {
+  width: 30%; }
+
+.news__left-column-first,
+.news__middle-column-first {
+  margin-bottom: 50px; }
