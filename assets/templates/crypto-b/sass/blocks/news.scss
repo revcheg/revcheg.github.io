@@ -42,3 +42,42 @@
 .news__middle-column-first {
   margin-bottom: 50px;
 }
+
+// Media
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .news {
+    min-height: 1530px;
+  }
+  
+  .news__flex {
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  
+  .news__left-column,
+  .news__middle-column,
+  .news__right-column {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .news__left-column-second,
+  .news__middle-column-second {
+    margin-bottom: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

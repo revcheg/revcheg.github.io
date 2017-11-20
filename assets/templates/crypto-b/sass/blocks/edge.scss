@@ -9,3 +9,11 @@
   background: url("../img/edge.png") no-repeat top;
   margin-top: 80px;
 }
+
+// Media
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .edge {
+    display: none;
+  }
+}

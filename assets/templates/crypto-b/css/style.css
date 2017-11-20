@@ -340,6 +340,11 @@ form p {
   background: url("../img/edge.png") no-repeat top;
   margin-top: 80px; }
 
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .edge {
+    display: none; } }
+
 .news {
   min-height: 670px;
   color: #fff;
@@ -379,6 +384,25 @@ form p {
 .news__left-column-first,
 .news__middle-column-first {
   margin-bottom: 50px; }
+
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .news {
+    min-height: 1530px; }
+  .news__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 40px; }
+  .news__left-column,
+  .news__middle-column,
+  .news__right-column {
+    width: 100%;
+    text-align: center; }
+  .news__left-column-second,
+  .news__middle-column-second {
+    margin-bottom: 50px; } }
 
 .crypto {
   position: relative;
@@ -444,6 +468,32 @@ form p {
   -ms-flex-direction: column;
   flex-direction: column; }
 
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .crypto {
+    min-height: 550px; }
+    .crypto::after {
+      display: none; }
+    .crypto h1 {
+      margin-top: 40px;
+      color: #fff;
+      font-size: 40px;
+      background: transparent; }
+    .crypto p {
+      -ms-flex-item-align: center;
+      align-self: center;
+      width: 100%;
+      font-size: 20px;
+      text-align: center; }
+    .crypto a {
+      -ms-flex-item-align: center;
+      align-self: center;
+      margin-top: 50px;
+      color: #000;
+      font-size: 25px; }
+  .container--crypto {
+    width: 95%; } }
+
 .trading {
   min-height: 600px;
   background: url("../img/trading-bg.png") no-repeat top;
@@ -482,6 +532,35 @@ form p {
   margin-top: 120px;
   height: 150px;
   background: url("../img/coin.png") no-repeat top; }
+
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .trading {
+    min-height: 520px;
+    background: #00aeef; }
+    .trading h2 {
+      margin-top: 40px;
+      margin-bottom: 0; }
+    .trading p {
+      width: 100%;
+      font-size: 20px; }
+  .trading__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .container--trading {
+    width: 95%; }
+  .trading__coin {
+    width: 95%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: url("../img/coin-s.png") no-repeat center;
+    background-size: contain; } }
 
 .coin {
   min-height: 140px;
