@@ -55,6 +55,10 @@
     padding-top: 40px;
   }
   
+  .news__right-column {
+    margin-bottom: 50px;
+  }
+  
   .news__left-column,
   .news__middle-column,
   .news__right-column {
@@ -102,9 +106,16 @@
   }
 }
 
-
-
-
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .news {
+    min-height: 0;
+  }
+  
+  .news__flex {
+    padding-bottom: 70px;
+  }
+}
 
 
 

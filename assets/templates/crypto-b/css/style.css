@@ -550,6 +550,8 @@ form p {
     -ms-flex-direction: column;
     flex-direction: column;
     padding-top: 40px; }
+  .news__right-column {
+    margin-bottom: 50px; }
   .news__left-column,
   .news__middle-column,
   .news__right-column {
@@ -583,6 +585,13 @@ form p {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .news {
     min-height: 720px; } }
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .news {
+    min-height: 0; }
+  .news__flex {
+    padding-bottom: 70px; } }
 
 .crypto {
   position: relative;
@@ -708,7 +717,9 @@ form p {
   .crypto::after {
     display: none; }
   .crypto h1 {
-    margin-top: 50px; } }
+    margin-top: 50px; }
+  .crypto a {
+    margin-bottom: 70px; } }
 
 .trading {
   min-height: 600px;
@@ -824,6 +835,13 @@ form p {
     margin: 0 auto;
     background: url("../img/coin.png") no-repeat bottom;
     background-size: contain; } }
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .tading {
+    min-height: 0; }
+  .trading__coin {
+    margin-bottom: 50px; } }
 
 .coin {
   min-height: 140px;
