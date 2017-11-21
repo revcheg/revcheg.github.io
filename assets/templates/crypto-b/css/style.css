@@ -303,8 +303,6 @@ form p {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container {
     width: 95%; }
-  body {
-    color: red; }
   .page-header__nav-list {
     width: 100%;
     -webkit-box-pack: center;
@@ -493,6 +491,14 @@ form p {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .edge__flex {
     background-size: contain; } }
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .edge {
+    min-height: 170px; }
+  .edge__flex {
+    margin-top: 40px;
+    min-height: 120px; } }
 
 .news {
   min-height: 670px;

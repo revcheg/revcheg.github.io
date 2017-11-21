@@ -34,3 +34,15 @@
     background-size: contain;
   }
 }
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .edge {
+    min-height: 170px;
+  }
+  
+  .edge__flex {
+    margin-top: 40px;
+    min-height: 120px;
+  }
+}
