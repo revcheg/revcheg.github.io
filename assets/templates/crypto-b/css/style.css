@@ -336,8 +336,8 @@ form p {
 
 /* Большие экраны ----------- */
 @media only screen and (min-width: 1824px) {
-  body {
-    color: green; } }
+  .container {
+    width: 70%; } }
 
 /* iPhone 4 ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
@@ -737,7 +737,7 @@ form p {
 /* Настольные компьютеры и ноутбуки ----------- */
 @media only screen and (min-width: 1224px) {
   .crypto::after {
-    left: 0; } }
+    display: none; } }
 
 .trading {
   min-height: 600px;
@@ -860,6 +860,13 @@ form p {
     min-height: 0; }
   .trading__coin {
     margin-bottom: 50px; } }
+
+/* Настольные компьютеры и ноутбуки ----------- */
+@media only screen and (min-width: 1224px) {
+  .crypto::after {
+    display: none; }
+  .trading {
+    background: #00aeef; } }
 
 .coin {
   min-height: 140px;

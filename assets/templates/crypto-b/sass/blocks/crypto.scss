@@ -166,7 +166,7 @@
 /* Настольные компьютеры и ноутбуки ----------- */
 @media only screen and (min-width: 1224px) {
   .crypto::after {
-    left: 0;
+    display: none;
   }
 }
 

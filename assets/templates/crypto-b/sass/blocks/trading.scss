@@ -149,7 +149,16 @@
   }
 }
 
-
+/* Настольные компьютеры и ноутбуки ----------- */
+@media only screen and (min-width: 1224px) {
+  .crypto::after {
+    display: none;
+  }
+  
+  .trading {
+    background: #00aeef;
+  }
+}
 
 
 
