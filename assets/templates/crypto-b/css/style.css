@@ -868,6 +868,13 @@ form p {
   .trading {
     background: #00aeef; } }
 
+@media only screen and (min-width: 1824px) {
+  .crypto::after {
+    display: block; }
+  .trading {
+    background: url("../img/trading-bg.png") no-repeat top;
+    background-size: cover; } }
+
 .coin {
   min-height: 140px;
   background: url("../img/bit.png") no-repeat center;

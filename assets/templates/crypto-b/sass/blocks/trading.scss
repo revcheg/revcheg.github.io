@@ -160,6 +160,16 @@
   }
 }
 
+@media only screen and (min-width: 1824px) {
+  .crypto::after {
+    display: block;
+  }
+  
+  .trading {
+    background: url("../img/trading-bg.png") no-repeat top;
+    background-size: cover;
+  }
+}
 
 
 
