@@ -115,7 +115,28 @@
   }
 }
 
-
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container--trading {
+    width: 95%;
+  }
+  
+  .trading {
+    min-height: 550px;
+    background: $w;
+    
+    & p {
+      color: #00aeef;
+    }
+  }
+  
+  .trading__coin {
+    width: 95%;
+    margin: 0 auto;
+    background: url("../img/coin.png") no-repeat bottom;
+    background-size: contain;
+  }
+}
 
 
 

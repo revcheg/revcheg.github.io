@@ -99,13 +99,18 @@ form p {
     padding: 0 20px;
     font-size: 16px;
   }
+  
+  select {
+    height: 35px;
+    padding: 0 10px;
+  }
 }
 
 /* Smartphones (горизонтальная) ----------- */
 @media only screen and (min-width: 321px) {}
 
 /* Smartphones (вертикальная) ----------- */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 320px) {  
   .page-header__form {
     margin-top: 30px;
   }
@@ -126,43 +131,22 @@ form p {
     width: 15px;
   }
   
-  input[type="submit"] {
-    margin: 0 auto;
-    margin-bottom: 10px;
-    padding-left: 8px;
-    color: $b;
-    font-size: 18px;
-    text-transform: uppercase;
-    background: rgba(255, 255, 255, 0.6);
-    border: 2px solid $b;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  input[type="submit"]:hover {
-    color: $w;
-    background: $b;
-    border: 2px solid $b;
-  }
-  
   label {
     font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
   }
   
   select {
-    height: 40px;
+    height: 35px;
     padding: 1px 20px;
-    margin-bottom: 20px;
-    color: $w;
     font-size: 14px;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.9);
-    outline: none;
   }
   
   form p {
     text-align: center;
   }
+}
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  
 }

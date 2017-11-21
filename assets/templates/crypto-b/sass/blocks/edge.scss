@@ -3,9 +3,9 @@
 }
 
 .edge__flex {
-  min-height: 160px;
+  min-height: 200px;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   background: url("../img/edge.png") no-repeat top;
   margin-top: 80px;
 }
@@ -25,5 +25,12 @@
 @media only screen and (max-width: 320px) {
   .edge {
     display: none;
+  }
+}
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .edge__flex {
+    background-size: contain;
   }
 }

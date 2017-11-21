@@ -5,7 +5,7 @@ body {
   font-family: 'PT Sans', sans-serif; }
 
 .container {
-  width: 1200px;
+  width: 65%;
   margin: 0 auto; }
 
 .page-header__form {
@@ -126,7 +126,10 @@ form p {
     height: 30px;
     margin-bottom: 15px;
     padding: 0 20px;
-    font-size: 16px; } }
+    font-size: 16px; }
+  select {
+    height: 35px;
+    padding: 0 10px; } }
 
 /* Smartphones (горизонтальная) ----------- */
 /* Smartphones (вертикальная) ----------- */
@@ -149,38 +152,16 @@ form p {
     font-size: 13px; }
   input[type="checkbox"] {
     width: 15px; }
-  input[type="submit"] {
-    margin: 0 auto;
-    margin-bottom: 10px;
-    padding-left: 8px;
-    color: #070055;
-    font-size: 18px;
-    text-transform: uppercase;
-    background: rgba(255, 255, 255, 0.6);
-    border: 2px solid #070055;
-    cursor: pointer;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-  input[type="submit"]:hover {
-    color: #fff;
-    background: #070055;
-    border: 2px solid #070055; }
   label {
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer; }
+    font-size: 16px; }
   select {
-    height: 40px;
+    height: 35px;
     padding: 1px 20px;
-    margin-bottom: 20px;
-    color: #fff;
-    font-size: 14px;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.9);
-    outline: none; }
+    font-size: 14px; }
   form p {
     text-align: center; } }
 
+/* iPads (вертикальная и горизонтальная) ----------- */
 .page-header {
   min-height: 730px;
   background: #070055 url("../img/header.jpg") top;
@@ -320,7 +301,20 @@ form p {
 
 /* iPads (вертикальная и горизонтальная) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* стили */ }
+  .container {
+    width: 95%; }
+  body {
+    color: red; }
+  .page-header__nav-list {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .page-header__item {
+    margin-left: 10px; }
+  .page-header__item a {
+    padding: 5px 10px;
+    font-size: 16px; } }
 
 /* iPads (горизонтальная) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -456,17 +450,31 @@ form p {
   .trade__right-column {
     text-align: center; } }
 
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .trade {
+    min-height: 220px; }
+  .trade .container,
+  .trade__flex {
+    min-height: 220px; }
+  .trade__left-column {
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin-top: 0; }
+  .trade__right-column {
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin-top: 0;
+    font-size: 20px; } }
+
 .edge {
   min-height: 245px; }
 
 .edge__flex {
-  min-height: 160px;
+  min-height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   background: url("../img/edge.png") no-repeat top;
   margin-top: 80px; }
 
@@ -480,6 +488,11 @@ form p {
 @media only screen and (max-width: 320px) {
   .edge {
     display: none; } }
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .edge__flex {
+    background-size: contain; } }
 
 .news {
   min-height: 670px;
@@ -559,6 +572,11 @@ form p {
   .news__left-column-second,
   .news__middle-column-second {
     margin-bottom: 50px; } }
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .news {
+    min-height: 720px; } }
 
 .crypto {
   position: relative;
@@ -677,6 +695,15 @@ form p {
   .container--crypto {
     width: 95%; } }
 
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container--crypto {
+    width: 95%; }
+  .crypto::after {
+    display: none; }
+  .crypto h1 {
+    margin-top: 50px; } }
+
 .trading {
   min-height: 600px;
   background: url("../img/trading-bg.png") no-repeat top;
@@ -775,6 +802,21 @@ form p {
     margin: 0 auto;
     margin-top: 30px;
     background: url("../img/coin-s.png") no-repeat center;
+    background-size: contain; } }
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container--trading {
+    width: 95%; }
+  .trading {
+    min-height: 550px;
+    background: #fff; }
+    .trading p {
+      color: #00aeef; }
+  .trading__coin {
+    width: 95%;
+    margin: 0 auto;
+    background: url("../img/coin.png") no-repeat bottom;
     background-size: contain; } }
 
 .coin {
