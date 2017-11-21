@@ -211,12 +211,16 @@
 
 /* Настольные компьютеры и ноутбуки ----------- */
 @media only screen and (min-width: 1224px) {
-  
+  .container {
+    width: 85%;
+  }
 }
 
 /* Большие экраны ----------- */
 @media only screen and (min-width: 1824px) {
-  // больше 1800
+  body {
+    color: green;
+  }
 }
 
 /* iPhone 4 ----------- */

@@ -330,7 +330,15 @@ form p {
   /* стили */ }
 
 /* Настольные компьютеры и ноутбуки ----------- */
+@media only screen and (min-width: 1224px) {
+  .container {
+    width: 85%; } }
+
 /* Большие экраны ----------- */
+@media only screen and (min-width: 1824px) {
+  body {
+    color: green; } }
+
 /* iPhone 4 ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   /* стили */ }
@@ -593,6 +601,11 @@ form p {
   .news__flex {
     padding-bottom: 70px; } }
 
+/* Настольные компьютеры и ноутбуки ----------- */
+@media only screen and (min-width: 1224px) {
+  .news__flex {
+    padding-bottom: 70px; } }
+
 .crypto {
   position: relative;
   min-height: 635px;
@@ -720,6 +733,11 @@ form p {
     margin-top: 50px; }
   .crypto a {
     margin-bottom: 70px; } }
+
+/* Настольные компьютеры и ноутбуки ----------- */
+@media only screen and (min-width: 1224px) {
+  .crypto::after {
+    left: 0; } }
 
 .trading {
   min-height: 600px;
