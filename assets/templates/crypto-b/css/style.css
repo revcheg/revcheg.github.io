@@ -877,8 +877,6 @@ form p {
 
 /* iPads (вертикальная и горизонтальная) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .tading {
-    min-height: 0; }
   .trading__coin {
     margin-bottom: 50px; } }
 

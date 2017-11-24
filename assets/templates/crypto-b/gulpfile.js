@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var livereload = require('gulp-livereload');
-var plumber = require("gulp-plumber");
+var plumber = require('gulp-plumber');
 
 gulp.task('default', ['sass', 'watch']);
 
