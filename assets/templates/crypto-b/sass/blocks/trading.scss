@@ -69,6 +69,7 @@
     & h2 {
       margin-top: 40px;
       margin-bottom: 0;
+      text-align: center;
     }
     
     & p {
@@ -90,7 +91,7 @@
   .trading__coin {
     min-height: 100px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 40px;
     background: $w url("../img/coin.png") no-repeat center;
     background-size: contain;
   }
@@ -172,6 +173,12 @@
   .trading {
     min-height: 500px;
     background: #00aeef;
+    
+    & h2,
+    & p {
+      align-self: center;
+      text-align: center;
+    }
   }
   
   .trading__coin {

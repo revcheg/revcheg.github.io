@@ -732,7 +732,13 @@ form p {
     display: none; }
   .crypto h1 {
     margin-top: 50px; }
+  .crypto p {
+    -ms-flex-item-align: center;
+    align-self: center;
+    text-align: center; }
   .crypto a {
+    -ms-flex-item-align: center;
+    align-self: center;
     margin-bottom: 70px; } }
 
 /* Настольные компьютеры и ноутбуки ----------- */
@@ -808,7 +814,8 @@ form p {
     background: #00aeef; }
     .trading h2 {
       margin-top: 40px;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      text-align: center; }
     .trading p {
       text-align: center;
       width: 100%;
@@ -823,7 +830,7 @@ form p {
   .trading__coin {
     min-height: 100px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 40px;
     background: #fff url("../img/coin.png") no-repeat center;
     background-size: contain; }
   .trading__coin::before {
@@ -888,6 +895,11 @@ form p {
   .trading {
     min-height: 500px;
     background: #00aeef; }
+    .trading h2,
+    .trading p {
+      -ms-flex-item-align: center;
+      align-self: center;
+      text-align: center; }
   .trading__coin {
     min-height: 150px;
     width: 100%;
