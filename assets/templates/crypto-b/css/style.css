@@ -886,20 +886,29 @@ form p {
   .container--trading {
     width: 95%; }
   .trading {
-    min-height: 550px;
+    min-height: 500px;
     background: #00aeef; }
-    .trading p {
-      color: #00aeef; }
   .trading__coin {
-    width: 95%;
-    margin: 0 auto;
-    background: url("../img/coin.png") no-repeat bottom;
-    background-size: contain; } }
+    min-height: 150px;
+    width: 100%;
+    margin-top: 80px;
+    background: #fff url("../img/coin.png") no-repeat bottom;
+    background-size: contain; }
+  .trading__coin::before {
+    right: 0;
+    top: -80px;
+    height: 80px;
+    background: -webkit-gradient(linear, right top, left bottom, color-stop(50%, transparent), color-stop(50.7%, #fff));
+    background: linear-gradient(to bottom left, transparent 50%, #fff 50.7%); }
+  .trading__coin::after {
+    right: 0;
+    top: -80px;
+    height: 80px;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50.7%, #fff));
+    background: linear-gradient(to bottom right, transparent 50%, #fff 50.7%); } }
 
 /* iPads (вертикальная и горизонтальная) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .tading {
-    min-height: 0; }
   .trading__coin {
     margin-bottom: 50px; } }
 
@@ -908,7 +917,24 @@ form p {
   .crypto::after {
     display: none; }
   .trading {
-    background: #00aeef; } }
+    min-height: 600px;
+    background: #00aeef; }
+  .trading__coin {
+    min-height: 200px;
+    margin-top: 100px;
+    background: #fff url("../img/coin.png") no-repeat top; }
+  .trading__coin::before {
+    right: 0;
+    top: -60px;
+    height: 60px;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50.7%, #fff));
+    background: linear-gradient(to bottom right, transparent 50%, #fff 50.7%); }
+  .trading__coin::after {
+    right: 0;
+    top: -60px;
+    height: 60px;
+    background: -webkit-gradient(linear, right top, left bottom, color-stop(50%, transparent), color-stop(50.7%, #fff));
+    background: linear-gradient(to bottom left, transparent 50%, #fff 50.7%); } }
 
 @media only screen and (min-width: 1824px) {
   .crypto::after {

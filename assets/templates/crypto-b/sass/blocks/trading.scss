@@ -170,28 +170,35 @@
   }
   
   .trading {
-    min-height: 550px;
+    min-height: 500px;
     background: #00aeef;
-    
-    & p {
-      color: #00aeef;
-    }
   }
   
   .trading__coin {
-    width: 95%;
-    margin: 0 auto;
-    background: url("../img/coin.png") no-repeat bottom;
+    min-height: 150px;
+    width: 100%;
+    margin-top: 80px;
+    background: $w url("../img/coin.png") no-repeat bottom;
     background-size: contain;
+  }
+  
+  .trading__coin::before {
+    right: 0;
+    top: -80px;
+    height: 80px;
+    background: linear-gradient(to bottom left,transparent 50%, $w 50.7%);
+  }
+  
+  .trading__coin::after {
+    right: 0;
+    top: -80px;
+    height: 80px;
+    background: linear-gradient(to bottom right,transparent 50%, $w 50.7%);
   }
 }
 
 /* iPads (вертикальная и горизонтальная) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .tading {
-    min-height: 0;
-  }
-  
+@media only screen and (min-width: 768px) and (max-width: 1024px) {  
   .trading__coin {
     margin-bottom: 50px;
   }
@@ -204,7 +211,28 @@
   }
   
   .trading {
+    min-height: 600px;
     background: #00aeef;
+  }
+  
+  .trading__coin {
+    min-height: 200px;
+    margin-top: 100px;
+    background: $w url("../img/coin.png") no-repeat top;
+  }
+  
+  .trading__coin::before {
+    right: 0;
+    top: -60px;
+    height: 60px;
+    background: linear-gradient(to bottom right,transparent 50%, $w 50.7%);
+  }
+  
+  .trading__coin::after {
+    right: 0;
+    top: -60px;
+    height: 60px;
+    background: linear-gradient(to bottom left,transparent 50%, $w 50.7%);
   }
 }
 
