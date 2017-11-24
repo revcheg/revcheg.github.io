@@ -620,7 +620,8 @@ form p {
     left: 100px;
     position: absolute;
     background: url("../img/phone.png") no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    z-index: 2; }
   .crypto h1 {
     padding: 10px 0;
     margin-top: 90px;
@@ -741,8 +742,7 @@ form p {
 
 .trading {
   min-height: 600px;
-  background: url("../img/trading-bg.png") no-repeat top;
-  background-size: cover; }
+  background: #00aeef; }
   .trading h2 {
     margin-top: 60px;
     font-size: 40px;
@@ -774,9 +774,32 @@ form p {
   width: 980px; }
 
 .trading__coin {
+  position: relative;
+  min-height: 300px;
   margin-top: 120px;
-  height: 150px;
-  background: url("../img/coin.png") no-repeat top; }
+  background: url("../img/coin.png") no-repeat center;
+  background-size: cover;
+  z-index: 1; }
+
+.trading__coin::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -100px;
+  width: 50%;
+  height: 100px;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50.7%, #fff));
+  background: linear-gradient(to bottom right, transparent 50%, #fff 50.7%); }
+
+.trading__coin::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -100px;
+  width: 50%;
+  height: 100px;
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(50%, transparent), color-stop(50.7%, #fff));
+  background: linear-gradient(to bottom left, transparent 50%, #fff 50.7%); }
 
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -787,16 +810,14 @@ form p {
       margin-top: 40px;
       margin-bottom: 0; }
     .trading p {
+      text-align: center;
       width: 100%;
       font-size: 20px; }
   .trading__flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    flex-direction: column; }
   .container--trading {
     width: 95%; }
   .trading__coin {
@@ -804,7 +825,7 @@ form p {
     height: 100px;
     margin: 0 auto;
     margin-top: 30px;
-    background: url("../img/coin-s.png") no-repeat center;
+    background: #fff url("../img/coin-s.png") no-repeat center;
     background-size: contain; } }
 
 /* Smartphones (горизонтальная) ----------- */
@@ -871,9 +892,8 @@ form p {
 @media only screen and (min-width: 1824px) {
   .crypto::after {
     display: block; }
-  .trading {
-    background: url("../img/trading-bg.png") no-repeat top;
-    background-size: cover; } }
+  .trading__coin {
+    background: #fff url("../img/coin.png") no-repeat center; } }
 
 .coin {
   min-height: 140px;
