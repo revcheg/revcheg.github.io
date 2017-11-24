@@ -693,7 +693,7 @@ form p {
       align-self: center;
       margin-top: 50px;
       color: #000;
-      font-size: 25px; }
+      font-size: 20px; }
   .container--crypto {
     width: 95%; } }
 
@@ -887,7 +887,7 @@ form p {
     width: 95%; }
   .trading {
     min-height: 550px;
-    background: #fff; }
+    background: #00aeef; }
     .trading p {
       color: #00aeef; }
   .trading__coin {
