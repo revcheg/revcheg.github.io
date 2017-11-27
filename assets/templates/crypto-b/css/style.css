@@ -937,11 +937,30 @@ form p {
     flex-direction: column; }
   .container--trading {
     width: 95%; }
+  .coin__flex {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .coin__c-1,
+  .coin__c-2,
+  .coin__c-3,
+  .coin__c-7,
+  .coin__c-8,
+  .coin__c-9 {
+    display: none; }
+  .coin__c-4,
+  .coin__c-5,
+  .coin__c-6 {
+    -webkit-animation-name: coin;
+    animation-name: coin;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s; }
   .trading__coin {
-    min-height: 100px;
-    margin: 0 auto;
-    margin-top: 40px;
-    background-size: contain; }
+    min-height: 180px;
+    margin-top: 40px; }
   .trading__coin::before {
     top: -50px;
     height: 50px;
@@ -978,11 +997,34 @@ form p {
     align-items: center; }
   .container--trading {
     width: 95%; }
+  .coin__flex {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-bottom: 40px; }
+  .coin__c-1,
+  .coin__c-2,
+  .coin__c-3,
+  .coin__c-4,
+  .coin__c-6,
+  .coin__c-7,
+  .coin__c-8,
+  .coin__c-9 {
+    display: none; }
+  .coin__c-4,
+  .coin__c-5,
+  .coin__c-6 {
+    -webkit-animation-name: coin;
+    animation-name: coin;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s; }
   .trading__coin {
     min-height: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
-    background-size: contain; }
+    margin-top: 30px; }
   .trading__coin::before {
     right: 0;
     top: -25px;
@@ -1010,9 +1052,8 @@ form p {
       text-align: center; }
   .trading__coin {
     min-height: 150px;
-    width: 100%;
     margin-top: 80px;
-    background-size: contain; }
+    padding-top: 20px; }
   .trading__coin::before {
     right: 0;
     top: -80px;
