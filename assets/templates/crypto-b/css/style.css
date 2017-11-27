@@ -511,10 +511,41 @@ form p {
   background: url("../img/e-5.png") no-repeat top; }
 
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .edge__flex {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .edge__box {
+    margin-bottom: 30px;
+    font-size: 18px; } }
+
 /* Smartphones (горизонтальная) ----------- */
 /* Smartphones (вертикальная) ----------- */
+@media only screen and (max-width: 320px) {
+  .edge__flex {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .edge__box {
+    margin-bottom: 30px;
+    font-size: 18px; } }
+
 /* iPads (вертикальная и горизонтальная) ----------- */
 /* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 1224px) {
+  .edge__flex {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; } }
+
 .news {
   min-height: 670px;
   color: #fff;
