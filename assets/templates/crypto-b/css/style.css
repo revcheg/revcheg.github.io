@@ -481,33 +481,40 @@ form p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url("../img/edge.png") no-repeat top;
-  margin-top: 80px; }
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 40px; }
+
+.edge__box {
+  width: 190px;
+  padding-top: 120px;
+  color: #0054a6;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center; }
+
+.edge__box--e-1 {
+  background: url("../img/e-1.png") no-repeat top; }
+
+.edge__box--e-2 {
+  background: url("../img/e-2.png") no-repeat top; }
+
+.edge__box--e-3 {
+  background: url("../img/e-3.png") no-repeat top; }
+
+.edge__box--e-4 {
+  background: url("../img/e-4.png") no-repeat top; }
+
+.edge__box--e-5 {
+  background: url("../img/e-5.png") no-repeat top; }
 
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  .edge {
-    display: none; } }
-
 /* Smartphones (горизонтальная) ----------- */
 /* Smartphones (вертикальная) ----------- */
-@media only screen and (max-width: 320px) {
-  .edge {
-    display: none; } }
-
 /* iPads (вертикальная и горизонтальная) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .edge__flex {
-    background-size: contain; } }
-
 /* iPads (вертикальная и горизонтальная) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .edge {
-    min-height: 170px; }
-  .edge__flex {
-    margin-top: 40px;
-    min-height: 120px; } }
-
 .news {
   min-height: 670px;
   color: #fff;
