@@ -783,7 +783,7 @@ form p {
   position: relative;
   min-height: 300px;
   margin-top: 120px;
-  background: url("../img/coin.png") no-repeat center;
+  background: #fff;
   background-size: cover;
   z-index: 1; }
 
@@ -806,6 +806,116 @@ form p {
   height: 100px;
   background: -webkit-gradient(linear, right top, left bottom, color-stop(50%, transparent), color-stop(50.7%, #fff));
   background: linear-gradient(to bottom left, transparent 50%, #fff 50.7%); }
+
+.coin__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  padding-top: 25px; }
+
+.coin__c-1,
+.coin__c-2,
+.coin__c-3,
+.coin__c-4,
+.coin__c-5,
+.coin__c-6,
+.coin__c-7,
+.coin__c-8,
+.coin__c-9 {
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+
+.coin__c-1:hover,
+.coin__c-2:hover,
+.coin__c-3:hover,
+.coin__c-4:hover,
+.coin__c-5:hover,
+.coin__c-6:hover,
+.coin__c-7:hover,
+.coin__c-8:hover,
+.coin__c-9:hover {
+  -webkit-animation-name: coin;
+  animation-name: coin;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes coin {
+  0% {
+    -webkit-transform: rotate3d(0, 1, 0, 0deg);
+    transform: rotate3d(0, 1, 0, 0deg); }
+  50% {
+    -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    transform: rotate3d(0, 1, 0, 180deg); }
+  100% {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+    transform: rotate3d(0, 1, 0, 360deg); } }
+
+@keyframes coin {
+  0% {
+    -webkit-transform: rotate3d(0, 1, 0, 0deg);
+    transform: rotate3d(0, 1, 0, 0deg); }
+  50% {
+    -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    transform: rotate3d(0, 1, 0, 180deg); }
+  100% {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+    transform: rotate3d(0, 1, 0, 360deg); } }
+
+.coin__c-1 {
+  width: 58px;
+  height: 64px;
+  background: url("../img/c-1.png"); }
+
+.coin__c-2 {
+  width: 83px;
+  height: 83px;
+  background: url("../img/c-2.png"); }
+
+.coin__c-3 {
+  width: 89px;
+  height: 89px;
+  background: url("../img/c-3.png"); }
+
+.coin__c-4 {
+  width: 62px;
+  height: 99px;
+  background: url("../img/c-4.png"); }
+
+.coin__c-5 {
+  width: 123px;
+  height: 123px;
+  background: url("../img/c-5.png"); }
+
+.coin__c-6 {
+  width: 73px;
+  height: 79px;
+  background: url("../img/c-6.png"); }
+
+.coin__c-7 {
+  width: 84px;
+  height: 83px;
+  background: url("../img/c-7.png"); }
+
+.coin__c-8 {
+  width: 77px;
+  height: 80px;
+  background: url("../img/c-8.png"); }
+
+.coin__c-9 {
+  width: 57px;
+  height: 57px;
+  background: url("../img/c-9.png"); }
 
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -831,7 +941,6 @@ form p {
     min-height: 100px;
     margin: 0 auto;
     margin-top: 40px;
-    background: #fff url("../img/coin.png") no-repeat center;
     background-size: contain; }
   .trading__coin::before {
     top: -50px;
@@ -873,7 +982,6 @@ form p {
     min-height: 100px;
     margin: 0 auto;
     margin-top: 30px;
-    background: #fff url("../img/coin.png") no-repeat center;
     background-size: contain; }
   .trading__coin::before {
     right: 0;
@@ -904,7 +1012,6 @@ form p {
     min-height: 150px;
     width: 100%;
     margin-top: 80px;
-    background: #fff url("../img/coin.png") no-repeat bottom;
     background-size: contain; }
   .trading__coin::before {
     right: 0;
@@ -933,8 +1040,7 @@ form p {
     background: #00aeef; }
   .trading__coin {
     min-height: 200px;
-    margin-top: 100px;
-    background: #fff url("../img/coin.png") no-repeat top; }
+    margin-top: 100px; }
   .trading__coin::before {
     right: 0;
     top: -60px;
@@ -950,9 +1056,7 @@ form p {
 
 @media only screen and (min-width: 1824px) {
   .crypto::after {
-    display: block; }
-  .trading__coin {
-    background: #fff url("../img/coin.png") no-repeat center; } }
+    display: block; } }
 
 .coin {
   min-height: 140px;
