@@ -17,6 +17,8 @@
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 .edge__box--e-1 {
@@ -37,6 +39,10 @@
 
 .edge__box--e-5 {
   background: url("../img/e-5.png") no-repeat top;
+}
+
+.edge__box:hover {
+  transform: scale(1.1, 1.1);
 }
 // Media
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */

@@ -493,7 +493,10 @@ form p {
   font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer; }
 
 .edge__box--e-1 {
   background: url("../img/e-1.png") no-repeat top; }
@@ -509,6 +512,10 @@ form p {
 
 .edge__box--e-5 {
   background: url("../img/e-5.png") no-repeat top; }
+
+.edge__box:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1); }
 
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
