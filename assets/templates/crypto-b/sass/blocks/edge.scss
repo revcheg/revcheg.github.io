@@ -1,19 +1,20 @@
 .edge {
-  min-height: 245px;
+  min-height: 230px;
 }
 
 .edge__flex {
   min-height: 200px;
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .edge__box {
   width: 190px;
-  padding-top: 120px;
+  margin-bottom: 40px;
+  padding-top: 100px;
   color: #0054a6;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
