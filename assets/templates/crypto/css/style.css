@@ -99,7 +99,7 @@ body {
 .read__flex-container {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 80px;
+  /*padding-bottom: 130px;*/
 }
 
 .read {
@@ -110,7 +110,6 @@ body {
 .read__more {
   position: relative;
   width: 300px;
-  /*height: 300px;*/
   margin-top: 30px;
   font-style: italic;
 }
@@ -121,13 +120,14 @@ body {
 }
 
 .read__more p {
+  padding-bottom: 80px;
   font-size: 15px;
   font-weight: bold;
 }
 
 .read__more a {
   position: absolute;
-  bottom: -40px;
+  bottom: 40px;
   padding: 5px 40px;
   color: #fff;
   background: #000;

@@ -33,9 +33,9 @@
   .page-header__flex-container {
     justify-content: center;
   }
-
-  .adv {
-    min-height: 350px;
+  
+  .adv__flex-container {
+    padding-bottom: 40px;
   }
 
   .trading {
