@@ -100,10 +100,11 @@ body {
 .read__flex-container {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 80px;
 }
 
 .read {
-  min-height: 270px;
+  /*min-height: 270px;*/
   background: #bfa75f;
 }
 
@@ -155,7 +156,7 @@ body {
 
 .adv__box {
   width: 200px;
-  margin-top: 80px;
+  margin-top: 60px;
   padding-top: 120px;
   text-align: center;
 }
@@ -172,23 +173,23 @@ body {
 }
 
 .adv__box--img1 {
-  background: url("../img/adv1.png") no-repeat top;
+  background: url("../img/b.png") no-repeat top;
 }
 
 .adv__box--img2 {
-  background: url("../img/adv2.png") no-repeat top;
+  background: url("../img/c.png") no-repeat top;
 }
 
 .adv__box--img3 {
-  background: url("../img/adv3.png") no-repeat top;
+  background: url("../img/s.png") no-repeat top;
 }
 
 .adv__box--img4 {
-  background: url("../img/adv4.png") no-repeat top;
+  background: url("../img/l.png") no-repeat top;
 }
 
 .adv__box--img5 {
-  background: url("../img/adv5.png") no-repeat top;
+  background: url("../img/n.png") no-repeat top;
 }
 
 /*Четвертая секция*/
@@ -358,11 +359,11 @@ body {
 /*Футер*/
 .page-footer__flex-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .page-footer {
-  min-height: 500px;
+  min-height: 300px;
   background: #262626;
 }
 
@@ -383,6 +384,11 @@ body {
 .page-footer__column a {
   color: #949494;
   text-decoration: none;
+  transition: 0.2s;
+}
+
+.page-footer__column a:hover {
+  color: #bfa75f;
 }
 
 .page-footer__column li {
@@ -436,6 +442,11 @@ body {
   padding: 20px;
   border-radius: 5px;
   background: #fff;
+}
+
+.login--log {
+  width: 70%;
+  margin: auto;
 }
 
 .login h2 {
