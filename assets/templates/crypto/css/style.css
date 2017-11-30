@@ -569,7 +569,8 @@ form button:hover {
 /*Template*/
 .page-main {
   min-height: 1000px;
-  background: url('../img/tbg.png');
+  background: url('../img/tbg.png') no-repeat top;
+  background-size: cover;
 }
 
 .page-header--about {
