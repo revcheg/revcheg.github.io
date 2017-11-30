@@ -2,7 +2,6 @@
 body {
   min-width: 320px;
   margin: 0;
-  /*font-family: 'PT Sans', sans-serif;*/
   font-family: 'PT Sans', sans-serif;
 }
 
@@ -566,3 +565,41 @@ form button {
 form button:hover {
   color: #fff;
 }
+
+/*Template*/
+.page-main {
+  min-height: 1000px;
+  background: url('../img/tbg.png');
+}
+
+.page-header--about {
+  border-bottom: 5px solid #fff;
+}
+
+.page-footer--active {
+  color: #bfa75f !important;
+  cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
