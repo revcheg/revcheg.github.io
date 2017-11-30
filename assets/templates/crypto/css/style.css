@@ -577,7 +577,9 @@ form button:hover {
 
 .page-main--about,
 .page-main--faq,
-.page-main--terms h1 {
+.page-main--terms,
+.page-main--legal,
+.page-main--trading h1 {
   margin-top: 0;
   padding-top: 60px;
   text-transform: uppercase;
@@ -587,7 +589,7 @@ form button:hover {
   width: 60%;
   padding-bottom: 120px;
   font-size: 18px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .page-header--about {
@@ -628,15 +630,31 @@ form button:hover {
 
 .page-main--terms li {
   margin-bottom: 15px;
+  text-transform: capitalize;
 }
 
 .page-main__title-ul {
   font-size: 17px;
 }
 
+/*Legal*/
+.page-main--legal p,
+.page-main--legal ul {
+  font-size: 18px;
+  text-transform: capitalize;
+}
 
 
+.page-main__legal--title {
+  color: #606060;
+  font-size: 20px !important;
+}
 
+/*Trading*/
+.page-main--trading p,
+.page-main--trading ul {
+  font-size: 18px;
+}
 
 
 
