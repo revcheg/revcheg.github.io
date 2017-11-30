@@ -571,7 +571,7 @@ form button:hover {
   margin-bottom: -25px;
   color: #fff;
   font-size: 25px;
-  background: url('../img/tbg.png') no-repeat top;
+  background: url('../img/mbg.png') no-repeat top;
   background-size: cover;
 }
 
@@ -589,7 +589,7 @@ form button:hover {
   width: 60%;
   padding-bottom: 120px;
   font-size: 18px;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .page-header--about {
@@ -630,7 +630,7 @@ form button:hover {
 
 .page-main--terms li {
   margin-bottom: 15px;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .page-main__title-ul {
@@ -641,7 +641,7 @@ form button:hover {
 .page-main--legal p,
 .page-main--legal ul {
   font-size: 18px;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 
