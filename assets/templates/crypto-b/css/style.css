@@ -806,7 +806,7 @@ form p {
   .trading p {
     -ms-flex-item-align: end;
     align-self: flex-end;
-    width: 75%;
+    width: 70%;
     color: #fff;
     font-size: 25px;
     font-weight: bold;
