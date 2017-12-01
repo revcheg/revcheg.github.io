@@ -1174,7 +1174,12 @@ form p {
 
 .page-footer__column a {
   color: #949494;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.page-footer__column a:hover {
+  color: #00aeef; }
 
 .page-footer__column li {
   padding-bottom: 15px; }
@@ -1185,11 +1190,129 @@ form p {
   width: 200px;
   border-radius: 5px; }
 
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .page-footer__flex {
+    text-align: center; } }
+
+/* Smartphones (горизонтальная) ----------- */
+/* Smartphones (вертикальная) ----------- */
+@media only screen and (max-width: 320px) {
+  .page-footer__flex {
+    text-align: center; } }
+
 .page-header__rules {
-  width: 70%;
-  margin-top: 30px;
-  padding: 20px;
-  padding-bottom: 200px;
-  border-radius: 5px;
-  border: 2px solid #070055;
-  background: rgba(255, 255, 255, 0.8); }
+  margin-top: 100px;
+  color: #fff; }
+  .page-header__rules h1 {
+    text-transform: uppercase; }
+  .page-header__rules p {
+    font-size: 18px; }
+
+.page-header--blue {
+  background: url("../img/bg-rules.png") no-repeat center;
+  background-size: cover; }
+
+.page-footer--up {
+  margin-top: -18px; }
+
+.page-footer--active a {
+  color: #00aeef;
+  cursor: default; }
+
+.page-header--pb {
+  padding-bottom: 100px; }
+
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .page-header__rules {
+    margin-top: 30px; }
+    .page-header__rules h1 {
+      text-align: center; }
+  .page-header--pb {
+    padding-bottom: 50px; } }
+
+/* Smartphones (горизонтальная) ----------- */
+/* Smartphones (вертикальная) ----------- */
+@media only screen and (max-width: 320px) {
+  .page-header__rules {
+    margin-top: 30px; }
+    .page-header__rules h1 {
+      text-align: center; }
+  .page-header--pb {
+    padding-bottom: 50px; } }
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+/* iPads (горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* стили */ }
+
+/* iPads (вертикальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* стили */ }
+
+/* iPad 3**********/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* стили */ }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* стили */ }
+
+/* Настольные компьютеры и ноутбуки ----------- */
+@media only screen and (min-width: 1224px) {
+  .container {
+    width: 85%; } }
+
+/* Большие экраны ----------- */
+@media only screen and (min-width: 1824px) {
+  .container {
+    width: 70%; } }
+
+/* iPhone 4 ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* стили */ }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* стили */ }
+
+/* iPhone 5 ----------- */
+@media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* стили */ }
+
+@media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* стили */ }
+
+/* iPhone 6 ----------- */
+@media only screen and (min-width: 375px) and (max-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* стили */ }
+
+@media only screen and (min-width: 375px) and (max-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* стили */ }
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-width: 414px) and (max-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* стили */ }
+
+@media only screen and (min-width: 414px) and (max-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* стили */ }
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* стили */ }
+
+@media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* стили */ }
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* стили */ }
+
+@media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* стили */ }
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* стили */ }
+
+@media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* стили */ }

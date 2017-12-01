@@ -23,6 +23,11 @@
 .page-footer__column a {
   color: #949494;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.page-footer__column a:hover {
+  color: #00aeef;
 }
 
 .page-footer__column li {
@@ -34,4 +39,22 @@
   margin-top: 20px;
   width: 200px;
   border-radius: 5px;
+}
+
+// Media
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {  
+  .page-footer__flex {
+    text-align: center;
+  }
+}
+
+/* Smartphones (горизонтальная) ----------- */
+@media only screen and (min-width: 321px) {}
+
+/* Smartphones (вертикальная) ----------- */
+@media only screen and (max-width: 320px) {  
+  .page-footer__flex {
+    text-align: center;
+  }
 }
