@@ -1,13 +1,13 @@
 .page-footer {
-  min-height: 500px;
   background: #0f0f0f;
 }
 
 .page-footer__flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding-top: 65px;
+  padding-bottom: 50px;
 }
 
 .page-footer__column b {

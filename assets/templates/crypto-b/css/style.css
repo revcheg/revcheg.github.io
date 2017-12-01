@@ -1151,19 +1151,18 @@ form p {
   background-size: cover; }
 
 .page-footer {
-  min-height: 500px;
   background: #0f0f0f; }
 
 .page-footer__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-top: 65px; }
+  padding-top: 65px;
+  padding-bottom: 50px; }
 
 .page-footer__column b {
   color: #fff;
@@ -1185,3 +1184,12 @@ form p {
   margin-top: 20px;
   width: 200px;
   border-radius: 5px; }
+
+.page-header__rules {
+  width: 70%;
+  margin-top: 30px;
+  padding: 20px;
+  padding-bottom: 200px;
+  border-radius: 5px;
+  border: 2px solid #070055;
+  background: rgba(255, 255, 255, 0.8); }

@@ -571,7 +571,7 @@ form button:hover {
   margin-bottom: -25px;
   color: #fff;
   font-size: 25px;
-  background: url('../img/mbg.png') no-repeat top;
+  background: url('../img/cbg.png') no-repeat top;
   background-size: cover;
 }
 
@@ -638,6 +638,10 @@ form button:hover {
 }
 
 /*Legal*/
+.page-main__left {
+  width: 70%;
+}
+
 .page-main--legal p,
 .page-main--legal ul {
   font-size: 18px;

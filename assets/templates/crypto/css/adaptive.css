@@ -300,9 +300,9 @@
     align-self: center;
   }
 
-  .read__more {
+  /*.read__more {
     margin-bottom: 60px;
-  }
+  }*/
 
   .adv__flex-container {
     flex-direction: column;
@@ -344,6 +344,25 @@
   .form__check input {
     top: 2px;
     left: -180px;
+  }
+  
+  /*Template*/
+  .page-main--about p,
+  .page-main__left {
+    width: 100%;
+  }
+  
+  .page-main__left {
+    width: 100%;
+  }
+  
+  .page-main__legal--title {
+    text-align: center;
+  }
+  
+  .page-main--terms ul,
+  .page-main--faq p {
+    width: 90%;
   }
 }
 
@@ -563,5 +582,24 @@
 
   .form__check {
     margin-bottom: 20px;
+  }
+  
+  /*Template*/
+  .page-main--about p,
+  .page-main__left {
+    width: 100%;
+  }
+  
+  .page-main__left {
+    width: 100%;
+  }
+  
+  .page-main__legal--title {
+    text-align: center;
+  }
+  
+  .page-main--terms ul,
+  .page-main--faq p {
+    width: 80%;
   }
 }
