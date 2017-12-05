@@ -26,11 +26,7 @@ body {
 }
 
 .page-header__logo {
-  width: 690px;
-}
-
-.page-header__logo-s {
-  display: none;
+  width: 600px;
 }
 
 .main-nav__list {
@@ -198,7 +194,7 @@ body {
 }
 
 .trading {
-  min-height: 885px;
+  min-height: 800px;
   background: url("../img/mac.png") no-repeat center;
   /*background-size: cover;*/
 }
@@ -208,7 +204,7 @@ body {
   /*padding-right: 50px;*/
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   font-style: italic;
   text-align: right;
@@ -216,7 +212,7 @@ body {
 }
 
 .trading__text {
-  padding-top: 60px;
+  padding-top: 40px;
   /*padding-right: 50px;*/
   width: 500px;
   /*text-align: right;*/
@@ -226,7 +222,7 @@ body {
 }
 
 .info__link--red {
-  margin-top: -40px;
+  margin-top: 70px;
   color: #fff;
   background: #8a0000;
 }
@@ -362,7 +358,7 @@ body {
 }
 
 .page-footer {
-  min-height: 300px;
+  min-height: 290px;
   background: #262626;
 }
 

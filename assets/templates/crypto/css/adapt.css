@@ -14,19 +14,6 @@
   .adv__flex-container {
     justify-content: space-between;
   }
-
-  .trading {
-    min-height: 800px;
-  }
-
-  .trading__title {
-    padding-top: 90px;
-    font-size: 60px;
-  }
-
-  .info__link--red {
-    margin-top: 10px;
-  }
 }
 
 @media only screen and (min-width : 1201px) and (max-width : 1499px){
@@ -43,16 +30,15 @@
   }
 
   .trading {
-    min-height: 730px;
+    min-height: 750px;
   }
 
   .trading__title {
-    padding-top: 60px;
-    font-size: 60px;
+    padding-top: 40px;
   }
 
   .info__link--red {
-    margin-top: 10px;
+    margin-top: 60px;
     margin-right: 150px;
   }
 }
@@ -67,13 +53,21 @@
     width: 80%;
   }
 
+  .page-header__flex-container {
+    justify-content: center;
+  }
+
   /*Вторая секция*/
   .read {
     min-height: 300px;
   }
 
+  .read__more {
+    width: 280px;
+  }
+
   .adv {
-    min-height: 380px;
+    min-height: 310px;
   }
 
   .adv__box {
@@ -85,29 +79,28 @@
   }
 
   .trading {
-    min-height: 700px;
-    margin-top: -60px;
+    /*min-height: 700px;*/
   }
 
   .trading__text,
   .trading__title,
   .info__link--red {
-    margin-right: 40px;
+    margin-right: 50px;
   }
 
   .trading__title {
     padding-top: 60px;
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .trading__text {
-    width: 300px;
-    padding-top: 10px;
+    width: 35%;
+    padding-top: 60px;
     font-size: 20px;
   }
 
   .info__link--red {
-    margin-top: 0;
+    margin-top: 110px;
   }
 
   /*Пре-футер*/
@@ -174,9 +167,17 @@
     width: 100%;
   }
 
+  .info__link {
+    font-size: 25px;
+  }
+
   /*Вторая секция*/
   .read {
     min-height: 270px;
+  }
+
+  .read__more {
+    width: 30%;
   }
 
   .read__more b {
@@ -189,7 +190,7 @@
 
   /*Третья секция*/
   .adv {
-    min-height: 330px;
+    min-height: 300px;
   }
 
   .adv__box {
@@ -204,12 +205,14 @@
     font-size: 12px;
   }
 
-  .trading {
-    min-height: 650px;
+  .trading__text,
+  .trading__title,
+  .info__link--red {
+    margin-right: 0;
   }
 
   .trading__title {
-    font-size: 40px;
+    font-size: 50px;
     padding-top: 60px;
   }
 
@@ -220,7 +223,7 @@
   }
 
   .info__link--red {
-    margin-top: 30px;
+    margin-top: 100px;
   }
 
   /*Пятая секция*/
@@ -263,11 +266,12 @@
   }
 
   .info {
-    min-height: 600px;
+    /*min-height: 500px;*/
   }
 
   .info__link {
     margin: 0 40px;
+    margin-bottom: 80px;
     font-size: 20px;
     text-align: center;
   }
@@ -290,12 +294,12 @@
 
   .read__more {
     width: 100%;
-    align-self: center;
+    margin-top: 0;
   }
 
-  /*.read__more {
-    margin-bottom: 60px;
-  }*/
+  .read__more--pb {
+    margin-top: 30px;
+  }
 
   .adv__flex-container {
     flex-direction: column;
@@ -322,6 +326,10 @@
 
   .pre-footer h2 {
     font-size: 20px;
+  }
+
+  .page-footer__flex-container {
+    text-align: center;
   }
 
   /*Form*/
@@ -419,7 +427,7 @@
 
   /*Пятая секция*/
   .fly {
-    min-height: 700px;
+    min-height: 850px;
   }
 
   .fly__desc {
@@ -428,7 +436,7 @@
 
   /*Шестая секция*/
   .pre-footer h2 {
-    padding-top: 30px;
+    padding-top: 50px;
     font-size: 18px;
   }
 
@@ -512,8 +520,13 @@
 
   .read__more {
     width: 90%;
-    margin-bottom: 40px;
+    margin-top: 0;
+    /*margin-bottom: 40px;*/
     height: auto;
+  }
+
+  .read__more--pb {
+    margin-top: 30px;
   }
 
   .read {
