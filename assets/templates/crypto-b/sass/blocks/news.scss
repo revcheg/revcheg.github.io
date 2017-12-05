@@ -1,5 +1,5 @@
 .news {
-  min-height: 670px;
+  min-height: 400px;
   color: $w;
   background: #00aeef;
   
@@ -36,11 +36,6 @@
 .news__middle-column,
 .news__right-column {
   width: 30%;
-}
-
-.news__left-column-first,
-.news__middle-column-first {
-  margin-bottom: 50px;
 }
 
 // Media
