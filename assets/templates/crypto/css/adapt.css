@@ -348,6 +348,10 @@
   }
   
   /*Template*/
+  .page-main h1 {
+    text-align: center;
+  }
+  
   .page-main--about p,
   .page-main__left {
     width: 100%;
@@ -546,6 +550,10 @@
     font-size: 18px;
   }
 
+  .page-footer__flex-container {
+    text-align: center;
+  }
+
   /*Form*/
   .login {
     width: 85%;
@@ -591,6 +599,10 @@
   }
   
   /*Template*/
+  .page-main h1 {
+    text-align: center;
+  }
+  
   .page-main--about p,
   .page-main__left {
     width: 100%;
