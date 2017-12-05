@@ -234,8 +234,6 @@ form p {
     align-items: center; }
   .container {
     width: 95%; }
-  .page-header {
-    min-height: 780px; }
   .page-header__logo {
     margin-top: 20px; }
   .page-header__logo-b {
@@ -432,6 +430,7 @@ form p {
   .trade__left-column {
     font-size: 20px; }
   .trade__right-column {
+    padding-bottom: 40px;
     font-size: 16px; }
   .trade__left-column,
   .trade__right-column {
@@ -469,7 +468,8 @@ form p {
   .trade__left-column {
     -ms-flex-item-align: center;
     align-self: center;
-    margin-top: 0; }
+    margin-top: 0;
+    font-size: 35px; }
   .trade__right-column {
     -ms-flex-item-align: center;
     align-self: center;
