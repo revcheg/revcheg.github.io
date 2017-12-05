@@ -17,6 +17,7 @@
     font-weight: bold;
     font-style: italic;
     text-align: right;
+    z-index: 3;
   }
 }
 
@@ -352,11 +353,7 @@
 }
 
 /* Настольные компьютеры и ноутбуки ----------- */
-@media only screen and (min-width: 1224px) {
-  .crypto::after {
-    display: none;
-  }
-  
+@media only screen and (min-width: 1224px) {  
   .trading {
     min-height: 600px;
     background: #00aeef;
@@ -379,11 +376,5 @@
     top: -60px;
     height: 60px;
     background: linear-gradient(to bottom left,transparent 50%, $w 50.7%);
-  }
-}
-
-@media only screen and (min-width: 1824px) {
-  .crypto::after {
-    display: block;
   }
 }

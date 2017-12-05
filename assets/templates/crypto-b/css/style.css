@@ -383,9 +383,6 @@ form p {
   /* стили */ }
 
 /* Samsung Galaxy S5 ----------- */
-@media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-  /* стили */ }
-
 @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
   /* стили */ }
 
@@ -412,7 +409,7 @@ form p {
   text-transform: uppercase; }
 
 .trade__right-column {
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 25px; }
 
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
@@ -661,16 +658,6 @@ form p {
   background: #000 url("../img/crypto-bg.png") no-repeat bottom;
   background-size: cover;
   border-bottom: 10px solid #e94444; }
-  .crypto::after {
-    content: "";
-    width: 600px;
-    height: 830px;
-    top: 250px;
-    left: 100px;
-    position: absolute;
-    background: url("../img/phone.png") no-repeat;
-    background-size: cover;
-    z-index: 2; }
   .crypto h1 {
     padding: 10px 0;
     margin-top: 90px;
@@ -724,8 +711,6 @@ form p {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .crypto {
     min-height: 550px; }
-    .crypto::after {
-      display: none; }
     .crypto h1 {
       margin-top: 40px;
       color: #fff;
@@ -751,8 +736,6 @@ form p {
 @media only screen and (max-width: 320px) {
   .crypto {
     min-height: 550px; }
-    .crypto::after {
-      display: none; }
     .crypto h1 {
       margin-top: 40px;
       color: #fff;
@@ -777,8 +760,6 @@ form p {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container--crypto {
     width: 95%; }
-  .crypto::after {
-    display: none; }
   .crypto h1 {
     margin-top: 50px; }
   .crypto p {
@@ -791,9 +772,28 @@ form p {
     margin-bottom: 70px; } }
 
 /* Настольные компьютеры и ноутбуки ----------- */
-@media only screen and (min-width: 1224px) {
+@media only screen and (max-width: 1224px) {
   .crypto::after {
     display: none; } }
+
+@media only screen and (min-width: 1224px) {
+  .crypto::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 550px;
+    top: 380px;
+    left: 60px;
+    background: url("../img/phone-t.png") no-repeat;
+    z-index: 2; } }
+
+@media only screen and (min-width: 1824px) {
+  .crypto::after {
+    width: 600px;
+    height: 830px;
+    top: 250px;
+    left: 100px;
+    background: url("../img/phone.png") no-repeat; } }
 
 .trading {
   min-height: 600px;
@@ -811,7 +811,8 @@ form p {
     font-size: 25px;
     font-weight: bold;
     font-style: italic;
-    text-align: right; }
+    text-align: right;
+    z-index: 3; }
 
 .trading__flex {
   display: -webkit-box;
@@ -1123,8 +1124,6 @@ form p {
 
 /* Настольные компьютеры и ноутбуки ----------- */
 @media only screen and (min-width: 1224px) {
-  .crypto::after {
-    display: none; }
   .trading {
     min-height: 600px;
     background: #00aeef; }
@@ -1143,10 +1142,6 @@ form p {
     height: 60px;
     background: -webkit-gradient(linear, right top, left bottom, color-stop(50%, transparent), color-stop(50.7%, #fff));
     background: linear-gradient(to bottom left, transparent 50%, #fff 50.7%); } }
-
-@media only screen and (min-width: 1824px) {
-  .crypto::after {
-    display: block; } }
 
 .coin {
   min-height: 140px;
