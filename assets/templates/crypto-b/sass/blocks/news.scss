@@ -40,18 +40,10 @@
 
 // Media
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
-@media only screen and (min-width : 320px) and (max-width : 480px) {
-  .news {
-    min-height: 1530px;
-  }
-  
+@media only screen and (min-width : 320px) and (max-width : 480px) {  
   .news__flex {
     flex-direction: column;
     padding-top: 40px;
-  }
-  
-  .news__right-column {
-    margin-bottom: 50px;
   }
   
   .news__left-column,
@@ -59,6 +51,15 @@
   .news__right-column {
     width: 100%;
     text-align: center;
+  }
+  
+  .news__left-column,
+  .news__middle-column {
+    margin-bottom: 50px;
+  }
+  
+  .news__right-column {
+    padding-bottom: 40px;
   }
   
   .news__left-column-second,
@@ -71,42 +72,12 @@
 @media only screen and (min-width: 321px) {}
 
 /* Smartphones (вертикальная) ----------- */
-@media only screen and (max-width: 320px) {
-  .news {
-    min-height: 1870px;
-  }
-  
-  .news__flex {
-    flex-direction: column;
-    padding-top: 40px;
-  }
-  
-  .news__left-column,
-  .news__middle-column,
-  .news__right-column {
-    width: 100%;
-    text-align: center;
-  }
-  
-  .news__left-column-second,
-  .news__middle-column-second {
-    margin-bottom: 50px;
-  }
+@media only screen and (max-width: 320px) {    
+
 }
 
 /* iPads (вертикальная и горизонтальная) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .news {
-    min-height: 720px;
-  }
-}
-
-/* iPads (вертикальная и горизонтальная) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .news {
-    min-height: 0;
-  }
-  
+@media only screen and (min-width: 768px) and (max-width: 1024px) {  
   .news__flex {
     padding-bottom: 70px;
   }
