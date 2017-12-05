@@ -567,12 +567,20 @@ form button:hover {
 }
 
 /*Template*/
+.container__adv--pm {
+  width: 75%;
+}
+
 .page-main {
   margin-bottom: -25px;
   color: #fff;
   font-size: 25px;
   background: url('../img/cbg.png') no-repeat top;
   background-size: cover;
+}
+
+.page-main h1 {
+  font-size: 30px;
 }
 
 .page-main--about,
