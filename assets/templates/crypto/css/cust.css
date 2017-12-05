@@ -150,7 +150,7 @@ body {
 }
 
 .adv {
-  min-height: 270px;
+  min-height: 300px;
 }
 
 .adv__box {
@@ -200,7 +200,7 @@ body {
 .trading {
   min-height: 885px;
   background: url("../img/mac.png") no-repeat center;
-  background-size: cover;
+  /*background-size: cover;*/
 }
 
 .trading__title {
@@ -630,6 +630,11 @@ form button:hover {
 }
 
 /*Terms*/
+.page-main--terms {
+  background: url("../img/terms-bg.png") no-repeat top;
+  background-size: cover;
+}
+
 .page-main--terms ul {
   width: 60%;
   color: #606060;
