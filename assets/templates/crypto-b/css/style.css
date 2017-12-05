@@ -784,7 +784,7 @@ form p {
     height: 550px;
     top: 380px;
     left: 60px;
-    background: url("../img/phone-t.png") no-repeat;
+    background: url("../img/phone-s.png") no-repeat;
     z-index: 2; } }
 
 @media only screen and (min-width: 1824px) {
