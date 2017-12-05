@@ -135,14 +135,6 @@
     width: 80%;
   }
 
-  .page-header__logo-full {
-    display: none;
-  }
-
-  .page-header__logo-s {
-    display: block;
-  }
-
   /*Вторая секция*/
   .read {
     min-height: 300px;
@@ -173,8 +165,9 @@
 
 @media only screen and (max-width : 768px) {
   /*Шапка*/
-  .page-header__logo-s {
+  .page-header__logo-full {
     width: 400px;
+    padding-top: 10px;
   }
 
   .container__adv {
@@ -260,7 +253,7 @@
 }
 
 @media only screen and (min-width : 320px) and (max-width : 568px) {
-  .page-header__logo-s {
+  .page-header__logo-full {
     display: none;
   }
 
