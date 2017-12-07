@@ -58,6 +58,11 @@
     justify-content: center;
   }
 
+  .coin__box--bitcoin,
+  .coin__box--stratis {
+    display: none;
+  }
+
   /*Вторая секция*/
   .read {
     min-height: 300px;
@@ -127,6 +132,11 @@
 
   .container__adv {
     width: 80%;
+  }
+
+  .coin__box--lite,
+  .coin__box--zcash {
+    display: none;
   }
 
   /*Вторая секция*/

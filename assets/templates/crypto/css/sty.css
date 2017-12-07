@@ -272,6 +272,14 @@ body {
   margin-bottom: 20px;
 }
 
+.coin__box--bitcoin {
+  background: url("../img/bitcoin.png") no-repeat top;
+}
+
+.coin__box--lite {
+  background: url("../img/lite.png") no-repeat top;
+}
+
 .coin__box--doge {
   background: url("../img/doge.png") no-repeat top;
 }
@@ -304,6 +312,13 @@ body {
   background: url("../img/nem.png") no-repeat top;
 }
 
+.coin__box--zcash {
+  background: url("../img/zcash.png") no-repeat top;
+}
+
+.coin__box--stratis {
+  background: url("../img/stratis.png") no-repeat top;
+}
 /*Седьмая секция*/
 .fly {
   min-height: 660px;
