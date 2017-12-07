@@ -5,25 +5,29 @@
   
   & b {
     font-size: 40px;
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 100;
   }
   
-  & a {
-    padding: 1px 40px;
-    color: $w;
-    font-size: 20px;
-    font-weight: bold;
-    background: $b;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 0.3s;
-    
-    &:hover {
-      color: $b;
-      background: $w;
-    }
+  & p {
+    font-weight: 100;
   }
+  
+  // Btn - Read Me
+  // & a {
+  //   padding: 1px 40px;
+  //   color: $w;
+  //   font-size: 20px;
+  //   font-weight: bold;
+  //   background: $b;
+  //   text-decoration: none;
+  //   text-transform: uppercase;
+  //   transition: 0.3s;
+  // 
+  //   &:hover {
+  //     color: $b;
+  //     background: $w;
+  //   }
+  // }
 }
 
 .news__flex {

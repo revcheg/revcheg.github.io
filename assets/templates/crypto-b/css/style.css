@@ -293,8 +293,7 @@ form p {
   padding: 5px 15px;
   color: #fff;
   font-size: 20px;
-  font-weight: bold;
-  font-style: normal;
+  font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
   border: 2px solid #fff;
@@ -484,12 +483,12 @@ form p {
 
 .trade__left-column,
 .trade__right-column {
-  color: #fff;
-  font-weight: bold; }
+  color: #fff; }
 
 .trade__left-column {
   margin-top: 30px;
-  font-size: 40px;
+  font-size: 35px;
+  font-weight: 500;
   text-transform: uppercase; }
 
 .trade__right-column {
@@ -561,7 +560,6 @@ form p {
   min-height: 230px; }
 
 .edge__flex {
-  min-height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -644,21 +642,9 @@ form p {
   background: #00aeef; }
   .news b {
     font-size: 40px;
-    font-style: normal;
-    font-weight: bold; }
-  .news a {
-    padding: 1px 40px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    background: #070055;
-    text-decoration: none;
-    text-transform: uppercase;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-    .news a:hover {
-      color: #070055;
-      background: #fff; }
+    font-weight: 100; }
+  .news p {
+    font-weight: 100; }
 
 .news__flex {
   display: -webkit-box;
@@ -719,6 +705,7 @@ form p {
     margin-top: 90px;
     color: #fff;
     font-size: 60px;
+    font-weight: 100;
     background: #000;
     border-radius: 10px;
     text-align: center;
@@ -729,6 +716,7 @@ form p {
     width: 75%;
     color: #fff;
     font-size: 25px;
+    font-weight: 100;
     text-align: right;
     text-transform: uppercase; }
   .crypto a {
@@ -738,7 +726,7 @@ form p {
     margin-top: 70px;
     color: #000;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 400;
     background: #00ffff;
     border: 1px solid #00ffff;
     border-radius: 10px;
@@ -857,7 +845,7 @@ form p {
   .trading h2 {
     margin-top: 60px;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 400;
     font-style: normal; }
   .trading p {
     -ms-flex-item-align: end;
@@ -865,8 +853,7 @@ form p {
     width: 70%;
     color: #fff;
     font-size: 25px;
-    font-weight: bold;
-    font-style: normal;
+    font-weight: 100;
     text-align: right;
     z-index: 3; }
 
@@ -1260,9 +1247,11 @@ form p {
   margin-top: 100px;
   color: #fff; }
   .page-header__rules h1 {
+    font-weight: 100;
     text-transform: uppercase; }
   .page-header__rules p {
-    font-size: 18px; }
+    font-size: 18px;
+    font-weight: 100; }
 
 .page-header--blue {
   background: url("../img/bg-rules.png") no-repeat center;
