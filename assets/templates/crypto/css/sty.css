@@ -223,7 +223,7 @@ body {
 }
 
 .info__link--red {
-  margin-top: 70px;
+  margin-top: 50px;
   color: #fff;
   background: #8a0000;
 }
@@ -358,7 +358,8 @@ body {
 }
 
 .pre-footer h2 {
-  width: 1200px;
+	position: relative;
+  width: 1000px;
   margin: 0 auto;
   margin-top: -30px;
   padding-top: 60px;
@@ -367,6 +368,26 @@ body {
   font-style: normal;
   font-weight: normal;
   text-align: center;
+}
+
+.pre-footer h2::after {
+	content: "}";
+	position: absolute;
+	top: 25px;
+	right: -90px;
+	width: 85px;
+	height: 135px;
+	font-size: 100px;
+}
+
+.pre-footer h2::before {
+	content: "{";
+	position: absolute;
+	top: 25px;
+	left: -90px;
+	width: 85px;
+	height: 135px;
+	font-size: 100px;
 }
 
 /*Футер*/

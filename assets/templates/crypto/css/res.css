@@ -39,7 +39,7 @@
   }
 
   .info__link--red {
-    margin-top: 60px;
+    margin-top: 50px;
     margin-right: 150px;
   }
 }
@@ -106,12 +106,13 @@
   }
 
   .info__link--red {
-    margin-top: 110px;
+    margin-top: 40px;
   }
 
   /*Пре-футер*/
   .pre-footer h2 {
-    width: auto;
+    width: 800px;
+    padding-top: 40px;
   }
 
   /*Пятая секция*/
@@ -164,6 +165,10 @@
   .coin__box--ripple,
   .coin__box--monero {
     display: none;
+  }
+  
+  .pre-footer h2 {
+    width: 500px;
   }
 }
 
@@ -244,7 +249,14 @@
 
   /*Пре-футер*/
   .pre-footer h2 {
+    width: auto;
+    padding-top: 60px;
     font-size: 20px;
+  }
+  
+  .pre-footer h2::after,
+  .pre-footer h2::before {
+  	display: none;
   }
 
   .login {
