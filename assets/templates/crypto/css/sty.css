@@ -51,7 +51,7 @@ body {
 
 .main-nav__item {
   font-size: 18px;
-  font-style: italic;
+  font-style: normal;
 }
 
 .main-nav__item a {
@@ -78,18 +78,15 @@ body {
 
 .info__text {
   padding-top: 25px;
-  /*padding-left: 20px;*/
   margin-bottom: 60px;
   color: #fff;
   font-size: 20px;
   opacity: 0.4;
-  /*text-transform: uppercase;*/
 }
 
 .info__link {
   color: #000;
   padding: 10px 50px;
-  /*margin-left: 20px;*/
   background: #bfa75f;
   border-radius: 50px;
   font-size: 30px;
@@ -107,11 +104,9 @@ body {
 .read__flex-container {
   display: flex;
   justify-content: space-around;
-  /*padding-bottom: 130px;*/
 }
 
 .read {
-  /*min-height: 270px;*/
   background: #bfa75f;
 }
 
@@ -119,7 +114,6 @@ body {
   position: relative;
   width: 300px;
   margin-top: 30px;
-  font-style: italic;
 }
 
 .read__more b {
@@ -208,29 +202,24 @@ body {
 .trading {
   min-height: 800px;
   background: url("../img/mac.png") no-repeat center;
-  /*background-size: cover;*/
 }
 
 .trading__title {
   padding-top: 60px;
-  /*padding-right: 50px;*/
   margin-top: 0;
   margin-bottom: 0;
   font-size: 60px;
   font-weight: bold;
-  font-style: italic;
   text-align: right;
   text-transform: uppercase;
 }
 
 .trading__text {
   padding-top: 40px;
-  /*padding-right: 50px;*/
   width: 500px;
-  /*text-align: right;*/
+  line-height: 35px;
   font-size: 25px;
   font-weight: bold;
-  font-style: italic;
 }
 
 .info__link--red {
@@ -260,7 +249,8 @@ body {
 
 .coin {
   min-height: 185px;
-  background: #bfa75f;
+  background: #a2c0ca;
+	border-bottom: 10px solid black;
 }
 
 .coin__box {
@@ -326,13 +316,13 @@ body {
   margin-top: 0;
   padding-top: 70px;
   font-size: 40px;
-  font-style: italic;
+  font-style: normal;
   text-transform: uppercase;
 }
 
 .fly__text {
   font-size: 30px;
-  font-style: italic;
+  font-style: normal;
 }
 
 .fly__desc {
@@ -340,7 +330,7 @@ body {
   padding: 30px;
   border-radius: 5px;
   font-size: 20px;
-  font-style: italic;
+  font-style: normal;
   background: #000;
 }
 
@@ -358,7 +348,7 @@ body {
   padding-top: 60px;
   color: #fff;
   font-size: 25px;
-  font-style: italic;
+  font-style: normal;
   font-weight: normal;
   text-align: center;
 }
@@ -442,9 +432,6 @@ body {
 
 .login {
   width: 100%;
-  /*height: 400px;*/
-  /*margin: 0 auto;*/
-  /*margin-top: 0;*/
   margin-bottom: 50px;
   padding: 20px;
   border-radius: 5px;
@@ -526,8 +513,6 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /*margin: 0 auto;*/
-  /*margin-top: 20px;*/
 }
 
 form label {
@@ -681,18 +666,3 @@ form button:hover {
 .page-main--trading ul {
   font-size: 18px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

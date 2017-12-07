@@ -210,7 +210,7 @@ form p {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
-  font-style: italic;
+  font-style: normal;
   text-transform: uppercase;
   text-decoration: none;
   border: 2px solid #fff;
@@ -249,7 +249,7 @@ form p {
     color: #fff;
     font-size: 16px;
     font-weight: bold;
-    font-style: italic;
+    font-style: normal;
     text-transform: uppercase;
     text-decoration: none;
     border: 2px solid #fff;
@@ -560,7 +560,7 @@ form p {
   background: #00aeef; }
   .news b {
     font-size: 40px;
-    font-style: italic;
+    font-style: normal;
     font-weight: bold; }
   .news a {
     padding: 1px 40px;
@@ -774,7 +774,7 @@ form p {
     margin-top: 60px;
     font-size: 40px;
     font-weight: bold;
-    font-style: italic; }
+    font-style: normal; }
   .trading p {
     -ms-flex-item-align: end;
     align-self: flex-end;
@@ -782,7 +782,7 @@ form p {
     color: #fff;
     font-size: 25px;
     font-weight: bold;
-    font-style: italic;
+    font-style: normal;
     text-align: right;
     z-index: 3; }
 
