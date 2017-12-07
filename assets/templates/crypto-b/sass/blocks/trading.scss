@@ -182,7 +182,6 @@
   
   .trading__flex {
     flex-direction: column;
-    // align-items: center;
   }
   
   .container--trading {
@@ -202,14 +201,14 @@
     display: none;
   }
   
-  .coin__c-4,
-  .coin__c-5,
-  .coin__c-6 {
-    animation-name: coin;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 3s;
-  }
+  // .coin__c-4,
+  // .coin__c-5,
+  // .coin__c-6 {
+  //   animation-name: coin;
+  //   animation-iteration-count: infinite;
+  //   animation-timing-function: linear;
+  //   animation-duration: 3s;
+  // }
   
   .trading__coin {
     min-height: 180px;
@@ -277,14 +276,14 @@
     display: none;
   }
   
-  .coin__c-4,
-  .coin__c-5,
-  .coin__c-6 {
-    animation-name: coin;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 3s;
-  }
+  // .coin__c-4,
+  // .coin__c-5,
+  // .coin__c-6 {
+  //   animation-name: coin;
+  //   animation-iteration-count: infinite;
+  //   animation-timing-function: linear;
+  //   animation-duration: 3s;
+  // }
   
   .trading__coin {
     min-height: 100px;

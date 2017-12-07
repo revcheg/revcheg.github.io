@@ -1,5 +1,4 @@
 .trade {
-  min-height: 170px;
   background: black;
 }
 
@@ -11,30 +10,31 @@
 .trade__left-column,
 .trade__right-column {
   color: $w;
+  margin-top: 30px;
+  padding-bottom: 30px;
 }
 
 .trade__left-column {
-  margin-top: 30px;
   font-size: 35px;
   font-weight: 500;
   text-transform: uppercase;
 }
 
 .trade__right-column {
-  margin-top: 30px;
   font-size: 25px;
 }
 
 // Media
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
-@media only screen and (min-width : 320px) and (max-width : 480px) {
-  .trade {
-    min-height: 220px;
-  }
-  
+@media only screen and (min-width : 320px) and (max-width : 480px) {  
   .trade__flex {
     display: flex;
     flex-direction: column;
+  }
+  
+  .trade__left-column,
+  .trade__right-column {
+    text-align: center;
   }
   
   .trade__left-column {
@@ -42,13 +42,7 @@
   }
   
   .trade__right-column {
-    padding-bottom: 40px;
     font-size: 16px;
-  }
-  
-  .trade__left-column,
-  .trade__right-column {
-    text-align: center;
   }
 }
 
@@ -56,51 +50,35 @@
 @media only screen and (min-width: 321px) {}
 
 /* Smartphones (вертикальная) ----------- */
-@media only screen and (max-width: 320px) {
-  .trade {
-    min-height: 340px;
-  }
-  
+@media only screen and (max-width: 320px) {  
   .trade__flex {
     display: flex;
     flex-direction: column;
-  }
-  
-  .trade__left-column {
-    font-size: 30px;
-  }
-  
-  .trade__right-column {
-    font-size: 20px;
-    font-weight: normal;
   }
   
   .trade__left-column,
   .trade__right-column {
     text-align: center;
   }
+  
+  .trade__left-column {
+    font-size: 20px;
+  }
+  
+  .trade__right-column {
+    font-size: 16px;
+  }
 }
 
 /* iPads (вертикальная и горизонтальная) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .trade {
-    min-height: 220px;
-  }
-  
-  .trade .container,
-  .trade__flex {
-    min-height: 220px;
-  }
-  
+@media only screen and (min-width: 768px) and (max-width: 1024px) {  
   .trade__left-column {
     align-self: center;
-    margin-top: 0;
     font-size: 35px;
   }
   
   .trade__right-column {
     align-self: center;
-    margin-top: 0;
     font-size: 20px;
   }
 }

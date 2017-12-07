@@ -64,7 +64,7 @@ body {
   min-height: 470px;
   background: url("../img/header.png") no-repeat center;
   background-size: cover;
-  border-bottom: 10px solid black;
+  border-bottom: 5px solid black;
 }
 
 .info__title {
@@ -250,7 +250,7 @@ body {
 .coin {
   min-height: 185px;
   background: rgba(222, 238, 243, 0.5);
-	border-bottom: 10px solid black;
+	border-bottom: 5px solid black;
 }
 
 .coin__box {
