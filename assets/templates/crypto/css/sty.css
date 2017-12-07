@@ -456,9 +456,14 @@ body {
 
 .form__name,
 .form__email,
-.form__password {
+.form__password,
+.form__tel {
   display: flex;
   justify-content: space-between;
+}
+
+.form__tel input {
+	padding-left: 0;
 }
 
 .form__check {
