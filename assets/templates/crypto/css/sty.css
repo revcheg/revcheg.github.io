@@ -494,7 +494,8 @@ body {
 .form__name,
 .form__email,
 .form__password,
-.form__tel {
+.form__tel,
+.form__country {
   display: flex;
   justify-content: space-between;
 }
@@ -599,6 +600,17 @@ form button {
 
 form button:hover {
   color: #fff;
+}
+
+.form__country {
+	justify-content: flex-start;
+	margin-bottom: 50px;
+}
+
+.form__country select {
+	margin-top: 8px;
+	font-size: 16px;
+	border: none;
 }
 
 /*Template*/
