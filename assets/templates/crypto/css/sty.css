@@ -249,7 +249,7 @@ body {
 
 .coin {
   min-height: 185px;
-  background: #deeef3;
+  background: rgba(222, 238, 243, 0.5);
 	border-bottom: 10px solid black;
 }
 
@@ -347,7 +347,7 @@ body {
   border-radius: 5px;
   font-size: 20px;
   font-style: normal;
-  background: #deeef3;
+  background: rgba(222, 238, 243, 0.5);
 }
 
 /*Восьмая секция*/
