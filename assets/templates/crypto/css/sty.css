@@ -1,8 +1,19 @@
 /*Основные*/
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('../fonts/SFUIDisplay-Regular.eot');
+	src: local('../fonts/SF UI Display Regular'), local('../fonts/SFUIDisplay-Regular'),
+		url('../fonts/SFUIDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SFUIDisplay-Regular.woff') format('woff'),
+		url('../fonts/SFUIDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+	font-style: normal;
+}
+
 body {
   min-width: 320px;
   margin: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'SF UI Display', sans-serif;
 }
 
 .container {
@@ -26,7 +37,8 @@ body {
 }
 
 .page-header__logo {
-  width: 600px;
+  width: 538px;
+  height: 92px;
 }
 
 .main-nav__list {
