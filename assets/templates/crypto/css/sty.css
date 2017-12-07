@@ -343,11 +343,11 @@ body {
 .fly__desc {
   max-width: 550px;
   padding: 30px;
-	color: black;
+	color: white;
   border-radius: 5px;
   font-size: 20px;
   font-style: normal;
-  background: rgba(222, 238, 243, 0.5);
+  background: rgba(21, 25, 33, 0.8);
 }
 
 /*Восьмая секция*/
