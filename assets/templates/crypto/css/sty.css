@@ -249,7 +249,7 @@ body {
 
 .coin {
   min-height: 185px;
-  background: #a2c0ca;
+  background: #deeef3;
 	border-bottom: 10px solid black;
 }
 
@@ -328,10 +328,11 @@ body {
 .fly__desc {
   max-width: 550px;
   padding: 30px;
+	color: black;
   border-radius: 5px;
   font-size: 20px;
   font-style: normal;
-  background: #000;
+  background: #deeef3;
 }
 
 /*Восьмая секция*/
