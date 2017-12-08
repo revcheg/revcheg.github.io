@@ -1,6 +1,6 @@
 @import 'variables';
-@import 'mixins';
 
-@import 'global/slider';
+@import 'global/base';
+@import 'global/font';
 
-@import 'blocks/reviews';
+@import 'blocks/page-header';
