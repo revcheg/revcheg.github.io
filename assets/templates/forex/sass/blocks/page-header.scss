@@ -11,7 +11,7 @@
   list-style: none;
 }
 
-.page-header__sub-menu {
+.page-header__user-menu {
   align-self: center;
 }
 
@@ -28,7 +28,7 @@
     
     &:hover {
       color: $sc;
-      border-bottom: 1px solid $sc;
+      border-bottom: 2px solid $sc;
     }
   }
 }

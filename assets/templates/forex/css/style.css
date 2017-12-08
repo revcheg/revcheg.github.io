@@ -111,7 +111,7 @@ body {
   padding: 35px 0;
   list-style: none; }
 
-.page-header__sub-menu {
+.page-header__user-menu {
   -ms-flex-item-align: center;
   align-self: center; }
 
@@ -127,7 +127,7 @@ body {
     transition: 0.2s; }
     .page-header__item a:hover {
       color: #efbc1c;
-      border-bottom: 1px solid #efbc1c; }
+      border-bottom: 2px solid #efbc1c; }
 
 .page-header__link {
   padding: 10px 25px;
