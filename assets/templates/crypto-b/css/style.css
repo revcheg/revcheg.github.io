@@ -96,10 +96,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  margin-top: 40px; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .page-header__checkbox {
   display: -webkit-box;
@@ -121,21 +120,20 @@ form {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
-  border: 3px solid #070055;
-  background: rgba(255, 255, 255, 0.8); }
+  border: 5px solid #fff; }
 
 input {
-  width: 310px;
-  height: 30px;
+  width: 300px;
+  height: 40px;
   margin-bottom: 15px;
   padding: 0 20px;
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   border-radius: 10px;
-  border: none;
-  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid #fff;
+  background: transparent;
   outline: none; }
 
 input[type="checkbox"] {
@@ -144,25 +142,26 @@ input[type="checkbox"] {
   cursor: pointer; }
 
 select {
-  height: 32px;
+  height: 42px;
   padding: 0 20px;
   padding-left: 15px;
   margin-bottom: 20px;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid #fff;
+  background: rgba(0, 174, 239, 0.7);
   outline: none; }
 
 input[type="submit"] {
   margin: 0 auto;
   margin-bottom: 10px;
-  color: #070055;
+  color: #fff;
   font-size: 18px;
   text-transform: uppercase;
-  background: rgba(255, 255, 255, 0.6);
-  border: 2px solid #070055;
+  background: transparent;
+  border: 2px solid #fff;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
@@ -173,27 +172,27 @@ input[type="submit"]:hover {
   border: 2px solid #070055; }
 
 label {
-  font-size: 15px;
+  font-size: 18px;
   cursor: pointer; }
 
 input::-webkit-input-placeholder {
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase; }
 
 input:-ms-input-placeholder {
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase; }
 
 input::-ms-input-placeholder {
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase; }
 
 input::placeholder {
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase; }
 
 form p {
@@ -1221,6 +1220,9 @@ form p {
   .page-header__rules p {
     font-size: 18px;
     font-weight: 100; }
+
+.page-header__title {
+  text-align: center; }
 
 .page-header--blue {
   background: url("../img/bg-rules.png") no-repeat center;
