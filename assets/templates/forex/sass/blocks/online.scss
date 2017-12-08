@@ -19,4 +19,34 @@
 .online__flex {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
+  padding-bottom: 25px;
+}
+
+.online__box {
+  padding-top: 165px;
+  text-align: center;
+  text-transform: uppercase;
+  
+  & b {
+    font-size: 17px;
+  }
+  
+  & p {
+    font-size: 13px;
+    text-transform: none;
+  }
+  
+  & a {
+    padding: 5px 20px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    background: $mc;
+  }
+}
+
+.online__box--zulu {
+  background: url('../img/online-1.png') no-repeat top;
 }

@@ -210,4 +210,43 @@ body {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-bottom: 25px; }
+
+.online__box {
+  padding-top: 165px;
+  text-align: center;
+  text-transform: uppercase; }
+  .online__box b {
+    font-size: 17px; }
+  .online__box p {
+    font-size: 13px;
+    text-transform: none; }
+  .online__box a {
+    padding: 5px 20px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #464380; }
+
+.online__box--zulu {
+  background: url("../img/online-1.png") no-repeat top; }
+
+.global {
+  background: url("../img/global.png") no-repeat;
+  background-size: cover; }
+  .global h2 {
+    margin-bottom: 0;
+    padding-top: 140px;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .global p {
+    margin-top: 0;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase; }

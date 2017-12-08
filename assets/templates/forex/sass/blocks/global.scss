@@ -1,0 +1,21 @@
+.global {
+  background: url('../img/global.png') no-repeat;
+  background-size: cover;
+  
+  & h2 {
+    margin-bottom: 0;
+    padding-top: 140px;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  & p {
+    margin-top: 0;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
