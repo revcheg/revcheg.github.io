@@ -200,6 +200,7 @@ form p {
   text-align: center; }
 
 form a {
+  font-weight: bold;
   text-decoration: none; }
 
 .page-header__login input[type="checkbox"] {
