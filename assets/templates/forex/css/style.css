@@ -155,8 +155,8 @@ body {
   font-weight: bold;
   text-decoration: none;
   background: #f2c318;
-  -webkit-box-shadow: -6.364px 6.364px 4px 0px rgba(121, 121, 121, 0.004);
-  box-shadow: -6.364px 6.364px 4px 0px rgba(121, 121, 121, 0.004); }
+  -webkit-box-shadow: -7px 7px 4px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: -7px 7px 4px 0px rgba(0, 0, 0, 0.4); }
 
 .slider__slide {
   height: 505px; }
