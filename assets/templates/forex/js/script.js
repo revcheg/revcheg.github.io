@@ -1,4 +1,6 @@
 $('.slider__box').slick({
   autoplay: true,
-  arrows: false
+  autoplaySpeed: 2000,
+  arrows: false,
+  dots: true
 });
