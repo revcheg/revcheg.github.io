@@ -1,3 +1,3 @@
-$('.slider-box').slick({
-    
+$('.slider__box').slick({
+  // autoplay: true
 });

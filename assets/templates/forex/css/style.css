@@ -143,3 +143,28 @@ body {
 
 .page-header__link--black {
   background: #1a1a1a; }
+
+.slider p {
+  color: white;
+  font-size: 30px;
+  font-weight: bold; }
+
+.slider a {
+  padding: 10px 30px;
+  color: #464380;
+  font-weight: bold;
+  text-decoration: none;
+  background: #f2c318;
+  -webkit-box-shadow: -6.364px 6.364px 4px 0px rgba(121, 121, 121, 0.004);
+  box-shadow: -6.364px 6.364px 4px 0px rgba(121, 121, 121, 0.004); }
+
+.slider__slide {
+  height: 505px; }
+
+.slider__slide--one {
+  background: url("../img/slider-1.png") no-repeat top;
+  background-size: cover; }
+
+.slider__slide--two {
+  background: url("../img/slider-2.png") no-repeat top;
+  background-size: cover; }
