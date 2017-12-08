@@ -83,13 +83,17 @@ input::placeholder {
 }
 
 form p {
-  font-size: 14px;
+  margin-bottom: 0;
   text-align: center;
+}
+
+form a {
+  text-decoration: none;
 }
 
 // Login
 .page-header__login input[type="checkbox"] {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .page-header__login label {
@@ -100,6 +104,10 @@ form p {
 
 .page-header__login .page-header__checkbox {
   justify-content: center;
+}
+
+.page-header__login p {
+  margin-bottom: 0;
 }
 // Media
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
