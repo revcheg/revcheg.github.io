@@ -87,10 +87,20 @@ form p {
   text-align: center;
 }
 
-.page-header__form--login {
-  display: none;
+// Login
+.page-header__login input[type="checkbox"] {
+  margin-bottom: 30px;
 }
 
+.page-header__login label {
+  margin-top: 5px;
+  margin-left: 15px;
+  font-size: 22px;
+}
+
+.page-header__login .page-header__checkbox {
+  justify-content: center;
+}
 // Media
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (min-width : 320px) and (max-width : 480px) {    

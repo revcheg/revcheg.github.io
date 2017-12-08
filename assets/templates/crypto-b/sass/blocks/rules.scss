@@ -13,13 +13,21 @@
   }
 }
 
+.page-header--blue {
+  background: url('../img/bg-rules.png') no-repeat center;
+  background-size: cover;
+}
+
+.page-header--height {
+  min-height: 1000px;
+}
+
 .page-header__title {
   text-align: center;
 }
 
-.page-header--blue {
-  background: url('../img/bg-rules.png') no-repeat center;
-  background-size: cover;
+.page-header__flex--center {
+  justify-content: center;
 }
 
 .page-footer--up {
