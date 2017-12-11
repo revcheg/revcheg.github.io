@@ -1,0 +1,13 @@
+.trading {
+  min-height: 750px;
+  background: url("../img/trading-bg.png") no-repeat center;
+}
+
+.trading__title {
+  margin-top: 60px;
+  padding: 10px 50px;
+  color: white;
+  font-size: 30px;
+  background: $mc;
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+.center {
+  min-height: 800px;
+  background: url("../img/center-bg.png") center;
+  background-size: cover;
+  
+  & h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+

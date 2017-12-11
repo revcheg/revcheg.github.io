@@ -1,0 +1,44 @@
+.scroll__first {
+  min-height: 470px;
+  background: url("../img/scroll-1.png") no-repeat top;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.scroll__second {
+  min-height: 470px;
+  background: url("../img/scroll-2.png") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.scroll__flex {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.scroll__box {
+  text-align: center;
+  
+  & b {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  & p {
+    padding-bottom: 20px;
+    font-size: 13px;
+    opacity: 0.8;
+  }
+  
+  & a {
+    padding: 5px 15px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    background: $mc;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}

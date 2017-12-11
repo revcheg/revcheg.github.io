@@ -1,0 +1,33 @@
+.sign {
+  text-align: center;
+  text-transform: uppercase;
+  background: $mc url("../img/sign-bg.png") no-repeat;
+  background-size: cover;
+}
+
+.sign__title {
+  padding-top: 50px;
+  margin-bottom: 0;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.sign__text {
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sign__input {
+  width: 430px;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+.sign__input::placeholder {
+  color: black;
+  opacity: 0.9;
+  text-transform: uppercase;
+}

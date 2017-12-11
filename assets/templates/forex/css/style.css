@@ -269,3 +269,109 @@ body {
   list-style-image: url("../img/li.png"); }
   .global__list li {
     margin-bottom: 10px; }
+
+.trading {
+  min-height: 750px;
+  background: url("../img/trading-bg.png") no-repeat center; }
+
+.trading__title {
+  margin-top: 60px;
+  padding: 10px 50px;
+  color: white;
+  font-size: 30px;
+  background: #2e2963;
+  text-align: center; }
+
+.sign {
+  text-align: center;
+  text-transform: uppercase;
+  background: #2e2963 url("../img/sign-bg.png") no-repeat;
+  background-size: cover; }
+
+.sign__title {
+  padding-top: 50px;
+  margin-bottom: 0;
+  color: white;
+  font-size: 30px;
+  font-weight: bold; }
+
+.sign__text {
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold; }
+
+.sign__input {
+  width: 430px;
+  margin-bottom: 50px;
+  padding: 10px; }
+
+.sign__input::-webkit-input-placeholder {
+  color: black;
+  opacity: 0.9;
+  text-transform: uppercase; }
+
+.sign__input:-ms-input-placeholder {
+  color: black;
+  opacity: 0.9;
+  text-transform: uppercase; }
+
+.sign__input::-ms-input-placeholder {
+  color: black;
+  opacity: 0.9;
+  text-transform: uppercase; }
+
+.sign__input::placeholder {
+  color: black;
+  opacity: 0.9;
+  text-transform: uppercase; }
+
+.center {
+  min-height: 800px;
+  background: url("../img/center-bg.png") center;
+  background-size: cover; }
+  .center h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; }
+
+.scroll__first {
+  min-height: 470px;
+  background: url("../img/scroll-1.png") no-repeat top;
+  background-size: contain;
+  background-attachment: fixed; }
+
+.scroll__second {
+  min-height: 470px;
+  background: url("../img/scroll-2.png") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.scroll__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 50px 0; }
+
+.scroll__box {
+  text-align: center; }
+  .scroll__box b {
+    font-weight: bold;
+    text-transform: uppercase; }
+  .scroll__box p {
+    padding-bottom: 20px;
+    font-size: 13px;
+    opacity: 0.8; }
+  .scroll__box a {
+    padding: 5px 15px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    background: #2e2963;
+    text-transform: uppercase;
+    text-decoration: none; }
