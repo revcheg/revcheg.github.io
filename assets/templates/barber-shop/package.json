@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "assembly for a new project",
   "main": "gulpfile.js",
-  "author": "dimavoid",
+  "author": "Max Sharing",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.1.3",
