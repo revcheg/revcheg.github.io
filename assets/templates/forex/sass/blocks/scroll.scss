@@ -42,3 +42,13 @@
     text-decoration: none;
   }
 }
+
+@media screen and ($mobile-widths) {
+  .scroll__flex {
+    flex-direction: column;
+  }
+  
+  .scroll__box {
+    margin-bottom: 35px;
+  }
+}

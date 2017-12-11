@@ -195,8 +195,6 @@ body {
     -webkit-transition: 0.3s;
     transition: 0.3s; }
     .page-header__toggle:hover {
-      background-color: #f2c318; }
-    .page-header__toggle:active {
       background-color: #2e2963; }
   .page-header__main-nav--closed .page-header__toggle::before {
     content: "";
@@ -600,3 +598,12 @@ body {
     background: #2e2963;
     text-transform: uppercase;
     text-decoration: none; }
+
+@media screen and (max-width: 768px) {
+  .scroll__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .scroll__box {
+    margin-bottom: 35px; } }
