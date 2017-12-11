@@ -236,29 +236,11 @@ body {
   min-height: 610px;
   background: url("../img/global.png") no-repeat;
   background-size: cover; }
-  .global h2 {
-    margin-bottom: 0;
-    padding-top: 140px;
-    color: white;
-    font-size: 70px;
-    font-weight: bold;
-    text-transform: uppercase; }
   .global p {
     margin-top: 0;
     color: white;
     font-size: 25px;
     font-weight: bold; }
-  .global ul {
-    margin-top: 50px;
-    margin-bottom: 0;
-    padding-left: 25px;
-    padding-bottom: 70px;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    list-style-image: url("../img/li.png"); }
-    .global ul li {
-      margin-bottom: 10px; }
   .global a {
     padding: 10px 30px;
     color: #2e2963;
@@ -267,3 +249,23 @@ body {
     background: #f2c318;
     -webkit-box-shadow: -7px 7px 4px 0px rgba(0, 0, 0, 0.4);
     box-shadow: -7px 7px 4px 0px rgba(0, 0, 0, 0.4); }
+
+.global__title {
+  margin-bottom: 0;
+  padding-top: 140px;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.global__list {
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-left: 25px;
+  padding-bottom: 70px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  list-style-image: url("../img/li.png"); }
+  .global__list li {
+    margin-bottom: 10px; }
