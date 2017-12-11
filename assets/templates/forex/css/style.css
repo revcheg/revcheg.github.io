@@ -117,7 +117,7 @@ body {
 .page-header__item {
   margin-right: 10px; }
   .page-header__item a {
-    color: #464380;
+    color: #2e2963;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
@@ -125,8 +125,8 @@ body {
     -webkit-transition: 0.2s;
     transition: 0.2s; }
     .page-header__item a:hover {
-      color: #efbc1c;
-      border-bottom: 2px solid #efbc1c; }
+      color: #f2c318;
+      border-bottom: 2px solid #f2c318; }
 
 .page-header__link {
   padding: 10px 25px;
@@ -138,7 +138,7 @@ body {
 
 .page-header__link--violet {
   margin-right: 10px;
-  background: #464380; }
+  background: #2e2963; }
 
 .page-header__link--black {
   background: #1a1a1a; }
@@ -150,7 +150,7 @@ body {
 
 .slider a {
   padding: 10px 30px;
-  color: #464380;
+  color: #2e2963;
   font-weight: bold;
   text-decoration: none;
   background: #f2c318;
@@ -227,7 +227,7 @@ body {
     font-size: 13px;
     font-weight: bold;
     text-decoration: none;
-    background: #464380; }
+    background: #2e2963; }
 
 .online__box--zulu {
   background: url("../img/online-1.png") no-repeat top; }
@@ -254,14 +254,14 @@ body {
     padding-left: 25px;
     padding-bottom: 70px;
     color: white;
-    list-style-image: url("../img/li.png");
     font-size: 18px;
-    font-weight: bold; }
+    font-weight: bold;
+    list-style-image: url("../img/li.png"); }
     .global ul li {
       margin-bottom: 10px; }
   .global a {
     padding: 10px 30px;
-    color: #464380;
+    color: #2e2963;
     font-weight: bold;
     text-decoration: none;
     background: #f2c318;
