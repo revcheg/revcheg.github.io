@@ -445,7 +445,6 @@ body {
 
 .global__list {
   margin-top: 50px;
-  margin-bottom: 0;
   padding-left: 25px;
   padding-bottom: 70px;
   color: white;
@@ -464,10 +463,15 @@ body {
 
 @media screen and (max-width: 768px) {
   .global {
-    min-height: 0px;
-    text-align: center; }
+    min-height: 600px;
+    text-align: center;
+    background-size: cover; }
+    .global p {
+      font-size: 18px; }
     .global a {
       margin-top: 70px; }
+  .global__title {
+    font-size: 50px; }
   .global__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -479,7 +483,7 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
     text-align: left; } }
 
 .trading {
