@@ -270,8 +270,8 @@ body {
 
 .slick-dots li button:before {
   content: '';
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background: white;
   opacity: 1;
   border-radius: 50%; }
