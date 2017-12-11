@@ -43,3 +43,19 @@
     margin-bottom: 10px;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .global {
+    min-height: 610px;
+    background: url('../img/global.png') no-repeat;
+    // background-size: cover;
+  }
+  
+  .global__title {
+    padding-top: 110px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  
+}

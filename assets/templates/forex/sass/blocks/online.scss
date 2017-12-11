@@ -19,6 +19,7 @@
 .online__flex {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 50px;
 }
 
@@ -48,14 +49,18 @@
 
 .online__box--zulu {
   background: url('../img/online-1.png') no-repeat top;
+  background-size: contain;
 }
 
 @media screen and ($tablet-widths) {
-  
+  .online {
+    & h2 {
+      margin-top: 50px;
+      font-size: 30px;
+    }
+  }
 }
 
 @media screen and ($mobile-widths) {
-  .container {
-    width: 320px;
-  }
+  
 }
