@@ -305,6 +305,9 @@ body {
     height: 350px; }
   .slick-dots {
     bottom: -25px; }
+  .slick-dots li button:before {
+    width: 10px;
+    height: 10px; }
   .slick-dots li button::before {
     border: 1px solid gray;
     opacity: 0.3; }
