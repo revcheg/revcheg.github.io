@@ -12,10 +12,6 @@
   list-style: none;
 }
 
-.page-header__user-menu {
-  // align-self: center;
-}
-
 .page-header__item {
   margin-right: 10px;
   
@@ -50,4 +46,20 @@
 
 .page-header__link--black {
   background: #1a1a1a;
+}
+
+@media screen and ($tablet-widths) {  
+  .page-header__item {
+    & a {
+      font-size: 14px;
+    }
+  }
+  
+  .page-header__link {
+    padding: 10px 15px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+
 }

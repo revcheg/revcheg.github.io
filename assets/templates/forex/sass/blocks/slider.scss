@@ -16,7 +16,7 @@
 }
 
 .slider__slide {
-  height: 505px;
+  height: 500px;
 }
 
 .slider__slide--one {
@@ -54,4 +54,31 @@
 .slick-dots li.slick-active button:before {
   background: #eeba1d;
   opacity: 1;
+}
+
+@media screen and ($tablet-widths) {
+  .slider {
+    & p {
+      font-size: 20px;
+    }
+    
+    & img {
+      width: 350px;
+    }
+  }
+  
+  .slider__slide {
+    height: 400px;
+  }
+  
+  .slick-dots li button:before {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .container {
+    width: 320px;
+  }
 }

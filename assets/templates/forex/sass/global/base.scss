@@ -8,3 +8,19 @@ body {
   width: 1055px;
   margin: auto;
 }
+
+@media screen and ($tablet-widths) {
+  // .container {
+  //   width: 768px;
+  // }
+  
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .container {
+    width: 320px;
+  }
+}

@@ -49,3 +49,13 @@
 .online__box--zulu {
   background: url('../img/online-1.png') no-repeat top;
 }
+
+@media screen and ($tablet-widths) {
+  
+}
+
+@media screen and ($mobile-widths) {
+  .container {
+    width: 320px;
+  }
+}
