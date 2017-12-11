@@ -164,6 +164,23 @@ body {
 
 @media screen and (max-width: 768px) {
   .page-header__main-nav {
+    height: 50px; }
+  .page-header__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .page-header__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .page-header__item {
+    margin-bottom: 10px; }
+  .page-header__main-nav {
     position: relative; }
   .page-header__toggle {
     display: block;
@@ -175,8 +192,8 @@ body {
     font-size: 0;
     border: none;
     cursor: pointer;
-    -webkit-transition: 0.5s;
-    transition: 0.5s; }
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
     .page-header__toggle:hover {
       background-color: #f2c318; }
     .page-header__toggle:active {
@@ -198,13 +215,15 @@ body {
     -webkit-box-shadow: 0 8px 0 rgba(255, 255, 255, 0.3), 0 16px 0 rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 0 rgba(255, 255, 255, 0.3), 0 16px 0 rgba(255, 255, 255, 0.3); }
   .page-header__main-nav--opened .page-header__toggle {
-    left: 0;
-    right: auto; }
+    top: 10px;
+    left: 20px;
+    right: auto;
+    z-index: 20; }
     .page-header__main-nav--opened .page-header__toggle::before, .page-header__main-nav--opened .page-header__toggle::after {
       content: "";
       position: absolute;
-      top: 24px;
-      left: 18px;
+      top: 25px;
+      left: 10px;
       width: 36px;
       height: 2px;
       background-color: #fff;
@@ -231,22 +250,12 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    left: 70px;
+    left: 0;
     z-index: 10;
-    height: 80vh;
-    background-color: #6a4d38;
+    height: 310px;
+    background-color: white;
     -webkit-animation: menu-opened 0.5s;
     animation: menu-opened 0.5s; }
-    .page-header__main-nav--opened .container::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 2;
-      width: 7px;
-      height: 100%;
-      -webkit-box-shadow: inset 4px 0 7px -2px rgba(0, 0, 0, 0.3);
-      box-shadow: inset 4px 0 7px -2px rgba(0, 0, 0, 0.3); }
   .page-header__main-nav--nojs .page-header__toggle {
     display: none; }
   .page-header__main-nav--nojs .container {
