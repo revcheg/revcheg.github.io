@@ -1,0 +1,172 @@
+.page-footer {
+  color: white;
+  border-style: solid;
+  border-width: 10px 0px 0px;
+  border-image: url("../img/footer-gold.png") 10 0 0 repeat;
+  background: #323232;
+  
+  & b {
+    font-size: 16px;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+
+  & p {
+    margin-top: 0;
+    font-size: 11px;
+  }
+  
+  & a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    
+    &:hover {
+      color: $sc;
+    }
+  }
+}
+
+.container--width {
+  width: 70%;
+}
+
+.page-footer__flex {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+
+.page-footer__left-column {
+  flex-basis: 15%;
+}
+
+.page-footer__right-column {
+  flex-basis: 85%;
+}
+
+.page-footer__facebook {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  background: url("../img/fb.png") no-repeat left;
+}
+
+.page-footer__linked {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  background: url("../img/link.png") no-repeat left;
+}
+
+.page-footer__twitter {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  background: url("../img/tw.png") no-repeat left;
+}
+
+.page-footer__google {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  background: url("../img/go.png") no-repeat left;
+}
+
+.page-footer__right-column--flex {
+  display: flex;
+  
+  & b {
+    font-size: 12px;
+  }
+}
+
+.page-footer__link {
+  height: 20px;
+  padding: 5px 20px;
+  color: #323232 !important;
+  font-weight: bold;
+  background: $sc;
+  border-radius: 20px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.page-footer__contact {
+  margin-right: 15px;
+}
+
+.page-footer__text {
+  padding-top: 10px;
+}
+
+.page-footer__copyright {
+  padding-top: 40px;
+  padding-bottom: 70px;
+  text-align: center;
+  
+  & p {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and ($tablet-widths) {
+  .container--width {
+    width: 95%;
+  }
+  
+  .page-footer {
+    
+    & b {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .page-footer__flex {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .page-footer {
+    text-align: center;
+  }
+  
+  .page-footer__right-column {
+    margin-top: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
