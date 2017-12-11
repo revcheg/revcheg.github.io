@@ -49,7 +49,6 @@
 
 .online__box--zulu {
   background: url('../img/online-1.png') no-repeat top;
-  background-size: contain;
 }
 
 @media screen and ($tablet-widths) {
@@ -62,5 +61,7 @@
 }
 
 @media screen and ($mobile-widths) {
-  
+  .online__flex {
+    flex-direction: column;
+  }
 }

@@ -31,3 +31,9 @@
   opacity: 0.9;
   text-transform: uppercase;
 }
+
+@media screen and ($mobile-widths) {
+  .sign__input {
+    width: 80%;
+  }
+}

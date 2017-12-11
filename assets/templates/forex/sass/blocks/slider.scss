@@ -78,5 +78,37 @@
 }
 
 @media screen and ($mobile-widths) {
+  .slider {
+    text-align: center;
+    
+    & p {
+      font-size: 18px;
+    }
+    
+    & img {
+      width: 300px;
+      margin: auto;
+    }
+    
+    & a {
+      padding: 6px 15px;
+    }
+  }
   
+  .slider__slide {
+    height: 350px;
+  }
+  
+  .slick-dots {
+    bottom: -25px;
+  }
+  
+  .slick-dots li button::before {
+    border: 1px solid gray;
+    opacity: 0.3;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    border: 1px solid $sc;
+  }
 }

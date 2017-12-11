@@ -48,7 +48,6 @@
   .global {
     min-height: 610px;
     background: url('../img/global.png') no-repeat;
-    // background-size: cover;
   }
   
   .global__title {
@@ -57,5 +56,20 @@
 }
 
 @media screen and ($mobile-widths) {
+  .global {
+    min-height: 0px;
+    text-align: center;
+    
+    & a {
+      margin-top: 70px;
+    }
+  }
   
+  .global__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70px;
+    text-align: left;
+  }
 }

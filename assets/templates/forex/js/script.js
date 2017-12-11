@@ -2,7 +2,13 @@ $('.slider__box').slick({
   autoplay: true,
   autoplaySpeed: 2000,
   arrows: false,
-  dots: true
+  dots: true,
+  responsive: [{
+    breakpoint: 768,
+    settings: {
+      autoplay: false
+    }
+  }]
 });
 
 var navMain = document.querySelector('.page-header__main-nav');

@@ -341,6 +341,26 @@ body {
     width: 15px;
     height: 15px; } }
 
+@media screen and (max-width: 768px) {
+  .slider {
+    text-align: center; }
+    .slider p {
+      font-size: 18px; }
+    .slider img {
+      width: 300px;
+      margin: auto; }
+    .slider a {
+      padding: 6px 15px; }
+  .slider__slide {
+    height: 350px; }
+  .slick-dots {
+    bottom: -25px; }
+  .slick-dots li button::before {
+    border: 1px solid gray;
+    opacity: 0.3; }
+  .slick-dots li.slick-active button:before {
+    border: 1px solid #f2c318; } }
+
 .online h2 {
   margin-top: 100px;
   margin-bottom: 20px;
@@ -383,13 +403,19 @@ body {
     background: #2e2963; }
 
 .online__box--zulu {
-  background: url("../img/online-1.png") no-repeat top;
-  background-size: contain; }
+  background: url("../img/online-1.png") no-repeat top; }
 
 @media screen and (max-width: 1200px) {
   .online h2 {
     margin-top: 50px;
     font-size: 30px; } }
+
+@media screen and (max-width: 768px) {
+  .online__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
 
 .global {
   min-height: 610px;
@@ -435,6 +461,26 @@ body {
     background: url("../img/global.png") no-repeat; }
   .global__title {
     padding-top: 110px; } }
+
+@media screen and (max-width: 768px) {
+  .global {
+    min-height: 0px;
+    text-align: center; }
+    .global a {
+      margin-top: 70px; }
+  .global__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 70px;
+    text-align: left; } }
 
 .trading {
   min-height: 550px;
@@ -496,6 +542,10 @@ body {
   color: black;
   opacity: 0.9;
   text-transform: uppercase; }
+
+@media screen and (max-width: 768px) {
+  .sign__input {
+    width: 80%; } }
 
 .center {
   min-height: 800px;
