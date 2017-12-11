@@ -271,8 +271,8 @@ body {
     margin-bottom: 10px; }
 
 .trading {
-  min-height: 750px;
-  background: url("../img/trading-bg.png") no-repeat center; }
+  min-height: 550px;
+  background: url("../img/trading-bg.png") no-repeat bottom; }
 
 .trading__title {
   margin-top: 60px;
@@ -341,7 +341,7 @@ body {
 .scroll__first {
   min-height: 470px;
   background: url("../img/scroll-1.png") no-repeat top;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed; }
 
 .scroll__second {
