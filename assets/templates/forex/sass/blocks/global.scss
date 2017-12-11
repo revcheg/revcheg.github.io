@@ -1,4 +1,5 @@
 .global {
+  min-height: 610px;
   background: url('../img/global.png') no-repeat;
   background-size: cover;
   
@@ -16,6 +17,29 @@
     color: white;
     font-size: 25px;
     font-weight: bold;
-    text-transform: uppercase;
+  }
+  
+  & ul {
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding-left: 25px;
+    padding-bottom: 70px;
+    color: white;
+    list-style-image: url("../img/li.png");
+    font-size: 18px;
+    font-weight: bold;
+    
+    & li {
+      margin-bottom: 10px;
+    }
+  }
+  
+  & a {
+    padding: 10px 30px;
+    color: $mc;
+    font-weight: bold;
+    text-decoration: none;
+    background: #f2c318;
+    box-shadow: -7px 7px 4px 0px rgba(0, 0, 0, 0.4);
   }
 }
