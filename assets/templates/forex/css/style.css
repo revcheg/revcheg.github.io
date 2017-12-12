@@ -270,8 +270,8 @@ body {
 
 .slick-dots li button:before {
   content: '';
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   background: white;
   opacity: 1;
   border-radius: 50%; }
@@ -286,10 +286,7 @@ body {
   .slider img {
     width: 350px; }
   .slider__slide {
-    height: 400px; }
-  .slick-dots li button:before {
-    width: 15px;
-    height: 15px; } }
+    height: 400px; } }
 
 @media screen and (max-width: 768px) {
   .slider {
@@ -305,9 +302,6 @@ body {
     height: 350px; }
   .slick-dots {
     bottom: -25px; }
-  .slick-dots li button:before {
-    width: 10px;
-    height: 10px; }
   .slick-dots li button::before {
     border: 1px solid gray;
     opacity: 0.3; }
@@ -584,7 +578,7 @@ body {
       color: #f2c318; }
 
 .container--width {
-  width: 70%; }
+  width: 80%; }
 
 .page-footer__flex {
   display: -webkit-box;
@@ -594,13 +588,8 @@ body {
   justify-content: space-around;
   margin-top: 35px; }
 
-.page-footer__left-column {
-  -ms-flex-preferred-size: 15%;
-  flex-basis: 15%; }
-
 .page-footer__right-column {
-  -ms-flex-preferred-size: 85%;
-  flex-basis: 85%;
+  width: 1150px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
@@ -678,5 +667,36 @@ body {
     justify-content: space-around; }
   .page-footer {
     text-align: center; }
+    .page-footer a {
+      margin-right: 0; }
   .page-footer__right-column {
-    margin-top: 15px; } }
+    margin-top: 15px; }
+  .page-footer__right-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: auto; }
+  .page-footer__contact {
+    margin: 10px 0; }
+  .page-footer__right-column--link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    margin: auto;
+    padding-top: 15px;
+    text-align: left; }
+    .page-footer__right-column--link a {
+      margin-bottom: 10px; } }

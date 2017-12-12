@@ -44,8 +44,8 @@
 
 .slick-dots li button:before {
   content: '';
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   background: white;
   opacity: 1;
   border-radius: 50%;
@@ -69,11 +69,6 @@
   
   .slider__slide {
     height: 400px;
-  }
-  
-  .slick-dots li button:before {
-    width: 15px;
-    height: 15px;
   }
 }
 
@@ -101,11 +96,6 @@
   
   .slick-dots {
     bottom: -25px;
-  }
-  
-  .slick-dots li button:before {
-    width: 10px;
-    height: 10px;
   }
   
   .slick-dots li button::before {
