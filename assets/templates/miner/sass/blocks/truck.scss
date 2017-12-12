@@ -4,3 +4,14 @@
   background: url('../img/truck-bg.png') no-repeat top;
   background-size: cover;
 }
+
+@media screen and ($tablet-widths) {
+  .truck {
+    min-height: 500px;
+    margin-top: -150px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+
+}

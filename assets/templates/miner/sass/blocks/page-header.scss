@@ -1,6 +1,6 @@
 .page-header {
   background: #0f0e12 url('../img/header-bg.png') no-repeat;
-  background-size: cover;
+  // background-size: cover;
 }
 
 .page-header__title {
@@ -147,3 +147,69 @@
     padding-left: 20px;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .page-header__about {
+    margin-top: 160px;
+  }
+  
+  .page-header__item {
+    
+    & b {
+      padding-bottom: 10px;
+      font-size: 20px;
+    }
+    
+    & a {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .page-header {
+    min-height: 900px;
+  }
+  
+  .page-header__title {
+    text-align: center;
+  }
+  
+  .page-header__social {
+    justify-content: center;
+  }
+  
+  .page-header__timer {
+    text-align: center;
+  }
+  
+  .page-header__time {
+    justify-content: center;
+  }
+  
+  .page-header__offer {
+    display: none;
+  }
+  
+  .page-header__about {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

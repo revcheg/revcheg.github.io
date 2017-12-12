@@ -52,8 +52,7 @@ body {
   font-style: normal; }
 
 .page-header {
-  background: #0f0e12 url("../img/header-bg.png") no-repeat;
-  background-size: cover; }
+  background: #0f0e12 url("../img/header-bg.png") no-repeat; }
 
 .page-header__title {
   padding-top: 15px; }
@@ -178,6 +177,35 @@ body {
 .page-header__right ul {
   padding-left: 20px; }
 
+@media screen and (max-width: 1200px) {
+  .page-header__about {
+    margin-top: 160px; }
+  .page-header__item b {
+    padding-bottom: 10px;
+    font-size: 20px; }
+  .page-header__item a {
+    font-size: 18px; } }
+
+@media screen and (max-width: 768px) {
+  .page-header {
+    min-height: 900px; }
+  .page-header__title {
+    text-align: center; }
+  .page-header__social {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .page-header__timer {
+    text-align: center; }
+  .page-header__time {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .page-header__offer {
+    display: none; }
+  .page-header__about {
+    display: none; } }
+
 .hardware h2 {
   margin-top: 70px;
   margin-bottom: 0;
@@ -282,6 +310,11 @@ body {
   background: url("../img/truck-bg.png") no-repeat top;
   background-size: cover; }
 
+@media screen and (max-width: 1200px) {
+  .truck {
+    min-height: 500px;
+    margin-top: -150px; } }
+
 .edge {
   min-height: 1700px;
   margin-top: -350px;
@@ -289,7 +322,6 @@ body {
   background-size: cover; }
 
 .cloud {
-  position: relative;
   margin-top: -150px;
   background: url("../img/cloud-bg.png"); }
 
@@ -320,6 +352,11 @@ body {
   font-weight: bold;
   background: #000;
   text-transform: uppercase; }
+
+@media screen and (max-width: 1200px) {
+  .cloud {
+    margin-top: -350px;
+    background: url("../img/cloud-bg.png"); } }
 
 .why {
   background: url("../img/why-bg.png"); }
