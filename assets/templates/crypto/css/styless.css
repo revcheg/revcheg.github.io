@@ -648,9 +648,19 @@ form button:hover {
   text-transform: uppercase;
 }
 
+.page-main--contact {
+	font-size: 18px;
+}
+
+.page-main__about--title {
+	color: #606060;
+  font-size: 20px !important;
+	text-transform: uppercase !important;
+}
+
 .page-main--about p {
   width: 60%;
-  padding-bottom: 120px;
+  /*padding-bottom: 120px;*/
   font-size: 18px;
   text-transform: none;
 }
@@ -686,8 +696,10 @@ form button:hover {
 
 /*Terms*/
 .page-main--terms {
+	font-size: 18px;
   background: url("../img/terms-bg.png") no-repeat top;
   background-size: cover;
+	text-transform: none;
 }
 
 .page-main--terms ul {
