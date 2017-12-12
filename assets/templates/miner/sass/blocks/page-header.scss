@@ -50,6 +50,7 @@
   background: url('../img/header-sprite.png') -188px -10px;
 }
 
+// Timer
 .page-header__timer {
   margin-top: 100px;
   color: #fff;
@@ -94,7 +95,32 @@
   font-style: italic;
 }
 
+// Edge
+.page-header__offer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
 
+.page-header__item {
+  display: flex;
+  flex-direction: column;
+  height: 76px;
+  padding-top: 10px;
+  padding-left: 100px;
+  background: url('../img/header-offer.png') no-repeat left;
+  
+  & b {
+    color: #fff;
+    font-size: 25px;
+  }
+  
+  & a {
+    color: #ffe592;
+    font-size: 20px;
+    text-decoration: none;
+  }
+}
 
 
 
