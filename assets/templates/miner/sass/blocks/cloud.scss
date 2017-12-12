@@ -41,5 +41,14 @@
 }
 
 @media screen and ($mobile-widths) {
-
+  .cloud__flex {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .cloud__left,
+  .cloud__middle {
+    width: auto;
+  }
 }
