@@ -7,6 +7,14 @@ body {
   width: 1150px;
   margin: auto; }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 95%; } }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 98%; } }
+
 @font-face {
   font-family: 'SF UI Text';
   src: local("SF UI Text Semibold"), local("SFUIText-Semibold"), url("../fonts/SFUIText-Semibold.woff") format("woff");
