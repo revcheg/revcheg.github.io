@@ -1,5 +1,6 @@
 .page-header {
-  background: #0f0e12 url('../img/header-bg.png');
+  background: #0f0e12 url('../img/header-bg.png') no-repeat;
+  background-size: cover;
 }
 
 .page-header__title {
@@ -95,7 +96,7 @@
   font-style: italic;
 }
 
-// Edge
+// Offer
 .page-header__offer {
   display: flex;
   justify-content: space-between;
@@ -122,9 +123,30 @@
   }
 }
 
+// About
+.page-header__about {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding-bottom: 50px;
+  
+  & b {
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+}
 
-
-
+.page-header__right {
+  
+  & a {
+    color: #4183c4;
+    text-decoration: none;
+  }
+  
+  & ul {
+    padding-left: 20px;
+  }
+}
 
 
 

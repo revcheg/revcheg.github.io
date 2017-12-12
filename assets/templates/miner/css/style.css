@@ -44,7 +44,8 @@ body {
   font-style: normal; }
 
 .page-header {
-  background: #0f0e12 url("../img/header-bg.png"); }
+  background: #0f0e12 url("../img/header-bg.png") no-repeat;
+  background-size: cover; }
 
 .page-header__title {
   padding-top: 15px; }
@@ -148,3 +149,23 @@ body {
     color: #ffe592;
     font-size: 20px;
     text-decoration: none; }
+
+.page-header__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding-bottom: 50px; }
+  .page-header__about b {
+    font-size: 25px;
+    text-transform: uppercase; }
+
+.page-header__right a {
+  color: #4183c4;
+  text-decoration: none; }
+
+.page-header__right ul {
+  padding-left: 20px; }
