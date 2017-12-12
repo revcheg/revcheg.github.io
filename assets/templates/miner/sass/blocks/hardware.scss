@@ -29,10 +29,24 @@
 .hardware__list {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 }
 
 .hardware__item {
   text-align: center;
+  
+  & p {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  & a {
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 26px;
+    background: url('../img/hardware-amazon.png');
+  }
 }
 
 .hardware__title {
@@ -42,5 +56,34 @@
 }
 
 .hardware__charter {
+  padding-top: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
+
+.hardware__value {
+  color: #480000;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.hardware__value--yes {
+  color: #4183c4;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
