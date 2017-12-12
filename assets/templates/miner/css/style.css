@@ -262,3 +262,20 @@ body {
     color: #000;
     text-decoration: underline;
     opacity: 1; }
+
+.mining {
+  min-height: 550px;
+  background: url("../img/mining-bg.png") no-repeat top;
+  background-size: cover; }
+
+.truck {
+  min-height: 650px;
+  margin-top: -50px;
+  background: url("../img/truck-bg.png") no-repeat top;
+  background-size: cover; }
+
+.edge {
+  min-height: 1700px;
+  margin-top: -350px;
+  background: url("../img/edge-bg.png") no-repeat top;
+  background-size: cover; }
