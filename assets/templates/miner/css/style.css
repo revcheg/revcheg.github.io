@@ -230,3 +230,35 @@ body {
 .hardware__value--yes {
   color: #4183c4;
   text-decoration: underline; }
+
+.tabs__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-bottom: 30px; }
+  .tabs__flex p {
+    font-size: 18px;
+    opacity: 0.8; }
+
+.tabs th {
+  color: #fff;
+  background: #666666; }
+
+.tabs tr {
+  background: #a6a6a6;
+  text-align: center; }
+
+.tabs a {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.5; }
+  .tabs a:hover {
+    color: #000;
+    text-decoration: underline;
+    opacity: 1; }
