@@ -169,3 +169,43 @@ body {
 
 .page-header__right ul {
   padding-left: 20px; }
+
+.hardware h2 {
+  margin-top: 70px;
+  margin-bottom: 0;
+  color: #480000;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.hardware__sub-title {
+  color: #480000;
+  text-align: center; }
+
+.hardware__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 50px; }
+
+.hardware__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.hardware__item {
+  text-align: center; }
+
+.hardware__title {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.hardware__charter {
+  font-weight: bold; }

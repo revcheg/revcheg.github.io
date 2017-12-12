@@ -441,6 +441,13 @@ body {
   display: none;
 }
 
+.page-footer__copyright {
+	margin-bottom: 0;
+	padding-bottom: 50px;
+	color: #949494;
+	text-align: center;
+}
+
 /*Login*/
 .form__body .container {
   width: 500px;
