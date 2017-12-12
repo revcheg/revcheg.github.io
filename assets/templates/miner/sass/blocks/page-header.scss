@@ -1,0 +1,110 @@
+.page-header {
+  background: #0f0e12 url('../img/header-bg.png');
+}
+
+.page-header__title {
+  padding-top: 15px;
+  
+  & b {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+.page-header__social {
+  display: flex;
+  margin-top: 40px;
+}
+
+.page-header__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  opacity: 0.5;
+  transition: 0.3s;
+  
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.page-header__link--phone {
+  background: url('../img/header-sprite.png') -69px -10px;
+}
+
+.page-header__link--linkedin {
+  background: url('../img/header-sprite.png') -128px -10px;
+}
+
+.page-header__link--email {
+  background: url('../img/header-sprite.png') -248px -10px;
+}
+
+.page-header__link--facebook {
+  background: url('../img/header-sprite.png') -10px -10px;
+}
+
+.page-header__link--skype {
+  background: url('../img/header-sprite.png') -188px -10px;
+}
+
+.page-header__timer {
+  margin-top: 100px;
+  color: #fff;
+  
+  & b {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+}
+
+.page-header__time {
+  display: flex;
+  margin-top: 25px;
+}
+
+.page-header__number {
+  margin-right: 20px;
+  margin-left: 10px;
+  font-style: italic;
+  text-align: center;
+  
+  & small {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  & p {
+    margin: 0;
+    font-size: 55px;
+    font-weight: bold;
+  }
+}
+
+.page-header__number--ml {
+  margin-left: -10px;
+}
+
+.page-header__dot {
+  font-size: 25px;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
