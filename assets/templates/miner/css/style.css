@@ -398,6 +398,7 @@ body {
 
 .truck {
   min-height: 650px;
+  margin-bottom: 90px;
   background: url("../img/truck-bg.png") no-repeat top;
   background-size: cover; }
 
@@ -405,6 +406,55 @@ body {
   .truck {
     min-height: 500px;
     margin-top: -150px; } }
+
+.proof__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 70px; }
+
+.proof__left {
+  padding: 40px;
+  color: #fff;
+  font-size: 45px;
+  font-weight: bold;
+  background: #000; }
+  .proof__left p {
+    margin: 0; }
+
+.proof__right {
+  padding-top: 20px;
+  padding-left: 200px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: url("../img/proof-power.png") no-repeat left; }
+
+.proof__box {
+  padding-top: 170px;
+  width: 170px;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.proof__box--energy {
+  background: url("../img/proof-energy.png") no-repeat top; }
+
+.proof__box--hard {
+  background: url("../img/proof-hard.png") no-repeat top; }
+
+.proof__box--time {
+  margin-top: 20px;
+  padding-top: 150px;
+  background: url("../img/proof-time.png") no-repeat top; }
+
+.proof__resume {
+  padding-bottom: 90px;
+  font-size: 30px;
+  text-align: center; }
 
 .edge {
   min-height: 1700px;
