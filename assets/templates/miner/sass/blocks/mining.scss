@@ -3,3 +3,13 @@
   background: url('../img/mining-bg.png') no-repeat top;
   background-size: cover;
 }
+
+@media screen and ($tablet-widths) {
+  .mining {
+    min-height: 1100px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+
+}

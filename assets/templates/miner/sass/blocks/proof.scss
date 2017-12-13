@@ -53,3 +53,14 @@
   font-size: 30px;
   text-align: center;
 }
+
+@media screen and ($tablet-widths) {
+  .proof__flex {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 70px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+}

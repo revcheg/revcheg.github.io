@@ -1,5 +1,15 @@
 .rewards {
   min-height: 1600px;
-  background: url('../img/rewards-bg.png');
+  background: url('../img/rewards-bg.png') no-repeat;
   background-size: cover;
+}
+
+@media screen and ($tablet-widths) {
+  .rewards {
+    min-height: 1000px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+
 }
