@@ -277,6 +277,7 @@ body {
     -ms-flex-align: center;
     align-items: center; }
     .hardware__video iframe {
+      width: 100%;
       margin-bottom: 40px; }
   .hardware__list {
     -webkit-box-orient: vertical;
@@ -397,7 +398,11 @@ body {
     text-align: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    padding-top: 130px; }
+  .cloud__title {
+    padding: 10px;
+    font-size: 30px; }
   .cloud__left,
   .cloud__middle {
     width: auto; } }
@@ -433,3 +438,12 @@ body {
 
 .padding-bottom {
   padding-bottom: 100px; }
+
+@media screen and (max-width: 768px) {
+  .why__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 0px;
+    padding-bottom: 50px; } }
