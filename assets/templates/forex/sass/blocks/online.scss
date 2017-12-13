@@ -51,6 +51,10 @@
   background: url('../img/online-1.png') no-repeat top;
 }
 
+.online__slider {
+  display: none;
+}
+
 @media screen and ($tablet-widths) {
   .online {
     & h2 {
@@ -62,6 +66,29 @@
 
 @media screen and ($mobile-widths) {
   .online__flex {
-    flex-direction: column;
+    display: none;
+    // flex-direction: column;
+  }
+  
+  .online__slider {
+    display: block;
+    margin-top: 50px;
+    
+      & .slick-dots {
+        bottom: 25px;
+      }
+      
+      & .slick-dots li button::before {
+        border: 2px solid black;
+      }
+      
+      & .slick-dots li.slick-active button:before {
+        background: $mc;
+        opacity: 1;
+      }
+      
+      & .slick-dots li.slick-active button:before {
+        border: 1px solid $mc;
+      }
   }
 }
