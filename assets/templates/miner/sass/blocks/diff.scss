@@ -1,7 +1,8 @@
 .diff__flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-transform: uppercase;
+  margin-top: 100px;
 }
 
 .diff__left {
@@ -14,4 +15,24 @@
   & p {
     margin: 0;
   }
+}
+
+.diff__right {
+  padding-top: 10px;
+  color: #262626;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.diff__up {
+  width: 430px;
+  height: 135px;
+  background: url('../img/diff-left.png') no-repeat;
+}
+
+.diff__down {
+  width: 430px;
+  height: 135px;
+  background: url('../img/diff-right.png') no-repeat;
 }

@@ -465,10 +465,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-transform: uppercase; }
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  text-transform: uppercase;
+  margin-top: 100px; }
 
 .diff__left {
   padding: 40px;
@@ -479,15 +479,33 @@ body {
   .diff__left p {
     margin: 0; }
 
+.diff__right {
+  padding-top: 10px;
+  color: #262626;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.diff__up {
+  width: 430px;
+  height: 135px;
+  background: url("../img/diff-left.png") no-repeat; }
+
+.diff__down {
+  width: 430px;
+  height: 135px;
+  background: url("../img/diff-right.png") no-repeat; }
+
 .edge {
-  min-height: 1700px;
-  margin-top: -350px;
+  min-height: 1800px;
+  margin-top: -300px;
   background: url("../img/edge-bg.png") no-repeat top;
   background-size: cover; }
 
 .cloud {
-  margin-top: -150px;
-  background: url("../img/cloud-bg.png"); }
+  margin-top: -110px;
+  background: url("../img/cloud-bg.png");
+  background-size: cover; }
 
 .cloud__flex {
   display: -webkit-box;
