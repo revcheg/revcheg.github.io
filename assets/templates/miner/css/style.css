@@ -456,6 +456,11 @@ body {
   font-size: 30px;
   text-align: center; }
 
+.rewards {
+  min-height: 1600px;
+  background: url("../img/rewards-bg.png");
+  background-size: cover; }
+
 .edge {
   min-height: 1700px;
   margin-top: -350px;
