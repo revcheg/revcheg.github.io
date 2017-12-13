@@ -509,7 +509,7 @@ body {
 
 .scroll__first {
   min-height: 470px;
-  background: url("../img/scroll-f.jpg") no-repeat top;
+  background: url("../img/scroll-f.png") no-repeat top;
   background-size: cover;
   background-attachment: fixed; }
 
