@@ -200,7 +200,9 @@ body {
   .page-header__time {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
   .page-header__offer {
     display: none; }
   .page-header__about {
@@ -446,4 +448,14 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 0px;
-    padding-bottom: 50px; } }
+    padding-bottom: 50px; }
+  .why__left {
+    text-align: center;
+    padding-top: 90px;
+    padding-left: 0;
+    background: url("../img/check-green.png") no-repeat top; }
+  .why__right {
+    text-align: center;
+    padding-top: 90px;
+    padding-left: 0;
+    background: url("../img/check-red.png") no-repeat top; } }

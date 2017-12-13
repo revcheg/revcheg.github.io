@@ -37,10 +37,24 @@
 
 @media screen and ($tablet-widths) {}
 
-@media screen and ($mobile-widths) {
+@media screen and ($mobile-widths) {  
   .why__flex {
     flex-direction: column;
     margin-top: 0px;
     padding-bottom: 50px;
+  }
+  
+  .why__left {
+    text-align: center;
+    padding-top: 90px;
+    padding-left: 0;
+    background: url('../img/check-green.png') no-repeat top;
+  }
+  
+  .why__right {
+    text-align: center;
+    padding-top: 90px;
+    padding-left: 0;
+    background: url('../img/check-red.png') no-repeat top;
   }
 }

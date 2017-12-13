@@ -184,7 +184,9 @@
   }
   
   .page-header__time {
+    // width: 50%;
     justify-content: center;
+    flex-wrap: wrap;
   }
   
   .page-header__offer {
