@@ -166,8 +166,7 @@ body {
     box-shadow: 0 8px 0 rgba(255, 255, 255, 0.3), 0 16px 0 rgba(255, 255, 255, 0.3); }
   .page-header__main-nav--opened .page-header__toggle {
     top: 10px;
-    left: 20px;
-    right: auto;
+    right: 20px;
     width: 40px;
     height: 40px;
     z-index: 20; }
