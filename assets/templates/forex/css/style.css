@@ -168,13 +168,15 @@ body {
     top: 10px;
     left: 20px;
     right: auto;
+    width: 40px;
+    height: 40px;
     z-index: 20; }
     .page-header__main-nav--opened .page-header__toggle::before, .page-header__main-nav--opened .page-header__toggle::after {
       content: "";
       position: absolute;
-      top: 25px;
-      left: 10px;
-      width: 36px;
+      top: 20px;
+      left: 8px;
+      width: 25px;
       height: 2px;
       background-color: #fff;
       -webkit-box-shadow: none;

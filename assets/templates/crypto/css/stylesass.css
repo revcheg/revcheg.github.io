@@ -688,7 +688,7 @@ form button:hover {
   padding-left: 30px;
   color: #606060;
   font-size: 18px;
-  text-transform: lowercase;
+  text-transform: none;
 }
 
 .page-main--pb {
