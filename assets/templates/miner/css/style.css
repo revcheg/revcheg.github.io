@@ -208,6 +208,59 @@ body {
   .page-header__about {
     display: none; } }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 50px; }
+
+.nav__left a {
+  margin-right: 20px;
+  padding-bottom: 3px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .nav__left a:hover {
+    color: #ffcc31;
+    border-bottom: 1px solid #ffcc31; }
+
+.nav__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  font-size: 14px; }
+  .nav__right a {
+    margin-right: 10px;
+    padding: 2px 15px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .nav__right a:hover {
+      color: #000;
+      background: #fff; }
+
+.nav__language {
+  margin-top: 4px;
+  margin-right: 15px; }
+  .nav__language a {
+    margin: 0;
+    padding: 0;
+    border: none; }
+    .nav__language a:hover {
+      color: #ffcc31;
+      background: none; }
+
 .hardware h2 {
   margin-top: 70px;
   margin-bottom: 0;
