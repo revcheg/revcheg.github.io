@@ -78,10 +78,6 @@
         bottom: 25px;
       }
       
-      & .slick-dots li button::before {
-        border: 2px solid black;
-      }
-      
       & .slick-dots li.slick-active button:before {
         background: $mc;
         opacity: 1;

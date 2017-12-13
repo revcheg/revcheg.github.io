@@ -369,8 +369,6 @@ body {
     margin-top: 50px; }
     .online__slider .slick-dots {
       bottom: 25px; }
-    .online__slider .slick-dots li button::before {
-      border: 2px solid black; }
     .online__slider .slick-dots li.slick-active button:before {
       background: #2e2963;
       opacity: 1; }
