@@ -461,6 +461,24 @@ body {
   background: url("../img/rewards-bg.png");
   background-size: cover; }
 
+.diff__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-transform: uppercase; }
+
+.diff__left {
+  padding: 40px;
+  color: #fff;
+  font-size: 45px;
+  font-weight: bold;
+  background: #000; }
+  .diff__left p {
+    margin: 0; }
+
 .edge {
   min-height: 1700px;
   margin-top: -350px;

@@ -1,0 +1,17 @@
+.diff__flex {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.diff__left {
+  padding: 40px;
+  color: #fff;
+  font-size: 45px;
+  font-weight: bold;
+  background: #000;
+  
+  & p {
+    margin: 0;
+  }
+}
