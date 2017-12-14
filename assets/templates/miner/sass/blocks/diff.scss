@@ -36,3 +36,19 @@
   height: 135px;
   background: url('../img/diff-right.png') no-repeat;
 }
+
+@media screen and ($tablet-widths) {
+
+}
+
+@media screen and ($mobile-widths) {
+  .diff__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .diff__up {
+    margin-bottom: 40px;
+  }
+}

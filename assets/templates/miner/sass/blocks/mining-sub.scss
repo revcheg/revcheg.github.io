@@ -41,5 +41,12 @@
 }
 
 @media screen and ($mobile-widths) {
-
+  .mining-sub__flex {
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .mining-sub__left {
+    margin-bottom: 50px;
+  }
 }

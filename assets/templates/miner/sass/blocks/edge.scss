@@ -11,3 +11,18 @@
     margin: auto;
   }
 }
+
+@media screen and ($tablet-widths) {
+
+}
+
+@media screen and ($mobile-widths) {
+  .edge {
+    min-height: 1400px;
+    margin-top: -200px;
+    
+    & img {
+      padding-top: 500px;
+    }
+  }
+}

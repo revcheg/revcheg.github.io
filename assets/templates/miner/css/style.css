@@ -561,6 +561,18 @@ body {
     justify-content: space-around;
     margin-top: 0; } }
 
+@media screen and (max-width: 768px) {
+  .mining-sub__flex {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .mining-sub__left {
+    margin-bottom: 50px; } }
+
 .truck {
   min-height: 650px;
   margin-bottom: 90px;
@@ -629,6 +641,24 @@ body {
     justify-content: space-around;
     padding-bottom: 70px; } }
 
+@media screen and (max-width: 768px) {
+  .proof__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .proof__box {
+    margin-bottom: 50px; }
+  .proof__resume {
+    padding-bottom: 30px;
+    font-size: 20px; } }
+
 .rewards {
   min-height: 1600px;
   background: url("../img/rewards-bg.png") no-repeat;
@@ -642,6 +672,12 @@ body {
     display: block;
     max-width: 100%;
     margin: auto; }
+
+@media screen and (max-width: 768px) {
+  .rewards {
+    min-height: 1000px; }
+    .rewards p {
+      padding-top: 70px; } }
 
 .diff__flex {
   display: -webkit-box;
@@ -678,6 +714,21 @@ body {
   height: 135px;
   background: url("../img/diff-right.png") no-repeat; }
 
+@media screen and (max-width: 768px) {
+  .diff__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .diff__up {
+    margin-bottom: 40px; } }
+
 .edge {
   min-height: 1900px;
   margin-top: -300px;
@@ -688,6 +739,13 @@ body {
     max-width: 100%;
     padding-top: 600px;
     margin: auto; }
+
+@media screen and (max-width: 768px) {
+  .edge {
+    min-height: 1400px;
+    margin-top: -200px; }
+    .edge img {
+      padding-top: 500px; } }
 
 .cloud {
   min-height: 850px;

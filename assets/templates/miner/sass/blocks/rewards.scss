@@ -21,5 +21,11 @@
 }
 
 @media screen and ($mobile-widths) {
-
+  .rewards {
+    min-height: 1000px;
+    
+    & p {
+      padding-top: 70px;
+    }
+  }
 }
