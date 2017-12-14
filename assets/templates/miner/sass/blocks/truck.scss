@@ -14,5 +14,7 @@
 }
 
 @media screen and ($mobile-widths) {
-
+  .truck {
+    display: none;
+  }
 }

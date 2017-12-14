@@ -48,7 +48,8 @@
     align-items: center;
   }
   
-  .diff__up {
-    margin-bottom: 40px;
+  .diff__up,
+  .diff__down {
+    display: none;
   }
 }

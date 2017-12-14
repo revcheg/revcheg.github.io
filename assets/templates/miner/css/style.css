@@ -528,6 +528,10 @@ body {
   .mining {
     min-height: 500px; } }
 
+@media screen and (max-width: 768px) {
+  .mining {
+    display: none; } }
+
 .mining-sub p {
   font-size: 25px;
   font-weight: bold;
@@ -583,6 +587,10 @@ body {
   .truck {
     min-height: 500px;
     margin-top: 50px; } }
+
+@media screen and (max-width: 768px) {
+  .truck {
+    display: none; } }
 
 .proof__flex {
   display: -webkit-box;
@@ -655,6 +663,10 @@ body {
     align-items: center; }
   .proof__box {
     margin-bottom: 50px; }
+  .proof__right {
+    padding-left: 0;
+    text-align: center;
+    background: none; }
   .proof__resume {
     padding-bottom: 30px;
     font-size: 20px; } }
@@ -675,9 +687,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .rewards {
-    min-height: 1000px; }
-    .rewards p {
-      padding-top: 70px; } }
+    display: none; } }
 
 .diff__flex {
   display: -webkit-box;
@@ -726,8 +736,9 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-  .diff__up {
-    margin-bottom: 40px; } }
+  .diff__up,
+  .diff__down {
+    display: none; } }
 
 .edge {
   min-height: 1900px;
@@ -742,10 +753,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .edge {
-    min-height: 1400px;
-    margin-top: -200px; }
-    .edge img {
-      padding-top: 500px; } }
+    display: none; } }
 
 .cloud {
   min-height: 850px;
