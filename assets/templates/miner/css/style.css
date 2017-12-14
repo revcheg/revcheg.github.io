@@ -219,15 +219,15 @@ body {
     display: none; } }
 
 .nav {
+  padding-top: 50px; }
+
+.nav__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding-top: 50px; }
+  justify-content: space-between; }
 
 .nav__toggle {
   display: none; }
@@ -277,7 +277,7 @@ body {
       background: none; }
 
 @media screen and (max-width: 768px) {
-  .nav {
+  .nav__flex {
     position: relative;
     text-align: center;
     -webkit-box-orient: vertical;

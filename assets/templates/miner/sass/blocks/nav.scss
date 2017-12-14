@@ -1,8 +1,10 @@
 .nav {
+  padding-top: 50px;
+}
+
+.nav__flex {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 50px;
 }
 
 .nav__toggle {
@@ -70,7 +72,7 @@
 }
 
 @media screen and ($mobile-widths) {
-  .nav {
+  .nav__flex {
     position: relative;
     text-align: center;
     flex-direction: column;
