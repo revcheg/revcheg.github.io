@@ -5,6 +5,10 @@
   padding-top: 50px;
 }
 
+.nav__toggle {
+  display: none;
+}
+
 .nav__left {
   
   & a {
@@ -67,10 +71,163 @@
 
 @media screen and ($mobile-widths) {
   .nav {
-    justify-content: center;
+    position: relative;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .nav__left {
+    margin-top: 30px;
+    
+    & a {
+      display: block;
+      margin-bottom: 5px;
+      
+      &:hover {
+        border: none;
+      }
+    }
   }
   
   .nav__right {
+    justify-content: center;
     margin-top: 20px;
+  }
+  
+  .nav__toggle {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 55px;
+    height: 50px;
+    font-size: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    
+      &:hover {
+        // background-color: #efbb1e;
+      }
+    }
+  
+  .nav--closed {
+    .nav__toggle {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 13px;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        box-shadow:
+          0 8px 00 #fff,
+          0 16px 00 #fff;
+        transition: background-color 0.3s;
+      }
+      
+      &:active::before {
+        background-color: rgba(255, 255, 255, 0.3);
+        box-shadow:
+          0 8px 00 rgba(255, 255, 255, 0.3),
+          0 16px 00 rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+  
+  .nav--opened {
+    .nav__toggle {
+      top: 10px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      z-index: 20;
+      
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: 20px;
+          left: 8px;
+          width: 25px;
+          height: 2px;
+          background-color: #fff;
+          box-shadow: none;
+          transition: background-color 0.5s;
+        }
+        
+        &::before {
+          transform: rotate(45deg);
+        }
+        
+        &::after {
+          transform: rotate(-45deg);
+        }
+        
+        &:active::before,
+        &:active::after {
+          background-color: rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
+  
+  .nav--closed {
+    .nav__item {
+      display: none;
+      
+        &--active {
+          display: block;
+          text-align: center;
+        }
+      }
+      
+    .nav__right {
+      display: none;
+    }
+  }
+  
+  .nav--opened {
+    .container {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      height: 310px;
+      background: rgba(44, 44, 45, 0.9);
+      
+      animation: menu-opened 0.5s;
+    }
+  }
+  
+  .nav--nojs {
+    .nav__toggle {
+      display: none;
+    }
+    
+    .container {
+      position: static;
+      height: auto;
+    }
+    
+    .nav__item {
+      display: block;
+      
+        &--active {
+          text-align: left;
+        }
+    }
+    
+    .nav__right {
+      display: block;
+      background-color: #6a4d38;
+    }
+  }
+  
+  @keyframes menu-opened {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0%); }
   }
 }
