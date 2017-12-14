@@ -2,12 +2,22 @@
   min-height: 1600px;
   background: url('../img/rewards-bg.png') no-repeat;
   background-size: cover;
+  
+  & p {
+    padding-top: 170px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  & img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+  }
 }
 
 @media screen and ($tablet-widths) {
-  .rewards {
-    min-height: 1000px;
-  }
 }
 
 @media screen and ($mobile-widths) {

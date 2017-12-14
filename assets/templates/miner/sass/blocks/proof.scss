@@ -1,11 +1,10 @@
 .proof__flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-bottom: 70px;
 }
 
 .proof__left {
-  padding: 40px;
   color: #fff;
   font-size: 45px;
   font-weight: bold;
@@ -13,6 +12,7 @@
   
   & p {
     margin: 0;
+    padding: 40px;
   }
 }
 
@@ -60,6 +60,7 @@
     justify-content: space-around;
     padding-bottom: 70px;
   }
+
 }
 
 @media screen and ($mobile-widths) {

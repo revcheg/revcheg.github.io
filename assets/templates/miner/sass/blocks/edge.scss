@@ -1,6 +1,13 @@
 .edge {
-  min-height: 1800px;
+  min-height: 1900px;
   margin-top: -300px;
   background: url('../img/edge-bg.png') no-repeat top;
   background-size: cover;
+  
+  & img {
+    display: block;
+    max-width: 100%;
+    padding-top: 600px;
+    margin: auto;
+  }
 }
