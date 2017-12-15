@@ -46,10 +46,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
+  }
+  
+  .diff__right {
+    font-size: 16px;
+    text-align: center;
   }
   
   .diff__up,
   .diff__down {
     display: none;
   }
+  
+  .diff__up {
+    margin-bottom: 40px;
+  }
+  
 }

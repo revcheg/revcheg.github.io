@@ -69,6 +69,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
   }
   
   .proof__box {
@@ -77,12 +78,15 @@
   
   .proof__right {
     padding-left: 0;
+    font-size: 16px;
     text-align: center;
     background: none;
   }
   
   .proof__resume {
-    padding-bottom: 30px;
-    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+    font-size: 16px;
   }
 }

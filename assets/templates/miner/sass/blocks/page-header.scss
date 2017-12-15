@@ -174,10 +174,10 @@
 
 @media screen and ($mobile-widths) {
   .page-header {
-    min-height: 950px;
+    min-height: 800px;
     
     & h1 {
-      margin-top: 50px;
+      margin-top: 0;
       font-size: 30px;
     }
   }

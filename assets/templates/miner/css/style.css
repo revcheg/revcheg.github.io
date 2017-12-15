@@ -193,9 +193,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .page-header {
-    min-height: 950px; }
+    min-height: 800px; }
     .page-header h1 {
-      margin-top: 50px;
+      margin-top: 0;
       font-size: 30px; }
   .page-header__title {
     text-align: center; }
@@ -572,8 +572,13 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+    .mining-sub__flex p {
+      font-size: 16px; }
   .mining-sub__left {
-    margin-bottom: 50px; } }
+    height: 340px;
+    margin-bottom: 50px; }
+  .mining-sub__right {
+    padding-bottom: 180px; } }
 
 .truck {
   min-height: 650px;
@@ -659,16 +664,20 @@ body {
     flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 20px; }
   .proof__box {
     margin-bottom: 50px; }
   .proof__right {
     padding-left: 0;
+    font-size: 16px;
     text-align: center;
     background: none; }
   .proof__resume {
-    padding-bottom: 30px;
-    font-size: 20px; } }
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+    font-size: 16px; } }
 
 .rewards {
   min-height: 1310px;
@@ -734,10 +743,16 @@ body {
     flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    margin-top: 0; }
+  .diff__right {
+    font-size: 16px;
+    text-align: center; }
   .diff__up,
   .diff__down {
-    display: none; } }
+    display: none; }
+  .diff__up {
+    margin-bottom: 40px; } }
 
 .edge {
   min-height: 1720px;
@@ -803,6 +818,7 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    margin-top: 140px;
     padding-top: 130px; }
   .cloud__title {
     padding: 10px;
