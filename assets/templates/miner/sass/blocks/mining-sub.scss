@@ -1,7 +1,7 @@
 .mining-sub {
   
   & p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -16,12 +16,12 @@
 }
 
 .mining-sub__left {
-  height: 300px;
+  height: 250px;
   background: url('../img/mining-left.png') no-repeat bottom;
 }
 
 .mining-sub__right {
-  width: 230px;
+  width: 200px;
   background: url('../img/mining-right.png') no-repeat bottom;
 }
 
