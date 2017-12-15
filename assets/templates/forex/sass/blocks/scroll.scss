@@ -10,6 +10,28 @@
   background: url("../img/scroll-s-n.png") no-repeat top;
   background-size: cover;
   background-attachment: fixed;
+  
+  & p {
+    margin-top: 0;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  & a {
+    padding: 10px 30px;
+    color: $mc;
+    text-decoration: none;
+    background: $sc;
+    border: 1px solid $sc;
+    box-shadow: -7px 7px 4px 0px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    
+    &:hover {
+      color: $sc;
+      background: transparent;
+      border: 1px solid $sc
+    }
+  }
 }
 
 .scroll__flex {
@@ -43,6 +65,29 @@
   }
 }
 
+.scroll__title {
+  padding-top: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.scroll__list {
+  margin-top: 50px;
+  padding-left: 25px;
+  padding-bottom: 30px;
+  color: white;
+  font-size: 18px;
+  list-style-image: url("../img/li.png");
+  
+  & li {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and ($mobile-widths) {
   .scroll__flex {
     flex-direction: column;
@@ -50,5 +95,33 @@
   
   .scroll__box {
     margin-bottom: 35px;
+  }
+  
+  .scroll__second {
+    min-height: 470px;
+    background: url("../img/scroll-s-n.png") no-repeat top;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    & p {
+      margin-top: 0;
+      color: #fff;
+      font-size: 20px;
+    }
+    
+    & a {
+      padding: 10px 30px;
+      color: $mc;
+      text-decoration: none;
+      background: $sc;
+      box-shadow: -7px 7px 4px 0px rgba(0, 0, 0, 0.4);
+      transition: 0.3s;
+      
+      &:hover {
+        color: $sc;
+        background: transparent;
+        border: 1px solid $sc
+      }
+    }
   }
 }

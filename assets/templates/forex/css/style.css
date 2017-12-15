@@ -527,9 +527,27 @@ body {
 
 .scroll__second {
   min-height: 470px;
-  background: url("../img/scroll-s.png") no-repeat top;
+  background: url("../img/scroll-s-n.png") no-repeat top;
   background-size: cover;
   background-attachment: fixed; }
+  .scroll__second p {
+    margin-top: 0;
+    color: #fff;
+    font-size: 20px; }
+  .scroll__second a {
+    padding: 10px 30px;
+    color: #2e2963;
+    text-decoration: none;
+    background: #f2c318;
+    border: 1px solid #f2c318;
+    -webkit-box-shadow: -7px 7px 4px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: -7px 7px 4px 0px rgba(0, 0, 0, 0.4);
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .scroll__second a:hover {
+      color: #f2c318;
+      background: transparent;
+      border: 1px solid #f2c318; }
 
 .scroll__flex {
   display: -webkit-box;
@@ -557,6 +575,25 @@ body {
     text-transform: uppercase;
     text-decoration: none; }
 
+.scroll__title {
+  padding-top: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.scroll__list {
+  margin-top: 50px;
+  padding-left: 25px;
+  padding-bottom: 30px;
+  color: white;
+  font-size: 18px;
+  list-style-image: url("../img/li.png"); }
+  .scroll__list li {
+    margin-bottom: 10px; }
+
 @media screen and (max-width: 768px) {
   .scroll__flex {
     -webkit-box-orient: vertical;
@@ -564,7 +601,29 @@ body {
     -ms-flex-direction: column;
     flex-direction: column; }
   .scroll__box {
-    margin-bottom: 35px; } }
+    margin-bottom: 35px; }
+  .scroll__second {
+    min-height: 470px;
+    background: url("../img/scroll-s-n.png") no-repeat top;
+    background-size: cover;
+    background-attachment: fixed; }
+    .scroll__second p {
+      margin-top: 0;
+      color: #fff;
+      font-size: 20px; }
+    .scroll__second a {
+      padding: 10px 30px;
+      color: #2e2963;
+      text-decoration: none;
+      background: #f2c318;
+      -webkit-box-shadow: -7px 7px 4px 0px rgba(0, 0, 0, 0.4);
+      box-shadow: -7px 7px 4px 0px rgba(0, 0, 0, 0.4);
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+      .scroll__second a:hover {
+        color: #f2c318;
+        background: transparent;
+        border: 1px solid #f2c318; } }
 
 .page-footer {
   color: white;
