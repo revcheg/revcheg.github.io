@@ -5,7 +5,7 @@
 }
 
 .proof__left {
-  padding: 40px;
+  padding: 20px 40px;
   color: #fff;
   font-size: 40px;
   font-weight: bold;
@@ -18,8 +18,8 @@
 
 .proof__right {
   padding-top: 20px;
-  padding-left: 200px;
-  font-size: 25px;
+  padding-left: 150px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   background: url('../img/proof-power.png') no-repeat left;
@@ -52,6 +52,7 @@
 .proof__resume {
   padding-bottom: 40px;
   font-size: 20px;
+  font-weight: bold;
   text-align: center;
 }
 

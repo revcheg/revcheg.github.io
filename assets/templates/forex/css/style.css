@@ -263,6 +263,10 @@ body {
   background: url("../img/slider-t.png") no-repeat center;
   background-size: cover; }
 
+.slider__slide--four {
+  background: url("../img/slider-a.png") no-repeat center;
+  background-size: cover; }
+
 .slick-dots {
   bottom: 20px; }
 
