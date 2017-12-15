@@ -533,7 +533,7 @@ body {
     display: none; } }
 
 .mining-sub p {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase; }
@@ -542,19 +542,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   margin-top: 50px;
   padding-bottom: 50px; }
 
 .mining-sub__left {
-  padding-bottom: 250px;
+  height: 300px;
   background: url("../img/mining-left.png") no-repeat bottom; }
 
 .mining-sub__right {
-  width: 300px;
-  padding-bottom: 250px;
+  width: 230px;
   background: url("../img/mining-right.png") no-repeat bottom; }
 
 @media screen and (max-width: 1200px) {
@@ -601,18 +599,18 @@ body {
   padding-bottom: 70px; }
 
 .proof__left {
+  padding: 40px;
   color: #fff;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
   background: #000; }
   .proof__left p {
-    margin: 0;
-    padding: 40px; }
+    margin: 0; }
 
 .proof__right {
   padding-top: 20px;
   padding-left: 200px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
   background: url("../img/proof-power.png") no-repeat left; }
@@ -620,7 +618,8 @@ body {
 .proof__box {
   padding-top: 170px;
   width: 170px;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
   text-transform: uppercase; }
 
@@ -636,8 +635,8 @@ body {
   background: url("../img/proof-time.png") no-repeat top; }
 
 .proof__resume {
-  padding-bottom: 90px;
-  font-size: 30px;
+  padding-bottom: 40px;
+  font-size: 20px;
   text-align: center; }
 
 @media screen and (max-width: 1200px) {
@@ -672,11 +671,11 @@ body {
     font-size: 20px; } }
 
 .rewards {
-  min-height: 1600px;
+  min-height: 1310px;
   background: url("../img/rewards-bg.png") no-repeat;
   background-size: cover; }
   .rewards p {
-    padding-top: 170px;
+    padding-top: 70px;
     font-size: 40px;
     font-weight: bold;
     text-align: center; }
@@ -701,27 +700,27 @@ body {
 .diff__left {
   padding: 40px;
   color: #fff;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
   background: #000; }
   .diff__left p {
     margin: 0; }
 
 .diff__right {
-  padding-top: 10px;
+  padding-top: 20px;
   color: #262626;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase; }
 
 .diff__up {
-  width: 430px;
-  height: 135px;
+  width: 350px;
+  height: 109px;
   background: url("../img/diff-left.png") no-repeat; }
 
 .diff__down {
-  width: 430px;
-  height: 135px;
+  width: 350px;
+  height: 109px;
   background: url("../img/diff-right.png") no-repeat; }
 
 @media screen and (max-width: 768px) {
@@ -741,7 +740,7 @@ body {
     display: none; } }
 
 .edge {
-  min-height: 1900px;
+  min-height: 1720px;
   margin-top: -300px;
   background: url("../img/edge-bg.png") no-repeat top;
   background-size: cover; }
@@ -767,7 +766,7 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  padding-top: 200px;
+  padding-top: 150px;
   padding-bottom: 100px; }
 
 .cloud__left {
