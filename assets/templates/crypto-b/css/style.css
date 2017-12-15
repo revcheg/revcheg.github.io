@@ -365,7 +365,9 @@ form a {
   .page-header__nav-list {
     width: 100%; }
   .page-header__main-nav--s {
-    display: block; } }
+    display: block; }
+  .page-header__nav--form {
+    min-height: 70px; } }
 
 /* Smartphones (горизонтальная) ----------- */
 /* Smartphones (вертикальная) ----------- */
@@ -402,7 +404,9 @@ form a {
     flex-direction: column;
     width: 100%; }
   .page-header__item {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .page-header__nav--form {
+    min-height: 70px; } }
 
 /* iPads (вертикальная и горизонтальная) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {

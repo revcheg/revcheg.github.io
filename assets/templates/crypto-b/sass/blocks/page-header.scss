@@ -112,6 +112,10 @@
   .page-header__main-nav--s {
     display: block;
   }
+  
+  .page-header__nav--form {
+    min-height: 70px;
+  }
 }
 
 /* Smartphones (горизонтальная) ----------- */
@@ -160,6 +164,10 @@
   
   .page-header__item {
     margin-bottom: 30px;
+  }
+  
+  .page-header__nav--form {
+    min-height: 70px;
   }
 }
 
