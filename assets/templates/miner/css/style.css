@@ -891,19 +891,17 @@ body {
 .cloud {
   min-height: 830px;
   margin-top: -110px;
-  background: url("../img/cloud-bg.png"); }
+  background: url("../img/cloud-bg-t.png"); }
 
 .cloud__flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   padding-top: 150px;
   padding-bottom: 100px; }
 
 .cloud__left {
-  width: 500px;
+  width: 450px;
+  margin-top: 150px;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.8); }
 
