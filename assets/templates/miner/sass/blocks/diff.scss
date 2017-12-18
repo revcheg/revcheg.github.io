@@ -9,6 +9,7 @@
   height: 170px;
   margin-top: 90px;
   background: url('../img/diff-title.png') no-repeat left;
+  background-size: contain;
 }
 
 // .diff__left {
@@ -44,7 +45,11 @@
 }
 
 @media screen and ($tablet-widths) {
-
+  .diff__title {
+    height: 150px;
+    background: url('../img/diff-title-t.png') no-repeat;
+    background-size: contain;
+  }
 }
 
 @media screen and ($mobile-widths) {
