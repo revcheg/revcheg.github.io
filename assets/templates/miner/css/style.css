@@ -842,7 +842,7 @@ body {
 
 .diff__title {
   height: 170px;
-  margin-top: 90px;
+  margin-top: 40px;
   background: url("../img/diff-title.png") no-repeat left;
   background-size: contain; }
 
@@ -926,10 +926,9 @@ body {
     display: none; } }
 
 .cloud {
-  min-height: 850px;
+  min-height: 830px;
   margin-top: -110px;
-  background: url("../img/cloud-bg.png");
-  background-size: cover; }
+  background: url("../img/cloud-bg.png"); }
 
 .cloud__flex {
   display: -webkit-box;
