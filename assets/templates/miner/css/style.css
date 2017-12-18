@@ -654,10 +654,9 @@ body {
     background: url("../img/mining-bg-m.png") no-repeat top; } }
 
 .mining-sub p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
-  text-align: center;
-  text-transform: uppercase; }
+  text-align: center; }
 
 .mining-sub__flex {
   display: -webkit-box;
@@ -669,7 +668,7 @@ body {
   padding-bottom: 50px; }
 
 .mining-sub__left {
-  height: 250px;
+  height: 280px;
   background: url("../img/mining-left.png") no-repeat bottom; }
 
 .mining-sub__right {

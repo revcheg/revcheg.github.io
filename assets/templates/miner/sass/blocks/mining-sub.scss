@@ -1,10 +1,10 @@
 .mining-sub {
   
   & p {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
-    text-transform: uppercase;
+    // text-transform: uppercase;
   }
 }
 
@@ -16,7 +16,7 @@
 }
 
 .mining-sub__left {
-  height: 250px;
+  height: 280px;
   background: url('../img/mining-left.png') no-repeat bottom;
 }
 
