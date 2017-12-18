@@ -76,13 +76,7 @@
   }
 }
 
-@media screen and ($mobile-widths) {
-  .proof__title {
-    height: 380px;
-    background: url('../img/proof-title-m.png') no-repeat top;
-    background-size: contain;
-  }
-  
+@media screen and ($mobile-widths) {  
   .proof__flex {
     display: flex;
     flex-direction: column;

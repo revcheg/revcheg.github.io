@@ -17,6 +17,7 @@
 }
 
 .header-sub__left {
+  width: 500px;
   
   & p {
     margin-bottom: 0;
@@ -24,6 +25,7 @@
 }
 
 .header-sub__right {
+  width: 550px;
   
   & a {
     color: #4183c4;
@@ -64,6 +66,12 @@
   .header-sub__about {
     flex-direction: column;
     padding-top: 30px;
+  }
+  
+  .header-sub__left,
+  .header-sub__right {
+    width: auto;
+    text-align: justify;
   }
   
   .header-sub__right {
