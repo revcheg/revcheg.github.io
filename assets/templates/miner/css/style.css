@@ -191,6 +191,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .page-header {
+    height: 1183px;
     background: #0f0e12 url("../img/header-bg.png") no-repeat top; }
     .page-header h1 {
       margin-top: 0;
@@ -499,6 +500,23 @@ body {
   .header-sub__left p {
     margin-bottom: 0;
     font-size: 16px; } }
+
+@media screen and (max-width: 768px) {
+  .header-sub {
+    height: 690px;
+    margin-top: -5px;
+    background: url("../img/header-about-m.png") no-repeat bottom; }
+  .header-sub__about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 30px;
+    text-align: center; }
+  .header-sub__right {
+    margin-top: 20px; }
+    .header-sub__right ul {
+      text-align: left; } }
 
 .hardware h2 {
   margin-top: 70px;
