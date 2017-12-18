@@ -52,8 +52,7 @@ body {
   font-style: normal; }
 
 .page-header {
-  background: #0f0e12 url("../img/header-bg.png") no-repeat;
-  background-size: cover; }
+  background: #0f0e12 url("../img/header-bg.png") no-repeat; }
   .page-header h1 {
     margin-top: 100px;
     margin-bottom: 0;
@@ -141,7 +140,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 90px; }
+  margin-top: 60px; }
 
 .page-header__item {
   display: -webkit-box;
@@ -171,16 +170,20 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 150px;
-  padding-bottom: 50px; }
+  padding-bottom: 55px; }
   .page-header__about b {
     font-size: 25px;
     text-transform: uppercase; }
+
+.page-header__left p {
+  margin-bottom: 0; }
 
 .page-header__right a {
   color: #4183c4;
   text-decoration: none; }
 
 .page-header__right ul {
+  margin-bottom: 0;
   padding-left: 20px; }
 
 @media screen and (max-width: 1200px) {
@@ -358,7 +361,7 @@ body {
       text-align: center; }
   .nav--closed .nav__right {
     display: none; }
-  .nav--opened .container {
+  .nav--opened .nav__container {
     position: absolute;
     top: 0;
     right: 0;
@@ -370,7 +373,7 @@ body {
     animation: menu-opened 0.5s; }
   .nav--nojs .nav__toggle {
     display: none; }
-  .nav--nojs .container {
+  .nav--nojs .nav__container {
     position: static;
     height: auto; }
   .nav--nojs .nav__item {
@@ -521,12 +524,11 @@ body {
 
 .mining {
   min-height: 600px;
-  background: url("../img/mining-bg.png") no-repeat top;
-  background-size: cover; }
+  background: url("../img/mining-bg.png") no-repeat top; }
 
 @media screen and (max-width: 1200px) {
   .mining {
-    min-height: 500px; } }
+    min-height: 600px; } }
 
 @media screen and (max-width: 768px) {
   .mining {
@@ -560,8 +562,7 @@ body {
     font-size: 20px; }
   .mining-sub__flex {
     -ms-flex-pack: distribute;
-    justify-content: space-around;
-    margin-top: 0; } }
+    justify-content: space-around; } }
 
 @media screen and (max-width: 768px) {
   .mining-sub__flex {
@@ -588,8 +589,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   .truck {
-    min-height: 500px;
-    margin-top: 50px; } }
+    min-height: 500px; } }
 
 @media screen and (max-width: 768px) {
   .truck {
@@ -606,7 +606,8 @@ body {
 .proof__title {
   height: 170px;
   margin-bottom: 50px;
-  background: url("../img/proof-title.png") no-repeat left; }
+  background: url("../img/proof-title.png") no-repeat left;
+  background-size: contain; }
 
 .proof__box {
   padding-top: 170px;
@@ -635,13 +636,10 @@ body {
   text-align: center; }
 
 @media screen and (max-width: 1200px) {
-  .proof__flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    padding-bottom: 70px; } }
+  .proof__title {
+    height: 180px;
+    background: url("../img/proof-title-t.png") no-repeat;
+    background-size: contain; } }
 
 @media screen and (max-width: 768px) {
   .proof__flex {

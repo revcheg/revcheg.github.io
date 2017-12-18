@@ -8,6 +8,7 @@
   height: 170px;
   margin-bottom: 50px;
   background: url('../img/proof-title.png') no-repeat left;
+  background-size: contain;
 }
 
 // .proof__left {
@@ -64,12 +65,11 @@
 }
 
 @media screen and ($tablet-widths) {
-  .proof__flex {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 70px;
+  .proof__title {
+    height: 180px;
+    background: url('../img/proof-title-t.png') no-repeat;
+    background-size: contain;
   }
-
 }
 
 @media screen and ($mobile-widths) {

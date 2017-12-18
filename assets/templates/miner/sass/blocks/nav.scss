@@ -191,7 +191,7 @@
   }
   
   .nav--opened {
-    .container {
+    .nav__container {
       position: absolute;
       top: 0;
       right: 0;
@@ -209,7 +209,7 @@
       display: none;
     }
     
-    .container {
+    .nav__container {
       position: static;
       height: auto;
     }

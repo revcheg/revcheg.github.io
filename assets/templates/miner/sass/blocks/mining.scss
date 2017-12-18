@@ -1,12 +1,12 @@
 .mining {
   min-height: 600px;
   background: url('../img/mining-bg.png') no-repeat top;
-  background-size: cover;
+  // background-size: cover;
 }
 
 @media screen and ($tablet-widths) {
   .mining {
-    min-height: 500px;
+    min-height: 600px;
   }
 }
 
