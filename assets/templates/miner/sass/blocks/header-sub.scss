@@ -64,14 +64,9 @@
   .header-sub__about {
     flex-direction: column;
     padding-top: 30px;
-    text-align: center;
   }
   
   .header-sub__right {
     margin-top: 20px;
-    
-    & ul {
-      text-align: left;
-    }
   }
 }

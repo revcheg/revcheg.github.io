@@ -45,7 +45,6 @@
 @media screen and ($mobile-widths) {
   .cloud__flex {
     flex-direction: column;
-    text-align: center;
     justify-content: center;
     margin-top: 140px;
     padding-top: 130px;
@@ -54,6 +53,7 @@
   .cloud__title {
     padding: 30px;
     font-size: 30px;
+    text-align: center;
   }
   
   .cloud__left,

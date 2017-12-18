@@ -511,12 +511,9 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-top: 30px;
-    text-align: center; }
+    padding-top: 30px; }
   .header-sub__right {
-    margin-top: 20px; }
-    .header-sub__right ul {
-      text-align: left; } }
+    margin-top: 20px; } }
 
 .hardware h2 {
   margin-top: 70px;
@@ -637,7 +634,6 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    text-align: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; } }
@@ -969,7 +965,6 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    text-align: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -977,7 +972,8 @@ body {
     padding-top: 130px; }
   .cloud__title {
     padding: 30px;
-    font-size: 30px; }
+    font-size: 30px;
+    text-align: center; }
   .cloud__left,
   .cloud__middle {
     width: auto; } }
@@ -1023,12 +1019,10 @@ body {
     margin-top: 0px;
     padding-bottom: 50px; }
   .why__left {
-    text-align: center;
     padding-top: 90px;
     padding-left: 0;
     background: url("../img/check-green.png") no-repeat top; }
   .why__right {
-    text-align: center;
     padding-top: 90px;
     padding-left: 0;
     background: url("../img/check-red.png") no-repeat top; } }
