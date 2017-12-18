@@ -12,6 +12,8 @@
 
 @media screen and ($mobile-widths) {
   .mining {
-    display: none;
+    min-height: 370px;
+    margin-top: 20px;
+    background: url('../img/mining-bg-m.png') no-repeat top;
   }
 }

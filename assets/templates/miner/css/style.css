@@ -652,7 +652,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .mining {
-    display: none; } }
+    min-height: 370px;
+    margin-top: 20px;
+    background: url("../img/mining-bg-m.png") no-repeat top; } }
 
 .mining-sub p {
   font-size: 18px;
@@ -696,10 +698,10 @@ body {
     .mining-sub__flex p {
       font-size: 16px; }
   .mining-sub__left {
-    height: 340px;
+    height: 240px;
     margin-bottom: 50px; }
   .mining-sub__right {
-    padding-bottom: 180px; } }
+    padding-bottom: 150px; } }
 
 .truck {
   min-height: 650px;
@@ -763,6 +765,9 @@ body {
     background-size: contain; } }
 
 @media screen and (max-width: 768px) {
+  .proof__title {
+    height: 380px;
+    background: url("../img/proof-title-m.png") no-repeat top; }
   .proof__flex {
     display: -webkit-box;
     display: -ms-flexbox;
