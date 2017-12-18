@@ -134,22 +134,7 @@
 @media screen and ($tablet-widths) {  
   .page-header {
     background: #0f0e12 url('../img/header-bg.png') no-repeat top;
-    background-size: cover;
-  }
-  
-  .page-header__about {
-    margin-top: 160px;
-  }
-  
-  .page-header__item {
-    
-    & b {
-      padding-bottom: 10px;
-    }
-    
-    & a {
-      font-size: 18px;
-    }
+    // background-size: cover;
   }
 }
 
