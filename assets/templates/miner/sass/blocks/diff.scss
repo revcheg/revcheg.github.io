@@ -1,7 +1,6 @@
 .diff__flex {
   display: flex;
   justify-content: space-around;
-  text-transform: uppercase;
   margin-top: 100px;
 }
 
@@ -17,6 +16,7 @@
   color: #fff;
   font-size: 30px;
   font-weight: bold;
+  text-transform: uppercase;
   background: #000;
 
   & p {
@@ -31,7 +31,6 @@
   color: #262626;
   font-size: 20px;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 .diff__up {
