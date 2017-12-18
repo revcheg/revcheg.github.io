@@ -1,29 +1,35 @@
 .proof__flex {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
 
-.proof__left {
-  padding: 20px 40px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  background: #000;
-  
-  & p {
-    margin: 0;
-  }
+.proof__title {
+  height: 170px;
+  margin-bottom: 50px;
+  background: url('../img/proof-title.png') no-repeat left;
 }
 
-.proof__right {
-  padding-top: 20px;
-  padding-left: 150px;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  background: url('../img/proof-power.png') no-repeat left;
-}
+// .proof__left {
+//   padding: 20px 40px;
+//   color: #fff;
+//   font-size: 40px;
+//   font-weight: bold;
+//   background: #000;
+// 
+//   & p {
+//     margin: 0;
+//   }
+// }
+
+// .proof__right {
+//   padding-top: 20px;
+//   padding-left: 150px;
+//   font-size: 20px;
+//   font-weight: bold;
+//   text-transform: uppercase;
+//   background: url('../img/proof-power.png') no-repeat left;
+// }
 
 .proof__box {
   padding-top: 170px;
@@ -50,7 +56,8 @@
 }
 
 .proof__resume {
-  padding-bottom: 40px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
   font-size: 20px;
   font-weight: bold;
   text-align: center;

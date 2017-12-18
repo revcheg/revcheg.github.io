@@ -5,25 +5,31 @@
   margin-top: 100px;
 }
 
-.diff__left {
-  padding: 40px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  background: #000;
-  
-  & p {
-    margin: 0;
-  }
+.diff__title {
+  height: 170px;
+  margin-top: 90px;
+  background: url('../img/diff-title.png') no-repeat left;
 }
 
-.diff__right {
-  padding-top: 20px;
-  color: #262626;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
+// .diff__left {
+//   padding: 40px;
+//   color: #fff;
+//   font-size: 40px;
+//   font-weight: bold;
+//   background: #000;
+// 
+//   & p {
+//     margin: 0;
+//   }
+// }
+// 
+// .diff__right {
+//   padding-top: 20px;
+//   color: #262626;
+//   font-size: 20px;
+//   font-weight: bold;
+//   text-transform: uppercase;
+// }
 
 .diff__up {
   width: 350px;

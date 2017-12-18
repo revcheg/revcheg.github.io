@@ -582,7 +582,7 @@ body {
 
 .truck {
   min-height: 650px;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
   background: url("../img/truck-bg.png") no-repeat top;
   background-size: cover; }
 
@@ -601,24 +601,12 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  padding-bottom: 70px; }
+  padding-bottom: 50px; }
 
-.proof__left {
-  padding: 20px 40px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  background: #000; }
-  .proof__left p {
-    margin: 0; }
-
-.proof__right {
-  padding-top: 20px;
-  padding-left: 150px;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  background: url("../img/proof-power.png") no-repeat left; }
+.proof__title {
+  height: 170px;
+  margin-bottom: 50px;
+  background: url("../img/proof-title.png") no-repeat left; }
 
 .proof__box {
   padding-top: 170px;
@@ -640,7 +628,8 @@ body {
   background: url("../img/proof-time.png") no-repeat top; }
 
 .proof__resume {
-  padding-bottom: 40px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
   font-size: 20px;
   font-weight: bold;
   text-align: center; }
@@ -707,21 +696,10 @@ body {
   text-transform: uppercase;
   margin-top: 100px; }
 
-.diff__left {
-  padding: 40px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  background: #000; }
-  .diff__left p {
-    margin: 0; }
-
-.diff__right {
-  padding-top: 20px;
-  color: #262626;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase; }
+.diff__title {
+  height: 170px;
+  margin-top: 90px;
+  background: url("../img/diff-title.png") no-repeat left; }
 
 .diff__up {
   width: 350px;
