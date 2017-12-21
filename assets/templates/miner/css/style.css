@@ -156,7 +156,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .page-header {
-    height: 1183px;
+    height: 1000px;
     background: #0f0e12 url("../img/header-bg.png") no-repeat top; }
     .page-header h1 {
       margin-top: 0;
@@ -181,7 +181,8 @@ body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 100px; }
   .page-header__item {
     text-align: center;
     margin-bottom: 20px;
@@ -462,7 +463,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   .header-sub__about {
-    padding-top: 60px; }
+    padding-top: 100px; }
     .header-sub__about b {
       font-size: 18px; }
   .header-sub__left p {
@@ -471,7 +472,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .header-sub {
-    height: 690px;
+    height: 530px;
     margin-top: -5px;
     background: url("../img/header-about-m.png") no-repeat bottom; }
   .header-sub__about {
@@ -479,7 +480,8 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-top: 30px; }
+    padding-top: 30px;
+    padding-bottom: 50px; }
   .header-sub__left,
   .header-sub__right {
     width: auto;
@@ -600,6 +602,9 @@ body {
     text-decoration: underline;
     opacity: 1; }
 
+.tabs__left {
+  width: 600px; }
+
 @media screen and (max-width: 768px) {
   .tabs__flex {
     -webkit-box-orient: vertical;
@@ -609,7 +614,10 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    text-align: justify; } }
+    text-align: justify; }
+  .tabs__left {
+    width: auto;
+    margin-bottom: 40px; } }
 
 .mining {
   min-height: 600px;
@@ -889,43 +897,35 @@ body {
     display: none; } }
 
 .cloud {
-  min-height: 830px;
-  margin-top: -110px;
-  background: url("../img/cloud-bg-t.png"); }
+  min-height: 560px;
+  margin-top: -160px;
+  background: url("../img/cloud-bg.png") no-repeat top; }
 
-.cloud__flex {
+.cloud-sub__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  padding-top: 150px;
   padding-bottom: 100px; }
 
-.cloud__left {
+.cloud-sub__left {
   width: 450px;
-  margin-top: 150px;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.8); }
 
-.cloud__middle {
+.cloud-sub__middle {
   width: 500px;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.8); }
 
-.cloud__title {
-  margin-top: 20px;
-  padding: 30px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  background: #000;
-  text-transform: uppercase; }
-
-@media screen and (max-width: 1200px) {
-  .cloud {
-    margin-top: -150px;
-    background: url("../img/cloud-bg.png"); } }
+.cloud-sub__title {
+  display: none; }
 
 @media screen and (max-width: 768px) {
-  .cloud__flex {
+  .cloud {
+    display: none; }
+  .cloud-sub__flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -933,19 +933,26 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-top: 140px;
-    padding-top: 130px;
+    padding-bottom: 10px;
+    margin-top: 40px;
     text-align: justify; }
-  .cloud__title {
+  .cloud-sub__title {
+    display: block;
     padding: 30px;
+    color: #fff;
     font-size: 30px;
-    text-align: center; }
-  .cloud__left,
-  .cloud__middle {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background: #000; }
+    .cloud-sub__title p {
+      margin: 0; }
+  .cloud-sub__left,
+  .cloud-sub__middle {
     width: auto; } }
 
 .why {
-  background: url("../img/why-bg.png"); }
+  background: #eeba1d; }
   .why b {
     font-size: 25px;
     text-transform: uppercase; }
@@ -955,6 +962,10 @@ body {
     font-weight: bold;
     opacity: 0.8; }
 
+.why-sub {
+  padding-top: 34px;
+  background: url("../img/why-bg.png"); }
+
 .why__flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -962,7 +973,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 70px;
+  padding-top: 100px;
   padding-bottom: 100px; }
 
 .why__left {
@@ -983,6 +994,7 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 0px;
+    padding-top: 50px;
     padding-bottom: 50px; }
   .why__left {
     padding-top: 90px;

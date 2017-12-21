@@ -40,7 +40,7 @@
 
 @media screen and ($tablet-widths) {
   .header-sub__about {
-    padding-top: 60px;
+    padding-top: 100px;
     
     & b {
       font-size: 18px;
@@ -58,7 +58,7 @@
 
 @media screen and ($mobile-widths) {
   .header-sub {
-    height: 690px;
+    height: 530px;
     margin-top: -5px;
     background: url('../img/header-about-m.png') no-repeat bottom;
   }
@@ -66,6 +66,7 @@
   .header-sub__about {
     flex-direction: column;
     padding-top: 30px;
+    padding-bottom: 50px;
   }
   
   .header-sub__left,
@@ -76,5 +77,6 @@
   
   .header-sub__right {
     margin-top: 20px;
+    
   }
 }

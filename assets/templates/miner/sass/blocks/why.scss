@@ -1,5 +1,5 @@
 .why {
-  background: url('../img/why-bg.png');
+  background: #eeba1d;
   
   & b {
     font-size: 25px;
@@ -14,10 +14,15 @@
   }
 }
 
+.why-sub {
+  padding-top: 34px;
+  background: url('../img/why-bg.png');
+}
+
 .why__flex {
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -41,6 +46,7 @@
   .why__flex {
     flex-direction: column;
     margin-top: 0px;
+    padding-top: 50px;
     padding-bottom: 50px;
   }
   
