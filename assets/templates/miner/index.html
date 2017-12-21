@@ -81,7 +81,7 @@
           <a href="#">GET STARTED ›</a>
         </div>
         <div class="page-header__item  page-header__item--tech">
-          <b>Mining technology</b>
+          <b>Mining hardward</b>
           <a href="#">LEARN MORE ›</a>
         </div>
         <div class="page-header__item  page-header__item--cloud">
@@ -95,19 +95,20 @@
     <div class="container">
       <div class="header-sub__about">
         <div class="header-sub__left">
-          <b>How Bitcoin Mining Works</b>
-          <p>Where do bitcoins come from? With paper money, a government decides when to print and distribute money. Bitcoin doesn't have a central government.</p>
-          <p>With Bitcoin, miners use special software to solve math problems and are issued a certain number of bitcoins in exchange. This provides a smart way to issue the currency and also creates an incentive for more people to mine.</p>
+          <b>How Bitcoin mining works</b>
+          <p>How are bitcoins gotten? With fiat currencies, a government control and decide when to print and distribute money. Bitcoin however, doesn't have a central government. With Bitcoin, miners use special software to solve math problems and are issued a certain number of bitcoins in exchange. This provides a smart way to issue the currency and also creates an incentive for more people to mine.</p>
+          <!-- <p>With Bitcoin, miners use special software to solve math problems and are issued a certain number of bitcoins in exchange. This provides a smart way to issue the currency and also creates an incentive for more people to mine.</p> -->
         </div>
         <div class="header-sub__right">
-          <b>Bitcoin is Secure</b>
-          <p>Bitcoin miners help keep the Bitcoin network secure by approving transactions. Mining is an important and integral part of Bitcoin that ensures fairness while keeping the Bitcoin network stable, safe and secure.</p>
-          <b>Links</b>
+          <b>Bitcoin is safe</b>
+          <p>Bitcoin miners help keep the Bitcoin network secure by approving transactions. Mining is an important and integral part of Bitcoin that guarantees fairness while keeping the Bitcoin network stable, safe and secure. Bitcoin mining is the process of adding transaction records to Bitcoin's public ledger of past transactions or blockchain.</p>
+          
+          <!-- <b>Links</b>
           <ul>
             <li><a href="#">We Use Coins</a> - Learn all about crypto-currency.</li>
             <li><a href="#">Bitcoin News</a> - Where the Bitcoin community gets news.</li>
             <li><a href="#">Bitcoin Knowledge Podcast</a> - Interviews with top people in Bitcoin.</li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>
@@ -179,8 +180,9 @@
     <div class="container">
       <div class="tabs__flex">
         <div class="tabs__left">
-          <p>Bitcoin mining is the process of adding transaction records to Bitcoin's public<br>ledger of past transactions or blockchain. This ledger of past transactions is<br>called the block chain as it is a chain of blocks. The block chain serves to confirm<br>transactions to the rest of the network as having taken place.</p>
-          <p>Bitcoin nodes use the block chain to distinguish legitimate Bitcoin transactions<br>from attempts to re-spend coins that have already been spent elsewhere.</p>
+          <p>What is blockchain?</p>
+          <p>Bitcoin mining is the process by which transactions are verified<br>and added to the public ledger, known as the block chain,<br>and also the means through which new bitcoin are released.<br>Anyone with access to the internet and suitable hardware can participate in mining. </p>
+          <p>The mining process involves compiling recent transactions<br>into blocks and trying to solve a computationally difficult puzzle.<br>The participant who first solves the puzzle gets to place the next<br>block on the block chain and claim the rewards. The rewards,<br>which incentivize mining, are both the transaction fees associated<br>with the transactions compiled in the block as well as newly released bitcoin.</p>
         </div>
         <div class="tabs__right">
           <!-- <ul>
@@ -334,23 +336,15 @@
           </ul>
         </div>
       </div>
-      <p>Bitcoin mining is intentionally designed to be resource-intensive and difficult so that the number of blocks found each day by miners remains steady. Individual blocks must contain a proof of work to be considered valid. This proof of work is verified by other Bitcoin nodes each time they receive a block. Bitcoin uses the hashcash proof-of-work function.</p>
-      <p>The primary purpose of mining is to allow Bitcoin nodes to reach a secure, tamper-resistant consensus. Mining is also the mechanism used to introduce Bitcoins into the system: Miners are paid any transaction fees as well as a "subsidy" of newly created coins.</p>
-      <p>This both serves the purpose of disseminating new coins in a decentralized manner as well as motivating people to provide security for the system.</p>
-      <p>Bitcoin mining is so called because it resembles the mining of other commodities: it requires exertion and it slowly makes new currency available at a rate that resembles the rate at which commodities like gold are mined from the ground.</p>
+      <p>Further explanation of 'Bitcoin Mining' The number of new bitcoin released with each mined block is called the block reward. The block reward is halved every 210,000 blocks, or roughly every 4 years.  The block reward started at 50 in 2009, is now 25 in 2014, and will continue to decrease.  This diminishing block reward will result in a total release of bitcoin that approaches 21 million. How hard are the puzzles involved in mining? Well, that depends on how much effort is being put into mining across the network. The difficulty of the mining can be adjusted, and is adjusted by the protocol every 2016 blocks, or roughly every 2 weeks.  The difficulty adjusts itself with the aim of keeping the rate of block discovery constant.  Thus if more computational power is employed in mining, then the difficulty will adjust upwards to make mining harder.  And if computational power is taken off of the network, the opposite happens.  The difficulty adjusts downward to make mining easier.</p>
       <b>What is Proof of Work?</b>
-      <p>A proof of work is a piece of data which was difficult (costly, time-consuming) to produce so as to satisfy certain requirements. It must be trivial to check whether data satisfies said requirements.</p>
-      <p>Producing a proof of work can be a random process with low probability, so that a lot of trial and error is required on average before a valid proof of work is generated. Bitcoin uses the Hashcash proof of work.</p>
+      <p>A proof of work is a piece of data which was difficult, time-consuming and difficult to produce so as to satisfy some certain requirements. It must be trivial to check whether data satisfies said requirements.</p>
+      <p>Producing a proof of work can be a random process with low probability, so that a lot of trial and error is required on average before a valid proof of work is generated. Bitcoin uses the Hashcash proof of work</p>
       <b>What is Bitcoin Mining Difficulty?</b>
-      <p>The Computationally-Difficult Problem</p>
-      <p>Bitcoin mining a block is difficult because the SHA-256 hash of a block's header must be lower than or equal to the target in order for the block to be accepted by the network.</p>
-      <p>This problem can be simplified for explanation purposes: The hash of a block must start with a certain number of zeros. The probability of calculating a hash that starts with many zeros is very low, therefore many attempts must be made. In order to generate a new hash each round, a nonce is incremented. See Proof of work for more information.</p>
-      <p>The Bitcoin Network Difficulty Metric</p>
-      <p>The Bitcoin mining network difficulty is the measure of how difficult it is to find a new block compared to the easiest it can ever be. It is recalculated every 2016 blocks to a value such that the previous 2016 blocks would have been generated in exactly two weeks had everyone been mining at this difficulty. This will yield, on average, one block every ten minutes.</p>
-      <p>As more miners join, the rate of block creation will go up. As the rate of block generation goes up, the difficulty rises to compensate which will push the rate of block creation back down. Any blocks released by malicious miners that do not meet the required difficulty target will simply be rejected by everyone on the network and thus will be worthless.</p>
-      <p>The Block Reward</p>
-      <p>When a block is discovered, the discoverer may award themselves a certain number of bitcoins, which is agreed-upon by everyone in the network. Currently this bounty is 25 bitcoins; this value will halve every 210,000 blocks. See Controlled Currency Supply.</p>
-      <p class="padding-bottom">Additionally, the miner is awarded the fees paid by users sending transactions. The fee is an incentive for the miner to include the transaction in their block. In the future, as the number of new bitcoins miners are allowed to create in each block dwindles, the fees will make up a much more important percentage of mining income.</p>
+      <p>Just recently the Bitcoin difficulty leve went up by 7.09%. What is this difficulty level and why is it important? Bitcoin is  probably the very first decentralized, distributed open source digital currency protocol to gain massive adoption. No sooner the concept of digital currency was introduced by Satoshi Nakamoto in his whitepaper, it garnered a lot of interest from computer scientists and cryptographers.</p>
+      <p>Some of these people had already tried creating a digital currency system with limited success. But Bitcoin offered a solution to many problems that were faced by the researchers until then. These very solutions were the reason for Bitcoin to become one of the widely adopted digital currencies in the world till date.</p>
+      <p>The main intention behind the creation of Bitcoin was to empower individuals by providing them with an alternative way to conduct peer to peer transaction over the internet without having to go through the middle men or a trusted third party like banking and financial institution. In order to fulfill its purpose, the digital currency protocol has to meet certain criteria. Apart from being scarce, fungible and highly divisible, it is important for bitcoin network to maintain consistency. Consistency of the network takes a special place because of its distributed nature.</p>
+      <p class="padding-bottom">We all know that Bitcoin is an open source, decentralized digital currency where the miners, who are part of the Bitcoin community contribute processing power to discover new blocks and confirm transactions over the network. This is done by comparing the transaction ids with the existing record on the blockchain and inserting the new transaction records into fresh blocks. Technically, the time taken by a miner or a mining pool to discover a new block is directly proportional to the total processing power of the network, which in other words in known as hash rate.</p>
     </div>
   </section>
   <script src="js/script.js"></script>
