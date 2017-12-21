@@ -625,7 +625,8 @@ body {
 
 @media screen and (max-width: 1200px) {
   .mining {
-    min-height: 600px; } }
+    min-height: 600px;
+    background: url("../img/mining-bg-m.png") no-repeat top; } }
 
 @media screen and (max-width: 768px) {
   .mining {

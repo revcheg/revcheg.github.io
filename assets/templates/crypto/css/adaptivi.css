@@ -392,6 +392,12 @@
   .page-main--faq p {
     width: 90%;
   }
+  
+  /* Form Support */
+  .form__support,
+  .form__support textarea {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width : 480px) {
@@ -491,6 +497,15 @@
 
   .form__check input {
     left: -160px;
+  }
+  
+  .form__support,
+  .form__support textarea {
+    width: 85%;
+  }
+  
+  .form__support input {
+    margin-bottom: 10px;
   }
 }
 
@@ -597,7 +612,9 @@
 
   .form__name,
   .form__email,
-  .form__password {
+  .form__password,
+  .form__tel,
+  .form__country {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -615,6 +632,10 @@
 
   input[type="checkbox"] {
     left: 10px;
+  }
+  
+  input[type="tel"] {
+    margin-left: 10px;
   }
 
   .form__check {
