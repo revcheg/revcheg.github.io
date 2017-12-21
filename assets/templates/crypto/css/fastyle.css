@@ -643,7 +643,8 @@ form button:hover {
 .page-main--legal,
 .page-main--trading,
 .page-main--contact,
-.page-main--support h1 {
+.page-main--support,
+.page-main--careers h1 {
   margin-top: 0;
   padding-top: 60px;
   text-transform: uppercase;
@@ -743,5 +744,12 @@ form button:hover {
 
 /*Support*/
 .page-main--support {
+	font-size: 18px;
+}
+
+/* Careers */
+.page-main--careers p,
+.page-main--careers ul {
+	width: 80%;
 	font-size: 18px;
 }
