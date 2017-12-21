@@ -628,7 +628,7 @@ form button:hover {
 .page-main {
   margin-bottom: -25px;
   color: #fff;
-  font-size: 25px;
+  font-size: 20px;
   background: url('../img/cbg.png') no-repeat top;
   background-size: cover;
 }
@@ -636,6 +636,7 @@ form button:hover {
 .page-main h1 {
   font-size: 30px;
 }
+
 
 .page-main--about,
 .page-main--faq,
@@ -753,3 +754,10 @@ form button:hover {
 	width: 80%;
 	font-size: 18px;
 }
+
+.page-main__careers--title {
+	font-size: 25px !important;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
