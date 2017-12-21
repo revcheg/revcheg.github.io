@@ -756,8 +756,57 @@ form button:hover {
 }
 
 .page-main__careers--title {
+	margin-top: 70px;
 	font-size: 25px !important;
 	font-weight: bold;
 	text-transform: uppercase;
 }
+
+/* Form Support */
+.form__support {
+	width: 400px;
+}
+
+.form__support input {
+	margin-left: 0;
+	padding: 10px 20px;
+	color: #fff;
+	border-radius: 10px;
+	/* border: 1px solid #fff; */
+	background: rgba(255, 255, 255, 0.2);
+	opacity: 1;
+}
+
+.form__support input::placeholder {
+	color: #fff;
+}
+
+.form__support textarea {
+	width: 400px;
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 10px;
+	border: none;
+	background: rgba(255, 255, 255, 0.2);
+	resize: none;
+}
+
+.form__support button {
+	margin-top: 30px;
+	margin-bottom: 100px;
+	padding: 10px 70px;
+	font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
