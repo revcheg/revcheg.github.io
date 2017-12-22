@@ -35,13 +35,14 @@
       <div class="container__adv  container__adv--pm">
         <h1>Support</h1>
         <div class="form__flex">
-          <form action="" class="form__support">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="Subject">
-            <textarea name="name" rows="4" cols="80"></textarea>
+          <form action="" method="POST" class="form__support">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea name="name" rows="4" cols="80" required></textarea>
             <div class="g-recaptcha" data-sitekey="6LePDD4UAAAAAH2emPt1yfP329k68a_d8fdEHZlE"></div>
-            <button type="submit" value="Submit">Submit</button>
+            <div class="test"></div>
+            <button type="submit" value="Submit" class="g-recaptcha" data-sitekey="6LePDD4UAAAAAH2emPt1yfP329k68a_d8fdEHZlE">Submit</button>
           </form>
           <div class="form__contact">
             <p>Support email: support@cryptologi.com</p>
@@ -85,8 +86,9 @@
           </ul>
         </div>
       </div>
-      <p class="page-footer__copyright">© Copyright 2017 Cryptologi, All right reserved. Cryptologi is a property of GRANIT OAK WORLDWIDE LIMITED: Igoumenitsas 12, , 2027 Nicosia, Cyprus. Operational address: Igoumenitsas 12, , 2027 Nicosia, Cyprus<br><br>Criptologi is a software platform ONLY and does not conduct any independent diligence on or substantive review of any blockchain asset, digital currency, cryptocurrency or associated funds. You are fully and solely responsible for evaluating your investments, for determining whether you will exchange blockchain assets based on your own, and for all your decisions as to whether to exchange blockchain assets with Exodus. In many cases, blockchain assets you exchange on the basis of your research may not increase in value, and may decrease in value. Similarly, blockchain assets you exchange on the basis of your research may increase in value after your exchange.
+      <p class="page-footer__copyright">© Copyright 2017 Cryptologi, All right reserved. Cryptologi is a property of GRANIT OAK WORLDWIDE LIMITED: Igoumenitsas 12, 2027 Nicosia, Cyprus. Operational address: Igoumenitsas 12, 2027 Nicosia, Cyprus<br><br>Criptologi is a software platform ONLY and does not conduct any independent diligence on or substantive review of any blockchain asset, digital currency, cryptocurrency or associated funds. You are fully and solely responsible for evaluating your investments, for determining whether you will exchange blockchain assets based on your own, and for all your decisions as to whether to exchange blockchain assets with Exodus. In many cases, blockchain assets you exchange on the basis of your research may not increase in value, and may decrease in value. Similarly, blockchain assets you exchange on the basis of your research may increase in value after your exchange.
 Past performance is not indicative of future results. Any investment in blockchain assets involves the risk of loss of part or all of your investment. The value of the blockchain assets you exchange is subject to market and other investment risks.</p>    </div>
   </footer>
+  <script src='../js/script.js'></script>
 </body>
 </html>
