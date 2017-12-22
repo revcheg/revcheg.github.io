@@ -5,11 +5,7 @@
 }
 
 .page-header__logo {
-  margin-top: 10px;
-}
-
-.page-header__logo-s {
-  display: none;
+  margin-top: 5px;
 }
 
 .page-header__flex {
@@ -69,15 +65,8 @@
   }
   
   .page-header__logo {
-    margin-top: 20px;
-  }
-  
-  .page-header__logo-b {
-    display: none;
-  }
-  
-  .page-header__logo-s {
-    display: block;
+    width: 250px;
+    margin-top: 5px;
   }
   
   .page-header__nav {
@@ -107,6 +96,7 @@
   
   .page-header__nav-list {
     width: 100%;
+    margin-top: 15px;
   }
   
   .page-header__main-nav--s {
@@ -137,15 +127,8 @@
   }
   
   .page-header__logo {
-    margin-top: 20px;
-  }
-  
-  .page-header__logo-b {
-    display: none;
-  }
-  
-  .page-header__logo-s {
-    display: block;
+    width: 250px;
+    margin-top: 15px;
   }
   
   .page-header__main-nav {
