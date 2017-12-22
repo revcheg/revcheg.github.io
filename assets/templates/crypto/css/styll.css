@@ -61,15 +61,15 @@ body {
 
 /*Инфо*/
 .info {
-  min-height: 470px;
-  background: url("../img/header.png") no-repeat center;
+  min-height: 600px;
+  background: url("../img/header-t.png") no-repeat center;
   background-size: cover;
   border-bottom: 5px solid black;
 }
 
 .info__title {
   margin-top: 0;
-  padding-top: 65px;
+  padding-top: 140px;
   color: #fff;
   font-size: 35px;
   font-weight: normal;
@@ -78,7 +78,7 @@ body {
 
 .info__text {
   padding-top: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
   color: #fff;
   font-size: 20px;
   opacity: 0.4;
@@ -87,9 +87,9 @@ body {
 .info__link {
   color: #000;
   padding: 10px 50px;
-  background: #bfa75f;
+  background: #a2c0ca;
   border-radius: 50px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -97,7 +97,7 @@ body {
 }
 
 .info__link:hover {
-  color: #fff;
+  background: #fff;
 }
 
 /*Вторая секция*/
@@ -107,7 +107,7 @@ body {
 }
 
 .read {
-  background: #bfa75f;
+  background: #a2c0ca;
 }
 
 .read__more {
@@ -228,6 +228,10 @@ body {
   background: #8a0000;
 }
 
+.info__link--red:hover {
+  background: #000;
+}
+
 .trading__flex-container--m {
   margin-top: 100px;
 }
@@ -248,15 +252,15 @@ body {
 }
 
 .coin {
-  min-height: 185px;
-  background: rgba(222, 238, 243, 0.5);
+  min-height: 125px;
+  background: #afb59c;
 	border-bottom: 5px solid black;
 }
 
 .coin__box {
   width: 100px;
-  padding-top: 70px;
-  margin-top: 30px;
+  padding-top: 50px;
+  margin-top: 10px;
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
@@ -269,7 +273,7 @@ body {
 
 .coin__box p {
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .coin__box--bitcoin {
