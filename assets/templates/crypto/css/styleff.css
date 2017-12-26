@@ -200,7 +200,7 @@ body {
 }
 
 .trading {
-  min-height: 800px;
+  /* min-height: 800px; */
   background: url("../img/mac.png") no-repeat center;
 }
 
@@ -223,7 +223,8 @@ body {
 }
 
 .info__link--red {
-  margin-top: 50px;
+  /* margin-top: 20px; */
+	margin-bottom: 40px;
   color: #fff;
   background: #8a0000;
 }
@@ -253,8 +254,16 @@ body {
 
 .coin {
   min-height: 125px;
-  background: #afb59c;
+  background: rgba(175, 181, 156, 0.9);
+	border-top: 2px solid black;
 	border-bottom: 2px solid black;
+}
+
+.coin-bg {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	opacity: 0.9;
 }
 
 .coin__box {
@@ -401,7 +410,7 @@ body {
 }
 
 .page-footer {
-  min-height: 290px;
+  /* min-height: 290px; */
   background: #262626;
 }
 
@@ -447,9 +456,13 @@ body {
 
 .page-footer__copyright {
 	margin-bottom: 0;
-	padding-bottom: 50px;
+	padding-bottom: 60px;
 	color: #949494;
 	text-align: justify;
+}
+
+.page-footer__copyright--main {
+	padding-bottom: 180px;
 }
 
 /*Login*/
