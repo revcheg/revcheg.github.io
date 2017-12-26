@@ -228,9 +228,13 @@ form a {
     width: 90%; }
   .page-header__support textarea {
     margin-bottom: 50px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
     border: 2px solid #fff;
     border-radius: 10px;
-    background: transparent; }
+    background: transparent;
+    resize: none; }
 
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
