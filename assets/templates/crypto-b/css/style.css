@@ -223,7 +223,7 @@ form a {
   margin-bottom: 0; }
 
 .page-header__support {
-  width: 434px; }
+  width: 400px; }
   .page-header__support input {
     width: 90%; }
   .page-header__support textarea {
@@ -240,12 +240,11 @@ form a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
 
 .page-header__support-right {
-  width: 600px; }
+  width: auto; }
 
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -267,9 +266,6 @@ form a {
     padding-left: 10px;
     font-size: 14px; }
   .page-header__rules--support {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -291,8 +287,8 @@ form a {
       border-radius: 10px;
       background: transparent;
       resize: none; }
-  .page-header__support-right {
-    width: auto; } }
+  .page-header__support-right p {
+    text-align: center !important; } }
 
 /* Smartphones (горизонтальная) ----------- */
 /* Smartphones (вертикальная) ----------- */
@@ -325,6 +321,21 @@ form a {
     text-align: center; } }
 
 /* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .page-header__support input {
+    width: auto; }
+  .page-header__support input[type="submit"] {
+    width: 300px; }
+  .page-header__rules--support {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .page-header__support-right h1 {
+    text-align: center; }
+  .page-header__support-right p {
+    text-align: center !important; } }
+
 .page-header {
   min-height: 730px;
   background: #070055 url("../img/header.png") top;

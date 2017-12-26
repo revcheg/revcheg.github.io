@@ -117,7 +117,7 @@ form a {
 
 // Support
 .page-header__support {
-  width: 434px;
+  width: 400px;
   
   & input {
     width: 90%;
@@ -137,11 +137,11 @@ form a {
 
 .page-header__rules--support {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .page-header__support-right {
-  width: 600px;
+  width: auto;
 }
 
 // Media
@@ -172,7 +172,6 @@ form a {
   
   // Support
   .page-header__rules--support {
-    display: flex;
     flex-direction: column;
   }
   
@@ -202,7 +201,10 @@ form a {
   }
   
   .page-header__support-right {
-    width: auto;
+    
+    & p {
+      text-align: center !important;
+    }
   }
 }
 
@@ -248,5 +250,29 @@ form a {
 
 /* iPads (вертикальная и горизонтальная) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .page-header__support {
+    
+    & input {
+      width: auto;
+    }
+    
+    & input[type="submit"] {
+      width: 300px;
+    }
+  }
   
+  .page-header__rules--support {
+    flex-direction: column;
+  }
+  
+  .page-header__support-right {
+    
+    & h1 {
+      text-align: center;
+    }
+    
+    & p {
+      text-align: center !important;
+    }
+  }
 }
