@@ -690,6 +690,27 @@ form a {
 
 /* Smartphones (горизонтальная) ----------- */
 /* Smartphones (вертикальная) ----------- */
+@media only screen and (max-width: 320px) {
+  .news__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 40px; }
+  .news__left-column,
+  .news__middle-column,
+  .news__right-column {
+    width: 100%;
+    text-align: center; }
+  .news__left-column,
+  .news__middle-column {
+    margin-bottom: 50px; }
+  .news__right-column {
+    padding-bottom: 40px; }
+  .news__left-column-second,
+  .news__middle-column-second {
+    margin-bottom: 50px; } }
+
 /* iPads (вертикальная и горизонтальная) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .news__flex {
@@ -702,7 +723,6 @@ form a {
 
 .crypto {
   position: relative;
-  min-height: 635px;
   background: #000 url("../img/crypto-bg.png") no-repeat bottom;
   background-size: cover;
   border-bottom: 10px solid #e94444; }
@@ -730,6 +750,7 @@ form a {
     align-self: flex-end;
     padding: 10px 60px;
     margin-top: 70px;
+    margin-bottom: 150px;
     color: #000;
     font-size: 25px;
     font-weight: 400;
@@ -776,6 +797,7 @@ form a {
       -ms-flex-item-align: center;
       align-self: center;
       margin-top: 50px;
+      margin-bottom: 50px;
       color: #000;
       font-size: 20px; }
   .container--crypto {
@@ -801,6 +823,7 @@ form a {
       -ms-flex-item-align: center;
       align-self: center;
       margin-top: 50px;
+      margin-bottom: 50px;
       color: #000;
       font-size: 18px; }
   .container--crypto {
@@ -1213,7 +1236,8 @@ form a {
 .page-footer__copyright {
   margin: 0;
   padding-bottom: 50px;
-  color: #949494; }
+  color: #949494;
+  text-align: justify; }
 
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -1234,7 +1258,8 @@ form a {
     text-transform: uppercase; }
   .page-header__rules p {
     font-size: 18px;
-    font-weight: 100; }
+    font-weight: 100;
+    text-align: justify; }
 
 .page-header__nav--rules {
   background: transparent; }
