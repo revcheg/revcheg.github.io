@@ -732,9 +732,24 @@
     text-align: center;
   }
   
+  .page-main--about, 
+  .page-main--faq, 
+  .page-main--terms, 
+  .page-main--legal, 
+  .page-main--trading, 
+  .page-main--contact, 
+  .page-main--support, 
+  .page-main--careers h1 {
+    padding-top: 30px;
+  }  
+  
   .page-main--about p,
   .page-main__left {
     width: 100%;
+  }
+  
+  .page-main__about--title {
+    text-align: center !important;
   }
   
   .page-main__left {
@@ -747,7 +762,15 @@
   
   .page-main--terms ul,
   .page-main--faq p {
-    width: 80%;
+    /* width: 80%; */
+  }
+  
+  .page-main--faq p {
+    padding-left: 0;
+  }
+  
+  .page-main--pb {
+    padding-bottom: 60px;
   }
   
   /* Form Support */
