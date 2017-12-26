@@ -100,6 +100,9 @@ body {
   -ms-flex-pack: center;
   justify-content: center; }
 
+.page-header__nav--form {
+  background: transparent !important; }
+
 .page-header__checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1232,6 +1235,9 @@ form a {
   .page-header__rules p {
     font-size: 18px;
     font-weight: 100; }
+
+.page-header__nav--rules {
+  background: transparent; }
 
 .page-header--blue {
   background: url("../img/bg-rules.png") no-repeat center;
