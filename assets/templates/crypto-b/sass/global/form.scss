@@ -135,6 +135,15 @@ form a {
   }
 }
 
+.page-header__rules--support {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__support-right {
+  width: 600px;
+}
+
 // Media
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (min-width : 320px) and (max-width : 480px) {    
@@ -159,6 +168,41 @@ form a {
   label {
     padding-left: 10px;
     font-size: 14px;
+  }
+  
+  // Support
+  .page-header__rules--support {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .page-header__support {
+    width: 80%;
+    padding: 20px;
+    
+    & input {
+      width: auto;
+    }
+    
+    & input[type="submit"] {
+      width: 200px;
+    }
+    
+    & textarea {
+      height: 100px;
+      margin-bottom: 50px;
+      padding: 10px 20px;
+      color: #fff;
+      font-size: 20px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      background: transparent;
+      resize: none;
+    }
+  }
+  
+  .page-header__support-right {
+    width: auto;
   }
 }
 

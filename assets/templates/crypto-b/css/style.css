@@ -236,6 +236,17 @@ form a {
     background: transparent;
     resize: none; }
 
+.page-header__rules--support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.page-header__support-right {
+  width: 600px; }
+
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .page-header__form {
@@ -254,7 +265,34 @@ form a {
     padding: 0 15px; }
   label {
     padding-left: 10px;
-    font-size: 14px; } }
+    font-size: 14px; }
+  .page-header__rules--support {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .page-header__support {
+    width: 80%;
+    padding: 20px; }
+    .page-header__support input {
+      width: auto; }
+    .page-header__support input[type="submit"] {
+      width: 200px; }
+    .page-header__support textarea {
+      height: 100px;
+      margin-bottom: 50px;
+      padding: 10px 20px;
+      color: #fff;
+      font-size: 20px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      background: transparent;
+      resize: none; }
+  .page-header__support-right {
+    width: auto; } }
 
 /* Smartphones (горизонтальная) ----------- */
 /* Smartphones (вертикальная) ----------- */
