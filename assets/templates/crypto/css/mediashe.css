@@ -22,6 +22,12 @@
     margin: 0 auto;
   }
   
+  .info {
+    /* min-height: 600px; */
+    background: url("../img/header-t.png") no-repeat;
+    background-size: cover;
+  }
+  
   .page-header__flex-container {
     justify-content: space-around;
     margin-left: 50px;
@@ -56,11 +62,11 @@
   }
 
   .container__adv {
-    width: 80%;
+    width: 100%;
   }
 
   .page-header__flex-container {
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   .coin__box--bitcoin,
@@ -91,6 +97,7 @@
 
   .trading {
     /*min-height: 700px;*/
+    background: url("../img/mac-f.png") no-repeat top;
   }
 
   .trading__text,
@@ -100,18 +107,20 @@
   }
 
   .trading__title {
-    padding-top: 60px;
+    padding-top: 40px;
     font-size: 50px;
   }
 
   .trading__text {
-    width: 35%;
-    padding-top: 60px;
+    width: 300px;
+    padding-top: 40px;
     font-size: 20px;
+    line-height: normal;
   }
 
   .info__link--red {
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
   }
 
   /*Пре-футер*/
@@ -179,13 +188,22 @@
 
 @media only screen and (max-width : 768px) {
   /*Шапка*/
+  .page-header {
+    height: 68px;
+  }
+  
   .page-header__logo-full {
     width: 400px;
-    padding-top: 10px;
+    /* padding-top: 10px; */
   }
 
   .container__adv {
     width: 100%;
+  }
+
+  .main-nav__list {
+    margin-top: 35px;
+    margin-bottom: 0;
   }
 
   .info__link {
@@ -226,6 +244,11 @@
     font-size: 12px;
   }
 
+  .trading {
+    /* min-height: 800px; */
+    background: url("../img/mac-f.png") no-repeat top;
+  }
+
   .trading__text,
   .trading__title,
   .info__link--red {
@@ -233,18 +256,21 @@
   }
 
   .trading__title {
-    font-size: 50px;
-    padding-top: 60px;
+    font-size: 40px;
+    padding-top: 40px;
   }
 
   .trading__text {
     width: 250px;
-    margin-top: 50px;
-    font-size: 16px;
+    margin-top: 0;
+    padding-top: 70px;
+    font-size: 18px;
+    line-height: 20px;
   }
 
   .info__link--red {
-    margin-top: 100px;
+    margin-top: 40px;
+    margin-bottom: 50px;
   }
 
   /*Пятая секция*/
@@ -444,7 +470,7 @@
   }
 
   .info {
-    min-height: 550px;
+    /* min-height: 550px; */
   }
 
   .flex-btn {
@@ -453,8 +479,13 @@
   }
 
   /*Вторая секция*/
+  .info__title {
+    padding-top: 80px;
+  }
+  
   .info__link {
     margin: 0 40px;
+    margin-bottom: 60px;
     font-size: 18px;
     text-align: center;
   }
@@ -468,6 +499,7 @@
   .read__more {
     width: 100%;
     height: auto;
+    text-align: justify;
   }
 
   .read {
@@ -497,7 +529,7 @@
 
   /*Пятая секция*/
   .fly {
-    min-height: 850px;
+    min-height: 770px;
   }
 
   .fly__desc {
@@ -508,6 +540,10 @@
   .pre-footer h2 {
     padding-top: 50px;
     font-size: 18px;
+  }
+
+  .page-footer__copyright {
+    padding-bottom: 60px;
   }
 
   /*Form*/
@@ -579,21 +615,23 @@
   }
 
   .container__adv {
-    width: inherit;
+    width: 100%;
   }
 
   .info {
-    min-height: 600px;
+    /* min-height: 600px; */
   }
 
   .info__link {
     margin: 0;
+    margin-bottom: 80px;
     font-size: 20px;
   }
 
   .info__title {
-    text-align: center;
+    padding-top: 80px;
     font-size: 30px;
+    text-align: center;
   }
 
   .info__text {
@@ -603,10 +641,11 @@
   }
 
   .read__more {
-    width: 90%;
+    /* width: 90%; */
     margin-top: 0;
     /*margin-bottom: 40px;*/
     height: auto;
+    text-align: justify;
   }
 
   .read__more--pb {
@@ -622,7 +661,7 @@
   }
 
   .fly {
-    min-height: 930px;
+    min-height: 900px;
   }
 
   .pre-footer h2 {
@@ -632,6 +671,10 @@
 
   .page-footer__flex-container {
     text-align: center;
+  }
+  
+  .page-footer__copyright {
+    padding-bottom: 60px;
   }
 
   /*Form*/
