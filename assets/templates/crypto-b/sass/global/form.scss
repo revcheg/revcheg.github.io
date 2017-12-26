@@ -114,6 +114,23 @@ form a {
 .page-header__login p {
   margin-bottom: 0;
 }
+
+// Support
+.page-header__support {
+  width: 434px;
+  
+  & input {
+    width: 90%;
+  }
+  
+  & textarea {
+    margin-bottom: 50px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: transparent;
+  }
+}
+
 // Media
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (min-width : 320px) and (max-width : 480px) {    
