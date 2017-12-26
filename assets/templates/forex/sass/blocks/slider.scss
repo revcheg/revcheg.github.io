@@ -11,7 +11,14 @@
     font-weight: bold;
     text-decoration: none;
     background: $sc;
+    border: 1px solid $sc;
     box-shadow: -7px 7px 4px 0px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    
+    &:hover {
+      color: $sc;
+      background: transparent;
+    }
   }
 }
 

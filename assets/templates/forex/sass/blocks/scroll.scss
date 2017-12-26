@@ -20,6 +20,7 @@
   & a {
     padding: 10px 30px;
     color: $mc;
+    font-weight: bold;
     text-decoration: none;
     background: $sc;
     border: 1px solid $sc;
@@ -29,7 +30,6 @@
     &:hover {
       color: $sc;
       background: transparent;
-      border: 1px solid $sc
     }
   }
 }
@@ -97,31 +97,39 @@
     margin-bottom: 35px;
   }
   
+  .scroll__box--mb {
+    margin-bottom: 0;
+  }
+  
   .scroll__second {
-    min-height: 470px;
+    min-height: 440px;
     background: url("../img/scroll-s-n.png") no-repeat top;
     background-size: cover;
     background-attachment: fixed;
+    text-align: center;
     
     & p {
       margin-top: 0;
       color: #fff;
-      font-size: 20px;
+      font-size: 17px;
     }
     
     & a {
-      padding: 10px 30px;
-      color: $mc;
-      text-decoration: none;
-      background: $sc;
-      box-shadow: -7px 7px 4px 0px rgba(0, 0, 0, 0.4);
-      transition: 0.3s;
       
       &:hover {
         color: $sc;
         background: transparent;
-        border: 1px solid $sc
+        border: 1px solid $sc;
       }
     }
+  }
+  
+  .scroll__title {
+    font-weight: 700;
+  }
+  
+  .scroll__list {
+    font-size: 15px;
+    text-align: left;
   }
 }

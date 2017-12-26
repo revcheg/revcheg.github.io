@@ -16,11 +16,19 @@
     font-weight: bold;
     text-decoration: none;
     background: $sc;
+    border: 1px solid $sc;
     box-shadow: -7px 7px 4px 0px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    
+    &:hover {
+      color: $sc;
+      background: transparent;
+    }
   }
 }
 
 .global__title {
+  margin-top: 0;
   margin-bottom: 0;
   padding-top: 140px;
   color: white;
@@ -46,7 +54,7 @@
 @media screen and ($tablet-widths) {
   .global {
     min-height: 610px;
-    background: url('../img/global.png') no-repeat;
+    background: url('../img/global.png') no-repeat top;
   }
   
   .global__title {
@@ -56,13 +64,14 @@
 
 @media screen and ($mobile-widths) {
   .global {
-    min-height: 600px;
+    min-height: 500px;
     margin-top: -50px;
     text-align: center;
-    background-size: cover; 
+    background: url('../img/global.png') no-repeat;
+    // background-size: cover; 
     
     & p {
-      font-size: 18px;
+      font-size: 16px;
     }
     
     & a {
@@ -79,6 +88,7 @@
     flex-direction: column;
     // align-items: center;
     padding-bottom: 30px;
+    font-size: 14px;
     text-align: left;
   }
 }
