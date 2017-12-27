@@ -123,15 +123,20 @@ form {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 350px;
   padding: 40px;
   border-radius: 10px;
   border: 5px solid #fff; }
+  form p {
+    margin-bottom: 0;
+    text-align: center; }
+  form a {
+    font-weight: bold;
+    text-decoration: none; }
 
 input {
-  width: 300px;
-  height: 40px;
-  margin-bottom: 15px;
-  padding: 0 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
   color: #fff;
   font-size: 18px;
   border-radius: 10px;
@@ -140,12 +145,10 @@ input {
   outline: none; }
 
 input[type="checkbox"] {
-  width: 18px;
-  margin: 0;
   cursor: pointer; }
 
 select {
-  height: 42px;
+  height: 45px;
   padding: 0 20px;
   padding-left: 15px;
   margin-bottom: 20px;
@@ -175,6 +178,7 @@ input[type="submit"]:hover {
   border: 2px solid #070055; }
 
 label {
+  width: 300px;
   font-size: 18px;
   cursor: pointer; }
 
@@ -197,14 +201,6 @@ input::placeholder {
   color: #fff;
   font-size: 16px;
   text-transform: uppercase; }
-
-form p {
-  margin-bottom: 0;
-  text-align: center; }
-
-form a {
-  font-weight: bold;
-  text-decoration: none; }
 
 .page-header__login input[type="checkbox"] {
   margin-bottom: 10px; }
@@ -251,22 +247,20 @@ form a {
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .page-header__form {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     margin-top: 30px; }
+  form {
+    width: 80%;
+    padding: 30px; }
   input {
-    width: auto;
     height: 40px;
-    padding: 0 20px;
-    font-size: 18px; }
+    padding: 0 20px; }
   select {
-    width: 99%;
-    height: 32px;
+    height: 45px;
     padding: 0 15px; }
   label {
-    padding-left: 10px;
-    font-size: 14px; }
+    padding-left: 10px; }
+  input[type="checkbox"] {
+    width: 18px; }
   .page-header__rules--support {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -289,30 +283,10 @@ form a {
     padding: 30px; }
   .page-header__form {
     margin-top: 30px; }
-  input {
-    width: 80%;
-    height: 40px;
-    margin-bottom: 15px;
-    padding: 0 20px;
-    font-size: 18px; }
-  input::-webkit-input-placeholder {
-    font-size: 16px; }
-  input:-ms-input-placeholder {
-    font-size: 16px; }
-  input::-ms-input-placeholder {
-    font-size: 16px; }
-  input::placeholder {
-    font-size: 16px; }
-  input[type="checkbox"] {
-    width: 15px; }
+  form {
+    width: 75%; }
   label {
     font-size: 16px; }
-  select {
-    height: 35px;
-    padding: 1px 20px;
-    font-size: 14px; }
-  form p {
-    text-align: center; }
   .page-header__support {
     width: 70%; }
     .page-header__support input[type="submit"] {
