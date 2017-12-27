@@ -120,7 +120,11 @@ form a {
   width: 400px;
   
   & input {
-    width: 90%;
+    width: auto;
+  }
+  
+  & input[type="submit"] {
+    width: 300px;
   }
   
   & textarea {
@@ -153,10 +157,10 @@ form a {
   }
   
   input {
-    width: 85%;
-    height: 30px;
+    width: auto;
+    height: 40px;
     padding: 0 20px;
-    font-size: 16px;
+    font-size: 18px;
   }
   
   select {
@@ -177,33 +181,21 @@ form a {
   
   .page-header__support {
     width: 80%;
-    padding: 20px;
-    
-    & input {
-      width: auto;
-    }
+    padding: 30px;
     
     & input[type="submit"] {
-      width: 200px;
+      width: auto;
     }
     
     & textarea {
       height: 100px;
-      margin-bottom: 50px;
-      padding: 10px 20px;
-      color: #fff;
-      font-size: 20px;
-      border: 2px solid #fff;
-      border-radius: 10px;
-      background: transparent;
-      resize: none;
     }
   }
   
   .page-header__support-right {
     
     & p {
-      text-align: center !important;
+      text-align: center;
     }
   }
 }
@@ -213,20 +205,24 @@ form a {
 
 /* Smartphones (вертикальная) ----------- */
 @media only screen and (max-width: 320px) {  
+  .page-header__login {
+    padding: 30px;
+  }
+  
   .page-header__form {
     margin-top: 30px;
   }
   
   input {
-    width: 85%;
-    height: 30px;
+    width: 80%;
+    height: 40px;
     margin-bottom: 15px;
     padding: 0 20px;
-    font-size: 16px;
+    font-size: 18px;
   }
   
   input::placeholder {
-    font-size: 13px;
+    font-size: 16px;
   }
   
   input[type="checkbox"] {
@@ -246,18 +242,28 @@ form a {
   form p {
     text-align: center;
   }
-}
-
-/* iPads (вертикальная и горизонтальная) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  
+  // Support
   .page-header__support {
+    width: 70%;
     
     & input {
-      width: auto;
+      // width: auto;
     }
     
     & input[type="submit"] {
-      width: 300px;
+      width: auto;
+    }
+    
+    & textarea {
+      margin-bottom: 50px;
+      padding: 10px 20px;
+      color: #fff;
+      font-size: 20px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      background: transparent;
+      resize: none;
     }
   }
   
@@ -266,13 +272,18 @@ form a {
   }
   
   .page-header__support-right {
-    
-    & h1 {
-      text-align: center;
-    }
-    
-    & p {
-      text-align: center !important;
-    }
+    width: auto;
+  }
+}
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  // Support
+  .page-header__rules--support {
+    flex-direction: column;
+  }
+  
+  .page-header__support-right {
+    text-align: center;
   }
 }
