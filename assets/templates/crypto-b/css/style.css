@@ -769,8 +769,7 @@ input::placeholder {
 .crypto {
   position: relative;
   background: #000 url("../img/crypto-bg.png") no-repeat bottom;
-  background-size: cover;
-  border-bottom: 10px solid #e94444; }
+  background-size: cover; }
   .crypto h1 {
     padding: 10px 0;
     margin-top: 90px;
