@@ -74,7 +74,7 @@
   }
   
   .page-header__nav {
-    min-height: 125px;
+    height: 125px;
   }
   
   .page-header__item {
@@ -82,6 +82,7 @@
   }
   
   .page-header__item a {
+    margin-right: 0;
     padding: 5px 10px;
     color: $w;
     font-size: 16px;
@@ -126,13 +127,17 @@
     width: 95%;
   }
   
-  // .page-header {
-  //   min-height: 1730px;
-  // }
+  .page-header {
+    background-size: inherit;
+  }
   
   .page-header__logo {
     width: 250px;
     margin-top: 15px;
+  }
+  
+  .page-header__nav {
+    height: 260px;
   }
   
   .page-header__main-nav {
@@ -165,7 +170,7 @@
   }
   
   .page-header {
-    background-size: cover;
+    background-size: inherit;
   }
   
   .page-header__nav-list {

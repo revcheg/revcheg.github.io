@@ -62,10 +62,9 @@
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (min-width : 320px) and (max-width : 480px) {
   .crypto {
-    min-height: 550px;
     
     & h1 {
-      margin-top: 40px;
+      margin-top: 30px;
       color: $w;
       font-size: 40px;
       background: transparent;
@@ -73,7 +72,8 @@
     
     & p {
       align-self: center;
-      width: 100%;
+      width: auto;
+      padding-top: 0;
       font-size: 20px;
       text-align: center;
     }

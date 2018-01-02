@@ -29,7 +29,7 @@
 @media only screen and (min-width : 320px) and (max-width : 480px) {  
   .news__flex {
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 50px;
   }
   
   .news__left-column,
@@ -42,10 +42,6 @@
   .news__left-column,
   .news__middle-column {
     margin-bottom: 50px;
-  }
-  
-  .news__right-column {
-    padding-bottom: 40px;
   }
   
   .news__left-column-second,

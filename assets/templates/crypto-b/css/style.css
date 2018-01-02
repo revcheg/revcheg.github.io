@@ -388,10 +388,11 @@ input::placeholder {
     width: 250px;
     margin-top: 5px; }
   .page-header__nav {
-    min-height: 125px; }
+    height: 125px; }
   .page-header__item {
     margin-right: 10px; }
   .page-header__item a {
+    margin-right: 0;
     padding: 5px 10px;
     color: #fff;
     font-size: 16px;
@@ -426,9 +427,13 @@ input::placeholder {
     align-items: center; }
   .container {
     width: 95%; }
+  .page-header {
+    background-size: inherit; }
   .page-header__logo {
     width: 250px;
     margin-top: 15px; }
+  .page-header__nav {
+    height: 260px; }
   .page-header__main-nav {
     display: none; }
   .page-header__main-nav--s {
@@ -452,7 +457,7 @@ input::placeholder {
   .container {
     width: 95%; }
   .page-header {
-    background-size: cover; }
+    background-size: inherit; }
   .page-header__nav-list {
     width: 100%;
     -webkit-box-pack: center;
@@ -574,6 +579,7 @@ input::placeholder {
     flex-direction: column; }
   .trade__left-column,
   .trade__right-column {
+    width: auto;
     text-align: center; }
   .trade__left-column {
     font-size: 20px; }
@@ -663,9 +669,11 @@ input::placeholder {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    padding-bottom: 0; }
   .edge__box {
-    margin-bottom: 30px;
+    margin-right: 0;
+    padding-bottom: 30px;
     font-size: 18px; } }
 
 /* Smartphones (горизонтальная) ----------- */
@@ -720,7 +728,7 @@ input::placeholder {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-top: 40px; }
+    padding-top: 50px; }
   .news__left-column,
   .news__middle-column,
   .news__right-column {
@@ -729,8 +737,6 @@ input::placeholder {
   .news__left-column,
   .news__middle-column {
     margin-bottom: 50px; }
-  .news__right-column {
-    padding-bottom: 40px; }
   .news__left-column-second,
   .news__middle-column-second {
     margin-bottom: 50px; } }
@@ -825,26 +831,25 @@ input::placeholder {
 
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  .crypto {
-    min-height: 550px; }
-    .crypto h1 {
-      margin-top: 40px;
-      color: #fff;
-      font-size: 40px;
-      background: transparent; }
-    .crypto p {
-      -ms-flex-item-align: center;
-      align-self: center;
-      width: 100%;
-      font-size: 20px;
-      text-align: center; }
-    .crypto a {
-      -ms-flex-item-align: center;
-      align-self: center;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      color: #000;
-      font-size: 20px; }
+  .crypto h1 {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 40px;
+    background: transparent; }
+  .crypto p {
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: auto;
+    padding-top: 0;
+    font-size: 20px;
+    text-align: center; }
+  .crypto a {
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #000;
+    font-size: 20px; }
   .container--crypto {
     width: 95%; } }
 
@@ -1084,12 +1089,10 @@ input::placeholder {
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .trading {
-    min-height: 440px;
     background: #00aeef; }
     .trading h2 {
       margin-top: 40px;
-      margin-bottom: 0;
-      text-align: center; }
+      margin-bottom: 0; }
     .trading p {
       text-align: center;
       width: 100%;
@@ -1098,12 +1101,16 @@ input::placeholder {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .container--trading {
     width: 95%; }
   .coin__flex {
     -ms-flex-pack: distribute;
-    justify-content: space-around; }
+    justify-content: space-around;
+    padding: 30px 0; }
   .coin__c-1,
   .coin__c-2,
   .coin__c-3,
@@ -1112,7 +1119,6 @@ input::placeholder {
   .coin__c-9 {
     display: none; }
   .trading__coin {
-    min-height: 180px;
     margin-top: 40px; }
   .trading__coin::before {
     top: -50px;

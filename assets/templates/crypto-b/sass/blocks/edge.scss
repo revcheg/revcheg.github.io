@@ -55,10 +55,12 @@
   .edge__flex {
     align-items: center;
     flex-direction: column;
+    padding-bottom: 0;
   }
   
   .edge__box {
-    margin-bottom: 30px;
+    margin-right: 0;
+    padding-bottom: 30px;
     font-size: 18px;
   }
 }
