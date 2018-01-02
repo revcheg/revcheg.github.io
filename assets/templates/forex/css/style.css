@@ -845,7 +845,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 100px; }
+  padding: 100px 0; }
 
 .account__box {
   position: relative;
@@ -873,7 +873,9 @@ body {
     font-size: 18px;
     text-align: center;
     text-transform: uppercase;
-    background: #2e2963; }
+    background: #2e2963;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
     .account__box header p {
       margin: 0;
       padding: 10px 0;
@@ -882,8 +884,8 @@ body {
       color: #fff; }
   .account__box p {
     margin: 0;
-    padding: 10px 20px;
-    font-size: 15px;
+    padding: 10px;
+    font-size: 13px;
     font-weight: bold; }
   .account__box footer {
     background: #2e2963; }
@@ -902,8 +904,49 @@ body {
         color: #2e2963;
         background: #f2c318; }
 
+.account__box--bronze {
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .account__box--bronze footer {
+    margin-top: 110px; }
+  .account__box--bronze:hover header {
+    background: #999999; }
+
 .account__box--silver {
   -webkit-transition: 0.3s;
   transition: 0.3s; }
+  .account__box--silver footer {
+    margin-top: 20px; }
   .account__box--silver:hover header {
     background: #999999; }
+
+.account__box--gold {
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .account__box--gold footer {
+    margin-top: 5px; }
+  .account__box--gold:hover header {
+    background: #999999; }
+
+.account__box--free {
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .account__box--free footer {
+    margin-top: 5px; }
+  .account__box--free:hover header {
+    background: #999999; }
+
+.account__box--zulu {
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .account__box--zulu footer {
+    margin-top: 150px; }
+  .account__box--zulu:hover header {
+    background: #999999; }
+
+.account__pay {
+  background: #2e2963; }
+  .account__pay img {
+    display: block;
+    margin: auto;
+    padding: 30px 0; }
