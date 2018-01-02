@@ -319,12 +319,11 @@ input::placeholder {
     text-align: center; } }
 
 .page-header {
-  min-height: 730px;
   background: #00aeef url("../img/header-t.png") top;
   background-size: cover; }
 
 .page-header__logo {
-  margin-top: 5px; }
+  margin-top: 3px; }
 
 .page-header__flex {
   display: -webkit-box;
@@ -338,7 +337,7 @@ input::placeholder {
   padding-top: 25px; }
 
 .page-header__nav {
-  min-height: 80px;
+  height: 70px;
   background: #00aeef; }
 
 .page-header__main-nav--s {
@@ -348,17 +347,19 @@ input::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 400px;
-  margin-top: 27px;
+  margin-top: 23px;
   padding-left: 0;
   list-style: none; }
 
 .page-header__item a {
+  margin-right: 10px;
   padding: 5px 15px;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
@@ -533,7 +534,7 @@ input::placeholder {
   /* стили */ }
 
 .trade {
-  background: black; }
+  background: #000; }
 
 .trade__flex {
   display: -webkit-box;
@@ -550,11 +551,13 @@ input::placeholder {
   padding-bottom: 30px; }
 
 .trade__left-column {
-  font-size: 35px;
-  font-weight: 500;
+  width: 800px;
+  font-size: 25px;
+  font-weight: bold;
   text-transform: uppercase; }
 
 .trade__right-column {
+  width: 900px;
   font-size: 25px; }
 
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
@@ -605,45 +608,45 @@ input::placeholder {
     align-self: center;
     font-size: 20px; } }
 
-.edge {
-  min-height: 230px; }
-
 .edge__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-top: 60px; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding-bottom: 30px; }
 
 .edge__box {
-  width: 190px;
-  margin-bottom: 40px;
+  width: 150px;
+  margin-right: 50px;
   padding-top: 100px;
   color: #0054a6;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 17px;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer; }
+  .edge__box p {
+    margin: 0; }
 
 .edge__box--e-1 {
-  background: url("../img/e-1.png") no-repeat top; }
+  background: url("../img/e-1-t.png") no-repeat top; }
 
 .edge__box--e-2 {
-  background: url("../img/e-2.png") no-repeat top; }
+  background: url("../img/e-2-t.png") no-repeat top; }
 
 .edge__box--e-3 {
-  background: url("../img/e-3.png") no-repeat top; }
+  background: url("../img/e-3-t.png") no-repeat top; }
 
 .edge__box--e-4 {
-  background: url("../img/e-4.png") no-repeat top; }
+  background: url("../img/e-4-t.png") no-repeat top; }
 
 .edge__box--e-5 {
-  background: url("../img/e-5.png") no-repeat top; }
+  background: url("../img/e-5-t.png") no-repeat top; }
 
 .edge__box:hover {
   -webkit-transform: scale(1.1, 1.1);
@@ -680,13 +683,7 @@ input::placeholder {
 
 /* iPads (вертикальная и горизонтальная) ----------- */
 /* iPads (вертикальная и горизонтальная) ----------- */
-@media only screen and (min-width: 1224px) {
-  .edge__flex {
-    -ms-flex-pack: distribute;
-    justify-content: space-around; } }
-
 .news {
-  min-height: 400px;
   color: #fff;
   background: #00aeef; }
   .news b {
@@ -702,7 +699,7 @@ input::placeholder {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 60px; }
+  padding: 50px 0; }
 
 .news__left-column,
 .news__middle-column,
@@ -760,20 +757,16 @@ input::placeholder {
     padding-bottom: 70px; } }
 
 /* Настольные компьютеры и ноутбуки ----------- */
-@media only screen and (min-width: 1224px) {
-  .news__flex {
-    padding-bottom: 70px; } }
-
 .crypto {
   position: relative;
   background: #000 url("../img/crypto-bg.png") no-repeat bottom;
   background-size: cover; }
   .crypto h1 {
     padding: 10px 0;
-    margin-top: 90px;
+    margin-top: 50px;
     color: #fff;
-    font-size: 60px;
-    font-weight: 100;
+    font-size: 50px;
+    font-weight: 700;
     background: #000;
     border-radius: 10px;
     text-align: center;
@@ -782,17 +775,18 @@ input::placeholder {
     -ms-flex-item-align: end;
     align-self: flex-end;
     width: 75%;
+    padding-top: 50px;
     color: #fff;
-    font-size: 25px;
-    font-weight: 100;
+    font-size: 22px;
+    font-weight: 500;
     text-align: right;
     text-transform: uppercase; }
   .crypto a {
     -ms-flex-item-align: end;
     align-self: flex-end;
     padding: 10px 60px;
-    margin-top: 70px;
-    margin-bottom: 150px;
+    margin-top: 100px;
+    margin-bottom: 120px;
     color: #000;
     font-size: 25px;
     font-weight: 400;
@@ -904,26 +898,24 @@ input::placeholder {
 
 @media only screen and (min-width: 1824px) {
   .crypto::after {
-    width: 600px;
-    height: 830px;
+    width: 482px;
+    height: 662px;
     top: 250px;
-    left: 100px;
+    left: 200px;
     background: url("../img/phone.png") no-repeat; } }
 
 .trading {
-  min-height: 600px;
   background: #00aeef; }
   .trading h2 {
-    margin-top: 60px;
+    margin-top: 50px;
     font-size: 40px;
-    font-weight: 400;
-    font-style: normal; }
+    font-weight: 400; }
   .trading p {
     -ms-flex-item-align: end;
     align-self: flex-end;
     width: 70%;
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 100;
     text-align: right;
     z-index: 3; }
@@ -945,8 +937,7 @@ input::placeholder {
 
 .trading__coin {
   position: relative;
-  min-height: 300px;
-  margin-top: 120px;
+  margin-top: 100px;
   background: #fff;
   background-size: cover;
   z-index: 1; }
@@ -981,7 +972,7 @@ input::placeholder {
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
-  padding-top: 25px; }
+  padding-bottom: 50px; }
 
 .coin__c-1,
 .coin__c-2,
@@ -1216,12 +1207,6 @@ input::placeholder {
 
 /* Настольные компьютеры и ноутбуки ----------- */
 @media only screen and (min-width: 1224px) {
-  .trading {
-    min-height: 600px;
-    background: #00aeef; }
-  .trading__coin {
-    min-height: 200px;
-    margin-top: 100px; }
   .trading__coin::before {
     right: 0;
     top: -60px;

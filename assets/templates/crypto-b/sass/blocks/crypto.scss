@@ -1,16 +1,14 @@
 .crypto {
   position: relative;
-  // min-height: 635px;
   background: #000 url("../img/crypto-bg.png") no-repeat bottom;
   background-size: cover;
-  // border-bottom: 10px solid #e94444;
   
   & h1 {
     padding: 10px 0;
-    margin-top: 90px;
+    margin-top: 50px;
     color: $w;
-    font-size: 60px;
-    font-weight: 100;
+    font-size: 50px;
+    font-weight: 700;
     background: #000;
     border-radius: 10px;
     text-align: center;
@@ -20,9 +18,10 @@
   & p {
     align-self: flex-end;
     width: 75%;
+    padding-top: 50px;
     color: $w;
-    font-size: 25px;
-    font-weight: 100;
+    font-size: 22px;
+    font-weight: 500;
     text-align: right;
     text-transform: uppercase;
   }
@@ -30,8 +29,8 @@
   & a {
     align-self: flex-end;
     padding: 10px 60px;
-    margin-top: 70px;
-    margin-bottom: 150px;
+    margin-top: 100px;
+    margin-bottom: 120px;
     color: #000;
     font-size: 25px;
     font-weight: 400;
@@ -174,10 +173,10 @@
 
 @media only screen and (min-width: 1824px) {
   .crypto::after {
-    width: 600px;
-    height: 830px;
+    width: 482px;
+    height: 662px;
     top: 250px;
-    left: 100px;
+    left: 200px;
     background: url("../img/phone.png") no-repeat;
   }
 }

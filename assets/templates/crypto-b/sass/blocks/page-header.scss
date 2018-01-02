@@ -1,11 +1,10 @@
 .page-header {
-  min-height: 730px;
   background: #00aeef url("../img/header-t.png") top;
   background-size: cover;
 }
 
 .page-header__logo {
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 .page-header__flex {
@@ -18,7 +17,7 @@
 }
 
 .page-header__nav {
-  min-height: 80px;
+  height: 70px;
   background: #00aeef;
 }
 
@@ -28,17 +27,18 @@
 
 .page-header__nav-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 400px;
-  margin-top: 27px;
+  margin-top: 23px;
   padding-left: 0;
   list-style: none;
 }
 
 .page-header__item a {
+  margin-right: 10px;
   padding: 5px 15px;
   color: $w;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;

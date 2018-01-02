@@ -1,5 +1,5 @@
 .news {
-  min-height: 400px;
+  // min-height: 400px;
   color: $w;
   background: #00aeef;
   
@@ -16,7 +16,7 @@
 .news__flex {
   display: flex;
   justify-content: space-between;
-  padding-top: 60px;
+  padding: 50px 0;
 }
 
 .news__left-column,
@@ -97,7 +97,7 @@
 /* Настольные компьютеры и ноутбуки ----------- */
 @media only screen and (min-width: 1224px) {
   .news__flex {
-    padding-bottom: 70px;
+    // padding-bottom: 70px;
   }
 }
 

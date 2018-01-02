@@ -1,5 +1,5 @@
 .trade {
-  background: black;
+  background: #000;
 }
 
 .trade__flex {
@@ -15,12 +15,14 @@
 }
 
 .trade__left-column {
-  font-size: 35px;
-  font-weight: 500;
+  width: 800px;
+  font-size: 25px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .trade__right-column {
+  width: 900px;
   font-size: 25px;
 }
 

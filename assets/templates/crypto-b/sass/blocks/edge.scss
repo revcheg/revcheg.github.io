@@ -1,44 +1,49 @@
 .edge {
-  min-height: 230px;
+  // min-height: 230px;
 }
 
 .edge__flex {
   display: flex;
-  justify-content: space-between;
-  margin-top: 60px;
+  justify-content: center;
+  margin-top: 30px;
+  padding-bottom: 30px;
 }
 
 .edge__box {
-  width: 190px;
-  margin-bottom: 40px;
+  width: 150px;
+  margin-right: 50px;
   padding-top: 100px;
   color: #0054a6;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 17px;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   transition: 0.2s;
   cursor: pointer;
+  
+  & p {
+    margin: 0;
+  }
 }
 
 .edge__box--e-1 {
-  background: url("../img/e-1.png") no-repeat top;
+  background: url("../img/e-1-t.png") no-repeat top;
 }
 
 .edge__box--e-2 {
-  background: url("../img/e-2.png") no-repeat top;
+  background: url("../img/e-2-t.png") no-repeat top;
 }
 
 .edge__box--e-3 {
-  background: url("../img/e-3.png") no-repeat top;
+  background: url("../img/e-3-t.png") no-repeat top;
 }
 
 .edge__box--e-4 {
-  background: url("../img/e-4.png") no-repeat top;
+  background: url("../img/e-4-t.png") no-repeat top;
 }
 
 .edge__box--e-5 {
-  background: url("../img/e-5.png") no-repeat top;
+  background: url("../img/e-5-t.png") no-repeat top;
 }
 
 .edge__box:hover {
@@ -86,6 +91,6 @@
 
 @media only screen and (min-width: 1224px) {
   .edge__flex {
-    justify-content: space-around;
+    // justify-content: space-around;
   }
 }

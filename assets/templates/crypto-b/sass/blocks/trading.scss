@@ -1,19 +1,18 @@
 .trading {
-  min-height: 600px;
+  // min-height: 600px;
   background: #00aeef;
   
   & h2 {
-    margin-top: 60px;
+    margin-top: 50px;
     font-size: 40px;
     font-weight: 400;
-    font-style: normal;
   }
   
   & p {
     align-self: flex-end;
     width: 70%;
     color: $w;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 100;
     text-align: right;
     z-index: 3;
@@ -32,8 +31,8 @@
 
 .trading__coin {
   position: relative;
-  min-height: 300px;
-  margin-top: 120px;
+  // min-height: 300px;
+  margin-top: 100px;
   background: $w;
   background-size: cover; 
   z-index: 1;
@@ -63,7 +62,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-top: 25px;
+  padding-bottom: 50px;
 }
 
 .coin__c-1,
@@ -353,13 +352,13 @@
 /* Настольные компьютеры и ноутбуки ----------- */
 @media only screen and (min-width: 1224px) {  
   .trading {
-    min-height: 600px;
-    background: #00aeef;
+    // min-height: 600px;
+    // background: #00aeef;
   }
   
   .trading__coin {
-    min-height: 200px;
-    margin-top: 100px;
+    // min-height: 200px;
+    // margin-top: 100px;
   }
   
   .trading__coin::before {
