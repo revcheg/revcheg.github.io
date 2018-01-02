@@ -34,10 +34,10 @@
   position: relative;
   width: 250px;
   box-shadow: 0px 0px 7px 0px rgba(2, 2, 2, 0.35);
-  transition: 0.3s;
+  transition: bottom 1s ease-out 0.5s;
   
   &::after {
-    display: none;
+    // display: none;
     content: "";
     position: absolute;
     left: 13px;
@@ -48,7 +48,7 @@
   }
   
   &::before {
-    display: none;
+    // display: none;
     content: "";
     position: absolute;
     right: 12px;
@@ -61,7 +61,7 @@
   &:hover {
     &::after,
     &::before {
-      display: block;
+      // display: block;
       top: -45px;
     }
   }
