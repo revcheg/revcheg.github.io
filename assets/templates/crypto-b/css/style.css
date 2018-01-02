@@ -451,6 +451,8 @@ input::placeholder {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container {
     width: 95%; }
+  .page-header {
+    background-size: cover; }
   .page-header__nav-list {
     width: 100%;
     -webkit-box-pack: center;
@@ -602,7 +604,7 @@ input::placeholder {
   .trade__left-column {
     -ms-flex-item-align: center;
     align-self: center;
-    font-size: 35px; }
+    font-size: 25px; }
   .trade__right-column {
     -ms-flex-item-align: center;
     align-self: center;
@@ -683,6 +685,11 @@ input::placeholder {
 
 /* iPads (вертикальная и горизонтальная) ----------- */
 /* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .edge__box {
+    margin-right: 30px;
+    font-size: 16px; } }
+
 .news {
   color: #fff;
   background: #00aeef; }
@@ -754,7 +761,9 @@ input::placeholder {
 /* iPads (вертикальная и горизонтальная) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .news__flex {
-    padding-bottom: 70px; } }
+    padding: 30px 0; }
+  .news b {
+    font-size: 30px; } }
 
 /* Настольные компьютеры и ноутбуки ----------- */
 .crypto {
@@ -1176,7 +1185,6 @@ input::placeholder {
   .container--trading {
     width: 95%; }
   .trading {
-    min-height: 500px;
     background: #00aeef; }
     .trading h2,
     .trading p {
@@ -1184,9 +1192,9 @@ input::placeholder {
       align-self: center;
       text-align: center; }
   .trading__coin {
-    min-height: 150px;
     margin-top: 80px;
-    padding-top: 20px; }
+    margin-bottom: 0;
+    padding-top: 50px; }
   .trading__coin::before {
     right: 0;
     top: -80px;
@@ -1201,10 +1209,6 @@ input::placeholder {
     background: linear-gradient(to bottom right, transparent 50%, #fff 50.7%); } }
 
 /* iPads (вертикальная и горизонтальная) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .trading__coin {
-    margin-bottom: 50px; } }
-
 /* Настольные компьютеры и ноутбуки ----------- */
 @media only screen and (min-width: 1224px) {
   .trading__coin::before {

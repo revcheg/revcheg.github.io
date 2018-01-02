@@ -200,15 +200,6 @@
     display: none;
   }
   
-  // .coin__c-4,
-  // .coin__c-5,
-  // .coin__c-6 {
-  //   animation-name: coin;
-  //   animation-iteration-count: infinite;
-  //   animation-timing-function: linear;
-  //   animation-duration: 3s;
-  // }
-  
   .trading__coin {
     min-height: 180px;
     margin-top: 40px;
@@ -311,7 +302,6 @@
   }
   
   .trading {
-    min-height: 500px;
     background: #00aeef;
     
     & h2,
@@ -322,9 +312,9 @@
   }
   
   .trading__coin {
-    min-height: 150px;
     margin-top: 80px;
-    padding-top: 20px;
+    margin-bottom: 0;
+    padding-top: 50px;
   }
   
   .trading__coin::before {
@@ -344,9 +334,6 @@
 
 /* iPads (вертикальная и горизонтальная) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {  
-  .trading__coin {
-    margin-bottom: 50px;
-  }
 }
 
 /* Настольные компьютеры и ноутбуки ----------- */

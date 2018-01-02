@@ -1,5 +1,4 @@
 .news {
-  // min-height: 400px;
   color: $w;
   background: #00aeef;
   
@@ -90,7 +89,14 @@
 /* iPads (вертикальная и горизонтальная) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {  
   .news__flex {
-    padding-bottom: 70px;
+    padding: 30px 0;
+  }
+  
+  .news {
+    
+    & b {
+      font-size: 30px;
+    }
   }
 }
 

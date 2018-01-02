@@ -86,7 +86,10 @@
 
 /* iPads (вертикальная и горизонтальная) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
+  .edge__box {
+    margin-right: 30px;
+    font-size: 16px;
+  }
 }
 
 @media only screen and (min-width: 1224px) {
