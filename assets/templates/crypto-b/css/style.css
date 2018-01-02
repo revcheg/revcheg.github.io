@@ -319,7 +319,7 @@ input::placeholder {
     text-align: center; } }
 
 .page-header {
-  background: #00aeef url("../img/header-t.png") top;
+  background: #00aeef url("../img/header.png") top;
   background-size: cover; }
 
 .page-header__logo {
@@ -642,19 +642,19 @@ input::placeholder {
     margin: 0; }
 
 .edge__box--e-1 {
-  background: url("../img/e-1-t.png") no-repeat top; }
+  background: url("../img/e-1.png") no-repeat top; }
 
 .edge__box--e-2 {
-  background: url("../img/e-2-t.png") no-repeat top; }
+  background: url("../img/e-2.png") no-repeat top; }
 
 .edge__box--e-3 {
-  background: url("../img/e-3-t.png") no-repeat top; }
+  background: url("../img/e-3.png") no-repeat top; }
 
 .edge__box--e-4 {
-  background: url("../img/e-4-t.png") no-repeat top; }
+  background: url("../img/e-4.png") no-repeat top; }
 
 .edge__box--e-5 {
-  background: url("../img/e-5-t.png") no-repeat top; }
+  background: url("../img/e-5.png") no-repeat top; }
 
 .edge__box:hover {
   -webkit-transform: scale(1.1, 1.1);
