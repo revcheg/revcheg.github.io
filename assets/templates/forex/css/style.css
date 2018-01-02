@@ -8,7 +8,7 @@ body {
   margin: auto; }
 
 .container__temp {
-  width: 1200px;
+  width: 1350px;
   margin: auto; }
 
 @media screen and (max-width: 1200px) {
@@ -839,6 +839,77 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-top: 100px; }
+
+.account__box {
+  position: relative;
+  width: 250px;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(2, 2, 2, 0.35);
+  box-shadow: 0px 0px 7px 0px rgba(2, 2, 2, 0.35);
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .account__box::after {
+    display: none;
+    content: "";
+    position: absolute;
+    left: 13px;
+    top: 45px;
+    width: 45%;
+    height: 45px;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50.7%, #f2c318));
+    background: linear-gradient(to bottom right, transparent 50%, #f2c318 50.7%); }
+  .account__box::before {
+    display: none;
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 45px;
+    width: 45%;
+    height: 45px;
+    background: -webkit-gradient(linear, right top, left bottom, color-stop(50%, transparent), color-stop(50.7%, #f2c318));
+    background: linear-gradient(to bottom left, transparent 50%, #f2c318 50.7%); }
+  .account__box:hover::after, .account__box:hover::before {
+    display: block;
+    top: -45px; }
+  .account__box header {
+    height: 65px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #2e2963; }
+    .account__box header p {
+      margin: 0;
+      padding: 10px 0;
+      font-size: 10px;
+      font-weight: bold;
+      color: #fff; }
+  .account__box p {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold; }
+  .account__box footer {
+    background: #2e2963; }
+    .account__box footer a {
+      display: block;
+      padding: 15px 10px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+      .account__box footer a:hover {
+        color: #2e2963;
+        background: #f2c318; }
