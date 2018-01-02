@@ -13,6 +13,7 @@
 }
 
 .account {
+  z-index: 1;
   
   & p {
     margin-top: 40px;
@@ -20,6 +21,47 @@
     color: #000e55;
     font-size: 18px;
     text-align: center;
+  }
+}
+
+.page-header__sub-menu {
+  position: relative;
+  z-index: 2;
+}
+
+.page-header__sub-flex {
+  display: flex;
+}
+
+.page-header__sub-box {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 340px;
+  margin-left: 290px;
+  background: rgba(0, 0, 0, 0.7);
+  
+  & a {
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+.page-header__arrow {
+  display: block;
+  margin: auto;
+  width: 38px;
+  height: 38px;
+  border: none;
+  background: url('../img/acc-elipse.png') no-repeat center,
+              url('../img/acc-arrow.png') no-repeat center;
+  transition: 0.3s;
+  
+  &:hover {
+    transform: rotate(180deg);
   }
 }
 
