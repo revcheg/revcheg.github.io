@@ -383,8 +383,6 @@ input::placeholder {
     align-items: center; }
   .container {
     width: 95%; }
-  .page-header {
-    min-height: 1600px; }
   .page-header__logo {
     width: 250px;
     margin-top: 5px; }
@@ -427,8 +425,6 @@ input::placeholder {
     align-items: center; }
   .container {
     width: 95%; }
-  .page-header {
-    min-height: 1730px; }
   .page-header__logo {
     width: 250px;
     margin-top: 15px; }
