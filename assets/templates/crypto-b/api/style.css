@@ -1,55 +1,78 @@
-	/* body {
-		background-color: black;
-		font-size: 17px;
-		color: white;
-	} */
+/* body {
+	background-color: black;
+	font-size: 17px;
+	color: white;
+} */
 
-	.panel__flex {
-		display: flex;
-		justify-content: space-around;
+.panel__flex {
+	display: flex;
+	justify-content: space-around;
+}
+
+.panel {
+	margin: 45px 0;
+	padding-bottom: 20px;
+	width: 400px;
+	font-size: 18px;
+	background: rgba(255, 255, 255, 0.9);
+}
+
+/* .panel-body  */
+.panel-body h5 {
+	margin-top: 10px;
+	margin-bottom: 0;
+	padding-left: 10%;
+}
+
+.price-boxes {
+	/* margin-top: 10%; */
+	color: #000;
+}
+
+a {
+	color: white;
+}
+
+.price {
+	font-size: 25px;
+}
+
+.price-display {
+	margin-top: 0;
+	padding-top: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+span {
+	color: orange;
+}
+
+.up {
+	color: green;
+}
+
+.down {
+	color: red;
+}
+
+.exchange {
+	color: #42f492;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .panel {
+		width: 300px;
 	}
+}
 
-	.panel {
-		margin-top: 45px;
-		padding: 40px;
-		width: 400px;
-		background: rgb(50, 50, 50);
-	}
-
-	.panel-body {
-		/* padding-left: 10%; */
-	}
-
-	.price-boxes {
-		/* margin-top: 10%; */
-		color: #fff;
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .panel__flex {
+		flex-direction: column;
 	}
 	
-	a {
-		color: white;
+	.panel {
+		width: auto;
+		margin-bottom: 0;
 	}
-
-	.price {
-		font-size: 25px;
-	}
-
-	.price-display {
-		font-weight: bold;
-		text-align: center;
-	}
-
-	span {
-		color: orange;
-	}
-
-	.up {
-		color: green;
-	}
-
-	.down {
-		color: red;
-	}
-
-	.exchange {
-		color: #42f492;
-	}
+}
