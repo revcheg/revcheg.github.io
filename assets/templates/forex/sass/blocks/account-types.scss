@@ -1,0 +1,29 @@
+.page-header__sub-menu {
+  height: 120px;
+  border-top: 10px solid #2b2154;
+  background: #4b426d;
+  
+  & p {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.account {
+  
+  & p {
+    margin-top: 40px;
+    padding-bottom: 40px;
+    color: #000e55;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+.account__types {
+  display: flex;
+  justify-content: space-between;
+}
