@@ -13,12 +13,13 @@
 
 .panel {
 	/* margin-top: 90px; */
-	margin-bottom: 30px;
-	padding-bottom: 20px;
-	width: 400px;
-	font-size: 18px;
+	/* margin-bottom: 30px; */
+	/* padding-bottom: 33px; */
+	width: 350px;
+	height: 410px;
+	font-size: 16px;
 	background: url('../img/panel-b.png') no-repeat;
-	/* background-size: cover; */
+	background-size: cover;
 	/* background: rgba(255, 255, 255, 0.9); */
 }
 
@@ -45,6 +46,7 @@ a {
 .price-display {
 	margin-top: 0;
 	padding-top: 20px;
+	font-size: 20px;
 	font-weight: bold;
 	text-align: center;
 }
