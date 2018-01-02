@@ -7,7 +7,7 @@
 .panel__flex {
 	display: flex;
 	justify-content: space-around;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	padding-top: 90px;
 }
 
@@ -15,7 +15,7 @@
 	/* margin-top: 90px; */
 	margin-bottom: 30px;
 	padding-bottom: 20px;
-	width: 400px;
+	width: 350px;
 	font-size: 18px;
 	background: rgba(255, 255, 255, 0.9);
 }
@@ -65,6 +65,7 @@ span {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 	.panel__flex {
+		flex-wrap: wrap;
 		padding-top: 30px;
 	}
 	
