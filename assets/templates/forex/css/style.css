@@ -8,7 +8,7 @@ body {
   margin: auto; }
 
 .container__temp {
-  width: 1350px;
+  width: 1200px;
   margin: auto; }
 
 @media screen and (max-width: 1200px) {
@@ -98,7 +98,12 @@ body {
   font-size: 12px;
   font-weight: bold;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .page-header__link:hover {
+    color: #2e2963;
+    background: #f2c318; }
 
 .page-header__link--violet {
   margin-right: 10px;
@@ -363,7 +368,12 @@ body {
     font-size: 13px;
     font-weight: bold;
     text-decoration: none;
-    background: #2e2963; }
+    background: #2e2963;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .online__box a:hover {
+      color: #2e2963;
+      background: #f2c318; }
 
 .online__box--zulu {
   background: url("../img/online-1.png") no-repeat top; }

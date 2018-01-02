@@ -10,15 +10,11 @@ body {
 }
 
 .container__temp {
-  width: 1350px;
+  width: 1200px;
   margin: auto;
 }
 
 @media screen and ($tablet-widths) {
-  // .container {
-  //   width: 768px;
-  // }
-  
   .container {
     width: 96%;
   }

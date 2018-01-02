@@ -45,6 +45,12 @@
     font-weight: bold;
     text-decoration: none;
     background: $mc;
+    transition: 0.3s;
+    
+    &:hover {
+      color: $mc;
+      background: $sc;
+    }
   }
 }
 
