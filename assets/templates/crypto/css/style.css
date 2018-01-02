@@ -59,6 +59,12 @@ body {
   text-decoration: none;
 }
 
+/* Панели */
+.panels {
+	border-bottom: 2px solid #fff;
+	background: #000 url('../img/panel-bg.png');
+}
+
 /*Инфо*/
 .info {
   min-height: 600px;
