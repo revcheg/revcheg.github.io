@@ -1033,7 +1033,7 @@ body {
     background: #999999; }
 
 .account__pay {
-  background: #2e2963; }
+  background: #4b426d; }
   .account__pay img {
     display: block;
     max-width: 100%;
@@ -1075,3 +1075,20 @@ body {
     -ms-flex-align: center;
     align-items: center;
     padding-top: 50px; } }
+
+.about {
+  color: #000e55;
+  opacity: 0.7; }
+  .about h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    text-align: center; }
+  .about p {
+    font-size: 18px; }
+
+.about__pb {
+  padding-bottom: 40px; }
+
+.page-header__sub-box--about {
+  left: -15px; }
