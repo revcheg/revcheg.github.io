@@ -1,29 +1,3 @@
-$('.slider__box, .online__slider').slick({
-  autoplay: true,
-  autoplaySpeed: 2000,
-  arrows: false,
-  dots: true,
-  responsive: [{
-    breakpoint: 768,
-    settings: {
-      autoplay: false
-    }
-  }]
-});
-
-// $('.online__slider').slick({
-//   autoplay: true,
-//   autoplaySpeed: 2000,
-//   arrows: false,
-//   dots: true,
-//   responsive: [{
-//     breakpoint: 768,
-//     settings: {
-//       autoplay: false
-//     }
-//   }]
-// });
-
 var navMain = document.querySelector('.page-header__main-nav');
 var navToggle = document.querySelector('.page-header__toggle');
 

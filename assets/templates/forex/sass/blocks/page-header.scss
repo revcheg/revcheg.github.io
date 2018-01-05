@@ -25,9 +25,14 @@
     
     &:hover {
       color: $sc;
-      border-bottom: 2px solid $sc;
+      border-bottom: 1px solid $sc;
     }
   }
+}
+
+.page-header__item--active a {
+  color: $sc;
+  border-bottom: 1px solid $sc;
 }
 
 .page-header__link {

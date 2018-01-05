@@ -5,14 +5,14 @@ body {
 }
 
 .container {
-  width: 1055px;
+  width: 70%;
   margin: auto;
 }
 
-.container__temp {
-  width: 1350px;
-  margin: auto;
-}
+// .container__temp {
+//   width: 70%;
+//   margin: auto;
+// }
 
 @media screen and ($tablet-widths) {
   .container {
