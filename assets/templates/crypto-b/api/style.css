@@ -96,13 +96,14 @@ span {
 	
 	.price-boxes {
 		padding-bottom: 30px;
-		color: #000;
+		
 	}
 	
 	.panel {
 		/* margin-bottom: 30px; */
 		width: 300px;
-		background: rgba(255, 255, 255, 0.5);
+		border-radius: 5px;
+		background: #000631;
 	}
 	
 	.panel__link {
@@ -120,11 +121,8 @@ span {
 	.panel {
 		/* margin-bottom: 20px; */
 		width: auto;
-		background: rgba(255, 255, 255, 0.5);
-	}
-	
-	.price-boxes {
-		color: #000;
+		border-radius: 5px;
+		background: #000631;
 	}
 	
 	.panel__link {
