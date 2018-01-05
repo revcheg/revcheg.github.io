@@ -13,21 +13,19 @@
 }
 
 .account {
-  z-index: 1;
   
   & p {
     margin-top: 40px;
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
     color: #000e55;
     font-size: 18px;
     text-align: center;
   }
 }
 
-.page-header__sub-menu {
-  position: relative;
-  z-index: 2;
-}
+// .page-header__sub-menu {
+//   position: relative;
+// }
 
 .page-header__sub-flex {
   display: flex;
@@ -36,10 +34,11 @@
 .page-header__sub-box {
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: auto;
   height: 340px;
-  margin-left: 270px;
+  margin-left: 100px;
   background: rgba(0, 0, 0, 0.7);
+  z-index: 5;
   
   & a {
     padding: 15px 30px;
@@ -57,8 +56,9 @@
   height: 38px;
   border: none;
   background: url('../img/acc-elipse.png') no-repeat center,
-              url('../img/acc-arrow.png') no-repeat center;
+              url('../img/acc-arrow.png') no-repeat 12px 14px;
   transition: 0.3s;
+  outline: none;
   
   &:hover {
     transform: rotate(180deg);
@@ -77,46 +77,10 @@
   width: 250px;
   box-shadow: 0px 0px 7px 0px rgba(2, 2, 2, 0.35);
   cursor: pointer;
-  
-  // &::after {
-  //   display: none;
-  //   content: "";
-  //   position: absolute;
-  //   left: 13px;
-  //   top: -45px;
-  //   width: 45%;
-  //   height: 45px;
-  //   background: linear-gradient(to bottom right,transparent 50%, $sc 50.7%);
-  //   transition: all 0.1s ease-in 0.2s;
-  // }
-  // 
-  // &::before {
-  //   display: none;
-  //   content: "";
-  //   position: absolute;
-  //   right: 12px;
-  //   top: -45px;
-  //   width: 45%;
-  //   height: 45px;
-  //   background: linear-gradient(to bottom left,transparent 50%, $sc 50.7%);
-  //   transition: all 0.1s ease-in 0.2s;
-  // }
-  
-  &::after {
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: -56px;
-    width: 240px;
-    height: 56px;
-  }
+  transition: 0.3s;
   
   &:hover {
     transform: scale(1.1);
-    
-    &::after {
-      background: url('../img/t-acc-most.png');
-    }
   }
   
   & header {
@@ -168,28 +132,36 @@
   }
 }
 
+.account__popular {
+  position: absolute;
+  top: -49px;
+  left: 20px;
+  width: 210px;
+  height: 49px;
+  background: url('../img/acc-popular.png');
+}
+
+// Types
 .account__box--bronze {
-  transition: 0.3s;
   
-  & footer {
-    margin-top: 110px;
-  }
-  
-  &:hover header {
-    background: #999999;
-  }
+    & footer {
+      margin-top: 110px;
+    }
+    
+    &:hover header {
+      background: #999999;
+    }
 }
 
 .account__box--silver {
-  transition: 0.3s;
   
-  & footer {
-    margin-top: 20px;
-  }
-  
-  &:hover header {
-    background: #999999;
-  }
+    & footer {
+      margin-top: 20px;
+    }
+    
+    &:hover header {
+      background: #999999;
+    }
 }
 
 .account__box--gold {

@@ -828,18 +828,11 @@ body {
     font-weight: bold;
     text-transform: uppercase; }
 
-.account {
-  z-index: 1; }
-  .account p {
-    margin-top: 40px;
-    padding-bottom: 40px;
-    color: #000e55;
-    font-size: 18px;
-    text-align: center; }
-
-.page-header__sub-menu {
-  position: relative;
-  z-index: 2; }
+.account p {
+  margin-top: 40px;
+  color: #000e55;
+  font-size: 18px;
+  text-align: center; }
 
 .page-header__sub-flex {
   display: -webkit-box;
@@ -854,10 +847,11 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 250px;
+  width: auto;
   height: 340px;
-  margin-left: 270px;
-  background: rgba(0, 0, 0, 0.7); }
+  margin-left: 100px;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 5; }
   .page-header__sub-box a {
     padding: 15px 30px;
     color: #fff;
@@ -871,9 +865,10 @@ body {
   width: 38px;
   height: 38px;
   border: none;
-  background: url("../img/acc-elipse.png") no-repeat center, url("../img/acc-arrow.png") no-repeat center;
+  background: url("../img/acc-elipse.png") no-repeat center, url("../img/acc-arrow.png") no-repeat 12px 14px;
   -webkit-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  outline: none; }
   .page-header__arrow:hover {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg); }
@@ -895,19 +890,12 @@ body {
   width: 250px;
   -webkit-box-shadow: 0px 0px 7px 0px rgba(2, 2, 2, 0.35);
   box-shadow: 0px 0px 7px 0px rgba(2, 2, 2, 0.35);
-  cursor: pointer; }
-  .account__box::after {
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: -56px;
-    width: 240px;
-    height: 56px; }
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
   .account__box:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
-    .account__box:hover::after {
-      background: url("../img/t-acc-most.png"); }
   .account__box header {
     height: 65px;
     margin-bottom: 20px;
@@ -947,21 +935,25 @@ body {
         color: #2e2963;
         background: #f2c318; }
 
-.account__box--bronze {
-  -webkit-transition: 0.3s;
-  transition: 0.3s; }
-  .account__box--bronze footer {
-    margin-top: 110px; }
-  .account__box--bronze:hover header {
-    background: #999999; }
+.account__popular {
+  position: absolute;
+  top: -49px;
+  left: 20px;
+  width: 210px;
+  height: 49px;
+  background: url("../img/acc-popular.png"); }
 
-.account__box--silver {
-  -webkit-transition: 0.3s;
-  transition: 0.3s; }
-  .account__box--silver footer {
-    margin-top: 20px; }
-  .account__box--silver:hover header {
-    background: #999999; }
+.account__box--bronze footer {
+  margin-top: 110px; }
+
+.account__box--bronze:hover header {
+  background: #999999; }
+
+.account__box--silver footer {
+  margin-top: 20px; }
+
+.account__box--silver:hover header {
+  background: #999999; }
 
 .account__box--gold {
   -webkit-transition: 0.3s;
