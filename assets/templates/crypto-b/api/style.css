@@ -7,7 +7,7 @@
 }
 
 .panel {
-	width: 350px;
+	width: 400px;
 	height: 420px;
 	font-size: 16px;
 	background: url('../img/panel-b.png') no-repeat;
@@ -18,7 +18,7 @@
 .panel-body h5 {
 	margin-top: 10px;
 	margin-bottom: 0;
-	padding-left: 10%;
+	padding-left: 15%;
 }
 
 .price-boxes {
