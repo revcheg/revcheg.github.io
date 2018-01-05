@@ -4,7 +4,7 @@
   background: #4b426d;
   
   & p {
-    margin-top: 30px;
+    margin-top: 40px;
     color: #fff;
     font-size: 25px;
     font-weight: bold;
@@ -16,7 +16,6 @@
   
   & p {
     margin-top: 40px;
-    // padding-bottom: 40px;
     color: #000e55;
     font-size: 18px;
     text-align: center;
@@ -31,6 +30,7 @@
 
 .page-header__sub-flex {
   display: flex;
+  justify-content: center;
   position: relative;
 }
 
@@ -264,10 +264,6 @@
 }
 
 @media screen and ($tablet-widths) {  
-  .container__temp {
-    width: 96%;
-  }
-  
   .page-header__sub-menu {
     height: 100px;
     
@@ -278,6 +274,26 @@
   }
 }
 
-@media screen and ($mobile-widths) {
+@media screen and ($mobile-widths) {  
+  .page-header__sub-flex {
+    justify-content: flex-start;
+  }
   
+  .page-header__sub-menu {
+    
+    & p {
+      margin-top: 35px;
+    }
+  }
+  
+  .page-header__sub-box {
+    left: auto;
+    right: 0;
+  }
+  
+  .account__types {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
 }

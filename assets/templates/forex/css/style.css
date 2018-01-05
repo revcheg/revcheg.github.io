@@ -88,8 +88,8 @@ body {
       color: #f2c318;
       border-bottom: 1px solid #f2c318; }
 
-.page-header__item--active a {
-  color: #f2c318;
+.page-header__item--active {
+  color: #f2c318 !important;
   border-bottom: 1px solid #f2c318; }
 
 .page-header__link {
@@ -822,7 +822,7 @@ body {
   border-top: 10px solid #2b2154;
   background: #4b426d; }
   .page-header__sub-menu p {
-    margin-top: 30px;
+    margin-top: 40px;
     color: #fff;
     font-size: 25px;
     font-weight: bold;
@@ -843,6 +843,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative; }
 
 .page-header__sub-box {
@@ -1039,10 +1042,28 @@ body {
     padding: 30px 0; }
 
 @media screen and (max-width: 1200px) {
-  .container__temp {
-    width: 96%; }
   .page-header__sub-menu {
     height: 100px; }
     .page-header__sub-menu p {
       margin-top: 25px;
       font-size: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .page-header__sub-flex {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .page-header__sub-menu p {
+    margin-top: 35px; }
+  .page-header__sub-box {
+    left: auto;
+    right: 0; }
+  .account__types {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 50px; } }

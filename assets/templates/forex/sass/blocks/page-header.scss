@@ -30,8 +30,8 @@
   }
 }
 
-.page-header__item--active a {
-  color: $sc;
+.page-header__item--active {
+  color: $sc !important;
   border-bottom: 1px solid $sc;
 }
 
