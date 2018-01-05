@@ -384,6 +384,9 @@ input::placeholder {
     align-items: center; }
   .container {
     width: 95%; }
+  .page-header {
+    background: #00aeef url("../img/header-m.png") no-repeat top;
+    background-size: cover; }
   .page-header__logo {
     width: 250px;
     margin-top: 5px; }
