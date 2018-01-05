@@ -38,12 +38,10 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  // position: relative;
   top: -460px;
-  left: 150px;
+  left: 60px;
   width: auto;
   height: 480px;
-  margin-left: 100px;
   background: rgba(0, 0, 0, 0.7);
   transition: 0.8s;
   z-index: 5;
@@ -268,9 +266,23 @@
     height: 100px;
     
     & p {
-      margin-top: 25px;
+      margin-top: 35px;
       font-size: 20px;
     }
+  }
+  
+  .page-header__sub-box {
+    top: -400px;
+    left: 30px;
+    height: 400px;
+    
+    &:hover {
+      transform: translateY(400px);
+    }
+    
+    & a {
+      padding: 10px 30px;
+    }    
   }
 }
 
