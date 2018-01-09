@@ -903,6 +903,9 @@ body {
 .sub-menu__box--about {
   left: -35px; }
 
+.sub-menu__box--funding {
+  left: 40px; }
+
 .sub-menu__logo {
   margin-top: 10px; }
   .sub-menu__logo:hover {
@@ -1112,3 +1115,39 @@ body {
       padding: 5px; }
   .sub-menu__logo img {
     width: 150px; } }
+
+.funding table {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  border-collapse: collapse; }
+
+.funding tr {
+  height: 100px;
+  border-bottom: 1px solid rgba(19, 0, 133, 0.5); }
+
+.funding p {
+  color: #323232;
+  text-align: right; }
+
+.funding__title {
+  height: 40px !important;
+  padding: 0;
+  color: #2e2963;
+  text-transform: uppercase;
+  border: none !important;
+  background: #f2c318; }
+
+.funding__pay-img {
+  background: url("../img/table-1.png") no-repeat center; }
+
+.funding__pb {
+  padding-bottom: 40px; }
+
+@media screen and (max-width: 1200px) {
+  .sub-menu__box--funding {
+    left: 55px; }
+  .funding__pay-img {
+    background: url("../img/table-1.png") no-repeat center;
+    background-size: 100%; } }
