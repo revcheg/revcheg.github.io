@@ -1133,7 +1133,6 @@ body {
 
 .funding__title {
   height: 40px !important;
-  padding: 0;
   color: #2e2963;
   text-transform: uppercase;
   border: none !important;
@@ -1149,5 +1148,13 @@ body {
   .sub-menu__box--funding {
     left: 55px; }
   .funding__pay-img {
-    background: url("../img/table-1.png") no-repeat center;
     background-size: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .funding tr {
+    height: 70px;
+    font-size: 10px; }
+  .funding p {
+    text-align: center; }
+  .funding__title {
+    height: 50px !important; } }
