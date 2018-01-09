@@ -22,16 +22,16 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: -460px;
+  top: -400px;
   // left: 60px;
   width: auto;
-  height: 480px;
+  height: 420px;
   background: rgba(0, 0, 0, 0.7);
   transition: 0.8s;
   z-index: 5;
   
   &:hover {
-    transform: translateY(460px);
+    transform: translateY(400px);
   }
   
   &:hover .sub-menu__arrow {
@@ -41,10 +41,11 @@
   }
   
   & a {
-    padding: 15px 30px;
+    padding: 10px 30px;
     color: #fff;
     font-size: 12px;
     font-weight: bold;
+    text-align: center;
     text-decoration: none;
     transition: 0.3s;
     
@@ -84,8 +85,12 @@
   left: -35px;
 }
 
-.sub-menu__logo:hover {
-  transform: none !important;
+.sub-menu__logo {
+  margin-top: 10px;
+  
+  &:hover {
+    transform: none !important;
+  }
 }
 
 .sub-menu__arrow {
@@ -131,11 +136,7 @@
   }
 }
 
-@media screen and ($mobile-widths) {  
-  .sub-menu__flex {
-    justify-content: flex-start;
-  }
-  
+@media screen and ($mobile-widths) {    
   .sub-menu {
     
     & p {
@@ -144,7 +145,8 @@
   }
   
   .sub-menu__box {
-    left: auto;
-    right: 0;
+    display: none;
+    // left: auto;
+    // right: 0;
   }
 }
