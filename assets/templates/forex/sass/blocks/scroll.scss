@@ -5,6 +5,12 @@
   background-attachment: fixed;
 }
 
+.scroll__logo {
+  display: flex;
+  justify-content: flex-end;
+  padding: 127px 0;
+}
+
 .scroll__second {
   min-height: 470px;
   background: url("../img/scroll-s-n.png") no-repeat top;

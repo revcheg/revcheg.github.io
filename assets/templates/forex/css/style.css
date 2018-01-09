@@ -562,6 +562,15 @@ body {
   background-size: cover;
   background-attachment: fixed; }
 
+.scroll__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 127px 0; }
+
 .scroll__second {
   min-height: 470px;
   background: url("../img/scroll-s-n.png") no-repeat top;
