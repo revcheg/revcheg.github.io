@@ -1,0 +1,54 @@
+.license {
+  color: $mc;
+  font-weight: bold;
+  
+  & h3 {
+    font-size: 30px;
+  }
+  
+  & p, ul {
+    opacity: 0.8;
+  }
+  
+  & b {
+    font-size: 22px;
+  }
+}
+
+.license__box {
+  margin-top: 40px;
+  padding: 20px 40px 40px 40px;
+  border: 2px solid rgba(0, 14, 85, 0.3);
+  border-radius: 5px;
+}
+
+.license__box--pb {
+  margin-bottom: 40px;
+}
+
+.license__img {
+  margin: 0;
+  padding: 40px 0;
+  padding-left: 100px;
+  background: url('../img/license-img.png') no-repeat left;
+}
+
+.license__center {
+  font-size: 22px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.license__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.license__flag {
+  padding-top: 80px;
+  font-size: 14px;
+}
+
+.license__flag--UK {
+  background: url('../img/UK.png') no-repeat top left;
+}
