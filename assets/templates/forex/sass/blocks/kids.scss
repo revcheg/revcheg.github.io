@@ -1,0 +1,21 @@
+.kids {
+  
+  & p {
+    color: $mc;
+    font-weight: bold;
+  }
+  
+  & a {
+    text-decoration: none;
+  }
+}
+
+.kids__pt {
+  margin-top: 0;
+  padding-top: 40px;
+}
+
+.kids__pb {
+  margin-bottom: 0;
+  padding-bottom: 40px;
+}

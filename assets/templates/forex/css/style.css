@@ -62,7 +62,7 @@ body {
   -ms-flex-align: center;
   align-items: center; }
 
-.page-header--account {
+.page-header--temp {
   position: relative;
   background: #fff;
   z-index: 10; }
@@ -1158,3 +1158,18 @@ body {
     text-align: center; }
   .funding__title {
     height: 50px !important; } }
+
+.kids p {
+  color: #2e2963;
+  font-weight: bold; }
+
+.kids a {
+  text-decoration: none; }
+
+.kids__pt {
+  margin-top: 0;
+  padding-top: 40px; }
+
+.kids__pb {
+  margin-bottom: 0;
+  padding-bottom: 40px; }
