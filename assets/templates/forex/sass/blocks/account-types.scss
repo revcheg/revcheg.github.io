@@ -1,17 +1,3 @@
-.page-header__sub-menu {
-  height: 120px;
-  border-top: 10px solid #2b2154;
-  background: #4b426d;
-  
-  & p {
-    margin-top: 40px;
-    color: #fff;
-    font-size: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-}
-
 .account {
   
   & p {
@@ -19,96 +5,6 @@
     color: #000e55;
     font-size: 18px;
     text-align: center;
-  }
-}
-
-.page-header--account {
-  position: relative;
-  background: #fff;
-  z-index: 10;
-}
-
-.page-header__sub-flex {
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-
-.page-header__sub-box {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: -460px;
-  left: 60px;
-  width: auto;
-  height: 480px;
-  background: rgba(0, 0, 0, 0.7);
-  transition: 0.8s;
-  z-index: 5;
-  
-  &:hover {
-    transform: translateY(460px);
-  }
-  
-  & a {
-    padding: 15px 30px;
-    color: #fff;
-    font-size: 12px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.3s;
-    
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-  
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -70px;
-    width: 50%;
-    height: 70px;
-    background: linear-gradient(to top right,transparent 50%, #000 50.7%);
-    opacity: 0.7;
-  }
-  
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: -70px;
-    width: 50%;
-    height: 70px;
-    background: linear-gradient(to top left,transparent 50%, #000 50.7%);
-    opacity: 0.7;
-  }
-}
-
-.page-header__logo-menu:hover {
-  transform: none !important;
-}
-
-.page-header__arrow {
-  position: absolute;
-  bottom: -40px;
-  left: 0;
-  right: 0;
-  display: block;
-  width: 38px;
-  height: 38px;
-  margin: auto;
-  // margin-top: 20px;
-  border: none;
-  background: url('../img/acc-elipse.png') no-repeat center,
-              url('../img/acc-arrow.png') no-repeat 12px 14px;
-  transition: 0.3s;
-  outline: none;
-  z-index: 5;
-  
-  &:hover {
-    transform: rotate(180deg);
   }
 }
 
@@ -261,48 +157,9 @@
   }
 }
 
-@media screen and ($tablet-widths) {  
-  .page-header__sub-menu {
-    height: 100px;
-    
-    & p {
-      margin-top: 35px;
-      font-size: 20px;
-    }
-  }
-  
-  .page-header__sub-box {
-    top: -400px;
-    left: 30px;
-    height: 400px;
-    
-    &:hover {
-      transform: translateY(400px);
-    }
-    
-    & a {
-      padding: 10px 30px;
-    }    
-  }
-}
+@media screen and ($tablet-widths) {}
 
-@media screen and ($mobile-widths) {  
-  .page-header__sub-flex {
-    justify-content: flex-start;
-  }
-  
-  .page-header__sub-menu {
-    
-    & p {
-      margin-top: 35px;
-    }
-  }
-  
-  .page-header__sub-box {
-    left: auto;
-    right: 0;
-  }
-  
+@media screen and ($mobile-widths) {    
   .account__types {
     flex-direction: column;
     align-items: center;

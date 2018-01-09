@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+.page-header--account {
+  position: relative;
+  background: #fff;
+  z-index: 10;
+}
+
 .page-header__menu {
   display: flex;
   flex-direction: row;
@@ -17,7 +23,7 @@
   
   & a {
     color: $mc;
-    font-size: 18px;
+    // font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;

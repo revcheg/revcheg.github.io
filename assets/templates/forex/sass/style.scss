@@ -1,8 +1,10 @@
 @import 'variables';
 
+// Global
 @import 'global/base';
 @import 'global/font';
 
+// Home blocks
 @import 'blocks/page-header';
 @import 'blocks/slider';
 @import 'blocks/online';
@@ -13,5 +15,9 @@
 @import 'blocks/scroll';
 @import 'blocks/page-footer';
 
+// Template blocks
+@import 'blocks/sub-menu';
+
+// Template
 @import 'blocks/account-types';
 @import 'blocks/about-us';
