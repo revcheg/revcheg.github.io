@@ -52,3 +52,44 @@
 .license__flag--UK {
   background: url('../img/UK.png') no-repeat top left;
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {  
+  .license {
+    
+    & h3 {
+      font-size: 25px;
+      text-align: center;
+    }
+    
+    & b {
+      font-size: 20px;
+    }
+  }
+  
+  .license__img {
+    padding-top: 100px;
+    padding-left: 0;
+    padding-bottom: 0;
+    text-align: center;
+    background: url('../img/license-img.png') no-repeat top;
+  }
+  
+  .license__center {
+    font-size: 18px;
+  }
+  
+  .license__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .license__flag {
+    text-align: center;
+  }
+  
+  .license__flag--UK {
+    background: url('../img/UK.png') no-repeat top;
+  }
+}
