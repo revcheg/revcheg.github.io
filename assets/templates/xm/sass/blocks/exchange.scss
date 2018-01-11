@@ -1,0 +1,32 @@
+.exchange {
+  
+  & label {
+    color: #0038b8;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  & input {
+    width: 250px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  
+  & input::placeholder {
+    text-align: right;
+  }
+}
+
+.exchange__flex {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+
+.exchange__first,
+.exchange__third {
+  display: flex;
+  flex-direction: column;
+}
