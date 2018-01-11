@@ -58,3 +58,69 @@ body {
   transition: 0.3s; }
   .header__user a:hover {
     color: #fff; }
+
+.title {
+  background: url("../img/title-bg.png") no-repeat top;
+  background-size: cover; }
+  .title h3 {
+    color: #fff;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; }
+
+.title__logo {
+  display: block;
+  margin: auto;
+  padding-top: 50px; }
+
+.title__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: -50px;
+  padding-bottom: 50px; }
+
+.title__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 200px;
+  height: 150px;
+  padding-top: 200px;
+  color: #fff;
+  text-align: center; }
+  .title__box b {
+    font-size: 30px; }
+  .title__box a {
+    width: 60px;
+    padding: 5px 0;
+    margin: auto;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #f7c107;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .title__box a:hover {
+      background: #f7c107; }
+  .title__box p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold; }
+
+.title__box--bitcoin {
+  background: url("../img/title-bitcoin.png") no-repeat top; }
+
+.title__box--ethereum {
+  background: url("../img/title-ethereum.png") no-repeat top; }
