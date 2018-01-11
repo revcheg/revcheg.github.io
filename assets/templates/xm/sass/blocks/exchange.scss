@@ -22,11 +22,68 @@
 .exchange__flex {
   display: flex;
   justify-content: space-around;
-  padding-top: 100px;
+}
+
+.exchange__flex--first {
+  padding: 100px 0;
+}
+
+.exchange__flex--second {
+  justify-content: center;
 }
 
 .exchange__first,
 .exchange__third {
   display: flex;
   flex-direction: column;
+}
+
+.exchange__second {
+  align-self: center; 
+  
+  & button {
+    width: 46px;
+    height: 33px;
+    border: none;
+    background: url('../img/ex-arrow.png');
+  }
+}
+
+.exchange__fourth {
+  
+  & button {
+    padding: 15px 40px;
+    color: #0038b8;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    background: #f7c107;
+  }
+}
+
+.exchange__left {
+  color: #0038b8;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  & p {
+    margin: 0;
+  }
+}
+
+.exchange__middle {
+  width: 150px;
+  // height: 139px;
+  background: url('../img/ex-card.png') no-repeat top;
+  background-size: cover;
+}
+
+.exchange__right {
+  text-align: right;
+  text-transform: uppercase;
+  
+  & b {
+    color: #0038b8;
+  }
 }
