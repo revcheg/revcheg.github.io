@@ -124,3 +124,16 @@ body {
 
 .title__box--ethereum {
   background: url("../img/title-ethereum.png") no-repeat top; }
+
+.info {
+  font-size: 18px;
+  text-align: center; }
+
+.info__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 50px 0; }
