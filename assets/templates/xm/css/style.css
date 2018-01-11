@@ -3,8 +3,58 @@ body {
   margin: 0; }
 
 .container {
-  width: 1050px;
+  width: 1000px;
   margin: auto; }
 
 .header {
+  height: 85px;
   background: #0b1930; }
+
+.header__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 15px 0; }
+
+.header__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 200px;
+  padding-left: 0;
+  list-style: none; }
+
+.header__nav a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .header__nav a:hover {
+    color: #f7c113; }
+
+.header__user ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 160px;
+  padding-left: 0;
+  list-style: none; }
+
+.header__user a {
+  color: #f7c113;
+  font-size: 18px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .header__user a:hover {
+    color: #fff; }

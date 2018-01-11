@@ -1,3 +1,54 @@
 .header {
+  height: 85px;
   background: #0b1930;
+}
+
+.header__flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.header__nav {
+  
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    padding-left: 0;
+    list-style: none; 
+  }
+  
+  & a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+    
+    &:hover {
+      color: #f7c113;
+    }
+  }
+}
+
+.header__user {
+  
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  & a {
+    color: #f7c113;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+    
+    &:hover {
+      color: #fff;
+    }
+  }
 }
