@@ -412,7 +412,7 @@ body {
     margin-top: 0;
     color: white;
     font-size: 18px;
-    font-weight: 100; }
+    font-weight: bold; }
   .global a {
     padding: 10px 30px;
     color: #2e2963;
@@ -433,7 +433,7 @@ body {
   margin-bottom: 0;
   padding-top: 140px;
   color: white;
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 100;
   text-transform: uppercase; }
 
