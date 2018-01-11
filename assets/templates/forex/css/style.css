@@ -440,7 +440,7 @@ body {
 .global__list {
   margin-top: 50px;
   padding-left: 25px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
   color: white;
   font-size: 18px;
   font-weight: bold;
@@ -466,7 +466,7 @@ body {
     .global a {
       margin-top: 70px; }
   .global__title {
-    font-size: 50px; }
+    font-size: 25px; }
   .global__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -475,6 +475,7 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin-top: 30px;
     padding-bottom: 30px;
     font-size: 14px;
     text-align: left; } }
