@@ -453,7 +453,7 @@ body {
     min-height: 610px;
     background: url("../img/global.png") no-repeat top; }
   .global__title {
-    padding-top: 110px; } }
+    padding-top: 120px; } }
 
 @media screen and (max-width: 768px) {
   .global {
@@ -466,7 +466,7 @@ body {
     .global a {
       margin-top: 70px; }
   .global__title {
-    font-size: 25px; }
+    padding-top: 90px; }
   .global__list {
     display: -webkit-box;
     display: -ms-flexbox;
