@@ -1,12 +1,10 @@
 .global {
-  min-height: 610px;
   background: url('../img/global.png') no-repeat;
   background-size: cover;
   
   & p {
     margin-top: 0;
     color: white;
-    font-size: 18px;
     font-weight: bold;
   }
   
@@ -27,20 +25,24 @@
   }
 }
 
+.global__box {
+  padding: 100px 0;
+}
+
 .global__title {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 140px;
+  margin: 0;
+  padding-top: 30px;
   color: white;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 100;
   text-transform: uppercase;
 }
 
 .global__list {
-  margin-top: 50px;
+  margin: 0;
+  padding-top: 50px;
   padding-left: 25px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   color: white;
   font-size: 18px;
   font-weight: bold;
@@ -53,44 +55,35 @@
 
 @media screen and ($tablet-widths) {
   .global {
-    min-height: 610px;
-    background: url('../img/global.png') no-repeat top;
+    background-size: inherit;
+  }
+  
+  .global__box {
+    padding: 80px 0;
   }
   
   .global__title {
-    padding-top: 120px;
+    padding-top: 30px;
   }
 }
 
 @media screen and ($mobile-widths) {
   .global {
-    min-height: 500px;
     margin-top: -50px;
     text-align: center;
     background: url('../img/global.png') no-repeat;
-    // background-size: cover; 
-    
-    & p {
-      font-size: 16px;
-    }
-    
-    & a {
-      margin-top: 70px;
-    }
+    background-size: cover;
   }
   
   .global__title {
-    padding-top: 90px;
-    // font-size: 25px;
+    font-size: 55px;
   }
   
   .global__list {
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
-    margin-top: 30px;
-    padding-bottom: 30px;
-    font-size: 14px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    font-size: 15px;
     text-align: left;
   }
 }
