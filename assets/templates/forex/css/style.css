@@ -478,9 +478,6 @@ body {
     font-size: 15px;
     text-align: left; } }
 
-.trading {
-  min-height: 550px; }
-
 .trading__title {
   margin-top: 60px;
   padding: 10px 50px;
@@ -502,9 +499,10 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 100%; }
+  padding-bottom: 80px; }
   .trading__text p {
     width: 30%;
+    padding-top: 130px;
     text-align: center;
     opacity: 0.7; }
 
@@ -512,6 +510,20 @@ body {
   .trading__title {
     margin-top: 30px;
     font-size: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .trading__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .trading__text p {
+      width: auto;
+      padding-top: 0; }
+  .trading__img {
+    width: auto;
+    background: url("../img/trading-bg.png") no-repeat center;
+    background-size: contain; } }
 
 .sign {
   text-align: center;
