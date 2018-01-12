@@ -1,10 +1,23 @@
 body {
   min-width: 320px;
-  margin: 0; }
+  margin: 0;
+  font-family: 'SF UI Text', 'Arial' sans-serif; }
 
 .container {
-  width: 1000px;
+  width: 1100px;
   margin: auto; }
+
+@font-face {
+  font-family: 'SF UI Text';
+  src: local("SF UI Text Regular"), local("SFUIText-Regular"), url("../fonts/SFUIText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SF UI Text';
+  src: local("SF UI Text Bold"), local("SFUIText-Bold"), url("../fonts/SFUIText-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
 
 .header {
   height: 85px;
@@ -78,9 +91,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   margin-top: -50px;
   padding-bottom: 50px; }
 
@@ -127,6 +139,10 @@ body {
 
 .info {
   text-align: center; }
+  .info p {
+    width: 350px;
+    font-weight: bold;
+    opacity: 0.7; }
 
 .info__flex {
   display: -webkit-box;

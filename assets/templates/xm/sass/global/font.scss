@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'SF UI Text';
+	src: local('SF UI Text Regular'), local('SFUIText-Regular'),
+		url('../fonts/SFUIText-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Text';
+	src: local('SF UI Text Bold'), local('SFUIText-Bold'),
+		url('../fonts/SFUIText-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
