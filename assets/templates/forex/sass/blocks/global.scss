@@ -1,6 +1,6 @@
 .global {
   background: url('../img/global.png') no-repeat;
-  background-size: cover;
+  // background-size: cover;
   
   & p {
     margin-top: 0;
@@ -31,7 +31,7 @@
 
 .global__title {
   margin: 0;
-  padding-top: 30px;
+  padding-top: 10px;
   color: white;
   font-size: 70px;
   font-weight: 100;
@@ -55,7 +55,7 @@
 
 @media screen and ($tablet-widths) {
   .global {
-    background-size: inherit;
+    background-size: cover;
   }
   
   .global__box {
