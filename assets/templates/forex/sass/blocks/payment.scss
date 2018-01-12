@@ -1,0 +1,9 @@
+.payment {
+  background: $mc;
+}
+
+.payment__box {
+  height: 60px;
+  padding: 20px 0;
+  background: url('../img/pay-sprite.png') no-repeat center;
+}

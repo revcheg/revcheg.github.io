@@ -716,6 +716,14 @@ body {
     font-weight: bold;
     text-align: left; } }
 
+.payment {
+  background: #2e2963; }
+
+.payment__box {
+  height: 60px;
+  padding: 20px 0;
+  background: url("../img/pay-sprite.png") no-repeat center; }
+
 .page-footer {
   color: white;
   border-style: solid;
