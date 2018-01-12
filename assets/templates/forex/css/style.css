@@ -382,6 +382,12 @@ body {
 .online__box--zulu {
   background: url("../img/online-1.png") no-repeat top; }
 
+.online__box--tradency {
+  background: url("../img/online-2.png") no-repeat top; }
+
+.online__box--algo {
+  background: url("../img/online-3.png") no-repeat top; }
+
 .online__slider {
   display: none; }
 
