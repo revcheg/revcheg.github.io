@@ -490,18 +490,21 @@ body {
   text-align: center; }
 
 .trading__img {
-  width: 100%;
+  width: 70%;
   height: 430px;
-  background: url("../img/trading-bg.png") no-repeat;
-  background-size: cover; }
+  background: url("../img/trading-bg.png") no-repeat center;
+  background-size: contain; }
 
 .trading__text {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%; }
   .trading__text p {
-    width: 600px;
-    padding-right: 100px;
+    width: 30%;
     text-align: center;
     opacity: 0.7; }
 
