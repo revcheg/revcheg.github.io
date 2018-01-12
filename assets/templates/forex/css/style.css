@@ -559,7 +559,7 @@ body {
 
 .scroll__first {
   min-height: 470px;
-  background: url("../img/scroll-f.png") no-repeat top;
+  background: url("../img/scroll-t.png") no-repeat top;
   background-size: cover;
   background-attachment: fixed; }
 
@@ -570,11 +570,11 @@ body {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding: 145px 0; }
+  padding: 140px 0; }
 
 .scroll__second {
   min-height: 470px;
-  background: url("../img/scroll-s-n.png") no-repeat top;
+  background: url("../img/scroll-s.png") no-repeat top;
   background-size: cover;
   background-attachment: fixed; }
   .scroll__second p {
