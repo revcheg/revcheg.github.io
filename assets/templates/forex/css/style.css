@@ -476,6 +476,21 @@ body {
     font-size: 15px;
     text-align: left; } }
 
+.trading__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 80px; }
+  .trading__flex p {
+    width: 500px;
+    -ms-flex-item-align: center;
+    align-self: center;
+    text-align: center;
+    opacity: 0.7; }
+
 .trading__title {
   margin-top: 60px;
   padding: 10px 50px;
@@ -485,24 +500,10 @@ body {
   text-align: center; }
 
 .trading__img {
-  width: 70%;
+  width: 100%;
   height: 430px;
   background: url("../img/trading-bg.png") no-repeat center;
   background-size: contain; }
-
-.trading__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-bottom: 80px; }
-  .trading__text p {
-    width: 30%;
-    padding-top: 130px;
-    text-align: center;
-    opacity: 0.7; }
 
 @media screen and (max-width: 1200px) {
   .trading__title {
@@ -510,12 +511,14 @@ body {
     font-size: 20px; } }
 
 @media screen and (max-width: 768px) {
-  .trading__text {
+  .trading__flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
-    .trading__text p {
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0; }
+    .trading__flex p {
       width: auto;
       padding-top: 0; }
   .trading__img {
