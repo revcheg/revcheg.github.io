@@ -159,11 +159,13 @@ body {
   text-align: center; }
   .traders h3 {
     margin-top: 0;
+    margin-bottom: 0;
     padding-top: 50px;
     font-size: 30px;
     text-transform: uppercase; }
   .traders p {
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    font-weight: bold; }
 
 .exchange label {
   color: #0038b8;
@@ -200,9 +202,9 @@ body {
   padding: 100px 0; }
 
 .exchange__flex--second {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding-bottom: 100px; }
 
 .exchange__first,
 .exchange__third {
@@ -240,12 +242,60 @@ body {
     margin: 0; }
 
 .exchange__middle {
-  width: 150px;
+  width: 200px;
+  height: 139px;
   background: url("../img/ex-card.png") no-repeat top;
   background-size: cover; }
 
 .exchange__right {
+  font-weight: bold;
   text-align: right;
   text-transform: uppercase; }
   .exchange__right b {
     color: #0038b8; }
+  .exchange__right p {
+    opacity: 0.7; }
+
+.business {
+  text-align: center;
+  background: #0038b8; }
+  .business h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 50px;
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase; }
+  .business p {
+    margin-bottom: 0;
+    padding-bottom: 50px;
+    color: #fff;
+    font-weight: bold; }
+
+.contact input {
+  width: 250px;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px; }
+
+.contact__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 100px 0; }
+
+.media h3 {
+  margin-top: 0;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.media__img {
+  width: 968px;
+  height: 350px;
+  margin: auto;
+  margin-top: -140px;
+  padding-bottom: 100px;
+  background: url("../img/media.png"); }

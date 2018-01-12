@@ -1,0 +1,25 @@
+.contact {
+  
+  & input {
+    width: 250px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+}
+
+.contact__flex {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0;
+}
+
+// .contact__btn {
+//   padding: 15px 40px;
+//   color: #0038b8;
+//   font-size: 16px;
+//   font-weight: bold;
+//   text-transform: uppercase;
+//   border: none;
+//   background: #f7c107;
+// }
