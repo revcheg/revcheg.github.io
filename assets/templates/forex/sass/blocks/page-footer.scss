@@ -13,7 +13,7 @@
 
   & p {
     margin-top: 0;
-    font-size: 11px;
+    font-size: 10px;
   }
   
   & a {
@@ -28,29 +28,24 @@
   }
 }
 
-.container--width {
-  width: 1350px;
-}
-
 .page-footer__flex {
   display: flex;
   justify-content: space-around;
-  margin-top: 35px;
+  padding-top: 35px;
 }
 
 .page-footer__left-column {
-  // width: 450px;
+  
 }
 
 .page-footer__right-column {
-  width: 1150px;
-  flex-wrap: wrap;
+  width: 85%;
 }
 
 .page-footer__facebook {
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 35px;
+  padding-left: 30px;
   background: url("../img/fb.png") no-repeat left;
   
   &:hover {
@@ -61,7 +56,7 @@
 .page-footer__linked {
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 35px;
+  padding-left: 30px;
   background: url("../img/link.png") no-repeat left;
   
   &:hover {
@@ -72,7 +67,7 @@
 .page-footer__twitter {
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 35px;
+  padding-left: 30px;
   background: url("../img/tw.png") no-repeat left;
   
   &:hover {
@@ -83,7 +78,7 @@
 .page-footer__google {
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 35px;
+  padding-left: 30px;
   background: url("../img/go.png") no-repeat left;
   transition: 0.3s;
   
@@ -109,12 +104,11 @@
   background: $sc;
   border-radius: 20px;
   text-transform: uppercase;
-  vertical-align: middle;
 }
 
 .page-footer__contact {
-  margin-right: 15px;
   flex-wrap: wrap;
+  margin-right: 15px;
 }
 
 .page-footer__text {

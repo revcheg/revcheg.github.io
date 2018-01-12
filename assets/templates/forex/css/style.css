@@ -695,7 +695,7 @@ body {
     opacity: 0.8; }
   .page-footer p {
     margin-top: 0;
-    font-size: 11px; }
+    font-size: 10px; }
   .page-footer a {
     margin-right: 10px;
     color: white;
@@ -705,26 +705,21 @@ body {
     .page-footer a:hover {
       color: #f2c318; }
 
-.container--width {
-  width: 1350px; }
-
 .page-footer__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin-top: 35px; }
+  padding-top: 35px; }
 
 .page-footer__right-column {
-  width: 1150px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  width: 85%; }
 
 .page-footer__facebook {
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 35px;
+  padding-left: 30px;
   background: url("../img/fb.png") no-repeat left; }
   .page-footer__facebook:hover {
     background: url("../img/fb-h.png") no-repeat left; }
@@ -732,7 +727,7 @@ body {
 .page-footer__linked {
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 35px;
+  padding-left: 30px;
   background: url("../img/link.png") no-repeat left; }
   .page-footer__linked:hover {
     background: url("../img/link-h.png") no-repeat left; }
@@ -740,7 +735,7 @@ body {
 .page-footer__twitter {
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 35px;
+  padding-left: 30px;
   background: url("../img/tw.png") no-repeat left; }
   .page-footer__twitter:hover {
     background: url("../img/tw-h.png") no-repeat left; }
@@ -748,7 +743,7 @@ body {
 .page-footer__google {
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 35px;
+  padding-left: 30px;
   background: url("../img/go.png") no-repeat left;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
@@ -771,13 +766,12 @@ body {
   font-weight: bold;
   background: #f2c318;
   border-radius: 20px;
-  text-transform: uppercase;
-  vertical-align: middle; }
+  text-transform: uppercase; }
 
 .page-footer__contact {
-  margin-right: 15px;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-right: 15px; }
 
 .page-footer__text {
   padding-top: 10px; }
