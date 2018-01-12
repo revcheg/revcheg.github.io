@@ -1,0 +1,32 @@
+.footer {
+  background: #0b1930;
+}
+
+.footer__flex {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  
+  & b {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  & a {
+    margin-bottom: 5px;
+    color: #8d8a91;
+    text-decoration: none;
+    transition: 0.3s;
+    
+    &:hover {
+      color: #f7c107;
+    }
+  }
+}

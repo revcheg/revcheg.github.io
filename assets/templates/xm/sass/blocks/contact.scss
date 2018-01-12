@@ -1,4 +1,12 @@
-.contact {
+.contact__flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 100px 0;
+}
+
+.contact__left,
+.contact__center{
   
   & input {
     width: 250px;
@@ -8,18 +16,15 @@
   }
 }
 
-.contact__flex {
-  display: flex;
-  justify-content: space-around;
-  padding: 100px 0;
+.contact__right {
+  
+  & button {
+    padding: 15px 40px;
+    color: #0038b8;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    background: #f7c107;
+  }
 }
-
-// .contact__btn {
-//   padding: 15px 40px;
-//   color: #0038b8;
-//   font-size: 16px;
-//   font-weight: bold;
-//   text-transform: uppercase;
-//   border: none;
-//   background: #f7c107;
-// }
