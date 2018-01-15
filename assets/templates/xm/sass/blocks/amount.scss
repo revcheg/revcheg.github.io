@@ -1,0 +1,90 @@
+.amount {
+  
+  & h3 {
+    margin-top: 0px;
+    padding-top: 100px;
+    color: #25224c;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  & label {
+    color: #0038b8;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  & input {
+    width: 300px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid #f7c107;
+    border-radius: 5px;
+  }
+  
+  & input::placeholder {
+    text-align: right;
+  }
+}
+
+.amount__flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.amount__flex--second {
+  justify-content: center; 
+}
+
+.amount__first,
+.amount__third {
+  display: flex;
+  flex-direction: column;
+}
+
+.amount__second {
+  align-self: center; 
+  
+  & button {
+    width: 46px;
+    height: 33px;
+    border: none;
+    background: url('../img/ex-arrow.png');
+  }
+}
+
+.amount__left {
+  width: 470px;
+  height: 430px;
+  margin-right: 25px;
+  background: url('../img/hand.png') no-repeat top;
+}
+
+.amount__right {
+  align-self: center;
+  margin-left: 25px;
+  text-transform: uppercase;
+  
+  & b {
+    color: #0038b8;
+    
+  }
+  
+  & p {
+    font-weight: bold;
+    opacity: 0.7;
+  }
+  
+  & button {
+    padding: 15px 60px;
+    color: #0038b8;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    background: #f7c107;
+  }
+}

@@ -11,6 +11,11 @@
   <header class="header">
     <div class="container">
       <div class="header__flex">
+        <div class="header__logo">
+          <a href="../index.html">
+            <img src="../img/logo-2.png" alt="">
+          </a>
+        </div>
         <div class="header__left">
           <div class="header__nav">
             <ul>
@@ -49,6 +54,33 @@
           <b>Ethereum</b>
           <p>Temporarily disabled</p>
         </button>
+      </div>
+    </div>
+  </section>
+  <section class="amount">
+    <div class="container">
+      <h3>Enter Amount</h3>
+      <div class="amount__flex  amount__flex--first">
+        <div class="amount__first">
+          <label for="send">You Send</label>
+          <input type="text" name="send" id="send" placeholder="ILS">
+        </div>
+        <div class="amount__second">
+          <button type="button" name="change"></button>
+        </div>
+        <div class="amount__third">
+          <label for="receive">You Receive</label>
+          <input type="text" name="receive" id="receive" placeholder="BTC">
+        </div>
+      </div>
+      <h3>CHOOSE PAYMENT METHOD</h3>
+      <div class="amount__flex  amount__flex--second">
+        <div class="amount__left"></div>
+        <div class="amount__right">
+          <b>Credit Card</b>
+          <p>From<br>172,06 to 17 206,02<br>ILS</p>
+          <button class="contact__btn" type="button" name="button">Submit</button>
+        </div>
       </div>
     </div>
   </section>
