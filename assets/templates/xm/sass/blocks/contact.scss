@@ -29,3 +29,30 @@
     background: #f7c107;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .contact__left,
+  .contact__center{
+    
+    & input {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {  
+  .contact__flex {
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  
+  .contact__left,
+  .contact__center{   
+    margin-bottom: 30px;
+    
+    & input {
+      width: auto;
+    }
+  }
+}

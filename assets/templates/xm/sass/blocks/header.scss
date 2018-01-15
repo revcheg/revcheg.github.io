@@ -52,3 +52,18 @@
     }
   }
 }
+
+@media screen and ($tablet-widths) {
+  
+}
+
+@media screen and ($mobile-widths) {  
+  .header {
+    height: 140px;
+  }
+  
+  .header__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}

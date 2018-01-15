@@ -13,3 +13,21 @@
   justify-content: space-between;
   padding: 50px 0;
 }
+
+@media screen and ($tablet-widths) {
+  
+}
+
+@media screen and ($mobile-widths) {  
+  .info {
+    
+    & p {
+      width: auto;
+    }
+  }
+  
+  .info__flex {
+    flex-direction: column;
+    padding: 34px 0;
+  }
+}

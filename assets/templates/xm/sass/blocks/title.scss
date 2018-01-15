@@ -17,6 +17,10 @@
   padding-top: 50px;
 }
 
+.title__logo-s {
+  display: none;
+}
+
 .title__flex {
   display: flex;
   justify-content: space-around;
@@ -28,7 +32,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 200px;
+  width: auto;
   height: 150px;
   padding-top: 200px;
   color: #fff;
@@ -66,4 +70,54 @@
 
 .title__box--ethereum {
   background: url('../img/title-ethereum.png') no-repeat top;
+}
+
+@media screen and ($tablet-widths) {
+  
+}
+
+@media screen and ($mobile-widths) {  
+  .title {
+    background: url('../img/title-bg.png') no-repeat top;
+    background-size: cover;
+    
+    & h3 {
+      font-size: 22px;
+    }
+  }
+  
+  .title__logo {
+    display: none;
+  }
+  
+  .title__logo-s {
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+  }
+  
+  .title__flex {
+    margin-top: 0px;
+  }
+  
+  .title__box {
+    height: 110px;
+    padding-top: 120px;
+    
+    & b {
+      font-size: 20px;
+    }
+    
+    & p {
+      font-size: 16px;
+    }
+  }
+  
+  .title__box--bitcoin {
+    background: url('../img/title-bitcoin-s.png') no-repeat top;
+  }
+  
+  .title__box--ethereum {
+    background: url('../img/title-ethereum-s.png') no-repeat top;
+  }
 }

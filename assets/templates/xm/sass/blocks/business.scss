@@ -18,3 +18,16 @@
     font-weight: bold;
   }
 }
+
+@media screen and ($tablet-widths) {
+  
+}
+
+@media screen and ($mobile-widths) {  
+  .business {
+    
+    & h3 {
+      font-size: 22px;
+    }
+  }
+}

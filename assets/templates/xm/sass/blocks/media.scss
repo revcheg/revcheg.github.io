@@ -1,18 +1,34 @@
 .media {
   
-  & h3 {
-    margin-top: 0;
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
+  // & h3 {
+  //   margin-top: 0;
+  //   font-size: 40px;
+  //   text-align: center;
+  //   text-transform: uppercase;
+  // }
+  
+  & img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    // margin-top: -140px;
+    padding-bottom: 100px;
   }
 }
 
-.media__img {
-  width: 968px;
-  height: 350px;
-  margin: auto;
-  margin-top: -140px;
-  padding-bottom: 100px;
-  background: url('../img/media.png');
+@media screen and ($tablet-widths) {
+  
+}
+
+@media screen and ($mobile-widths) {  
+  .media {
+    
+    // & h3 {
+    //   font-size: 22px;
+    // }
+    
+    & img {
+      padding-bottom: 50px;
+    }
+  }
 }
