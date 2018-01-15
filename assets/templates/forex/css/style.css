@@ -759,6 +759,9 @@ body {
 .payment {
   background: #2e2963; }
 
+.payment--temp {
+  background: #4b426d; }
+
 .payment__box {
   height: 60px;
   padding: 20px 0;
@@ -1162,14 +1165,6 @@ body {
   .account__box--zulu:hover header {
     background: #999999; }
 
-.account__pay {
-  background: #4b426d; }
-  .account__pay img {
-    display: block;
-    max-width: 100%;
-    margin: auto;
-    padding: 30px 0; }
-
 @media screen and (max-width: 768px) {
   .account__types {
     -webkit-box-orient: vertical;
@@ -1179,12 +1174,10 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 50px; }
-  .account__pay {
-    display: none; } }
+    padding-top: 50px; } }
 
 .about {
-  color: #000e55; }
+  color: #2e2963; }
   .about h1 {
     margin-top: 40px;
     margin-bottom: 30px;
