@@ -174,8 +174,10 @@ body {
   text-transform: uppercase; }
 
 .exchange input {
-  width: 250px;
-  padding: 5px;
+  width: 300px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
   border: 1px solid gray;
   border-radius: 5px; }
 
@@ -225,14 +227,17 @@ body {
     border: none;
     background: url("../img/ex-arrow.png"); }
 
-.exchange__fourth button {
-  padding: 15px 40px;
-  color: #0038b8;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: none;
-  background: #f7c107; }
+.exchange__fourth {
+  -ms-flex-item-align: center;
+  align-self: center; }
+  .exchange__fourth button {
+    padding: 15px 40px;
+    color: #0038b8;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    background: #f7c107; }
 
 .exchange__left {
   color: #0038b8;
@@ -285,8 +290,9 @@ body {
 
 .contact__left input,
 .contact__center input {
-  width: 250px;
-  padding: 5px;
+  width: 300px;
+  padding: 10px 20px;
+  font-size: 18px;
   border: 1px solid gray;
   border-radius: 5px; }
 
