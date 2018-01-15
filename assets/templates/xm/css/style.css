@@ -475,3 +475,63 @@ body {
 @media screen and (max-width: 768px) {
   .footer__box a {
     text-align: center; } }
+
+.choose {
+  background: #0038b8; }
+  .choose h3 {
+    margin: 50px 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; }
+
+.choose__btn-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 50px; }
+  .choose__btn-flex button {
+    margin: 0 20px;
+    padding: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid #f7c107;
+    background: transparent;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer; }
+    .choose__btn-flex button:hover {
+      color: #25224c;
+      background: #f7c107; }
+
+.choose__crypto-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 50px; }
+  .choose__crypto-flex button {
+    width: 400px;
+    height: 360px;
+    margin: 0 20px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    border: 3px solid #f7c107;
+    background: transparent;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer; }
+    .choose__crypto-flex button:hover {
+      color: #25224c;
+      background: #f7c107; }
+
+.choose__btn-bitcoin {
+  background: url("../img/title-bitcoin.png"); }
