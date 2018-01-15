@@ -248,6 +248,7 @@ body {
       transform: translateX(0%); } } }
 
 .slider p {
+  margin-top: 40px;
   color: white;
   font-size: 30px;
   font-weight: bold; }
@@ -306,6 +307,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   .slider p {
+    margin-top: 35px;
     font-size: 20px; }
   .slider img {
     width: 350px; }
@@ -316,7 +318,8 @@ body {
   .slider {
     text-align: center; }
     .slider p {
-      font-size: 18px; }
+      margin-top: 30px;
+      font-size: 16px; }
     .slider img {
       width: 300px;
       margin: auto; }

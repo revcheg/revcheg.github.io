@@ -1,6 +1,6 @@
 .slider {
   & p {
-    
+    margin-top: 40px;
     color: white;
     font-size: 30px;
     font-weight: bold;
@@ -72,6 +72,7 @@
 @media screen and ($tablet-widths) {
   .slider {
     & p {
+      margin-top: 35px;
       font-size: 20px;
     }
     
@@ -90,7 +91,8 @@
     text-align: center;
     
     & p {
-      font-size: 18px;
+      margin-top: 30px;
+      font-size: 16px;
     }
     
     & img {
