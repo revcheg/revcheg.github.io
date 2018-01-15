@@ -18,6 +18,7 @@
 }
 
 .register__link {
+  padding-top: 30px;
   padding-bottom: 50px;
   
   & a {
@@ -25,4 +26,12 @@
     text-align: center;
     text-decoration: none;
   }
+}
+
+@media screen and ($tablet-widths) {
+  
+}
+
+@media screen and ($mobile-widths) {  
+  
 }
