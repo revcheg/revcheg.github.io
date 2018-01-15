@@ -525,13 +525,20 @@ body {
     font-size: 30px;
     font-weight: bold;
     border: 3px solid #f7c107;
-    background: transparent;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     cursor: pointer; }
-    .choose__crypto-flex button:hover {
-      color: #25224c;
-      background: #f7c107; }
 
 .choose__btn-bitcoin {
-  background: url("../img/title-bitcoin.png"); }
+  padding-top: 220px;
+  background: url("../img/title-bitcoin.png") no-repeat 50% 20%; }
+  .choose__btn-bitcoin:hover {
+    color: #25224c;
+    background: #f7c107 url("../img/title-bitcoin.png") no-repeat 50% 10%; }
+
+.choose__btn-ethereum {
+  padding-top: 220px;
+  background: url("../img/title-ethereum.png") no-repeat 50% 20%; }
+  .choose__btn-ethereum:hover {
+    color: #25224c;
+    background: #f7c107 url("../img/title-ethereum.png") no-repeat 50% 10%; }
