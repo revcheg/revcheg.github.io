@@ -10,6 +10,10 @@
 }
 
 .header__logo {
+  margin-top: -7px;
+} 
+
+.header__logo--two {
   margin-top: -15px;
 }
 
@@ -71,7 +75,7 @@
     align-items: center;
   }
   
-  .header__logo {
+  .header__logo--two {
     position: absolute;
     align-self: flex-start;
   }

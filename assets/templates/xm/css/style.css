@@ -37,6 +37,9 @@ body {
   padding: 15px 0; }
 
 .header__logo {
+  margin-top: -7px; }
+
+.header__logo--two {
   margin-top: -15px; }
 
 .header__nav ul {
@@ -90,7 +93,7 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-  .header__logo {
+  .header__logo--two {
     position: absolute;
     -ms-flex-item-align: start;
     align-self: flex-start; } }
@@ -711,3 +714,98 @@ body {
     background-size: cover; }
   .amount__right {
     margin-left: 0; } }
+
+.register h3 {
+  margin: 50px 0;
+  color: #0038b8;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase; }
+
+.register hr {
+  height: 2px;
+  border: none;
+  background: #0b1930;
+  opacity: 0.7; }
+
+.register__link {
+  padding-bottom: 50px; }
+  .register__link a {
+    display: block;
+    text-align: center;
+    text-decoration: none; }
+
+.form label {
+  -ms-flex-item-align: center;
+  align-self: center;
+  width: 25%;
+  color: #272727;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  opacity: 0.8; }
+
+.form input {
+  width: 30%;
+  padding: 5px 20px;
+  font-size: 18px;
+  border: 2px solid #f7c113;
+  border-radius: 5px; }
+
+.form__email,
+.form__password,
+.form__c-password,
+.form__f-name,
+.form__l-name,
+.form__phone,
+.form__pass-num,
+.form__gender,
+.form__adress,
+.form__city,
+.form__file,
+.form__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 20px 0; }
+
+.form__choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35%; }
+  .form__choose label {
+    width: auto; }
+  .form__choose input {
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: auto; }
+
+.form__checkbox {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .form__checkbox label,
+  .form__checkbox input {
+    width: auto;
+    cursor: pointer; }
+  .form__checkbox input {
+    width: 50px; }
+
+input[type='submit'] {
+  display: block;
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 15px 50px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #2b2b2b;
+  border-radius: 50px;
+  background: #0038b8;
+  cursor: pointer; }
