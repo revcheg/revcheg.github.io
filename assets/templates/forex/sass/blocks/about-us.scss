@@ -23,29 +23,7 @@
   padding-bottom: 40px;
 }
 
-@media screen and ($tablet-widths) {
-  .sub-menu__box {
-    // width: 150px;
-    top: -320px;
-    left: -15px;
-    height: 330px;
-    
-    &:hover {
-      transform: translateY(320px);
-    }
-    
-    & a {
-      padding: 5px;
-    }
-  }
-  
-  .sub-menu__logo {
-    
-    & img {
-      width: 150px;
-    }
-  }
-}
+@media screen and ($tablet-widths) {}
 
 @media screen and ($mobile-widths) {  
 

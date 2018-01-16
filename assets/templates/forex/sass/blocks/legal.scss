@@ -1,0 +1,58 @@
+.legal__flex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.legal__flex--second {
+  justify-content: center;
+}
+
+.legal__title {
+  margin: 0;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  color: #000e55;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.legal__box {
+  width: 200px;
+  color: #000e55;
+  padding-top: 140px;
+  text-align: center;
+  text-decoration: none;
+  background: url('../img/careers-b.png') no-repeat 50% 10%;
+  transition: 0.1s;
+  
+  &:hover {
+    font-size: 15px;
+    font-weight: bold;
+    background: url('../img/careers-y.png') no-repeat 50% 0%,
+                url('../img/careers-b.png') no-repeat 50% 10%;            
+  }
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {  
+  .legal__flex {
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+  
+  .legal__flex--second {
+    padding-bottom: 50px;
+  }
+  
+  .legal__title {
+    padding-bottom: 10px;
+  }
+  
+  .legal__box {
+    margin: auto;
+    margin-top: 30px;
+  }
+}

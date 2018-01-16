@@ -393,20 +393,18 @@ body {
   background: url("../img/sub-t.png") no-repeat top; }
 
 @media screen and (max-width: 1200px) {
-  .sub-menu {
-    height: 100px; }
-    .sub-menu p {
-      margin-top: 35px;
-      font-size: 20px; }
   .sub-menu__box {
-    top: -390px;
-    left: 30px;
-    height: 400px; }
+    top: -370px;
+    height: 380px; }
     .sub-menu__box:hover {
-      -webkit-transform: translateY(390px);
-      transform: translateY(390px); }
+      -webkit-transform: translateY(370px);
+      transform: translateY(370px); }
     .sub-menu__box a {
-      padding: 10px 30px; } }
+      padding: 5px 15px; }
+  .sub-menu__logo img {
+    width: 150px; }
+  .sub-menu__box--about {
+    left: -20px; } }
 
 @media screen and (max-width: 768px) {
   .sub-menu p {
@@ -1231,19 +1229,6 @@ body {
 .about__pb {
   padding-bottom: 40px; }
 
-@media screen and (max-width: 1200px) {
-  .sub-menu__box {
-    top: -320px;
-    left: -15px;
-    height: 330px; }
-    .sub-menu__box:hover {
-      -webkit-transform: translateY(320px);
-      transform: translateY(320px); }
-    .sub-menu__box a {
-      padding: 5px; }
-  .sub-menu__logo img {
-    width: 150px; } }
-
 .funding table {
   width: 100%;
   margin-top: 40px;
@@ -1574,3 +1559,53 @@ button[type="submit"] {
     flex-direction: column; }
   .form__textarea {
     width: 70%; } }
+
+.legal__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 50px; }
+
+.legal__flex--second {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.legal__title {
+  margin: 0;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  color: #000e55;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0.7; }
+
+.legal__box {
+  width: 200px;
+  color: #000e55;
+  padding-top: 140px;
+  text-align: center;
+  text-decoration: none;
+  background: url("../img/careers-b.png") no-repeat 50% 10%;
+  -webkit-transition: 0.1s;
+  transition: 0.1s; }
+  .legal__box:hover {
+    font-size: 15px;
+    font-weight: bold;
+    background: url("../img/careers-y.png") no-repeat 50% 0%, url("../img/careers-b.png") no-repeat 50% 10%; }
+
+@media screen and (max-width: 768px) {
+  .legal__flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 0; }
+  .legal__flex--second {
+    padding-bottom: 50px; }
+  .legal__title {
+    padding-bottom: 10px; }
+  .legal__box {
+    margin: auto;
+    margin-top: 30px; } }

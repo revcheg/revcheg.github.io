@@ -162,27 +162,28 @@
 }
 
 @media screen and ($tablet-widths) {  
-  .sub-menu {
-    height: 100px;
-    
-    & p {
-      margin-top: 35px;
-      font-size: 20px;
-    }
-  }
-  
   .sub-menu__box {
-    top: -390px;
-    left: 30px;
-    height: 400px;
+    top: -370px;
+    height: 380px;
     
     &:hover {
-      transform: translateY(390px);
+      transform: translateY(370px);
     }
     
     & a {
-      padding: 10px 30px;
-    }    
+      padding: 5px 15px;
+    }
+  }
+  
+  .sub-menu__logo {
+    
+    & img {
+      width: 150px;
+    }
+  }
+  
+  .sub-menu__box--about {
+    left: -20px;
   }
 }
 
@@ -196,7 +197,5 @@
   
   .sub-menu__box {
     display: none;
-    // left: auto;
-    // right: 0;
   }
 }
