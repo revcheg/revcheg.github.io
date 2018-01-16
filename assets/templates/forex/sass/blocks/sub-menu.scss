@@ -10,6 +10,11 @@
     font-weight: bold;
     text-transform: uppercase;
   }
+  
+  & hr {
+    width: 70%;
+    opacity: 0.7;
+  }
 }
 
 .sub-menu__flex {
@@ -22,16 +27,16 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: -400px;
+  top: -475px;
   // left: 60px;
   width: auto;
-  height: 420px;
+  height: 480px;
   background: rgba(0, 0, 0, 0.7);
   transition: 0.8s;
   z-index: 5;
   
   &:hover {
-    transform: translateY(400px);
+    transform: translateY(475px);
   }
   
   &:hover .sub-menu__arrow {
@@ -113,6 +118,47 @@
   transition: 0.3s;
   outline: none;
   z-index: 5;
+}
+
+// Social
+.sub-menu__social {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30px;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+.sub-menu__link {
+  width: 26px;
+  height: 26px;
+  padding: 0 !important;
+  opacity: 0.7;
+  
+  &:hover {
+    opacity: 1;
+    transform: none !important;
+  }
+}
+
+.sub-menu__link--facebook {
+  background: url('../img/sub-f.png') no-repeat top;
+}
+
+.sub-menu__link--google {
+  background: url('../img/sub-g.png') no-repeat top;
+}
+
+.sub-menu__link--youtube {
+  background: url('../img/sub-y.png') no-repeat top;
+}
+
+.sub-menu__link--linkedin {
+  background: url('../img/sub-l.png') no-repeat top;
+}
+
+.sub-menu__link--twitter {
+  background: url('../img/sub-t.png') no-repeat top;
 }
 
 @media screen and ($tablet-widths) {  
