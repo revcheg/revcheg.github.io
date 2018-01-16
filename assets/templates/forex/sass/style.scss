@@ -6,6 +6,7 @@
 
 // Home blocks
 @import 'blocks/page-header';
+@import 'blocks/sub-menu';
 @import 'blocks/slider';
 @import 'blocks/online';
 @import 'blocks/global';
@@ -16,12 +17,10 @@
 @import 'blocks/payment';
 @import 'blocks/page-footer';
 
-// Template blocks
-@import 'blocks/sub-menu';
-
 // Template
 @import 'blocks/account-types';
 @import 'blocks/about-us';
 @import 'blocks/funding';
 @import 'blocks/kids';
 @import 'blocks/license';
+@import 'blocks/careers';

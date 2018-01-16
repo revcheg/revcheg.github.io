@@ -247,6 +247,135 @@ body {
       -webkit-transform: translateX(0%);
       transform: translateX(0%); } } }
 
+.sub-menu {
+  height: 110px;
+  border-top: 5px solid #2b2154;
+  background: #4b426d; }
+  .sub-menu p {
+    margin-top: 40px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase; }
+
+.sub-menu__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative; }
+
+.sub-menu__box {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  top: -400px;
+  width: auto;
+  height: 420px;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  z-index: 5; }
+  .sub-menu__box:hover {
+    -webkit-transform: translateY(400px);
+    transform: translateY(400px); }
+  .sub-menu__box:hover .sub-menu__arrow {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background: url("../img/acc-elipse.png") no-repeat center, url("../img/acc-arrow.png") no-repeat 11px 14px; }
+  .sub-menu__box a {
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .sub-menu__box a:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
+  .sub-menu__box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -70px;
+    width: 50%;
+    height: 70px;
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, transparent), color-stop(50.7%, #000));
+    background: linear-gradient(to top right, transparent 50%, #000 50.7%);
+    opacity: 0.7; }
+  .sub-menu__box::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+    width: 50%;
+    height: 70px;
+    background: -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(50.7%, #000));
+    background: linear-gradient(to top left, transparent 50%, #000 50.7%);
+    opacity: 0.7; }
+
+.sub-menu__box--account {
+  left: 40px; }
+
+.sub-menu__box--about {
+  left: -35px; }
+
+.sub-menu__box--funding {
+  left: 40px; }
+
+.sub-menu__logo {
+  margin-top: 10px; }
+  .sub-menu__logo:hover {
+    -webkit-transform: none !important;
+    transform: none !important; }
+
+.sub-menu__arrow {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 38px;
+  height: 38px;
+  margin: auto;
+  border: none;
+  background: url("../img/acc-elipse.png") no-repeat center, url("../img/acc-arrow.png") no-repeat 12px 14px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  z-index: 5; }
+
+@media screen and (max-width: 1200px) {
+  .sub-menu {
+    height: 100px; }
+    .sub-menu p {
+      margin-top: 35px;
+      font-size: 20px; }
+  .sub-menu__box {
+    top: -390px;
+    left: 30px;
+    height: 400px; }
+    .sub-menu__box:hover {
+      -webkit-transform: translateY(390px);
+      transform: translateY(390px); }
+    .sub-menu__box a {
+      padding: 10px 30px; } }
+
+@media screen and (max-width: 768px) {
+  .sub-menu p {
+    margin-top: 35px; }
+  .sub-menu__box {
+    display: none; } }
+
 .slider p {
   margin-top: 40px;
   color: white;
@@ -921,135 +1050,6 @@ body {
     .page-footer__right-column--link a {
       margin-bottom: 10px; } }
 
-.sub-menu {
-  height: 110px;
-  border-top: 5px solid #2b2154;
-  background: #4b426d; }
-  .sub-menu p {
-    margin-top: 40px;
-    color: #fff;
-    font-size: 25px;
-    font-weight: bold;
-    text-transform: uppercase; }
-
-.sub-menu__flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  position: relative; }
-
-.sub-menu__box {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  top: -400px;
-  width: auto;
-  height: 420px;
-  background: rgba(0, 0, 0, 0.7);
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  z-index: 5; }
-  .sub-menu__box:hover {
-    -webkit-transform: translateY(400px);
-    transform: translateY(400px); }
-  .sub-menu__box:hover .sub-menu__arrow {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    background: url("../img/acc-elipse.png") no-repeat center, url("../img/acc-arrow.png") no-repeat 11px 14px; }
-  .sub-menu__box a {
-    padding: 10px 30px;
-    color: #fff;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-    .sub-menu__box a:hover {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1); }
-  .sub-menu__box::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -70px;
-    width: 50%;
-    height: 70px;
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, transparent), color-stop(50.7%, #000));
-    background: linear-gradient(to top right, transparent 50%, #000 50.7%);
-    opacity: 0.7; }
-  .sub-menu__box::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: -70px;
-    width: 50%;
-    height: 70px;
-    background: -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(50.7%, #000));
-    background: linear-gradient(to top left, transparent 50%, #000 50.7%);
-    opacity: 0.7; }
-
-.sub-menu__box--account {
-  left: 40px; }
-
-.sub-menu__box--about {
-  left: -35px; }
-
-.sub-menu__box--funding {
-  left: 40px; }
-
-.sub-menu__logo {
-  margin-top: 10px; }
-  .sub-menu__logo:hover {
-    -webkit-transform: none !important;
-    transform: none !important; }
-
-.sub-menu__arrow {
-  position: absolute;
-  bottom: -40px;
-  left: 0;
-  right: 0;
-  display: block;
-  width: 38px;
-  height: 38px;
-  margin: auto;
-  border: none;
-  background: url("../img/acc-elipse.png") no-repeat center, url("../img/acc-arrow.png") no-repeat 12px 14px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  outline: none;
-  z-index: 5; }
-
-@media screen and (max-width: 1200px) {
-  .sub-menu {
-    height: 100px; }
-    .sub-menu p {
-      margin-top: 35px;
-      font-size: 20px; }
-  .sub-menu__box {
-    top: -390px;
-    left: 30px;
-    height: 400px; }
-    .sub-menu__box:hover {
-      -webkit-transform: translateY(390px);
-      transform: translateY(390px); }
-    .sub-menu__box a {
-      padding: 10px 30px; } }
-
-@media screen and (max-width: 768px) {
-  .sub-menu p {
-    margin-top: 35px; }
-  .sub-menu__box {
-    display: none; } }
-
 .account p {
   margin-top: 40px;
   color: #000e55;
@@ -1335,3 +1335,52 @@ body {
     text-align: center; }
   .license__flag--UK {
     background: url("../img/UK.png") no-repeat top; } }
+
+.careers {
+  padding-top: 34px; }
+  .careers p {
+    color: #000e55; }
+
+.careers__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 34px;
+  padding-bottom: 100px; }
+
+.careers__box {
+  width: 200px;
+  padding-top: 130px;
+  text-align: center; }
+  .careers__box a {
+    color: #000e55;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0.7; }
+    .careers__box a:hover {
+      opacity: 1; }
+
+.careers__box--support {
+  background: url("../img/careers-b.png") no-repeat top; }
+
+.careers__box--media {
+  background: url("../img/careers-y.png") no-repeat top; }
+
+@media screen and (max-width: 768px) {
+  .careers__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 50px; }
+  .careers__box {
+    width: auto; }
+  .careers__box--support {
+    margin-bottom: 30px; } }
