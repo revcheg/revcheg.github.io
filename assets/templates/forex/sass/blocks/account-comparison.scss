@@ -1,0 +1,32 @@
+.account-comparison__control {
+  display: flex;
+  // justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  
+  & button {
+    padding: 10px 50px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    background: #4b426d;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+}
+
+.account-comparison__bronze {
+  
+  &:hover {
+    background: #dc9554;
+  }
+}
+
+.account-comparison__silver {
+  
+  &:hover {
+    background: #9b9b9b;
+  }
+}

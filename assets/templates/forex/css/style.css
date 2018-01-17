@@ -1609,3 +1609,78 @@ button[type="submit"] {
   .legal__box {
     margin: auto;
     margin-top: 30px; } }
+
+.account-comparison__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 20px; }
+  .account-comparison__control button {
+    padding: 10px 50px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    background: #4b426d;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer; }
+
+.account-comparison__bronze:hover {
+  background: #dc9554; }
+
+.account-comparison__silver:hover {
+  background: #9b9b9b; }
+
+.tab {
+  overflow: hidden;
+  background-color: #f1f1f1; }
+
+.tab button {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px; }
+
+.tab button.active {
+  padding: 14px 40px;
+  font-weight: bold; }
+
+.tab__content {
+  display: none;
+  padding: 6px 12px;
+  border-top: none; }
+  .tab__content--forex {
+    border: 5px solid #2e2963; }
+  .tab__content--commodities {
+    border: 5px solid green; }
+
+.tab__bronze {
+  display: none;
+  background: #dc9554; }
+
+.tab__silver {
+  display: none;
+  background: #9b9b9b; }
+
+.forex {
+  color: #fff;
+  background: #4b426d; }
+  .forex:hover {
+    background: #2e2963; }
+  .forex:focus {
+    background: #2e2963; }
+
+.commodities {
+  color: #fff;
+  background: #4b426d; }
+  .commodities:hover {
+    background: green; }
+  .commodities:focus {
+    background: green; }
