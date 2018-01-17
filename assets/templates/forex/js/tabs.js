@@ -13,16 +13,23 @@ function openTab (evt, tabName) {
 };
 
 function changeContentBronze () {
-  var origin = document.querySelector('.tab__origin');
-  if (origin == '#dc9554') {
-    origin.style.background = 'red';
+  var content = document.querySelector('.tab__origin');
+  var color = content.style.background;
+  
+  if (color == '' || '#9b9b9b') {
+    content.style.background = '#dc9554';
   }
   // var silver = document.querySelector('.tab__silver').style.display = 'none';
   // var bronze = document.querySelector('.tab__bronze').style.display = 'block';
 };
 
 function changeContentSilver () {
-  var origin = document.querySelector('.tab__origin').classList.toggle('tab__silver');
+  var content = document.querySelector('.tab__origin');
+  var color = content.style.background;
+  
+  if (color == '' || '#dc9554') {
+    content.style.background = '#9b9b9b';
+  }
   // var silver = document.querySelector('.tab__silver').style.display = 'none';
   // var bronze = document.querySelector('.tab__bronze').style.display = 'block';
 };
