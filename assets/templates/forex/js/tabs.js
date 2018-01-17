@@ -12,19 +12,29 @@ function openTab (evt, tabName) {
   evt.currentTarget.className += " active";
 };
 
-// function changeContentBronze () {
-//   var content = document.getElementById('Forex');
-//   content.style.color = '#dc9554';
-// }
-
 function changeContentBronze () {
-  var origin = document.querySelector('.tab__origin').style.display = 'none';
-  var silver = document.querySelector('.tab__silver').style.display = 'none';
-  var bronze = document.querySelector('.tab__bronze').style.display = 'block';
+  var origin = document.querySelector('.tab__origin');
+  if (origin == '#dc9554') {
+    origin.style.background = 'red';
+  }
+  // var silver = document.querySelector('.tab__silver').style.display = 'none';
+  // var bronze = document.querySelector('.tab__bronze').style.display = 'block';
 };
 
 function changeContentSilver () {
-  var origin = document.querySelector('.tab__origin').style.display = 'none';
-  var bronze = document.querySelector('.tab__bronze').style.display = 'none';
-  var silver = document.querySelector('.tab__silver').style.display = 'block';
+  var origin = document.querySelector('.tab__origin').classList.toggle('tab__silver');
+  // var silver = document.querySelector('.tab__silver').style.display = 'none';
+  // var bronze = document.querySelector('.tab__bronze').style.display = 'block';
 };
+
+// function changeContentBronze () {
+//   var origin = document.querySelector('.tab__origin').style.display = 'none';
+//   var silver = document.querySelector('.tab__silver').style.display = 'none';
+//   var bronze = document.querySelector('.tab__bronze').style.display = 'block';
+// };
+// 
+// function changeContentSilver () {
+//   var origin = document.querySelector('.tab__origin').style.display = 'none';
+//   var bronze = document.querySelector('.tab__bronze').style.display = 'none';
+//   var silver = document.querySelector('.tab__silver').style.display = 'block';
+// };

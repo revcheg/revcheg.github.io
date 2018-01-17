@@ -1610,6 +1610,9 @@ button[type="submit"] {
     margin: auto;
     margin-top: 30px; } }
 
+.account-comparison {
+  padding-bottom: 50px; }
+
 .account-comparison__control {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1662,11 +1665,9 @@ button[type="submit"] {
     border: 5px solid green; }
 
 .tab__bronze {
-  display: none;
   background: #dc9554; }
 
 .tab__silver {
-  display: none;
   background: #9b9b9b; }
 
 .forex {
