@@ -12,8 +12,10 @@
 
 .resources__flex {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  // flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
   
   & a {
     line-height: 80px;
@@ -73,6 +75,34 @@
     &:hover {
       font-size: 18px;
       font-weight: bold;
+    }
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .resources__flex {
+    width: 98%;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .resources {
+    padding-bottom: 30px;
+  }
+  
+  .resources__text {
+    
+    & p {
+      text-align: center;
+    }
+  }
+  
+  .resources__faq {
+    text-align: center;
+    
+    & a {
+      padding: 70px 0 20px 0;
+      background: url('../img/faq.png') no-repeat top;
     }
   }
 }

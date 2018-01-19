@@ -1751,11 +1751,10 @@ button[type="submit"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto; }
   .resources__flex a {
     line-height: 80px;
     width: 78px;
@@ -1807,3 +1806,18 @@ button[type="submit"] {
     .resources__faq a:hover {
       font-size: 18px;
       font-weight: bold; }
+
+@media screen and (max-width: 1200px) {
+  .resources__flex {
+    width: 98%; } }
+
+@media screen and (max-width: 768px) {
+  .resources {
+    padding-bottom: 30px; }
+  .resources__text p {
+    text-align: center; }
+  .resources__faq {
+    text-align: center; }
+    .resources__faq a {
+      padding: 70px 0 20px 0;
+      background: url("../img/faq.png") no-repeat top; } }
