@@ -12,44 +12,36 @@ function openTab (evt, tabName) {
   evt.currentTarget.className += " active";
 };
 
+// Test
+var contents = document.querySelectorAll('.tab__content');
+
 function changeContentBronze () {
-  var content = document.querySelector('.tab__origin');
-  var contentc = document.querySelector('.tab__originc');
-  var color = content.style.background;
-  var colorc = content.style.background;
-  
-  if (color == '' || '#9b9b9b') {
-    content.style.background = '#dc9554';
+  for (var i = 0; i < contents.length; i++) {
+    contents[i].style.background = '#dc9554';
   }
-  
-  if (colorc == '' || '#9b9b9b') {
-    contentc.style.background = '#dc9554';
-  }
-};
+}
 
 function changeContentSilver () {
-  var content = document.querySelector('.tab__origin');
-  var contentc = document.querySelector('.tab__originc');
-  var color = content.style.background;
-  var colorc = content.style.background;
-  
-  if (color == '' || '#dc9554') {
-    content.style.background = '#9b9b9b';
+  for (var i = 0; i < contents.length; i++) {
+    contents[i].style.background = '#9b9b9b';
   }
-  
-  if (colorc == '' || '#dc9554') {
-    contentc.style.background = '#9b9b9b';
-  }
-};
+}
 
-// function changeContentBronze () {
-//   var origin = document.querySelector('.tab__origin').style.display = 'none';
-//   var silver = document.querySelector('.tab__silver').style.display = 'none';
-//   var bronze = document.querySelector('.tab__bronze').style.display = 'block';
-// };
-// 
-// function changeContentSilver () {
-//   var origin = document.querySelector('.tab__origin').style.display = 'none';
-//   var bronze = document.querySelector('.tab__bronze').style.display = 'none';
-//   var silver = document.querySelector('.tab__silver').style.display = 'block';
-// };
+function changeContentGold () {
+  for (var i = 0; i < contents.length; i++) {
+    contents[i].style.background = '#e7c85d';
+  }
+}
+
+function changeContentFree () {
+  for (var i = 0; i < contents.length; i++) {
+    contents[i].style.background = '#fff';
+  }
+}
+
+
+// function changeContentFree () {
+//   // Forex
+//   var contentF = document.querySelector('.tab__content--forex');
+//   contentF.style.background = '#000';
+// }

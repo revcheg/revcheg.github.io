@@ -1,5 +1,16 @@
 .account-comparison {
   padding-bottom: 50px;
+  
+  & table {
+    width: 100%;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    
+    & td {
+      padding: 5px;
+    }
+  }
 }
 
 .account-comparison__control {

@@ -1620,6 +1620,13 @@ button[type="submit"] {
 
 .account-comparison {
   padding-bottom: 50px; }
+  .account-comparison table {
+    width: 100%;
+    color: #fff;
+    font-size: 13px;
+    text-align: center; }
+    .account-comparison table td {
+      padding: 5px; }
 
 .account-comparison__control {
   display: -webkit-box;
@@ -1660,28 +1667,27 @@ button[type="submit"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   overflow: hidden; }
 
 .tab button {
+  margin-right: 10px;
+  padding: 14px 16px;
+  font-size: 17px;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
   -webkit-transition: 0.3s;
-  transition: 0.3s;
-  font-size: 17px; }
+  transition: 0.3s; }
 
 .tab button.active {
-  padding: 14px 40px;
+  padding: 0 40px;
   font-weight: bold; }
 
 .tab__content {
   display: none;
   padding: 6px 12px;
-  border-top: none; }
+  border-top: none;
+  background: #dc9554; }
   .tab__content--forex {
     border: 5px solid #2e2963; }
   .tab__content--commodities {
@@ -1780,9 +1786,6 @@ button[type="submit"] {
       background: url("../img/res-h.png") no-repeat top, url("../img/res.png") no-repeat bottom; }
 
 .resources__flex--second {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   width: 90%;
   padding-top: 10px; }
 
