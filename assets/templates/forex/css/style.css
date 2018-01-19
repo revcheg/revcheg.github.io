@@ -1626,8 +1626,13 @@ button[type="submit"] {
     font-size: 13px;
     text-align: center;
     border-collapse: collapse; }
+    .account-comparison table th {
+      padding: 15px 0;
+      border-bottom: 2px solid #fff;
+      background: #c47935; }
     .account-comparison table td {
-      padding: 5px; }
+      padding: 5px;
+      border-bottom: 1px solid #fff; }
 
 .account-comparison__control {
   display: -webkit-box;
@@ -1692,7 +1697,6 @@ button[type="submit"] {
 
 .tab__content {
   display: none;
-  padding: 6px 12px;
   border-top: none;
   background: #dc9554; }
   .tab__content--forex {
