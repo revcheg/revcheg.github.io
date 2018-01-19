@@ -1734,3 +1734,6 @@ button[type="submit"] {
     background: tomato; }
   .stocks:focus {
     background: tomato; }
+
+.product-specification {
+  padding: 50px 0; }
