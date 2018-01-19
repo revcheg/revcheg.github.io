@@ -1751,17 +1751,18 @@ button[type="submit"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  width: 90%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 55%;
   margin: auto; }
   .resources__flex a {
-    line-height: 80px;
-    width: 78px;
-    height: 80px;
+    width: 65px;
+    height: 68px;
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
+    line-height: 66px;
     text-align: center;
     text-decoration: none;
     background: url("../img/res.png") no-repeat bottom;
@@ -1770,6 +1771,11 @@ button[type="submit"] {
     .resources__flex a:hover {
       color: #2e2963;
       background: url("../img/res-h.png") no-repeat top, url("../img/res.png") no-repeat bottom; }
+
+.resources__flex--second {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 51%; }
 
 .resources__text {
   color: #2e2963; }
