@@ -38,10 +38,3 @@ function changeContentFree () {
     contents[i].style.background = '#fff';
   }
 }
-
-
-// function changeContentFree () {
-//   // Forex
-//   var contentF = document.querySelector('.tab__content--forex');
-//   contentF.style.background = '#000';
-// }
