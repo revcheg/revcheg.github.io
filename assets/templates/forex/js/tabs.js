@@ -14,16 +14,23 @@ function openTab (evt, tabName) {
 
 // Test
 var contents = document.querySelectorAll('.tab__content');
+var tabBronze = document.querySelector('.tab__bronze');
+var tabSilver = document.querySelector('.tab__silver');
+var bronze = document.querySelector('.account-comparison__bronze');
 
 function changeContentBronze () {
   for (var i = 0; i < contents.length; i++) {
     contents[i].style.background = '#dc9554';
+    tabSilver.style.display = 'none';
+    tabBronze.style.display = 'block';
   }
 }
 
 function changeContentSilver () {
   for (var i = 0; i < contents.length; i++) {
     contents[i].style.background = '#9b9b9b';
+    tabBronze.style.display = 'none';
+    tabSilver.style.display = 'block';
   }
 }
 

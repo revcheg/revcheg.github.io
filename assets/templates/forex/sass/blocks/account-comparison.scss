@@ -6,6 +6,7 @@
     color: #fff;
     font-size: 13px;
     text-align: center;
+    border-collapse: collapse;
     
     & td {
       padding: 5px;
@@ -38,6 +39,10 @@
   &:hover {
     background: #dc9554;
   }
+}
+
+.test {
+  background: red;
 }
 
 .account-comparison__silver {
