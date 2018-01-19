@@ -335,6 +335,14 @@ body {
 .sub-menu__box--funding {
   left: 40px; }
 
+.sub-menu__box--resources {
+  top: -340px;
+  left: 140px;
+  height: 350px; }
+  .sub-menu__box--resources:hover {
+    -webkit-transform: translateY(340px);
+    transform: translateY(340px); }
+
 .sub-menu__logo {
   margin-top: 10px; }
   .sub-menu__logo:hover {
@@ -1754,7 +1762,6 @@ button[type="submit"] {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 55%;
   margin: auto; }
   .resources__flex a {
     width: 65px;
@@ -1773,9 +1780,11 @@ button[type="submit"] {
       background: url("../img/res-h.png") no-repeat top, url("../img/res.png") no-repeat bottom; }
 
 .resources__flex--second {
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  width: 51%; }
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 90%;
+  padding-top: 10px; }
 
 .resources__text {
   color: #2e2963; }

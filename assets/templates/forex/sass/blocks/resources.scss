@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   // flex-wrap: wrap;
-  width: 55%;
+  // width: 55%;
   margin: auto;
   
   & a {
@@ -38,8 +38,9 @@
 }
 
 .resources__flex--second {
-  justify-content: space-around;
-  width: 51%;
+  justify-content: space-between;
+  width: 90%;
+  padding-top: 10px;
 }
 
 .resources__text {

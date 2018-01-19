@@ -94,6 +94,16 @@
   left: 40px;
 }
 
+.sub-menu__box--resources {
+  top: -340px;
+  left: 140px;
+  height: 350px;
+  
+  &:hover {
+    transform: translateY(340px);
+  }
+}
+
 .sub-menu__logo {
   margin-top: 10px;
   
