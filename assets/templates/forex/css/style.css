@@ -1617,9 +1617,13 @@ button[type="submit"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-top: 50px;
   padding-bottom: 20px; }
   .account-comparison__control button {
+    margin: 0 5px;
     padding: 10px 50px;
     color: #fff;
     font-size: 15px;
@@ -1637,12 +1641,23 @@ button[type="submit"] {
 .account-comparison__silver:hover {
   background: #9b9b9b; }
 
+.account-comparison__gold:hover {
+  background: #e7c85d; }
+
+.account-comparison__free:hover {
+  color: #2e2963;
+  background: #fff; }
+
 .tab {
-  overflow: hidden;
-  background-color: #f1f1f1; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden; }
 
 .tab button {
-  float: left;
   border: none;
   outline: none;
   cursor: pointer;
@@ -1663,12 +1678,14 @@ button[type="submit"] {
     border: 5px solid #2e2963; }
   .tab__content--commodities {
     border: 5px solid green; }
-
-.tab__bronze {
-  background: #dc9554; }
-
-.tab__silver {
-  background: #9b9b9b; }
+  .tab__content--metals {
+    border: 5px solid #9b9b9b; }
+  .tab__content--bonds {
+    border: 5px solid #00bff3; }
+  .tab__content--indices {
+    border: 5px solid orange; }
+  .tab__content--stocks {
+    border: 5px solid tomato; }
 
 .forex {
   color: #fff;
@@ -1685,3 +1702,35 @@ button[type="submit"] {
     background: green; }
   .commodities:focus {
     background: green; }
+
+.metals {
+  color: #fff;
+  background: #4b426d; }
+  .metals:hover {
+    background: #9b9b9b; }
+  .metals:focus {
+    background: #9b9b9b; }
+
+.bonds {
+  color: #fff;
+  background: #4b426d; }
+  .bonds:hover {
+    background: #00bff3; }
+  .bonds:focus {
+    background: #00bff3; }
+
+.indices {
+  color: #fff;
+  background: #4b426d; }
+  .indices:hover {
+    background: orange; }
+  .indices:focus {
+    background: orange; }
+
+.stocks {
+  color: #fff;
+  background: #4b426d; }
+  .stocks:hover {
+    background: tomato; }
+  .stocks:focus {
+    background: tomato; }

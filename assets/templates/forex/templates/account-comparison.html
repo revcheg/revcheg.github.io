@@ -66,11 +66,16 @@
       <div class="account-comparison__control">
         <button id="bronze" onclick="changeContentBronze()" class="account-comparison__bronze" type="button" name="button">Mini Bronze</button>
         <button id="silver" onclick="changeContentSilver()" class="account-comparison__silver" type="button" name="button">Classic Silver</button>
+        <button id="gold" onclick="changeContentGold()" class="account-comparison__gold" type="button" name="button">Premium Gold</button>
+        <button id="free" onclick="changeContentFree()" class="account-comparison__free" type="button" name="button">Swap Free</button>
       </div>
       <div class="tab">
         <button class="tab__link  forex" onclick="openTab(event, 'Forex')">Forex</button>
         <button class="tab__link  commodities" onclick="openTab(event, 'Commodities')">Commodities</button>
-        <button class="tab__link" onclick="openTab(event, 'Precious Metals')">Precious Metals</button>
+        <button class="tab__link  metals" onclick="openTab(event, 'Precious Metals')">Precious Metals</button>
+        <button class="tab__link  bonds" onclick="openTab(event, 'Bonds')">Bonds</button>
+        <button class="tab__link  indices" onclick="openTab(event, 'Indices')">Indices</button>
+        <button class="tab__link  stocks" onclick="openTab(event, 'Stocks')">Stocks</button>
       </div>
       <div id="Forex" class="tab__content  tab__content--forex">
         <div class="tab__origin">
@@ -84,8 +89,20 @@
           <p>Lorem ipsum dolor sit amet.</p> 
         </div>
       </div>
-      <div id="Precious Metals" class="tab__content">
+      <div id="Precious Metals" class="tab__content  tab__content--metals">
         <h3>Precious Metals</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div id="Bonds" class="tab__content  tab__content--bonds">
+        <h3>Bonds</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div id="Indices" class="tab__content  tab__content--indices">
+        <h3>Indices</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div id="Stocks" class="tab__content  tab__content--stocks">
+        <h3>Stocks</h3>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
     </div>

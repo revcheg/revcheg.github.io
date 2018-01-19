@@ -1,21 +1,23 @@
 .tab {
-    overflow: hidden;
-    background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  // background-color: #f1f1f1;
 }
 
 .tab button {
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+  // float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
 }
 
 .tab button.active {
-    padding: 14px 40px;
-    font-weight: bold;
+  padding: 14px 40px;
+  font-weight: bold;
 }
 
 .tab__content {
@@ -29,6 +31,22 @@
   
   &--commodities {
     border: 5px solid green;
+  }
+  
+  &--metals {
+    border: 5px solid #9b9b9b;
+  }
+  
+  &--bonds {
+    border: 5px solid #00bff3;
+  }
+  
+  &--indices {
+    border: 5px solid orange;
+  }
+  
+  &--stocks {
+    border: 5px solid tomato;
   }
 }
 
@@ -57,3 +75,56 @@
     background: green;
   }
 }
+
+.metals {
+  color: #fff;
+  background: #4b426d;
+  
+  &:hover {
+    background: #9b9b9b;
+  }
+  
+  &:focus {
+    background: #9b9b9b;
+  }
+}
+
+.bonds {
+  color: #fff;
+  background: #4b426d;
+  
+  &:hover {
+    background: #00bff3;
+  }
+  
+  &:focus {
+    background: #00bff3;
+  }
+}
+
+.indices {
+  color: #fff;
+  background: #4b426d;
+  
+  &:hover {
+    background: orange;
+  }
+  
+  &:focus {
+    background: orange;
+  }
+}
+
+.stocks {
+  color: #fff;
+  background: #4b426d;
+  
+  &:hover {
+    background: tomato;
+  }
+  
+  &:focus {
+    background: tomato;
+  }
+}
+

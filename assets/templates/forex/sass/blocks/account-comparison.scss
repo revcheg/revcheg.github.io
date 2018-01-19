@@ -4,11 +4,12 @@
 
 .account-comparison__control {
   display: flex;
-  // justify-content: space-between;
+  justify-content: center;
   padding-top: 50px;
   padding-bottom: 20px;
   
   & button {
+    margin: 0 5px;
     padding: 10px 50px;
     color: #fff;
     font-size: 15px;
@@ -32,5 +33,20 @@
   
   &:hover {
     background: #9b9b9b;
+  }
+}
+
+.account-comparison__gold {
+  
+  &:hover {
+    background: #e7c85d;
+  }
+}
+
+.account-comparison__free {
+  
+  &:hover {
+    color: $mc;
+    background: #fff;
   }
 }
