@@ -1,3 +1,7 @@
 .product-specification {
   padding: 50px 0;
+  
+  & .tab__content {
+    padding: 10px;
+  }
 }

@@ -1704,6 +1704,8 @@ button[type="submit"] {
     border: 5px solid #00bff3; }
   .tab__content--indices {
     border: 5px solid orange; }
+  .tab__content--indices-f {
+    border: 5px solid orange; }
   .tab__content--stocks {
     border: 5px solid tomato; }
 
@@ -1760,6 +1762,14 @@ button[type="submit"] {
   .indices:focus {
     background: orange; }
 
+.indices-f {
+  color: #fff;
+  background: #4b426d; }
+  .indices-f:hover {
+    background: orange; }
+  .indices-f:focus {
+    background: orange; }
+
 .stocks {
   color: #fff;
   background: #4b426d; }
@@ -1770,6 +1780,8 @@ button[type="submit"] {
 
 .product-specification {
   padding: 50px 0; }
+  .product-specification .tab__content {
+    padding: 10px; }
 
 .resources {
   padding: 50px 0 100px 0; }

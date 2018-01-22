@@ -48,6 +48,10 @@
     border: 5px solid orange;
   }
   
+  &--indices-f {
+    border: 5px solid orange;
+  }
+  
   &--stocks {
     border: 5px solid tomato;
   }
@@ -136,6 +140,19 @@
 }
 
 .indices {
+  color: #fff;
+  background: #4b426d;
+  
+  &:hover {
+    background: orange;
+  }
+  
+  &:focus {
+    background: orange;
+  }
+}
+
+.indices-f {
   color: #fff;
   background: #4b426d;
   
