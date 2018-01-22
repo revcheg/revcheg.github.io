@@ -1,0 +1,203 @@
+.modal-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  background-color: #f8f5f2;
+  color: #000;
+  position: fixed;
+  top: 135px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-200%);
+  box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.75);
+  z-index: 20;
+    h2 {
+      margin: 0;
+      line-height: 100%;
+      text-transform: uppercase;
+    }
+    p {
+      margin: 0;
+    }
+}
+
+.modal-login__form {
+    input[name="login"],
+    input[name="password"] {
+      position: relative;
+      width: 100%;
+      padding-right: 52px;
+    }
+}
+
+.modal-login__remember {
+  position: relative;
+  width: 60%;
+  margin-top: 26px;
+  margin-bottom: 29px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 48px;
+  line-height: 30px;
+  cursor: pointer;
+    input {
+      display: none;
+    }
+}
+
+.form label input:checked + .checkbox-indicator,
+.form label input:checked + .radio-indicator {
+  border-color: #d5c9bd;
+}
+
+.form label input:checked + .checkbox-indicator::before,
+.form label input:checked + .radio-indicator::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-login__restore {
+  width: 40%;
+  text-align: right;
+  line-height: 30px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  margin-top: 26px;
+  margin-bottom: 29px;
+}
+
+.modal-login__text-hidden {
+  display: none;
+}
+
+@keyframes bounce {
+  0% { transform: translateX(-50%) translateY(-250%); }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+
+.modal-login--show {
+  animation: bounce 0.6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bounce-return {
+  0% { transform: translateX(-50%) translateY(0); }
+  100% { transform: translateX(-50%) translateY(-250%); }
+}
+
+.modal-login--hide {
+  animation: bounce-return 0.6s;
+}
+
+@keyframes shake {
+  0% 100% { transform:  translateX(-50%); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-55%); }
+  20%, 40%, 60%, 80% { transform: translateX(-45%); }
+}
+
+.modal-login--error {
+  animation: shake 0.6s;
+  transform: translateX(-50%) translateY(0);
+}
+
+.modal-login--static {
+  transform: translateX(-50%) translateY(0);
+}
+
+@media ($mobile-widths-only) {
+  .modal-login {
+    width: 320px;
+      h2 {
+        margin: 0 6.25%;
+        margin-top: 35px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: 700;
+      }
+      p {
+        margin: 0 6.25%;
+        margin-bottom: 25px;
+      }
+  }
+
+  .modal-login__form {
+    width: 100%;
+    padding: 0 6.25%;
+    margin-bottom: 37px;
+  }
+
+  .modal-login__enter,
+  .modal-login__closed {
+    width: 130px;
+  }
+}
+
+@media ($tablet-widths) {
+  .modal-login {
+    top: 129px;
+    width: 460px;
+      h2 {
+        margin: 70px;
+        margin-top: 55px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: 700;
+      }
+      p {
+        margin: 0 6.25%;
+        margin-bottom: 25px;
+      }
+  }
+
+  .modal-login__form {
+    margin: 0 70px;
+    margin-bottom: 55px;
+      input[name="login"],
+      input[name="password"] {
+        font-size: 24px;
+        padding: 19px 19px;
+        padding-right: 66px;
+      }
+  }
+
+  .modal-login__enter {
+    width: 100%;
+  }
+
+  .modal-login__text-hidden {
+    display: inline;
+  }
+
+  .modal-login__closed {
+    position: absolute;
+    top: 62px;
+    left: 537px;
+    width: 26px;
+    height: 26px;
+    font-size: 0;
+    border: none;
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 36px;
+        height: 2px;
+        top: 11px;
+        left: -4px;
+        background-color: #fff;
+        transform: rotate(45deg);
+        transition: 0.5s;
+      }
+      &::after {
+        transform: rotate(-45deg);
+      }
+      &:active::before,
+      &:active::after {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+      &:active {
+        background-color: transparent;
+      }
+  }
+}
