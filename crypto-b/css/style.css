@@ -503,13 +503,13 @@ input::placeholder {
   padding-bottom: 30px; }
 
 .trade__left-column {
-  width: 800px;
+  width: 40%;
   font-size: 25px;
   font-weight: bold;
   text-transform: uppercase; }
 
 .trade__right-column {
-  width: 900px;
+  width: 60%;
   font-size: 25px; }
 
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
