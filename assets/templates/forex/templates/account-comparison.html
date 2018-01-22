@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Account Comparison - Forex 24</title>
-  <!-- <link rel="stylesheet" href="js/slick/slick.css"/> -->
-  <!-- <link rel="stylesheet" href="js/slick/slick-theme.css"/> -->
   <link rel="stylesheet" href="../css/style.min.css">
 </head>
 <body>
@@ -64,14 +62,14 @@
   <section class="account-comparison">
     <div class="container">
       <div class="account-comparison__control">
-        <button id="bronze" onclick="changeContentBronze()" class="account-comparison__bronze" type="button" name="button">Mini Bronze</button>
-        <button id="silver" onclick="changeContentSilver()" class="account-comparison__silver" type="button" name="button">Classic Silver</button>
-        <button id="gold" onclick="changeContentGold()" class="account-comparison__gold" type="button" name="button">Premium Gold</button>
-        <button id="free" onclick="changeContentFree()" class="account-comparison__free" type="button" name="button">Swap Free</button>
+        <button class="account-comparison__bronze" onclick="changeContentBronze()" type="button" name="button">Mini Bronze</button>
+        <button class="account-comparison__silver" onclick="changeContentSilver()" type="button" name="button">Classic Silver</button>
+        <button class="account-comparison__gold" onclick="changeContentGold()" type="button" name="button">Premium Gold</button>
+        <button class="account-comparison__free" onclick="changeContentFree()" type="button" name="button">Swap Free</button>
       </div>
       <div class="tab">
         <button class="tab__link  forex" onclick="openTab(event, 'Forex')">Forex</button>
-        <button class="tab__link  commodities" onclick="openTab(event, 'Commodities')">Commodities</button>
+        <button class="tab__link  commodities" onclick="openTab(event, 'Commodities')">Commoditiews</button>
         <button class="tab__link  metals" onclick="openTab(event, 'Precious Metals')">Precious Metals</button>
         <button class="tab__link  bonds" onclick="openTab(event, 'Bonds')">Bonds</button>
         <button class="tab__link  indices" onclick="openTab(event, 'Indices')">Indices</button>
@@ -148,7 +146,7 @@
               <th>Average Floating Spreads in pips</th>
               <th colspan="3">
                 Commission Per Lot
-                <table>
+                <table class="tab__currency">
                   <tr>
                     <td>USD</td>
                     <td>EUR</td>
@@ -178,7 +176,7 @@
         </div>
       </div>
       <div id="Commodities" class="tab__content  tab__content--commodities">
-        <div class="tab__originc">
+        <div class="tab__origin">
           <h3>Commodities</h3>
           <p>Lorem ipsum dolor sit amet.</p> 
         </div>

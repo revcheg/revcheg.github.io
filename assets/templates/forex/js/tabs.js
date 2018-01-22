@@ -22,7 +22,7 @@ function changeContentBronze () {
   for (var i = 0; i < contents.length; i++) {
     contents[i].style.background = '#dc9554';
     tabSilver.style.display = 'none';
-    tabBronze.style.display = 'block';
+    tabBronze.style.display = 'table';
   }
 }
 
@@ -30,7 +30,7 @@ function changeContentSilver () {
   for (var i = 0; i < contents.length; i++) {
     contents[i].style.background = '#9b9b9b';
     tabBronze.style.display = 'none';
-    tabSilver.style.display = 'block';
+    tabSilver.style.display = 'table';
   }
 }
 

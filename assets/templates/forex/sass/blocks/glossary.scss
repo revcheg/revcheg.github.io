@@ -71,13 +71,13 @@
     padding: 25px;
     padding-left: 80px;
     color: $mc;
+    font-weight: bold;
     text-decoration: none;
     background: url('../img/faq.png') no-repeat left;
-    transition: 0.1s;
+    transition: 0.2s;
     
     &:hover {
-      font-size: 18px;
-      font-weight: bold;
+      color: $sc;
     }
   }
 }
