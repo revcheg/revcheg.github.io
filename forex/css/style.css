@@ -2009,3 +2009,15 @@ button[type="submit"] {
 
 .registration__title--pb {
   padding-bottom: 70px; }
+
+.security {
+  padding: 50px 0; }
+  .security b {
+    color: #2f2861;
+    font-size: 22px; }
+  .security p {
+    color: #323232;
+    padding-left: 270px; }
+
+.security__box {
+  background: url("../img/security.png") no-repeat left top; }

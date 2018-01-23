@@ -1,0 +1,17 @@
+.security {
+  padding: 50px 0;
+  
+  & b {
+    color: #2f2861;
+    font-size: 22px;
+  }
+  
+  & p {
+    color: #323232;
+    padding-left: 270px;
+  }
+}
+
+.security__box {
+  background: url('../img/security.png') no-repeat left top;
+}
