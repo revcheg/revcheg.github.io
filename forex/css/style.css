@@ -1781,19 +1781,41 @@ button[type="submit"] {
 .product-specification {
   padding: 50px 0; }
   .product-specification .tab__content {
-    padding: 10px;
+    padding: 30px;
     color: #000e55; }
     .product-specification .tab__content h3,
     .product-specification .tab__content p,
     .product-specification .tab__content ul {
       opacity: 0.8; }
     .product-specification .tab__content h3 {
+      margin-top: 0;
       font-size: 30px;
       font-weight: 400;
       text-align: center;
       text-transform: uppercase; }
     .product-specification .tab__content--forex, .product-specification .tab__content--commodities, .product-specification .tab__content--metals, .product-specification .tab__content--bonds, .product-specification .tab__content--indices-c, .product-specification .tab__content--indices-f, .product-specification .tab__content--stocks {
       background: inherit; }
+
+.product-specification__forex {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  border-collapse: collapse; }
+  .product-specification__forex th {
+    padding: 15px 0;
+    font-size: 14px;
+    border-bottom: 3px solid #fff;
+    background: #2e2963; }
+  .product-specification__forex tr {
+    font-size: 13px;
+    background: #4b426d; }
+  .product-specification__forex td {
+    padding: 5px 0;
+    border-bottom: 1px solid #fff; }
+  .product-specification__forex tr th:first-of-type {
+    border-top-left-radius: 10px; }
+  .product-specification__forex tr th:last-of-type {
+    border-top-right-radius: 10px; }
 
 .resources {
   padding: 50px 0 100px 0; }

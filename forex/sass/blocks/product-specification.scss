@@ -2,7 +2,7 @@
   padding: 50px 0;
   
   & .tab__content {
-    padding: 10px;
+    padding: 30px;
     color: #000e55;
     
     & h3, 
@@ -12,6 +12,7 @@
     }
     
     & h3 {
+      margin-top: 0;
       font-size: 30px;
       font-weight: 400;
       text-align: center;
@@ -27,5 +28,37 @@
     &--stocks {
       background: inherit;
     }
+  }
+}
+
+.product-specification__forex {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  border-collapse: collapse;
+  
+  & th {
+    padding: 15px 0;
+    font-size: 14px;
+    border-bottom: 3px solid #fff;
+    background: $mc;
+  }
+  
+  & tr {
+    font-size: 13px;
+    background: #4b426d;
+  }
+  
+  & td {
+    padding: 5px 0;
+    border-bottom: 1px solid #fff;
+  }
+  
+  & tr th:first-of-type {
+    border-top-left-radius: 10px;
+  }
+  
+  & tr th:last-of-type {
+    border-top-right-radius: 10px;
   }
 }
