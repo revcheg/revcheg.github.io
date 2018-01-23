@@ -1,0 +1,16 @@
+.trader {
+  margin-left: 100px;
+  
+  & h3 {
+    margin-bottom: 10px;
+  }
+  
+  & b {
+    color: #fff;
+  }
+}
+
+.trader__list {
+  display: flex;
+  justify-content: flex-start;
+}

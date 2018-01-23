@@ -1,0 +1,45 @@
+.features__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__download {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__box {
+  width: 200px;
+  padding-top: 100px;
+  text-align: center;
+  background: url('../img/features-download.png') no-repeat top;
+  
+  & p {
+    margin-bottom: 30px;
+  }
+  
+  & a {
+    color: #2e2963;
+    text-decoration: none;
+  }
+}
+
+.features__start {
+  padding: 10px 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: $sc;
+  box-shadow: 5px 5px 3px 0px rgba(121, 121, 121, 0.4);
+  transition: 0.2s;
+  
+  &:hover {
+    color: #fff;
+    background: $mc;
+    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.6);
+  }
+}

@@ -1,0 +1,32 @@
+.meta {
+  text-align: right;
+  
+  & h2 {
+    color: #2f2861;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  
+  & p {
+    width: 400px;
+    color: #323232;
+    font-weight: bold;
+  }
+}
+
+.meta__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.meta__left {
+  width: 640px;
+  height: 428px;
+  background: url('../img/meta-monitor.png') no-repeat top;
+  background-size: contain;
+}
+
+.meta__trader {
+  height: 84px;
+  background: url('../img/meta-trader.png') no-repeat top;
+}

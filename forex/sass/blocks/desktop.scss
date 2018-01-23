@@ -1,0 +1,35 @@
+.desktop {
+  margin-top: 350px;
+  background: url('../img/desktop-bg.png') no-repeat top;
+}
+
+.desktop__flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.desktop__right {
+  width: 700px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  
+  & h4 {
+    margin-bottom: 0;
+    font-size: 25px;
+  }
+  
+  & b {
+    font-size: 25px;
+  }
+}
+
+.desktop__list {
+  display: flex;
+  justify-content: space-between;
+  
+  & ul {
+    width: auto;
+    color: #000;
+    font-weight: 400;
+  }
+}

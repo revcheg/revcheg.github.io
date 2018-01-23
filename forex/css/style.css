@@ -7,6 +7,10 @@ body {
   width: 70%;
   margin: auto; }
 
+.container--temp {
+  width: 50%;
+  margin: auto; }
+
 @media screen and (max-width: 1200px) {
   .container {
     width: 96%; } }
@@ -2135,6 +2139,9 @@ button[type="submit"] {
 .platforms {
   padding: 50px 0;
   background: url("../img/platforms-bg.png") no-repeat top; }
+  .platforms h2 {
+    color: #fff;
+    font-size: 25px; }
   .platforms h3 {
     color: #fff;
     font-size: 25px; }
@@ -2145,26 +2152,18 @@ button[type="submit"] {
     font-weight: 100;
     list-style-image: url("../img/li.png"); }
 
-.platforms__trading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
-
-.platforms__meta {
+.meta {
   text-align: right; }
-  .platforms__meta h2 {
+  .meta h2 {
     color: #2f2861;
     font-size: 25px;
     text-transform: uppercase; }
-  .platforms__meta p {
+  .meta p {
     width: 400px;
     color: #323232;
     font-weight: bold; }
 
-.platforms__flex {
+.meta__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2172,7 +2171,17 @@ button[type="submit"] {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.platforms__list {
+.meta__left {
+  width: 640px;
+  height: 428px;
+  background: url("../img/meta-monitor.png") no-repeat top;
+  background-size: contain; }
+
+.meta__trader {
+  height: 84px;
+  background: url("../img/meta-trader.png") no-repeat top; }
+
+.features__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2180,58 +2189,127 @@ button[type="submit"] {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.platforms__flex--trader {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start; }
-
-.platforms__download {
+.features__list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
-.platforms__box {
+.features__download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.features__box {
   width: 200px;
   padding-top: 100px;
   text-align: center;
-  background: url("../img/platforms-download.png") no-repeat top; }
-  .platforms__box b {
-    color: #2e2963;
-    font-size: 20px; }
-  .platforms__box p {
+  background: url("../img/features-download.png") no-repeat top; }
+  .features__box p {
     margin-bottom: 30px; }
-  .platforms__box a {
+  .features__box a {
     color: #2e2963;
     text-decoration: none; }
 
-.platforms__start {
+.features__start {
   padding: 10px 40px;
   font-weight: bold;
   text-transform: uppercase;
   background: #f2c318;
-  -webkit-box-shadow: 5px 5px 0px 0px rgba(121, 121, 121, 0.4);
-  box-shadow: 5px 5px 0px 0px rgba(121, 121, 121, 0.4);
+  -webkit-box-shadow: 5px 5px 3px 0px rgba(121, 121, 121, 0.4);
+  box-shadow: 5px 5px 3px 0px rgba(121, 121, 121, 0.4);
   -webkit-transition: 0.2s;
   transition: 0.2s; }
-  .platforms__start:hover {
+  .features__start:hover {
     color: #fff;
     background: #2e2963;
-    -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.4);
-    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.4); }
+    -webkit-box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.6); }
 
-.platforms__trader h3 {
-  margin-left: 100px;
-  margin-bottom: 10px; }
-
-.platforms__trader b {
-  margin-left: 100px;
-  color: #fff; }
-
-.platforms__trader .platforms__list {
-  margin-top: 30px;
+.trader {
   margin-left: 100px; }
+  .trader h3 {
+    margin-bottom: 10px; }
+  .trader b {
+    color: #fff; }
 
-.platforms__adv {
-  margin-left: 330px; }
-  .platforms__adv ul {
-    width: 520px; }
+.trader__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.edge {
+  margin-left: 350px; }
+  .edge ul {
+    width: 550px; }
+
+.desktop {
+  margin-top: 350px;
+  background: url("../img/desktop-bg.png") no-repeat top; }
+
+.desktop__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.desktop__right {
+  width: 700px;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .desktop__right h4 {
+    margin-bottom: 0;
+    font-size: 25px; }
+  .desktop__right b {
+    font-size: 25px; }
+
+.desktop__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .desktop__list ul {
+    width: auto;
+    color: #000;
+    font-weight: 400; }
+
+.mobile {
+  position: relative; }
+  .mobile h2 {
+    text-align: right;
+    text-transform: uppercase; }
+  .mobile b {
+    margin-left: 200px;
+    color: #fff; }
+  .mobile p {
+    width: auto;
+    margin-left: 200px;
+    color: #fff;
+    opacity: 0.7; }
+
+.mobile__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-left: 100px;
+  padding-top: 50px;
+  text-align: center; }
+  .mobile__flex p,
+  .mobile__flex b {
+    width: 400px;
+    margin-left: 0; }
