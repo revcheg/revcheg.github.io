@@ -23,6 +23,23 @@
   padding-bottom: 30px;
 }
 
+.form__flex--radio {
+  justify-content: center;
+  
+  & input {
+    width: auto;
+  }
+}
+
+.form__right {
+  display: flex;
+  justify-content: space-between;
+  
+  & input {
+    width: 40%;
+  }
+}
+
 .form__select {
   display: block;
   width: 100%;
@@ -33,6 +50,11 @@
   font-weight: bold;
   border: 1px solid #4b426d;
   border-radius: 5px;
+}
+
+.form__select-registration {
+  width: 47.5%;
+  margin: 0;
 }
 
 .form__textarea {

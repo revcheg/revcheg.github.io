@@ -64,18 +64,51 @@
       <form class="form" action="index.html" method="post">
         <div class="form__flex">
           <input type="text" placeholder="First name">
-          <input type="email" placeholder="E-mail">
+          <input type="text" placeholder="Last name">
         </div>
         <div class="form__flex">
-          <input type="text" placeholder="Last name">
-          <input type="tel" placeholder="Phone">
+          <select class="form__select  form__select-registration" name="">
+            <option value="">Country of Residence</option>
+          </select>
+          <div class="form__right">
+            <input type="number" placeholder="Country Code">
+            <input type="tel" placeholder="Phone">
+          </div>
         </div>
-        <select class="form__select" name="">
-          <option value="">Information</option>
-        </select>
-        <button type="submit" name="submit">Submit</button>
-        <textarea class="form__textarea" name="name" rows="8" placeholder="Message"></textarea>
+        <div class="form__flex">
+          <input type="email" placeholder="Email">
+          <select class="form__select  form__select-registration" name="">
+            <option value="">Currency</option>
+          </select>
+        </div>
+        <p class="registration__title">Your email will be used only for the purpose of opening your trading account and will not be shared with third parties.</p>
+        <div class="form__flex">
+          <select class="form__select  form__select-registration" name="">
+            <option value="">Leverage</option>
+          </select>
+          <select class="form__select  form__select-registration" name="">
+            <option value="">Deposit Amount</option>
+          </select>
+        </div>
+        <div class="form__flex">
+          <input type="password" placeholder="Password">
+          <input type="password" placeholder="Confirm Password">
+        </div>
+        <p class="registration__title">Tip: Strong passwords uses a conbination of numbers, symbols, capital and small letters. If you want we can generate one for you.</p>
+        <p class="registration__title">I wish to receive newsletters and other communication material:</p>
+        <div class="form__flex  form__flex--radio">  
+          <input id="y" type="radio" name="y/n" value="yes">
+          <label for="y">Yes</label>
+          <input id="n" type="radio" name="y/n" value="no">
+          <label for="n">No</label>
+        </div>
+        <button type="submit" name="submit">Register</button>
       </form>
+      <hr>
+      <div class="container">
+        
+      </div>
+      <p class="registration__title  registration__title--pb">Risk Warning: Our products are traded on margin and carry a high level of risk and it is possible to lose all your capital. These products may not be suitable for everyone and you should ensure that you understand the risks involved.</p>
     </div>
   </section>
   <section class="payment  payment--temp">

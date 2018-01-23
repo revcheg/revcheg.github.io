@@ -1485,6 +1485,23 @@ body {
   justify-content: space-between;
   padding-bottom: 30px; }
 
+.form__flex--radio {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .form__flex--radio input {
+    width: auto; }
+
+.form__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .form__right input {
+    width: 40%; }
+
 .form__select {
   display: block;
   width: 100%;
@@ -1495,6 +1512,10 @@ body {
   font-weight: bold;
   border: 1px solid #4b426d;
   border-radius: 5px; }
+
+.form__select-registration {
+  width: 47.5%;
+  margin: 0; }
 
 .form__textarea {
   display: block;
@@ -1968,3 +1989,23 @@ button[type="submit"] {
     .resources__faq a {
       padding: 70px 0 20px 0;
       background: url("../img/faq.png") no-repeat top; } }
+
+.registration button[type="submit"] {
+  margin-bottom: 0px; }
+
+.registration hr {
+  height: 2px;
+  margin-bottom: 78px;
+  border: none;
+  background: #2e2963; }
+
+.registration__title {
+  margin: 0;
+  padding-bottom: 30px;
+  color: #323232;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center; }
+
+.registration__title--pb {
+  padding-bottom: 70px; }

@@ -1,0 +1,26 @@
+.registration {
+  
+  button[type="submit"] {
+    margin-bottom: 0px;
+  }
+  
+  & hr {
+    height: 2px;
+    margin-bottom: 78px;
+    border: none;
+    background: $mc;
+  }
+}
+
+.registration__title {
+  margin: 0;
+  padding-bottom: 30px;
+  color: #323232;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.registration__title--pb {
+  padding-bottom: 70px;
+}
