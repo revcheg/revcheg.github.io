@@ -2021,3 +2021,11 @@ button[type="submit"] {
 
 .security__box {
   background: url("../img/security.png") no-repeat left top; }
+
+@media screen and (max-width: 768px) {
+  .security p {
+    padding-left: 0px;
+    text-align: center; }
+  .security__box {
+    padding-top: 260px;
+    background: url("../img/security.png") no-repeat top; } }

@@ -15,3 +15,20 @@
 .security__box {
   background: url('../img/security.png') no-repeat left top;
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .security {
+    
+    & p {
+      padding-left: 0px;
+      text-align: center;
+    }
+  }
+  
+  .security__box {
+    padding-top: 260px;
+    background: url('../img/security.png') no-repeat top;
+  }
+}
