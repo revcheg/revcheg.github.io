@@ -400,6 +400,38 @@ body {
 .sub-menu__link--twitter {
   background: url("../img/sub-t.png") no-repeat top; }
 
+.sub-menu__flex--platform {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.sub-menu--forex p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 30px; }
+
+.sub-menu__platform-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center; }
+
+.sub-menu__platform a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0.4;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .sub-menu__platform a:hover {
+    border-bottom: 1px solid #fff;
+    opacity: 1; }
+
 @media screen and (max-width: 1200px) {
   .sub-menu__box {
     top: -370px;
@@ -2099,3 +2131,107 @@ button[type="submit"] {
 
 .trading-specification__table--stocks tr {
   background: #24e5dd; }
+
+.platforms {
+  padding: 50px 0;
+  background: url("../img/platforms-bg.png") no-repeat top; }
+  .platforms h3 {
+    color: #fff;
+    font-size: 25px; }
+  .platforms ul {
+    width: 300px;
+    color: #b7b5c9;
+    font-size: 18px;
+    font-weight: 100;
+    list-style-image: url("../img/li.png"); }
+
+.platforms__trading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.platforms__meta {
+  text-align: right; }
+  .platforms__meta h2 {
+    color: #2f2861;
+    font-size: 25px;
+    text-transform: uppercase; }
+  .platforms__meta p {
+    width: 400px;
+    color: #323232;
+    font-weight: bold; }
+
+.platforms__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.platforms__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.platforms__flex--trader {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.platforms__download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.platforms__box {
+  width: 200px;
+  padding-top: 100px;
+  text-align: center;
+  background: url("../img/platforms-download.png") no-repeat top; }
+  .platforms__box b {
+    color: #2e2963;
+    font-size: 20px; }
+  .platforms__box p {
+    margin-bottom: 30px; }
+  .platforms__box a {
+    color: #2e2963;
+    text-decoration: none; }
+
+.platforms__start {
+  padding: 10px 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #f2c318;
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(121, 121, 121, 0.4);
+  box-shadow: 5px 5px 0px 0px rgba(121, 121, 121, 0.4);
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .platforms__start:hover {
+    color: #fff;
+    background: #2e2963;
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.4); }
+
+.platforms__trader h3 {
+  margin-left: 100px;
+  margin-bottom: 10px; }
+
+.platforms__trader b {
+  margin-left: 100px;
+  color: #fff; }
+
+.platforms__trader .platforms__list {
+  margin-top: 30px;
+  margin-left: 100px; }
+
+.platforms__adv {
+  margin-left: 330px; }
+  .platforms__adv ul {
+    width: 520px; }

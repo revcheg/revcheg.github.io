@@ -171,6 +171,43 @@
   background: url('../img/sub-t.png') no-repeat top;
 }
 
+// Platform
+.sub-menu__flex--platform {
+  justify-content: flex-end;
+}
+
+.sub-menu--forex {
+  
+  & p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+}
+
+.sub-menu__platform-column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sub-menu__platform {
+  
+  & a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 0.4;
+    transition: 0.2s;
+    
+    &:hover {
+      border-bottom: 1px solid #fff;
+      opacity: 1;
+    }
+  }
+}
+
 @media screen and ($tablet-widths) {  
   .sub-menu__box {
     top: -370px;

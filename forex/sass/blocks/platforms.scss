@@ -1,0 +1,118 @@
+.platforms {
+  padding: 50px 0;
+  background: url('../img/platforms-bg.png') no-repeat top;
+  
+  & h3 {
+    color: #fff;
+    font-size: 25px;
+  }
+  
+  & ul {
+    width: 300px;
+    color: #b7b5c9;
+    font-size: 18px;
+    font-weight: 100;
+    list-style-image: url('../img/li.png');
+  }
+}
+
+.platforms__trading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.platforms__meta {
+  text-align: right;
+  
+  & h2 {
+    color: #2f2861;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  
+  & p {
+    width: 400px;
+    color: #323232;
+    font-weight: bold;
+  }
+}
+
+.platforms__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.platforms__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.platforms__flex--trader {
+  justify-content: flex-start;
+}
+
+.platforms__download {
+  display: flex;
+}
+
+.platforms__box {
+  width: 200px;
+  padding-top: 100px;
+  text-align: center;
+  background: url('../img/platforms-download.png') no-repeat top;
+  
+  & b {
+    color: #2e2963;
+    font-size: 20px;
+  }
+  
+  & p {
+    margin-bottom: 30px;
+  }
+  
+  & a {
+    color: #2e2963;
+    text-decoration: none;
+  }
+}
+
+.platforms__start {
+  padding: 10px 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: $sc;
+  box-shadow: 5px 5px 0px 0px rgba(121, 121, 121, 0.4);
+  transition: 0.2s;
+  
+  &:hover {
+    color: #fff;
+    background: $mc;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.platforms__trader  {
+  
+  & h3 {
+    margin-left: 100px;
+    margin-bottom: 10px;
+  }
+  
+  & b {
+    margin-left: 100px;
+    color: #fff;
+  }
+  
+  & .platforms__list {
+    margin-top: 30px;
+    margin-left: 100px;
+  }
+}
+
+.platforms__adv {
+  margin-left: 330px;
+  
+  & ul {
+    width: 520px;
+  }
+}
