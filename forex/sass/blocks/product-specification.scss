@@ -31,26 +31,24 @@
   }
 }
 
-.product-specification__forex {
+.product-specification__table {
   width: 100%;
   color: #fff;
   text-align: center;
   border-collapse: collapse;
   
   & th {
-    padding: 15px 0;
+    padding: 15px;
     font-size: 14px;
     border-bottom: 3px solid #fff;
-    background: $mc;
   }
   
   & tr {
     font-size: 13px;
-    background: #4b426d;
   }
   
   & td {
-    padding: 5px 0;
+    padding: 10px;
     border-bottom: 1px solid #fff;
   }
   
@@ -60,5 +58,83 @@
   
   & tr th:last-of-type {
     border-top-right-radius: 10px;
+  }
+}
+
+.product-specification__table--forex {
+  
+  & th {
+    background: $mc;
+  }
+  
+  & tr {
+    background: #4b426d;
+  }
+}
+
+.product-specification__table--commodities {
+  
+  
+  & th {
+    background: #cf8800;
+  }
+  
+  & tr {
+    background: #e29706;
+  }
+}
+
+.product-specification__table--metals {
+  
+  & th {
+    background: #c7b299;
+  }
+  
+  & tr {
+    background: #e2ccb1;
+  }
+}
+
+.product-specification__table--bonds {
+  
+  & th {
+    background: #00bff3;
+  }
+  
+  & tr {
+    background: #2bd1ff;
+  }
+}
+
+.product-specification__table--indices-c {
+  
+  & th {
+    background: #007ede;
+  }
+  
+  & tr {
+    background: #0992f9;
+  }
+}
+
+.product-specification__table--indices-f {
+  
+  & th {
+    background: #130085;
+  }
+  
+  & tr {
+    background: #2e13d3;
+  }
+}
+
+.product-specification__table--stocks {
+  
+  & th {
+    background: #1cbbb4;
+  }
+  
+  & tr {
+    background: #24e5dd;
   }
 }

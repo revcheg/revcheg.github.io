@@ -1796,26 +1796,66 @@ button[type="submit"] {
     .product-specification .tab__content--forex, .product-specification .tab__content--commodities, .product-specification .tab__content--metals, .product-specification .tab__content--bonds, .product-specification .tab__content--indices-c, .product-specification .tab__content--indices-f, .product-specification .tab__content--stocks {
       background: inherit; }
 
-.product-specification__forex {
+.product-specification__table {
   width: 100%;
   color: #fff;
   text-align: center;
   border-collapse: collapse; }
-  .product-specification__forex th {
-    padding: 15px 0;
+  .product-specification__table th {
+    padding: 15px;
     font-size: 14px;
-    border-bottom: 3px solid #fff;
-    background: #2e2963; }
-  .product-specification__forex tr {
-    font-size: 13px;
-    background: #4b426d; }
-  .product-specification__forex td {
-    padding: 5px 0;
+    border-bottom: 3px solid #fff; }
+  .product-specification__table tr {
+    font-size: 13px; }
+  .product-specification__table td {
+    padding: 10px;
     border-bottom: 1px solid #fff; }
-  .product-specification__forex tr th:first-of-type {
+  .product-specification__table tr th:first-of-type {
     border-top-left-radius: 10px; }
-  .product-specification__forex tr th:last-of-type {
+  .product-specification__table tr th:last-of-type {
     border-top-right-radius: 10px; }
+
+.product-specification__table--forex th {
+  background: #2e2963; }
+
+.product-specification__table--forex tr {
+  background: #4b426d; }
+
+.product-specification__table--commodities th {
+  background: #cf8800; }
+
+.product-specification__table--commodities tr {
+  background: #e29706; }
+
+.product-specification__table--metals th {
+  background: #c7b299; }
+
+.product-specification__table--metals tr {
+  background: #e2ccb1; }
+
+.product-specification__table--bonds th {
+  background: #00bff3; }
+
+.product-specification__table--bonds tr {
+  background: #2bd1ff; }
+
+.product-specification__table--indices-c th {
+  background: #007ede; }
+
+.product-specification__table--indices-c tr {
+  background: #0992f9; }
+
+.product-specification__table--indices-f th {
+  background: #130085; }
+
+.product-specification__table--indices-f tr {
+  background: #2e13d3; }
+
+.product-specification__table--stocks th {
+  background: #1cbbb4; }
+
+.product-specification__table--stocks tr {
+  background: #24e5dd; }
 
 .resources {
   padding: 50px 0 100px 0; }
