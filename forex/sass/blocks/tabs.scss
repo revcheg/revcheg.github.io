@@ -33,27 +33,27 @@
   }
   
   &--commodities {
-    border: 5px solid green;
+    border: 5px solid #cf8800;
   }
   
   &--metals {
-    border: 5px solid #9b9b9b;
+    border: 5px solid #c7b299;
   }
   
   &--bonds {
     border: 5px solid #00bff3;
   }
   
-  &--indices {
-    border: 5px solid orange;
+  &--indices-c {
+    border: 5px solid #007ede;
   }
   
   &--indices-f {
-    border: 5px solid orange;
+    border: 5px solid #130085;
   }
   
   &--stocks {
-    border: 5px solid tomato;
+    border: 5px solid #1cbbb4;
   }
 }
 
@@ -105,11 +105,11 @@
   background: #4b426d;
   
   &:hover {
-    background: green;
+    background: #cf8800;
   }
   
   &:focus {
-    background: green;
+    background: #cf8800;
   }
 }
 
@@ -118,11 +118,11 @@
   background: #4b426d;
   
   &:hover {
-    background: #9b9b9b;
+    background: #c7b299;
   }
   
   &:focus {
-    background: #9b9b9b;
+    background: #c7b299;
   }
 }
 
@@ -139,16 +139,16 @@
   }
 }
 
-.indices {
+.indices-c {
   color: #fff;
   background: #4b426d;
   
   &:hover {
-    background: orange;
+    background: #007ede;
   }
   
   &:focus {
-    background: orange;
+    background: #007ede;
   }
 }
 
@@ -157,11 +157,11 @@
   background: #4b426d;
   
   &:hover {
-    background: orange;
+    background: #130085;
   }
   
   &:focus {
-    background: orange;
+    background: #130085;
   }
 }
 
@@ -170,11 +170,11 @@
   background: #4b426d;
   
   &:hover {
-    background: tomato;
+    background: #1cbbb4;
   }
   
   &:focus {
-    background: tomato;
+    background: #1cbbb4;
   }
 }
 

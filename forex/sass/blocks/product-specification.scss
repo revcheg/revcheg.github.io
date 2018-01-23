@@ -3,5 +3,29 @@
   
   & .tab__content {
     padding: 10px;
+    color: #000e55;
+    
+    & h3, 
+      p, 
+      ul {
+      opacity: 0.8;
+    }
+    
+    & h3 {
+      font-size: 30px;
+      font-weight: 400;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    
+    &--forex,
+    &--commodities,
+    &--metals,
+    &--bonds,
+    &--indices-c,
+    &--indices-f,
+    &--stocks {
+      background: inherit;
+    }
   }
 }

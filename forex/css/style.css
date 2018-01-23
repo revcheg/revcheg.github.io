@@ -1697,17 +1697,17 @@ button[type="submit"] {
     display: block;
     border: 5px solid #2e2963; }
   .tab__content--commodities {
-    border: 5px solid green; }
+    border: 5px solid #cf8800; }
   .tab__content--metals {
-    border: 5px solid #9b9b9b; }
+    border: 5px solid #c7b299; }
   .tab__content--bonds {
     border: 5px solid #00bff3; }
-  .tab__content--indices {
-    border: 5px solid orange; }
+  .tab__content--indices-c {
+    border: 5px solid #007ede; }
   .tab__content--indices-f {
-    border: 5px solid orange; }
+    border: 5px solid #130085; }
   .tab__content--stocks {
-    border: 5px solid tomato; }
+    border: 5px solid #1cbbb4; }
 
 .tab__bronze th {
   background: #c47935; }
@@ -1734,17 +1734,17 @@ button[type="submit"] {
   color: #fff;
   background: #4b426d; }
   .commodities:hover {
-    background: green; }
+    background: #cf8800; }
   .commodities:focus {
-    background: green; }
+    background: #cf8800; }
 
 .metals {
   color: #fff;
   background: #4b426d; }
   .metals:hover {
-    background: #9b9b9b; }
+    background: #c7b299; }
   .metals:focus {
-    background: #9b9b9b; }
+    background: #c7b299; }
 
 .bonds {
   color: #fff;
@@ -1754,34 +1754,46 @@ button[type="submit"] {
   .bonds:focus {
     background: #00bff3; }
 
-.indices {
+.indices-c {
   color: #fff;
   background: #4b426d; }
-  .indices:hover {
-    background: orange; }
-  .indices:focus {
-    background: orange; }
+  .indices-c:hover {
+    background: #007ede; }
+  .indices-c:focus {
+    background: #007ede; }
 
 .indices-f {
   color: #fff;
   background: #4b426d; }
   .indices-f:hover {
-    background: orange; }
+    background: #130085; }
   .indices-f:focus {
-    background: orange; }
+    background: #130085; }
 
 .stocks {
   color: #fff;
   background: #4b426d; }
   .stocks:hover {
-    background: tomato; }
+    background: #1cbbb4; }
   .stocks:focus {
-    background: tomato; }
+    background: #1cbbb4; }
 
 .product-specification {
   padding: 50px 0; }
   .product-specification .tab__content {
-    padding: 10px; }
+    padding: 10px;
+    color: #000e55; }
+    .product-specification .tab__content h3,
+    .product-specification .tab__content p,
+    .product-specification .tab__content ul {
+      opacity: 0.8; }
+    .product-specification .tab__content h3 {
+      font-size: 30px;
+      font-weight: 400;
+      text-align: center;
+      text-transform: uppercase; }
+    .product-specification .tab__content--forex, .product-specification .tab__content--commodities, .product-specification .tab__content--metals, .product-specification .tab__content--bonds, .product-specification .tab__content--indices-c, .product-specification .tab__content--indices-f, .product-specification .tab__content--stocks {
+      background: inherit; }
 
 .resources {
   padding: 50px 0 100px 0; }
