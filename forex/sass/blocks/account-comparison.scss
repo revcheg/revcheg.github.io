@@ -21,13 +21,13 @@
 
 .account-comparison__control {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding-top: 50px;
   padding-bottom: 20px;
   
   & button {
-    margin: 0 5px;
-    padding: 10px 50px;
+    // margin: 0 5px;
+    padding: 10px 45px;
     color: #fff;
     font-size: 15px;
     font-weight: bold;
@@ -65,5 +65,19 @@
   &:hover {
     color: $mc;
     background: #fff;
+  }
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .account-comparison__control {
+    flex-direction: column;
+    
+    & button {
+      width: 220px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
   }
 }

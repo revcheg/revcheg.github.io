@@ -1636,14 +1636,12 @@ button[type="submit"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   padding-top: 50px;
   padding-bottom: 20px; }
   .account-comparison__control button {
-    margin: 0 5px;
-    padding: 10px 50px;
+    padding: 10px 45px;
     color: #fff;
     font-size: 15px;
     font-weight: bold;
@@ -1666,6 +1664,17 @@ button[type="submit"] {
 .account-comparison__free:hover {
   color: #2e2963;
   background: #fff; }
+
+@media screen and (max-width: 768px) {
+  .account-comparison__control {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .account-comparison__control button {
+      width: 220px;
+      margin: auto;
+      margin-bottom: 20px; } }
 
 .tab {
   display: -webkit-box;
@@ -1777,6 +1786,21 @@ button[type="submit"] {
     background: #1cbbb4; }
   .stocks:focus {
     background: #1cbbb4; }
+
+@media screen and (max-width: 768px) {
+  .tab {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .tab button {
+      margin-bottom: 5px;
+      border-radius: 0; }
+      .tab button.stocks {
+        margin-bottom: 0; }
+  table {
+    display: block;
+    overflow-x: auto; } }
 
 .product-specification {
   padding: 50px 0; }
