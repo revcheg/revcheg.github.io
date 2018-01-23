@@ -1,0 +1,127 @@
+.trading-specification {
+  padding: 50px 0;
+  
+  & .tab__content {
+    padding: 10px;
+    
+    &--forex,
+    &--commodities,
+    &--metals,
+    &--bonds,
+    &--indices-c,
+    &--indices-f,
+    &--stocks {
+      background: inherit;
+    }
+  }
+}
+
+.trading-specification__table {
+  display: block;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  border-collapse: collapse;
+  overflow-x: auto;
+	
+  & th {
+    padding: 15px;
+    font-size: 14px;
+    border-bottom: 3px solid #fff;
+  }
+  
+  & tr {
+    font-size: 13px;
+  }
+  
+  & td {
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+  }
+  
+  & tr th:first-of-type {
+    border-top-left-radius: 10px;
+  }
+  
+  & tr th:last-of-type {
+    border-top-right-radius: 10px;
+  }
+}
+
+.trading-specification__table--forex {
+  
+  & th {
+    background: $mc;
+  }
+  
+  & tr {
+    background: #4b426d;
+  }
+}
+
+.trading-specification__table--commodities {
+  
+  
+  & th {
+    background: #cf8800;
+  }
+  
+  & tr {
+    background: #e29706;
+  }
+}
+
+.trading-specification__table--metals {
+  
+  & th {
+    background: #c7b299;
+  }
+  
+  & tr {
+    background: #e2ccb1;
+  }
+}
+
+.trading-specification__table--bonds {
+  
+  & th {
+    background: #00bff3;
+  }
+  
+  & tr {
+    background: #2bd1ff;
+  }
+}
+
+.trading-specification__table--indices-c {
+  
+  & th {
+    background: #007ede;
+  }
+  
+  & tr {
+    background: #0992f9;
+  }
+}
+
+.trading-specification__table--indices-f {
+  
+  & th {
+    background: #130085;
+  }
+  
+  & tr {
+    background: #2e13d3;
+  }
+}
+
+.trading-specification__table--stocks {
+  
+  & th {
+    background: #1cbbb4;
+  }
+  
+  & tr {
+    background: #24e5dd;
+  }
+}

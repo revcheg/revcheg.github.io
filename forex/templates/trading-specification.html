@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trading Specification - Forex 24</title>
+  <link rel="stylesheet" href="../css/style.min.css">
+</head>
+<body>
+  <header class="page-header  page-header--temp">
+    <nav class="page-header__main-nav  page-header__main-nav--closed  page-header__main-nav--nojs">
+      <button class="page-header__toggle" type="button">Open menu</button>
+      <div class="container">
+        <div class="page-header__flex">
+          <!-- <a href="../index.html">
+            <img src="../img/logo.png" alt="Forex24">
+          </a> -->
+          <ul class="page-header__menu">
+            <li class="page-header__item"><a href="../index.html">Home</a></li>
+            <li class="page-header__item"><a class="page-header__item--active" href="#">About</a></li>
+            <li class="page-header__item"><a href="#">Trading</a></li>
+            <li class="page-header__item"><a href="#">Resources</a></li>
+            <li class="page-header__item"><a href="#">Partners</a></li>
+            <li class="page-header__item"><a href="#">Contact Us</a></li>
+          </ul>
+          <div class="page-header__user-menu">
+            <a class="page-header__link  page-header__link--violet" href="#">Open live account</a>
+            <a class="page-header__link  page-header__link--black" href="#">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="sub-menu">
+    <div class="container">
+      <div class="sub-menu__flex">
+        <p>Trading Specification</p>
+        <div class="sub-menu__box  sub-menu__box--about">
+          <a class="sub-menu__logo" href="../index.html">
+            <img src="../img/logo-menu.png" alt="Forex24">
+          </a>
+          <a href="#">ACCOUNT TYPES</a>
+          <a href="#">ACCOUNT COMPARISON</a>
+          <a href="#">trading SPECIFICATION</a>
+          <a href="#">TRADING SPECIFICATION</a>
+          <a href="#">FUNDING AND WITHDROVAL</a>
+          <a href="#">ANNOUNCEMENTS</a>
+          <div class="sub-menu__social">
+            <a class="sub-menu__link  sub-menu__link--facebook" href="#"></a>
+            <a class="sub-menu__link  sub-menu__link--google" href="#"></a>
+            <a class="sub-menu__link  sub-menu__link--youtube" href="#"></a>
+            <a class="sub-menu__link  sub-menu__link--linkedin" href="#"></a>
+            <a class="sub-menu__link  sub-menu__link--twitter" href="#"></a>
+          </div>
+          <hr>
+          <button class="sub-menu__arrow"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="trading-specification">
+    <div class="container">
+      <div class="tab">
+        <button class="tab__link  forex active" onclick="openTab(event, 'Forex')" autofocus>Forex</button>
+        <button class="tab__link  commodities" onclick="openTab(event, 'Commodities')">Commodities</button>
+        <button class="tab__link  metals" onclick="openTab(event, 'Precious Metals')">Precious Metals</button>
+        <button class="tab__link  bonds" onclick="openTab(event, 'Bonds')">Bonds</button>
+        <button class="tab__link  indices-c" onclick="openTab(event, 'Indices Cash')">Indices Cash</button>
+        <button class="tab__link  indices-f" onclick="openTab(event, 'Indices Future')">Indices Future</button>
+        <button class="tab__link  stocks" onclick="openTab(event, 'Stocks')">Stocks</button>
+      </div>
+      <div id="Forex" class="tab__content  tab__content--forex">
+        <table class="trading-specification__table  trading-specification__table--forex">
+          <tr>
+            <th>Symbol</th>
+            <th>Mini Bronze<br>(Average Floating Spreads in Pips)</th>
+            <th>Classic Silver<br>(Average Floating Spreads in Pips)</th>
+            <th>Premium Gold<br>(Average Floating Spreads in Pips)</th>
+            <th>Swap Free<br>(Average Floating Spreads in Pips)</th>
+            <th>Swap Long</th>
+            <th>Swap Short</th>
+            <th>Decimal Places</th>
+            <th>Tick Size</th>
+            <th>Pip Size</th>
+            <th>Trading Hours<br>(Server Time)</th>
+          </tr>
+          <tr>
+            <td>AUD/CHF</td>
+            <td>3</td>
+            <td>1,5</td>
+            <td>1,3</td>
+            <td>3</td>
+            <td>2,27</td>
+            <td>-9,98</td>
+            <td>5</td>
+            <td>0,00001</td>
+            <td>0,00001</td>
+            <td>Mon-Fri 00:00-23:58</td>
+          </tr>
+        </table>
+      </div>
+      <div id="Commodities" class="tab__content  tab__content--commodities">
+        <table class="trading-specification__table  trading-specification__table--commodities">
+          <tr>
+            <th>Symbol</th>
+            <th>Description</th>
+            <th>Explanation</th>
+          </tr>
+          <tr>
+            <td>NGAS</td>
+            <td>US Natural Gas / USD</td>
+            <td>Natural gas is one of the cleanest and safest energy supplies available in the world. Natural gas is in greatest demand during the winter season to meet commercial and domestic heating needs. It is one of the world’s most appealing globally traded commodities.</td>
+          </tr>
+          <tr>
+            <td>WTI Crude Oil</td>
+            <td>Spot US WTI Oil /USD</td>
+            <td>West Texas Intermediate (WTI), also known as Texas light sweet, is a grade of crude oil used as a benchmark in oil pricing. This grade is described as light because of its relatively low density, and sweet because of its low sulfur content.</td>
+          </tr>
+          <tr>
+            <td>Brend Crude Oil</td>
+            <td>Spot Brend Crude Oil/ USD</td>
+            <td>Brent Crude is a major trading classification of sweet light crude oil that serves as a major benchmark price for purchases of oil worldwide. Brent is the leading global price benchmark for Atlantic basin crude oils. It is used to price two thirds of the world’s internationally tradedcrude oil supplies.</td>
+          </tr>
+          <tr>
+            <td>London Gasoil</td>
+            <td>London Gasoil / USD</td>
+            <td>Gasoil is a group of petroleum distillation tradings having boiling points between kerosene and lubricating oil.</td>
+          </tr>
+          <tr>
+            <td>US Cocoa</td>
+            <td>US Cocoa/USD</td>
+            <td>The cocoa bean, also cacao bean or simply cocoa or cacao, is the dried and fully fermented fatty seed of Theobroma cacao, from which cocoa solids and cocoa butter are extracted. They are the basis of chocolate, as well as many Mesoamerican foods such as mole and tejate.</td>
+          </tr>
+        </table>
+      </div>
+      <div id="Precious Metals" class="tab__content  tab__content--metals">
+        <table class="trading-specification__table  trading-specification__table--metals">
+          <tr>
+            <th>Symbol</th>
+            <th>Description</th>
+            <th>Explanation</th>
+          </tr>
+          <tr>
+            <td>XAU/USD</td>
+            <td>GOLD USD</td>
+            <td>The Gold price is quoted as US Dollar per Troy Ounce. Since 1919 the most common benchmark for the price of gold has been the London gold fixing, a twice-daily telephone meeting of representatives from five bullion-trading firms of the London bullion market. Gold is traded continuously throughout the world based on the intra-day spot price, derived from over-the-counter gold-trading markets around the world (code “XAU”).</td>
+          </tr>
+          <tr>
+            <td>XAG/USD</td>
+            <td>SILVER USD</td>
+            <td>The price of silver is driven by speculation and supply and demand; mainly by large traders or investors, short selling, industrial, consumer and commercial demand, and to hedge against financial stress. Compared to gold, the price of silver is notoriously volatile. This is because of lower market liquidity, and demand fluctuations between industrial and store of value uses. At times this can cause wide ranging valuations in the market creating volatility.</td>
+          </tr>
+          <tr>
+            <td>Palladium</td>
+            <td>Palladium/ USD</td>
+            <td>Palladium is a chemical element with symbol Pd and atomic number 46. It is a rare and lustrous silvery-white metal discovered in 1803 by William Hyde Wollaston. He named it after the asteroid Pallas, which was itself named after the epithet of the Greek goddess Athena, acquired by her when she slew Pallas. Palladium, platinum, rhodium, ruthenium, iridium and osmium form a group of elements referred to as the platinum group metals (PGMs). These have similar chemical properties, but palladium has the lowest melting point and is the least dense of them.</td>
+          </tr>
+        </table>
+      </div>
+      <div id="Bonds" class="tab__content  tab__content--bonds">
+        <table class="trading-specification__table  trading-specification__table--bonds">
+          <tr>
+            <th>Symbol</th>
+            <th>Description</th>
+            <th>Explanation</th>
+          </tr>
+          <tr>
+            <td>Bund</td>
+            <td>Bund/EUR</td>
+            <td>A 10-year treasury note is a debt obligation issued by the United States government that matures in 10 years. A 10-year Treasury note pays interest at a fixed rate once every six months and pays the face value to the holder at maturity. An advantage of investing in 10-year Treasury notes, and other federal government securities, is that the interest payments are exempt from state and local income tax. However, they are still taxable at the federal level.</td>
+          </tr>
+          <tr>
+            <td>US 10 Yr Tnote</td>
+            <td>US 10 Yr Tnote/USD</td>
+            <td>A 10-year treasury note is a debt obligation issued by the United States government that matures in 10 years. A 10-year Treasury note pays interest at a fixed rate once every six months and pays the face value to the holder at maturity. An advantage of investing in 10-year Treasury notes, and other federal government securities, is that the interest payments are exempt from state and local income tax. However, they are still taxable at the federal level.</td>
+          </tr>
+        </table>
+      </div>
+      <div id="Indices Cash" class="tab__content  tab__content--indices-c">
+        <table class="trading-specification__table  trading-specification__table--indices-c">
+          <tr>
+            <th>Symbol</th>
+            <th>Description</th>
+            <th>Explanation</th>
+          </tr>
+          <tr>
+            <td>China A50 Index</td>
+            <td>China A50/CNY</td>
+            <td>FTSE China A50 Index (was known as FTSE–Xinhua China A50 Index) is a stock market index by FTSE Group (FTSE–Xinhua joint venture until 2010), the components were chose from Shanghai Stock Exchange and Shenzhen Stock Exchange, which issue A-share. B-share (share for foreigners) were not included.</td>
+          </tr>
+          <tr>
+            <td>Hong Kong 50 Index</td>
+            <td>Hang Seng/HKD</td>
+            <td>The Hang Seng Index is a freefloat-adjusted market capitalization-weighted stock market index in Hong Kong. It is used to record and monitor daily changes of the largest companies of the Hong Kong stock market and is the main indicator of the overall market performance in Hong Kong.</td>
+          </tr>
+          <tr>
+            <td>India 50 Index</td>
+            <td>NIFTY/USD</td>
+            <td>The NIFTY 50 index is National Stock Exchange of India’s benchmark stock market index for Indian equity market, launched on 21st April 1996. Nifty is owned and managed by India Index Services and tradings ), which is a wholly owned subsidiary of the NSE Strategic Investment Corporation Limited.</td>
+          </tr>
+          <tr>
+            <td>Singapore Blue Chip Index</td>
+            <td>FTSE/SGD</td>
+            <td>The FTSE Straits Times Index (STI) is a capitalisation-weighted stock market indexthat is regarded as the benchmark index for the Singapore stock market. It tracks the performance of the top 30 companies listed on the Singapore Exchange.</td>
+          </tr>
+          <tr>
+            <td>US Dollar Index</td>
+            <td>US Dollar Index/USD</td>
+            <td>The U.S. Dollar Index is an index of the value of the United States dollar relative to a basket of foreign currencies, often referred to as a basket of U.S. trade partners’ currencies.</td>
+          </tr>
+        </table>
+      </div>
+      <div id="Indices Future" class="tab__content  tab__content--indices-f">
+        <table class="trading-specification__table  trading-specification__table--indices-f">
+          <tr>
+            <th>Symbol</th>
+            <th>Description</th>
+            <th>Explanation</th>
+          </tr>
+          <tr>
+            <td>Austalian 200 Index</td>
+            <td>S&P/ASX 200 / AUD</td>
+            <td>Australian Securities Exchange Ltd, or ASX Limited (ASX), is an Australian public company(ASX: ASX) that operates Australia’s primary securities exchange, the Australian Securities Exchange (sometimes referred to outside of Australia as the Sydney Stock Exchange). It was formed on 1 April 1987, through incorporation under legislation of the Australian Parliament as an amalgamation of the six state securities exchanges, and merged with the Sydney Futures Exchange in 2006.</td>
+          </tr>
+          <tr>
+            <td>Euro 50 Index</td>
+            <td>EUROSTOXX50/ EUR</td>
+            <td>The EURO STOXX 50 is a stock index of Eurozone stocks designed by STOXX, an index provider owned by Deutsche Börse Group. According to STOXX, its goal is “to provide a blue-c</td>
+          </tr>
+          <tr>
+            <td>France 40 Index</td>
+            <td>CAC40/EUR</td>
+            <td>The CAC 40 (French: CAC quarante is a benchmark French stock market index.The index represents a capitalization-weighted measure of the 40 most significant values among the 100 highest market caps on the Euronext Paris</td>
+          </tr>
+          <tr>
+            <td>German 30 Index</td>
+            <td>DAX/EUR</td>
+            <td>The DAX (German stock index) is a blue chip stockmarket index consisting of the 30 major German companies trading on the Frankfurt Stock Exchange</td>
+          </tr>
+          <tr>
+            <td>Japan 225 Index</td>
+            <td>JAPAN 225 / JPY</td>
+            <td>The JPN225’sor Nikkei225 more commonly called the Nikkei, the Nikkei index, or the Nikkei Stock Average. is a stock market index for the Tokyo Stock Exchange (TSE). It has been calculated daily by the Nihon Keizai Shimbun (Nikkei) newspaper since 1950. It is a price-weighted average (the unit is yen), and the components are reviewed once a year. Currently, the Nikkei is the most widely quoted average of Japanese equities, similar to the Dow Jones Industrial Average. In fact, it was known as the “Nikkei Dow Jones Stock Average” from 1975 to 1985.</td>
+          </tr>
+        </table>
+      </div>
+      <div id="Stocks" class="tab__content  tab__content--stocks">
+        <table class="trading-specification__table  trading-specification__table--stocks">
+          <tr>
+            <th>Symbol</th>
+            <th>Description</th>
+            <th>Explanation</th>
+          </tr>
+          <tr>
+            <td>APPLE</td>
+            <td>UsStocks</td>
+            <td>APPLE Inc.</td>
+          </tr>
+          <tr>
+            <td>ADIDAS</td>
+            <td>EURO Stocks</td>
+            <td>Adidas AG</td>
+          </tr>
+          <tr>
+            <td>AIRBUS</td>
+            <td>EURO Stocks</td>
+            <td>AIRBUS</td>
+          </tr>
+          <tr>
+            <td>ALIBABA</td>
+            <td>UsStocks</td>
+            <td>ALIBABA</td>
+          </tr>
+          <tr>
+            <td>ALLIANZ</td>
+            <td>EURO Stocks</td>
+            <td>Allianz AG</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+  <section class="payment  payment--temp">
+    <div class="payment__box"></div>
+  </section>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__flex">
+        <div class="page-footer__left-column">
+          <b>Risk warning</b>
+        </div>
+        <div class="page-footer__right-column">
+          <p>Trading in Contracts for Difference (‘CFDs’) carries a high level of risk and can result in the loss of all your investment. As such, CFDs may not be appropriate for all investors. You should not invest money that you cannot afford to lose. Before deciding to trade, you should become aware of all the risks associated with CFD trading, and seek advice from an independent and suitably licensed financial advisor. Under no circumstances shall we have any liability to any person or entity for (a) any loss or damage in whole or part caused by, resulting from, or relating to any transactions related to CFDs or (b) any direct, indirect, special, consequential or incidental damages whatsoever. For more information about the risks associated with trading CFDs please find and read our <a href="#">‘General Risk Disclosure.’</a><br><br>Cryptologi Global does not provide services to residents of the USA, Canada, Japan, North Korea, Iran, Belgium and some other regions.</p>  
+        </div>
+      </div>
+      <div class="page-footer__flex">
+        <div class="page-footer__left-column">
+          <b>QUICK LINKS</b>
+        </div>
+        <div class="page-footer__right-column">
+          <a href="#">Licenses</a>
+          <a href="#">Account Types</a>
+          <a href="#">Funding & Withdrawal</a>
+          <a href="#">trading Specification </a>
+          <a href="#">Economic Calendar</a>
+          <a href="#">Legal Documents</a>
+          <a href="#">Partners</a>
+          <a href="#">Faq</a>
+        </div>
+      </div>
+      <div class="page-footer__flex">
+        <div class="page-footer__left-column">
+          <b>SOCIAL MEDIA</b>
+        </div>
+        <div class="page-footer__right-column  page-footer__right-column--link">
+          <a href="#" class="page-footer__facebook">Facebook</a>
+          <a href="#" class="page-footer__linked">LinkedIn</a>
+          <a href="#" class="page-footer__twitter">Twitter</a>
+          <a href="#" class="page-footer__google">Google+</a>
+        </div>
+      </div>
+      <div class="page-footer__flex">
+        <div class="page-footer__left-column">
+          <b>contact info</b>
+        </div>
+        <div class="page-footer__right-column  page-footer__right-column--flex">
+          <a href="#" class="page-footer__link">Contact Us</a>
+          <div class="page-footer__contact">
+            <b>Customer Service</b>
+            <p>CY Number: +35725000199</p>
+          </div>
+          <div class="page-footer__contact">
+            <b>Support</b>
+            <p>e-mail: support@forex24.com</p>
+          </div>
+          <p class="page-footer__text">UK Number: +442080891644</p>
+        </div>
+      </div>
+      <div class="page-footer__copyright">
+        <p>© 2017 All rights reserved LYDYA FINANCIAL LTD.<br>Located at 155 Ayias Fylaxeos, Ersi Court Suite 202, 3083 Limassol, Cyprus.</p>
+        <p>Cryptologi Global is a brand owned and operated by Lydya Financial Ltd, a Cyprus Investment Firm (CIF) regulated and supervised by the Cyprus Securities and Exchange Commission (CySEC) with CIF Licence number 300/16 and Company registration number HE334292.</p>
+        <p>The Company is also registered with: FCA in UK with reg. no. 782501; BaFin in Germany with reg. no. 1349943; CONSOB in Italy with reg. no. 4624; ACP in France with reg. no. 75980; CNMV in Spain with reg. no. 4373.</p>
+      </div>
+    </div>
+  </footer>
+<!-- <script src="js/jquery.min.js"></script> -->
+<!-- <script src="js/slick/slick.min.js"></script> -->
+<script src="../js/mobile-menu.js"></script>
+<script src="../js/tabs.js"></script>
+</body>
+</html>
