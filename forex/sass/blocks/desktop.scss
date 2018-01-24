@@ -34,3 +34,30 @@
     font-weight: 400;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .desktop {
+    margin-top: 150px;
+    background: url('../img/desktop-bg.png') no-repeat top;
+  }
+  
+  .desktop__right {
+    width: 450px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .desktop {
+    margin-top: 0px;
+    background: url('../img/desktop-bg.png') no-repeat left;
+  }
+  
+  .desktop__right {
+    width: auto;
+    font-weight: bold;
+    
+    & ul {
+      font-weight: bold;
+    }
+  }
+}

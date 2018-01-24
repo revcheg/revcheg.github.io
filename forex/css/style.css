@@ -453,6 +453,12 @@ body {
 @media screen and (max-width: 768px) {
   .sub-menu p {
     margin-top: 35px; }
+  .sub-menu--forex p {
+    margin-top: 20px; }
+  .sub-menu__flex--platform {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .sub-menu__box {
     display: none; } }
 
@@ -2179,6 +2185,24 @@ button[type="submit"] {
   height: 76px;
   background: url("../img/meta-trader.png") no-repeat right; }
 
+@media screen and (max-width: 768px) {
+  .meta__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .meta__left {
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 300px; }
+  .meta__right {
+    text-align: center; }
+    .meta__right p {
+      width: auto;
+      color: #fff; }
+  .meta__trader {
+    background: url("../img/meta-trader.png") no-repeat center; } }
+
 .features__flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2208,7 +2232,7 @@ button[type="submit"] {
   width: 180px;
   padding-top: 100px;
   text-align: center;
-  background: url("../img/features-download.png") no-repeat top; }
+  background: url("../img/mobile-download.png") no-repeat top; }
   .features__box p {
     margin-bottom: 30px; }
   .features__box a {
@@ -2230,6 +2254,35 @@ button[type="submit"] {
     -webkit-box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.6);
     box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.6); }
 
+@media screen and (max-width: 1200px) {
+  .features__flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .features__download {
+    margin: auto;
+    padding-top: 50px; }
+  .features__box {
+    padding-top: 130px; }
+    .features__box p {
+      margin-bottom: 30px;
+      color: #f2c318; }
+    .features__box p > a {
+      color: #f2c318;
+      text-decoration: none; } }
+
+@media screen and (max-width: 768px) {
+  .features h3 {
+    text-align: center; }
+  .features__list ul {
+    width: auto; }
+  .features__download {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .features__box {
+    margin-bottom: 50px; } }
+
 .trader {
   margin-left: 50px; }
   .trader h3 {
@@ -2246,12 +2299,30 @@ button[type="submit"] {
   justify-content: flex-start;
   padding-bottom: 50px; }
 
+@media screen and (max-width: 1200px) {
+  .trader {
+    width: 600px;
+    margin-left: 0;
+    margin: auto; } }
+
+@media screen and (max-width: 768px) {
+  .trader {
+    width: auto; }
+    .trader h3 {
+      text-align: center; } }
+
 .edge {
   width: 600px;
   margin: auto;
   padding-bottom: 50px; }
   .edge ul {
     width: auto; }
+
+@media screen and (max-width: 768px) {
+  .edge {
+    width: auto; }
+    .edge h3 {
+      text-align: center; } }
 
 .desktop {
   margin-top: 350px;
@@ -2287,6 +2358,23 @@ button[type="submit"] {
     padding-left: 25px;
     color: #000;
     font-weight: 400; }
+
+@media screen and (max-width: 1200px) {
+  .desktop {
+    margin-top: 150px;
+    background: url("../img/desktop-bg.png") no-repeat top; }
+  .desktop__right {
+    width: 450px; } }
+
+@media screen and (max-width: 768px) {
+  .desktop {
+    margin-top: 0px;
+    background: url("../img/desktop-bg.png") no-repeat left; }
+  .desktop__right {
+    width: auto;
+    font-weight: bold; }
+    .desktop__right ul {
+      font-weight: bold; } }
 
 .mobile {
   padding-top: 50px; }
@@ -2380,3 +2468,59 @@ button[type="submit"] {
   height: 569px;
   background: url("../img/mobile-right.png") no-repeat bottom;
   background-size: contain; }
+
+@media screen and (max-width: 1200px) {
+  .mobile__flex-second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 96%; }
+  .mobile__first {
+    -ms-flex-item-align: center;
+    align-self: center; }
+    .mobile__first p {
+      text-align: center; }
+  .mobile__second {
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 600px;
+    height: 569px;
+    margin-top: 70px;
+    background: url("../img/mobile-right.png") no-repeat bottom;
+    background-size: contain; } }
+
+@media screen and (max-width: 768px) {
+  .mobile h2 {
+    text-align: center; }
+  .mobile b {
+    margin-bottom: 30px;
+    text-align: center; }
+  .mobile__title {
+    width: auto;
+    text-align: center; }
+  .mobile__flex-first {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: auto; }
+  .mobile__flex-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .mobile__box {
+    width: auto;
+    margin-bottom: 50px; }
+  .mobile__first p {
+    width: auto; }
+  .mobile__second {
+    width: 100%;
+    background-size: cover; } }

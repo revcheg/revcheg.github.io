@@ -15,3 +15,21 @@
   justify-content: flex-start;
   padding-bottom: 50px;
 }
+
+@media screen and ($tablet-widths) {
+  .trader {
+    width: 600px;
+    margin-left: 0;
+    margin: auto;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .trader {
+    width: auto;
+    
+    & h3 {
+      text-align: center;
+    }
+  }
+}

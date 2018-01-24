@@ -18,7 +18,7 @@
   width: 180px;
   padding-top: 100px;
   text-align: center;
-  background: url('../img/features-download.png') no-repeat top;
+  background: url('../img/mobile-download.png') no-repeat top;
   
   & p {
     margin-bottom: 30px;
@@ -42,5 +42,54 @@
     color: #fff;
     background: $mc;
     box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.6);
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .features__flex {
+    flex-wrap: wrap;
+  }
+  
+  .features__download {
+    margin: auto;
+    padding-top: 50px;
+  }
+  
+  .features__box {
+    padding-top: 130px;
+    
+    & p {
+      margin-bottom: 30px;
+      color: $sc;
+    }
+    
+    & p > a {
+      color: $sc;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .features {
+    
+    & h3 {
+      text-align: center;
+    }
+  }
+  
+  .features__list {
+    
+    & ul {
+      width: auto;
+    }
+  }
+  
+  .features__download {
+    flex-direction: column;
+  }
+  
+  .features__box {
+    margin-bottom: 50px;
   }
 }

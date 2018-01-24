@@ -108,3 +108,74 @@
   background: url('../img/mobile-right.png') no-repeat bottom;
   background-size: contain;
 }
+
+@media screen and ($tablet-widths) {
+  .mobile__flex-second {
+    flex-direction: column;
+    width: 96%;
+  }
+  
+  .mobile__first {
+    align-self: center;
+    
+    & p {
+      text-align: center;
+    }
+  }
+  
+  .mobile__second {
+    align-self: center;
+    width: 600px;
+    height: 569px;
+    margin-top: 70px;
+    background: url('../img/mobile-right.png') no-repeat bottom;
+    background-size: contain;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .mobile {
+    
+    & h2 {
+      text-align: center;
+    }
+    
+    & b {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+  
+  .mobile__title {
+    width: auto;
+    text-align: center;
+  }
+  
+  .mobile__flex-first {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  
+  .mobile__flex-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mobile__box {
+    width: auto;
+    margin-bottom: 50px;
+  }
+  
+  .mobile__first {
+    
+    & p {
+      width: auto;
+    }
+  }
+  
+  .mobile__second {
+    width: 100%;
+    background-size: cover;
+  }
+}

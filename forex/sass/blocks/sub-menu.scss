@@ -242,6 +242,17 @@
     }
   }
   
+  .sub-menu--forex {
+    
+    & p {
+      margin-top: 20px;
+    }
+  }
+  
+  .sub-menu__flex--platform {
+    justify-content: center;
+  }
+  
   .sub-menu__box {
     display: none;
   }

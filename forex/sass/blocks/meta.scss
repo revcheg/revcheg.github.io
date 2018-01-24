@@ -30,3 +30,29 @@
   height: 76px;
   background: url('../img/meta-trader.png') no-repeat right;
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .meta__flex {
+    flex-direction: column;  
+  }
+  
+  .meta__left {
+    align-self: center;
+    width: 300px;
+  }
+  
+  .meta__right {
+    text-align: center;
+    
+    & p {
+      width: auto;
+      color: #fff;
+    }
+  }
+  
+  .meta__trader {
+    background: url('../img/meta-trader.png') no-repeat center;
+  }
+}
