@@ -1,4 +1,4 @@
-.platforms-desktop {
+.platforms-mobile {
   padding: 50px 0;
   
   & h1 {
@@ -16,17 +16,16 @@
   }
 }
 
-.platforms-desktop__flex {
+.platforms-mobile__flex {
   display: flex;
   justify-content: space-between;
-  
-  & ul {
-    width: 40%;
-    list-style-image: url('../img/li.png');
-  }
 }
 
-.platforms-desktop__download {
+.platforms-mobile__left {
+  width: 50%;
+}
+
+.platforms-mobile__download {
   align-self: center;
   padding: 15px 70px;
   color: $mc;
@@ -46,22 +45,22 @@
 @media screen and ($tablet-widths) {}
 
 @media screen and ($mobile-widths) {
-  .platforms-desktop {
+  .platforms-mobile {
     
     & h1 {
       text-align: center;
     }
   }
   
-  .platforms-desktop__flex {
+  .platforms-mobile__flex {
     flex-direction: column;
-    
-    & ul {
-      width: auto;
-    }
   }
   
-  .platforms-desktop__download {
+  .platforms-mobile__left {
+    width: auto;
+  }
+  
+  .platforms-mobile__download {
     margin-top: 30px;
     padding: 15px 50px;
     font-size: 22px;

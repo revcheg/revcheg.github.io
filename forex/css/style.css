@@ -2565,6 +2565,8 @@ button[type="submit"] {
     font-size: 30px; }
   .platforms-desktop b {
     font-size: 22px; }
+  .platforms-desktop p {
+    font-size: 18px; }
 
 .platforms-desktop__flex {
   display: -webkit-box;
@@ -2606,20 +2608,61 @@ button[type="submit"] {
     .platforms-desktop__flex ul {
       width: auto; }
   .platforms-desktop__download {
-    -ms-flex-item-align: center;
-    align-self: center;
     margin-top: 30px;
     padding: 15px 50px;
+    font-size: 22px; } }
+
+.platforms-mobile {
+  padding: 50px 0; }
+  .platforms-mobile h1 {
+    margin-top: 0;
     color: #2e2963;
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    -webkit-box-shadow: 5px 5px 2px 0px rgba(121, 121, 121, 0.5);
-    box-shadow: 5px 5px 2px 0px rgba(121, 121, 121, 0.5);
-    background: #f2c318;
-    -webkit-transition: 0.2s;
-    transition: 0.2s; }
-    .platforms-desktop__download:hover {
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(121, 121, 121, 0.5);
-      box-shadow: 10px 10px 5px 0px rgba(121, 121, 121, 0.5); } }
+    font-size: 30px; }
+  .platforms-mobile b {
+    font-size: 22px; }
+  .platforms-mobile p {
+    font-size: 18px; }
+
+.platforms-mobile__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.platforms-mobile__left {
+  width: 50%; }
+
+.platforms-mobile__download {
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 15px 70px;
+  color: #2e2963;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-box-shadow: 5px 5px 2px 0px rgba(121, 121, 121, 0.5);
+  box-shadow: 5px 5px 2px 0px rgba(121, 121, 121, 0.5);
+  background: #f2c318;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .platforms-mobile__download:hover {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(121, 121, 121, 0.5);
+    box-shadow: 10px 10px 5px 0px rgba(121, 121, 121, 0.5); }
+
+@media screen and (max-width: 768px) {
+  .platforms-mobile h1 {
+    text-align: center; }
+  .platforms-mobile__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .platforms-mobile__left {
+    width: auto; }
+  .platforms-mobile__download {
+    margin-top: 30px;
+    padding: 15px 50px;
+    font-size: 22px; } }
