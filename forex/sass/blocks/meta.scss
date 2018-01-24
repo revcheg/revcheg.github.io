@@ -8,7 +8,9 @@
   
   & p {
     width: 390px;
-    color: #323232;
+    color: $mc;
+    font-weight: bold;
+    opacity: 0.9;
   }
 }
 
@@ -39,16 +41,18 @@
   }
   
   .meta__left {
-    align-self: center;
-    width: 300px;
+    display: none;
   }
   
   .meta__right {
     text-align: center;
     
+    & h2 {
+      margin-top: 0;
+    }
+    
     & p {
       width: auto;
-      color: #fff;
     }
   }
   

@@ -1,7 +1,10 @@
 .edge {
   width: 600px;
   margin: auto;
-  padding-bottom: 50px;
+  
+  & h3 {
+    margin-top: 0;
+  }
   
   & ul {
     width: auto;

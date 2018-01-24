@@ -22,8 +22,8 @@
 }
 
 .mobile__title {
-  width: 700px;
-  margin: auto;
+  width: 600px;
+  margin: 0 10% 0 auto;
 }
 
 .mobile__flex-first {
@@ -110,6 +110,17 @@
 }
 
 @media screen and ($tablet-widths) {
+  .mobile {
+    
+    & h2, b {
+      text-align: center;
+    }
+  }
+  
+  .mobile__title {
+    width: 80%;
+  }
+  
   .mobile__flex-second {
     flex-direction: column;
     width: 96%;
@@ -148,6 +159,7 @@
   
   .mobile__title {
     width: auto;
+    margin: 0;
     text-align: center;
   }
   
@@ -175,7 +187,6 @@
   }
   
   .mobile__second {
-    width: 100%;
-    background-size: cover;
+    display: none;
   }
 }

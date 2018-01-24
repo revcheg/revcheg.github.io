@@ -18,9 +18,11 @@
 
 @media screen and ($tablet-widths) {
   .trader {
-    width: 600px;
-    margin-left: 0;
-    margin: auto;
+    margin: 0;
+    
+    & ul {
+      width: auto;
+    }
   }
 }
 

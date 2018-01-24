@@ -9,8 +9,8 @@ body {
   margin: auto;
 }
 
-.container--temp {
-  width: 50%;
+.container--features {
+  width: 75%;
   margin: auto;
 }
 
@@ -18,10 +18,32 @@ body {
   .container {
     width: 96%;
   }
+  
+  .container--temp {
+    width: 80%;
+    margin: 0 0 0 auto;
+  }
+  
+  .container--features {
+    width: 50%;
+    margin: 0 auto 0 30px;
+  }
+  
+  .container--trader {
+    width: 80%;
+    margin: 0 auto 0 30px;
+  }
 }
 
 @media screen and ($mobile-widths) {
   .container {
     width: 98%;
+  }
+  
+  .container--features,
+  .container--trader,
+  .container--temp {
+    width: 96%;
+    margin: auto;
   }
 }
