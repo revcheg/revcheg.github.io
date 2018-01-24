@@ -2335,7 +2335,7 @@ button[type="submit"] {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 1200px;
+  width: 1100px;
   margin: auto;
   padding-top: 70px; }
 
@@ -2344,19 +2344,19 @@ button[type="submit"] {
   text-align: center; }
 
 .mobile__first p {
-  width: 500px; }
+  width: 400px; }
 
 .mobile__flex-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-top: 50px; }
 
 .mobile__box {
-  width: 200px;
+  width: 180px;
   padding-top: 130px;
   text-align: center;
   background: url("../img/mobile-download.png") no-repeat top; }
@@ -2365,7 +2365,8 @@ button[type="submit"] {
     margin-bottom: 0px; }
   .mobile__box p {
     width: auto;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    opacity: 1; }
   .mobile__box a {
     color: #fff;
     text-decoration: none; }
@@ -2375,6 +2376,7 @@ button[type="submit"] {
       color: #fff; }
 
 .mobile__second {
-  width: 677px;
-  height: 642px;
-  background: url("../img/mobile-right.png"); }
+  width: 600px;
+  height: 569px;
+  background: url("../img/mobile-right.png") no-repeat bottom;
+  background-size: contain; }
