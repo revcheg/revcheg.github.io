@@ -2556,3 +2556,40 @@ button[type="submit"] {
     width: auto; }
   .mobile__second {
     display: none; } }
+
+.platforms-desktop {
+  padding: 50px 0; }
+  .platforms-desktop h1 {
+    margin-top: 0;
+    color: #2e2963;
+    font-size: 30px; }
+  .platforms-desktop b {
+    font-size: 22px; }
+
+.platforms-desktop__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .platforms-desktop__flex ul {
+    list-style-image: url("../img/li.png"); }
+
+.platforms-desktop__download {
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 15px 70px;
+  color: #2e2963;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-box-shadow: 5px 5px 2px 0px rgba(121, 121, 121, 0.5);
+  box-shadow: 5px 5px 2px 0px rgba(121, 121, 121, 0.5);
+  background: #f2c318;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .platforms-desktop__download:hover {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(121, 121, 121, 0.5);
+    box-shadow: 10px 10px 5px 0px rgba(121, 121, 121, 0.5); }
