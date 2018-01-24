@@ -9,9 +9,9 @@
 }
 
 .desktop__right {
-  width: 700px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  width: 500px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   
   & h4 {
     margin-bottom: 0;
@@ -29,6 +29,7 @@
   
   & ul {
     width: auto;
+    padding-left: 25px;
     color: #000;
     font-weight: 400;
   }

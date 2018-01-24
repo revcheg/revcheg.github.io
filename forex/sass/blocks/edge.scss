@@ -1,7 +1,9 @@
 .edge {
-  margin-left: 350px;
+  width: 600px;
+  margin: auto;
+  padding-bottom: 50px;
   
   & ul {
-    width: 550px;
+    width: auto;
   }
 }

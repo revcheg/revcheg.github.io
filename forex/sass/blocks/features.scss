@@ -1,6 +1,7 @@
 .features__flex {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 50px;
 }
 
 .features__list {
@@ -14,7 +15,7 @@
 }
 
 .features__box {
-  width: 200px;
+  width: 180px;
   padding-top: 100px;
   text-align: center;
   background: url('../img/features-download.png') no-repeat top;
