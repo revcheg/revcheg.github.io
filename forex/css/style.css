@@ -2574,6 +2574,7 @@ button[type="submit"] {
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .platforms-desktop__flex ul {
+    width: 40%;
     list-style-image: url("../img/li.png"); }
 
 .platforms-desktop__download {
@@ -2581,7 +2582,7 @@ button[type="submit"] {
   align-self: center;
   padding: 15px 70px;
   color: #2e2963;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
@@ -2593,3 +2594,32 @@ button[type="submit"] {
   .platforms-desktop__download:hover {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(121, 121, 121, 0.5);
     box-shadow: 10px 10px 5px 0px rgba(121, 121, 121, 0.5); }
+
+@media screen and (max-width: 768px) {
+  .platforms-desktop h1 {
+    text-align: center; }
+  .platforms-desktop__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .platforms-desktop__flex ul {
+      width: auto; }
+  .platforms-desktop__download {
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin-top: 30px;
+    padding: 15px 50px;
+    color: #2e2963;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-box-shadow: 5px 5px 2px 0px rgba(121, 121, 121, 0.5);
+    box-shadow: 5px 5px 2px 0px rgba(121, 121, 121, 0.5);
+    background: #f2c318;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+    .platforms-desktop__download:hover {
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(121, 121, 121, 0.5);
+      box-shadow: 10px 10px 5px 0px rgba(121, 121, 121, 0.5); } }

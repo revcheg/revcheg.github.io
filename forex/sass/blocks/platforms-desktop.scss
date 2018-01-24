@@ -17,6 +17,7 @@
   justify-content: space-between;
   
   & ul {
+    width: 40%;
     list-style-image: url('../img/li.png');
   }
 }
@@ -25,7 +26,7 @@
   align-self: center;
   padding: 15px 70px;
   color: $mc;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
@@ -38,3 +39,39 @@
   }
 }
 
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .platforms-desktop {
+    
+    & h1 {
+      text-align: center;
+    }
+  }
+  
+  .platforms-desktop__flex {
+    flex-direction: column;
+    
+    & ul {
+      width: auto;
+    }
+  }
+  
+  .platforms-desktop__download {
+    align-self: center;
+    margin-top: 30px;
+    padding: 15px 50px;
+    color: $mc;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 2px 0px rgba(121, 121, 121, 0.5);
+    background: $sc;
+    transition: 0.2s;
+    
+    &:hover {
+      box-shadow: 10px 10px 5px 0px rgba(121, 121, 121, 0.5);
+    }
+  }
+}
