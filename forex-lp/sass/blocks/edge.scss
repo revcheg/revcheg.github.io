@@ -1,0 +1,38 @@
+.edge {
+  background: #dbd9e2;
+}
+
+.edge__flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.edge__box {
+  width: 300px;
+  padding-top: 70px;
+  color: #4a4a4a;
+  
+  & b {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'SF UI Display';
+  }
+  
+  & p {
+    margin-bottom: 0;
+    font-family: 'SF UI Display Regular';
+  }
+}
+
+.edge__box--over {
+  background: url('../img/edge-f.png') no-repeat top left;
+}
+
+.edge__box--free {
+  background: url('../img/edge-s.png') no-repeat top left;
+}
+
+.edge__box--award {
+  background: url('../img/edge-t.png') no-repeat top left;
+}

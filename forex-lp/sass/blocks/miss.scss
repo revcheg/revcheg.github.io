@@ -1,0 +1,21 @@
+.miss {
+  color: $mc;
+  text-align: center;
+}
+
+.miss__top {
+  font-size: 12px;
+  font-family: 'SF UI Display Regular';
+}
+
+.miss__center {
+  padding: 70px 0;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'SF UI Display';
+  text-transform: uppercase;
+  
+  & span {
+    font-size: 48px;
+  }
+}

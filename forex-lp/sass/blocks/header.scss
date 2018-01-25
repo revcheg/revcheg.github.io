@@ -4,13 +4,38 @@
   & img {
     margin: 30px 0 50px 0;
   }
+  
+  & b {
+    display: block;
+    font-family: 'SF UI Display Black';
+  }
+  
+  & small {
+    display: block;
+    padding: 5px 0 80px 15px;
+    color: $mc;
+    font-size: 14px;
+    font-family: 'SF UI Display Regular';
+  }
 }
 
 .header__title {
-  display: block;
   width: 490px;
   margin-bottom: 50px;
   color: $mc;
   font-size: 30px;
-  font-family: 'SF UI Display Black';
+}
+
+.header__form {
+  width: 500px;
+  height: 205px;
+  padding: 15px;
+  background: $mc;
+  
+  & b {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+  }
 }
