@@ -292,3 +292,18 @@ body {
 
 .edge__box--award {
   background: url("../img/edge-t.png") no-repeat top left; }
+
+.app {
+  height: 600px;
+  padding: 120px 0;
+  background: url("../img/test.png") no-repeat center; }
+
+.promo {
+  padding: 25px 0;
+  background: #2f2861; }
+
+.promo__logo {
+  width: 442px;
+  height: 141px;
+  margin: auto;
+  background: url("../img/logo.png") no-repeat; }
