@@ -4,9 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Legal Documents - Forex 24</title>
-  <!-- <link rel="stylesheet" href="js/slick/slick.css"/> -->
-  <!-- <link rel="stylesheet" href="js/slick/slick-theme.css"/> -->
+  <title>Registration - Forex 24</title>
   <link rel="stylesheet" href="../css/style.min.css">
 </head>
 <body>
@@ -20,14 +18,14 @@
           </a> -->
           <ul class="page-header__menu">
             <li class="page-header__item"><a href="../index.html">Home</a></li>
-            <li class="page-header__item"><a class="page-header__item--active" href="#">About</a></li>
-            <li class="page-header__item"><a href="#">Trading</a></li>
-            <li class="page-header__item"><a href="#">Resources</a></li>
+            <li class="page-header__item"><a href="../about-us/about-us.html">About</a></li>
+            <li class="page-header__item"><a href="../trading/account-types.html">Trading</a></li>
+            <li class="page-header__item"><a href="../resources/glossary.html">Resources</a></li>
             <li class="page-header__item"><a href="#">Partners</a></li>
-            <li class="page-header__item"><a href="#">Contact Us</a></li>
+            <li class="page-header__item"><a href="../contact-us/contact-us.html">Contact Us</a></li>
           </ul>
           <div class="page-header__user-menu">
-            <a class="page-header__link  page-header__link--violet" href="#">Open live account</a>
+            <a class="page-header__link  page-header__link--violet">Open live account</a>
             <a class="page-header__link  page-header__link--black" href="#">Login</a>
           </div>
         </div>
@@ -37,8 +35,8 @@
   <section class="sub-menu">
     <div class="container">
       <div class="sub-menu__flex">
-        <p>Legal Documents</p>
-        <div class="sub-menu__box  sub-menu__box--about">
+        <p>Registration</p>
+        <!-- <div class="sub-menu__box  sub-menu__box--about">
           <a class="sub-menu__logo" href="../index.html">
             <img src="../img/logo-menu.png" alt="Forex24">
           </a>
@@ -57,26 +55,60 @@
           </div>
           <hr>
           <button class="sub-menu__arrow"></button>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
-  <section class="legal">
+  <section class="registration">
     <div class="container">
-      <p class="legal__title">Forex24 Global meets all necessary regulatory requirements and is authorized by appropriate brokerage bodies. We adhere to all industry standards to provide a world-class product that our users can trust. Lydya Financial Ltd is authorized by the Cyprus Securities and Exchange Commission. License N ° 300/16</p>
-      <div class="legal__flex">
-        <a class="legal__box" href="#">Client Agreement</a>
-        <a class="legal__box" href="#">Best Interest and Order Execution Summary</a>
-        <a class="legal__box" href="#">Client Categorisation Policy</a>
-        <a class="legal__box" href="#">Conflicts of Interest Policy Summary</a>
-        <a class="legal__box" href="#">General Risk Disclosure</a>
-        <a class="legal__box" href="#">Company Information</a>
+      <form class="form" action="index.html" method="post">
+        <div class="form__flex">
+          <input type="text" placeholder="First name">
+          <input type="text" placeholder="Last name">
+        </div>
+        <div class="form__flex">
+          <select class="form__select  form__select-registration" name="">
+            <option value="">Country of Residence</option>
+          </select>
+          <div class="form__right">
+            <input type="number" placeholder="Country Code">
+            <input type="tel" placeholder="Phone">
+          </div>
+        </div>
+        <div class="form__flex">
+          <input type="email" placeholder="Email">
+          <select class="form__select  form__select-registration" name="">
+            <option value="">Currency</option>
+          </select>
+        </div>
+        <p class="registration__title">Your email will be used only for the purpose of opening your trading account and will not be shared with third parties.</p>
+        <div class="form__flex">
+          <select class="form__select  form__select-registration" name="">
+            <option value="">Leverage</option>
+          </select>
+          <select class="form__select  form__select-registration" name="">
+            <option value="">Deposit Amount</option>
+          </select>
+        </div>
+        <div class="form__flex">
+          <input type="password" placeholder="Password">
+          <input type="password" placeholder="Confirm Password">
+        </div>
+        <p class="registration__title">Tip: Strong passwords uses a conbination of numbers, symbols, capital and small letters. If you want we can generate one for you.</p>
+        <p class="registration__title">I wish to receive newsletters and other communication material:</p>
+        <div class="form__flex  form__flex--radio">  
+          <input id="y" type="radio" name="y/n" value="yes">
+          <label for="y">Yes</label>
+          <input id="n" type="radio" name="y/n" value="no">
+          <label for="n">No</label>
+        </div>
+        <button type="submit" name="submit">Register</button>
+      </form>
+      <hr>
+      <div class="container">
+        
       </div>
-      <div class="legal__flex  legal__flex--second">
-        <a class="legal__box" href="#">Website Use</a>
-        <a class="legal__box" href="#">Privacy and Cookies Policy</a>
-        <a class="legal__box" href="#">Investor Compensation Fund</a>
-      </div>
+      <p class="registration__title  registration__title--pb">Risk Warning: Our products are traded on margin and carry a high level of risk and it is possible to lose all your capital. These products may not be suitable for everyone and you should ensure that you understand the risks involved.</p>
     </div>
   </section>
   <section class="payment  payment--temp">
@@ -142,8 +174,6 @@
       </div>
     </div>
   </footer>
-<!-- <script src="js/jquery.min.js"></script> -->
-<!-- <script src="js/slick/slick.min.js"></script> -->
 <script src="../js/mobile-menu.js"></script>
 </body>
 </html>

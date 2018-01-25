@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Account Comparison - Forex 24</title>
+  <title>Legal Documents - Forex 24</title>
   <link rel="stylesheet" href="../css/style.min.css">
 </head>
 <body>
@@ -19,13 +19,13 @@
           <ul class="page-header__menu">
             <li class="page-header__item"><a href="../index.html">Home</a></li>
             <li class="page-header__item"><a class="page-header__item--active" href="#">About</a></li>
-            <li class="page-header__item"><a href="#">Trading</a></li>
-            <li class="page-header__item"><a href="#">Resources</a></li>
+            <li class="page-header__item"><a href="../trading/account-types.html">Trading</a></li>
+            <li class="page-header__item"><a href="../resources/glossary.html">Resources</a></li>
             <li class="page-header__item"><a href="#">Partners</a></li>
-            <li class="page-header__item"><a href="#">Contact Us</a></li>
+            <li class="page-header__item"><a href="../contact-us/contact-us.html">Contact Us</a></li>
           </ul>
           <div class="page-header__user-menu">
-            <a class="page-header__link  page-header__link--violet" href="#">Open live account</a>
+            <a class="page-header__link  page-header__link--violet" href="../register/registration.html">Open live account</a>
             <a class="page-header__link  page-header__link--black" href="#">Login</a>
           </div>
         </div>
@@ -35,17 +35,17 @@
   <section class="sub-menu">
     <div class="container">
       <div class="sub-menu__flex">
-        <p>Account Comparison</p>
+        <p>Legal Documents</p>
         <div class="sub-menu__box  sub-menu__box--about">
           <a class="sub-menu__logo" href="../index.html">
             <img src="../img/logo-menu.png" alt="Forex24">
           </a>
-          <a href="#">ACCOUNT TYPES</a>
-          <a href="#">ACCOUNT COMPARISON</a>
-          <a href="#">PRODUCT SPECIFICATION</a>
-          <a href="#">TRADING SPECIFICATION</a>
-          <a href="#">FUNDING AND WITHDROVAL</a>
-          <a href="#">ANNOUNCEMENTS</a>
+          <a href="licenses-and-regulations">LICENSES AND REGULATIONS</a>
+          <a href="security-of-funds.html">SECURITY OF FUNDS</a>
+          <a href="#">STP Broker</a>
+          <a style="color: gray">LEGAL DOCUMENTS</a>
+          <a href="kids.html">KIDs</a>
+          <a href="careers.html">CAREERS</a>
           <div class="sub-menu__social">
             <a class="sub-menu__link  sub-menu__link--facebook" href="#"></a>
             <a class="sub-menu__link  sub-menu__link--google" href="#"></a>
@@ -59,143 +59,21 @@
       </div>
     </div>
   </section>
-  <section class="account-comparison">
+  <section class="legal">
     <div class="container">
-      <div class="account-comparison__control">
-        <button class="account-comparison__bronze" onclick="changeContentBronze()" type="button" name="button">Mini Bronze</button>
-        <button class="account-comparison__silver" onclick="changeContentSilver()" type="button" name="button">Classic Silver</button>
-        <button class="account-comparison__gold" onclick="changeContentGold()" type="button" name="button">Premium Gold</button>
-        <button class="account-comparison__free" onclick="changeContentFree()" type="button" name="button">Swap Free</button>
+      <p class="legal__title">Forex24 Global meets all necessary regulatory requirements and is authorized by appropriate brokerage bodies. We adhere to all industry standards to provide a world-class product that our users can trust. Lydya Financial Ltd is authorized by the Cyprus Securities and Exchange Commission. License N ° 300/16</p>
+      <div class="legal__flex">
+        <a class="legal__box" href="#">Client Agreement</a>
+        <a class="legal__box" href="#">Best Interest and Order Execution Summary</a>
+        <a class="legal__box" href="#">Client Categorisation Policy</a>
+        <a class="legal__box" href="#">Conflicts of Interest Policy Summary</a>
+        <a class="legal__box" href="#">General Risk Disclosure</a>
+        <a class="legal__box" href="#">Company Information</a>
       </div>
-      <div class="tab">
-        <button class="tab__link  forex active" onclick="openTab(event, 'Forex')" autofocus>Forex</button>
-        <button class="tab__link  commodities" onclick="openTab(event, 'Commodities')">Commoditiews</button>
-        <button class="tab__link  metals" onclick="openTab(event, 'Precious Metals')">Precious Metals</button>
-        <button class="tab__link  bonds" onclick="openTab(event, 'Bonds')">Bonds</button>
-        <button class="tab__link  indices-c" onclick="openTab(event, 'Indices')">Indices</button>
-        <button class="tab__link  stocks" onclick="openTab(event, 'Stocks')">Stocks</button>
-      </div>
-      <div id="Forex" class="tab__content  tab__content--forex">
-        <div class="tab__origin">
-          <table class="tab__bronze">
-            <tr>
-              <th>Symbol</th>
-              <th>Average Floating Spreads in pips</th>
-              <th>Commission</th>
-              <th>Position Size Per Lot</th>
-              <th>1 Pip Value Per Lot</th>
-              <th>Min Position Size</th>
-              <th>Max Position Size</th>
-              <th>Leverage Up To</th>
-            </tr>
-            <tr>
-              <td>AUDJPY</td>
-              <td>3.29</td>
-              <td>NO</td>
-              <td>100000 AUD</td>
-              <td>1000 JPY</td>
-              <td>0.01 Lots</td>
-              <td>500 Lots</td>
-              <td>50:01:00</td>
-            </tr>
-            <tr>
-              <td>AUDUSD</td>
-              <td>2.9</td>
-              <td>NO</td>
-              <td>100000 AUD</td>
-              <td>10 USD</td>
-              <td>0.01 Lots</td>
-              <td>500 Lots</td>
-              <td>50:01:00</td>
-            </tr>
-            <tr>
-              <td>CHFJPY</td>
-              <td>3.9</td>
-              <td>NO</td>
-              <td>100000 CHF</td>
-              <td>1000 JPY</td>
-              <td>0.01 Lots</td>
-              <td>500 Lots</td>
-              <td>50:01:00</td>
-            </tr>
-            <tr>
-              <td>EURAUD</td>
-              <td>3.3</td>
-              <td>NO</td>
-              <td>100000 EUR</td>
-              <td>10 AUD</td>
-              <td>0.01 Lots</td>
-              <td>500 Lots</td>
-              <td>50:01:00</td>
-            </tr>
-            <tr>
-              <td>EURCAD</td>
-              <td>3.7</td>
-              <td>NO</td>
-              <td>100000 EUR</td>
-              <td>10 CAD</td>
-              <td>0.01 Lots</td>
-              <td>500 Lots</td>
-              <td>50:01:00</td>
-            </tr>
-          </table>
-          
-          <table class="tab__silver">
-            <tr>
-              <th>Symbol</th>
-              <th>Average Floating Spreads in pips</th>
-              <th colspan="3">
-                Commission Per Lot
-                <table class="tab__currency">
-                  <tr>
-                    <td>USD</td>
-                    <td>EUR</td>
-                    <td>GBP</td>
-                  </tr>
-                </table>
-              </th>
-              <th>Position Size Per Lot</th>
-              <th>1 Pip Value Per Lot</th>
-              <th>Min Position Size</th>
-              <th>Max Position Size</th>
-              <th>Leverage Up To</th>
-            </tr>
-            <tr>
-              <td>AUDJPY</td>
-              <td>2.29</td>
-              <td>5.90 USD</td>
-              <td>5.50 EUR</td>
-              <td>4.90 GBP</td>
-              <td>100000 AUD</td>
-              <td>1000 JPY</td>
-              <td>0.01 Lots</td>
-              <td>500 Lost</td>
-              <td>400:01:00</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <div id="Commodities" class="tab__content  tab__content--commodities">
-        <div class="tab__origin">
-          <h3>Commodities</h3>
-          <p>Lorem ipsum dolor sit amet.</p> 
-        </div>
-      </div>
-      <div id="Precious Metals" class="tab__content  tab__content--metals">
-        <h3>Precious Metals</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <div id="Bonds" class="tab__content  tab__content--bonds">
-        <h3>Bonds</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <div id="Indices" class="tab__content  tab__content--indices-c">
-        <h3>Indices</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <div id="Stocks" class="tab__content  tab__content--stocks">
-        <h3>Stocks</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
+      <div class="legal__flex  legal__flex--second">
+        <a class="legal__box" href="#">Website Use</a>
+        <a class="legal__box" href="#">Privacy and Cookies Policy</a>
+        <a class="legal__box" href="#">Investor Compensation Fund</a>
       </div>
     </div>
   </section>
@@ -265,6 +143,5 @@
 <!-- <script src="js/jquery.min.js"></script> -->
 <!-- <script src="js/slick/slick.min.js"></script> -->
 <script src="../js/mobile-menu.js"></script>
-<script src="../js/tabs.js"></script>
 </body>
 </html>

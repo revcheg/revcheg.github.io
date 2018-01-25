@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Account Comparison - Forex 24</title>
+  <link rel="stylesheet" href="../css/style.min.css">
+</head>
+<body>
+  <header class="page-header  page-header--temp">
+    <nav class="page-header__main-nav  page-header__main-nav--closed  page-header__main-nav--nojs">
+      <button class="page-header__toggle" type="button">Open menu</button>
+      <div class="container">
+        <div class="page-header__flex">
+          <!-- <a href="../index.html">
+            <img src="../img/logo.png" alt="Forex24">
+          </a> -->
+          <ul class="page-header__menu">
+            <li class="page-header__item"><a href="../index.html">Home</a></li>
+            <li class="page-header__item"><a href="../about-us/about-us.html">About</a></li>
+            <li class="page-header__item"><a class="page-header__item--active" href="#">Trading</a></li>
+            <li class="page-header__item"><a href="../resources/glossary.html">Resources</a></li>
+            <li class="page-header__item"><a href="#">Partners</a></li>
+            <li class="page-header__item"><a href="../contact-us/contact-us.html">Contact Us</a></li>
+          </ul>
+          <div class="page-header__user-menu">
+            <a class="page-header__link  page-header__link--violet" href="../register/registration.html">Open live account</a>
+            <a class="page-header__link  page-header__link--black" href="#">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="sub-menu">
+    <div class="container">
+      <div class="sub-menu__flex">
+        <p>Account Comparison</p>
+        <div class="sub-menu__box  sub-menu__box--trading">
+          <a class="sub-menu__logo" href="../index.html">
+            <img src="../img/logo-menu.png" alt="Forex24">
+          </a>
+          <a href="account-types.html">ACCOUNT TYPES</a>
+          <a style="color: gray">ACCOUNT COMPARISON</a>
+          <a href="product-specification.html">PRODUCT SPECIFICATION</a>
+          <a href="trading-specification.html">TRADING SPECIFICATION</a>
+          <a href="platforms.html">PLATFORMS</a>
+          <a href="funding-and-withdrawal.html">FUNDING AND WITHDRAWAL</a>
+          <div class="sub-menu__social">
+            <a class="sub-menu__link  sub-menu__link--facebook" href="#"></a>
+            <a class="sub-menu__link  sub-menu__link--google" href="#"></a>
+            <a class="sub-menu__link  sub-menu__link--youtube" href="#"></a>
+            <a class="sub-menu__link  sub-menu__link--linkedin" href="#"></a>
+            <a class="sub-menu__link  sub-menu__link--twitter" href="#"></a>
+          </div>
+          <hr>
+          <button class="sub-menu__arrow"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="account-comparison">
+    <div class="container">
+      <div class="account-comparison__control">
+        <button class="account-comparison__bronze" onclick="changeContentBronze()" type="button" name="button">Mini Bronze</button>
+        <button class="account-comparison__silver" onclick="changeContentSilver()" type="button" name="button">Classic Silver</button>
+        <button class="account-comparison__gold" onclick="changeContentGold()" type="button" name="button">Premium Gold</button>
+        <button class="account-comparison__free" onclick="changeContentFree()" type="button" name="button">Swap Free</button>
+      </div>
+      <div class="tab">
+        <button class="tab__link  forex active" onclick="openTab(event, 'Forex')" autofocus>Forex</button>
+        <button class="tab__link  commodities" onclick="openTab(event, 'Commodities')">Commoditiews</button>
+        <button class="tab__link  metals" onclick="openTab(event, 'Precious Metals')">Precious Metals</button>
+        <button class="tab__link  bonds" onclick="openTab(event, 'Bonds')">Bonds</button>
+        <button class="tab__link  indices-c" onclick="openTab(event, 'Indices')">Indices</button>
+        <button class="tab__link  stocks" onclick="openTab(event, 'Stocks')">Stocks</button>
+      </div>
+      <div id="Forex" class="tab__content  tab__content--forex">
+        <div class="tab__origin">
+          <table class="tab__bronze">
+            <tr>
+              <th>Symbol</th>
+              <th>Average Floating Spreads in pips</th>
+              <th>Commission</th>
+              <th>Position Size Per Lot</th>
+              <th>1 Pip Value Per Lot</th>
+              <th>Min Position Size</th>
+              <th>Max Position Size</th>
+              <th>Leverage Up To</th>
+            </tr>
+            <tr>
+              <td>AUDJPY</td>
+              <td>3.29</td>
+              <td>NO</td>
+              <td>100000 AUD</td>
+              <td>1000 JPY</td>
+              <td>0.01 Lots</td>
+              <td>500 Lots</td>
+              <td>50:01:00</td>
+            </tr>
+            <tr>
+              <td>AUDUSD</td>
+              <td>2.9</td>
+              <td>NO</td>
+              <td>100000 AUD</td>
+              <td>10 USD</td>
+              <td>0.01 Lots</td>
+              <td>500 Lots</td>
+              <td>50:01:00</td>
+            </tr>
+            <tr>
+              <td>CHFJPY</td>
+              <td>3.9</td>
+              <td>NO</td>
+              <td>100000 CHF</td>
+              <td>1000 JPY</td>
+              <td>0.01 Lots</td>
+              <td>500 Lots</td>
+              <td>50:01:00</td>
+            </tr>
+            <tr>
+              <td>EURAUD</td>
+              <td>3.3</td>
+              <td>NO</td>
+              <td>100000 EUR</td>
+              <td>10 AUD</td>
+              <td>0.01 Lots</td>
+              <td>500 Lots</td>
+              <td>50:01:00</td>
+            </tr>
+            <tr>
+              <td>EURCAD</td>
+              <td>3.7</td>
+              <td>NO</td>
+              <td>100000 EUR</td>
+              <td>10 CAD</td>
+              <td>0.01 Lots</td>
+              <td>500 Lots</td>
+              <td>50:01:00</td>
+            </tr>
+          </table>
+          
+          <table class="tab__silver">
+            <tr>
+              <th>Symbol</th>
+              <th>Average Floating Spreads in pips</th>
+              <th colspan="3">
+                Commission Per Lot
+                <table class="tab__currency">
+                  <tr>
+                    <td>USD</td>
+                    <td>EUR</td>
+                    <td>GBP</td>
+                  </tr>
+                </table>
+              </th>
+              <th>Position Size Per Lot</th>
+              <th>1 Pip Value Per Lot</th>
+              <th>Min Position Size</th>
+              <th>Max Position Size</th>
+              <th>Leverage Up To</th>
+            </tr>
+            <tr>
+              <td>AUDJPY</td>
+              <td>2.29</td>
+              <td>5.90 USD</td>
+              <td>5.50 EUR</td>
+              <td>4.90 GBP</td>
+              <td>100000 AUD</td>
+              <td>1000 JPY</td>
+              <td>0.01 Lots</td>
+              <td>500 Lost</td>
+              <td>400:01:00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="Commodities" class="tab__content  tab__content--commodities">
+        <div class="tab__origin">
+          <h3>Commodities</h3>
+          <p>Lorem ipsum dolor sit amet.</p> 
+        </div>
+      </div>
+      <div id="Precious Metals" class="tab__content  tab__content--metals">
+        <h3>Precious Metals</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div id="Bonds" class="tab__content  tab__content--bonds">
+        <h3>Bonds</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div id="Indices" class="tab__content  tab__content--indices-c">
+        <h3>Indices</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div id="Stocks" class="tab__content  tab__content--stocks">
+        <h3>Stocks</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+  </section>
+  <section class="payment  payment--temp">
+    <div class="payment__box"></div>
+  </section>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__flex">
+        <div class="page-footer__left-column">
+          <b>Risk warning</b>
+        </div>
+        <div class="page-footer__right-column">
+          <p>Trading in Contracts for Difference (‘CFDs’) carries a high level of risk and can result in the loss of all your investment. As such, CFDs may not be appropriate for all investors. You should not invest money that you cannot afford to lose. Before deciding to trade, you should become aware of all the risks associated with CFD trading, and seek advice from an independent and suitably licensed financial advisor. Under no circumstances shall we have any liability to any person or entity for (a) any loss or damage in whole or part caused by, resulting from, or relating to any transactions related to CFDs or (b) any direct, indirect, special, consequential or incidental damages whatsoever. For more information about the risks associated with trading CFDs please find and read our <a href="#">‘General Risk Disclosure.’</a><br><br>Cryptologi Global does not provide services to residents of the USA, Canada, Japan, North Korea, Iran, Belgium and some other regions.</p>  
+        </div>
+      </div>
+      <div class="page-footer__flex">
+        <div class="page-footer__left-column">
+          <b>QUICK LINKS</b>
+        </div>
+        <div class="page-footer__right-column">
+          <a href="#">Licenses</a>
+          <a href="#">Account Types</a>
+          <a href="#">Funding & Withdrawal</a>
+          <a href="#">Product Specification </a>
+          <a href="#">Economic Calendar</a>
+          <a href="#">Legal Documents</a>
+          <a href="#">Partners</a>
+          <a href="#">Faq</a>
+        </div>
+      </div>
+      <div class="page-footer__flex">
+        <div class="page-footer__left-column">
+          <b>SOCIAL MEDIA</b>
+        </div>
+        <div class="page-footer__right-column  page-footer__right-column--link">
+          <a href="#" class="page-footer__facebook">Facebook</a>
+          <a href="#" class="page-footer__linked">LinkedIn</a>
+          <a href="#" class="page-footer__twitter">Twitter</a>
+          <a href="#" class="page-footer__google">Google+</a>
+        </div>
+      </div>
+      <div class="page-footer__flex">
+        <div class="page-footer__left-column">
+          <b>contact info</b>
+        </div>
+        <div class="page-footer__right-column  page-footer__right-column--flex">
+          <a href="#" class="page-footer__link">Contact Us</a>
+          <div class="page-footer__contact">
+            <b>Customer Service</b>
+            <p>CY Number: +35725000199</p>
+          </div>
+          <div class="page-footer__contact">
+            <b>Support</b>
+            <p>e-mail: support@forex24.com</p>
+          </div>
+          <p class="page-footer__text">UK Number: +442080891644</p>
+        </div>
+      </div>
+      <div class="page-footer__copyright">
+        <p>© 2017 All rights reserved LYDYA FINANCIAL LTD.<br>Located at 155 Ayias Fylaxeos, Ersi Court Suite 202, 3083 Limassol, Cyprus.</p>
+        <p>Cryptologi Global is a brand owned and operated by Lydya Financial Ltd, a Cyprus Investment Firm (CIF) regulated and supervised by the Cyprus Securities and Exchange Commission (CySEC) with CIF Licence number 300/16 and Company registration number HE334292.</p>
+        <p>The Company is also registered with: FCA in UK with reg. no. 782501; BaFin in Germany with reg. no. 1349943; CONSOB in Italy with reg. no. 4624; ACP in France with reg. no. 75980; CNMV in Spain with reg. no. 4373.</p>
+      </div>
+    </div>
+  </footer>
+<!-- <script src="js/jquery.min.js"></script> -->
+<!-- <script src="js/slick/slick.min.js"></script> -->
+<script src="../js/mobile-menu.js"></script>
+<script src="../js/tabs.js"></script>
+</body>
+</html>

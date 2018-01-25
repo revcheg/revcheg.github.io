@@ -350,6 +350,9 @@ body {
 .sub-menu__box--about {
   left: -35px; }
 
+.sub-menu__box--trading {
+  left: 40px; }
+
 .sub-menu__box--funding {
   left: 40px; }
 

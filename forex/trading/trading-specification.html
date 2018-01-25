@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Product Specification - Forex 24</title>
+  <title>Trading Specification - Forex 24</title>
   <link rel="stylesheet" href="../css/style.min.css">
 </head>
 <body>
@@ -18,14 +18,14 @@
           </a> -->
           <ul class="page-header__menu">
             <li class="page-header__item"><a href="../index.html">Home</a></li>
-            <li class="page-header__item"><a class="page-header__item--active" href="#">About</a></li>
-            <li class="page-header__item"><a href="#">Trading</a></li>
-            <li class="page-header__item"><a href="#">Resources</a></li>
+            <li class="page-header__item"><a href="../about-us/about-us.html">About</a></li>
+            <li class="page-header__item"><a class="page-header__item--active" href="#">Trading</a></li>
+            <li class="page-header__item"><a href="../resources/glossary.html">Resources</a></li>
             <li class="page-header__item"><a href="#">Partners</a></li>
-            <li class="page-header__item"><a href="#">Contact Us</a></li>
+            <li class="page-header__item"><a href="../contact-us/contact-us.html">Contact Us</a></li>
           </ul>
           <div class="page-header__user-menu">
-            <a class="page-header__link  page-header__link--violet" href="#">Open live account</a>
+            <a class="page-header__link  page-header__link--violet" href="../register/registration.html">Open live account</a>
             <a class="page-header__link  page-header__link--black" href="#">Login</a>
           </div>
         </div>
@@ -35,17 +35,17 @@
   <section class="sub-menu">
     <div class="container">
       <div class="sub-menu__flex">
-        <p>Product Specification</p>
-        <div class="sub-menu__box  sub-menu__box--about">
+        <p>Trading Specification</p>
+        <div class="sub-menu__box  sub-menu__box--trading">
           <a class="sub-menu__logo" href="../index.html">
             <img src="../img/logo-menu.png" alt="Forex24">
           </a>
-          <a href="#">ACCOUNT TYPES</a>
-          <a href="#">ACCOUNT COMPARISON</a>
-          <a href="#">PRODUCT SPECIFICATION</a>
-          <a href="#">TRADING SPECIFICATION</a>
-          <a href="#">FUNDING AND WITHDROVAL</a>
-          <a href="#">ANNOUNCEMENTS</a>
+          <a href="account-types.html">ACCOUNT TYPES</a>
+          <a href="account-comparison.html">ACCOUNT COMPARISON</a>
+          <a href="product-specification.html">PRODUCT SPECIFICATION</a>
+          <a style="color: gray">TRADING SPECIFICATION</a>
+          <a href="platforms.html">PLATFORMS</a>
+          <a href="funding-and-withdrawal.html">FUNDING AND WITHDRAWAL</a>
           <div class="sub-menu__social">
             <a class="sub-menu__link  sub-menu__link--facebook" href="#"></a>
             <a class="sub-menu__link  sub-menu__link--google" href="#"></a>
@@ -59,7 +59,7 @@
       </div>
     </div>
   </section>
-  <section class="product-specification">
+  <section class="trading-specification">
     <div class="container">
       <div class="tab">
         <button class="tab__link  forex active" onclick="openTab(event, 'Forex')" autofocus>Forex</button>
@@ -71,48 +71,37 @@
         <button class="tab__link  stocks" onclick="openTab(event, 'Stocks')">Stocks</button>
       </div>
       <div id="Forex" class="tab__content  tab__content--forex">
-        <h3>Forex</h3>
-        <p>Foreign exchange or Forex is one of the largest and most liquid markets with over 5 trillion dollars traded daily. A trader can trade currencies against each other and based on the changing values of currencies over time he can make a profit or a loss. Exchange rates are defined by the market forces of supply and demand and are affected by geopolitical and economic events around the globe. With Forex24:</p>
-        <ul>
-          <li>You can trade 60+ currency pairs: majors, minors and exotics</li>
-          <li>You get direct access to the forex market 24 hours a day, 5 days a week</li>
-          <li>Leverage up to 400:1</li>
-          <li>Low spreads and No re-quotes</li>
-          <li>No hidden fees</li>
-        </ul>
-        <table class="product-specification__table  product-specification__table--forex">
+        <table class="trading-specification__table  trading-specification__table--forex">
           <tr>
-            <th>Currency Pairs Symbols<br>FX MAJORS</th>
-            <th>Name<br>FX MAJORS</th>
+            <th>Symbol</th>
+            <th>Mini Bronze<br>(Average Floating Spreads in Pips)</th>
+            <th>Classic Silver<br>(Average Floating Spreads in Pips)</th>
+            <th>Premium Gold<br>(Average Floating Spreads in Pips)</th>
+            <th>Swap Free<br>(Average Floating Spreads in Pips)</th>
+            <th>Swap Long</th>
+            <th>Swap Short</th>
+            <th>Decimal Places</th>
+            <th>Tick Size</th>
+            <th>Pip Size</th>
+            <th>Trading Hours<br>(Server Time)</th>
           </tr>
           <tr>
-            <td>AUD/JPY</td>
-            <td>Australian Dollar Vs Japanese Yen</td>
+            <td>AUD/CHF</td>
+            <td>3</td>
+            <td>1,5</td>
+            <td>1,3</td>
+            <td>3</td>
+            <td>2,27</td>
+            <td>-9,98</td>
+            <td>5</td>
+            <td>0,00001</td>
+            <td>0,00001</td>
+            <td>Mon-Fri 00:00-23:58</td>
           </tr>
-          <tr>
-            <td>AUD/USD</td>
-            <td>Australian Dollar Vs US Dollar</td>
-          </tr>
-          <tr>
-            <td>CHF/JPY</td>
-            <td>Canadian Dollar Vs Japanese Yen</td>
-          </tr>
-          <tr>
-            <td>EUR/CAD</td>
-            <td>Euro Vs Canadian Dollar</td>
-          </tr>
-          <tr>
-            <td>EUR/CHF</td>
-            <td>Euro Vs Swiss Franc</td>
-          </tr>
-          <!-- Five elements -->
         </table>
       </div>
       <div id="Commodities" class="tab__content  tab__content--commodities">
-        <h3>Commodities</h3>
-        <p>Commodity markets have had a major impact on nations and people throughout history. Currently there are about 50 major commodity markets worldwide that facilitate trading of approximately 100 raw or primary products. There are different categories of commodities, all supported by the same basic economic principles: lower supply equals higher prices and vice versa.</p> 
-        <p>At Forex24 you can trade up to 10 CFDs on Commodities such as Crude Oil, Natural Gas, Corn, Rice and Sugar with very favourable terms.</p>
-        <table class="product-specification__table  product-specification__table--commodities">
+        <table class="trading-specification__table  trading-specification__table--commodities">
           <tr>
             <th>Symbol</th>
             <th>Description</th>
@@ -136,21 +125,17 @@
           <tr>
             <td>London Gasoil</td>
             <td>London Gasoil / USD</td>
-            <td>Gasoil is a group of petroleum distillation products having boiling points between kerosene and lubricating oil.</td>
+            <td>Gasoil is a group of petroleum distillation tradings having boiling points between kerosene and lubricating oil.</td>
           </tr>
           <tr>
             <td>US Cocoa</td>
             <td>US Cocoa/USD</td>
             <td>The cocoa bean, also cacao bean or simply cocoa or cacao, is the dried and fully fermented fatty seed of Theobroma cacao, from which cocoa solids and cocoa butter are extracted. They are the basis of chocolate, as well as many Mesoamerican foods such as mole and tejate.</td>
           </tr>
-          <!-- Five elements -->
         </table>
       </div>
       <div id="Precious Metals" class="tab__content  tab__content--metals">
-        <h3>Precious Metals</h3>
-        <p>Metals are physical commodities and they have always played an important role in history and will continue to be valued. Metals such as Gold and Silver have been recognized as valuable assets and have always been a very popular choice of investing. Precious metals, especially Gold has always been referred to as ‘Safe Heaven’ in times of economic uncertainty.</p>
-        <p>Forex24 offers investors, who do not want to face economic turbulence, access to three types of metals: Gold, Silver and Palladium.</p>
-        <table class="product-specification__table  product-specification__table--metals">
+        <table class="trading-specification__table  trading-specification__table--metals">
           <tr>
             <th>Symbol</th>
             <th>Description</th>
@@ -174,10 +159,7 @@
         </table>
       </div>
       <div id="Bonds" class="tab__content  tab__content--bonds">
-        <h3>Bonds</h3>
-        <p>Bonds are one of the oldest types of financial instruments in the world and their value is often defined by global events. Trading bonds for the long term is considered a conservative investment. Bonds offer an outstanding opportunity to differentiate your portfolio and hedge against risk. For many investors, it makes sense to have at least part of their portfolio invested in bonds.</p>
-        <p>Forex24 clients have the access to trade 2 bond futures through contract for difference.</p>
-        <table class="product-specification__table  product-specification__table--bonds">
+        <table class="trading-specification__table  trading-specification__table--bonds">
           <tr>
             <th>Symbol</th>
             <th>Description</th>
@@ -196,10 +178,7 @@
         </table>
       </div>
       <div id="Indices Cash" class="tab__content  tab__content--indices-c">
-        <h3>Indices</h3>
-        <p>An index is a statistical representation of an equity market through a basket of stocks. An index measures the value of a group of stocks and therefore investors can invest on indices that represent specific markets.</p>
-        <p>With Forex24 you can trade more than 10 of the world’s most prolific indices covering Asia, North America and Europe, including the renowned Dow Jones Industrial Average (DJIA) which is extremely popular with traders worldwide.</p>
-        <table class="product-specification__table  product-specification__table--indices-c">
+        <table class="trading-specification__table  trading-specification__table--indices-c">
           <tr>
             <th>Symbol</th>
             <th>Description</th>
@@ -218,7 +197,7 @@
           <tr>
             <td>India 50 Index</td>
             <td>NIFTY/USD</td>
-            <td>The NIFTY 50 index is National Stock Exchange of India’s benchmark stock market index for Indian equity market, launched on 21st April 1996. Nifty is owned and managed by India Index Services and Products ), which is a wholly owned subsidiary of the NSE Strategic Investment Corporation Limited.</td>
+            <td>The NIFTY 50 index is National Stock Exchange of India’s benchmark stock market index for Indian equity market, launched on 21st April 1996. Nifty is owned and managed by India Index Services and tradings ), which is a wholly owned subsidiary of the NSE Strategic Investment Corporation Limited.</td>
           </tr>
           <tr>
             <td>Singapore Blue Chip Index</td>
@@ -233,10 +212,7 @@
         </table>
       </div>
       <div id="Indices Future" class="tab__content  tab__content--indices-f">
-        <h3>Indices</h3>
-        <p>An index is a statistical representation of an equity market through a basket of stocks. An index measures the value of a group of stocks and therefore investors can invest on indices that represent specific markets.</p>
-        <p>With Forex24 you can trade more than 10 of the world’s most prolific indices covering Asia, North America and Europe, including the renowned Dow Jones Industrial Average (DJIA) which is extremely popular with traders worldwide.</p>
-        <table class="product-specification__table  product-specification__table--indices-f">
+        <table class="trading-specification__table  trading-specification__table--indices-f">
           <tr>
             <th>Symbol</th>
             <th>Description</th>
@@ -267,14 +243,10 @@
             <td>JAPAN 225 / JPY</td>
             <td>The JPN225’sor Nikkei225 more commonly called the Nikkei, the Nikkei index, or the Nikkei Stock Average. is a stock market index for the Tokyo Stock Exchange (TSE). It has been calculated daily by the Nihon Keizai Shimbun (Nikkei) newspaper since 1950. It is a price-weighted average (the unit is yen), and the components are reviewed once a year. Currently, the Nikkei is the most widely quoted average of Japanese equities, similar to the Dow Jones Industrial Average. In fact, it was known as the “Nikkei Dow Jones Stock Average” from 1975 to 1985.</td>
           </tr>
-          <!-- Five elements -->
         </table>
       </div>
       <div id="Stocks" class="tab__content  tab__content--stocks">
-        <h3>Stocks</h3>
-        <p>Stocks or Equities belong to one of the major asset classes. Stocks are significant as they stand for the real value of one’s stake in a corporation listed in a stock exchange.</p>
-        <p>At Forex24 you can trade 84+ Stock CFDs that are traded in world major equity markets, such as Apple, Microsoft, Alibaba and Amazon.</p>
-        <table class="product-specification__table  product-specification__table--stocks">
+        <table class="trading-specification__table  trading-specification__table--stocks">
           <tr>
             <th>Symbol</th>
             <th>Description</th>
@@ -305,7 +277,6 @@
             <td>EURO Stocks</td>
             <td>Allianz AG</td>
           </tr>
-          <!-- Five elements -->
         </table>
       </div>
     </div>
@@ -331,7 +302,7 @@
           <a href="#">Licenses</a>
           <a href="#">Account Types</a>
           <a href="#">Funding & Withdrawal</a>
-          <a href="#">Product Specification </a>
+          <a href="#">trading Specification </a>
           <a href="#">Economic Calendar</a>
           <a href="#">Legal Documents</a>
           <a href="#">Partners</a>
