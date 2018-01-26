@@ -46,3 +46,26 @@
     box-shadow: 7px 7px 1px 0 rgba(0, 0, 0, 0.7);
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .form__flex {
+    flex-direction: column;
+  }
+  
+  .form__input {
+    
+    & input {
+      width: auto;
+    }
+  }
+  
+  .form__btn {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 15px 40px;
+    border-radius: 5px;
+  }
+}

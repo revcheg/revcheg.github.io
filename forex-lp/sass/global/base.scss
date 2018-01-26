@@ -12,3 +12,11 @@ body {
   position: absolute;
   clip: rect(0 0 0 0);
 }
+
+@media screen and ($tablet-widths) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media screen and ($mobile-widths) {}

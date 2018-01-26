@@ -3,7 +3,8 @@
   color: #fff;
   text-align: center;
   border-style: solid;
-  border-image: url('../img/golden.png') 4 0 0 repeat;
+  border-width: 3px 0 0;
+  border-image: url('../img/golden.png') 3 0 0 repeat;
   background: #323232;
   
   & b {

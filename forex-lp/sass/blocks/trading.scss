@@ -23,6 +23,7 @@
   justify-content: space-between;
   
   & ul {
+    margin-bottom: 0;
     color: #4a4a4a;
     font-size: 18px;
     font-weight: bold;
@@ -31,10 +32,27 @@
     list-style-image: url('../img/li.png');
     
     & p {
+      margin-bottom: 0;
       color: $mc;
       font-size: 14px;
       font-weight: normal;
       font-family: 'SF UI Display Regular';
     }
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .trading {
+    padding: 50px 0;
+    
+    & h1 {
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .trading__flex {
+    flex-direction: column;
   }
 }

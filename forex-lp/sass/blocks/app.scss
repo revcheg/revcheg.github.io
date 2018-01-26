@@ -30,9 +30,26 @@
 }
 
 .app__bottom {
-  width: 940px;
+  width: auto;
   height: 430px;
   margin: auto;
   margin-top: 100px;
   background: url('../img/app.png') no-repeat center;
+  background-size: contain;
+}
+
+@media screen and ($tablet-widths) {
+  .app {
+    padding: 50px 0;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .app__top {
+    width: auto;
+  }
+  
+  .app__bottom {
+    display: none;
+  }
 }

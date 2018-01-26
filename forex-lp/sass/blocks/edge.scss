@@ -36,3 +36,45 @@
 .edge__box--award {
   background: url('../img/edge-t.png') no-repeat top left;
 }
+
+@media screen and ($tablet-widths) {
+  .edge__flex {
+    justify-content: space-around;
+  }
+  
+  .edge__box {
+    width: 250px;
+    text-align: center;
+    
+    & p {
+      font-size: 14px;
+    }
+  }
+  
+  .edge__box--over {
+    background: url('../img/edge-f.png') no-repeat top;
+  }
+  
+  .edge__box--free {
+    background: url('../img/edge-s.png') no-repeat top;
+  }
+  
+  .edge__box--award {
+    background: url('../img/edge-t.png') no-repeat top;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .edge__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .edge__box {
+    margin-bottom: 30px;
+  }
+  
+  .edge__box--award {
+    margin-bottom: 0;
+  }
+}

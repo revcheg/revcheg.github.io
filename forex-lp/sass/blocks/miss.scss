@@ -4,11 +4,13 @@
 }
 
 .miss__top {
+  margin-bottom: 0;
   font-size: 12px;
   font-family: 'SF UI Display Regular';
 }
 
 .miss__center {
+  margin: 0;
   padding: 70px 0;
   font-size: 32px;
   font-weight: bold;
@@ -19,3 +21,11 @@
     font-size: 48px;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .miss__center {
+    padding: 50px 0;
+  }
+}
+
+@media screen and ($mobile-widths) {}

@@ -10,6 +10,10 @@ body {
   position: absolute;
   clip: rect(0 0 0 0); }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 95%; } }
+
 @font-face {
   font-family: 'SF UI Text';
   src: url("SFUIText-HeavyItalic.eot");
@@ -158,7 +162,7 @@ body {
   font-style: italic; }
 
 .header {
-  background: #d1e2ed url("../img/header-bg.png"); }
+  background: #d1e2ed url("../img/header-bg.png") no-repeat; }
   .header img {
     margin: 30px 0 50px 0; }
   .header b {
@@ -179,7 +183,6 @@ body {
 
 .header__form {
   width: 500px;
-  height: 205px;
   padding: 15px;
   background: #2f2861; }
   .header__form b {
@@ -187,6 +190,22 @@ body {
     color: #fff;
     font-size: 24px;
     text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .header img {
+    display: block;
+    width: 320px;
+    margin: auto;
+    margin-top: 0;
+    padding: 50px 0; }
+  .header small {
+    padding-bottom: 50px; }
+  .header__title {
+    width: auto;
+    text-align: center; }
+  .header__form {
+    width: auto;
+    margin: auto; } }
 
 .form label {
   color: #fff;
@@ -239,6 +258,21 @@ body {
     -webkit-box-shadow: 7px 7px 1px 0 rgba(0, 0, 0, 0.7);
     box-shadow: 7px 7px 1px 0 rgba(0, 0, 0, 0.7); }
 
+@media screen and (max-width: 768px) {
+  .form__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .form__input input {
+    width: auto; }
+  .form__btn {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 15px 40px;
+    border-radius: 5px; } }
+
 .string {
   height: 55px;
   background: #2f2861; }
@@ -248,10 +282,12 @@ body {
   text-align: center; }
 
 .miss__top {
+  margin-bottom: 0;
   font-size: 12px;
   font-family: 'SF UI Display Regular'; }
 
 .miss__center {
+  margin: 0;
   padding: 70px 0;
   font-size: 32px;
   font-weight: bold;
@@ -259,6 +295,10 @@ body {
   text-transform: uppercase; }
   .miss__center span {
     font-size: 48px; }
+
+@media screen and (max-width: 1200px) {
+  .miss__center {
+    padding: 50px 0; } }
 
 .edge {
   background: #dbd9e2; }
@@ -293,6 +333,36 @@ body {
 .edge__box--award {
   background: url("../img/edge-t.png") no-repeat top left; }
 
+@media screen and (max-width: 1200px) {
+  .edge__flex {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .edge__box {
+    width: 250px;
+    text-align: center; }
+    .edge__box p {
+      font-size: 14px; }
+  .edge__box--over {
+    background: url("../img/edge-f.png") no-repeat top; }
+  .edge__box--free {
+    background: url("../img/edge-s.png") no-repeat top; }
+  .edge__box--award {
+    background: url("../img/edge-t.png") no-repeat top; } }
+
+@media screen and (max-width: 768px) {
+  .edge__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .edge__box {
+    margin-bottom: 30px; }
+  .edge__box--award {
+    margin-bottom: 0; } }
+
 .app {
   padding: 120px 0;
   background: url("../img/test.png") no-repeat center; }
@@ -317,11 +387,22 @@ body {
       transform: scale(1.1); }
 
 .app__bottom {
-  width: 940px;
+  width: auto;
   height: 430px;
   margin: auto;
   margin-top: 100px;
-  background: url("../img/app.png") no-repeat center; }
+  background: url("../img/app.png") no-repeat center;
+  background-size: contain; }
+
+@media screen and (max-width: 1200px) {
+  .app {
+    padding: 50px 0; } }
+
+@media screen and (max-width: 768px) {
+  .app__top {
+    width: auto; }
+  .app__bottom {
+    display: none; } }
 
 .promo {
   padding: 25px 0;
@@ -331,7 +412,12 @@ body {
   width: 390px;
   height: 124px;
   margin: auto;
-  background: url("../img/logo-promo.png") no-repeat; }
+  background: url("../img/logo-promo.png") no-repeat center; }
+
+@media screen and (max-width: 768px) {
+  .promo__logo {
+    width: 300px;
+    background-size: contain; } }
 
 .trading {
   padding: 80px 0;
@@ -356,6 +442,7 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .trading__flex ul {
+    margin-bottom: 0;
     color: #4a4a4a;
     font-size: 18px;
     font-weight: bold;
@@ -363,16 +450,31 @@ body {
     line-height: 30px;
     list-style-image: url("../img/li.png"); }
     .trading__flex ul p {
+      margin-bottom: 0;
       color: #2f2861;
       font-size: 14px;
       font-weight: normal;
       font-family: 'SF UI Display Regular'; }
 
+@media screen and (max-width: 1200px) {
+  .trading {
+    padding: 50px 0; }
+    .trading h1 {
+      font-size: 28px; } }
+
+@media screen and (max-width: 768px) {
+  .trading__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
+
 .acc {
   padding: 80px 0;
   text-align: center; }
   .acc h1 {
-    margin-bottom: 60px;
+    margin-top: 0;
+    margin-bottom: 85px;
     color: #2f2861;
     font-size: 32px;
     font-weight: bold;
@@ -402,23 +504,38 @@ body {
   margin-top: 85px;
   background: url("../img/shadow.png") no-repeat center; }
 
+@media screen and (max-width: 1200px) {
+  .acc {
+    padding: 50px 0; }
+  .acc__shadow {
+    width: auto; } }
+
+@media screen and (max-width: 768px) {
+  .acc a {
+    padding: 15px;
+    font-size: 19px; }
+    .acc a:hover {
+      padding: 15px; } }
+
 .pay {
   padding: 30px 0;
   background: #2f2861; }
 
 .pay__methods {
-  width: 1250px;
+  width: 100%;
   height: 58px;
   margin: auto;
-  background: url("../img/pay.png") no-repeat center; }
+  background: url("../img/pay.png") no-repeat center;
+  background-size: contain; }
 
 .footer {
   padding: 40px 0;
   color: #fff;
   text-align: center;
   border-style: solid;
-  -o-border-image: url("../img/golden.png") 4 0 0 repeat;
-  border-image: url("../img/golden.png") 4 0 0 repeat;
+  border-width: 3px 0 0;
+  -o-border-image: url("../img/golden.png") 3 0 0 repeat;
+  border-image: url("../img/golden.png") 3 0 0 repeat;
   background: #323232; }
   .footer b {
     font-size: 21px;
