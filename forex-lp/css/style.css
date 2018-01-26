@@ -165,7 +165,8 @@ body {
   font-style: italic; }
 
 .header {
-  background: #d1e2ed url("../img/header-bg.png") no-repeat; }
+  background: #d1e2ed url("../img/header-bg.png") no-repeat;
+  background-size: cover; }
   .header img {
     margin: 30px 0 50px 0; }
   .header b {
