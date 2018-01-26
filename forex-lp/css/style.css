@@ -151,7 +151,7 @@ body {
     margin: 30px 0 50px 0; }
   .header b {
     display: block;
-    font-family: 'SF UI Display Black'; }
+    font-family: 'SF UI Display Black', 'Arial', sans-serif; }
   .header small {
     display: block;
     padding: 5px 0 80px 15px;
