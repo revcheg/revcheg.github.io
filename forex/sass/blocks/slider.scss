@@ -25,6 +25,10 @@
 
 .slider__slide {
   height: 500px;
+  
+  & img {
+    height: 132px;
+  }
 }
 
 .slider__slide--one {

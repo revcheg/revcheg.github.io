@@ -502,6 +502,8 @@ body {
 
 .slider__slide {
   height: 500px; }
+  .slider__slide img {
+    height: 132px; }
 
 .slider__slide--one {
   background: url("../img/slider-f.png") no-repeat center;
