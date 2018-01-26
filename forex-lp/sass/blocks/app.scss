@@ -47,6 +47,14 @@
 @media screen and ($mobile-widths) {
   .app__top {
     width: auto;
+    
+    & b {
+      font-size: 22px;
+    }
+    
+    & p {
+      font-size: 18px;
+    }
   }
   
   .app__bottom {

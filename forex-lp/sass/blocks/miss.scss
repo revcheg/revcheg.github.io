@@ -28,4 +28,12 @@
   }
 }
 
-@media screen and ($mobile-widths) {}
+@media screen and ($mobile-widths) {
+  .miss__center {
+    font-size: 20px;
+    
+    & span {
+      font-size: 35px;
+    }
+  }
+}

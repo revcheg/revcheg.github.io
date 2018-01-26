@@ -179,17 +179,20 @@ body {
   .header img {
     display: block;
     width: 320px;
-    margin: auto;
-    margin-top: 0;
-    padding: 50px 0; }
+    margin: auto; }
   .header small {
-    padding-bottom: 50px; }
+    padding-left: 0;
+    padding-bottom: 50px;
+    text-align: center; }
   .header__title {
     width: auto;
+    font-size: 20px;
     text-align: center; }
   .header__form {
     width: auto;
-    margin: auto; } }
+    margin: auto; }
+    .header__form b {
+      font-size: 18px; } }
 
 .form label {
   color: #fff;
@@ -255,6 +258,7 @@ body {
     height: auto;
     margin-bottom: 20px;
     padding: 15px 40px;
+    font-size: 16px;
     border-radius: 5px; } }
 
 .string {
@@ -283,6 +287,12 @@ body {
 @media screen and (max-width: 1200px) {
   .miss__center {
     padding: 50px 0; } }
+
+@media screen and (max-width: 768px) {
+  .miss__center {
+    font-size: 20px; }
+    .miss__center span {
+      font-size: 35px; } }
 
 .edge {
   background: #dbd9e2; }
@@ -385,6 +395,10 @@ body {
 @media screen and (max-width: 768px) {
   .app__top {
     width: auto; }
+    .app__top b {
+      font-size: 22px; }
+    .app__top p {
+      font-size: 18px; }
   .app__bottom {
     display: none; } }
 
@@ -399,8 +413,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .promo__logo {
-    width: 300px;
-    background-size: contain; } }
+    height: 80px; } }
 
 .trading {
   padding: 80px 0;
@@ -414,7 +427,7 @@ body {
     text-align: center; }
     .trading h1 span {
       color: #2f2861;
-      font-size: 48px;
+      font-size: 32px;
       text-transform: uppercase; }
 
 .trading__flex {
@@ -451,11 +464,18 @@ body {
       font-size: 28px; } }
 
 @media screen and (max-width: 768px) {
+  .trading h1 {
+    font-size: 20px; }
+    .trading h1 span {
+      font-size: 25px; }
   .trading__flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+    .trading__flex ul {
+      padding-left: 0;
+      padding: 0 20px; } }
 
 .acc {
   padding: 80px 0;
@@ -499,6 +519,8 @@ body {
     width: auto; } }
 
 @media screen and (max-width: 768px) {
+  .acc h1 {
+    font-size: 22px; }
   .acc a {
     padding: 15px;
     font-size: 19px; }

@@ -55,6 +55,10 @@
 @media screen and ($mobile-widths) {
   .acc {
     
+    & h1 {
+      font-size: 22px;
+    }
+    
     & a {
       padding: 15px;
       font-size: 19px;

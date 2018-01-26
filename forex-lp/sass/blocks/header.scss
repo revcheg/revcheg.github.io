@@ -51,22 +51,27 @@
       display: block;
       width: 320px;
       margin: auto;
-      margin-top: 0;
-      padding: 50px 0;
     }
     
     & small {
+      padding-left: 0;
       padding-bottom: 50px;
+      text-align: center;
     }
   }
   
   .header__title {
     width: auto;
+    font-size: 20px;
     text-align: center;
   }
   
   .header__form {
     width: auto;
     margin: auto;
+    
+    & b {
+      font-size: 18px;
+    }
   }
 }

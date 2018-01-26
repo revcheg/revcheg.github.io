@@ -12,7 +12,7 @@
     
     & span {
       color: $mc;
-      font-size: 48px;
+      font-size: 32px;
       text-transform: uppercase;
     }
   }
@@ -60,7 +60,23 @@
 }
 
 @media screen and ($mobile-widths) {
+  .trading {
+    
+    & h1 {
+      font-size: 20px;
+      
+      & span {
+        font-size: 25px;
+      }
+    }
+  }
+  
   .trading__flex {
     flex-direction: column;
+    
+    & ul {
+      padding-left: 0;
+      padding: 0 20px;
+    }
   }
 }
