@@ -24,8 +24,7 @@ body {
   font-style: normal; }
 
 .header {
-  height: 85px;
-  background: #0b1930; }
+  background: #000; }
 
 .header__flex {
   display: -webkit-box;
@@ -37,10 +36,12 @@ body {
   padding: 15px 0; }
 
 .header__logo {
-  margin-top: -7px; }
+  width: 400px; }
 
-.header__logo--two {
-  margin-top: -15px; }
+.header__left,
+.header__right {
+  -ms-flex-item-align: center;
+  align-self: center; }
 
 .header__nav ul {
   display: -webkit-box;
@@ -107,7 +108,8 @@ body {
   background-size: cover; }
   .title h3 {
     color: #fff;
-    margin-top: 50px;
+    margin-top: 0;
+    padding-top: 50px;
     font-size: 30px;
     font-weight: bold;
     text-align: center; }

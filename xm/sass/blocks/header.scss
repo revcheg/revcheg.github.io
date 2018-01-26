@@ -1,6 +1,6 @@
 .header {
-  height: 85px;
-  background: #0b1930;
+  // height: 85px;
+  background: #000;
 }
 
 .header__flex {
@@ -10,11 +10,12 @@
 }
 
 .header__logo {
-  margin-top: -7px;
+  width: 400px;
 } 
 
-.header__logo--two {
-  margin-top: -15px;
+.header__left,
+.header__right {
+  align-self: center;
 }
 
 .header__nav {
