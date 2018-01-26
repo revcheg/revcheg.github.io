@@ -266,7 +266,7 @@ body {
   background: #2f2861; }
 
 .miss {
-  color: #2f2861;
+  color: #4a4a4a;
   text-align: center; }
 
 .miss__top {
@@ -279,10 +279,10 @@ body {
   padding: 70px 0;
   font-size: 32px;
   font-weight: bold;
-  font-family: 'SF UI Display';
-  text-transform: uppercase; }
+  font-family: 'SF UI Display'; }
   .miss__center span {
-    font-size: 48px; }
+    color: #2f2861;
+    font-size: 32px; }
 
 @media screen and (max-width: 1200px) {
   .miss__center {
@@ -427,8 +427,7 @@ body {
     text-align: center; }
     .trading h1 span {
       color: #2f2861;
-      font-size: 32px;
-      text-transform: uppercase; }
+      font-size: 32px; }
 
 .trading__flex {
   display: -webkit-box;

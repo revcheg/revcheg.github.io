@@ -1,5 +1,5 @@
 .miss {
-  color: $mc;
+  color: #4a4a4a;
   text-align: center;
 }
 
@@ -15,10 +15,10 @@
   font-size: 32px;
   font-weight: bold;
   font-family: 'SF UI Display';
-  text-transform: uppercase;
   
   & span {
-    font-size: 48px;
+    color: $mc;
+    font-size: 32px;
   }
 }
 
