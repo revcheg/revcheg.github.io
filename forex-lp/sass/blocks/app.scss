@@ -1,5 +1,38 @@
 .app {
-  height: 600px;
   padding: 120px 0;
   background: url('../img/test.png') no-repeat center;
+}
+
+.app__top {
+  width: 600px;
+  margin: auto;
+  color: $mc;
+  text-align: center;
+  
+  & b {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'SF UI Display';
+  }
+  
+  & p {
+    font-size: 20px;
+    font-family: 'SF UI Display Regular';
+  }
+  
+  & img {
+    transition: 0.3s;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.app__bottom {
+  width: 940px;
+  height: 430px;
+  margin: auto;
+  margin-top: 100px;
+  background: url('../img/app.png') no-repeat center;
 }
