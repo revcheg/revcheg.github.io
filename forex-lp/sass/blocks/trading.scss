@@ -29,11 +29,14 @@
     font-weight: bold;
     font-family: 'SF UI Display';
     line-height: 30px;
-    list-style-image: url('../img/li.png');
+    
+    background-size: 100px 82px;
     
     & li {
       padding: 10px 0;
       border-bottom: 1px solid #000;
+      list-style-image: url('../img/li.svg');
+      list-style-position: inside;
     }
     
     & p {

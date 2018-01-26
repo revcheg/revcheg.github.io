@@ -451,10 +451,12 @@ body {
     font-weight: bold;
     font-family: 'SF UI Display';
     line-height: 30px;
-    list-style-image: url("../img/li.png"); }
+    background-size: 100px 82px; }
     .trading__flex ul li {
       padding: 10px 0;
-      border-bottom: 1px solid #000; }
+      border-bottom: 1px solid #000;
+      list-style-image: url("../img/li.svg");
+      list-style-position: inside; }
     .trading__flex ul p {
       margin-bottom: 0;
       color: #2f2861;
