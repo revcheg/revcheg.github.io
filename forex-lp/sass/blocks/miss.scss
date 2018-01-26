@@ -6,7 +6,7 @@
 .miss__top {
   margin-bottom: 0;
   font-size: 12px;
-  font-family: 'SF UI Display Regular';
+  font-family: 'SF UI Display Regular', sans-serif;
 }
 
 .miss__center {
@@ -14,7 +14,7 @@
   padding: 70px 0;
   font-size: 32px;
   font-weight: bold;
-  font-family: 'SF UI Display';
+  font-family: 'SF UI Display', sans-serif;
   
   & span {
     color: $mc;

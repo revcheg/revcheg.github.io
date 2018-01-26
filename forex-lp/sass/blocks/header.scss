@@ -9,7 +9,7 @@
   
   & b {
     display: block;
-    font-family: 'SF UI Display Black', 'Arial', sans-serif;
+    font-family: 'SF UI Display Black', sans-serif;
   }
   
   & small {
@@ -17,7 +17,7 @@
     padding: 5px 0 80px 15px;
     color: $mc;
     font-size: 14px;
-    font-family: 'SF UI Display Regular';
+    font-family: 'SF UI Display Regular', sans-serif;
   }
 }
 

@@ -3,7 +3,7 @@
   & label {
     color: #fff;
     font-size: 12px;
-    font-family: 'SF UI Display Regular';
+    font-family: 'SF UI Display Regular', sans-serif;
   }
 }
 
@@ -21,7 +21,7 @@
     margin-bottom: 10px;
     padding: 10px 15px;
     font-size: 14px;
-    font-family: 'SF UI Display Regular';
+    font-family: 'SF UI Display Regular', sans-serif;
     border: 2px solid #fff;
     border-radius: 5px;
     outline: none;
@@ -34,7 +34,7 @@
   height: 115px;
   color: $mc;
   font-size: 20px;
-  font-family: 'SF UI Display Black';
+  font-family: 'SF UI Display Black', sans-serif;
   text-transform: uppercase;
   border: none;
   background: #f2c318;

@@ -151,13 +151,13 @@ body {
     margin: 30px 0 50px 0; }
   .header b {
     display: block;
-    font-family: 'SF UI Display Black', 'Arial', sans-serif; }
+    font-family: 'SF UI Display Black', sans-serif; }
   .header small {
     display: block;
     padding: 5px 0 80px 15px;
     color: #2f2861;
     font-size: 14px;
-    font-family: 'SF UI Display Regular'; }
+    font-family: 'SF UI Display Regular', sans-serif; }
 
 .header__title {
   width: 490px;
@@ -197,7 +197,7 @@ body {
 .form label {
   color: #fff;
   font-size: 12px;
-  font-family: 'SF UI Display Regular'; }
+  font-family: 'SF UI Display Regular', sans-serif; }
 
 .form__flex {
   display: -webkit-box;
@@ -220,7 +220,7 @@ body {
     margin-bottom: 10px;
     padding: 10px 15px;
     font-size: 14px;
-    font-family: 'SF UI Display Regular';
+    font-family: 'SF UI Display Regular', sans-serif;
     border: 2px solid #fff;
     border-radius: 5px;
     outline: none; }
@@ -232,7 +232,7 @@ body {
   height: 115px;
   color: #2f2861;
   font-size: 20px;
-  font-family: 'SF UI Display Black';
+  font-family: 'SF UI Display Black', sans-serif;
   text-transform: uppercase;
   border: none;
   background: #f2c318;
@@ -272,14 +272,14 @@ body {
 .miss__top {
   margin-bottom: 0;
   font-size: 12px;
-  font-family: 'SF UI Display Regular'; }
+  font-family: 'SF UI Display Regular', sans-serif; }
 
 .miss__center {
   margin: 0;
   padding: 70px 0;
   font-size: 32px;
   font-weight: bold;
-  font-family: 'SF UI Display'; }
+  font-family: 'SF UI Display', sans-serif; }
   .miss__center span {
     color: #2f2861;
     font-size: 32px; }
@@ -313,10 +313,10 @@ body {
   .edge__box b {
     font-size: 20px;
     font-weight: bold;
-    font-family: 'SF UI Display'; }
+    font-family: 'SF UI Display', sans-serif; }
   .edge__box p {
     margin-bottom: 0;
-    font-family: 'SF UI Display Regular'; }
+    font-family: 'SF UI Display Regular', sans-serif; }
 
 .edge__box--over {
   background: url("../img/edge-f.png") no-repeat top left; }
@@ -369,10 +369,10 @@ body {
   .app__top b {
     font-size: 30px;
     font-weight: bold;
-    font-family: 'SF UI Display'; }
+    font-family: 'SF UI Display', sans-serif; }
   .app__top p {
     font-size: 20px;
-    font-family: 'SF UI Display Regular'; }
+    font-family: 'SF UI Display Regular', sans-serif; }
   .app__top img {
     -webkit-transition: 0.3s;
     transition: 0.3s; }
@@ -423,7 +423,7 @@ body {
     color: #4a4a4a;
     font-size: 32px;
     font-weight: bold;
-    font-family: 'SF UI Display';
+    font-family: 'SF UI Display', sans-serif;
     text-align: center; }
     .trading h1 span {
       color: #2f2861;
@@ -441,7 +441,7 @@ body {
     color: #4a4a4a;
     font-size: 18px;
     font-weight: bold;
-    font-family: 'SF UI Display';
+    font-family: 'SF UI Display', sans-serif;
     line-height: 30px;
     background-size: 100px 82px; }
     .trading__flex ul li {
@@ -454,7 +454,7 @@ body {
       color: #2f2861;
       font-size: 14px;
       font-weight: normal;
-      font-family: 'SF UI Display Regular'; }
+      font-family: 'SF UI Display Regular', sans-serif; }
 
 @media screen and (max-width: 1200px) {
   .trading {
@@ -486,12 +486,12 @@ body {
     color: #2f2861;
     font-size: 32px;
     font-weight: bold;
-    font-family: 'SF UI Display'; }
+    font-family: 'SF UI Display', sans-serif; }
   .acc a {
     padding: 25px;
     color: #323232;
     font-size: 32px;
-    font-family: 'SF UI Display Black';
+    font-family: 'SF UI Display Black', sans-serif;
     text-decoration: none;
     border-radius: 47px;
     background: #f2c318;
@@ -503,7 +503,7 @@ body {
     margin-top: 60px;
     color: #2f2861;
     font-size: 16px;
-    font-family: 'SF UI Display Regular'; }
+    font-family: 'SF UI Display Regular', sans-serif; }
 
 .acc__shadow {
   width: 824px;
@@ -549,10 +549,10 @@ body {
   background: #323232; }
   .footer b {
     font-size: 21px;
-    font-family: 'SF UI Display Black';
+    font-family: 'SF UI Display Black', sans-serif;
     text-transform: uppercase;
     opacity: 0.7; }
   .footer p {
     font-size: 13px;
-    font-family: 'SF UI Display Regular';
+    font-family: 'SF UI Display Regular', sans-serif;
     opacity: 0.7; }

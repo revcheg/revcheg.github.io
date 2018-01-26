@@ -7,7 +7,7 @@
     color: #4a4a4a;
     font-size: 32px;
     font-weight: bold;
-    font-family: 'SF UI Display';
+    font-family: 'SF UI Display', sans-serif;
     text-align: center;
     
     & span {
@@ -26,7 +26,7 @@
     color: #4a4a4a;
     font-size: 18px;
     font-weight: bold;
-    font-family: 'SF UI Display';
+    font-family: 'SF UI Display', sans-serif;
     line-height: 30px;
     
     background-size: 100px 82px;
@@ -43,7 +43,7 @@
       color: $mc;
       font-size: 14px;
       font-weight: normal;
-      font-family: 'SF UI Display Regular';
+      font-family: 'SF UI Display Regular', sans-serif;
     }
   }
 }
