@@ -3,7 +3,7 @@ body {
   margin: 0; }
 
 .container {
-  width: 1100px;
+  width: 90%;
   margin: auto; }
 
 .visually-hidden {
@@ -162,7 +162,7 @@ body {
   font-style: italic; }
 
 .header {
-  background: #d1e2ed url("../img/header-bg.png") no-repeat; }
+  background: #d1e2ed url("../img/header-bg.png") no-repeat right; }
   .header img {
     margin: 30px 0 50px 0; }
   .header b {
