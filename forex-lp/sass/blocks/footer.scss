@@ -1,0 +1,21 @@
+.footer {
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+  border-style: solid;
+  border-image: url('../img/golden.png') 4 0 0 repeat;
+  background: #323232;
+  
+  & b {
+    font-size: 21px;
+    font-family: 'SF UI Display Black';
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+  
+  & p {
+    font-size: 13px;
+    font-family: 'SF UI Display Regular';
+    opacity: 0.7;
+  }
+}

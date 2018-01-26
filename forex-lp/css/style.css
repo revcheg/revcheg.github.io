@@ -367,3 +367,65 @@ body {
       font-size: 14px;
       font-weight: normal;
       font-family: 'SF UI Display Regular'; }
+
+.acc {
+  padding: 80px 0;
+  text-align: center; }
+  .acc h1 {
+    margin-bottom: 60px;
+    color: #2f2861;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'SF UI Display'; }
+  .acc a {
+    padding: 25px;
+    color: #323232;
+    font-size: 32px;
+    font-family: 'SF UI Display Black';
+    text-decoration: none;
+    border-radius: 47px;
+    background: #f2c318;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+    .acc a:hover {
+      padding: 25px 50px; }
+  .acc p {
+    margin-top: 60px;
+    color: #2f2861;
+    font-size: 16px;
+    font-family: 'SF UI Display Regular'; }
+
+.acc__shadow {
+  width: 824px;
+  height: 43px;
+  margin: auto;
+  margin-top: 85px;
+  background: url("../img/shadow.png") no-repeat center; }
+
+.pay {
+  padding: 30px 0;
+  background: #2f2861; }
+
+.pay__methods {
+  width: 1250px;
+  height: 58px;
+  margin: auto;
+  background: url("../img/pay.png") no-repeat center; }
+
+.footer {
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+  border-style: solid;
+  -o-border-image: url("../img/golden.png") 4 0 0 repeat;
+  border-image: url("../img/golden.png") 4 0 0 repeat;
+  background: #323232; }
+  .footer b {
+    font-size: 21px;
+    font-family: 'SF UI Display Black';
+    text-transform: uppercase;
+    opacity: 0.7; }
+  .footer p {
+    font-size: 13px;
+    font-family: 'SF UI Display Regular';
+    opacity: 0.7; }

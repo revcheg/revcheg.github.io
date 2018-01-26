@@ -1,0 +1,42 @@
+.acc {
+  padding: 80px 0;
+  text-align: center;
+
+  & h1 {
+    margin-bottom: 60px;
+    color: $mc;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'SF UI Display';
+  }
+  
+  & a {
+    padding: 25px;
+    color: #323232;
+    font-size: 32px;
+    font-family: 'SF UI Display Black';
+    text-decoration: none;
+    border-radius: 47px;
+    background: #f2c318;
+    transition: 0.2s;
+    
+    &:hover {
+      padding: 25px 50px;
+    }
+  }
+  
+  & p {
+    margin-top: 60px;
+    color: $mc;
+    font-size: 16px;
+    font-family: 'SF UI Display Regular';
+  }
+}
+
+.acc__shadow {
+  width: 824px;
+  height: 43px;
+  margin: auto;
+  margin-top: 85px;
+  background: url('../img/shadow.png') no-repeat center;
+}
