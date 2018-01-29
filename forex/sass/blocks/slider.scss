@@ -124,6 +124,10 @@
   
   .slider__slide {
     height: 350px;
+    
+    & small {
+      width: auto;
+    }
   }
   
   .slick-dots {

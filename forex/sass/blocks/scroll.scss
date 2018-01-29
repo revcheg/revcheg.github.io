@@ -152,6 +152,10 @@
         border: 1px solid $sc;
       }
     }
+    
+    & small {
+      width: auto;
+    }
   }
   
   .scroll__title {

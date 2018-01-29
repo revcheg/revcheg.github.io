@@ -56,6 +56,22 @@
   }
 }
 
+.page-header__user-menu {
+  position: relative;
+  
+  &::after {
+    content: 'Trading involves risk of loss';
+    position: absolute;
+    top: 34px;
+    width: 180px;
+    color: $mc;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: none;
+  }
+}
+
 .page-header__link--violet {
   margin-right: 10px;
   background: $mc;
@@ -74,6 +90,13 @@
         
     & a {
       font-size: 14px;
+    }
+  }
+  
+  .page-header__user-menu {
+    
+    &::after {
+      width: 160px;
     }
   }
   

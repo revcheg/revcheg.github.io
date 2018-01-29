@@ -82,6 +82,10 @@
     text-align: center;
     background: url('../img/global.png') no-repeat;
     background-size: cover;
+    
+    & small {
+      width: auto;
+    }
   }
   
   .global__title {
