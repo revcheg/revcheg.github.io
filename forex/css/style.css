@@ -2099,8 +2099,7 @@ button[type="submit"] {
       background: url("../img/res-h.png") no-repeat top, url("../img/res.png") no-repeat bottom; }
 
 .resources__flex--second {
-  width: 90%;
-  padding-top: 10px; }
+  padding-top: 30px; }
 
 .resources__text {
   color: #2e2963; }
