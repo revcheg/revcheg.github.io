@@ -235,6 +235,7 @@ body {
   font-family: 'SF UI Display Black', sans-serif;
   text-transform: uppercase;
   border: none;
+  border-radius: 10px;
   background: #f2c318;
   -webkit-box-shadow: 5px 5px 1px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 5px 5px 1px 0 rgba(0, 0, 0, 0.5);
@@ -271,7 +272,7 @@ body {
 
 .miss__top {
   margin-bottom: 0;
-  font-size: 12px;
+  font-size: 14px;
   font-family: 'SF UI Display Regular', sans-serif; }
 
 .miss__center {
