@@ -10,23 +10,15 @@
 }
 
 .header__logo {
-  width: 400px;
+  width: 300px;
 } 
 
-.header__left,
-.header__right {
-  align-self: center;
-}
-
 .header__nav {
-  
-  & ul {
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-    padding-left: 0;
-    list-style: none; 
-  }
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  padding-left: 0;
+  list-style: none; 
   
   & a {
     color: #fff;
@@ -41,14 +33,11 @@
 }
 
 .header__user {
-  
-  & ul {
-    display: flex;
-    justify-content: space-between;
-    width: 160px;
-    padding-left: 0;
-    list-style: none;
-  }
+  display: flex;
+  justify-content: space-around;
+  width: 160px;
+  padding-left: 0;
+  list-style: none;
   
   & a {
     color: #f7c113;

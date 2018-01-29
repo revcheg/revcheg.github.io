@@ -12,20 +12,9 @@
   }
 }
 
-.title__logo {
-  display: block;
-  margin: auto;
-  padding-top: 50px;
-}
-
-.title__logo-s {
-  display: none;
-}
-
 .title__flex {
   display: flex;
   justify-content: space-around;
-  margin-top: -50px;
   padding-bottom: 50px;
 }
 
@@ -85,16 +74,6 @@
     & h3 {
       font-size: 22px;
     }
-  }
-  
-  .title__logo {
-    display: none;
-  }
-  
-  .title__logo-s {
-    display: block;
-    margin: auto;
-    padding-top: 50px;
   }
   
   .title__flex {

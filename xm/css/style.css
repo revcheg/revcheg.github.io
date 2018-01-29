@@ -36,52 +36,44 @@ body {
   padding: 15px 0; }
 
 .header__logo {
-  width: 400px; }
+  width: 300px; }
 
-.header__left,
-.header__right {
-  -ms-flex-item-align: center;
-  align-self: center; }
-
-.header__nav ul {
+.header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 200px;
+  width: 400px;
   padding-left: 0;
   list-style: none; }
+  .header__nav a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .header__nav a:hover {
+      color: #f7c113; }
 
-.header__nav a {
-  color: #fff;
-  font-size: 18px;
-  text-decoration: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s; }
-  .header__nav a:hover {
-    color: #f7c113; }
-
-.header__user ul {
+.header__user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   width: 160px;
   padding-left: 0;
   list-style: none; }
-
-.header__user a {
-  color: #f7c113;
-  font-size: 18px;
-  text-decoration: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s; }
-  .header__user a:hover {
-    color: #fff; }
+  .header__user a {
+    color: #f7c113;
+    font-size: 18px;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .header__user a:hover {
+      color: #fff; }
 
 @media screen and (max-width: 768px) {
   .header {
@@ -114,21 +106,12 @@ body {
     font-weight: bold;
     text-align: center; }
 
-.title__logo {
-  display: block;
-  margin: auto;
-  padding-top: 50px; }
-
-.title__logo-s {
-  display: none; }
-
 .title__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin-top: -50px;
   padding-bottom: 50px; }
 
 .title__box {
@@ -178,12 +161,6 @@ body {
     background-size: cover; }
     .title h3 {
       font-size: 22px; }
-  .title__logo {
-    display: none; }
-  .title__logo-s {
-    display: block;
-    margin: auto;
-    padding-top: 50px; }
   .title__flex {
     margin-top: 0px; }
   .title__box {
