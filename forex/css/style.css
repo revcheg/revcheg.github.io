@@ -1804,10 +1804,6 @@ button[type="submit"] {
 .account-comparison__gold:hover {
   background: #e7c85d; }
 
-.account-comparison__free:hover {
-  color: #2e2963;
-  background: #4b426d; }
-
 @media screen and (max-width: 768px) {
   .account-comparison__control {
     -webkit-box-orient: vertical;
