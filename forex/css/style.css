@@ -516,6 +516,8 @@ body {
 .slider__slide--three {
   background: url("../img/slider-t.png") no-repeat top;
   background-size: cover; }
+  .slider__slide--three p:first-of-type {
+    color: #2e2963; }
 
 .slider__slide--four {
   background: url("../img/slider-fo.png") no-repeat top;

@@ -44,6 +44,10 @@
 .slider__slide--three {
   background: url('../img/slider-t.png') no-repeat top;
   background-size: cover;
+  
+  & p:first-of-type {
+    color: $mc;
+  }
 }
 
 .slider__slide--four {
