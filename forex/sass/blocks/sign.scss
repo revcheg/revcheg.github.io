@@ -1,6 +1,5 @@
 .sign {
   text-align: center;
-  text-transform: uppercase;
   background: $mc url("../img/sign-bg.png") no-repeat;
   background-size: cover;
 }
@@ -11,6 +10,7 @@
   color: white;
   font-size: 30px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .sign__text {
@@ -21,7 +21,7 @@
 }
 
 .sign__input {
-  width: 430px;
+  width: 300px;
   margin-bottom: 60px;
   padding: 10px;
 }
