@@ -52,5 +52,10 @@
 @media screen and ($mobile-widths) {
   .sign__input {
     width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .sign__submit {
+    margin-bottom: 50px;
   }
 }

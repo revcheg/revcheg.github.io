@@ -824,7 +824,10 @@ body {
 
 @media screen and (max-width: 768px) {
   .sign__input {
-    width: 80%; } }
+    width: 80%;
+    margin-bottom: 20px; }
+  .sign__submit {
+    margin-bottom: 50px; } }
 
 .adv {
   text-align: center; }
