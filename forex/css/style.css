@@ -807,6 +807,21 @@ body {
   opacity: 0.9;
   text-transform: uppercase; }
 
+.sign__submit {
+  margin-left: 20px;
+  padding: 11px 30px;
+  color: #2e2963;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #f2c318;
+  border: 1px solid #f2c318;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer; }
+  .sign__submit:hover {
+    color: #f2c318;
+    background: transparent; }
+
 @media screen and (max-width: 768px) {
   .sign__input {
     width: 80%; } }

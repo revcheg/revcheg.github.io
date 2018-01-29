@@ -32,6 +32,23 @@
   text-transform: uppercase;
 }
 
+.sign__submit {
+  margin-left: 20px;
+  padding: 11px 30px;
+  color: $mc;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: $sc;
+  border: 1px solid $sc;
+  transition: 0.3s;
+  cursor: pointer;
+  
+  &:hover {
+    color: $sc;
+    background: transparent;
+  }
+}
+
 @media screen and ($mobile-widths) {
   .sign__input {
     width: 80%;
