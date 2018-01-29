@@ -596,7 +596,9 @@ body {
 .online__box {
   padding-top: 165px;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
   .online__box b {
     font-size: 17px; }
   .online__box p {
@@ -617,9 +619,19 @@ body {
 
 .online__box--zulu {
   background: url("../img/online-1.png") no-repeat top; }
+  .online__box--zulu:hover {
+    background: url("../img/online-1-h.png") no-repeat top; }
+  .online__box--zulu a:hover {
+    color: #fff;
+    background: #ff7200; }
 
 .online__box--tradency {
   background: url("../img/online-2.png") no-repeat top; }
+  .online__box--tradency:hover {
+    background: url("../img/online-2-h.png") no-repeat top; }
+  .online__box--tradency a:hover {
+    color: #fff;
+    background: #f15b22; }
 
 .online__box--algo {
   background: url("../img/online-3.png") no-repeat top; }
@@ -1794,7 +1806,7 @@ button[type="submit"] {
 
 .account-comparison__free:hover {
   color: #2e2963;
-  background: #fff; }
+  background: #4b426d; }
 
 @media screen and (max-width: 768px) {
   .account-comparison__control {
