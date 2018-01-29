@@ -11,15 +11,17 @@
 .account__types {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
+  // flex-wrap: wrap;
   padding-top: 100px;
 }
 
 .account__box {
   position: relative;
   width: 250px;
+  margin: 0 10px;
   margin-bottom: 70px;
+  
   box-shadow: 0px 0px 7px 0px rgba(2, 2, 2, 0.35);
   cursor: pointer;
   transition: 0.3s;
@@ -78,35 +80,71 @@
 }
 
 .account__popular {
-  position: absolute;
-  top: -49px;
-  left: 20px;
-  width: 210px;
-  height: 49px;
-  background: url('../img/acc-popular.png');
+  padding: 10px 0;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  background: #F1B90F;
 }
 
 // Types
 .account__box--bronze {
   
-    & footer {
-      margin-top: 110px;
-    }
-    
-    &:hover header {
-      background: #999999;
-    }
+  & footer {
+    margin-top: 110px;
+  }
+  
+  &:hover header {
+    background: #999999;
+  }
 }
 
 .account__box--silver {
   
-    & footer {
-      margin-top: 20px;
-    }
-    
-    &:hover header {
-      background: #999999;
-    }
+  // & header {
+  //   margin-bottom: 0;
+  // }
+
+  & header::before {
+    content: 'Most Popular';
+    position: absolute;
+    top: -35px;
+    left: 0;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: none;
+    z-index: 10;
+  }
+  
+  & footer {
+    margin-top: 20px;
+  }
+  
+  &:hover header {
+    background: #999999;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -70px;
+    width: 50%;
+    height: 70px;
+    background: linear-gradient(to bottom right, transparent 50%, $sc 50.7%);
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -70px;
+    width: 50%;
+    height: 70px;
+    background: linear-gradient(to bottom left, transparent 50%, $sc 50.7%);
+  }
 }
 
 .account__box--gold {
