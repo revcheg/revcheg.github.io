@@ -504,6 +504,13 @@ body {
   height: 500px; }
   .slider__slide img {
     height: 132px; }
+  .slider__slide small {
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 10px;
+    width: 240px;
+    text-align: center; }
 
 .slider__slide--one {
   background: url("../img/slider-f.png") no-repeat top;
@@ -680,6 +687,13 @@ body {
     .global a:hover {
       color: #f2c318;
       background: transparent; }
+  .global small {
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 10px;
+    width: 240px;
+    text-align: center; }
 
 .global__box {
   padding: 100px 0; }
@@ -928,6 +942,13 @@ body {
     .scroll__second a:hover {
       color: #f2c318;
       background: transparent; }
+  .scroll__second small {
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 10px;
+    width: 240px;
+    text-align: center; }
 
 .scroll__flex {
   display: -webkit-box;
