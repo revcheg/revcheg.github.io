@@ -265,6 +265,8 @@ body {
 .string {
   height: 55px;
   background: #2f2861; }
+  .string iframe {
+    width: 100%; }
 
 .miss {
   color: #4a4a4a;

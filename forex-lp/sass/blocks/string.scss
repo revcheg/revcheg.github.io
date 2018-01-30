@@ -1,4 +1,10 @@
 .string {
   height: 55px;
   background: $mc;
+  
+  & iframe {
+    width: 100%;
+  }
+    
 }
+
