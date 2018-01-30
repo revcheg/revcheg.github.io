@@ -647,7 +647,7 @@ input::placeholder {
   color: #fff;
   background: #00aeef; }
   .news b {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 100; }
   .news p {
     font-weight: 100; }
@@ -702,9 +702,8 @@ input::placeholder {
     color: #fff;
     font-size: 50px;
     font-weight: 700;
-    background: #000;
     border-radius: 10px;
-    text-align: center;
+    text-align: right;
     text-transform: uppercase; }
   .crypto p {
     -ms-flex-item-align: end;
@@ -714,8 +713,7 @@ input::placeholder {
     color: #fff;
     font-size: 22px;
     font-weight: 500;
-    text-align: right;
-    text-transform: uppercase; }
+    text-align: right; }
   .crypto a {
     -ms-flex-item-align: end;
     align-self: flex-end;
@@ -847,7 +845,7 @@ input::placeholder {
   .trading p {
     -ms-flex-item-align: end;
     align-self: flex-end;
-    width: 70%;
+    width: 60%;
     color: #fff;
     font-size: 20px;
     font-weight: 100;
