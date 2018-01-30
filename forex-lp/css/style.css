@@ -144,7 +144,7 @@ body {
   font-style: italic; }
 
 .header {
-  background: #d1e2ed url("../img/header-bg.png") no-repeat;
+  background: #d1e2ed url("../img/header-bg.png") no-repeat top;
   background-size: cover; }
   .header img {
     height: 141px;
