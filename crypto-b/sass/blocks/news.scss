@@ -14,14 +14,14 @@
 
 .news__flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 50px 0;
 }
 
 .news__left-column,
 .news__middle-column,
 .news__right-column {
-  width: 30%;
+  width: 340px;
 }
 
 // Media
