@@ -168,7 +168,7 @@ body {
 .header__form {
   width: 500px;
   padding: 15px;
-  background: #2f2861; }
+  background: rgba(0, 0, 0, 0.9); }
   .header__form b {
     margin-bottom: 10px;
     color: #fff;
@@ -264,7 +264,7 @@ body {
 
 .string {
   height: 55px;
-  background: #2f2861; }
+  background: #000; }
   .string iframe {
     width: 100%; }
 
