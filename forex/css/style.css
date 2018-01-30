@@ -1176,6 +1176,11 @@ body {
   .page-footer__copyright p {
     font-size: 14px; }
 
+.page-footer__risk {
+  color: #0178aa !important; }
+  .page-footer__risk:hover {
+    color: #f2c318 !important; }
+
 @media screen and (max-width: 1200px) {
   .container--width {
     width: 95%; }

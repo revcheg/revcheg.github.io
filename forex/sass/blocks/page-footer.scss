@@ -137,6 +137,13 @@
   }
 }
 
+.page-footer__risk {
+  color: #0178aa !important;
+  
+  &:hover {
+    color: $sc !important;
+  }
+}
 
 @media screen and ($tablet-widths) {
   .container--width {
