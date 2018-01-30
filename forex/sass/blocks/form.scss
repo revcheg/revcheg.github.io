@@ -85,16 +85,15 @@ button[type="submit"] {
   font-weight: bold;
   text-transform: uppercase;
   border: none;
-  border-radius: 5px;
   background: $sc;
-  box-shadow: 3px 3px 0px 0px rgba(121, 121, 121, 0.7);
+  box-shadow: 3px 3px 2px 0px rgba(121, 121, 121, 0.7);
   transition: 0.3s;
   cursor: pointer;
   
   &:hover {
     color: #fff;
     background: $mc;
-    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.6);
   }
 }
 

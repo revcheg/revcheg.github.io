@@ -1719,18 +1719,17 @@ button[type="submit"] {
   font-weight: bold;
   text-transform: uppercase;
   border: none;
-  border-radius: 5px;
   background: #f2c318;
-  -webkit-box-shadow: 3px 3px 0px 0px rgba(121, 121, 121, 0.7);
-  box-shadow: 3px 3px 0px 0px rgba(121, 121, 121, 0.7);
+  -webkit-box-shadow: 3px 3px 2px 0px rgba(121, 121, 121, 0.7);
+  box-shadow: 3px 3px 2px 0px rgba(121, 121, 121, 0.7);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer; }
   button[type="submit"]:hover {
     color: #fff;
     background: #2e2963;
-    -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.7);
-    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.7); }
+    -webkit-box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.6); }
 
 .form__flex--pb {
   padding-bottom: 0; }
