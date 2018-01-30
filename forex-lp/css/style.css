@@ -154,10 +154,13 @@ body {
     font-family: 'SF UI Display Black', sans-serif; }
   .header small {
     display: block;
-    padding: 5px 0 80px 15px;
+    padding: 5px 0 50px 15px;
     color: #2f2861;
     font-size: 14px;
     font-family: 'SF UI Display Regular', sans-serif; }
+  .header iframe {
+    width: 100%;
+    height: 60px; }
 
 .header__title {
   width: 490px;
@@ -168,7 +171,7 @@ body {
 .header__form {
   width: 500px;
   padding: 15px;
-  background: rgba(0, 0, 0, 0.9); }
+  background: #2f2861; }
   .header__form b {
     margin-bottom: 10px;
     color: #fff;
@@ -265,8 +268,6 @@ body {
 .string {
   height: 55px;
   background: #000; }
-  .string iframe {
-    width: 100%; }
 
 .miss {
   color: #4a4a4a;

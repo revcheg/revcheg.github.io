@@ -14,10 +14,15 @@
   
   & small {
     display: block;
-    padding: 5px 0 80px 15px;
+    padding: 5px 0 50px 15px;
     color: $mc;
     font-size: 14px;
     font-family: 'SF UI Display Regular', sans-serif;
+  }
+  
+  & iframe {
+    width: 100%;
+    height: 60px;
   }
 }
 
@@ -30,10 +35,8 @@
 
 .header__form {
   width: 500px;
-  // height: 205px;
   padding: 15px;
-  background: rgba(0, 0, 0, 0.9);
-  // background: $mc;
+  background: $mc;
   
   & b {
     margin-bottom: 10px;
