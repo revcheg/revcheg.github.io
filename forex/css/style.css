@@ -2083,20 +2083,22 @@ button[type="submit"] {
   justify-content: space-between;
   margin: auto; }
   .resources__flex a {
-    width: 65px;
-    height: 68px;
+    width: 70px;
+    height: 70px;
+    padding-top: 5px;
     color: #fff;
     font-size: 20px;
     font-weight: bold;
-    line-height: 66px;
+    line-height: 70px;
     text-align: center;
     text-decoration: none;
-    background: url("../img/res.png") no-repeat bottom;
+    background: url("../img/res.svg") no-repeat bottom;
     -webkit-transition: 0.1s;
     transition: 0.1s; }
     .resources__flex a:hover {
       color: #2e2963;
-      background: url("../img/res-h.png") no-repeat top, url("../img/res.png") no-repeat bottom; }
+      line-height: 65px;
+      background: url("../img/res-h.svg") no-repeat top, url("../img/res.svg") no-repeat bottom; }
 
 .resources__flex--second {
   padding-top: 30px; }
@@ -2126,16 +2128,28 @@ button[type="submit"] {
     font-size: 18px;
     text-transform: uppercase; }
   .resources__faq a {
+    position: relative;
+    margin-bottom: 10px;
     padding: 25px;
     padding-left: 80px;
     color: #2e2963;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    background: url("../img/faq.png") no-repeat left;
+    background: url("../img/res.svg") no-repeat left;
     -webkit-transition: 0.2s;
     transition: 0.2s; }
     .resources__faq a:hover {
-      color: #f2c318; }
+      background: url("../img/res-h.svg") no-repeat left top; }
+    .resources__faq a:hover::before {
+      color: #2e2963; }
+    .resources__faq a::before {
+      content: '+';
+      position: absolute;
+      top: 17px;
+      left: 25px;
+      color: #fff;
+      font-size: 30px; }
 
 @media screen and (max-width: 1200px) {
   .resources__flex {

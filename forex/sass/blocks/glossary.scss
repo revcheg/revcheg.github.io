@@ -16,21 +16,23 @@
   margin: auto;
   
   & a {
-    width: 65px;
-    height: 68px;
+    width: 70px;
+    height: 70px;
+    padding-top: 5px;
     color: #fff;
     font-size: 20px;
     font-weight: bold;
-    line-height: 66px;
+    line-height: 70px;
     text-align: center;
     text-decoration: none;
-    background: url('../img/res.png') no-repeat bottom;
+    background: url('../img/res.svg') no-repeat bottom;
     transition: 0.1s;
                 
     &:hover {
       color: $mc;
-      background: url('../img/res-h.png') no-repeat top,
-                  url('../img/res.png') no-repeat bottom;
+      line-height: 65px;
+      background: url('../img/res-h.svg') no-repeat top,
+                  url('../img/res.svg') no-repeat bottom;
     }
   }
 }
@@ -67,16 +69,32 @@
   }
   
   & a {
+    position: relative;
+    margin-bottom: 10px;
     padding: 25px;
     padding-left: 80px;
     color: $mc;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    background: url('../img/faq.png') no-repeat left;
+    background: url('../img/res.svg') no-repeat left;
     transition: 0.2s;
     
     &:hover {
-      color: $sc;
+      background: url('../img/res-h.svg') no-repeat left top;
+    }
+    
+    &:hover::before {
+      color: $mc;
+    }
+    
+    &::before {
+      content: '+';
+      position: absolute;
+      top: 17px;
+      left: 25px;
+      color: #fff;
+      font-size: 30px;
     }
   }
 }
