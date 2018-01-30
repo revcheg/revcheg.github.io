@@ -770,15 +770,13 @@ body {
     width: 500px;
     -ms-flex-item-align: center;
     align-self: center;
-    text-align: center;
     opacity: 0.7; }
 
 .trading__title {
   margin-top: 50px;
-  padding: 10px 50px;
-  color: white;
+  padding: 10px 0;
+  color: #2e2963;
   font-size: 30px;
-  background: #2e2963;
   text-align: center; }
 
 .trading__img {
@@ -805,6 +803,7 @@ body {
       padding-top: 0; }
   .trading__img {
     width: auto;
+    height: 250px;
     background: url("../img/trading-bg.png") no-repeat center;
     background-size: contain; } }
 
@@ -1053,8 +1052,7 @@ body {
       width: auto; }
   .scroll__title {
     padding-top: 0;
-    font-size: 55px;
-    font-weight: bold; }
+    font-size: 55px; }
   .scroll__list {
     margin: 0;
     padding-top: 30px;
