@@ -1065,6 +1065,9 @@ body {
 .payment {
   background: #2e2963; }
 
+.payment--temp {
+  background: #4b426d; }
+
 .payment__flex {
   display: -webkit-box;
   display: -ms-flexbox;
