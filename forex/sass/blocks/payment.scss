@@ -62,3 +62,22 @@
   height: 29px;
   background: url('../img/skrill.png');
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .payment__flex {
+    flex-direction: column;
+    width: auto;
+    padding: 30px 0;
+  }
+  
+  .payment__box {
+    margin-bottom: 20px;
+    opacity: 1;
+  }
+  
+  .payment__box--skrill {
+    margin-bottom: 0;
+  }
+}
