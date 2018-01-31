@@ -3,11 +3,62 @@
 }
 
 .payment--temp {
-  background: #4b426d;
+  // background: #4b426d;
+}
+
+.payment__flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1000px;
+  margin: auto;
+  padding: 20px 0;
 }
 
 .payment__box {
-  height: 60px;
-  padding: 20px 0;
-  background: url('../img/pay-sprite.png') no-repeat center;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.2s;
+  
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.payment__box--methods {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.payment__box--visa {
+  width: 92px;
+  height: 29px;
+  background: url('../img/visa.png') no-repeat;
+}
+
+.payment__box--master {
+  width: 59px;
+  height: 35px;
+  background: url('../img/master.png');
+}
+
+.payment__box--bank {
+  width: 123px;
+  height: 39px;
+  background: url('../img/bank.png');
+}
+
+.payment__box--net {
+  width: 131px;
+  height: 22px;
+  background: url('../img/net.png');
+}
+
+.payment__box--skrill {
+  width: 85px;
+  height: 29px;
+  background: url('../img/skrill.png');
 }
