@@ -1666,7 +1666,8 @@ body {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  width: 47%; }
   .form__right input {
     width: 40%; }
 
@@ -1754,7 +1755,19 @@ button[type="submit"] {
     -ms-flex-direction: column;
     flex-direction: column; }
   .form__textarea {
-    width: 70%; } }
+    width: 70%; }
+  .form__select-registration {
+    width: auto;
+    margin-bottom: 10px; }
+  .form__right {
+    width: auto; }
+    .form__right input {
+      width: 40%; }
+  .form__flex--radio {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; } }
 
 .legal__flex {
   display: -webkit-box;
@@ -2081,6 +2094,8 @@ button[type="submit"] {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: auto; }
   .resources__flex a {
     width: 70px;
@@ -2158,6 +2173,8 @@ button[type="submit"] {
 @media screen and (max-width: 768px) {
   .resources {
     padding-bottom: 30px; }
+  .resources__flex--second {
+    padding-top: 0; }
   .resources__text p {
     text-align: center; }
   .resources__faq {

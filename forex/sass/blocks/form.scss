@@ -34,6 +34,7 @@
 .form__right {
   display: flex;
   justify-content: space-between;
+  width: 47%;
   
   & input {
     width: 40%;
@@ -124,5 +125,22 @@ button[type="submit"] {
   
   .form__textarea {
     width: 70%;
+  }
+  
+  .form__select-registration {
+    width: auto;
+    margin-bottom: 10px;
+  }
+  
+  .form__right {
+    width: auto;
+    
+    & input {
+      width: 40%;
+    }
+  }
+  
+  .form__flex--radio {
+    flex-direction: row;
   }
 }

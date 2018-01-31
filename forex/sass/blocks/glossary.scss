@@ -13,6 +13,7 @@
 .resources__flex {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: auto;
   
   & a {
@@ -108,6 +109,10 @@
 @media screen and ($mobile-widths) {
   .resources {
     padding-bottom: 30px;
+  }
+  
+  .resources__flex--second {
+    padding-top: 0;
   }
   
   .resources__text {
