@@ -1094,7 +1094,8 @@ body {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  opacity: 1; }
 
 .payment__box--visa {
   width: 92px;
