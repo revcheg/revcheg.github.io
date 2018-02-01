@@ -234,9 +234,6 @@ body {
     .form__input select optgroup {
       color: black; }
 
-.test {
-  color: red; }
-
 .form__btn {
   -ms-flex-item-align: center;
   align-self: center;
