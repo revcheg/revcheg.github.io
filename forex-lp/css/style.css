@@ -227,6 +227,16 @@ body {
     border: 2px solid #fff;
     border-radius: 5px;
     outline: none; }
+  .form__input select {
+    margin-bottom: 10px;
+    padding: 9px 10px;
+    color: #777;
+    border-radius: 5px; }
+    .form__input select optgroup {
+      color: black; }
+
+.test {
+  color: red; }
 
 .form__btn {
   -ms-flex-item-align: center;
