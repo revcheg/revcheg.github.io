@@ -1,0 +1,83 @@
+.form {
+  
+  & label {
+    color: #fff;
+    font-size: 12px;
+    font-family: 'SF UI Display Regular', sans-serif;
+  }
+}
+
+.form__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  
+  & input {
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-family: 'SF UI Display Regular', sans-serif;
+    border: 2px solid #fff;
+    border-radius: 5px;
+  }
+  
+  & select {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    color: #777;
+    border-radius: 5px;
+    
+    & optgroup {
+      color: black;
+    }
+  }
+}
+
+.form__btn {
+  align-self: center;
+  width: 130px;
+  height: 115px;
+  color: $mc;
+  font-size: 20px;
+  font-family: 'SF UI Display Black', sans-serif;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  background: #f2c318;
+  box-shadow: 5px 5px 1px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: 0.2s;
+  
+  &:hover {
+    box-shadow: 7px 7px 1px 0 rgba(0, 0, 0, 0.7);
+  }
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {  
+  .form__flex {
+    flex-direction: column;
+  }
+  
+  .form__input {
+    
+    & input {
+      width: auto;
+    }
+  }
+  
+  .form__btn {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 15px 40px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+}

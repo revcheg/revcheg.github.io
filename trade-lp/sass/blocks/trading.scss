@@ -1,0 +1,82 @@
+.trading {
+  padding: 80px 0;
+  background: #dbd9e2;
+  
+  & h1 {
+    margin-top: 0;
+    color: #4a4a4a;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'SF UI Display', sans-serif;
+    text-align: center;
+    
+    & span {
+      color: $mc;
+      font-size: 32px;
+    }
+  }
+}
+
+.trading__flex {
+  display: flex;
+  justify-content: space-between;
+  
+  & ul {
+    margin-bottom: 0;
+    color: #4a4a4a;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'SF UI Display', sans-serif;
+    line-height: 30px;
+    
+    background-size: 100px 82px;
+    
+    & li {
+      padding: 10px 0;
+      border-bottom: 1px solid #000;
+      list-style-image: url('../img/li.svg');
+      list-style-position: inside;
+    }
+    
+    & p {
+      margin-bottom: 0;
+      color: $mc;
+      font-size: 14px;
+      font-weight: normal;
+      font-family: 'SF UI Display Regular', sans-serif;
+    }
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .trading {
+    padding: 50px 0;
+    
+    & h1 {
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .trading {
+    
+    & h1 {
+      font-size: 20px;
+      
+      & span {
+        font-size: 25px;
+      }
+    }
+  }
+  
+  .trading__flex {
+    flex-direction: column;
+    
+    & ul {
+      margin-top: 0;
+      padding-left: 0;
+      padding: 0 20px;
+    }
+  }
+}
