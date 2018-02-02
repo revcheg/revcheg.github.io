@@ -54,7 +54,11 @@
   background: url('../img/slider-t.png') no-repeat top;
   background-size: cover;
   
-  & p:first-of-type {
+  & p {
+    color: $mc;
+  }
+  
+  & small {
     color: $mc;
   }
 }
