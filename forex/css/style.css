@@ -787,6 +787,9 @@ body {
   background: url("../img/trading-bg.png") no-repeat center;
   background-size: contain; }
 
+.trading__app {
+  text-align: center; }
+
 @media screen and (max-width: 1200px) {
   .trading__title {
     margin-top: 30px;
