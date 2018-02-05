@@ -1,4 +1,6 @@
 .video {
+  position: fixed;
+  z-index: 1;
   
   & video {
     width: 100%;
