@@ -1,6 +1,4 @@
 .video {
-  position: fixed;
-  z-index: 1;
   
   & video {
     width: 100%;
@@ -9,32 +7,24 @@
   }
 }
 
+.video__content {
+  position: absolute;
+  top: 0;
+  width: 1200px;
+}
+
 .video__title {
-  position: relative;
-  margin-top: 150px;
+  margin-top: 200px;
   color: #fff;
-  z-index: 2;
+  text-transform: uppercase;
   
   & h1 {
     margin-bottom: 30px;
     font-size: 60px;
-    text-transform: uppercase;
   }
   
   & p {
-    margin-top: 0;
     margin-bottom: 75px;
     font-size: 24px;
-    text-transform: uppercase;
   }
-}
-
-.video__frame {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 55px;
-  background: #000;
-  opacity: 0.7;
-  z-index: 2;
 }
