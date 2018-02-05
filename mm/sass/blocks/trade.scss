@@ -38,3 +38,13 @@
     opacity: 0.7;
   }
 }
+
+.trade__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.trade__link {
+  align-self: center;
+  // flex-direction: row;
+}
