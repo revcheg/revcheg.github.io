@@ -1,0 +1,52 @@
+.trading__flex {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.trading__flex--second {
+  padding-top: 0;
+  padding-bottom: 80px;
+}
+
+.trading__left {
+  align-self: center;
+  
+  & b {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'SF UI Display Black', sans-serif;
+  }
+  
+  & p {
+    opacity: 0.7;
+  }
+}
+
+.trading__box {
+  width: 270px;
+  padding-top: 170px;
+  text-align: center;
+  
+  & b {
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+}
+
+.trading__box--tools {
+  background: url('../img/trading-1.png') no-repeat top;
+}
+
+.trading__box--trans {
+  background: url('../img/trading-2.png') no-repeat top;
+}
+
+.trading__box--funds {
+  background: url('../img/trading-3.png') no-repeat top;
+}
+
+.trading__box--algo {
+  background: url('../img/trading-4.png') no-repeat top;
+}
