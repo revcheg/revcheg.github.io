@@ -140,11 +140,25 @@ body {
     height: 100vh;
     -o-object-fit: fill;
     object-fit: fill; }
-  .video h1 {
-    color: red; }
+
+.video__title {
+  position: relative;
+  margin-top: 150px;
+  color: #fff;
+  z-index: 2; }
+  .video__title h1 {
+    margin-bottom: 30px;
+    font-size: 60px;
+    text-transform: uppercase; }
+  .video__title p {
+    margin-top: 0;
+    margin-bottom: 75px;
+    font-size: 24px;
+    text-transform: uppercase; }
 
 .header {
   position: relative;
+  border-bottom: 2px solid rgba(82, 82, 82, 0.5);
   z-index: 2; }
 
 .main-nav {
@@ -160,8 +174,44 @@ body {
   height: 90px; }
 
 .button {
-  padding: 10px 25px;
+  padding: 8px 23px;
+  color: #000;
   font-size: 12px;
   text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #eeba1d;
   border-radius: 20px;
-  background: #eeba1d; }
+  background: #eeba1d;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .button:hover {
+    color: #fff;
+    background: transparent; }
+  .button--black {
+    color: #fff;
+    border: 2px solid #000;
+    background: #000; }
+  .button--title {
+    font-size: 16px; }
+
+.sub-nav {
+  position: relative;
+  width: 250px;
+  margin: auto;
+  padding-top: 20px;
+  z-index: 2; }
+  .sub-nav a {
+    padding-bottom: 20px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: url("../img/link-arrow.png") no-repeat bottom; }
+
+.sub-nav__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
