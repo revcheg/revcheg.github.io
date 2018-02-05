@@ -1,0 +1,40 @@
+.trade {
+  padding: 80px 0;
+  
+  & video {
+    width: 600px;
+  }
+}
+
+.trade__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trade__left {
+  width: 400px;
+  text-align: center;
+  
+  & h1 {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-family: 'SF UI Display Black', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  & p {
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'SF UI Display', sans-serif;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+  
+  & small {
+    display: block;
+    margin-top: 15px;
+    font-family: 'SF UI Display', sans-serif;
+    opacity: 0.7;
+  }
+}
