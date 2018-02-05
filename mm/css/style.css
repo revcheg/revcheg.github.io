@@ -359,3 +359,6 @@ body {
   .live iframe {
     width: 100%;
     height: 520px; }
+
+.map iframe {
+  width: 100%; }
