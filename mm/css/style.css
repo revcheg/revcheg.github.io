@@ -156,10 +156,14 @@ body {
   text-transform: uppercase; }
   .video__title h1 {
     margin-bottom: 30px;
-    font-size: 60px; }
+    font-size: 60px;
+    font-family: 'SF UI Display Black', sans-serif; }
   .video__title p {
     margin-bottom: 75px;
-    font-size: 24px; }
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'SF UI Text Regular', sans-serif; }
 
 .main-nav {
   display: -webkit-box;
@@ -177,6 +181,8 @@ body {
   padding: 8px 23px;
   color: #000;
   font-size: 12px;
+  font-weight: bold;
+  font-family: 'SF UI Display Regular', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid #eeba1d;
@@ -206,8 +212,11 @@ body {
   margin: auto; }
   .sub-nav a {
     color: #fff;
+    font-size: 14px;
+    font-weight: bold;
     text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: 'SF UI Display Regular', sans-serif; }
 
 .trading__flex {
   display: -webkit-box;
@@ -231,6 +240,7 @@ body {
     text-transform: uppercase;
     font-family: 'SF UI Display Black', sans-serif; }
   .trading__left p {
+    font-family: 'SF UI Display Regular', sans-serif;
     opacity: 0.7; }
 
 .trading__box {
@@ -238,8 +248,12 @@ body {
   padding-top: 170px;
   text-align: center; }
   .trading__box b {
-    font-size: 22px;
+    font-size: 20px;
+    font-family: 'SF UI Display Bold', sans-serif;
     text-transform: uppercase; }
+  .trading__box p {
+    font-family: 'SF UI Display Regular', sans-serif;
+    opacity: 0.7; }
 
 .trading__box--tools {
   background: url("../img/trading-1.png") no-repeat top; }
