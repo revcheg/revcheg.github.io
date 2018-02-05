@@ -352,8 +352,10 @@ body {
 .live {
   padding: 80px 0; }
   .live h1 {
+    font-size: 30px;
     font-family: 'SF UI Display Bold', sans-serif;
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase; }
   .live iframe {
     width: 100%;
     height: 520px; }
