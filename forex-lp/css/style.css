@@ -370,6 +370,12 @@ body {
 .app {
   padding: 70px 0;
   background: url("../img/test.png") no-repeat center; }
+  .app img {
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .app img:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
 
 .app__top {
   width: 700px;
@@ -383,20 +389,18 @@ body {
   .app__top p {
     font-size: 20px;
     font-family: 'SF UI Display Regular', sans-serif; }
-  .app__top img {
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-    .app__top img:hover {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1); }
 
-.app__bottom {
+.app__middle {
   width: auto;
   height: 430px;
   margin: auto;
   margin-top: 20px;
   background: url("../img/app.png") no-repeat center;
   background-size: contain; }
+
+.app__bottom {
+  width: 195px;
+  margin: auto; }
 
 @media screen and (max-width: 1200px) {
   .app {

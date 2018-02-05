@@ -1,6 +1,14 @@
 .app {
   padding: 70px 0;
   background: url('../img/test.png') no-repeat center;
+  
+  & img {
+    transition: 0.3s;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
 
 .app__top {
@@ -19,23 +27,20 @@
     font-size: 20px;
     font-family: 'SF UI Display Regular', sans-serif;
   }
-  
-  & img {
-    transition: 0.3s;
-    
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
 }
 
-.app__bottom {
+.app__middle {
   width: auto;
   height: 430px;
   margin: auto;
   margin-top: 20px;
   background: url('../img/app.png') no-repeat center;
   background-size: contain;
+}
+
+.app__bottom {
+  width: 195px;
+  margin: auto;
 }
 
 @media screen and ($tablet-widths) {
