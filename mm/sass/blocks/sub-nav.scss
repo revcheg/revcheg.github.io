@@ -1,0 +1,16 @@
+.sub-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  padding-top: 20px;
+  margin: auto;
+  
+  & a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'SF UI Display Regular', sans-serif;
+  }
+}

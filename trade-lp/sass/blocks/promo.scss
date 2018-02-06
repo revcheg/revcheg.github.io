@@ -1,0 +1,19 @@
+.promo {
+  padding: 25px 0;
+  background: $mc;
+}
+
+.promo__logo {
+  // width: 390px;
+  height: 124px;
+  margin: auto;
+  background: url('../img/logo.svg') no-repeat center;
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .promo__logo {
+    height: 80px;
+  }
+}

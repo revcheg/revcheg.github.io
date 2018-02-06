@@ -538,7 +538,9 @@ body {
 .slider__slide--three {
   background: url("../img/slider-t.png") no-repeat top;
   background-size: cover; }
-  .slider__slide--three p:first-of-type {
+  .slider__slide--three p {
+    color: #2e2963; }
+  .slider__slide--three small {
     color: #2e2963; }
 
 .slider__slide--four {
@@ -784,6 +786,9 @@ body {
   height: 430px;
   background: url("../img/trading-bg.png") no-repeat center;
   background-size: contain; }
+
+.trading__app {
+  text-align: center; }
 
 @media screen and (max-width: 1200px) {
   .trading__title {
@@ -1918,6 +1923,15 @@ button[type="submit"] {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     cursor: pointer; }
+
+.bronze {
+  background: #dc9554 !important; }
+
+.silver {
+  background: #9b9b9b !important; }
+
+.gold {
+  background: #e7c85d !important; }
 
 .account-comparison__bronze:hover {
   background: #dc9554; }

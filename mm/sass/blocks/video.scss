@@ -1,0 +1,63 @@
+.video {
+  
+  & video {
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+  }
+  
+  & iframe {
+    position: relative;
+    top: -54px;
+    width: 100%;
+    height: 34px;
+    padding-top: 15px;
+    background: #252525;
+  }
+}
+
+.video__content {
+  position: absolute;
+  top: 0;
+  width: 1200px;
+}
+
+.video__title {
+  margin-top: 200px;
+  color: #fff;
+  text-transform: uppercase;
+  
+  & h1 {
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-family: 'SF UI Display Black', sans-serif;
+  }
+  
+  & p {
+    margin-bottom: 75px;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'SF UI Text Regular', sans-serif;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .video__content {
+    width: 95%;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .video__title {
+    text-align: center;
+    
+    & h1 {
+      font-size: 30px;
+    }
+    
+    & p {
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.start {
+  padding: 70px 0;
+  
+  & h1 {
+    color: $mc;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'SF UI Display', sans-serif;
+    text-align: center;
+  }
+}
+
+.start__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.start__box {
+  position: relative;
+  width: 250px;
+  padding: 10px;
+  padding-top: 80px;
+  color: #fff;
+  text-align: center;
+  background: gray;
+  
+  & b {
+    
+  }
+}
+
+.start__box--one {
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 107px;
+    background: url('../img/step1.png') no-repeat top;
+  }
+}
