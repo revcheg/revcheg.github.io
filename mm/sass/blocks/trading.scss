@@ -91,10 +91,19 @@
   }
   
   .trading__flex--second {
-    padding-bottom: 50px;
+    padding-bottom: 0;
   }
   
   .trading__left {
     text-align: center;
+    
+    & b {
+      font-size: 30px;
+    }
+  }
+  
+  .trading__box {
+    width: auto;
+    padding-bottom: 50px;
   }
 }

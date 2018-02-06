@@ -178,7 +178,9 @@ body {
   .video__title {
     text-align: center; }
     .video__title h1 {
-      font-size: 30px; } }
+      font-size: 30px; }
+    .video__title p {
+      font-size: 18px; } }
 
 @media screen and (max-width: 768px) {
   .header {
@@ -323,9 +325,14 @@ body {
   .trading__flex {
     padding-top: 0; }
   .trading__flex--second {
-    padding-bottom: 50px; }
+    padding-bottom: 0; }
   .trading__left {
-    text-align: center; } }
+    text-align: center; }
+    .trading__left b {
+      font-size: 30px; }
+  .trading__box {
+    width: auto;
+    padding-bottom: 50px; } }
 
 .trade {
   padding: 80px 0; }
@@ -388,8 +395,10 @@ body {
 @media screen and (max-width: 768px) {
   .trade {
     padding: 50px 0; }
-    .trade h1 {
-      font-size: 40px; }
+  .trade__left h1 {
+    font-size: 30px; }
+  .trade__left p {
+    font-size: 18px; }
   .trade__right {
     -webkit-box-align: center;
     -ms-flex-align: center;

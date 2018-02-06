@@ -75,9 +75,16 @@
 @media screen and ($mobile-widths) {
   .trade {
     padding: 50px 0;
+  }
+  
+  .trade__left {
     
     & h1 {
-      font-size: 40px;
+      font-size: 30px;
+    }
+    
+    & p {
+      font-size: 18px;
     }
   }
   
