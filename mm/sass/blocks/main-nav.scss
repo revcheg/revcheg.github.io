@@ -4,3 +4,13 @@
   align-items: center;
   height: 90px;
 }
+
+@media screen and ($tablet-widths) {
+  
+}
+
+@media screen and ($mobile-widths) {
+  .main-nav {
+    flex-direction: column;
+  }
+}

@@ -10,10 +10,6 @@ body {
   .container {
     width: 95%; } }
 
-@media screen and (max-width: 768px) {
-  .container {
-    background: green; } }
-
 @font-face {
   font-family: 'SF UI Text';
   src: local("SF UI Text Heavy Italic"), local("SFUIText-HeavyItalic"), url("SFUIText-HeavyItalic.woff") format("woff");
@@ -178,6 +174,16 @@ body {
   .video__content {
     width: 95%; } }
 
+@media screen and (max-width: 768px) {
+  .video__title {
+    text-align: center; }
+    .video__title h1 {
+      font-size: 30px; } }
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 30px; } }
+
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,6 +195,13 @@ body {
   -ms-flex-align: center;
   align-items: center;
   height: 90px; }
+
+@media screen and (max-width: 768px) {
+  .main-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
 
 .button {
   padding: 8px 23px;
@@ -306,6 +319,14 @@ body {
   .trading__box {
     width: 300px; } }
 
+@media screen and (max-width: 768px) {
+  .trading__flex {
+    padding-top: 0; }
+  .trading__flex--second {
+    padding-bottom: 50px; }
+  .trading__left {
+    text-align: center; } }
+
 .trade {
   padding: 80px 0; }
   .trade video {
@@ -364,6 +385,21 @@ body {
   .trade__right {
     margin: auto; } }
 
+@media screen and (max-width: 768px) {
+  .trade {
+    padding: 50px 0; }
+    .trade h1 {
+      font-size: 40px; }
+  .trade__right {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 30px; }
+    .trade__right video {
+      width: 300px; }
+  .trade__link {
+    text-align: center; } }
+
 .edge {
   background: url("../img/edge.png") no-repeat;
   background-attachment: fixed; }
@@ -387,6 +423,11 @@ body {
     font-family: 'SF UI Display', sans-serif; }
   .edge__box p {
     font-family: 'SF UI Display', sans-serif; }
+
+@media screen and (max-width: 768px) {
+  .edge__flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
 
 .live {
   padding: 80px 0; }

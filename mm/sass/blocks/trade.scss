@@ -73,5 +73,24 @@
 }
 
 @media screen and ($mobile-widths) {
-
+  .trade {
+    padding: 50px 0;
+    
+    & h1 {
+      font-size: 40px;
+    }
+  }
+  
+  .trade__right {
+    align-items: center;
+    padding-top: 30px;
+    
+    & video {
+      width: 300px;
+    }
+  }
+  
+  .trade__link {
+    text-align: center;
+  }
 }
