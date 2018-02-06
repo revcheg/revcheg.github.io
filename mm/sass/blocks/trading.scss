@@ -30,6 +30,10 @@
   }
 }
 
+.trading__img {
+  width: 600px;
+}
+
 .trading__box {
   width: 270px;
   // padding-top: 270px;
@@ -71,11 +75,8 @@
 }
 
 @media screen and ($tablet-widths) {
-  .trading {
-    
-    & img {
-      display: none;
-    }
+  .trading__img {
+    display: none;
   }
   
   .trading__left {
