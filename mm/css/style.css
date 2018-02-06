@@ -199,7 +199,11 @@ body {
     .video__title h1 {
       font-size: 30px; }
     .video__title p {
-      font-size: 18px; } }
+      font-size: 18px; }
+  .video__title--temp small {
+    width: auto;
+    margin: auto;
+    margin-top: 30px; } }
 
 .header--temp {
   border-bottom: 3px solid #525252;
@@ -207,7 +211,10 @@ body {
 
 @media screen and (max-width: 768px) {
   .header {
-    padding-top: 30px; } }
+    padding-top: 30px; }
+  .header--temp {
+    height: 180px;
+    padding-bottom: 30px; } }
 
 .main-nav {
   display: -webkit-box;
@@ -226,7 +233,21 @@ body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .main-nav__user--temp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 10px; }
+    .main-nav__user--temp a {
+      margin-bottom: 10px; } }
 
 .button {
   padding: 8px 23px;
@@ -273,6 +294,11 @@ body {
       background: url("../img/tel.png") no-repeat left;
       opacity: 1; }
 
+@media screen and (max-width: 768px) {
+  .button--title {
+    padding: 8px 35px;
+    font-size: 20px; } }
+
 .sub-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,6 +322,10 @@ body {
 .sub-nav--temp {
   margin: 0;
   margin-left: auto; }
+
+@media screen and (max-width: 768px) {
+  .sub-nav--temp {
+    margin: auto; } }
 
 .trading {
   border-bottom: 2px solid #c6c6c6; }
@@ -529,3 +559,12 @@ body {
   .give__box p {
     font-family: 'SF UI Display', sans-serif;
     opacity: 0.6; }
+
+@media screen and (max-width: 768px) {
+  .give h1 {
+    font-size: 30px; }
+  .give__flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .give__box {
+    margin: auto; } }
