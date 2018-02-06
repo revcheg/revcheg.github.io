@@ -2,14 +2,15 @@
   
   & video {
     width: 100%;
-    height: 94vh;
+    height: 100vh;
     object-fit: fill;
   }
   
   & iframe {
+    position: relative;
+    top: -54px;
     width: 100%;
     height: 34px;
-    margin-top: -4px;
     padding-top: 15px;
     background: #252525;
   }
@@ -39,4 +40,13 @@
     font-weight: 100;
     font-family: 'SF UI Text Regular', sans-serif;
   }
+}
+
+@media screen and ($tablet-widths) {
+  .video__content {
+    width: 95%;
+  }
+}
+
+@media screen and ($mobile-widths) {
 }

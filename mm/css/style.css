@@ -6,6 +6,14 @@ body {
   width: 1200px;
   margin: auto; }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 95%; } }
+
+@media screen and (max-width: 768px) {
+  .container {
+    background: green; } }
+
 @font-face {
   font-family: 'SF UI Text';
   src: local("SF UI Text Heavy Italic"), local("SFUIText-HeavyItalic"), url("SFUIText-HeavyItalic.woff") format("woff");
@@ -134,14 +142,15 @@ body {
 
 .video video {
   width: 100%;
-  height: 94vh;
+  height: 100vh;
   -o-object-fit: fill;
   object-fit: fill; }
 
 .video iframe {
+  position: relative;
+  top: -54px;
   width: 100%;
   height: 34px;
-  margin-top: -4px;
   padding-top: 15px;
   background: #252525; }
 
@@ -164,6 +173,10 @@ body {
     font-style: italic;
     font-weight: 100;
     font-family: 'SF UI Text Regular', sans-serif; }
+
+@media screen and (max-width: 1200px) {
+  .video__content {
+    width: 95%; } }
 
 .main-nav {
   display: -webkit-box;
@@ -236,7 +249,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 60px; }
 
 .trading__flex--second {
@@ -245,7 +258,8 @@ body {
 
 .trading__left {
   -ms-flex-item-align: center;
-  align-self: center; }
+  align-self: center;
+  width: 500px; }
   .trading__left b {
     font-size: 40px;
     text-transform: uppercase;
@@ -278,6 +292,20 @@ body {
 .trading__box--algo {
   background: url("../img/trading-4.png") no-repeat top; }
 
+@media screen and (max-width: 1200px) {
+  .trading img {
+    display: none; }
+  .trading__left {
+    width: auto; }
+  .trading__flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .trading__box {
+    width: 300px; } }
+
 .trade {
   padding: 80px 0; }
   .trade video {
@@ -295,6 +323,7 @@ body {
   width: 400px;
   text-align: center; }
   .trade__left h1 {
+    margin-top: 0;
     margin-bottom: 40px;
     font-size: 60px;
     font-family: 'SF UI Display Black', sans-serif;
@@ -324,6 +353,16 @@ body {
 .trade__link {
   -ms-flex-item-align: center;
   align-self: center; }
+
+@media screen and (max-width: 1200px) {
+  .trade__flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .trade__left {
+    width: auto;
+    margin: auto; }
+  .trade__right {
+    margin: auto; } }
 
 .edge {
   background: url("../img/edge.png") no-repeat;

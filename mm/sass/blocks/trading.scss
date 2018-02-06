@@ -5,7 +5,7 @@
 .trading__flex {
   display: flex;
   justify-content: space-between;
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 60px;
 }
 
@@ -16,6 +16,7 @@
 
 .trading__left {
   align-self: center;
+  width: 500px;
   
   & b {
     font-size: 40px;
@@ -60,4 +61,30 @@
 
 .trading__box--algo {
   background: url('../img/trading-4.png') no-repeat top;
+}
+
+@media screen and ($tablet-widths) {
+  .trading {
+    
+    & img {
+      display: none;
+    }
+  }
+  
+  .trading__left {
+    width: auto;
+  }
+  
+  .trading__flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .trading__box {
+    width: 300px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+
 }
