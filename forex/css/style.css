@@ -1925,6 +1925,9 @@ button[type="submit"] {
 .account-comparison__silver:hover {
   background: #9b9b9b; }
 
+.test {
+  background: #9b9b9b !important; }
+
 .account-comparison__gold:hover {
   background: #e7c85d; }
 
