@@ -285,8 +285,11 @@ body {
 
 .trading__box {
   width: 270px;
-  padding-top: 170px;
   text-align: center; }
+  .trading__box img {
+    display: block;
+    width: 200px;
+    margin: auto; }
   .trading__box b {
     font-size: 20px;
     font-family: 'SF UI Display Bold', sans-serif;
@@ -294,9 +297,6 @@ body {
   .trading__box p {
     font-family: 'SF UI Display Regular', sans-serif;
     opacity: 0.7; }
-
-.trading__box--tools {
-  background: url("../img/trading-1.png") no-repeat top; }
 
 .trading__box--trans {
   background: url("../img/trading-2.png") no-repeat top; }

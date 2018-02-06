@@ -32,8 +32,14 @@
 
 .trading__box {
   width: 270px;
-  padding-top: 170px;
+  // padding-top: 270px;
   text-align: center;
+  
+  & img {
+    display: block;
+    width: 200px;
+    margin: auto;
+  }
   
   & b {
     font-size: 20px;
@@ -48,7 +54,8 @@
 }
 
 .trading__box--tools {
-  background: url('../img/trading-1.png') no-repeat top;
+  // padding-bottom: 100px;
+  // background: url('../img/trading-1.svg') no-repeat top;
 }
 
 .trading__box--trans {
