@@ -170,6 +170,25 @@ body {
     font-weight: 100;
     font-family: 'SF UI Text Regular', sans-serif; }
 
+.video__title--temp h1 {
+  text-transform: none; }
+
+.video__title--temp p {
+  font-size: 18px;
+  text-transform: none;
+  opacity: 0.6;
+  font-family: 'SF UI Text', sans-serif; }
+
+.video__title--temp small {
+  display: block;
+  width: 400px;
+  margin-top: 30px;
+  font-size: 12px;
+  font-family: 'SF UI Text', sans-serif;
+  text-align: center;
+  text-transform: none;
+  opacity: 0.6; }
+
 @media screen and (max-width: 1200px) {
   .video__content {
     width: 95%; } }
@@ -181,6 +200,10 @@ body {
       font-size: 30px; }
     .video__title p {
       font-size: 18px; } }
+
+.header--temp {
+  border-bottom: 3px solid #525252;
+  background: rgba(37, 37, 37, 0.7); }
 
 @media screen and (max-width: 768px) {
   .header {
@@ -226,7 +249,10 @@ body {
     border: 2px solid #000;
     background: #000; }
   .button--title {
-    font-size: 16px; }
+    padding: 12px 70px;
+    font-size: 30px;
+    font-family: 'SF UI Display Black', sans-serif;
+    border-radius: 50px; }
   .button--green {
     padding: 8px 60px;
     color: #fff;
@@ -235,6 +261,17 @@ body {
     background: #009f3c; }
     .button--green:hover {
       color: #009f3c; }
+  .button--number {
+    padding-left: 30px;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    background: none;
+    background: url("../img/tel.png") no-repeat left;
+    opacity: 0.6; }
+    .button--number:hover {
+      background: url("../img/tel.png") no-repeat left;
+      opacity: 1; }
 
 .sub-nav {
   display: -webkit-box;
@@ -247,12 +284,18 @@ body {
   padding-top: 20px;
   margin: auto; }
   .sub-nav a {
+    padding-bottom: 15px;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'SF UI Display Regular', sans-serif; }
+    font-family: 'SF UI Display Regular', sans-serif;
+    background: url("../img/link-arrow.png") no-repeat bottom; }
+
+.sub-nav--temp {
+  margin: 0;
+  margin-left: auto; }
 
 .trading {
   border-bottom: 2px solid #c6c6c6; }
@@ -454,3 +497,35 @@ body {
 
 .map iframe {
   width: 100%; }
+
+.title {
+  height: 100vh;
+  background: #646464 url("../img/t-bg.png") no-repeat top;
+  background-size: cover; }
+
+.give h1 {
+  margin-top: 70px;
+  margin-bottom: 0;
+  padding-left: 50px;
+  font-size: 50px;
+  font-family: 'SF UI Display Black', sans-serif;
+  background: url("../img/r-arrow.png") no-repeat left; }
+
+.give__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 50px 0; }
+
+.give__box {
+  width: 250px;
+  text-align: center; }
+  .give__box img {
+    height: 130px;
+    margin: auto; }
+  .give__box p {
+    font-family: 'SF UI Display', sans-serif;
+    opacity: 0.6; }

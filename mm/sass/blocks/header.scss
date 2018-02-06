@@ -1,5 +1,10 @@
 .header {}
 
+.header--temp {
+  border-bottom: 3px solid #525252;
+  background: rgba(37, 37, 37, 0.7);
+}
+
 @media screen and ($tablet-widths) {
 
 }

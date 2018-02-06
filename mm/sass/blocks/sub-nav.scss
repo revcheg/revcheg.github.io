@@ -6,11 +6,18 @@
   margin: auto;
   
   & a {
+    padding-bottom: 15px;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'SF UI Display Regular', sans-serif;
+    background: url('../img/link-arrow.png') no-repeat bottom;
   }
+}
+
+.sub-nav--temp {
+  margin: 0;
+  margin-left: auto;
 }
