@@ -1,0 +1,43 @@
+.table {
+  width: 100%;
+  
+  & th {
+    
+    & b {
+      color: $sc;
+      font-size: 20px;
+      font-family: 'SF UI Display Black', sans-serif;
+    }
+    
+    & p {
+      margin-top: 20px;
+      color: #fff;
+      font-size: 13px;
+      font-family: 'SF UI Display', sans-serif;
+      opacity: 0.6;
+    }
+    
+    & span {
+      display: block;
+      margin-bottom: 13px;
+      color: #fff;
+      font-size: 22px;
+      font-family: 'SF UI Display Black', sans-serif;
+    }
+  }
+  
+  & td {
+    padding: 10px 0;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'SF UI Display Regular', sans-serif;
+  }
+}
+
+.table__check-g {
+  background: url('../img/check-g.png') no-repeat center;
+}
+
+.table__check-r {
+  background: url('../img/check-r.png') no-repeat center;
+}

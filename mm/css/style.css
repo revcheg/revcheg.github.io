@@ -148,7 +148,7 @@ body {
   width: 100%;
   height: 34px;
   padding-top: 15px;
-  background: #252525; }
+  background: #000; }
 
 .video__content {
   position: absolute;
@@ -170,16 +170,16 @@ body {
     font-weight: 100;
     font-family: 'SF UI Text Regular', sans-serif; }
 
-.video__title--temp h1 {
+.video__title--about h1 {
   text-transform: none; }
 
-.video__title--temp p {
+.video__title--about p {
   font-size: 18px;
   text-transform: none;
   opacity: 0.6;
   font-family: 'SF UI Text', sans-serif; }
 
-.video__title--temp small {
+.video__title--about small {
   display: block;
   width: 400px;
   margin-top: 30px;
@@ -188,6 +188,29 @@ body {
   text-align: center;
   text-transform: none;
   opacity: 0.6; }
+
+.video__title--account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 40px;
+  padding-bottom: 20px; }
+  .video__title--account h1 {
+    margin: 0;
+    font-size: 50px;
+    text-transform: none; }
+  .video__title--account p {
+    width: 500px;
+    margin: 0;
+    padding-left: 40px;
+    font-size: 13px;
+    text-transform: none;
+    opacity: 0.6;
+    font-family: 'SF UI Text', sans-serif; }
 
 @media screen and (max-width: 1200px) {
   .video__content {
@@ -293,6 +316,11 @@ body {
     .button--number:hover {
       background: url("../img/tel.png") no-repeat left;
       opacity: 1; }
+  .button--table {
+    display: block;
+    width: 100px;
+    padding: 8px;
+    margin: auto; }
 
 @media screen and (max-width: 768px) {
   .button--title {
@@ -360,7 +388,7 @@ body {
   width: 600px; }
 
 .trading__box {
-  width: 270px;
+  width: 250px;
   text-align: center; }
   .trading__box img {
     display: block;
@@ -372,6 +400,7 @@ body {
     text-transform: uppercase; }
   .trading__box p {
     font-family: 'SF UI Display Regular', sans-serif;
+    text-align: justify;
     opacity: 0.7; }
 
 .trading__box--trans {
@@ -533,6 +562,10 @@ body {
   background: #646464 url("../img/t-bg.png") no-repeat top;
   background-size: cover; }
 
+.title--acc {
+  background: #434341 url("../img/a-bg.png") no-repeat top;
+  background-size: cover; }
+
 .give h1 {
   margin-top: 70px;
   margin-bottom: 0;
@@ -568,3 +601,33 @@ body {
     flex-wrap: wrap; }
   .give__box {
     margin: auto; } }
+
+.table {
+  width: 100%; }
+  .table th b {
+    color: #eeba1d;
+    font-size: 20px;
+    font-family: 'SF UI Display Black', sans-serif; }
+  .table th p {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 13px;
+    font-family: 'SF UI Display', sans-serif;
+    opacity: 0.6; }
+  .table th span {
+    display: block;
+    margin-bottom: 13px;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'SF UI Display Black', sans-serif; }
+  .table td {
+    padding: 10px 0;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'SF UI Display Regular', sans-serif; }
+
+.table__check-g {
+  background: url("../img/check-g.png") no-repeat center; }
+
+.table__check-r {
+  background: url("../img/check-r.png") no-repeat center; }

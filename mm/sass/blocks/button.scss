@@ -55,6 +55,13 @@
       opacity: 1;
     }
   }
+  
+  &--table {
+    display: block;
+    width: 100px;
+    padding: 8px;
+    margin: auto;
+  }
 }
 
 @media screen and ($tablet-widths) {
