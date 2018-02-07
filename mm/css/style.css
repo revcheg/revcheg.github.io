@@ -150,83 +150,10 @@ body {
   padding-top: 15px;
   background: #000; }
 
-.video__content {
+.video__header {
   position: absolute;
   top: 0;
   width: 1180px; }
-
-.video__title {
-  margin-top: 200px;
-  color: #fff;
-  text-transform: uppercase; }
-  .video__title h1 {
-    margin-bottom: 30px;
-    font-size: 60px;
-    font-family: 'SF UI Display Black', sans-serif; }
-  .video__title p {
-    margin-bottom: 75px;
-    font-size: 22px;
-    font-style: italic;
-    font-weight: 100;
-    font-family: 'SF UI Text Regular', sans-serif; }
-
-.video__title--about h1 {
-  text-transform: none; }
-
-.video__title--about p {
-  font-size: 18px;
-  text-transform: none;
-  opacity: 0.6;
-  font-family: 'SF UI Text', sans-serif; }
-
-.video__title--about small {
-  display: block;
-  width: 400px;
-  margin-top: 30px;
-  font-size: 12px;
-  font-family: 'SF UI Text', sans-serif;
-  text-align: center;
-  text-transform: none;
-  opacity: 0.6; }
-
-.video__title--account {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 0;
-  padding-top: 40px;
-  padding-bottom: 20px; }
-  .video__title--account h1 {
-    margin: 0;
-    font-size: 50px;
-    text-transform: none; }
-  .video__title--account p {
-    width: 500px;
-    margin: 0;
-    padding-left: 40px;
-    font-size: 13px;
-    text-transform: none;
-    opacity: 0.6;
-    font-family: 'SF UI Text', sans-serif; }
-
-@media screen and (max-width: 1200px) {
-  .video__content {
-    width: 95%; } }
-
-@media screen and (max-width: 768px) {
-  .video__title {
-    text-align: center; }
-    .video__title h1 {
-      font-size: 30px; }
-    .video__title p {
-      font-size: 18px; }
-  .video__title--temp small {
-    width: auto;
-    margin: auto;
-    margin-top: 30px; } }
 
 .header--temp {
   border-bottom: 3px solid #525252;
@@ -558,13 +485,61 @@ body {
   width: 100%; }
 
 .title {
-  height: 100vh;
-  background: #646464 url("../img/t-bg.png") no-repeat top;
-  background-size: cover; }
+  margin-top: 120px;
+  color: #fff;
+  text-transform: uppercase; }
+  .title h1 {
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-family: 'SF UI Display Black', sans-serif; }
+  .title p {
+    margin-bottom: 75px;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'SF UI Text Regular', sans-serif; }
 
-.title--acc {
-  background: #434341 url("../img/a-bg.png") no-repeat top;
-  background-size: cover; }
+.title--about h1 {
+  text-transform: none; }
+
+.title--about p {
+  font-size: 18px;
+  text-transform: none;
+  opacity: 0.6;
+  font-family: 'SF UI Text', sans-serif; }
+
+.title--about small {
+  display: block;
+  width: 400px;
+  margin-top: 30px;
+  font-size: 12px;
+  font-family: 'SF UI Text', sans-serif;
+  text-align: center;
+  text-transform: none;
+  opacity: 0.6; }
+
+.title--account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 40px;
+  padding-bottom: 20px; }
+  .title--account h1 {
+    margin: 0;
+    font-size: 50px;
+    text-transform: none; }
+  .title--account p {
+    width: 500px;
+    margin: 0;
+    padding-left: 40px;
+    font-size: 13px;
+    text-transform: none;
+    opacity: 0.6;
+    font-family: 'SF UI Text', sans-serif; }
 
 .give h1 {
   margin-top: 70px;
@@ -603,7 +578,8 @@ body {
     margin: auto; } }
 
 .table {
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 70px; }
   .table th b {
     color: #eeba1d;
     font-size: 20px;
@@ -631,3 +607,13 @@ body {
 
 .table__check-r {
   background: url("../img/check-r.png") no-repeat center; }
+
+.about {
+  height: 100vh;
+  background: #646464 url("../img/t-bg.png") no-repeat top;
+  background-size: cover; }
+
+.account {
+  height: inherit;
+  background: #434341 url("../img/a-bg.png") no-repeat top;
+  background-size: cover; }
