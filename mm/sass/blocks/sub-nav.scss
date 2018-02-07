@@ -1,9 +1,16 @@
 .sub-nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 250px;
   padding-top: 20px;
+  padding-left: 0;
   margin: auto;
+  list-style: none;
+  
+  & li {
+    position: relative;
+  }
   
   & a {
     padding-bottom: 15px;
@@ -14,20 +21,51 @@
     text-transform: uppercase;
     font-family: 'SF UI Display Regular', sans-serif;
     background: url('../img/link-arrow.png') no-repeat bottom;
+    transition: 0.1s;
   }
 }
 
-.sub-nav--temp {
-  margin: 0;
-  margin-left: auto;
+.sub-nav__accounts {
+  position: absolute;
+  top: 22px;
+  left: -40px;
+  display: none;
+  flex-direction: column;
+  margin-top: 10px;
+  padding-left: 0;
+  text-align: center;
+  list-style: none;
+  border: 1px solid $sc;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s;
+  
+  & a {
+    display: block;
+    padding: 10px 20px;
+    background: none;
+    transition: 0.2s;
+    
+    &:hover {
+      color: #000;
+      background: $sc;
+    }
+  }
 }
+
+.sub-nav > li:hover .sub-nav__accounts {
+  display: flex;
+}
+
+.sub-nav > li:hover .sub-link {
+  background: url('../img/link-arrow-up.png') no-repeat bottom;
+}
+
 
 @media screen and ($tablet-widths) {
   
 }
 
 @media screen and ($mobile-widths) {
-  .sub-nav--temp {
-    margin: auto;
-  }
+
 }

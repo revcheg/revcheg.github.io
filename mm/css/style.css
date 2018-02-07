@@ -255,6 +255,7 @@ body {
     font-size: 20px; } }
 
 .sub-nav {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,7 +264,11 @@ body {
   justify-content: space-between;
   width: 250px;
   padding-top: 20px;
-  margin: auto; }
+  padding-left: 0;
+  margin: auto;
+  list-style: none; }
+  .sub-nav li {
+    position: relative; }
   .sub-nav a {
     padding-bottom: 15px;
     color: #fff;
@@ -272,15 +277,45 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'SF UI Display Regular', sans-serif;
-    background: url("../img/link-arrow.png") no-repeat bottom; }
+    background: url("../img/link-arrow.png") no-repeat bottom;
+    -webkit-transition: 0.1s;
+    transition: 0.1s; }
 
-.sub-nav--temp {
-  margin: 0;
-  margin-left: auto; }
+.sub-nav__accounts {
+  position: absolute;
+  top: 22px;
+  left: -40px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 10px;
+  padding-left: 0;
+  text-align: center;
+  list-style: none;
+  border: 1px solid #eeba1d;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  .sub-nav__accounts a {
+    display: block;
+    padding: 10px 20px;
+    background: none;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+    .sub-nav__accounts a:hover {
+      color: #000;
+      background: #eeba1d; }
 
-@media screen and (max-width: 768px) {
-  .sub-nav--temp {
-    margin: auto; } }
+.sub-nav > li:hover .sub-nav__accounts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.sub-nav > li:hover .sub-link {
+  background: url("../img/link-arrow-up.png") no-repeat bottom; }
 
 .trading {
   border-bottom: 2px solid #c6c6c6; }
