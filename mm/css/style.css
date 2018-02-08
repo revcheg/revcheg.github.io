@@ -843,3 +843,27 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 20px; }
+
+.separated {
+  background: #646464 url("../img/t-bg.png") no-repeat top;
+  background-size: cover; }
+
+.separated__content {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  color: #fff; }
+  .separated__content b {
+    font-size: 30px;
+    font-family: 'SF UI Display Black', sans-serif; }
+  .separated__content p, .separated__content ul {
+    font-size: 18px;
+    font-family: 'SF UI Display Regular', sans-serif;
+    opacity: 0.7; }
+
+.separated__adv {
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  border: 2px solid #eeba1d;
+  border-radius: 10px; }
+  .separated__adv ul {
+    list-style-image: url("../img/r-arrow-s.png"); }
