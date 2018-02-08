@@ -631,7 +631,7 @@ body {
 
 .table {
   width: 100%;
-  padding-bottom: 70px; }
+  padding-bottom: 85px; }
   .table th b {
     color: #eeba1d;
     font-size: 20px;
@@ -690,7 +690,6 @@ body {
   opacity: 0.7; }
 
 .platform {
-  height: 100vh;
   background: #646464 url("../img/t-bg.png") no-repeat top;
   background-size: cover; }
 
@@ -706,7 +705,8 @@ body {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-bottom: 105px; }
 
 .platform__left {
   display: -webkit-box;
