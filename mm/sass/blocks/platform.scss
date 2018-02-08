@@ -1,0 +1,62 @@
+.platform {
+  height: 100vh;
+  background: #646464 url('../img/t-bg.png') no-repeat top;
+  background-size: cover;
+}
+
+.platform__text {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'SF UI Display Regular', sans-serif;
+  opacity: 0.7;
+}
+
+.platform__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.platform__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+}
+
+.platform__right {
+  width: 500px;
+  color: #fff;
+  
+  & b {
+    font-size: 30px;
+    font-family: 'SF UI Text Heavy', sans-serif;
+  }
+  
+  & ul {
+    font-size: 18px;
+    font-family: 'SF UI Text Regular', sans-serif;
+    list-style-image: url('../img/r-arrow-s.png');
+  }
+}
+
+.platform-plus {
+  padding: 70px 0;
+  
+  & h1 {
+    margin-top: 0;
+    font-size: 30px;
+    font-family: 'SF UI Text Heavy', sans-serif;
+  }
+  
+  & ul {
+    font-size: 20px;
+    font-family: 'SF UI Text Regular', sans-serif;
+    list-style-image: url('../img/r-arrow-s.png');
+    opacity: 0.7;
+  }
+}
+
+.platform-plus__flex {
+  display: flex;
+  justify-content: space-around;
+}

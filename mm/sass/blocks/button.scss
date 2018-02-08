@@ -23,8 +23,8 @@
   }
   
   &--title {
-    padding: 12px 70px;
-    font-size: 30px;
+    padding: 12px 60px;
+    font-size: 25px;
     font-family: 'SF UI Display Black', sans-serif;
     border-radius: 50px;
   }
@@ -61,6 +61,14 @@
     width: 100px;
     padding: 8px;
     margin: auto;
+  }
+  
+  &--download {
+    margin-top: 30px;
+    padding: 10px 70px;
+    font-size: 20px;
+    font-family: 'SF UI Display Black', sans-serif;
+    border-radius: 50px;
   }
 }
 

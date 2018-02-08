@@ -220,8 +220,8 @@ body {
     border: 2px solid #000;
     background: #000; }
   .button--title {
-    padding: 12px 70px;
-    font-size: 30px;
+    padding: 12px 60px;
+    font-size: 25px;
     font-family: 'SF UI Display Black', sans-serif;
     border-radius: 50px; }
   .button--green {
@@ -248,6 +248,12 @@ body {
     width: 100px;
     padding: 8px;
     margin: auto; }
+  .button--download {
+    margin-top: 30px;
+    padding: 10px 70px;
+    font-size: 20px;
+    font-family: 'SF UI Display Black', sans-serif;
+    border-radius: 50px; }
 
 @media screen and (max-width: 768px) {
   .button--title {
@@ -298,6 +304,7 @@ body {
   border: 1px solid #eeba1d;
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.8);
+  z-index: 2;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
   .sub-nav__accounts a {
@@ -577,6 +584,15 @@ body {
     opacity: 0.6;
     font-family: 'SF UI Text', sans-serif; }
 
+.title--platform h1 {
+  text-transform: none; }
+
+.title--platform p {
+  font-size: 20px;
+  font-family: 'SF UI Display Regular', sans-serif;
+  text-transform: none;
+  opacity: 0.7; }
+
 .give h1 {
   margin-top: 70px;
   margin-bottom: 0;
@@ -672,3 +688,66 @@ body {
   font-style: italic;
   font-family: 'SF UI Display Regular', sans-serif;
   opacity: 0.7; }
+
+.platform {
+  height: 100vh;
+  background: #646464 url("../img/t-bg.png") no-repeat top;
+  background-size: cover; }
+
+.platform__text {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'SF UI Display Regular', sans-serif;
+  opacity: 0.7; }
+
+.platform__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.platform__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+.platform__right {
+  width: 500px;
+  color: #fff; }
+  .platform__right b {
+    font-size: 30px;
+    font-family: 'SF UI Text Heavy', sans-serif; }
+  .platform__right ul {
+    font-size: 18px;
+    font-family: 'SF UI Text Regular', sans-serif;
+    list-style-image: url("../img/r-arrow-s.png"); }
+
+.platform-plus {
+  padding: 70px 0; }
+  .platform-plus h1 {
+    margin-top: 0;
+    font-size: 30px;
+    font-family: 'SF UI Text Heavy', sans-serif; }
+  .platform-plus ul {
+    font-size: 20px;
+    font-family: 'SF UI Text Regular', sans-serif;
+    list-style-image: url("../img/r-arrow-s.png");
+    opacity: 0.7; }
+
+.platform-plus__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
