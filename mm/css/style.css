@@ -859,6 +859,11 @@ body {
     font-size: 18px;
     font-family: 'SF UI Display Regular', sans-serif;
     opacity: 0.7; }
+  .separated__content a {
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-top: 50px; }
 
 .separated__adv {
   margin-bottom: 20px;
