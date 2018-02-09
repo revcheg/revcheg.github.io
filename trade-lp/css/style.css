@@ -331,13 +331,28 @@ body {
     font-family: 'SF UI Display Regular', sans-serif; }
 
 .edge__box--over {
-  background: url("../img/edge-f.png") no-repeat top left; }
+  background: url("../img/coins.svg") no-repeat top left;
+  background-size: 70px; }
 
 .edge__box--free {
-  background: url("../img/edge-s.png") no-repeat top left; }
+  background: url("../img/spread.svg") no-repeat top left;
+  background-size: 70px; }
 
 .edge__box--award {
-  background: url("../img/edge-t.png") no-repeat top left; }
+  background: url("../img/education.svg") no-repeat top left;
+  background-size: 70px; }
+
+.edge__box--overs {
+  background: url("../img/qua.svg") no-repeat top left;
+  background-size: 70px; }
+
+.edge__box--frees {
+  background: url("../img/fast.svg") no-repeat top left;
+  background-size: 70px; }
+
+.edge__box--awards {
+  background: url("../img/set.svg") no-repeat top left;
+  background-size: 70px; }
 
 @media screen and (max-width: 1200px) {
   .edge__flex {
