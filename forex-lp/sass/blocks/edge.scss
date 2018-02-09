@@ -26,15 +26,18 @@
 }
 
 .edge__box--over {
-  background: url('../img/edge-f.png') no-repeat top left;
+  background: url('../img/coins.svg') no-repeat top left;
+  background-size: 70px;
 }
 
 .edge__box--free {
-  background: url('../img/edge-s.png') no-repeat top left;
+  background: url('../img/present.svg') no-repeat top left;
+  background-size: 60px;
 }
 
 .edge__box--award {
-  background: url('../img/edge-t.png') no-repeat top left;
+  background: url('../img/award.svg') no-repeat top left;
+  background-size: 70px;
 }
 
 @media screen and ($tablet-widths) {
@@ -52,15 +55,18 @@
   }
   
   .edge__box--over {
-    background: url('../img/edge-f.png') no-repeat top;
+    background: url('../img/coins.svg') no-repeat top;
+    background-size: 70px;
   }
   
   .edge__box--free {
-    background: url('../img/edge-s.png') no-repeat top;
+    background: url('../img/present.svg') no-repeat top;
+    background-size: 60px;
   }
   
   .edge__box--award {
-    background: url('../img/edge-t.png') no-repeat top;
+    background: url('../img/award.svg') no-repeat top;
+    background-size: 70px;
   }
 }
 
