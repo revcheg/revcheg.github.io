@@ -646,23 +646,28 @@ body {
       background: #f2c318; }
 
 .online__box--zulu {
-  background: url("../img/online-1.png") no-repeat top; }
+  background: url("../img/trades.svg") no-repeat top, url("../img/zulu.svg") no-repeat center;
+  background-size: 120px, 200px; }
   .online__box--zulu:hover {
-    background: url("../img/online-1-h.png") no-repeat top; }
+    background: url("../img/trades-h.svg") no-repeat top, url("../img/zulu-h.svg") no-repeat center;
+    background-size: 120px, 200px; }
   .online__box--zulu a:hover {
     color: #fff;
     background: #ff7200; }
 
 .online__box--tradency {
-  background: url("../img/online-2.png") no-repeat top; }
+  background: url("../img/lamp.svg") no-repeat top, url("../img/tradency.svg") no-repeat center;
+  background-size: 110px, 300px; }
   .online__box--tradency:hover {
-    background: url("../img/online-2-h.png") no-repeat top; }
+    background: url("../img/lamp-h.svg") no-repeat top, url("../img/tradency-h.svg") no-repeat center;
+    background-size: 110px, 300px; }
   .online__box--tradency a:hover {
     color: #fff;
     background: #f15b22; }
 
 .online__box--algo {
-  background: url("../img/online-3.png") no-repeat top; }
+  background: url("../img/algo.svg") no-repeat top;
+  background-size: 120px; }
 
 .online__slider {
   display: none; }
