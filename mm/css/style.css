@@ -984,3 +984,8 @@ body {
     font-size: 20px;
     font-family: 'SF UI Display Regular', sans-serif;
     opacity: 0.7; }
+
+.signals {
+  height: 100vh;
+  background: #646464 url("../img/t-bg-1.png") no-repeat top;
+  background-size: cover; }
