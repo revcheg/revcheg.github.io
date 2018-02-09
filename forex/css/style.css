@@ -906,7 +906,7 @@ body {
 .adv__left,
 .adv__center,
 .adv__right {
-  width: 350px; }
+  width: 300px; }
 
 @media screen and (max-width: 768px) {
   .adv__flex {

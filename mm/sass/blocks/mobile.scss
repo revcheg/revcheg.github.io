@@ -1,0 +1,13 @@
+.mobile {
+  background: #646464 url('../img/t-bg.png') no-repeat top;
+  background-size: cover;
+}
+
+.mobile__content {
+  color: #fff;
+  
+  & h1 {
+    font-size: 50px;
+    font-family: 'SF UI Display Black', sans-serif;
+  }
+}

@@ -872,3 +872,13 @@ body {
   border-radius: 10px; }
   .separated__adv ul {
     list-style-image: url("../img/r-arrow-s.png"); }
+
+.mobile {
+  background: #646464 url("../img/t-bg.png") no-repeat top;
+  background-size: cover; }
+
+.mobile__content {
+  color: #fff; }
+  .mobile__content h1 {
+    font-size: 50px;
+    font-family: 'SF UI Display Black', sans-serif; }
