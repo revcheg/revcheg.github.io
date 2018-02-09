@@ -13,6 +13,7 @@
 .start__flex {
   display: flex;
   justify-content: space-between;
+  padding-top: 70px;
 }
 
 .start__box {
@@ -34,10 +35,36 @@
   &:before {
     content: '';
     position: absolute;
-    top: -50px;
+    top: -60px;
     left: 0;
     width: 100%;
-    height: 107px;
-    background: url('../img/step1.png') no-repeat top;
+    height: 120px;
+    background: url('../img/step-1.svg') no-repeat top;
+  }
+}
+
+.start__box--two {
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: url('../img/step-2.svg') no-repeat top;
+  }
+}
+
+.start__box--three {
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: url('../img/step-3.svg') no-repeat top;
   }
 }
