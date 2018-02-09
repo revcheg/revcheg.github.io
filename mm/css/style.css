@@ -968,3 +968,19 @@ body {
   .spread__content ul {
     font-size: 18px;
     list-style-image: url("../img/r-arrow-s.png"); }
+
+.faq {
+  background: #646464 url("../img/t-bg-2.png") no-repeat top;
+  background-size: cover; }
+
+.faq__content {
+  margin-top: 40px;
+  padding-bottom: 70px;
+  color: #fff; }
+  .faq__content b {
+    font-size: 30px;
+    font-family: 'SF UI Display Black', sans-serif; }
+  .faq__content p {
+    font-size: 20px;
+    font-family: 'SF UI Display Regular', sans-serif;
+    opacity: 0.7; }
