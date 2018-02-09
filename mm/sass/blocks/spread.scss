@@ -1,0 +1,24 @@
+.spread {
+  padding-bottom: 70px;
+  background: #646464 url('../img/t-bg-2.png') no-repeat top;
+  background-size: cover;
+}
+
+.spread__content {
+  color: #fff;
+  font-family: 'SF UI Display Regular', sans-serif;
+  
+  & b {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  
+  & p {
+    font-size: 20px;
+  }
+  
+  & ul {
+    font-size: 18px;
+    list-style-image: url('../img/r-arrow-s.png');
+  }
+}

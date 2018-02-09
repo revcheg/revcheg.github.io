@@ -42,3 +42,20 @@
 .table__check-r {
   background: url('../img/check-r.png') no-repeat center;
 }
+
+.table--spread {
+  margin: 30px 0;
+  font-weight: 100;
+  border: 1px solid #fff;
+  border-collapse: collapse;
+  text-align: center;
+  
+  & tr {
+    border: 1px solid $sc;
+    
+  }
+  
+  & th {
+    padding: 5px;
+  }
+}
