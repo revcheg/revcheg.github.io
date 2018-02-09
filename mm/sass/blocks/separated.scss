@@ -1,10 +1,10 @@
 .separated {
-  background: #646464 url('../img/t-bg.png') no-repeat top;
+  background: #646464 url('../img/a-bg.png') no-repeat top;
   background-size: cover;
 }
 
 .separated__content {
-  padding-top: 70px;
+  padding-top: 40px;
   padding-bottom: 50px;
   color: #fff;
   
@@ -35,8 +35,13 @@
   }
 }
 
+.separated__text {
+  margin-bottom: 60px;
+  font-style: italic; 
+}
+
 .separated__adv {
-  margin-bottom: 20px;
+  margin: 50px 0;
   padding: 30px 50px;
   border: 2px solid $sc;
   border-radius: 10px;

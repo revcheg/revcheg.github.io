@@ -552,32 +552,15 @@ body {
     font-size: 22px;
     font-style: italic;
     font-weight: 100;
-    font-family: 'SF UI Text Regular', sans-serif; }
+    font-family: 'SF UI Text Regular', sans-serif;
+    opacity: 0.6; }
 
 .title--about h1 {
+  margin: 0;
   font-size: 50px; }
 
-.title--about p {
-  font-size: 18px;
-  text-transform: none;
-  opacity: 0.6;
-  font-family: 'SF UI Text', sans-serif; }
-
-.title--about small {
-  display: block;
-  width: 400px;
-  margin-top: 30px;
-  font-size: 12px;
-  font-family: 'SF UI Text', sans-serif;
-  text-align: center;
-  text-transform: none;
-  opacity: 0.6; }
-
 .title--account {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 0;
+  margin: 0;
   padding-top: 40px;
   padding-bottom: 20px; }
   .title--account h1 {
@@ -585,19 +568,17 @@ body {
     font-size: 50px; }
   .title--account p {
     width: 500px;
-    margin: 0;
-    font-size: 13px;
-    text-transform: none;
-    opacity: 0.6;
-    font-family: 'SF UI Text', sans-serif; }
+    margin-bottom: 0; }
 
 .title--platform h1 {
+  margin-bottom: 0;
   font-size: 50px; }
 
-.title--platform p {
-  font-size: 20px;
-  font-family: 'SF UI Display Regular', sans-serif;
-  text-transform: none;
+.title__sub {
+  margin-top: 20px;
+  font-size: 18px !important;
+  font-style: italic;
+  font-family: 'SF UI Text Regular', sans-serif;
   opacity: 0.7; }
 
 .give h1 {
@@ -669,7 +650,7 @@ body {
 
 .about {
   height: 100vh;
-  background: #646464 url("../img/t-bg.png") no-repeat top;
+  background: #646464 url("../img/t-bg-2.png") no-repeat top;
   background-size: cover; }
 
 .account {
@@ -698,7 +679,7 @@ body {
   opacity: 0.7; }
 
 .platform {
-  background: #646464 url("../img/t-bg.png") no-repeat top;
+  background: #646464 url("../img/t-bg-2.png") no-repeat top;
   background-size: cover; }
 
 .platform__text {
@@ -761,7 +742,7 @@ body {
   justify-content: space-around; }
 
 .register {
-  background: #646464 url("../img/t-bg.png") no-repeat top;
+  background: #646464 url("../img/t-bg-2.png") no-repeat top;
   background-size: cover; }
   .register h1 {
     margin-bottom: 0;
@@ -845,11 +826,11 @@ body {
   margin-bottom: 20px; }
 
 .separated {
-  background: #646464 url("../img/t-bg.png") no-repeat top;
+  background: #646464 url("../img/a-bg.png") no-repeat top;
   background-size: cover; }
 
 .separated__content {
-  padding-top: 70px;
+  padding-top: 40px;
   padding-bottom: 50px;
   color: #fff; }
   .separated__content h1 {
@@ -871,8 +852,12 @@ body {
     margin: auto;
     margin-top: 50px; }
 
+.separated__text {
+  margin-bottom: 60px;
+  font-style: italic; }
+
 .separated__adv {
-  margin-bottom: 20px;
+  margin: 50px 0;
   padding: 30px 50px;
   border: 2px solid #eeba1d;
   border-radius: 10px; }
@@ -880,7 +865,7 @@ body {
     list-style-image: url("../img/r-arrow-s.png"); }
 
 .trader {
-  background: #646464 url("../img/t-bg.png") no-repeat top;
+  background: #646464 url("../img/a-bg.png") no-repeat top;
   background-size: cover; }
 
 .trader__content {
