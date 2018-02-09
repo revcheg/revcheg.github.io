@@ -872,25 +872,27 @@ body {
   .separated__adv ul {
     list-style-image: url("../img/r-arrow-s.png"); }
 
-.mobile {
+.trader {
   background: #646464 url("../img/t-bg.png") no-repeat top;
   background-size: cover; }
 
-.mobile__content {
+.trader__content {
   color: #fff;
   padding-bottom: 50px; }
-  .mobile__content h1 {
+  .trader__content h1 {
     margin-top: 120px;
     font-size: 60px;
     font-family: 'SF UI Display Black', sans-serif;
     text-align: center; }
-  .mobile__content .button {
+  .trader__content .button {
     display: block;
     width: 200px;
     margin: auto;
-    margin-top: 50px; }
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center; }
 
-.mobile__flex {
+.trader__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -899,21 +901,26 @@ body {
   justify-content: space-between;
   padding-bottom: 50px; }
 
-.mobile__flex--second {
+.trader__flex--second {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   padding-bottom: 0; }
 
-.mobile__right {
+.trader__right {
   width: 700px;
   font-family: 'SF UI Display Regular', sans-serif; }
-  .mobile__right b {
+  .trader__right b {
     font-size: 30px; }
-  .mobile__right p {
+  .trader__right p {
     font-size: 18px;
     opacity: 0.7; }
+  .trader__right ul {
+    font-size: 18px;
+    font-family: 'SF UI Display Regular', sans-serif;
+    list-style-image: url("../img/r-arrow-s.png");
+    opacity: 0.7; }
 
-.mobile__list {
+.trader__list {
   padding: 30px 50px;
   font-size: 18px;
   font-family: 'SF UI Display Regular', sans-serif;
@@ -921,3 +928,15 @@ body {
   border-radius: 10px;
   list-style-image: url("../img/r-arrow-s.png");
   opacity: 0.9; }
+
+.trader__sub-content {
+  font-family: 'SF UI Display Regular', sans-serif; }
+  .trader__sub-content p {
+    font-size: 18px;
+    opacity: 0.8; }
+  .trader__sub-content b {
+    font-size: 22px; }
+  .trader__sub-content ul {
+    font-size: 18px;
+    list-style-image: url("../img/r-arrow-s.png");
+    opacity: 0.8; }

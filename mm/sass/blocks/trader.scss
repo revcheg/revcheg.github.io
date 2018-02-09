@@ -1,9 +1,9 @@
-.mobile {
+.trader {
   background: #646464 url('../img/t-bg.png') no-repeat top;
   background-size: cover;
 }
 
-.mobile__content {
+.trader__content {
   color: #fff;
   padding-bottom: 50px;
   
@@ -19,21 +19,23 @@
     width: 200px;
     margin: auto;
     margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
   }
 }
 
-.mobile__flex {
+.trader__flex {
   display: flex;
   justify-content: space-between;
   padding-bottom: 50px;
 }
 
-.mobile__flex--second {
+.trader__flex--second {
   justify-content: space-around;
   padding-bottom: 0;
 }
 
-.mobile__right {
+.trader__right {
   width: 700px;
   font-family: 'SF UI Display Regular', sans-serif;
   
@@ -46,9 +48,16 @@
     font-size: 18px;
     opacity: 0.7;
   }
+  
+  & ul {
+    font-size: 18px;
+    font-family: 'SF UI Display Regular', sans-serif;
+    list-style-image: url('../img/r-arrow-s.png');
+    opacity: 0.7;
+  }
 }
 
-.mobile__list {
+.trader__list {
   padding: 30px 50px;
   font-size: 18px;
   font-family: 'SF UI Display Regular', sans-serif;
@@ -56,4 +65,23 @@
   border-radius: 10px;
   list-style-image: url('../img/r-arrow-s.png');
   opacity: 0.9;
+}
+
+.trader__sub-content {
+  font-family: 'SF UI Display Regular', sans-serif;
+  
+  & p {
+    font-size: 18px;
+    opacity: 0.8;
+  }
+  
+  & b {
+    font-size: 22px;
+  }
+  
+  & ul {
+    font-size: 18px;
+    list-style-image: url('../img/r-arrow-s.png');
+    opacity: 0.8;
+  }
 }
