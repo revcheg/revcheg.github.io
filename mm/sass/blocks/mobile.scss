@@ -5,9 +5,55 @@
 
 .mobile__content {
   color: #fff;
+  padding-bottom: 50px;
   
   & h1 {
-    font-size: 50px;
+    margin-top: 120px;
+    font-size: 60px;
     font-family: 'SF UI Display Black', sans-serif;
+    text-align: center;
   }
+  
+  .button {
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+
+.mobile__flex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.mobile__flex--second {
+  justify-content: space-around;
+  padding-bottom: 0;
+}
+
+.mobile__right {
+  width: 700px;
+  font-family: 'SF UI Display Regular', sans-serif;
+  
+  & b {
+    font-size: 30px;
+    
+  }
+  
+  & p {
+    font-size: 18px;
+    opacity: 0.7;
+  }
+}
+
+.mobile__list {
+  padding: 30px 50px;
+  font-size: 18px;
+  font-family: 'SF UI Display Regular', sans-serif;
+  border: 2px solid $sc;
+  border-radius: 10px;
+  list-style-image: url('../img/r-arrow-s.png');
+  opacity: 0.9;
 }

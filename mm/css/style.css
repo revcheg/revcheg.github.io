@@ -379,7 +379,6 @@ body {
     text-transform: uppercase; }
   .trading__box p {
     font-family: 'SF UI Display Regular', sans-serif;
-    text-align: justify;
     opacity: 0.7; }
 
 .trading__box--trans {
@@ -878,7 +877,47 @@ body {
   background-size: cover; }
 
 .mobile__content {
-  color: #fff; }
+  color: #fff;
+  padding-bottom: 50px; }
   .mobile__content h1 {
-    font-size: 50px;
-    font-family: 'SF UI Display Black', sans-serif; }
+    margin-top: 120px;
+    font-size: 60px;
+    font-family: 'SF UI Display Black', sans-serif;
+    text-align: center; }
+  .mobile__content .button {
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-top: 50px; }
+
+.mobile__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 50px; }
+
+.mobile__flex--second {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding-bottom: 0; }
+
+.mobile__right {
+  width: 700px;
+  font-family: 'SF UI Display Regular', sans-serif; }
+  .mobile__right b {
+    font-size: 30px; }
+  .mobile__right p {
+    font-size: 18px;
+    opacity: 0.7; }
+
+.mobile__list {
+  padding: 30px 50px;
+  font-size: 18px;
+  font-family: 'SF UI Display Regular', sans-serif;
+  border: 2px solid #eeba1d;
+  border-radius: 10px;
+  list-style-image: url("../img/r-arrow-s.png");
+  opacity: 0.9; }
