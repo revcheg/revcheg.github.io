@@ -552,16 +552,17 @@ body {
 
 .start {
   padding: 50px 0 70px 0; }
-  .start h1 {
-    margin-top: 0; }
-  .start h2 {
-    margin-top: 70px;
-    margin-bottom: 0; }
   .start h1, .start h2 {
     font-size: 40px;
     font-family: 'SF UI Display Black', sans-serif;
     text-align: center;
     text-transform: uppercase; }
+  .start h1 {
+    margin-top: 0; }
+  .start h2 {
+    margin-top: 70px;
+    margin-bottom: 0;
+    font-size: 30px; }
   .start p {
     font-family: 'SF UI Display Regular', sans-serif;
     opacity: 0.7; }
