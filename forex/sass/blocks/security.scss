@@ -1,12 +1,12 @@
 .security {
   padding: 50px 0;
   
-  & b {
+  b {
     color: #2f2861;
     font-size: 22px;
   }
   
-  & p {
+  p {
     color: #323232;
     padding-left: 270px;
   }
@@ -21,7 +21,7 @@
 @media screen and ($mobile-widths) {
   .security {
     
-    & p {
+    p {
       padding-left: 0px;
       text-align: center;
     }

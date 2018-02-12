@@ -1,13 +1,13 @@
 .mobile {
   padding-top: 50px;
   
-  & h2 {
+  h2 {
     margin-bottom: 10px;
     text-align: right;
     text-transform: uppercase;
   }
   
-  & b {
+  b {
     display: block;
     margin-bottom: 70px;
     color: #fff;
@@ -15,7 +15,7 @@
     text-align: right;
   }
   
-  & p {
+  p {
     color: #fff;
     opacity: 0.7;
   }
@@ -39,7 +39,7 @@
 .mobile__right {
   width: 325px;
   
-  & b {
+  b {
     margin-bottom: 20px;
     text-align: center;
   }
@@ -55,12 +55,12 @@
 
 .mobile__first {
   
-  & b {
+  b {
     margin-bottom: 20px;
     text-align: center;
   }
   
-  & p {
+  p {
     width: 400px;
   }
 }
@@ -77,23 +77,23 @@
   text-align: center;
   background: url('../img/mobile-download.png') no-repeat top;
   
-  & b {
+  b {
     display: inline;
     margin-bottom: 0px;
   }
   
-  & p {
+  p {
     width: auto;
     margin-bottom: 30px;
     opacity: 1;
   }
   
-  & a {
+  a {
     color: #fff;
     text-decoration: none;
   }
   
-  & .features__start {
+  .features__start {
     color: $mc;
     
     &:hover {
@@ -112,7 +112,7 @@
 @media screen and ($tablet-widths) {
   .mobile {
     
-    & h2, b {
+    h2, b {
       text-align: center;
     }
   }
@@ -129,7 +129,7 @@
   .mobile__first {
     align-self: center;
     
-    & p {
+    p {
       text-align: center;
     }
   }
@@ -147,11 +147,11 @@
 @media screen and ($mobile-widths) {
   .mobile {
     
-    & h2 {
+    h2 {
       text-align: center;
     }
     
-    & b {
+    b {
       margin-bottom: 30px;
       text-align: center;
     }
@@ -181,7 +181,7 @@
   
   .mobile__first {
     
-    & p {
+    p {
       width: auto;
     }
   }

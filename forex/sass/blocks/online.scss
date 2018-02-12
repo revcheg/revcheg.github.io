@@ -1,6 +1,6 @@
 .online {
   
-  & h2 {
+  h2 {
     margin-top: 60px;
     margin-bottom: 20px;
     font-size: 35px;
@@ -9,7 +9,7 @@
     text-transform: uppercase;
   }
   
-  & p {
+  p {
     text-align: center;
     text-transform: uppercase;
     opacity: 0.7;
@@ -30,16 +30,16 @@
   text-transform: uppercase;
   transition: 0.3s;
   
-  & b {
+  b {
     font-size: 17px;
   }
   
-  & p {
+  p {
     font-size: 13px;
     text-transform: none;
   }
   
-  & a {
+  a {
     padding: 5px 20px;
     color: white;
     font-size: 13px;
@@ -66,7 +66,7 @@
     background-size: 120px, 200px;
   }
   
-  & a:hover {
+  a:hover {
     color: #fff;
     background: #ff7200;
   }
@@ -83,7 +83,7 @@
     background-size: 110px, 300px;
   }
   
-  & a:hover {
+  a:hover {
     color: #fff;
     background: #f15b22;
   }
@@ -100,7 +100,8 @@
 
 @media screen and ($tablet-widths) {
   .online {
-    & h2 {
+    
+    h2 {
       margin-top: 50px;
       font-size: 30px;
     }
@@ -110,24 +111,23 @@
 @media screen and ($mobile-widths) {
   .online__flex {
     display: none;
-    // flex-direction: column;
   }
   
   .online__slider {
     display: block;
     margin-top: 50px;
     
-      & .slick-dots {
-        bottom: 25px;
-      }
-      
-      & .slick-dots li.slick-active button:before {
-        background: $mc;
-        opacity: 1;
-      }
-      
-      & .slick-dots li.slick-active button:before {
-        border: 1px solid $mc;
-      }
+    .slick-dots {
+      bottom: 25px;
+    }
+    
+    .slick-dots li.slick-active button:before {
+      background: $mc;
+      opacity: 1;
+    }
+    
+    .slick-dots li.slick-active button:before {
+      border: 1px solid $mc;
+    }
   }
 }

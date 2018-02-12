@@ -1,6 +1,5 @@
 .tab {
   display: flex;
-  // overflow: hidden;
 }
 
 .tab button {
@@ -23,7 +22,6 @@
 
 .tab__content {
   display: none;
-  // padding: 6px 12px;
   border-top: none;
   background: #dc9554;
   
@@ -59,8 +57,7 @@
 
 .tab__bronze {
     
-  & th {
-    // border-bottom: 2px solid #fff;
+  th {
     background: #c47935;
   }
   
@@ -74,14 +71,14 @@
   display: none;
   width: 100%;
   
-  & th {
+  th {
     background: #7f7a7a;
   }
 }
 
 .tab__currency {
   
-  & td {
+  td {
     padding: 0;
     border: none !important;
   }
@@ -184,7 +181,7 @@
   .tab {
     flex-direction: column;
     
-    & button {
+    button {
       margin-bottom: 5px;
       border-radius: 0;
       

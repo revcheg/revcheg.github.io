@@ -3,7 +3,7 @@
   border-top: 5px solid #2b2154;
   background: #4b426d;
   
-  & p {
+  p {
     margin-top: 40px;
     color: #fff;
     font-size: 25px;
@@ -11,7 +11,7 @@
     text-transform: uppercase;
   }
   
-  & hr {
+  hr {
     width: 70%;
     opacity: 0.7;
   }
@@ -28,7 +28,6 @@
   display: flex;
   flex-direction: column;
   top: -475px;
-  // left: 60px;
   width: auto;
   height: 480px;
   background: rgba(0, 0, 0, 0.7);
@@ -45,7 +44,7 @@
                 url('../img/acc-arrow.png') no-repeat 11px 14px;
   }
   
-  & a {
+  a {
     padding: 10px 30px;
     color: #fff;
     font-size: 12px;
@@ -125,7 +124,6 @@
   width: 38px;
   height: 38px;
   margin: auto;
-  // margin-top: 20px;
   border: none;
   background: url('../img/acc-elipse.png') no-repeat center,
               url('../img/acc-arrow.png') no-repeat 12px 14px;
@@ -182,7 +180,7 @@
 
 .sub-menu--forex {
   
-  & p {
+  p {
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 30px;
@@ -197,7 +195,7 @@
 
 .sub-menu__platform {
   
-  & a {
+  a {
     color: #fff;
     font-weight: bold;
     text-decoration: none;
@@ -221,14 +219,14 @@
       transform: translateY(370px);
     }
     
-    & a {
+    a {
       padding: 5px 15px;
     }
   }
   
   .sub-menu__logo {
     
-    & img {
+    img {
       width: 150px;
     }
   }
@@ -241,14 +239,14 @@
 @media screen and ($mobile-widths) {    
   .sub-menu {
     
-    & p {
+    p {
       margin-top: 35px;
     }
   }
   
   .sub-menu--forex {
     
-    & p {
+    p {
       margin-top: 20px;
     }
   }

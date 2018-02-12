@@ -1,12 +1,12 @@
 .slider {
-  & p {
+  p {
     margin-top: 40px;
     color: white;
     font-size: 30px;
     font-weight: bold;
   }
   
-  & a {
+  a {
     padding: 10px 30px;
     color: $mc;
     font-weight: bold;
@@ -26,11 +26,11 @@
 .slider__slide {
   height: 500px;
   
-  & img {
+  img {
     height: 132px;
   }
   
-  & small {
+  small {
     display: block;
     margin-top: 20px;
     color: #fff;
@@ -54,11 +54,11 @@
   background: url('../img/slider-t.png') no-repeat top;
   background-size: cover;
   
-  & p {
+  p {
     color: $mc;
   }
   
-  & small {
+  small {
     color: $mc;
   }
 }
@@ -92,12 +92,13 @@
 
 @media screen and ($tablet-widths) {
   .slider {
-    & p {
+    
+    p {
       margin-top: 35px;
       font-size: 20px;
     }
     
-    & img {
+    img {
       width: 350px;
     }
   }
@@ -111,17 +112,17 @@
   .slider {
     text-align: center;
     
-    & p {
+    p {
       margin-top: 30px;
       font-size: 16px;
     }
     
-    & img {
+    img {
       width: 300px;
       margin: auto;
     }
     
-    & a {
+    a {
       padding: 6px 15px;
     }
   }
@@ -129,7 +130,7 @@
   .slider__slide {
     height: 350px;
     
-    & small {
+    small {
       width: auto;
     }
   }

@@ -1,17 +1,17 @@
 .platforms-mobile {
   padding: 50px 0;
   
-  & h1 {
+  h1 {
     margin-top: 0;
     color: $mc;
     font-size: 30px;
   }
   
-  & b {
+  b {
     font-size: 22px;
   }
   
-  & p {
+  p {
     font-size: 18px;
   }
 }
@@ -47,7 +47,7 @@
 @media screen and ($mobile-widths) {
   .platforms-mobile {
     
-    & h1 {
+    h1 {
       text-align: center;
     }
   }

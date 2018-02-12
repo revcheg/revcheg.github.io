@@ -3,7 +3,7 @@
   margin: auto;
   padding: 70px 0;
   
-  & input {
+  input {
     width: 45%;
     padding: 10px;
     font-size: 15px;
@@ -11,7 +11,7 @@
     border-radius: 5px;
   }
   
-  & input::placeholder {
+  input::placeholder {
     font-weight: bold;
     opacity: 0.7;
   }
@@ -26,7 +26,7 @@
 .form__flex--radio {
   justify-content: center;
   
-  & input {
+  input {
     width: auto;
   }
 }
@@ -36,7 +36,7 @@
   justify-content: space-between;
   width: 47%;
   
-  & input {
+  input {
     width: 40%;
   }
 }
@@ -113,7 +113,7 @@ button[type="submit"] {
     width: 90%;
     padding: 50px 0;
     
-    & input {
+    input {
       width: auto;
       margin-bottom: 10px;
     }
@@ -135,7 +135,7 @@ button[type="submit"] {
   .form__right {
     width: auto;
     
-    & input {
+    input {
       width: 40%;
     }
   }

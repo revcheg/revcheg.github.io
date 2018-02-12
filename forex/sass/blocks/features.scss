@@ -20,11 +20,11 @@
   text-align: center;
   background: url('../img/mobile-download.png') no-repeat top;
   
-  & p {
+  p {
     margin-bottom: 30px;
   }
   
-  & a {
+  a {
     color: #2e2963;
     text-decoration: none;
   }
@@ -57,7 +57,7 @@
   
   .features__list {
     
-    & ul {
+    ul {
       width: auto;
     }
   }
@@ -65,11 +65,11 @@
   .features__box {
     padding-top: 130px;
     
-    & p {
+    p {
       color: #fff;
     }
     
-    & p > a {
+    p > a {
       color: $sc;
     }
   }
@@ -78,14 +78,14 @@
 @media screen and ($mobile-widths) {
   .features {
     
-    & h3 {
+    h3 {
       text-align: center;
     }
   }
   
   .features__list {
     
-    & ul {
+    ul {
       width: auto;
     }
   }

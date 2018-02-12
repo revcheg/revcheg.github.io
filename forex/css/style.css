@@ -1944,9 +1944,6 @@ button[type="submit"] {
 .account-comparison__silver:hover {
   background: #9b9b9b; }
 
-.test {
-  background: #9b9b9b !important; }
-
 .account-comparison__gold:hover {
   background: #e7c85d; }
 
@@ -2092,9 +2089,7 @@ button[type="submit"] {
   .product-specification .tab__content {
     padding: 30px;
     color: #000e55; }
-    .product-specification .tab__content h3,
-    .product-specification .tab__content p,
-    .product-specification .tab__content ul {
+    .product-specification .tab__content h3, .product-specification .tab__content p, .product-specification .tab__content ul {
       opacity: 0.8; }
     .product-specification .tab__content h3 {
       margin-top: 0;

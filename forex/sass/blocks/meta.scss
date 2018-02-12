@@ -1,12 +1,12 @@
 .meta {
   text-align: right;
   
-  & h2 {
+  h2 {
     color: #2f2861;
     text-transform: uppercase;
   }
   
-  & p {
+  p {
     width: 390px;
     color: $mc;
     font-weight: bold;
@@ -28,7 +28,6 @@
 }
 
 .meta__trader {
-  // width: 300px;
   height: 76px;
   background: url('../img/meta-trader.png') no-repeat right;
 }
@@ -47,11 +46,11 @@
   .meta__right {
     text-align: center;
     
-    & h2 {
+    h2 {
       margin-top: 0;
     }
     
-    & p {
+    p {
       width: auto;
     }
   }

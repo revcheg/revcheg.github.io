@@ -1,6 +1,6 @@
 .account {
   
-  & p {
+  p {
     margin-top: 40px;
     color: #000e55;
     font-size: 18px;
@@ -12,7 +12,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  // flex-wrap: wrap;
   padding-top: 100px;
 }
 
@@ -21,7 +20,6 @@
   width: 250px;
   margin: 0 10px;
   margin-bottom: 70px;
-  
   box-shadow: 0px 0px 7px 0px rgba(2, 2, 2, 0.35);
   cursor: pointer;
   transition: 0.3s;

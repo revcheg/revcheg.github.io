@@ -2,15 +2,15 @@
   color: $mc;
   font-weight: bold;
   
-  & h3 {
+  h3 {
     font-size: 30px;
   }
   
-  & p, ul {
+  p, ul {
     opacity: 0.8;
   }
   
-  & b {
+  b {
     font-size: 22px;
   }
 }
@@ -58,12 +58,12 @@
 @media screen and ($mobile-widths) {  
   .license {
     
-    & h3 {
+    h3 {
       font-size: 25px;
       text-align: center;
     }
     
-    & b {
+    b {
       font-size: 20px;
     }
   }

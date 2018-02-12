@@ -21,9 +21,8 @@
 .page-header__item {
   margin-right: 10px;
   
-  & a {
+  a {
     color: $mc;
-    // font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
@@ -88,7 +87,7 @@
 @media screen and ($tablet-widths) {  
   .page-header__item {
         
-    & a {
+    a {
       font-size: 14px;
     }
   }
@@ -139,7 +138,6 @@
     width: 55px;
     height: 50px;
     font-size: 0;
-    // background: white;
     border: none;
     cursor: pointer;
     transition: 0.3s;

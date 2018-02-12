@@ -13,18 +13,18 @@
   padding-top: 20px;
   padding-bottom: 40px;
   
-  & h4 {
+  h4 {
     margin-bottom: 0;
     font-size: 25px;
     opacity: 0.6;
   }
   
-  & p {
+  p {
     font-weight: 500;
     opacity: 0.8;
   }
   
-  & b {
+  b {
     font-size: 25px;
     opacity: 0.6;
   }
@@ -34,7 +34,7 @@
   display: flex;
   justify-content: space-between;
   
-  & ul {
+  ul {
     width: auto;
     color: #000;
     font-weight: 700;
@@ -63,7 +63,7 @@
     width: auto;
     font-weight: bold;
     
-    & ul {
+    ul {
       font-weight: bold;
     }
   }

@@ -1,11 +1,11 @@
 .trader {
   margin-left: 50px;
   
-  & h3 {
+  h3 {
     margin-bottom: 10px;
   }
   
-  & b {
+  b {
     color: #fff;
   }
 }
@@ -20,7 +20,7 @@
   .trader {
     margin: 0;
     
-    & ul {
+    ul {
       width: auto;
     }
   }
@@ -30,7 +30,7 @@
   .trader {
     width: auto;
     
-    & h3 {
+    h3 {
       text-align: center;
     }
   }

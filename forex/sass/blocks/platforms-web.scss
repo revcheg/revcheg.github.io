@@ -1,17 +1,17 @@
 .platforms-web {
   padding: 50px 0;
   
-  & h1 {
+  h1 {
     margin-top: 0;
     color: $mc;
     font-size: 30px;
   }
   
-  & b {
+  b {
     font-size: 22px;
   }
   
-  & ul {
+  ul {
     list-style-image: url('../img/li.png');
   }
 }
@@ -20,7 +20,7 @@
   display: flex;
   justify-content: space-between;
   
-  & ul {
+  ul {
     width: 40%;
   }
 }
@@ -47,7 +47,7 @@
 @media screen and ($mobile-widths) {
   .platforms-web {
     
-    & h1 {
+    h1 {
       text-align: center;
     }
   }
@@ -55,7 +55,7 @@
   .platforms-web__flex {
     flex-direction: column;
     
-    & ul {
+    ul {
       width: auto;
     }
   }
