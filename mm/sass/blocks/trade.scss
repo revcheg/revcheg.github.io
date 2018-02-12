@@ -49,54 +49,44 @@
   align-self: center;
 }
 
-@media screen and ($tablet-widths) {
-  // .trade {
-  // 
-  //   video {
-  //     // width: 100%;
-  //   }
-  // }
-  // 
-  // .trade__flex {
-  //   flex-wrap: wrap;
-  // }
-  // 
-  // .trade__left {
-  //   width: auto;
-  //   margin: auto;
-  // }
-  // 
-  // .trade__right {
-  //   margin: auto;
-  // }
+@media screen and ($tablet-widths) {  
+  .trade__flex {
+    flex-wrap: wrap;
+  }
+  
+  .trade__left,
+  .trade__right {
+    margin: auto;
+  }
 }
 
 @media screen and ($mobile-widths) {
-  // .trade {
-  //   padding: 50px 0;
-  // }
-  // 
-  // .trade__left {
-  // 
-  //   h1 {
-  //     font-size: 30px;
-  //   }
-  // 
-  //   p {
-  //     font-size: 18px;
-  //   }
-  // }
-  // 
-  // .trade__right {
-  //   align-items: center;
-  //   padding-top: 30px;
-  // 
-  //   video {
-  //     width: 300px;
-  //   }
-  // }
-  // 
-  // .trade__link {
-  //   text-align: center;
-  // }
+  .trade {
+    padding: 50px 0;
+  }
+  
+  .trade__left {
+    width: auto;
+  
+    h1 {
+      font-size: 30px;
+    }
+  
+    p {
+      font-size: 18px;
+    }
+  }
+  
+  .trade__right {
+    align-items: center;
+    padding-top: 30px;
+  
+    video {
+      width: 300px;
+    }
+  }
+  
+  .trade__link {
+    text-align: center;
+  }
 }

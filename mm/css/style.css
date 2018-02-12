@@ -155,9 +155,24 @@ body {
   top: 0;
   width: 1180px; }
 
+@media screen and (max-width: 1200px) {
+  .video video {
+    height: 700px; }
+  .video__header {
+    width: 95%; } }
+
+@media screen and (max-width: 768px) {
+  .video video {
+    height: 750px; } }
+
 .header--temp {
   border-bottom: 1px solid #525252;
   background: rgba(37, 37, 37, 0.7); }
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 30px;
+    height: 200px; } }
 
 .main-nav {
   display: -webkit-box;
@@ -170,6 +185,27 @@ body {
   -ms-flex-align: center;
   align-items: center;
   height: 90px; }
+
+@media screen and (max-width: 768px) {
+  .main-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .main-nav__user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 25px; }
+    .main-nav__user a {
+      margin-bottom: 10px; } }
 
 .button {
   padding: 8px 23px;
@@ -235,6 +271,11 @@ body {
     font-family: 'SF UI Display Black', sans-serif;
     border-radius: 50px;
     cursor: pointer; }
+
+@media screen and (max-width: 768px) {
+  .button--title {
+    padding: 8px 30px;
+    font-size: 18px; } }
 
 .sub-nav {
   display: -webkit-box;
@@ -309,11 +350,9 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 40px;
   padding-bottom: 60px; }
 
 .trading__flex--second {
-  padding-top: 0;
   padding-bottom: 80px; }
 
 .trading__left {
@@ -354,6 +393,30 @@ body {
 
 .trading__box--algo {
   background: url("../img/trading-4.png") no-repeat top; }
+
+@media screen and (max-width: 1200px) {
+  .trading__img {
+    display: none; }
+  .trading__left {
+    width: auto; }
+  .trading__flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .trading__box {
+    width: 300px; } }
+
+@media screen and (max-width: 768px) {
+  .trading__flex--second {
+    padding-bottom: 0; }
+  .trading__left {
+    text-align: center; }
+    .trading__left b {
+      font-size: 30px; }
+  .trading__box {
+    width: auto;
+    padding-bottom: 30px; } }
 
 .trade {
   padding: 80px 0; }
@@ -404,6 +467,33 @@ body {
   -ms-flex-item-align: center;
   align-self: center; }
 
+@media screen and (max-width: 1200px) {
+  .trade__flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .trade__left,
+  .trade__right {
+    margin: auto; } }
+
+@media screen and (max-width: 768px) {
+  .trade {
+    padding: 50px 0; }
+  .trade__left {
+    width: auto; }
+    .trade__left h1 {
+      font-size: 30px; }
+    .trade__left p {
+      font-size: 18px; }
+  .trade__right {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 30px; }
+    .trade__right video {
+      width: 300px; }
+  .trade__link {
+    text-align: center; } }
+
 .edge {
   background: url("../img/edge.png") no-repeat;
   background-attachment: fixed; }
@@ -427,6 +517,11 @@ body {
     font-family: 'SF UI Display', sans-serif; }
   .edge__box p {
     font-family: 'SF UI Display', sans-serif; }
+
+@media screen and (max-width: 768px) {
+  .edge__flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
 
 .live {
   padding: 80px 0; }
@@ -479,8 +574,39 @@ body {
 
 .start__box {
   width: 250px;
+  padding-top: 155px;
   font-family: 'SF UI Display Regular', sans-serif;
   text-align: center; }
+
+.start__box--register {
+  background: url("../img/start-1.svg") no-repeat top;
+  background-size: 155px; }
+
+.start__box--verify {
+  background: url("../img/start-2.svg") no-repeat top;
+  background-size: 155px; }
+
+.start__box--fund {
+  background: url("../img/start-3.svg") no-repeat top;
+  background-size: 155px; }
+
+.start__box--trade {
+  background: url("../img/start-4.svg") no-repeat top;
+  background-size: 155px; }
+
+@media screen and (max-width: 768px) {
+  .start h1, .start h2 {
+    font-size: 30px; }
+  .start__sub {
+    margin-top: 15px; }
+  .start__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; } }
 
 .footer {
   padding: 50px 0 10px 0;
@@ -491,6 +617,7 @@ body {
     color: #fff;
     font-family: 'SF UI Display Heavy', sans-serif; }
   .footer ul {
+    padding-left: 0;
     font-family: 'SF UI Display Light', sans-serif;
     list-style-image: url("../img/r-arrow-s.png");
     list-style-position: inside; }
@@ -522,6 +649,11 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
+@media screen and (max-width: 768px) {
+  .footer__flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
+
 .title {
   color: #fff; }
   .title h1 {
@@ -548,6 +680,12 @@ body {
   font-style: italic;
   font-family: 'SF UI Text Regular', sans-serif;
   opacity: 0.7; }
+
+@media screen and (max-width: 768px) {
+  .title {
+    text-align: center; }
+    .title h1 {
+      font-size: 30px; } }
 
 .temp--about {
   height: 100vh;

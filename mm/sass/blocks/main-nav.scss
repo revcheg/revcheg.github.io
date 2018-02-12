@@ -5,15 +5,25 @@
   height: 90px;
 }
 
-@media screen and ($tablet-widths) {
-  
-}
+@media screen and ($tablet-widths) {}
 
 @media screen and ($mobile-widths) {
-  // .main-nav {
-  //   flex-direction: column;
-  // }
-  // 
+  .main-nav {
+    flex-direction: column;
+    // padding-top: 20px;
+  }
+  
+  .main-nav__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    
+    a {
+      margin-bottom: 10px;
+    }
+  }
+  
   // .main-nav__user--temp {
   //   display: flex;
   //   flex-direction: column;

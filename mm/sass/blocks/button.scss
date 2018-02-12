@@ -83,16 +83,14 @@
   }
 }
 
-@media screen and ($tablet-widths) {
-  
-}
+@media screen and ($tablet-widths) {}
 
 @media screen and ($mobile-widths) {
-  // .button {
-  // 
-  //   &--title {
-  //     padding: 8px 35px;
-  //     font-size: 20px;
-  //   }
-  // }
+  .button {
+  
+    &--title {
+      padding: 8px 30px;
+      font-size: 18px;
+    }
+  }
 }

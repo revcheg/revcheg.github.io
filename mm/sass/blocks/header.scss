@@ -12,10 +12,11 @@
 }
 
 @media screen and ($mobile-widths) {
-  // .header {
-  //   padding-top: 30px;
-  // }
-  // 
+  .header {
+    padding-top: 30px;
+    height: 200px;
+  }
+  
   // .header--temp {
   //   height: 180px;
   //   padding-bottom: 30px;

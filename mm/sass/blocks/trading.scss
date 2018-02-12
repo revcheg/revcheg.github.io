@@ -5,12 +5,10 @@
 .trading__flex {
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
   padding-bottom: 60px;
 }
 
 .trading__flex--second {
-  padding-top: 0;
   padding-bottom: 80px;
 }
 
@@ -69,43 +67,39 @@
 }
 
 @media screen and ($tablet-widths) {
-  // .trading__img {
-  //   display: none;
-  // }
-  // 
-  // .trading__left {
-  //   width: auto;
-  // }
-  // 
-  // .trading__flex {
-  //   flex-wrap: wrap;
-  //   justify-content: center;
-  // }
-  // 
-  // .trading__box {
-  //   width: 300px;
-  // }
+  .trading__img {
+    display: none;
+  }
+  
+  .trading__left {
+    width: auto;
+  }
+  
+  .trading__flex {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .trading__box {
+    width: 300px;
+  }
 }
 
-@media screen and ($mobile-widths) {
-  // .trading__flex {
-  //   padding-top: 0;
-  // }
-  // 
-  // .trading__flex--second {
-  //   padding-bottom: 0;
-  // }
-  // 
-  // .trading__left {
-  //   text-align: center;
-  // 
-  //   b {
-  //     font-size: 30px;
-  //   }
-  // }
-  // 
-  // .trading__box {
-  //   width: auto;
-  //   padding-bottom: 50px;
-  // }
+@media screen and ($mobile-widths) {  
+  .trading__flex--second {
+    padding-bottom: 0;
+  }
+  
+  .trading__left {
+    text-align: center;
+  
+    b {
+      font-size: 30px;
+    }
+  }
+  
+  .trading__box {
+    width: auto;
+    padding-bottom: 30px;
+  }
 }

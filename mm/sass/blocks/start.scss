@@ -44,6 +44,47 @@
 
 .start__box {
   width: 250px;
+  padding-top: 155px;
   font-family: 'SF UI Display Regular', sans-serif;
   text-align: center;
+}
+
+.start__box--register {
+  background: url('../img/start-1.svg') no-repeat top;
+  background-size: 155px;
+}
+
+.start__box--verify {
+  background: url('../img/start-2.svg') no-repeat top;
+  background-size: 155px;
+}
+
+.start__box--fund {
+  background: url('../img/start-3.svg') no-repeat top;
+  background-size: 155px;
+}
+
+.start__box--trade {
+  background: url('../img/start-4.svg') no-repeat top;
+  background-size: 155px;
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .start {
+    
+    h1, h2 {
+      font-size: 30px;
+    }
+  }
+  
+  .start__sub {
+    margin-top: 15px;
+  }
+  
+  .start__flex {
+    flex-direction: column;
+    align-items: center;
+  }
 }

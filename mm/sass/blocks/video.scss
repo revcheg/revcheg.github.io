@@ -22,6 +22,24 @@
   width: 1180px;
 }
 
-@media screen and ($tablet-widths) {}
+@media screen and ($tablet-widths) {
+  .video {
+    
+    video {
+      height: 700px;
+    }
+  }
+  
+  .video__header {
+    width: 95%;
+  }
+}
 
-@media screen and ($mobile-widths) {}
+@media screen and ($mobile-widths) {
+  .video {
+    
+    video {
+      height: 750px;
+    }
+  }
+}
