@@ -163,7 +163,8 @@ body {
 
 @media screen and (max-width: 768px) {
   .video video {
-    height: 750px; } }
+    -o-object-fit: cover;
+    object-fit: cover; } }
 
 .header--temp {
   border-bottom: 1px solid #525252;
