@@ -50,6 +50,10 @@
   justify-content: space-between;
 }
 
+.footer__active {
+  color: $sc !important;
+}
+
 @media screen and ($tablet-widths) {}
 
 @media screen and ($mobile-widths) {

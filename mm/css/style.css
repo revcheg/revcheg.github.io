@@ -662,6 +662,9 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
+.footer__active {
+  color: #eeba1d !important; }
+
 @media screen and (max-width: 768px) {
   .footer__flex {
     -ms-flex-wrap: wrap;
@@ -725,6 +728,10 @@ body {
 .temp--signals {
   height: 100vh;
   background: #646464 url("../img/t-bg-1.png") no-repeat top;
+  background-size: cover; }
+
+.temp--info {
+  background: #646464 url("../img/edge.png") no-repeat top;
   background-size: cover; }
 
 @media screen and (max-width: 768px) {
@@ -1206,3 +1213,27 @@ body {
     font-family: 'SF UI Display Regular', sans-serif;
     list-style-image: url("../img/r-arrow-s.png");
     opacity: 0.7; }
+
+.info {
+  padding: 50px 0;
+  color: #fff; }
+  .info h1 {
+    font-size: 50px;
+    font-family: 'SF UI Display Black', sans-serif; }
+  .info p {
+    font-size: 18px;
+    font-family: 'SF UI Display Regular', sans-serif; }
+  .info b {
+    font-size: 25px;
+    font-family: 'SF UI Display Black', sans-serif; }
+  .info ul {
+    font-size: 18px;
+    font-family: 'SF UI Display Regular', sans-serif;
+    list-style-image: url("../img/r-arrow-s.png"); }
+
+.info__title {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 40px !important;
+  font-family: 'SF UI Display Black', sans-serif; }
