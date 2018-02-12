@@ -81,3 +81,46 @@
     opacity: 0.8;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .trader__right {
+    
+    a {
+      display: block;
+      width: 200px;
+      margin: auto;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .trader__content {
+    
+    h1 {
+      font-size: 30px;
+    }
+  }
+  
+  .trader__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .trader__left {
+    width: auto;
+    order: 10;
+    
+    b {
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  .trader__right {
+    order: 5;
+    
+    img {
+      max-width: 100%;
+    }
+  }
+}

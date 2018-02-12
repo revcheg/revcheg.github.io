@@ -60,3 +60,16 @@
   display: flex;
   justify-content: space-around;
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .platform__flex,
+  .platform-plus__flex {
+    flex-direction: column;
+  }
+  
+  .platform__right {
+    width: auto;
+  }
+}
