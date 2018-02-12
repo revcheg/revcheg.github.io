@@ -802,8 +802,6 @@ body {
 
 .table--spread {
   margin: 30px 0;
-  font-weight: 100;
-  border: 1px solid #fff;
   border-collapse: collapse;
   text-align: center; }
   .table--spread tr {
@@ -814,6 +812,7 @@ body {
 @media screen and (max-width: 768px) {
   .table {
     display: block;
+    padding-bottom: 10px;
     overflow-x: auto; } }
 
 .steps {
@@ -1184,6 +1183,12 @@ body {
   .spread__content ul {
     font-size: 18px;
     list-style-image: url("../img/r-arrow-s.png"); }
+
+@media screen and (max-width: 768px) {
+  .spread__content b {
+    display: block;
+    font-size: 25px;
+    text-align: center; } }
 
 .content {
   margin-top: 40px;

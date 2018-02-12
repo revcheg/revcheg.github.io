@@ -45,14 +45,11 @@
 
 .table--spread {
   margin: 30px 0;
-  font-weight: 100;
-  border: 1px solid #fff;
   border-collapse: collapse;
   text-align: center;
   
   tr {
     border: 1px solid $sc;
-    
   }
   
   th {
@@ -65,6 +62,7 @@
 @media screen and ($mobile-widths) {
   .table {
     display: block;
+    padding-bottom: 10px;
     overflow-x: auto;
   }
 }
