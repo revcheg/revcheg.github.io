@@ -1,5 +1,4 @@
 .form {
-  width: 600px;
   
   input {
     height: 25px;
@@ -13,7 +12,7 @@
   }
   
   input[type="date"] {
-    width: 32%;
+    width: auto;
   }
   
   input:focus {
@@ -30,4 +29,24 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .form {
+    
+    p {
+      text-align: center;
+    }
+  }
+  
+  .form__flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    input {
+      margin-bottom: 10px;
+    }
+  }
 }

@@ -87,6 +87,8 @@
 
 @media screen and ($mobile-widths) {
   .button {
+    padding: 5px 15px;
+    text-align: center;
   
     &--title {
       padding: 8px 30px;
@@ -95,6 +97,11 @@
     
     &--number {
       padding-right: 0;
+      padding-left: 25px;
+    }
+    
+    &--submit {
+      padding: 5px 30px;
     }
   }
 }

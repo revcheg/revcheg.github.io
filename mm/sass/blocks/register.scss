@@ -24,12 +24,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding-bottom: 70px;
 }
 
+.register__left {
+  width: 500px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
 .register__right {
-  color: #fff;
+  margin: auto;
   padding: 30px 30px 12px 30px;
+  color: #fff;
   border: 2px solid #fff;
   border-radius: 10px;
   transition: 0.2s;
@@ -48,5 +56,22 @@
   &:hover {
     border: 2px solid $sc;
     opacity: 1;
+  }
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .register {
+    
+    h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+  
+  .register__left,
+  .register__right {
+    width: auto;
   }
 }

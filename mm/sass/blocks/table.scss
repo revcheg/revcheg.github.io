@@ -59,3 +59,12 @@
     padding: 5px;
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .table {
+    display: block;
+    overflow-x: auto;
+  }
+}

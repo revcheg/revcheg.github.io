@@ -31,22 +31,22 @@
   }
 }
 
-@media screen and ($tablet-widths) {
-}
+@media screen and ($tablet-widths) {}
 
 @media screen and ($mobile-widths) {
-  // .give {
-  // 
-  //   h1 {
-  //     font-size: 30px;
-  //   }
-  // }
-  // 
-  // .give__flex {
-  //   flex-wrap: wrap;
-  // }
-  // 
-  // .give__box {
-  //   margin: auto;
-  // }
+  .give {
+  
+    h1 {
+      margin-top: 50px;
+      font-size: 30px;
+    }
+  }
+  
+  .give__flex {
+    flex-wrap: wrap;
+  }
+  
+  .give__box {
+    margin: auto;
+  }
 }
