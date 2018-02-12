@@ -275,7 +275,9 @@ body {
 @media screen and (max-width: 768px) {
   .button--title {
     padding: 8px 30px;
-    font-size: 18px; } }
+    font-size: 18px; }
+  .button--number {
+    padding-right: 0; } }
 
 .sub-nav {
   display: -webkit-box;
