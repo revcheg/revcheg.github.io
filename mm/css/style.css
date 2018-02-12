@@ -493,7 +493,7 @@ body {
     align-items: center;
     padding-top: 30px; }
     .trade__right video {
-      width: 300px; }
+      display: none; }
   .trade__link {
     text-align: center; } }
 
