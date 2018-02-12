@@ -1,9 +1,9 @@
 .header {
-  border-bottom: 2px solid #525252;
+  // border-bottom: 2px solid #525252;
 }
 
 .header--temp {
-  border-bottom: 3px solid #525252;
+  border-bottom: 1px solid #525252;
   background: rgba(37, 37, 37, 0.7);
 }
 
@@ -12,12 +12,12 @@
 }
 
 @media screen and ($mobile-widths) {
-  .header {
-    padding-top: 30px;
-  }
-  
-  .header--temp {
-    height: 180px;
-    padding-bottom: 30px;
-  }
+  // .header {
+  //   padding-top: 30px;
+  // }
+  // 
+  // .header--temp {
+  //   height: 180px;
+  //   padding-bottom: 30px;
+  // }
 }

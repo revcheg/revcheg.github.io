@@ -10,18 +10,18 @@
 }
 
 @media screen and ($mobile-widths) {
-  .main-nav {
-    flex-direction: column;
-  }
-  
-  .main-nav__user--temp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    
-    & a {
-      margin-bottom: 10px;
-    }
-  }
+  // .main-nav {
+  //   flex-direction: column;
+  // }
+  // 
+  // .main-nav__user--temp {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   margin-top: 10px;
+  // 
+  //   a {
+  //     margin-bottom: 10px;
+  //   }
+  // }
 }

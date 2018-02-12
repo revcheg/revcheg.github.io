@@ -1,11 +1,11 @@
 .sub-nav {
-  position: relative;
+  // position: relative;
   display: flex;
   justify-content: space-between;
   width: 250px;
+  margin: auto;
   padding-top: 20px;
   padding-left: 0;
-  margin: auto;
   list-style: none;
   
   & li {
@@ -21,18 +21,17 @@
     text-transform: uppercase;
     font-family: 'SF UI Display Regular', sans-serif;
     background: url('../img/link-arrow.png') no-repeat bottom;
-    transition: 0.1s;
+    transition: 0.2s;
     cursor: pointer;
   }
 }
 
-.sub-nav__accounts {
+.sub-nav__list {
   position: absolute;
-  top: 22px;
+  top: 32px;
   left: -40px;
-  display: none;
   flex-direction: column;
-  margin-top: 10px;
+  display: none;
   padding-left: 0;
   text-align: center;
   list-style: none;
@@ -40,7 +39,7 @@
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.8);
   z-index: 2;
-  transition: all 0.3s;
+  transition: 0.2s;
   
   & a {
     display: block;
@@ -55,11 +54,11 @@
   }
 }
 
-.sub-nav > li:hover .sub-nav__accounts {
+.sub-nav > li:hover .sub-nav__list {
   display: flex;
 }
 
-.sub-nav > li:hover .sub-link {
+.sub-nav > li:hover .sub__title {
   background: url('../img/link-arrow-up.png') no-repeat bottom;
 }
 
