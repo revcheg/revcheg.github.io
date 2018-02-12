@@ -1,6 +1,6 @@
 .give {
   
-  & h1 {
+  h1 {
     margin-top: 70px;
     margin-bottom: 0;
     padding-left: 50px;
@@ -20,12 +20,12 @@
   width: 250px;
   text-align: center;
   
-  & img {
+  img {
     height: 130px;
     margin: auto;
   }
   
-  & p {
+  p {
     font-family: 'SF UI Display', sans-serif;
     opacity: 0.6;
   }
@@ -35,18 +35,18 @@
 }
 
 @media screen and ($mobile-widths) {
-  .give {
-    
-    & h1 {
-      font-size: 30px;
-    }
-  }
-  
-  .give__flex {
-    flex-wrap: wrap;
-  }
-  
-  .give__box {
-    margin: auto;
-  }
+  // .give {
+  // 
+  //   h1 {
+  //     font-size: 30px;
+  //   }
+  // }
+  // 
+  // .give__flex {
+  //   flex-wrap: wrap;
+  // }
+  // 
+  // .give__box {
+  //   margin: auto;
+  // }
 }

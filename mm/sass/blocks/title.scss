@@ -1,5 +1,4 @@
 .title { 
-  margin-top: 100px;
   color: #fff;
   
   h1 {
@@ -18,52 +17,16 @@
   }
 }
 
-.title--about {
-  
-  h1 {
-    margin: 0;
-    font-size: 50px;
-  }
+.title--down {
+  margin-top: 100px;
 }
 
-.title--account {
-  margin: 0;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  
-  h1 {
-    margin: 0;
-    font-size: 50px;
-  }
-  
-  p {
-    width: 500px;
-    margin-bottom: 0;
-  }
-}
-
-.title--platform {
-  
-  h1 {
-    margin-bottom: 0;
-    font-size: 50px;
-  }
-}
-
-.title--spread {
-  
-  h1 {
-    margin: 0;
-    font-size: 50px;
-  }
-  
-  p {
-    margin-bottom: 40px;
-  }
+.title--up {
+  margin-top: 20px;
 }
 
 .title__sub {
-  margin-top: 20px;
+  margin-top: 0px;
   font-size: 18px !important;
   font-style: italic;
   font-family: 'SF UI Text Regular', sans-serif;

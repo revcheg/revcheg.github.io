@@ -1,7 +1,7 @@
 .trade {
   padding: 80px 0;
   
-  & video {
+  video {
     width: 600px;
   }
 }
@@ -16,7 +16,7 @@
   width: 400px;
   text-align: center;
   
-  & h1 {
+  h1 {
     margin-top: 0;
     margin-bottom: 40px;
     font-size: 60px;
@@ -24,7 +24,7 @@
     text-transform: uppercase;
   }
   
-  & p {
+  p {
     margin-bottom: 60px;
     font-size: 20px;
     font-weight: bold;
@@ -32,7 +32,7 @@
     opacity: 0.7;
   }
   
-  & small {
+  small {
     display: block;
     margin-top: 15px;
     font-family: 'SF UI Display', sans-serif;
@@ -47,57 +47,56 @@
 
 .trade__link {
   align-self: center;
-  // flex-direction: row;
 }
 
 @media screen and ($tablet-widths) {
-  .trade {
-    
-    & video {
-      // width: 100%;
-    }
-  }
-  
-  .trade__flex {
-    flex-wrap: wrap;
-  }
-  
-  .trade__left {
-    width: auto;
-    margin: auto;
-  }
-  
-  .trade__right {
-    margin: auto;
-  }
+  // .trade {
+  // 
+  //   video {
+  //     // width: 100%;
+  //   }
+  // }
+  // 
+  // .trade__flex {
+  //   flex-wrap: wrap;
+  // }
+  // 
+  // .trade__left {
+  //   width: auto;
+  //   margin: auto;
+  // }
+  // 
+  // .trade__right {
+  //   margin: auto;
+  // }
 }
 
 @media screen and ($mobile-widths) {
-  .trade {
-    padding: 50px 0;
-  }
-  
-  .trade__left {
-    
-    & h1 {
-      font-size: 30px;
-    }
-    
-    & p {
-      font-size: 18px;
-    }
-  }
-  
-  .trade__right {
-    align-items: center;
-    padding-top: 30px;
-    
-    & video {
-      width: 300px;
-    }
-  }
-  
-  .trade__link {
-    text-align: center;
-  }
+  // .trade {
+  //   padding: 50px 0;
+  // }
+  // 
+  // .trade__left {
+  // 
+  //   h1 {
+  //     font-size: 30px;
+  //   }
+  // 
+  //   p {
+  //     font-size: 18px;
+  //   }
+  // }
+  // 
+  // .trade__right {
+  //   align-items: center;
+  //   padding-top: 30px;
+  // 
+  //   video {
+  //     width: 300px;
+  //   }
+  // }
+  // 
+  // .trade__link {
+  //   text-align: center;
+  // }
 }

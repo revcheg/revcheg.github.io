@@ -1,7 +1,7 @@
 .form {
   width: 600px;
   
-  & input {
+  input {
     height: 25px;
     color: #fff;
     padding: 5px 20px;
@@ -12,15 +12,15 @@
     outline: none;
   }
   
-  & input[type="date"] {
+  input[type="date"] {
     width: 32%;
   }
   
-  & input:focus {
+  input:focus {
     border: 2px solid $sc;
   }
   
-  & input::placeholder {
+  input::placeholder {
     color: #fff;
     opacity: 0.8;
   }
