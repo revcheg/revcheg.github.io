@@ -1,13 +1,8 @@
-.trader {
-  background: #646464 url('../img/a-bg.png') no-repeat top;
-  background-size: cover;
-}
-
 .trader__content {
   color: #fff;
   padding-bottom: 50px;
   
-  & h1 {
+  h1 {
     margin-top: 120px;
     font-size: 50px;
     font-family: 'SF UI Display Black', sans-serif;
@@ -36,21 +31,21 @@
   padding-bottom: 0;
 }
 
-.trader__right {
+.trader__left {
   width: 700px;
   font-family: 'SF UI Display Regular', sans-serif;
   
-  & b {
+  b {
     font-size: 30px;
     
   }
   
-  & p {
+  p {
     font-size: 18px;
     opacity: 0.7;
   }
   
-  & ul {
+  ul {
     font-size: 18px;
     font-family: 'SF UI Display Regular', sans-serif;
     list-style-image: url('../img/r-arrow-s.png');
@@ -71,16 +66,16 @@
 .trader__sub-content {
   font-family: 'SF UI Display Regular', sans-serif;
   
-  & p {
+  p {
     font-size: 18px;
     opacity: 0.8;
   }
   
-  & b {
+  b {
     font-size: 22px;
   }
   
-  & ul {
+  ul {
     font-size: 18px;
     list-style-image: url('../img/r-arrow-s.png');
     opacity: 0.8;

@@ -582,7 +582,7 @@ body {
   justify-content: space-between; }
 
 .title {
-  margin-top: 120px;
+  margin-top: 100px;
   color: #fff; }
   .title h1 {
     margin-bottom: 30px;
@@ -593,9 +593,8 @@ body {
     margin-bottom: 75px;
     font-size: 22px;
     font-style: italic;
-    font-weight: 100;
     font-family: 'SF UI Text Regular', sans-serif;
-    opacity: 0.6; }
+    opacity: 0.7; }
 
 .title--about h1 {
   margin: 0;
@@ -629,6 +628,31 @@ body {
   font-style: italic;
   font-family: 'SF UI Text Regular', sans-serif;
   opacity: 0.7; }
+
+.temp--about {
+  height: 100vh;
+  background: #646464 url("../img/t-bg-2.png") no-repeat top;
+  background-size: cover; }
+
+.temp--account {
+  background: #434341 url("../img/a-bg.png") no-repeat top;
+  background-size: cover; }
+
+.temp--faq {
+  background: #646464 url("../img/a-bg.png") no-repeat top;
+  background-size: cover; }
+
+.temp--glossary {
+  background: gray; }
+
+.temp--trader {
+  background: #646464 url("../img/a-bg.png") no-repeat top;
+  background-size: cover; }
+
+.temp--signals {
+  height: 100vh;
+  background: #646464 url("../img/t-bg-1.png") no-repeat top;
+  background-size: cover; }
 
 .give h1 {
   margin-top: 70px;
@@ -707,16 +731,6 @@ body {
     border: 1px solid #eeba1d; }
   .table--spread th {
     padding: 5px; }
-
-.about {
-  height: 100vh;
-  background: #646464 url("../img/t-bg-2.png") no-repeat top;
-  background-size: cover; }
-
-.account {
-  height: inherit;
-  background: #434341 url("../img/a-bg.png") no-repeat top;
-  background-size: cover; }
 
 .steps {
   padding: 70px 0 54px 0; }
@@ -885,49 +899,45 @@ body {
   justify-content: space-between;
   margin-bottom: 20px; }
 
-.separated {
+.segregated {
   background: #646464 url("../img/a-bg.png") no-repeat top;
   background-size: cover; }
 
-.separated__content {
+.segregated__content {
   padding-top: 40px;
   padding-bottom: 50px;
   color: #fff; }
-  .separated__content h1 {
+  .segregated__content h1 {
     margin: 0;
     margin-bottom: 10px;
     font-size: 50px;
     font-family: 'SF UI Display Black', sans-serif;
     text-transform: uppercase; }
-  .separated__content b {
+  .segregated__content b {
     font-size: 30px;
     font-family: 'SF UI Display Black', sans-serif; }
-  .separated__content p, .separated__content ul {
+  .segregated__content p, .segregated__content ul {
     font-size: 18px;
     font-family: 'SF UI Display Regular', sans-serif;
     opacity: 0.7; }
-  .separated__content a {
+  .segregated__content a {
     display: block;
     width: 200px;
     margin: auto;
     margin-top: 50px;
     text-align: center; }
 
-.separated__text {
+.segregated__text {
   margin-bottom: 60px;
   font-style: italic; }
 
-.separated__adv {
+.segregated__adv {
   margin: 50px 0;
   padding: 30px 50px;
   border: 2px solid #eeba1d;
   border-radius: 10px; }
-  .separated__adv ul {
+  .segregated__adv ul {
     list-style-image: url("../img/r-arrow-s.png"); }
-
-.trader {
-  background: #646464 url("../img/a-bg.png") no-repeat top;
-  background-size: cover; }
 
 .trader__content {
   color: #fff;
@@ -960,15 +970,15 @@ body {
   justify-content: space-around;
   padding-bottom: 0; }
 
-.trader__right {
+.trader__left {
   width: 700px;
   font-family: 'SF UI Display Regular', sans-serif; }
-  .trader__right b {
+  .trader__left b {
     font-size: 30px; }
-  .trader__right p {
+  .trader__left p {
     font-size: 18px;
     opacity: 0.7; }
-  .trader__right ul {
+  .trader__left ul {
     font-size: 18px;
     font-family: 'SF UI Display Regular', sans-serif;
     list-style-image: url("../img/r-arrow-s.png");
@@ -1011,10 +1021,6 @@ body {
     font-size: 18px;
     list-style-image: url("../img/r-arrow-s.png"); }
 
-.faq {
-  background: #646464 url("../img/a-bg.png") no-repeat top;
-  background-size: cover; }
-
 .content {
   margin-top: 40px;
   padding-bottom: 70px;
@@ -1031,11 +1037,3 @@ body {
     font-family: 'SF UI Display Regular', sans-serif;
     list-style-image: url("../img/r-arrow-s.png");
     opacity: 0.7; }
-
-.signals {
-  height: 100vh;
-  background: #646464 url("../img/t-bg-1.png") no-repeat top;
-  background-size: cover; }
-
-.glossary {
-  background: gray; }

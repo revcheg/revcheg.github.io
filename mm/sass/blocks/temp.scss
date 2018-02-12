@@ -1,0 +1,33 @@
+.temp {
+  
+  &--about {
+    height: 100vh;
+    background: #646464 url('../img/t-bg-2.png') no-repeat top;
+    background-size: cover;
+  }
+  
+  &--account {
+    background: #434341 url('../img/a-bg.png') no-repeat top;
+    background-size: cover;
+  }
+  
+  &--faq {
+    background: #646464 url('../img/a-bg.png') no-repeat top;
+    background-size: cover;
+  }
+  
+  &--glossary {
+    background: gray;
+  }
+  
+  &--trader {
+    background: #646464 url('../img/a-bg.png') no-repeat top;
+    background-size: cover;
+  }
+  
+  &--signals {
+    height: 100vh;
+    background: #646464 url('../img/t-bg-1.png') no-repeat top;
+    background-size: cover;
+  }
+}

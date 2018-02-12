@@ -1,14 +1,14 @@
-.separated {
+.segregated {
   background: #646464 url('../img/a-bg.png') no-repeat top;
   background-size: cover;
 }
 
-.separated__content {
+.segregated__content {
   padding-top: 40px;
   padding-bottom: 50px;
   color: #fff;
   
-  & h1 {
+  h1 {
     margin: 0;
     margin-bottom: 10px;
     font-size: 50px;
@@ -16,18 +16,18 @@
     text-transform: uppercase;
   }
   
-  & b {
+  b {
     font-size: 30px;
     font-family: 'SF UI Display Black', sans-serif;
   }
   
-  & p, ul {
+  p, ul {
     font-size: 18px;
     font-family: 'SF UI Display Regular', sans-serif;
     opacity: 0.7;
   }
   
-  & a {
+  a {
     display: block;
     width: 200px;
     margin: auto;
@@ -36,18 +36,18 @@
   }
 }
 
-.separated__text {
+.segregated__text {
   margin-bottom: 60px;
   font-style: italic; 
 }
 
-.separated__adv {
+.segregated__adv {
   margin: 50px 0;
   padding: 30px 50px;
   border: 2px solid $sc;
   border-radius: 10px;
   
-  & ul {
+  ul {
     list-style-image: url('../img/r-arrow-s.png');
   }
 }
