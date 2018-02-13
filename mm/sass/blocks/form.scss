@@ -1,6 +1,8 @@
 .form {
+  width: 700px;
   
   input {
+    width: 165px;
     height: 25px;
     color: #fff;
     padding: 5px 20px;
@@ -9,19 +11,43 @@
     border: 2px solid #fff;
     background: transparent;
     outline: none;
+    
+    &:focus {
+      border: 2px solid $sc;
+    }
   }
   
-  input[type="date"] {
-    width: auto;
-  }
-  
-  input:focus {
-    border: 2px solid $sc;
+  select {
+    padding: 5px 20px;
+    color: #fff;
+    font-size: inherit;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background: transparent;
+    outline: none;
+    
+    &:focus {
+      border: 2px solid $sc;
+    }
+    
+    option {
+      background: #212121;
+    }
   }
   
   input::placeholder {
     color: #fff;
     opacity: 0.8;
+  }
+  
+  small {
+    display: block;
+    width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    color: #fff;
+    font-family: 'SF UI Display Regular', sans-serif;
+    text-align: center;
   }
 }
 
@@ -29,6 +55,18 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.form__flex--around {
+  justify-content: space-around;
+  height: 39px;
+}
+
+.form__country,
+.form__title,
+.form__nature,
+.form__leverage {
+  width: 210px; 
 }
 
 @media screen and ($tablet-widths) {}
