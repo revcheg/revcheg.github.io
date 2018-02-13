@@ -623,7 +623,6 @@ body {
     align-items: center; } }
 
 .payment {
-  height: 40px;
   padding: 20px 0;
   background: #818181; }
 
@@ -636,7 +635,9 @@ body {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .payment__box {
   width: 157px;
@@ -716,6 +717,17 @@ body {
   .payment__box--master:hover {
     background: url("../img/master-h.svg") no-repeat center;
     background-size: 75px, 40px; }
+
+@media screen and (max-width: 768px) {
+  .payment {
+    padding-bottom: 0; }
+  .payment__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .payment__box {
+    margin-bottom: 20px; } }
 
 .footer {
   padding: 50px 0 10px 0;

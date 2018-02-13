@@ -1,5 +1,4 @@
 .payment {
-  height: 40px;
   padding: 20px 0;
   background: #818181;
 }
@@ -8,6 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .payment__box {
@@ -110,5 +110,21 @@
   &:hover {
     background: url('../img/master-h.svg') no-repeat center;
     background-size: 75px, 40px;
+  }
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .payment {
+    padding-bottom: 0;
+  }
+  
+  .payment__flex {
+    flex-direction: column;
+  }
+  
+  .payment__box {
+    margin-bottom: 20px;
   }
 }
