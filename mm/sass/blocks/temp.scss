@@ -17,7 +17,7 @@
   }
   
   &--glossary {
-    background: #232222;
+    background: #212121;
   }
   
   &--trader {
@@ -34,6 +34,10 @@
   &--info {
     background: #646464 url('../img/edge.png') no-repeat top;
     background-size: cover;
+  }
+  
+  &--gray {
+    background: #212121;
   }
 }
 

@@ -827,7 +827,7 @@ body {
   background-size: cover; }
 
 .temp--glossary {
-  background: #232222; }
+  background: #212121; }
 
 .temp--trader {
   background: #646464 url("../img/a-bg.png") no-repeat top;
@@ -841,6 +841,9 @@ body {
 .temp--info {
   background: #646464 url("../img/edge.png") no-repeat top;
   background-size: cover; }
+
+.temp--gray {
+  background: #212121; }
 
 @media screen and (max-width: 768px) {
   .temp--about {
@@ -1284,7 +1287,7 @@ body {
 
 .spread {
   padding-bottom: 70px;
-  background: #232222; }
+  background: #212121; }
 
 .spread__content {
   color: #fff;
