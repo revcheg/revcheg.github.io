@@ -720,7 +720,7 @@ body {
   background-size: cover; }
 
 .temp--glossary {
-  background: gray; }
+  background: #232222; }
 
 .temp--trader {
   background: #646464 url("../img/a-bg.png") no-repeat top;
@@ -1092,8 +1092,7 @@ body {
     width: 200px;
     margin: auto;
     margin-top: 50px;
-    font-size: 20px;
-    text-align: center; }
+    font-size: 20px; }
 
 .trader__flex {
   display: -webkit-box;
@@ -1178,7 +1177,7 @@ body {
 
 .spread {
   padding-bottom: 70px;
-  background: #646464; }
+  background: #232222; }
 
 .spread__content {
   color: #fff;
