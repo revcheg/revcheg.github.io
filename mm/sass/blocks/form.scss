@@ -3,7 +3,6 @@
   
   input {
     width: 165px;
-    // height: 30px;
     color: #fff;
     padding: 10px 20px;
     font-size: 16px;
@@ -15,6 +14,10 @@
     &:focus {
       border: 2px solid $sc;
     }
+  }
+  
+  input[type="date"] {
+    padding: 8px 20px;
   }
   
   select {
@@ -59,7 +62,6 @@
 
 .form__flex--around {
   justify-content: space-around;
-  // height: 39px;
 }
 
 .form__country,
@@ -74,7 +76,15 @@
 @media screen and ($mobile-widths) {
   .form {
     width: auto;
-    // padding: 0 20px;
+    
+    input {
+      width: auto;
+      margin-bottom: 20px;
+    }
+    
+    select {
+      margin-bottom: 20px;
+    }
     
     p {
       text-align: center;
@@ -90,21 +100,9 @@
   .form__nature,
   .form__leverage {
     width: auto;
-    // height: 39px;
   }
   
   .form__flex {
-    // flex-wrap: wrap;
-    // justify-content: center;
     flex-direction: column;
-    
-    input {
-      width: auto;
-      margin-bottom: 20px;
-    }
-    
-    select {
-      margin-bottom: 20px;
-    }
   }
 }
