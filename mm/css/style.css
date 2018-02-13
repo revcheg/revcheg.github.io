@@ -1095,7 +1095,9 @@ body {
     text-align: center; }
   .register__left,
   .register__right {
-    width: auto; } }
+    width: auto; }
+  .register__text {
+    text-align: center; } }
 
 .form {
   width: 700px; }
@@ -1144,6 +1146,15 @@ body {
     color: #fff;
     font-family: 'SF UI Display Regular', sans-serif;
     text-align: center; }
+  .form--login {
+    width: 300px;
+    margin: auto;
+    padding-bottom: 50px; }
+    .form--login input {
+      width: 85%;
+      margin-bottom: 10px; }
+    .form--login small {
+      width: auto; }
 
 .form__flex {
   display: -webkit-box;
@@ -1176,6 +1187,11 @@ body {
       text-align: center; }
     .form small {
       width: auto; }
+    .form--login {
+      width: 300px;
+      margin: auto; }
+      .form--login input {
+        width: 85%; }
   .form__country,
   .form__title,
   .form__nature,

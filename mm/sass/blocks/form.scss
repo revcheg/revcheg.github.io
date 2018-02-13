@@ -52,6 +52,21 @@
     font-family: 'SF UI Display Regular', sans-serif;
     text-align: center;
   }
+  
+  &--login {
+    width: 300px;
+    margin: auto;
+    padding-bottom: 50px;
+    
+    input {
+      width: 85%;
+      margin-bottom: 10px;
+    }
+    
+    small {
+      width: auto;
+    }
+  }
 }
 
 .form__flex {
@@ -92,6 +107,15 @@
     
     small {
       width: auto;
+    }
+    
+    &--login {
+      width: 300px;
+      margin: auto;
+      
+      input {
+        width: 85%;
+      }
     }
   }
   
