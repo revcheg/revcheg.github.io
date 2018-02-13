@@ -113,6 +113,18 @@
   }
 }
 
+.payment__box--bank {
+  width: 117px;
+  height: 43px;
+  background: url('../img/bank.svg') no-repeat center;
+  background-size: 117px, 43px;
+  
+  &:hover {
+    background: url('../img/bank-h.svg') no-repeat center;
+    background-size: 117px, 43px;
+  }
+}
+
 @media screen and ($tablet-widths) {}
 
 @media screen and ($mobile-widths) {

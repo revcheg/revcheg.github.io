@@ -718,6 +718,15 @@ body {
     background: url("../img/master-h.svg") no-repeat center;
     background-size: 75px, 40px; }
 
+.payment__box--bank {
+  width: 117px;
+  height: 43px;
+  background: url("../img/bank.svg") no-repeat center;
+  background-size: 117px, 43px; }
+  .payment__box--bank:hover {
+    background: url("../img/bank-h.svg") no-repeat center;
+    background-size: 117px, 43px; }
+
 @media screen and (max-width: 768px) {
   .payment {
     padding-bottom: 0; }
