@@ -622,6 +622,101 @@ body {
     -ms-flex-align: center;
     align-items: center; } }
 
+.payment {
+  height: 40px;
+  padding: 20px 0;
+  background: #818181; }
+
+.payment__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.payment__box {
+  width: 157px;
+  height: 45px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer; }
+
+.payment__box--wm {
+  width: 155px;
+  height: 41px;
+  background: url("../img/wm.svg") no-repeat center;
+  background-size: 155px, 41px; }
+  .payment__box--wm:hover {
+    background: url("../img/wm-h.svg") no-repeat center;
+    background-size: 155px, 41px; }
+
+.payment__box--sofort {
+  width: 111px;
+  height: 36px;
+  background: url("../img/sofort.svg") no-repeat center;
+  background-size: 111px, 36px; }
+  .payment__box--sofort:hover {
+    background: url("../img/sofort-h.svg") no-repeat center;
+    background-size: 111px, 36px; }
+
+.payment__box--ae {
+  width: 121px;
+  height: 42px;
+  background: url("../img/ae.svg") no-repeat center;
+  background-size: 121px, 42px; }
+  .payment__box--ae:hover {
+    background: url("../img/ae-h.svg") no-repeat center;
+    background-size: 121px, 42px; }
+
+.payment__box--neteller {
+  width: 157px;
+  height: 27px;
+  background: url("../img/neteller.svg") no-repeat center;
+  background-size: 157px, 27px; }
+  .payment__box--neteller:hover {
+    background: url("../img/neteller-h.svg") no-repeat center;
+    background-size: 157px, 27px; }
+
+.payment__box--ideal {
+  width: 52px;
+  height: 45px;
+  background: url("../img/ideal.svg") no-repeat center;
+  background-size: 52px, 45px; }
+  .payment__box--ideal:hover {
+    background: url("../img/ideal-h.svg") no-repeat center;
+    background-size: 52px, 45px; }
+
+.payment__box--skrill {
+  width: 107px;
+  height: 37px;
+  background: url("../img/skrill.svg") no-repeat center;
+  background-size: 107px, 37px; }
+  .payment__box--skrill:hover {
+    background: url("../img/skrill-h.svg") no-repeat center;
+    background-size: 107px, 37px; }
+
+.payment__box--visa {
+  width: 110px;
+  height: 36px;
+  background: url("../img/visa.svg") no-repeat center;
+  background-size: 110px, 36px; }
+  .payment__box--visa:hover {
+    background: url("../img/visa-h.svg") no-repeat center;
+    background-size: 110px, 36px; }
+
+.payment__box--master {
+  width: 75px;
+  height: 40px;
+  background: url("../img/master.svg") no-repeat center;
+  background-size: 75px, 40px; }
+  .payment__box--master:hover {
+    background: url("../img/master-h.svg") no-repeat center;
+    background-size: 75px, 40px; }
+
 .footer {
   padding: 50px 0 10px 0;
   background: #212121; }
