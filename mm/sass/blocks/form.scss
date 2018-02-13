@@ -3,9 +3,9 @@
   
   input {
     width: 165px;
-    height: 25px;
+    // height: 30px;
     color: #fff;
-    padding: 5px 20px;
+    padding: 10px 20px;
     font-size: 16px;
     border-radius: 50px;
     border: 2px solid #fff;
@@ -18,7 +18,7 @@
   }
   
   select {
-    padding: 5px 20px;
+    padding: 10px 20px;
     color: #fff;
     font-size: inherit;
     border: 2px solid #fff;
@@ -59,7 +59,7 @@
 
 .form__flex--around {
   justify-content: space-around;
-  height: 39px;
+  // height: 39px;
 }
 
 .form__country,
@@ -73,18 +73,38 @@
 
 @media screen and ($mobile-widths) {
   .form {
+    width: auto;
+    // padding: 0 20px;
     
     p {
       text-align: center;
     }
+    
+    small {
+      width: auto;
+    }
+  }
+  
+  .form__country,
+  .form__title,
+  .form__nature,
+  .form__leverage {
+    width: auto;
+    // height: 39px;
   }
   
   .form__flex {
-    flex-wrap: wrap;
-    justify-content: center;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    flex-direction: column;
     
     input {
-      margin-bottom: 10px;
+      width: auto;
+      margin-bottom: 20px;
+    }
+    
+    select {
+      margin-bottom: 20px;
     }
   }
 }
