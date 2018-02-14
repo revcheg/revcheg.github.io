@@ -1,0 +1,22 @@
+.breadcrumb {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin-top: 30px;
+  padding-left: 0;
+  font-size: 15px;
+  font-weight: 300;
+  list-style: none;
+  
+  a {
+    text-decoration: none;
+  }
+}
+
+.breadcrumb__link {
+  color: $yc;
+}
+
+.breadcrumb__current {
+  color: #292929;
+}

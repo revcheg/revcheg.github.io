@@ -1,9 +1,9 @@
 .main-nav {
   
-  
   ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 730px;
     padding-left: 0;
     list-style: none;
@@ -13,5 +13,12 @@
     color: #272727;
     font-size: 16px;
     text-decoration: none;
+    text-transform: uppercase;
   }
+}
+
+.main-nav__partner {
+  padding: 5px 20px;
+  border: 1px solid $yc;
+  border-radius: 3px;
 }

@@ -1,3 +1,28 @@
 .title {
+  color: #fff;
   background: #003e4e url('../img/title-bg.png') no-repeat top;
+  
+  h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 330px;
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  hr {
+    width: 58px;
+    height: 2px;
+    margin-left: 20px;
+    border: none;
+    background: $yc;
+  }
+  
+  p {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-bottom: 130px;
+    font-size: 20px;
+  }
 }

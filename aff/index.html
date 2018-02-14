@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Affboat</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -33,5 +34,32 @@
       <p>Акций и новости в мире афилиации</p>
     </div>
   </section>
+  <main>
+    <div class="container">
+      <ul class="breadcrumb">
+        <li><a class="breadcrumb__link" href="#">Главная</a></li>
+        <li>/</li>
+        <li><a class="breadcrumb__current" href="#">Блог</a></li>
+      </ul>
+      <section class="control">
+        <div class="control__flex">
+          <div class="control__left">
+            <label for="select">Категория:</label>
+            <select id="select">
+              <option value="all">Все статьи</option>
+            </select>
+          </div>
+          <ul class="control__pagination">
+            <li><a href="#"><</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">></a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
 </body>
 </html>

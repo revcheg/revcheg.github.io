@@ -1,6 +1,7 @@
 body {
   min-width: 320px;
-  margin: 0; }
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; }
 
 .container {
   width: 1160px;
@@ -25,6 +26,9 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 730px;
   padding-left: 0;
   list-style: none; }
@@ -32,7 +36,95 @@ body {
 .main-nav a {
   color: #272727;
   font-size: 16px;
-  text-decoration: none; }
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.main-nav__partner {
+  padding: 5px 20px;
+  border: 1px solid #ffd117;
+  border-radius: 3px; }
 
 .title {
+  color: #fff;
   background: #003e4e url("../img/title-bg.png") no-repeat top; }
+  .title h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 330px;
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .title hr {
+    width: 58px;
+    height: 2px;
+    margin-left: 20px;
+    border: none;
+    background: #ffd117; }
+  .title p {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-bottom: 130px;
+    font-size: 20px; }
+
+.breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100px;
+  margin-top: 30px;
+  padding-left: 0;
+  font-size: 15px;
+  font-weight: 300;
+  list-style: none; }
+  .breadcrumb a {
+    text-decoration: none; }
+
+.breadcrumb__link {
+  color: #ffd117; }
+
+.breadcrumb__current {
+  color: #292929; }
+
+.control__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.control__left select {
+  width: 300px;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ffd117;
+  border-radius: 3px; }
+
+.control__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  padding-left: 0;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  list-style: none; }
+  .control__pagination a {
+    display: block;
+    color: #292929;
+    padding: 10px 17px;
+    text-decoration: none;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+    .control__pagination a:hover {
+      color: #fff;
+      background: #292929; }
