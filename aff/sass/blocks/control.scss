@@ -26,6 +26,11 @@
   border-radius: 3px;
   list-style: none;
   
+  &--right {
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+  
   a {
     display: block;
     color: #292929;
