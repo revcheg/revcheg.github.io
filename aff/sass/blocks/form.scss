@@ -1,0 +1,60 @@
+.form {
+  padding: 30px 0;
+  
+  h1 {
+    margin-top: 0;
+    color: #3f2900;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+
+.form__flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.form__left {
+  display: flex;
+  flex-direction: column;
+  
+  input {
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    
+    &::placeholder {
+      color: #726c6c;
+      font-size: 14px;
+    }
+  }
+  
+}
+
+.form__send {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 10px 60px;
+  font-size: 14px;
+  border: 1px solid $yc;
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.form__comment {
+  width: 67%;
+  height: 170px;
+  padding: 10px 15px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  resize: none;
+  
+  &::placeholder {
+    color: #726c6c;
+    font-size: 14px;
+  }
+}

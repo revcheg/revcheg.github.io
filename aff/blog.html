@@ -104,21 +104,35 @@
     </section>
     <section class="comments">
       <div class="container">
-        <p><b>Комментарии (5) </b> Показать все комментарии</p>
+        <p class="comments__count"><b>Комментарии (5) </b> <button type="button">Показать все комментарии</button></p>
         <hr class="hr">
         <div class="comments__flex">
           <div class="comments__left">
-            <img src="" alt="">
+            <img src="img/user.png" alt="Иванов Иван">
             <b>Иванов Иван</b>
           </div>
           <div class="comments__right">
-            <p><time>23.09.2017</time> в <time>15:54</time></p>
-              <hr class="hr-s">
-            <p>Я думаю вложение акций в известные бренды заслуживает нашего внимания. Adidas уже давно на рынке и достойна уважения. Есть конечно конкурирующие фирмы, но я бы предпочла именно эту. Нужно конечно взвесить все за и против, но в целом не вижу больших рисков.</p>
+            <p class="comments__time"><time>23.09.2017</time> в <time>15:54</time></p>
+              <hr class="hr  hr--s">
+            <p class="comments__text">Я думаю вложение акций в известные бренды заслуживает нашего внимания. Adidas уже давно на рынке и достойна уважения. Есть конечно конкурирующие фирмы, но я бы предпочла именно эту. Нужно конечно взвесить все за и против, но в целом не вижу больших рисков.</p>
           </div>
         </div>
       </div>
     </section>
+    <form class="form" method="post">
+      <div class="container">
+        <h1>Оставить комментарий</h1>
+          <hr class="hr">
+        <div class="form__flex">
+          <div class="form__left">
+            <input type="text" placeholder="Имя">
+            <input type="email" placeholder="E-mail">
+            <button class="form__send" type="button">Отправить</button>
+          </div>
+          <textarea class="form__comment" placeholder="Комментарий"></textarea>
+        </div>
+      </div>
+    </form>
   </main>
   <footer class="footer">
     <div class="container">

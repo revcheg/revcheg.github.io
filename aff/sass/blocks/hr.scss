@@ -4,4 +4,9 @@
   margin: 0;
   border: none;
   background: $yc;
+  
+  &--s {
+    width: 30px;
+    height: 1px;
+  }
 }
