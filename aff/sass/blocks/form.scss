@@ -58,3 +58,38 @@
     font-size: 14px;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .form__comment {
+    width: 50%;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .form {
+    
+    h1 {
+      text-align: center;
+    }
+  }
+  
+  .form__flex {
+    flex-direction: column;
+  }
+  
+  .form__left {
+    
+    input {
+      width: auto;
+    }
+  }
+  
+  .form__send {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  
+  .form__comment {
+    width: auto;
+  }
+}

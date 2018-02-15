@@ -54,3 +54,21 @@
   color: #3f2900;
   font-size: 15px;
 }
+
+@media screen and ($tablet-widths) {
+  
+}
+
+@media screen and ($mobile-widths) {
+  .comments__count {
+    text-align: center;
+  }
+  
+  .comments__flex {
+    flex-direction: column;
+  }
+  
+  .comments__right {
+    width: auto;
+  }
+}

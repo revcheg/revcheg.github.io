@@ -63,3 +63,39 @@
     text-transform: uppercase;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .blog__img {
+    width: 50%;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .blog__flex {
+    flex-direction: column;
+  }
+  
+  .blog__img {
+    order: 1;
+    width: 100%;
+  }
+  
+  .blog__right {
+    margin-left: 0;
+    
+    h1, p {
+      text-align: center;
+    }
+    
+    .blog__link {
+      display: block;
+      width: 50px;
+      margin: auto;
+      text-align: center;
+    }
+  }
+  
+  .blog__content {
+    text-align: center;
+  }
+}

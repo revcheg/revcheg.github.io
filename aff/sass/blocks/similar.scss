@@ -15,6 +15,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .similar__box {
@@ -28,5 +29,15 @@
   
   b {
     font-size: 13px;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  
+}
+
+@media screen and ($mobile-widths) {
+  .similar__flex {
+    justify-content: space-around;
   }
 }

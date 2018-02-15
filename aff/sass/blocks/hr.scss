@@ -10,3 +10,15 @@
     height: 1px;
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .hr {
+    margin: auto;
+    
+    &--s {
+      display: none;
+    }
+  }
+}
