@@ -67,6 +67,16 @@
   justify-content: space-between;
   width: 150px;
   height: 23px;
+  
+  &--blog {
+    margin-top: 90px;
+  }
+  
+  &--blog-down {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
 }
 
 .news__fb {

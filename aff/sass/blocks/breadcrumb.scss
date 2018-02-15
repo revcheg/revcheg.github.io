@@ -8,6 +8,11 @@
   font-weight: 300;
   list-style: none;
   
+  &--blog {
+    width: 520px;
+    margin-bottom: 50px;
+  }
+  
   a {
     text-decoration: none;
   }
