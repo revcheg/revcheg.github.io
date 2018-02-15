@@ -22,3 +22,24 @@
   border: 1px solid $yc;
   border-radius: 3px;
 }
+
+@media screen and ($tablet-widths) {
+  .main-nav {
+    
+    ul {
+      width: 550px;
+    }
+    
+    a {
+      font-size: 13px;
+    }
+  }
+  
+  .main-nav__partner {
+    padding: 5px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+
+}

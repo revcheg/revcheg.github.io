@@ -20,3 +20,13 @@
 .breadcrumb__current {
   color: #292929;
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .breadcrumb {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

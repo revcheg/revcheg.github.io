@@ -21,6 +21,7 @@
   
   p {
     margin-top: 0;
+    text-transform: uppercase;
   }
 }
 
@@ -28,7 +29,7 @@
   width: 490px;
   height: 260px;
   margin-top: 30px;
-  background: url('../img/blog-preview.png') no-repeat;
+  background: url('../img/blog-preview.png') no-repeat center;
 }
 
 .news__right {
@@ -58,4 +59,99 @@
   text-decoration: none;
   border: 1px solid $yc;
   border-radius: 3px;
+}
+
+.news__social {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  height: 23px;
+}
+
+.news__fb {
+  display: block;
+  width: 12px;
+  background: url('../img/facebook.svg') no-repeat center;
+  background-size: cover;
+  transition: 0.2s;
+  
+  &:hover {
+    background: url('../img/facebook-h.svg') no-repeat center;
+    background-size: cover;
+  }
+}
+
+.news__tw {
+  display: block;
+  width: 24px;
+  background: url('../img/twitter.svg') no-repeat center;
+  background-size: cover;
+  transition: 0.2s;
+  
+  &:hover {
+    background: url('../img/twitter-h.svg') no-repeat center;
+    background-size: cover;
+  }
+}
+
+.news__vk {
+  display: block;
+  width: 27px;
+  background: url('../img/vk.svg') no-repeat center;
+  background-size: cover;
+  transition: 0.2s;
+  
+  &:hover {
+    background: url('../img/vk-h.svg') no-repeat center;
+    background-size: cover;
+  }
+}
+
+.news__gp {
+  display: block;
+  width: 29px;
+  background: url('../img/google-plus.svg') no-repeat center;
+  background-size: cover;
+  transition: 0.2s;
+  
+  &:hover {
+    background: url('../img/google-plus-h.svg') no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .news__left {
+    width: 400px;
+  }
+  
+  .news__preview {
+    width: auto;
+    margin-right: 40px;
+    background-size: contain;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .news__flex {
+    flex-direction: column;
+  }
+  
+  .news__left,
+  .news__right {
+    width: auto;
+  }
+  
+  .news__preview {
+    margin-right: 0;
+    background-size: cover;
+  }
+  
+  .news__right {
+    margin-top: 20px;
+    
+    h1 {
+      text-align: center;
+    }
+  }
 }
