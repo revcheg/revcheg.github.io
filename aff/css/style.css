@@ -699,3 +699,33 @@ body {
   .form__comment::placeholder {
     color: #726c6c;
     font-size: 14px; }
+
+.similar {
+  padding: 30px 0;
+  background: #f7f7f7; }
+  .similar h1 {
+    margin-top: 0;
+    color: #3f2900;
+    font-size: 18px;
+    text-transform: uppercase; }
+
+.similar__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px; }
+
+.similar__box {
+  width: 270px;
+  color: #3f2900;
+  text-transform: uppercase; }
+  .similar__box p {
+    font-size: 11px; }
+  .similar__box b {
+    font-size: 13px; }
