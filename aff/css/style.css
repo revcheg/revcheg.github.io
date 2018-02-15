@@ -806,4 +806,6 @@ body {
 @media screen and (max-width: 768px) {
   .similar__flex {
     -ms-flex-pack: distribute;
-    justify-content: space-around; } }
+    justify-content: space-around; }
+  .similar__left {
+    margin-bottom: 10px; } }
