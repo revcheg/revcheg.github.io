@@ -221,7 +221,9 @@ body {
   .breadcrumb {
     margin: auto;
     margin-top: 30px;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+    .breadcrumb--blog {
+      width: auto; } }
 
 .control__flex {
   display: -webkit-box;
