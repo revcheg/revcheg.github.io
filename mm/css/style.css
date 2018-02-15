@@ -529,7 +529,13 @@ body {
     font-size: 30px;
     font-family: 'SF UI Display', sans-serif; }
   .edge__box p {
+    margin-bottom: 5px;
+    font-size: 18px;
     font-family: 'SF UI Display', sans-serif; }
+  .edge__box small {
+    font-size: 15px;
+    font-family: 'SF UI Display', sans-serif;
+    opacity: 0.5; }
 
 @media screen and (max-width: 768px) {
   .edge__flex {

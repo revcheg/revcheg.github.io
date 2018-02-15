@@ -22,7 +22,15 @@
   }
   
   p {
+    margin-bottom: 5px;
+    font-size: 18px;
     font-family: 'SF UI Display', sans-serif;
+  }
+  
+  small {
+    font-size: 15px;
+    font-family: 'SF UI Display', sans-serif;
+    opacity: 0.5;
   }
 }
 
