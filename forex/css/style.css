@@ -821,18 +821,26 @@ body {
   text-align: center;
   background: #2e2963 url("../img/sign-bg.png") no-repeat;
   background-size: cover; }
+  .sign b {
+    color: #fff;
+    font-size: 18px; }
 
 .sign__title {
   padding-top: 50px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 25px; }
+
+.sign__call {
   margin-bottom: 0;
-  color: white;
+  color: #f2c318;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase; }
 
 .sign__text {
   margin-top: 10px;
-  color: white;
+  color: #f2c318;
   font-size: 20px;
   font-weight: bold; }
 

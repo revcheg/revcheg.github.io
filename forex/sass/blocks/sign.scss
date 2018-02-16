@@ -2,12 +2,23 @@
   text-align: center;
   background: $mc url("../img/sign-bg.png") no-repeat;
   background-size: cover;
+  
+  b {
+    color: #fff;
+    font-size: 18px;
+  }
 }
 
 .sign__title {
   padding-top: 50px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 25px;
+}
+
+.sign__call {
   margin-bottom: 0;
-  color: white;
+  color: $sc;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -15,7 +26,7 @@
 
 .sign__text {
   margin-top: 10px;
-  color: white;
+  color: $sc;
   font-size: 20px;
   font-weight: bold;
 }
