@@ -696,7 +696,7 @@ body {
   .global p {
     margin-top: 0;
     color: white;
-    font-weight: bold; }
+    font-size: 20px; }
   .global a {
     padding: 10px 30px;
     color: #2e2963;
