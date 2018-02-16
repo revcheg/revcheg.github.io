@@ -42,7 +42,13 @@
   border: 1px solid $yc;
   border-radius: 3px;
   background: transparent;
+  transition: 0.2s;
   cursor: pointer;
+  
+  &:hover {
+    color: #fff;
+    background: $yc;
+  }
 }
 
 .form__comment {

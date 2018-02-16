@@ -16,12 +16,17 @@
   align-items: center;
   margin-bottom: 30px;
   flex-wrap: wrap;
+  
+  a {
+    text-decoration: none;
+  }
 }
 
 .similar__box {
   width: 270px;
   color: #3f2900;
   text-transform: uppercase;
+  transition: 0.2s;
   
   p {
     font-size: 11px;
@@ -29,6 +34,10 @@
   
   b {
     font-size: 13px;
+  }
+  
+  &:hover {
+    transform: scale(1.05);
   }
 }
 

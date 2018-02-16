@@ -50,7 +50,14 @@ body {
 .main-nav__partner {
   padding: 5px 20px;
   border: 1px solid #ffd117;
-  border-radius: 3px; }
+  border-radius: 3px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer; }
+  .main-nav__partner:hover {
+    background: #ffd117; }
+  .main-nav__partner:hover a {
+    color: #fff; }
 
 .main-nav__toggle {
   display: none; }
@@ -270,6 +277,10 @@ body {
       color: #fff;
       background: #292929; }
 
+.control__active {
+  color: #fff !important;
+  background: #292929; }
+
 @media screen and (max-width: 768px) {
   .control__flex {
     -webkit-box-orient: vertical;
@@ -341,7 +352,12 @@ body {
   font-size: 14px;
   text-decoration: none;
   border: 1px solid #ffd117;
-  border-radius: 3px; }
+  border-radius: 3px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .news__more:hover {
+    color: #fff;
+    background: #ffd117; }
 
 .news__social {
   display: -webkit-box;
@@ -729,7 +745,12 @@ body {
   border: 1px solid #ffd117;
   border-radius: 3px;
   background: transparent;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   cursor: pointer; }
+  .form__send:hover {
+    color: #fff;
+    background: #ffd117; }
 
 .form__comment {
   width: 67%;
@@ -793,15 +814,22 @@ body {
   margin-bottom: 30px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+  .similar__flex a {
+    text-decoration: none; }
 
 .similar__box {
   width: 270px;
   color: #3f2900;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
   .similar__box p {
     font-size: 11px; }
   .similar__box b {
     font-size: 13px; }
+  .similar__box:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); }
 
 @media screen and (max-width: 768px) {
   .similar__flex {

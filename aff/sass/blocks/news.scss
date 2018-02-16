@@ -60,6 +60,12 @@
   text-decoration: none;
   border: 1px solid $yc;
   border-radius: 3px;
+  transition: 0.2s;
+  
+  &:hover {
+    color: #fff;
+    background: $yc;
+  }
 }
 
 .news__social {
