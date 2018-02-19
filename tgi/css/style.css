@@ -218,3 +218,109 @@ body {
 
 .edge__title-light {
   color: #0488a9; }
+
+.map {
+  background: url("../img/map-bg.png") no-repeat top; }
+  .map h1 {
+    margin-top: 0;
+    padding-top: 150px;
+    color: #4a4e52;
+    font-size: 48px;
+    font-weight: 300;
+    font-family: 'Open Sans Light', sans-serif;
+    text-align: center;
+    text-transform: uppercase; }
+
+.map__inside {
+  width: 1458px;
+  height: 778px;
+  margin: auto;
+  background: url("../img/map.png"); }
+
+.contact {
+  background: url("../img/contact-bg.png"); }
+
+.form {
+  width: 1050px;
+  padding: 70px 100px;
+  background: url("../img/form-bg.png") no-repeat top; }
+  .form h1 {
+    margin: 0;
+    color: #1c4169;
+    font-size: 48px;
+    font-weight: 500;
+    font-family: 'Open Sans Regular', sans-serif;
+    text-transform: uppercase; }
+  .form p {
+    margin: 0;
+    margin-bottom: 30px;
+    color: #878788;
+    font-size: 18px;
+    font-family: 'Open Sans Light', sans-serif; }
+
+.form__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 10px; }
+
+.form__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 390px; }
+  .form__left input {
+    color: #1c4169;
+    margin-bottom: 30px;
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Open Sans Light', sans-serif;
+    border: none;
+    border-bottom: 1px solid #c6c6c6; }
+    .form__left input::-webkit-input-placeholder {
+      color: #1c4169; }
+    .form__left input:-ms-input-placeholder {
+      color: #1c4169; }
+    .form__left input::-ms-input-placeholder {
+      color: #1c4169; }
+    .form__left input::placeholder {
+      color: #1c4169; }
+  .form__left input[type='submit'] {
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: #08324f;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer; }
+    .form__left input[type='submit']:hover {
+      background: #0488a9; }
+
+textarea {
+  width: 50%;
+  padding: 20px 30px;
+  color: #1c4169;
+  font-size: 16px;
+  font-family: 'Open Sans Light', sans-serif;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  resize: none; }
+  textarea::-webkit-input-placeholder {
+    color: #1c4169; }
+  textarea:-ms-input-placeholder {
+    color: #1c4169; }
+  textarea::-ms-input-placeholder {
+    color: #1c4169; }
+  textarea::placeholder {
+    color: #1c4169; }

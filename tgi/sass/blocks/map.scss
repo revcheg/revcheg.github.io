@@ -1,0 +1,22 @@
+.map {
+  
+  background: url('../img/map-bg.png') no-repeat top;
+  
+  h1 {
+    margin-top: 0;
+    padding-top: 150px;
+    color: #4a4e52;
+    font-size: 48px;
+    font-weight: 300;
+    font-family: 'Open Sans Light', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.map__inside {
+  width: 1458px;
+  height: 778px;
+  margin: auto;
+  background: url('../img/map.png');
+}
