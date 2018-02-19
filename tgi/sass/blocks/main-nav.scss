@@ -1,0 +1,25 @@
+.main-nav {
+  
+  ul {
+    display: flex;
+    padding-left: 0;
+    font-size: 17px;
+    font-family: 'Open Sans Light', sans-serif;
+    list-style: none;
+    
+    li {
+      margin-left: 20px;
+    }
+    
+    a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: 0.3s;
+      
+      &:hover {
+        color: #00c5ff;
+      }
+    }
+  }
+}

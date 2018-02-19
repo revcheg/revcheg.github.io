@@ -1,0 +1,11 @@
+.header {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.header__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+

@@ -1,0 +1,69 @@
+.edge {
+  background: url('../img/edge-bg.png');
+  
+  h1 {
+    margin-top: 0;
+    color: #294262;
+    font-size: 48px;
+    font-weight: 300;
+    font-family: 'Open Sans Light', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.edge__flex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.edge__box {
+  width: 330px;
+  padding-top: 180px;
+  
+  b {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Open Sans Regular', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  p {
+    color: #737373;
+    font-size: 16px;
+    font-family: 'Open Sans Light', sans-serif;
+  }
+  
+  &--1 {
+    background: url('../img/edge-1.png') no-repeat top left;
+  }
+  
+  &--2 {
+    background: url('../img/edge-2.png') no-repeat top left;
+  }
+  
+  &--3 {
+    background: url('../img/edge-3.png') no-repeat top left;
+  }
+  
+  &--4 {
+    background: url('../img/edge-4.png') no-repeat top left;
+  }
+  
+  &--5 {
+    background: url('../img/edge-5.png') no-repeat top left;
+  }
+  
+  &--6 {
+    background: url('../img/edge-6.png') no-repeat top left;
+  }
+}
+
+.edge__title-dark {
+  color: #007bcf;
+}
+
+.edge__title-light {
+  color: #0488a9;
+}

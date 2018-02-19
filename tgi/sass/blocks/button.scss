@@ -1,0 +1,31 @@
+.button {
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Open Sans Light', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #00c5ff;
+  border-radius: 5px;
+  
+  &--partner {
+    margin-right: 10px;
+    padding-left: 60px;
+    background: url('../img/button-partner.png') no-repeat 15px 10px;
+    transition: 0.3s;
+    
+    &:hover {
+      background: #00c5ff url('../img/button-partner.png') no-repeat 15px 10px;  
+    }
+  } 
+  
+  &--broker {
+    padding-left: 70px;
+    background: url('../img/button-broker.png') no-repeat 10px;
+    transition: 0.3s;
+    
+    &:hover {
+      background: #00c5ff url('../img/button-broker.png') no-repeat 10px;  
+    }
+  }
+}
