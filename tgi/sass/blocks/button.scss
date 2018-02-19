@@ -56,4 +56,44 @@
 
 @media screen and ($tablet-widths) {}
 
-@media screen and ($mobile-widths) {}
+@media screen and ($mobile-widths) {
+  .button {
+    text-align: center;
+    
+    &--partner,
+    &--broker {
+      display: block;
+      width: 190px;
+      margin: auto;
+    }
+    
+    &--partner {
+      margin-bottom: 20px;
+      
+      &-contact {
+        width: 190px;
+        padding-left: 60px;
+        background: url('../img/button-partner.png') no-repeat 20px 10px;
+        
+        &:hover {
+          background: #00c5ff url('../img/button-partner.png') no-repeat 20px 10px;
+        }
+      }
+    }
+    
+    &--broker {
+      padding-left: 60px;
+      
+      &-contact {
+        width: 190px;
+        margin-bottom: 20px;
+        padding-left: 60px;
+        background: url('../img/button-broker.png') no-repeat 15px 8px;
+        
+        &:hover {
+          background: #00c5ff url('../img/button-broker.png') no-repeat 15px 8px;
+        }
+      }
+    }
+  }
+}

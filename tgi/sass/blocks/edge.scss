@@ -67,3 +67,49 @@
 .edge__title-light {
   color: #0488a9;
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .edge {
+    margin-top: -50px;
+    
+    h1 {
+      font-size: 35px;
+    }
+  }
+  
+  .edge__flex {
+    flex-direction: column;
+  }
+  
+  .edge__box {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    
+    &--1 {
+      background: url('../img/edge-1.png') no-repeat top;
+    }
+    
+    &--2 {
+      background: url('../img/edge-2.png') no-repeat top;
+    }
+    
+    &--3 {
+      background: url('../img/edge-3.png') no-repeat top;
+    }
+    
+    &--4 {
+      background: url('../img/edge-4.png') no-repeat top;
+    }
+    
+    &--5 {
+      background: url('../img/edge-5.png') no-repeat top;
+    }
+    
+    &--6 {
+      background: url('../img/edge-6.png') no-repeat top;
+    }
+  }
+}

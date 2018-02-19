@@ -2,6 +2,7 @@
   position: relative;
   margin-top: -97px;
   background: url('../img/footer-bg.png') no-repeat top;
+  background-size: cover;
   
   img {
     padding-top: 80px;
@@ -46,5 +47,7 @@
 }
 
 @media screen and ($mobile-widths) {
-
+  .footer {
+    background-size: cover;
+  }
 }

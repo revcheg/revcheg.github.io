@@ -34,5 +34,10 @@
 }
 
 @media screen and ($mobile-widths) {
-
+  .main-nav {
+    
+    ul {
+      flex-wrap: wrap;
+    }
+  }
 }
