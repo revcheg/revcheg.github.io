@@ -17,6 +17,12 @@
     &:hover {
       background: #00c5ff url('../img/button-partner.png') no-repeat 15px 10px;  
     }
+    
+    &-contact {
+      padding-right: 50px;
+      padding-left: 110px;
+      background: url('../img/button-partner.png') no-repeat 60px 10px;
+    }
   } 
   
   &--broker {
@@ -26,6 +32,12 @@
     
     &:hover {
       background: #00c5ff url('../img/button-broker.png') no-repeat 10px;  
+    }
+    
+    &-contact {
+      padding-right: 50px;
+      padding-left: 110px;
+      background: url('../img/button-broker.png') no-repeat 50px 8px;
     }
   }
 }

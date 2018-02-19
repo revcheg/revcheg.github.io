@@ -160,6 +160,10 @@ body {
     transition: 0.3s; }
     .button--partner:hover {
       background: #00c5ff url("../img/button-partner.png") no-repeat 15px 10px; }
+    .button--partner-contact {
+      padding-right: 50px;
+      padding-left: 110px;
+      background: url("../img/button-partner.png") no-repeat 60px 10px; }
   .button--broker {
     padding-left: 70px;
     background: url("../img/button-broker.png") no-repeat 10px;
@@ -167,6 +171,10 @@ body {
     transition: 0.3s; }
     .button--broker:hover {
       background: #00c5ff url("../img/button-broker.png") no-repeat 10px; }
+    .button--broker-contact {
+      padding-right: 50px;
+      padding-left: 110px;
+      background: url("../img/button-broker.png") no-repeat 50px 8px; }
 
 .edge {
   background: url("../img/edge-bg.png"); }
@@ -235,10 +243,29 @@ body {
   width: 1458px;
   height: 778px;
   margin: auto;
-  background: url("../img/map.png"); }
+  padding-bottom: 290px;
+  background: url("../img/map.png") no-repeat top; }
 
 .contact {
-  background: url("../img/contact-bg.png"); }
+  margin-top: -130px;
+  padding-bottom: 180px;
+  background: url("../img/contact-bg.png") no-repeat top;
+  background-size: cover; }
+
+.contact__title {
+  width: 910px;
+  margin-top: 120px;
+  margin-bottom: 80px;
+  padding: 51px;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 300;
+  font-family: 'Open Sans Light', sans-serif;
+  text-transform: uppercase;
+  background: url("../img/border.png") no-repeat;
+  background-size: cover; }
+  .contact__title span {
+    font-family: 'Open Sans SemiBold', sans-serif; }
 
 .form {
   width: 1050px;
