@@ -3,8 +3,12 @@ body {
   margin: 0; }
 
 .container {
-  width: 1245px;
+  width: 1200px;
   margin: auto; }
+
+@media screen and (max-width: 1350px) {
+  .container {
+    width: 95%; } }
 
 /* open-sans-300 - cyrillic */
 @font-face {
@@ -121,6 +125,11 @@ body {
   align-items: center;
   padding: 20px 0; }
 
+@media screen and (max-width: 1350px) {
+  .header__flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
+
 .main-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,6 +148,10 @@ body {
     transition: 0.3s; }
     .main-nav ul a:hover {
       color: #00c5ff; }
+
+@media screen and (max-width: 1350px) {
+  .main-nav ul {
+    font-size: 14px; } }
 
 .button {
   padding: 10px 20px;
@@ -243,13 +256,11 @@ body {
     font-family: 'Open Sans Light', sans-serif;
     text-align: center;
     text-transform: uppercase; }
-
-.map__inside {
-  width: 1458px;
-  height: 778px;
-  margin: auto;
-  padding-bottom: 290px;
-  background: url("../img/map.png") no-repeat top; }
+  .map img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 280px; }
 
 .contact {
   margin-top: -130px;
@@ -271,6 +282,11 @@ body {
   background-size: cover; }
   .contact__title span {
     font-family: 'Open Sans SemiBold', sans-serif; }
+
+@media screen and (max-width: 1350px) {
+  .contact__title {
+    width: auto;
+    background: none; } }
 
 .form {
   width: 1050px;
@@ -357,6 +373,21 @@ textarea {
   textarea::placeholder {
     color: #1c4169; }
 
+@media screen and (max-width: 1350px) {
+  .form {
+    width: auto;
+    background: #fff; }
+  .form__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .form__left {
+    width: auto; }
+  textarea {
+    width: auto;
+    margin-top: 60px; } }
+
 .footer {
   position: relative;
   margin-top: -97px;
@@ -365,9 +396,9 @@ textarea {
     padding-top: 80px; }
   .footer p {
     position: relative;
+    width: 1000px;
     margin-bottom: 0;
     padding-bottom: 100px;
-    width: 1000px;
     color: #737373;
     font-size: 14px;
     font-family: 'Open Sans Light', sans-serif;
@@ -382,3 +413,11 @@ textarea {
     background: url("../img/footer-mockup.png") no-repeat;
     background-size: contain;
     z-index: 1; }
+
+@media screen and (max-width: 1350px) {
+  .footer {
+    margin-top: -105px; }
+    .footer p {
+      width: auto; }
+    .footer::before {
+      display: none; } }

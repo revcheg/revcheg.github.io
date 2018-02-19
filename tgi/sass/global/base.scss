@@ -4,6 +4,14 @@ body {
 }
 
 .container {
-  width: 1245px;
+  width: 1200px;
   margin: auto;
 }
+
+@media screen and ($tablet-widths) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media screen and ($mobile-widths) {}

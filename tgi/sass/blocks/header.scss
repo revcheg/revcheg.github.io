@@ -9,3 +9,12 @@
   padding: 20px 0;
 }
 
+@media screen and ($tablet-widths) {
+  .header__flex {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and ($mobile-widths) {
+
+}

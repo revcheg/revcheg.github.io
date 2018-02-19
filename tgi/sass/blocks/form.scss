@@ -78,3 +78,27 @@ textarea {
     color: #1c4169;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .form {
+    width: auto;
+    background: #fff;
+  }
+  
+  .form__flex {
+    flex-direction: column;
+  }
+  
+  .form__left {
+    width: auto;
+  }
+  
+  textarea {
+    width: auto;
+    margin-top: 60px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+
+}

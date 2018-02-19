@@ -23,3 +23,16 @@
     }
   }
 }
+
+@media screen and ($tablet-widths) {
+  .main-nav {
+    
+    ul {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+
+}

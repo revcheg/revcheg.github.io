@@ -2,7 +2,6 @@
   position: relative;
   margin-top: -97px;
   background: url('../img/footer-bg.png') no-repeat top;
-  // background-size: cover;
   
   img {
     padding-top: 80px;
@@ -10,9 +9,9 @@
   
   p {
     position: relative;
+    width: 1000px;
     margin-bottom: 0;
     padding-bottom: 100px;
-    width: 1000px;
     color: #737373;
     font-size: 14px;
     font-family: 'Open Sans Light', sans-serif;
@@ -30,4 +29,22 @@
     background-size: contain;
     z-index: 1;
   }
+}
+
+@media screen and ($tablet-widths) {
+  .footer {
+    margin-top: -105px;
+    
+    p {
+      width: auto;
+    }
+    
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+
 }

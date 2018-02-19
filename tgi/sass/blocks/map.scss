@@ -12,12 +12,11 @@
     text-align: center;
     text-transform: uppercase;
   }
-}
-
-.map__inside {
-  width: 1458px;
-  height: 778px;
-  margin: auto;
-  padding-bottom: 290px;
-  background: url('../img/map.png')no-repeat top;
+  
+  img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 280px;
+  }
 }

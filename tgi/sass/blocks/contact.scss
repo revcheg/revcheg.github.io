@@ -22,3 +22,14 @@
     font-family: 'Open Sans SemiBold', sans-serif;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .contact__title {
+    width: auto;
+    background: none;
+  }
+}
+
+@media screen and ($mobile-widths) {
+
+}
