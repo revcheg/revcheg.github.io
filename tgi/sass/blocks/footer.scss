@@ -1,0 +1,33 @@
+.footer {
+  position: relative;
+  margin-top: -97px;
+  background: url('../img/footer-bg.png') no-repeat top;
+  // background-size: cover;
+  
+  img {
+    padding-top: 80px;
+  }
+  
+  p {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 100px;
+    width: 1000px;
+    color: #737373;
+    font-size: 14px;
+    font-family: 'Open Sans Light', sans-serif;
+    z-index: 2;
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 836px;
+    height: 610px;
+    background: url('../img/footer-mockup.png') no-repeat;
+    background-size: contain;
+    z-index: 1;
+  }
+}

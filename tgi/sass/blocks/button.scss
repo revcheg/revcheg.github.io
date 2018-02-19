@@ -19,9 +19,16 @@
     }
     
     &-contact {
+      position: relative;
+      margin-right: 0;
       padding-right: 50px;
       padding-left: 110px;
       background: url('../img/button-partner.png') no-repeat 60px 10px;
+      z-index: 2;
+      
+      &:hover {
+        background: #00c5ff url('../img/button-partner.png') no-repeat 60px 10px;  
+      }
     }
   } 
   
@@ -35,9 +42,14 @@
     }
     
     &-contact {
+      margin-right: 30px;
       padding-right: 50px;
       padding-left: 110px;
       background: url('../img/button-broker.png') no-repeat 50px 8px;
+      
+      &:hover {
+        background: #00c5ff url('../img/button-broker.png') no-repeat 50px 8px;  
+      }
     }
   }
 }
