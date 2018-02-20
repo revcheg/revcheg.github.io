@@ -1,0 +1,36 @@
+.edge {
+  background: url('../img/edge-bg.png') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.edge__flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+
+.edge__box {
+  width: 180px;
+  padding-top: 150px;
+  color: #fff;
+  text-align: center;
+  background: url('../img/edge.png') no-repeat top;
+  
+  b {
+    font-size: 30px;
+    font-family: 'SF UI Display', sans-serif;
+  }
+  
+  p {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-family: 'SF UI Display', sans-serif;
+  }
+  
+  small {
+    font-size: 15px;
+    font-family: 'SF UI Display', sans-serif;
+    opacity: 0.5;
+  }
+}
