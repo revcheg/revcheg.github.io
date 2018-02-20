@@ -45,4 +45,11 @@
   }
 }
 
-@media screen and ($mobile-widths) {}
+@media screen and ($mobile-widths) {
+  .footer {
+    
+    p {
+      padding-bottom: 40px;
+    }
+  }
+}

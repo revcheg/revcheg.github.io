@@ -113,6 +113,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .title__content {
+    height: 650px;
     background: none; }
     .title__content h1 {
       padding-top: 100px;
@@ -422,7 +423,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .map h1 {
-    padding-top: 100px;
+    padding-top: 80px;
     font-size: 35px; }
   .map img {
     padding-bottom: 150px; } }
@@ -603,3 +604,7 @@ textarea {
       width: auto; }
     .footer::before {
       display: none; } }
+
+@media screen and (max-width: 768px) {
+  .footer p {
+    padding-bottom: 40px; } }
