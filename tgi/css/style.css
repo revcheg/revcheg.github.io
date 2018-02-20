@@ -158,6 +158,9 @@ body {
     .main-nav ul a:hover {
       color: #00c5ff; }
 
+.main-nav__toggle {
+  display: none; }
+
 @media screen and (max-width: 1350px) {
   .main-nav ul {
     font-size: 14px; } }
@@ -165,7 +168,94 @@ body {
 @media screen and (max-width: 768px) {
   .main-nav ul {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .main-nav__toggle {
+    display: block;
+    position: absolute;
+    right: 10px;
+    width: 55px;
+    height: 50px;
+    font-size: 0;
+    border: none;
+    background: transparent;
+    outline: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .main-nav--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 30px;
+    height: 2px;
+    background: #009cf4;
+    -webkit-box-shadow: 0 8px 00 #009cf4, 0 16px 00 #009cf4;
+    box-shadow: 0 8px 00 #009cf4, 0 16px 00 #009cf4;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s; }
+  .main-nav--closed .main-nav__toggle:active::before {
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: 0 8px 0 rgba(255, 255, 255, 0.3), 0 16px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 0 rgba(255, 255, 255, 0.3), 0 16px 0 rgba(255, 255, 255, 0.3); }
+  .main-nav--opened .main-nav__toggle {
+    z-index: 10; }
+    .main-nav--opened .main-nav__toggle::before, .main-nav--opened .main-nav__toggle::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 15px;
+      width: 25px;
+      height: 2px;
+      background: #009cf4;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      -webkit-transition: background-color 0.5s;
+      transition: background-color 0.5s; }
+    .main-nav--opened .main-nav__toggle::before {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .main-nav--opened .main-nav__toggle::after {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+    .main-nav--opened .main-nav__toggle:active::before, .main-nav--opened .main-nav__toggle:active::after {
+      background-color: rgba(255, 255, 255, 0.3); }
+  .main-nav--closed .main-nav__item {
+    display: none; }
+  .main-nav--opened .main-nav__container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 10px;
+    background: rgba(24, 38, 59, 0.8);
+    -webkit-animation: menu-opened 0.5s;
+    animation: menu-opened 0.5s; }
+    .main-nav--opened .main-nav__container ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .main-nav--opened .main-nav__container ul li {
+        margin-left: 0;
+        margin-bottom: 10px; }
+  .main-nav--nojs .main-nav__toggle {
+    display: none; }
+  .main-nav--nojs .main-nav__item {
+    display: block; }
+  @-webkit-keyframes menu-opened {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @keyframes menu-opened {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } } }
 
 .button {
   padding: 10px 20px;
@@ -288,6 +378,7 @@ body {
   .edge {
     margin-top: -50px; }
     .edge h1 {
+      margin-top: 50px;
       font-size: 35px; }
   .edge__flex {
     -webkit-box-orient: vertical;
@@ -331,6 +422,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .map h1 {
+    padding-top: 100px;
     font-size: 35px; }
   .map img {
     padding-bottom: 150px; } }
@@ -497,13 +589,12 @@ textarea {
   .footer::before {
     content: '';
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     right: 0;
-    width: 836px;
-    height: 610px;
+    width: 700px;
+    height: 510px;
     background: url("../img/footer-mockup.png") no-repeat;
-    background-size: contain;
-    z-index: 1; }
+    background-size: contain; }
 
 @media screen and (max-width: 1350px) {
   .footer {
@@ -512,7 +603,3 @@ textarea {
       width: auto; }
     .footer::before {
       display: none; } }
-
-@media screen and (max-width: 768px) {
-  .footer {
-    background-size: cover; } }

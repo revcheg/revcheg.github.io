@@ -22,13 +22,12 @@
   &::before {
     content: '';
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     right: 0;
-    width: 836px;
-    height: 610px;
+    width: 700px;
+    height: 510px;
     background: url('../img/footer-mockup.png') no-repeat;
     background-size: contain;
-    z-index: 1;
   }
 }
 
@@ -46,8 +45,4 @@
   }
 }
 
-@media screen and ($mobile-widths) {
-  .footer {
-    background-size: cover;
-  }
-}
+@media screen and ($mobile-widths) {}

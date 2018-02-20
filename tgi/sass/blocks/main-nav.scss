@@ -24,6 +24,10 @@
   }
 }
 
+.main-nav__toggle {
+  display: none;
+}
+
 @media screen and ($tablet-widths) {
   .main-nav {
     
@@ -39,5 +43,123 @@
     ul {
       flex-wrap: wrap;
     }
+  }
+  
+  .main-nav__toggle {
+    display: block;
+    position: absolute;
+    right: 10px;
+    width: 55px;
+    height: 50px;
+    font-size: 0;
+    border: none;
+    background: transparent;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .main-nav--closed {
+    .main-nav__toggle {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        width: 30px;
+        height: 2px;
+        background: #009cf4;
+        box-shadow:
+          0 8px 00 #009cf4,
+          0 16px 00 #009cf4;
+        transition: background-color 0.3s;
+      }
+      
+      &:active::before {
+        background-color: rgba(255, 255, 255, 0.3);
+        box-shadow:
+          0 8px 00 rgba(255, 255, 255, 0.3),
+          0 16px 00 rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+  
+  .main-nav--opened {
+    .main-nav__toggle {
+      // top: 10px;
+      // right: 20px;
+      // width: 40px;
+      // height: 40px;
+      z-index: 10;
+      
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 15px;
+          width: 25px;
+          height: 2px;
+          background: #009cf4;
+          box-shadow: none;
+          transition: background-color 0.5s;
+        }
+        
+        &::before {
+          transform: rotate(45deg);
+        }
+        
+        &::after {
+          transform: rotate(-45deg);
+        }
+        
+        &:active::before,
+        &:active::after {
+          background-color: rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
+  
+  .main-nav--closed {
+    .main-nav__item {
+      display: none;
+    }
+  }
+  
+  .main-nav--opened {
+    .main-nav__container {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      padding: 10px;
+      background: rgba(24, 38, 59, 0.8);
+      animation: menu-opened 0.5s;
+      
+      ul {
+        flex-direction: column;
+        align-items: center;
+        
+        li {
+          margin-left: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  
+  .main-nav--nojs {
+    .main-nav__toggle {
+      display: none;
+    }
+    
+    .main-nav__item {
+      display: block;
+    }
+  }
+  
+  @keyframes menu-opened {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
   }
 }
