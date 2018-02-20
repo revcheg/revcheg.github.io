@@ -26,3 +26,22 @@
     background-size: 18px;
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .button {
+    
+    &--green {
+      margin-right: 0;
+    }
+    
+    &--black {
+      margin-right: 0;
+    }
+    
+    &--tel {
+      margin-bottom: 0;
+    }
+  }
+}
