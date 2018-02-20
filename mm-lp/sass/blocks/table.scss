@@ -1,0 +1,79 @@
+.table {
+  padding-top: 30px;
+  background: #ebebeb;
+}
+
+.table__content {
+  position: relative;
+  padding-top: 100px;
+  text-align: center;
+  box-shadow: 0px 15px 15px 2px rgba(50, 50, 50, 0.2);
+  background: #fff;
+  
+  &::before {
+    content: 'Limitted time offer';
+    position: absolute;
+    top: 35px;
+    left: -15px;
+    width: 287px;
+    height: 72px;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'SF UI Display Black', sans-serif;
+    line-height: 75px;
+    background: url('../img/ribbon.svg');
+  }
+  
+  b {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'SF UI Display', sans-serif;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 75px;
+    font-size: 25px;
+    font-family: 'SF UI Display Regular', sans-serif;
+    
+    span {
+      font-weight: bold;
+      font-family: 'SF UI Display', sans-serif;
+    }
+  }
+  
+  a {
+    padding: 15px 80px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'SF UI Display', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 30px;
+    background: #009f3c;
+    transition: 0.2s;
+    
+    &:hover {
+      border-bottom: 4px solid #009f3c;
+      background: #03be4a;
+    }
+    
+    &:active {
+      border-top: 4px solid #009f3c;
+      border-bottom: none;
+      
+      background: #03be4a;
+    }
+  }
+  
+  img {
+    display: block;
+    margin: auto;
+    margin-top: 65px;
+  }
+}
+
+

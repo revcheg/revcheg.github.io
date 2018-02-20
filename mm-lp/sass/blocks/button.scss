@@ -1,0 +1,28 @@
+.button {
+  padding: 10px 25px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'SF UI Display', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 17px;
+  
+  &--green {
+    margin-right: 30px;
+    color: #fff;
+    background: #009f3c;
+  }
+  
+  &--black {
+    margin-right: 30px;
+    color: #fff;
+    background: #000;
+  }
+  
+  &--tel {
+    color: #000;
+    font-size: 14px;
+    background: url('../img/phone.svg') no-repeat left;
+    background-size: 18px;
+  }
+}
