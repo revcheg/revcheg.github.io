@@ -421,3 +421,50 @@ body {
     padding-bottom: 30px; }
   .edge__box {
     margin-bottom: 50px; } }
+
+.terms p {
+  margin: 0;
+  padding: 35px 0;
+  font-size: 18px;
+  font-family: 'SF UI Display Regular', sans-serif;
+  text-align: center; }
+
+.terms hr {
+  margin: 0;
+  margin-bottom: 40px;
+  height: 1px;
+  background: #ebebeb; }
+
+.terms details {
+  margin-bottom: 40px; }
+
+.terms summary {
+  font-size: 18px;
+  font-family: 'SF UI Display Regular', sans-serif;
+  text-align: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  outline: none;
+  cursor: pointer; }
+  .terms summary:hover {
+    color: #009dff; }
+
+.terms ol {
+  font-size: 16px;
+  font-family: 'SF UI Display Light', sans-serif; }
+
+.footer {
+  padding: 25px 0;
+  background: #212121; }
+  .footer h1 {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'SF UI Display Heavy', sans-serif;
+    text-align: center;
+    text-transform: uppercase; }
+  .footer p {
+    color: #818181;
+    font-family: 'SF UI Display Regular', sans-serif;
+    text-align: center; }
+  .footer hr {
+    opacity: 0.2; }
