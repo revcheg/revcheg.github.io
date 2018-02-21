@@ -403,6 +403,28 @@ body {
     .edge__box--6 {
       background: url("../img/edge-6.png") no-repeat top; } }
 
+.slider {
+  height: 960px;
+  background: url("../img/slider-bg.png") no-repeat top; }
+
+.slider__box {
+  height: 960px !important; }
+
+.slider__box--1 {
+  background: url("../img/slider-1.png") no-repeat center; }
+
+.slider__box--2 {
+  background: url("../img/slider-2.png") no-repeat center; }
+
+.slider__box--3 {
+  background: url("../img/slider-3.png") no-repeat center; }
+
+.slider__box--4 {
+  background: url("../img/slider-4.png") no-repeat center; }
+
+.slider__box--5 {
+  background: url("../img/slider-5.png") no-repeat center; }
+
 .map {
   background: url("../img/map-bg.png") no-repeat top;
   background-size: cover; }
