@@ -1,6 +1,6 @@
 .slider {
-  height: 960px;
   background: url('../img/slider-bg.png') no-repeat top;
+  background-size: cover;
 }
 
 .slider__box {
@@ -26,3 +26,11 @@
 .slider__box--5 {
   background: url('../img/slider-5.png') no-repeat center;
 }
+
+@media screen and ($tablet-widths) {
+  .slider {
+    display: none;
+  }
+}
+
+@media screen and ($mobile-widths) {}

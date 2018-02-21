@@ -404,8 +404,8 @@ body {
       background: url("../img/edge-6.png") no-repeat top; } }
 
 .slider {
-  height: 960px;
-  background: url("../img/slider-bg.png") no-repeat top; }
+  background: url("../img/slider-bg.png") no-repeat top;
+  background-size: cover; }
 
 .slider__box {
   height: 960px !important; }
@@ -425,7 +425,12 @@ body {
 .slider__box--5 {
   background: url("../img/slider-5.png") no-repeat center; }
 
+@media screen and (max-width: 1350px) {
+  .slider {
+    display: none; } }
+
 .map {
+  margin-top: -130px;
   background: url("../img/map-bg.png") no-repeat top;
   background-size: cover; }
   .map h1 {
@@ -442,6 +447,10 @@ body {
     max-width: 100%;
     margin: auto;
     padding-bottom: 280px; }
+
+@media screen and (max-width: 1350px) {
+  .map {
+    margin-top: 0; } }
 
 @media screen and (max-width: 768px) {
   .map h1 {
