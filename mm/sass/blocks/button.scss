@@ -62,6 +62,12 @@
     width: 100px;
     padding: 8px;
     margin: auto;
+    color: #fff;
+    background: transparent;
+    
+    &:hover {
+      background: $sc;
+    }
   }
   
   &--download {

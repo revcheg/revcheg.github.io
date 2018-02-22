@@ -214,9 +214,9 @@ body {
   font-family: 'SF UI Display Regular', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  border: 2px solid #eeba1d;
+  border: 2px solid #009f3c;
   border-radius: 20px;
-  background: #eeba1d;
+  background: #009f3c;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
   .button:hover {
@@ -255,7 +255,11 @@ body {
     display: block;
     width: 100px;
     padding: 8px;
-    margin: auto; }
+    margin: auto;
+    color: #fff;
+    background: transparent; }
+    .button--table:hover {
+      background: #009f3c; }
   .button--download {
     margin-top: 30px;
     padding: 10px 70px;
@@ -324,7 +328,7 @@ body {
   padding-left: 0;
   text-align: center;
   list-style: none;
-  border: 1px solid #eeba1d;
+  border: 1px solid #009f3c;
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.8);
   z-index: 2;
@@ -337,8 +341,7 @@ body {
     -webkit-transition: 0.2s;
     transition: 0.2s; }
     .sub-nav__list a:hover {
-      color: #000;
-      background: #eeba1d; }
+      background: #009f3c; }
 
 .sub-nav > li:hover .sub-nav__list {
   display: -webkit-box;
@@ -398,15 +401,6 @@ body {
   .trading__box p {
     font-family: 'SF UI Display Regular', sans-serif;
     opacity: 0.7; }
-
-.trading__box--trans {
-  background: url("../img/trading-2.png") no-repeat top; }
-
-.trading__box--funds {
-  background: url("../img/trading-3.png") no-repeat top; }
-
-.trading__box--algo {
-  background: url("../img/trading-4.png") no-repeat top; }
 
 @media screen and (max-width: 1200px) {
   .trading__img {
@@ -756,7 +750,7 @@ body {
   .footer ul {
     padding-left: 0;
     font-family: 'SF UI Display Light', sans-serif;
-    list-style-image: url("../img/r-arrow-s.png");
+    list-style: none;
     list-style-position: inside; }
     .footer ul a {
       color: #818181;
@@ -764,7 +758,7 @@ body {
       -webkit-transition: 0.2s;
       transition: 0.2s; }
       .footer ul a:hover {
-        color: #eeba1d; }
+        color: #009f3c; }
   .footer h1 {
     color: #fff;
     font-size: 25px;
@@ -787,7 +781,7 @@ body {
   justify-content: space-between; }
 
 .footer__active {
-  color: #eeba1d !important; }
+  color: #009f3c !important; }
 
 @media screen and (max-width: 768px) {
   .footer__flex {
@@ -907,7 +901,7 @@ body {
   width: 100%;
   padding-bottom: 85px; }
   .table th b {
-    color: #eeba1d;
+    color: #009f3c;
     font-size: 20px;
     font-family: 'SF UI Display Black', sans-serif; }
   .table th p {
@@ -939,7 +933,7 @@ body {
   border-collapse: collapse;
   text-align: center; }
   .table--spread tr {
-    border: 1px solid #eeba1d; }
+    border: 1px solid #009f3c; }
   .table--spread th {
     padding: 5px; }
 
@@ -1093,7 +1087,7 @@ body {
     font-size: 18px;
     font-family: 'SF UI Display Regular', sans-serif; }
   .register__right:hover {
-    border: 2px solid #eeba1d;
+    border: 2px solid #009f3c;
     opacity: 1; }
 
 @media screen and (max-width: 768px) {
@@ -1118,7 +1112,7 @@ body {
     background: transparent;
     outline: none; }
     .form input:focus {
-      border: 2px solid #eeba1d; }
+      border: 2px solid #009f3c; }
   .form input[type="date"] {
     padding: 8px 20px; }
   .form select {
@@ -1130,7 +1124,7 @@ body {
     background: transparent;
     outline: none; }
     .form select:focus {
-      border: 2px solid #eeba1d; }
+      border: 2px solid #009f3c; }
     .form select option {
       background: #212121; }
   .form input::-webkit-input-placeholder {
@@ -1245,7 +1239,7 @@ body {
 .segregated__adv {
   margin: 50px 0;
   padding: 30px 50px;
-  border: 2px solid #eeba1d;
+  border: 2px solid #009f3c;
   border-radius: 10px; }
   .segregated__adv ul {
     list-style-image: url("../img/r-arrow-s.png"); }
@@ -1303,7 +1297,7 @@ body {
   padding: 30px 50px;
   font-size: 18px;
   font-family: 'SF UI Display Regular', sans-serif;
-  border: 2px solid #eeba1d;
+  border: 2px solid #009f3c;
   border-radius: 10px;
   list-style-image: url("../img/r-arrow-s.png");
   opacity: 0.9; }

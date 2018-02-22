@@ -54,18 +54,6 @@
   }
 }
 
-.trading__box--trans {
-  background: url('../img/trading-2.png') no-repeat top;
-}
-
-.trading__box--funds {
-  background: url('../img/trading-3.png') no-repeat top;
-}
-
-.trading__box--algo {
-  background: url('../img/trading-4.png') no-repeat top;
-}
-
 @media screen and ($tablet-widths) {
   .trading__img {
     display: none;
