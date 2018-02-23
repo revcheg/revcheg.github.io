@@ -207,6 +207,7 @@ body {
       margin-bottom: 10px; } }
 
 .button {
+  color: #fff !important;
   padding: 8px 23px;
   color: #000;
   font-size: 12px;
@@ -215,18 +216,18 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid #009f3c;
-  border-radius: 20px;
+  border-radius: 80px;
   background: #009f3c;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
   .button:hover {
-    color: #fff;
     background: transparent; }
   .button--black {
     color: #fff;
     border: 2px solid #000;
     background: #000; }
   .button--title {
+    color: #fff;
     padding: 12px 60px;
     font-size: 25px;
     font-family: 'SF UI Display Black', sans-serif;
@@ -474,6 +475,9 @@ body {
 .trade__link {
   -ms-flex-item-align: center;
   align-self: center; }
+  .trade__link a {
+    margin-right: 10px;
+    font-size: 0; }
 
 @media screen and (max-width: 1200px) {
   .trade__flex {
