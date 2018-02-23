@@ -4,7 +4,7 @@
 	 viewBox="0 0 389.7 362.3" style="enable-background:new 0 0 389.7 362.3;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{fill:#EEBA1D;}
+	.st1{fill:#009f3c;}
 	.st2{fill:none;stroke:#4E555E;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st3{clip-path:url(#SVGID_2_);}
 	.st4{fill:none;stroke:#4E555E;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
@@ -37,33 +37,33 @@
 			<use xlink:href="#SVGID_15_"  style="overflow:visible;"/>
 		</clipPath>
 		<g class="st3">
-			
+
 				<rect x="39.5" y="117.4" transform="matrix(0.9116 0.4112 -0.4112 0.9116 108.3885 -39.0739)" class="st15" width="211.1" height="230"/>
-			
+
 				<rect x="68.2" y="183.8" transform="matrix(0.9116 0.4112 -0.4112 0.9116 88.9288 -16.524)" class="st15" width="29.3" height="29.3"/>
-			
+
 				<rect x="110.9" y="203.1" transform="matrix(0.9116 0.4112 -0.4112 0.9116 100.6207 -32.3718)" class="st15" width="29.3" height="29.3"/>
-			
+
 				<rect x="84" y="149.5" transform="matrix(0.9116 0.4112 -0.4112 0.9116 86.3055 -55.366)" class="st15" width="175.8" height="47"/>
-			
+
 				<rect x="153.6" y="222.3" transform="matrix(0.9116 0.4112 -0.4112 0.9116 112.3126 -48.2195)" class="st15" width="29.3" height="29.3"/>
-			
+
 				<rect x="196.3" y="241.6" transform="matrix(0.9116 0.4112 -0.4112 0.9116 124.0045 -64.0672)" class="st15" width="29.3" height="29.3"/>
-			
+
 				<rect x="50.3" y="223.5" transform="matrix(0.9116 0.4112 -0.4112 0.9116 103.6748 -5.645)" class="st15" width="29.3" height="29.3"/>
-			
+
 				<rect x="93" y="242.8" transform="matrix(0.9116 0.4112 -0.4112 0.9116 115.3667 -21.4927)" class="st15" width="29.3" height="29.3"/>
-			
+
 				<rect x="135.7" y="262" transform="matrix(0.9116 0.4112 -0.4112 0.9116 127.0586 -37.3404)" class="st15" width="29.3" height="29.3"/>
-			
+
 				<rect x="178.4" y="281.3" transform="matrix(0.9116 0.4112 -0.4112 0.9116 138.7504 -53.1881)" class="st15" width="29.3" height="29.3"/>
-			
+
 				<rect x="32.4" y="263.2" transform="matrix(0.9116 0.4112 -0.4112 0.9116 118.4208 5.2341)" class="st15" width="29.3" height="29.3"/>
-			
+
 				<rect x="75.1" y="282.5" transform="matrix(0.9116 0.4112 -0.4112 0.9116 130.1127 -10.6136)" class="st15" width="29.3" height="29.3"/>
-			
+
 				<rect x="117.8" y="301.7" transform="matrix(0.9116 0.4112 -0.4112 0.9116 141.8046 -26.4613)" class="st15" width="29.3" height="29.3"/>
-			
+
 				<rect x="160.4" y="321" transform="matrix(0.9116 0.4112 -0.4112 0.9116 153.4965 -42.309)" class="st15" width="29.3" height="29.3"/>
 		</g>
 	</g>

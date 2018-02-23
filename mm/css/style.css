@@ -1297,6 +1297,11 @@ body {
     list-style-image: url("../img/r-arrow-s.png");
     opacity: 0.7; }
 
+.trader__right {
+  font-size: 0; }
+  .trader__right a {
+    margin-right: 10px; }
+
 .trader__list {
   padding: 30px 50px;
   font-size: 18px;

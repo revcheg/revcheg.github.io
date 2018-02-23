@@ -4,7 +4,7 @@
 	 viewBox="0 0 389.7 362.3" style="enable-background:new 0 0 389.7 362.3;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{fill:#EEBA1D;}
+	.st1{fill:#009f3c;}
 	.st2{fill:none;stroke:#4E555E;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st3{clip-path:url(#SVGID_2_);}
 	.st4{fill:none;stroke:#4E555E;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
@@ -20,7 +20,7 @@
 	.st14{fill:#545454;}
 	.st15{clip-path:url(#SVGID_18_);}
 	.st16{fill:none;stroke:#4E555E;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	
+
 		.st17{clip-path:url(#SVGID_20_);fill:none;stroke:#4E555E;stroke-width:4.0225;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <g>
@@ -37,7 +37,7 @@
 	<clipPath id="SVGID_2_">
 		<use xlink:href="#SVGID_19_"  style="overflow:visible;"/>
 	</clipPath>
-	
+
 		<path style="clip-path:url(#SVGID_2_);fill:none;stroke:#4E555E;stroke-width:4.0225;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
 		M238.9,163.9c0-40.5-29.1-65.7-64.9-65.7c-35.8,0-64.9,25.3-64.9,65.7c0,40.5,29.1,80.8,64.9,80.8
 		C209.9,244.7,238.9,204.3,238.9,163.9z M227.7,268.1c-5.9,5-12.7,8.4-18.9,10.8l10.4,35.4L174,289.9l-45.2,24.5l14.6-49.8
