@@ -166,8 +166,11 @@ body {
     -o-object-fit: cover;
     object-fit: cover; } }
 
+.slider {
+  margin-bottom: 50px; }
+
 .slider__box {
-  padding-bottom: 150px; }
+  padding-bottom: 120px; }
 
 .slider__box--1,
 .slider__box--2,
