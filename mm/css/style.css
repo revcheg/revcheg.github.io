@@ -166,6 +166,13 @@ body {
     -o-object-fit: cover;
     object-fit: cover; } }
 
+.slider__box {
+  padding-bottom: 150px; }
+
+.slider__box--1 {
+  background: url("../img/slide1.jpg") no-repeat center;
+  background-size: cover; }
+
 .header--temp {
   border-bottom: 1px solid #525252;
   background: rgba(37, 37, 37, 0.7); }
@@ -299,7 +306,6 @@ body {
   justify-content: space-between;
   width: 250px;
   margin: auto;
-  padding-top: 20px;
   padding-left: 0;
   list-style: none; }
   .sub-nav li {
