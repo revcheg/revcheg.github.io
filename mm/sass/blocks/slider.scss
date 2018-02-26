@@ -4,7 +4,10 @@
   padding-bottom: 150px;
 }
 
-.slider__box--1 {
+.slider__box--1,
+.slider__box--2,
+.slider__box--3,
+.slider__box--4 {
   background: url('../img/slide1.jpg') no-repeat center;
   background-size: cover;
 }

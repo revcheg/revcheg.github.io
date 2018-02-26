@@ -191,8 +191,8 @@ body {
     width: 30px;
     height: 2px;
     background: #009cf4;
-    -webkit-box-shadow: 0 8px 00 #009cf4, 0 16px 00 #009cf4;
-    box-shadow: 0 8px 00 #009cf4, 0 16px 00 #009cf4;
+    -webkit-box-shadow: 0 8px 00 #009cf4, 0 16px 00 #009cf4;
+    box-shadow: 0 8px 00 #009cf4, 0 16px 00 #009cf4;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s; }
   .main-nav--closed .main-nav__toggle:active::before {
