@@ -227,6 +227,18 @@ body {
     font-size: 40px;
     font-family: 'SF UI Display Black', sans-serif; }
 
+.slider__box--4 {
+  padding-top: 120px;
+  padding-bottom: 180px;
+  background: url("../img/slide4.jpg") no-repeat center;
+  background-size: cover; }
+  .slider__box--4 p {
+    margin-bottom: 51px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'SF UI Display Bold', sans-serif; }
+
 .header--temp {
   border-bottom: 1px solid #525252;
   background: rgba(37, 37, 37, 0.7); }

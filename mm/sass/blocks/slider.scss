@@ -54,4 +54,19 @@
       font-family: 'SF UI Display Black', sans-serif;
     }
   }
+  
+  &--4 {
+    padding-top: 120px;
+    padding-bottom: 180px;
+    background: url('../img/slide4.jpg') no-repeat center;
+    background-size: cover;
+    
+    p {
+      margin-bottom: 51px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: 900;
+      font-family: 'SF UI Display Bold', sans-serif;
+    }
+  }
 }
