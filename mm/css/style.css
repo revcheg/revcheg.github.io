@@ -313,7 +313,7 @@ body {
     border: 2px solid #009f3c;
     background: #009f3c; }
     .button--green:hover {
-      color: #009f3c; }
+      color: #009f3c !important; }
   .button--number {
     padding-left: 30px;
     color: #fff;
