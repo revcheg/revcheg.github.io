@@ -1,6 +1,6 @@
 $('.slider__content').slick({
   autoplay: true,
-  autoplaySpeed: 1500,
+  autoplaySpeed: 2000,
   arrows: false,
   dots: true,
   responsive: [{
