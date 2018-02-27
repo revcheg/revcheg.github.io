@@ -12,127 +12,127 @@ body {
 
 @font-face {
   font-family: 'SF UI Text';
-  src: local("SF UI Text Heavy Italic"), local("SFUIText-HeavyItalic"), url("SFUIText-HeavyItalic.woff") format("woff");
+  src: local("SF UI Text Heavy Italic"), local("SFUIText-HeavyItalic"), url("../fonts/SFUIText-HeavyItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: 'SF UI Text';
-  src: local("SF UI Text Light Italic"), local("SFUIText-LightItalic"), url("SFUIText-LightItalic.woff") format("woff");
+  src: local("SF UI Text Light Italic"), local("SFUIText-LightItalic"), url("../fonts/SFUIText-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: 'SF UI Text';
-  src: local("SF UI Text Medium Italic"), local("SFUIText-MediumItalic"), url("SFUIText-MediumItalic.woff") format("woff");
+  src: local("SF UI Text Medium Italic"), local("SFUIText-MediumItalic"), url("../fonts/SFUIText-MediumItalic.woff") format("woff");
   font-weight: 500;
   font-style: italic; }
 
 @font-face {
   font-family: 'SF UI Display';
-  src: local("SF UI Display Medium"), local("SFUIDisplay-Medium"), url("SFUIDisplay-Medium.woff") format("woff");
+  src: local("SF UI Display Medium"), local("SFUIDisplay-Medium"), url("../fonts/SFUIDisplay-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'SF UI Display';
-  src: local("SF UI Display Regular"), local("SFUIDisplay-Regular"), url("SFUIDisplay-Regular.woff") format("woff");
+  src: local("SF UI Display Regular"), local("SFUIDisplay-Regular"), url("../fonts/SFUIDisplay-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'SF UI Display';
-  src: local("SF UI Display Light"), local("SFUIDisplay-Light"), url("SFUIDisplay-Light.woff") format("woff");
+  src: local("SF UI Display Light"), local("SFUIDisplay-Light"), url("../fonts/SFUIDisplay-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'SF UI Display';
-  src: local("SF UI Display Thin"), local("SFUIDisplay-Thin"), url("SFUIDisplay-Thin.woff") format("woff");
+  src: local("SF UI Display Thin"), local("SFUIDisplay-Thin"), url("../fonts/SFUIDisplay-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
   font-family: 'SF UI Display';
-  src: local("SF UI Display Ultralight"), local("SFUIDisplay-Ultralight"), url("SFUIDisplay-Ultralight.woff") format("woff");
+  src: local("SF UI Display Ultralight"), local("SFUIDisplay-Ultralight"), url("../fonts/SFUIDisplay-Ultralight.woff") format("woff");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
   font-family: 'SF UI Text';
-  src: local("SF UI Text Semibold"), local("SFUIText-Semibold"), url("SFUIText-Semibold.woff") format("woff");
+  src: local("SF UI Text Semibold"), local("SFUIText-Semibold"), url("../fonts/SFUIText-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: 'SF UI Display';
-  src: local("SF UI Display Semibold"), local("SFUIDisplay-Semibold"), url("SFUIDisplay-Semibold.woff") format("woff");
+  src: local("SF UI Display Semibold"), local("SFUIDisplay-Semibold"), url("../fonts/SFUIDisplay-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: 'SF UI Text';
-  src: local("SF UI Text Regular"), local("SFUIText-Regular"), url("SFUIText-Regular.woff") format("woff");
+  src: local("SF UI Text Regular"), local("SFUIText-Regular"), url("../fonts/SFUIText-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'SF UI Display';
-  src: local("SF UI Display Black"), local("SFUIDisplay-Black"), url("SFUIDisplay-Black.woff") format("woff");
+  src: local("SF UI Display Black"), local("SFUIDisplay-Black"), url("../fonts/SFUIDisplay-Black.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'SF UI Text';
-  src: local("SF UI Text Bold Italic"), local("SFUIText-BoldItalic"), url("SFUIText-BoldItalic.woff") format("woff");
+  src: local("SF UI Text Bold Italic"), local("SFUIText-BoldItalic"), url("../fonts/SFUIText-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: 'SF UI Text';
-  src: local("SF UI Text Bold"), local("SFUIText-Bold"), url("SFUIText-Bold.woff") format("woff");
+  src: local("SF UI Text Bold"), local("SFUIText-Bold"), url("../fonts/SFUIText-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'SF UI Display';
-  src: local("SF UI Display Heavy"), local("SFUIDisplay-Heavy"), url("SFUIDisplay-Heavy.woff") format("woff");
+  src: local("SF UI Display Heavy"), local("SFUIDisplay-Heavy"), url("../fonts/SFUIDisplay-Heavy.woff") format("woff");
   font-weight: 900;
   font-style: normal; }
 
 @font-face {
   font-family: 'SF UI Text';
-  src: local("SF UI Text Light"), local("SFUIText-Light"), url("SFUIText-Light.woff") format("woff");
+  src: local("SF UI Text Light"), local("SFUIText-Light"), url("../fonts/SFUIText-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'SF UI Text';
-  src: local("SF UI Text Heavy"), local("SFUIText-Heavy"), url("SFUIText-Heavy.woff") format("woff");
+  src: local("SF UI Text Heavy"), local("SFUIText-Heavy"), url("../fonts/SFUIText-Heavy.woff") format("woff");
   font-weight: 900;
   font-style: normal; }
 
 @font-face {
   font-family: 'SF UI Text';
-  src: local("SF UI Text Medium"), local("SFUIText-Medium"), url("SFUIText-Medium.woff") format("woff");
+  src: local("SF UI Text Medium"), local("SFUIText-Medium"), url("../fonts/SFUIText-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'SF UI Display';
-  src: local("SF UI Display Bold"), local("SFUIDisplay-Bold"), url("SFUIDisplay-Bold.woff") format("woff");
+  src: local("SF UI Display Bold"), local("SFUIDisplay-Bold"), url("../fonts/SFUIDisplay-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'SF UI Text';
-  src: local("SF UI Text Italic"), local("SFUIText-Italic"), url("SFUIText-Italic.woff") format("woff");
+  src: local("SF UI Text Italic"), local("SFUIText-Italic"), url("../fonts/SFUIText-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
   font-family: 'SF UI Text';
-  src: local("SF UI Text Semibold Italic"), local("SFUIText-SemiboldItalic"), url("SFUIText-SemiboldItalic.woff") format("woff");
+  src: local("SF UI Text Semibold Italic"), local("SFUIText-SemiboldItalic"), url("../fonts/SFUIText-SemiboldItalic.woff") format("woff");
   font-weight: 600;
   font-style: italic; }
 
@@ -166,18 +166,46 @@ body {
     -o-object-fit: cover;
     object-fit: cover; } }
 
-.slider {
-  margin-bottom: 50px; }
-
-.slider__box {
-  padding-bottom: 120px; }
-
-.slider__box--1,
-.slider__box--2,
-.slider__box--3,
-.slider__box--4 {
+.slider__box--1 {
+  padding: 145px 0;
   background: url("../img/slide1.jpg") no-repeat center;
   background-size: cover; }
+  .slider__box--1 p {
+    margin-top: 0;
+    margin-bottom: 55px;
+    color: #fff;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 300;
+    font-family: 'SF UI Text Italic', sans-serif; }
+
+.slider__box--2 {
+  padding: 117px 0;
+  background: url("../img/slide2.jpg") no-repeat center;
+  background-size: cover; }
+  .slider__box--2 b {
+    color: #fff;
+    font-size: 40px;
+    font-family: 'SF UI Display Black', sans-serif; }
+  .slider__box--2 p {
+    margin-top: 30px;
+    margin-bottom: 55px;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 300;
+    font-family: 'SF UI Display Regular', sans-serif; }
+
+.slider__box--3 {
+  padding: 147px 0;
+  background: url("../img/slide3.jpg") no-repeat left;
+  background-size: cover; }
+  .slider__box--3 b {
+    display: block;
+    margin-bottom: 51px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'SF UI Display Regular', sans-serif; }
 
 .header--temp {
   border-bottom: 1px solid #525252;
@@ -289,6 +317,9 @@ body {
     font-family: 'SF UI Display Black', sans-serif;
     border-radius: 50px;
     cursor: pointer; }
+  .button--slider {
+    padding: 15px 40px;
+    font-size: 16px; }
 
 @media screen and (max-width: 768px) {
   .button {
@@ -369,9 +400,6 @@ body {
     width: 220px; }
     .sub-nav a {
       font-size: 12px; } }
-
-.trading {
-  border-bottom: 2px solid #c6c6c6; }
 
 .trading__flex {
   display: -webkit-box;
