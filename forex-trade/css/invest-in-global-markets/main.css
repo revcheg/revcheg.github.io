@@ -1,0 +1,1093 @@
+body {
+    background: rgba(0, 0, 0, 0) repeat scroll 0 0;
+    color: #000;
+	font-family: 'Archivo Narrow', sans-serif;
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+	font-family: 'Exo 2', sans-serif;
+	font-size: 23px;
+	color: #336696;
+	line-height: 34px;
+}
+
+a {
+	color: #ECB221;
+}
+
+a:hover,
+a:focus {
+	color: #E6A11F;
+}
+
+.header-wrapper {
+	background-color: #FFFFFF;
+	/* padding-top: 20px; */
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    margin-top: 20px;
+}
+
+.form-wrapper {
+	background-color: #000070;
+	/*padding: 50px 0 0 0;*/
+	max-height: 514px;
+	background-image: url("/multiply/images/invest-in-global-markets/top-banner.jpg");
+	background-repeat: no-repeat;
+}
+
+.german-bg {
+	background-color: #181819;
+	/*padding: 50px 0 0 0;*/
+	max-height: 514px;
+	background-image: url("/multiply/images/invest-in-global-markets/top-banner-german.jpg");
+	background-repeat: no-repeat;
+}
+
+.form-wrapper-step1 {
+	background-color: #181819;
+	padding: 50px 0 0 0;
+	min-height: 684px;
+	background-image: url("/multiply/images/invest-in-global-markets/top-banner-german-opening.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.form-wrapper-step2 {
+	background-color: #181819;
+	padding: 50px 0 0 0;
+	min-height: 891px;
+	background-image: url("/multiply/images/invest-in-global-markets/top-banner-german-closing.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.form-holder {
+	background-color: #181819;
+	padding: 40px 40px 0 40px;
+}
+
+.menu-icon {
+	padding-right: 8px;
+}
+
+.main-wrapper {
+	background-color: #FFFFFF;
+	padding-bottom: 50px;
+}
+
+.main-content h1 {
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	color: #181819;
+	text-align: left;
+	margin: 60px 0px 60px 0;
+}
+
+.main-content h2 {
+    margin-bottom: 30px;
+    line-height: 37px;
+    margin-top: 0px;
+}
+
+.icon {
+	text-align: center;
+}
+
+.icon-content p {
+	font-family: "Arial", sans-serif;
+	font-size: 24px;
+	color: #181819;
+	margin: 0px 0px 30px 0;
+}
+
+.advantage-wrapper {
+	background-color: #181819;
+	padding: 60px 0 60px 0;
+}
+
+.advantage {
+    display: inline-flex;
+    overflow: auto;
+}
+
+.advantage h2 {
+	font-family: "Arial", sans-serif;
+	font-size: 24px;
+	color: #FFFFFF;
+	margin: 0;
+	overflow: hidden;
+}
+
+.advantage-icon {
+	display: inline-block;
+    padding-right: 20px;
+}
+
+.advantage-title {
+	display: inline-block;
+}
+
+.advantage-title-german {
+	display: inline-block;
+}
+
+.advantage-title-german h2 {
+	font-family: "Arial", sans-serif;
+	font-size: 21px;
+	color: #FFFFFF;
+	margin: 0;
+}
+
+.footer-logos-wrapper {
+	background-color: #2e2e2e;
+	/* padding: 55px 0 70px 0; */
+	border-top: 1px solid #fdfdfd;
+}
+
+.footer-logo {
+	float: unset;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.footer-logo.last {
+	padding-right: 0px;
+}
+
+.footer-regulation {
+	float: unset;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+.footer-wrapper {
+	background-color: #2e2e2e;
+	padding: 30px 0 30px 0;
+	border-top: 1px solid #fdfdfd;
+}
+
+.footer p {
+	font-family: "Arial", sans-serif;
+	font-size: 14px;
+	color: #ababab;
+	text-align: center;
+	margin: 0 0 20px;
+}
+
+.footer-logos {
+	padding: 40px 0 134px 0;
+}
+
+.footer p {
+    text-align: justify;
+}
+
+.footer p:nth-child(3) {
+    text-align: center;
+}
+
+.footer-copyright {
+	/* padding-top: 45px; */
+}
+
+.footer-copyright p {
+	font-family: "Arial", sans-serif;
+	font-size: 14px;
+	color: #ababab;
+	text-align: center;
+	margin: 0 0 20px;
+
+}
+
+/* NAVS */
+
+.navbar-default {
+    background-color: transparent;
+    border-color: #FFFFFF;
+	border: 0px;
+}
+
+.navbar-brand {
+	padding: 0px !important;
+
+}
+
+a.navbar-brand:hover {
+	/* background-color: #f2f2f2 !important; */
+}
+
+.navbar-right {
+    /* margin-right: 20px; */
+}
+
+.navbar-right li {
+	/* border-left: 1px solid #afafaf; */
+}
+
+.navbar-right li.last {
+	/* border-right: 1px solid #afafaf; */
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    /* background-color: #336696;
+    color: #FFF; */
+}
+
+/* navbar custom height */
+.navbar-md {min-height:72px;}
+.navbar-md .navbar-brand,
+.navbar-md .navbar-nav>li>a {
+	font-family: "Arial", sans-serif;
+	font-size: 19px;
+	color: #171b1c;
+/* 	padding-top:26px;
+	padding-bottom:26px; */
+}
+.navbar-md .navbar-brand {height: 72px}
+.navbar-md .navbar-toggle {margin: 6px 12px 6px 0px; padding: 6px 7px 6px 7px;}
+.navbar-md .navbar-toggle .icon-bar {width: 19px;}
+
+.navbar-md .navbar-toggle {
+    margin: 12px 12px 12px 0;
+    padding: 6px 7px;
+}
+
+/* --- END NAVS --- */
+
+/* FORMS */
+
+.first-name-bg {
+	background-image: url("/multiply/images/invest-in-global-markets/sprite_13.png");
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	padding-left: 45px !important;
+}
+
+.last-name-bg {
+	background-image: url("/multiply/images/invest-in-global-markets/sprite_16.png");
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	padding-left: 45px !important;
+}
+
+.email-bg {
+	background-image: url("/multiply/images/invest-in-global-markets/sprite_18.png");
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	padding-left: 45px !important;
+}
+
+.phone-bg {
+	background-image: url("/multiply/images/invest-in-global-markets/sprite_20.png");
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	padding-left: 45px !important;
+}
+
+.country-bg {
+	background-image: url("/multiply/images/invest-in-global-markets/sprite_22.png");
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	padding-left: 45px !important;
+}
+
+.currency-bg {
+	background-image: url("/multiply/images/invest-in-global-markets/currency-icon.png");
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	padding-left: 45px !important;
+}
+
+.password-bg {
+    background-image: url("/multiply/images/invest-in-global-markets/key-icon.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 45px !important;
+}
+
+.form-control::-moz-placeholder {
+	font-family: "Arial", sans-serif;
+	font-size: 18px;
+    color: #181819;
+    opacity: 1;
+}
+
+.currency > .btn {
+	background-image: url("/multiply/images/invest-in-global-markets/currency-icon.png") !important;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding-left: 45px !important;
+	font-family: "Arial", sans-serif;
+	font-size: 18px;
+    color: #181819;
+	background-color: transparent !important;
+	border-color: transparent !important;
+	height: 45px;
+}
+
+/* div.currency.open > .btn-default.active, .btn-default:active, .open > .dropdown-toggle.btn-default {
+	background-image: url("/multiply/images/invest-in-global-markets/currency-icon.png");
+    background-position: 10px center;
+    background-repeat: no-repeat;
+} */
+
+.country > .btn {
+	background-image: url("/multiply/images/invest-in-global-markets/sprite_22.png") !important;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding-left: 45px !important;
+	font-family: "Arial", sans-serif;
+	font-size: 18px;
+    color: #181819;
+	background-color: transparent !important;
+	border-color: transparent !important;
+	height: 45px;
+}
+
+/* div.country.open > .btn-default.active, .btn-default:active, .open > .dropdown-toggle.btn-default {
+	background-image: url("/multiply/images/invest-in-global-markets/country-icon.png");
+    background-position: 10px center;
+    background-repeat: no-repeat;
+} */
+
+.caret {
+	content: "\f078" !important;
+    font-family: FontAwesome !important;
+}
+
+.form-control {
+	font-family: "Arial", sans-serif;
+	font-size: 18px;
+    color: #181819;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+
+    display: block;
+
+    height: 45px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+
+.form-group-step2 {
+	margin-bottom: 40px !important;
+}
+
+.step2::-moz-placeholder {
+	color: #505154;
+	font-size: 22px;
+	font-style: italic;
+}
+
+.country.step2 > .btn {
+	font-family: "Arial", sans-serif;
+	font-size: 22px;
+	font-style: italic;
+    color: #505154;
+	background-image: none !important;
+	padding-left: 12px !important;
+	background-color: transparent !important;
+	border-color: transparent !important;
+	height: 50px;
+}
+
+div.currency.step2 {
+	width: 410px !important;
+}
+
+.currency.step2 > .btn {
+	font-family: "Arial", sans-serif;
+	font-size: 22px;
+	font-style: italic;
+    color: #505154;
+	background-image: none !important;
+	padding-left: 12px !important;
+	background-color: transparent !important;
+	border-color: transparent !important;
+	height: 50px;
+	width: 410px !important;
+}
+
+.form-control.step2 {
+	font-family: "Arial", sans-serif;
+	font-size: 18px;
+    color: #181819;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+
+    display: block;
+
+    height: 50px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+
+.btn-german {
+	background-color: #0872ba;
+	border-color: #0872ba;
+	font-family: 'Arial', sans-serif;
+	font-size: 24px;
+	height: 60px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.form-holder-step1 {
+	padding-left: 70px;
+	margin-top: 300px;
+}
+
+.form-holder-step2 {
+	margin-left: 180px;
+    /*overflow: auto;*/
+	height: auto;
+    width: 900px;
+	margin-top: 250px;
+}
+
+.email-step1 {
+	font-family: "Arial", sans-serif;
+	font-size: 18px;
+    color: #505154;
+	font-style: italic;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    width: 395px !important;
+    display: block;
+
+    height: 60px !important;
+    line-height: 1.42857;
+    padding: 10px 16px 10px 18px !important;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.email-step1::-moz-placeholder {
+	color: #505154;
+	font-size: 18px;
+}
+
+.btn-step1 {
+	background-color: #0872ba;
+	border-color: #0872ba;
+	color: #FFFFFF;
+	font-family: 'Arial', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	height: 60px !important;
+	width: 105px;
+}
+
+.btn-step1:hover {
+	background-color: #0872ba;
+	border-color: #0872ba;
+	color: #FFFFFF;
+	font-family: 'Arial', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	height: 50px;
+}
+
+.center-block {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-group .icon-addon .form-control {
+    -webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.icon-addon {
+    position: relative;
+    color: #555;
+    display: block;
+}
+
+.icon-addon:after,
+.icon-addon:before {
+    display: table;
+    content: " ";
+}
+
+.icon-addon:after {
+    clear: both;
+}
+
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon,
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 10px 0;
+    top: 1px
+}
+
+.icon-addon.addon-lg .form-control {
+    line-height: 1.33;
+    height: 46px;
+    font-size: 18px;
+    padding: 10px 16px 10px 40px;
+}
+
+.icon-addon.addon-sm .form-control {
+    height: 30px;
+    padding: 5px 10px 5px 28px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.icon-addon.addon-lg .fa,
+.icon-addon.addon-lg .glyphicon {
+    font-size: 18px;
+    margin-left: 0;
+    left: 11px;
+    top: 4px;
+}
+
+.icon-addon.addon-md .form-control,
+.icon-addon .form-control {
+    padding-left: 30px;
+    float: left;
+    font-weight: normal;
+}
+
+.icon-addon.addon-sm .fa,
+.icon-addon.addon-sm .glyphicon {
+    margin-left: 0;
+    font-size: 12px;
+    left: 5px;
+    top: -1px
+}
+
+.icon-addon .form-control:focus + .glyphicon,
+.icon-addon:hover .glyphicon,
+.icon-addon .form-control:focus + .fa,
+.icon-addon:hover .fa {
+    color: #2580db;
+}
+
+.in-btn {
+	background-color: transparent;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 21px;
+	width: 125px;
+	height: 75px;
+ 	background-image: url(/multiply/images/invest-in-global-markets/in_btn.png);
+  	background-repeat: no-repeat;
+  	border: 0px;
+  	border-radius: 0px;
+  	float: left;
+  	margin-top: 0px !important;
+  	outline: 0;
+}
+
+.out-btn {
+	background-color: transparent;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 21px;
+	width: 125px;
+	height: 75px;
+ 	background-image: url(/multiply/images/invest-in-global-markets/out_btn.png);
+  	background-repeat: no-repeat;
+  	border: 0px;
+  	border-radius: 0px;
+  	float: right;
+	margin-top: 0px !important;
+	outline: 0;
+}
+
+#chevron {
+	position: relative;
+	text-align: center;
+	padding: 12px;
+	margin-bottom: 6px;
+	height: 60px;
+	width: 100%;
+	top: -25px;
+	display: block;
+	/* z-index: -1; */
+}
+
+.first-line-text {
+	color: #fff;
+	font-size: 70px;
+	text-transform: uppercase;
+	margin-top: 28px;
+	line-height: 70px;
+}
+
+.second-line-text {
+	color: #fff;
+	font-size: 45px;
+	text-transform: uppercase;
+	margin-top: 28px;
+	line-height: 50px;
+}
+
+.third-line-text {
+	color: #fff;
+	font-size: 28px;
+	text-transform: uppercase;
+	margin-top: 28px;
+	line-height: 35px;
+}
+
+#chevron:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 50%;
+	background: #181819;
+	-webkit-transform: skew(0deg, 6deg);
+	-moz-transform: skew(0deg, 6deg);
+	-ms-transform: skew(0deg, 6deg);
+	-o-transform: skew(0deg, 6deg);
+	transform: skew(0deg, 6deg);
+}
+
+#chevron:after {
+	content: '';
+	position: absolute;
+	top: 0; right: 0;
+	height: 100%;
+	width: 50%;
+	background: #181819;
+	-webkit-transform: skew(0deg, -6deg);
+	-moz-transform: skew(0deg, -6deg);
+	-ms-transform: skew(0deg, -6deg);
+	-o-transform: skew(0deg, -6deg);
+	transform: skew(0deg, -6deg);
+}​
+
+.form-end {
+	background-image: url("/multiply/images/invest-in-global-markets/form-end.jpg");
+	background-repeat: no-repeat;
+	height: 36px;
+}
+
+.form-info p {
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+/* ------- CHECKBOX ------- */
+
+.form-group.form-group-step2.checkbox {
+    text-align: center;
+}
+
+.checkbox-german {
+	font-size: 18px;
+	color: #181819;
+	padding-top: 8px;
+	text-align: center;
+}
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left:2px; 
+  top: 6px;
+  width: 27px; height: 27px;
+  border: 1px solid #FFFFFF;
+  background: #7d7d7d none repeat scroll 0 0;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+  position: absolute;
+  top: 12px; 
+  left: 6px;
+  font-size: 18px;
+  line-height: 0.8;
+  color: #FFFFFF;
+  transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 1px dotted blue;
+}
+
+/* END FORMS */
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+	.start-trading {
+		background-color: #11b22f;
+		border-color: #11b22f;
+		font-family: "Archivo Narrow",sans-serif;
+		font-size: 17px;
+		height: 50px;
+		line-height: 38px;
+	}
+
+	.start-trading > img {
+		width: 16px;
+		height: 15px;
+	}
+	
+	.advantage h2 {
+		font-size: 20px;
+	}
+	
+	.form-holder-step1 {
+		margin-top: 300px;
+		padding-left: 0;
+		margin-left: -20px;
+	}
+	
+	.form-holder-step2 {
+		margin-left: 80px;
+		margin-top: 250px;
+	}
+	
+	.form-info p {
+		color: #ffffff;
+		font-family: "Archivo Narrow",sans-serif;
+		font-size: 14px;
+		text-align: center;
+	}
+	
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	.main-wrapper {
+		padding-top: 85px;
+	}
+	
+	.advantage h2 {
+		font-size: 16px;
+	}
+	
+	#chevron {
+		top: -35px;
+	}
+	
+	.form-holder-step2 {
+		margin-left: 0;
+		margin-top: 250px;
+		width: 768px;
+	}
+	
+	.first-line-text, .second-line-text, .third-line-text {
+		display: none;
+	}
+	
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	
+	.main-wrapper {
+		padding-top: 85px;
+	}
+	
+	.first-line-text, .second-line-text, .third-line-text {
+		display: none;
+	}
+	
+	#chevron {
+		top: -35px;
+	}
+	
+	.advantage {
+		display: block;
+		overflow: auto;
+		margin-bottom: 30px;
+	}
+	
+	.advantage-icon {
+		display: block;
+		float: left;
+		padding-right: 20px;
+	}
+	
+	.advantage-title {
+		display: block;
+	}
+	
+	.footer-regulation {
+    	display: block;
+		overflow: auto;
+		margin-bottom: 30px;
+	}
+	
+	.form-holder-step2 {
+		margin-left: 0;
+		margin-top: 250px;
+		width: 100%;
+	}
+	
+	.btn-german {
+		font-size: 18px;
+	}
+	
+	.form-group-step2 {
+		margin-bottom: 15px !important;
+	}
+	
+	div.currency.step2 {
+		width: 100% !important;
+	}
+	
+	.currency.step2 > .btn {
+		width: 100% !important;
+	}
+	
+	.advantage-title-german h2 {
+		color: #ffffff;
+		font-family: "Arial",sans-serif;
+		font-size: 17px;
+		margin: 0;
+		padding-top: 10px;	
+	}
+	
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	
+	.main-wrapper {
+		padding-top: 115px;
+	}
+	
+	.first-line-text, .second-line-text, .third-line-text {
+		display: none;
+	}
+	
+	.start-trading {
+		background-color: #11b22f;
+		border-color: #11b22f;
+		font-family: "Archivo Narrow",sans-serif;
+		font-size: 14px;
+		height: 50px;
+		line-height: 38px;
+	}
+
+	.start-trading > img {
+		width: 16px;
+		height: 15px;
+	}
+	
+	#chevron {
+		top: -26px;
+	}
+	
+	.advantage h2 {
+		font-size: 16px;
+	}
+	
+	.btn-german {
+		font-size: 12px;
+	}
+	
+	.form-holder-step1 {
+		margin-top: 250px;
+		padding-left: 0;
+	}
+	
+	.email-step1 {
+		font-size: 12px;
+		width: 100% !important;
+	}
+	
+	.email-step1::-moz-placeholder {
+		color: #505154;
+		font-size: 12px;
+	}
+	
+	.icon-addon.addon-lg .form-control {
+		font-size: 12px;
+	}
+	
+	.form-group-step2 {
+		margin-bottom: 15px !important;
+	}
+	
+	div.currency.step2 {
+		width: 100% !important;
+	}
+	
+	.currency.step2 > .btn {
+		width: 100% !important;
+	}
+	
+	.advantage {
+		display: block;
+		overflow: auto;
+		margin-bottom: 30px;
+	}
+	
+	.footer-regulation {
+    	display: block;
+		overflow: auto;
+		margin-bottom: 30px;
+	}
+	
+	.advantage-icon {
+		display: block;
+		float: left;
+		padding-right: 20px;
+	}
+	
+	.advantage-title-german {
+		display: block;
+	}
+	
+	.advantage-title-german h2 {
+		color: #ffffff;
+		font-family: "Arial",sans-serif;
+		font-size: 9px;
+		padding-top: 20px;
+	}
+	
+}
+
+.form-info > .col-sm-12 a {
+    color: #ffffff;
+}
+.form-info > .col-sm-12 a:hover {
+    color: #ffffff;
+}
+.form-info > .col-sm-12 a:hover {
+    color: #ffffff;
+}
+fmm
+.form-info > .col-sm-12 a {
+    color: #ffffff;
+}
+
+.form-info > .col-sm-12 a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+#terms-and-conditions {
+	left: 15px;
+    margin-top: 7px;
+}
+
+span#i-accept-the-terms-and-conditions-checkbox {
+	margin-left: 18px;
+	font-family: 'Archivo Narrow', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+a#terms-and-conditions-link {
+	font-family: 'Archivo Narrow', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.main-wrapper p {
+	font-size: 21px;
+	font-weight: normal;
+}
+
+.main-wrapper img {
+	margin-left: 5px;
+}
+
+.navbar-brand img {
+	height: 50px;
+	margin-top: 21px;
+}

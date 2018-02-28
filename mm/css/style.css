@@ -1372,7 +1372,22 @@ body {
 .trader__right {
   font-size: 0; }
   .trader__right a {
-    margin-right: 10px; }
+    position: relative;
+    margin-right: 10px;
+    opacity: 0.5;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .trader__right a::before {
+      content: 'Coming Soon';
+      position: absolute;
+      bottom: -25px;
+      width: 210px;
+      color: #fff;
+      font-size: 20px;
+      font-family: 'SF UI Display Regular', sans-serif;
+      text-align: center; }
+    .trader__right a:hover {
+      opacity: 1; }
 
 .trader__list {
   padding: 30px 50px;
