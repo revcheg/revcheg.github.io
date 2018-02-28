@@ -1,11 +1,11 @@
 body {
-    background: rgba(0, 0, 0, 0) repeat scroll 0 0;
-    color: #000;
-	font-family: 'Archivo Narrow', sans-serif;
-    font-size: 12px;
-    line-height: 1.4;
-    margin: 0;
-    padding: 0;
+  background: rgba(0, 0, 0, 0) repeat scroll 0 0;
+  color: #000;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -34,11 +34,12 @@ a:focus {
 }
 
 .form-wrapper {
-	background-color: #000070;
 	/*padding: 50px 0 0 0;*/
 	max-height: 514px;
-	background-image: url("/multiply/images/invest-in-global-markets/top-banner.jpg");
+	background-image: url("../../images/invest-in-global-markets/earth.jpg");
 	background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 
 .german-bg {
@@ -77,8 +78,8 @@ a:focus {
 }
 
 .main-wrapper {
-	background-color: #FFFFFF;
-	padding-bottom: 50px;
+	background: url('../../images/invest-in-global-markets/how-bg.png') no-repeat top;
+	padding-bottom: 150px;
 }
 
 .main-content h1 {
@@ -86,8 +87,66 @@ a:focus {
 	font-size: 36px;
 	font-weight: 700;
 	color: #181819;
-	text-align: left;
-	margin: 60px 0px 60px 0;
+	text-align: center;
+  text-transform: uppercase;
+	margin: 90px 0px 25px 0;
+}
+
+.main-content hr {
+  width: 170px;
+  height: 3px;
+  background: #f2c318;
+}
+
+.main-text {
+  margin-top: 25px;
+  margin-bottom: 90px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.main-box {
+  width: 310px;
+  height: 310px;
+  /* padding: 0 20px; */
+  padding-top: 40px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: inset 0 0 10px 1px #fff,
+              0 0 0 10px #fff,
+              0 0 0 30px #c1c1c1;
+}
+
+.main-box b {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.main-box p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.main-box img {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.main-box--register {
+  background: url('../../images/invest-in-global-markets/how-1.jpg') no-repeat;
+  background-size: cover;
+}
+
+.main-box--fund {
+  background: url('../../images/invest-in-global-markets/how-2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.main-box--trade {
+  background: url('../../images/invest-in-global-markets/how-3.jpg') no-repeat right;
+  background-size: cover;
 }
 
 .main-content h2 {
@@ -1078,14 +1137,14 @@ a#terms-and-conditions-link {
     text-decoration: underline;
 }
 
-.main-wrapper p {
+/* .main-wrapper p {
 	font-size: 21px;
 	font-weight: normal;
-}
+} */
 
-.main-wrapper img {
+/* .main-wrapper img {
 	margin-left: 5px;
-}
+} */
 
 .navbar-brand img {
 	height: 50px;

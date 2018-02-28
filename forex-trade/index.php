@@ -178,17 +178,42 @@
 				<div class="container">
 					<div class="row">
 						
-						<div class="col-md-12">
+						<!-- <div class="col-md-12"> -->
 						
 						<div class="main-content">
-							<p><strong>250+ Instruments</strong> - With Forex24 Global you can invest in 6 Asset Classes, with over 250 instruments. Trade Currencies, Metals, Commodities, Indices, Stocks and Bonds.</p>
-							<p><strong>24/5</strong> - Access the Global Markets online anytime, anyplace with trading available 5 days a week, 24 hours a day.</p>
+							<h1>How forex24 works</h1>
+							<hr>
+							<p class="main-text">USING WALLTER IS AS SIMPLE AS 1, 2, 3.<br>Make and receive payments anytime and anywhere.</p>
 							
-							<p><strong>Multi- Platforms</strong> - With our MetaTrader 4 platform, our State of the art Webtrader and Mobile App you can have direct access to your chosen CFD products.</p>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="main-box  main-box--register">
+										<img src="images/invest-in-global-markets/register.svg" width="99" alt="Register">
+										<b>Register your account</b>
+										<p>Joining Wallter is hassle free.<br>You’ll be ready to go in<br>minutes.</p>
+									</div>
+								</div>
+								
+								<div class="col-md-4">
+									<div class="main-box  main-box--fund">
+										<img src="images/invest-in-global-markets/fund.svg" width="99" alt="Register">
+										<b>Fund It</b>
+										<p>Choose whichever currency<br>and funding method is<br>convenient for you.</p>
+									</div>
+								</div>
+								
+								<div class="col-md-4">
+									<div class="main-box  main-box--trade">
+										<img src="images/invest-in-global-markets/trade.svg" width="99" alt="Register">
+										<b>Trade</b>
+										<p>You’re all set. Trade online<br>knowing that it’s safe<br>with us.</p>
+									</div>
+								</div>
+							</div>
 							
 						</div><!-- end main-content -->
 						
-						</div><!-- end col-md-12 -->
+						<!-- </div> end col-md-12 -->
 						
 					</div><!-- end row -->
 				</div><!-- end container -->
