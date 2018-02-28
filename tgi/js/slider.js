@@ -1,5 +1,5 @@
 $('.slider__content').slick({
-  autoplay: true,
+  autoplay: false1,
   autoplaySpeed: 1500,
   vertical: true,
   arrows: false,
