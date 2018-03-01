@@ -145,6 +145,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-left: 0;
   font-size: 15px;
   font-family: 'Open Sans Light', sans-serif;
@@ -159,6 +162,12 @@ body {
     transition: 0.3s; }
     .main-nav ul a:hover {
       color: #00c5ff; }
+  .main-nav ul select {
+    height: 30px;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #00c5ff;
+    background: transparent; }
 
 .main-nav__toggle {
   display: none; }
@@ -442,7 +451,7 @@ body {
   margin-top: 0;
   padding-top: 120px;
   color: #fff;
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 300;
   font-family: 'Open Sans Light', sans-serif;
   text-align: center;
@@ -553,10 +562,10 @@ body {
   background-size: cover; }
 
 .contact__title {
-  width: 910px;
+  width: 900px;
   margin-top: 70px;
   margin-bottom: 80px;
-  padding: 55px;
+  padding: 65px;
   color: #fff;
   font-size: 46px;
   font-weight: 300;
@@ -565,6 +574,7 @@ body {
   background: url("../img/border.png") no-repeat;
   background-size: cover; }
   .contact__title span {
+    font-weight: 500;
     font-family: 'Open Sans SemiBold', sans-serif; }
 
 @media screen and (max-width: 1350px) {
