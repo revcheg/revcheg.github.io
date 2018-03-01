@@ -3,28 +3,140 @@
   background-size: cover;
 }
 
+.slider__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__container {
+  margin: auto;
+  
+  &--1 {
+    width: 1150px;
+  }
+}
+
 .slider__box {
   height: 960px !important;
+  
+  b {
+    color: #fff;
+    font-size: 130px;
+    font-family: 'Open Sans SemiBold', sans-serif;
+    opacity: 0.4;
+  }
+  
+  p {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Open Sans Light', sans-serif;
+  }
 }
 
 .slider__box--1 {
-  background: url('../img/slider-1.png') no-repeat center;
+  
+  h1 {
+    margin-top: 0;
+    padding-top: 120px;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 300;
+    font-family: 'Open Sans Light', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.slider__text-1 {
+  align-self: center;
+  position: relative;
+  width: 360px;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    bottom: -180px;
+    width: 10px;
+    height: 197px;
+    background: url('../img/text1.png') no-repeat;
+  }
+  
+  &--2 {
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 30px;
+      bottom: -250px;
+      width: 10px;
+      height: 677px;
+      background: url('../img/textall.png') no-repeat;
+    }
+  }
+  
+  &--3 {
+    width: 370px;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 30px;
+      bottom: -230px;
+      width: 10px;
+      height: 677px;
+      background: url('../img/textall.png') no-repeat;
+    }
+  }
+  
+  &--4 {
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 30px;
+      bottom: -260px;
+      width: 10px;
+      height: 677px;
+      background: url('../img/textall.png') no-repeat;
+    }
+  }
+  
+  &--5 {
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 30px;
+      top: -120px;
+      width: 10px;
+      height: 677px;
+      background: url('../img/text5.png') no-repeat;
+    }
+  }
 }
 
 .slider__box--2 {
-  background: url('../img/slider-2.png') no-repeat center;
+  position: relative;
+  top: 120px;
 }
 
 .slider__box--3 {
-  background: url('../img/slider-3.png') no-repeat center;
+  position: relative;
+  top: 120px;
 }
 
 .slider__box--4 {
-  background: url('../img/slider-4.png') no-repeat center;
+  position: relative;
+  top: 130px;
 }
 
 .slider__box--5 {
-  background: url('../img/slider-5.png') no-repeat center;
+  position: relative;
+  top: 180px;
 }
 
 @media screen and ($tablet-widths) {
