@@ -1,0 +1,68 @@
+.products {
+  padding-top: 100px;
+  
+  h1 {
+    margin-top: 0;
+    margin-bottom: 70px;
+    font-size: 48px;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  hr {
+    width: 370px;
+    height: 2px;
+    margin: 0 auto;
+    border: none;
+    background: #68788a;
+  }
+}
+
+.products__flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.products__box {
+  width: 130px;
+  padding-top: 120px;
+  font-size: 24px;
+  font-family: 'Proxima Nova Lt', sans-serif;
+  text-align: center;
+  
+  p {
+    margin: 0;
+  }
+  
+  &--bank {
+    background: url('../img/bank.svg') no-repeat top;
+    background-size: 100px;
+  }
+  
+  &--algo {
+    background: url('../img/algo.svg') no-repeat top;
+    background-size: 100px;
+  }
+  
+  &--crm {
+    background: url('../img/crm.svg') no-repeat top;
+    background-size: 100px;
+  }
+  
+  &--card {
+    background: url('../img/card.svg') no-repeat top;
+    background-size: 100px;
+  }
+  
+  &--risk {
+    background: url('../img/risk.svg') no-repeat top;
+    background-size: 100px;
+  }
+  
+  &--social {
+    background: url('../img/social.svg') no-repeat top;
+    background-size: 100px;
+  }
+}

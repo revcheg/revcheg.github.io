@@ -5,8 +5,23 @@
   font-weight: bold;
   font-family: 'Proxima Nova Rg', sans-serif;
   text-decoration: none;
+  transition: 0.3s;
   
   &--click {
     background: $mc;
+    
+    &:hover {
+      color: #fff;
+    }
+  }
+  
+  &--unclick {
+    padding: 14px 84px;
+    border: 6px solid $mc;
+    
+    &:hover {
+      color: #fff;
+      background: $mc;
+    }
   }
 }

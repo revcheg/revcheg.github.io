@@ -1,0 +1,79 @@
+.manual {
+  
+  h1 {
+    margin: 70px 0;
+    font-size: 48px;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.manual__tabs {
+  // float: left;
+  display: flex;
+  justify-content: space-between;
+  // border: 1px solid #ccc;
+  // background-color: #f1f1f1;
+  width: 100%;
+  height: 300px;
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 22px 16px;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    &:hover {
+      background-color: #ddd;
+    }
+    
+    &:active {
+      background-color: #ccc;
+    }
+  }
+}
+
+.manual__button {
+  width: 40%;
+}
+
+.manual__links--trade {
+  background: #68788a;
+}
+
+.manual__links--manage {
+  background: #f58b23;
+}
+
+.manual__links--integrate {
+  background: #0bbcfd;
+}
+
+.manual__links--grow {
+  background: #d4c2a5;
+}
+
+/* Style the tab content */
+.manual__content {
+  // float: left;
+  display: none;
+  padding: 60px 130px;
+  // border: 1px solid #ccc;
+  width: 60%;
+  border-left: none;
+  height: 400px;
+  
+  &--trade {
+    display: block;
+    background: #e6e6e6;
+  }
+}
