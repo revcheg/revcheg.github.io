@@ -443,49 +443,90 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 100%;
-  height: 300px; }
+  width: 100%; }
   .manual__tabs button {
     display: block;
     width: 100%;
-    padding: 22px 16px;
+    padding: 50px;
+    padding-right: 80px;
     color: #000;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     font-family: 'Proxima Nova Rg', sans-serif;
-    text-align: center;
+    text-align: right;
     border: none;
     outline: none;
     cursor: pointer;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
-    .manual__tabs button:hover {
-      background-color: #ddd; }
-    .manual__tabs button:active {
-      background-color: #ccc; }
 
 .manual__button {
   width: 40%; }
 
 .manual__links--trade {
+  position: relative;
   background: #68788a; }
+  .manual__links--trade:focus::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 34px;
+    height: 124px;
+    background: url("../img/btn-arrow-trade.png") no-repeat top;
+    background-size: contain; }
 
 .manual__links--manage {
+  position: relative;
   background: #f58b23; }
+  .manual__links--manage:focus::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -29px;
+    width: 34px;
+    height: 124px;
+    background: url("../img/btn-arrow-manage.png") no-repeat top;
+    background-size: contain; }
 
 .manual__links--integrate {
+  position: relative;
   background: #0bbcfd; }
+  .manual__links--integrate:focus::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -28px;
+    width: 34px;
+    height: 124px;
+    background: url("../img/btn-arrow-integrate.png") no-repeat top;
+    background-size: contain; }
 
 .manual__links--grow {
+  position: relative;
   background: #d4c2a5; }
+  .manual__links--grow:focus::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -28px;
+    width: 34px;
+    height: 124px;
+    background: url("../img/btn-arrow-grow.png") no-repeat top;
+    background-size: contain; }
 
 /* Style the tab content */
 .manual__content {
   display: none;
   padding: 60px 130px;
   width: 60%;
-  border-left: none;
-  height: 400px; }
+  font-size: 16px;
+  font-family: 'Proxima Nova Lt', sans-serif;
+  border-left: none; }
+  .manual__content b {
+    text-transform: uppercase; }
+  .manual__content p {
+    margin-top: 0; }
   .manual__content--trade {
     display: block;
     background: #e6e6e6; }
