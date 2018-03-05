@@ -1,0 +1,12 @@
+.btn {
+  padding: 20px 90px;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Proxima Nova Rg', sans-serif;
+  text-decoration: none;
+  
+  &--click {
+    background: $mc;
+  }
+}
