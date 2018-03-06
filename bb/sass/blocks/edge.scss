@@ -1,0 +1,67 @@
+.edge {
+  width: 100%;
+  height: 600px;
+}
+
+.edge__list {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.edge__box {
+  width: 16.6666666667%;
+  height: 300px;
+  padding: 150px 50px;
+  color: #fff;
+  font-family: 'Proxima Nova Rg', sans-serif;
+  background: url('../img/edge1.jpg') no-repeat top;
+  background-size: cover;
+  transition: all 1s;
+  
+  h3 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    opacity: 0;
+  }
+  
+  b {
+    font-size: 24px;
+    opacity: 0;
+  }
+  
+  p {
+    opacity: 0;
+  }
+  
+  &:hover {
+    // animation: open 1s;
+    width: 60%;
+    background: url('../img/edge1-h.jpg') no-repeat top;
+    background-size: cover;
+    
+    h3 {
+      opacity: 1;
+      transition: all 1s;
+    }
+    
+    b {
+      opacity: 1;
+      transition: all 1s;
+    }
+    
+    p {
+      opacity: 1;
+      transition: all 1s;
+    }
+  }
+}
+
+// @keyframes open {
+//   100% {
+//     opacity: 1;
+//   }
+// }

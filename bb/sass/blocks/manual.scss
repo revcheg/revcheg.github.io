@@ -62,6 +62,17 @@
       background: url('../img/btn-arrow-trade.png') no-repeat top;
       background-size: contain;
     }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50px;
+      right: 140px;
+      width: 30px;
+      height: 22px;
+      background: url('../img/pointer.svg') no-repeat top;
+      background-size: contain;
+    }
   }
 }
 
@@ -78,6 +89,17 @@
       width: 34px;
       height: 124px;
       background: url('../img/btn-arrow-manage.png') no-repeat top;
+      background-size: contain;
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50px;
+      right: 165px;
+      width: 30px;
+      height: 22px;
+      background: url('../img/pointer.svg') no-repeat top;
       background-size: contain;
     }
   }
@@ -98,6 +120,17 @@
       background: url('../img/btn-arrow-integrate.png') no-repeat top;
       background-size: contain;
     }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50px;
+      right: 175px;
+      width: 30px;
+      height: 22px;
+      background: url('../img/pointer.svg') no-repeat top;
+      background-size: contain;
+    }
   }
 }
 
@@ -116,6 +149,17 @@
       background: url('../img/btn-arrow-grow.png') no-repeat top;
       background-size: contain;
     }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50px;
+      right: 140px;
+      width: 30px;
+      height: 22px;
+      background: url('../img/pointer.svg') no-repeat top;
+      background-size: contain;
+    }
   }
 }
 
@@ -123,7 +167,7 @@
 .manual__content {
   // float: left;
   display: none;
-  padding: 60px 130px;
+  padding: 40px 130px;
   // border: 1px solid #ccc;
   width: 60%;
   font-size: 16px;
@@ -144,5 +188,13 @@
   &--trade {
     display: block;
     background: #e6e6e6;
+    
+    a {
+      display: block;
+      width: 100px;
+      margin: auto;
+      margin-top: 40px;
+      text-align: center;
+    }
   }
 }

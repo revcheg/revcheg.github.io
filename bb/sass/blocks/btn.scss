@@ -24,4 +24,14 @@
       background: $mc;
     }
   }
+  
+  &--blue {
+    padding: 14px 44px;
+    border: 6px solid $sc;
+    
+    &:hover {
+      color: #fff;
+      background: $sc;
+    }
+  }
 }

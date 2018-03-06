@@ -376,6 +376,12 @@ body {
     .btn--unclick:hover {
       color: #fff;
       background: #ff5400; }
+  .btn--blue {
+    padding: 14px 44px;
+    border: 6px solid #0bbcfd; }
+    .btn--blue:hover {
+      color: #fff;
+      background: #0bbcfd; }
 
 .products {
   padding-top: 100px; }
@@ -475,6 +481,15 @@ body {
     height: 124px;
     background: url("../img/btn-arrow-trade.png") no-repeat top;
     background-size: contain; }
+  .manual__links--trade:focus::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: 140px;
+    width: 30px;
+    height: 22px;
+    background: url("../img/pointer.svg") no-repeat top;
+    background-size: contain; }
 
 .manual__links--manage {
   position: relative;
@@ -487,6 +502,15 @@ body {
     width: 34px;
     height: 124px;
     background: url("../img/btn-arrow-manage.png") no-repeat top;
+    background-size: contain; }
+  .manual__links--manage:focus::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: 165px;
+    width: 30px;
+    height: 22px;
+    background: url("../img/pointer.svg") no-repeat top;
     background-size: contain; }
 
 .manual__links--integrate {
@@ -501,6 +525,15 @@ body {
     height: 124px;
     background: url("../img/btn-arrow-integrate.png") no-repeat top;
     background-size: contain; }
+  .manual__links--integrate:focus::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: 175px;
+    width: 30px;
+    height: 22px;
+    background: url("../img/pointer.svg") no-repeat top;
+    background-size: contain; }
 
 .manual__links--grow {
   position: relative;
@@ -514,11 +547,20 @@ body {
     height: 124px;
     background: url("../img/btn-arrow-grow.png") no-repeat top;
     background-size: contain; }
+  .manual__links--grow:focus::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: 140px;
+    width: 30px;
+    height: 22px;
+    background: url("../img/pointer.svg") no-repeat top;
+    background-size: contain; }
 
 /* Style the tab content */
 .manual__content {
   display: none;
-  padding: 60px 130px;
+  padding: 40px 130px;
   width: 60%;
   font-size: 16px;
   font-family: 'Proxima Nova Lt', sans-serif;
@@ -532,3 +574,79 @@ body {
   .manual__content--trade {
     display: block;
     background: #e6e6e6; }
+    .manual__content--trade a {
+      display: block;
+      width: 100px;
+      margin: auto;
+      margin-top: 40px;
+      text-align: center; }
+
+.support h1 {
+  margin-top: 110px;
+  margin-bottom: 0;
+  font-size: 46px;
+  font-family: 'Proxima Nova Rg', sans-serif;
+  text-align: center;
+  text-transform: uppercase; }
+
+.support p {
+  font-size: 20px;
+  font-family: 'Proxima Nova Lt', sans-serif; }
+
+.support a {
+  display: block;
+  width: 180px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: center; }
+
+.edge {
+  width: 100%;
+  height: 600px; }
+
+.edge__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  list-style: none; }
+
+.edge__box {
+  width: 16.6666666667%;
+  height: 300px;
+  padding: 150px 50px;
+  color: #fff;
+  font-family: 'Proxima Nova Rg', sans-serif;
+  background: url("../img/edge1.jpg") no-repeat top;
+  background-size: cover;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
+  .edge__box h3 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    opacity: 0; }
+  .edge__box b {
+    font-size: 24px;
+    opacity: 0; }
+  .edge__box p {
+    opacity: 0; }
+  .edge__box:hover {
+    width: 60%;
+    background: url("../img/edge1-h.jpg") no-repeat top;
+    background-size: cover; }
+    .edge__box:hover h3 {
+      opacity: 1;
+      -webkit-transition: all 1s;
+      transition: all 1s; }
+    .edge__box:hover b {
+      opacity: 1;
+      -webkit-transition: all 1s;
+      transition: all 1s; }
+    .edge__box:hover p {
+      opacity: 1;
+      -webkit-transition: all 1s;
+      transition: all 1s; }
