@@ -609,16 +609,24 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   margin: 0;
   padding-left: 0;
-  list-style: none;
-  overflow: hidden; }
+  list-style: none; }
 
 .edge__box {
-  width: 100px;
-  height: 300px;
-  padding: 150px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16.6666666667%;
+  height: 600px;
+  padding: 0 10px;
   color: #fff;
   font-family: 'Proxima Nova Rg', sans-serif;
   -webkit-transition: all 1s;
@@ -636,7 +644,7 @@ body {
   .edge__box p {
     opacity: 0; }
   .edge__box:hover {
-    width: 400px; }
+    width: 30%; }
     .edge__box:hover h3 {
       opacity: 1;
       -webkit-transition: all 1s;

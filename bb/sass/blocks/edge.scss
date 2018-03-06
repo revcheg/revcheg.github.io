@@ -5,17 +5,19 @@
 
 .edge__list {
   display: flex;
-  width: 100%;
   margin: 0;
   padding-left: 0;
   list-style: none;
-  overflow: hidden;
 }
 
 .edge__box {
-  width: 100px;
-  height: 300px;
-  padding: 150px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 16.6666666667%;
+  height: 600px;
+  // padding: 150px 15px;
+  padding: 0 10px;
   color: #fff;
   font-family: 'Proxima Nova Rg', sans-serif;
   transition: all 1s;
@@ -39,7 +41,7 @@
   }
   
   &:hover {
-    width: 400px;
+    width: 30%;
     
     h3 {
       opacity: 1;
