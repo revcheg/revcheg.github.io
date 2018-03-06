@@ -609,20 +609,21 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   margin: 0;
   padding-left: 0;
-  list-style: none; }
+  list-style: none;
+  overflow: hidden; }
 
 .edge__box {
-  width: 16.6666666667%;
+  width: 100px;
   height: 300px;
   padding: 150px 50px;
   color: #fff;
   font-family: 'Proxima Nova Rg', sans-serif;
-  background: url("../img/edge1.jpg") no-repeat top;
-  background-size: cover;
   -webkit-transition: all 1s;
-  transition: all 1s; }
+  transition: all 1s;
+  cursor: pointer; }
   .edge__box h3 {
     margin-top: 0;
     color: #fff;
@@ -635,9 +636,7 @@ body {
   .edge__box p {
     opacity: 0; }
   .edge__box:hover {
-    width: 60%;
-    background: url("../img/edge1-h.jpg") no-repeat top;
-    background-size: cover; }
+    width: 400px; }
     .edge__box:hover h3 {
       opacity: 1;
       -webkit-transition: all 1s;
@@ -650,3 +649,45 @@ body {
       opacity: 1;
       -webkit-transition: all 1s;
       transition: all 1s; }
+
+.edge__box--1 {
+  background: url("../img/edge1.jpg") no-repeat top;
+  background-size: cover; }
+  .edge__box--1:hover {
+    background: url("../img/edge1-h.jpg") no-repeat top;
+    background-size: cover; }
+
+.edge__box--2 {
+  background: url("../img/edge2.jpg") no-repeat top;
+  background-size: cover; }
+  .edge__box--2:hover {
+    background: url("../img/edge2-h.jpg") no-repeat top;
+    background-size: cover; }
+
+.edge__box--3 {
+  background: url("../img/edge3.jpg") no-repeat top;
+  background-size: cover; }
+  .edge__box--3:hover {
+    background: url("../img/edge3-h.jpg") no-repeat top;
+    background-size: cover; }
+
+.edge__box--4 {
+  background: url("../img/edge4.jpg") no-repeat top;
+  background-size: cover; }
+  .edge__box--4:hover {
+    background: url("../img/edge4-h.jpg") no-repeat top;
+    background-size: cover; }
+
+.edge__box--5 {
+  background: url("../img/edge5.jpg") no-repeat top;
+  background-size: cover; }
+  .edge__box--5:hover {
+    background: url("../img/edge5-h.jpg") no-repeat top;
+    background-size: cover; }
+
+.edge__box--6 {
+  background: url("../img/edge6.jpg") no-repeat top;
+  background-size: cover; }
+  .edge__box--6:hover {
+    background: url("../img/edge6-h.jpg") no-repeat top;
+    background-size: cover; }
