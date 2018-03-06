@@ -699,3 +699,8 @@ body {
   .edge__box--6:hover {
     background: url("../img/edge6-h.jpg") no-repeat top;
     background-size: cover; }
+
+.platfrom h1 {
+  font-size: 46px;
+  font-family: 'Proxima Nova Rg', sans-serif;
+  text-align: center; }
