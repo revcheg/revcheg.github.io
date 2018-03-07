@@ -34,4 +34,15 @@
       background: $sc;
     }
   }
+  
+  &--white {
+    padding: 14px 40px;
+    color: #fff;
+    border: 6px solid #fff;
+    
+    &:hover {
+      color: #000;
+      background: #fff;
+    }
+  }
 }

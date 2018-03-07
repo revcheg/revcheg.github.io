@@ -11,6 +11,7 @@
 }
 
 .edge__box {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,4 +119,65 @@
     background: url('../img/edge6-h.jpg') no-repeat top;
     background-size: cover;
   }
+}
+
+.edge__name {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+  height: 340px;
+  border-radius: 30px;
+  border-bottom-right-radius: 0;
+  box-shadow: -4.698px 1.71px 7px 0px rgba(0, 0, 0, 0.15);
+  background: linear-gradient( 155deg, rgb(0,158,216) 0%, rgb(11,188,253) 100%);
+  z-index: 10;
+  
+  p {
+    width: 160px;
+    margin: 0;
+    padding-left: 200px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    text-transform: uppercase;
+    transform: rotate(270deg);
+    opacity: 1;
+  }
+}
+
+.edge__title {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: $mc;
+}
+
+.edge__img-1 {
+  margin: 11px;
+}
+
+.edge__img-2 {
+  margin: 13px 11px;
+}
+
+.edge__img-3 {
+  margin: 20px 11px;
+}
+
+.edge__img-4 {
+  margin: 20px 11px;
+}
+
+.edge__img-5 {
+  margin: 11px 13px;
+}
+
+.edge__img-6 {
+  margin: 11px 14px;
 }
