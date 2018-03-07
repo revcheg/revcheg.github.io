@@ -26,4 +26,12 @@
 
 @media screen and ($tablet-widths) {}
 
-@media screen and ($mobile-widths) {}
+@media screen and ($mobile-widths) {
+  .support {
+    
+    h1 {
+      margin-top: 50px;
+      font-size: 30px;
+    }
+  }
+}

@@ -86,4 +86,13 @@
   }
 }
 
-@media screen and ($mobile-widths) {}
+@media screen and ($mobile-widths) {
+  .footer__flex {
+    justify-content: center;
+  }
+  
+  .footer__middle {
+    width: auto;
+    text-align: center;
+  }
+}

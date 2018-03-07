@@ -227,7 +227,23 @@
     width: auto;
   }
   
+  .manual__links {
+    
+    &:focus {
+      display: none;
+    }
+  }
+  
   .manual__content {
     width: auto;
+    padding: 20px 40px; 
+    
+    &--trade {
+      
+      a {
+        width: auto;
+        padding: 15px;
+      }
+    }
   }
 }
