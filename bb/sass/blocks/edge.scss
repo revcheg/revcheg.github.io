@@ -181,3 +181,16 @@
 .edge__img-6 {
   margin: 11px 14px;
 }
+
+@media screen and ($tablet-widths) {
+  .edge__box {
+    width: 22%;
+  }
+  
+  .edge__box--5,
+  .edge__box--6 {
+    display: none;
+  }
+}
+
+@media screen and ($mobile-widths) {}

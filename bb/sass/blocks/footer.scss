@@ -6,6 +6,7 @@
 .footer__flex {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer__left,
@@ -66,3 +67,23 @@
   background: url('../img/email.svg') no-repeat center;
   background-size: cover;
 }
+
+@media screen and ($tablet-widths) {
+  .footer__left {
+    
+    img {
+      margin-bottom: 30px;
+    }
+  }
+  
+  .footer__middle {
+    // width: auto;
+    margin-top: 30px;
+  }
+  
+  .footer__right {
+    margin-top: 30px;
+  }
+}
+
+@media screen and ($mobile-widths) {}

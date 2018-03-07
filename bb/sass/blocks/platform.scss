@@ -14,4 +14,14 @@
     font-size: 30px;
     font-family: 'Proxima Nova Lt', sans-serif;
   }
+  
+  img {
+    max-width: 100%;
+  }
 }
+
+@media screen and ($tablet-widths) {
+  
+}
+
+@media screen and ($mobile-widths) {}

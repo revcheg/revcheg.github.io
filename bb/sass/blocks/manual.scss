@@ -19,7 +19,7 @@
   // height: 600px;
   
   button {
-    display: block;
+    // display: block;
     width: 100%;
     padding: 50px;
     padding-right: 80px;
@@ -44,6 +44,9 @@
 }
 
 .manual__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 40%;
 }
 
@@ -196,5 +199,35 @@
       margin-top: 40px;
       text-align: center;
     }
+  }
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .manual {
+    
+    h1 {
+      margin: 50px 0;
+      font-size: 30px;
+    }
+  }
+  
+  .manual__tabs {
+    flex-direction: column;
+    
+    button {
+      width: auto;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  
+  .manual__button {
+    width: auto;
+  }
+  
+  .manual__content {
+    width: auto;
   }
 }
