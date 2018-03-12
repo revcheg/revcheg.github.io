@@ -18,11 +18,12 @@
   width: 16.6666666667%;
   height: 600px;
   // padding: 150px 15px;
-  padding: 0 10px;
+  padding: 0 65px 0 20px;
   color: #fff;
   font-family: 'Proxima Nova Rg', sans-serif;
-  transition: all 1s;
+  transition: all 1.3s;
   cursor: pointer;
+  overflow: hidden;
   
   h3 {
     margin-top: 0;
@@ -46,17 +47,17 @@
     
     h3 {
       opacity: 1;
-      transition: all 1s;
+      transition: all 2s;
     }
     
     b {
       opacity: 1;
-      transition: all 1s;
+      transition: all 2s;
     }
     
     p {
       opacity: 1;
-      transition: all 1s;
+      transition: all 2s;
     }
   }
 }
@@ -123,7 +124,7 @@
 
 .edge__name {
   position: absolute;
-  top: -30px;
+  top: 0px;
   right: 0;
   display: flex;
   flex-direction: column;
@@ -135,12 +136,12 @@
   border-bottom-right-radius: 0;
   box-shadow: -4.698px 1.71px 7px 0px rgba(0, 0, 0, 0.15);
   background: linear-gradient( 155deg, rgb(0,158,216) 0%, rgb(11,188,253) 100%);
-  z-index: 10;
+  // z-index: 10;
   
   p {
-    width: 160px;
+    width: 230px;
     margin: 0;
-    padding-left: 200px;
+    padding-left: 270px;
     color: #000;
     font-size: 16px;
     font-weight: bold;

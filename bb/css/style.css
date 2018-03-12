@@ -489,7 +489,7 @@ body {
     background-size: 100px; }
   .products__box--social {
     background: url("../img/social.svg") no-repeat top;
-    background-size: 100px; }
+    background-size: 115px; }
 
 @media screen and (max-width: 768px) {
   .products {
@@ -526,20 +526,6 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%; }
-  .manual__tabs button {
-    width: 100%;
-    padding: 50px;
-    padding-right: 80px;
-    color: #000;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Proxima Nova Rg', sans-serif;
-    text-align: right;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
 
 .manual__button {
   display: -webkit-box;
@@ -553,95 +539,107 @@ body {
   justify-content: space-around;
   width: 40%; }
 
-.manual__links--trade {
-  position: relative;
-  background: #68788a; }
-  .manual__links--trade:focus::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -30px;
-    width: 34px;
-    height: 124px;
-    background: url("../img/btn-arrow-trade.png") no-repeat top;
-    background-size: contain; }
-  .manual__links--trade:focus::after {
-    content: '';
-    position: absolute;
-    top: 50px;
-    right: 140px;
-    width: 30px;
-    height: 22px;
-    background: url("../img/pointer.svg") no-repeat top;
-    background-size: contain; }
+.manual__links {
+  width: 100%;
+  padding: 50px;
+  padding-right: 80px;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Proxima Nova Rg', sans-serif;
+  text-align: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .manual__links--trade {
+    background: #68788a; }
+    .manual__links--trade.active::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -31px;
+      width: 34px;
+      height: 128px;
+      background: url("../img/btn-arrow-trade.png") no-repeat top;
+      background-size: contain; }
+    .manual__links--trade.active::after {
+      content: '';
+      position: absolute;
+      top: 52px;
+      right: 150px;
+      width: 30px;
+      height: 22px;
+      background: url("../img/pointer.svg") no-repeat top;
+      background-size: contain; }
+  .manual__links--manage {
+    background: #f58b23; }
+    .manual__links--manage.active::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -31px;
+      width: 34px;
+      height: 128px;
+      background: url("../img/btn-arrow-manage.png") no-repeat top;
+      background-size: contain; }
+    .manual__links--manage.active::after {
+      content: '';
+      position: absolute;
+      top: 52px;
+      right: 175px;
+      width: 30px;
+      height: 22px;
+      background: url("../img/pointer.svg") no-repeat top;
+      background-size: contain; }
+  .manual__links--integrate {
+    background: #0bbcfd; }
+    .manual__links--integrate.active::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -31px;
+      width: 34px;
+      height: 128px;
+      background: url("../img/btn-arrow-integrate.png") no-repeat top;
+      background-size: contain;
+      opacity: 1; }
+    .manual__links--integrate.active::after {
+      content: '';
+      position: absolute;
+      top: 52px;
+      right: 185px;
+      width: 30px;
+      height: 22px;
+      background: url("../img/pointer.svg") no-repeat top;
+      background-size: contain; }
+  .manual__links--grow {
+    background: #d4c2a5; }
+    .manual__links--grow.active::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -31px;
+      width: 34px;
+      height: 128px;
+      background: url("../img/btn-arrow-grow.png") no-repeat top;
+      background-size: contain;
+      opacity: 1; }
+    .manual__links--grow.active::after {
+      content: '';
+      position: absolute;
+      top: 52px;
+      right: 145px;
+      width: 30px;
+      height: 22px;
+      background: url("../img/pointer.svg") no-repeat top;
+      background-size: contain; }
 
-.manual__links--manage {
+.active {
   position: relative;
-  background: #f58b23; }
-  .manual__links--manage:focus::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -29px;
-    width: 34px;
-    height: 124px;
-    background: url("../img/btn-arrow-manage.png") no-repeat top;
-    background-size: contain; }
-  .manual__links--manage:focus::after {
-    content: '';
-    position: absolute;
-    top: 50px;
-    right: 165px;
-    width: 30px;
-    height: 22px;
-    background: url("../img/pointer.svg") no-repeat top;
-    background-size: contain; }
+  font-size: 23px; }
 
-.manual__links--integrate {
-  position: relative;
-  background: #0bbcfd; }
-  .manual__links--integrate:focus::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -28px;
-    width: 34px;
-    height: 124px;
-    background: url("../img/btn-arrow-integrate.png") no-repeat top;
-    background-size: contain; }
-  .manual__links--integrate:focus::after {
-    content: '';
-    position: absolute;
-    top: 50px;
-    right: 175px;
-    width: 30px;
-    height: 22px;
-    background: url("../img/pointer.svg") no-repeat top;
-    background-size: contain; }
-
-.manual__links--grow {
-  position: relative;
-  background: #d4c2a5; }
-  .manual__links--grow:focus::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -28px;
-    width: 34px;
-    height: 124px;
-    background: url("../img/btn-arrow-grow.png") no-repeat top;
-    background-size: contain; }
-  .manual__links--grow:focus::after {
-    content: '';
-    position: absolute;
-    top: 50px;
-    right: 140px;
-    width: 30px;
-    height: 22px;
-    background: url("../img/pointer.svg") no-repeat top;
-    background-size: contain; }
-
-/* Style the tab content */
 .manual__content {
   display: none;
   padding: 40px 130px;
@@ -649,6 +647,7 @@ body {
   font-size: 16px;
   font-family: 'Proxima Nova Lt', sans-serif;
   border-left: none;
+  background: #e6e6e6;
   -webkit-transition: 0.6s;
   transition: 0.6s; }
   .manual__content b {
@@ -656,14 +655,13 @@ body {
   .manual__content p {
     margin-top: 0; }
   .manual__content--trade {
+    display: block; }
+  .manual__content a {
     display: block;
-    background: #e6e6e6; }
-    .manual__content--trade a {
-      display: block;
-      width: 100px;
-      margin: auto;
-      margin-top: 40px;
-      text-align: center; }
+    width: 100px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center; }
 
 @media screen and (max-width: 768px) {
   .manual h1 {
@@ -680,14 +678,14 @@ body {
       text-align: center; }
   .manual__button {
     width: auto; }
-  .manual__links:focus {
-    display: none; }
   .manual__content {
     width: auto;
     padding: 20px 40px; }
-    .manual__content--trade a {
+    .manual__content a {
       width: auto;
-      padding: 15px; } }
+      padding: 20px; }
+  .active::before, .active::after {
+    display: none; } }
 
 .support h1 {
   margin-top: 110px;
@@ -740,12 +738,13 @@ body {
   justify-content: center;
   width: 16.6666666667%;
   height: 600px;
-  padding: 0 10px;
+  padding: 0 65px 0 20px;
   color: #fff;
   font-family: 'Proxima Nova Rg', sans-serif;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  cursor: pointer; }
+  -webkit-transition: all 1.3s;
+  transition: all 1.3s;
+  cursor: pointer;
+  overflow: hidden; }
   .edge__box h3 {
     margin-top: 0;
     color: #fff;
@@ -761,16 +760,16 @@ body {
     width: 30%; }
     .edge__box:hover h3 {
       opacity: 1;
-      -webkit-transition: all 1s;
-      transition: all 1s; }
+      -webkit-transition: all 2s;
+      transition: all 2s; }
     .edge__box:hover b {
       opacity: 1;
-      -webkit-transition: all 1s;
-      transition: all 1s; }
+      -webkit-transition: all 2s;
+      transition: all 2s; }
     .edge__box:hover p {
       opacity: 1;
-      -webkit-transition: all 1s;
-      transition: all 1s; }
+      -webkit-transition: all 2s;
+      transition: all 2s; }
 
 .edge__box--1 {
   background: url("../img/edge1.jpg") no-repeat top;
@@ -816,7 +815,7 @@ body {
 
 .edge__name {
   position: absolute;
-  top: -30px;
+  top: 0px;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -837,12 +836,11 @@ body {
   border-bottom-right-radius: 0;
   -webkit-box-shadow: -4.698px 1.71px 7px 0px rgba(0, 0, 0, 0.15);
   box-shadow: -4.698px 1.71px 7px 0px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(155deg, #009ed8 0%, #0bbcfd 100%);
-  z-index: 10; }
+  background: linear-gradient(155deg, #009ed8 0%, #0bbcfd 100%); }
   .edge__name p {
-    width: 160px;
+    width: 230px;
     margin: 0;
-    padding-left: 200px;
+    padding-left: 270px;
     color: #000;
     font-size: 16px;
     font-weight: bold;
