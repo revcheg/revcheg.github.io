@@ -295,10 +295,10 @@ body {
   transition: 0.3s; }
   .button:hover {
     background: transparent; }
-  .button--black {
+  .button--blue {
     color: #fff;
-    border: 2px solid #000;
-    background: #000; }
+    border: 2px solid #1b85c7;
+    background: #1b85c7; }
   .button--title {
     color: #fff;
     padding: 12px 60px;
