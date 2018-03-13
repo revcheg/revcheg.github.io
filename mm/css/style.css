@@ -228,16 +228,23 @@ body {
     font-family: 'SF UI Display Black', sans-serif; }
 
 .slider__box--4 {
-  padding-top: 120px;
-  padding-bottom: 180px;
+  padding-top: 114px;
+  padding-bottom: 164px;
   background: url("../img/slide4.jpg") no-repeat center;
   background-size: cover; }
   .slider__box--4 p {
-    margin-bottom: 51px;
+    margin-bottom: 0;
     color: #fff;
     font-size: 40px;
     font-weight: 900;
     font-family: 'SF UI Display Bold', sans-serif; }
+  .slider__box--4 img {
+    margin: 10px 0 20px 0; }
+  .slider__box--4 small {
+    padding-right: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'SF UI Display Regular', sans-serif; }
 
 .header--temp {
   border-bottom: 1px solid #525252;
