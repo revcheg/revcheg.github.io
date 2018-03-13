@@ -5,18 +5,26 @@
 .slider__box {
   
   &--1 {
-    padding: 145px 0;
+    padding: 101px 0;
     background: url('../img/slide1.jpg') no-repeat center;
     background-size: cover;
     
     p {
       margin-top: 0;
-      margin-bottom: 55px;
+      margin-bottom: 30px;
       color: #fff;
       font-size: 40px;
       font-style: italic;
       font-weight: 300;
       font-family: 'SF UI Text Italic', sans-serif;
+    }
+    
+    .button--slider {
+      padding: 15px 97px;
+    }
+    
+    img {
+      margin-top: 10px;
     }
   }
   
@@ -42,7 +50,7 @@
   }
   
   &--3 {
-    padding: 147px 0;
+    padding: 91px 0;
     background: url('../img/slide3.jpg') no-repeat left;
     background-size: cover;
     
@@ -52,6 +60,14 @@
       color: #fff;
       font-size: 40px;
       font-family: 'SF UI Display Black', sans-serif;
+    }
+    
+    .button--slider {
+      padding: 15px 97px;
+    }
+    
+    img {
+      margin-top: 10px;
     }
   }
   

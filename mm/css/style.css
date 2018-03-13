@@ -188,17 +188,21 @@ body {
     object-fit: cover; } }
 
 .slider__box--1 {
-  padding: 145px 0;
+  padding: 101px 0;
   background: url("../img/slide1.jpg") no-repeat center;
   background-size: cover; }
   .slider__box--1 p {
     margin-top: 0;
-    margin-bottom: 55px;
+    margin-bottom: 30px;
     color: #fff;
     font-size: 40px;
     font-style: italic;
     font-weight: 300;
     font-family: 'SF UI Text Italic', sans-serif; }
+  .slider__box--1 .button--slider {
+    padding: 15px 97px; }
+  .slider__box--1 img {
+    margin-top: 10px; }
 
 .slider__box--2 {
   padding: 117px 0;
@@ -217,7 +221,7 @@ body {
     font-family: 'SF UI Display Regular', sans-serif; }
 
 .slider__box--3 {
-  padding: 147px 0;
+  padding: 91px 0;
   background: url("../img/slide3.jpg") no-repeat left;
   background-size: cover; }
   .slider__box--3 b {
@@ -226,6 +230,10 @@ body {
     color: #fff;
     font-size: 40px;
     font-family: 'SF UI Display Black', sans-serif; }
+  .slider__box--3 .button--slider {
+    padding: 15px 97px; }
+  .slider__box--3 img {
+    margin-top: 10px; }
 
 .slider__box--4 {
   padding-top: 114px;
@@ -359,6 +367,20 @@ body {
   .button--slider {
     padding: 15px 40px;
     font-size: 16px; }
+  .button--tv {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px 15px 70px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: none;
+    border: 2px solid #1b85c7;
+    background: #1b85c7 url("../img/tv-round.svg") no-repeat left; }
+    .button--tv span {
+      font-weight: bold;
+      text-transform: uppercase; }
+    .button--tv:hover {
+      background: transparent url("../img/tv-round.svg") no-repeat left; }
 
 @media screen and (max-width: 768px) {
   .button {
