@@ -1,0 +1,32 @@
+.comment {
+  padding: 70px 0;
+  background: #dcdcdc;
+  
+  h3 {
+    margin-top: 0;
+    font-size: 35px;
+    font-family: 'Open Sans Bold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.comment__box {
+  // font-size: 0;
+  height: 350px !important;
+  text-align: center;
+  transition: 0.3s;
+  // opacity: 0;
+  
+  p {
+    font-size: 18px;
+    opacity: 0;
+  }
+  
+  img {
+    width: 100px;
+    margin: auto;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+}

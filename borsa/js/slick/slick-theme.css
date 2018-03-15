@@ -209,3 +209,16 @@
     border: 3px solid #29a643;
     background: red;
 }
+
+.slick-center {
+  opacity: 1;
+}
+
+.slick-center p {
+  opacity: 1;
+}
+
+.slick-center img {
+  width: 200px;
+}
+

@@ -325,3 +325,28 @@ body {
   height: 60px;
   margin-left: 15px;
   background: url("../img/app-g.jpg"); }
+
+.comment {
+  padding: 70px 0;
+  background: #dcdcdc; }
+  .comment h3 {
+    margin-top: 0;
+    font-size: 35px;
+    font-family: 'Open Sans Bold', sans-serif;
+    text-align: center;
+    text-transform: uppercase; }
+
+.comment__box {
+  height: 350px !important;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .comment__box p {
+    font-size: 18px;
+    opacity: 0; }
+  .comment__box img {
+    width: 100px;
+    margin: auto;
+    border-radius: 50%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }

@@ -12,17 +12,7 @@ $('.slider').slick({
 });
 
 $('.comment__slider').slick({
-  // autoplay: false,
-  // autoplaySpeed: 2000,
-  // arrows: true,
-  // dots: false,
   centerMode: true,
-  centerPadding: '120px',
-  slidesToShow: 2,
-  responsive: [{
-    breakpoint: 768,
-    settings: {
-      autoplay: false
-    }
-  }]
+  // centerPadding: '60px',
+  slidesToShow: 5,
 });
