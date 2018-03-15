@@ -218,7 +218,16 @@
   opacity: 1;
 }
 
+.slick-center b {
+  opacity: 1;
+}
+
+.slick-center small {
+  opacity: 1;
+}
+
 .slick-center img {
   width: 200px;
+  margin-top: 0;
 }
 

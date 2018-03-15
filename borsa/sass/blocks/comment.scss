@@ -1,5 +1,5 @@
 .comment {
-  padding: 70px 0;
+  padding-top: 70px;
   background: #dcdcdc;
   
   h3 {
@@ -14,11 +14,17 @@
 .comment__box {
   // font-size: 0;
   height: 350px !important;
+  padding-top: 100px;
   text-align: center;
   transition: 0.3s;
   // opacity: 0;
   
   p {
+    position: absolute;
+    top: 0;
+    // left: 50px;
+    width: 700px;
+    margin-left: -240px;
     font-size: 18px;
     opacity: 0;
   }
@@ -26,7 +32,22 @@
   img {
     width: 100px;
     margin: auto;
+    margin-top: 50px;
+    margin-bottom: 15px;
     border-radius: 50%;
     transition: 0.3s;
+  }
+  
+  b {
+    font-size: 18px;
+    font-family: 'Open Sans Bold', sans-serif;
+    text-transform: uppercase;
+    opacity: 0;
+  }
+  
+  small {
+    font-size: 18px;
+    font-family: 'Open Sans Regular', sans-serif;
+    opacity: 0;
   }
 }
