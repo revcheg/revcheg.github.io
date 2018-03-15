@@ -1,0 +1,41 @@
+.app {
+  padding-top: 70px;
+}
+
+.app__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__left {
+  width: 500px;
+  text-align: center;
+  
+  h3 {
+    margin-bottom: 30px;
+    font-size: 70px;
+    font-family: 'Open Sans Bold', sans-serif;
+  }
+  
+  p {
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-family: 'Open Sans Regular', sans-serif;
+  }
+}
+
+.app__apple {
+  display: inline-block;
+  width: 192px;
+  height: 60px;
+  margin-right: 15px;
+  background: url('../img/app-a.jpg');
+}
+
+.app__google {
+  display: inline-block;
+  width: 194px;
+  height: 60px;
+  margin-left: 15px;
+  background: url('../img/app-g.jpg');
+}

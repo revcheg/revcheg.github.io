@@ -1,0 +1,23 @@
+.contact {
+  display: flex;
+}
+
+.contact__left {
+  width: 50%;
+  background: url('../img/contact-bg.jpg') no-repeat top;
+  background-size: cover;
+}
+
+.contact__right {
+  width: 50%;
+  padding: 65px 0;
+  background: #dcdcdc;
+  
+  h3 {
+    margin-top: 0;
+    font-size: 25px;
+    font-family: 'Open Sans Bold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

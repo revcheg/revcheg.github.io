@@ -1,0 +1,45 @@
+.edge {
+  padding: 130px 0;
+  text-align: center;
+  
+  h1 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 70px;
+    font-family: 'Open Sans Bold', sans-serif;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-family: 'Open Sans Regular', sans-serif;
+  }
+}
+
+.edge__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edge__box {
+  width: 250px;
+  padding-top: 150px;
+  font-family: 'Open Sans Bold', sans-serif;
+  text-transform: uppercase;
+  
+  &--1 {
+    background: url('../img/edge-1.svg') no-repeat top;
+    background-size: 120px;
+  }
+  
+  &--2 {
+    background: url('../img/edge-2.svg') no-repeat top;
+    background-size: 120px;
+  }
+  
+  &--3 {
+    background: url('../img/edge-3.svg') no-repeat top;
+    background-size: 120px;
+  }
+}
