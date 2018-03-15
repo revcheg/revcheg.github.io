@@ -6,33 +6,104 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>BorsaPro</title>
   <link rel="stylesheet" href="css/style.min.css">
+  
+  <!-- Slick -->
+  <link rel="stylesheet" href="js/slick/slick.css"/>
+  <link rel="stylesheet" href="js/slick/slick-theme.css"/>
 </head>
 <body>
   <header class="header">
     <div class="container">
       <div class="header__flex">
         <img src="img/logo.png" width="226" height="76" alt="BorsaPro">
-        <ul class="main-nav">
-          <li><a href="#">Account</a></li>
-          <li><a href="#">Platforms</a></li>
-          <li><a href="#">Tools</a></li>
-        </ul>
-        <a class="button" href="#">Open Account</a>
-        <a class="button" href="#">Sign In</a>
+        <nav>
+          <ul class="main-nav">
+              <li>
+                <a class="main-nav__title">Accounts</a>
+                <ul class="main-nav__list">
+                    <li><a href="templates/about-us.html">Trade with BorsaPro</a></li>
+                    <li><a href="templates/account-types.html">Account types</a></li>
+                    <li><a href="templates/segregated.html">Segregated account</a></li>
+                    <li><a href="#">Open live account</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="main-nav__title">Platforms</a>
+                <ul class="main-nav__list">
+                    <li><a href="templates/platform.html">BorsaPro Trade Meta Trader 4</a></li>
+                    <li><a href="templates/web.html">BorsaPro Web Trader</a></li>
+                    <li><a href="templates/mobile.html">BorsaPro Trade Mobile</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="main-nav__title">Tools</a>
+                <ul class="main-nav__list">
+                    <li><a href="templates/spread.html">Spreads and Trading Hours</a></li>
+                    <li><a href="templates/glossary.html">Trade glossary</a></li>
+                    <li><a href="templates/signals.html">Forex Signals</a></li>
+                    <li><a href="templates/account-faq.html">Account FAQ</a></li>
+                    <li><a href="templates/account-funding.html">Account Funding & Withdrawal</a></li>
+                </ul>
+              </li>
+          </ul>
+        </nav>
+        <div class="main-nav__user">
+          <a class="button  button--header  button--green" href="#">Open account</a>
+          <a class="button  button--header  button--gray" href="#">Sign In</a>
+        </div>
       </div>
     </div>
   </header>
-  <section class="title">
-    <div class="container">
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <a href="#" class="button">Open Account</a>
-      </ul>
+  <section class="slider">
+    <div class="slider__box  slider__box--1">
+      <div class="slider__container">
+        <h2>Over 200 financial<br>instruments</h2>
+        <div class="slider__link">
+          <a class="button  button--slider  button--green" href="#">Open account</a>
+          <a class="button  button--slider  button--unclick" href="#">Free demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="slider__box  slider__box--2">
+      <div class="slider__container">
+        <h2>Flexibility financial<br>leverage 1:1 to 1:300</h2>
+        <div class="slider__link">
+          <a class="button  button--slider  button--green" href="#">Open account</a>
+          <a class="button  button--slider  button--unclick" href="#">Free demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="slider__box  slider__box--3">
+      <div class="slider__container">
+        <h2>Spread low fixed +</h2>
+        <div class="slider__link">
+          <a class="button  button--slider  button--green" href="#">Open account</a>
+          <a class="button  button--slider  button--unclick" href="#">Free demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="slider__box  slider__box--4">
+      <div class="slider__container">
+        <h2>Immediate deposits &<br>withdrawals</h2>
+        <div class="slider__link">
+          <a class="button  button--slider  button--green" href="#">Open account</a>
+          <a class="button  button--slider  button--unclick" href="#">Free demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="slider__box  slider__box--5">
+      <div class="slider__container">
+        <h2>Bonus deposit</h2>
+        <div class="slider__link">
+          <a class="button  button--slider  button--green" href="#">Open account</a>
+          <a class="button  button--slider  button--unclick" href="#">Free demo</a>
+        </div>
+      </div>
     </div>
   </section>
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick/slick.min.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 </html>
