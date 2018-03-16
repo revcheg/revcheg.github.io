@@ -16,41 +16,49 @@
     <div class="container">
       <div class="header__flex">
         <img src="img/logo.png" width="226" height="76" alt="BorsaPro">
-        <nav>
-          <ul class="main-nav">
-              <li>
-                <a class="main-nav__title">Accounts</a>
-                <ul class="main-nav__list">
-                    <li><a href="templates/about-us.html">Trade with BorsaPro</a></li>
-                    <li><a href="templates/account-types.html">Account types</a></li>
-                    <li><a href="templates/segregated.html">Segregated account</a></li>
-                    <li><a href="#">Open live account</a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="main-nav__title">Platforms</a>
-                <ul class="main-nav__list">
-                    <li><a href="templates/platform.html">BorsaPro Trade Meta Trader 4</a></li>
-                    <li><a href="templates/web.html">BorsaPro Web Trader</a></li>
-                    <li><a href="templates/mobile.html">BorsaPro Trade Mobile</a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="main-nav__title">Tools</a>
-                <ul class="main-nav__list">
-                    <li><a href="templates/spread.html">Spreads and Trading Hours</a></li>
-                    <li><a href="templates/glossary.html">Trade glossary</a></li>
-                    <li><a href="templates/signals.html">Forex Signals</a></li>
-                    <li><a href="templates/account-faq.html">Account FAQ</a></li>
-                    <li><a href="templates/account-funding.html">Account Funding & Withdrawal</a></li>
-                </ul>
-              </li>
-          </ul>
+        <nav class="main-nav__wrapper  page-header__main-nav  main-nav--closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Open menu</button>
+          <div class="main-nav__container">
+            <ul class="main-nav">
+                <li class="main-nav__item">
+                  <a class="main-nav__title">Accounts</a>
+                  <ul class="main-nav__list">
+                      <li class="main-nav__item"><a href="templates/about-us.html">Trade with BorsaPro</a></li>
+                      <li class="main-nav__item"><a href="templates/account-types.html">Account types</a></li>
+                      <li class="main-nav__item"><a href="templates/segregated.html">Segregated account</a></li>
+                      <li class="main-nav__item"><a href="#">Open live account</a></li>
+                  </ul>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__title">Platforms</a>
+                  <ul class="main-nav__list">
+                      <li class="main-nav__item"><a href="templates/platform.html">BorsaPro Trade Meta Trader 4</a></li>
+                      <li class="main-nav__item"><a href="templates/web.html">BorsaPro Web Trader</a></li>
+                      <li class="main-nav__item"><a href="templates/mobile.html">BorsaPro Trade Mobile</a></li>
+                  </ul>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__title">Tools</a>
+                  <ul class="main-nav__list">
+                      <li class="main-nav__item"><a href="templates/spread.html">Spreads and Trading Hours</a></li>
+                      <li class="main-nav__item"><a href="templates/glossary.html">Trade glossary</a></li>
+                      <li class="main-nav__item"><a href="templates/signals.html">Forex Signals</a></li>
+                      <li class="main-nav__item"><a href="templates/account-faq.html">Account FAQ</a></li>
+                      <li class="main-nav__item"><a href="templates/account-funding.html">Account Funding & Withdrawal</a></li>
+                  </ul>
+                </li>
+            </ul>
+            <ul class="main-nav__user">
+              <li class="main-nav__item"><a class="button  button--header  button--green" href="#">Open account</a></li>
+              <li class="main-nav__item"><a class="button  button--header  button--gray" href="#">Sign In</a></li>
+            </ul>
+          </div>
+          
+          <!-- <div class="main-nav__user">
+            <a class="button  button--header  button--green" href="#">Open account</a>
+            <a class="button  button--header  button--gray" href="#">Sign In</a>
+          </div> -->
         </nav>
-        <div class="main-nav__user">
-          <a class="button  button--header  button--green" href="#">Open account</a>
-          <a class="button  button--header  button--gray" href="#">Sign In</a>
-        </div>
       </div>
     </div>
   </header>
@@ -131,9 +139,9 @@
             <label for="message">Your message:</label>
           </div>
           <div class="form__input">
-            <input id="name" type="text">
-            <input id="subject" type="text">      
-            <input id="email" type="email">      
+            <input id="name" type="text" placeholder="Full Name">
+            <input id="subject" type="text" placeholder="Subject">      
+            <input id="email" type="email" placeholder="Email">      
             <textarea id="message" rows="8" cols="80"></textarea>
           </div>
         </div>
@@ -250,5 +258,6 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/slick/slick.min.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/mobile-menu.js"></script>
 </body>
 </html>

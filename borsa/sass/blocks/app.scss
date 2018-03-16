@@ -39,3 +39,45 @@
   margin-left: 15px;
   background: url('../img/app-g.jpg');
 }
+
+@media screen and ($tablet-widths) {
+  .app__left {
+    
+    h3 {
+      font-size: 60px;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .app {
+    padding-top: 50px;
+    
+    img {
+      max-width: 100%;
+      align-self: center;
+      margin-top: 50px;
+    }
+  }
+  
+  .app__flex {
+    flex-direction: column;
+  }
+  
+  .app__left {
+    width: auto;
+    
+    h3 {
+      margin-top: 0;
+      font-size: 30px;
+    }
+    
+    p {
+      font-size: 16px;
+    }
+    
+    a {
+      margin: 0;
+    }
+  }
+}

@@ -35,6 +35,10 @@
     margin-bottom: 10px;
     border: none;
     border-radius: 10px;
+    
+    &::placeholder {
+      
+    }
   }
   
   textarea {
@@ -44,5 +48,32 @@
     border: none;
     border-radius: 10px;
     resize: none;
+  }
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .form {
+    width: auto;
+    padding: 0 20px;
+  }
+  
+  .form__label {
+    display: none;
+  }
+  
+  .form__input {
+    // width: 100%;
+    margin: auto;
+    
+    input {
+      width: auto;
+      padding: 0 20px;
+    }
+    
+    textarea {
+      width: 98%;
+    }
   }
 }

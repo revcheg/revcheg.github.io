@@ -8,6 +8,10 @@ body {
   margin: auto;
 }
 
-@media screen and ($tablet-widths) {}
+@media screen and ($tablet-widths) {
+  .container {
+    width: 95%;
+  }
+}
 
 @media screen and ($mobile-widths) {}

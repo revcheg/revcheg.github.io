@@ -21,3 +21,20 @@
     text-transform: uppercase;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .contact {
+    flex-direction: column;
+  }
+  
+  .contact__left {
+    width: 100%;
+    height: 600px;
+  }
+  
+  .contact__right {
+    width: 100%;
+  }
+}
+
+@media screen and ($mobile-widths) {}

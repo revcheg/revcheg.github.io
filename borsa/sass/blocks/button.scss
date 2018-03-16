@@ -31,3 +31,20 @@
     background: transparent;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .button {
+    font-size: 14px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .button {
+    
+    &--slider {
+      margin: 5px 0;
+      padding: 25px 72px;
+      text-align: center;
+    }
+  }
+}

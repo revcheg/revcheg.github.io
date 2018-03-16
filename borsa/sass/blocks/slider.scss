@@ -46,3 +46,31 @@
   background: url('../img/slide-5.jpg') no-repeat center;
   background-size: cover;
 }
+
+@media screen and ($tablet-widths) {
+  .slider__container {
+    height: 600px;
+  }
+  
+  .slider__box {
+    
+    h2 {
+      font-size: 60px;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .slider__box {
+    
+    h2 {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+  
+  .slider__link {
+    display: flex;
+    flex-direction: column;
+  }
+}

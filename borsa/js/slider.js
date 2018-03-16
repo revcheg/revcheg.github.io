@@ -15,4 +15,10 @@ $('.comment__slider').slick({
   centerMode: true,
   // centerPadding: '60px',
   slidesToShow: 5,
+  responsive: [{
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 3
+    }
+  }]
 });

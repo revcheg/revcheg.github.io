@@ -51,3 +51,11 @@
     opacity: 0;
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .comment {
+    display: none;
+  }
+}
