@@ -486,6 +486,14 @@ body {
     margin-bottom: 10px;
     border: none;
     border-radius: 10px; }
+    .form__input input::-webkit-input-placeholder {
+      font-size: 0; }
+    .form__input input:-ms-input-placeholder {
+      font-size: 0; }
+    .form__input input::-ms-input-placeholder {
+      font-size: 0; }
+    .form__input input::placeholder {
+      font-size: 0; }
   .form__input textarea {
     width: 370px;
     height: 145px;
@@ -505,6 +513,14 @@ body {
     .form__input input {
       width: auto;
       padding: 0 20px; }
+      .form__input input::-webkit-input-placeholder {
+        font-size: 12px; }
+      .form__input input:-ms-input-placeholder {
+        font-size: 12px; }
+      .form__input input::-ms-input-placeholder {
+        font-size: 12px; }
+      .form__input input::placeholder {
+        font-size: 12px; }
     .form__input textarea {
       width: 98%; } }
 
