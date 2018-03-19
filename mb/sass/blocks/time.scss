@@ -1,0 +1,15 @@
+.time {
+  padding: 20px 0;
+  border-bottom: 1px solid $mc;
+}
+
+.time__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time__box {
+  color: $mc;
+  font-size: 13px;
+  font-family: 'ProximaNova', sans-serif;
+}

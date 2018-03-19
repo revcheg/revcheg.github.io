@@ -1,0 +1,19 @@
+.button {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'ProximaNova', sans-serif;
+  text-decoration: none;
+  border-radius: 5px;
+  
+  &--blue {
+    margin: 0 10px;
+    padding: 10px 50px;
+    background: $mc;
+  }
+  
+  &--red {
+    padding: 20px 60px;
+    text-transform: uppercase;
+    background: #ad0000;
+  }
+}

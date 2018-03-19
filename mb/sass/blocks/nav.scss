@@ -1,0 +1,15 @@
+.nav {
+  padding: 20px 0;
+}
+
+.nav__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
