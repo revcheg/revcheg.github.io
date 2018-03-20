@@ -1,0 +1,61 @@
+.counter {
+  padding: 50px 0;
+  
+  hr {
+    height: 1px;
+    margin: 40px 0;
+    border: none;
+    background: $mc;
+  }
+}
+
+.counter__investor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  margin: auto;
+  color: $mc;
+  font-size: 18px;
+  font-family: 'ProximaNovaLight', sans-serif;
+  
+  span {
+    font-size: 48px;
+    font-family: 'ProximaNovaExtraBold', sans-serif;
+  }
+}
+
+.counter__flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.counter__client {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  color: $mc;
+  font-size: 18px;
+  font-family: 'ProximaNovaLight', sans-serif;
+  
+  span {
+    font-size: 35px;
+    font-family: 'ProximaNovaExtraBold', sans-serif;
+  }
+}
+
+.counter__transactions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  color: $mc;
+  font-size: 18px;
+  font-family: 'ProximaNovaLight', sans-serif;
+  
+  span {
+    font-size: 35px;
+    font-family: 'ProximaNovaExtraBold', sans-serif;
+  }
+}

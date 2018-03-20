@@ -1,18 +1,19 @@
 .title {
+  padding: 0 0 95px 0;
   color: #fff;
   text-align: center;
   background: $mc url('../img/title-bg.jpg') top;
   background-size: cover;
   
   h1 {
-    margin-top: 0;
-    padding-top: 260px;
+    margin: 0 0 60px 0;
+    padding: 260px 0 0 0;
     font-size: 60px;
     font-family: 'ProximaNovaExtraBold', sans-serif;
   }
   
   p {
-    margin-bottom: 110px;
+    margin: 0 0 110px 0;
     font-size: 25px;
     font-family: 'ProximaNovaLight', sans-serif;
   }
@@ -20,11 +21,11 @@
 
 .title__down {
   display: block;
-  margin: 0 auto;
-  margin-top: 45px;
-  padding-bottom: 95px;
+  margin: 45px auto 0;
   border: none;
   background: transparent;
+  cursor: pointer;
+  outline: none;
 }
 
 .title__dot {
@@ -60,7 +61,7 @@
   display: block;
   width: 22px;
   height: 31px;
-  margin-top: 15px;
+  margin: 15px 0 0 0;
   background: url('../img/title-mouse.png') no-repeat top;
   animation: mouse;
   animation-duration: 1s;

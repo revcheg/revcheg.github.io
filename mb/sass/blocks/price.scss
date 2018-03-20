@@ -1,0 +1,89 @@
+.price {
+  padding: 55px 0;
+  background: #f2f2f2;
+}
+
+.price__flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price__left {
+  padding: 40px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 12px 43px 0px rgba(0, 0, 0, 0.2);
+}
+
+.price__title {
+  font-size: 25px;
+  font-family: 'ProximaNovaLight', sans-serif;
+}
+
+.price__time {
+  color: #bab4b4;
+  font-size: 25px;
+  font-family: 'ProximaNova', sans-serif;
+}
+
+.price__course {
+  margin: 25px 0 35px 0;
+  font-size: 25px;
+  font-family: 'ProximaNova', sans-serif;
+  
+  span {
+    color: $mc;
+    font-family: 'ProximaNovaBold', sans-serif;
+  }
+}
+
+.price__counter {
+  
+  span {
+    padding: 10px 15px;
+    color: $mc;
+    font-size: 35px;
+    font-family: 'ProximaNovaBold', sans-serif;
+    background: #e8e8e8;
+  }
+}
+
+.price__right {
+  
+  b {
+    display: block;
+    margin: 0 0 20px 0;
+    color: $mc;
+    font-size: 35px;
+    font-family: 'ProximaNovaBold', sans-serif;
+  }
+  
+  p {
+    margin: 60px 0 0 0;
+    font-size: 20px;
+    font-family: 'ProximaNovaLight', sans-serif;
+  }
+}
+
+.price__select {
+  width: 100%;
+  margin: 50px 0 0 0;
+  padding: 20px 0;
+  border: 1px solid $mc;
+  border-radius: 5px;
+  background: transparent;
+  
+  p {
+    margin: 0;
+  }
+}
+
+.price__name {
+  
+  padding: 0 0 0 30px;
+  font-size: 20px;
+  font-family: 'ProximaNovaLight', sans-serif;
+  background: url('../img/price-bitcoin.png') no-repeat left;
+  background-size: contain;
+}

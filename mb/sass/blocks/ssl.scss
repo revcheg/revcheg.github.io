@@ -1,0 +1,21 @@
+.ssl {
+  padding: 70px 0;
+  color: #fff;
+  text-align: center;
+  background: $mc url('../img/ssl-bg.jpg') no-repeat top;
+  background-size: cover;
+  
+  img {
+    
+  }
+}
+
+.ssl__title {
+  font-size: 35px;
+  font-family: 'ProximaNovaBold', sans-serif;
+}
+
+.ssl__text {
+  font-size: 20px;
+  font-family: 'ProximaNovaLight', sans-serif;
+}

@@ -1,0 +1,17 @@
+.profit {
+  padding: 110px 0;
+  background: $mc url('../img/profit-bg.jpg') no-repeat top;
+  background-size: cover;
+  
+  p {
+    margin: 0;
+    color: #fff;
+    font-size: 35px;
+    font-family: 'ProximaNova', sans-serif;
+    text-align: center;
+    
+    span {
+      font-family: 'ProximaNovaExtraBold', sans-serif;
+    }
+  }
+}

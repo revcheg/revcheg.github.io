@@ -129,7 +129,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 0;
+  padding: 0;
   list-style: none; }
 
 .button {
@@ -148,27 +148,28 @@ body {
     background: #ad0000; }
 
 .title {
+  padding: 0 0 95px 0;
   color: #fff;
   text-align: center;
   background: #051c4f url("../img/title-bg.jpg") top;
   background-size: cover; }
   .title h1 {
-    margin-top: 0;
-    padding-top: 260px;
+    margin: 0 0 60px 0;
+    padding: 260px 0 0 0;
     font-size: 60px;
     font-family: 'ProximaNovaExtraBold', sans-serif; }
   .title p {
-    margin-bottom: 110px;
+    margin: 0 0 110px 0;
     font-size: 25px;
     font-family: 'ProximaNovaLight', sans-serif; }
 
 .title__down {
   display: block;
-  margin: 0 auto;
-  margin-top: 45px;
-  padding-bottom: 95px;
+  margin: 45px auto 0;
   border: none;
-  background: transparent; }
+  background: transparent;
+  cursor: pointer;
+  outline: none; }
 
 .title__dot {
   display: block;
@@ -206,7 +207,7 @@ body {
   display: block;
   width: 22px;
   height: 31px;
-  margin-top: 15px;
+  margin: 15px 0 0 0;
   background: url("../img/title-mouse.png") no-repeat top;
   -webkit-animation: mouse;
   animation: mouse;
@@ -242,3 +243,215 @@ body {
     top: 0; }
   100% {
     top: 10px; } }
+
+.counter {
+  padding: 50px 0; }
+  .counter hr {
+    height: 1px;
+    margin: 40px 0;
+    border: none;
+    background: #051c4f; }
+
+.counter__investor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 280px;
+  margin: auto;
+  color: #051c4f;
+  font-size: 18px;
+  font-family: 'ProximaNovaLight', sans-serif; }
+  .counter__investor span {
+    font-size: 48px;
+    font-family: 'ProximaNovaExtraBold', sans-serif; }
+
+.counter__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.counter__client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 400px;
+  color: #051c4f;
+  font-size: 18px;
+  font-family: 'ProximaNovaLight', sans-serif; }
+  .counter__client span {
+    font-size: 35px;
+    font-family: 'ProximaNovaExtraBold', sans-serif; }
+
+.counter__transactions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 400px;
+  color: #051c4f;
+  font-size: 18px;
+  font-family: 'ProximaNovaLight', sans-serif; }
+  .counter__transactions span {
+    font-size: 35px;
+    font-family: 'ProximaNovaExtraBold', sans-serif; }
+
+.price {
+  padding: 55px 0;
+  background: #f2f2f2; }
+
+.price__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.price__left {
+  padding: 40px;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 12px 43px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 12px 43px 0px rgba(0, 0, 0, 0.2); }
+
+.price__title {
+  font-size: 25px;
+  font-family: 'ProximaNovaLight', sans-serif; }
+
+.price__time {
+  color: #bab4b4;
+  font-size: 25px;
+  font-family: 'ProximaNova', sans-serif; }
+
+.price__course {
+  margin: 25px 0 35px 0;
+  font-size: 25px;
+  font-family: 'ProximaNova', sans-serif; }
+  .price__course span {
+    color: #051c4f;
+    font-family: 'ProximaNovaBold', sans-serif; }
+
+.price__counter span {
+  padding: 10px 15px;
+  color: #051c4f;
+  font-size: 35px;
+  font-family: 'ProximaNovaBold', sans-serif;
+  background: #e8e8e8; }
+
+.price__right b {
+  display: block;
+  margin: 0 0 20px 0;
+  color: #051c4f;
+  font-size: 35px;
+  font-family: 'ProximaNovaBold', sans-serif; }
+
+.price__right p {
+  margin: 60px 0 0 0;
+  font-size: 20px;
+  font-family: 'ProximaNovaLight', sans-serif; }
+
+.price__select {
+  width: 100%;
+  margin: 50px 0 0 0;
+  padding: 20px 0;
+  border: 1px solid #051c4f;
+  border-radius: 5px;
+  background: transparent; }
+  .price__select p {
+    margin: 0; }
+
+.price__name {
+  padding: 0 0 0 30px;
+  font-size: 20px;
+  font-family: 'ProximaNovaLight', sans-serif;
+  background: url("../img/price-bitcoin.png") no-repeat left;
+  background-size: contain; }
+
+.steps {
+  padding: 75px 0; }
+  .steps h1 {
+    margin: 0 0 60px 0;
+    color: #051c4f;
+    font-size: 35px;
+    font-family: 'ProximaNovaBold', sans-serif;
+    text-align: center; }
+
+.steps__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.steps__box {
+  width: 230px;
+  text-align: center; }
+  .steps__box small {
+    display: block;
+    padding: 0 0 10px 0;
+    color: #726f6f;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'ProximaNova', sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d1d1d1; }
+  .steps__box img {
+    display: block;
+    margin: 30px auto; }
+  .steps__box b {
+    color: #051c4f;
+    font-size: 22px;
+    font-family: 'ProximaNovaBold', sans-serif; }
+  .steps__box p {
+    margin: 15px 0 0 0;
+    font-size: 18px;
+    font-family: 'ProximaNovaLight', sans-serif; }
+
+.profit {
+  padding: 110px 0;
+  background: #051c4f url("../img/profit-bg.jpg") no-repeat top;
+  background-size: cover; }
+  .profit p {
+    margin: 0;
+    color: #fff;
+    font-size: 35px;
+    font-family: 'ProximaNova', sans-serif;
+    text-align: center; }
+    .profit p span {
+      font-family: 'ProximaNovaExtraBold', sans-serif; }
+
+.ssl {
+  padding: 70px 0;
+  color: #fff;
+  text-align: center;
+  background: #051c4f url("../img/ssl-bg.jpg") no-repeat top;
+  background-size: cover; }
+
+.ssl__title {
+  font-size: 35px;
+  font-family: 'ProximaNovaBold', sans-serif; }
+
+.ssl__text {
+  font-size: 20px;
+  font-family: 'ProximaNovaLight', sans-serif; }
