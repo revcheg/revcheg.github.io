@@ -16,4 +16,12 @@
     text-transform: uppercase;
     background: #ad0000;
   }
+  
+  &--unclick {
+    padding: 10px 50px;
+    color: $mc;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid $mc;
+  }
 }

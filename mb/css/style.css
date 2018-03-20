@@ -146,6 +146,12 @@ body {
     padding: 20px 60px;
     text-transform: uppercase;
     background: #ad0000; }
+  .button--unclick {
+    padding: 10px 50px;
+    color: #051c4f;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid #051c4f; }
 
 .title {
   padding: 0 0 95px 0;
@@ -455,3 +461,79 @@ body {
 .ssl__text {
   font-size: 20px;
   font-family: 'ProximaNovaLight', sans-serif; }
+
+.easy {
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+  background: #051c4f url("../img/ssl-bg.jpg") no-repeat top;
+  background-size: cover; }
+
+.easy__title {
+  font-size: 35px;
+  font-family: 'ProximaNovaBold', sans-serif; }
+
+.easy__text {
+  margin: 0 0 70px 0;
+  font-size: 20px;
+  font-family: 'ProximaNovaLight', sans-serif; }
+
+.type {
+  padding: 100px 0 60px 0;
+  text-align: center; }
+  .type h1 {
+    margin: 0 0 60px 0;
+    color: #051c4f;
+    font-size: 35px;
+    font-family: 'ProximaNovaBold', sans-serif; }
+
+.type__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.type__box {
+  padding: 50px;
+  -webkit-box-shadow: 0px 4px 58.8px 1.2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 58.8px 1.2px rgba(0, 0, 0, 0.2); }
+  .type__box h2 {
+    margin: 0;
+    padding: 0 0 30px 0;
+    color: #051c4f;
+    font-size: 36px;
+    font-family: 'ProximaNovaBold', sans-serif;
+    border-bottom: 1px solid #d1d1d1; }
+  .type__box p {
+    margin: 50px 0 30px 0;
+    color: #858484;
+    font-size: 18px;
+    font-family: 'ProximaNovaLight', sans-serif; }
+  .type__box b {
+    display: block;
+    margin: 0 0 60px 0;
+    font-size: 36px;
+    font-family: 'ProximaNovaLight', sans-serif; }
+
+.type__box--center {
+  padding: 0 0 50px 0; }
+  .type__box--center header {
+    padding: 55px 0 30px 0;
+    background: #051c4f; }
+  .type__box--center h2 {
+    padding: 0;
+    color: #fff;
+    font-size: 41px;
+    border: none; }
+  .type__box--center p {
+    margin: 60px 0 40px 0;
+    padding: 0 60px; }
+  .type__box--center b {
+    color: #051c4f; }
+  .type__box--center a {
+    margin: 0 0 30px 0; }
