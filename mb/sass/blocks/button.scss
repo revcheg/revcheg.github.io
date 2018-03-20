@@ -24,4 +24,12 @@
     text-transform: uppercase;
     border: 1px solid $mc;
   }
+  
+  &--click {
+    padding: 10px 50px;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    background: $mc;
+  }
 }

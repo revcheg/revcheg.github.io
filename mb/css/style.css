@@ -152,6 +152,12 @@ body {
     font-size: 15px;
     text-transform: uppercase;
     border: 1px solid #051c4f; }
+  .button--click {
+    padding: 10px 50px;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    background: #051c4f; }
 
 .title {
   padding: 0 0 95px 0;
@@ -486,6 +492,12 @@ body {
     color: #051c4f;
     font-size: 35px;
     font-family: 'ProximaNovaBold', sans-serif; }
+  .type hr {
+    width: 500px;
+    height: 1px;
+    margin: 65px auto 35px;
+    border: none;
+    background: #051c4f; }
 
 .type__flex {
   display: -webkit-box;
