@@ -10,6 +10,54 @@ body {
   .container {
     width: 95%; } }
 
+/* roboto-100 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Roboto Thin"), local("Roboto-Thin"), url("../fonts/roboto-v18-latin-100.woff2") format("woff2"), url("../fonts/roboto-v18-latin-100.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url("../fonts/roboto-v18-latin-300.woff2") format("woff2"), url("../fonts/roboto-v18-latin-300.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v18-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v18-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/roboto-v18-latin-500.woff2") format("woff2"), url("../fonts/roboto-v18-latin-500.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/roboto-v18-latin-700.woff2") format("woff2"), url("../fonts/roboto-v18-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* roboto-900 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local("Roboto Black"), local("Roboto-Black"), url("../fonts/roboto-v18-latin-900.woff2") format("woff2"), url("../fonts/roboto-v18-latin-900.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
 .mobile {
   padding: 70px 0; }
   .mobile h1 {
@@ -149,3 +197,56 @@ body {
     width: 100%;
     background: url("../img/mockup-2.png") no-repeat top;
     background-size: contain; } }
+
+.webtrader {
+  padding: 70px 0; }
+  .webtrader h1 {
+    margin: 0 0 70px 0;
+    font-size: 40px;
+    font-weight: inherit;
+    font-family: 'Roboto Bold', sans-serif;
+    text-align: center;
+    text-transform: uppercase; }
+
+.webtrader__img {
+  background: url("../img/web-mockup-1.png") no-repeat top;
+  background-size: 800px; }
+
+.webtrader__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.webtrader__box {
+  width: 210px;
+  text-align: center; }
+  .webtrader__box h2 {
+    padding: 17px 0;
+    font-size: 15px;
+    font-family: 'Roboto Black', sans-serif;
+    background: url("../img/web-number.svg") no-repeat top;
+    background-size: 50px; }
+  .webtrader__box p {
+    font-size: 12px;
+    font-family: 'Roboto Light', sans-serif; }
+
+.webtrader__box--right {
+  position: relative; }
+  .webtrader__box--right::after {
+    content: '';
+    position: absolute;
+    top: 36px;
+    right: -102px;
+    width: 180px;
+    border: 1px dotted #000; }
+  .webtrader__box--right::before {
+    content: '';
+    position: absolute;
+    top: 32px;
+    right: -105px;
+    width: 10px;
+    height: 10px;
+    background: url("../img/web-point.svg"); }
