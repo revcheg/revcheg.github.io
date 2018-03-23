@@ -11,6 +11,21 @@ $('.slider').slick({
   }]
 });
 
+$('.news__slider').slick({
+  autoplay: true,
+  autoplaySpeed: 2000,
+  // infinite: true,
+  slidesToShow: 3,
+  arrows: true,
+  dots: false,
+  responsive: [{
+    breakpoint: 768,
+    settings: {
+      autoplay: false
+    }
+  }]
+});
+
 $('.comment__slider').slick({
   centerMode: true,
   // centerPadding: '60px',

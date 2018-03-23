@@ -6,6 +6,11 @@
     width: 100%;
     padding: 30px 0;
     background: $mc;
+    
+    &:hover {
+      font-size: 19px;
+      box-shadow: 0px 2px 4px 0px rgba(104, 74, 202, 0.29);
+    }
   }
 }
 

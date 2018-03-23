@@ -23,10 +23,19 @@
 }
 
 .edge__box {
-  width: 250px;
+  width: 350px;
   padding-top: 150px;
-  font-family: 'Open Sans Bold', sans-serif;
-  text-transform: uppercase;
+  
+  b {
+    font-family: 'Open Sans Bold', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+  }
   
   &--1 {
     background: url('../img/edge-1.svg') no-repeat top;
