@@ -910,3 +910,59 @@ body {
   .footer__flex {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; } }
+
+.title {
+  padding: 200px 0 20px 0; }
+  .title--account-types {
+    background: #eaeaea url("../img/title-acc.jpg") no-repeat bottom;
+    background-size: cover; }
+  .title--mobile {
+    background: #eaeaea url("../img/title-mobile.jpg") no-repeat bottom;
+    background-size: cover; }
+  .title h1 {
+    margin: 0;
+    font-size: 70px;
+    font-family: 'Open Sans Bold', sans-serif; }
+
+.table {
+  padding: 60px 0; }
+  .table table {
+    width: 100%;
+    margin: 0 0 70px 0; }
+    .table table b {
+      font-size: 25px;
+      font-family: 'Open Sans Bold', sans-serif;
+      text-transform: uppercase; }
+    .table table p {
+      margin: 5px 0;
+      font-size: 13px;
+      font-family: 'Open Sans Regular', sans-serif; }
+    .table table a {
+      display: block;
+      width: 150px;
+      margin: 15px auto 0;
+      padding: 5px 0;
+      font-size: 13px;
+      background: #29a643; }
+      .table table a:hover {
+        -webkit-box-shadow: 0px 2px 4px 0px rgba(104, 74, 202, 0.29);
+        box-shadow: 0px 2px 4px 0px rgba(104, 74, 202, 0.29); }
+    .table table td {
+      padding: 10px 0;
+      font-family: 'Open Sans Bold', sans-serif;
+      border-bottom: 1px dotted #000; }
+  .table h1 {
+    margin: 0;
+    font-size: 26px;
+    font-family: 'Open Sans Bold', sans-serif;
+    text-transform: uppercase; }
+  .table p {
+    font-size: 18px;
+    font-family: 'Open Sans Regular', sans-serif; }
+  .table b {
+    font-size: 18px;
+    font-family: 'Open Sans Bold', sans-serif; }
+
+.table__check-g {
+  background: url("../img/table-g.svg") no-repeat center;
+  background-size: 16px; }
