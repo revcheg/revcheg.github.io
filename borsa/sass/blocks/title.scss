@@ -1,15 +1,21 @@
 .title {
   padding: 100px 0 20px 0;
   
+  h1 {
+    margin: 0;
+    font-size: 70px;
+    font-family: 'Open Sans Bold', sans-serif;
+  }
+  
   &--account-types {
     background: #eaeaea url('../img/title-acc.jpg') no-repeat bottom;
     background-size: cover;
     
-    h1 {
-      margin: 0;
-      font-size: 70px;
-      font-family: 'Open Sans Bold', sans-serif;
-    }
+    // h1 {
+    //   margin: 0;
+    //   font-size: 70px;
+    //   font-family: 'Open Sans Bold', sans-serif;
+    // }
   }
   
   &--mobile {
@@ -22,14 +28,25 @@
     background-size: cover;
     
     h1 {
-      margin: 0;
-      font-size: 70px;
+      // margin: 0;
+      // font-size: 70px;
       font-weight: inherit;
       font-family: 'Open Sans Regular', sans-serif;
       
       b {
         font-family: 'Open Sans Bold', sans-serif;
       }
+    }
+  }
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .title {
+    
+    h1 {
+      font-size: 30px;
     }
   }
 }

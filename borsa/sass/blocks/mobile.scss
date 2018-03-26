@@ -37,3 +37,20 @@
     list-style-position: inside;
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .mobile__flex {
+    flex-direction: column;
+  }
+  
+  .mobile__meta {
+    height: 162px;
+    margin: auto;
+  }
+  
+  .mobile__text {
+    width: auto;
+  }
+}

@@ -59,3 +59,20 @@
   background: url('../img/table-g.svg') no-repeat center;
   background-size: 16px;
 }
+
+.table__check-r {
+  background: url('../img/table-r.svg') no-repeat center;
+  background-size: 15px;
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .table {
+    
+    table {
+      display: block;
+      overflow-x: auto;
+    }
+  }
+}
