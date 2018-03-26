@@ -13,3 +13,11 @@
   font-size: 13px;
   font-family: 'ProximaNova', sans-serif;
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .time {
+    display: none;
+  }
+}

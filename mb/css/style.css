@@ -111,6 +111,10 @@ body {
   font-size: 13px;
   font-family: 'ProximaNova', sans-serif; }
 
+@media screen and (max-width: 768px) {
+  .time {
+    display: none; } }
+
 .nav {
   padding: 20px 0; }
 
@@ -256,6 +260,17 @@ body {
   100% {
     top: 10px; } }
 
+@media screen and (max-width: 768px) {
+  .title h1 {
+    margin: 0 0 40px 0;
+    padding: 120px 0 0 0;
+    font-size: 30px; }
+  .title p {
+    margin: 0 0 60px 0;
+    font-size: 18px; }
+  .title__down {
+    display: none; } }
+
 .counter {
   padding: 50px 0; }
   .counter hr {
@@ -326,6 +341,16 @@ body {
     font-size: 35px;
     font-family: 'ProximaNovaExtraBold', sans-serif; }
 
+@media screen and (max-width: 768px) {
+  .counter__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; } }
+
 .price {
   padding: 55px 0;
   background: #f2f2f2; }
@@ -341,6 +366,7 @@ body {
   align-items: center; }
 
 .price__left {
+  margin: 0 20px 0 0;
   padding: 40px;
   text-align: center;
   border-radius: 5px;
@@ -439,6 +465,20 @@ body {
     margin: 15px 0 0 0;
     font-size: 18px;
     font-family: 'ProximaNovaLight', sans-serif; }
+
+@media screen and (max-width: 768px) {
+  .steps {
+    padding: 25px 0; }
+  .steps__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .steps__box {
+    margin: 0 0 30px 0; } }
 
 .profit {
   padding: 110px 0;

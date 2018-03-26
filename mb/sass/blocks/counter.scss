@@ -59,3 +59,12 @@
     font-family: 'ProximaNovaExtraBold', sans-serif;
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .counter__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}

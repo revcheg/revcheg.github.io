@@ -89,3 +89,25 @@
     top: 10px;
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .title {
+    
+    h1 {
+      margin: 0 0 40px 0;
+      padding: 120px 0 0 0;
+      font-size: 30px;
+    }
+    
+    p {
+      margin: 0 0 60px 0;
+      font-size: 18px;
+    }
+  }
+  
+  .title__down {
+    display: none;
+  }
+}
