@@ -1021,3 +1021,8 @@ body {
     font-size: 26px;
     font-family: 'Open Sans Bold', sans-serif;
     text-transform: uppercase; }
+  .trade ul {
+    padding: 0;
+    font-family: 'Open Sans Regular', sans-serif;
+    line-height: 30px;
+    list-style: inside url("../img/table-g.svg"); }
