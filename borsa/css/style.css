@@ -35,7 +35,9 @@ body {
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
 
 .header {
-  padding: 10px 0; }
+  padding: 10px 0;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(104, 74, 202, 0.3);
+  box-shadow: 0px 2px 4px 0px rgba(104, 74, 202, 0.3); }
   .header--inner {
     position: -webkit-sticky;
     position: sticky;
@@ -324,7 +326,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 800px; }
+  height: 600px; }
 
 .slider__box h2 {
   margin-top: 0;
