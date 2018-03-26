@@ -1,6 +1,6 @@
 .button {
   color: #fff;
-  font-size: 18px;
+  // font-size: 16px;
   font-family: 'Open Sans Bold', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -9,14 +9,13 @@
   
   // header
   &--header {
-    padding: 12px 30px;
+    padding: 10px 30px;
   }
   
   &--green {
     background: $mc;
     
     &:hover {
-      font-size: 19px;
       box-shadow: 0px 2px 4px 0px rgba(104, 74, 202, 0.29);
     }
   }
@@ -25,7 +24,6 @@
     background: #c1c1c1;
     
     &:hover {
-      font-size: 19px;
       box-shadow: 0px 2px 4px 0px rgba(104, 74, 202, 0.29);
     }
   }

@@ -1,9 +1,15 @@
 .title {
-  padding: 200px 0 20px 0;
+  padding: 100px 0 20px 0;
   
   &--account-types {
     background: #eaeaea url('../img/title-acc.jpg') no-repeat bottom;
     background-size: cover;
+    
+    h1 {
+      margin: 0;
+      font-size: 70px;
+      font-family: 'Open Sans Bold', sans-serif;
+    }
   }
   
   &--mobile {
@@ -11,9 +17,19 @@
     background-size: cover;
   }
   
-  h1 {
-    margin: 0;
-    font-size: 70px;
-    font-family: 'Open Sans Bold', sans-serif;
+  &--trade {
+    background: #eaeaea url('../img/title-trade.jpg') no-repeat bottom;
+    background-size: cover;
+    
+    h1 {
+      margin: 0;
+      font-size: 70px;
+      font-weight: inherit;
+      font-family: 'Open Sans Regular', sans-serif;
+      
+      b {
+        font-family: 'Open Sans Bold', sans-serif;
+      }
+    }
   }
 }
