@@ -32,7 +32,12 @@
     <nav class="nav">
       <div class="container">
         <div class="nav__flex">
-          <img src="img/logo.png" width="183" alt="MasterBinary">
+          <picture>
+            <source srcset="img/logo-s.png" media="(max-width: 768px)">
+            <source srcset="img/logo.png">
+            <img src="img/logo.png" alt="MasterBinary">
+          </picture>
+          <!-- <img src="img/logo.png" width="183" alt="MasterBinary"> -->
           <ul class="nav__list">
             <li><a class="button  button--blue" href="#">Вход</a></li>
             <li><a class="button  button--blue" href="#">Регистрация</a></li>
@@ -58,19 +63,17 @@
   <section class="counter">
     <div class="container">
       <div class="counter__investor">
-        <img src="img/counter-investor.svg" width="50" alt="">
         <span>243</span>
         <p>Инвестора<br>онлайн</p>
       </div>
         <hr>
       <div class="counter__flex">
         <div class="counter__client">
-          <img src="img/counter-client.png" alt="">
           <span>21 230</span> 
           <p>Зарегистрированных<br>клиентов</p>
         </div>
+          <hr>
         <div class="counter__transactions">
-          <img src="img/counter-transactions.svg" width="47" alt="">
           <span>23 871 318$</span> 
           <p>Общий объем<br>транзакций</p>
         </div>
