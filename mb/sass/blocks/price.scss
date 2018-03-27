@@ -3,6 +3,10 @@
   background: #f2f2f2;
 }
 
+.price__title-m {
+  display: none;
+}
+
 .price__flex {
   display: flex;
   justify-content: space-around;
@@ -81,10 +85,71 @@
 }
 
 .price__name {
-  
   padding: 0 0 0 30px;
   font-size: 20px;
   font-family: 'ProximaNovaLight', sans-serif;
   background: url('../img/price-bitcoin.png') no-repeat left;
   background-size: contain;
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .price {
+    padding: 30px 0;
+  }
+  
+  .price__title-m {
+    display: block;
+    color: $mc;
+    font-size: 24px;
+    font-family: 'ProximaNovaBold', sans-serif;
+    text-align: center;
+  }
+  
+  .price__flex {
+    flex-direction: column;
+    
+    &--select {
+      flex-direction: row;
+    }
+  }
+  
+  .price__left {
+    margin: 30px 0 0 0;
+    padding: 30px 30px 40px;
+    
+    img {
+      width: 50px;
+    }
+  }
+  
+  .price__title,
+  .price__time,
+  .price__course {
+    font-size: 20px;
+  }
+  
+  .price__counter {
+    
+    span {
+      font-size: 28px;
+    }
+  }
+  
+  .price__right {
+    
+    b {
+      display: none;
+    }
+    
+    p {
+      margin: 30px 0 20px;
+    }
+  }
+  
+  .price__select {
+    margin: 0;
+    padding: 0;
+  }
 }

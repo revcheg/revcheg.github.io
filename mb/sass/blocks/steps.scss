@@ -52,7 +52,12 @@
 
 @media screen and ($mobile-widths) {
   .steps {
-    padding: 25px 0;
+    padding: 30px 0;
+    
+    h1 {
+      margin: 0 0 40px 0;
+      font-size: 24px;
+    }
   }
   
   .steps__flex {
@@ -61,6 +66,10 @@
   }
   
   .steps__box {
-    margin: 0 0 30px 0;
+    margin: 0 0 50px 0;
+    
+    &:last-child {
+      margin: 0;
+    }
   }
 }
