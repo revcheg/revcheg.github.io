@@ -13,7 +13,7 @@
 //   }
 // });
 
-var link = document.querySelector(".btn--popup");
+var link = document.querySelectorAll(".btn--popup");
 var popup = document.querySelector(".popup");
 var overlay = document.querySelector('.popup__overlay');
 var login = popup.querySelector("[name=login]");
@@ -22,14 +22,17 @@ var form = popup.querySelector("form");
 var close = document.querySelector(".modal-login__closed");
 var storage = localStorage.getItem("login");
 
-link.addEventListener("click", function(event) {
-  event.preventDefault();
-  popup.classList.remove("popup--hide");
-  popup.classList.add("popup--show");
-  overlay.classList.remove('popup__overlay--hide');
-  overlay.classList.add('popup__overlay--show');
-  login.focus();
-});
+for (var i = 0; i < link.length; i++) {
+  link[i].addEventListener("click", function(event) {
+    event.preventDefault();
+    popup.classList.remove("popup--hide");
+    popup.classList.add("popup--show");
+    overlay.classList.remove('popup__overlay--hide');
+    overlay.classList.add('popup__overlay--show');
+    login.focus();
+  });
+}
+
 
 // close.addEventListener("click", function(event) {
 //   event.preventDefault();
