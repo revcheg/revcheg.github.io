@@ -108,10 +108,21 @@
     
     &--mobile {
       display: block !important;
+      width: 300px;
+      margin: auto;
+      box-shadow: 0px 4px 58.8px 1.2px rgba(0, 0, 0, 0.2);
     }
   }
   
   .type__box {
     width: 300px;
+    box-shadow: none;
+    
+    &--center {
+      
+      p {
+        margin: 50px 0 30px 0; 
+      }
+    }
   }
 }

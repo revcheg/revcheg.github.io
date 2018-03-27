@@ -165,7 +165,11 @@ body {
 
 @media screen and (max-width: 768px) {
   .button {
-    font-size: 16px; } }
+    font-size: 16px; }
+    .button--blue {
+      padding: 10px 40px; }
+    .button--unclick {
+      padding: 10px 40px; } }
 
 .title {
   padding: 0 0 95px 0;
@@ -721,6 +725,14 @@ body {
   .type__flex {
     display: none; }
     .type__flex--mobile {
-      display: block !important; }
+      display: block !important;
+      width: 300px;
+      margin: auto;
+      -webkit-box-shadow: 0px 4px 58.8px 1.2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 4px 58.8px 1.2px rgba(0, 0, 0, 0.2); }
   .type__box {
-    width: 300px; } }
+    width: 300px;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .type__box--center p {
+      margin: 50px 0 30px 0; } }

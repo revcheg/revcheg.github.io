@@ -22,7 +22,6 @@ $('.type__flex--mobile').slick({
     breakpoint: 768,
     settings: {
       autoplay: false
-      
     }
   }]
 });
