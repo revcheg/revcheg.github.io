@@ -27,8 +27,7 @@
       <h1>Become a successful broker</h1>
       <b>Run your own Forex | CFD | Bitcoin Brand</b>
       <div class="title__links">
-        <a class="btn  btn--click" href="#">Register</a>
-        <a class="btn  btn--unclick" href="#">Contact support</a>
+        <a class="btn  btn--click  btn--popup" href="#">Contact Us</a>
       </div>
     </div>
   </section>
@@ -76,7 +75,6 @@
         <p>Choose from two user-focused CFD offerings: our recently improved full-screen solution or our classic embedded platform. Both feature-rich interfaces are designed for optimal user engagement.</p>
         <b>IOS and android app</b>
         <p>Simple and sophisticated native mobile trading apps for iPhone and Android as well as a mobile-friendly web app for all other devices. Offer your traders powerful yet easy trading on the go.</p>
-        <a class="btn  btn--click" href="#">Click me</a>
       </div>
       <div id="manage" class="manual__content  manual__content--manage">
         <b>CRM</b>
@@ -87,7 +85,6 @@
         <p>Designed to promote self-registrations and self-deposits, our easy-to-navigate Client Area offers advanced registration modules, automated emailing, fast and secure payments and more.</p>
         <b>Plugins</b>
         <p>Harness the full potential of your MT4 platform through our wide variety of feature-rich plugins, designed, rigorously tested and updated regularly by our team of highly experienced developers.</p>
-        <a class="btn  btn--click" href="#">Click me</a>
       </div>
       <div id="integrate" class="manual__content  manual__content--integrate">
         <b>Payment Solutions</b>
@@ -98,7 +95,6 @@
         <p>Adaptability is key when it comes to your communication infrastructure. Fast deployment and full, flexible integration into the third party telephony, email, SMS, and chat vendors of your choice.</p>
         <b>Liquidity Providers</b>
         <p>For nearly a decade we have been working with the industry’s top liquidity providers. If a different one suits your needs better, we’ll happily integrate to any LP of your choosing.</p>
-        <a class="btn  btn--click" href="#">Click me</a>
       </div>
       <div id="grow" class="manual__content  manual__content--grow">
         <b>Success Manager</b>
@@ -109,7 +105,6 @@
         <p>Transform all the raw data entering your system into meaningful and actionable insights to streamline your operational infrastructure, boost marketing efficiency and help your business thrive.</p>
         <b>24/7 Customer Care</b>
         <p>Our team of highly experienced experts is available to assist you 24/7. We stand behind the value of the products and services we offer and commit to a strict SLA framework as part of our standard contract.</p>
-        <a class="btn  btn--click" href="#">Click me</a>
       </div>
     </div>
   </section>
@@ -119,7 +114,7 @@
       <p>In any situations all of our clients are to receive an immediate assistance on any issues, and two groups of professionals are in charge of it – Success and Support Groups.</p>
       <p>If you have troubles with the technical side of the platform, feel free to contact Support Group. They will lead you out of the dwell step by step and monitor the current situation. The Support Group constantly upgrade the platform’s software, as we are obliged to create the best business conditions for our clients and debug problems from the its appeal.</p>
       <p>The Success Group is ready to offer you required guidance on financial management, answer any of your questions and work with your on the profit optimization. Please, do not doubt if you should contact us, because we are client-oriented and will help you fully exploit your business potential and create personalized technologies and strategies.</p>
-      <a class="btn  btn--unclick btn--blue" href="#">Contact support</a>
+      <a class="btn  btn--unclick btn--blue" href="#">Contact us</a>
     </div>
   </section>
   <section class="edge">
@@ -217,6 +212,31 @@
       </div>
     </div>
   </footer>
+  <div class="popup__overlay  popup__overlay--hide">
+    <div class="popup  popup--hide">
+      <b>Contact Us</b>
+      <form>
+        <input type="text" name="login" placeholder="First Name*" required>
+        <input type="text" placeholder="Last Name*" required>
+        <input type="email" placeholder="Email*" required>
+        <input type="tel" placeholder="Phone number">
+        <textarea placeholder="Your message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <!-- <section class="modal-login">
+    <h2>Contact Us</h2>
+    <form class="form  modal-login__form" action="index.html" method="post">
+      <input class="modal-login__user" type="text" name="login" placeholder="Логин">
+      <input class="modal-login__password" type="password" name="password" placeholder="Пароль">
+      <label class="modal-login__remember"><input type="checkbox" name="remember"><span class="checkbox-indicator"></span>Запомните меня</label>
+      <a class="modal-login__restore" href="">Я забыл пароль!</a>
+      <button class="form__btn  modal-login__enter  btn" type="submit" name="button">Войти <span class="modal-login__text-hidden">в личный кабинет<span></button>
+      <button class="modal-login__closed  btn" type="button" name="button">Закрыть</button>
+    </form>
+  </section> -->
+  <script src="js/popup.js"></script>
   <script src="js/tabs.js"></script>
 </body>
 </html>

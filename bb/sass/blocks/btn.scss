@@ -8,11 +8,8 @@
   transition: 0.3s;
   
   &--click {
+    color: #fff;
     background: $mc;
-    
-    &:hover {
-      color: #fff;
-    }
   }
   
   &--unclick {

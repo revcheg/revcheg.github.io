@@ -13,6 +13,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  background: #e6e6e6;
 }
 
 .manual__button {
@@ -24,6 +25,7 @@
 
 .manual__links {
   width: 100%;
+  margin: 0 0 3px 0;
   padding: 50px;
   padding-right: 80px;
   color: #000;
@@ -54,12 +56,12 @@
       &::after {
         content: '';
         position: absolute;
-        top: 52px;
+        top: 56px;
         right: 150px;
-        width: 30px;
-        height: 22px;
-        background: url('../img/pointer.svg') no-repeat top;
-        background-size: contain;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $mc;
       }
     }
   }
@@ -82,12 +84,12 @@
       &::after {
         content: '';
         position: absolute;
-        top: 52px;
-        right: 175px;
-        width: 30px;
-        height: 22px;
-        background: url('../img/pointer.svg') no-repeat top;
-        background-size: contain;
+        top: 56px;
+        right: 180px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $mc;
       }
     }
   }
@@ -111,17 +113,18 @@
       &::after {
         content: '';
         position: absolute;
-        top: 52px;
-        right: 185px;
-        width: 30px;
-        height: 22px;
-        background: url('../img/pointer.svg') no-repeat top;
-        background-size: contain;
+        top: 56px;
+        right: 190px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $mc;
       }
     }
   }
   
   &--grow {
+    margin-bottom: 0;
     background: #d4c2a5;
     
     &.active {     
@@ -140,12 +143,12 @@
       &::after {
         content: '';
         position: absolute;
-        top: 52px;
-        right: 145px;
-        width: 30px;
-        height: 22px;
-        background: url('../img/pointer.svg') no-repeat top;
-        background-size: contain;
+        top: 56px;
+        right: 150px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $mc;
       }
     }
   }
@@ -163,7 +166,6 @@
   font-size: 16px;
   font-family: 'Proxima Nova Lt', sans-serif;
   border-left: none;
-  background: #e6e6e6;
   transition: 0.6s;
   
   b {
