@@ -22,6 +22,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  &--mobile {
+    display: none !important;
+  }
 }
 
 .type__box {
@@ -92,10 +96,19 @@
       margin: 0 0 25px 0;
       font-size: 24px;
     }
+    
+    hr {
+      display: none;
+    }
   }
   
   .type__flex {
-    flex-direction: column;
+    // flex-direction: column;
+    display: none;
+    
+    &--mobile {
+      display: block !important;
+    }
   }
   
   .type__box {

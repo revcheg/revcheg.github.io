@@ -11,17 +11,18 @@ $('.slider').slick({
   }]
 });
 
-$('.news__slider').slick({
+$('.type__flex--mobile').slick({
   autoplay: true,
   autoplaySpeed: 2000,
   // infinite: true,
-  slidesToShow: 3,
-  arrows: true,
-  dots: false,
+  slidesToShow: 1,
+  arrows: false,
+  dots: true,
   responsive: [{
     breakpoint: 768,
     settings: {
       autoplay: false
+      
     }
   }]
 });
