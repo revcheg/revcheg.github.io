@@ -19,7 +19,7 @@ var overlay = document.querySelector('.popup__overlay');
 var login = popup.querySelector("[name=login]");
 // var password = popup.querySelector("[name=password]");
 var form = popup.querySelector("form");
-var close = document.querySelector(".modal-login__closed");
+var close = document.querySelector(".popup__close");
 var storage = localStorage.getItem("login");
 
 for (var i = 0; i < link.length; i++) {
@@ -33,14 +33,21 @@ for (var i = 0; i < link.length; i++) {
   });
 }
 
+close.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup.classList.remove("popup--show");
+  overlay.classList.remove("popup__overlay--show");
+  popup.classList.add("popup--hide");
+  overlay.classList.add("popup__overlay--hide");
+});
 
-// close.addEventListener("click", function(event) {
-//   event.preventDefault();
-//   popup.classList.remove("modal-login--show");
-//   popup.classList.remove("modal-login--error");
-//   popup.classList.add("modal-login--hide");
-//   popup.classList.remove("modal-login--static");
-// });
+overlay.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup.classList.remove("popup--show");
+  popup.classList.add("popup--hide");
+  overlay.classList.remove("popup__overlay--show");
+  overlay.classList.add("popup__overlay--hide");
+});
 
 form.addEventListener("submit", function(event) {
   if (!login.value || !password.value) {

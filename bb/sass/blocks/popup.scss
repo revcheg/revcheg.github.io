@@ -65,7 +65,7 @@
       }
     }
     
-    button {
+    button[type="submit"] {
       height: 60px;
       padding: 20px 0;
       color: #fff;
@@ -74,6 +74,22 @@
       border: none;
       background: $mc;
     }
+  }
+}
+
+.popup__close {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 13px;
+  height: 13px;
+  border: none;
+  background: url('../img/close.svg') no-repeat top;
+  transition: 0.3s;
+  cursor: pointer;
+  
+  &:hover {
+    transform: rotate(90deg);
   }
 }
 
