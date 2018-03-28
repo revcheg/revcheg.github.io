@@ -7,8 +7,9 @@
   }
   
   &--account {
-    background: #434341 url('../img/a-bg.png') no-repeat top;
+    background: #434341 url('../img/a-bg.png') no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
   }
   
   &--faq {

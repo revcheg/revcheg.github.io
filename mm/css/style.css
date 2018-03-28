@@ -934,8 +934,9 @@ body {
   background-size: cover; }
 
 .temp--account {
-  background: #434341 url("../img/a-bg.png") no-repeat top;
-  background-size: cover; }
+  background: #434341 url("../img/a-bg.png") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed; }
 
 .temp--faq {
   background: #646464 url("../img/a-bg.png") no-repeat top;
@@ -1025,7 +1026,7 @@ body {
     background: rgba(129, 129, 129, 0.5); }
   .table tr:nth-child(2n+1) {
     background: rgba(167, 167, 167, 0.5); }
-  .table tr:first-child {
+  .table tr:first-child, .table tr:last-child {
     background: transparent; }
   .table td {
     padding: 10px 20px;
@@ -1058,7 +1059,8 @@ body {
     overflow-x: auto; } }
 
 .steps {
-  padding: 70px 0 54px 0; }
+  padding: 0 0 50px 0;
+  color: #fff; }
   .steps h1 {
     margin: 0;
     margin-bottom: 10px;
@@ -1070,6 +1072,9 @@ body {
   .steps p {
     font-family: 'SF UI Display Regular', sans-serif;
     opacity: 0.7; }
+  .steps hr {
+    width: 70px;
+    margin: 20px 0; }
 
 .steps__italy {
   margin-top: 0;

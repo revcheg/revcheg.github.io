@@ -38,7 +38,8 @@
       background: rgba(167, 167, 167, 0.5);
     }
     
-    &:first-child {
+    &:first-child,
+    &:last-child {
       background: transparent;
     }
   }
