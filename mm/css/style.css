@@ -1006,22 +1006,26 @@ body {
 .table {
   width: 100%;
   padding-bottom: 85px;
-  border-spacing: 0; }
-  .table th b {
-    color: #009f3c;
-    font-size: 26px;
-    font-family: 'SF UI Display Black', sans-serif;
-    text-transform: uppercase; }
-  .table th p {
-    color: #fff;
-    font-size: 16px;
-    font-family: 'SF UI Display', sans-serif; }
-  .table th span {
-    display: block;
-    margin-bottom: 13px;
-    color: #fff;
-    font-size: 22px;
-    font-family: 'SF UI Display Black', sans-serif; }
+  border-spacing: 0;
+  -webkit-transition: 2s;
+  transition: 2s; }
+  .table th {
+    padding-top: 30px; }
+    .table th b {
+      color: #009f3c;
+      font-size: 26px;
+      font-family: 'SF UI Display Black', sans-serif;
+      text-transform: uppercase; }
+    .table th p {
+      color: #fff;
+      font-size: 16px;
+      font-family: 'SF UI Display', sans-serif; }
+    .table th span {
+      display: block;
+      margin-bottom: 13px;
+      color: #fff;
+      font-size: 22px;
+      font-family: 'SF UI Display Black', sans-serif; }
   .table tr:nth-child(1n+1) {
     background: rgba(129, 129, 129, 0.5); }
   .table tr:nth-child(2n+1) {
@@ -1033,11 +1037,15 @@ body {
     color: #fff;
     font-size: 18px;
     font-weight: bold;
-    font-family: 'SF UI Text Bold', sans-serif; }
+    font-family: 'SF UI Text Bold', sans-serif;
+    -webkit-transition: 0.4s;
+    transition: 0.4s; }
 
 .table__check-g {
-  background: url("../img/check-g.svg") no-repeat center;
-  background-size: 15px; }
+  background-image: url("../img/check-g.svg");
+  background-size: 15px;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .table__check-r {
   background: url("../img/check-r.svg") no-repeat center;
@@ -1051,6 +1059,54 @@ body {
     border: 1px solid #009f3c; }
   .table--spread th {
     padding: 5px; }
+
+.table__mini-th,
+.table__classic-th,
+.table__premium-th {
+  background: transparent url("../img/table-th-o.png") no-repeat top;
+  background-size: cover;
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
+
+.hover-th-mini {
+  background: #a7a7a7 url("../img/table-th-mini.jpg") no-repeat top;
+  background-size: cover; }
+  .hover-th-mini b {
+    color: #fff !important;
+    font-weight: 900;
+    font-family: 'SF UI Display Black', sans-serif;
+    text-shadow: 0px 4px 1px rgba(45, 43, 43, 0.3);
+    border-bottom: 1px solid #fff; }
+
+.hover-th-classic {
+  background: #a7a7a7 url("../img/table-th-classic.jpg") no-repeat top;
+  background-size: cover; }
+  .hover-th-classic b {
+    color: #fff !important;
+    font-weight: 900;
+    font-family: 'SF UI Display Black', sans-serif;
+    text-shadow: 0px 4px 1px rgba(45, 43, 43, 0.3);
+    border-bottom: 1px solid #fff; }
+
+.hover-th-premium {
+  background: #a7a7a7 url("../img/table-th-premium.jpg") no-repeat top;
+  background-size: cover; }
+  .hover-th-premium b {
+    color: #fff !important;
+    font-weight: 900;
+    font-family: 'SF UI Display Black', sans-serif;
+    text-shadow: 0px 4px 1px rgba(45, 43, 43, 0.3);
+    border-bottom: 1px solid #fff; }
+
+.hover-td-d {
+  background-color: #818181;
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
+
+.hover-td-l {
+  background-color: #a7a7a7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
 
 @media screen and (max-width: 768px) {
   .table {

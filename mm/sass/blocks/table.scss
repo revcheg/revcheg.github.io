@@ -2,8 +2,10 @@
   width: 100%;
   padding-bottom: 85px;
   border-spacing: 0;
+  transition: 2s;
   
   th {
+    padding-top: 30px;
     
     b {
       color: $sc;
@@ -50,12 +52,15 @@
     font-size: 18px;
     font-weight: bold;
     font-family: 'SF UI Text Bold', sans-serif;
+    transition: 0.4s;
   }
 }
 
 .table__check-g {
-  background: url('../img/check-g.svg') no-repeat center;
+  background-image: url('../img/check-g.svg');
   background-size: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .table__check-r {
@@ -75,6 +80,63 @@
   th {
     padding: 5px;
   }
+}
+
+.table__mini-th,
+.table__classic-th,
+.table__premium-th {
+  background: transparent url('../img/table-th-o.png') no-repeat top;
+  background-size: cover;
+  transition: 0.4s;
+}
+
+.hover-th-mini {
+  background: #a7a7a7 url('../img/table-th-mini.jpg') no-repeat top;
+  background-size: cover;
+
+  b {
+    color: #fff !important;
+    font-weight: 900;
+    font-family: 'SF UI Display Black', sans-serif;
+    text-shadow: 0px 4px 1px rgba(45, 43, 43, 0.3);
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.hover-th-classic {
+  background: #a7a7a7 url('../img/table-th-classic.jpg') no-repeat top;
+  background-size: cover;
+
+  b {
+    color: #fff !important;
+    font-weight: 900;
+    font-family: 'SF UI Display Black', sans-serif;
+    text-shadow: 0px 4px 1px rgba(45, 43, 43, 0.3);
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.hover-th-premium {
+  background: #a7a7a7 url('../img/table-th-premium.jpg') no-repeat top;
+  background-size: cover;
+
+  b {
+    color: #fff !important;
+    font-weight: 900;
+    font-family: 'SF UI Display Black', sans-serif;
+    text-shadow: 0px 4px 1px rgba(45, 43, 43, 0.3);
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.hover-td-d {
+  background-color: #818181;
+  transition: 0.4s;
+}
+
+.hover-td-l {
+  background-color: #a7a7a7;
+  transition: 0.4s;
 }
 
 @media screen and ($tablet-widths) {}
