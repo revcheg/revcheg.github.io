@@ -14,7 +14,7 @@
 .comment__box {
   // font-size: 0;
   height: 350px !important;
-  padding-top: 100px;
+  padding-top: 140px;
   text-align: center;
   transition: 0.3s;
   // opacity: 0;
@@ -24,8 +24,9 @@
     top: 0;
     // left: 50px;
     width: 700px;
-    margin-left: -240px;
+    margin-left: -230px;
     font-size: 18px;
+    text-align: left;
     opacity: 0;
   }
   

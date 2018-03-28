@@ -1,5 +1,5 @@
 $('.slider').slick({
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2000,
   arrows: false,
   dots: true,
@@ -12,7 +12,7 @@ $('.slider').slick({
 });
 
 $('.news__slider').slick({
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2000,
   // infinite: true,
   slidesToShow: 3,
@@ -27,7 +27,7 @@ $('.news__slider').slick({
 });
 
 $('.comment__slider').slick({
-  centerMode: false,
+  centerMode: true,
   // centerPadding: '60px',
   slidesToShow: 5,
   responsive: [{
