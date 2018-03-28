@@ -46,11 +46,14 @@
         content: '';
         position: absolute;
         top: 0;
-        right: -31px;
-        width: 34px;
+        right: -28px;
+        width: 30px;
         height: 128px;
-        background: url('../img/btn-arrow-trade.png') no-repeat top;
+        background: url('../img/arrow-t.svg') no-repeat top;
         background-size: contain;
+        animation-name: arrow;
+        animation-duration: 0.3s;
+        animation-timing-function: ease;
       }
 
       &::after {
@@ -74,11 +77,14 @@
         content: '';
         position: absolute;
         top: 0;
-        right: -31px;
-        width: 34px;
+        right: -28px;
+        width: 30px;
         height: 128px;
-        background: url('../img/btn-arrow-manage.png') no-repeat top;
+        background: url('../img/arrow-m.svg') no-repeat top;
         background-size: contain;
+        animation-name: arrow;
+        animation-duration: 0.3s;
+        animation-timing-function: ease;
       }
 
       &::after {
@@ -102,12 +108,14 @@
         content: '';
         position: absolute;
         top: 0;
-        right: -31px;
-        width: 34px;
+        right: -28px;
+        width: 30px;
         height: 128px;
-        background: url('../img/btn-arrow-integrate.png') no-repeat top;
+        background: url('../img/arrow-i.svg') no-repeat top;
         background-size: contain;
-        opacity: 1;
+        animation-name: arrow;
+        animation-duration: 0.3s;
+        animation-timing-function: ease;
       }
 
       &::after {
@@ -132,12 +140,14 @@
         content: '';
         position: absolute;
         top: 0;
-        right: -31px;
-        width: 34px;
+        right: -28px;
+        width: 30px;
         height: 128px;
-        background: url('../img/btn-arrow-grow.png') no-repeat top;
+        background: url('../img/arrow-g.svg') no-repeat top;
         background-size: contain;
-        opacity: 1;
+        animation-name: arrow;
+        animation-duration: 0.3s;
+        animation-timing-function: ease;
       }
 
       &::after {
@@ -186,6 +196,16 @@
     margin: auto;
     margin-top: 40px;
     text-align: center;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    right: 20px;
+  }
+  
+  100% {
+    right: -28px;
   }
 }
 

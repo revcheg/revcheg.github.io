@@ -1,21 +1,22 @@
 .table {
   width: 100%;
   padding-bottom: 85px;
+  border-spacing: 0;
   
   th {
     
     b {
       color: $sc;
-      font-size: 20px;
+      font-size: 26px;
       font-family: 'SF UI Display Black', sans-serif;
+      text-transform: uppercase;
     }
     
     p {
-      margin-top: 20px;
+      // margin-top: 20px;
       color: #fff;
-      font-size: 13px;
+      font-size: 16px;
       font-family: 'SF UI Display', sans-serif;
-      opacity: 0.6;
     }
     
     span {
@@ -27,20 +28,38 @@
     }
   }
   
+  tr {
+    
+    &:nth-child(1n+1) {
+      background: rgba(129, 129, 129, 0.5);
+    }
+    
+    &:nth-child(2n+1) {
+      background: rgba(167, 167, 167, 0.5);
+    }
+    
+    &:first-child {
+      background: transparent;
+    }
+  }
+  
   td {
-    padding: 10px 0;
+    padding: 10px 20px;
     color: #fff;
     font-size: 18px;
-    font-family: 'SF UI Display Regular', sans-serif;
+    font-weight: bold;
+    font-family: 'SF UI Text Bold', sans-serif;
   }
 }
 
 .table__check-g {
-  background: url('../img/check-g.png') no-repeat center;
+  background: url('../img/check-g.svg') no-repeat center;
+  background-size: 15px;
 }
 
 .table__check-r {
-  background: url('../img/check-r.png') no-repeat center;
+  background: url('../img/check-r.svg') no-repeat center;
+  background-size: 15px;
 }
 
 .table--spread {

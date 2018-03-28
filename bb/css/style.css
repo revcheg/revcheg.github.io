@@ -556,11 +556,17 @@ body {
       content: '';
       position: absolute;
       top: 0;
-      right: -31px;
-      width: 34px;
+      right: -28px;
+      width: 30px;
       height: 128px;
-      background: url("../img/btn-arrow-trade.png") no-repeat top;
-      background-size: contain; }
+      background: url("../img/arrow-t.svg") no-repeat top;
+      background-size: contain;
+      -webkit-animation-name: arrow;
+      animation-name: arrow;
+      -webkit-animation-duration: 0.3s;
+      animation-duration: 0.3s;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease; }
     .manual__links--trade.active::after {
       content: '';
       position: absolute;
@@ -576,11 +582,17 @@ body {
       content: '';
       position: absolute;
       top: 0;
-      right: -31px;
-      width: 34px;
+      right: -28px;
+      width: 30px;
       height: 128px;
-      background: url("../img/btn-arrow-manage.png") no-repeat top;
-      background-size: contain; }
+      background: url("../img/arrow-m.svg") no-repeat top;
+      background-size: contain;
+      -webkit-animation-name: arrow;
+      animation-name: arrow;
+      -webkit-animation-duration: 0.3s;
+      animation-duration: 0.3s;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease; }
     .manual__links--manage.active::after {
       content: '';
       position: absolute;
@@ -596,12 +608,17 @@ body {
       content: '';
       position: absolute;
       top: 0;
-      right: -31px;
-      width: 34px;
+      right: -28px;
+      width: 30px;
       height: 128px;
-      background: url("../img/btn-arrow-integrate.png") no-repeat top;
+      background: url("../img/arrow-i.svg") no-repeat top;
       background-size: contain;
-      opacity: 1; }
+      -webkit-animation-name: arrow;
+      animation-name: arrow;
+      -webkit-animation-duration: 0.3s;
+      animation-duration: 0.3s;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease; }
     .manual__links--integrate.active::after {
       content: '';
       position: absolute;
@@ -618,12 +635,17 @@ body {
       content: '';
       position: absolute;
       top: 0;
-      right: -31px;
-      width: 34px;
+      right: -28px;
+      width: 30px;
       height: 128px;
-      background: url("../img/btn-arrow-grow.png") no-repeat top;
+      background: url("../img/arrow-g.svg") no-repeat top;
       background-size: contain;
-      opacity: 1; }
+      -webkit-animation-name: arrow;
+      animation-name: arrow;
+      -webkit-animation-duration: 0.3s;
+      animation-duration: 0.3s;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease; }
     .manual__links--grow.active::after {
       content: '';
       position: absolute;
@@ -659,6 +681,18 @@ body {
     margin: auto;
     margin-top: 40px;
     text-align: center; }
+
+@-webkit-keyframes arrow {
+  0% {
+    right: 20px; }
+  100% {
+    right: -28px; } }
+
+@keyframes arrow {
+  0% {
+    right: 20px; }
+  100% {
+    right: -28px; } }
 
 @media screen and (max-width: 768px) {
   .manual h1 {
