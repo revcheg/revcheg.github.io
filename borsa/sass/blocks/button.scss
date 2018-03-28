@@ -30,16 +30,22 @@
   
   // slider
   &--slider {
-    margin: 0 15px;
-    padding: 25px 75px;
+    display: inline-block;
+    width: 300px;
+    // margin: 0 15px;
+    padding: 25px 0;
+    text-align: center;
     
     &:hover {
-      font-size: 18px;
+      // width: 302px;
+      // padding: 27px 0;
     }
   }
   
   &--unclick {
-    padding: 22px 72px;
+    display: inline-block;
+    margin: 0 0 0 30px;
+    padding: 22px 0;
     border: 3px solid $mc;
     background: transparent;
     

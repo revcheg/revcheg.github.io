@@ -11,8 +11,10 @@
 }
 
 .news__box {
-  margin: 0 10px;
+  width: 370px !important;
+  margin: 0 15px;
   background: #dcdcdc;
+  transition: 0.3s;
   
   img {
     width: 100%;
@@ -46,6 +48,11 @@
   p {
     font-size: 16px;
     font-family: 'Open Sans Regular', sans-serif;
+  }
+  
+  &:hover {
+    width: 400px !important;
+    margin: 0 0 10px 0;
   }
 }
 

@@ -80,6 +80,7 @@ body {
   .main-nav li {
     position: relative; }
   .main-nav a {
+    padding-top: 13px;
     padding-bottom: 15px;
     font-size: 18px;
     text-decoration: none;
@@ -100,8 +101,8 @@ body {
   width: 232px;
   padding-left: 0;
   list-style: none;
-  border: 1px solid red;
   border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8);
   -webkit-transition: 0.2s;
   transition: 0.2s;
   z-index: 2; }
@@ -115,12 +116,19 @@ body {
     -webkit-transition: 0.2s;
     transition: 0.2s; }
     .main-nav__list a:hover {
+      border-radius: 5px;
       background: red; }
 
 .main-nav > li:hover .main-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.main-nav__title {
+  margin: 0 10px 0 0;
+  padding: 0 15px 0 0;
+  background: url("../img/arrow.svg") no-repeat right;
+  background-size: 14px; }
 
 .main-nav__user {
   display: -webkit-box;
@@ -279,12 +287,14 @@ body {
       -webkit-box-shadow: 0px 2px 4px 0px rgba(104, 74, 202, 0.29);
       box-shadow: 0px 2px 4px 0px rgba(104, 74, 202, 0.29); }
   .button--slider {
-    margin: 0 15px;
-    padding: 25px 75px; }
-    .button--slider:hover {
-      font-size: 18px; }
+    display: inline-block;
+    width: 300px;
+    padding: 25px 0;
+    text-align: center; }
   .button--unclick {
-    padding: 22px 72px;
+    display: inline-block;
+    margin: 0 0 0 30px;
+    padding: 22px 0;
     border: 3px solid #29a643;
     background: transparent; }
     .button--unclick:hover {
@@ -374,7 +384,7 @@ body {
     flex-direction: column; } }
 
 .edge {
-  padding: 130px 0;
+  padding: 100px 0;
   text-align: center; }
   .edge h1 {
     margin: 0;
@@ -476,11 +486,10 @@ body {
   .form button {
     width: 100%;
     padding: 30px 0;
+    font-size: 18px;
     background: #29a643; }
     .form button:hover {
-      font-size: 19px;
-      -webkit-box-shadow: 0px 2px 4px 0px rgba(104, 74, 202, 0.29);
-      box-shadow: 0px 2px 4px 0px rgba(104, 74, 202, 0.29); }
+      padding: 32px 0; }
 
 .form__inner {
   display: -webkit-box;
@@ -573,7 +582,7 @@ body {
   justify-content: space-between; }
 
 .app__left {
-  width: 500px;
+  width: 600px;
   text-align: center; }
   .app__left h3 {
     margin-bottom: 30px;
@@ -680,8 +689,11 @@ body {
     text-transform: uppercase; }
 
 .news__box {
-  margin: 0 10px;
-  background: #dcdcdc; }
+  width: 370px !important;
+  margin: 0 15px;
+  background: #dcdcdc;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
   .news__box img {
     width: 100%; }
   .news__box header {
@@ -708,6 +720,9 @@ body {
   .news__box p {
     font-size: 16px;
     font-family: 'Open Sans Regular', sans-serif; }
+  .news__box:hover {
+    width: 400px !important;
+    margin: 0 0 10px 0; }
 
 .news__content {
   padding: 20px 20px 30px 20px; }

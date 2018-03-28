@@ -41,13 +41,13 @@ close.addEventListener("click", function(event) {
   overlay.classList.add("popup__overlay--hide");
 });
 
-overlay.addEventListener("click", function(event) {
-  event.preventDefault();
-  popup.classList.remove("popup--show");
-  popup.classList.add("popup--hide");
-  overlay.classList.remove("popup__overlay--show");
-  overlay.classList.add("popup__overlay--hide");
-});
+// overlay.addEventListener("click", function(event) {
+//   event.preventDefault();
+//   popup.classList.remove("popup--show");
+//   popup.classList.add("popup--hide");
+//   overlay.classList.remove("popup__overlay--show");
+//   overlay.classList.add("popup__overlay--hide");
+// });
 
 form.addEventListener("submit", function(event) {
   if (!login.value || !password.value) {
