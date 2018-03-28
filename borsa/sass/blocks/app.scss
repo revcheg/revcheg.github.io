@@ -5,21 +5,31 @@
 .app__flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .app__left {
   width: 600px;
-  text-align: center;
+  margin-top: -50px;
   
   h3 {
+    margin-top: 0;
     margin-bottom: 30px;
-    font-size: 70px;
+    font-size: 30px;
+    font-family: 'Open Sans Bold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  b {
+    font-size: 20px;
     font-family: 'Open Sans Bold', sans-serif;
   }
   
   p {
-    margin-bottom: 40px;
-    font-size: 25px;
+    margin-top: 0;
+    // margin-bottom: 40px;
+    // font-size: 25px;
     font-family: 'Open Sans Regular', sans-serif;
   }
 }
@@ -40,14 +50,7 @@
   background: url('../img/app-g.jpg');
 }
 
-@media screen and ($tablet-widths) {
-  .app__left {
-    
-    h3 {
-      font-size: 60px;
-    }
-  }
-}
+@media screen and ($tablet-widths) {}
 
 @media screen and ($mobile-widths) {
   .app {
@@ -66,14 +69,15 @@
   
   .app__left {
     width: auto;
+    margin-top: 0;
     
     h3 {
-      margin-top: 0;
-      font-size: 30px;
+      // margin-top: 0;
+      // font-size: 30px;
     }
     
     p {
-      font-size: 16px;
+      // font-size: 16px;
     }
     
     a {

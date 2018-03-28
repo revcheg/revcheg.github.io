@@ -393,7 +393,6 @@ body {
     font-family: 'Open Sans Bold', sans-serif; }
   .edge p {
     margin-top: 0;
-    margin-bottom: 50px;
     font-size: 26px;
     font-family: 'Open Sans Regular', sans-serif; }
 
@@ -579,18 +578,26 @@ body {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .app__left {
   width: 600px;
-  text-align: center; }
+  margin-top: -50px; }
   .app__left h3 {
+    margin-top: 0;
     margin-bottom: 30px;
-    font-size: 70px;
+    font-size: 30px;
+    font-family: 'Open Sans Bold', sans-serif;
+    text-align: center;
+    text-transform: uppercase; }
+  .app__left b {
+    font-size: 20px;
     font-family: 'Open Sans Bold', sans-serif; }
   .app__left p {
-    margin-bottom: 40px;
-    font-size: 25px;
+    margin-top: 0;
     font-family: 'Open Sans Regular', sans-serif; }
 
 .app__apple {
@@ -607,10 +614,6 @@ body {
   margin-left: 15px;
   background: url("../img/app-g.jpg"); }
 
-@media screen and (max-width: 1200px) {
-  .app__left h3 {
-    font-size: 60px; } }
-
 @media screen and (max-width: 768px) {
   .app {
     padding-top: 50px; }
@@ -625,12 +628,8 @@ body {
     -ms-flex-direction: column;
     flex-direction: column; }
   .app__left {
-    width: auto; }
-    .app__left h3 {
-      margin-top: 0;
-      font-size: 30px; }
-    .app__left p {
-      font-size: 16px; }
+    width: auto;
+    margin-top: 0; }
     .app__left a {
       margin: 0; } }
 
