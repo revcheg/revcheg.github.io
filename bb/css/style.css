@@ -353,11 +353,11 @@ body {
         font-size: 20px; } }
 
 .title {
-  padding: 30px 0 180px;
+  padding: 30px 0 170px;
   background: #488dae url("../img/title-bg.jpg") no-repeat top;
   background-size: cover; }
   .title h1 {
-    margin-top: 130px;
+    margin-top: 120px;
     margin-bottom: 0;
     font-size: 60px;
     font-family: 'Proxima Nova Rg', sans-serif;
