@@ -34,6 +34,11 @@
       }
     }
   }
+  
+  &--tools {
+    background: #eaeaea url('../img/title-tools.jpg') no-repeat bottom;
+    background-size: cover;
+  }
 }
 
 @media screen and ($tablet-widths) {}

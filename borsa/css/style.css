@@ -971,6 +971,9 @@ body {
     font-family: 'Open Sans Regular', sans-serif; }
     .title--trade h1 b {
       font-family: 'Open Sans Bold', sans-serif; }
+  .title--tools {
+    background: #eaeaea url("../img/title-tools.jpg") no-repeat bottom;
+    background-size: cover; }
 
 @media screen and (max-width: 768px) {
   .title h1 {
@@ -1131,3 +1134,55 @@ body {
     font-family: 'Open Sans Regular', sans-serif; }
   .web ul {
     font-size: 15px; }
+
+.glossary {
+  padding: 50px 0; }
+  .glossary h3 {
+    font-size: 40px;
+    font-family: 'Open Sans ExtraBold', sans-serif; }
+    .glossary h3:first-child {
+      margin: 0 0 40px 0; }
+  .glossary h4 {
+    font-size: 25px;
+    font-family: 'Open Sans Bold', sans-serif; }
+  .glossary p {
+    font-family: 'Open Sans Regular', sans-serif; }
+
+.signal {
+  padding: 50px 0; }
+  .signal p {
+    margin: 0 0 40px 0;
+    font-family: 'Open Sans Regular', sans-serif; }
+  .signal a {
+    padding: 10px 20px;
+    color: #fff;
+    font-family: 'Open Sans Bold', sans-serif;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #29a643; }
+
+.faq {
+  padding: 50px 0; }
+  .faq b {
+    font-size: 25px;
+    font-family: 'Open Sans Bold', sans-serif; }
+  .faq p {
+    font-family: 'Open Sans Regular', sans-serif; }
+    .faq p span {
+      font-family: 'Open Sans Bold', sans-serif; }
+
+.funding {
+  padding: 50px 0; }
+  .funding p {
+    font-family: 'Open Sans Regular', sans-serif; }
+  .funding b {
+    font-size: 25px;
+    font-family: 'Open Sans Bold', sans-serif; }
+  .funding ol b {
+    font-size: 18px; }
+  .funding ul {
+    font-size: 15px;
+    font-family: 'Open Sans Regular', sans-serif; }
+    .funding ul a {
+      color: #3097D1;
+      text-decoration: none; }

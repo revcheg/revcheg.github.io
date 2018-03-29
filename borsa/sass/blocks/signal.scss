@@ -1,0 +1,17 @@
+.signal {
+  padding: 50px 0;
+  
+  p {
+    margin: 0 0 40px 0;
+    font-family: 'Open Sans Regular', sans-serif;
+  }
+  
+  a {
+    padding: 10px 20px;
+    color: #fff;
+    font-family: 'Open Sans Bold', sans-serif;
+    text-decoration: none;
+    border-radius: 10px;
+    background: $mc;
+  }
+}
