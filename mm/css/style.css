@@ -346,6 +346,7 @@ body {
     padding: 8px;
     margin: auto;
     color: #fff;
+    text-align: center;
     background: transparent; }
     .button--table:hover {
       background: #009f3c; }
@@ -1010,7 +1011,12 @@ body {
   -webkit-transition: 2s;
   transition: 2s; }
   .table th {
-    padding-top: 30px; }
+    width: 100px;
+    padding-top: 30px;
+    background: transparent url("../img/table-th-o.png") no-repeat top;
+    background-size: cover;
+    -webkit-transition: 0.4s;
+    transition: 0.4s; }
     .table th b {
       color: #009f3c;
       font-size: 26px;
@@ -1060,53 +1066,80 @@ body {
   .table--spread th {
     padding: 5px; }
 
-.table__mini-th,
-.table__classic-th,
-.table__premium-th {
-  background: transparent url("../img/table-th-o.png") no-repeat top;
-  background-size: cover;
-  -webkit-transition: 0.4s;
-  transition: 0.4s; }
-
-.hover-th-mini {
+.mini-hover .mini-th {
   background: #a7a7a7 url("../img/table-th-mini.jpg") no-repeat top;
   background-size: cover; }
-  .hover-th-mini b {
-    color: #fff !important;
+  .mini-hover .mini-th b {
+    color: #fff;
     font-weight: 900;
     font-family: 'SF UI Display Black', sans-serif;
     text-shadow: 0px 4px 1px rgba(45, 43, 43, 0.3);
     border-bottom: 1px solid #fff; }
 
-.hover-th-classic {
-  background: #a7a7a7 url("../img/table-th-classic.jpg") no-repeat top;
-  background-size: cover; }
-  .hover-th-classic b {
-    color: #fff !important;
-    font-weight: 900;
-    font-family: 'SF UI Display Black', sans-serif;
-    text-shadow: 0px 4px 1px rgba(45, 43, 43, 0.3);
-    border-bottom: 1px solid #fff; }
-
-.hover-th-premium {
-  background: #a7a7a7 url("../img/table-th-premium.jpg") no-repeat top;
-  background-size: cover; }
-  .hover-th-premium b {
-    color: #fff !important;
-    font-weight: 900;
-    font-family: 'SF UI Display Black', sans-serif;
-    text-shadow: 0px 4px 1px rgba(45, 43, 43, 0.3);
-    border-bottom: 1px solid #fff; }
-
-.hover-td-d {
+.mini-hover .mini-d {
   background-color: #818181;
   -webkit-transition: 0.4s;
   transition: 0.4s; }
 
-.hover-td-l {
+.mini-hover .mini-l {
   background-color: #a7a7a7;
   -webkit-transition: 0.4s;
   transition: 0.4s; }
+
+.mini-hover .mini-btn {
+  background: #a7a7a7; }
+  .mini-hover .mini-btn a {
+    background: #009f3c; }
+
+.classic-hover .classic-th {
+  background: #a7a7a7 url("../img/table-th-classic.jpg") no-repeat top;
+  background-size: cover; }
+  .classic-hover .classic-th b {
+    color: #fff;
+    font-weight: 900;
+    font-family: 'SF UI Display Black', sans-serif;
+    text-shadow: 0px 4px 1px rgba(45, 43, 43, 0.3);
+    border-bottom: 1px solid #fff; }
+
+.classic-hover .classic-d {
+  background-color: #818181;
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
+
+.classic-hover .classic-l {
+  background-color: #a7a7a7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
+
+.classic-hover .classic-btn {
+  background: #a7a7a7; }
+  .classic-hover .classic-btn a {
+    background: #009f3c; }
+
+.premium-hover .premium-th {
+  background: #a7a7a7 url("../img/table-th-premium.jpg") no-repeat top;
+  background-size: cover; }
+  .premium-hover .premium-th b {
+    color: #fff;
+    font-weight: 900;
+    font-family: 'SF UI Display Black', sans-serif;
+    text-shadow: 0px 4px 1px rgba(45, 43, 43, 0.3);
+    border-bottom: 1px solid #fff; }
+
+.premium-hover .premium-d {
+  background-color: #818181;
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
+
+.premium-hover .premium-l {
+  background-color: #a7a7a7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
+
+.premium-hover .premium-btn {
+  background: #a7a7a7; }
+  .premium-hover .premium-btn a {
+    background: #009f3c; }
 
 @media screen and (max-width: 768px) {
   .table {
