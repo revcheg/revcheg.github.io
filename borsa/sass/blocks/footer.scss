@@ -59,7 +59,7 @@
 }
 
 .footer__active {
-  color: $mc;
+  color: $mc !important;
 }
 
 @media screen and ($tablet-widths) {}

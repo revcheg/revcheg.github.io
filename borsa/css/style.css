@@ -947,7 +947,7 @@ body {
   background: #454845; }
 
 .footer__active {
-  color: #29a643; }
+  color: #29a643 !important; }
 
 @media screen and (max-width: 768px) {
   .footer__flex {
@@ -1186,3 +1186,19 @@ body {
     .funding ul a {
       color: #3097D1;
       text-decoration: none; }
+
+.assets {
+  padding: 50px 0; }
+  .assets b {
+    font-size: 25px;
+    font-family: 'Open Sans Bold', sans-serif; }
+  .assets p {
+    font-family: 'Open Sans Regular', sans-serif; }
+  .assets ul {
+    font-size: 15px;
+    font-family: 'Open Sans Regular', sans-serif; }
+  .assets small {
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    font-family: 'Open Sans Bold', sans-serif; }
