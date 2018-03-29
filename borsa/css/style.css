@@ -35,15 +35,15 @@ body {
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
 
 .header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   padding: 10px 0;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(104, 74, 202, 0.3);
-  box-shadow: 0px 2px 4px 0px rgba(104, 74, 202, 0.3); }
-  .header--inner {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background: #fff;
-    opacity: 0.9; }
+  box-shadow: 0px 2px 4px 0px rgba(104, 74, 202, 0.3);
+  background: #fff;
+  opacity: 0.9;
+  z-index: 5; }
 
 .header__flex {
   display: -webkit-box;
@@ -74,7 +74,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 275px;
+  width: 300px;
   padding-left: 0;
   list-style: none; }
   .main-nav li {
@@ -82,7 +82,7 @@ body {
   .main-nav a {
     padding-top: 13px;
     padding-bottom: 15px;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
     font-family: 'Open Sans ExtraBold', sans-serif;
     -webkit-transition: 0.2s;
@@ -126,7 +126,7 @@ body {
 
 .main-nav__title {
   margin: 0 10px 0 0;
-  padding: 0 15px 0 0;
+  padding: 0 20px 0 0;
   background: url("../img/arrow.svg") no-repeat right;
   background-size: 14px; }
 
@@ -137,7 +137,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 350px;
+  width: 300px;
   padding-left: 0;
   list-style: none; }
 
@@ -275,7 +275,8 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s; }
   .button--header {
-    padding: 10px 30px; }
+    padding: 10px 30px;
+    font-size: 14px; }
   .button--green {
     background: #29a643; }
     .button--green:hover {
@@ -384,12 +385,12 @@ body {
     flex-direction: column; } }
 
 .edge {
-  padding: 100px 0;
+  padding: 50px 0;
   text-align: center; }
   .edge h1 {
     margin: 0;
     margin-bottom: 15px;
-    font-size: 70px;
+    font-size: 50px;
     font-family: 'Open Sans Bold', sans-serif; }
   .edge p {
     margin-top: 0;
@@ -402,27 +403,28 @@ body {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin: 60px 0 0 0; }
 
 .edge__box {
   width: 350px;
-  padding-top: 150px; }
+  padding-top: 120px; }
   .edge__box b {
     font-family: 'Open Sans Bold', sans-serif;
     text-transform: uppercase; }
   .edge__box p {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Open Sans', sans-serif; }
   .edge__box--1 {
     background: url("../img/edge-1.svg") no-repeat top;
-    background-size: 120px; }
+    background-size: 110px; }
   .edge__box--2 {
     background: url("../img/edge-2.svg") no-repeat top;
-    background-size: 120px; }
+    background-size: 90px; }
   .edge__box--3 {
     background: url("../img/edge-3.svg") no-repeat top;
-    background-size: 120px; }
+    background-size: 100px; }
 
 @media screen and (max-width: 1200px) {
   .edge h1 {
@@ -637,11 +639,30 @@ body {
   padding-top: 70px;
   background: #dcdcdc; }
   .comment h3 {
+    position: relative;
     margin-top: 0;
     font-size: 35px;
     font-family: 'Open Sans Bold', sans-serif;
     text-align: center;
     text-transform: uppercase; }
+    .comment h3::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 150px;
+      width: 140px;
+      height: 118px;
+      background: url("../img/comment.svg") no-repeat top;
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg); }
+    .comment h3::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 150px;
+      width: 140px;
+      height: 118px;
+      background: url("../img/comment.svg") no-repeat top; }
 
 .comment__box {
   height: 350px !important;
@@ -654,7 +675,8 @@ body {
     top: 0;
     width: 700px;
     margin-left: -230px;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: 'Open Sans Regular', sans-serif;
     text-align: left;
     opacity: 0; }
   .comment__box img {
@@ -732,7 +754,7 @@ body {
   display: block;
   margin: 40px 0 0 0;
   color: #000;
-  font-size: 36px;
+  font-size: 25px;
   font-family: 'Open Sans Regular', sans-serif;
   text-align: center; }
 
@@ -938,20 +960,17 @@ body {
     margin: 0;
     font-size: 70px;
     font-family: 'Open Sans Bold', sans-serif; }
-  .title--account-types {
+  .title--accounts {
     background: #eaeaea url("../img/title-acc.jpg") no-repeat bottom;
     background-size: cover; }
-  .title--mobile {
-    background: #eaeaea url("../img/title-mobile.jpg") no-repeat bottom;
+  .title--platforms {
+    background: #eaeaea url("../img/title-platforms.jpg") no-repeat bottom;
     background-size: cover; }
-  .title--trade {
-    background: #eaeaea url("../img/title-trade.jpg") no-repeat bottom;
-    background-size: cover; }
-    .title--trade h1 {
-      font-weight: inherit;
-      font-family: 'Open Sans Regular', sans-serif; }
-      .title--trade h1 b {
-        font-family: 'Open Sans Bold', sans-serif; }
+  .title--trade h1 {
+    font-weight: inherit;
+    font-family: 'Open Sans Regular', sans-serif; }
+    .title--trade h1 b {
+      font-family: 'Open Sans Bold', sans-serif; }
 
 @media screen and (max-width: 768px) {
   .title h1 {
@@ -1067,3 +1086,48 @@ body {
     font-family: 'Open Sans Regular', sans-serif;
     line-height: 30px;
     list-style: inside url("../img/table-g.svg"); }
+
+.segregated {
+  padding: 50px 0; }
+  .segregated p {
+    font-family: 'Open Sans Regular', sans-serif; }
+  .segregated b {
+    font-size: 25px;
+    font-family: 'Open Sans Bold', sans-serif; }
+  .segregated ul {
+    font-size: 14px;
+    font-family: 'Open Sans Regular', sans-serif; }
+
+.meta {
+  padding: 50px 0; }
+  .meta small, .meta p, .meta ul {
+    font-family: 'Open Sans Regular', sans-serif; }
+  .meta ul {
+    font-size: 15px; }
+  .meta b {
+    font-size: 25px;
+    font-family: 'Open Sans Bold', sans-serif; }
+  .meta a {
+    display: block;
+    width: 300px;
+    height: 70px;
+    margin: 20px 0;
+    background: url("../img/meta.jpg") no-repeat top;
+    background-size: cover; }
+
+.web {
+  padding: 50px 0; }
+  .web b {
+    font-size: 25px;
+    font-family: 'Open Sans Bold', sans-serif; }
+  .web a {
+    display: block;
+    margin: 20px 0;
+    color: #3097D1;
+    font-size: 18px;
+    font-family: 'Open Sans Regular', sans-serif;
+    text-decoration: none; }
+  .web p, .web ul {
+    font-family: 'Open Sans Regular', sans-serif; }
+  .web ul {
+    font-size: 15px; }

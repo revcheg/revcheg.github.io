@@ -3,11 +3,33 @@
   background: #dcdcdc;
   
   h3 {
+    position: relative;
     margin-top: 0;
     font-size: 35px;
     font-family: 'Open Sans Bold', sans-serif;
     text-align: center;
     text-transform: uppercase;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 150px;
+      width: 140px;
+      height: 118px;
+      background: url('../img/comment.svg') no-repeat top;
+      transform: rotate(180deg);
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 150px;
+      width: 140px;
+      height: 118px;
+      background: url('../img/comment.svg') no-repeat top;
+    }
   }
 }
 
@@ -25,7 +47,8 @@
     // left: 50px;
     width: 700px;
     margin-left: -230px;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: 'Open Sans Regular', sans-serif;
     text-align: left;
     opacity: 0;
   }

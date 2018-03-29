@@ -1,13 +1,11 @@
 .header {
+  position: sticky;
+  top: 0;
   padding: 10px 0;
   box-shadow: 0px 2px 4px 0px rgba(104, 74, 202, 0.3);
-  
-  &--inner {
-    position: sticky;
-    top: 0;
-    background: #fff;
-    opacity: 0.9;
-  }
+  background: #fff;
+  opacity: 0.9;
+  z-index: 5;
 }
 
 .header__flex {
