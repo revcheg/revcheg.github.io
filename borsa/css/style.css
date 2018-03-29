@@ -976,6 +976,9 @@ body {
   .title--tools {
     background: #eaeaea url("../img/title-tools.jpg") no-repeat bottom;
     background-size: cover; }
+  .title--algo {
+    background: #eaeaea url("../img/title-algo.jpg") no-repeat top;
+    background-size: cover; }
 
 @media screen and (max-width: 768px) {
   .title h1 {
