@@ -23,7 +23,7 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 20%;
 
     display: block;
 
@@ -206,4 +206,27 @@
 {
     border: 2px solid #00164f;
     background: transparent;
+}
+
+/* Center mode */
+
+.slick-center {
+  opacity: 1;
+}
+
+.slick-center p {
+  opacity: 1;
+}
+
+.slick-center b {
+  opacity: 1;
+}
+
+.slick-center small {
+  opacity: 1;
+}
+
+.slick-center img {
+  width: 120px;
+  margin-top: 30px;
 }

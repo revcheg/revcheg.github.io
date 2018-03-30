@@ -29,7 +29,8 @@ $('.type__flex--mobile').slick({
 $('.comment__slider').slick({
   centerMode: true,
   // centerPadding: '60px',
-  slidesToShow: 5,
+  infinity: true,
+  slidesToShow: 3,
   responsive: [{
     breakpoint: 1200,
     settings: {

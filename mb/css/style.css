@@ -516,9 +516,17 @@ body {
 .price__name {
   padding: 0 0 0 30px;
   font-size: 20px;
-  font-family: 'ProximaNovaLight', sans-serif;
-  background: url("../img/price-bitcoin.png") no-repeat left;
-  background-size: contain; }
+  font-family: 'ProximaNovaLight', sans-serif; }
+  .price__name--bitcoin {
+    background: url("../img/price-bitcoin.png") no-repeat left;
+    background-size: contain; }
+  .price__name--gpb {
+    padding: 0 0 0 50px;
+    background: url("../img/price-flag.png") no-repeat left;
+    background-size: contain; }
+  .price__name--tesla {
+    background: url("../img/price-tesla.png") no-repeat left;
+    background-size: contain; }
 
 @media screen and (max-width: 768px) {
   .price {
@@ -669,6 +677,54 @@ body {
     font-size: 23px; }
   .ssl__text {
     font-size: 16px; } }
+
+.comment {
+  padding: 80px 0;
+  background: #dcdcdc; }
+  .comment h1 {
+    margin: 0 0 60px 0;
+    color: #051c4f;
+    font-size: 35px;
+    font-family: 'ProximaNovaBold', sans-serif;
+    text-align: center; }
+
+.comment__box {
+  height: 480px !important;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .comment__box p {
+    position: absolute;
+    bottom: 0px;
+    width: 710px;
+    margin-left: -190px;
+    color: #595959;
+    font-size: 16px;
+    font-family: 'ProximaNovaLight', sans-serif;
+    text-align: center;
+    opacity: 0; }
+  .comment__box img {
+    width: 80px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .comment__box b {
+    color: #060606;
+    font-size: 24px;
+    font-family: 'ProximaNovaLight', sans-serif;
+    opacity: 0; }
+  .comment__box small {
+    color: #6c6c6c;
+    font-size: 18px;
+    font-family: 'ProximaNova', sans-serif;
+    opacity: 0; }
+
+@media screen and (max-width: 768px) {
+  .comment {
+    display: none; } }
 
 .easy {
   padding: 100px 0;

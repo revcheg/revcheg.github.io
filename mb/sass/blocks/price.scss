@@ -148,8 +148,22 @@
   padding: 0 0 0 30px;
   font-size: 20px;
   font-family: 'ProximaNovaLight', sans-serif;
-  background: url('../img/price-bitcoin.png') no-repeat left;
-  background-size: contain;
+  
+  &--bitcoin {
+    background: url('../img/price-bitcoin.png') no-repeat left;
+    background-size: contain;
+  }
+  
+  &--gpb {
+    padding: 0 0 0 50px;
+    background: url('../img/price-flag.png') no-repeat left;
+    background-size: contain;
+  }
+  
+  &--tesla {
+    background: url('../img/price-tesla.png') no-repeat left;
+    background-size: contain;
+  }
 }
 
 @media screen and ($tablet-widths) {}
