@@ -1022,6 +1022,21 @@ body {
   .table b {
     font-size: 18px;
     font-family: 'Open Sans Bold', sans-serif; }
+  .table--spread {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 15px;
+    font-family: 'Open Sans Regular', sans-serif;
+    border-collapse: collapse; }
+    .table--spread tr {
+      height: 40px; }
+    .table--spread tbody {
+      border-top: none;
+      border-bottom: 1px solid #efe7e7;
+      border-left: 1px solid #efe7e7;
+      border-right: 1px solid #efe7e7; }
+      .table--spread tbody tr:nth-of-type(odd) {
+        background: #f9f9f9; }
 
 .table__check-g {
   background: url("../img/table-g.svg") no-repeat center;
