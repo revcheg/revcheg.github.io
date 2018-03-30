@@ -408,6 +408,31 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .price__flex--sub {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 369px;
+    padding: 10px 56px;
+    border-radius: 5px;
+    background: #fff;
+    opacity: 0;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .price__flex--sub div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 100%;
+      margin: 10px 0; }
 
 .price__left {
   margin: 0 20px 0 0;
@@ -454,6 +479,7 @@ body {
   font-family: 'ProximaNovaLight', sans-serif; }
 
 .price__select {
+  position: relative;
   width: 100%;
   margin: 50px 0 0 0;
   padding: 20px 0;
@@ -462,6 +488,30 @@ body {
   background: transparent; }
   .price__select p {
     margin: 0; }
+  .price__select::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    right: 10px;
+    width: 17px;
+    height: 10px;
+    background: url("../img/price-arrow.png");
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .price__select:hover::after {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  .price__select:hover .price__flex--sub {
+    opacity: 1; }
+
+.price__value {
+  padding: 0 0 0 30px; }
+  .price__value--bitcoin {
+    background: url("../img/price-up.png") no-repeat left; }
+  .price__value--gpb {
+    background: url("../img/price-up.png") no-repeat left; }
+  .price__value--tesla {
+    background: url("../img/price-up.png") no-repeat left; }
 
 .price__name {
   padding: 0 0 0 30px;
