@@ -24,7 +24,7 @@
                       <li class="main-nav__item"><a href="../accounts/trade-with-borsapro.html">Trade with BorsaPro</a></li>
                       <li class="main-nav__item"><a href="../accounts/account-types.html">Account types</a></li>
                       <li class="main-nav__item"><a href="../accounts/segregated-account.html">Segregated account</a></li>
-                      <li class="main-nav__item"><a href="#">Open live account</a></li>
+                      <li class="main-nav__item"><a class="button--open">Open live account</a></li>
                   </ul>
                 </li>
                 <li class="main-nav__item">
@@ -47,8 +47,8 @@
                 </li>
             </ul>
             <ul class="main-nav__user">
-              <li class="main-nav__item"><a class="button  button--header  button--green" href="#">Open account</a></li>
-              <li class="main-nav__item"><a class="button  button--header  button--gray" href="#">Log In</a></li>
+              <li class="main-nav__item"><a class="button  button--header  button--green  button--open" href="#">Open account</a></li>
+              <li class="main-nav__item"><a class="button  button--header  button--gray  button-signin" href="#">Log In</a></li>
             </ul>
           </div>
           
@@ -282,6 +282,49 @@
     </div>
     <p class="footer__copyright">© 2018 ALL right reserved BorsaPro</p>
   </footer>
+  <div class="popup__overlay  popup__overlay--hide">
+    <!-- SignIn -->
+    <div class="popup  popup--signin  popup--hide">
+      <b>Welcome</b>
+      <small>Please login</small>
+      <form>
+        <input type="text" name="login" placeholder="Login">
+        <input type="password" placeholder="Password">
+        <p class="popup__submit">
+          <a href="#">Forgot your password?</a>
+          <button type="submit">Login</button>
+        </p>
+        <b>Not yet registered to BorsaPro?</b>
+        <p class="popup__links">
+          <a class="popup__real" href="#">Open Real Account</a>
+          <a class="popup__demo" href="#">Open Demo Account</a>
+        </p>
+        <button class="popup__close" type="button"></button>
+      </form>
+    </div>
+    <!-- Registration -->
+    <div class="popup  popup--regi  popup--hide">
+      <b>Registration</b>
+      <small>Please fill in your details to create a trading account</small>
+      <form>
+        <p>Account Setup</p>
+        <input type="text" placeholder="First Name *">
+        <input type="text" placeholder="Last Name *">
+        <input type="password" placeholder="Password *">
+        <input type="password" placeholder="Password Confirmation *">
+        <select>
+          <option value="" hidden>Currency *</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+        </select>
+        <input type="text" placeholder="Promocode">
+        <button type="submit">Next</button>
+        <button class="popup__close" type="button"></button>
+      </form>
+    </div>
+  </div>
   <script src="../js/mobile-menu.js"></script>
+  <script src="../js/popup.js"></script>
 </body>
 </html>
