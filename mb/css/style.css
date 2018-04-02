@@ -644,6 +644,36 @@ body {
     .profit p {
       font-size: 23px; } }
 
+.range {
+  padding: 70px 0 100px 0; }
+  .range h1 {
+    margin: 0 0 80px 0;
+    color: #051c4f;
+    font-size: 35px;
+    font-family: 'ProximaNovaBold', sans-serif;
+    text-align: center; }
+  .range input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 500px;
+    height: 15px;
+    outline: none;
+    background: -webkit-linear-gradient(left, #051c4f 0%, #051c4f 50%, #ddd 50%, #ddd 100%); }
+  .range input[type="range"]::-webkit-slider-thumb {
+    position: relative;
+    top: 30px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: url("../img/range-arrow.png") no-repeat top;
+    background-size: cover;
+    cursor: pointer; }
+  .range #values label {
+    font-size: 200px;
+    color: red; }
+
 .ssl {
   padding: 70px 0;
   color: #fff;

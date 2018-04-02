@@ -78,6 +78,29 @@
   }
 }
 
+.webtrader__box--left {
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 36px;
+    left: -102px;
+    width: 180px;
+    border: 1px dotted #000;
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 32px;
+    left: -112px;
+    width: 10px;
+    height: 10px;
+    background: url('../img/web-point.svg');
+  }
+}
+
 .webtrader__subtext {
   margin: 0 0 60px 0;
   font-size: 18px;
@@ -152,5 +175,34 @@
   
   &--blue {
     background: #00c7e2;
+  }
+}
+
+.webtrader__flex--up {
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.webtrader__box--up {
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: -120px;
+    left: 103px;
+    // width: 180px;
+    height: 130px;
+    border: 1px dotted #000;
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -130px;
+    left: 99px;
+    width: 10px;
+    height: 10px;
+    background: url('../img/web-point.svg');
   }
 }

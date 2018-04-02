@@ -26,7 +26,7 @@
     <div class="time">
       <div class="container">
         <div class="time__flex">
-          <div class="time__box">WET 19:37:15</div>
+          <div class="time__box  time__box--wet">WET 19:37:15</div>
           <div class="time__box">EET 19:37:15</div>
           <div class="time__box">MSK 19:37:15</div>
         </div>
@@ -158,7 +158,30 @@
       <p>В случае правильного прогноза<br><span>прибыль составит до 90%</span> от вложения</p>
     </div>
   </section>
-  
+  <section class="range">
+    <div class="container">
+      <h1>Рассчитайте свой возможный доход</h1>
+      <div class="range__flex">
+        <div class="range__left">
+          <label>
+            <p>Размер инвестиции</p>
+            <input class="ranges" value="50" min="0" max="100" type="range" step="25" list="values" oninput="range()">
+            <datalist id="values">
+              <option label="asdasdas">0</option>
+              <option>25</option>
+              <option>50</option>
+              <option>75</option>
+              <option>100</option>
+            </datalist>
+          </label>
+          <label>
+            <p>Период инвестирования</p>
+            <input type="range" name="" value="">
+          </label>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="ssl">
     <div class="container">
       <img src="img/ssl-shield.png">
@@ -345,5 +368,7 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/slick/slick.min.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/range.js"></script>
+  <!-- <script src="js/time.js"></script> -->
 </body>
 </html>

@@ -265,6 +265,24 @@ body {
     height: 10px;
     background: url("../img/web-point.svg"); }
 
+.webtrader__box--left {
+  position: relative; }
+  .webtrader__box--left::after {
+    content: '';
+    position: absolute;
+    top: 36px;
+    left: -102px;
+    width: 180px;
+    border: 1px dotted #000; }
+  .webtrader__box--left::before {
+    content: '';
+    position: absolute;
+    top: 32px;
+    left: -112px;
+    width: 10px;
+    height: 10px;
+    background: url("../img/web-point.svg"); }
+
 .webtrader__subtext {
   margin: 0 0 60px 0;
   font-size: 18px;
@@ -326,3 +344,27 @@ body {
       text-transform: none; }
   .webtrader__button--blue {
     background: #00c7e2; }
+
+.webtrader__flex--up {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 30px; }
+
+.webtrader__box--up {
+  position: relative; }
+  .webtrader__box--up::after {
+    content: '';
+    position: absolute;
+    top: -120px;
+    left: 103px;
+    height: 130px;
+    border: 1px dotted #000; }
+  .webtrader__box--up::before {
+    content: '';
+    position: absolute;
+    top: -130px;
+    left: 99px;
+    width: 10px;
+    height: 10px;
+    background: url("../img/web-point.svg"); }
