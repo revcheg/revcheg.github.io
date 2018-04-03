@@ -1,5 +1,5 @@
 .range {
-  padding: 70px 0 100px 0;
+  padding: 70px 0 76px 0;
   
   h1 {
     margin: 0 0 80px 0;
@@ -9,52 +9,53 @@
     text-align: center;
   }
   
-  // input[type='range'] {
-  //   width: 500px;
-  //   background: #dddddd;
-  //   appearance: none;
-  //   overflow: hidden;
-  // }
-  // 
-  // input[type='range']::-webkit-slider-runnable-track {
-  //   height: 10px;
-  //   appearance: none;
-  //   color: #13bba4;
-  //   margin-top: -1px;
-  // }
-  // 
-  // input[type='range']::-webkit-slider-thumb {
-  //   width: 10px;
-  //   -webkit-appearance: none;
-  //   height: 10px;
-  //   cursor: ew-resize;
-  //   background: #fff;
-  //   box-shadow: -300px 0 0 300px $mc;
-  // }
-  // 
-  // input[type="range"]::-moz-range-progress {
-  //   background-color: #43e5f7; 
-  // }
-  // 
-  // input[type="range"]::-moz-range-track {  
-  //   background-color: #9a905d;
-  // }
-  // 
-  // input[type="range"]::-ms-fill-lower {
-  //   background-color: #43e5f7; 
-  // }
-  // 
-  // input[type="range"]::-ms-fill-upper {  
-  //   background-color: #9a905d;
-  // }
+  label {
+    font-size: 24px;
+    font-family: 'ProximaNovaLight', sans-serif;
+    
+    &:nth-child(2) {
+      
+      p {
+        margin: 70px 0 24px 0;
+      }
+    }
+  }
+  
+  hr {
+    height: 1px;
+    margin: 70px 0 40px 0;
+    border: none;
+    background: #000;
+    outline: none;
+    
+    & + p {
+      font-size: 26px;
+      font-family: 'ProximaNovaLight', sans-serif;
+      text-align: center;
+      
+      span {
+        color: $mc;
+        font-size: 28px;
+        font-family: 'ProximaNovaBold', sans-serif;
+      }
+    }
+  }
+}
+
+.range__flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.range__left {
   
   input[type="range"] {
     appearance: none;
     width: 500px;
     height: 15px;
-    // background: #ddd;
     outline: none;
-    background:-webkit-linear-gradient(left ,$mc 0%,$mc 50%,#ddd 50%, #ddd 100%);
+    background: linear-gradient(left, $mc 0%, $mc 50%, #ddd 50%, #ddd 100%);
   }
   
   input[type="range"]::-webkit-slider-thumb {
@@ -66,13 +67,36 @@
     background: url('../img/range-arrow.png') no-repeat top;
     background-size: cover;
     cursor: pointer;
-  }
-  
-  #values {
     
-    label {
-      font-size: 200px;
-      color: red;
+    // &.range__get {
+    //   left: -10px;
+    // }
+  }
+}
+
+.range__right {
+  
+  input {
+    width: 300px !important;
+  }
+
+  progress {
+    appearance: none;
+    width: 350px;
+    height: 40px;
+    
+    &[value]::-webkit-progress-bar {
+      background: #ddd;
+    }
+    
+    &[value]::-webkit-progress-value {
+      background: linear-gradient(left, $mc 0%, #000 100%);
     }
   }
+}
+
+.range__invest-output,
+.range__get-output {
+  color: $mc;
+  font-family: 'ProximaNovaBold', sans-serif;
 }

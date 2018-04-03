@@ -165,21 +165,40 @@
         <div class="range__left">
           <label>
             <p>Размер инвестиции</p>
-            <input class="ranges" value="50" min="0" max="100" type="range" step="25" list="values" oninput="range()">
+            <input class="range__invest" value="500000" min="100" max="1000000" type="range" list="values" oninput="invest()">
             <datalist id="values">
-              <option label="asdasdas">0</option>
-              <option>25</option>
-              <option>50</option>
-              <option>75</option>
-              <option>100</option>
+              <option value="100">100</option>
+              <option value="1000">1000</option>
+              <option value="10000">10000</option>
+              <option value="100000">100000</option>
+              <option value="1000000">1000000</option>
             </datalist>
           </label>
           <label>
             <p>Период инвестирования</p>
-            <input type="range" name="" value="">
+            <input class="range__get" min="0" max="12" step="" type="range" list="values-date" oninput="get()">
+            <datalist id="values-date">
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="9">9</option>
+              <option value="12">12</option>
+            </datalist>
+          </label>
+        </div>
+        <div class="range__right">
+          <label>
+            <p>Вложили: <span class="range__invest-output">500000 USD</span></p>
+            <progress class="progress__invest" max="1000000" value="500000"></progress>
+          </label>
+          <label>
+            <p>Получили: <span class="range__get-output"></span></p>
+            <progress class="progress__get" max="12" value="6"></progress>
           </label>
         </div>
       </div>
+      <hr>
+      <p>Результат инвестиции: <span>15 544 USD</span></p>
     </div>
   </section>
   <section class="ssl">
