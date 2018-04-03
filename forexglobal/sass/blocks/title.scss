@@ -1,0 +1,48 @@
+.title {
+  padding: 0 0 160px 0;
+  background: #32138c url('../img/title-bg.jpg') no-repeat top;
+  background-size: cover;
+}
+
+.title__name {
+  margin: 260px 0 95px 0;
+  color: #fff;
+  font-size: 65px;
+  font-weight: normal;
+  font-family: 'SFUIDisplay-Light', sans-serif;
+  text-align: center;
+}
+
+.title__form {
+  display: flex;
+  justify-content: space-between;
+  width: 770px;
+  margin: auto;
+  
+  input {
+    width: 248px;
+    height: 38px;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'SFUIDisplay-Thin', sans-serif;
+    border: 1px solid $mc;
+    border-radius: 3px;
+    background: transparent;
+    
+    &::placeholder {
+      color: $mc;
+    }
+  }
+  
+  button {
+    width: 170px;
+    height: 40px;
+    color: #2f2861;
+    font-size: 18px;
+    font-family: 'SFUIDisplay-Thin', sans-serif;
+    border: none;
+    border-radius: 3px;
+    background: $mc;
+  }
+}
