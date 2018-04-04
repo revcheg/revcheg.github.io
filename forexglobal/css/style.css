@@ -215,8 +215,8 @@ body {
       width: 70px; }
     .header__user li a {
       display: block;
-      width: 170px;
-      padding: 10px 0;
+      width: 168px;
+      padding: 9px 0;
       color: #fac93e;
       font-size: 18px;
       font-family: 'SFUIDisplay-Thin', sans-serif;
@@ -250,3 +250,157 @@ body {
     font-size: 18px;
     font-family: 'SFUIDisplay-Thin', sans-serif;
     text-decoration: none; }
+
+.welcome {
+  padding: 90px 0; }
+
+.welcome__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .welcome__flex img {
+    max-width: 550px;
+    height: 370px; }
+
+.welcome__content {
+  width: 585px; }
+
+.welcome__name {
+  margin: 0;
+  color: #2f2861;
+  font-size: 60px;
+  font-weight: normal;
+  font-family: 'SFUIDisplay-Thin', sans-serif; }
+  .welcome__name span {
+    font-family: 'SFUIDisplay-Regular', sans-serif; }
+
+.welcome__sub-name {
+  color: #2f2861;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: 'SFUIDisplay-Thin', sans-serif; }
+
+.welcome__text {
+  margin: 35px 0 50px 0;
+  color: #2f2861;
+  font-size: 18px;
+  font-family: 'SFUIDisplay-Thin', sans-serif; }
+
+.welcome__button {
+  display: block;
+  width: 170px;
+  padding: 10px 0;
+  color: #2f2861;
+  font-size: 18px;
+  font-family: 'SFUIDisplay-Thin', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  background: #fac93e; }
+
+.edge {
+  padding: 40px 0;
+  background: #0c194f url("../img/edge-bg.jpg") no-repeat top;
+  background-size: cover; }
+
+.edge__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 15px; }
+
+.edge__box {
+  width: 170px;
+  text-align: center; }
+  .edge__box b {
+    display: inline-block;
+    padding: 0 0 9px 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+    font-family: 'SFUIDisplay-Medium', sans-serif;
+    border-bottom: 1px solid #fac93e; }
+  .edge__box p {
+    margin: 10px 0 0 0;
+    color: #fff;
+    font-family: 'SFUIDisplay-Thin', sans-serif; }
+
+.account {
+  padding: 70px 0; }
+
+.account__name {
+  margin: 0 0 60px 0;
+  color: #2f2861;
+  font-size: 60px;
+  font-weight: normal;
+  font-family: 'SFUIDisplay-Thin', sans-serif;
+  text-align: center; }
+
+.account__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 15px; }
+
+.account__box {
+  width: 230px;
+  padding: 100px 70px 50px;
+  color: #fff;
+  border-bottom-right-radius: 20px;
+  background: #0e0b39; }
+  .account__box h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: normal;
+    font-family: 'SFUIDisplay-Medium', sans-serif;
+    text-align: center; }
+  .account__box hr {
+    width: 30px;
+    height: 1px;
+    margin: 10px auto;
+    border: none;
+    background: #fac93e; }
+  .account__box b {
+    display: block;
+    font-weight: normal;
+    font-family: 'SFUIDisplay-Medium', sans-serif;
+    text-align: center; }
+  .account__box ul {
+    margin: 30px 0 35px 0;
+    padding: 0;
+    font-family: 'SFUIDisplay-Thin', sans-serif;
+    list-style-image: url("../img/list.svg"); }
+  .account__box a {
+    display: block;
+    width: 168px;
+    margin: auto;
+    padding: 9px 0;
+    color: #fac93e;
+    font-size: 18px;
+    font-family: 'SFUIDisplay-Thin', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #fac93e;
+    border-radius: 3px; }
+  .account__box:nth-child(2) li:last-child {
+    list-style: none; }
+  .account__box:nth-child(1) {
+    background: #0e0b39 url("../img/account-zulu.png") no-repeat 70px -30px;
+    background-size: 256px; }
+  .account__box:nth-child(2) {
+    background: #0e0b39 url("../img/account-real.png") no-repeat 0 -40px; }
+  .account__box:nth-child(3) {
+    background: #0e0b39 url("../img/account-demo.png") no-repeat 40px 10px;
+    background-size: 300px; }
