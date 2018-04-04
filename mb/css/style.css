@@ -136,6 +136,10 @@ body {
   padding: 0;
   list-style: none; }
 
+@media screen and (max-width: 768px) {
+  .nav__list {
+    display: none; } }
+
 .button {
   color: #fff;
   font-size: 18px;
@@ -723,6 +727,37 @@ body {
   color: #051c4f;
   font-family: 'ProximaNovaBold', sans-serif; }
 
+@media screen and (max-width: 1200px) {
+  .range__left input[type="range"] {
+    width: 280px; }
+  .range__right progress {
+    width: 280px; } }
+
+@media screen and (max-width: 768px) {
+  .range {
+    padding: 30px 0; }
+    .range h1 {
+      margin: 0;
+      font-size: 24px; }
+    .range label {
+      font-size: 18px;
+      text-align: center; }
+    .range hr + p {
+      font-size: 18px; }
+      .range hr + p span {
+        display: block;
+        font-size: 18px; }
+  .range__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .range__left {
+    margin: 0 0 50px 0; } }
+
 .ssl {
   padding: 70px 0;
   color: #fff;
@@ -755,7 +790,12 @@ body {
   .ssl__title {
     font-size: 23px; }
   .ssl__text {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .ssl__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
 
 .comment {
   padding: 80px 0;
@@ -1072,3 +1112,42 @@ body {
     color: #fff;
     font-size: 12px;
     font-family: 'ProximaNovaLight', sans-serif; }
+
+@media screen and (max-width: 768px) {
+  .footer__links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center; }
+  .footer__support {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .footer__support li {
+      margin: 0 0 10px 0; }
+    .footer__support a[href^="mailto:"] {
+      padding: 0;
+      background: none;
+      background-size: 17px; }
+    .footer__support a[href^="tel:"] {
+      padding: 0;
+      background: none;
+      background-size: 16px; }
+  .footer__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .footer__left,
+  .footer__right {
+    width: auto; }
+  .footer__store {
+    width: 291px;
+    margin: auto; }
+  .footer__social {
+    margin: 20px auto 0; } }

@@ -165,3 +165,56 @@
     
   }
 }
+
+@media screen and ($tablet-widths) {
+  
+}
+
+@media screen and ($mobile-widths) {  
+  .footer__links {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer__support {
+    flex-direction: column;
+    align-items: center;
+    
+    li {
+      margin: 0 0 10px 0;
+    }
+    
+    a {
+      
+      &[href^="mailto:"] {
+        padding: 0;
+        background: none;
+        background-size: 17px;
+      }
+      
+      &[href^="tel:"] {
+        padding: 0;
+        background: none;
+        background-size: 16px;
+      }
+    }
+  }
+  
+  .footer__info {
+    flex-direction: column;
+  }
+  
+  .footer__left,
+  .footer__right {
+    width: auto;
+  }
+  
+  .footer__store {
+    width: 291px;
+    margin: auto;
+  }
+  
+  .footer__social {
+    margin: 20px auto 0;
+  }
+}

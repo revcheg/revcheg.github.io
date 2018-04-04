@@ -100,3 +100,56 @@
   color: $mc;
   font-family: 'ProximaNovaBold', sans-serif;
 }
+
+@media screen and ($tablet-widths) {
+  .range__left {
+    
+    input[type="range"] {
+      width: 280px;
+    }
+  }
+  
+  .range__right {
+    
+    progress {
+      width: 280px;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .range {
+    padding: 30px 0;
+    
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    
+    label {
+      font-size: 18px;
+      text-align: center;
+    }
+    
+    hr {
+      
+      & + p {
+        font-size: 18px;
+        
+        span {
+          display: block;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  
+  .range__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .range__left {
+    margin: 0 0 50px 0;
+  }
+}

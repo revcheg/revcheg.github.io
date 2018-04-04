@@ -34,7 +34,8 @@ $('.comment__slider').slick({
   responsive: [{
     breakpoint: 1200,
     settings: {
-      slidesToShow: 3
+      slidesToShow: 3,
+      arrows: false
     }
   }]
 });
