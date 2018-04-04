@@ -38,6 +38,12 @@
       font-family: 'SFUIDisplay-Thin', sans-serif;
       text-decoration: none;
       border: 1px solid $mc;
+      border-radius: 3px;
+      transition: 0.3;
+      
+      &:hover {
+        
+      }
     }
   }
 }
