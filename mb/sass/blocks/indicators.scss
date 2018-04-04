@@ -1,0 +1,70 @@
+.indicators {
+  
+  header {
+    margin: 20px 0;
+    background: #eee;
+    
+    h2 {
+      margin: 0;
+      padding: 20px 0;
+      color: $mc;
+      font-size: 30px;
+      font-family: 'ProximaNovaSemiBold', sans-serif;
+    }
+  }
+}
+
+.indicators__controll {
+  padding: 20px 0;
+  border-top: 2px solid #f4f4f4;
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    li {
+      
+      &:nth-child(1) {
+        color: $mc;
+        font-size: 20px;
+        font-family: 'ProximaNova', sans-serif;
+      }
+      
+      a {
+        padding: 10px 20px;
+        color: #69696a;
+        font-family: 'ProximaNova', sans-serif;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.indicators__trend {
+  padding: 10px 50px 10px 20px !important;
+  background: url('../img/indicators-trend.png') no-repeat 120px;
+}
+
+.indicators__oscc {
+  background: url('../img/indicators-oscc.png') no-repeat 20px;
+}
+
+.indicators__active {
+  color: #fff !important;
+  background: $mc;
+}
+
+.indicators__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.indocators__box {
+  width: 280px;
+}
