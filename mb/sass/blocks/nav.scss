@@ -10,8 +10,30 @@
 
 .nav__list {
   display: flex;
+  align-items: center;
   padding: 0;
   list-style: none;
+  
+  &--inner {
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    
+    a {
+      color: $mc;
+      font-size: 17px;
+      font-family: 'ProximaNova', sans-serif;
+      text-decoration: none;
+    }
+  }
+}
+
+.nav__login {
+  display: block;
+  width: 45px;
+  height: 40px;
+  border-radius: 5px;
+  background: $mc url('../img/nav-login.png') no-repeat center;
 }
 
 @media screen and ($tablet-widths) {

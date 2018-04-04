@@ -1,0 +1,102 @@
+.legal {
+  padding: 40px 0;
+  
+  h1 {
+    margin: 0 0 20px 0;
+    color: $mc;
+    font-size: 18px;
+    font-family: 'ProximaNovaBold', sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+.legal__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.legal__button {
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    li {
+      
+      button {
+        width: 100%;
+        padding: 10px;
+        color: #949494;
+        font-size: 18px;
+        font-family: 'ProximaNovaLight', sans-serif;
+        border: none;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+  }
+}
+
+.legal__content {
+  width: 700px;
+  margin: 30px 0 0 0;
+  
+  h2 {
+    margin: 0 0 30px 0;
+    color: $mc;
+    font-size: 37px;
+    font-family: 'ProximaNova', sans-serif;
+  }
+  
+  p {
+    color: #949494;
+    font-size: 18px;
+    font-family: 'ProximaNovaLight', sans-serif;
+  }
+  
+  b {
+    font-size: 18px;
+    font-family: 'ProximaNova', sans-serif;
+  }
+}
+
+.legal__active {
+  color: $mc !important;
+  border-top: 1px solid $mc !important;
+  border-bottom: 1px solid $mc !important;
+  background: url('../img/legal-arrow.png') no-repeat right;
+  background-size: 6px;
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .legal__flex {
+    flex-direction: column;
+  }
+  
+  .legal__button {
+    display: flex;
+    justify-content: space-between;
+    background: #eaeaea;
+    
+    h1 {
+      text-transform: none;
+    }
+  }
+  
+  .legal__content {
+    width: auto;
+    
+    h2 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+    }
+    
+    p {
+      font-size: 14px;
+    }
+  }
+}
