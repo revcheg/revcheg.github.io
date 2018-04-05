@@ -1,0 +1,128 @@
+.footer {
+  padding: 30px 0;
+  background: #161525;
+}
+
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+  &--links {
+    
+    b {
+      // display: inline-block;
+      // padding: 0 0 10px 0;
+      color: #cdcdcf;
+      font-size: 18px;
+      font-weight: normal;
+      font-family: 'SFUIDisplay-Regular', sans-serif;
+      // border-bottom: 1px solid #cdcdcf;
+    }
+    hr {
+      width: 30px;
+      height: 1px;
+      margin: 10px 0;
+      border: none;
+      background: #cdcdcf;
+    }
+    
+    a {
+      color: #cdcdcf;
+      font-size: 14px;
+      font-family: 'SFUIDisplay-Thin', sans-serif;
+      text-decoration: none;
+      transition: 0.3s;
+      
+      &:hover {
+        color: $mc;
+      }
+    }
+    
+    li {
+      color: #cdcdcf;
+      font-size: 14px;
+      font-family: 'SFUIDisplay-Thin', sans-serif;
+    }
+  }
+}
+
+.footer__logo {
+  width: 170px;
+  height: 53px;
+}
+
+.footer__callme {
+  display: block;
+  width: 168px;
+  margin: 20px 0;
+  padding: 9px 0;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'SFUIDisplay-Thin', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+.footer__hr {
+  height: 1px;
+  margin: 20px 0;
+  border: none;
+  background: #fff;
+}
+
+.footer__name {
+  color: #cdcdcf;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: 'SFUIDisplay-Regular', sans-serif;
+  text-transform: uppercase;
+}
+
+.footer__text {
+  color: #cdcdcf;
+  font-size: 14px;
+  font-family: 'SFUIDisplay-Thin', sans-serif;
+  
+  a {
+    color: #fefeff;
+    transition: 0.3s;
+    
+    &:hover {
+      color: $mc;
+    }
+  }
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__link {
+  width: 25px;
+  height: 25px;
+  
+  &--fb {
+    background: url('../img/footer-fb.svg') no-repeat top;
+  }
+  
+  &--li {
+    background: url('../img/footer-li.svg') no-repeat top;
+  }
+  
+  &--gp {
+    background: url('../img/footer-gp.svg') no-repeat top;
+  }
+  
+  &--tw {
+    background: url('../img/footer-tw.svg') no-repeat top;
+  }
+}

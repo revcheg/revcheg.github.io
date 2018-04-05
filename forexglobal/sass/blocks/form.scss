@@ -1,0 +1,83 @@
+.form {
+  padding: 95px 0 110px;
+  background: url('../img/form-bg.jpg') no-repeat top;
+  background-size: cover;
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    margin: 0 0 0 215px;
+    padding: 30px 40px 55px;
+    text-align: center;
+    border-bottom-right-radius: 20px;
+    background: #0e0b39;
+    
+    p {
+      margin: 0 0 5px 0;
+      color: #fff;
+      font-family: 'SFUIDisplay-Medium', sans-serif;
+    }
+    
+    b {
+      color: #fff;
+      font-size: 30px;
+      font-weight: normal;
+      font-family: 'SFUIDisplay-Medium', sans-serif;
+    }
+    
+    hr {
+      width: 30px;
+      height: 1px;
+      margin: 20px auto 25px;
+      border: none;
+      background: $mc;
+    }
+    
+    input {
+      margin: 0 0 10px 0;
+      padding: 8px 15px;
+      font-size: 18px;
+      font-family: 'SFUIDisplay-Thin', sans-serif;
+      border: 2px solid #fff;
+      border-radius: 3px;
+      transition: 0.3s;
+      outline: none;
+      
+      &::placeholder {
+        color: $sc;
+      }
+      
+      &:focus {
+        border: 2px solid #7865ff;
+      }
+    }
+    
+    select {
+      height: 41px;
+      margin: 0 0 10px 0;
+      color: $sc;
+      font-size: 18px;
+      font-family: 'SFUIDisplay-Thin', sans-serif;
+      border: 2px solid #fff;
+      border-radius: 3px;
+      text-indent: 5px;
+      outline: none;
+      
+      &:focus {
+        border: 2px solid #7865ff;
+      }
+    }
+    
+    button {
+      margin: 25px 0 0 0;
+      padding: 10px 0;
+      color: $sc;
+      font-size: 18px;
+      font-family: 'SFUIDisplay-Medium', sans-serif;
+      border: none;
+      border-radius: 3px;
+      background: $mc;
+    }
+  }
+}
