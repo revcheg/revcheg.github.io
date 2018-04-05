@@ -35,19 +35,38 @@
     <nav class="nav">
       <div class="container">
         <div class="nav__flex">
+          <button class="nav__toggle" type="button">Open Menu</button>
+          <button class="nav__login" type="button">Login</button>
           <picture>
             <source srcset="img/logo-s.png" media="(max-width: 768px)">
             <source srcset="img/logo.png">
             <img src="img/logo.png" alt="MasterBinary">
           </picture>
-          <!-- <img src="img/logo.png" width="183" alt="MasterBinary"> -->
+          <!-- <div class="nav__container">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Типы счетов</a></li>
+              <li><a href="#">Торговля</a></li>
+              <li><a href="#">Обучение</a></li>
+              <li><a href="#">Юридическая информация</a></li>
+            </ul>
+          </div> -->
           <ul class="nav__list">
             <li><a class="button  button--blue" href="#">Вход</a></li>
             <li><a class="button  button--blue" href="#">Регистрация</a></li>
             <!-- <li></li> -->
           </ul>
         </div>
-      </div>  
+      </div> 
+      <div class="nav__container  nav--closed">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Типы счетов</a></li>
+          <li><a href="#">Торговля</a></li>
+          <li><a href="#">Обучение</a></li>
+          <li><a href="#">Юридическая информация</a></li>
+        </ul>
+      </div> 
     </nav>
   </header>
   <section class="title">
@@ -389,6 +408,7 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/slick/slick.min.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/mobile-menu.js"></script>
   <script src="js/range.js"></script>
   <!-- <script src="js/time.js"></script> -->
 </body>

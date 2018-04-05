@@ -36,11 +36,104 @@
   background: $mc url('../img/nav-login.png') no-repeat center;
 }
 
+.nav__toggle,
+.nav__login {
+  display: none;
+}
+
+.nav--closed {
+  animation-name: close;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  
+  @keyframes close {
+    0% {
+      top: 78px;
+    }
+  
+    100% {
+      top: -500px;
+    }
+  }
+}
+
+.nav--opened {
+  animation-name: open;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  
+  @keyframes open {
+    0% {
+      top: -500px;
+    }
+    
+    100% {
+      top: 78px;
+    }
+  }
+}
+
 @media screen and ($tablet-widths) {
   
 }
 
 @media screen and ($mobile-widths) {
+  .nav__toggle {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 23px;
+    height: 16px;
+    font-size: 0;
+    border: none;
+    background: url('../img/nav.svg') no-repeat top;
+  }
+  
+  .nav__login {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    border: none;
+    background: url('../img/nav-login.svg') no-repeat top;
+    background-size: cover;
+  }
+  
+  .nav__container {
+    position: absolute;
+    top: -500px;
+    // display: block;
+    width: 100%;
+    transition: 0.3s;
+    
+    ul {
+      margin: 0;
+      padding: 0 30px;
+      background: #fff;
+      list-style: none;
+      
+      li {
+        border-bottom: 1px solid #dddddd;
+        
+        a {
+          display: block;
+          width: 100%;
+          padding: 15px 0;
+          color: #69696a;
+          font-family: 'ProximaNova', sans-serif;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  
+  .nav__flex {
+    justify-content: center;
+    position: relative;
+  }
+  
   .nav__list {
     display: none;
   }
