@@ -37,7 +37,8 @@
 }
 
 .nav__toggle,
-.nav__login {
+.nav__login,
+.nav__container {
   display: none;
 }
 
@@ -104,7 +105,7 @@
   .nav__container {
     position: absolute;
     top: -500px;
-    // display: block;
+    display: block;
     width: 100%;
     transition: 0.3s;
     

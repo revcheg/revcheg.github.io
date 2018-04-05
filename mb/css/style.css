@@ -160,7 +160,8 @@ body {
   background: #051c4f url("../img/nav-login.png") no-repeat center; }
 
 .nav__toggle,
-.nav__login {
+.nav__login,
+.nav__container {
   display: none; }
 
 .nav--closed {
@@ -226,6 +227,7 @@ body {
   .nav__container {
     position: absolute;
     top: -500px;
+    display: block;
     width: 100%;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
