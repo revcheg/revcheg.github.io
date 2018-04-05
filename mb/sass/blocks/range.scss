@@ -16,8 +16,12 @@
     &:nth-child(2) {
       
       p {
-        margin: 70px 0 24px 0;
+        margin: 70px 0 50px 0;
       }
+    }
+    
+    p {
+      margin: 0 0 50px 0;
     }
   }
   
@@ -99,6 +103,34 @@
 .range__get-output {
   color: $mc;
   font-family: 'ProximaNovaBold', sans-serif;
+}
+
+.range__invest {
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -35px;
+    width: 530px;
+    height: 30px;
+    background: url('../img/number-invest.png') no-repeat top;
+    background-size: contain;
+  }
+}
+
+.range__get {
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -35px;
+    width: 530px;
+    height: 30px;
+    background: url('../img/number-year.png') no-repeat top;
+    background-size: contain;
+  }
 }
 
 @media screen and ($tablet-widths) {

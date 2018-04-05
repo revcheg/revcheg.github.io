@@ -14,6 +14,8 @@ function invest() {
 
 	progressInvest.value = rangeInvest.value;
 	progressInvestOutput.innerHTML = rangeInvest.value + ' USD';
+	var giveInvest = rangeInvest.value * Math.pow(1 + (25/100), rangeGet.value);
+	progressGetOutput.innerHTML = giveInvest.toFixed() + ' USD';
 };
 
 function get() {
@@ -22,5 +24,19 @@ function get() {
 	$('.range__get').css({'background':'-webkit-linear-gradient(left, #002e5f 0%, #000 '+(val*100)/12+'%, #ddd '+(val*100)/12+'%, #ddd 100%)'});
 
 	progressGet.value = rangeGet.value;
-	progressGetOutput.innerHTML = rangeGet.value + ' USD';
+	
+	var getOutput = rangeInvest.value * Math.pow(1 + (25/100), rangeGet.value);
+	progressGetOutput.innerHTML = getOutput.toFixed() + ' USD';
 };
+
+// Ouput
+var ouput = document.querySelector('.range__output');
+
+function test () {
+	var profit =  rangeInvest.value * Math.pow(1 + (25/100), rangeGet.value) - rangeInvest.value;
+	ouput.innerHTML = profit.toFixed() + ' USD';
+}
+
+setInterval( function () { 
+  test() 
+}, 60);

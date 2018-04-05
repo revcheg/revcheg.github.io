@@ -63,8 +63,48 @@
 .indicators__flex {
   display: flex;
   justify-content: space-between;
+  
+  &--second {
+    margin: 10px 0 0 0;
+  }
 }
 
-.indocators__box {
-  width: 280px;
+.indicators__box {
+  width: 250px;
+  box-shadow: 0.8px 0.5px 9px 0.3px rgba(0, 1, 1, 0.2);
+  
+  img {
+    max-width: 100%;
+  }
+}
+
+.indicators__content {
+  padding: 20px 20px 30px;
+  
+  b {
+    color: $mc;
+    font-family: 'ProximaNovaSemiBold', sans-serif;
+  }
+  
+  p {
+    
+  }
+}
+
+.indicators__pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  margin: 40px auto;
+  padding: 0;
+  list-style: none;
+  
+  a {
+    padding: 14px 17px;
+    color: $mc;
+    font-size: 14px;
+    font-family: 'ProximaNovaLight', sans-serif;
+    text-decoration: none;
+    background: #dddddd;
+  }
 }

@@ -5,7 +5,7 @@ body {
 
 .container {
   width: 1080px;
-  margin: 0 auto; }
+  margin: auto; }
 
 @media screen and (max-width: 1200px) {
   .container {
@@ -773,7 +773,9 @@ body {
     font-size: 24px;
     font-family: 'ProximaNovaLight', sans-serif; }
     .range label:nth-child(2) p {
-      margin: 70px 0 24px 0; }
+      margin: 70px 0 50px 0; }
+    .range label p {
+      margin: 0 0 50px 0; }
   .range hr {
     height: 1px;
     margin: 70px 0 40px 0;
@@ -839,6 +841,28 @@ body {
 .range__get-output {
   color: #051c4f;
   font-family: 'ProximaNovaBold', sans-serif; }
+
+.range__invest {
+  position: relative; }
+  .range__invest::before {
+    content: '';
+    position: absolute;
+    top: -35px;
+    width: 530px;
+    height: 30px;
+    background: url("../img/number-invest.png") no-repeat top;
+    background-size: contain; }
+
+.range__get {
+  position: relative; }
+  .range__get::before {
+    content: '';
+    position: absolute;
+    top: -35px;
+    width: 530px;
+    height: 30px;
+    background: url("../img/number-year.png") no-repeat top;
+    background-size: contain; }
 
 @media screen and (max-width: 1200px) {
   .range__left input[type="range"] {
@@ -1432,6 +1456,37 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  .indicators__flex--second {
+    margin: 10px 0 0 0; }
 
-.indocators__box {
-  width: 280px; }
+.indicators__box {
+  width: 250px;
+  -webkit-box-shadow: 0.8px 0.5px 9px 0.3px rgba(0, 1, 1, 0.2);
+  box-shadow: 0.8px 0.5px 9px 0.3px rgba(0, 1, 1, 0.2); }
+  .indicators__box img {
+    max-width: 100%; }
+
+.indicators__content {
+  padding: 20px 20px 30px; }
+  .indicators__content b {
+    color: #051c4f;
+    font-family: 'ProximaNovaSemiBold', sans-serif; }
+
+.indicators__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 220px;
+  margin: 40px auto;
+  padding: 0;
+  list-style: none; }
+  .indicators__pagination a {
+    padding: 14px 17px;
+    color: #051c4f;
+    font-size: 14px;
+    font-family: 'ProximaNovaLight', sans-serif;
+    text-decoration: none;
+    background: #dddddd; }

@@ -195,8 +195,9 @@
           </label>
           <label>
             <p>Период инвестирования</p>
-            <input class="range__get" min="0" max="12" step="" type="range" list="values-date" oninput="get()">
+            <input class="range__get" value="6" min="0" max="12" step="" type="range" list="values-date" oninput="get()">
             <datalist id="values-date">
+              <option value="0">0</option>
               <option value="1">1</option>
               <option value="3">3</option>
               <option value="6">6</option>
@@ -211,13 +212,13 @@
             <progress class="progress__invest" max="1000000" value="500000"></progress>
           </label>
           <label>
-            <p>Получили: <span class="range__get-output"></span></p>
+            <p>Получили: <span class="range__get-output">1907349 USD</span></p>
             <progress class="progress__get" max="12" value="6"></progress>
           </label>
         </div>
       </div>
       <hr>
-      <p>Результат инвестиции: <span>15 544 USD</span></p>
+      <p>Результат инвестиции: <span class="range__output">15 544 USD</span></p>
     </div>
   </section>
   <section class="ssl">
