@@ -10,6 +10,10 @@
       color: $mc;
       font-size: 30px;
       font-family: 'ProximaNovaSemiBold', sans-serif;
+      
+      &:nth-child(2) {
+        display: none;
+      }
     }
   }
 }
@@ -46,18 +50,46 @@
   }
 }
 
+.indicators__all {
+  transition: 0.3s;
+  
+  &:hover {
+    color: #fff;
+    background: $mc;
+  }
+}
+
 .indicators__trend {
   padding: 10px 50px 10px 20px !important;
   background: url('../img/indicators-trend.png') no-repeat 120px;
+  transition: 0.3s;
+  
+  &:hover {
+    color: #fff;
+    background: $mc url('../img/indicators-trend-h.png') no-repeat 120px;
+  }
 }
 
 .indicators__oscc {
-  background: url('../img/indicators-oscc.png') no-repeat 20px;
+  padding: 10px 50px 10px 20px !important;
+  background: url('../img/indicators-oscc.png') no-repeat 135px;
+  transition: 0.3s;
+  
+  &:hover {
+    color: #fff;
+    background: $mc url('../img/indicators-oscc-h.png') no-repeat 135px;
+  }
 }
 
-.indicators__active {
-  color: #fff !important;
-  background: $mc;
+.indicators__psyho {
+  padding: 10px 50px 10px 20px !important;
+  background: url('../img/indicators-psyho.png') no-repeat 165px;
+  transition: 0.3s;
+  
+  &:hover {
+    color: #fff;
+    background: $mc url('../img/indicators-psyho-h.png') no-repeat 165px;
+  }
 }
 
 .indicators__flex {
@@ -67,10 +99,32 @@
   &--second {
     margin: 10px 0 0 0;
   }
+  
+  &--trend {
+    
+    p {
+      background: url('../img/indicators-trend.png') no-repeat right;
+    }
+  }
+  
+  &--oscc {
+    
+    p {
+      background: url('../img/indicators-oscc.png') no-repeat right;
+    }
+  }
+  
+  &--psyho {
+    
+    p {
+      background: url('../img/indicators-psyho.png') no-repeat right;
+      background-size: 14px;
+    }
+  }
 }
 
 .indicators__box {
-  width: 250px;
+  width: 270px;
   box-shadow: 0.8px 0.5px 9px 0.3px rgba(0, 1, 1, 0.2);
   
   img {
@@ -83,11 +137,41 @@
   
   b {
     color: $mc;
+    font-size: 16px;
     font-family: 'ProximaNovaSemiBold', sans-serif;
   }
   
   p {
+    color: #5d5f62;
+    font-size: 14px;
+    font-family: 'ProximaNova', sans-serif;
+  }
+  
+  hr {
+    height: 1px;
+    margin: 10px 0;
+    border: none;
+    background: #dddddd;
+  }
+  
+  a {
+    display: block;
+    width: 150px;
+    margin: 30px auto 0;
+    padding: 10px 0;
+    color: $mc;
+    font-size: 14px;
+    font-family: 'ProximaNova', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid $mc;
+    border-radius: 5px;
+    transition: 0.3s;
     
+    &:hover {
+      color: #fff;
+      background: $mc;
+    }
   }
 }
 
@@ -106,5 +190,115 @@
     font-family: 'ProximaNovaLight', sans-serif;
     text-decoration: none;
     background: #dddddd;
+    transition: 0.3s;
+    
+    &:hover {
+      color: #fefefe;
+      background: $mc;
+    }
+  }
+}
+
+.indicators__active {
+  color: #fefefe !important;
+  background: $mc !important;
+}
+
+.indicators__menu,
+.indicators__button {
+  display: none;
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .indicators {
+    
+    &--oscc,
+    &--psyho {
+      display: none;
+    }
+    
+    header {
+      margin: 2px 0 20px 0;
+      
+      h2 {
+        font-size: 20px;
+        
+        &:first-child {
+          display: none;
+        }
+        
+        &:nth-child(2) {
+          display: block;
+        }
+      }
+    }
+  }
+  
+  .indicators__filtr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+  
+  .indicators__button {
+    display: block;
+    width: 110px;
+    height: 30px;
+    padding: 0 10px 0 25px;
+    font-size: 14px;
+    font-family: 'ProximaNovaLight', sans-serif;
+    border: 1px solid $mc;
+    border-radius: 5px;
+    background: transparent url('../img/indicators-menu.png') no-repeat 11px;
+  }
+  
+  .indicators__menu {
+    position: absolute;
+    display: block;
+    // top: 61px;
+    width: 100%;
+    // padding: 0 40px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    list-style: none;
+    transition: 0.3s;
+    
+    li {
+      border-bottom: 1px solid #dddddd;
+    }
+    
+    a {
+      display: block;
+      padding: 15px 0;
+      color: #959595;
+      font-size: 14px;
+      font-family: 'ProximaNova', sans-serif;
+      text-decoration: none;
+    }
+  }
+  
+  .indicators__controll {
+    display: none;
+  }
+  
+  .indicators__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .indicators__box {
+    margin: 0 0 10px 0;
+  }
+  
+  .indicators--closed {
+    top: -500px;
+  }
+  
+  .indicators--opened {
+    top: 64px;
   }
 }

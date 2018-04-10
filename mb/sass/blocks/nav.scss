@@ -52,6 +52,7 @@
 }
 
 .nav--closed {
+  display: none;
   animation-name: close;
   animation-duration: 0.5s;
   animation-fill-mode: both;
@@ -124,6 +125,7 @@
     display: block;
     width: 100%;
     transition: 0.3s;
+    z-index: 20;
     
     ul {
       margin: 0;

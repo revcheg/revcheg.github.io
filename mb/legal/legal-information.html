@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title> MasterBinary</title>
+  <title>Legal Information - MasterBinary</title>
   <link rel="stylesheet" href="../css/style.min.css">
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
@@ -17,9 +17,6 @@
   <meta name="msapplication-TileColor" content="#051c4f">
   <meta name="msapplication-TileImage" content="../img/favicon/mstile-144x144.png">
   <meta name="theme-color" content="#051c4f">
-  <!-- Slick -->
-  <link rel="stylesheet" href="js/slick/slick.css"/>
-  <link rel="stylesheet" href="js/slick/slick-theme.css"/>
 </head>
 <body>
   <header class="header">
@@ -35,23 +32,33 @@
     <nav class="nav">
       <div class="container">
         <div class="nav__flex">
+          <button class="nav__toggle" type="button">Open Menu</button>
+          <button class="nav__login" type="button">Login</button>
           <picture>
             <source srcset="../img/logo-s.png" media="(max-width: 768px)">
             <source srcset="../img/logo.png">
             <img src="../img/logo.png" alt="MasterBinary">
           </picture>
-          <ul class="nav__list  nav__list--inner">
-            <!-- <li><a class="button  button--blue" href="#">Вход</a></li> -->
-            <!-- <li><a class="button  button--blue" href="#">Регистрация</a></li> -->
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Торговля</a></li>
-            <li><a href="#">Типы счетов</a></li>
-            <li><a href="#">Обучение</a></li>
-            <li><a href="#">Юридическая информация</a></li>
-            <li>
-              <a class="nav__login" href="#"></a>
-            </li>
-          </ul>
+          <div class="nav__container  nav--closed">
+            <ul class="nav__list  nav__list--inner">
+              <!-- <li><a class="button  button--blue" href="#">Вход</a></li> -->
+              <!-- <li><a class="button  button--blue" href="#">Регистрация</a></li> -->
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Торговля</a></li>
+              <li><a href="#">Типы счетов</a></li>
+              <li><a href="#">Обучение</a></li>
+              <li><a href="#">Юридическая информация</a></li>
+              <li>
+                <a class="nav__login-inner" href="#"></a>
+              </li>
+              <li>
+                <select class="nav__language">
+                  <option>Ru</option>
+                  <option>En</option>
+                </select>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>  
     </nav>
@@ -70,7 +77,8 @@
       <div class="legal__flex">
         <div class="legal__button">
           <h1>Документация</h1>
-          <ul>
+          <button class="legal__choice">Выбор документа</button>
+          <ul class="legal__list  legal__list--closed">
             <li><button class="legal__active">Юридическая информация</button></li>
             <li><button>Отказ от ответственности</button></li>
             <li><button>Клиентское соглашение</button></li>
@@ -168,5 +176,7 @@
   <script src="js/slider.js"></script>
   <script src="js/range.js"></script> -->
   <!-- <script src="js/time.js"></script> -->
+  <script src="../js/mobile-menu.js"></script>
+  <script src="../js/legal-menu.js"></script>
 </body>
 </html>

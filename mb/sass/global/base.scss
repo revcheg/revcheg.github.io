@@ -6,6 +6,10 @@ body {
 .container {
   width: 1080px;
   margin: auto;
+  
+  &--big {
+    width: 1200px;
+  }
 }
 
 @media screen and ($tablet-widths) {

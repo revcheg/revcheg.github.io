@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MasterBinary</title>
+  <title>Indicators - MasterBinary</title>
   <link rel="stylesheet" href="../css/style.min.css">
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
@@ -17,9 +17,6 @@
   <meta name="msapplication-TileColor" content="#051c4f">
   <meta name="msapplication-TileImage" content="../img/favicon/mstile-144x144.png">
   <meta name="theme-color" content="#051c4f">
-  <!-- Slick -->
-  <link rel="stylesheet" href="js/slick/slick.css"/>
-  <link rel="stylesheet" href="js/slick/slick-theme.css"/>
 </head>
 <body>
   <header class="header">
@@ -35,23 +32,31 @@
     <nav class="nav">
       <div class="container">
         <div class="nav__flex">
+          <button class="nav__toggle" type="button">Open Menu</button>
+          <button class="nav__login" type="button">Login</button>
           <picture>
             <source srcset="../img/logo-s.png" media="(max-width: 768px)">
             <source srcset="../img/logo.png">
             <img src="../img/logo.png" alt="MasterBinary">
           </picture>
-          <ul class="nav__list  nav__list--inner">
-            <!-- <li><a class="button  button--blue" href="#">Вход</a></li> -->
-            <!-- <li><a class="button  button--blue" href="#">Регистрация</a></li> -->
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Торговля</a></li>
-            <li><a href="#">Типы счетов</a></li>
-            <li><a href="#">Обучение</a></li>
-            <li><a href="#">Юридическая информация</a></li>
-            <li>
-              <a class="nav__login" href="#"></a>
-            </li>
-          </ul>
+          <div class="nav__container  nav--closed">
+            <ul class="nav__list nav__list--inner">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Торговля</a></li>
+              <li><a href="#">Типы счетов</a></li>
+              <li><a href="#">Обучение</a></li>
+              <li><a href="#">Юридическая информация</a></li>
+              <li>
+                <a class="nav__login-inner" href="#"></a>
+              </li>
+              <li>
+                <select class="nav__language">
+                  <option>Ru</option>
+                  <option>En</option>
+                </select>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>  
     </nav>
@@ -60,10 +65,10 @@
     <div class="container">
       <ul>
         <li>Какие индикаторы вас интерисуют?</li>
-        <li><a href="#">Все</a></li>
+        <li><a class="indicators__all" href="#">Все</a></li>
         <li><a class="indicators__trend" href="#">Трендовые</a></li>
-        <li><a class="indicators__oscc  indicators__active" href="#">Осцилляторы</a></li>
-        <li><a class="indicators__psyho  indicators__active" href="#">Психологические</a></li>
+        <li><a class="indicators__oscc" href="#">Осцилляторы</a></li>
+        <li><a class="indicators__psyho" href="#">Психологические</a></li>
       </ul>
     </div>
   </section>
@@ -78,68 +83,186 @@
   </section>
   <section class="indicators">
     <header>
-      <div class="container">
-        <h2>Трендовые</h2>
+      <div class="container  container--big">
+        <div class="indicators__filtr">
+          <h2>Трендовые</h2>
+          <h2>Индикаторы</h2>
+          <button class="indicators__button">Фильтры</button>
+          <ul class="indicators__menu  indicators--closed">
+            <li><a href="#">Трендовые</a></li>
+            <li><a href="#">Осцилляторы</a></li>
+            <li><a href="#">Психологические</a></li>
+            <li><a href="#">Все</a></li>
+          </ul>
+        </div>
       </div>
     </header>
-    <div class="container">
-      <div class="indicators__flex">
+    <div class="container  container--big">
+      <div class="indicators__flex  indicators__flex--trend">
         <div class="indicators__box">
           <img src="../img/indicators-img.jpg" alt="">
           <div class="indicators__content">
             <b>Канал Дончиана – полезное дополнение к любой ТС</b>
+            <hr>
             <p>Тип: Трендовые <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
           </div>
         </div>
         <div class="indicators__box">
           <img src="../img/indicators-img.jpg" alt="">
           <div class="indicators__content">
             <b>Канал Дончиана – полезное дополнение к любой ТС</b>
+            <hr>
             <p>Тип: Трендовые <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
           </div>
         </div>
         <div class="indicators__box">
           <img src="../img/indicators-img.jpg" alt="">
           <div class="indicators__content">
             <b>Канал Дончиана – полезное дополнение к любой ТС</b>
+            <hr>
             <p>Тип: Трендовые <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
           </div>
         </div>
         <div class="indicators__box">
           <img src="../img/indicators-img.jpg" alt="">
           <div class="indicators__content">
             <b>Канал Дончиана – полезное дополнение к любой ТС</b>
+            <hr>
             <p>Тип: Трендовые <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
           </div>
         </div>
       </div>
-      <div class="indicators__flex  indicators__flex--second">
+      <div class="indicators__flex  indicators__flex--second  indicators__flex--trend">
         <div class="indicators__box">
           <img src="../img/indicators-img.jpg" alt="">
           <div class="indicators__content">
             <b>Канал Дончиана – полезное дополнение к любой ТС</b>
+            <hr>
             <p>Тип: Трендовые <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
           </div>
         </div>
         <div class="indicators__box">
           <img src="../img/indicators-img.jpg" alt="">
           <div class="indicators__content">
             <b>Канал Дончиана – полезное дополнение к любой ТС</b>
+            <hr>
             <p>Тип: Трендовые <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
           </div>
         </div>
         <div class="indicators__box">
           <img src="../img/indicators-img.jpg" alt="">
           <div class="indicators__content">
             <b>Канал Дончиана – полезное дополнение к любой ТС</b>
+            <hr>
             <p>Тип: Трендовые <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
           </div>
         </div>
         <div class="indicators__box">
           <img src="../img/indicators-img.jpg" alt="">
           <div class="indicators__content">
             <b>Канал Дончиана – полезное дополнение к любой ТС</b>
+            <hr>
             <p>Тип: Трендовые <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <ul class="indicators__pagination">
+        <li><a href="#"><</a></li>
+        <li><a class="indicators__active" href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">></a></li>
+      </ul>
+    </div>
+  </section>
+  <section class="indicators  indicators--oscc">
+    <header>
+      <div class="container  container--big">
+        <h2>Осцилляторы</h2>
+      </div>
+    </header>
+    <div class="container  container--big">
+      <div class="indicators__flex  indicators__flex--oscc">
+        <div class="indicators__box">
+          <img src="../img/indicators-img-2.jpg" alt="">
+          <div class="indicators__content">
+            <b>Обзор индикатора Gator Oscillator</b>
+            <hr>
+            <p>Тип: Осцилляторы <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="indicators__box">
+          <img src="../img/indicators-img-2.jpg" alt="">
+          <div class="indicators__content">
+            <b>Обзор индикатора Gator Oscillator</b>
+            <hr>
+            <p>Тип: Осцилляторы <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="indicators__box">
+          <img src="../img/indicators-img-2.jpg" alt="">
+          <div class="indicators__content">
+            <b>Обзор индикатора Gator Oscillator</b>
+            <hr>
+            <p>Тип: Осцилляторы <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="indicators__box">
+          <img src="../img/indicators-img-2.jpg" alt="">
+          <div class="indicators__content">
+            <b>Обзор индикатора Gator Oscillator</b>
+            <hr>
+            <p>Тип: Осцилляторы <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="indicators__flex  indicators__flex--second  indicators__flex--oscc">
+        <div class="indicators__box">
+          <img src="../img/indicators-img-2.jpg" alt="">
+          <div class="indicators__content">
+            <b>Обзор индикатора Gator Oscillator</b>
+            <hr>
+            <p>Тип: Осцилляторы <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="indicators__box">
+          <img src="../img/indicators-img-2.jpg" alt="">
+          <div class="indicators__content">
+            <b>Обзор индикатора Gator Oscillator</b>
+            <hr>
+            <p>Тип: Осцилляторы <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="indicators__box">
+          <img src="../img/indicators-img-2.jpg" alt="">
+          <div class="indicators__content">
+            <b>Обзор индикатора Gator Oscillator</b>
+            <hr>
+            <p>Тип: Осцилляторы <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="indicators__box">
+          <img src="../img/indicators-img-2.jpg" alt="">
+          <div class="indicators__content">
+            <b>Обзор индикатора Gator Oscillator</b>
+            <hr>
+            <p>Тип: Осцилляторы <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
           </div>
         </div>
       </div>
@@ -152,70 +275,86 @@
       </ul>
     </div>
   </section>
-  <section class="indicators">
+  <section class="indicators  indicators--psyho">
     <header>
-      <div class="container">
-        <h2>Осцилляторы</h2>
+      <div class="container  container--big">
+        <h2>Психологические</h2>
       </div>
     </header>
-    <div class="container">
-      <div class="indicators__flex">
+    <div class="container  container--big">
+      <div class="indicators__flex  indicators__flex--psyho">
         <div class="indicators__box">
-          <img src="../img/indicators-img.jpg" alt="">
+          <img src="../img/indicators-img-2.jpg" alt="">
           <div class="indicators__content">
             <b>Канал Дончиана – полезное дополнение к любой ТС</b>
-            <p>Тип: Трендовые <span></span></p>
+            <hr>
+            <p>Тип: Психологические <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
           </div>
         </div>
         <div class="indicators__box">
-          <img src="../img/indicators-img.jpg" alt="">
+          <img src="../img/indicators-img-2.jpg" alt="">
           <div class="indicators__content">
-            <b>Канал Дончиана – полезное дополнение к любой ТС</b>
-            <p>Тип: Трендовые <span></span></p>
+            <b>Обзор индикатора Gator Oscillator</b>
+            <hr>
+            <p>Тип: Психологические <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
           </div>
         </div>
         <div class="indicators__box">
-          <img src="../img/indicators-img.jpg" alt="">
+          <img src="../img/indicators-img-2.jpg" alt="">
           <div class="indicators__content">
-            <b>Канал Дончиана – полезное дополнение к любой ТС</b>
-            <p>Тип: Трендовые <span></span></p>
+            <b>Обзор индикатора Gator Oscillator</b>
+            <hr>
+            <p>Тип: Психологические <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
           </div>
         </div>
         <div class="indicators__box">
-          <img src="../img/indicators-img.jpg" alt="">
+          <img src="../img/indicators-img-2.jpg" alt="">
           <div class="indicators__content">
-            <b>Канал Дончиана – полезное дополнение к любой ТС</b>
-            <p>Тип: Трендовые <span></span></p>
+            <b>Обзор индикатора Gator Oscillator</b>
+            <hr>
+            <p>Тип: Психологические <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
           </div>
         </div>
       </div>
-      <div class="indicators__flex  indicators__flex--second">
+      <div class="indicators__flex  indicators__flex--second  indicators__flex--psyho">
         <div class="indicators__box">
-          <img src="../img/indicators-img.jpg" alt="">
+          <img src="../img/indicators-img-2.jpg" alt="">
           <div class="indicators__content">
-            <b>Канал Дончиана – полезное дополнение к любой ТС</b>
-            <p>Тип: Трендовые <span></span></p>
+            <b>Обзор индикатора Gator Oscillator</b>
+            <hr>
+            <p>Тип: Психологические <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
           </div>
         </div>
         <div class="indicators__box">
-          <img src="../img/indicators-img.jpg" alt="">
+          <img src="../img/indicators-img-2.jpg" alt="">
           <div class="indicators__content">
-            <b>Канал Дончиана – полезное дополнение к любой ТС</b>
-            <p>Тип: Трендовые <span></span></p>
+            <b>Обзор индикатора Gator Oscillator</b>
+            <hr>
+            <p>Тип: Психологические <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
           </div>
         </div>
         <div class="indicators__box">
-          <img src="../img/indicators-img.jpg" alt="">
+          <img src="../img/indicators-img-2.jpg" alt="">
           <div class="indicators__content">
-            <b>Канал Дончиана – полезное дополнение к любой ТС</b>
-            <p>Тип: Трендовые <span></span></p>
+            <b>Обзор индикатора Gator Oscillator</b>
+            <hr>
+            <p>Тип: Психологические <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
           </div>
         </div>
         <div class="indicators__box">
-          <img src="../img/indicators-img.jpg" alt="">
+          <img src="../img/indicators-img-2.jpg" alt="">
           <div class="indicators__content">
-            <b>Канал Дончиана – полезное дополнение к любой ТС</b>
-            <p>Тип: Трендовые <span></span></p>
+            <b>Обзор индикатора Gator Oscillator</b>
+            <hr>
+            <p>Тип: Психологические <span></span></p>
+            <a class="indicators__link" href="#">Подробнее</a>
           </div>
         </div>
       </div>
@@ -300,5 +439,7 @@
   <script src="js/slider.js"></script>
   <script src="js/range.js"></script> -->
   <!-- <script src="js/time.js"></script> -->
+  <script src="../js/mobile-menu.js"></script>
+  <script src="../js/filter-menu.js"></script>
 </body>
 </html>
