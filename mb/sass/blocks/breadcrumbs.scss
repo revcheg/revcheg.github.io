@@ -4,15 +4,20 @@
   
   ul {
     display: flex;
-    justify-content: space-between;
-    width: 400px;
+    justify-content: flex-end;
+    // justify-content: space-between;
+    // width: 400px;
     margin: 0;
-    margin-left: auto;
+    // margin-left: auto;
     padding: 0;
     color: #716f6f;
     font-size: 14px;
     font-family: 'ProximaNova', sans-serif;
     list-style: none;
+    
+    li {
+      margin: 0 10px 0 10px;
+    }
     
     a {
       color: #949494;

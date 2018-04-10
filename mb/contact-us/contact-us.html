@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title> MasterBinary</title>
+  <title>Contact Us - MasterBinary</title>
   <link rel="stylesheet" href="../css/style.min.css">
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
@@ -17,9 +17,6 @@
   <meta name="msapplication-TileColor" content="#051c4f">
   <meta name="msapplication-TileImage" content="../img/favicon/mstile-144x144.png">
   <meta name="theme-color" content="#051c4f">
-  <!-- Slick -->
-  <link rel="stylesheet" href="js/slick/slick.css"/>
-  <link rel="stylesheet" href="js/slick/slick-theme.css"/>
 </head>
 <body>
   <header class="header">
@@ -35,67 +32,79 @@
     <nav class="nav">
       <div class="container">
         <div class="nav__flex">
+          <button class="nav__toggle" type="button">Open Menu</button>
+          <button class="nav__login" type="button">Login</button>
           <picture>
             <source srcset="../img/logo-s.png" media="(max-width: 768px)">
             <source srcset="../img/logo.png">
             <img src="../img/logo.png" alt="MasterBinary">
           </picture>
-          <ul class="nav__list  nav__list--inner">
-            <!-- <li><a class="button  button--blue" href="#">Вход</a></li> -->
-            <!-- <li><a class="button  button--blue" href="#">Регистрация</a></li> -->
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Торговля</a></li>
-            <li><a href="#">Типы счетов</a></li>
-            <li><a href="#">Обучение</a></li>
-            <li><a href="#">Юридическая информация</a></li>
-            <li>
-              <a class="nav__login" href="#"></a>
-            </li>
-          </ul>
+          <div class="nav__container  nav--closed">
+            <ul class="nav__list nav__list--inner">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Торговля</a></li>
+              <li><a href="#">Типы счетов</a></li>
+              <li><a href="#">Обучение</a></li>
+              <li><a href="#">Юридическая информация</a></li>
+              <li>
+                <a class="nav__login-inner" href="#"></a>
+              </li>
+              <li>
+                <select class="nav__language">
+                  <option>Ru</option>
+                  <option>En</option>
+                </select>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>  
+      </div> 
     </nav>
   </header>
   <section class="breadcrumbs">
     <div class="container">
       <ul>
         <li><a href="#">Главная</a></li>/
-        <li><a href="#">Без категории</a></li>/
-        <li>Юридическая информация</li>
+        <li>Контакты</li>
       </ul>
     </div>
   </section>
-  <section class="legal">
+  <main>
+    <section class="contact">
     <div class="container">
-      <div class="legal__flex">
-        <div class="legal__button">
-          <h1>Документация</h1>
-          <ul>
-            <li><button class="legal__active">Юридическая информация</button></li>
-            <li><button>Отказ от ответственности</button></li>
-            <li><button>Клиентское соглашение</button></li>
-            <li><button>Политика конфиденциальности</button></li>
-            <li><button>Политика AML и KYC</button></li>
-          </ul>
-        </div>
-        <div class="legal__content">
-          <div class="legal-1">
-            <h2>Юридическая информация</h2>
-            <p>Мы ценим каждого нашего клиента, независимо от типа его счета. Во всех случаях вы получите  максимальный и профессиональный сервис. Но, компания TGI Intelligent Solution LTD (далее — Компания) не торгует с Вами, за Вас, вместо Вас и не управляем Вашими финансами, а также не дает прямые указания по рынку.</p>
-            <p>Компания  предоставляет вам полный и исключительный сервис и, в случае, если уровень Вашего Торгового счета позволяет, и Вы выражаете желание, Компания может потратить время на разъяснение механизмов Биржевой Торговли или основ, позволяющих Вам получить навык прочтения технических индикаторов или их возможные сочетания, а так же Вы можете получить от Компании разъяснения о наиболее значимых факторах, оказывающих наибольшее влияние на финансовые рынки в данный момент времени, т.е. на азбуку финансовых рынков.</p>
-            <p>Любые “Сигналы”, “Стратегии”, “Подсказки”, “Обучение”, «Обучающие видеокурсы». «Вебинары» и другие рекомендации носят информационный характер, вы самостоятельно принимаете решения, в которых мы не являемся вашим советчиком или фидуциарием.</p>
-            <h2>Юридические аспекты</h2>
-            <p>Открывая на нашем Веб-сайте Торговый счет, Вы обязаны согласиться с Клиентским соглашением, политикой конфиденциальности, а также другими политиками и условиями, размещенными на Веб-сайте, являющимися по своей сути Безотзывной офертой, представленной в соответствие законодательством Сент-Винсент и Гренадины.</p>
-            <p>Вы обязаны подтвердить Ваш Торговый счет, т.е. пройти процедуру верификации. Финансы, размещенные Вами на Торговом счету, имеют страховое покрытие, а сам Торговый счет интегрирован в систему Европейского надзора.</p>
-            <p>В случае необходимости, по итогам Ваших Торгов, Вы можете запросить у нас отчет об операциях по Вашему Торговому счету для предоставления налоговой отчетности в стране Вашего проживания.</p>
-            <p>Данный сайт является собственностью компании TGI Intelligent Solution LTD,<br>регистрационный номер 24381 IBC 2017.<br>местонахождение:Suite 305, Griffith Corporate Centre, P.O. Box 1510,<br>Beachmont, Kingstown, Saint Vincent and the Grenadines, </p>
-            <b>Контакты Компании:</b>
-            <p>тел.: +7 (499) 5042809<br>эл. почта: support@masterbinary.ru (rus),<br>support@masterbinary.net (eng)</p>
+      <h1>Свяжитесь с нами</h1>
+      <p>Укажите в приведенной ниже форме любые имеющиеся у вас вопросы, замечания или проблемы.<br>
+      Кроме того, вы можете связаться с нами с помощью электронной почты, телефона.</p>
+      <div class="two_blocks">
+          <div class="left_block">
+            <p class="h_block_text">Наши контакты</p>
+            <p class="phone_before">+7 (499) 5042809</p>
+            <hr>
+            <p class="mail_before">support@masterbinary.ru (rus)</p>
+            <p>support@masterbinary.net (eng</p>
+            <hr>
+            <p class="point_before">Suite 305, Griffith Corporate Centre,</p>
+            <p>P.O. Box 1510, Beachmont, Kingstown,</p>
+            <p>Saint Vincent and the Grenadines</p>
           </div>
-        </div>
+          <div class="right_block">
+            <p class="h_block_text">Задать вопрос</p>
+            <form class="info" action="index.html" method="post">
+              <input type="text" name="name" value="" placeholder="Имя">
+              <input type="email" name="name" value="" placeholder="E-mail">
+              <input type="text" name="name" value="" placeholder="Тема">
+              <!-- <input class="inp_l" type="text" name="name" value="" placeholder="Ваш вопрос"> -->
+              <textarea class="inp_l" placeholder="Ваш вопрос"></textarea>
+              <button type="submit" name="button">ОТПРАВИТЬ</button>
+            </form>
+          </div>
       </div>
     </div>
-  </section>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7559.13880610492!2d-61.22873344836196!3d13.157370948728065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c475150d7889919%3A0xec14007759a547d6!2sGriffith+Corporate+Centre!5e0!3m2!1sru!2sua!4v1522939623712" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    </section>
+  </main>
   <footer class="footer">
     <div class="container">
       <div class="footer__payment">
@@ -163,10 +172,11 @@
       </div>
     </div>
   </footer>
-  <!-- <script src="js/jquery.min.js"></script>
-  <script src="js/slick/slick.min.js"></script>
-  <script src="js/slider.js"></script>
-  <script src="js/range.js"></script> -->
-  <!-- <script src="js/time.js"></script> -->
+  <!-- <script src="js/jquery.min.js"></script> -->
+  <!-- <script src="js/slick/slick.min.js"></script> -->
+  <!-- <script src="js/slider.js"></script> -->
+  <script src="../js/mobile-menu.js"></script>
+  <!-- <script src="js/counter.js"></script> -->
+  <!-- <script src="js/range.js"></script> -->
 </body>
 </html>

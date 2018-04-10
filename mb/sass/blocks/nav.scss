@@ -17,7 +17,7 @@
   &--inner {
     display: flex;
     justify-content: space-between;
-    width: 650px;
+    width: 750px;
     
     a {
       color: $mc;
@@ -28,7 +28,7 @@
   }
 }
 
-.nav__login {
+.nav__login-inner {
   display: block;
   width: 45px;
   height: 40px;
@@ -36,9 +36,18 @@
   background: $mc url('../img/nav-login.png') no-repeat center;
 }
 
+.nav__language {
+  width: 60px;
+  height: 40px;
+  color: $mc;
+  font-size: 17px;
+  font-family: 'ProximaNova', sans-serif;
+  border: 1px solid $mc;
+  background: transparent;
+}
+
 .nav__toggle,
-.nav__login,
-.nav__container {
+.nav__login {
   display: none;
 }
 
@@ -75,7 +84,9 @@
 }
 
 @media screen and ($tablet-widths) {
-  
+  .nav__flex {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and ($mobile-widths) {
@@ -100,6 +111,11 @@
     border: none;
     background: url('../img/nav-login.svg') no-repeat top;
     background-size: cover;
+  }
+  
+  .nav__login-inner,
+  .nav__language {
+    display: none !important;
   }
   
   .nav__container {
@@ -136,6 +152,24 @@
   }
   
   .nav__list {
-    display: none;
+    
+    &--main {
+      display: none;
+    }
+    
+    &--inner {
+      flex-direction: column;
+      align-items: flex-start;
+      width: auto;
+      
+      li {
+        width: 100%;
+        
+        &:nth-child(6),
+        &:nth-child(7) {
+          border:none;
+        }
+      }
+    }
   }
 }
