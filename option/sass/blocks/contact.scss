@@ -1,5 +1,74 @@
 .contact {
-  margin: -20px 0 0 0;
-  background: #182340 url('../img/contact-bg.png') no-repeat top;
+  padding: 250px 0 60px 0;
+  background: #182340 url('../img/contact-bg-1.png') no-repeat top;
   background-size: cover;
+}
+
+.contact__wrapper {
+  width: 950px;
+  margin: auto;
+}
+
+.contact__text {
+  margin: 0;
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Open Sans Light', sans-serif;
+  text-transform: uppercase;
+  
+  span {
+    font-family: 'Open Sans Bold', sans-serif;
+  }
+  
+  &:nth-child(2) {
+    margin: 30px 0 80px 0;
+  }
+}
+
+.contact__form {
+  padding: 65px 85px;
+  background: rgba(0, 0, 0, 0.4);
+  
+  input {
+    width: 300px;
+    height: 55px;
+    padding: 0 25px;
+    font-size: 20px;
+    font-family: 'Open Sans Light', sans-serif;
+    border: none;
+    border-radius: 5px;
+    
+    &::placeholder {
+      color: #555555;
+    }
+  }
+  
+  button {
+    display: block;
+    margin: auto;
+    padding: 15px 110px;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Open Sans Light', sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 80px 0px #00aeff;
+    border: none;
+    border-radius: 5px;
+    background: #00aeff;
+    transition: 0.3s;
+    cursor: pointer;
+    
+    &:hover {
+      box-shadow: 0px 0px 120px 0px #00aeff;
+    }
+  }
+}
+
+.contact__flex {
+  display: flex;
+  justify-content: space-between;
+  
+  &:nth-child(2) {
+    margin: 30px 0 40px 0;
+  }
 }
