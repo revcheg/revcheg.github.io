@@ -4,12 +4,8 @@ body {
 }
 
 .container {
-  width: 1080px;
+  width: 1200px;
   margin: auto;
-  
-  &--big {
-    width: 1200px;
-  }
 }
 
 @media screen and ($tablet-widths) {

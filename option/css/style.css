@@ -1,0 +1,143 @@
+body {
+  min-width: 320px;
+  margin: 0; }
+
+.container {
+  width: 1200px;
+  margin: auto; }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 95%; } }
+
+/* open-sans-300 - latin */
+@font-face {
+  font-family: 'Open Sans Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/open-sans-v15-latin-300.woff2") format("woff2"), url("../fonts/open-sans-v15-latin-300.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/open-sans-v15-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v15-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'Open Sans SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url("../fonts/open-sans-v15-latin-600.woff2") format("woff2"), url("../fonts/open-sans-v15-latin-600.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'Open Sans Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/open-sans-v15-latin-700.woff2") format("woff2"), url("../fonts/open-sans-v15-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+.title {
+  padding: 70px 0 150px 0;
+  background: #260d2f url("../img/title-bg.jpg") no-repeat top;
+  background-size: cover; }
+
+.title__wrapper {
+  padding: 0 50px; }
+
+.title__logo {
+  width: 275px;
+  height: 49px; }
+
+.title__name {
+  margin: 100px 0;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 300;
+  font-family: 'Open Sans Light', sans-serif;
+  text-transform: uppercase; }
+  .title__name span {
+    font-family: 'Open Sans Bold', sans-serif; }
+
+.title__text {
+  margin: 0 0 100px 0;
+  color: #fff;
+  font-size: 34px;
+  font-family: 'Open Sans Light', sans-serif; }
+
+.title__begin {
+  padding: 15px 100px;
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Open Sans Light', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 6px 0.3px #00aeff;
+  box-shadow: 0px 0px 6px 0.3px #00aeff;
+  background: #00aeff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .title__begin:hover {
+    -webkit-box-shadow: 0px 0px 20px 0.3px #00aeff;
+    box-shadow: 0px 0px 20px 0.3px #00aeff; }
+
+.edge {
+  padding: 90px 0 100px 0;
+  background: #182340; }
+
+.edge__name {
+  margin: 0 0 90px 0;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 300;
+  font-family: 'Open Sans Light', sans-serif;
+  text-align: center;
+  text-transform: uppercase; }
+  .edge__name span {
+    font-family: 'Open Sans Bold', sans-serif; }
+
+.edge__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .edge__flex--second {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 100px 0 0 0; }
+
+.edge__box {
+  width: 250px;
+  padding: 80px 0 0 0;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Open Sans Light', sans-serif;
+  text-align: center; }
+  .edge__box--1 {
+    background: url("../img/edge-1.png") no-repeat top;
+    background-size: 88px; }
+  .edge__box--2 {
+    background: url("../img/edge-2.png") no-repeat top;
+    background-size: 85px; }
+  .edge__box--3 {
+    background: url("../img/edge-3.png") no-repeat top;
+    background-size: 72px; }
+  .edge__box--4 {
+    background: url("../img/edge-4.png") no-repeat top;
+    background-size: 91px; }
+  .edge__box--5 {
+    background: url("../img/edge-5.png") no-repeat top;
+    background-size: 70px; }
+
+.contact {
+  margin: -20px 0 0 0;
+  background: #182340 url("../img/contact-bg.png") no-repeat top;
+  background-size: cover; }
