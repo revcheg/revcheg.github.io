@@ -40,10 +40,27 @@
       border: 1px solid $mc;
       border-radius: 3px;
       transition: 0.3;
-      
-      &:hover {
-        
-      }
     }
   }
+}
+
+.header__open {
+  background: url('../img/nav-arrow.svg') no-repeat right;
+  background-position-x: 145px;
+  background-size: 6px 3px;
+}
+
+.header__support {
+  width: 70px;
+  height: 41px;
+  padding: 0 20px;
+  color: $mc;
+  font-size: 18px;
+  font-family: 'SFUIDisplay-Thin', sans-serif;
+  border: 1px solid $mc;
+  border-radius: 3px;
+  background: transparent url('../img/nav-arrow.svg') no-repeat right;
+  background-position-x: 50px;
+  background-size: 6px 3px;
+  appearance: none;
 }

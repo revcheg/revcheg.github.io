@@ -226,6 +226,27 @@ body {
       -webkit-transition: 0.3;
       transition: 0.3; }
 
+.header__open {
+  background: url("../img/nav-arrow.svg") no-repeat right;
+  background-position-x: 145px;
+  background-size: 6px 3px; }
+
+.header__support {
+  width: 70px;
+  height: 41px;
+  padding: 0 20px;
+  color: #fac93e;
+  font-size: 18px;
+  font-family: 'SFUIDisplay-Thin', sans-serif;
+  border: 1px solid #fac93e;
+  border-radius: 3px;
+  background: transparent url("../img/nav-arrow.svg") no-repeat right;
+  background-position-x: 50px;
+  background-size: 6px 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,10 +273,24 @@ body {
   padding: 0;
   list-style: none; }
   .nav__list a {
+    position: relative;
     color: #fac93e;
     font-size: 18px;
     font-family: 'SFUIDisplay-Thin', sans-serif;
     text-decoration: none; }
+    .nav__list a::after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      right: -10px;
+      width: 6px;
+      height: 3px;
+      background: url("../img/nav-arrow.svg") no-repeat top;
+      -webkit-transition: 0.2s;
+      transition: 0.2s; }
+    .nav__list a:hover::after {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg); }
 
 .welcome {
   padding: 90px 0; }
