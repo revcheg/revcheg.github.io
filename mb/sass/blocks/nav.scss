@@ -47,12 +47,13 @@
 }
 
 .nav__toggle,
-.nav__login {
+.nav__login,
+.nav--index {
   display: none;
 }
 
 .nav--closed {
-  display: none;
+  // display: none;
   animation-name: close;
   animation-duration: 0.5s;
   animation-fill-mode: both;
@@ -79,7 +80,7 @@
     }
     
     100% {
-      top: 78px;
+      top: 80px;
     }
   }
 }
@@ -93,7 +94,7 @@
 @media screen and ($mobile-widths) {
   .nav__toggle {
     position: absolute;
-    left: 0;
+    left: 20px;
     display: block;
     width: 23px;
     height: 16px;
@@ -104,7 +105,7 @@
   
   .nav__login {
     position: absolute;
-    right: 0;
+    right: 20px;
     display: block;
     width: 20px;
     height: 20px;
@@ -150,7 +151,7 @@
   
   .nav__flex {
     justify-content: center;
-    position: relative;
+    // position: relative;
   }
   
   .nav__list {
