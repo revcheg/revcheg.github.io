@@ -49,3 +49,42 @@
     box-shadow: 0px 0px 20px 0.3px #00aeff;
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .title {
+    padding: 30px 0 70px 0;
+  }
+  
+  .title__wrapper {
+    padding: 0;
+  }
+  
+  .title__logo {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: auto;
+  }
+  
+  .title__name {
+    margin: 50px 0;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .title__text {
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .title__begin {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    padding: 15px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+}

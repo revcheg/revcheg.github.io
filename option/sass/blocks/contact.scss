@@ -72,3 +72,55 @@
     margin: 30px 0 40px 0;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .contact__wrapper {
+    width: auto;
+  }
+  
+  .contact__form {
+    padding: 35px;
+    
+    input {
+      width: 250px;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .contact {
+    padding: 150px 0 60px 0;
+  }
+  
+  .contact__text {
+    font-size: 25px;
+    text-align: center;
+    
+    &:nth-child(2) {
+      margin: 30px 0 50px 0;
+    }
+  }
+  
+  .contact__form {
+    
+    input {
+      width: auto;
+      margin: 0 0 10px 0;
+      font-size: 16px;
+    }
+    
+    button {
+      width: 100%;
+      padding: 15px 0;
+      font-size: 16px;
+    }
+  }
+  
+  .contact__flex {
+    flex-direction: column;
+    
+    &:nth-child(2) {
+      margin: 0 0 20px 0;
+    }
+  }
+}
