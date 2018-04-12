@@ -6,6 +6,7 @@
 .footer__flex {
   display: flex;
   justify-content: space-between;
+  padding: 0 15px;
 }
 
 .footer__ul {
@@ -79,6 +80,7 @@
 }
 
 .footer__name {
+  padding: 0 15px;
   color: #cdcdcf;
   font-size: 18px;
   font-weight: normal;
@@ -87,10 +89,15 @@
 }
 
 .footer__text {
+  padding: 0 15px;
   color: #cdcdcf;
   font-size: 14px;
   font-weight: 100;
   // font-family: 'SFUIDisplay-Thin', sans-serif;
+  
+  &:last-child {
+    margin: 14px 0 0 0;
+  }
   
   a {
     color: #fefeff;

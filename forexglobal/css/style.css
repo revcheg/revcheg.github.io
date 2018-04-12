@@ -372,6 +372,7 @@ body {
     background-size: 300px; }
 
 .tabs {
+  height: 330px;
   background: #e4b748 url("../img/tabs-bg.jpg") no-repeat top;
   background-size: cover; }
 
@@ -395,6 +396,8 @@ body {
     border: none;
     background: #fff;
     outline: none;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
     cursor: pointer; }
 
 .tabs__active {
@@ -416,7 +419,18 @@ body {
   margin: -150px 0 0 0; }
 
 .tabs__content {
-  padding: 70px 0 90px 0; }
+  position: relative;
+  height: 330px;
+  overflow: hidden; }
+
+.tabs__wrapper {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s; }
+  .tabs__wrapper--android {
+    top: 70px;
+    opacity: 1; }
 
 .tabs__name {
   color: #2f2861;
@@ -533,6 +547,45 @@ body {
       border-radius: 3px;
       background: #fac93e; }
 
+.payment {
+  padding: 30px 0; }
+
+.payment__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 15px; }
+
+.payment__box {
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .payment__box--mc {
+    width: 50px;
+    height: 30px;
+    background: url("../img/payment-mc.svg") no-repeat top; }
+  .payment__box--visa {
+    width: 50px;
+    height: 15px;
+    background: url("../img/payment-visa.svg") no-repeat top; }
+  .payment__box--bank {
+    width: 41px;
+    height: 41px;
+    background: url("../img/payment-bank.svg") no-repeat top; }
+  .payment__box--skrill {
+    width: 50px;
+    height: 17px;
+    background: url("../img/payment-skrill.svg") no-repeat top; }
+  .payment__box--neteller {
+    width: 55px;
+    height: 10px;
+    background: url("../img/payment-neteller.svg") no-repeat center; }
+
 .footer {
   padding: 30px 0;
   background: #161525; }
@@ -543,7 +596,8 @@ body {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 0 15px; }
 
 .footer__ul {
   margin: 0;
@@ -597,15 +651,19 @@ body {
   background: #fff; }
 
 .footer__name {
+  padding: 0 15px;
   color: #cdcdcf;
   font-size: 18px;
   font-weight: normal;
   text-transform: uppercase; }
 
 .footer__text {
+  padding: 0 15px;
   color: #cdcdcf;
   font-size: 14px;
   font-weight: 100; }
+  .footer__text:last-child {
+    margin: 14px 0 0 0; }
   .footer__text a {
     color: #fefeff;
     -webkit-transition: 0.3s;

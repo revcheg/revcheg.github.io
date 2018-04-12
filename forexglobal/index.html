@@ -149,17 +149,25 @@
         <img class="tabs__mockup" src="img/tabs-mockup.png" alt="Mockup">
         <div class="tabs__inner">
           <ul class="tabs__control">
-            <li><button>PC</button></li>
-            <li><button>Mac</button></li>
-            <li><button>Web Trader</button></li>
-            <li><button class="tabs__active">Android</button></li>
-            <li><button>Iphone/Ipad</button></li>
+            <li><button class="tabs__button">PC</button></li>
+            <li><button class="tabs__button">Mac</button></li>
+            <li><button class="tabs__button" onclick="openTabs(event, 'webtrader')">Web Trader</button></li>
+            <li><button class="tabs__button  tabs__active" onclick="openTabs(event, 'android')">Android</button></li>
+            <li><button class="tabs__button">Iphone/Ipad</button></li>
           </ul>
           <div class="tabs__content">
-            <b class="tabs__name">MetaTrader 4 for Android</b>
-            <p class="tabs__text">Get the MetaTrader 4 trading software for your smartphone or tablet and access Vipro markets’ best trading conditions anytime and anywhere!</p>
-            <a class="tabs__download" href="#">Download</a>
-            <a class="tabs__more" href="#">Read more</a>
+            <div class="tabs__wrapper  tabs__wrapper--android" id="android">
+              <b class="tabs__name">MetaTrader 4 for Android</b>
+              <p class="tabs__text">Get the MetaTrader 4 trading software for your smartphone or tablet and access Vipro markets’ best trading conditions anytime and anywhere!</p>
+              <a class="tabs__download" href="#">Download</a>
+              <a class="tabs__more" href="#">Read more</a>
+            </div>
+            <div class="tabs__wrapper  tabs__wrapper--webtrader" id="webtrader">
+              <b class="tabs__name">Web Trader</b>
+              <p class="tabs__text">Get the MetaTrader 4 trading software for your smartphone or tablet and access Vipro markets’ best trading conditions anytime and anywhere!</p>
+              <a class="tabs__download" href="#">Download</a>
+              <a class="tabs__more" href="#">Read more</a>
+            </div>
           </div>
         </div>
       </div>
@@ -439,12 +447,13 @@
   </section>
   <section class="payment">
     <div class="container">
-      <div class="payment__box"></div>
-      <div class="payment__box"></div>
-      <div class="payment__box"></div>
-      <div class="payment__box"></div>
-      <div class="payment__box"></div>
-      <div class="payment__box"></div>
+      <div class="payment__flex">
+        <div class="payment__box  payment__box--mc"></div>
+        <div class="payment__box  payment__box--visa"></div>
+        <div class="payment__box  payment__box--bank"></div>
+        <div class="payment__box  payment__box--skrill"></div>
+        <div class="payment__box  payment__box--neteller"></div>
+      </div>
     </div>
   </section>
   <footer class="footer">
@@ -509,5 +518,6 @@
       <p class="footer__text">The Company is also registered with: FCA in UK with reg. no. 782501; BaFin in Germany with reg. no. 1349943; CONSOB in Italy with reg. no. 4624; ACP in France with reg. no. 75980; CNMV in Spain with reg. no. 4373.</p>
     </div>
   </footer>
+  <script src="js/tabs.js"></script>
 </body>
 </html>

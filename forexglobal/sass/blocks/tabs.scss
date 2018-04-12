@@ -1,4 +1,5 @@
 .tabs {
+  height: 330px;
   background: #e4b748 url('../img/tabs-bg.jpg') no-repeat top;
   background-size: cover;
 }
@@ -23,6 +24,7 @@
       border: none;
       background: #fff;
       outline: none;
+      transition: 0.1s;
       cursor: pointer;
     }
   }
@@ -47,7 +49,20 @@
 }
 
 .tabs__content {
-  padding: 70px 0 90px 0;
+  position: relative;
+  height: 330px;
+  overflow: hidden;
+}
+
+.tabs__wrapper {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 2s;
+  
+  &--android {
+    top: 70px;
+    opacity: 1;
+  }
 }
 
 .tabs__name {
