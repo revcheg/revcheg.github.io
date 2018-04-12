@@ -1,6 +1,7 @@
 .row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-top: 15px;
 }
 
@@ -61,5 +62,17 @@
   &:hover {
     color: #fff;
     background: $mc;
+  }
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .row {
+    flex-direction: column;
+  }
+  
+  .strategy_block {
+    margin-bottom: 10px;
   }
 }

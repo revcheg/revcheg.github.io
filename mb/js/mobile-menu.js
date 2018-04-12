@@ -1,7 +1,10 @@
 var navMain = document.querySelector('.nav__container');
-var navLogin = document.querySelector('.nav__list');
+var navLogin = document.querySelector('.nav__register');
 var navToggle = document.querySelector('.nav__toggle');
 var navToggleLog = document.querySelector('.nav__login');
+var navSwitch = document.querySelectorAll('.nav__choise li a');
+var navLog = document.querySelector('.nav__log');
+var navReg = document.querySelector('.nav__reg');
 
 // navMain.classList.remove('main-nav--nojs');
 
@@ -16,11 +19,11 @@ navToggle.addEventListener('click', function() {
 });
 
 navToggleLog.addEventListener('click', function() {
-  if (navLogin.classList.contains('nav--closed')) {
-    navLogin.classList.remove('nav--closed');
-    navLogin.classList.add('nav--opened');
+  if (navLogin.classList.contains('nav__register--closed')) {
+    navLogin.classList.remove('nav__register--closed');
+    navLogin.classList.add('nav__register--opened');
   } else {
-    navLogin.classList.add('nav--closed');
-    navLogin.classList.remove('nav--opened');
+    navLogin.classList.add('nav__register--closed');
+    navLogin.classList.remove('nav__register--opened');
   }
 });

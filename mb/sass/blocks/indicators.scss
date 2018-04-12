@@ -92,6 +92,50 @@
   }
 }
 
+.indicators__currency {
+  padding: 10px 40px 10px 20px !important;
+  background: url('../img/dollar.png') no-repeat 150px;
+  transition: 0.3s;
+  
+  &:hover {
+    color: #fff;
+    background: $mc url('../img/dollar-h.png') no-repeat 150px;
+  }
+}
+
+.indicators__stock {
+  padding: 10px 50px 10px 20px !important;
+  background: url('../img/pie_chart.png') no-repeat 80px;
+  transition: 0.3s;
+  
+  &:hover {
+    color: #fff;
+    background: $mc url('../img/pie_chart-h.png') no-repeat 80px;
+  }
+}
+
+.indicators__index {
+  padding: 10px 50px 10px 20px !important;
+  background: url('../img/graph.png') no-repeat 100px;
+  transition: 0.3s;
+  
+  &:hover {
+    color: #fff;
+    background: $mc url('../img/graph-h.png') no-repeat 100px;
+  }
+}
+
+.indicators__item {
+  padding: 10px 50px 10px 20px !important;
+  background: url('../img/items.png') no-repeat 90px;
+  transition: 0.3s;
+  
+  &:hover {
+    color: #fff;
+    background: $mc url('../img/items-h.png') no-repeat 90px;
+  }
+}
+
 .indicators__flex {
   display: flex;
   justify-content: space-between;
@@ -104,6 +148,28 @@
     
     p {
       background: url('../img/indicators-trend.png') no-repeat right;
+    }
+  }
+  
+  &--currency {
+    flex-wrap: wrap;
+    
+    img {
+      display: block;
+      margin: 40px auto 20px;
+    }
+    
+    p:nth-child(3) {
+      font-weight: bold;
+      background: url('../img/dollar.png') no-repeat right;
+    }
+  }
+  
+  &--stock {
+    
+    p:nth-child(3) {
+      font-weight: bold;
+      background: url('../img/chronometr_half.png') no-repeat right;
     }
   }
   

@@ -85,6 +85,143 @@
   }
 }
 
+.nav__register {
+  position: absolute;
+  width: 100%;
+  // top: -1500px;
+  padding: 20px;
+  background: #fff;
+  transition: 0.5s;
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0;
+    list-style: none;
+    
+    li {
+      margin: 0 10px;
+      border-bottom: 2px solid #fff;
+      
+      a {
+        padding: 0 0 10px 0;
+        color: #959595;
+        font-size: 16px;
+        font-family: 'ProximaNova', sans-serif;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.nav__log {
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    margin: 30px auto 0;
+    
+    input {
+      width: 220px;
+      height: 45px;
+      margin: 0 0 10px 0;
+      padding: 0 15px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    
+    button {
+      width: 100%;
+      margin: 0 0 20px 0;
+      padding: 10px 0;
+      color: #fff;
+      font-size: 14px;
+      border-radius: 5px;
+      background: $mc;
+    }
+    
+    a {
+      color: $mc;
+      font-size: 14px;
+      font-family: 'ProximaNova', sans-serif;
+      text-decoration: none;
+    }
+  }
+}
+
+.nav__reg {
+  display: none;
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    margin: 30px auto 0;
+    
+    input {
+      width: 220px;
+      height: 45px;
+      margin: 0 0 10px 0;
+      padding: 0 15px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      
+      &[type="checkbox"] {
+        width: auto;
+        height: 12px;
+      }
+    }
+    
+    label {
+      color: #959595;
+      font-size: 12px;
+      font-family: 'ProximaNova', sans-serif;
+      
+      a {
+        color: $mc;
+        font-size: 12px;
+        text-decoration: none;
+      }
+    }
+    
+    button {
+      width: 100%;
+      margin: 10px 0 20px 0;
+      padding: 10px 0;
+      color: #fff;
+      font-size: 14px;
+      border-radius: 5px;
+      background: $mc;
+    }
+    
+    a {
+      color: $mc;
+      font-size: 14px;
+      font-family: 'ProximaNova', sans-serif;
+      text-decoration: none;
+    }
+  }
+}
+
+.nav__register--closed {
+  top: -1500px;
+}
+
+.nav__register--opened {
+  top: 80px;
+}
+
+.nav__active {
+  color: $mc !important;
+  border-bottom: 2px solid $mc;
+}
+
 @media screen and ($tablet-widths) {
   .nav__flex {
     flex-wrap: wrap;

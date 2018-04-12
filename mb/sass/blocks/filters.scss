@@ -16,6 +16,23 @@
   }
   
   select {
+    position: relative;
+    width: 200px;
+    padding: 5px 20px;
     font-size: 16px;
+    appearance: none;
+    background: url('../img/filters-arrow.png') no-repeat 180px;
+  }
+}
+
+.filters__begin {
+  background: url('../img/filters-beginer.png') no-repeat right;
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .filters {
+    display: none;
   }
 }
