@@ -2153,3 +2153,90 @@ main {
     font-size: 20px;
     font-family: 'ProximaNovaBold', sans-serif;
     background: #f4f4f4; } }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 15px; }
+
+.strategy_block {
+  width: 280px;
+  margin: auto;
+  padding-bottom: 30px;
+  -webkit-box-shadow: 0.839px 0.545px 8.73px 0.27px rgba(0, 5, 7, 0.21);
+  box-shadow: 0.839px 0.545px 8.73px 0.27px rgba(0, 5, 7, 0.21); }
+
+.block_content {
+  width: 230px;
+  margin: auto; }
+  .block_content hr {
+    height: 1px;
+    border: none;
+    background: #dddddd; }
+
+.block_content h3 {
+  color: #1e315b;
+  font-size: 16px;
+  font-family: 'Open Sans SemiBold', sans-serif; }
+
+.block_content ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  color: #808185;
+  font-size: 14px;
+  font-family: 'Open Sans Regular', sans-serif; }
+
+.block_content li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.block_content a {
+  text-align: center;
+  margin: auto;
+  width: 160px;
+  padding: 10px 0;
+  display: block;
+  color: #051c4f;
+  font-size: 14px;
+  font-family: 'Open Sans Regular', sans-serif;
+  border: 1px solid #051c4f;
+  border-radius: 5px;
+  background: #fff;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .block_content a:hover {
+    color: #fff;
+    background: #051c4f; }
+
+.filters {
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  -webkit-box-shadow: 0.105px 1.997px 1.94px 0.06px #000101;
+  box-shadow: 0.105px 1.997px 1.94px 0.06px #000101; }
+
+.filters__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .filters__flex p {
+    color: #051c4f;
+    font-size: 18px;
+    font-family: 'Open Sans Regular', sans-serif; }
+  .filters__flex select {
+    font-size: 16px; }

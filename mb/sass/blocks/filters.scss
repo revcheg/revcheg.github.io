@@ -1,0 +1,21 @@
+.filters {
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  box-shadow: 0.105px 1.997px 1.94px 0.06px #000101;
+  
+}
+
+.filters__flex {
+  display: flex;
+  justify-content: space-between;
+  
+  p {
+    color: $mc;
+    font-size: 18px;
+    font-family: 'Open Sans Regular', sans-serif;
+  }
+  
+  select {
+    font-size: 16px;
+  }
+}

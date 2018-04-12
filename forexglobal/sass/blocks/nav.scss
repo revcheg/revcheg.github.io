@@ -20,7 +20,8 @@
     position: relative;
     color: $mc;
     font-size: 18px;
-    font-family: 'SFUIDisplay-Thin', sans-serif;
+    font-weight: 100;
+    // font-family: 'SFUIDisplay-Thin', sans-serif;
     text-decoration: none;
     
     &::after {

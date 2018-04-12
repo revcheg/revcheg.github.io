@@ -17,8 +17,11 @@
       padding: 0 0 14px 0;
       color: $sc;
       font-size: 16px;
-      font-family: 'SFUIDisplay-Medium', sans-serif;
+      font-weight: 500;
+      font-family: inherit;
+      // font-family: 'SFUIDisplay-Medium', sans-serif;
       border: none;
+      background: #fff;
       outline: none;
       cursor: pointer;
     }
@@ -26,7 +29,8 @@
 }
 
 .tabs__active {
-  font-family: 'SFUIDisplay-Black', sans-serif !important;
+  font-weight: 900 !important;
+  // font-family: 'SFUIDisplay-Black', sans-serif !important;
   border-bottom: 2px solid #f58a39 !important;
 }
 
@@ -49,15 +53,16 @@
 .tabs__name {
   color: $sc;
   font-size: 30px;
-  font-weight: normal;
-  font-family: 'SFUIDisplay-Medium', sans-serif;
+  font-weight: 500;
+  // font-family: 'SFUIDisplay-Medium', sans-serif;
 }
 
 .tabs__text {
   width: 470px;
   margin: 15px 0 35px 0;
   color: $sc;
-  font-family: 'SFUIDisplay-Thin', sans-serif;
+  font-weight: 100;
+  // font-family: 'SFUIDisplay-Thin', sans-serif;
 }
 
 .tabs__download {
@@ -67,7 +72,8 @@
   padding: 10px 0;
   color: #fff;
   font-size: 18px;
-  font-family: 'SFUIDisplay-Medium', sans-serif;
+  font-weight: 500;
+  // font-family: 'SFUIDisplay-Medium', sans-serif;
   text-align: center;
   text-decoration: none;
   border-radius: 3px;
@@ -81,7 +87,8 @@
   padding: 9px 0;
   color: $sc;
   font-size: 18px;
-  font-family: 'SFUIDisplay-Thin', sans-serif;
+  font-weight: 100;
+  // font-family: 'SFUIDisplay-Thin', sans-serif;
   text-align: center;
   text-decoration: none;
   border: 1px solid $sc;

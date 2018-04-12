@@ -21,26 +21,28 @@
   margin: 0;
   color: $sc;
   font-size: 60px;
-  font-weight: normal;
-  font-family: 'SFUIDisplay-Thin', sans-serif;
+  font-weight: 100;
+  // font-family: 'SFUIDisplay-Thin', sans-serif;
   
   span {
-    font-family: 'SFUIDisplay-Regular', sans-serif;
+    font-weight: normal;
+    // font-family: 'SFUIDisplay-Regular', sans-serif;
   }
 }
 
 .welcome__sub-name {
   color: $sc;
   font-size: 24px;
-  font-weight: normal;
-  font-family: 'SFUIDisplay-Thin', sans-serif;
+  font-weight: 100;
+  // font-family: 'SFUIDisplay-Thin', sans-serif;
 }
 
 .welcome__text {
   margin: 35px 0 50px 0;
   color: $sc;
   font-size: 18px;
-  font-family: 'SFUIDisplay-Thin', sans-serif;
+  font-weight: 100;
+  // font-family: 'SFUIDisplay-Thin', sans-serif;
 }
 
 .welcome__button {
@@ -49,7 +51,8 @@
   padding: 10px 0;
   color: $sc;
   font-size: 18px;
-  font-family: 'SFUIDisplay-Thin', sans-serif;
+  font-weight: 100;
+  // font-family: 'SFUIDisplay-Thin', sans-serif;
   text-align: center;
   text-decoration: none;
   border-radius: 3px;

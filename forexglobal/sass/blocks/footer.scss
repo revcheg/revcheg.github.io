@@ -16,13 +16,10 @@
   &--links {
     
     b {
-      // display: inline-block;
-      // padding: 0 0 10px 0;
       color: #cdcdcf;
       font-size: 18px;
       font-weight: normal;
-      font-family: 'SFUIDisplay-Regular', sans-serif;
-      // border-bottom: 1px solid #cdcdcf;
+      // font-family: 'SFUIDisplay-Regular', sans-serif;
     }
     hr {
       width: 30px;
@@ -35,7 +32,8 @@
     a {
       color: #cdcdcf;
       font-size: 14px;
-      font-family: 'SFUIDisplay-Thin', sans-serif;
+      font-weight: 100;
+      // font-family: 'SFUIDisplay-Thin', sans-serif;
       text-decoration: none;
       transition: 0.3s;
       
@@ -47,7 +45,8 @@
     li {
       color: #cdcdcf;
       font-size: 14px;
-      font-family: 'SFUIDisplay-Thin', sans-serif;
+      font-weight: 100;
+      // font-family: 'SFUIDisplay-Thin', sans-serif;
     }
   }
 }
@@ -64,7 +63,8 @@
   padding: 9px 0;
   color: #fff;
   font-size: 18px;
-  font-family: 'SFUIDisplay-Thin', sans-serif;
+  font-weight: 100;
+  // font-family: 'SFUIDisplay-Thin', sans-serif;
   text-align: center;
   text-decoration: none;
   border: 1px solid #fff;
@@ -82,14 +82,15 @@
   color: #cdcdcf;
   font-size: 18px;
   font-weight: normal;
-  font-family: 'SFUIDisplay-Regular', sans-serif;
+  // font-family: 'SFUIDisplay-Regular', sans-serif;
   text-transform: uppercase;
 }
 
 .footer__text {
   color: #cdcdcf;
   font-size: 14px;
-  font-family: 'SFUIDisplay-Thin', sans-serif;
+  font-weight: 100;
+  // font-family: 'SFUIDisplay-Thin', sans-serif;
   
   a {
     color: #fefeff;

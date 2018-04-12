@@ -8,8 +8,8 @@
   margin: 260px 0 95px 0;
   color: #fff;
   font-size: 65px;
-  font-weight: normal;
-  font-family: 'SFUIDisplay-Light', sans-serif;
+  font-weight: 300;
+  // font-family: 'SFUIDisplay-Light', sans-serif;
   text-align: center;
 }
 
@@ -25,7 +25,9 @@
     padding: 0 10px;
     color: #fff;
     font-size: 18px;
-    font-family: 'SFUIDisplay-Thin', sans-serif;
+    font-weight: 100;
+    font-family: inherit;
+    // font-family: 'SFUIDisplay-Thin', sans-serif;
     border: 1px solid $mc;
     border-radius: 3px;
     background: transparent;
@@ -40,7 +42,9 @@
     height: 40px;
     color: #2f2861;
     font-size: 18px;
-    font-family: 'SFUIDisplay-Thin', sans-serif;
+    font-weight: 100;
+    font-family: inherit;
+    // font-family: 'SFUIDisplay-Thin', sans-serif;
     border: none;
     border-radius: 3px;
     background: $mc;

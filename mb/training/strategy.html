@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Strategy - MasterBinary</title>
+  <link rel="stylesheet" href="../css/style.min.css">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="194x194" href="../img/favicon/favicon-194x194.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#051c4f">
+  <meta name="msapplication-TileColor" content="#051c4f">
+  <meta name="msapplication-TileImage" content="../img/favicon/mstile-144x144.png">
+  <meta name="theme-color" content="#051c4f">
+</head>
+<body>
+  <header class="header">
+    <div class="time">
+      <div class="container">
+        <div class="time__flex">
+          <div class="time__box  time__box--wet">WET 19:37:15</div>
+          <div class="time__box">EET 19:37:15</div>
+          <div class="time__box">MSK 19:37:15</div>
+        </div>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav__flex">
+          <button class="nav__toggle" type="button">Open Menu</button>
+          <button class="nav__login" type="button">Login</button>
+          <picture>
+            <source srcset="../img/logo-s.png" media="(max-width: 768px)">
+            <source srcset="../img/logo.png">
+            <img src="../img/logo.png" alt="MasterBinary">
+          </picture>
+          <div class="nav__container  nav--closed">
+            <ul class="nav__list nav__list--inner">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Торговля</a></li>
+              <li><a href="#">Типы счетов</a></li>
+              <li><a href="#">Обучение</a></li>
+              <li><a href="#">Юридическая информация</a></li>
+              <li>
+                <a class="nav__login-inner" href="#"></a>
+              </li>
+              <li>
+                <select class="nav__language">
+                  <option>Ru</option>
+                  <option>En</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+    </nav>
+  </header>
+  <section class="filters">
+    <div class="container">
+      <div class="filters__flex">
+        <div class="filters__iam">
+          <p>
+            Я 
+            <select>
+              <option class="filters__begin">Начинающий</option>
+              <option>Уверенный</option>
+              <option>Опытный</option>
+              <option>Любой</option>
+            </select>
+            Трейдер,
+          </p>
+        </div>
+        <div class="filters__search">
+          <p>
+            Ищу
+            <select>
+              <option>среднесрочную</option>
+              <option>раткосрочную</option>
+              <option>долгосрочную</option>
+              <option>любую</option>
+            </select>
+            Стратегию,
+          </p>
+        </div>
+        <div class="filters__trading">
+          <p>
+            Для торговли
+            <select>
+              <option>валютными парами</option>
+              <option>крипто валютой</option>
+              <option>акциями</option>
+              <option>идексами</option>
+              <option>товарами</option>
+              <option>любыми активами</option>
+            </select>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="breadcrumbs">
+    <div class="container  container--big">
+      <div class="breadcrumbs__inner">
+        <h1>Стратегии</h1>
+        <ul>
+          <li><a href="#">Главная</a></li>/
+          <li><a href="#">Обучение</a></li>/
+          <li>Стратегии</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+      <!-- <main> -->
+        <section class="container  container--big">
+          <div class="row">
+            <div class="strategy_block">
+              <img src="../img/car.png" alt="car">
+              <div class="block_content">
+                <h3>Метод Пурия</h3>
+                <hr>
+                <ul>
+                  <li>
+                    <p>Уровень сложности</p>
+                    <div class="span">
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_gray.png" alt="star gray"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Опцион: Среднесрочный</p>
+                    <span><img src="../img/chronometr_half.png" alt="chronometr"> </span>
+                  </li>
+                  <li>
+                    <p>Актив: Индексы</p>
+                    <span><img src="../img/graph.png" alt="graphic"></span>
+                  </li>
+                </ul>
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="strategy_block">
+              <img src="../img/car.png" alt="car">
+              <div class="block_content">
+                <h3>Метод Пурия</h3>
+                <hr>
+                <ul>
+                  <li>
+                    <p>Уровень сложности</p>
+                    <div class="span">
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_gray.png" alt="star gray"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Опцион: Среднесрочный</p>
+                    <span><img src="../img/chronometr_half.png" alt="chronometr"> </span>
+                  </li>
+                  <li>
+                    <p>Актив: Акции</p>
+                    <span><img src="../img/pie_chart.png" alt="pie chart"></span>
+                  </li>
+                </ul>
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="strategy_block">
+              <img src="../img/car.png" alt="car">
+              <div class="block_content">
+                <h3>Метод Пурия</h3>
+                <hr>
+                <ul>
+                  <li>
+                    <p>Уровень сложности</p>
+                    <div class="span">
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_gray.png" alt="star gray"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Опцион: Среднесрочный</p>
+                    <span><img src="../img/chronometr_half.png" alt="chronometr"> </span>
+                  </li>
+                  <li>
+                    <p>Актив: Товары</p>
+                    <span><img src="../img/box.png" alt="box"></span>
+                  </li>
+                </ul>
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="strategy_block">
+              <img src="../img/car.png" alt="car">
+              <div class="block_content">
+                <h3>Метод Пурия</h3>
+                <hr>
+                <ul>
+                  <li>
+                    <p>Уровень сложности</p>
+                    <div class="span">
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_gray.png" alt="star gray"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Опцион: Среднесрочный</p>
+                    <span><img src="../img/chronometr_half.png" alt="chronometr"> </span>
+                  </li>
+                  <li>
+                    <p>Актив: Валюты</p>
+                    <span><img src="../img/dollar.png" alt="$"></span>
+                  </li>
+                </ul>
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="strategy_block">
+              <img src="../img/car.png" alt="car">
+              <div class="block_content">
+                <h3>Метод Пурия</h3>
+                <hr>
+                <ul>
+                  <li>
+                    <p>Уровень сложности</p>
+                    <div class="span">
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_gray.png" alt="star gray"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Опцион: Краткосрочный</p>
+                    <span><img src="../img/chronometr_empty.png" alt="chronometr"> </span>
+                  </li>
+                  <li>
+                    <p>Актив: Крипто валюты</p>
+                    <span><img src="../img/bitcoin.png" alt="bitcoin"></span>
+                  </li>
+                </ul>
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="strategy_block">
+              <img src="../img/car.png" alt="car">
+              <div class="block_content">
+                <h3>Метод Пурия</h3>
+                <hr>
+                <ul>
+                  <li>
+                    <p>Уровень сложности</p>
+                    <div class="span">
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_gray.png" alt="star gray"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Опцион: Краткосрочный</p>
+                    <span><img src="../img/chronometr_empty.png" alt="chronometr"> </span>
+                  </li>
+                  <li>
+                    <p>Актив: Крипто валюты</p>
+                    <span><img src="../img/bitcoin.png" alt="bitcoin"></span>
+                  </li>
+                </ul>
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="strategy_block">
+              <img src="../img/car.png" alt="car">
+              <div class="block_content">
+                <h3>Метод Пурия</h3>
+                <hr>
+                <ul>
+                  <li>
+                    <p>Уровень сложности</p>
+                    <div class="span">
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_gray.png" alt="star gray"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Опцион: Краткосрочный</p>
+                    <span><img src="../img/chronometr_empty.png" alt="chronometr"> </span>
+                  </li>
+                  <li>
+                    <p>Актив: Крипто валюты</p>
+                    <span><img src="../img/bitcoin.png" alt="bitcoin"></span>
+                  </li>
+                </ul>
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="strategy_block">
+              <img src="../img/car.png" alt="car">
+              <div class="block_content">
+                <h3>Метод Пурия</h3>
+                <hr>
+                <ul>
+                  <li>
+                    <p>Уровень сложности</p>
+                    <div class="span">
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_gray.png" alt="star gray"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Опцион: Краткосрочный</p>
+                    <span><img src="../img/chronometr_empty.png" alt="chronometr"> </span>
+                  </li>
+                  <li>
+                    <p>Актив: Крипто валюты</p>
+                    <span><img src="../img/bitcoin.png" alt="bitcoin"></span>
+                  </li>
+                </ul>
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="strategy_block">
+              <img src="../img/car.png" alt="car">
+              <div class="block_content">
+                <h3>Метод Пурия</h3>
+                <hr>
+                <ul>
+                  <li>
+                    <p>Уровень сложности</p>
+                    <div class="span">
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_gray.png" alt="star gray"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Опцион: Долгосрочный</p>
+                    <span><img src="../img/chronometr_full.png" alt="chronometr"> </span>
+                  </li>
+                  <li>
+                    <p>Актив: Валюты</p>
+                    <span><img src="../img/dollar.png" alt="dollar"></span>
+                  </li>
+                </ul>
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="strategy_block">
+              <img src="../img/car.png" alt="car">
+              <div class="block_content">
+                <h3>Метод Пурия</h3>
+                <hr>
+                <ul>
+                  <li>
+                    <p>Уровень сложности</p>
+                    <div class="span">
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_gray.png" alt="star gray"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Опцион: Долгосрочный</p>
+                    <span><img src="../img/chronometr_full.png" alt="chronometr"> </span>
+                  </li>
+                  <li>
+                    <p>Актив: Валюты</p>
+                    <span><img src="../img/dollar.png" alt="dollar"></span>
+                  </li>
+                </ul>
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="strategy_block">
+              <img src="../img/car.png" alt="car">
+              <div class="block_content">
+                <h3>Метод Пурия</h3>
+                <hr>
+                <ul>
+                  <li>
+                    <p>Уровень сложности</p>
+                    <div class="span">
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_gray.png" alt="star gray"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Опцион: Долгосрочный</p>
+                    <span><img src="../img/chronometr_full.png" alt="chronometr"> </span>
+                  </li>
+                  <li>
+                    <p>Актив: Валюты</p>
+                    <span><img src="../img/dollar.png" alt="dollar"></span>
+                  </li>
+                </ul>
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="strategy_block">
+              <img src="../img/car.png" alt="car">
+              <div class="block_content">
+                <h3>Метод Пурия</h3>
+                <hr>
+                <ul>
+                  <li>
+                    <p>Уровень сложности</p>
+                    <div class="span">
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_gray.png" alt="star gray"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Опцион: Долгосрочный</p>
+                    <span><img src="../img/chronometr_full.png" alt="chronometr"> </span>
+                  </li>
+                  <li>
+                    <p>Актив: Валюты</p>
+                    <span><img src="../img/dollar.png" alt="dollar"></span>
+                  </li>
+                </ul>
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="strategy_block">
+              <img src="../img/car.png" alt="car">
+              <div class="block_content">
+                <h3>Метод Пурия</h3>
+                <hr>
+                <ul>
+                  <li>
+                    <p>Уровень сложности</p>
+                    <div class="span">
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_gray.png" alt="star gray"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Опцион: Среднесрочный</p>
+                    <span><img src="../img/chronometr_half.png" alt="chronometr"> </span>
+                  </li>
+                  <li>
+                    <p>Актив: Валюты</p>
+                    <span><img src="../img/dollar.png" alt="$"></span>
+                  </li>
+                </ul>
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="strategy_block">
+              <img src="../img/car.png" alt="car">
+              <div class="block_content">
+                <h3>Метод Пурия</h3>
+                <hr>
+                <ul>
+                  <li>
+                    <p>Уровень сложности</p>
+                    <div class="span">
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_gray.png" alt="star gray"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Опцион: Среднесрочный</p>
+                    <span><img src="../img/chronometr_half.png" alt="chronometr"> </span>
+                  </li>
+                  <li>
+                    <p>Актив: Валюты</p>
+                    <span><img src="../img/dollar.png" alt="$"></span>
+                  </li>
+                </ul>
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="strategy_block">
+              <img src="../img/car.png" alt="car">
+              <div class="block_content">
+                <h3>Метод Пурия</h3>
+                <hr>
+                <ul>
+                  <li>
+                    <p>Уровень сложности</p>
+                    <div class="span">
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_gray.png" alt="star gray"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Опцион: Среднесрочный</p>
+                    <span><img src="../img/chronometr_half.png" alt="chronometr"> </span>
+                  </li>
+                  <li>
+                    <p>Актив: Валюты</p>
+                    <span><img src="../img/dollar.png" alt="$"></span>
+                  </li>
+                </ul>
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="strategy_block">
+              <img src="../img/car.png" alt="car">
+              <div class="block_content">
+                <h3>Метод Пурия</h3>
+                <hr>
+                <ul>
+                  <li>
+                    <p>Уровень сложности</p>
+                    <div class="span">
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_blue.png" alt="star blue"></span>
+                      <span><img src="../img/star_gray.png" alt="star gray"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Опцион: Среднесрочный</p>
+                    <span><img src="../img/chronometr_half.png" alt="chronometr"> </span>
+                  </li>
+                  <li>
+                    <p>Актив: Валюты</p>
+                    <span><img src="../img/dollar.png" alt="$"></span>
+                  </li>
+                </ul>
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <ul class="indicators__pagination">
+            <li><a href="#"><</a></li>
+            <li><a class="indicators__active" href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">></a></li>
+          </ul>
+        </section>
+      <!-- </main> -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__payment">
+            <img src="../img/footer-mc.png" width="60" alt="MasterCard">
+            <img src="../img/footer-ms.png" width="80" alt="MasterCard Secure">
+            <img src="../img/footer-vs.png" width="64" alt="Visa">
+            <img src="../img/footer-vf.png" width="67" alt="Visa Verified">
+          </div>
+            <hr>
+          <div class="footer__links">
+            <ul>
+              <li><b>Торговля</b></li>
+              <li><a href="#">Типы счетов</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Почему мы</a></li>
+            </ul>
+            <ul>
+              <li><b>Обучение</b></li>
+              <li><a href="#">Активы</a></li>
+              <li><a href="#">Стратегии</a></li>
+              <li><a href="#">Индикаторы</a></li>
+              <li><a href="#">Статьи</a></li>
+            </ul>
+            <ul>
+              <li><b>Юридическая информация</b></li>
+              <li><a href="#">Политика AML и KYC</a></li>
+              <li><a href="#">Политика конфиденциальности</a></li>
+              <li><a href="#">Отказ от ответственности</a></li>
+              <li><a href="#">Клиентское соглашение</a></li>
+            </ul>
+          </div>
+            <hr>
+          <ul class="footer__support">
+            <li><b>Служба поддержки:</b></li>
+            <li><a href="tel:74996097696">74996097696</a></li>
+            <li><a href="mailto:support@masterbinary.net">support@masterbinary.net</a></li>
+            <li><a href="mailto:support@masterbinary.ru">support@masterbinary.ru</a></li>
+          </ul>
+            <hr>
+          <div class="footer__info">
+            <div class="footer__left">
+              <b>Уведомление о рисках:</b>
+              <p>Операции, предлагаемые данным сайтом, могут осуществляться исключительно полностью дееспособными совершеннолетними (достигшими 18 лет) лицами. Операции с финансовыми инструментами, предлагаемые данным сайтом могут считаться операциями с высоким риском. При совершении таких операций существуют риски частичной либо полной потери денежных средств. Соответственно, настоятельно рекомендуется удерживаться от инвестирования и торговли теми средствами, потерю которых в случае неблагоприятного исхода таких торгов вы не можете себе позволить.</p>
+              <p>Рекомендуем внимательно ознакомиться с нашими условиями и положениями, уведомлением о рисках, клиентским соглашением, политикой конфиденциальности и политикой AML и KYC прежде чем приступить к совершению операций на данном сайте.</p>
+              <p>Сайт http://masterbinary.ru является торговой маркой, данный сайт является собственностью компании TGI Intelligent Solution LTD, Suite 305, Griffith Corporate Centre, P.O. Box 1510, Beachmont, Kingstown, Saint Vincent and the Grenadines.</p>
+            </div>
+            <div class="footer__right">
+              <p>Управление и платежный агент сайта http://masterbinary.ru компания Kurbanas UAB, регистрационный номер 304404840, местонахождение : 60 Laisves ave., Vilnius, m. sav, Lithuania.</p>
+              <p>Компания TGI Intelligent Solution LTD а также сайт http://masterbinary.ru не оказывают какие-либо услуг гражданам и жителям США, Канады, Австралии, Бельгии, Франции, Турции, Израиля, Сирии, Судана, Ирана, Северной Кореи Японии, а также других стран и юрисдикций, где указанные услуг не могут быть оказаны в силу действующего законодательства.</p>
+              <div class="footer__store">
+                <a class="footer__appstore" href="#"></a>
+                <a class="footer__googleplay" href="#"></a>
+              </div>
+              <div class="footer__social">
+                <a class="footer__fb" href="#"></a>
+                <a class="footer__tw" href="#"></a>
+                <a class="footer__in" href="#"></a>
+                <a class="footer__yt" href="#"></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__copyright">
+            <img src="../img/logo-f.png" alt="MasterBinary">
+            <p>Copyright ©2017 Master Binary.<br>All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <!-- <script src="js/jquery.min.js"></script>
+      <script src="js/slick/slick.min.js"></script>
+      <script src="js/slider.js"></script>
+      <script src="js/range.js"></script> -->
+      <!-- <script src="js/time.js"></script> -->
+      <script src="../js/mobile-menu.js"></script>
+      <!-- <script src="../js/filter-menu.js"></script> -->
+</body>
+</html>

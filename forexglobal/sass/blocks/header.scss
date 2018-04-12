@@ -35,7 +35,8 @@
       padding: 9px 0;
       color: $mc;
       font-size: 18px;
-      font-family: 'SFUIDisplay-Thin', sans-serif;
+      font-weight: 100;
+      // font-family: 'SFUIDisplay-Thin', sans-serif;
       text-decoration: none;
       border: 1px solid $mc;
       border-radius: 3px;
@@ -56,7 +57,9 @@
   padding: 0 20px;
   color: $mc;
   font-size: 18px;
-  font-family: 'SFUIDisplay-Thin', sans-serif;
+  font-weight: 100;
+  font-family: inherit;
+  // font-family: 'SFUIDisplay-Thin', sans-serif;
   border: 1px solid $mc;
   border-radius: 3px;
   background: transparent url('../img/nav-arrow.svg') no-repeat right;
