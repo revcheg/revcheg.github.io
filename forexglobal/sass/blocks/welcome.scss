@@ -8,32 +8,20 @@
   align-items: center;
   
   img {
-    max-width: 550px;
-    height: 370px;
+    max-width: 600px;
+    height: 400px;
   }
 }
 
 .welcome__content {
-  width: 585px;
+  width: 485px;
 }
 
 .welcome__name {
   margin: 0;
   color: $sc;
   font-size: 60px;
-  font-weight: 100;
-  // font-family: 'SFUIDisplay-Thin', sans-serif;
-  
-  span {
-    font-weight: normal;
-    // font-family: 'SFUIDisplay-Regular', sans-serif;
-  }
-}
-
-.welcome__sub-name {
-  color: $sc;
-  font-size: 24px;
-  font-weight: 100;
+  font-weight: 500;
   // font-family: 'SFUIDisplay-Thin', sans-serif;
 }
 
@@ -51,7 +39,7 @@
   padding: 10px 0;
   color: $sc;
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 300;
   // font-family: 'SFUIDisplay-Thin', sans-serif;
   text-align: center;
   text-decoration: none;

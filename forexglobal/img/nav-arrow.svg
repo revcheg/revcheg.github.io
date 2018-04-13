@@ -1,1 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 31"><defs><style>.cls-1{fill:#fac93e;}</style></defs><title>стрелка выпад списка</title><g id="Layer_2" data-name="Layer 2"><g id="OBJECTS"><polygon class="cls-1" points="33 31 0 0 66 0 33 31"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 31">
+  <path fill="#fac93e" d="M33 31L0 0h66L33 31z" data-name="Layer 2"/>
+</svg>

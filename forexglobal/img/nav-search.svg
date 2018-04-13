@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.05 115.05"><defs><style>.cls-1,.cls-2{fill:none;stroke:#fac93e;stroke-miterlimit:10;}.cls-1{stroke-width:5px;}.cls-2{stroke-linecap:round;stroke-width:10px;}</style></defs><title>лупа</title><g id="Layer_2" data-name="Layer 2"><g id="OBJECTS"><circle class="cls-1" cx="42.17" cy="42.17" r="39.67" transform="translate(-17.47 42.17) rotate(-45)"/><line class="cls-2" x1="72.45" y1="72.45" x2="110.05" y2="110.05"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.05 115.05">
+  <g fill="none" stroke="#fac93e" stroke-miterlimit="10" data-name="Layer 2">
+    <circle cx="42.17" cy="42.17" r="39.67" stroke-width="5" transform="rotate(-45 42.17 42.17)"/>
+    <path stroke-linecap="round" stroke-width="10" d="M72.45 72.45l37.6 37.6"/>
+  </g>
+</svg>

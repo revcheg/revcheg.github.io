@@ -36,7 +36,10 @@
     }
     
     .header__open {
-      background-position-x: 122px;
+      
+      &::before {
+        right: 5px;
+      }
     }
     
     .nav__search {
@@ -104,9 +107,7 @@
 
 .header__open {
   position: relative;
-  background: url('../img/nav-arrow.svg') no-repeat right;
-  background-position-x: 145px;
-  background-size: 6px 3px;
+  transition: 0.3s;
   
   &::after {
     content: 'Trading involves risk of loss';
@@ -117,9 +118,26 @@
     font-size: 10px;
   }
   
-  // &:hover + .header__accounts {
-  //   display: block;
-  // }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 19px;
+    right: 13px;
+    width: 6px;
+    height: 3px;
+    background: url('../img/nav-arrow.svg') no-repeat center;
+    transition: 0.1s;
+  }
+  
+  &--active {
+    color: $sc !important;
+    background: $mc;
+    
+    &::before {
+      background: url('../img/nav-arrow-h.svg') no-repeat center;
+      transform: rotate(180deg);
+    }
+  }
 }
 
 .header__accounts {

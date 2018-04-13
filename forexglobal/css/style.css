@@ -62,7 +62,7 @@ body {
   font-style: normal; }
 
 .title {
-  padding: 0 0 160px 0;
+  padding: 0 0 40px 0;
   background: #32138c url("../img/title-bg.jpg") no-repeat top;
   background-size: cover; }
 
@@ -82,7 +82,7 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 770px;
-  margin: auto; }
+  margin: 0 auto 130px; }
   .title__form input {
     width: 248px;
     height: 38px;
@@ -107,11 +107,39 @@ body {
     height: 40px;
     color: #2f2861;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     font-family: inherit;
     border: none;
     border-radius: 3px;
     background: #fac93e; }
+
+.title__down {
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 12px;
+  margin: auto;
+  border: none;
+  background: url("../img/title-arrow.svg");
+  -webkit-animation: down 1s;
+  animation: down 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  cursor: pointer; }
+
+@-webkit-keyframes down {
+  0% {
+    top: 0; }
+  100% {
+    top: 10px; } }
+
+@keyframes down {
+  0% {
+    top: 0; }
+  100% {
+    top: 10px; } }
 
 .header {
   position: absolute;
@@ -137,8 +165,8 @@ body {
         padding: 9px 0;
         -webkit-transition: 0.3s;
         transition: 0.3s; }
-    .header--scroll .header__open {
-      background-position-x: 122px; }
+    .header--scroll .header__open::before {
+      right: 5px; }
     .header--scroll .nav__search {
       display: none; }
     .header--scroll .nav {
@@ -202,9 +230,8 @@ body {
 
 .header__open {
   position: relative;
-  background: url("../img/nav-arrow.svg") no-repeat right;
-  background-position-x: 145px;
-  background-size: 6px 3px; }
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
   .header__open::after {
     content: 'Trading involves risk of loss';
     position: absolute;
@@ -212,6 +239,23 @@ body {
     left: 0;
     width: inherit;
     font-size: 10px; }
+  .header__open::before {
+    content: '';
+    position: absolute;
+    top: 19px;
+    right: 13px;
+    width: 6px;
+    height: 3px;
+    background: url("../img/nav-arrow.svg") no-repeat center;
+    -webkit-transition: 0.1s;
+    transition: 0.1s; }
+  .header__open--active {
+    color: #2f2861 !important;
+    background: #fac93e; }
+    .header__open--active::before {
+      background: url("../img/nav-arrow-h.svg") no-repeat center;
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg); }
 
 .header__accounts {
   position: absolute;
@@ -340,24 +384,17 @@ body {
   -ms-flex-align: center;
   align-items: center; }
   .welcome__flex img {
-    max-width: 550px;
-    height: 370px; }
+    max-width: 600px;
+    height: 400px; }
 
 .welcome__content {
-  width: 585px; }
+  width: 485px; }
 
 .welcome__name {
   margin: 0;
   color: #2f2861;
   font-size: 60px;
-  font-weight: 100; }
-  .welcome__name span {
-    font-weight: normal; }
-
-.welcome__sub-name {
-  color: #2f2861;
-  font-size: 24px;
-  font-weight: 100; }
+  font-weight: 500; }
 
 .welcome__text {
   margin: 35px 0 50px 0;
@@ -371,7 +408,7 @@ body {
   padding: 10px 0;
   color: #2f2861;
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   text-decoration: none;
   border-radius: 3px;
@@ -458,7 +495,7 @@ body {
     padding: 9px 0;
     color: #fac93e;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
     text-decoration: none;
     border: 1px solid #fac93e;
@@ -517,9 +554,9 @@ body {
   padding: 0 0 0 15px; }
 
 .tabs__mockup {
-  width: 570px;
-  height: 400px;
-  margin: -150px 0 0 0; }
+  width: 732px;
+  height: 403px;
+  margin: -130px 0 0 0; }
 
 .tabs__content {
   position: relative;
@@ -566,11 +603,86 @@ body {
   padding: 9px 0;
   color: #2f2861;
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   text-decoration: none;
   border: 1px solid #2f2861;
   border-radius: 3px; }
+
+.license {
+  padding: 30px 0 60px 0; }
+
+.license__name {
+  margin: 0 0 60px 0;
+  color: #2f2861;
+  font-size: 60px;
+  font-weight: 100;
+  text-align: center; }
+
+.license__list {
+  margin: 0;
+  padding: 0;
+  color: #2f2861;
+  font-size: 20px;
+  font-weight: 100;
+  list-style: url("../img/list.svg");
+  list-style-position: inside; }
+  .license__list li {
+    margin: 0 0 20px 0; }
+  .license__list b {
+    font-weight: 500; }
+  .license__list + hr {
+    height: 1px;
+    margin: 30px 0 20px 0;
+    border: none;
+    background: #2f2861; }
+
+.license__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.license__box {
+  width: 350px;
+  padding: 180px 0 0 0; }
+  .license__box b {
+    display: block;
+    color: #2f2861;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center; }
+  .license__box hr {
+    width: 30px;
+    height: 1px;
+    margin: 20px auto;
+    border: none;
+    background: #fac93e; }
+  .license__box p {
+    color: #2f2861;
+    font-weight: 100; }
+  .license__box--1 {
+    background: url("../img/license-1.svg") no-repeat top;
+    background-size: 150px; }
+  .license__box--2 {
+    background: url("../img/license-2.svg") no-repeat top;
+    background-size: 170px; }
+  .license__box--3 {
+    background: url("../img/license-3.svg") no-repeat top;
+    background-size: 120px 150px; }
+
+.quote {
+  padding: 65px 0;
+  background-image: linear-gradient(85deg, #31266e 0%, #6420ff 100%); }
+  .quote p {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center; }
+    .quote p span {
+      font-weight: 500; }
 
 .form {
   padding: 95px 0 110px;

@@ -41,9 +41,11 @@ openAccount.addEventListener('click', function (event) {
   event.preventDefault();
   
   if (listAccount.classList.contains('header__accounts--closed')) {
+    openAccount.classList.add('header__open--active');
     listAccount.classList.remove('header__accounts--closed');
     listAccount.classList.add('header__accounts--opened');
   } else {
+    openAccount.classList.remove('header__open--active');
     listAccount.classList.remove('header__accounts--opened');
     listAccount.classList.add('header__accounts--closed');
   }
@@ -51,6 +53,7 @@ openAccount.addEventListener('click', function (event) {
 
 window.addEventListener('keydown', function(event) {
   if (event.keyCode === 27) {
+    openAccount.classList.remove('header__open--active');
     listAccount.classList.remove('header__accounts--opened');
     listAccount.classList.add('header__accounts--closed');
   }
