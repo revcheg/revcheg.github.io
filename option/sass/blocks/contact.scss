@@ -1,6 +1,6 @@
 .contact {
   padding: 250px 0 60px 0;
-  background: #182340 url('../img/contact-bg-1.png') no-repeat top;
+  background: #182340 url('../img/contact-bg.png') no-repeat top;
   background-size: cover;
 }
 
@@ -89,22 +89,26 @@
 
 @media screen and ($mobile-widths) {
   .contact {
-    padding: 150px 0 60px 0;
+    padding: 70px 0 15px 0;
+    background: #182340 url('../img/contact-bg-m.jpg') no-repeat top;
+    background-size: cover;
   }
   
   .contact__text {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     
     &:nth-child(2) {
-      margin: 30px 0 50px 0;
+      margin: 30px 0 40px 0;
     }
   }
   
   .contact__form {
+    padding: 50px 15px 30px 15px;
     
     input {
       width: auto;
+      height: 45px;
       margin: 0 0 10px 0;
       font-size: 16px;
     }
@@ -112,7 +116,7 @@
     button {
       width: 100%;
       padding: 15px 0;
-      font-size: 16px;
+      font-size: 20px;
     }
   }
   
