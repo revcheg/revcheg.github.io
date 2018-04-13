@@ -7,8 +7,13 @@
   &--scroll {
     position: fixed;
     top: 0;
-    background: #33276e;
+    background: rgba(47, 40, 97, 0.9);
     z-index: 1;
+    
+    .header__flex {
+      padding: 18px 15px;
+      border: none;
+    }
     
     .header__logo {
       width: 100px;
@@ -16,7 +21,8 @@
     
     .header__user {
       width: 400px;
-      margin: 0 70px 0 0;
+      // margin: 0 70px 0 0;
+      z-index: 3;
       
       li {
         
@@ -34,7 +40,14 @@
     }
     
     .nav__search {
-      top: -73px;
+      display: none;
+    }
+    
+    .nav {
+      position: absolute;
+      top: 0;
+      padding: 28px 15px 27px 190px;
+      transition: 0.5s;
     }
   }
 }
@@ -64,6 +77,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  transition: 0.5s;
   
   li {
     text-align: center;
@@ -89,12 +103,60 @@
 }
 
 .header__open {
+  position: relative;
   background: url('../img/nav-arrow.svg') no-repeat right;
   background-position-x: 145px;
   background-size: 6px 3px;
+  
+  &::after {
+    content: 'Trading involves risk of loss';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: inherit;
+    font-size: 10px;
+  }
+  
+  // &:hover + .header__accounts {
+  //   display: block;
+  // }
 }
 
-.header__support {
+.header__accounts {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background: rgba(47, 40, 97, 0.5);
+  list-style: none;
+  transition: 0.5s;
+  
+  li {
+    
+    a {
+      color: #fff;
+      border: none;
+      transition: 0.3s;
+      
+      &:hover {
+        font-weight: 500;
+        background: rgba(47, 40, 97, 0.7);
+      }
+    }
+  }
+  
+  &--closed {
+    // display: none;
+    opacity: 0;
+  }
+  
+  &--opened {
+    // display: block;
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.header__language {
   width: 70px;
   height: 41px;
   padding: 0 20px;

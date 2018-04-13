@@ -33,6 +33,29 @@ window.onscroll = function () {
  }
 }
 
+// Open Accounts
+var openAccount = document.querySelector('.header__open');
+var listAccount = document.querySelector('.header__accounts');
+
+openAccount.addEventListener('click', function (event) {
+  event.preventDefault();
+  
+  if (listAccount.classList.contains('header__accounts--closed')) {
+    listAccount.classList.remove('header__accounts--closed');
+    listAccount.classList.add('header__accounts--opened');
+  } else {
+    listAccount.classList.remove('header__accounts--opened');
+    listAccount.classList.add('header__accounts--closed');
+  }
+});
+
+window.addEventListener('keydown', function(event) {
+  if (event.keyCode === 27) {
+    listAccount.classList.remove('header__accounts--opened');
+    listAccount.classList.add('header__accounts--closed');
+  }
+});
+
 // Tabs
 function openTabs (evt, cityName) {
 

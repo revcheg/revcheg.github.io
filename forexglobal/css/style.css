@@ -122,13 +122,16 @@ body {
   .header--scroll {
     position: fixed;
     top: 0;
-    background: #33276e;
+    background: rgba(47, 40, 97, 0.9);
     z-index: 1; }
+    .header--scroll .header__flex {
+      padding: 18px 15px;
+      border: none; }
     .header--scroll .header__logo {
       width: 100px; }
     .header--scroll .header__user {
       width: 400px;
-      margin: 0 70px 0 0; }
+      z-index: 3; }
       .header--scroll .header__user li a {
         width: 133px;
         padding: 9px 0;
@@ -137,7 +140,13 @@ body {
     .header--scroll .header__open {
       background-position-x: 122px; }
     .header--scroll .nav__search {
-      top: -73px; }
+      display: none; }
+    .header--scroll .nav {
+      position: absolute;
+      top: 0;
+      padding: 28px 15px 27px 190px;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
 
 .header__container {
   width: 1170px;
@@ -171,7 +180,9 @@ body {
   width: 470px;
   padding: 0;
   margin: 0;
-  list-style: none; }
+  list-style: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
   .header__user li {
     text-align: center; }
     .header__user li:last-child {
@@ -190,11 +201,41 @@ body {
       transition: 0.3; }
 
 .header__open {
+  position: relative;
   background: url("../img/nav-arrow.svg") no-repeat right;
   background-position-x: 145px;
   background-size: 6px 3px; }
+  .header__open::after {
+    content: 'Trading involves risk of loss';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: inherit;
+    font-size: 10px; }
 
-.header__support {
+.header__accounts {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background: rgba(47, 40, 97, 0.5);
+  list-style: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+  .header__accounts li a {
+    color: #fff;
+    border: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .header__accounts li a:hover {
+      font-weight: 500;
+      background: rgba(47, 40, 97, 0.7); }
+  .header__accounts--closed {
+    opacity: 0; }
+  .header__accounts--opened {
+    opacity: 1;
+    z-index: 2; }
+
+.header__language {
   width: 70px;
   height: 41px;
   padding: 0 20px;
@@ -220,9 +261,7 @@ body {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
-
-.nav {
+  align-items: center;
   padding: 18px 15px; }
 
 .nav__list {
@@ -257,7 +296,10 @@ body {
       transform: rotate(180deg); }
 
 .nav__search {
-  position: relative; }
+  position: relative;
+  top: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
   .nav__search input {
     width: 470px;
     height: 42px;
