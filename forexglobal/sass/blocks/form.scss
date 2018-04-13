@@ -59,6 +59,7 @@
     select {
       height: 41px;
       margin: 0 0 10px 0;
+      padding: 8px 15px;
       color: $sc;
       font-size: 18px;
       font-weight: 100;
@@ -66,8 +67,11 @@
       // font-family: 'SFUIDisplay-Thin', sans-serif;
       border: 2px solid #fff;
       border-radius: 3px;
-      text-indent: 5px;
+      background: #fff url('../img/nav-arrow.svg') no-repeat center;
+      background-size: 10px;
+      background-position-x: 260px; 
       outline: none;
+      appearance: none;
       
       &:focus {
         border: 2px solid #7865ff;

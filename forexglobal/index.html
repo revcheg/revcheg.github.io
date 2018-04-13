@@ -20,31 +20,37 @@
 </head>
 <body>
   <section class="title">
-    <div class="container">
+    <!-- <div class="container"> -->
       <header class="header">
-        <div class="header__flex">
-          <img class="header__logo" src="img/logo.svg" alt="Forex24 Global">
-          <ul class="header__user">
-            <li><a class="header__open" href="#">Open account</a></li>
-            <li><a href="#">Log in</a></li>
-            <li>
-              <select class="header__support">
-                <option>En</option>
-                <option>Ru</option>
-              </select>
-            </li>
-          </ul>
+        <div class="header__container">
+          <div class="header__flex">
+            <img class="header__logo" src="img/logo.svg" alt="Forex24 Global">
+            <ul class="header__user">
+              <li><a class="header__open" href="#">Open account</a></li>
+              <li><a href="#">Log in</a></li>
+              <li>
+                <select class="header__support">
+                  <option>En</option>
+                  <option>Ru</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Trading</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            <label class="nav__search">
+              <input type="search">
+            </label>
+          </nav>
         </div>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Trading</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Partners</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
       </header>
+    <div class="container">
       <h1 class="title__name">Trade Online With Forex24 Global</h1>
       <form class="title__form" action="" method="post">
         <input type="text" name="Name" placeholder="Name">
@@ -156,14 +162,14 @@
             <li><button class="tabs__button">Iphone/Ipad</button></li>
           </ul>
           <div class="tabs__content">
-            <div class="tabs__wrapper  tabs__wrapper--android" id="android">
-              <b class="tabs__name">MetaTrader 4 for Android</b>
+            <div class="tabs__wrapper  tabs__wrapper--webtrader" id="webtrader">
+              <b class="tabs__name">Web Trader</b>
               <p class="tabs__text">Get the MetaTrader 4 trading software for your smartphone or tablet and access Vipro markets’ best trading conditions anytime and anywhere!</p>
               <a class="tabs__download" href="#">Download</a>
               <a class="tabs__more" href="#">Read more</a>
             </div>
-            <div class="tabs__wrapper  tabs__wrapper--webtrader" id="webtrader">
-              <b class="tabs__name">Web Trader</b>
+            <div class="tabs__wrapper  tabs__wrapper--android" id="android">
+              <b class="tabs__name">MetaTrader 4 for Android</b>
               <p class="tabs__text">Get the MetaTrader 4 trading software for your smartphone or tablet and access Vipro markets’ best trading conditions anytime and anywhere!</p>
               <a class="tabs__download" href="#">Download</a>
               <a class="tabs__more" href="#">Read more</a>
@@ -518,6 +524,6 @@
       <p class="footer__text">The Company is also registered with: FCA in UK with reg. no. 782501; BaFin in Germany with reg. no. 1349943; CONSOB in Italy with reg. no. 4624; ACP in France with reg. no. 75980; CNMV in Spain with reg. no. 4373.</p>
     </div>
   </footer>
-  <script src="js/tabs.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

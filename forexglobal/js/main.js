@@ -18,6 +18,22 @@
 //   evt.currentTarget.className += ' tabs__active';
 // }
 
+// Header
+window.onscroll = function () {
+  
+ var html = document.documentElement;
+ var body = document.body;
+ var header = document.querySelector('.header');
+ 
+ if (html.scrollTop > 1 || body.scrollTop > 1) {
+   header.classList.add('header--scroll');
+   
+ } else {
+   header.classList.remove('header--scroll');
+ }
+}
+
+// Tabs
 function openTabs (evt, cityName) {
 
   var i, tabsWrapper, tabsButton;

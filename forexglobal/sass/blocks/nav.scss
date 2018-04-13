@@ -40,3 +40,37 @@
     }
   }
 }
+
+.nav__search {
+  position: relative;
+  
+  input {
+    width: 470px;
+    height: 42px;
+    padding: 0 15px;
+    color: $mc;
+    font-size: 14px;
+    font-weight: 100;
+    font-family: inherit;
+    border: 1px solid $mc;
+    border-radius: 3px;
+    background: transparent;
+    transition: 0.5s;
+    outline: none;
+    opacity: 0;
+  }
+  
+  &:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background: url('../img/nav-search.svg') no-repeat top;
+  }
+  
+  &:hover input {
+    opacity: 1;
+  }
+}
