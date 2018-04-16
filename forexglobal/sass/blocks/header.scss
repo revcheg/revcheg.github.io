@@ -174,14 +174,14 @@
   }
   
   &--closed {
-    // display: none;
-    opacity: 0;
+    display: none;
+    // opacity: 0;
   }
   
   &--opened {
-    // display: block;
-    opacity: 1;
-    z-index: 2;
+    display: block;
+    // opacity: 1;
+    // z-index: 2;
   }
 }
 
@@ -326,6 +326,15 @@
           background: rgba(47, 40, 97, 0.9);
         }
       }
+      
+      // .header__accounts {
+      //   border: 1px solid $mc;
+      //   background: $yc;
+      // 
+      //   li {
+      //     margin: 0;
+      //   }
+      // }
     }
   }
   
@@ -341,5 +350,15 @@
   
   .header__flex {
     flex-direction: column;
+  }
+  
+  .header__accounts {
+    border: 1px solid $mc;
+    border-radius: 3px;
+    background: $sc;
+    
+    li {
+      margin: 0 !important;
+    }
   }
 }

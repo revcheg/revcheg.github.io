@@ -306,10 +306,9 @@ body {
       font-weight: 500;
       background: rgba(47, 40, 97, 0.7); }
   .header__accounts--closed {
-    opacity: 0; }
+    display: none; }
   .header__accounts--opened {
-    opacity: 1;
-    z-index: 2; }
+    display: block; }
 
 .header__language {
   width: 70px;
@@ -422,7 +421,13 @@ body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .header__accounts {
+    border: 1px solid #fac93e;
+    border-radius: 3px;
+    background: #2f2861; }
+    .header__accounts li {
+      margin: 0 !important; } }
 
 .nav {
   display: -webkit-box;
@@ -792,8 +797,8 @@ body {
 .tabs__wrapper {
   position: absolute;
   opacity: 0;
-  -webkit-transition: opacity 2s;
-  transition: opacity 2s; }
+  -webkit-transition: 0.9s;
+  transition: 0.9s; }
   .tabs__wrapper--android {
     top: 70px;
     opacity: 1; }

@@ -57,7 +57,7 @@
 .tabs__wrapper {
   position: absolute;
   opacity: 0;
-  transition: opacity 2s;
+  transition: 0.9s;
   
   &--android {
     top: 70px;
