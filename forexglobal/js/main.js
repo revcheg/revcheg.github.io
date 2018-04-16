@@ -1,23 +1,3 @@
-// function openTabs (evt, cityName) {
-// 
-//   var i, tabsWrapper, tabsButton;
-// 
-//   tabsWrapper = document.getElementsByClassName('tabs__wrapper');
-// 
-//   for (i = 0; i < tabsWrapper.length; i++) {
-//     tabsWrapper[i].style.display = 'none';
-//   }
-// 
-//   tabsButton = document.getElementsByClassName('tabs__button');
-// 
-//   for (i = 0; i < tabsButton.length; i++) {
-//     tabsButton[i].className = tabsButton[i].className.replace(' tabs__active', '');
-//   }
-// 
-//   document.getElementById(cityName).style.display = 'block';
-//   evt.currentTarget.className += ' tabs__active';
-// }
-
 // Header
 window.onscroll = function () {
 
@@ -56,6 +36,25 @@ window.addEventListener('keydown', function(event) {
     openAccount.classList.remove('header__open--active');
     listAccount.classList.remove('header__accounts--opened');
     listAccount.classList.add('header__accounts--closed');
+  }
+});
+
+// Mobile Menu
+var menuToggle = document.querySelector('.header__toggle');
+var menuUser = document.querySelector('.header__user');
+var menu = document.querySelector('.nav');
+
+menuToggle.addEventListener('click', function () {
+  if (menuUser.classList.contains('header__user--closed')) {
+    menuUser.classList.remove('header__user--closed');
+    menuUser.classList.add('header__user--opened');
+    menu.classList.remove('nav--closed');
+    menu.classList.add('nav--opened');
+  } else {
+    menuUser.classList.remove('header__user--opened');
+    menuUser.classList.add('header__user--closed');
+    menu.classList.remove('nav--opened');
+    menu.classList.add('nav--closed');
   }
 });
 

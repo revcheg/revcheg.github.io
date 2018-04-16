@@ -81,6 +81,7 @@
   font-size: 0;
   border: none;
   background: transparent url('../img/nav-toggle.svg') no-repeat top;
+  outline: none;
 }
 
 .header__user {
@@ -248,18 +249,49 @@
       }
       
       .header__user {
-        display: none;
+        // display: none;
         // width: 400px;
         // margin: 0 70px 0 0;
         // z-index: 3;
+        transition: 0.5s;
         
         li {
+          margin: 0 0 25px 0;
           
           a {
             width: 133px;
             padding: 9px 0;
             // font-family: 'SFUIDisplay-Thin', sans-serif;
             transition: 0.3s;
+          }
+          
+          &:nth-child(3) {
+            margin: 0;
+          }
+        }
+        
+        &--closed {
+          position: absolute;
+          top: -200px;
+          left: 0;
+          width: 100%;
+        }
+        
+        &--opened {
+          position: absolute;
+          top: 68px;
+          left: 0;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          padding: 10px 0;
+          background: rgba(47, 40, 97, 0.9);
+          
+          li {
+            
+            a {
+              width: 168px;
+            }
           }
         }
       }
@@ -278,28 +310,36 @@
       .nav {
         position: absolute;
         top: 0;
-        padding: 28px 15px 27px 190px;
-        transition: 0.5s;
+        display: block;
+        transition: 0.8s;
+        
+        &--closed {
+          position: absolute;
+          top: -500px;
+        }
+        
+        &--opened {
+          position: absolute;
+          top: 261px;
+          // display: block;
+          padding: 20px 0;
+          background: rgba(47, 40, 97, 0.9);
+        }
       }
     }
-  }
-  
-  .header__flex {
-    flex-direction: column;
   }
   
   .header__user {
     flex-direction: column;
     align-items: center;
     width: auto;
-    margin: 20px 0 0 0;
     
     li {
-      margin: 0 0 25px 0;
-      
-      &:nth-child(3) {
-        margin: 0;
-      }
+      margin: 25px 0 0 0;
     }
+  }
+  
+  .header__flex {
+    flex-direction: column;
   }
 }
