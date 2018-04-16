@@ -76,3 +76,22 @@
     top: 10px;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .title__name {
+    padding: 300px 0 95px 0;
+    font-size: 50px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .title__form {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    
+    input {
+      margin: 0 0 15px 0;
+    }
+  }
+}

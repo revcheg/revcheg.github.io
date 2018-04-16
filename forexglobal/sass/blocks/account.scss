@@ -85,8 +85,57 @@
   &:nth-child(2) {
     background: #0e0b39 url('../img/account-real.png') no-repeat 0 -40px;
   }
+  
   &:nth-child(3) {
     background: #0e0b39 url('../img/account-demo.png') no-repeat 40px 10px;
     background-size: 300px;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .account {
+    padding: 70px 0 150px 0;
+  }
+  
+  .account__name {
+    font-size: 50px;
+  }
+  
+  .account__flex {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .account {
+    padding: 30px 0 100px 0;
+  }
+  
+  .account__name {
+    font-size: 40px;
+  }
+  
+  .account__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .account__box {
+    margin: 0 0 30px 0;
+    padding: 100px 40px 50px 40px;
+    
+    &:nth-child(1) {
+      background: #0e0b39 url('../img/account-zulu.png') no-repeat 45px -30px;
+      background-size: 256px;
+    }
+    
+    &:nth-child(2) {
+      background: #0e0b39 url('../img/account-real.png') no-repeat 0 -40px;
+    }
+    
+    &:nth-child(3) {
+      background: #0e0b39 url('../img/account-demo.png') no-repeat 15px 10px;
+      background-size: 300px;
+    }
   }
 }

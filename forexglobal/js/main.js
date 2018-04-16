@@ -20,7 +20,7 @@
 
 // Header
 window.onscroll = function () {
-  
+
  var html = document.documentElement;
  var body = document.body;
  var header = document.querySelector('.header');
@@ -31,7 +31,7 @@ window.onscroll = function () {
  } else {
    header.classList.remove('header--scroll');
  }
-}
+};
 
 // Open Accounts
 var openAccount = document.querySelector('.header__open');

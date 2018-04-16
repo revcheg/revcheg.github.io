@@ -134,3 +134,16 @@
     background: url('../img/footer-tw.svg') no-repeat top;
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .footer__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer__ul {
+    // width: 100%;
+  }
+}

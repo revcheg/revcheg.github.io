@@ -108,3 +108,50 @@
   border: 1px solid $sc;
   border-radius: 3px;
 }
+
+@media screen and ($tablet-widths) {
+  .tabs__flex {
+    padding: 0 15px;
+  }
+  
+  .tabs__mockup {
+    display: none;
+  }
+  
+  .tabs__inner {
+    width: 100%;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .tabs {
+    height: 400px;
+  }
+  
+  .tabs__control {
+    width: auto;
+    margin: -34px 0 0 0;
+    
+    li {
+      
+      button {
+        font-size: 14px;
+      }
+    }
+  }
+  
+  .tabs__content {
+    height: 400px;
+  }
+  
+  .tabs__download {
+    width: 135px;
+    margin: 0 10px 0 0;
+    font-size: 16px;
+  }
+  
+  .tabs__more {
+    width: 133px;
+    font-size: 16px;
+  }
+}

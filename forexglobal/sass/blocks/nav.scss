@@ -73,3 +73,24 @@
     opacity: 1;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .nav {
+    flex-wrap: wrap;
+  }
+  
+  .nav__list {
+    // width: 100%;
+    margin: auto;
+  }
+  
+  .nav__search {
+    display: none;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .nav {
+    display: none;
+  }
+}

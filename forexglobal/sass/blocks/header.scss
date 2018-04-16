@@ -73,6 +73,16 @@
   transition: 0.3s;
 }
 
+.header__toggle {
+  display: none;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  font-size: 0;
+  border: none;
+  background: transparent url('../img/nav-toggle.svg') no-repeat top;
+}
+
 .header__user {
   display: flex;
   justify-content: space-between;
@@ -191,6 +201,105 @@
   appearance: none;
 }
 
-@media screen and ($tablet-widths) {}
+@media screen and ($tablet-widths) {
+  .header {
+    
+    &--scroll {
+      
+      .header__flex {
+        padding: 18px 15px 90px 18px;
+      }
+      
+      .nav {
+        top: 100px;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+      }
+    }
+  }
+  
+  .header__container {
+    width: 100%;
+  }
+}
 
-@media screen and ($mobile-widths) {}
+@media screen and ($mobile-widths) {
+  .header {
+    
+    &--scroll {
+      position: fixed;
+      top: 0;
+      background: rgba(47, 40, 97, 0.9);
+      z-index: 1;
+      
+      .header__flex {
+        flex-direction: row;
+        padding: 18px 15px;
+        border: none;
+      }
+      
+      .header__logo {
+        width: 100px;
+      }
+      
+      .header__toggle {
+        display: block;
+      }
+      
+      .header__user {
+        display: none;
+        // width: 400px;
+        // margin: 0 70px 0 0;
+        // z-index: 3;
+        
+        li {
+          
+          a {
+            width: 133px;
+            padding: 9px 0;
+            // font-family: 'SFUIDisplay-Thin', sans-serif;
+            transition: 0.3s;
+          }
+        }
+      }
+      
+      .header__open {
+        
+        &::before {
+          right: 5px;
+        }
+      }
+      
+      .nav__search {
+        display: none;
+      }
+      
+      .nav {
+        position: absolute;
+        top: 0;
+        padding: 28px 15px 27px 190px;
+        transition: 0.5s;
+      }
+    }
+  }
+  
+  .header__flex {
+    flex-direction: column;
+  }
+  
+  .header__user {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin: 20px 0 0 0;
+    
+    li {
+      margin: 0 0 25px 0;
+      
+      &:nth-child(3) {
+        margin: 0;
+      }
+    }
+  }
+}

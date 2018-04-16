@@ -46,3 +46,38 @@
   border-radius: 3px;
   background: $mc;
 }
+
+@media screen and ($tablet-widths) {
+  .welcome__flex {
+    // flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
+    
+    img {
+      display: none;
+    }
+  }
+  
+  .welcome__name {
+    font-size: 50px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .welcome {
+    padding: 30px 0;
+  }
+  
+  .welcome__content {
+    width: auto;
+  }
+  
+  .welcome__name {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .welcome__button {
+    margin: auto;
+  }
+}
