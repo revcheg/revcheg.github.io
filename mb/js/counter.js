@@ -23,7 +23,7 @@ function transactionsRandom (min, max) {
 
 setInterval( function () { 
   investorRandom(50, 500) 
-}, 10000);
+}, 10800000);
 
 setInterval( function () { 
   clientRandom(5, 30) 

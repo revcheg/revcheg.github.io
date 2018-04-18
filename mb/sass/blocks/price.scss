@@ -18,9 +18,11 @@
     left: 0px;
     flex-direction: column;
     width: 369px;
-    padding: 10px 56px;
+    height: 135px;
+    padding: 10px 56px 10px 56px;
     border-radius: 5px;
     background: #fff;
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.2);
     opacity: 0;
     cursor: pointer;
     transition: 0.3s;
@@ -113,6 +115,7 @@
     width: 17px;
     height: 10px;
     background: url('../img/price-arrow.png');
+    background-size: cover;
     transition: 0.3s;
   }
   
@@ -128,19 +131,37 @@
   }
 }
 
+.price__drop {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: scroll;
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    
+    b {
+      margin: 0;
+      color: #020203;
+      font-size: 20px;
+      font-family: 'ProximaNovaLight', sans-serif;
+    }
+  }
+}
+
 .price__value {
   padding: 0 0 0 30px;
   
-  &--bitcoin {
+  &--up{
     background: url('../img/price-up.png') no-repeat left;
   }
   
-  &--gpb {
-    background: url('../img/price-up.png') no-repeat left;
-  }
-  
-  &--tesla {
-    background: url('../img/price-up.png') no-repeat left;
+  &--down {
+    background: url('../img/price-down.png') no-repeat left;
   }
 }
 

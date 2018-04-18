@@ -1,5 +1,6 @@
-// var wetBox = document.querySelector('.time__box--wet');
-// 
-// var wetTime = new Date().toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
-// 
-// wetBox.innerHTML = wetTime;
+$('.title__down').click(function(event){
+    $('html, body').animate({
+        scrollTop: $(this).offset().top + 180
+    }, 900);
+    event.preventDefault();
+});

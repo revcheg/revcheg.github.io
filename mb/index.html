@@ -42,19 +42,9 @@
             <source srcset="img/logo.png">
             <img src="img/logo.png" alt="MasterBinary">
           </picture>
-          <!-- <div class="nav__container">
-            <ul>
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">Типы счетов</a></li>
-              <li><a href="#">Торговля</a></li>
-              <li><a href="#">Обучение</a></li>
-              <li><a href="#">Юридическая информация</a></li>
-            </ul>
-          </div> -->
           <ul class="nav__list  nav__list--main">
             <li><a class="button  button--blue" href="#">Вход</a></li>
             <li><a class="button  button--blue" href="#">Регистрация</a></li>
-            <!-- <li></li> -->
           </ul>
           <div class="nav__register  nav__register--closed">
             <ul class="nav__choise">
@@ -153,22 +143,28 @@
           <div class="price__select">
             <div class="price__flex">
               <p class="price__name  price__name--bitcoin">Bitcoin</p>
-              <p class="price__value  price__value--bitcoin">8943.2377024$</p>
+              <p class="price__value  price__value--up">8943.2377024$</p>
             </div>
-            <!-- <div class="price__flex  price__flex--sub">
-              <div>
-                <p class="price__name  price__name--bitcoin">Bitcoin</p>
-                <p class="price__value  price__value--bitcoin">8943.2377024$</p>
-              </div>
-              <div>
-                <p class="price__name  price__name--gpb">GPB/USD</p>
-                <p class="price__value  price__value--gpb">8943.2377024$</p>
-              </div>
-              <div>
-                <p class="price__name  price__name--tesla">Tesla</p>
-                <p class="price__value  price__value--tesla">8943.2377024$</p>
-              </div>
-            </div> -->
+            <div class="price__flex  price__flex--sub">
+              <ul class="price__drop">
+                <li>
+                  <b class="price__name  price__name--bitcoin">Bitcoin</b>
+                  <p class="price__value  price__value--up">8943.2377024$</p>
+                </li>
+                <li>
+                  <b class="price__name  price__name--gpb">GPB/USD</b>
+                  <p class="price__value  price__value--down">8943.2377024$</p>
+                </li>
+                <li>
+                  <b class="price__name  price__name--tesla">Tesla</b>
+                  <p class="price__value  price__value--down">8943.2377024$</p>
+                </li>
+                <li>
+                  <b class="price__name  price__name--tesla">Tesla</b>
+                  <p class="price__value  price__value--down">8943.2377024$</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -439,6 +435,6 @@
   <script src="js/mobile-menu.js"></script>
   <script src="js/counter.js"></script>
   <script src="js/range.js"></script>
-  <!-- <script src="js/time.js"></script> -->
+  <script src="js/time.js"></script>
 </body>
 </html>
