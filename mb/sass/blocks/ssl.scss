@@ -21,6 +21,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
+  &--mobile {
+    display: none !important;
+  }
 }
 
 @media screen and ($tablet-widths) {}
@@ -42,6 +46,16 @@
   }
   
   .ssl__flex {
-    flex-direction: column;
+    display: none;
+    
+    &--mobile {
+      display: block !important;
+      width: 180px;
+      margin: auto;
+      
+      img {
+        outline: none;
+      }
+    }
   }
 }

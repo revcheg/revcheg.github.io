@@ -57,10 +57,41 @@
   }
 }
 
+.comment__slider {
+  
+  &--mobile {
+    display: none !important;
+  }
+}
+
 @media screen and ($tablet-widths) {}
 
 @media screen and ($mobile-widths) {
+  // .comment__slider {
+  //   display: none !important;
+  // 
+  //   &--mobile {
+  //     display: block !important;
+  //   }
+  // }
+  
   .comment {
-    display: none;
+    padding: 30px 0;
+    background: #fff;
+    
+    h1 {
+      margin: 0 0 30px 0;
+    }
+  }
+  
+  .comment__box {
+    overflow: hidden;
+    
+    p {
+      position: relative;
+      width: auto;
+      margin: 20px 0 0 0;
+      
+    }
   }
 }

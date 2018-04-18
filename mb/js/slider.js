@@ -1,4 +1,4 @@
-$('.slider').slick({
+$('.ssl__flex--mobile').slick({
   autoplay: true,
   autoplaySpeed: 2000,
   arrows: false,
@@ -32,10 +32,11 @@ $('.comment__slider').slick({
   infinity: true,
   slidesToShow: 3,
   responsive: [{
-    breakpoint: 1200,
+    breakpoint: 768,
     settings: {
       slidesToShow: 1,
-      arrows: false
+      arrows: false,
+      dots: true
     }
   }]
 });
