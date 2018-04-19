@@ -121,11 +121,11 @@
   </section>
   <section class="price">
     <div class="container">
-      <b class="price__title-m">Цена биткоина<br>меняется каждую минуту!<br><br>И на этом можно заработать!</b>
+      <b class="price__title-m">Цена <span>биткоина</span><br>меняется каждую минуту!<br><br>И на этом можно заработать!</b>
       <div class="price__flex">
         <div class="price__left">
-          <img src="img/price-bitcoin.png" alt="Bitcoin">
-          <p class="price__title">Курс Bitcoin в реальном<br>времени</p>
+          <img class="price__img" src="img/price-bitcoin.png" alt="Bitcoin">
+          <p class="price__title">Курс <span>Bitcoin</span> в реальном<br>времени</p>
           <time class="price__time">09.03.2018</time>
           <p class="price__course">1 BTC = <span>8943.2377024$</span></p>
           <div class="price__counter">
@@ -137,25 +137,25 @@
           </div>
         </div>
         <div class="price__right">
-          <b>Цена биткоина<br>меняется каждую минуту!</b>
+          <b>Цена <span class="price__currency">биткоина</span><br>меняется каждую минуту!</b>
           <b>И на этом можно заработать!</b>
           <p>Выбирайте любой актив из сотен доступных и<br>зарабатывайте на его ценовом колебании!</p>
           <div class="price__select">
-            <div class="price__flex">
+            <div class="price__flex  price__flex--mobile">
               <p class="price__name  price__name--bitcoin">Bitcoin</p>
               <p class="price__value  price__value--up">8943.2377024$</p>
             </div>
             <div class="price__flex  price__flex--sub">
               <ul class="price__drop">
-                <li>
+                <li onclick="bitcoin()">
                   <b class="price__name  price__name--bitcoin">Bitcoin</b>
                   <p class="price__value  price__value--up">8943.2377024$</p>
                 </li>
-                <li>
+                <li onclick="gpb()">
                   <b class="price__name  price__name--gpb">GPB/USD</b>
                   <p class="price__value  price__value--down">8943.2377024$</p>
                 </li>
-                <li>
+                <li onclick="tesla()">
                   <b class="price__name  price__name--tesla">Tesla</b>
                   <p class="price__value  price__value--down">8943.2377024$</p>
                 </li>

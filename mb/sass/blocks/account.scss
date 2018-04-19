@@ -133,7 +133,12 @@ main {
   background: linear-gradient( 10deg, rgb(0,46,95) 0%, rgb(0,0,0) 100%);
 }
 
-@media screen and ($tablet-widths) {}
+@media screen and ($tablet-widths) {
+  .silver,
+  .gold {
+    margin: 0 0 20px 0;
+  }
+}
 
 @media screen and ($mobile-widths) {
   .plan_types {

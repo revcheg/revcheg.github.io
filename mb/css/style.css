@@ -824,7 +824,7 @@ body {
     background: url("../img/price-bitcoin.png") no-repeat left;
     background-size: contain; }
   .price__name--gpb {
-    padding: 0 0 0 50px;
+    padding: 0 0 0 40px;
     background: url("../img/price-flag.png") no-repeat left;
     background-size: contain; }
   .price__name--tesla {
@@ -850,6 +850,14 @@ body {
       -webkit-box-direction: normal;
       -ms-flex-direction: row;
       flex-direction: row; }
+    .price__flex--mobile {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+    .price__flex--sub {
+      width: 252px;
+      padding: 6px 24px; }
   .price__left {
     margin: 30px 0 0 0;
     padding: 30px 30px 40px; }
@@ -864,10 +872,24 @@ body {
   .price__right b {
     display: none; }
   .price__right p {
-    margin: 30px 0 20px; }
+    margin: 20px 0 20px; }
   .price__select {
-    margin: 0;
-    padding: 0; } }
+    width: 300px;
+    margin: 0 auto;
+    padding: 0; }
+    .price__select::after {
+      right: 7px;
+      width: 10px;
+      height: 5px;
+      background-repeat: no-repeat;
+      background-size: 10px; }
+  .price__value,
+  .price__name {
+    font-size: 15px !important; }
+  .price__drop b {
+    display: block; }
+  .price__name--gpb {
+    padding: 0 0 0 30px; } }
 
 .steps {
   padding: 75px 0; }
@@ -1623,21 +1645,23 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.legal__button ul {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-  .legal__button ul li button {
-    width: 100%;
-    padding: 10px;
-    color: #949494;
-    font-size: 18px;
-    font-family: 'ProximaNovaLight', sans-serif;
-    border: none;
-    background: #fff;
-    text-align: left;
-    cursor: pointer;
-    outline: none; }
+.legal__button {
+  margin-right: 30px; }
+  .legal__button ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .legal__button ul li button {
+      width: 100%;
+      padding: 10px;
+      color: #949494;
+      font-size: 18px;
+      font-family: 'ProximaNovaLight', sans-serif;
+      border: none;
+      background: #fff;
+      text-align: left;
+      cursor: pointer;
+      outline: none; }
 
 .legal__content {
   width: 700px;
@@ -1664,6 +1688,11 @@ body {
 
 .legal__choice {
   display: none; }
+
+.legal__wrapper {
+  display: none; }
+  .legal__wrapper--active {
+    display: block; }
 
 @media screen and (max-width: 768px) {
   .legal {
@@ -2289,6 +2318,11 @@ main {
   color: white;
   background: linear-gradient(10deg, #002e5f 0%, black 100%); }
 
+@media screen and (max-width: 1200px) {
+  .silver,
+  .gold {
+    margin: 0 0 20px 0; } }
+
 @media screen and (max-width: 768px) {
   .plan_types {
     -webkit-box-orient: vertical;
@@ -2534,6 +2568,7 @@ main {
     width: 200px;
     padding: 5px 20px;
     font-size: 16px;
+    font-family: 'Open Sans Regular', sans-serif;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;

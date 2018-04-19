@@ -16,6 +16,7 @@
 }
 
 .legal__button {
+  margin-right: 30px;
   
   ul {
     margin: 0;
@@ -73,6 +74,14 @@
 
 .legal__choice {
   display: none;
+}
+
+.legal__wrapper {
+  display: none;
+  
+  &--active {
+    display: block;
+  }
 }
 
 @media screen and ($tablet-widths) {}

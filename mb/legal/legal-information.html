@@ -106,15 +106,15 @@
           <h1>Документация</h1>
           <button class="legal__choice">Выбор документа</button>
           <ul class="legal__list  legal__list--closed">
-            <li><button class="legal__active">Юридическая информация</button></li>
-            <li><button>Отказ от ответственности</button></li>
-            <li><button>Клиентское соглашение</button></li>
-            <li><button>Политика конфиденциальности</button></li>
-            <li><button>Политика AML и KYC</button></li>
+            <li><button class="legal__button  legal__active" onclick="openTabs(event, '1')">Юридическая информация</button></li>
+            <li><button class="legal__button" onclick="openTabs(event, '2')">Отказ от ответственности</button></li>
+            <li><button class="legal__button" onclick="openTabs(event, '3')">Клиентское соглашение</button></li>
+            <li><button class="legal__button">Политика конфиденциальности</button></li>
+            <li><button class="legal__button">Политика AML и KYC</button></li>
           </ul>
         </div>
         <div class="legal__content">
-          <div class="legal-1">
+          <div class="legal__wrapper  legal__wrapper--active" id="1">
             <h2>Юридическая информация</h2>
             <p>Мы ценим каждого нашего клиента, независимо от типа его счета. Во всех случаях вы получите  максимальный и профессиональный сервис. Но, компания TGI Intelligent Solution LTD (далее — Компания) не торгует с Вами, за Вас, вместо Вас и не управляем Вашими финансами, а также не дает прямые указания по рынку.</p>
             <p>Компания  предоставляет вам полный и исключительный сервис и, в случае, если уровень Вашего Торгового счета позволяет, и Вы выражаете желание, Компания может потратить время на разъяснение механизмов Биржевой Торговли или основ, позволяющих Вам получить навык прочтения технических индикаторов или их возможные сочетания, а так же Вы можете получить от Компании разъяснения о наиболее значимых факторах, оказывающих наибольшее влияние на финансовые рынки в данный момент времени, т.е. на азбуку финансовых рынков.</p>
@@ -126,6 +126,14 @@
             <p>Данный сайт является собственностью компании TGI Intelligent Solution LTD,<br>регистрационный номер 24381 IBC 2017.<br>местонахождение:Suite 305, Griffith Corporate Centre, P.O. Box 1510,<br>Beachmont, Kingstown, Saint Vincent and the Grenadines, </p>
             <b>Контакты Компании:</b>
             <p>тел.: +7 (499) 5042809<br>эл. почта: support@masterbinary.ru (rus),<br>support@masterbinary.net (eng)</p>
+          </div>
+          <div class="legal__wrapper" id="2">
+            <h2>Другая информация</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, est. Debitis, nulla vero perferendis commodi voluptatem reprehenderit illo corporis voluptatibus.</p>
+          </div>
+          <div class="legal__wrapper" id="3">
+            <h2>Другая информация 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, est. Debitis, nulla vero perferendis commodi voluptatem reprehenderit illo corporis voluptatibus.</p>
           </div>
         </div>
       </div>
@@ -202,7 +210,7 @@
   <script src="js/slick/slick.min.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/range.js"></script> -->
-  <!-- <script src="js/time.js"></script> -->
+  <script src="../js/legal.js"></script>
   <script src="../js/mobile-menu.js"></script>
   <script src="../js/legal-menu.js"></script>
 </body>
