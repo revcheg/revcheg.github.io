@@ -3,6 +3,8 @@ var navLogin = document.querySelector('.nav__register');
 var navToggle = document.querySelector('.nav__toggle');
 var navToggleLog = document.querySelector('.nav__login');
 
+var navLogBtn = document.querySelector('.button__login');
+
 var login = document.querySelector('.nav__l')
 var reg = document.querySelector('.nav__r')
 var navLog = document.querySelector('.nav__log');
@@ -21,6 +23,16 @@ navToggle.addEventListener('click', function() {
 });
 
 navToggleLog.addEventListener('click', function() {
+  if (navLogin.classList.contains('nav__register--closed')) {
+    navLogin.classList.remove('nav__register--closed');
+    navLogin.classList.add('nav__register--opened');
+  } else {
+    navLogin.classList.add('nav__register--closed');
+    navLogin.classList.remove('nav__register--opened');
+  }
+});
+
+navLogBtn.addEventListener('click', function() {
   if (navLogin.classList.contains('nav__register--closed')) {
     navLogin.classList.remove('nav__register--closed');
     navLogin.classList.add('nav__register--opened');

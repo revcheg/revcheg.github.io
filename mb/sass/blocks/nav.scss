@@ -89,6 +89,7 @@
   position: absolute;
   width: 100%;
   // top: -1500px;
+  left: 0;
   padding: 20px;
   background: #fff;
   transition: 0.5s;
@@ -215,7 +216,7 @@
 }
 
 .nav__register--opened {
-  top: 80px;
+  top: 152px;
 }
 
 .nav__active {
@@ -230,6 +231,14 @@
 }
 
 @media screen and ($mobile-widths) {
+  .nav__register--closed {
+    top: -1500px;
+  }
+
+  .nav__register--opened {
+    top: 80px;
+  }
+  
   .nav__toggle {
     position: absolute;
     left: 20px;

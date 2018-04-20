@@ -223,6 +223,7 @@ body {
 .nav__register {
   position: absolute;
   width: 100%;
+  left: 0;
   padding: 20px;
   background: #fff;
   -webkit-transition: 0.5s;
@@ -336,7 +337,7 @@ body {
   top: -1500px; }
 
 .nav__register--opened {
-  top: 80px; }
+  top: 152px; }
 
 .nav__active {
   color: #051c4f !important;
@@ -348,6 +349,10 @@ body {
     flex-wrap: wrap; } }
 
 @media screen and (max-width: 768px) {
+  .nav__register--closed {
+    top: -1500px; }
+  .nav__register--opened {
+    top: 80px; }
   .nav__toggle {
     position: absolute;
     left: 20px;
@@ -1076,7 +1081,11 @@ body {
   .range__left input[type="range"] {
     width: 280px; }
   .range__right progress {
-    width: 280px; } }
+    width: 280px; }
+  .range__invest::before {
+    width: 295px; }
+  .range__get::before {
+    width: 295px; } }
 
 @media screen and (max-width: 768px) {
   .range {
@@ -1779,20 +1788,24 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none; }
-    .indicators__controll ul li:nth-child(1) {
-      color: #051c4f;
-      font-size: 20px;
-      font-family: 'ProximaNova', sans-serif; }
-    .indicators__controll ul li a {
-      padding: 10px 20px;
-      color: #69696a;
-      font-family: 'ProximaNova', sans-serif;
-      border: 1px solid #dddddd;
-      border-radius: 5px;
-      text-decoration: none; }
+    .indicators__controll ul li {
+      margin: 10px 0; }
+      .indicators__controll ul li:nth-child(1) {
+        color: #051c4f;
+        font-size: 20px;
+        font-family: 'ProximaNova', sans-serif; }
+      .indicators__controll ul li a {
+        padding: 10px 20px;
+        color: #69696a;
+        font-family: 'ProximaNova', sans-serif;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        text-decoration: none; }
 
 .indicators__all {
   -webkit-transition: 0.3s;
@@ -1870,7 +1883,12 @@ body {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .indicators__flex--second {
     margin: 10px 0 0 0; }
   .indicators__flex--trend p {
@@ -1894,6 +1912,7 @@ body {
     background-size: 14px; }
 
 .indicators__box {
+  margin: 0 0 10px 0;
   width: 270px;
   -webkit-box-shadow: 0.8px 0.5px 9px 0.3px rgba(0, 1, 1, 0.2);
   box-shadow: 0.8px 0.5px 9px 0.3px rgba(0, 1, 1, 0.2); }

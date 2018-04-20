@@ -26,11 +26,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
     
     li {
+      margin: 10px 0;
       
       &:nth-child(1) {
         color: $mc;
@@ -140,6 +142,8 @@
   display: flex;
   // display: none;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
   
   &--second {
     margin: 10px 0 0 0;
@@ -191,6 +195,7 @@
 }
 
 .indicators__box {
+  margin: 0 0 10px 0;
   width: 270px;
   box-shadow: 0.8px 0.5px 9px 0.3px rgba(0, 1, 1, 0.2);
   

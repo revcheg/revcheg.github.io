@@ -147,6 +147,20 @@
       width: 280px;
     }
   }
+  
+  .range__invest {
+    
+    &::before {
+      width: 295px;
+    }
+  }
+
+  .range__get {
+    
+    &::before {
+      width: 295px;
+    }
+  }
 }
 
 @media screen and ($mobile-widths) {
