@@ -1089,6 +1089,8 @@ body {
 
 .payment {
   padding: 30px 0; }
+  .payment--inner {
+    border-top: 1px solid #b8b8b8; }
 
 .payment__flex {
   display: -webkit-box;
@@ -1249,6 +1251,11 @@ body {
 
 .webtrader {
   padding: 150px 0 0 0; }
+  .webtrader hr {
+    height: 1px;
+    margin: 50px 0;
+    border: none;
+    background: #b8b8b8; }
 
 .webtrader__name {
   margin: 0 0 50px 0;
@@ -1260,7 +1267,7 @@ body {
 .webtrader__text {
   color: #2f2861;
   font-size: 18px;
-  font-weight: 300; }
+  font-weight: 100; }
 
 .webtrader__img {
   margin: 70px 0 0 0;
@@ -1276,9 +1283,14 @@ body {
   justify-content: space-between;
   margin: 30px 0 0 0; }
   .webtrader__flex--down {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+    width: 500px;
+    margin: 30px auto 0; }
+  .webtrader__flex--list {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
 
 .webtrader__box {
   width: 200px;
@@ -1298,7 +1310,7 @@ body {
   .webtrader__box p {
     color: #666666;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 100;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
   .webtrader__box:hover b {
@@ -1306,3 +1318,116 @@ body {
     background: url("../img/webtrader-list-h.svg") no-repeat top; }
   .webtrader__box:hover p {
     color: #2f2861; }
+
+.webtrader__mockup {
+  width: 471px;
+  height: 536px;
+  background: url("../img/webtrader-mockup-2.png") no-repeat top;
+  background-size: 471px; }
+
+.webtrader__list {
+  color: #2f2861;
+  font-size: 18px; }
+  .webtrader__list b {
+    font-weight: 700;
+    text-transform: uppercase; }
+  .webtrader__list ul {
+    margin: 20px 0 0 0;
+    padding: 0;
+    font-weight: 100;
+    list-style-position: inside;
+    list-style-image: url("../img/webtrader-li.svg"); }
+    .webtrader__list ul li {
+      margin: 0 0 15px 0; }
+
+.webtrader__try h2 {
+  margin: 0 0 30px 0;
+  color: #2f2861;
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center; }
+
+.webtrader__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 0 60px 0; }
+
+.webtrader__real {
+  position: relative;
+  margin: 0 15px 0 0;
+  padding: 10px 0;
+  color: #2f2861;
+  width: 170px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 10px;
+  border-radius: 3px;
+  background: #fac93e; }
+  .webtrader__real span {
+    font-size: 10px;
+    font-weight: normal; }
+  .webtrader__real:after {
+    content: 'Trading involves risk of loss';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 100%;
+    color: #333333;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: none; }
+
+.webtrader__demo {
+  margin: 0 0 0 15px;
+  padding: 9px 0;
+  color: #2f2861;
+  width: 168px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 10px;
+  border: 1px solid #2f2861;
+  border-radius: 3px; }
+  .webtrader__demo span {
+    font-size: 10px;
+    font-weight: normal; }
+
+@media screen and (max-width: 1200px) {
+  .webtrader {
+    padding: 200px 0 0 0; }
+  .webtrader__text {
+    padding: 0 15px; }
+  .webtrader__mockup {
+    width: 400px;
+    height: 460px;
+    background-size: 400px; } }
+
+@media screen and (max-width: 768px) {
+  .webtrader {
+    padding: 100px 0 0 0; }
+  .webtrader__name {
+    margin: 0 0 20px 0;
+    font-size: 40px; }
+  .webtrader__flex--list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .webtrader__mockup {
+    width: 300px;
+    height: 350px;
+    background-size: 300px; }
+  .webtrader__list {
+    margin: 30px 0 0 0; } }
