@@ -2,6 +2,11 @@
   padding: 0 0 40px 0;
   background: #32138c url('../img/title-bg.jpg') no-repeat top;
   background-size: cover;
+  
+  &--inner {
+    padding: 0 0 200px 0;
+    background: none;
+  }
 }
 
 .title__name {
@@ -25,7 +30,7 @@
     width: 248px;
     height: 38px;
     padding: 0 10px;
-    color: #fff;
+    color: $mc;
     font-size: 18px;
     font-weight: 100;
     font-family: inherit;
@@ -33,9 +38,15 @@
     border: 1px solid $mc;
     border-radius: 3px;
     background: transparent;
+    transition: 0.3s;
+    outline: none;
     
     &::placeholder {
       color: $mc;
+    }
+    
+    &:focus {
+      border: 1px solid #7865ff;
     }
   }
   

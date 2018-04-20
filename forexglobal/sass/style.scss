@@ -3,15 +3,19 @@
 @import 'global/base';
 @import 'global/fonts';
 
-@import 'blocks/title';
-@import 'blocks/header';
-@import 'blocks/nav';
-@import 'blocks/welcome';
-@import 'blocks/edge';
-@import 'blocks/account';
-@import 'blocks/tabs';
-@import 'blocks/license';
-@import 'blocks/quote';
-@import 'blocks/form';
-@import 'blocks/payment';
-@import 'blocks/footer';
+// Main Page
+@import 'blocks/main/title';
+@import 'blocks/main/header';
+@import 'blocks/main/nav';
+@import 'blocks/main/welcome';
+@import 'blocks/main/edge';
+@import 'blocks/main/account';
+@import 'blocks/main/tabs';
+@import 'blocks/main/license';
+@import 'blocks/main/quote';
+@import 'blocks/main/form';
+@import 'blocks/main/payment';
+@import 'blocks/main/footer';
+
+// Inner Page
+@import 'blocks/inner/webtrader';

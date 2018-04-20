@@ -69,6 +69,9 @@ body {
   padding: 0 0 40px 0;
   background: #32138c url("../img/title-bg.jpg") no-repeat top;
   background-size: cover; }
+  .title--inner {
+    padding: 0 0 200px 0;
+    background: none; }
 
 .title__name {
   margin: 0;
@@ -91,13 +94,16 @@ body {
     width: 248px;
     height: 38px;
     padding: 0 10px;
-    color: #fff;
+    color: #fac93e;
     font-size: 18px;
     font-weight: 100;
     font-family: inherit;
     border: 1px solid #fac93e;
     border-radius: 3px;
-    background: transparent; }
+    background: transparent;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    outline: none; }
     .title__form input::-webkit-input-placeholder {
       color: #fac93e; }
     .title__form input:-ms-input-placeholder {
@@ -106,6 +112,8 @@ body {
       color: #fac93e; }
     .title__form input::placeholder {
       color: #fac93e; }
+    .title__form input:focus {
+      border: 1px solid #7865ff; }
   .title__form button {
     width: 170px;
     height: 40px;
@@ -197,6 +205,8 @@ body {
       padding: 28px 15px 27px 190px;
       -webkit-transition: 0.5s;
       transition: 0.5s; }
+  .header--inner {
+    width: 100%; }
 
 .header__container {
   width: 1170px;
@@ -218,7 +228,8 @@ body {
 .header__logo {
   width: 170px;
   -webkit-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  z-index: 20; }
 
 .header__toggle {
   display: none;
@@ -1235,3 +1246,63 @@ body {
   .footer__hr {
     width: 98%;
     margin: 20px auto; } }
+
+.webtrader {
+  padding: 150px 0 0 0; }
+
+.webtrader__name {
+  margin: 0 0 50px 0;
+  color: #2f2861;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center; }
+
+.webtrader__text {
+  color: #2f2861;
+  font-size: 18px;
+  font-weight: 300; }
+
+.webtrader__img {
+  margin: 70px 0 0 0;
+  background: url("../img/webtrader-mockup.png") no-repeat top;
+  background-size: 750px; }
+
+.webtrader__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 30px 0 0 0; }
+  .webtrader__flex--down {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+
+.webtrader__box {
+  width: 200px;
+  text-align: center;
+  cursor: pointer; }
+  .webtrader__box b {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    color: #2f2861;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 45px;
+    background: url("../img/webtrader-list.svg") no-repeat top;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .webtrader__box p {
+    color: #666666;
+    font-size: 12px;
+    font-weight: 300;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .webtrader__box:hover b {
+    color: #fff;
+    background: url("../img/webtrader-list-h.svg") no-repeat top; }
+  .webtrader__box:hover p {
+    color: #2f2861; }

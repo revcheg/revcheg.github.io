@@ -56,7 +56,7 @@ menuToggle.addEventListener('click', function () {
     menu.classList.remove('nav--opened');
     menu.classList.add('nav--closed');
   }
-});
+}); 
 
 // Tabs
 function openTabs (evt, cityName) {

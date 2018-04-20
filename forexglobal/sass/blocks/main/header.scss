@@ -53,6 +53,10 @@
       transition: 0.5s;
     }
   }
+  
+  &--inner {
+    width: 100%;
+  }
 }
 
 .header__container {
@@ -71,6 +75,7 @@
 .header__logo {
   width: 170px;
   transition: 0.3s;
+  z-index: 20;
 }
 
 .header__toggle {
