@@ -115,6 +115,7 @@ body {
     .title__form input:focus {
       border: 1px solid #7865ff; }
   .title__form button {
+    position: relative;
     width: 170px;
     height: 40px;
     color: #2f2861;
@@ -124,6 +125,14 @@ body {
     border: none;
     border-radius: 3px;
     background: #fac93e; }
+    .title__form button::after {
+      content: 'Trading involves risk of loss';
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: inherit;
+      color: #fac93e;
+      font-size: 10px; }
 
 .title__down {
   position: relative;
@@ -573,6 +582,7 @@ body {
   font-weight: 100; }
 
 .welcome__button {
+  position: relative;
   display: block;
   width: 170px;
   padding: 10px 0;
@@ -583,6 +593,14 @@ body {
   text-decoration: none;
   border-radius: 3px;
   background: #fac93e; }
+  .welcome__button::after {
+    content: 'Trading involves risk of loss';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: inherit;
+    color: #2f2861;
+    font-size: 10px; }
 
 @media screen and (max-width: 1200px) {
   .welcome__flex {
@@ -697,6 +715,7 @@ body {
     font-weight: 100;
     list-style-image: url("../img/list.svg"); }
   .account__box a {
+    position: relative;
     display: block;
     width: 168px;
     margin: auto;
@@ -708,8 +727,13 @@ body {
     text-decoration: none;
     border: 1px solid #fac93e;
     border-radius: 3px; }
-  .account__box:nth-child(2) li:last-child {
-    list-style: none; }
+    .account__box a::after {
+      content: 'Trading involves risk of loss';
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: inherit;
+      font-size: 10px; }
   .account__box:nth-child(1) {
     background: #0e0b39 url("../img/account-zulu.png") no-repeat 70px -30px;
     background-size: 256px; }
@@ -1061,6 +1085,7 @@ body {
       .form form select:focus {
         border: 2px solid #7865ff; }
     .form form button {
+      position: relative;
       margin: 25px 0 0 0;
       padding: 10px 0;
       color: #2f2861;
@@ -1070,6 +1095,14 @@ body {
       border: none;
       border-radius: 3px;
       background: #fac93e; }
+      .form form button::after {
+        content: 'Trading involves risk of loss';
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        width: 100%;
+        color: #fac93e;
+        font-size: 10px; }
 
 @media screen and (max-width: 768px) {
   .form {
@@ -1267,7 +1300,7 @@ body {
 .webtrader__text {
   color: #2f2861;
   font-size: 18px;
-  font-weight: 100; }
+  font-weight: 300; }
 
 .webtrader__img {
   margin: 70px 0 0 0;
@@ -1310,7 +1343,7 @@ body {
   .webtrader__box p {
     color: #666666;
     font-size: 12px;
-    font-weight: 100;
+    font-weight: 300;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
   .webtrader__box:hover b {
@@ -1334,7 +1367,7 @@ body {
   .webtrader__list ul {
     margin: 20px 0 0 0;
     padding: 0;
-    font-weight: 100;
+    font-weight: 300;
     list-style-position: inside;
     list-style-image: url("../img/webtrader-li.svg"); }
     .webtrader__list ul li {

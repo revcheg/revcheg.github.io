@@ -51,6 +51,7 @@
   }
   
   button {
+    position: relative;
     width: 170px;
     height: 40px;
     color: #2f2861;
@@ -61,6 +62,16 @@
     border: none;
     border-radius: 3px;
     background: $mc;
+    
+    &::after {
+      content: 'Trading involves risk of loss';
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: inherit;
+      color: $mc;
+      font-size: 10px;
+    }
   }
 }
 
