@@ -121,3 +121,32 @@
   font-weight: 300;
   text-align: center;
 }
+
+@media screen and ($tablet-widths) {
+  .account-types {
+    padding: 200px 0 70px 0;
+  }
+  
+  .account-types__text {
+    padding: 0 15px;
+  }
+  
+  .account-types__flex {
+    flex-wrap: wrap;
+  }
+  
+  .account-types__box {
+    margin: 0 auto 10px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .account-types {
+    padding: 100px 0 70px 0;
+  }
+  
+  .account-types__name {
+    margin: 0 0 20px 0;
+    font-size: 40px;
+  }
+}
