@@ -59,6 +59,7 @@ menuToggle.addEventListener('click', function () {
 }); 
 
 // Tabs
+// Index Tab Platforms
 function openTabs (evt, cityName) {
 
   var i, tabsWrapper, tabsButton;
@@ -79,4 +80,23 @@ function openTabs (evt, cityName) {
   document.getElementById(cityName).style.top = '70px';
   document.getElementById(cityName).style.opacity = '1';
   evt.currentTarget.className += ' tabs__active';
+}
+
+// Inner Tabs
+function openFile(evt, cityName) {
+
+  var i, tabContent, tabLinks;
+
+  tabContent = document.getElementsByClassName("tab__content");
+  for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = "none";
+  }
+
+  tabLinks = document.getElementsByClassName("tab__button");
+  for (i = 0; i < tabLinks.length; i++) {
+    tabLinks[i].className = tabLinks[i].className.replace(" tab__active", "");
+  }
+
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " tab__active";
 }

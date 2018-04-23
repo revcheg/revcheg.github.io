@@ -1,0 +1,121 @@
+.tab {
+  display: flex;
+  justify-content: space-between;
+  // border: 1px solid #ccc;
+  // background: $sc;
+  overflow: hidden;
+}
+
+.tab__button {
+  width: 170px;
+  margin: 0 10px 0 0;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  border: none;
+  border-top-right-radius: 30px;
+  background: $sc;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    color: #fff;
+    background: #6420fa;
+  }
+  
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.tab__active {
+  width: 200px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  background: #6420ff;
+}
+
+.tab__content {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #6420ff;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top: none;
+  
+  h3 {
+    color: $sc;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  p {
+    color: $sc;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  b {
+    color: $sc;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  ul {
+    // margin: 0;
+    // padding: 0;
+    color: $sc;
+    font-weight: 300;
+  }
+}
+
+.tab__table {
+  width: 100%;
+  margin: 0 0 10px 0;
+  color: #fff;
+  text-align: center;
+  border-collapse: collapse;
+  
+  th {
+    padding: 10px;
+    font-weight: 500;
+    background: #6420ff;
+    
+    &:last-child {
+      border-top-right-radius: 30px;
+    }
+  }
+  
+  tr {
+    font-weight: 300;
+    border-bottom: 1px solid #6420ff;
+    background: $sc;
+  }
+  
+  td {
+    padding: 10px 0;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .tab__button {
+    font-size: 15px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .tab {
+    flex-direction: column;
+  }
+  
+  .tab__button {
+    width: 100%;
+    border-radius: 0;
+  }
+}
