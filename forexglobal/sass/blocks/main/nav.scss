@@ -17,8 +17,7 @@
     position: relative;
     color: $mc;
     font-size: 18px;
-    font-weight: 100;
-    // font-family: 'SFUIDisplay-Thin', sans-serif;
+    font-weight: 300;
     text-decoration: none;
     
     &::after {
@@ -49,7 +48,7 @@
     padding: 0 15px;
     color: $mc;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 300;
     font-family: inherit;
     border: 1px solid $mc;
     border-radius: 3px;
@@ -80,7 +79,6 @@
   }
   
   .nav__list {
-    // width: 100%;
     margin: auto;
   }
   

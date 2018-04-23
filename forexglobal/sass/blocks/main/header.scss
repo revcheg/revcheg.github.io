@@ -21,7 +21,6 @@
     
     .header__user {
       width: 400px;
-      // margin: 0 70px 0 0;
       z-index: 3;
       
       li {
@@ -29,7 +28,6 @@
         a {
           width: 133px;
           padding: 9px 0;
-          // font-family: 'SFUIDisplay-Thin', sans-serif;
           transition: 0.3s;
         }
       }
@@ -111,8 +109,7 @@
       padding: 9px 0;
       color: $mc;
       font-size: 18px;
-      font-weight: 100;
-      // font-family: 'SFUIDisplay-Thin', sans-serif;
+      font-weight: 300;
       text-decoration: none;
       border: 1px solid $mc;
       border-radius: 3px;
@@ -211,9 +208,8 @@
   padding: 0 20px;
   color: $mc;
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 300;
   font-family: inherit;
-  // font-family: 'SFUIDisplay-Thin', sans-serif;
   border: 1px solid $mc;
   border-radius: 3px;
   background: transparent url('../img/nav-arrow.svg') no-repeat right;
@@ -277,10 +273,6 @@
       }
       
       .header__user {
-        // display: none;
-        // width: 400px;
-        // margin: 0 70px 0 0;
-        // z-index: 3;
         transition: 0.5s;
         
         li {

@@ -10,13 +10,11 @@
 }
 
 .title__name {
-  // margin: 260px 0 95px 0;
   margin: 0;
   padding: 395px 0 95px 0;
   color: #fff;
   font-size: 65px;
   font-weight: 300;
-  // font-family: 'SFUIDisplay-Light', sans-serif;
   text-align: center;
 }
 
@@ -32,9 +30,8 @@
     padding: 0 10px;
     color: $mc;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     font-family: inherit;
-    // font-family: 'SFUIDisplay-Thin', sans-serif;
     border: 1px solid $mc;
     border-radius: 3px;
     background: transparent;
@@ -58,7 +55,6 @@
     font-size: 18px;
     font-weight: 300;
     font-family: inherit;
-    // font-family: 'SFUIDisplay-Thin', sans-serif;
     border: none;
     border-radius: 3px;
     background: $mc;

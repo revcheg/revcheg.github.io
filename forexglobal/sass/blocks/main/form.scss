@@ -17,14 +17,12 @@
       margin: 0 0 5px 0;
       color: #fff;
       font-weight: 500;
-      // font-family: 'SFUIDisplay-Medium', sans-serif;
     }
     
     b {
       color: #fff;
       font-size: 30px;
       font-weight: 500;
-      // font-family: 'SFUIDisplay-Medium', sans-serif;
     }
     
     hr {
@@ -39,9 +37,8 @@
       margin: 0 0 10px 0;
       padding: 8px 15px;
       font-size: 18px;
-      font-weight: 100;
+      font-weight: 300;
       font-family: inherit;
-      // font-family: 'SFUIDisplay-Thin', sans-serif;
       border: 2px solid #fff;
       border-radius: 3px;
       transition: 0.3s;
@@ -62,9 +59,8 @@
       padding: 8px 15px;
       color: $sc;
       font-size: 18px;
-      font-weight: 100;
+      font-weight: 300;
       font-family: inherit;
-      // font-family: 'SFUIDisplay-Thin', sans-serif;
       border: 2px solid #fff;
       border-radius: 3px;
       background: #fff url('../img/nav-arrow.svg') no-repeat center;
@@ -86,7 +82,6 @@
       font-size: 18px;
       font-weight: 500;
       font-family: inherit;
-      // font-family: 'SFUIDisplay-Medium', sans-serif;
       border: none;
       border-radius: 3px;
       background: $mc;
@@ -113,7 +108,6 @@
     form {
       width: 240px;
       margin: auto;
-      // padding: 30px 10px 45px 10px;
       padding: 30px 30px 45px 30px;
       
       input {

@@ -96,7 +96,7 @@ body {
     padding: 0 10px;
     color: #fac93e;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     font-family: inherit;
     border: 1px solid #fac93e;
     border-radius: 3px;
@@ -273,7 +273,7 @@ body {
       padding: 9px 0;
       color: #fac93e;
       font-size: 18px;
-      font-weight: 100;
+      font-weight: 300;
       text-decoration: none;
       border: 1px solid #fac93e;
       border-radius: 3px;
@@ -344,7 +344,7 @@ body {
   padding: 0 20px;
   color: #fac93e;
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 300;
   font-family: inherit;
   border: 1px solid #fac93e;
   border-radius: 3px;
@@ -491,7 +491,7 @@ body {
     position: relative;
     color: #fac93e;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     text-decoration: none; }
     .nav__list a::after {
       content: '';
@@ -518,7 +518,7 @@ body {
     padding: 0 15px;
     color: #fac93e;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 300;
     font-family: inherit;
     border: 1px solid #fac93e;
     border-radius: 3px;
@@ -594,7 +594,7 @@ body {
   margin: 35px 0 50px 0;
   color: #2f2861;
   font-size: 18px;
-  font-weight: 100; }
+  font-weight: 300; }
 
 .welcome__button {
   position: relative;
@@ -666,7 +666,7 @@ body {
   .edge__box p {
     margin: 10px 0 0 0;
     color: #fff;
-    font-weight: 100; }
+    font-weight: 300; }
 
 @media screen and (max-width: 768px) {
   .edge {
@@ -691,7 +691,7 @@ body {
   margin: 0 0 60px 0;
   color: #2f2861;
   font-size: 60px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center; }
 
 .account__flex {
@@ -727,7 +727,7 @@ body {
   .account__box ul {
     margin: 30px 0 35px 0;
     padding: 0;
-    font-weight: 100;
+    font-weight: 300;
     list-style-image: url("../img/list.svg"); }
   .account__box a {
     position: relative;
@@ -867,7 +867,7 @@ body {
 .tabs__text {
   margin: 15px 0 35px 0;
   color: #2f2861;
-  font-weight: 100; }
+  font-weight: 300; }
 
 .tabs__download {
   display: inline-block;
@@ -929,7 +929,7 @@ body {
   margin: 0 0 60px 0;
   color: #2f2861;
   font-size: 60px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center; }
 
 .license__list {
@@ -937,7 +937,7 @@ body {
   padding: 0;
   color: #2f2861;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 300;
   list-style: url("../img/list.svg");
   list-style-position: inside; }
   .license__list li {
@@ -975,7 +975,7 @@ body {
     background: #fac93e; }
   .license__box p {
     color: #2f2861;
-    font-weight: 100; }
+    font-weight: 300; }
   .license__box--1 {
     background: url("../img/license-1.svg") no-repeat top;
     background-size: 150px; }
@@ -1069,7 +1069,7 @@ body {
       margin: 0 0 10px 0;
       padding: 8px 15px;
       font-size: 18px;
-      font-weight: 100;
+      font-weight: 300;
       font-family: inherit;
       border: 2px solid #fff;
       border-radius: 3px;
@@ -1092,7 +1092,7 @@ body {
       padding: 8px 15px;
       color: #2f2861;
       font-size: 18px;
-      font-weight: 100;
+      font-weight: 300;
       font-family: inherit;
       border: 2px solid #fff;
       border-radius: 3px;
@@ -1212,7 +1212,7 @@ body {
   .footer__ul--links a {
     color: #cdcdcf;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 300;
     text-decoration: none;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
@@ -1221,7 +1221,7 @@ body {
   .footer__ul--links li {
     color: #cdcdcf;
     font-size: 14px;
-    font-weight: 100; }
+    font-weight: 300; }
 
 .footer__logo {
   width: 170px;
@@ -1234,7 +1234,7 @@ body {
   padding: 9px 0;
   color: #fff;
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   text-decoration: none;
   border: 1px solid #fff;
@@ -1257,7 +1257,7 @@ body {
   padding: 0 15px;
   color: #cdcdcf;
   font-size: 14px;
-  font-weight: 100; }
+  font-weight: 300; }
   .footer__text:last-child {
     margin: 14px 0 0 0; }
   .footer__text a {

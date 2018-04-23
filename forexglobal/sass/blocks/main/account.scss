@@ -6,8 +6,7 @@
   margin: 0 0 60px 0;
   color: $sc;
   font-size: 60px;
-  font-weight: 100;
-  // font-family: 'SFUIDisplay-Thin', sans-serif;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -28,7 +27,6 @@
     margin: 0;
     font-size: 30px;
     font-weight: 500;
-    // font-family: 'SFUIDisplay-Medium', sans-serif;
     text-align: center;
   }
   
@@ -43,15 +41,13 @@
   b {
     display: block;
     font-weight: 500;
-    // font-family: 'SFUIDisplay-Medium', sans-serif;
     text-align: center;
   }
   
   ul {
     margin: 30px 0 35px 0;
     padding: 0;
-    font-weight: 100;
-    // font-family: 'SFUIDisplay-Thin', sans-serif;
+    font-weight: 300;
     list-style-image: url('../img/list.svg');
   }
   
@@ -64,7 +60,6 @@
     color: $mc;
     font-size: 18px;
     font-weight: 300;
-    // font-family: 'SFUIDisplay-Thin', sans-serif;
     text-align: center;
     text-decoration: none;
     border: 1px solid $mc;

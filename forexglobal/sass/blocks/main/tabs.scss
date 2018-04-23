@@ -20,7 +20,6 @@
       font-size: 16px;
       font-weight: 500;
       font-family: inherit;
-      // font-family: 'SFUIDisplay-Medium', sans-serif;
       border: none;
       background: #fff;
       outline: none;
@@ -32,7 +31,6 @@
 
 .tabs__active {
   font-weight: 900 !important;
-  // font-family: 'SFUIDisplay-Black', sans-serif !important;
   border-bottom: 2px solid #f58a39 !important;
 }
 
@@ -69,14 +67,12 @@
   color: $sc;
   font-size: 30px;
   font-weight: 500;
-  // font-family: 'SFUIDisplay-Medium', sans-serif;
 }
 
 .tabs__text {
   margin: 15px 0 35px 0;
   color: $sc;
-  font-weight: 100;
-  // font-family: 'SFUIDisplay-Thin', sans-serif;
+  font-weight: 300;
 }
 
 .tabs__download {
@@ -87,7 +83,6 @@
   color: #fff;
   font-size: 18px;
   font-weight: 500;
-  // font-family: 'SFUIDisplay-Medium', sans-serif;
   text-align: center;
   text-decoration: none;
   border-radius: 3px;
@@ -102,7 +97,6 @@
   color: $sc;
   font-size: 18px;
   font-weight: 300;
-  // font-family: 'SFUIDisplay-Thin', sans-serif;
   text-align: center;
   text-decoration: none;
   border: 1px solid $sc;
