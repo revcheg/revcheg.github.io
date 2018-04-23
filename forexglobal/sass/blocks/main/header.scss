@@ -116,7 +116,12 @@
       text-decoration: none;
       border: 1px solid $mc;
       border-radius: 3px;
-      transition: 0.3;
+      transition: 0.2s linear;
+      
+      &:hover {
+        color: $sc;
+        background: $mc;
+      }
     }
   }
 }
@@ -131,6 +136,7 @@
     bottom: -15px;
     left: 0;
     width: inherit;
+    color: $mc;
     font-size: 10px;
   }
   
@@ -143,6 +149,13 @@
     height: 3px;
     background: url('../img/nav-arrow.svg') no-repeat center;
     transition: 0.1s;
+  }
+  
+  &:hover {
+
+    &::before {
+      background: url('../img/nav-arrow-h.svg') no-repeat center;
+    }
   }
   
   &--active {
@@ -163,6 +176,7 @@
   background: rgba(47, 40, 97, 0.5);
   list-style: none;
   transition: 0.5s;
+  z-index: 2;
   
   li {
     
@@ -172,6 +186,7 @@
       transition: 0.3s;
       
       &:hover {
+        color: #fff;
         font-weight: 500;
         background: rgba(47, 40, 97, 0.7);
       }
@@ -204,7 +219,15 @@
   background: transparent url('../img/nav-arrow.svg') no-repeat right;
   background-position-x: 50px;
   background-size: 6px 3px;
+  transition: 0.2s linear;
   appearance: none;
+  
+  &:hover {
+    color: $sc;
+    background: $mc url('../img/nav-arrow-h.svg') no-repeat right;
+    background-position-x: 50px;
+    background-size: 6px 3px;
+  }
 }
 
 @media screen and ($tablet-widths) {

@@ -277,8 +277,11 @@ body {
       text-decoration: none;
       border: 1px solid #fac93e;
       border-radius: 3px;
-      -webkit-transition: 0.3;
-      transition: 0.3; }
+      -webkit-transition: 0.2s linear;
+      transition: 0.2s linear; }
+      .header__user li a:hover {
+        color: #2f2861;
+        background: #fac93e; }
 
 .header__open {
   position: relative;
@@ -290,6 +293,7 @@ body {
     bottom: -15px;
     left: 0;
     width: inherit;
+    color: #fac93e;
     font-size: 10px; }
   .header__open::before {
     content: '';
@@ -301,6 +305,8 @@ body {
     background: url("../img/nav-arrow.svg") no-repeat center;
     -webkit-transition: 0.1s;
     transition: 0.1s; }
+  .header__open:hover::before {
+    background: url("../img/nav-arrow-h.svg") no-repeat center; }
   .header__open--active {
     color: #2f2861 !important;
     background: #fac93e; }
@@ -316,13 +322,15 @@ body {
   background: rgba(47, 40, 97, 0.5);
   list-style: none;
   -webkit-transition: 0.5s;
-  transition: 0.5s; }
+  transition: 0.5s;
+  z-index: 2; }
   .header__accounts li a {
     color: #fff;
     border: none;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
     .header__accounts li a:hover {
+      color: #fff;
       font-weight: 500;
       background: rgba(47, 40, 97, 0.7); }
   .header__accounts--closed {
@@ -343,9 +351,16 @@ body {
   background: transparent url("../img/nav-arrow.svg") no-repeat right;
   background-position-x: 50px;
   background-size: 6px 3px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }
+  .header__language:hover {
+    color: #2f2861;
+    background: #fac93e url("../img/nav-arrow-h.svg") no-repeat right;
+    background-position-x: 50px;
+    background-size: 6px 3px; }
 
 @media screen and (max-width: 1200px) {
   .header--scroll .header__flex {
@@ -726,13 +741,19 @@ body {
     text-align: center;
     text-decoration: none;
     border: 1px solid #fac93e;
-    border-radius: 3px; }
+    border-radius: 3px;
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear; }
+    .account__box a:hover {
+      color: #2f2861;
+      background: #fac93e; }
     .account__box a::after {
       content: 'Trading involves risk of loss';
       position: absolute;
       bottom: -15px;
       left: 0;
       width: inherit;
+      color: #fac93e;
       font-size: 10px; }
   .account__box:nth-child(1) {
     background: #0e0b39 url("../img/account-zulu.png") no-repeat 70px -30px;

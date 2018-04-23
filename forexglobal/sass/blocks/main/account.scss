@@ -69,6 +69,12 @@
     text-decoration: none;
     border: 1px solid $mc;
     border-radius: 3px;
+    transition: 0.2s linear;
+    
+    &:hover {
+      color: $sc;
+      background: $mc;
+    }
     
     &::after {
       content: 'Trading involves risk of loss';
@@ -76,6 +82,7 @@
       bottom: -15px;
       left: 0;
       width: inherit;
+      color: $mc;
       font-size: 10px;
     }
   }
