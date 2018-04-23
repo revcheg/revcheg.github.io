@@ -1599,3 +1599,102 @@ body {
     margin: 0; }
   .webtrader__demo {
     margin: 30px 0 0 0; } }
+
+.account-types {
+  padding: 150px 0 70px 0; }
+
+.account-types__name {
+  margin: 0 0 50px 0;
+  color: #2f2861;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center; }
+
+.account-types__text {
+  margin: 0 0 70px 0;
+  color: #2f2861;
+  font-size: 18px;
+  font-weight: 300; }
+
+.account-types__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 0 70px 0; }
+
+.account-types__box {
+  position: relative;
+  width: 240px;
+  padding: 70px 15px 100px 15px;
+  border-bottom-right-radius: 30px; }
+  .account-types__box h2 {
+    margin: 0 0 25px 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase; }
+  .account-types__box p {
+    margin: 0 0 40px 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center; }
+  .account-types__box b {
+    display: block;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center; }
+  .account-types__box hr {
+    width: 30px;
+    height: 1px;
+    margin: 20px auto;
+    border: none;
+    background: #fac93e; }
+  .account-types__box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .account-types__box ul li {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 40px; }
+      .account-types__box ul li span {
+        font-weight: 700; }
+  .account-types__box a {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    display: block;
+    width: 170px;
+    margin: auto;
+    padding: 10px 0;
+    color: #2f2861;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    background: #fac93e;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .account-types__box--mini {
+    background: #2f2861 url("../img/account-mini.png") no-repeat top; }
+  .account-types__box--silver {
+    background: #2f2861 url("../img/account-silver.png") no-repeat top; }
+  .account-types__box--gold {
+    background: #2f2861 url("../img/account-gold.png") no-repeat top; }
+  .account-types__box--zulu {
+    background: #2f2861 url("../img/account-zulutrade.png") no-repeat top; }
+
+.account-types__risk {
+  margin: 0;
+  color: #2f2861;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center; }
