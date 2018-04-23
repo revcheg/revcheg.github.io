@@ -6,12 +6,26 @@
 }
 
 .nav__list {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 470px;
   margin: 0;
   padding: 0;
   list-style: none;
+  
+  li {
+    
+    &:nth-child(4) {
+      
+      a {
+        
+        &::after {
+          background: none;
+        }
+      }
+    }
+  }
   
   a {
     position: relative;
@@ -34,6 +48,51 @@
     &:hover::after {
       transform: rotate(180deg);
     }
+    
+    &:hover + .nav__sub {
+      animation-name: sub-open;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      animation-direction: alternate;
+    }
+  }
+}
+
+@keyframes sub-open {
+  0% {
+    
+  }
+  
+  100% {
+    opacity: 1;
+    clip: auto;
+  }
+}
+
+.nav__sub {
+  position: absolute;
+  width: 200px;
+  margin: 0;
+  padding: 20px 0 0 0;
+  list-style: none;
+  opacity: 0;
+  clip: rect(0, 0, 0, 0);
+  
+  a {
+    transition: 0.3s;
+    
+    &:hover {
+      color: #ffa100;
+    }
+    
+    &::after {
+      display: none;
+    }
+  }
+  
+  &:hover {
+    opacity: 1;
+    clip: auto;
   }
 }
 

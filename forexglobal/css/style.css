@@ -214,6 +214,9 @@ body {
       padding: 28px 15px 27px 190px;
       -webkit-transition: 0.5s;
       transition: 0.5s; }
+    .header--scroll .nav__sub {
+      width: auto;
+      padding: 30px 0 0 0; }
   .header--inner {
     width: 100%; }
 
@@ -477,6 +480,7 @@ body {
   padding: 18px 15px; }
 
 .nav__list {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,6 +491,8 @@ body {
   margin: 0;
   padding: 0;
   list-style: none; }
+  .nav__list li:nth-child(4) a::after {
+    background: none; }
   .nav__list a {
     position: relative;
     color: #fac93e;
@@ -506,6 +512,46 @@ body {
     .nav__list a:hover::after {
       -webkit-transform: rotate(180deg);
       transform: rotate(180deg); }
+    .nav__list a:hover + .nav__sub {
+      -webkit-animation-name: sub-open;
+      animation-name: sub-open;
+      -webkit-animation-duration: 0.5s;
+      animation-duration: 0.5s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate; }
+
+@-webkit-keyframes sub-open {
+  0% { }
+  100% {
+    opacity: 1;
+    clip: auto; } }
+
+@keyframes sub-open {
+  0% { }
+  100% {
+    opacity: 1;
+    clip: auto; } }
+
+.nav__sub {
+  position: absolute;
+  width: 200px;
+  margin: 0;
+  padding: 20px 0 0 0;
+  list-style: none;
+  opacity: 0;
+  clip: rect(0, 0, 0, 0); }
+  .nav__sub a {
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .nav__sub a:hover {
+      color: #ffa100; }
+    .nav__sub a::after {
+      display: none; }
+  .nav__sub:hover {
+    opacity: 1;
+    clip: auto; }
 
 .nav__search {
   position: relative;
@@ -1222,6 +1268,9 @@ body {
     color: #cdcdcf;
     font-size: 14px;
     font-weight: 300; }
+
+.footer__active {
+  color: #fac93e !important; }
 
 .footer__logo {
   width: 170px;
