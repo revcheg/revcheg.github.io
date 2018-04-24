@@ -1,0 +1,169 @@
+.contact {
+  padding: 150px 0 0 0;
+  
+  hr {
+    height: 1px;
+    margin: 50px 0;
+    border: none;
+    background: #b8b8b8;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+.contact__name {
+  margin: 0 0 50px 0;
+  color: $sc;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.contact__flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 80px 0;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  
+  input {
+    height: 40px;
+    margin: 0 0 15px 0;
+    padding: 0 10px;
+    color: $sc;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: inherit;
+    border: 1px solid $sc;
+    border-radius: 3px;
+    outline: none;
+    transition: 0.3s;
+    
+    &::placeholder {
+      color: #c1c1c1;
+      transition: 0.3s;
+    }
+    
+    &:focus {
+      box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
+      
+      &::placeholder {
+        color: $sc;
+        font-weight: 500;
+      }
+    }
+  }
+  
+  textarea {
+    height: 140px;
+    margin: 0 0 15px 0;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: inherit;
+    border: 1px solid $sc;
+    border-radius: 3px;
+    outline: none;
+    resize: none;
+    
+    &::placeholder {
+      color: #c1c1c1;
+    }
+    
+    &:focus {
+      box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
+      
+      &::placeholder {
+        color: $sc;
+        font-weight: 500;
+      }
+    }
+  }
+  
+  button {
+    height: 40px;
+    color: $sc;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: inherit;
+    border: none;
+    border-radius: 3px;
+    background: $mc;
+    transition: 0.3s;
+    
+    &:hover {
+      font-weight: 500;
+      box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
+      background: #ffd800;
+    }
+  }
+}
+
+.contact__sub {
+  
+  p {
+    margin: 0 0 10px 0;
+    color: $sc;
+    font-size: 18px;
+    font-weight: 300;
+    
+    b {
+      font-weight: 500;
+    }
+    
+    a {
+      color: $sc;
+      font-weight: 300;
+      text-decoration: none;
+    }
+  }
+  
+  h2 {
+    margin: 30px 0 20px 0;
+    color: $sc;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .contact {
+    padding: 200px 0 0 0;
+  }
+  
+  .contact__text {
+    padding: 0 15px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .contact {
+    padding: 100px 0 0 0;
+  }
+  
+  .contact__name {
+    margin: 0 0 20px 0;
+    font-size: 40px;
+  }
+  
+  .contact__flex {
+    flex-direction: column;
+  }
+  
+  .contact__form {
+    width: 300px;
+  }
+  
+  .contact__sub {
+    width: 300px;
+    margin: 20px 0 0 0;
+  }
+}
