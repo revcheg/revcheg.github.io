@@ -1678,7 +1678,9 @@ body {
   position: relative;
   width: 240px;
   padding: 70px 15px 100px 15px;
-  border-bottom-right-radius: 30px; }
+  border-bottom-right-radius: 30px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear; }
   .account-types__box h2 {
     margin: 0 0 25px 0;
     color: #fff;
@@ -1740,6 +1742,9 @@ body {
     background: #2f2861 url("../img/account-gold.png") no-repeat top; }
   .account-types__box--zulu {
     background: #2f2861 url("../img/account-zulutrade.png") no-repeat top; }
+  .account-types__box:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03); }
 
 .account-types__risk {
   margin: 0;
@@ -1881,11 +1886,13 @@ body {
   border-collapse: collapse; }
   .tab__table th {
     padding: 10px;
+    font-size: 13px;
     font-weight: 500;
     background: #6420ff; }
     .tab__table th:last-child {
       border-top-right-radius: 30px; }
   .tab__table tr {
+    font-size: 12px;
     font-weight: 300;
     border-bottom: 1px solid #6420ff;
     background: #2f2861; }
@@ -2123,3 +2130,47 @@ body {
   .careers__img {
     width: 250px;
     height: 250px; } }
+
+.announcements {
+  padding: 150px 0 0 0; }
+  .announcements hr {
+    height: 1px;
+    margin: 50px 0;
+    border: none;
+    background: #b8b8b8; }
+
+.announcements__name {
+  margin: 0 0 50px 0;
+  color: #2f2861;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center; }
+
+.announcements__list {
+  padding: 0;
+  list-style: none; }
+  .announcements__list b {
+    color: #2f2861;
+    font-size: 25px;
+    font-weight: 500; }
+  .announcements__list a {
+    color: #6420ff;
+    font-weight: 300;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .announcements__list a:hover {
+      color: #2f2861; }
+
+@media screen and (max-width: 1200px) {
+  .announcements {
+    padding: 200px 0 0 0; }
+  .announcements__text {
+    padding: 0 15px; } }
+
+@media screen and (max-width: 768px) {
+  .announcements {
+    padding: 100px 0 0 0; }
+  .announcements__name {
+    margin: 0 0 20px 0;
+    font-size: 40px; } }

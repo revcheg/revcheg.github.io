@@ -28,6 +28,7 @@
   width: 240px;
   padding: 70px 15px 100px 15px;
   border-bottom-right-radius: 30px;
+  transition: 0.3s linear;
   
   h2 {
     margin: 0 0 25px 0;
@@ -111,6 +112,11 @@
   
   &--zulu {
     background: $sc url('../img/account-zulutrade.png') no-repeat top;
+  }
+  
+  &:hover {
+    // width: 300px;
+    transform: scale(1.03);
   }
 }
 
