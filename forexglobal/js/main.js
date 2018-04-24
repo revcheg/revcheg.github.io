@@ -39,6 +39,58 @@ window.addEventListener('keydown', function(event) {
   }
 });
 
+// Open Menu
+var navLinks = document.querySelectorAll('.nav__link');
+var navWrappers = document.querySelectorAll('.nav__wrapper');
+// var navWrapper = document.querySelector('.nav__wrapper');
+
+// for (var i = 0; i < navLinks.length; i++) {
+//   navLinks[i].addEventListener('click', function () {
+//     // this.classList.toggle('nav__link--active');
+//     // navWrapper.classList.add('nav__wrapper--opened');
+//   });
+// };
+
+function about () {
+  if (navWrappers[0].classList.contains('nav__wrapper--closed')) {
+    navWrappers[0].classList.remove('nav__wrapper--closed');
+    navWrappers[0].classList.add('nav__wrapper--opened');
+  } else {
+    navWrappers[0].classList.remove('nav__wrapper--opened');
+    navWrappers[0].classList.add('nav__wrapper--closed');
+  }
+};
+
+function trading () {
+  if (navWrappers[1].classList.contains('nav__wrapper--closed')) {
+    navWrappers[1].classList.remove('nav__wrapper--closed');
+    navWrappers[1].classList.add('nav__wrapper--opened');
+  } else {
+    navWrappers[1].classList.remove('nav__wrapper--opened');
+    navWrappers[1].classList.add('nav__wrapper--closed');
+  }
+};
+
+function resources () {
+  if (navWrappers[2].classList.contains('nav__wrapper--closed')) {
+    navWrappers[2].classList.remove('nav__wrapper--closed');
+    navWrappers[2].classList.add('nav__wrapper--opened');
+  } else {
+    navWrappers[2].classList.remove('nav__wrapper--opened');
+    navWrappers[2].classList.add('nav__wrapper--closed');
+  }
+};
+
+function contact () {
+  if (navWrappers[3].classList.contains('nav__wrapper--closed')) {
+    navWrappers[3].classList.remove('nav__wrapper--closed');
+    navWrappers[3].classList.add('nav__wrapper--opened');
+  } else {
+    navWrappers[3].classList.remove('nav__wrapper--opened');
+    navWrappers[3].classList.add('nav__wrapper--closed');
+  }
+};
+
 // Mobile Menu
 var menuToggle = document.querySelector('.header__toggle');
 var menuUser = document.querySelector('.header__user');
