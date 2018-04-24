@@ -449,13 +449,13 @@ body {
         top: -500px; }
       .header--scroll .nav--opened {
         position: absolute;
-        top: 200px;
+        top: 206px;
         padding: 20px 0;
         background: rgba(47, 40, 97, 0.9); }
     .header--scroll .nav__wrapper {
       padding: 0 0 10px 0; }
       .header--scroll .nav__wrapper--opened {
-        top: 170px; }
+        top: 175px; }
     .header--scroll .header__language {
       height: 36px;
       font-size: 14px; }
