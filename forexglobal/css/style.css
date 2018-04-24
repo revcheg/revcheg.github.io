@@ -399,12 +399,14 @@ body {
       -webkit-transition: 0.5s;
       transition: 0.5s; }
       .header--scroll .header__user li {
-        margin: 0 0 25px 0; }
+        margin: 0 0 20px 0; }
         .header--scroll .header__user li a {
           width: 133px;
           padding: 9px 0;
           -webkit-transition: 0.3s;
           transition: 0.3s; }
+        .header--scroll .header__user li:nth-child(2) {
+          margin: 0 0 10px 0; }
         .header--scroll .header__user li:nth-child(3) {
           margin: 0; }
       .header--scroll .header__user--closed {
@@ -424,12 +426,16 @@ body {
         -ms-flex-align: center;
         align-items: center;
         width: 100%;
-        padding: 10px 0;
+        padding: 0;
         background: rgba(47, 40, 97, 0.9); }
         .header--scroll .header__user--opened li a {
-          width: 168px; }
+          width: 138px;
+          font-size: 14px; }
     .header--scroll .header__open::before {
+      top: 16px;
       right: 13px; }
+    .header--scroll .header__open::after {
+      font-size: 8px; }
     .header--scroll .nav__search {
       display: none; }
     .header--scroll .nav {
@@ -443,11 +449,16 @@ body {
         top: -500px; }
       .header--scroll .nav--opened {
         position: absolute;
-        top: 261px;
+        top: 200px;
         padding: 20px 0;
         background: rgba(47, 40, 97, 0.9); }
-    .header--scroll .nav__wrapper--opened {
-      top: 225px; }
+    .header--scroll .nav__wrapper {
+      padding: 0 0 10px 0; }
+      .header--scroll .nav__wrapper--opened {
+        top: 170px; }
+    .header--scroll .header__language {
+      height: 36px;
+      font-size: 14px; }
   .header__user {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -640,16 +651,22 @@ body {
     align-items: center;
     width: auto; }
     .nav__list li {
-      margin: 0 0 20px 0; }
+      margin: 0 0 10px 0; }
       .nav__list li:last-child {
         margin: 0; }
+      .nav__list li a {
+        font-size: 14px; }
+        .nav__list li a:after {
+          top: 7px; }
   .nav__sub {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
-    padding: 0; } }
+    padding: 0; }
+    .nav__sub b {
+      font-size: 18px; } }
 
 .welcome {
   padding: 90px 0; }
