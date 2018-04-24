@@ -45,20 +45,33 @@
     }
     
     .nav {
-      position: absolute;
+      // position: relative;
       top: 0;
+      margin: -77px 0 0 0;
       padding: 28px 15px 27px 190px;
       transition: 0.5s;
     }
     
+    .nav__wrapper {
+      width: 100%;
+      
+      &--opened {
+        top: 76px;
+      }
+    }
+    
     .nav__sub {
-      width: auto;
-      padding: 30px 0 0 0;
+      // width: auto;
+      // padding: 30px 0 0 0;
     }
   }
   
   &--inner {
     width: 100%;
+  }
+  
+  &--menu {
+    background: rgba(47, 40, 97, 0.9);
   }
 }
 
@@ -237,14 +250,20 @@
     &--scroll {
       
       .header__flex {
-        padding: 18px 15px 90px 18px;
+        // padding: 18px 15px 90px 18px;
       }
       
       .nav {
-        top: 100px;
         width: 100%;
         margin: auto;
-        padding: 0;
+        padding: 18px 0;
+      }
+    }
+    
+    .nav__wrapper {
+      
+      &--opened {
+        top: 134px;
       }
     }
   }
@@ -324,7 +343,7 @@
       .header__open {
         
         &::before {
-          right: 5px;
+          right: 13px;
         }
       }
       
@@ -352,14 +371,12 @@
         }
       }
       
-      // .header__accounts {
-      //   border: 1px solid $mc;
-      //   background: $yc;
-      // 
-      //   li {
-      //     margin: 0;
-      //   }
-      // }
+      .nav__wrapper {
+        
+        &--opened {
+          top: 225px;
+        }
+      }
     }
   }
   
