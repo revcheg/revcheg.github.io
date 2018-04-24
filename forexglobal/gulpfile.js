@@ -7,15 +7,15 @@ var cssmin = require('gulp-cssmin');
 var jsmin = require('gulp-jsmin');
 var rename = require('gulp-rename');
 
-gulp.task('default', ['sass', 'watch', 'jsmin']);
+gulp.task('default', ['watch', 'main']);
 
 gulp.task('watch', function () {
   livereload.listen();
-  gulp.watch('sass/**/*.scss', ['sass']);
-  gulp.watch('js/*.js', ['jsmin']);
+  gulp.watch('sass/**/*.scss', ['main']);
+  gulp.watch('js/*.js', ['main']);
 });
 
-gulp.task('sass', function () {
+gulp.task('main', function () {
   gulp.src('sass/style.scss')
     .pipe(plumber())
     .pipe(sass())
@@ -28,9 +28,7 @@ gulp.task('sass', function () {
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('css'))
     .pipe(livereload());
-});
-
-gulp.task('jsmin', function () {
+    
   gulp.src('js/main.js')
     .pipe(jsmin())
     .pipe(rename({suffix: '.min'}))
