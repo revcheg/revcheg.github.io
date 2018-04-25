@@ -36,6 +36,16 @@ window.addEventListener('keydown', function(event) {
     openAccount.classList.remove('header__open--active');
     listAccount.classList.remove('header__accounts--opened');
     listAccount.classList.add('header__accounts--closed');
+    
+    navWrappers[0].classList.remove('nav__wrapper--opened');
+    navWrappers[0].classList.add('nav__wrapper--closed');
+    navWrappers[1].classList.remove('nav__wrapper--opened');
+    navWrappers[1].classList.add('nav__wrapper--closed');
+    navWrappers[2].classList.remove('nav__wrapper--opened');
+    navWrappers[2].classList.add('nav__wrapper--closed');
+    navWrappers[3].classList.remove('nav__wrapper--opened');
+    navWrappers[3].classList.add('nav__wrapper--closed');
+    header.classList.remove('header--menu');
   }
 });
 
