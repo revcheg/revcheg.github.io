@@ -45,6 +45,10 @@
       color: $mc;
     }
   }
+  
+  &--mobile {
+    width: 500px;
+  }
 }
 
 // WebTrader
@@ -94,6 +98,10 @@
   
   &--types {
     margin: 70px 0;
+  }
+  
+  &--mobile {
+    align-items: center;
   }
   
   &:first-child {
@@ -236,6 +244,16 @@
   
   &--desktop {
     background: url('../img/desktop-mockup.png') no-repeat center;
+    background-size: 471px;
+  }
+  
+  &--mobile-1 {
+    background: url('../img/mobile-mockup-1.png') no-repeat center;
+    background-size: 471px;
+  }
+  
+  &--mobile-2 {
+    background: url('../img/mobile-mockup-2.png') no-repeat center;
     background-size: 471px;
   }
 }
@@ -400,6 +418,9 @@
   }
 }
 
+// Mobile
+
+
 @media screen and ($tablet-widths) {
   .inner {
     padding: 200px 0 0 0;
@@ -468,6 +489,13 @@
     height: 250px;
   }
   
+  .inner__text {
+    
+    &--mobile {
+      width: auto;
+    }
+  }
+  
   .inner__flex {
     justify-content: center;
     
@@ -478,6 +506,10 @@
     &--down {
       width: auto;
       margin: 0;
+    }
+    
+    &--mobile {
+      flex-direction: column;
     }
     
     &:first-child {
