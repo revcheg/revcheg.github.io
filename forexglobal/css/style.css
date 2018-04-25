@@ -1410,319 +1410,6 @@ body {
     width: 98%;
     margin: 20px auto; } }
 
-.webtrader {
-  padding: 150px 0 0 0; }
-  .webtrader hr {
-    height: 1px;
-    margin: 50px 0;
-    border: none;
-    background: #b8b8b8; }
-
-.webtrader__name {
-  margin: 0 0 50px 0;
-  color: #2f2861;
-  font-size: 60px;
-  font-weight: 500;
-  text-align: center; }
-
-.webtrader__text {
-  color: #2f2861;
-  font-size: 18px;
-  font-weight: 300; }
-
-.webtrader__img {
-  margin: 70px 0 0 0;
-  background: url("../img/webtrader-mockup.png") no-repeat top;
-  background-size: 750px; }
-
-.webtrader__flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 30px 0 0 0; }
-  .webtrader__flex--down {
-    width: 500px;
-    margin: 30px auto 0; }
-  .webtrader__flex--list {
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .webtrader__flex:first-child {
-    padding: 40px 0 0 0; }
-
-.webtrader__box {
-  width: 200px;
-  text-align: center;
-  cursor: pointer; }
-  .webtrader__box b {
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    color: #2f2861;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 45px;
-    background: url("../img/webtrader-list.svg") no-repeat top;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-  .webtrader__box p {
-    color: #666666;
-    font-size: 12px;
-    font-weight: 300;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-  .webtrader__box:hover b {
-    color: #fff;
-    background: url("../img/webtrader-list-h.svg") no-repeat top; }
-  .webtrader__box:hover p {
-    color: #2f2861; }
-  .webtrader__box:hover::before {
-    border: 1px dashed #fac93e; }
-  .webtrader__box:hover::after {
-    opacity: 1; }
-
-.webtrader__box--right {
-  position: relative; }
-  .webtrader__box--right::before {
-    content: '';
-    position: absolute;
-    top: 21px;
-    left: 125px;
-    width: 200px;
-    border: 1px dashed #666;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-  .webtrader__box--right::after {
-    content: '';
-    position: absolute;
-    top: 17px;
-    left: 328px;
-    width: 10px;
-    height: 10px;
-    background: url("../img/webtrader-point.svg") no-repeat center;
-    opacity: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-
-.webtrader__box--left {
-  position: relative; }
-  .webtrader__box--left::before {
-    content: '';
-    position: absolute;
-    top: 21px;
-    left: -125px;
-    width: 200px;
-    border: 1px dashed #666;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-  .webtrader__box--left::after {
-    content: '';
-    position: absolute;
-    top: 17px;
-    left: -136px;
-    width: 10px;
-    height: 10px;
-    background: url("../img/webtrader-point.svg") no-repeat center;
-    opacity: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-
-.webtrader__box--up {
-  position: relative; }
-  .webtrader__box--up::before {
-    content: '';
-    position: absolute;
-    top: -154px;
-    left: 100px;
-    height: 150px;
-    border: 1px dashed #666;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-  .webtrader__box--up::after {
-    content: '';
-    position: absolute;
-    top: -165px;
-    left: 96px;
-    width: 10px;
-    height: 10px;
-    background: url("../img/webtrader-point.svg") no-repeat center;
-    opacity: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-
-.webtrader__mockup {
-  width: 471px;
-  height: 536px;
-  background: url("../img/webtrader-mockup-2.png") no-repeat top;
-  background-size: 471px; }
-
-.webtrader__list {
-  color: #2f2861;
-  font-size: 18px; }
-  .webtrader__list b {
-    font-weight: 700;
-    text-transform: uppercase; }
-  .webtrader__list ul {
-    margin: 20px 0 0 0;
-    padding: 0;
-    font-weight: 300;
-    list-style-position: inside;
-    list-style-image: url("../img/webtrader-li.svg"); }
-    .webtrader__list ul li {
-      margin: 0 0 15px 0; }
-
-.webtrader__try h2 {
-  margin: 0 0 30px 0;
-  color: #2f2861;
-  font-size: 40px;
-  font-weight: normal;
-  text-align: center; }
-
-.webtrader__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0 0 60px 0; }
-
-.webtrader__real {
-  position: relative;
-  margin: 0 15px 0 0;
-  padding: 10px 0;
-  color: #2f2861;
-  width: 170px;
-  font-size: 15px;
-  font-weight: 500;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  line-height: 10px;
-  border-radius: 3px;
-  background: #fac93e; }
-  .webtrader__real span {
-    font-size: 10px;
-    font-weight: normal; }
-  .webtrader__real:after {
-    content: 'Trading involves risk of loss';
-    position: absolute;
-    left: 0;
-    bottom: -15px;
-    width: 100%;
-    color: #333333;
-    font-size: 12px;
-    font-weight: normal;
-    text-transform: none; }
-
-.webtrader__demo {
-  margin: 0 0 0 15px;
-  padding: 9px 0;
-  color: #2f2861;
-  width: 168px;
-  font-size: 15px;
-  font-weight: 500;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  line-height: 10px;
-  border: 1px solid #2f2861;
-  border-radius: 3px; }
-  .webtrader__demo span {
-    font-size: 10px;
-    font-weight: normal; }
-
-@media screen and (max-width: 1200px) {
-  .webtrader {
-    padding: 200px 0 0 0; }
-  .webtrader__text {
-    padding: 0 15px; }
-  .webtrader__img {
-    padding: 0 15px;
-    background-size: 500px;
-    background-position-y: 80px; }
-  .webtrader__flex--down {
-    width: 400px;
-    margin: 0 auto; }
-  .webtrader__flex:first-child {
-    padding: 0; }
-  .webtrader__box {
-    width: 150px; }
-  .webtrader__box--right::before, .webtrader__box--right::after,
-  .webtrader__box--left::before,
-  .webtrader__box--left::after,
-  .webtrader__box--up::before,
-  .webtrader__box--up::after {
-    display: none; }
-  .webtrader__mockup {
-    width: 400px;
-    height: 460px;
-    background-size: 400px; } }
-
-@media screen and (max-width: 768px) {
-  .webtrader {
-    padding: 100px 0 0 0; }
-  .webtrader__name {
-    margin: 0 0 20px 0;
-    font-size: 40px; }
-  .webtrader__img {
-    background-size: 300px;
-    background-position-y: 0; }
-  .webtrader__flex {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    .webtrader__flex--list {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column; }
-    .webtrader__flex--down {
-      width: auto;
-      margin: 0; }
-    .webtrader__flex:first-child {
-      padding: 220px 0 0 0; }
-  .webtrader__mockup {
-    width: 300px;
-    height: 350px;
-    background-size: 300px; }
-  .webtrader__list {
-    margin: 30px 0 0 0;
-    padding: 0 15px; }
-  .webtrader__links {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  .webtrader__real {
-    margin: 0; }
-  .webtrader__demo {
-    margin: 30px 0 0 0; } }
-
-.account-types {
-  padding: 150px 0 70px 0; }
-
-.account-types__name {
-  margin: 0 0 50px 0;
-  color: #2f2861;
-  font-size: 60px;
-  font-weight: 500;
-  text-align: center; }
-
-.account-types__text {
-  margin: 0 0 70px 0;
-  color: #2f2861;
-  font-size: 18px;
-  font-weight: 300; }
-
 .account-types__flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1761,9 +1448,9 @@ body {
   .account-types__box hr {
     width: 30px;
     height: 1px;
-    margin: 20px auto;
+    margin: 20px auto !important;
     border: none;
-    background: #fac93e; }
+    background: #fac93e !important; }
   .account-types__box ul {
     margin: 0;
     padding: 0;
@@ -1829,51 +1516,6 @@ body {
     margin: 0 0 20px 0;
     font-size: 40px; } }
 
-.account-comparison {
-  padding: 150px 0 70px 0; }
-
-.account-comparison__name {
-  margin: 0 0 50px 0;
-  color: #2f2861;
-  font-size: 60px;
-  font-weight: 500;
-  text-align: center; }
-
-.account-comparison__text {
-  margin: 0 0 70px 0;
-  color: #2f2861;
-  font-size: 18px;
-  font-weight: 300; }
-
-.product-specification {
-  padding: 150px 0 70px 0; }
-
-.product-specification__name {
-  margin: 0 0 50px 0;
-  color: #2f2861;
-  font-size: 60px;
-  font-weight: 500;
-  text-align: center; }
-
-.product-specification__text {
-  margin: 0 0 70px 0;
-  color: #2f2861;
-  font-size: 18px;
-  font-weight: 300; }
-
-@media screen and (max-width: 1200px) {
-  .product-specification {
-    padding: 200px 0 0 0; }
-  .product-specification__text {
-    padding: 0 15px; } }
-
-@media screen and (max-width: 768px) {
-  .product-specification {
-    padding: 100px 0 0 0; }
-  .product-specification__name {
-    margin: 0 0 20px 0;
-    font-size: 40px; } }
-
 .tab {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1881,6 +1523,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin: 30px 0 0 0;
   overflow: hidden; }
 
 .tab__button {
@@ -1971,239 +1614,6 @@ body {
     width: 100%;
     border-radius: 0; } }
 
-.security {
-  padding: 150px 0 70px 0; }
-
-.security__name {
-  margin: 0 0 50px 0;
-  color: #2f2861;
-  font-size: 60px;
-  font-weight: 500;
-  text-align: center; }
-
-.security__img {
-  width: 300px;
-  height: 300px;
-  margin: 50px auto;
-  background: url("../img/security-img.svg") no-repeat top; }
-
-.security__text {
-  color: #2f2861; }
-  .security__text b {
-    font-size: 20px;
-    font-weight: 500; }
-  .security__text p {
-    margin: 0 0 18px 0;
-    font-size: 18px;
-    font-weight: 300; }
-  .security__text a {
-    color: #6420ff;
-    font-weight: 500;
-    text-decoration: none;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-    .security__text a:hover {
-      color: #fac93e; }
-
-@media screen and (max-width: 1200px) {
-  .security {
-    padding: 200px 0 70px 0; }
-  .security__text {
-    padding: 0 15px; } }
-
-@media screen and (max-width: 768px) {
-  .security {
-    padding: 100px 0 30px 0; }
-  .security__name {
-    margin: 0 0 20px 0;
-    font-size: 40px; }
-  .security__img {
-    width: 250px;
-    height: 250px; } }
-
-.stp {
-  padding: 150px 0 70px 0; }
-
-.stp__name {
-  margin: 0 0 50px 0;
-  color: #2f2861;
-  font-size: 60px;
-  font-weight: 500;
-  text-align: center; }
-
-.stp__img {
-  width: 300px;
-  height: 300px;
-  margin: 50px auto;
-  background: url("../img/stp-img.svg") no-repeat top; }
-
-.stp__text {
-  color: #2f2861; }
-  .stp__text b {
-    font-size: 20px;
-    font-weight: 500; }
-  .stp__text p {
-    margin: 0 0 18px 0;
-    font-size: 18px;
-    font-weight: 300; }
-  .stp__text a {
-    color: #6420ff;
-    font-weight: 500;
-    text-decoration: none;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-    .stp__text a:hover {
-      color: #fac93e; }
-
-@media screen and (max-width: 1200px) {
-  .stp {
-    padding: 200px 0 70px 0; }
-  .stp__text {
-    padding: 0 15px; } }
-
-@media screen and (max-width: 768px) {
-  .stp {
-    padding: 100px 0 30px 0; }
-  .stp__name {
-    margin: 0 0 20px 0;
-    font-size: 40px; }
-  .stp__img {
-    width: 250px;
-    height: 250px; } }
-
-.kids {
-  padding: 150px 0 70px 0; }
-
-.kids__name {
-  margin: 0 0 50px 0;
-  color: #2f2861;
-  font-size: 60px;
-  font-weight: 500;
-  text-align: center; }
-
-.kids__img {
-  width: 300px;
-  height: 300px;
-  margin: 50px auto;
-  background: url("../img/kids-img.svg") no-repeat top; }
-
-.kids__text {
-  color: #2f2861; }
-  .kids__text b {
-    display: block;
-    padding: 0 0 20px 0;
-    font-size: 20px;
-    font-weight: 500; }
-  .kids__text p {
-    margin: 0 0 18px 0;
-    font-size: 18px;
-    font-weight: 300; }
-  .kids__text a {
-    color: #6420ff;
-    font-weight: 500;
-    text-decoration: none;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-    .kids__text a:hover {
-      color: #fac93e; }
-
-@media screen and (max-width: 1200px) {
-  .kids {
-    padding: 200px 0 70px 0; }
-  .kids__text {
-    padding: 0 15px; } }
-
-@media screen and (max-width: 768px) {
-  .kids {
-    padding: 100px 0 30px 0; }
-  .kids__name {
-    margin: 0 0 20px 0;
-    font-size: 40px; }
-  .kids__img {
-    width: 250px;
-    height: 250px; } }
-
-.careers {
-  padding: 150px 0 70px 0; }
-
-.careers__name {
-  margin: 0 0 50px 0;
-  color: #2f2861;
-  font-size: 60px;
-  font-weight: 500;
-  text-align: center; }
-
-.careers__img {
-  width: 300px;
-  height: 300px;
-  margin: 50px auto;
-  background: url("../img/careers-img.svg") no-repeat top; }
-
-.careers__text {
-  color: #2f2861; }
-  .careers__text b {
-    display: block;
-    padding: 0 0 20px 0;
-    font-size: 20px;
-    font-weight: 500; }
-  .careers__text p {
-    margin: 0 0 18px 0;
-    font-size: 18px;
-    font-weight: 300; }
-  .careers__text a {
-    color: #6420ff;
-    font-weight: 500;
-    text-decoration: none;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-    .careers__text a:hover {
-      color: #fac93e; }
-
-.careers__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  .careers__links a {
-    width: 200px;
-    padding: 100px 0 0 0;
-    text-align: center;
-    background: url("../img/careers-links.svg") no-repeat top;
-    background-size: 100px; }
-
-@media screen and (max-width: 1200px) {
-  .careers {
-    padding: 200px 0 70px 0; }
-  .careers__text {
-    padding: 0 15px; } }
-
-@media screen and (max-width: 768px) {
-  .careers {
-    padding: 100px 0 30px 0; }
-  .careers__name {
-    margin: 0 0 20px 0;
-    font-size: 40px; }
-  .careers__img {
-    width: 250px;
-    height: 250px; } }
-
-.announcements {
-  padding: 150px 0 0 0; }
-  .announcements hr {
-    height: 1px;
-    margin: 50px 0;
-    border: none;
-    background: #b8b8b8; }
-
-.announcements__name {
-  margin: 0 0 50px 0;
-  color: #2f2861;
-  font-size: 60px;
-  font-weight: 500;
-  text-align: center; }
-
 .announcements__list {
   padding: 0;
   list-style: none; }
@@ -2219,19 +1629,6 @@ body {
     transition: 0.3s; }
     .announcements__list a:hover {
       color: #2f2861; }
-
-@media screen and (max-width: 1200px) {
-  .announcements {
-    padding: 200px 0 0 0; }
-  .announcements__text {
-    padding: 0 15px; } }
-
-@media screen and (max-width: 768px) {
-  .announcements {
-    padding: 100px 0 0 0; }
-  .announcements__name {
-    margin: 0 0 20px 0;
-    font-size: 40px; } }
 
 .contact {
   padding: 150px 0 0 0; }
@@ -2407,21 +1804,6 @@ body {
     width: 300px;
     margin: 20px 0 0 0; } }
 
-.glossary {
-  padding: 150px 0 70px 0; }
-  .glossary hr {
-    height: 1px;
-    margin: 50px 0;
-    border: none;
-    background: #b8b8b8; }
-
-.glossary__name {
-  margin: 0 0 50px 0;
-  color: #2f2861;
-  font-size: 60px;
-  font-weight: 500;
-  text-align: center; }
-
 .glossary__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2449,21 +1831,300 @@ body {
       color: #6420ff;
       font-size: 40px; }
 
-.glossary__content details {
+.inner {
+  padding: 150px 0 70px 0; }
+  .inner hr {
+    height: 1px;
+    margin: 50px 0;
+    border: none;
+    background: #b8b8b8; }
+
+.inner__name {
+  margin: 0 0 50px 0;
+  color: #2f2861;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center; }
+
+.inner__text {
+  color: #2f2861;
+  font-size: 18px;
+  font-weight: 300; }
+  .inner__text b {
+    display: block;
+    padding: 0 0 20px 0;
+    font-size: 20px;
+    font-weight: 500; }
+  .inner__text p {
+    margin: 0 0 18px 0;
+    font-size: 18px;
+    font-weight: 300; }
+  .inner__text a {
+    color: #6420ff;
+    font-weight: 500;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .inner__text a:hover {
+      color: #fac93e; }
+
+.inner__img {
+  margin: 70px 0 0 0;
+  background: url("../img/webtrader-mockup.png") no-repeat top;
+  background-size: 750px; }
+
+.inner__icon {
+  width: 300px;
+  height: 300px;
+  margin: 50px auto; }
+  .inner__icon--careers {
+    background: url("../img/careers-img.svg") no-repeat top; }
+  .inner__icon--kids {
+    background: url("../img/kids-img.svg") no-repeat top; }
+  .inner__icon--security {
+    background: url("../img/security-img.svg") no-repeat top; }
+  .inner__icon--stp {
+    background: url("../img/stp-img.svg") no-repeat top; }
+
+.inner__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 30px 0 0 0; }
+  .inner__flex--down {
+    width: 500px;
+    margin: 30px auto 0; }
+  .inner__flex--list {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .inner__flex--types {
+    margin: 70px 0; }
+  .inner__flex:first-child {
+    padding: 40px 0 0 0; }
+
+.inner__box {
+  width: 200px;
+  text-align: center;
+  cursor: pointer; }
+  .inner__box b {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    color: #2f2861;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 45px;
+    background: url("../img/webtrader-list.svg") no-repeat top;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .inner__box p {
+    color: #666666;
+    font-size: 12px;
+    font-weight: 300;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .inner__box:hover b {
+    color: #fff;
+    background: url("../img/webtrader-list-h.svg") no-repeat top; }
+  .inner__box:hover p {
+    color: #2f2861; }
+  .inner__box:hover::before {
+    border: 1px dashed #fac93e; }
+  .inner__box:hover::after {
+    opacity: 1; }
+
+.inner__box--right {
+  position: relative; }
+  .inner__box--right::before {
+    content: '';
+    position: absolute;
+    top: 21px;
+    left: 125px;
+    width: 200px;
+    border: 1px dashed #666;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .inner__box--right::after {
+    content: '';
+    position: absolute;
+    top: 17px;
+    left: 328px;
+    width: 10px;
+    height: 10px;
+    background: url("../img/webtrader-point.svg") no-repeat center;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+
+.inner__box--left {
+  position: relative; }
+  .inner__box--left::before {
+    content: '';
+    position: absolute;
+    top: 21px;
+    left: -125px;
+    width: 200px;
+    border: 1px dashed #666;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .inner__box--left::after {
+    content: '';
+    position: absolute;
+    top: 17px;
+    left: -136px;
+    width: 10px;
+    height: 10px;
+    background: url("../img/webtrader-point.svg") no-repeat center;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+
+.inner__box--up {
+  position: relative; }
+  .inner__box--up::before {
+    content: '';
+    position: absolute;
+    top: -154px;
+    left: 100px;
+    height: 150px;
+    border: 1px dashed #666;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .inner__box--up::after {
+    content: '';
+    position: absolute;
+    top: -165px;
+    left: 96px;
+    width: 10px;
+    height: 10px;
+    background: url("../img/webtrader-point.svg") no-repeat center;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+
+.inner__mockup {
+  width: 471px;
+  height: 536px;
+  background: url("../img/webtrader-mockup-2.png") no-repeat top;
+  background-size: 471px; }
+
+.inner__list {
+  color: #2f2861;
+  font-size: 18px; }
+  .inner__list b {
+    font-weight: 700;
+    text-transform: uppercase; }
+  .inner__list ul {
+    margin: 20px 0 0 0;
+    padding: 0;
+    font-weight: 300;
+    list-style-position: inside;
+    list-style-image: url("../img/webtrader-li.svg"); }
+    .inner__list ul li {
+      margin: 0 0 15px 0; }
+
+.inner__try h2 {
+  margin: 0 0 30px 0;
+  color: #2f2861;
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center; }
+
+.inner__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .inner__links--careers {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch; }
+
+.inner__real {
+  position: relative;
+  margin: 0 15px 0 0;
+  padding: 10px 0;
+  color: #2f2861;
+  width: 170px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 10px;
+  border-radius: 3px;
+  background: #fac93e; }
+  .inner__real span {
+    font-size: 10px;
+    font-weight: normal; }
+  .inner__real:after {
+    content: 'Trading involves risk of loss';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 100%;
+    color: #333333;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: none; }
+
+.inner__demo {
+  margin: 0 0 0 15px;
+  padding: 9px 0;
+  color: #2f2861;
+  width: 168px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 10px;
+  border: 1px solid #2f2861;
+  border-radius: 3px; }
+  .inner__demo span {
+    font-size: 10px;
+    font-weight: normal; }
+
+.inner__download {
+  width: 200px;
+  padding: 100px 0 0 0;
+  text-align: center;
+  background: url("../img/careers-links.svg") no-repeat top;
+  background-size: 100px; }
+
+.inner__content h2 {
+  margin: 0;
+  padding: 0 15px;
+  color: #2f2861;
+  font-size: 30px;
+  font-weight: 500; }
+
+.inner__content details {
   padding: 15px;
   border-bottom: 1px solid #6420ff;
   -webkit-transition: 1s;
   transition: 1s; }
-  .glossary__content details summary {
+  .inner__content details summary {
     position: relative;
     color: #2f2861;
     font-size: 18px;
     font-weight: 500;
     outline: none;
     cursor: pointer; }
-    .glossary__content details summary::-webkit-details-marker {
+    .inner__content details summary::-webkit-details-marker {
       display: none; }
-    .glossary__content details summary:after {
+    .inner__content details summary:after {
       content: '';
       position: absolute;
       top: 7px;
@@ -2473,23 +2134,80 @@ body {
       background: url("../img/details-marker.svg") no-repeat center;
       -webkit-transition: 0.3s;
       transition: 0.3s; }
-  .glossary__content details[open] summary:after {
+  .inner__content details[open] summary:after {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg); }
-  .glossary__content details p {
+  .inner__content details p {
     color: #2f2861;
     font-size: 18px;
     font-weight: 300; }
 
 @media screen and (max-width: 1200px) {
-  .glossary {
+  .inner {
     padding: 200px 0 0 0; }
-  .glossary__text {
-    padding: 0 15px; } }
+  .inner__text {
+    padding: 0 15px; }
+  .inner__img {
+    padding: 0 15px;
+    background-size: 500px;
+    background-position-y: 80px; }
+  .inner__flex--down {
+    width: 400px;
+    margin: 0 auto; }
+  .inner__flex:first-child {
+    padding: 0; }
+  .inner__box {
+    width: 150px; }
+  .inner__box--right::before, .inner__box--right::after,
+  .inner__box--left::before,
+  .inner__box--left::after,
+  .inner__box--up::before,
+  .inner__box--up::after {
+    display: none; }
+  .inner__mockup {
+    width: 400px;
+    height: 460px;
+    background-size: 400px; } }
 
 @media screen and (max-width: 768px) {
-  .glossary {
+  .inner {
     padding: 100px 0 0 0; }
-  .glossary__name {
+  .inner__name {
     margin: 0 0 20px 0;
-    font-size: 40px; } }
+    font-size: 40px; }
+  .inner__img {
+    background-size: 300px;
+    background-position-y: 0; }
+  .inner__icon {
+    width: 250px;
+    height: 250px; }
+  .inner__flex {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .inner__flex--list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .inner__flex--down {
+      width: auto;
+      margin: 0; }
+    .inner__flex:first-child {
+      padding: 220px 0 0 0; }
+  .inner__mockup {
+    width: 300px;
+    height: 350px;
+    background-size: 300px; }
+  .inner__list {
+    margin: 30px 0 0 0;
+    padding: 0 15px; }
+  .inner__links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .inner__real {
+    margin: 0; }
+  .inner__demo {
+    margin: 30px 0 0 0; } }
