@@ -2215,6 +2215,13 @@ body {
     height: 250px; }
   .inner__text--mobile {
     width: auto; }
+  .inner__text--cysec {
+    padding: 20px 15px; }
+    .inner__text--cysec h2 {
+      margin: 0 0 30px 0;
+      font-size: 30px; }
+    .inner__text--cysec:last-child {
+      margin: 0; }
   .inner__flex {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
