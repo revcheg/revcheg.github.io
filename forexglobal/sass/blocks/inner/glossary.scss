@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  // flex-wrap: wrap;
   height: 60px;
   margin: 10px 0;
   padding: 0;
@@ -29,4 +30,15 @@
 
 @media screen and ($tablet-widths) {}
 
-@media screen and ($mobile-widths) {}
+@media screen and ($mobile-widths) {
+  .glossary__button {
+    justify-content: center;
+    
+    li {
+    
+      button {
+        font-size: 15px;
+      }  
+    }
+  }
+}

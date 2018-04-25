@@ -1832,6 +1832,14 @@ body {
       color: #6420ff;
       font-size: 40px; }
 
+@media screen and (max-width: 768px) {
+  .glossary__button {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .glossary__button li button {
+      font-size: 15px; } }
+
 .inner {
   padding: 150px 0 70px 0; }
   .inner hr {
