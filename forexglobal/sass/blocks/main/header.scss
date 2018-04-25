@@ -258,12 +258,12 @@
         margin: auto;
         padding: 18px 0;
       }
-    }
-    
-    .nav__wrapper {
       
-      &--opened {
-        top: 134px;
+      .nav__wrapper {
+        
+        &--opened {
+          top: 134px;
+        }
       }
     }
   }
