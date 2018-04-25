@@ -227,8 +227,17 @@
 .inner__mockup {
   width: 471px;
   height: 536px;
-  background: url('../img/webtrader-mockup-2.png') no-repeat top;
-  background-size: 471px;
+  // background-size: 471px;
+  
+  &--webtrader {
+    background: url('../img/webtrader-mockup-2.png') no-repeat top;
+    background-size: 471px;
+  }
+  
+  &--desktop {
+    background: url('../img/desktop-mockup.png') no-repeat center;
+    background-size: 471px;
+  }
 }
 
 .inner__list {

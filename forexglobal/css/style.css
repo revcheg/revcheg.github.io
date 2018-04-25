@@ -1824,6 +1824,7 @@ body {
     font-weight: 500;
     font-family: inherit;
     border: none;
+    background: transparent;
     cursor: pointer;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
@@ -2010,9 +2011,13 @@ body {
 
 .inner__mockup {
   width: 471px;
-  height: 536px;
-  background: url("../img/webtrader-mockup-2.png") no-repeat top;
-  background-size: 471px; }
+  height: 536px; }
+  .inner__mockup--webtrader {
+    background: url("../img/webtrader-mockup-2.png") no-repeat top;
+    background-size: 471px; }
+  .inner__mockup--desktop {
+    background: url("../img/desktop-mockup.png") no-repeat center;
+    background-size: 471px; }
 
 .inner__list {
   color: #2f2861;
