@@ -1870,6 +1870,21 @@ body {
       color: #fac93e; }
   .inner__text--mobile {
     width: 500px; }
+  .inner__text--cysec {
+    margin: 0 0 40px 0;
+    padding: 50px 20px;
+    border: 1px solid #6420ff;
+    border-radius: 3px; }
+    .inner__text--cysec h2 {
+      margin: 0 0 50px 0;
+      color: #fac93e;
+      font-size: 50px;
+      font-weight: 500;
+      text-align: center; }
+    .inner__text--cysec b {
+      padding: 0; }
+    .inner__text--cysec ul, .inner__text--cysec ol {
+      margin: 10px 0 20px 0; }
 
 .inner__img {
   margin: 70px 0 0 0;
