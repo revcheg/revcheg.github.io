@@ -384,7 +384,7 @@
     }
     
     p {
-      color: $sc;
+      color: #6420ff;
       font-size: 16px;
       font-weight: 300;
     }
@@ -441,7 +441,7 @@
 
 @media screen and ($mobile-widths) {
   .inner {
-    padding: 100px 0 0 0;
+    padding: 100px 0 50px 0;
   }
   
   .inner__name {
@@ -497,5 +497,24 @@
   
   .inner__demo {
     margin: 30px 0 0 0;
+  }
+  
+  .inner__content {
+    padding: 0 15px;
+    
+    h2 {
+      text-align: center;
+    }
+    
+    details {
+      
+      summary {
+        padding: 0 15px 0 0;
+      }
+    }
+    
+    p {
+      margin: 16px 0 0 0;
+    }
   }
 }
