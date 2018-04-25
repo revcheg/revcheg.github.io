@@ -1885,6 +1885,8 @@ body {
       padding: 0; }
     .inner__text--cysec ul, .inner__text--cysec ol {
       margin: 10px 0 20px 0; }
+  .inner__text--legal {
+    text-align: center; }
 
 .inner__img {
   margin: 70px 0 0 0;
@@ -1903,6 +1905,8 @@ body {
     background: url("../img/security-img.svg") no-repeat top; }
   .inner__icon--stp {
     background: url("../img/stp-img.svg") no-repeat top; }
+  .inner__icon--legal {
+    background: url("../img/legal-img.svg") no-repeat top; }
 
 .inner__flex {
   display: -webkit-box;

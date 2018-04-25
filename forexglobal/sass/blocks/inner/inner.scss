@@ -72,6 +72,10 @@
       margin: 10px 0 20px 0;
     }
   }
+  
+  &--legal {
+    text-align: center;
+  }
 }
 
 // WebTrader
@@ -101,6 +105,10 @@
   
   &--stp {
     background: url('../img/stp-img.svg') no-repeat top;
+  }
+  
+  &--legal {
+    background: url('../img/legal-img.svg') no-repeat top;
   }
 }
 
