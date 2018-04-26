@@ -80,6 +80,11 @@
   &--legal {
     text-align: center;
   }
+  
+  &--platforms {
+    margin: 0 0 60px 0;
+    text-align: center;
+  }
 }
 
 // WebTrader
@@ -136,6 +141,10 @@
   }
   
   &--mobile {
+    align-items: center;
+  }
+  
+  &--platforms {
     align-items: center;
   }
   
@@ -453,8 +462,100 @@
   }
 }
 
-// Mobile
+// Platdorms
+.inner__mockup {
+  
+  &--web {
+    width: 600px;
+    height: 330px;
+    background: url('../img/tabs-mockup.png') no-repeat center;
+    background-size: cover;
+  }
+  
+  &--mob {
+    width: 600px;
+    height: 400px;
+    background: url('../img/mobile-mockup-1.png') no-repeat center;
+    background-size: cover;
+  }
+  
+  &--des {
+    width: 570px;
+    height: 385px;
+    background: url('../img/desktop-mockup.png') no-repeat center;
+    background-size: cover;
+  }
+  
+  &--zulu {
+    width: 461px;
+    height: 455px;
+    background: url('../img/zulutrade-mockup.png') no-repeat center;
+    background-size: cover;
+  }
+}
 
+.inner__desc {
+  width: 570px;
+  
+  b {
+    color: $sc;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  
+  hr {
+    width: 70px;
+    margin: 20px 0;
+    border: none;
+    background: $mc;
+  }
+  
+  p {
+    margin: 0 0 40px 0;
+    color: $sc;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+.inner__button {
+  display: inline-block;
+  width: 170px;
+  padding: 10px 0;
+  color: $sc;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: 0.3s;
+  
+  &--start {
+    position: relative;
+    margin: 0 30px 0 0;
+    background: $mc;
+    
+    &:hover {
+      box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
+      background: #ffd800;
+    }
+    
+    &:after {
+      content: 'Trading involves risk of loss';
+      position: absolute;
+      width: inherit;
+      left: 0;
+      bottom: -15px;
+      font-size: 10px;
+    }
+  }
+  
+  &--more {
+    width: 168px;
+    padding: 9px 0;
+    border: 1px solid $sc;
+  }
+}
 
 @media screen and ($tablet-widths) {
   .inner {
@@ -580,6 +681,21 @@
       margin: 70px 0 40px 0;
     }
     
+    &--platforms {
+      flex-direction: column;
+    }
+    
+    &--mobile {
+      
+      .inner__mockup {
+        order: 1;
+      }
+      
+      .inner__desc {
+        order: 2;
+      }
+    }
+    
     &:first-child {
       padding: 220px 0 0 0;
     }
@@ -628,6 +744,29 @@
     
     p {
       margin: 16px 0 0 0;
+    }
+  }
+  
+  .inner__desc {
+    width: auto;
+    padding: 0 15px;
+    
+    b {
+      display: block;
+      text-align: center;
+    }
+    
+    hr {
+      margin: 20px auto;
+    }
+  }
+  
+  .inner__button {
+    display: block;
+    margin: auto;
+    
+    &--start {
+      margin: 0 auto 30px ;
     }
   }
 }
