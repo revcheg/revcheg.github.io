@@ -229,3 +229,10 @@ function openFile(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " tab__active";
 }
+
+// Video
+// var zulutradeVideo = document.querySelector('.zulu__video');
+// 
+// zulutradeVideo.addEventListener('click', function () {
+//   zulutradeVideo.setAttribute('muted', false);
+// });
