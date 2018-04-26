@@ -459,6 +459,10 @@
 @media screen and ($tablet-widths) {
   .inner {
     padding: 200px 0 70px 0;
+    
+    &--zulu {
+      padding: 50px 0 70px 0;
+    }
   }
   
   .inner__text {
@@ -507,6 +511,15 @@
 @media screen and ($mobile-widths) {
   .inner {
     padding: 100px 0 50px 0;
+    
+    &--zulu {
+      padding: 50px 0;
+      
+      .tab__table {
+        display: block;
+        overflow-x: scroll;
+      }
+    }
   }
   
   .inner__name {

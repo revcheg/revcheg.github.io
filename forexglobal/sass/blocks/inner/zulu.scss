@@ -104,4 +104,121 @@
   color: $sc;
   font-size: 16px;
   font-weight: 300;
+  
+  a {
+    color: #6420ff;
+    text-decoration: none;
+  }
+}
+
+.zulu__accordion {
+  background-color: $mc;
+  color: $sc;
+  cursor: pointer;
+  margin: 0 0 10px 0;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: inherit;
+  transition: 0.4s;
+  
+  &:after {
+    content: '\002B';
+    color: $sc;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    transition: 0.3s;
+  }
+}
+
+.active {
+  color: $mc;
+  background-color: $sc;
+}
+
+.active:after {
+  content: "\2212";
+  color: $mc;
+}
+
+.zulu__content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  
+  p {
+    font-weight: 300;
+  }
+}
+
+.zulu__right {
+  width: 505px;
+  height: 390px;
+  background: url('../img/zulutrade-guard.png') no-repeat center;
+  background-size: cover;
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .zulu__video {
+    height: auto;
+    margin: 72px 0 0 0;
+  }
+  
+  .zulu__control {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .zulu__flex {
+    flex-direction: column;
+  }
+  
+  .zulu__mockup {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  
+  .zulu__list {
+    margin: 20px 0 0 0;
+    
+    li {
+      
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+  
+  .zulu__left {
+    width: auto;
+    margin: 0 0 20px 0;
+    padding: 0 15px;
+    
+    a {
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  .zulu__iframe {
+    width: 300px;
+    // height: auto;
+  }
+  
+  .zulu__right {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
 }
