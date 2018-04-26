@@ -1613,6 +1613,8 @@ body {
   .tab__content ul {
     color: #2f2861;
     font-weight: 300; }
+  .tab__content--forex {
+    display: block; }
 
 .tab__table {
   width: 100%;
@@ -1873,6 +1875,8 @@ body {
     margin: 50px 0;
     border: none;
     background: #b8b8b8; }
+  .inner--zulu {
+    padding: 80px 0; }
 
 .inner__name {
   margin: 0 0 50px 0;
@@ -2428,6 +2432,83 @@ body {
   object-fit: fill; }
 
 .zulu__control {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 80px;
   height: 80px;
-  background: #000; }
+  border: none;
+  background: transparent url("../img/zulutrade-play.svg") no-repeat center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  outline: none; }
+
+.zulu__start {
+  display: block;
+  width: 270px;
+  margin: 50px auto 0;
+  padding: 10px 0;
+  color: #2f2861;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  background: #fac93e;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .zulu__start:hover {
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
+    box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
+    background: #ffd800; }
+
+.zulu__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.zulu__mockup {
+  width: 508px;
+  height: 502px;
+  background: url("../img/zulutrade-mockup.png") no-repeat center; }
+
+.zulu__list {
+  margin: 0;
+  padding: 0; }
+  .zulu__list li {
+    color: #2f2861;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 40px;
+    list-style-position: inside;
+    list-style-image: url("../img/webtrader-li.svg"); }
+    .zulu__list li:first-child {
+      margin: 0 0 30px 0;
+      text-transform: uppercase;
+      list-style: none; }
+  .zulu__list--second li:first-child {
+    margin: 0;
+    text-transform: none;
+    list-style: url("../img/webtrader-li.svg");
+    list-style-position: inside; }
+
+.zulu__name {
+  margin: 0 0 35px 0;
+  color: #2f2861;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center; }
+
+.zulu__left {
+  width: 570px;
+  color: #2f2861;
+  font-size: 16px;
+  font-weight: 300; }

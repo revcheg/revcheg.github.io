@@ -231,8 +231,10 @@ function openFile(evt, cityName) {
 }
 
 // Video
-// var zulutradeVideo = document.querySelector('.zulu__video');
-// 
-// zulutradeVideo.addEventListener('click', function () {
-//   zulutradeVideo.setAttribute('muted', false);
-// });
+var zulutradeVideo = document.querySelector('.zulu__video');
+var zulutradeButton = document.querySelector('.zulu__control');
+
+zulutradeButton.addEventListener('click', function () {
+  zulutradeVideo.play();
+  zulutradeButton.style.opacity = '0';
+});
