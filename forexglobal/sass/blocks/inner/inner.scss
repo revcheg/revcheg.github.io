@@ -454,7 +454,7 @@
 
 @media screen and ($tablet-widths) {
   .inner {
-    padding: 200px 0 0 0;
+    padding: 200px 0 70px 0;
   }
   
   .inner__text {
@@ -516,8 +516,9 @@
   }
   
   .inner__icon {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
   }
   
   .inner__text {
@@ -528,6 +529,7 @@
     
     &--cysec {
       padding: 20px 15px;
+      border: none;
       
       h2 {
         margin: 0 0 30px 0;

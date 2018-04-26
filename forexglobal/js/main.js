@@ -45,6 +45,12 @@ window.addEventListener('keydown', function(event) {
     navWrappers[2].classList.add('nav__wrapper--closed');
     navWrappers[3].classList.remove('nav__wrapper--opened');
     navWrappers[3].classList.add('nav__wrapper--closed');
+    
+    navLinks[0].classList.remove('nav__link--active');
+    navLinks[1].classList.remove('nav__link--active');
+    navLinks[2].classList.remove('nav__link--active');
+    navLinks[3].classList.remove('nav__link--active');
+    
     header.classList.remove('header--menu');
   }
 });
@@ -64,10 +70,19 @@ function about () {
     navWrappers[2].classList.add('nav__wrapper--closed');
     navWrappers[3].classList.remove('nav__wrapper--opened');
     navWrappers[3].classList.add('nav__wrapper--closed');
+    
+    navLinks[0].classList.add('nav__link--active');
+    navLinks[1].classList.remove('nav__link--active');
+    navLinks[2].classList.remove('nav__link--active');
+    navLinks[3].classList.remove('nav__link--active');
+    
     header.classList.add('header--menu');
   } else {
     navWrappers[0].classList.remove('nav__wrapper--opened');
     navWrappers[0].classList.add('nav__wrapper--closed');
+    
+    navLinks[0].classList.remove('nav__link--active');
+    
     header.classList.remove('header--menu');
   }
 };
@@ -82,10 +97,19 @@ function trading () {
     navWrappers[2].classList.add('nav__wrapper--closed');
     navWrappers[3].classList.remove('nav__wrapper--opened');
     navWrappers[3].classList.add('nav__wrapper--closed');
+    
+    navLinks[1].classList.add('nav__link--active');
+    navLinks[0].classList.remove('nav__link--active');
+    navLinks[2].classList.remove('nav__link--active');
+    navLinks[3].classList.remove('nav__link--active');
+    
     header.classList.add('header--menu');
   } else {
     navWrappers[1].classList.remove('nav__wrapper--opened');
     navWrappers[1].classList.add('nav__wrapper--closed');
+    
+    navLinks[1].classList.remove('nav__link--active');
+    
     header.classList.remove('header--menu');
   }
 };
@@ -100,10 +124,19 @@ function resources () {
     navWrappers[1].classList.add('nav__wrapper--closed');
     navWrappers[3].classList.remove('nav__wrapper--opened');
     navWrappers[3].classList.add('nav__wrapper--closed');
+    
+    navLinks[2].classList.add('nav__link--active');
+    navLinks[0].classList.remove('nav__link--active');
+    navLinks[1].classList.remove('nav__link--active');
+    navLinks[3].classList.remove('nav__link--active');
+    
     header.classList.add('header--menu');
   } else {
     navWrappers[2].classList.remove('nav__wrapper--opened');
     navWrappers[2].classList.add('nav__wrapper--closed');
+    
+    navLinks[2].classList.remove('nav__link--active');
+    
     header.classList.remove('header--menu');
   }
 };
@@ -118,10 +151,19 @@ function contact () {
     navWrappers[2].classList.add('nav__wrapper--closed');
     navWrappers[0].classList.remove('nav__wrapper--opened');
     navWrappers[0].classList.add('nav__wrapper--closed');
+    
+    navLinks[3].classList.add('nav__link--active');
+    navLinks[0].classList.remove('nav__link--active');
+    navLinks[1].classList.remove('nav__link--active');
+    navLinks[2].classList.remove('nav__link--active');
+    
     header.classList.add('header--menu');
   } else {
     navWrappers[3].classList.remove('nav__wrapper--opened');
     navWrappers[3].classList.add('nav__wrapper--closed');
+    
+    navLinks[3].classList.remove('nav__link--active');
+    
     header.classList.remove('header--menu');
   }
 };

@@ -29,11 +29,13 @@
   
   a {
     position: relative;
+    padding: 0 0 27px 0;
     color: $mc;
     font-size: 18px;
     font-weight: 300;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.3s linear;
     
     &::after {
       content: '';
@@ -76,7 +78,7 @@
   // top: 160px;
   left: 0;
   width: 100%;
-  border-top: 1px solid #2f2861;
+  border-top: 2px solid $sc;
   background: rgba(47, 40, 97, 0.9);
   transition: 0.5s;
   
@@ -127,9 +129,10 @@
 }
 
 .nav__link {
+  border-bottom: 1px solid transparent;
   
   &--active {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid $mc;
   }
 }
 

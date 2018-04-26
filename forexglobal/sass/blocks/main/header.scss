@@ -60,9 +60,11 @@
       }
     }
     
-    .nav__sub {
-      // width: auto;
-      // padding: 30px 0 0 0;
+    .nav__list {
+      
+      a {
+        padding: 0 0 26px 0;
+      }
     }
   }
   
@@ -257,6 +259,13 @@
         width: 100%;
         margin: auto;
         padding: 18px 0;
+      }
+      
+      .nav__list {
+        
+        a {
+          padding: 0 0 17px 0;
+        }
       }
       
       .nav__wrapper {

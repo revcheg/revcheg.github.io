@@ -115,21 +115,38 @@
 .footer__link {
   width: 25px;
   height: 25px;
+  transition: 0.3s linear;
   
   &--fb {
     background: url('../img/footer-fb.svg') no-repeat top;
+    
+    &:hover {
+      background: url('../img/footer-fb-h.svg') no-repeat top;
+    }
   }
   
   &--li {
     background: url('../img/footer-li.svg') no-repeat top;
+    
+    &:hover {
+      background: url('../img/footer-li-h.svg') no-repeat top;
+    }
   }
   
   &--gp {
     background: url('../img/footer-gp.svg') no-repeat top;
+    
+    &:hover {
+      background: url('../img/footer-gp-h.svg') no-repeat top;
+    }
   }
   
   &--tw {
     background: url('../img/footer-tw.svg') no-repeat top;
+    
+    &:hover {
+      background: url('../img/footer-tw-h.svg') no-repeat top;
+    }
   }
 }
 
