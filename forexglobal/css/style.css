@@ -383,6 +383,8 @@ body {
     padding: 18px 0; }
   .header--scroll .nav__list a {
     padding: 0 0 17px 0; }
+  .header--scroll .nav__sub a {
+    padding: 0 0 26px 0; }
   .header--scroll .nav__wrapper--opened {
     top: 134px; }
   .header__container {
@@ -537,36 +539,15 @@ body {
       background: url("../img/nav-arrow.svg") no-repeat top;
       -webkit-transition: 0.2s;
       transition: 0.2s; }
-    .nav__list a:hover::after {
-      -webkit-transform: rotate(180deg);
-      transform: rotate(180deg); }
-    .nav__list a:hover + .nav__wrapper {
-      -webkit-animation-name: sub-open;
-      animation-name: sub-open;
-      -webkit-animation-duration: 0.5s;
-      animation-duration: 0.5s;
-      -webkit-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-      -webkit-animation-direction: alternate;
-      animation-direction: alternate; }
-
-@-webkit-keyframes sub-open {
-  0% { }
-  100% {
-    opacity: 1;
-    clip: auto; } }
-
-@keyframes sub-open {
-  0% { }
-  100% {
-    opacity: 1;
-    clip: auto; } }
+    .nav__list a:hover {
+      color: #ffd800; }
 
 .nav__wrapper {
   position: absolute;
   left: 0;
   width: 100%;
   border-top: 2px solid #2f2861;
+  border-bottom: 2px solid #2f2861;
   background: rgba(47, 40, 97, 0.8);
   -webkit-transition: 0.5s;
   transition: 0.5s; }
@@ -579,36 +560,36 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   width: 1140px;
   margin: 0 auto;
-  padding: 30px 15px;
+  padding: 27px 15px;
   list-style: none; }
   .nav__sub b {
     color: #fac93e;
     font-size: 30px;
     font-weight: 500; }
+  .nav__sub li {
+    margin: 0 30px 0 0; }
+    .nav__sub li:last-child {
+      margin: 0; }
   .nav__sub a {
-    font-size: 16px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-    .nav__sub a:hover {
-      color: #ffa100; }
+    font-size: 16px; }
     .nav__sub a::after {
       display: none; }
-  .nav__sub:hover {
-    opacity: 1;
-    clip: auto; }
 
 .nav__link {
   border-bottom: 1px solid transparent; }
   .nav__link--active {
     border-bottom: 1px solid #fac93e; }
+    .nav__link--active::after {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg); }
+
+.nav__active {
+  border-bottom: 1px solid #fac93e; }
 
 .nav__search {
   position: relative;
