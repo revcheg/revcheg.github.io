@@ -1875,10 +1875,9 @@ body {
     margin: 0 0 10px 0; }
 
 .inner__sub {
-  margin: 0 0 40px 0;
   color: #2f2861;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 300;
   text-align: center; }
 
 .inner__text {
@@ -2564,7 +2563,7 @@ body {
   position: absolute;
   right: 100px;
   bottom: 25px;
-  width: 100px;
+  width: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2576,8 +2575,8 @@ body {
   align-items: center; }
 
 .zulu__pause {
-  width: 13px;
-  height: 20px;
+  width: 19px;
+  height: 25px;
   border: none;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
@@ -2585,34 +2584,34 @@ body {
   cursor: pointer; }
   .zulu__pause--inactive {
     background: transparent url("../img/pause-button-s.svg") no-repeat center;
-    background-size: 13px; }
+    background-size: 19px; }
   .zulu__pause--active {
     background: transparent url("../img/pause-button-s-h.svg") no-repeat center;
-    background-size: 13px; }
+    background-size: 19px; }
   .zulu__pause:hover {
     background: transparent url("../img/pause-button-s-h.svg") no-repeat center;
-    background-size: 13px; }
+    background-size: 19px; }
 
 .zulu__full {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border: none;
   background: transparent url("../img/fullscreen-button.svg") no-repeat center;
-  background-size: 15px;
+  background-size: 20px;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
   outline: none;
   cursor: pointer; }
   .zulu__full--active {
     background: transparent url("../img/fullscreen-button-h.svg") no-repeat center;
-    background-size: 15px; }
+    background-size: 20px; }
   .zulu__full:hover {
     background: transparent url("../img/fullscreen-button-h.svg") no-repeat center;
-    background-size: 15px; }
+    background-size: 20px; }
 
 .zulu__muted {
-  width: 16px;
-  height: 18px;
+  width: 20px;
+  height: 22px;
   border: none;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
@@ -2620,13 +2619,13 @@ body {
   cursor: pointer; }
   .zulu__muted--inactive {
     background: transparent url("../img/mute-button.svg") no-repeat center;
-    background-size: 16px; }
+    background-size: 20px; }
   .zulu__muted--active {
     background: transparent url("../img/mute-button-h.svg") no-repeat center;
-    background-size: 16px; }
+    background-size: 20px; }
   .zulu__muted:hover {
     background: transparent url("../img/mute-button-h.svg") no-repeat center;
-    background-size: 16px; }
+    background-size: 20px; }
 
 .zulu__start {
   position: relative;
@@ -2653,7 +2652,7 @@ body {
     left: 0;
     bottom: -15px;
     width: inherit;
-    font-size: 10px; }
+    font-size: 12px; }
 
 .zulu__flex {
   display: -webkit-box;
@@ -2686,14 +2685,14 @@ body {
     list-style-position: inside;
     list-style-image: url("../img/webtrader-li.svg"); }
     .zulu__list li:first-child {
-      margin: 0 0 30px 0;
-      text-transform: uppercase;
       list-style: none; }
-  .zulu__list--second li:first-child {
-    margin: 0;
-    text-transform: none;
-    list-style: url("../img/webtrader-li.svg");
-    list-style-position: inside; }
+  .zulu__list--second {
+    width: auto; }
+    .zulu__list--second li:first-child {
+      margin: 0;
+      text-transform: none;
+      list-style: url("../img/webtrader-li.svg");
+      list-style-position: inside; }
 
 .zulu__name {
   margin: 0 0 35px 0;
@@ -2705,7 +2704,7 @@ body {
 .zulu__left {
   width: 570px;
   color: #2f2861;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300; }
   .zulu__left a {
     color: #6420ff;
