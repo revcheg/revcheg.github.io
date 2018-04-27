@@ -50,11 +50,16 @@
   width: 13px;
   height: 20px;
   border: none;
-  background: transparent url('../img/pause-button-s.svg') no-repeat center;
-  background-size: 13px;
+  // background: transparent url('../img/pause-button-s.svg') no-repeat center;
+  // background-size: 13px;
   transition: 0.3s linear;
   outline: none;
   cursor: pointer;
+  
+  &--inactive {
+    background: transparent url('../img/pause-button-s.svg') no-repeat center;
+    background-size: 13px;
+  }
   
   &--active {
     background: transparent url('../img/pause-button-s-h.svg') no-repeat center;

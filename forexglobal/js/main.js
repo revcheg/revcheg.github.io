@@ -237,18 +237,27 @@ var zulutradePause = document.querySelector('.zulu__pause');
 var zulutradeFull = document.querySelector('.zulu__full');
 var zulutradeMuted = document.querySelector('.zulu__muted');
 
-zulutradeVideo.volume = 0.01;
+zulutradeVideo.volume = 0.02;
 
 zulutradePlay.addEventListener('click', function () {
   zulutradeVideo.play();
   zulutradePlay.style.opacity = '0';
   zulutradePause.classList.remove('zulu__pause--active');
+  zulutradePause.classList.add('zulu__pause--inactive');
 });
 
 zulutradePause.addEventListener('click', function () {
-  zulutradeVideo.pause();
-  zulutradePlay.style.opacity = '1';
-  zulutradePause.classList.toggle('zulu__pause--active');
+  if (zulutradePause.classList.contains('zulu__pause--inactive')) {
+    zulutradeVideo.pause();
+    zulutradePlay.style.opacity = '1';
+    zulutradePause.classList.remove('zulu__pause--inactive');
+    zulutradePause.classList.add('zulu__pause--active');
+  } else {
+    zulutradeVideo.play();
+    zulutradePlay.style.opacity = '0';
+    zulutradePause.classList.remove('zulu__pause--active');
+    zulutradePause.classList.add('zulu__pause--inactive');
+  }
 });
 
 zulutradeFull.addEventListener('click', function () {

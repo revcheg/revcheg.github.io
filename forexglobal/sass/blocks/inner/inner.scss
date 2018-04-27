@@ -10,6 +10,11 @@
   
   &--zulu {
     padding: 80px 0;
+    
+    .tab__content {
+      height: 317px;
+      overflow: scroll;
+    }
   }
 }
 
