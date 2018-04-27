@@ -9,11 +9,15 @@
 .zulu__video {
   width: 100%;
   height: 700px;
-  cursor: pointer;
   object-fit: fill;
+  
+  &:-webkit-full-screen {
+    width: 100%;
+    height: 100%;
+  }
 }
 
-.zulu__control {
+.zulu__play {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -24,9 +28,92 @@
   transition: 0.5s;
   transform: translate(-50%, -50%);
   outline: none;
+  cursor: pointer;
+  
+  &:hover {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.zulu__controls {
+  position: absolute;
+  right: 100px;
+  bottom: 25px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.zulu__pause {
+  width: 13px;
+  height: 20px;
+  border: none;
+  background: transparent url('../img/pause-button-s.svg') no-repeat center;
+  background-size: 13px;
+  transition: 0.3s linear;
+  outline: none;
+  cursor: pointer;
+  
+  &--active {
+    background: transparent url('../img/pause-button-s-h.svg') no-repeat center;
+    background-size: 13px;
+  }
+  
+  &:hover {
+    background: transparent url('../img/pause-button-s-h.svg') no-repeat center;
+    background-size: 13px;
+  }
+}
+
+.zulu__full {
+  width: 15px;
+  height: 15px;
+  border: none;
+  background: transparent url('../img/fullscreen-button.svg') no-repeat center;
+  background-size: 15px;
+  transition: 0.3s linear;
+  outline: none;
+  cursor: pointer;
+  
+  &--active {
+    background: transparent url('../img/fullscreen-button-h.svg') no-repeat center;
+    background-size: 15px;
+  }
+  
+  &:hover {
+    background: transparent url('../img/fullscreen-button-h.svg') no-repeat center;
+    background-size: 15px;
+  }
+}
+
+.zulu__muted {
+  width: 16px;
+  height: 18px;
+  border: none;
+  transition: 0.3s linear;
+  outline: none;
+  cursor: pointer;
+  
+  &--inactive {
+    background: transparent url('../img/mute-button.svg') no-repeat center;
+    background-size: 16px;
+  }
+  
+  &--active {
+    background: transparent url('../img/mute-button-h.svg') no-repeat center;
+    background-size: 16px;
+  }
+  
+  &:hover {
+    background: transparent url('../img/mute-button-h.svg') no-repeat center;
+    background-size: 16px;
+  }
 }
 
 .zulu__start {
+  position: relative;
   display: block;
   width: 270px;
   margin: 50px auto 0;
@@ -44,12 +131,25 @@
     box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
     background: #ffd800;
   }
+  
+  &:after {
+    content: 'Trading involves risk of loss';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: inherit;
+    font-size: 10px;
+  }
 }
 
 .zulu__flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  &--key {
+    justify-content: space-around;
+  }
 }
 
 .zulu__mockup {
@@ -59,6 +159,7 @@
 }
 
 .zulu__list {
+  width: 400px;
   margin: 0;
   padding: 0;
   
@@ -66,7 +167,7 @@
     color: $sc;
     font-size: 18px;
     font-weight: 300;
-    line-height: 40px;
+    line-height: 30px;
     list-style-position: inside;
     list-style-image: url('../img/webtrader-li.svg');
     
@@ -190,6 +291,7 @@
   }
   
   .zulu__list {
+    width: 300px;
     margin: 20px 0 0 0;
     
     li {

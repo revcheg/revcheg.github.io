@@ -1868,6 +1868,15 @@ body {
   font-size: 60px;
   font-weight: 500;
   text-align: center; }
+  .inner__name--zulu {
+    margin: 0 0 10px 0; }
+
+.inner__sub {
+  margin: 0 0 40px 0;
+  color: #2f2861;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center; }
 
 .inner__text {
   color: #2f2861;
@@ -2524,11 +2533,13 @@ body {
 .zulu__video {
   width: 100%;
   height: 700px;
-  cursor: pointer;
   -o-object-fit: fill;
   object-fit: fill; }
+  .zulu__video:-webkit-full-screen {
+    width: 100%;
+    height: 100%; }
 
-.zulu__control {
+.zulu__play {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2540,9 +2551,81 @@ body {
   transition: 0.5s;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  outline: none; }
+  outline: none;
+  cursor: pointer; }
+  .zulu__play:hover {
+    width: 90px;
+    height: 90px; }
+
+.zulu__controls {
+  position: absolute;
+  right: 100px;
+  bottom: 25px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.zulu__pause {
+  width: 13px;
+  height: 20px;
+  border: none;
+  background: transparent url("../img/pause-button-s.svg") no-repeat center;
+  background-size: 13px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  outline: none;
+  cursor: pointer; }
+  .zulu__pause--active {
+    background: transparent url("../img/pause-button-s-h.svg") no-repeat center;
+    background-size: 13px; }
+  .zulu__pause:hover {
+    background: transparent url("../img/pause-button-s-h.svg") no-repeat center;
+    background-size: 13px; }
+
+.zulu__full {
+  width: 15px;
+  height: 15px;
+  border: none;
+  background: transparent url("../img/fullscreen-button.svg") no-repeat center;
+  background-size: 15px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  outline: none;
+  cursor: pointer; }
+  .zulu__full--active {
+    background: transparent url("../img/fullscreen-button-h.svg") no-repeat center;
+    background-size: 15px; }
+  .zulu__full:hover {
+    background: transparent url("../img/fullscreen-button-h.svg") no-repeat center;
+    background-size: 15px; }
+
+.zulu__muted {
+  width: 16px;
+  height: 18px;
+  border: none;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  outline: none;
+  cursor: pointer; }
+  .zulu__muted--inactive {
+    background: transparent url("../img/mute-button.svg") no-repeat center;
+    background-size: 16px; }
+  .zulu__muted--active {
+    background: transparent url("../img/mute-button-h.svg") no-repeat center;
+    background-size: 16px; }
+  .zulu__muted:hover {
+    background: transparent url("../img/mute-button-h.svg") no-repeat center;
+    background-size: 16px; }
 
 .zulu__start {
+  position: relative;
   display: block;
   width: 270px;
   margin: 50px auto 0;
@@ -2560,6 +2643,13 @@ body {
     -webkit-box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
     box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
     background: #ffd800; }
+  .zulu__start:after {
+    content: 'Trading involves risk of loss';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: inherit;
+    font-size: 10px; }
 
 .zulu__flex {
   display: -webkit-box;
@@ -2571,6 +2661,9 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .zulu__flex--key {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
 
 .zulu__mockup {
   width: 508px;
@@ -2578,13 +2671,14 @@ body {
   background: url("../img/zulutrade-mockup.png") no-repeat center; }
 
 .zulu__list {
+  width: 400px;
   margin: 0;
   padding: 0; }
   .zulu__list li {
     color: #2f2861;
     font-size: 18px;
     font-weight: 300;
-    line-height: 40px;
+    line-height: 30px;
     list-style-position: inside;
     list-style-image: url("../img/webtrader-li.svg"); }
     .zulu__list li:first-child {
@@ -2679,6 +2773,7 @@ body {
     height: 300px;
     background-size: 300px; }
   .zulu__list {
+    width: 300px;
     margin: 20px 0 0 0; }
     .zulu__list li:first-child {
       margin: 0; }
