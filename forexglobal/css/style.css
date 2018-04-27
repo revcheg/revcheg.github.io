@@ -468,6 +468,8 @@ body {
       padding: 0 0 10px 0; }
       .header--scroll .nav__wrapper--opened {
         top: 175px; }
+    .header--scroll .nav__list a {
+      padding: 0 0 3px 0; }
     .header--scroll .header__language {
       height: 36px;
       font-size: 14px; }
@@ -625,7 +627,8 @@ body {
 @media screen and (max-width: 1200px) {
   .nav {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding: 29px 15px; }
   .nav__sub {
     width: 95%; }
   .nav__list {
