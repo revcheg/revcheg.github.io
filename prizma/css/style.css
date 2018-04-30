@@ -243,8 +243,11 @@ body {
     color: #fff;
     background: #61a3db; }
 
+.slider {
+  overflow: hidden; }
+
 .slider__container {
-  width: 1200px;
+  width: 1170px;
   height: inherit;
   margin: auto;
   padding: 0 15px; }
@@ -253,6 +256,7 @@ body {
   height: 480px; }
   .slider__box b {
     font-size: 30px;
+    font-weight: normal;
     font-family: 'ProximaNova-Bold', sans-serif; }
   .slider__box p {
     font-family: 'ProximaNova-Light', sans-serif; }
@@ -307,3 +311,38 @@ body {
     background: url("../img/social-gp.svg") no-repeat center; }
   .slider__item--tw {
     background: url("../img/social-tw.svg") no-repeat center; }
+
+.step {
+  padding: 40px 0 60px 0;
+  background: #e9edf1; }
+
+.step__name {
+  margin: 0 0 30px 0;
+  font-size: 30px;
+  font-weight: normal;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  text-align: center;
+  text-transform: uppercase; }
+
+.step__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.step__box {
+  width: 250px; }
+  .step__box b {
+    font-size: 30px;
+    font-weight: normal;
+    font-family: 'ProximaNova-Regular', sans-serif; }
+  .step__box hr {
+    width: 30px;
+    height: 1px;
+    margin: 20px 0;
+    border: none;
+    background: #1600e6; }
+  .step__box p {
+    font-family: 'ProximaNova-Light', sans-serif; }

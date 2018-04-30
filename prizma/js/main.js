@@ -16,8 +16,11 @@ navItem.addEventListener('click', function () {
 
 // Slick
 $('.slider').slick({
-  infinite: false,
   dots: true,
+  arrows: false,
+  customPaging: function (slider, i) {
+    return i + 1;
+  },
   responsive: [{
     breakpoint: 1024,
     settings: {
