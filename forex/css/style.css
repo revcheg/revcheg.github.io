@@ -670,7 +670,7 @@ body {
   background-size: 120px; }
 
 .online__slider {
-  display: none !important; }
+  display: none; }
 
 @media screen and (max-width: 1200px) {
   .online h2 {
@@ -681,7 +681,7 @@ body {
   .online__flex {
     display: none; }
   .online__slider {
-    display: block !important;
+    display: block;
     margin-top: 50px; }
     .online__slider .slick-dots {
       bottom: 25px; }
