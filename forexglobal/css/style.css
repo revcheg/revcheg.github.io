@@ -1599,6 +1599,9 @@ body {
     font-weight: 300; }
   .tab__content--forex {
     display: block; }
+  .tab__content--comparison {
+    height: 500px;
+    overflow: scroll; }
 
 .tab__table {
   width: 100%;

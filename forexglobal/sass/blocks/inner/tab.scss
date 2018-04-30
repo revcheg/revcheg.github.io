@@ -78,6 +78,11 @@
   &--forex {
     display: block;
   }
+  
+  &--comparison {
+    height: 500px;
+    overflow: scroll;
+  }
 }
 
 .tab__table {
