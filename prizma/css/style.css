@@ -3,8 +3,9 @@ body {
   margin: 0; }
 
 .container {
-  width: 1200px;
-  margin: 0 auto; }
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px; }
 
 @media screen and (max-width: 1200px) {
   .container {
@@ -101,8 +102,7 @@ body {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  padding: 0 15px; }
+  align-items: center; }
 
 .header__settings {
   display: -webkit-box;
@@ -172,6 +172,12 @@ body {
     text-align: left;
     background: url("../img/button-login.svg") no-repeat right;
     background-size: 12px; }
+  .button--white {
+    color: #1600e6;
+    background: #fff; }
+    .button--white:hover {
+      -webkit-box-shadow: 0px 0px 11px 5px rgba(255, 255, 255, 0.3);
+      box-shadow: 0px 0px 11px 5px rgba(255, 255, 255, 0.3); }
 
 .nav {
   width: 110px;
@@ -317,7 +323,7 @@ body {
   background: #e9edf1; }
 
 .step__name {
-  margin: 0 0 30px 0;
+  margin: 0 0 70px 0;
   font-size: 30px;
   font-weight: normal;
   font-family: 'ProximaNova-Bold', sans-serif;
@@ -333,7 +339,9 @@ body {
   justify-content: space-between; }
 
 .step__box {
-  width: 250px; }
+  position: relative;
+  width: 250px;
+  z-index: 1; }
   .step__box b {
     font-size: 30px;
     font-weight: normal;
@@ -346,3 +354,258 @@ body {
     background: #1600e6; }
   .step__box p {
     font-family: 'ProximaNova-Light', sans-serif; }
+  .step__box:before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    left: -30px;
+    color: #fff;
+    font-size: 100px;
+    font-family: 'ProximaNova-Bold', sans-serif;
+    z-index: -1; }
+  .step__box--1:before {
+    content: '1'; }
+  .step__box--2:before {
+    content: '2'; }
+  .step__box--3:before {
+    content: '3'; }
+  .step__box--4:before {
+    content: '4'; }
+
+.banner {
+  padding: 70px 0 0 0; }
+
+.banner__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.banner__text {
+  padding: 0 0 0 100px;
+  background: url("../img/banner-metatrader.jpg") no-repeat left top;
+  background-size: 70px; }
+
+.banner__name {
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  text-transform: uppercase; }
+
+.banner__sub {
+  margin: 10px 0 50px 0;
+  font-family: 'ProximaNova-Light', sans-serif; }
+
+.banner__list {
+  margin: 0 0 30px 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: 'ProximaNova-Light', sans-serif;
+  list-style: inside url("../img/banner-li.svg"); }
+  .banner__list li {
+    line-height: 40px; }
+
+.banner__button {
+  margin: 0 0 20px 30px; }
+
+.banner__platform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 170px;
+  margin: 0 0 0 30px; }
+
+.banner__android {
+  width: 20px;
+  height: 22px;
+  background: url("../img/banner-android.svg") no-repeat center;
+  background-size: 20px; }
+
+.banner__ios {
+  width: 18px;
+  height: 22px;
+  background: url("../img/banner-ios.svg") no-repeat center;
+  background-size: 18px; }
+
+.banner__desktop {
+  width: 24px;
+  height: 16px;
+  background: url("../img/banner-desktop.svg") no-repeat center;
+  background-size: 20px; }
+
+.banner__mockup {
+  width: 533px;
+  height: 588px;
+  background: url("../img/banner-mockup.png") no-repeat center; }
+
+.edge {
+  padding: 70px 0;
+  background: #e9edf1; }
+
+.edge__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.edge__box {
+  position: relative;
+  width: 270px;
+  text-align: center; }
+  .edge__box p {
+    margin: 0;
+    font-size: 25px;
+    font-family: 'ProximaNova-Light', sans-serif; }
+  .edge__box b {
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'ProximaNova-Bold', sans-serif; }
+  .edge__box small {
+    font-size: 16px;
+    font-family: 'ProximaNova-Light', sans-serif; }
+  .edge__box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 47px;
+    height: 93px;
+    background: url("../img/edge-bg.svg") no-repeat center;
+    background-size: 47px; }
+  .edge__box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 47px;
+    height: 93px;
+    background: url("../img/edge-bg.svg") no-repeat center;
+    background-size: 47px;
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1); }
+
+.info {
+  padding: 80px 0;
+  border-bottom: 1px solid #e9edf1; }
+
+.info__name {
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  text-align: center;
+  text-transform: uppercase; }
+
+.info__hr {
+  margin: 40px auto;
+  width: 30px;
+  height: 1px;
+  border: none;
+  background: #1600e6; }
+
+.info__text {
+  font-family: 'ProximaNova-Light', sans-serif; }
+
+.multyplatform {
+  padding: 100px 0; }
+
+.multyplatform__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.multyplatform__mockup {
+  width: 595px;
+  height: 262px;
+  background: url("../img/multyplatform-mockup.png") no-repeat center;
+  background-size: 595px; }
+
+.multyplatform__text {
+  width: 570px; }
+
+.multyplatform__name {
+  font-size: 30px;
+  font-weight: normal;
+  font-family: 'ProximaNova-Bold', sans-serif; }
+
+.multyplatform__sub {
+  font-family: 'ProximaNova-Light', sans-serif; }
+
+.ready {
+  padding: 50px 0;
+  color: #fff;
+  text-align: center;
+  background: #1600e6; }
+
+.ready__name {
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+  font-family: 'ProximaNova-Bold', sans-serif; }
+
+.ready__text {
+  margin: 30px 0;
+  font-family: 'ProximaNova-Light', sans-serif; }
+
+.ready__start {
+  margin: auto; }
+
+.payment {
+  padding: 20px 0;
+  background: #9c9fa3; }
+
+.payment__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.payment__box {
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .payment__box--visa {
+    width: 50px;
+    height: 16px;
+    background: url("../img/payment-visa.svg") no-repeat top; }
+  .payment__box--mc {
+    width: 33px;
+    height: 23px;
+    background: url("../img/payment-mc.svg") no-repeat top; }
+  .payment__box--bank {
+    width: 34px;
+    height: 34px;
+    background: url("../img/payment-bank.svg") no-repeat top; }
+  .payment__box--neteller {
+    width: 56px;
+    height: 10px;
+    background: url("../img/payment-neteller.svg") no-repeat top; }
+  .payment__box--skrill {
+    width: 40px;
+    height: 14px;
+    background: url("../img/payment-skrill.svg") no-repeat center; }

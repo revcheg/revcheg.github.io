@@ -1,0 +1,22 @@
+.ready {
+  padding: 50px 0;
+  color: #fff;
+  text-align: center;
+  background: $sc;
+}
+
+.ready__name {
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+  font-family: 'ProximaNova-Bold', sans-serif;
+}
+
+.ready__text {
+  margin: 30px 0;
+  font-family: 'ProximaNova-Light', sans-serif;
+}
+
+.ready__start {
+  margin: auto;
+}

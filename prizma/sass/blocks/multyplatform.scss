@@ -1,0 +1,30 @@
+.multyplatform {
+  padding: 100px 0;
+}
+
+.multyplatform__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.multyplatform__mockup {
+  width: 595px;
+  height: 262px;
+  background: url('../img/multyplatform-mockup.png') no-repeat center;
+  background-size: 595px;
+}
+
+.multyplatform__text {
+  width: 570px;
+}
+
+.multyplatform__name {
+  font-size: 30px;
+  font-weight: normal;
+  font-family: 'ProximaNova-Bold', sans-serif;
+}
+
+.multyplatform__sub {
+  font-family: 'ProximaNova-Light', sans-serif;
+}

@@ -1,0 +1,79 @@
+.banner {
+  padding: 70px 0 0 0;
+}
+
+.banner__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner__text {
+  padding: 0 0 0 100px;
+  background: url('../img/banner-metatrader.jpg') no-repeat left top;
+  background-size: 70px;
+}
+
+.banner__name {
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  text-transform: uppercase;
+}
+
+.banner__sub {
+  margin: 10px 0 50px 0;
+  font-family: 'ProximaNova-Light', sans-serif;
+}
+
+.banner__list {
+  margin: 0 0 30px 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: 'ProximaNova-Light', sans-serif;
+  list-style: inside url('../img/banner-li.svg');
+  
+  li {
+    line-height: 40px;
+  }
+}
+
+.banner__button {
+  margin: 0 0 20px 30px;
+}
+
+.banner__platform {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 170px;
+  margin: 0 0 0 30px;
+}
+
+.banner__android {
+  width: 20px;
+  height: 22px;
+  background: url('../img/banner-android.svg') no-repeat center;
+  background-size: 20px;
+}
+
+.banner__ios {
+  width: 18px;
+  height: 22px;
+  background: url('../img/banner-ios.svg') no-repeat center;
+  background-size: 18px;
+}
+
+.banner__desktop {
+  width: 24px;
+  height: 16px;
+  background: url('../img/banner-desktop.svg') no-repeat center;
+  background-size: 20px;
+}
+
+.banner__mockup {
+  width: 533px;
+  height: 588px;
+  background: url('../img/banner-mockup.png') no-repeat center;
+}
