@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 15px;
 }
 
 .header__settings {
@@ -21,9 +22,7 @@
 
 .header__language {
   font-size: 14px;
-  font-style: normal;
-  font-weight: normal;
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: 'ProximaNova-Regular', sans-serif;
   border: none;
   background: transparent;
   appearance: none;
