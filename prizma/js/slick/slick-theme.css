@@ -239,3 +239,10 @@
     opacity: .75;
     color: black;
 }
+@media screen and (max-width: 1200px) {
+  .slick-dots {
+    left: 0;
+  }
+}
+
+@media screen and ($mobile-widths) {}

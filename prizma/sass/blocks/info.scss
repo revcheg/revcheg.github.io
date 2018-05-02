@@ -23,3 +23,26 @@
 .info__text {
   font-family: 'ProximaNova-Light', sans-serif;
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .info {
+    padding: 50px 0;
+  }
+  
+  .info__name {
+    font-size: 20px;
+  }
+  
+  .info__hr {
+    margin: 20px auto;
+  }
+  
+  .info__text {
+    
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

@@ -16,7 +16,7 @@
   position: relative;
   display: block;
   width: 100%;
-  padding: 0 0 0 15px;
+  padding: 0px 75px 0px 15px;
   color: #000;
   font-size: 16px;
   font-family: 'ProximaNova-Regular', sans-serif;
@@ -24,31 +24,15 @@
   text-transform: uppercase;
   transition: 0.3s linear;
   
-  &--active {
+  &:hover {
     padding: 5px 75px 5px 15px;
     font-family: 'ProximaNova-Bold', sans-serif;
-    // text-decoration: line-through #61a3db;
     background: #fff;
-    
+  
     &:before {
-      width: 99% !important;
+      width: 99%;
     }
   }
-  
-  // &:hover {
-  //   padding: 5px 75px 5px 15px;
-  //   font-family: 'ProximaNova-Bold', sans-serif;
-  //   // text-decoration: line-through #61a3db;
-  //   background: #fff;
-  // }
-  
-  // &:hover:before {
-  //   width: 99%;
-  // }
-  
-  // &:hover + .nav__sublist {
-  //   clip: auto;
-  // }
   
   &:before {
     content: '';
@@ -64,27 +48,16 @@
 
 .nav__sublist {
   position: absolute;
-  top: -500px;
+  top: 0;
   left: 200px;
-  display: block;
   width: 300px;
   margin: 0;
   padding: 0;
   transition: 0.5s;
   list-style: none;
   background: #fff;
-  // opacity: 0;
-  // clip: rect(0, 0, 0, 0);
-  
-  &--active {
-    // clip: auto;
-    // opacity: 1;
-    top: 0;
-  }
-  
-  // &:hover {
-  //   clip: auto;
-  // }
+  opacity: 0;
+  clip: rect(0, 0, 0, 0);
 }
 
 .nav__subitem {
@@ -101,4 +74,18 @@
     color: #fff;
     background: #61a3db;
   }
+}
+
+.nav__list > li:hover .nav__sublist {
+  clip: auto;
+  opacity: 1;
+}
+
+@media screen and ($tablet-widths) {
+  .nav {
+    margin: 0 auto 0 100px;
+  }
+}
+
+@media screen and ($mobile-widths) {
 }

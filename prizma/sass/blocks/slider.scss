@@ -76,3 +76,34 @@
     background: url('../img/social-tw.svg') no-repeat center;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .slider__container {
+    width: 95%;
+    padding: 0;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  
+  .slider__flex,
+  .slider__box {
+    width: auto;
+  }
+  
+  .slider__flex {
+    margin: 0;
+  }
+  
+  .slider__box {
+    
+    &--1 {
+      // background: url('../img/slider-1.jpg') no-repeat center;
+      background-position-x: -100px;
+    }
+  }
+  
+  .slider__text {
+    width: 300px;
+  }
+}

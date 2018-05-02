@@ -20,3 +20,15 @@
 .ready__start {
   margin: auto;
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .ready__name {
+    font-size: 20px;
+  }
+  
+  .ready__text {
+    margin: 16px 0;
+  }
+}

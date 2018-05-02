@@ -98,3 +98,38 @@
     background: url('../img/social-footer-tw.svg') no-repeat center;
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .footer__links {
+    flex-direction: column;
+    margin: 30px 0;
+    
+    li{
+      
+      &:nth-child(even) {
+        display: none;
+      }
+    }
+  }
+  
+  .footer__flex {
+    flex-direction: column;
+  }
+  
+  .footer__social {
+    width: 200px;
+    margin: 0 0 30px 0;
+  }
+  
+  .footer__item {
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .footer__copyright {
+    order: 2;
+  }
+}

@@ -23,11 +23,27 @@
   }
   
   &--login {
+    position: relative;
     width: 60px;
     color: #000;
     text-align: left;
-    background: url('../img/button-login.svg') no-repeat right;
-    background-size: 12px;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      top: 12px;
+      right: 0;
+      width: 12px;
+      height: 12px;
+      background: url('../img/button-login.svg') no-repeat center;
+    }
+    
+    &:hover {
+      
+      &:after {
+        animation: login 0.4s 4 alternate;
+      }
+    }
   }
   
   &--white {
@@ -37,5 +53,15 @@
     &:hover {
       box-shadow: 0px 0px 11px 5px rgba(255, 255, 255, 0.3);
     }
+  }
+}
+
+@keyframes login {
+  0% {
+    right: 0;
+  }
+  
+  100% {
+    right: -5px;
   }
 }
