@@ -2799,6 +2799,9 @@ body {
 
 .register {
   padding: 150px 0 70px 0; }
+  .register a {
+    color: #6420ff;
+    text-decoration: none; }
 
 .register__name {
   margin: 0;
@@ -2814,6 +2817,13 @@ body {
   font-weight: 300;
   text-align: center; }
 
+.register__subsubname {
+  margin: 50px 0 10px 0;
+  color: #6420ff;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center; }
+
 .register__form input {
   width: 478px;
   height: 41px;
@@ -2826,6 +2836,13 @@ body {
   outline: none;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
+  .register__form input[type='radio'], .register__form input[type='checkbox'] {
+    width: auto;
+    height: auto;
+    margin: 0 10px; }
+    .register__form input[type='radio']:focus, .register__form input[type='checkbox']:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
   .register__form input::-webkit-input-placeholder {
     color: #c1c1c1;
     -webkit-transition: 0.3s;
@@ -2892,16 +2909,21 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0 0 10px 0; }
+  .register__flex--center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
 
 .register__email {
   width: 500px;
+  color: #2f2861;
   font-size: 14px;
   font-weight: 300;
   text-align: center; }
 
 .register__next {
   width: 150px;
-  margin: 25px 0 0 auto;
+  margin: 25px 0 25px auto;
   padding: 10px 0;
   color: #2f2861;
   font-size: 18px;
@@ -2916,6 +2938,42 @@ body {
     -webkit-box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
     box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
     background: #ffd800; }
+
+.register__warning {
+  margin: 0;
+  padding: 20px 10px;
+  color: #2f2861;
+  font-weight: 300;
+  text-align: center;
+  border: 1px solid #6420ff;
+  border-radius: 3px; }
+  .register__warning b {
+    display: block;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: 500; }
+
+.register__question {
+  display: block;
+  margin: 40px 0 10px 0;
+  color: #2f2861;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center; }
+
+.register__label {
+  color: #2f2861;
+  font-size: 14px;
+  font-weight: 300; }
+  .register__label--checkbox {
+    width: 500px;
+    margin: 40px 0 0 0; }
+
+.register__hr {
+  height: 1px;
+  margin: 50px 0;
+  border: none;
+  background: #6420ff; }
 
 @media screen and (max-width: 1200px) {
   .register {
