@@ -27,6 +27,39 @@
   appearance: none;
 }
 
+.header__search {
+  position: relative;
+  
+  input {
+    width: 0px;
+    height: 35px;
+    padding: 0 15px 0 35px;
+    font-size: 14px;
+    font-family: 'ProximaNova-Regular', sans-serif;
+    border: 1px solid transparent;
+    border-radius: 17px;
+    background: transparent;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background: url('../img/header-search.svg') no-repeat top;
+    
+    
+  }
+  &:hover input {
+    width: 270px;
+    border: 1px solid #1600e6;
+  }
+}
+
 .header__logo {
   width: 170px;
   height: 21px;
