@@ -88,4 +88,7 @@
 }
 
 @media screen and ($mobile-widths) {
+  .nav {
+    display: none;
+  }
 }
