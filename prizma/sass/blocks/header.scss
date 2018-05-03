@@ -168,6 +168,7 @@
 @media screen and ($mobile-widths) {
   .header {
     padding: 26px 0;
+    box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
   }
   
   .header--scroll {
@@ -181,7 +182,6 @@
     }
     
     .nav__list {
-      // width: inherit;
       text-align: center;
       
       li {
@@ -205,6 +205,10 @@
     .nav__subitem {
       padding: 5px 0;
     }
+    
+    .header__menu {
+      opacity: 1;
+    }
   }
   
   .header__flex {
@@ -215,6 +219,11 @@
     position: absolute;
     left: 0;
     width: 30px;
+  }
+  
+  .header__menu {
+    display: block;
+    opacity: 0;
   }
   
   .header__language,
