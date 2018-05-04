@@ -4,6 +4,7 @@
   border-collapse: collapse;
   
   th {
+    width: 1px;
     padding: 35px 0 50px 0;
     transition: 0.5s;
     
@@ -99,14 +100,14 @@
     overflow-x: auto;
     
     th {
-      padding: 5px 0 0 0;
+      padding: 5px;
       
       b {
         font-size: 15px;
       }
       
       p {
-        font-size: 10px;
+        font-size: 13px;
       }
       
       span {
@@ -115,15 +116,12 @@
     }
     
     td {
-      padding: 10px 0;
-      font-size: 10px;
-      font-family: 'ProximaNova-Bold', sans-serif;
-      transition: 0.5s;
+      font-size: 14px;
     }
   }
   
   .table__button {
-    width: 100px;
+    width: 110px;
     padding: 7px 0;
     font-size: 12px;
   }

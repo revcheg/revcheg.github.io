@@ -1103,6 +1103,7 @@ body {
   margin: 135px 0 0 0;
   border-collapse: collapse; }
   .table th {
+    width: 1px;
     padding: 35px 0 50px 0;
     -webkit-transition: 0.5s;
     transition: 0.5s; }
@@ -1161,21 +1162,17 @@ body {
     margin: 50px 0 0 0;
     overflow-x: auto; }
     .table th {
-      padding: 5px 0 0 0; }
+      padding: 5px; }
       .table th b {
         font-size: 15px; }
       .table th p {
-        font-size: 10px; }
+        font-size: 13px; }
       .table th span {
         font-size: 12px; }
     .table td {
-      padding: 10px 0;
-      font-size: 10px;
-      font-family: 'ProximaNova-Bold', sans-serif;
-      -webkit-transition: 0.5s;
-      transition: 0.5s; }
+      font-size: 14px; }
   .table__button {
-    width: 100px;
+    width: 110px;
     padding: 7px 0;
     font-size: 12px; }
   .table__checked img {
