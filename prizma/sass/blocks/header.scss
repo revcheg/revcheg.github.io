@@ -5,6 +5,11 @@
   box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
   background: $bg;
   transition: 0.5s;
+  
+  &--inner {
+    position: sticky;
+    top: 0;
+  }
 }
 
 .header--scroll {

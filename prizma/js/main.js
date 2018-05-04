@@ -27,6 +27,42 @@ menuButton.addEventListener('click', function () {
   }
 });
 
+// Table
+var table = document.querySelector('.table');
+var hoverMini = document.querySelectorAll('.table__mini');
+var hoverClassic = document.querySelectorAll('.table__classic');
+var hoverPremium = document.querySelectorAll('.table__premium');
+
+for (var i = 0; i < hoverMini.length; i++) {
+  hoverMini[i].addEventListener('mouseover', function() {
+    table.classList.add('table__mini');
+  });
+  
+  hoverMini[i].addEventListener('mouseout', function() {
+    table.classList.remove('table__mini');
+  });
+};
+
+for (var i = 0; i < hoverClassic.length; i++) {
+  hoverClassic[i].addEventListener('mouseover', function() {
+    table.classList.add('table__classic');
+  });
+  
+  hoverClassic[i].addEventListener('mouseout', function() {
+    table.classList.remove('table__classic');
+  });
+};
+
+for (var i = 0; i < hoverPremium.length; i++) {
+  hoverPremium[i].addEventListener('mouseover', function() {
+    table.classList.add('table__premium');
+  });
+  
+  hoverPremium[i].addEventListener('mouseout', function() {
+    table.classList.remove('table__premium');
+  });
+};
+
 // Slick
 $('.slider').slick({
   dots: true,

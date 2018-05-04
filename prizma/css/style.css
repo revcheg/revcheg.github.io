@@ -1,6 +1,7 @@
 body {
   min-width: 320px;
-  margin: 0; }
+  margin: 0;
+  background: #e9edf1; }
 
 .container {
   width: 1170px;
@@ -100,6 +101,10 @@ body {
   background: #e9edf1;
   -webkit-transition: 0.5s;
   transition: 0.5s; }
+  .header--inner {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; }
 
 .header--scroll {
   padding: 26px 0;
@@ -401,6 +406,9 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   letter-spacing: 5px; }
+  .nav__subitem--active {
+    color: #fff;
+    background: #61a3db; }
   .nav__subitem:hover {
     color: #fff;
     background: #61a3db; }
@@ -1030,3 +1038,147 @@ body {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2; } }
+
+.inner {
+  background: #e9edf1; }
+
+.inner__header {
+  padding: 50px 0 0 0; }
+
+.inner__title {
+  position: relative;
+  bottom: -30px; }
+  .inner__title h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 100px;
+    font-weight: normal;
+    font-family: 'ProximaNova-Bold', sans-serif;
+    text-transform: uppercase;
+    text-align: center; }
+  .inner__title h2 {
+    position: absolute;
+    bottom: 21px;
+    left: 50%;
+    margin: 0;
+    color: #000;
+    font-size: 30px;
+    font-weight: normal;
+    font-family: 'ProximaNova-Bold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+
+.inner__content {
+  padding: 30px 0 150px 0; }
+  .inner__content--accounts {
+    background: #fff url("../img/accounts-bg-left.svg") no-repeat left top, #fff url("../img/accounts-bg-right.svg") no-repeat 90% 130px;
+    background-size: 845px, 100px; }
+
+.inner__subtext {
+  margin: 0;
+  font-size: 18px;
+  font-family: 'ProximaNova-LightIt', serif;
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .inner__header {
+    padding: 0; }
+  .inner__title {
+    bottom: -11px; }
+    .inner__title h1 {
+      font-size: 37px; }
+    .inner__title h2 {
+      bottom: 6px;
+      font-size: 18px; }
+  .inner__content {
+    padding: 30px 0; }
+    .inner__content--accounts {
+      background: #fff url("../img/accounts-bg-left.svg") no-repeat 0 50px, #fff url("../img/accounts-bg-right.svg") no-repeat right bottom;
+      background-size: 300px, 100px; } }
+
+.table {
+  width: 100%;
+  margin: 135px 0 0 0;
+  border-collapse: collapse; }
+  .table th {
+    padding: 35px 0 50px 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    .table th b {
+      font-size: 30px;
+      font-weight: normal;
+      font-family: 'ProximaNova-Bold', sans-serif; }
+    .table th p {
+      font-family: 'ProximaNova-LightIt', sans-serif; }
+    .table th span {
+      display: block;
+      margin-bottom: 18px;
+      font-size: 18px;
+      font-weight: normal;
+      font-family: 'ProximaNova-Bold', sans-serif; }
+  .table tr {
+    border-bottom: 1px solid #61a3db; }
+    .table tr:first-child, .table tr:last-child {
+      border: none; }
+  .table td {
+    padding: 10px 0;
+    font-family: 'ProximaNova-Bold', sans-serif;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+
+.table__button {
+  display: block;
+  margin: auto; }
+
+.table__checked img {
+  display: block;
+  width: 16px;
+  margin: auto; }
+
+.table__unchecked img {
+  display: block;
+  width: 15px;
+  margin: auto; }
+
+.table__mini .table__mini-hover {
+  background: rgba(233, 237, 241, 0.5); }
+
+.table__classic .table__classic-hover {
+  background: rgba(233, 237, 241, 0.5); }
+
+.table__premium .table__premium-hover {
+  background: rgba(233, 237, 241, 0.5); }
+
+@media screen and (max-width: 1200px) {
+  .table {
+    margin: 100px 0 0 0; } }
+
+@media screen and (max-width: 768px) {
+  .table {
+    display: block;
+    margin: 50px 0 0 0;
+    overflow-x: auto; }
+    .table th {
+      padding: 5px 0 0 0; }
+      .table th b {
+        font-size: 15px; }
+      .table th p {
+        font-size: 10px; }
+      .table th span {
+        font-size: 12px; }
+    .table td {
+      padding: 10px 0;
+      font-size: 10px;
+      font-family: 'ProximaNova-Bold', sans-serif;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+  .table__button {
+    width: 100px;
+    padding: 7px 0;
+    font-size: 12px; }
+  .table__checked img {
+    width: 10px; }
+  .table__unchecked img {
+    width: 10px; } }

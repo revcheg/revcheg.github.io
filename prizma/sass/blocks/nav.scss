@@ -70,6 +70,11 @@
   transition: 0.3s;
   letter-spacing: 5px;
   
+  &--active {
+    color: #fff;
+    background: #61a3db;
+  }
+  
   &:hover {
     color: #fff;
     background: #61a3db;
