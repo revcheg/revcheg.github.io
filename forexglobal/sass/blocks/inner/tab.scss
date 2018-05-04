@@ -41,11 +41,13 @@
 
 .tab__content {
   display: none;
+  height: 600px;
   padding: 6px 12px;
   border: 1px solid #6420ff;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-top: none;
+  overflow: scroll;
   
   h3 {
     color: $sc;
