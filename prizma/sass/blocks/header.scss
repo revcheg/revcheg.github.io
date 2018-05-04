@@ -1,4 +1,6 @@
 .header {
+  position: sticky;
+  top: 0;
   padding: 35px 0;
   box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
   background: $bg;
@@ -6,9 +8,6 @@
 }
 
 .header--scroll {
-  position: fixed;
-  top: 0;
-  width: 100%;
   padding: 26px 0;
   background: rgba(233, 237, 241, 0.9);
   z-index: 5;
