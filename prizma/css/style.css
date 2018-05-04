@@ -111,9 +111,10 @@ body {
   background: rgba(233, 237, 241, 0.9);
   z-index: 5; }
   .header--scroll .header__settings {
-    margin: 0 0 0 15px;
     z-index: 10; }
   .header--scroll .header__menu {
+    position: relative;
+    left: 15px;
     display: block; }
   .header--scroll .header__search {
     display: none; }
@@ -583,7 +584,8 @@ body {
       margin: 0; } }
 
 .banner {
-  padding: 70px 0 0 0; }
+  padding: 70px 0 0 0;
+  background: #fff; }
 
 .banner__flex {
   display: -webkit-box;
@@ -769,7 +771,8 @@ body {
 
 .info {
   padding: 80px 0;
-  border-bottom: 1px solid #e9edf1; }
+  border-bottom: 1px solid #e9edf1;
+  background: #fff; }
 
 .info__name {
   margin: 0;
@@ -800,7 +803,8 @@ body {
     margin: 0; } }
 
 .multyplatform {
-  padding: 100px 0; }
+  padding: 100px 0;
+  background: #fff; }
 
 .multyplatform__flex {
   display: -webkit-box;
