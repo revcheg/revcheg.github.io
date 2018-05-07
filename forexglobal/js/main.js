@@ -212,7 +212,7 @@ function openTabs (evt, cityName) {
 }
 
 // Inner Tabs
-function openFile(evt, cityName) {
+function openTab(evt, tabName) {
 
   var i, tabContent, tabLinks;
 
@@ -226,7 +226,7 @@ function openFile(evt, cityName) {
     tabLinks[i].className = tabLinks[i].className.replace(" tab__active", "");
   }
 
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " tab__active";
 }
 

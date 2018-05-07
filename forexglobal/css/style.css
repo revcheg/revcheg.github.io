@@ -1539,9 +1539,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   margin: 30px 0 0 0;
   overflow: hidden; }
 
@@ -1574,12 +1571,12 @@ body {
 
 .tab__content {
   display: none;
-  height: 600px;
-  padding: 6px 12px;
+  height: 500px;
+  padding: 12px;
   border: 1px solid #6420ff;
+  border-top-right-radius: 30px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  border-top: none;
   overflow: scroll; }
   .tab__content h3 {
     color: #2f2861;

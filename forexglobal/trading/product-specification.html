@@ -104,12 +104,12 @@
     <div class="container">
       <h1 class="inner__name">Product Specification</h1>
       <div class="tab">
-        <button class="tab__button  tab__active" onclick="openFile(event, 'Forex')">Forex</button>
-        <button class="tab__button" onclick="openFile(event, 'Commodities')">Commodities</button>
-        <button class="tab__button" onclick="openFile(event, 'Metals')">Metals</button>
-        <button class="tab__button" onclick="openFile(event, 'Energies')">Energies</button>
-        <button class="tab__button" onclick="openFile(event, 'Indices')">Indices</button>
-        <button class="tab__button" onclick="openFile(event, 'Stocks')">Stocks</button>
+        <button class="tab__button  tab__active" onclick="openTab(event, 'Forex')">Forex</button>
+        <button class="tab__button" onclick="openTab(event, 'Commodities')">Commodities</button>
+        <button class="tab__button" onclick="openTab(event, 'Metals')">Metals</button>
+        <button class="tab__button" onclick="openTab(event, 'Energies')">Energies</button>
+        <button class="tab__button" onclick="openTab(event, 'Indices')">Indices</button>
+        <button class="tab__button" onclick="openTab(event, 'Equities')">Equities</button>
       </div>
       <div id="Forex" class="tab__content  tab__content--forex">
         <h3>Forex</h3>
@@ -1258,242 +1258,865 @@
         <p>Server Time = GMT+2 & GMT+3 DST</p>
         <p>*Swap values are in points and may be adjusted daily based on market conditions and rates provided by our Price Provider applicable to all open positions. Triple swaps are applied every Wednesday.</p>
       </div>
-      <div id="IndicesF" class="tab__content">
+      <div id="Indices" class="tab__content">
         <h3>Indices</h3>
         <p>An index is a statistical representation of an equity market through a basket of stocks. An index measures the value of a group of stocks and therefore investors can invest on indices that represent specific markets.</p>
         <p>With Forex24 you can trade more than 10 of the world’s most prolific indices covering Asia, North America and Europe, including the renowned Dow Jones Industrial Average (DJIA) which is extremely popular with traders worldwide.</p>
-        
+        <p>Dividend Adjustments on Cash Indices CFDs<br>CFDs on Indices will be subject to dividend adjustments. When a constituent member of an index pays Dividends to its Shareholders, dividend adjustments will be made to accounts of clients holding a position on the index.</p>
+        <ul>
+          <li>Long Positions (Buy) – Clients holding long positions on the ex-div date will receive a dividend in the form of a cash adjustment (CD)</li>
+          <li>Short Positions (Sell) – Clients holding short positions on the ex-div date will be charged the dividend amount in the form of a cash adjustment (CW)</li>
+        </ul>
+        <p>Calculated as Follows:<br>Dividend adjustment = Index Dividend declared x position size in Lots.</p>
+        <table class="tab__table">
+        	<tr>
+        		<th>Symbols</th>
+        		<th>Descripion</th>
+        		<th>Currency</th>
+        		<th>Nominal Volume</th>
+        		<th>Contract Size</th>
+        		<th>Min Position Size</th>
+        		<th>Max Position Size</th>
+        		<th>Swap Long In Points</th>
+        		<th>Swap Long In Points</th>
+        		<th>Trading Hours(Server Time)*</th>
+        	</tr>
+        	<tr>
+        		</tr>
+        	<tr>
+        		<td>DJ30</td>
+        		<td>Dow Jones 30 Cash Index</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td>-289.696</td>
+        		<td>-45.263</td>
+        		<td>Mon-Fri 01:00-23:15</td>
+        	</tr>
+        	<tr>
+        		<td>AUS200</td>
+        		<td>Australia 200 Cash Index</td>
+        		<td>AUD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td>-68.673</td>
+        		<td>-12.651</td>
+        		<td>Mon-Fri 00:50-07:30, 08:10-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>DE30</td>
+        		<td>Germany 30 Cash index</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td>-70.316</td>
+        		<td>-96.141</td>
+        		<td>Mon-Fri 09:00-23:30</td>
+        	</tr>
+        	<tr>
+        		<td>ES35</td>
+        		<td>Spain 35 Cash Index</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td>-56.325</td>
+        		<td>-77.142</td>
+        		<td>Mon-Fri 09:00-21:00</td>
+        	</tr>
+        	<tr>
+        		<td>F40</td>
+        		<td>France 40 Cash Index</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td>-30.431</td>
+        		<td>-41.675</td>
+        		<td>Mon-Fri 09:00-23:30</td>
+        	</tr>
+        	<tr>
+        		<td>JP225</td>
+        		<td>JPN225 Cash Index</td>
+        		<td>JPY</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td>-145.065</td>
+        		<td>-149.176</td>
+        		<td>Mon-Fri 01:00-24:00</td>
+        	</tr>
+        	<tr>
+        		<td>N25</td>
+        		<td>Netherlands 25 Cash Index</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td>-3.179</td>
+        		<td>-4.292</td>
+        		<td>Mon-Fri 09:00-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>STOXX50</td>
+        		<td>Euro 50 Cash index</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td>-19.737</td>
+        		<td>-27.029</td>
+        		<td>Mon-Fri 09:00-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>SWI20</td>
+        		<td>Switzerland 20 Cash index</td>
+        		<td>CHF</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td>-41.833</td>
+        		<td>-78.837</td>
+        		<td>Mon-Fri 09:00-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>USTEC</td>
+        		<td>NAS100 Cash Index</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td>-79.095</td>
+        		<td>-12.297</td>
+        		<td>Mon-Fri 01:00-23:15</td>
+        	</tr>
+        	<tr>
+        		<td>US500</td>
+        		<td>SPX500 Cash Index</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td>-31.905</td>
+        		<td>-4.95</td>
+        		<td>Mon-Fri 01:00-23:15</td>
+        	</tr>
+        	<tr>
+        		<td>UK100</td>
+        		<td>UK 100 Cash Index</td>
+        		<td>GBP</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td>-79.095</td>
+        		<td>-12.297</td>
+        		<td>Mon-Fri 01:00-23:15</td>
+        	</tr>
+        </table>
+        <p>Server Time = GMT+2 & GMT+3 DST</p>
+        <p>*Swap values are in points and may be adjusted daily based on market conditions and rates provided by our Price Provider applicable to all open positions. Triple swaps are applied every Wednesday.</p>
       </div>
-      <div id="Stocks" class="tab__content">
-        <h3>Stocks</h3>
+      <div id="Equities" class="tab__content">
+        <h3>Equities</h3>
         <p>Stocks or Equities belong to one of the major asset classes. Stocks are significant as they stand for the real value of one’s stake in a corporation listed in a stock exchange.</p>
         <p>At Forex24 you can trade 40+ Stock CFDs that are traded in world major equity markets, such as Apple, Microsoft, Alibaba and Amazon.</p>
-        <table class="spreadsTable dataTable tab__table">
-        <thead>
-        <tr>
-        <th>Symbol</th>
-        <th>Description</th>
-        <th>Explanation</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="stocksAccountComparison">
-        <td>ADSGn.DE</td>
-        <td>EU Equitie</td>
-        <td>Adidas Salomon</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>ALVG.DE</td>
-        <td>EU Equitie</td>
-        <td>Allianz SE</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>BAYGn.DE</td>
-        <td>EU Equitie</td>
-        <td>Bayer AG</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>BMWG.DE</td>
-        <td>EU Equitie</td>
-        <td>BMW (Bayerische Motoren Werke AG)</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>CBKG.DE</td>
-        <td>EU Equitie</td>
-        <td>Commerzbank AG</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>DAIGn.DE</td>
-        <td>EU Equitie</td>
-        <td>Daimler AG</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>EONGn.DE</td>
-        <td>EU Equitie</td>
-        <td>E.ON SE</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>LHAG.DE</td>
-        <td>EU Equitie</td>
-        <td>Deutsche Lufthansa AG</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>SIEGn.DE</td>
-        <td>EU Equitie</td>
-        <td>Siemens Ltd</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>TOTF.PA</td>
-        <td>EU Equitie</td>
-        <td>Total SA</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>VOWG_p.DE</td>
-        <td>EU Equitie</td>
-        <td>Volkswagen AG</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>BABA.N</td>
-        <td>US Equitie</td>
-        <td>Alibaba Group Holding Ltd</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>AMZN.OQ</td>
-        <td>US Equitie</td>
-        <td>Amazon.com, Inc.</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>AXP.N</td>
-        <td>US Equitie</td>
-        <td>American Express Company</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>AAPL.OQ</td>
-        <td>US Equitie</td>
-        <td>Apple Inc.</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>T.N</td>
-        <td>US Equitie</td>
-        <td>AT&amp;T Inc.</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>BAC.N</td>
-        <td>US Equitie</td>
-        <td>Bank of America Corp</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>BA.N</td>
-        <td>US Equitie</td>
-        <td>Boeing Co</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>CSCO.OQ</td>
-        <td>US Equitie</td>
-        <td>Cisco Systems, Inc.</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>C.N</td>
-        <td>US Equitie</td>
-        <td>Citigroup Inc</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>KO.N</td>
-        <td>US Equitie</td>
-        <td>The Coca-Cola Co</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>EBAY.OQ</td>
-        <td>US Equitie</td>
-        <td>eBay Inc</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>XOM.N</td>
-        <td>US Equitie</td>
-        <td>Exxon Mobil Corporation</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>FB.OQ</td>
-        <td>US Equitie</td>
-        <td>Facebook, Inc.</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>RACE.N</td>
-        <td>US Equitie</td>
-        <td>Ferrari NV</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>GE.N</td>
-        <td>US Equitie</td>
-        <td>General Electric Company</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>GM.N</td>
-        <td>US Equitie</td>
-        <td>General Motors Company</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>GS.N</td>
-        <td>US Equitie</td>
-        <td>Goldman Sachs Group Inc</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>GOOG.OQ</td>
-        <td>US Equitie</td>
-        <td>Google (Alphabet Inc Class A)</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>HPQ.N</td>
-        <td>US Equitie</td>
-        <td>HP Inc</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>IBM.N</td>
-        <td>US Equitie</td>
-        <td>IBM</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>INTC.OQ</td>
-        <td>US Equitie</td>
-        <td>Intel Corporation</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>JNJ.N</td>
-        <td>US Equitie</td>
-        <td>Johnson &amp; Johnson</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>JPM.N</td>
-        <td>US Equitie</td>
-        <td>JPMorgan Chase &amp; Co.</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>MCD.N</td>
-        <td>US Equitie</td>
-        <td>McDonald’s Corporation</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>MSFT.OQ</td>
-        <td>US Equitie</td>
-        <td>Microsoft Corporation</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>NFLX.OQ</td>
-        <td>US Equitie</td>
-        <td>Netflix, Inc.</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>ORCL.N</td>
-        <td>US Equitie</td>
-        <td>Oracle Corporation</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>PFE.N</td>
-        <td>US Equitie</td>
-        <td>Pfizer Inc.</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>QCOM.OQ</td>
-        <td>US Equitie</td>
-        <td>QUALCOMM, Inc.</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>TSLA.OQ</td>
-        <td>US Equitie</td>
-        <td>Tesla Inc</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>TWTR.N</td>
-        <td>US Equitie</td>
-        <td>Twitter Inc</td>
-        </tr>
-        <tr class="stocksAccountComparison">
-        <td>V.N</td>
-        <td>US Equitie</td>
-        <td>Visa Inc</td>
-        </tr>
-        </tbody>
+        <p>Dividends Adjustments on Stocks CFDs<br>CFDs on stocks are subject to dividend adjustments. When a stock security pays dividend to its shareholders, dividend adjustments will be made to the trading accounts of clients who hold a position on the Stock.</p>
+        <ul>
+          <li>Long Positions (Buy) – Clients holding long positions on the ex-div date will receive a dividend in the form of a cash adjustment (CD)</li>
+          <li>Short Positions (Sell) – Clients holding short positions on the ex-div date will be charged the dividend amount in the form of a cash adjustment (CW)</li>
+        </ul>
+        <p>Calculated as Follows:<br>Dividend adjustment = Stock Dividend declared x position size in Lots.</p>
+        <table class="tab__table">
+        	<tr>
+        		<th>Symbols</th>
+        		<th>Descripion</th>
+        		<th>Currency</th>
+        		<th>Nominal Value</th>
+        		<th>Contract Size</th>
+        		<th>Min Position Size</th>
+        		<th>Max Position Size</th>
+        		<th>Swap Long In Points</th>
+        		<th>Swap Long In Points</th>
+        		<th>Trading Hours(Server Time)*</th>
+        	</tr>
+        	<tr>
+        		<td>ADSGn</td>
+        		<td>Adidas Salomon</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td>-0.548</td>
+        		<td>-1.067</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>AIRF</td>
+        		<td>Air France - Klm</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td>-0.024</td>
+        		<td>-0.047</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>ALVG</td>
+        		<td>Allianz AG</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td>-0.512</td>
+        		<td>-0.996</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>BBVA</td>
+        		<td>BBVA</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td>-0.018</td>
+        		<td>-0.035</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>BKIA</td>
+        		<td>Bankia SA</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td>-0.01</td>
+        		<td>-0.02</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>BMWG</td>
+        		<td>(BMW) Bay Mot Werke </td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td>-0.246</td>
+        		<td>-0.479</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>BNPP</td>
+        		<td>BNP Paribas</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td>-0.166</td>
+        		<td>-0.323</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>DAIGn</td>
+        		<td>Daimler AG</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td>-0.191</td>
+        		<td>-0.371</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>DANO</td>
+        		<td>Danone</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td>-0.182</td>
+        		<td>-0.354</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>DBKGn</td>
+        		<td>Deutsche Bank</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td>-0.031</td>
+        		<td>-0.06</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>DPWGn</td>
+        		<td>Deutsche Post</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td>-0.098</td>
+        		<td>-0.19</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>EONGn</td>
+        		<td>E.On  AG</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td>-0.025</td>
+        		<td>-0.049</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>IBE</td>
+        		<td>IBERDROLA</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td>-0.017</td>
+        		<td>-0.033</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>LHAG</td>
+        		<td>DT Lufthansa</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td>-0.071</td>
+        		<td>-0.137</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>LVMH</td>
+        		<td>L.V.M.H.</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.712" sdnum="1033;">-0.712</td>
+        		<td sdval="-1.386" sdnum="1033;">-1.386</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>MAP</td>
+        		<td>MAPFRE</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.008" sdnum="1033;">-0.008</td>
+        		<td sdval="-0.015" sdnum="1033;">-0.015</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>SAN</td>
+        		<td>Banco Santander</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.015" sdnum="1033;">-0.015</td>
+        		<td sdval="-0.028" sdnum="1033;">-0.028</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>SIEGn</td>
+        		<td>Siemens</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.283" sdnum="1033;">-0.283</td>
+        		<td sdval="-0.552" sdnum="1033;">-0.552</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>SOGN</td>
+        		<td>Societe Generale</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.121" sdnum="1033;">-0.121</td>
+        		<td sdval="-0.236" sdnum="1033;">-0.236</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>TEF</td>
+        		<td>TELEFONICA</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.022" sdnum="1033;">-0.022</td>
+        		<td sdval="-0.043" sdnum="1033;">-0.043</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>TOTF</td>
+        		<td>Total</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.132" sdnum="1033;">-0.132</td>
+        		<td sdval="-0.258" sdnum="1033;">-0.258</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>VOWG_p</td>
+        		<td>Volkswagen AG</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.449" sdnum="1033;">-0.449</td>
+        		<td sdval="-0.875" sdnum="1033;">-0.875</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>CBKG</td>
+        		<td>Commerzbank AG</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.029" sdnum="1033;">-0.029</td>
+        		<td sdval="-0.056" sdnum="1033;">-0.056</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>AAPL</td>
+        		<td>Apple</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-1.762" sdnum="1033;">-1.762</td>
+        		<td sdval="0.24" sdnum="1033;">0.24</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>AXP</td>
+        		<td>American Express</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.971" sdnum="1033;">-0.971</td>
+        		<td sdval="0.132" sdnum="1033;">0.132</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>BA</td>
+        		<td>Boeing</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-3.465" sdnum="1033;">-3.465</td>
+        		<td sdval="0.471" sdnum="1033;">0.471</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>BAC</td>
+        		<td>Bank Of America</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.717" sdnum="1033;">-0.717</td>
+        		<td sdval="0.097" sdnum="1033;">0.097</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>BAYGn</td>
+        		<td>Bayer AG</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.255" sdnum="1033;">-0.255</td>
+        		<td sdval="-0.496" sdnum="1033;">-0.496</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>CSCO</td>
+        		<td>Cisco Systems</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.433" sdnum="1033;">-0.433</td>
+        		<td sdval="0.059" sdnum="1033;">0.059</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>CVX</td>
+        		<td>Chevron</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-1.203" sdnum="1033;">-1.203</td>
+        		<td sdval="0.164" sdnum="1033;">0.164</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>FB</td>
+        		<td>Facebook</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-1.633" sdnum="1033;">-1.633</td>
+        		<td sdval="0.222" sdnum="1033;">0.222</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>FDX</td>
+        		<td>Fedex</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-2.524" sdnum="1033;">-2.524</td>
+        		<td sdval="0.343" sdnum="1033;">0.343</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>GE</td>
+        		<td>General Electric</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.138" sdnum="1033;">-0.138</td>
+        		<td sdval="0.019" sdnum="1033;">0.019</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>GOOG</td>
+        		<td>Alphabet Inc Class C</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-10.598" sdnum="1033;">-10.598</td>
+        		<td sdval="1.441" sdnum="1033;">1.441</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>GS</td>
+        		<td>Goldman Sachs Group</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-2.623" sdnum="1033;">-2.623</td>
+        		<td sdval="0.357" sdnum="1033;">0.357</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>HLT</td>
+        		<td>Hilton Worldwide</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.37" sdnum="1033;">-0.37</td>
+        		<td sdval="0.05" sdnum="1033;">0.05</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>HPQ</td>
+        		<td>HP Inc</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.223" sdnum="1033;">-0.223</td>
+        		<td sdval="0.03" sdnum="1033;">0.03</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>ILMN</td>
+        		<td>Illumina</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-2.406" sdnum="1033;">-2.406</td>
+        		<td sdval="0.327" sdnum="1033;">0.327</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>INTC</td>
+        		<td>Intel</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.521" sdnum="1033;">-0.521</td>
+        		<td sdval="0.071" sdnum="1033;">0.071</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>KO</td>
+        		<td>Coca-Cola</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.454" sdnum="1033;">-0.454</td>
+        		<td sdval="0.062" sdnum="1033;">0.062</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>MA</td>
+        		<td>Mastercard Cl A</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-1.807" sdnum="1033;">-1.807</td>
+        		<td sdval="0.246" sdnum="1033;">0.246</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>MCD</td>
+        		<td>McDonalds</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-1.679" sdnum="1033;">-1.679</td>
+        		<td sdval="0.228" sdnum="1033;">0.228</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>NFLX</td>
+        		<td>Netflix</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-2.969" sdnum="1033;">-2.969</td>
+        		<td sdval="0.404" sdnum="1033;">0.404</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>ORCL</td>
+        		<td>Oracle</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.47" sdnum="1033;">-0.47</td>
+        		<td sdval="0.064" sdnum="1033;">0.064</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>PFE</td>
+        		<td>Pfizer</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.374" sdnum="1033;">-0.374</td>
+        		<td sdval="0.051" sdnum="1033;">0.051</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>PG</td>
+        		<td>Procter &amp;Gamb</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.821" sdnum="1033;">-0.821</td>
+        		<td sdval="0.112" sdnum="1033;">0.112</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>QCOM</td>
+        		<td>Qualcomm</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.573" sdnum="1033;">-0.573</td>
+        		<td sdval="0.078" sdnum="1033;">0.078</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>RACE</td>
+        		<td>Ferrari</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-1.262" sdnum="1033;">-1.262</td>
+        		<td sdval="0.172" sdnum="1033;">0.172</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>T</td>
+        		<td>At&amp;T</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.37" sdnum="1033;">-0.37</td>
+        		<td sdval="0.05" sdnum="1033;">0.05</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>TSLA</td>
+        		<td>Tesla Motors</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-2.799" sdnum="1033;">-2.799</td>
+        		<td sdval="0.381" sdnum="1033;">0.381</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>TWTR</td>
+        		<td>Twitter</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.288" sdnum="1033;">-0.288</td>
+        		<td sdval="0.039" sdnum="1033;">0.039</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>V</td>
+        		<td>Visa</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-1.248" sdnum="1033;">-1.248</td>
+        		<td sdval="0.17" sdnum="1033;">0.17</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>XOM</td>
+        		<td>Exxon Mobil</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.786" sdnum="1033;">-0.786</td>
+        		<td sdval="0.107" sdnum="1033;">0.107</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>F</td>
+        		<td>Ford Motor</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.117" sdnum="1033;">-0.117</td>
+        		<td sdval="0.016" sdnum="1033;">0.016</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>C</td>
+        		<td>Citigroup</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.717" sdnum="1033;">-0.717</td>
+        		<td sdval="0.097" sdnum="1033;">0.097</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
         </table>
+        <p>Server Time = GMT+2 & GMT+3 DST</p>
+        <p>*Swap values are in points and may be adjusted daily based on market conditions and rates provided by our Price Provider applicable to all open positions. Triple swaps are applied every Wednesday.</p>
       </div>
     </div>
   </section>

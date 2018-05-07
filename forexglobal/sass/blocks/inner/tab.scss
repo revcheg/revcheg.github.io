@@ -1,6 +1,6 @@
 .tab {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   // border: 1px solid #ccc;
   // background: $sc;
   margin: 30px 0 0 0;
@@ -41,12 +41,13 @@
 
 .tab__content {
   display: none;
-  height: 600px;
-  padding: 6px 12px;
+  height: 500px;
+  padding: 12px;
   border: 1px solid #6420ff;
+  border-top-right-radius: 30px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  border-top: none;
+  // border-top: none;
   overflow: scroll;
   
   h3 {
