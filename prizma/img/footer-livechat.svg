@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 84.63 66.54">
+  <defs>
+    <linearGradient id="a" x1="61.26" x2="4.97" y1="48.96" y2="1.73" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1600e4"/>
+      <stop offset=".28" stop-color="#373ae3"/>
+      <stop offset=".62" stop-color="#5c7be2"/>
+      <stop offset=".87" stop-color="#73a4e1"/>
+      <stop offset="1" stop-color="#7cb3e1"/>
+    </linearGradient>
+    <linearGradient id="b" x1="80.12" x2="44.73" y1="57.8" y2="28.1" xlink:href="#a"/>
+  </defs>
+  <g data-name="Layer 2">
+    <g data-name="Layer 1" opacity=".5">
+      <path fill="url(#a)" d="M57.75 0H12A12 12 0 0 0 0 12v22.5a12 12 0 0 0 12 12h-.17v10.64l11.5-10.64h34.42a12 12 0 0 0 12-12V12a12 12 0 0 0-12-12zM18.29 19A4.29 4.29 0 1 1 14 23.25 4.29 4.29 0 0 1 18.29 19zm16.59 8.58a4.29 4.29 0 1 1 4.29-4.29 4.29 4.29 0 0 1-4.29 4.25zm16.58 0a4.29 4.29 0 1 1 4.29-4.29 4.29 4.29 0 0 1-4.29 4.25z"/>
+      <path fill="url(#b)" d="M74.19 9.51a15.55 15.55 0 0 1 .44 3.63v22.5a16 16 0 0 1-16 16H25.78l-3.57 3.3a11.71 11.71 0 0 0 4.67 1h34.41l11.5 10.64V55.9h-.16a12 12 0 0 0 12-12V21.4A12 12 0 0 0 74.19 9.51z"/>
+    </g>
+  </g>
+</svg>

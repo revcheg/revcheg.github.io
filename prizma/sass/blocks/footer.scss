@@ -99,6 +99,22 @@
   }
 }
 
+.footer__livechat {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 60px;
+  height: 48px;
+  border: none;
+  background: transparent url('../img/footer-livechat.svg') no-repeat center;
+  transition: 0.3s;
+  cursor: pointer;
+  
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 @media screen and ($tablet-widths) {}
 
 @media screen and ($mobile-widths) {

@@ -619,7 +619,7 @@ body {
   padding: 0;
   font-size: 20px;
   font-family: 'ProximaNova-Light', sans-serif;
-  list-style: inside url("../img/banner-li.svg"); }
+  list-style: inside url("../img/list.svg"); }
   .banner__list li {
     line-height: 40px; }
 
@@ -1017,6 +1017,21 @@ body {
   .footer__item--tw {
     background: url("../img/social-footer-tw.svg") no-repeat center; }
 
+.footer__livechat {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 60px;
+  height: 48px;
+  border: none;
+  background: transparent url("../img/footer-livechat.svg") no-repeat center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer; }
+  .footer__livechat:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
 @media screen and (max-width: 768px) {
   .footer__links {
     -webkit-box-orient: vertical;
@@ -1079,12 +1094,42 @@ body {
   .inner__content--accounts {
     background: #fff url("../img/accounts-bg-left.svg") no-repeat left top, #fff url("../img/accounts-bg-right.svg") no-repeat 90% 130px;
     background-size: 845px, 100px; }
+  .inner__content--templates {
+    padding: 100px 0;
+    background: #fff url("../img/templates-bg.svg") no-repeat center; }
 
 .inner__subtext {
   margin: 0;
   font-size: 18px;
   font-family: 'ProximaNova-LightIt', serif;
   text-align: center; }
+
+.inner__text {
+  font-family: 'ProximaNova-Regular', sans-serif; }
+
+.inner__contact {
+  font-family: 'ProximaNova-Regular', sans-serif; }
+  .inner__contact b {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'ProximaNova-Bold', sans-serif; }
+  .inner__contact a {
+    color: #1600e6;
+    font-family: 'ProximaNova-Bold', sans-serif;
+    text-decoration: none; }
+
+.inner__name {
+  display: block;
+  font-weight: normal;
+  font-family: 'ProximaNova-Bold', sans-serif; }
+  .inner__name--big {
+    font-size: 30px; }
+  .inner__name--small {
+    font-size: 20px; }
+
+.inner__list {
+  font-family: 'ProximaNova-Regular', sans-serif;
+  list-style: url("../img/list.svg"); }
 
 @media screen and (max-width: 768px) {
   .inner__header {
@@ -1100,7 +1145,24 @@ body {
     padding: 30px 0; }
     .inner__content--accounts {
       background: #fff url("../img/accounts-bg-left.svg") no-repeat 0 50px, #fff url("../img/accounts-bg-right.svg") no-repeat right bottom;
-      background-size: 300px, 100px; } }
+      background-size: 300px, 100px; }
+  .inner__text {
+    font-size: 13px; }
+  .inner__contact {
+    text-align: center; }
+    .inner__contact b {
+      display: block;
+      font-size: 18px; }
+    .inner__contact a {
+      display: block; }
+  .inner__name {
+    text-align: center; }
+    .inner__name--big {
+      font-size: 20px; }
+    .inner__name--small {
+      font-size: 18px; }
+  .inner__list {
+    font-size: 13px; } }
 
 .table {
   width: 100%;
