@@ -1313,3 +1313,59 @@ body {
     line-height: 20px; }
   .webtrader__button {
     margin: 40px auto 0; } }
+
+.mobile__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 40px 0 0 0; }
+
+.mobile__mockup {
+  width: 644px;
+  height: 641px;
+  background: url("../img/mobile-mockup.png") no-repeat center; }
+
+.mobile__list {
+  padding: 0;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  line-height: 40px;
+  list-style: none; }
+
+.mobile__button {
+  display: inline-block;
+  line-height: normal; }
+  .mobile__button--appstore {
+    margin: 40px 15px 0 0;
+    background: #1600e6 url("../img/mobile-appstore.svg") no-repeat;
+    background-position: 20px;
+    background-size: 17px; }
+  .mobile__button--googleplay {
+    margin: 40px 0 0 15px;
+    background: #1600e6 url("../img/mobile-googleplay.svg") no-repeat;
+    background-position: 20px;
+    background-size: 17px; }
+
+@media screen and (max-width: 1200px) {
+  .mobile__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
+
+@media screen and (max-width: 768px) {
+  .mobile__mockup {
+    width: 300px;
+    height: 250px;
+    background-size: contain; }
+  .mobile__list {
+    font-size: 13px;
+    text-align: center;
+    line-height: 20px; }
+  .mobile__button {
+    margin: 40px auto 0; } }
