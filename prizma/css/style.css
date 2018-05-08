@@ -1116,6 +1116,9 @@ body {
   .inner__content--platforms {
     background: #fff url("../img/platforms-bg.svg") no-repeat center;
     background-size: cover; }
+  .inner__content--tools {
+    background: #fff url("../img/tools-bg.svg") no-repeat center;
+    background-size: cover; }
   .inner__content--templates {
     padding: 100px 0;
     background: #fff url("../img/templates-bg.svg") no-repeat center; }
@@ -1369,3 +1372,64 @@ body {
     line-height: 20px; }
   .mobile__button {
     margin: 40px auto 0; } }
+
+.glossary details {
+  padding: 10px 0; }
+  .glossary details summary {
+    padding: 0 15px;
+    font-size: 18px;
+    font-family: 'ProximaNova-Bold', sans-serif;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    outline: none;
+    cursor: pointer; }
+    .glossary details summary::-webkit-details-marker {
+      display: none; }
+  .glossary details[open] summary {
+    color: #da2f69; }
+  .glossary details p {
+    padding: 10px 15px;
+    font-family: 'ProximaNova-Regular', sans-serif;
+    border-radius: 17px;
+    background: #7cb3e1; }
+
+.glossary__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 20px 0 50px 0; }
+  .glossary__button button {
+    padding: 0 20px;
+    font-size: 20px;
+    font-family: 'ProximaNova-Semibold', sans-serif;
+    border: none;
+    background: transparent;
+    cursor: pointer; }
+
+.glossary__name {
+  margin: 0 0 10px 0;
+  padding: 0 15px;
+  font-size: 18px;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  text-align: left;
+  border: none;
+  background: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  cursor: pointer; }
+  .glossary__name--active {
+    color: #da2f69; }
+
+.glossary__content {
+  max-height: 0;
+  padding: 0 15px;
+  font-family: 'ProximaNova-Regular', sans-serif;
+  border-radius: 30px;
+  background: #7cb3e1;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-out; }

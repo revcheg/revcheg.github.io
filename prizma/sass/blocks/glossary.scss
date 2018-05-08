@@ -1,0 +1,72 @@
+.glossary {
+  
+  details {
+    padding: 10px 0;
+    
+    summary {
+      padding: 0 15px;
+      font-size: 18px;
+      font-family: 'ProximaNova-Bold', sans-serif;
+      transition: 0.3s;
+      outline: none;
+      cursor: pointer;
+      
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
+    
+    &[open] summary {
+      color: #da2f69;
+    }
+    
+    p {
+      padding: 10px 15px;
+      font-family: 'ProximaNova-Regular', sans-serif;
+      border-radius: 17px;
+      background: #7cb3e1;
+    }
+  }
+}
+
+.glossary__button {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 50px 0;
+  
+  button {
+    padding: 0 20px;
+    font-size: 20px;
+    font-family: 'ProximaNova-Semibold', sans-serif;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+}
+
+.glossary__name {
+  margin: 0 0 10px 0;
+  padding: 0 15px;
+  font-size: 18px;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  text-align: left;
+  border: none;
+  background: transparent;
+  transition: 0.3s;
+  outline: none;
+  cursor: pointer;
+  
+  &--active {
+    color: #da2f69;
+  }
+}
+
+.glossary__content {
+  max-height: 0;
+  padding: 0 15px;
+  font-family: 'ProximaNova-Regular', sans-serif;
+  border-radius: 30px;
+  background: #7cb3e1;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}

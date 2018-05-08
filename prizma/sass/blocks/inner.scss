@@ -49,6 +49,11 @@
     background-size: cover;
   }
   
+  &--tools {
+    background: #fff url('../img/tools-bg.svg') no-repeat center;
+    background-size: cover;
+  }
+  
   &--templates {
     padding: 100px 0;
     background: #fff url('../img/templates-bg.svg') no-repeat center;
