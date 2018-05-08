@@ -107,11 +107,22 @@
   height: 48px;
   border: none;
   background: transparent url('../img/footer-livechat.svg') no-repeat center;
+  animation: livechat 1s ease infinite alternate;
   transition: 0.3s;
   cursor: pointer;
   
   &:hover {
     transform: scale(1.1);
+  }
+}
+
+@keyframes livechat {
+  0% {
+    opacity: 0.5;
+  }
+  
+  100% {
+    opacity: 1;
   }
 }
 
@@ -147,5 +158,12 @@
   
   .footer__copyright {
     order: 2;
+  }
+  
+  .footer__livechat {
+    right: 15px;
+    bottom: 15px;
+    width: 50px;
+    height: 38px;
   }
 }
