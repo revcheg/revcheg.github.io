@@ -5,7 +5,7 @@
 
 .form__flex {
   display: flex;
-  // justify-content: space-between;
+  justify-content: space-between;
   margin: 0 0 20px 0;
   
   &--right {
@@ -152,5 +152,87 @@
   
   &:hover {
     box-shadow: 0px 0px 11px 5px rgba(22, 0, 230, 0.3);
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .form {
+    width: 671px;
+    margin: auto;
+  }
+  
+  .form__label {
+    margin: 0 15px 0 0;
+  }
+  
+  .form__select {
+    
+    &--title {
+      width: 100px;
+      background-position-x: 70px; 
+    }
+    
+    &--country {
+      width: 240px;
+      background-position-x: 210px; 
+    }
+    
+    &--account {
+      width: 328px;
+      background-position-x: 295px; 
+    }
+  }
+  
+  .form__input {
+    
+    &--big {
+      width: 284px;
+    }
+  }
+  
+  .form__warning {
+    font-size: 12px;
+    background-size: 7px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .form {
+    width: 250px;
+    margin: auto;
+  }
+  
+  .form__flex {
+    flex-direction: column;
+  }
+  
+  .form__label {
+    margin: 0 0 10px 0;
+  }
+  
+  .form__select {
+    width: 250px;
+    background-position-x: 220px;
+    
+    &--title {
+      // background-position-x: 220px;
+    }
+    
+    &--country {
+      // background-position-x: 220px;
+    }
+  }
+  
+  .form__input {
+    width: 206px;
+  }
+  
+  .form__name {
+    margin: 25px 0 15px 0;
+    text-align: center;
+  }
+  
+  .form__submit {
+    width: 250px;
   }
 }

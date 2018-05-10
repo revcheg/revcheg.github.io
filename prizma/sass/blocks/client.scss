@@ -32,3 +32,74 @@
     font-family: 'ProximaNova-LightIt', sans-serif;
   }
 }
+
+.client__flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 45px 0 0 0;
+}
+
+.client__list {
+  width: 350px;
+  padding: 0;
+  list-style: inside url('../img/list.svg');
+  
+  li {
+    font-family: 'ProximaNova-Regular', sans-serif;
+    
+    &:first-child {
+      margin: 0 0 20px 0;
+      list-style: none;
+    }
+  }
+  
+  b {
+    font-weight: normal;
+    font-family: 'ProximaNova-Bold', sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .client {
+    flex-direction: column;
+  }
+  
+  .client__info {
+    width: auto;
+    text-align: center;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 0px;
+    
+    p {
+      margin: 40px 0 100px 0;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .client__info {
+    padding: 40px 25px;
+    
+    b {
+      font-size: 37px;
+    }
+    
+    p {
+      font-size: 25px;
+    }
+    
+    small {
+      font-size: 10px;
+    }
+  }
+  
+  .client__flex {
+    flex-direction: column;
+    margin: 20px 0 0 0;
+  }
+  
+  .client__list {
+    width: auto;
+  }
+}
