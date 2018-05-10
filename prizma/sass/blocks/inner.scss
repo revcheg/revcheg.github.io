@@ -54,6 +54,10 @@
     background-size: cover;
   }
   
+  &--client {
+    background: #fff;
+  }
+  
   &--templates {
     padding: 100px 0;
     background: #fff url('../img/templates-bg.svg') no-repeat center;
