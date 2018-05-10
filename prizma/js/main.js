@@ -80,6 +80,22 @@ for (var i = 0; i < acc.length; i++) {
   });
 };
 
+// Register
+var switchButton = document.querySelector('.form__switch');
+var passwordInput = document.querySelector('.form__input--password');
+
+switchButton.addEventListener('click', function () {
+  if (switchButton.classList.contains('form__switch--close')) {
+    switchButton.classList.remove('form__switch--close');
+    switchButton.classList.add('form__switch--open');
+    passwordInput.setAttribute('type', 'text');
+  } else {
+    switchButton.classList.remove('form__switch--open');
+    switchButton.classList.add('form__switch--close');
+    passwordInput.setAttribute('type', 'password');
+  };
+});
+
 // Slick
 $('.slider').slick({
   dots: true,

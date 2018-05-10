@@ -1471,14 +1471,29 @@ body {
 .form {
   width: 725px;
   padding: 40px 30px; }
-  .form label {
-    margin: 0 0 0 20px;
-    font-family: 'ProximaNova-Bold', sans-serif; }
+
+.form__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 20px 0; }
+  .form__flex:last-child {
+    margin: 0; }
+
+.form__label {
+  margin: 0 30px 0 0;
+  text-indent: 20px;
+  font-family: 'ProximaNova-Bold', sans-serif; }
+  .form__label--password {
+    position: relative; }
+  .form__label:last-child {
+    margin: 0; }
 
 .form__select {
   display: block;
+  height: 35px;
   margin: 5px 0 0 0;
-  padding: 10px 20px;
+  padding: 0 20px;
   font-size: 14px;
   font-family: 'ProximaNova-Regular', sans-serif;
   border: 2px solid #1600e6;
@@ -1490,5 +1505,77 @@ body {
   -moz-appearance: none;
   appearance: none; }
   .form__select--title {
-    width: 170px;
-    background-position-x: 150px; }
+    width: 125px;
+    background-position-x: 95px; }
+  .form__select--country {
+    width: 265px;
+    background-position-x: 235px; }
+  .form__select--phone {
+    width: 130px;
+    background-position-x: 100px; }
+  .form__select--account {
+    width: 348px;
+    background-position-x: 315px; }
+  .form__select:focus {
+    -webkit-box-shadow: 0px 1px 8px 0px rgba(193, 186, 255, 0.5);
+    box-shadow: 0px 1px 8px 0px rgba(193, 186, 255, 0.5); }
+
+.form__input {
+  display: block;
+  height: 31px;
+  margin: 5px 0 0 0;
+  padding: 0 20px;
+  font-size: 14px;
+  font-family: 'ProximaNova-Regular', sans-serif;
+  border: 2px solid #1600e6;
+  border-radius: 17px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none; }
+  .form__input--small {
+    width: 226px; }
+  .form__input--big {
+    width: 304px; }
+  .form__input::-webkit-input-placeholder {
+    color: #000; }
+  .form__input:-ms-input-placeholder {
+    color: #000; }
+  .form__input::-ms-input-placeholder {
+    color: #000; }
+  .form__input::placeholder {
+    color: #000; }
+  .form__input:focus {
+    -webkit-box-shadow: 0px 1px 8px 0px rgba(193, 186, 255, 0.5);
+    box-shadow: 0px 1px 8px 0px rgba(193, 186, 255, 0.5); }
+
+.form__warning {
+  padding: 0 0 0 10px;
+  color: #999999;
+  font-size: 13px;
+  font-family: 'ProximaNova-Regular', sans-serif;
+  background: url("../img/form-lock.svg") no-repeat left;
+  background-size: 8px; }
+
+.form__name {
+  margin: 25px 0 15px 20px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  text-transform: uppercase; }
+
+.form__switch {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  width: 20px;
+  height: 16px;
+  border: none;
+  background: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  cursor: pointer; }
+  .form__switch--close {
+    background: transparent url("../img/form-password-close.svg") no-repeat center; }
+  .form__switch--open {
+    background: transparent url("../img/form-password-open.svg") no-repeat center; }
