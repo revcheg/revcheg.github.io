@@ -13,6 +13,7 @@ window.onscroll = function () {
 
 // Menu
 var menu = document.querySelector('.nav');
+var user = document.querySelector('.header__user');
 var menuButton = document.querySelector('.header__toggle');
 
 menuButton.addEventListener('click', function () {
@@ -20,10 +21,12 @@ menuButton.addEventListener('click', function () {
     menuButton.classList.remove('header__toggle--inactive');
     menuButton.classList.add('header__toggle--active');
     menu.classList.add('nav--active');
+    user.classList.add('header__user--active');
   } else {
     menuButton.classList.remove('header__toggle--active');
     menuButton.classList.add('header__toggle--inactive');
     menu.classList.remove('nav--active');
+    user.classList.remove('header__user--active');
   }
 });
 
