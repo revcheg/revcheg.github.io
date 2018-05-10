@@ -27,6 +27,10 @@
     display: block;
   }
   
+  .header__language {
+    margin: 0 0 0 40px;
+  }
+  
   .header__search {
     display: none;
   }
@@ -86,9 +90,9 @@
 
 .header__settings {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
-  width: 120px;
+  width: 220px;
   margin: 0;
   padding: 0;
   list-style: none;
