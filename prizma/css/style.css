@@ -1468,6 +1468,9 @@ body {
     font-size: 16px;
     font-family: 'ProximaNova-LightIt', sans-serif; }
 
+.client__info--login p {
+  margin: 25px 0 40px 0; }
+
 .client__flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1527,6 +1530,22 @@ body {
   width: 725px;
   padding: 40px 30px; }
 
+.form__wrapper {
+  width: 725px;
+  padding: 40px 30px; }
+
+.form--login {
+  width: 355px;
+  margin: 60px auto;
+  padding: 0; }
+  .form--login h3 {
+    margin: 0 0 30px 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'ProximaNova-Bold', sans-serif;
+    text-align: center;
+    text-transform: uppercase; }
+
 .form__flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1550,6 +1569,11 @@ body {
     position: relative; }
   .form__label:last-child {
     margin: 0; }
+
+.form__label--login {
+  display: block;
+  margin: 0 0 20px 0;
+  text-indent: 20px; }
 
 .form__select {
   display: block;
@@ -1610,6 +1634,9 @@ body {
     -webkit-box-shadow: 0px 0px 10px 5px rgba(193, 186, 255, 0.5);
     box-shadow: 0px 0px 10px 5px rgba(193, 186, 255, 0.5); }
 
+.form__input--login {
+  width: 311px; }
+
 .form__warning {
   padding: 0 0 0 10px;
   color: #999999;
@@ -1665,12 +1692,30 @@ body {
     -webkit-box-shadow: 0px 0px 11px 5px rgba(22, 0, 230, 0.3);
     box-shadow: 0px 0px 11px 5px rgba(22, 0, 230, 0.3); }
 
+.form__submit--login {
+  width: 355px; }
+
+.form__links {
+  color: #000;
+  font-size: 14px;
+  font-family: 'ProximaNova-Regular', sans-serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .form__links:hover {
+    color: #1600e6; }
+
 @media screen and (max-width: 1200px) {
   .form {
     width: 671px;
     margin: auto; }
+  .form--login {
+    width: 300px; }
+  .form__wrapper {
+    width: auto; }
   .form__label {
     margin: 0 15px 0 0; }
+  .form__label--login {
+    margin: 0 0 20px 0; }
   .form__select--title {
     width: 100px;
     background-position-x: 70px; }
@@ -1682,9 +1727,13 @@ body {
     background-position-x: 295px; }
   .form__input--big {
     width: 284px; }
+  .form__input--login {
+    width: 256px; }
   .form__warning {
     font-size: 12px;
-    background-size: 7px; } }
+    background-size: 7px; }
+  .form__submit--login {
+    width: inherit; } }
 
 @media screen and (max-width: 768px) {
   .form {
@@ -1695,6 +1744,11 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+  .form__flex--login {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
   .form__label {
     margin: 0 0 10px 0; }
   .form__select {

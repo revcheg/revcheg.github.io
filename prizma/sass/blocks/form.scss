@@ -3,6 +3,26 @@
   padding: 40px 30px;
 }
 
+.form__wrapper {
+  width: 725px;
+  padding: 40px 30px;
+}
+
+.form--login {
+  width: 355px;
+  margin: 60px auto;
+  padding: 0;
+  
+  h3 {
+    margin: 0 0 30px 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'ProximaNova-Bold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
 .form__flex {
   display: flex;
   justify-content: space-between;
@@ -29,6 +49,12 @@
   &:last-child {
     margin: 0;
   }
+}
+
+.form__label--login {
+  display: block;
+  margin: 0 0 20px 0;
+  text-indent: 20px;
 }
 
 .form__select {
@@ -99,6 +125,10 @@
   }
 }
 
+.form__input--login {
+  width: 311px;
+}
+
 .form__warning {
   padding: 0 0 0 10px;
   color: #999999;
@@ -163,14 +193,41 @@
   }
 }
 
+.form__submit--login {
+  width: 355px;
+}
+
+.form__links {
+  color: #000;
+  font-size: 14px;
+  font-family: 'ProximaNova-Regular', sans-serif;
+  transition: 0.3s;
+  
+  &:hover {
+    color: $sc;
+  }
+}
+
 @media screen and ($tablet-widths) {
   .form {
     width: 671px;
     margin: auto;
   }
   
+  .form--login {
+    width: 300px;
+  }
+  
+  .form__wrapper {
+    width: auto; 
+  }
+  
   .form__label {
     margin: 0 15px 0 0;
+  }
+  
+  .form__label--login {
+    margin: 0 0 20px 0;
   }
   
   .form__select {
@@ -198,9 +255,17 @@
     }
   }
   
+  .form__input--login {
+    width: 256px;
+  }
+  
   .form__warning {
     font-size: 12px;
     background-size: 7px;
+  }
+  
+  .form__submit--login {
+    width: inherit;
   }
 }
 
@@ -212,6 +277,10 @@
   
   .form__flex {
     flex-direction: column;
+  }
+  
+  .form__flex--login {
+    flex-direction: row;
   }
   
   .form__label {
