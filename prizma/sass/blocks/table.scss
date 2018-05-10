@@ -43,6 +43,29 @@
   }
 }
 
+.table__wrapper {
+  height: 200px;
+  margin: 50px 0;
+  overflow: scroll;
+}
+
+.table--spread {
+  margin: 0;
+  text-align: center;
+  
+  th {
+    padding: 30px 0;
+    color: #da2f69;
+    font-size: 14px;
+    font-family: 'ProximaNova-Bold', sans-serif;
+  }
+  
+  td {
+    font-size: 12px;
+    font-family: 'ProximaNova-Regular', sans-serif;
+  }
+}
+
 .table__button {
   display: block;
   margin: auto;

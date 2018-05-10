@@ -35,6 +35,12 @@
   }
 }
 
+.inner__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .inner__content {
   padding: 30px 0 150px 0;
   
@@ -66,7 +72,7 @@
 }
 
 .inner__subtext {
-  margin: 0;
+  margin: 0 0 10px 0;
   font-size: 18px;
   font-family: 'ProximaNova-LightIt', serif;
   text-align: center;
@@ -109,6 +115,10 @@
 .inner__list {
   font-family: 'ProximaNova-Regular', sans-serif;
   list-style: url('../img/list.svg');
+}
+
+.inner__button {
+  margin: 50px auto 0;
 }
 
 @media screen and ($tablet-widths) {}
