@@ -68,6 +68,26 @@
   background-size: cover;
 }
 
+.bubble .lwc-chat-button {
+  right: 50px !important; 
+  background: url('../img/footer-skype.svg') no-repeat center;
+  animation: skype 1s infinite alternate;
+}
+
+.lwc-button-icon {
+  display: none !important;
+}
+
+@keyframes skype {
+  0% {
+    transform: scale(1);
+  }
+  
+  100% {
+    transform: scale(1.2);
+  }
+}
+
 @media screen and ($tablet-widths) {
   .footer__left {
     
@@ -94,5 +114,12 @@
   .footer__middle {
     width: auto;
     text-align: center;
+  }
+  
+  .bubble .lwc-chat-button {
+    right: 15px !important;
+    bottom: 15px !important;
+    width: 40px !important;
+    height: 40px !important;
   }
 }

@@ -1015,6 +1015,31 @@ body {
   background: url("../img/email.svg") no-repeat center;
   background-size: cover; }
 
+.bubble .lwc-chat-button {
+  right: 50px !important;
+  background: url("../img/footer-skype.svg") no-repeat center;
+  -webkit-animation: skype 1s infinite alternate;
+  animation: skype 1s infinite alternate; }
+
+.lwc-button-icon {
+  display: none !important; }
+
+@-webkit-keyframes skype {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
+
+@keyframes skype {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
+
 @media screen and (max-width: 1200px) {
   .footer__left img {
     margin-bottom: 30px; }
@@ -1030,7 +1055,12 @@ body {
     justify-content: center; }
   .footer__middle {
     width: auto;
-    text-align: center; } }
+    text-align: center; }
+  .bubble .lwc-chat-button {
+    right: 15px !important;
+    bottom: 15px !important;
+    width: 40px !important;
+    height: 40px !important; } }
 
 .popup {
   width: 370px;
