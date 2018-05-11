@@ -465,6 +465,11 @@ body {
   .slider__box--1 {
     background: url("../img/slider-1.jpg") no-repeat center;
     background-size: cover; }
+  .slider__box--2 {
+    background: url("../img/slider-2.jpg") no-repeat center;
+    background-size: cover; }
+  .slider__box--3 {
+    background: url("../img/slider-3.jpg") no-repeat center; }
 
 .slider__flex {
   display: -webkit-box;
@@ -479,9 +484,11 @@ body {
   width: 570px;
   height: inherit;
   margin: 0 0 0 auto; }
+  .slider__flex--small {
+    width: 500px; }
 
 .slider__text {
-  width: 360px; }
+  width: 420px; }
 
 .slider__social {
   height: 260px; }

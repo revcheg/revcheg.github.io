@@ -26,6 +26,15 @@
     background: url('../img/slider-1.jpg') no-repeat center;
     background-size: cover;
   }
+  
+  &--2 {
+    background: url('../img/slider-2.jpg') no-repeat center;
+    background-size: cover;
+  }
+  
+  &--3 {
+    background: url('../img/slider-3.jpg') no-repeat center;
+  }
 }
 
 .slider__flex {
@@ -35,10 +44,14 @@
   width: 570px;
   height: inherit;
   margin: 0 0 0 auto;
+  
+  &--small {
+    width: 500px;
+  }
 }
 
 .slider__text {
-  width: 360px;
+  width: 420px;
 }
 
 .slider__social {
