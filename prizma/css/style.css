@@ -1154,7 +1154,7 @@ body {
     background: #fff; }
   .inner__content--templates {
     padding: 100px 0;
-    background: #fff url("../img/templates-bg.svg") no-repeat center; }
+    background: #fff url("../img/templates-bg.svg") center; }
 
 .inner__subtext {
   margin: 0 0 10px 0;
