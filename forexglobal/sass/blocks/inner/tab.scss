@@ -1,33 +1,24 @@
 .tab {
   display: flex;
-  justify-content: space-around;
-  margin: 30px 0 50px 0;
-  overflow: hidden;
+  margin: 30px 0 0 0;
 }
 
 .tab__button {
-  width: 270px;
+  width: 170px;
+  margin: 0 10px 0 0;
   padding: 15px 0;
   color: #fff;
   font-size: 16px;
   font-weight: 300;
   border: none;
-  border-radius: 3px;
+  border-top-right-radius: 30px;
   background: $sc;
   outline: none;
   cursor: pointer;
   transition: 0.3s;
   
-  &--bronze {
-    background: #af7940;
-  }
-
-  &--silver {
-    background: #b1b1b1;
-  }
-  
-  &--gold {
-    background: #d2ad53;
+  &:hover {
+    background: #6420ff;
   }
 }
 
@@ -35,118 +26,7 @@
   width: 270px;
   color: #fff;
   font-weight: 600;
-}
-
-.tab__anchor {
-  display: flex;
-  // justify-content: space-between;
-}
-
-.tab__marker {
-  position: relative;
-  width: 170px;
-  margin: 0 10px 0 0;
-  padding: 15px 0;
-  color: #fff;
-  font-size: 13px;
-  text-align: center;
-  text-decoration: none;
-  border-top-right-radius: 30px;
-  background: $sc;
-  transition: 0.3s;
-  
-  
-  &--forex {
-    
-    &:before {
-      content: '';
-      position: absolute;
-      top: 13px;
-      left: 25px;
-      width: 20px;
-      height: 21px;
-      background: url('../img/tab-forex.svg') no-repeat center;
-      background-size: cover;
-    }
-  }
-  
-  &--energies {
-    
-    &:before {
-      content: '';
-      position: absolute;
-      top: 11px;
-      left: 22px;
-      width: 20px;
-      height: 24px;
-      background: url('../img/tab-energies.svg') no-repeat center;
-      background-size: cover;
-    }
-  }
-  
-  &--commodities {
-    
-    &:before {
-      content: '';
-      position: absolute;
-      top: 13px;
-      left: 15px;
-      width: 26px;
-      height: 20px;
-      background: url('../img/tab-commodities.svg') no-repeat center;
-      background-size: cover;
-    }
-  }
-  
-  &--metals {
-    
-    &:before {
-      content: '';
-      position: absolute;
-      top: 13px;
-      left: 19px;
-      width: 31px;
-      height: 20px;
-      background: url('../img/tab-metals.svg') no-repeat center;
-      background-size: cover;
-    }
-  }
-  
-  &--indices {
-    
-    &:before {
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: 20px;
-      width: 30px;
-      height: 25px;
-      background: url('../img/tab-indices.svg') no-repeat center;
-      background-size: cover;
-    }
-  }
-  
-  &--equities {
-    
-    &:before {
-      content: '';
-      position: absolute;
-      top: 8px;
-      left: 17px;
-      width: 30px;
-      height: 31px;
-      background: url('../img/tab-equities.svg') no-repeat center;
-      background-size: cover;
-    }
-  }
-  
-  &:last-child {
-    margin: 0;
-  }
-  
-  &:hover {
-    background: #6420ff;
-  }
+  background: #6420ff;
 }
 
 .tab__content {
