@@ -48,7 +48,6 @@
 
 .nav__sublist {
   position: absolute;
-  top: 0;
   left: 200px;
   width: 300px;
   margin: 0;
@@ -58,6 +57,18 @@
   background: #fff;
   opacity: 0;
   clip: rect(0, 0, 0, 0);
+  
+  &--1 {
+    top: 0;
+  }
+  
+  &--2 {
+    top: -10px;
+  }
+  
+  &--3 {
+    top: -30px;
+  }
 }
 
 .nav__subitem {
