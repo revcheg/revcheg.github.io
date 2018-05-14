@@ -232,7 +232,7 @@ function openTab(evt, tabName) {
 
 // Glossary
 // Inner Tabs
-function openTab(evt, tabName) {
+function openGlossary(evt, tabName) {
 
   var i, tabContent, tabLinks;
 
