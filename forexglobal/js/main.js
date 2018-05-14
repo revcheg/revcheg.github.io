@@ -230,6 +230,43 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " tab__active";
 }
 
+// Glossary
+// Inner Tabs
+function openTab(evt, tabName) {
+
+  var i, tabContent, tabLinks;
+
+  tabContent = document.getElementsByClassName('glossary__article');
+  for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = 'none';
+  }
+
+  tabLinks = document.getElementsByClassName('glossary__button');
+  for (i = 0; i < tabLinks.length; i++) {
+    tabLinks[i].className = tabLinks[i].className.replace(' glossary__button--active', '');
+  }
+
+  document.getElementById(tabName).style.display = 'block';
+  evt.currentTarget.className += ' glossary__button--active';
+}
+
+// Accordion
+var acc = document.getElementsByClassName('glossary__name');
+
+for (var i = 0; i < acc.length; i++) {
+  acc[i].addEventListener('click', function() {
+    this.classList.toggle('glossary__name--active');
+    
+    var panel = this.nextElementSibling;
+    
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    }; 
+  });
+};
+
 // Video
 var zulutradeVideo = document.querySelector('.zulu__video');
 var zulutradePlay = document.querySelector('.zulu__play');

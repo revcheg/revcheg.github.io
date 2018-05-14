@@ -1556,9 +1556,12 @@ body {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
-  .tab__button:hover {
-    color: #fff;
-    background: #6420fa; }
+  .tab__button--bronze {
+    background: #af7940; }
+  .tab__button--silver {
+    background: #b1b1b1; }
+  .tab__button--gold {
+    background: #d2ad53; }
   .tab__button:last-child {
     margin: 0; }
 
@@ -1566,8 +1569,7 @@ body {
   width: 200px;
   color: #fff;
   font-size: 18px;
-  font-weight: 500;
-  background: #6420ff; }
+  font-weight: 500; }
 
 .tab__content {
   display: none;
@@ -1817,41 +1819,99 @@ body {
     width: 300px;
     margin: 20px 0 0 0; } }
 
-.glossary__button {
+.glossary__control {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 60px;
-  margin: 10px 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 47px;
+  margin: 20px 0 50px 0; }
+
+.glossary__button {
+  margin: 0 10px;
   padding: 0;
-  list-style: none; }
-  .glossary__button li button {
-    color: #2f2861;
-    font-size: 30px;
-    font-weight: 500;
-    font-family: inherit;
-    border: none;
-    background: transparent;
-    cursor: pointer;
+  color: #2f2861;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: inherit;
+  border: none;
+  background: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  cursor: pointer; }
+  .glossary__button--active {
+    color: #6420ff;
+    font-size: 40px; }
+  .glossary__button:hover {
+    color: #6420ff; }
+
+.glossary__article {
+  display: none; }
+
+.glossary__name {
+  position: relative;
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding: 0 15px;
+  color: #2f2861;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: inherit;
+  text-align: left;
+  border: none;
+  background: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  cursor: pointer; }
+  .glossary__name--active {
+    color: #6420ff;
+    font-size: 30px; }
+    .glossary__name--active:after {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg); }
+  .glossary__name:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    width: 15px;
+    height: 9px;
+    background: url("../img/details-marker.svg") no-repeat center;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
-    .glossary__button li button:hover {
-      color: #6420ff;
-      font-size: 40px; }
+
+.glossary__content {
+  max-height: 0;
+  margin: 0 0 10px 0;
+  padding: 0 15px;
+  font-weight: 300;
+  border-bottom: 1px solid #6420ff;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-out; }
+
+@media screen and (max-width: 1200px) {
+  .glossary__button {
+    margin: 0 10px; } }
 
 @media screen and (max-width: 768px) {
+  .glossary__control {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 20px 0; }
   .glossary__button {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    .glossary__button li button {
-      font-size: 15px; } }
+    margin: 0 10px 10px 10px;
+    font-size: 14px; }
+    .glossary__button--active {
+      font-size: 20px; }
+  .glossary__name {
+    font-size: 15px; }
+  .glossary__content p {
+    font-size: 13px; } }
 
 .inner {
   padding: 150px 0 70px 0; }
