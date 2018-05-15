@@ -232,5 +232,52 @@
   .tab__button {
     width: 100%;
     border-radius: 0;
+    
+    &--forex {
+      
+      &:after {
+        left: 80px;
+      }
+    }
+    
+    &--commodities {
+      
+      &:after {
+        left: 80px;
+      }
+    }
+    
+    &--metals {
+      
+      &:after {
+        left: 80px;
+      }
+    }
+    
+    &--energies {
+      
+      &:after {
+        left: 80px;
+      }
+    }
+    
+    &--indices {
+      
+      &:after {
+        left: 80px;
+      }
+    }
+    
+    &--equities {
+      
+      &:after {
+        left: 80px;
+      }
+    }
+  }
+  
+  .tab__content {
+    border-top: none;
+    border-radius: 3px;
   }
 }

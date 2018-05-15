@@ -1776,7 +1776,22 @@ body {
     flex-direction: column; }
   .tab__button {
     width: 100%;
-    border-radius: 0; } }
+    border-radius: 0; }
+    .tab__button--forex:after {
+      left: 80px; }
+    .tab__button--commodities:after {
+      left: 80px; }
+    .tab__button--metals:after {
+      left: 80px; }
+    .tab__button--energies:after {
+      left: 80px; }
+    .tab__button--indices:after {
+      left: 80px; }
+    .tab__button--equities:after {
+      left: 80px; }
+  .tab__content {
+    border-top: none;
+    border-radius: 3px; } }
 
 .announcements__list {
   padding: 0;
