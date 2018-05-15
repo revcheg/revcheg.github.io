@@ -1,9 +1,9 @@
 // Slick
 $('.slider').slick({
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 2000,
   dots: false,
-  arrows: true,
+  arrows: false,
   // nextArrow: '<button class="slider__button  slider__button--right"></button>',
   // prevArrow: '<button class="slider__button  slider__button--left"></button>',
   responsive: [{
