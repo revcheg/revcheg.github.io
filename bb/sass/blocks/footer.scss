@@ -71,11 +71,22 @@
 .footer__skype {
   position: fixed;
   right: 50px;
-  bottom: 50px;
+  bottom: 130px;
   display: block;
   width: 60px;
   height: 60px;
   background: url('../img/footer-skype.svg') no-repeat center;
+  animation: skype 1s infinite alternate;
+}
+
+.footer__whatsapp {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url('../img/footer-whatsapp.svg') no-repeat center;
   animation: skype 1s infinite alternate;
 }
 
@@ -128,6 +139,13 @@
   }
   
   .footer__skype {
+    right: 15px;
+    bottom: 80px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .footer__whatsapp {
     right: 15px;
     bottom: 15px;
     width: 50px;
