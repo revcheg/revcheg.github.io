@@ -1640,6 +1640,7 @@ body {
   margin: 30px 0 0 0; }
 
 .tab__button {
+  position: relative;
   width: 170px;
   margin: 0 10px 0 0;
   padding: 15px 0;
@@ -1653,14 +1654,88 @@ body {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
+  .tab__button--bronze {
+    background: #af7940; }
+    .tab__button--bronze.tab__active {
+      background: #af7940; }
+  .tab__button--silver {
+    background: #b1b1b1; }
+    .tab__button--silver.tab__active {
+      background: #b1b1b1; }
+  .tab__button--gold {
+    background: #d2ad53; }
+    .tab__button--gold.tab__active {
+      background: #d2ad53; }
+  .tab__button--forex:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/tab-forex.svg") no-repeat center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .tab__button--commodities:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/tab-commodities.svg") no-repeat center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .tab__button--metals:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/tab-metals.svg") no-repeat center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .tab__button--energies:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/tab-energies.svg") no-repeat center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .tab__button--indices:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/tab-indices.svg") no-repeat center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .tab__button--equities:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/tab-equities.svg") no-repeat center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
   .tab__button:hover {
     background: #6420ff; }
 
 .tab__active {
-  width: 270px;
+  width: 200px;
   color: #fff;
   font-weight: 600;
   background: #6420ff; }
+  .tab__active:after {
+    left: 15px; }
 
 .tab__content {
   display: none;
