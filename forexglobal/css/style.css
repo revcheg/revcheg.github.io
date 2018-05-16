@@ -227,7 +227,8 @@ body {
     .header--scroll .nav__list a {
       padding: 0 0 26px 0; }
   .header--inner {
-    width: 100%; }
+    width: 100%;
+    z-index: 10; }
   .header--menu {
     background: rgba(47, 40, 97, 0.9); }
 
@@ -1710,17 +1711,26 @@ body {
   .tab__active:after {
     left: 15px; }
 
+.tab__header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 10px 0;
+  background: #fff;
+  z-index: 5; }
+
 .tab__content {
   display: none;
-  height: 500px;
-  padding: 12px;
+  height: 700px;
+  padding: 25px;
   border: 1px solid #6420ff;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  overflow: scroll;
-  scroll-behavior: smooth; }
+  overflow: scroll; }
   .tab__content h3 {
+    margin: 0;
+    padding: 30px 0;
     color: #2f2861;
     font-size: 30px;
     font-weight: 500;
@@ -1792,6 +1802,10 @@ body {
   .tab__content {
     border-top: none;
     border-radius: 3px; } }
+
+@media screen and (max-width: 768px) {
+  .tab__header {
+    position: static; } }
 
 .announcements__list {
   padding: 0;
@@ -3010,31 +3024,31 @@ body {
     height: 300px;
     background-size: 300px; } }
 
-.register {
+.client {
   padding: 150px 0 70px 0; }
 
-.register__name {
+.client__name {
   margin: 0;
   color: #2f2861;
   font-size: 60px;
   font-weight: 500;
   text-align: center; }
 
-.register__subname {
+.client__subname {
   margin: 0 0 50px 0;
   color: #2f2861;
   font-size: 30px;
   font-weight: 300;
   text-align: center; }
 
-.register__subsubname {
+.client__subsubname {
   margin: 50px 0 10px 0;
   color: #6420ff;
   font-size: 20px;
   font-weight: 300;
   text-align: center; }
 
-.register__form input {
+.client__form input {
   width: 478px;
   height: 41px;
   padding: 0 10px;
@@ -3046,42 +3060,42 @@ body {
   outline: none;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
-  .register__form input[type='radio'], .register__form input[type='checkbox'] {
+  .client__form input[type='radio'], .client__form input[type='checkbox'] {
     width: auto;
     height: auto;
     margin: 0 10px; }
-    .register__form input[type='radio']:focus, .register__form input[type='checkbox']:focus {
+    .client__form input[type='radio']:focus, .client__form input[type='checkbox']:focus {
       -webkit-box-shadow: none;
       box-shadow: none; }
-  .register__form input::-webkit-input-placeholder {
+  .client__form input::-webkit-input-placeholder {
     color: #c1c1c1;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
-  .register__form input:-ms-input-placeholder {
+  .client__form input:-ms-input-placeholder {
     color: #c1c1c1;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
-  .register__form input::-ms-input-placeholder {
+  .client__form input::-ms-input-placeholder {
     color: #c1c1c1;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
-  .register__form input::placeholder {
+  .client__form input::placeholder {
     color: #c1c1c1;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
-  .register__form input:focus {
+  .client__form input:focus {
     -webkit-box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
     box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35); }
-    .register__form input:focus::-webkit-input-placeholder {
+    .client__form input:focus::-webkit-input-placeholder {
       color: #2f2861; }
-    .register__form input:focus:-ms-input-placeholder {
+    .client__form input:focus:-ms-input-placeholder {
       color: #2f2861; }
-    .register__form input:focus::-ms-input-placeholder {
+    .client__form input:focus::-ms-input-placeholder {
       color: #2f2861; }
-    .register__form input:focus::placeholder {
+    .client__form input:focus::placeholder {
       color: #2f2861; }
 
-.register__form select {
+.client__form select {
   width: 500px;
   height: 41px;
   padding: 0 10px;
@@ -3099,19 +3113,26 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }
-  .register__form select:focus {
+  .client__form select:focus {
     -webkit-box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
     box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35); }
-    .register__form select:focus::-webkit-input-placeholder {
+    .client__form select:focus::-webkit-input-placeholder {
       color: #2f2861; }
-    .register__form select:focus:-ms-input-placeholder {
+    .client__form select:focus:-ms-input-placeholder {
       color: #2f2861; }
-    .register__form select:focus::-ms-input-placeholder {
+    .client__form select:focus::-ms-input-placeholder {
       color: #2f2861; }
-    .register__form select:focus::placeholder {
+    .client__form select:focus::placeholder {
       color: #2f2861; }
 
-.register__flex {
+.client__form--login {
+  width: 400px;
+  margin: auto; }
+  .client__form--login input {
+    width: inherit;
+    margin: 0 0 10px 0; }
+
+.client__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3119,19 +3140,33 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0 0 10px 0; }
-  .register__flex--center {
+  .client__flex--center {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+  .client__flex--login {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .client__flex--button {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
 
-.register__email {
+.client__email {
   width: 500px;
   color: #2f2861;
   font-size: 14px;
   font-weight: 300;
   text-align: center; }
 
-.register__next {
+.client__forgot {
+  color: #2f2861;
+  font-weight: 500;
+  text-decoration: none; }
+
+.client__next {
   width: 150px;
   margin: 25px 0 25px auto;
   padding: 10px 0;
@@ -3144,12 +3179,12 @@ body {
   background: #fac93e;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
-  .register__next:hover {
+  .client__next:hover {
     -webkit-box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
     box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
     background: #ffd800; }
 
-.register__warning {
+.client__warning {
   margin: 0;
   padding: 20px 10px;
   color: #2f2861;
@@ -3157,13 +3192,13 @@ body {
   text-align: center;
   border: 1px solid #6420ff;
   border-radius: 3px; }
-  .register__warning b {
+  .client__warning b {
     display: block;
     margin: 0 0 10px 0;
     font-size: 20px;
     font-weight: 500; }
 
-.register__question {
+.client__question {
   display: block;
   margin: 40px 0 10px 0;
   color: #2f2861;
@@ -3171,59 +3206,65 @@ body {
   font-weight: 500;
   text-align: center; }
 
-.register__label {
+.client__label {
   color: #2f2861;
   font-size: 14px;
   font-weight: 300; }
-  .register__label--checkbox {
+  .client__label--checkbox {
     width: 500px;
     margin: 40px 0 0 0; }
-    .register__label--checkbox a {
+    .client__label--checkbox a {
       color: #6420ff;
       text-decoration: none; }
 
-.register__hr {
+.client__hr {
   height: 1px;
   margin: 50px 0;
   border: none;
   background: #6420ff; }
 
-.register__demo {
+.client__demo {
   color: #6420ff;
   text-decoration: none; }
 
 @media screen and (max-width: 1200px) {
-  .register {
+  .client {
     padding: 200px 0 70px 0; }
-  .register__form {
+  .client__form {
     padding: 0 15px; }
-    .register__form input {
+    .client__form input {
       width: 350px; }
-    .register__form select {
+    .client__form select {
       width: 372px;
       background-position-x: 350px; }
-  .register__flex {
+  .client__flex {
     -ms-flex-pack: distribute;
     justify-content: space-around; }
-  .register__email {
+  .client__email {
     width: 372px; }
-  .register__warning {
+  .client__warning {
     margin: 0 15px; } }
 
 @media screen and (max-width: 768px) {
-  .register {
+  .client {
     padding: 100px 0 50px 0; }
-  .register__name {
+  .client__name {
     margin: 0 0 20px 0;
     font-size: 40px; }
-  .register__form input {
+  .client__subname {
+    margin: 0 0 20px 0;
+    font-size: 20px; }
+  .client__form input {
     width: 278px;
     margin: 0 0 10px 0; }
-  .register__form select {
+  .client__form select {
     width: 300px;
     margin: 0 0 10px 0;
     background-position-x: 280px; }
-  .register__flex {
+  .client__form--login {
+    width: 270px;
+    padding: 0; }
+  .client__flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -3232,12 +3273,12 @@ body {
     -ms-flex-align: center;
     align-items: center;
     margin: 0; }
-  .register__email {
+  .client__email {
     width: auto; }
-  .register__next {
+  .client__next {
     margin: 25px auto; }
-  .register__label--checkbox {
+  .client__label--checkbox {
     width: auto; }
-  .register__demo {
+  .client__demo {
     display: block;
     text-align: center; } }

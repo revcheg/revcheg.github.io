@@ -1,8 +1,8 @@
-.register {
+.client {
   padding: 150px 0 70px 0;
 }
 
-.register__name {
+.client__name {
   margin: 0;
   color: $sc;
   font-size: 60px;
@@ -10,7 +10,7 @@
   text-align: center;
 }
 
-.register__subname {
+.client__subname {
   margin: 0 0 50px 0;
   color: $sc;
   font-size: 30px;
@@ -18,7 +18,7 @@
   text-align: center;
 }
 
-.register__subsubname {
+.client__subsubname {
   margin: 50px 0 10px 0;
   color: #6420ff;
   font-size: 20px;
@@ -26,7 +26,7 @@
   text-align: center;
 }
 
-.register__form {
+.client__form {
   
   input {
     width: 478px;
@@ -89,9 +89,19 @@
       }
     }
   }
+  
+  &--login {
+    width: 400px;
+    margin: auto;
+    
+    input {
+      width: inherit;
+      margin: 0 0 10px 0;
+    }
+  }
 }
 
-.register__flex {
+.client__flex {
   display: flex;
   justify-content: space-between;
   margin: 0 0 10px 0;
@@ -99,9 +109,17 @@
   &--center {
     justify-content: center;
   }
+  
+  &--login {
+    flex-direction: column;
+  }
+  
+  &--button {
+    align-items: center;
+  }
 }
 
-.register__email {
+.client__email {
   width: 500px;
   color: $sc;
   font-size: 14px;
@@ -109,7 +127,13 @@
   text-align: center;
 }
 
-.register__next {
+.client__forgot {
+  color: $sc;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.client__next {
   width: 150px;
   margin: 25px 0 25px auto;
   padding: 10px 0;
@@ -128,7 +152,7 @@
   }
 }
 
-.register__warning {
+.client__warning {
   margin: 0;
   padding: 20px 10px;
   color: $sc;
@@ -145,7 +169,7 @@
   }
 }
 
-.register__question {
+.client__question {
   display: block;
   margin: 40px 0 10px 0;
   color: $sc;
@@ -154,7 +178,7 @@
   text-align: center;
 }
 
-.register__label {
+.client__label {
   color: $sc;
   font-size: 14px;
   font-weight: 300;
@@ -170,24 +194,24 @@
   }
 }
 
-.register__hr {
+.client__hr {
   height: 1px;
   margin: 50px 0;
   border: none;
   background: #6420ff;
 }
 
-.register__demo {
+.client__demo {
   color: #6420ff;
   text-decoration: none;
 }
 
 @media screen and ($tablet-widths) {
-  .register {
+  .client {
     padding: 200px 0 70px 0;
   }
   
-  .register__form {
+  .client__form {
     padding: 0 15px;
     
     input {
@@ -200,30 +224,35 @@
     }
   }
   
-  .register__flex {
+  .client__flex {
     justify-content: space-around;
   }
   
-  .register__email {
+  .client__email {
     width: 372px;
   }
   
-  .register__warning {
+  .client__warning {
     margin: 0 15px;
   }
 }
 
 @media screen and ($mobile-widths) {
-  .register {
+  .client {
     padding: 100px 0 50px 0;
   }
   
-  .register__name {
+  .client__name {
     margin: 0 0 20px 0;
     font-size: 40px;
   }
   
-  .register__form {
+  .client__subname {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+  }
+  
+  .client__form {
     
     input {
       width: 278px;
@@ -235,30 +264,35 @@
       margin: 0 0 10px 0;
       background-position-x: 280px; 
     }
+    
+    &--login {
+      width: 270px;
+      padding: 0;
+    }
   }
   
-  .register__flex {
+  .client__flex {
     flex-direction: column;
     align-items: center;
     margin: 0;
   }
   
-  .register__email {
+  .client__email {
     width: auto;
   }
   
-  .register__next {
+  .client__next {
     margin: 25px auto;
   }
   
-  .register__label {
+  .client__label {
     
     &--checkbox {
       width: auto;
     }
   }
   
-  .register__demo {
+  .client__demo {
     display: block;
     text-align: center;
   }

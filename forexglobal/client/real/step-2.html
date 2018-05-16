@@ -32,11 +32,11 @@
             <a class="header__open" href="#">Open account</a>
             <ul class="header__accounts  header__accounts--closed">
               <li><a>Real</a></li>
-              <li><a href="../../register/demo.html">Demo</a></li>
+              <li><a href="../../client/demo.html">Demo</a></li>
               <li><a href="../../trading/platforms/zulutrade.html">ZuluTrade</a></li>
             </ul>
           </li>
-          <li><a href="https://client.forex24.com/en/members/login">Log in</a></li>
+          <li><a href="../login.html">Log in</a></li>
           <li>
             <select class="header__language">
               <option>En</option>
@@ -100,42 +100,42 @@
       </nav>
     </div>
   </header>
-  <section class="register">
+  <section class="client">
     <div class="container">
-      <h1 class="register__name">Register Real</h1>
-      <h2 class="register__subname">1. Personal Details</h2>
-      <form class="register__form" action="" method="post">
-        <div class="register__flex">
+      <h1 class="client__name">Register Real</h1>
+      <h2 class="client__subname">1. Personal Details</h2>
+      <form class="client__form" action="" method="post">
+        <div class="client__flex">
           <input type="date" name="Date of Birth" required>
           <input type="text" name="Address Line" placeholder="Address Line" required>
         </div>
-        <div class="register__flex">
+        <div class="client__flex">
           <input type="text" name="City/Town" placeholder="City/Town">
           <input type="text" name="Post Code" placeholder="Post Code">
         </div>
-        <b class="register__question">Are you a U.S. citizen or U.S. Resident for tax purposes?</b>
-        <div class="register__flex  register__flex--center">
-          <label class="register__label">
+        <b class="client__question">Are you a U.S. citizen or U.S. Resident for tax purposes?</b>
+        <div class="client__flex  client__flex--center">
+          <label class="client__label">
             Yes
             <input type="radio" name="US" value="Yes">
           </label>
-          <label class="register__label">
+          <label class="client__label">
             No
             <input type="radio" name="US" value="No">
           </label>
         </div>
-        <b class="register__question">Are you a <a href="../../img/pdf/Politically-Exposed-Person-Definition.pdf" target="_blank">Politically Exposed Person</a> (PEP)?</b>
-        <div class="register__flex  register__flex--center">
-          <label class="register__label">
+        <b class="client__question">Are you a <a href="../../img/pdf/Politically-Exposed-Person-Definition.pdf" target="_blank">Politically Exposed Person</a> (PEP)?</b>
+        <div class="client__flex  client__flex--center">
+          <label class="client__label">
             Yes
             <input type="radio" name="US" value="Yes">
           </label>
-          <label class="register__label">
+          <label class="client__label">
             No
             <input type="radio" name="US" value="No">
           </label>
         </div>
-        <div class="register__flex">
+        <div class="client__flex">
           <select name="Education" tabindex="0" required>
             <option hidden>Education</option>
             <option value="secondary">Secondary</option>
@@ -154,9 +154,9 @@
             <option value="unemployed">Unemployed</option>
           </select>
         </div>
-        <hr class="register__hr">
-        <h2 class="register__subname">2. Investor Information</h2>
-        <div class="register__flex">
+        <hr class="client__hr">
+        <h2 class="client__subname">2. Investor Information</h2>
+        <div class="client__flex">
           <select name="Annual Income (in EUR)" tabindex="0" required>
             <option hidden>Annual Income (in EUR)</option>
             <option value="0 - 15.000">0 - 15.000</option>
@@ -178,7 +178,7 @@
             <option value="other">Other</option>
           </select>
         </div>
-        <div class="register__flex">
+        <div class="client__flex">
           <select name="Estimated Net Worth (in EUR)" tabindex="0" required>
             <option hidden>Estimated Net Worth (in EUR)</option>
             <option value="0 - 50.000">0 - 50.000</option>
@@ -195,7 +195,7 @@
             <option value="diversification">Diversification</option>
           </select>
         </div>
-        <div class="register__flex">
+        <div class="client__flex">
           <select name="Anticipated amount available to trade with us within then next 12 months (in EUR)" tabindex="0" required>
             <option hidden>Anticipated amount available to trade with us within then next 12 months (in EUR)</option>
             <option value="up to 10.000">Up to 10.000</option>
@@ -204,83 +204,83 @@
             <option value="> 100.000">&gt; 100.000</option>
           </select>
         </div>
-        <hr class="register__hr">
-        <h2 class="register__subname">3. Appropriateness</h2>
-        <p class="register__warning">
+        <hr class="client__hr">
+        <h2 class="client__subname">3. Appropriateness</h2>
+        <p class="client__warning">
           <b>Attention</b>
           Please note that your responses to the following questions will determin the maximum leverage of your trading account.
         </p>
-        <h3 class="register__subsubname">Experience</h3>
-        <b class="register__question">Do you have any experience or qualifications which would help you to understand trading in leveraged products?</b>
-        <div class="register__flex  register__flex--center">
-          <label class="register__label">
+        <h3 class="client__subsubname">Experience</h3>
+        <b class="client__question">Do you have any experience or qualifications which would help you to understand trading in leveraged products?</b>
+        <div class="client__flex  client__flex--center">
+          <label class="client__label">
             Yes
             <input type="radio" name="US" value="Yes">
           </label>
-          <label class="register__label">
+          <label class="client__label">
             No
             <input type="radio" name="US" value="No">
           </label>
         </div>
-        <b class="register__question">Have you attended a course or seminar on CFDs or Forex?</b>
-        <div class="register__flex  register__flex--center">
-          <label class="register__label">
+        <b class="client__question">Have you attended a course or seminar on CFDs or Forex?</b>
+        <div class="client__flex  client__flex--center">
+          <label class="client__label">
             Yes
             <input type="radio" name="US" value="Yes">
           </label>
-          <label class="register__label">
+          <label class="client__label">
             No
             <input type="radio" name="US" value="No">
           </label>
         </div>
-        <b class="register__question">Have you ever been employed as a Professional in a Financial Institution and/or been in employment involved in Trading of Financial Instruments?</b>
-        <div class="register__flex  register__flex--center">
-          <label class="register__label">
+        <b class="client__question">Have you ever been employed as a Professional in a Financial Institution and/or been in employment involved in Trading of Financial Instruments?</b>
+        <div class="client__flex  client__flex--center">
+          <label class="client__label">
             Yes
             <input type="radio" name="US" value="Yes">
           </label>
-          <label class="register__label">
+          <label class="client__label">
             No
             <input type="radio" name="US" value="No">
           </label>
         </div>
-        <h3 class="register__subsubname">Trading Quiz</h3>
-        <b class="register__question">Trading with a higher leverage in CFDs means you will open a trade of a larger volume, thus increasing the risk of loss.</b>
-        <div class="register__flex  register__flex--center">
-          <label class="register__label">
+        <h3 class="client__subsubname">Trading Quiz</h3>
+        <b class="client__question">Trading with a higher leverage in CFDs means you will open a trade of a larger volume, thus increasing the risk of loss.</b>
+        <div class="client__flex  client__flex--center">
+          <label class="client__label">
             True
             <input type="radio" name="US" value="Yes">
           </label>
-          <label class="register__label">
+          <label class="client__label">
             False
             <input type="radio" name="US" value="No">
           </label>
         </div>
-        <b class="register__question">The market is moving against your position. Your CFD position will close automatically if your equity reaches the Stop out Level.</b>
-        <div class="register__flex  register__flex--center">
-          <label class="register__label">
+        <b class="client__question">The market is moving against your position. Your CFD position will close automatically if your equity reaches the Stop out Level.</b>
+        <div class="client__flex  client__flex--center">
+          <label class="client__label">
             True
             <input type="radio" name="US" value="Yes">
           </label>
-          <label class="register__label">
+          <label class="client__label">
             False
             <input type="radio" name="US" value="No">
           </label>
         </div>
-        <b class="register__question">If the value of your initial position in a CFD contract is $10,000 and the leverage ratio is 1:50, then the initial margin requirement would be 4% (i.e. $400)</b>
-        <div class="register__flex  register__flex--center">
-          <label class="register__label">
+        <b class="client__question">If the value of your initial position in a CFD contract is $10,000 and the leverage ratio is 1:50, then the initial margin requirement would be 4% (i.e. $400)</b>
+        <div class="client__flex  client__flex--center">
+          <label class="client__label">
             True
             <input type="radio" name="US" value="Yes">
           </label>
-          <label class="register__label">
+          <label class="client__label">
             False
             <input type="radio" name="US" value="No">
           </label>
         </div>
-        <hr class="register__hr">
-        <h2 class="register__subname">4. Trading Account</h2>
-        <div class="register__flex">
+        <hr class="client__hr">
+        <h2 class="client__subname">4. Trading Account</h2>
+        <div class="client__flex">
           <select name="Trading Platform" tabindex="0" required>
             <option hidden>Trading Platform</option>
             <option value="MT4">MT4</option>
@@ -295,18 +295,18 @@
             <option value="swap free">Swap Free</option>
           </select>
         </div>
-        <hr class="register__hr">
-        <h2 class="register__subname">5. Client Area Credentials</h2>
-        <div class="register__flex">
+        <hr class="client__hr">
+        <h2 class="client__subname">5. Client Area Credentials</h2>
+        <div class="client__flex">
           <input type="password" name="Password" placeholder="Password" required>
           <input type="password" name="Confirm Password" placeholder="Confirm Password" required>
         </div>
-        <div class="register__flex">
+        <div class="client__flex">
           <input type="hidden">
-          <button class="register__next" type="submit" name="Next Step">Next Step</button>
+          <button class="client__next" type="submit" name="Next Step">Next Step</button>
         </div>
       </form>
-      <p class="register__warning">
+      <p class="client__warning">
         <b>Risk Warning:</b>
         Our products are traded on margin and carry a high level of risk and it is possible to lose all your capital. These products may not be suitable for everyone and you should ensure that you understand the risks involved.
       </p>
@@ -381,8 +381,8 @@
         <hr class="footer__hr">
       <p class="footer__text">© 2018 All rights reserved LYDYA FINANCIAL LTD.</p>
       <p class="footer__text">Located at 155 Ayias Fylaxeos, Ersi Court Suite 202, 3083 Limassol, Cyprus.</p>
-      <p class="footer__text">Forex24 Global is a brand owned and operated by Lydya Financial Ltd, a Cyprus Investment Firm (CIF) regulated and supervised by the Cyprus Securities and Exchange Commission (CySEC) with CIF Licence number 300/16 and Company registration number HE334292.</p>
-      <p class="footer__text">The Company is also registered with: FCA in UK with reg. no. 782501; BaFin in Germany with reg. no. 1349943; CONSOB in Italy with reg. no. 4624; ACP in France with reg. no. 75980; CNMV in Spain with reg. no. 4373.</p>
+      <p class="footer__text">Forex24 Global is a brand owned and operated by Lydya Financial Ltd, a Cyprus Investment Firm (CIF) regulated and supervised by the Cyprus Securities and Exchange Commission (CySEC) with CIF <a href="https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/79086/" target="_blank">Licence number 300/16</a> and Company registration number HE334292.</p>
+      <p class="footer__text">The Company is also cliented with: FCA in UK with reg. no. 782501; BaFin in Germany with reg. no. 1349943; CONSOB in Italy with reg. no. 4624; ACP in France with reg. no. 75980; CNMV in Spain with reg. no. 4373.</p>
     </div>
   </footer>
   <script src="../../js/main.min.js" async></script>
