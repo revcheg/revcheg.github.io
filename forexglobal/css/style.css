@@ -1722,7 +1722,7 @@ body {
 .tab__content {
   display: none;
   height: 700px;
-  padding: 25px;
+  padding: 0 25px 25px 25px;
   border: 1px solid #6420ff;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 3px;
@@ -1773,6 +1773,24 @@ body {
     background: #2f2861; }
   .tab__table td {
     padding: 10px 0; }
+  .tab__table--header {
+    margin: 0; }
+  .tab__table--product th:last-child {
+    border-top-right-radius: 0; }
+
+.tab__name {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; }
+
+.tab__name th {
+  position: -webkit-sticky;
+  position: sticky;
+  border-radius: none;
+  z-index: 1; }
+
+.tab__name--forex th {
+  top: 366px; }
 
 @media screen and (max-width: 1200px) {
   .tab__button {
