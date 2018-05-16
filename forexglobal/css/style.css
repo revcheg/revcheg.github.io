@@ -1621,6 +1621,7 @@ body {
   color: #fff;
   font-size: 16px;
   font-weight: 300;
+  text-align: center;
   border: none;
   border-top-right-radius: 30px;
   background: #2f2861;
@@ -1711,6 +1712,12 @@ body {
   .tab__active:after {
     left: 15px; }
 
+.tab__anchor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0 0 0; }
+
 .tab__header {
   position: -webkit-sticky;
   position: sticky;
@@ -1721,13 +1728,11 @@ body {
 
 .tab__content {
   display: none;
-  height: 700px;
   padding: 0 25px 25px 25px;
   border: 1px solid #6420ff;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  overflow: scroll; }
+  border-bottom-right-radius: 3px; }
   .tab__content h3 {
     margin: 0;
     padding: 30px 0;
@@ -1752,6 +1757,17 @@ body {
   .tab__content--comparison {
     height: 500px;
     overflow: scroll; }
+  .tab__content--account {
+    padding: 0;
+    border: none; }
+
+.tab__inner {
+  height: 400px;
+  margin: 0 0 50px 0;
+  padding: 0 25px 25px 25px;
+  border: 1px solid #6420ff;
+  border-top-right-radius: 30px;
+  overflow: scroll; }
 
 .tab__table {
   width: 100%;
@@ -1800,6 +1816,9 @@ body {
 
 .tab__name--equities th {
   top: 416px; }
+
+.tab__name--sticky th {
+  top: 116px; }
 
 @media screen and (max-width: 1200px) {
   .tab__button {
