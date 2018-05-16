@@ -260,6 +260,27 @@
       top: 366px;
     }
   }
+  
+  &--metals {
+    
+    th {
+      top: 254px;
+    }
+  }
+  
+  &--indices {
+    
+    th {
+      top: 451px;
+    }
+  }
+  
+  &--equities {
+    
+    th {
+      top: 430px;
+    }
+  }
 }
 
 @media screen and ($tablet-widths) {

@@ -1792,6 +1792,15 @@ body {
 .tab__name--forex th {
   top: 366px; }
 
+.tab__name--metals th {
+  top: 254px; }
+
+.tab__name--indices th {
+  top: 451px; }
+
+.tab__name--equities th {
+  top: 430px; }
+
 @media screen and (max-width: 1200px) {
   .tab__button {
     font-size: 15px; } }
