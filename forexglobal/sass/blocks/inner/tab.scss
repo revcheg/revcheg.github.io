@@ -172,7 +172,7 @@
   
   p {
     color: $sc;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 300;
   }
   
@@ -257,28 +257,28 @@
   &--forex {
     
     th {
-      top: 366px;
+      top: 361px;
     }
   }
   
   &--metals {
     
     th {
-      top: 254px;
+      top: 247px;
     }
   }
   
   &--indices {
     
     th {
-      top: 451px;
+      top: 436px;
     }
   }
   
   &--equities {
     
     th {
-      top: 430px;
+      top: 416px;
     }
   }
 }
@@ -286,6 +286,13 @@
 @media screen and ($tablet-widths) {
   .tab__button {
     font-size: 15px;
+  }
+  
+  .tab__name {
+    
+    th {
+      position: static;
+    }
   }
 }
 
@@ -298,41 +305,11 @@
     width: 100%;
     border-radius: 0;
     
-    &--forex {
-      
-      &:after {
-        left: 80px;
-      }
-    }
-    
-    &--commodities {
-      
-      &:after {
-        left: 80px;
-      }
-    }
-    
-    &--metals {
-      
-      &:after {
-        left: 80px;
-      }
-    }
-    
-    &--energies {
-      
-      &:after {
-        left: 80px;
-      }
-    }
-    
-    &--indices {
-      
-      &:after {
-        left: 80px;
-      }
-    }
-    
+    &--forex,
+    &--commodities,
+    &--metals,
+    &--energies,
+    &--indices,
     &--equities {
       
       &:after {
@@ -341,16 +318,19 @@
     }
   }
   
+  .tab__header {
+    position: static;
+  }
+  
+  .tab__name {
+    
+    th {
+      position: static;
+    }
+  }
+  
   .tab__content {
     border-top: none;
     border-radius: 3px;
-  }
-}
-
-@media screen and ($tablet-widths) {}
-
-@media screen and ($mobile-widths) {
-  .tab__header {
-    position: static;
   }
 }

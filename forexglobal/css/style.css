@@ -1738,7 +1738,7 @@ body {
     text-transform: uppercase; }
   .tab__content p {
     color: #2f2861;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 300; }
   .tab__content b {
     color: #2f2861;
@@ -1790,20 +1790,22 @@ body {
   z-index: 1; }
 
 .tab__name--forex th {
-  top: 366px; }
+  top: 361px; }
 
 .tab__name--metals th {
-  top: 254px; }
+  top: 247px; }
 
 .tab__name--indices th {
-  top: 451px; }
+  top: 436px; }
 
 .tab__name--equities th {
-  top: 430px; }
+  top: 416px; }
 
 @media screen and (max-width: 1200px) {
   .tab__button {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .tab__name th {
+    position: static; } }
 
 @media screen and (max-width: 768px) {
   .tab {
@@ -1814,25 +1816,15 @@ body {
   .tab__button {
     width: 100%;
     border-radius: 0; }
-    .tab__button--forex:after {
+    .tab__button--forex:after, .tab__button--commodities:after, .tab__button--metals:after, .tab__button--energies:after, .tab__button--indices:after, .tab__button--equities:after {
       left: 80px; }
-    .tab__button--commodities:after {
-      left: 80px; }
-    .tab__button--metals:after {
-      left: 80px; }
-    .tab__button--energies:after {
-      left: 80px; }
-    .tab__button--indices:after {
-      left: 80px; }
-    .tab__button--equities:after {
-      left: 80px; }
+  .tab__header {
+    position: static; }
+  .tab__name th {
+    position: static; }
   .tab__content {
     border-top: none;
     border-radius: 3px; } }
-
-@media screen and (max-width: 768px) {
-  .tab__header {
-    position: static; } }
 
 .announcements__list {
   padding: 0;
