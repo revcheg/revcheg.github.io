@@ -1612,6 +1612,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 30px 0 0 0; }
+  .tab--account {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
 
 .tab__button {
   position: relative;
@@ -1716,6 +1720,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 20px 0 0 0; }
 
 .tab__header {
@@ -1760,6 +1767,9 @@ body {
   .tab__content--account {
     padding: 0;
     border: none; }
+  .tab__content--product {
+    height: 700px;
+    overflow: scroll; }
 
 .tab__inner {
   height: 400px;
@@ -1791,7 +1801,7 @@ body {
     padding: 10px 0; }
   .tab__table--header {
     margin: 0; }
-  .tab__table--product th:last-child {
+  .tab__table--right th:last-child {
     border-top-right-radius: 0; }
 
 .tab__name {
@@ -1822,9 +1832,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   .tab__button {
-    font-size: 15px; }
-  .tab__name th {
-    position: static; } }
+    font-size: 15px; } }
 
 @media screen and (max-width: 768px) {
   .tab {
@@ -1832,18 +1840,22 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+    .tab--account {
+      margin: 30px 0; }
   .tab__button {
     width: 100%;
     border-radius: 0; }
     .tab__button--forex:after, .tab__button--commodities:after, .tab__button--metals:after, .tab__button--energies:after, .tab__button--indices:after, .tab__button--equities:after {
       left: 80px; }
+  .tab__anchor {
+    display: none; }
   .tab__header {
-    position: static; }
-  .tab__name th {
-    position: static; }
+    border-top-right-radius: 30px; }
   .tab__content {
     border-top: none;
-    border-radius: 3px; } }
+    border-radius: 3px; }
+  .tab__inner {
+    padding: 0; } }
 
 .announcements__list {
   padding: 0;
