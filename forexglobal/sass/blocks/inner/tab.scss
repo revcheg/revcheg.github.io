@@ -273,15 +273,16 @@
 
 .tab__name {
   position: sticky;
-  top: 0;
-}
-
-.tab__name {
+  // top: 0;
   
   th {
     position: sticky;
     border-radius: none;
     z-index: 1;
+  }
+  
+  td {
+    position: sticky;
   }
   
   &--forex {
@@ -316,6 +317,11 @@
     
     th {
       top: 116px;
+    }
+    
+    td {
+      top: 150px;
+      background: $sc;
     }
   }
 }

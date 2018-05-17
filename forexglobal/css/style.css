@@ -1806,29 +1806,28 @@ body {
 
 .tab__name {
   position: -webkit-sticky;
-  position: sticky;
-  top: 0; }
-
-.tab__name th {
-  position: -webkit-sticky;
-  position: sticky;
-  border-radius: none;
-  z-index: 1; }
-
-.tab__name--forex th {
-  top: 361px; }
-
-.tab__name--metals th {
-  top: 247px; }
-
-.tab__name--indices th {
-  top: 436px; }
-
-.tab__name--equities th {
-  top: 416px; }
-
-.tab__name--sticky th {
-  top: 116px; }
+  position: sticky; }
+  .tab__name th {
+    position: -webkit-sticky;
+    position: sticky;
+    border-radius: none;
+    z-index: 1; }
+  .tab__name td {
+    position: -webkit-sticky;
+    position: sticky; }
+  .tab__name--forex th {
+    top: 361px; }
+  .tab__name--metals th {
+    top: 247px; }
+  .tab__name--indices th {
+    top: 436px; }
+  .tab__name--equities th {
+    top: 416px; }
+  .tab__name--sticky th {
+    top: 116px; }
+  .tab__name--sticky td {
+    top: 150px;
+    background: #2f2861; }
 
 @media screen and (max-width: 1200px) {
   .tab__button {
