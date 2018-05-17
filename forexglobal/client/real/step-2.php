@@ -1,3 +1,8 @@
+<?php
+  session_start();
+  if (isset($_SESSION['token']) && isset($_GET['token'])) :
+    if ($_SESSION['token'] == $_GET['token']) :
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -132,11 +137,11 @@
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             Yes
-            <input type="radio" name="US" value="Yes">
+            <input type="radio" name="PEP" value="Yes">
           </label>
           <label class="client__label">
             No
-            <input type="radio" name="US" value="No">
+            <input type="radio" name="PEP" value="No">
           </label>
         </div>
         <div class="client__flex">
@@ -219,26 +224,26 @@
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             Yes
-            <input type="radio" name="US" value="Yes">
+            <input type="radio" name="EXP" value="Yes">
           </label>
           <label class="client__label">
             No
-            <input type="radio" name="US" value="No">
+            <input type="radio" name="EXP" value="No">
           </label>
         </div>
         <b class="client__question">Which of the following financial products have you traded in the last 3 years?</b>
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             CFD's (Forex, Metals, Commodities)
-            <input type="checkbox" name="US" value="Yes">
+            <input type="checkbox" name="PRD" value="Yes">
           </label>
           <label class="client__label">
             Other Derivatives (Swaps, Futures, Options)
-            <input type="checkbox" name="US" value="No">
+            <input type="checkbox" name="PRD" value="No">
           </label>
           <label class="client__label">
             Shares/Bonds
-            <input type="checkbox" name="US" value="No">
+            <input type="checkbox" name="PRD" value="No">
           </label>
         </div>
         <div class="client__flex  client__flex--center">
@@ -273,22 +278,22 @@
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             Yes
-            <input type="radio" name="US" value="Yes">
+            <input type="radio" name="CFDs" value="Yes">
           </label>
           <label class="client__label">
             No
-            <input type="radio" name="US" value="No">
+            <input type="radio" name="CFDs" value="No">
           </label>
         </div>
         <b class="client__question">Have you ever been employed as a Professional in a Financial Institution and/or been in employment involved in Trading of Financial Instruments?</b>
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             Yes
-            <input type="radio" name="US" value="Yes">
+            <input type="radio" name="INST" value="Yes">
           </label>
           <label class="client__label">
             No
-            <input type="radio" name="US" value="No">
+            <input type="radio" name="INST" value="No">
           </label>
         </div>
         <h3 class="client__subsubname">Trading Quiz</h3>
@@ -296,33 +301,33 @@
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             True
-            <input type="radio" name="US" value="Yes">
+            <input type="radio" name="HIGH" value="Yes">
           </label>
           <label class="client__label">
             False
-            <input type="radio" name="US" value="No">
+            <input type="radio" name="HIGH" value="No">
           </label>
         </div>
         <b class="client__question">The market is moving against your position. Your CFD position will close automatically if your equity reaches the Stop out Level.</b>
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             True
-            <input type="radio" name="US" value="Yes">
+            <input type="radio" name="STP" value="Yes">
           </label>
           <label class="client__label">
             False
-            <input type="radio" name="US" value="No">
+            <input type="radio" name="STP" value="No">
           </label>
         </div>
         <b class="client__question">If the value of your initial position in a CFD contract is $10,000 and the leverage ratio is 1:50, then the initial margin requirement would be 4% (i.e. $400)</b>
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             True
-            <input type="radio" name="US" value="Yes">
+            <input type="radio" name="RT" value="Yes">
           </label>
           <label class="client__label">
             False
-            <input type="radio" name="US" value="No">
+            <input type="radio" name="RT" value="No">
           </label>
         </div>
         <hr class="client__hr">
@@ -449,3 +454,19 @@
   <script src="../../js/main.min.js" async></script>
 </body>
 </html>
+<?php
+    else:
+?>
+
+You don't have permssions
+
+<?php
+    endif;
+  else:
+?>
+
+You don't have permssions
+
+<?php
+  endif;
+?>

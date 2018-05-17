@@ -1,3 +1,8 @@
+<?php
+  session_start();
+  if (isset($_SESSION['token']) && isset($_GET['token'])) :
+    if ($_SESSION['token'] == $_GET['token']) :
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,11 +114,11 @@
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             Yes
-            <input type="radio" name="US" value="Yes">
+            <input type="radio" name="COM" value="Yes">
           </label>
           <label class="client__label">
             No
-            <input type="radio" name="US" value="No">
+            <input type="radio" name="COM" value="No">
           </label>
         </div>
         <h2 class="client__subsubname">Declaration</h2>
@@ -210,3 +215,19 @@
   <script src="../../js/main.min.js" async></script>
 </body>
 </html>
+<?php
+    else:
+?>
+
+You don't have permssions
+
+<?php
+    endif;
+  else:
+?>
+
+You don't have permssions
+
+<?php
+  endif;
+?>
