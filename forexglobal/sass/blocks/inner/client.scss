@@ -127,6 +127,21 @@
   text-align: center;
 }
 
+.client__tel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client__country {
+  width: 95px !important;
+  margin: 0 10px 0 0;
+  background: #eee;
+}
+
+.client__phone {
+  width: 351px !important;
+}
+
 .client__forgot {
   color: $sc;
   font-weight: 500;
@@ -227,6 +242,10 @@
   .client__flex {
     justify-content: space-around;
   }
+
+  .client__phone {
+    width: 222px !important;
+  }
   
   .client__email {
     width: 372px;
@@ -275,6 +294,19 @@
     flex-direction: column;
     align-items: center;
     margin: 0;
+  }
+  
+  .client__tel {
+    flex-direction: column;
+  }
+
+  .client__country {
+    width: 278px !important;
+    margin: 0;
+  }
+
+  .client__phone {
+    width: 278px !important;
   }
   
   .client__email {

@@ -3210,6 +3210,22 @@ body {
   font-weight: 300;
   text-align: center; }
 
+.client__tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.client__country {
+  width: 95px !important;
+  margin: 0 10px 0 0;
+  background: #eee; }
+
+.client__phone {
+  width: 351px !important; }
+
 .client__forgot {
   color: #2f2861;
   font-weight: 500;
@@ -3289,6 +3305,8 @@ body {
   .client__flex {
     -ms-flex-pack: distribute;
     justify-content: space-around; }
+  .client__phone {
+    width: 222px !important; }
   .client__email {
     width: 372px; }
   .client__warning {
@@ -3322,6 +3340,16 @@ body {
     -ms-flex-align: center;
     align-items: center;
     margin: 0; }
+  .client__tel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .client__country {
+    width: 278px !important;
+    margin: 0; }
+  .client__phone {
+    width: 278px !important; }
   .client__email {
     width: auto; }
   .client__next {
