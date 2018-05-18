@@ -232,21 +232,87 @@
           </label>
         </div>
         <b class="client__question">Which of the following financial products have you traded in the last 3 years?</b>
-        <div class="client__flex  client__flex--center">
+        <div class="client__flex  client__flex--center  client__flex--column">
           <label class="client__label">
             CFD's (Forex, Metals, Commodities)
-            <input type="checkbox" name="PRD" value="Yes">
+            <input class="client__checkbox" type="checkbox" name="PRD">
+            <div class="client__flex  client__flex--hide  client__flex--center">
+              <select class="client__select" name="Frequency of transactions" tabindex="0" required>
+                <option hidden>Frequency of transactions</option>
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Yearly">Yearly</option>
+              </select>
+              <select class="client__select" name="Average volume size per transaction (USD)" tabindex="0" required>
+                <option hidden>Average volume size per transaction (USD)</option>
+                <option value="Less than $10,000">Less than $10,000</option>
+                <option value="$10,000 – $20,000">$10,000 – $20,000</option>
+                <option value="$20,000 – $30,000">$20,000 – $30,000</option>
+                <option value="$30,000 – $40,000">$30,000 – $40,000</option>
+                <option value="$40,000 – $50,000">$40,000 – $50,000</option>
+                <option value="$50,000 – $100,000">$50,000 – $100,000</option>
+                <option value="$100,000 – $150,000">$100,000 – $150,000</option>
+                <option value="$150,000 – $200,000">$150,000 – $200,000</option>
+                <option value="$200,000 – $250,000">$200,000 – $250,000</option>
+                <option value="$250,000 or more">$250,000 or more</option>
+              </select>
+            </div>
           </label>
           <label class="client__label">
             Other Derivatives (Swaps, Futures, Options)
-            <input type="checkbox" name="PRD" value="No">
+            <input class="client__checkbox" type="checkbox" name="PRD">
+            <div class="client__flex  client__flex--hide  client__flex--center">
+              <select class="client__select" name="Frequency of transactions" tabindex="0" required>
+                <option hidden>Frequency of transactions</option>
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Yearly">Yearly</option>
+              </select>
+              <select class="client__select" name="Average volume size per transaction (USD)" tabindex="0" required>
+                <option hidden>Average volume size per transaction (USD)</option>
+                <option value="Less than $10,000">Less than $10,000</option>
+                <option value="$10,000 – $20,000">$10,000 – $20,000</option>
+                <option value="$20,000 – $30,000">$20,000 – $30,000</option>
+                <option value="$30,000 – $40,000">$30,000 – $40,000</option>
+                <option value="$40,000 – $50,000">$40,000 – $50,000</option>
+                <option value="$50,000 – $100,000">$50,000 – $100,000</option>
+                <option value="$100,000 – $150,000">$100,000 – $150,000</option>
+                <option value="$150,000 – $200,000">$150,000 – $200,000</option>
+                <option value="$200,000 – $250,000">$200,000 – $250,000</option>
+                <option value="$250,000 or more">$250,000 or more</option>
+              </select>
+            </div>
           </label>
           <label class="client__label">
             Shares/Bonds
-            <input type="checkbox" name="PRD" value="No">
+            <input class="client__checkbox" type="checkbox" name="PRD">
+            <div class="client__flex  client__flex--hide  client__flex--center">
+              <select class="client__select" name="Frequency of transactions" tabindex="0" required>
+                <option hidden>Frequency of transactions</option>
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Yearly">Yearly</option>
+              </select>
+              <select class="client__select" name="Average volume size per transaction (USD)" tabindex="0" required>
+                <option hidden>Average volume size per transaction (USD)</option>
+                <option value="Less than $10,000">Less than $10,000</option>
+                <option value="$10,000 – $20,000">$10,000 – $20,000</option>
+                <option value="$20,000 – $30,000">$20,000 – $30,000</option>
+                <option value="$30,000 – $40,000">$30,000 – $40,000</option>
+                <option value="$40,000 – $50,000">$40,000 – $50,000</option>
+                <option value="$50,000 – $100,000">$50,000 – $100,000</option>
+                <option value="$100,000 – $150,000">$100,000 – $150,000</option>
+                <option value="$150,000 – $200,000">$150,000 – $200,000</option>
+                <option value="$200,000 – $250,000">$200,000 – $250,000</option>
+                <option value="$250,000 or more">$250,000 or more</option>
+              </select>
+            </div>
           </label>
         </div>
-        <div class="client__flex  client__flex--center">
+        <!-- <div class="client__flex  client__flex--center">
           <select name="Frequency of transactions" tabindex="0" required>
             <option hidden>Frequency of transactions</option>
             <option value="Daily">Daily</option>
@@ -254,12 +320,8 @@
             <option value="Monthly">Monthly</option>
             <option value="Yearly">Yearly</option>
           </select>
-          <!-- <label class="client__label">
-            Shares/Bonds
-            <input type="checkbox" name="US" value="No">
-          </label> -->
-        </div>
-        <div class="client__flex  client__flex--center">
+        </div> -->
+        <!-- <div class="client__flex  client__flex--center">
           <select name="Average volume size per transaction (USD)" tabindex="0" required>
             <option hidden>Average volume size per transaction (USD)</option>
             <option value="Less than $10,000">Less than $10,000</option>
@@ -273,7 +335,7 @@
             <option value="$200,000 – $250,000">$200,000 – $250,000</option>
             <option value="$250,000 or more">$250,000 or more</option>
           </select>
-        </div>
+        </div> -->
         <b class="client__question">Have you attended a course or seminar on CFDs or Forex?</b>
         <div class="client__flex  client__flex--center">
           <label class="client__label">
