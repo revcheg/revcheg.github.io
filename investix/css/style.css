@@ -470,6 +470,7 @@ body {
   font-weight: normal; }
 
 .footer__rules {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,7 +478,7 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 200px;
-  margin: 0;
+  margin: 0 100px 0 0;
   padding: 0;
   color: #ccc;
   list-style: none; }
@@ -488,3 +489,14 @@ body {
     transition: 0.2s; }
     .footer__rules a:hover {
       color: #ff451c; }
+
+.footer__up {
+  position: absolute;
+  top: -10px;
+  right: -100px; }
+  .footer__up button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: url("../img/footer-up.svg") no-repeat center; }
