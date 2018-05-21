@@ -3,7 +3,6 @@
   if (isset($_SESSION['token']) && isset($_GET['token'])) :
     if ($_SESSION['token'] == $_GET['token']) :
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,11 +37,11 @@
             <a class="header__open" href="#">Open account</a>
             <ul class="header__accounts  header__accounts--closed">
               <li><a>Real</a></li>
-              <li><a href="../../client/demo.html">Demo</a></li>
+              <li><a href="../../register/demo.html">Demo</a></li>
               <li><a href="../../trading/platforms/zulutrade.html">ZuluTrade</a></li>
             </ul>
           </li>
-          <li><a href="../login.html">Log in</a></li>
+          <li><a href="https://client.forex24.com/en/members/login">Log in</a></li>
           <li>
             <select class="header__language">
               <option>En</option>
@@ -73,7 +72,7 @@
                 <li><a href="../../trading/account-types.html">Account Types</a></li>
                 <li><a href="../../trading/account-comparison.html">Account Comparison</a></li>
                 <li><a href="../../trading/product-specification.html">Product Specification</a></li>
-                <!-- <li><a href="../../trading/trading-specification.html">Trading Specification</a></li> -->
+                <li><a href="../../trading/trading-specification.html">Trading Specification</a></li>
                 <li><a href="../../trading/platforms.html">Platforms</a></li>
                 <li><a href="../../trading/funding-and-withdrawal.html">Funding and Withdrawal</a></li>
                 <li><a href="../../trading/announcements.html">Announcements</a></li>
@@ -106,51 +105,42 @@
       </nav>
     </div>
   </header>
-  <section class="client">
+  <section class="register">
     <div class="container">
-      <?php
-        if (isset($_SESSION['Leverage'])) {
-          echo($_SESSION['Leverage']);
-        }
-      ?>
-      <h1 class="client__name">Register Real</h1>
-      <h2 class="client__subname">1. Personal Details</h2>
-      <form class="client__form" action="../verification/step2_handler.php?token=<?php echo $_SESSION['token']; ?>" method="post">
-        <div class="client__flex">
+      <h1 class="register__name">Register Real</h1>
+      <h2 class="register__subname">1. Personal Details</h2>
+      <form class="register__form" action="../verification/step2_handler.php?token=<?php echo $_SESSION['token']; ?>" method="POST">
+        <div class="register__flex">
           <input type="date" max="<?php $year = intval(date('Y')) - 18; echo $year; echo date("-m-d");?>" name="Date of Birth" required>
-          <input type="text" name="Address Line" placeholder="Address" required>
+          <input type="text" name="Address Line" placeholder="Address Line" required>
         </div>
-        <div class="client__flex">
+        <div class="register__flex">
           <input type="text" name="City/Town" placeholder="City/Town">
           <input type="text" name="Post Code" placeholder="Post Code">
         </div>
-        <b class="client__question">Are you a U.S. citizen or U.S. Resident for tax purposes?</b>
-        <div class="client__flex  client__flex--center">
-          <label class="client__label">
+        <b class="register__question">Are you a U.S. citizen or U.S. Resident for tax purposes?</b>
+        <div class="register__flex  register__flex--center">
+          <label class="register__label">
             Yes
             <input type="radio" name="US" value="Yes">
           </label>
-          <label class="client__label">
+          <label class="register__label">
             No
             <input type="radio" name="US" value="No">
           </label>
         </div>
-        <b class="client__question">Provide us with your Taxpayer Identification Number ("TIN")</b>
-        <div class="client__flex  client__flex--center">
-          <input type="text" name="TIN" placeholder="TIN">
-        </div>
-        <b class="client__question">Are you a <a href="../../img/pdf/Politically-Exposed-Person-Definition.pdf" target="_blank">Politically Exposed Person</a> (PEP)?</b>
-        <div class="client__flex  client__flex--center">
-          <label class="client__label">
+        <b class="register__question">Are you a <a href="../../img/pdf/Politically-Exposed-Person-Definition.pdf" target="_blank">Politically Exposed Person</a> (PEP)?</b>
+        <div class="register__flex  register__flex--center">
+          <label class="register__label">
             Yes
-            <input type="radio" name="PEP" value="Yes">
+            <input type="radio" name="US" value="Yes">
           </label>
-          <label class="client__label">
+          <label class="register__label">
             No
-            <input type="radio" name="PEP" value="No">
+            <input type="radio" name="US" value="No">
           </label>
         </div>
-        <div class="client__flex">
+        <div class="register__flex">
           <select name="Education" tabindex="0" required>
             <option hidden>Education</option>
             <option value="secondary">Secondary</option>
@@ -169,9 +159,9 @@
             <option value="unemployed">Unemployed</option>
           </select>
         </div>
-        <hr class="client__hr">
-        <h2 class="client__subname">2. Investor Information</h2>
-        <div class="client__flex">
+        <hr class="register__hr">
+        <h2 class="register__subname">2. Investor Information</h2>
+        <div class="register__flex">
           <select name="Annual Income (in EUR)" tabindex="0" required>
             <option hidden>Annual Income (in EUR)</option>
             <option value="0 - 15.000">0 - 15.000</option>
@@ -193,7 +183,7 @@
             <option value="other">Other</option>
           </select>
         </div>
-        <div class="client__flex">
+        <div class="register__flex">
           <select name="Estimated Net Worth (in EUR)" tabindex="0" required>
             <option hidden>Estimated Net Worth (in EUR)</option>
             <option value="0 - 50.000">0 - 50.000</option>
@@ -210,7 +200,7 @@
             <option value="diversification">Diversification</option>
           </select>
         </div>
-        <div class="client__flex">
+        <div class="register__flex">
           <select name="Anticipated amount available to trade with us within then next 12 months (in EUR)" tabindex="0" required>
             <option hidden>Anticipated amount available to trade with us within then next 12 months (in EUR)</option>
             <option value="up to 10.000">Up to 10.000</option>
@@ -219,188 +209,83 @@
             <option value="> 100.000">&gt; 100.000</option>
           </select>
         </div>
-        <hr class="client__hr">
-        <h2 class="client__subname">3. Appropriateness</h2>
-        <p class="client__warning">
+        <hr class="register__hr">
+        <h2 class="register__subname">3. Appropriateness</h2>
+        <p class="register__warning">
           <b>Attention</b>
           Please note that your responses to the following questions will determin the maximum leverage of your trading account.
         </p>
-        <h3 class="client__subsubname">Experience</h3>
-        <b class="client__question">Do you have any experience or qualifications which would help you to understand trading in leveraged products?</b>
-        <div class="client__flex  client__flex--center">
-          <label class="client__label">
+        <h3 class="register__subsubname">Experience</h3>
+        <b class="register__question">Do you have any experience or qualifications which would help you to understand trading in leveraged products?</b>
+        <div class="register__flex  register__flex--center">
+          <label class="register__label">
             Yes
-            <input type="radio" name="EXP" value="0">
+            <input type="radio" name="US" value="Yes">
           </label>
-          <label class="client__label">
+          <label class="register__label">
             No
-            <input type="radio" name="EXP" value="5">
+            <input type="radio" name="US" value="No">
           </label>
         </div>
-        <b class="client__question">Which of the following financial products have you traded in the last 3 years?</b>
-        <div class="client__flex  client__flex--center  client__flex--column">
-          <label class="client__label">
-            CFD's (Forex, Metals, Commodities)
-            <input class="client__checkbox" type="checkbox" name="PRD">
-            <div class="client__flex  client__flex--hide  client__flex--center">
-              <select class="client__select" name="Frequency of transactions" tabindex="0" required>
-                <option hidden>Frequency of transactions</option>
-                <option value="Daily">Daily</option>
-                <option value="Weekly">Weekly</option>
-                <option value="Monthly">Monthly</option>
-                <option value="Yearly">Yearly</option>
-              </select>
-              <select class="client__select" name="Average volume size per transaction (USD)" tabindex="0" required>
-                <option hidden>Average volume size per transaction (USD)</option>
-                <option value="Less than $10,000">Less than $10,000</option>
-                <option value="$10,000 – $20,000">$10,000 – $20,000</option>
-                <option value="$20,000 – $30,000">$20,000 – $30,000</option>
-                <option value="$30,000 – $40,000">$30,000 – $40,000</option>
-                <option value="$40,000 – $50,000">$40,000 – $50,000</option>
-                <option value="$50,000 – $100,000">$50,000 – $100,000</option>
-                <option value="$100,000 – $150,000">$100,000 – $150,000</option>
-                <option value="$150,000 – $200,000">$150,000 – $200,000</option>
-                <option value="$200,000 – $250,000">$200,000 – $250,000</option>
-                <option value="$250,000 or more">$250,000 or more</option>
-              </select>
-            </div>
-          </label>
-          <label class="client__label">
-            Other Derivatives (Swaps, Futures, Options)
-            <input class="client__checkbox" type="checkbox" name="PRD">
-            <div class="client__flex  client__flex--hide  client__flex--center">
-              <select class="client__select" name="Frequency of transactions" tabindex="0" required>
-                <option hidden>Frequency of transactions</option>
-                <option value="Daily">Daily</option>
-                <option value="Weekly">Weekly</option>
-                <option value="Monthly">Monthly</option>
-                <option value="Yearly">Yearly</option>
-              </select>
-              <select class="client__select" name="Average volume size per transaction (USD)" tabindex="0" required>
-                <option hidden>Average volume size per transaction (USD)</option>
-                <option value="Less than $10,000">Less than $10,000</option>
-                <option value="$10,000 – $20,000">$10,000 – $20,000</option>
-                <option value="$20,000 – $30,000">$20,000 – $30,000</option>
-                <option value="$30,000 – $40,000">$30,000 – $40,000</option>
-                <option value="$40,000 – $50,000">$40,000 – $50,000</option>
-                <option value="$50,000 – $100,000">$50,000 – $100,000</option>
-                <option value="$100,000 – $150,000">$100,000 – $150,000</option>
-                <option value="$150,000 – $200,000">$150,000 – $200,000</option>
-                <option value="$200,000 – $250,000">$200,000 – $250,000</option>
-                <option value="$250,000 or more">$250,000 or more</option>
-              </select>
-            </div>
-          </label>
-          <label class="client__label">
-            Shares/Bonds
-            <input class="client__checkbox" type="checkbox" name="PRD">
-            <div class="client__flex  client__flex--hide  client__flex--center">
-              <select class="client__select" name="Frequency of transactions" tabindex="0" required>
-                <option hidden>Frequency of transactions</option>
-                <option value="Daily">Daily</option>
-                <option value="Weekly">Weekly</option>
-                <option value="Monthly">Monthly</option>
-                <option value="Yearly">Yearly</option>
-              </select>
-              <select class="client__select" name="Average volume size per transaction (USD)" tabindex="0" required>
-                <option hidden>Average volume size per transaction (USD)</option>
-                <option value="Less than $10,000">Less than $10,000</option>
-                <option value="$10,000 – $20,000">$10,000 – $20,000</option>
-                <option value="$20,000 – $30,000">$20,000 – $30,000</option>
-                <option value="$30,000 – $40,000">$30,000 – $40,000</option>
-                <option value="$40,000 – $50,000">$40,000 – $50,000</option>
-                <option value="$50,000 – $100,000">$50,000 – $100,000</option>
-                <option value="$100,000 – $150,000">$100,000 – $150,000</option>
-                <option value="$150,000 – $200,000">$150,000 – $200,000</option>
-                <option value="$200,000 – $250,000">$200,000 – $250,000</option>
-                <option value="$250,000 or more">$250,000 or more</option>
-              </select>
-            </div>
-          </label>
-        </div>
-        <!-- <div class="client__flex  client__flex--center">
-          <select name="Frequency of transactions" tabindex="0" required>
-            <option hidden>Frequency of transactions</option>
-            <option value="Daily">Daily</option>
-            <option value="Weekly">Weekly</option>
-            <option value="Monthly">Monthly</option>
-            <option value="Yearly">Yearly</option>
-          </select>
-        </div> -->
-        <!-- <div class="client__flex  client__flex--center">
-          <select name="Average volume size per transaction (USD)" tabindex="0" required>
-            <option hidden>Average volume size per transaction (USD)</option>
-            <option value="Less than $10,000">Less than $10,000</option>
-            <option value="$10,000 – $20,000">$10,000 – $20,000</option>
-            <option value="$20,000 – $30,000">$20,000 – $30,000</option>
-            <option value="$30,000 – $40,000">$30,000 – $40,000</option>
-            <option value="$40,000 – $50,000">$40,000 – $50,000</option>
-            <option value="$50,000 – $100,000">$50,000 – $100,000</option>
-            <option value="$100,000 – $150,000">$100,000 – $150,000</option>
-            <option value="$150,000 – $200,000">$150,000 – $200,000</option>
-            <option value="$200,000 – $250,000">$200,000 – $250,000</option>
-            <option value="$250,000 or more">$250,000 or more</option>
-          </select>
-        </div> -->
-        <b class="client__question">Have you attended a course or seminar on CFDs or Forex?</b>
-        <div class="client__flex  client__flex--center">
-          <label class="client__label">
+        <b class="register__question">Have you attended a course or seminar on CFDs or Forex?</b>
+        <div class="register__flex  register__flex--center">
+          <label class="register__label">
             Yes
-            <input type="radio" name="CFDs" value="0">
+            <input type="radio" name="US" value="Yes">
           </label>
-          <label class="client__label">
+          <label class="register__label">
             No
-            <input type="radio" name="CFDs" value="3">
+            <input type="radio" name="US" value="No">
           </label>
         </div>
-        <b class="client__question">Have you ever been employed as a Professional in a Financial Institution and/or been in employment involved in Trading of Financial Instruments?</b>
-        <div class="client__flex  client__flex--center">
-          <label class="client__label">
+        <b class="register__question">Have you ever been employed as a Professional in a Financial Institution and/or been in employment involved in Trading of Financial Instruments?</b>
+        <div class="register__flex  register__flex--center">
+          <label class="register__label">
             Yes
-            <input type="radio" name="INST" value="0">
+            <input type="radio" name="US" value="Yes">
           </label>
-          <label class="client__label">
+          <label class="register__label">
             No
-            <input type="radio" name="INST" value="1">
+            <input type="radio" name="US" value="No">
           </label>
         </div>
-        <h3 class="client__subsubname">Trading Quiz</h3>
-        <b class="client__question">Trading with a higher leverage in CFDs means you will open a trade of a larger volume, thus increasing the risk of loss.</b>
-        <div class="client__flex  client__flex--center">
-          <label class="client__label">
+        <h3 class="register__subsubname">Trading Quiz</h3>
+        <b class="register__question">Trading with a higher leverage in CFDs means you will open a trade of a larger volume, thus increasing the risk of loss.</b>
+        <div class="register__flex  register__flex--center">
+          <label class="register__label">
             True
-            <input type="radio" name="HIGH" value="0">
+            <input type="radio" name="US" value="Yes">
           </label>
-          <label class="client__label">
+          <label class="register__label">
             False
-            <input type="radio" name="HIGH" value="2">
+            <input type="radio" name="US" value="No">
           </label>
         </div>
-        <b class="client__question">The market is moving against your position. Your CFD position will close automatically if your equity reaches the Stop out Level.</b>
-        <div class="client__flex  client__flex--center">
-          <label class="client__label">
+        <b class="register__question">The market is moving against your position. Your CFD position will close automatically if your equity reaches the Stop out Level.</b>
+        <div class="register__flex  register__flex--center">
+          <label class="register__label">
             True
-            <input type="radio" name="STP" value="0">
+            <input type="radio" name="US" value="Yes">
           </label>
-          <label class="client__label">
+          <label class="register__label">
             False
-            <input type="radio" name="STP" value="2">
+            <input type="radio" name="US" value="No">
           </label>
         </div>
-        <b class="client__question">If the value of your initial position in a CFD contract is $10,000 and the leverage ratio is 1:50, then the initial margin requirement would be 4% (i.e. $400)</b>
-        <div class="client__flex  client__flex--center">
-          <label class="client__label">
+        <b class="register__question">If the value of your initial position in a CFD contract is $10,000 and the leverage ratio is 1:50, then the initial margin requirement would be 4% (i.e. $400)</b>
+        <div class="register__flex  register__flex--center">
+          <label class="register__label">
             True
-            <input type="radio" name="RT" value="2">
+            <input type="radio" name="US" value="Yes">
           </label>
-          <label class="client__label">
+          <label class="register__label">
             False
-            <input type="radio" name="RT" value="0">
+            <input type="radio" name="US" value="No">
           </label>
         </div>
-        <hr class="client__hr">
-        <h2 class="client__subname">4. Trading Account</h2>
-        <div class="client__flex">
+        <hr class="register__hr">
+        <h2 class="register__subname">4. Trading Account</h2>
+        <div class="register__flex">
           <select name="Trading Platform" tabindex="0" required>
             <option hidden>Trading Platform</option>
             <option value="MT4">MT4</option>
@@ -415,45 +300,18 @@
             <option value="swap free">Swap Free</option>
           </select>
         </div>
-        <div class="client__flex">
-          <select name="Currency" tabindex="0" required>
-            <option hidden>Currency</option>
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
-          </select>
-          <select id="leverage" name="Leverage" tabindex="0" required>
-            <option hidden>Leverage</option>
-              <?php if ($_SESSION['first_step']['Country'] == 'MT' || $_SESSION['Leverage'] == 'Your leverage is only 1:50'): ?>
-                <option value="1:50">1:50</option>
-              <?php elseif($_SESSION['first_step']['Country'] == 'PL'): ?>
-                <option value="1:100">1:100</option>
-              <?php else: ?>
-                <option value="1:10">1:10</option>
-                <option value="1:30">1:30</option>
-                <option value="1:50">1:50</option>
-                <option value="1:100">1:100</option>
-                <option value="1:200">1:200</option>
-                <option value="1:400">1:400</option>
-              <?php endif; ?>
-          </select>
-        </div>
-        <!--
-          
-            
-          -->
-        <hr class="client__hr">
-        <h2 class="client__subname">5. Client Area Credentials</h2>
-        <div class="client__flex">
+        <hr class="register__hr">
+        <h2 class="register__subname">5. Client Area Credentials</h2>
+        <div class="register__flex">
           <input type="password" name="Password" placeholder="Password" required>
           <input type="password" name="Confirm Password" placeholder="Confirm Password" required>
         </div>
-        <div class="client__flex">
+        <div class="register__flex">
           <input type="hidden">
-          <button class="client__next" type="submit" name="Next Step">Next Step</button>
+          <button class="register__next" type="submit" name="Next Step">Next Step</button>
         </div>
       </form>
-      <p class="client__warning">
+      <p class="register__warning">
         <b>Risk Warning:</b>
         Our products are traded on margin and carry a high level of risk and it is possible to lose all your capital. These products may not be suitable for everyone and you should ensure that you understand the risks involved.
       </p>
@@ -478,7 +336,7 @@
             <img class="footer__logo" src="../../img/logo-w.svg" alt="Forex24 Global">
           </li>
           <li>
-            <!-- <a class="footer__callme" href="tel:+442080891644">Call us</a> -->
+            <a class="footer__callme" href="tel:+442080891644">Call us</a>
           </li>
           <li class="footer__social">
             <a class="footer__link  footer__link--fb" href="https://www.facebook.com/forex24com/" target="_blank"></a>
@@ -528,19 +386,27 @@
         <hr class="footer__hr">
       <p class="footer__text">© 2018 All rights reserved LYDYA FINANCIAL LTD.</p>
       <p class="footer__text">Located at 155 Ayias Fylaxeos, Ersi Court Suite 202, 3083 Limassol, Cyprus.</p>
-      <p class="footer__text">Forex24 Global is a brand owned and operated by Lydya Financial Ltd, a Cyprus Investment Firm (CIF) regulated and supervised by the Cyprus Securities and Exchange Commission (CySEC) with CIF <a href="https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/79086/" target="_blank">Licence number 300/16</a> and Company registration number HE334292.</p>
-      <p class="footer__text">The Company is also cliented with: FCA in UK with reg. no. 782501; BaFin in Germany with reg. no. 1349943; CONSOB in Italy with reg. no. 4624; ACP in France with reg. no. 75980; CNMV in Spain with reg. no. 4373.</p>
+      <p class="footer__text">Forex24 Global is a brand owned and operated by Lydya Financial Ltd, a Cyprus Investment Firm (CIF) regulated and supervised by the Cyprus Securities and Exchange Commission (CySEC) with CIF Licence number 300/16 and Company registration number HE334292.</p>
+      <p class="footer__text">The Company is also registered with: FCA in UK with reg. no. 782501; BaFin in Germany with reg. no. 1349943; CONSOB in Italy with reg. no. 4624; ACP in France with reg. no. 75980; CNMV in Spain with reg. no. 4373.</p>
     </div>
   </footer>
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-  </script>
-  <script src="../../js/main.js" async></script>
+  <script src="../../js/main.min.js" async></script>
 </body>
 </html>
 
-<script type="text/javascript">
-  var country = "<?php echo $_SESSION['first_step']['Country']; ?>";
-</script>
+<?php
+    else:
+?>
+
+You don't have permssions
+
+<?php
+    endif;
+  else:
+?>
+
+You don't have permssions
+
+<?php
+  endif;
+?>

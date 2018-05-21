@@ -3,7 +3,6 @@
   if (isset($_SESSION['token']) && isset($_GET['token'])) :
     if ($_SESSION['token'] == $_GET['token']) :
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -108,16 +107,11 @@
   </header>
   <section class="client">
     <div class="container">
-      <?php
-        if (isset($_SESSION['Leverage'])) {
-          echo($_SESSION['Leverage']);
-        }
-      ?>
       <h1 class="client__name">Register Real</h1>
       <h2 class="client__subname">1. Personal Details</h2>
-      <form class="client__form" action="../verification/step2_handler.php?token=<?php echo $_SESSION['token']; ?>" method="post">
+      <form class="client__form" action="" method="post">
         <div class="client__flex">
-          <input type="date" max="<?php $year = intval(date('Y')) - 18; echo $year; echo date("-m-d");?>" name="Date of Birth" required>
+          <input type="date" name="Date of Birth" required>
           <input type="text" name="Address Line" placeholder="Address" required>
         </div>
         <div class="client__flex">
@@ -230,11 +224,11 @@
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             Yes
-            <input type="radio" name="EXP" value="0">
+            <input type="radio" name="EXP" value="Yes">
           </label>
           <label class="client__label">
             No
-            <input type="radio" name="EXP" value="5">
+            <input type="radio" name="EXP" value="No">
           </label>
         </div>
         <b class="client__question">Which of the following financial products have you traded in the last 3 years?</b>
@@ -346,22 +340,22 @@
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             Yes
-            <input type="radio" name="CFDs" value="0">
+            <input type="radio" name="CFDs" value="Yes">
           </label>
           <label class="client__label">
             No
-            <input type="radio" name="CFDs" value="3">
+            <input type="radio" name="CFDs" value="No">
           </label>
         </div>
         <b class="client__question">Have you ever been employed as a Professional in a Financial Institution and/or been in employment involved in Trading of Financial Instruments?</b>
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             Yes
-            <input type="radio" name="INST" value="0">
+            <input type="radio" name="INST" value="Yes">
           </label>
           <label class="client__label">
             No
-            <input type="radio" name="INST" value="1">
+            <input type="radio" name="INST" value="No">
           </label>
         </div>
         <h3 class="client__subsubname">Trading Quiz</h3>
@@ -369,33 +363,33 @@
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             True
-            <input type="radio" name="HIGH" value="0">
+            <input type="radio" name="HIGH" value="Yes">
           </label>
           <label class="client__label">
             False
-            <input type="radio" name="HIGH" value="2">
+            <input type="radio" name="HIGH" value="No">
           </label>
         </div>
         <b class="client__question">The market is moving against your position. Your CFD position will close automatically if your equity reaches the Stop out Level.</b>
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             True
-            <input type="radio" name="STP" value="0">
+            <input type="radio" name="STP" value="Yes">
           </label>
           <label class="client__label">
             False
-            <input type="radio" name="STP" value="2">
+            <input type="radio" name="STP" value="No">
           </label>
         </div>
         <b class="client__question">If the value of your initial position in a CFD contract is $10,000 and the leverage ratio is 1:50, then the initial margin requirement would be 4% (i.e. $400)</b>
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             True
-            <input type="radio" name="RT" value="2">
+            <input type="radio" name="RT" value="Yes">
           </label>
           <label class="client__label">
             False
-            <input type="radio" name="RT" value="0">
+            <input type="radio" name="RT" value="No">
           </label>
         </div>
         <hr class="client__hr">
@@ -422,26 +416,13 @@
             <option value="EUR">EUR</option>
             <option value="GBP">GBP</option>
           </select>
-          <select id="leverage" name="Leverage" tabindex="0" required>
+          <select name="Leverage" tabindex="0" required>
             <option hidden>Leverage</option>
-              <?php if ($_SESSION['first_step']['Country'] == 'MT' || $_SESSION['Leverage'] == 'Your leverage is only 1:50'): ?>
-                <option value="1:50">1:50</option>
-              <?php elseif($_SESSION['first_step']['Country'] == 'PL'): ?>
-                <option value="1:100">1:100</option>
-              <?php else: ?>
-                <option value="1:10">1:10</option>
-                <option value="1:30">1:30</option>
-                <option value="1:50">1:50</option>
-                <option value="1:100">1:100</option>
-                <option value="1:200">1:200</option>
-                <option value="1:400">1:400</option>
-              <?php endif; ?>
+            <option value="1:10">1:10</option>
+            <option value="1:30">1:30</option>
+            <option value="1:50">1:50</option>
           </select>
         </div>
-        <!--
-          
-            
-          -->
         <hr class="client__hr">
         <h2 class="client__subname">5. Client Area Credentials</h2>
         <div class="client__flex">
@@ -532,15 +513,22 @@
       <p class="footer__text">The Company is also cliented with: FCA in UK with reg. no. 782501; BaFin in Germany with reg. no. 1349943; CONSOB in Italy with reg. no. 4624; ACP in France with reg. no. 75980; CNMV in Spain with reg. no. 4373.</p>
     </div>
   </footer>
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-  </script>
-  <script src="../../js/main.js" async></script>
+  <script src="../../js/main.min.js" async></script>
 </body>
 </html>
+<?php
+    else:
+?>
 
-<script type="text/javascript">
-  var country = "<?php echo $_SESSION['first_step']['Country']; ?>";
-</script>
+You don't have permssions
+
+<?php
+    endif;
+  else:
+?>
+
+You don't have permssions
+
+<?php
+  endif;
+?>

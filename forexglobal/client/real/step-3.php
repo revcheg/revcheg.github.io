@@ -37,11 +37,11 @@
             <a class="header__open" href="#">Open account</a>
             <ul class="header__accounts  header__accounts--closed">
               <li><a>Real</a></li>
-              <li><a href="../../client/demo.html">Demo</a></li>
+              <li><a href="../../register/demo.html">Demo</a></li>
               <li><a href="../../trading/platforms/zulutrade.html">ZuluTrade</a></li>
             </ul>
           </li>
-          <li><a href="../login.html">Log in</a></li>
+          <li><a href="https://client.forex24.com/en/members/login">Log in</a></li>
           <li>
             <select class="header__language">
               <option>En</option>
@@ -72,7 +72,7 @@
                 <li><a href="../../trading/account-types.html">Account Types</a></li>
                 <li><a href="../../trading/account-comparison.html">Account Comparison</a></li>
                 <li><a href="../../trading/product-specification.html">Product Specification</a></li>
-                <!-- <li><a href="../../trading/trading-specification.html">Trading Specification</a></li> -->
+                <li><a href="../../trading/trading-specification.html">Trading Specification</a></li>
                 <li><a href="../../trading/platforms.html">Platforms</a></li>
                 <li><a href="../../trading/funding-and-withdrawal.html">Funding and Withdrawal</a></li>
                 <li><a href="../../trading/announcements.html">Announcements</a></li>
@@ -105,35 +105,35 @@
       </nav>
     </div>
   </header>
-  <section class="client">
+  <section class="register">
     <div class="container">
-      <h1 class="client__name">Register Real</h1>
-      <h2 class="client__subsubname">Communication</h2>
-      <form class="client__form" action="" method="post">
-        <b class="client__question">I wish to receive newsletters and other communication material:</b>
-        <div class="client__flex  client__flex--center">
-          <label class="client__label">
+      <h1 class="register__name">Register Real</h1>
+      <h2 class="register__subsubname">Communication</h2>
+      <form class="register__form" action="../verification/step3_handler.php?token=<?php echo $_SESSION['token']; ?>" method="POST">
+        <b class="register__question">I wish to receive newsletters and other communication material:</b>
+        <div class="register__flex  register__flex--center">
+          <label class="register__label">
             Yes
-            <input type="radio" name="COM" value="Yes">
+            <input type="radio" name="US" value="Yes">
           </label>
-          <label class="client__label">
+          <label class="register__label">
             No
-            <input type="radio" name="COM" value="No">
+            <input type="radio" name="US" value="No">
           </label>
         </div>
-        <h2 class="client__subsubname">Declaration</h2>
-        <div class="client__flex  client__flex--center">
-          <label class="client__label  client__label--checkbox">
+        <h2 class="register__subsubname">Declaration</h2>
+        <div class="register__flex  register__flex--center">
+          <label class="register__label  register__label--checkbox">
             <input type="checkbox" name="Checkbox">
             *I declare that I have read, fully understood and hereby accept the entire text of the <a href="../../img/pdf/Client-Agreement-v1.3.1.pdf" target="_blank">Client Agreement</a>, <a href="../../img/pdf/Privacy-and-Cookies-Policy.pdf" target="_blank">Privacy and Cookies Policy</a>, <a href="../../img/pdf/Best-Interest-and-Order-Execution-Summary.pdf" target="_blank">Order Execution Policy</a>, <a href="../../img/pdf/Risk-Disclosure-Warning-Notice-1.0.1-2.pdf" target="_blank">Risk Disclosure</a>, <a href="../../img/pdf/Client-Categorisation-Policy.pdf" target="_blank">Client Categorisation Policy</a>, <a href="../../img/pdf/Conflicts-of-Interest-Policy-Summary.pdf" target="_blank">Conflicts of Interest Policy</a>, <a href="../../img/pdf/Complaints-Procedure.pdf" target="_blank">Complaint Handling Procedure</a>, <a href="../../img/pdf/Investor-Compensation-Fund.pdf" target="_blank">Investor Compensation Fund</a>.
           </label>
         </div>
-        <div class="client__flex">
+        <div class="register__flex">
           <input type="hidden">
-          <button class="client__next" type="submit" name="Next Step">Next Step</button>
+          <button class="register__next" type="submit" name="Next Step">Next Step</button>
         </div>
       </form>
-      <p class="client__warning">
+      <p class="register__warning">
         <b>Risk Warning:</b>
         Our products are traded on margin and carry a high level of risk and it is possible to lose all your capital. These products may not be suitable for everyone and you should ensure that you understand the risks involved.
       </p>
@@ -158,7 +158,7 @@
             <img class="footer__logo" src="../../img/logo-w.svg" alt="Forex24 Global">
           </li>
           <li>
-            <!-- <a class="footer__callme" href="tel:+442080891644">Call us</a> -->
+            <a class="footer__callme" href="tel:+442080891644">Call us</a>
           </li>
           <li class="footer__social">
             <a class="footer__link  footer__link--fb" href="https://www.facebook.com/forex24com/" target="_blank"></a>
@@ -208,13 +208,14 @@
         <hr class="footer__hr">
       <p class="footer__text">© 2018 All rights reserved LYDYA FINANCIAL LTD.</p>
       <p class="footer__text">Located at 155 Ayias Fylaxeos, Ersi Court Suite 202, 3083 Limassol, Cyprus.</p>
-      <p class="footer__text">Forex24 Global is a brand owned and operated by Lydya Financial Ltd, a Cyprus Investment Firm (CIF) regulated and supervised by the Cyprus Securities and Exchange Commission (CySEC) with CIF <a href="https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/79086/" target="_blank">Licence number 300/16</a> and Company registration number HE334292.</p>
-      <p class="footer__text">The Company is also cliented with: FCA in UK with reg. no. 782501; BaFin in Germany with reg. no. 1349943; CONSOB in Italy with reg. no. 4624; ACP in France with reg. no. 75980; CNMV in Spain with reg. no. 4373.</p>
+      <p class="footer__text">Forex24 Global is a brand owned and operated by Lydya Financial Ltd, a Cyprus Investment Firm (CIF) regulated and supervised by the Cyprus Securities and Exchange Commission (CySEC) with CIF Licence number 300/16 and Company registration number HE334292.</p>
+      <p class="footer__text">The Company is also registered with: FCA in UK with reg. no. 782501; BaFin in Germany with reg. no. 1349943; CONSOB in Italy with reg. no. 4624; ACP in France with reg. no. 75980; CNMV in Spain with reg. no. 4373.</p>
     </div>
   </footer>
   <script src="../../js/main.min.js" async></script>
 </body>
 </html>
+
 <?php
     else:
 ?>
