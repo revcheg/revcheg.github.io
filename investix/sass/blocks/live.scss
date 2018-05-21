@@ -1,0 +1,44 @@
+.live {
+  padding: 85px 0;
+  background: #086cfc url('../img/live-bg.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.live__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.live__box {
+  width: 730px;
+}
+
+.live__title {
+  margin: 0;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.live__text {
+  margin: 40px 0 70px 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.live__button {
+  display: inline-block;
+  
+  &:first-of-type {
+    margin: 0 30px 0 0;
+  }
+}
+
+.live__mockup {
+  width: 342px;
+  height: 272px;
+  background: url('../img/live-mockup.png') no-repeat center;
+  background-size: cover;
+}
