@@ -132,5 +132,12 @@
     padding: 0;
     border: none;
     background: url('../img/footer-up.svg') no-repeat center;
+    transition: 0.2s;
+    cursor: pointer;
+    outline: none;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }

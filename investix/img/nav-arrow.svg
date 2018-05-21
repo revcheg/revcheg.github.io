@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.14 7.07"><defs><style>.cls-1{fill:#636363;}</style></defs><title>выпад список</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="7.07 7.07 0 0 14.14 0 7.07 7.07"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.14 7.07">
+  <g data-name="Layer 2">
+    <path fill="#636363" d="M7.07 7.07L0 0h14.14L7.07 7.07z" data-name="Layer 1"/>
+  </g>
+</svg>
