@@ -1,0 +1,43 @@
+.slider {
+  height: 920px;
+  background: #309ce4 url('../img/slider-bg.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.slider__box {
+  height: 920px;
+}
+
+.slider__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1170px;
+  height: inherit;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.slider__text {
+  width: 770px;
+}
+
+.slider__title {
+  margin: 0;
+  color: #fff;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.slider__desc {
+  color: #fff;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.slider__img {
+  width: 355px;
+  height: 524px;
+  background: url('../img/slider-1.png') no-repeat center;
+  background-size: cover;
+}
