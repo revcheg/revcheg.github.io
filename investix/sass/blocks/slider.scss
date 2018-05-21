@@ -1,11 +1,13 @@
 .slider {
-  height: 920px;
+  // height: 920px;
+  height: 700px;
   background: #309ce4 url('../img/slider-bg.jpg') no-repeat center;
   background-size: cover;
 }
 
 .slider__box {
-  height: 920px;
+  // height: 920px;
+  height: 700px;
 }
 
 .slider__container {
@@ -36,8 +38,8 @@
 }
 
 .slider__img {
-  width: 355px;
-  height: 524px;
+  width: 300px;
+  height: 508px;
   background: url('../img/slider-1.png') no-repeat center;
   background-size: cover;
 }
