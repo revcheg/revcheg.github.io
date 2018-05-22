@@ -47,7 +47,8 @@
   &--select {
     width: 370px;
     height: inherit;
-    background: transparent;
+    background: transparent url('../img/nav-arrow.svg') no-repeat 340px;
+    background-size: 10px;
     appearance: none;
   }
   
@@ -96,6 +97,8 @@
     
     &--select {
       width: 334px;
+      background: transparent url('../img/nav-arrow.svg') no-repeat 305px;
+      background-size: 10px;
     }
     
     &--code {
@@ -153,6 +156,8 @@
     &--select {
       width: 300px;
       height: 40px;
+      background: transparent url('../img/nav-arrow.svg') no-repeat 270px;
+      background-size: 10px;
     }
     
     &--code {

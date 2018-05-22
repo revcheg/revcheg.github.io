@@ -99,9 +99,20 @@ body {
     position: relative; }
   .header__toggle {
     position: absolute;
-    top: 0;
+    top: 7px;
+    right: 0;
     display: block;
-    background: red; } }
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none; }
+    .header__toggle--inactive {
+      background: url("../img/nav.svg") no-repeat center; }
+    .header__toggle--active {
+      background: url("../img/nav-h.svg") no-repeat center; } }
 
 .button {
   display: block;
@@ -210,7 +221,42 @@ body {
 
 @media screen and (max-width: 768px) {
   .nav {
-    display: none; } }
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    border-top: 1px solid #0060ff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #fff;
+    clip: rect(0, 0, 0, 0);
+    opacity: 0;
+    -webkit-transition: 1s;
+    transition: 1s;
+    z-index: 5; }
+    .nav--active {
+      clip: auto;
+      opacity: 1; }
+  .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center; }
+    .nav__list a {
+      display: inline-block;
+      padding: 10px 0; }
+      .nav__list a:after {
+        top: 22px;
+        right: -7px; }
+  .nav__sublist {
+    top: 40px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); }
+    .nav__sublist a {
+      padding: 0; } }
 
 .slider {
   height: 700px;
@@ -586,7 +632,8 @@ body {
   .contact__input--select {
     width: 370px;
     height: inherit;
-    background: transparent;
+    background: transparent url("../img/nav-arrow.svg") no-repeat 340px;
+    background-size: 10px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none; }
@@ -625,7 +672,9 @@ body {
   .contact__input {
     width: 300px; }
     .contact__input--select {
-      width: 334px; }
+      width: 334px;
+      background: transparent url("../img/nav-arrow.svg") no-repeat 305px;
+      background-size: 10px; }
     .contact__input--code {
       width: 36px; }
     .contact__input--phone {
@@ -661,7 +710,9 @@ body {
     margin: 0 0 10px 0; }
     .contact__input--select {
       width: 300px;
-      height: 40px; }
+      height: 40px;
+      background: transparent url("../img/nav-arrow.svg") no-repeat 270px;
+      background-size: 10px; }
     .contact__input--code {
       width: 36px; }
     .contact__input--phone {

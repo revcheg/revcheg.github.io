@@ -34,8 +34,22 @@
   
   .header__toggle {
     position: absolute;
-    top: 0;
+    top: 7px;
+    right: 0;
     display: block;
-    background: red;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border: none;
+    transition: 0.5s;
+    outline: none;
+    
+    &--inactive {
+      background: url('../img/nav.svg') no-repeat center;
+    }
+    
+    &--active {
+      background: url('../img/nav-h.svg') no-repeat center;
+    }
   }
 }
