@@ -56,7 +56,8 @@
   }
   
   .slider__container {
-    width: 96%;
+    width: 95%;
+    padding: 0;
   }
   
   .slider__text {
@@ -78,5 +79,35 @@
 }
 
 @media screen and ($mobile-widths) {
+  .slider {
+    // height: 920px;
+    height: 400px;
+  }
+
+  .slider__box {
+    // height: 920px;
+    height: 400px;
+  }
   
+  .slider__text {
+    width: auto;
+  }
+  
+  .slider__title {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .slider__desc {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .slider__button {
+    margin: auto;
+  }
+  
+  .slider__img {
+    display: none;
+  }
 }

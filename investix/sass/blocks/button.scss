@@ -47,33 +47,12 @@
       width: 130px;
     }
     
-    &--medium {
-      width: 270px;
-    }
-    
-    &--big {
-      width: 370px;
-    }
-    
     &--transparent {
       width: 128px;
-      padding: 9px 0;
-      color: $mc;
-      font-weight: normal;
-      border: 1px solid $mc;
-      background: transparent;
-    }
-    
-    &--white {
-      width: 268px;
-      padding: 9px 0;
-      font-weight: normal;
-      border: 1px solid #fff;
-      background: transparent;
     }
   }
 }
 
 @media screen and ($mobile-widths) {
-  
+
 }

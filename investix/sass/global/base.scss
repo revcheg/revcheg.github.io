@@ -17,8 +17,4 @@ body {
   }
 }
 
-@media screen and ($mobile-widths) {
-  .container {
-    background: yellow;
-  }
-}
+@media screen and ($mobile-widths) {}

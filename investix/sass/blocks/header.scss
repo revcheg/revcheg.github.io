@@ -13,6 +13,10 @@
   height: 40px;
 }
 
+.header__toggle {
+  display: none;
+}
+
 @media screen and ($tablet-widths) {
   .header__logo {
     width: 130px;
@@ -24,5 +28,14 @@
 }
 
 @media screen and ($mobile-widths) {
+  .header__flex {
+    position: relative;
+  }
   
+  .header__toggle {
+    position: absolute;
+    top: 0;
+    display: block;
+    background: red;
+  }
 }

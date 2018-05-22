@@ -48,5 +48,26 @@
 }
 
 @media screen and ($mobile-widths) {
-
+  .info {
+    padding: 50px 0;
+  }
+  
+  .info__mockup {
+    width: 300px;
+    height: 205px;
+    margin: 0 0 20px 0;
+  }
+  
+  .info__box {
+    width: auto;
+  }
+  
+  .info__title {
+    font-size: 27px;
+    text-align: center;
+  }
+  
+  .info__button {
+    margin: auto;
+  }
 }

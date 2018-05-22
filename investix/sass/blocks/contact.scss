@@ -117,5 +117,7 @@
 }
 
 @media screen and ($mobile-widths) {
-  
+  .contact__form {
+    display: none;
+  }
 }

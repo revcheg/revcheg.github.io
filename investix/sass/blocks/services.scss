@@ -102,5 +102,33 @@
 }
 
 @media screen and ($mobile-widths) {
+  .services {
+    padding: 50px 0;
+    background: #d5f9fc;
+  }
   
+  .services__title {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .services__subtitle {
+    margin: 16px 0 50px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .services__flex {
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  
+  .services__box {
+    margin: 0 0 50px 0;
+    
+    &:last-child {
+      margin: 0;
+    }
+  }
 }
