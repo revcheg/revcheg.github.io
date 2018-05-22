@@ -70,3 +70,13 @@
   clip: auto;
   opacity: 1;
 }
+
+@media screen and ($tablet-widths) {
+  .nav {
+    width: 550px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  
+}

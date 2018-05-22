@@ -76,3 +76,46 @@
   font-family: inherit;
   border: none;
 }
+
+@media screen and ($tablet-widths) {
+  .contact__title {
+    font-size: 50px;
+  }
+  
+  .contact__subtitle {
+    margin: 20px 0 50px 0;
+    font-size: 20px;
+  }
+  
+  .contact__form {
+    width: 700px;
+  }
+  
+  .contact__input {
+    width: 300px;
+    
+    &--select {
+      width: 334px;
+    }
+    
+    &--code {
+      width: 36px;
+    }
+    
+    &--phone {
+      width: 200px;
+    }
+  }
+  
+  .contact__double {
+    width: 334px;
+  }
+  
+  .contact__submit {
+    width: 334px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  
+}

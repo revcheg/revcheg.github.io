@@ -32,3 +32,21 @@
     margin: 16px 0 30px 0;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .info {
+    padding: 100px 0;
+  }
+  
+  .info__flex {
+    flex-direction: column;
+  }
+  
+  .info__mockup {
+    margin: 0 0 50px 0;
+  }
+}
+
+@media screen and ($mobile-widths) {
+
+}

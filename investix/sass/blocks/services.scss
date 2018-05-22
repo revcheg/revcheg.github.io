@@ -61,3 +61,46 @@
     margin: 0 auto 20px auto;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .services__title {
+    font-size: 50px;
+  }
+  
+  .services__subtitle {
+    font-size: 20px;
+  }
+  
+  .services__flex {
+    flex-wrap: wrap;
+  }
+  
+  .services__box {
+    width: 170px;
+    padding: 270px 0 0 0;
+    
+    &--intro {
+      background-size: 170px;
+    }
+    
+    &--student {
+      background-size: 170px;
+    }
+    
+    &--expert {
+      background-size: 170px;
+    }
+    
+    &--pro {
+      background-size: 170px;
+    }
+  }
+  
+  .services__name {
+    font-size: 20px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  
+}

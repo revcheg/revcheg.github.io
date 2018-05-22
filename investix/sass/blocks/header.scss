@@ -12,3 +12,17 @@
   width: 170px;
   height: 40px;
 }
+
+@media screen and ($tablet-widths) {
+  .header__logo {
+    width: 130px;
+  }
+  
+  .header__button {
+    display: none !important;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  
+}
