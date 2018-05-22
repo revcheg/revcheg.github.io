@@ -141,3 +141,67 @@
     }
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .footer__logo {
+    display: block;
+    margin: auto;
+  }
+  
+  .footer__flex {
+    flex-direction: column;
+  }
+  
+  .footer__list {
+    width: 200px;
+    margin: 35px auto 0 auto;
+    text-align: center;
+    
+    &:last-child {
+      margin: 35px auto;
+    }
+  }
+  
+  .footer__phone,
+  .footer__home,
+  .footer__email {
+    padding: 0 0 15px 0;
+  }
+  
+  .footer__text {
+    text-align: center;
+  }
+  
+  .footer__inner {
+    flex-direction: column;
+  }
+  
+  .footer__copy {
+    order: 2;
+    margin: 30px 0 0 0;
+    padding: 0 0 70px 0;
+  }
+  
+  .footer__rules {
+    margin: 0;
+  }
+  
+  .footer__up {
+    top: 90px;
+    right: 50%;
+    animation: up 1s infinite alternate;
+    transform: translateX(50%);
+  }
+  
+  @keyframes up {
+    0% {
+      top: 100px;
+    }
+    
+    100% {
+      top: 80px;
+    }
+  }
+}

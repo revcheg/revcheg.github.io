@@ -117,7 +117,55 @@
 }
 
 @media screen and ($mobile-widths) {
+  .contact {
+    padding: 50px 0;
+  }
+  
+  .contact__title {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .contact__subtitle {
+    margin: 16px 0 50px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  
   .contact__form {
-    display: none;
+    width: 300px;
+    margin: auto;
+  }
+  
+  .contact__flex {
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  .contact__double {
+    width: 300px;
+  }
+  
+  .contact__input {
+    width: 266px;
+    margin: 0 0 10px 0;
+    
+    &--select {
+      width: 300px;
+      height: 40px;
+    }
+    
+    &--code {
+      width: 36px;
+    }
+    
+    &--phone {
+      width: 185px;
+    }
+  }
+  
+  .contact__submit {
+    width: 300px;
+    margin: 10px 0 0 0;
   }
 }
