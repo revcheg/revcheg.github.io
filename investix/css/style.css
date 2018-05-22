@@ -133,9 +133,9 @@ body {
   .button--transparent {
     width: 168px;
     padding: 9px 0;
-    color: #ff451c;
+    color: #3d964e;
     font-weight: normal;
-    border: 1px solid #ff451c;
+    border: 1px solid #3d964e;
     background: transparent; }
   .button--white {
     width: 268px;
@@ -143,6 +143,8 @@ body {
     font-weight: normal;
     border: 1px solid #fff;
     background: transparent; }
+  .button--green {
+    background: #3d964e; }
 
 @media screen and (max-width: 1200px) {
   .button {

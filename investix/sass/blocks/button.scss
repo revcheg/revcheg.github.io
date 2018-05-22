@@ -24,9 +24,9 @@
   &--transparent {
     width: 168px;
     padding: 9px 0;
-    color: $mc;
+    color: #3d964e;
     font-weight: normal;
-    border: 1px solid $mc;
+    border: 1px solid #3d964e;
     background: transparent;
   }
   
@@ -36,6 +36,10 @@
     font-weight: normal;
     border: 1px solid #fff;
     background: transparent;
+  }
+  
+  &--green {
+    background: #3d964e;
   }
 }
 
