@@ -15,6 +15,12 @@
   }
 }
 
+.account-programs__subname {
+  color: #fff;
+  font-size: 30px;
+  font-weight: normal;
+}
+
 .account-programs__desc {
   padding: 40px 0 60px;
 }
@@ -163,6 +169,12 @@
 @media screen and ($mobile-widths) {
   .account-programs__name {
     font-size: 30px;
+    text-align: center;
+  }
+  
+  .account-programs__subname {
+    display: block;
+    font-size: 18px;
     text-align: center;
   }
   

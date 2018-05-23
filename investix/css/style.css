@@ -412,6 +412,9 @@ body {
   .services--account-programs {
     padding: 60px 0 100px 0;
     background: none; }
+  .services--account {
+    padding: 70px 0;
+    background: none; }
 
 .services__title {
   margin: 0;
@@ -422,6 +425,8 @@ body {
   margin: 50px 0;
   font-size: 24px;
   font-weight: 300; }
+  .services__subtitle--account-programs {
+    margin: 50px 0 0 0; }
 
 .services__flex {
   display: -webkit-box;
@@ -485,6 +490,8 @@ body {
     background: #d5f9fc; }
     .services--account-programs {
       background: none; }
+    .services--account {
+      display: none; }
   .services__title {
     font-size: 30px;
     text-align: center; }
@@ -927,6 +934,197 @@ body {
     100% {
       top: 80px; } } }
 
+.account {
+  border-bottom: 1px solid #cccccc; }
+
+.account__inner {
+  padding: 70px 0; }
+
+.account__title {
+  margin: 0;
+  font-size: 72px;
+  font-weight: 600; }
+
+.services__subtitle {
+  margin: 50px 0;
+  font-size: 24px;
+  font-weight: 300; }
+  .services__subtitle--account-programs {
+    margin: 50px 0 0 0; }
+
+.services__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.services__box {
+  width: 245px;
+  padding: 400px 0 0 0; }
+  .services__box--intro {
+    background: url("../img/services-intro.png") no-repeat top; }
+  .services__box--student {
+    background: url("../img/services-student.png") no-repeat top; }
+  .services__box--expert {
+    background: url("../img/services-expert.png") no-repeat top; }
+  .services__box--pro {
+    background: url("../img/services-pro.png") no-repeat top; }
+
+.services__name {
+  margin: 0 0 30px 0;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center; }
+  .services__name b {
+    font-weight: 700;
+    text-transform: uppercase; }
+
+.services__button {
+  margin: auto; }
+  .services__button:first-of-type {
+    margin: 0 auto 20px auto; }
+
+.account__wrapper {
+  padding: 50px 0; }
+  .account__wrapper--blue {
+    background: linear-gradient(-123deg, #4ed2de 0%, #8ee7ef 36%, #cefbff 100%); }
+
+.account__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .account__flex--around {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 40px 0 0 0; }
+  .account__flex--second {
+    margin: 40px 0 0 0; }
+
+.account__img {
+  width: 250px;
+  padding: 350px 0 0 0; }
+  .account__img p {
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center; }
+    .account__img p b {
+      font-weight: 700; }
+  .account__img--intro {
+    background: url("../img/services-intro.png") no-repeat top; }
+  .account__img--student {
+    background: url("../img/services-student.png") no-repeat top; }
+  .account__img--expert {
+    background: url("../img/services-expert.png") no-repeat top; }
+  .account__img--pro {
+    background: url("../img/services-pro.png") no-repeat top; }
+
+.account__desc {
+  width: 770px; }
+
+.account__name {
+  display: block;
+  margin: 0 0 30px 0;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.account__text {
+  font-weight: normal; }
+
+.account__box {
+  width: 110px;
+  padding: 90px 0 0 0; }
+  .account__box p {
+    margin: 0;
+    font-weight: normal; }
+  .account__box--self {
+    background: url("../img/self.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--chat {
+    background: url("../img/chat.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--book {
+    background: url("../img/book.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--demo {
+    background: url("../img/demo.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--mentor {
+    background: url("../img/mentor.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--star {
+    background: url("../img/star.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--forex {
+    background: url("../img/forex.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--top {
+    background: url("../img/top.svg") no-repeat top left;
+    background-size: 70px; }
+
+.account__button {
+  display: inline-block;
+  margin: 40px 0 0 0; }
+  .account__button:first-of-type {
+    margin: 40px 30px 0 0; }
+
+@media screen and (max-width: 1200px) {
+  .account__desc {
+    width: 470px; } }
+
+@media screen and (max-width: 768px) {
+  .account__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .account__desc {
+    width: auto; }
+  .account__name {
+    text-align: center; }
+  .account__box {
+    margin: 0 0 30px 0;
+    text-align: center; }
+    .account__box--self {
+      background: url("../img/self.svg") no-repeat top;
+      background-size: 70px; }
+    .account__box--chat {
+      background: url("../img/chat.svg") no-repeat top;
+      background-size: 70px; }
+    .account__box--book {
+      background: url("../img/book.svg") no-repeat top;
+      background-size: 70px; }
+    .account__box--demo {
+      background: url("../img/demo.svg") no-repeat top;
+      background-size: 70px; }
+    .account__box--mentor {
+      background: url("../img/mentor.svg") no-repeat top;
+      background-size: 70px; }
+    .account__box--star {
+      background: url("../img/star.svg") no-repeat top;
+      background-size: 70px; }
+    .account__box--forex {
+      background: url("../img/forex.svg") no-repeat top;
+      background-size: 70px; }
+    .account__box--top {
+      background: url("../img/top.svg") no-repeat top;
+      background-size: 70px; }
+    .account__box:last-child {
+      margin: 0; }
+  .account__button {
+    display: block;
+    margin: auto; }
+    .account__button:first-of-type {
+      margin: 40px auto 10px; } }
+
 .account-programs__title {
   padding: 42px 0;
   background: linear-gradient(66deg, #0060ff 0%, #4ed2de 100%); }
@@ -939,6 +1137,11 @@ body {
   .account-programs__name--small {
     color: #000;
     font-size: 40px; }
+
+.account-programs__subname {
+  color: #fff;
+  font-size: 30px;
+  font-weight: normal; }
 
 .account-programs__desc {
   padding: 40px 0 60px; }
@@ -1045,6 +1248,10 @@ body {
 @media screen and (max-width: 768px) {
   .account-programs__name {
     font-size: 30px;
+    text-align: center; }
+  .account-programs__subname {
+    display: block;
+    font-size: 18px;
     text-align: center; }
   .account-programs__flex {
     -webkit-box-align: center;

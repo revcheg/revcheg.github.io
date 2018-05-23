@@ -7,6 +7,11 @@
     padding: 60px 0 100px 0;
     background: none;
   }
+  
+  &--account {
+    padding: 70px 0;
+    background: none;
+  }
 }
 
 .services__title {
@@ -19,6 +24,10 @@
   margin: 50px 0;
   font-size: 24px;
   font-weight: 300;
+  
+  &--account-programs {
+    margin: 50px 0 0 0;
+  }
 }
 
 .services__flex {
@@ -113,6 +122,10 @@
     
     &--account-programs {
       background: none;
+    }
+    
+    &--account {
+      display: none;
     }
   }
   
