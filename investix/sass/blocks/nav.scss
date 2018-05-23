@@ -66,6 +66,10 @@
   }
 }
 
+.nav__active {
+  color: $mc !important;
+}
+
 .nav__list > li:hover .nav__sublist {
   clip: auto;
   opacity: 1;
@@ -80,7 +84,7 @@
 @media screen and ($mobile-widths) {
   .nav {
     position: absolute;
-    top: 55px;
+    top: 57px;
     width: 100%;
     border-top: 1px solid #0060ff;
     border-bottom-left-radius: 4px;

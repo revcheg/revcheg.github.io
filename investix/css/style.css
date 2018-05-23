@@ -68,7 +68,7 @@ body {
   font-style: normal; }
 
 .header {
-  padding: 15px 0; }
+  padding: 17px 0; }
 
 .header__flex {
   display: -webkit-box;
@@ -80,6 +80,9 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+
+.header__link {
+  height: 40px; }
 
 .header__logo {
   width: 170px;
@@ -213,6 +216,9 @@ body {
     .nav__sublist a:after {
       background: none; }
 
+.nav__active {
+  color: #ff451c !important; }
+
 .nav__list > li:hover .nav__sublist {
   clip: auto;
   opacity: 1; }
@@ -224,7 +230,7 @@ body {
 @media screen and (max-width: 768px) {
   .nav {
     position: absolute;
-    top: 55px;
+    top: 57px;
     width: 100%;
     border-top: 1px solid #0060ff;
     border-bottom-left-radius: 4px;
@@ -403,6 +409,9 @@ body {
   padding: 0 0 100px 0;
   background: url("../img/services-bg.jpg") no-repeat 0 80px;
   background-size: contain; }
+  .services--account-programs {
+    padding: 60px 0 100px 0;
+    background: none; }
 
 .services__title {
   margin: 0;
@@ -474,6 +483,8 @@ body {
   .services {
     padding: 50px 0;
     background: #d5f9fc; }
+    .services--account-programs {
+      background: none; }
   .services__title {
     font-size: 30px;
     text-align: center; }
@@ -500,6 +511,9 @@ body {
   padding: 85px 0;
   background: #086cfc url("../img/live-bg.jpg") no-repeat center;
   background-size: cover; }
+  .live--account-programs {
+    padding: 60px 0;
+    background: #086cfc url("../img/live-bg.jpg") no-repeat top; }
 
 .live__flex {
   display: -webkit-box;
@@ -514,6 +528,8 @@ body {
 
 .live__box {
   width: 730px; }
+  .live__box--account-programs {
+    width: auto; }
 
 .live__title {
   margin: 0;
@@ -526,6 +542,8 @@ body {
   color: #fff;
   font-size: 24px;
   font-weight: 300; }
+  .live__text--account-programs {
+    margin: 50px 0; }
 
 .live__button {
   display: inline-block; }
@@ -541,6 +559,8 @@ body {
 @media screen and (max-width: 1200px) {
   .live__box {
     width: 410px; }
+    .live__box--account-programs {
+      width: auto; }
   .live__title {
     font-size: 50px; }
   .live__text {
@@ -756,6 +776,9 @@ body {
     .footer__list a:hover {
       color: #ff451c; }
 
+.footer__active {
+  color: #ff451c !important; }
+
 .footer__phone {
   display: block;
   padding: 0 0 15px 25px;
@@ -903,3 +926,147 @@ body {
       top: 100px; }
     100% {
       top: 80px; } } }
+
+.account-programs__title {
+  padding: 42px 0;
+  background: linear-gradient(66deg, #0060ff 0%, #4ed2de 100%); }
+
+.account-programs__name {
+  margin: 0;
+  color: #fff;
+  font-size: 72px;
+  font-weight: 700; }
+  .account-programs__name--small {
+    color: #000;
+    font-size: 40px; }
+
+.account-programs__desc {
+  padding: 40px 0 60px; }
+
+.account-programs__flex {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.account-programs__left {
+  width: 700px; }
+
+.account-programs__right {
+  position: absolute;
+  top: -140px;
+  right: 0;
+  width: 310px;
+  height: 530px;
+  background: url("../img/slider-1.png") no-repeat center;
+  background-size: cover; }
+
+.account-programs__text {
+  margin: 30px 0;
+  font-weight: normal; }
+
+.account-programs__price {
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal; }
+  .account-programs__price b {
+    font-weight: 700; }
+
+.account-programs__guarantee {
+  font-size: 18px;
+  font-weight: normal; }
+
+.account-programs__button {
+  margin: 20px 0 0 0; }
+
+.account-programs__edge {
+  padding: 60px 0;
+  background: linear-gradient(-123deg, #f2f2f2 0%, #e0f7f9 52%, #cefbff 100%); }
+
+.account-programs__box {
+  padding: 120px 0 0 0;
+  width: 250px; }
+  .account-programs__box b {
+    font-size: 24px;
+    font-weight: normal; }
+  .account-programs__box ul {
+    margin: 25px 0 0 0;
+    padding: 0;
+    list-style: none; }
+  .account-programs__box--self {
+    background: url("../img/self.svg") no-repeat top left;
+    background-size: 100px; }
+  .account-programs__box--chat {
+    background: url("../img/chat.svg") no-repeat top left;
+    background-size: 100px; }
+  .account-programs__box--book {
+    background: url("../img/book.svg") no-repeat top left;
+    background-size: 100px; }
+  .account-programs__box--demo {
+    background: url("../img/demo.svg") no-repeat top left;
+    background-size: 100px; }
+
+@media screen and (max-width: 1200px) {
+  .account-programs__name {
+    font-size: 50px; }
+    .account-programs__name--small {
+      font-size: 30px; }
+  .account-programs__left {
+    width: 400px; }
+  .account-programs__right {
+    top: -100px;
+    width: 260px;
+    height: 458px; } }
+
+@media screen and (max-width: 768px) {
+  .account-programs__name {
+    font-size: 30px;
+    text-align: center; }
+  .account-programs__flex {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .account-programs__left {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    width: auto; }
+  .account-programs__right {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    position: static;
+    width: 300px;
+    height: 515px;
+    margin: auto; }
+  .account-programs__price {
+    text-align: center; }
+  .account-programs__guarantee {
+    display: block;
+    text-align: center; }
+  .account-programs__button {
+    margin: 20px auto 0; }
+  .account-programs__box {
+    margin: 0 0 50px 0;
+    text-align: center; }
+    .account-programs__box--self {
+      background: url("../img/self.svg") no-repeat top;
+      background-size: 100px; }
+    .account-programs__box--chat {
+      background: url("../img/chat.svg") no-repeat top;
+      background-size: 100px; }
+    .account-programs__box--book {
+      background: url("../img/book.svg") no-repeat top;
+      background-size: 100px; }
+    .account-programs__box--demo {
+      background: url("../img/demo.svg") no-repeat top;
+      background-size: 100px; }
+    .account-programs__box:last-child {
+      margin: 0; } }

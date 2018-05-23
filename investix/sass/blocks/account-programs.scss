@@ -1,0 +1,192 @@
+.account-programs__title {
+  padding: 42px 0;
+  background: linear-gradient(66deg, rgb(0,96,255) 0%, rgb(78,210,222) 100%);
+}
+
+.account-programs__name {
+  margin: 0;
+  color: #fff;
+  font-size: 72px;
+  font-weight: 700;
+  
+  &--small {
+    color: #000;
+    font-size: 40px;
+  }
+}
+
+.account-programs__desc {
+  padding: 40px 0 60px;
+}
+
+.account-programs__flex {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.account-programs__left {
+  width: 700px;
+}
+
+.account-programs__right {
+  position: absolute;
+  top: -140px;
+  right: 0;
+  width: 310px;
+  height: 530px;
+  background: url('../img/slider-1.png') no-repeat center;
+  background-size: cover;
+}
+
+.account-programs__text {
+  margin: 30px 0;
+  font-weight: normal; 
+}
+
+.account-programs__price {
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal; 
+  
+  b {
+    font-weight: 700;
+  }
+}
+
+.account-programs__guarantee {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.account-programs__button {
+  margin: 20px 0 0 0;
+}
+
+.account-programs__edge {
+  padding: 60px 0;
+  background: linear-gradient(-123deg, rgb(242,242,242) 0%, rgb(224,247,249) 52%, rgb(206,251,255) 100%);
+}
+
+.account-programs__box {
+  padding: 120px 0 0 0;
+  width: 250px;
+  
+  b {
+    font-size: 24px;
+    font-weight: normal;
+  }
+  
+  ul {
+    margin: 25px 0 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  &--self {
+    background: url('../img/self.svg') no-repeat top left;
+    background-size: 100px;
+  }
+  
+  &--chat {
+    background: url('../img/chat.svg') no-repeat top left;
+    background-size: 100px;
+  }
+  
+  &--book {
+    background: url('../img/book.svg') no-repeat top left;
+    background-size: 100px;
+  }
+  
+  &--demo {
+    background: url('../img/demo.svg') no-repeat top left;
+    background-size: 100px;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .account-programs__name {
+    font-size: 50px;
+    
+    &--small {
+      font-size: 30px;
+    }
+  }
+  
+  .account-programs__left {
+    width: 400px;
+  }
+  
+  .account-programs__right {
+    top: -100px;
+    width: 260px;
+    height: 458px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .account-programs__name {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .account-programs__flex {
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .account-programs__left {
+    order: 2;
+    width: auto;
+  }
+  
+  .account-programs__right {
+    order: 1;
+    position: static;
+    width: 300px;
+    height: 515px;
+    margin: auto;
+  }
+  
+  .account-programs__price {
+    text-align: center;
+  }
+  
+  .account-programs__guarantee {
+    display: block;
+    text-align: center;
+  }
+  
+  .account-programs__button {
+    margin: 20px auto 0;
+  }
+  
+  .account-programs__box {
+    margin: 0 0 50px 0;
+    text-align: center;
+    
+    &--self {
+      background: url('../img/self.svg') no-repeat top;
+      background-size: 100px;
+    }
+    
+    &--chat {
+      background: url('../img/chat.svg') no-repeat top;
+      background-size: 100px;
+    }
+    
+    &--book {
+      background: url('../img/book.svg') no-repeat top;
+      background-size: 100px;
+    }
+    
+    &--demo {
+      background: url('../img/demo.svg') no-repeat top;
+      background-size: 100px;
+    }
+    
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

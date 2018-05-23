@@ -2,6 +2,11 @@
   padding: 85px 0;
   background: #086cfc url('../img/live-bg.jpg') no-repeat center;
   background-size: cover;
+  
+  &--account-programs {
+    padding: 60px 0;
+    background: #086cfc url('../img/live-bg.jpg') no-repeat top;
+  }
 }
 
 .live__flex {
@@ -12,6 +17,10 @@
 
 .live__box {
   width: 730px;
+  
+  &--account-programs {
+    width: auto;
+  }
 }
 
 .live__title {
@@ -26,6 +35,10 @@
   color: #fff;
   font-size: 24px;
   font-weight: 300;
+  
+  &--account-programs {
+    margin: 50px 0;
+  }
 }
 
 .live__button {
@@ -46,6 +59,10 @@
 @media screen and ($tablet-widths) {
   .live__box {
     width: 410px;
+    
+    &--account-programs {
+      width: auto;
+    }
   }
   
   .live__title {
