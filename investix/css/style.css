@@ -193,7 +193,7 @@ body {
 
 .nav__sublist {
   position: absolute;
-  top: 44px;
+  top: 46px;
   width: 140px;
   margin: inherit;
   padding: 20px 25px;
@@ -951,6 +951,8 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  .account-programs__flex--second {
+    margin: 50px 0 0 0; }
 
 .account-programs__left {
   width: 700px; }
@@ -960,9 +962,13 @@ body {
   top: -140px;
   right: 0;
   width: 310px;
-  height: 530px;
-  background: url("../img/slider-1.png") no-repeat center;
-  background-size: cover; }
+  height: 530px; }
+  .account-programs__right--intro {
+    background: url("../img/slider-1.png") no-repeat center;
+    background-size: cover; }
+  .account-programs__right--student {
+    background: url("../img/slider-2.png") no-repeat center;
+    background-size: cover; }
 
 .account-programs__text {
   margin: 30px 0;
@@ -988,7 +994,7 @@ body {
 
 .account-programs__box {
   padding: 120px 0 0 0;
-  width: 250px; }
+  width: 270px; }
   .account-programs__box b {
     font-size: 24px;
     font-weight: normal; }
@@ -1007,6 +1013,12 @@ body {
     background-size: 100px; }
   .account-programs__box--demo {
     background: url("../img/demo.svg") no-repeat top left;
+    background-size: 100px; }
+  .account-programs__box--mentor {
+    background: url("../img/mentor.svg") no-repeat top left;
+    background-size: 100px; }
+  .account-programs__box--star {
+    background: url("../img/star.svg") no-repeat top left;
     background-size: 100px; }
 
 @media screen and (max-width: 1200px) {
@@ -1067,6 +1079,12 @@ body {
       background-size: 100px; }
     .account-programs__box--demo {
       background: url("../img/demo.svg") no-repeat top;
+      background-size: 100px; }
+    .account-programs__box--mentor {
+      background: url("../img/mentor.svg") no-repeat top;
+      background-size: 100px; }
+    .account-programs__box--star {
+      background: url("../img/star.svg") no-repeat top;
       background-size: 100px; }
     .account-programs__box:last-child {
       margin: 0; } }

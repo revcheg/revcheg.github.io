@@ -23,6 +23,10 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  
+  &--second {
+    margin: 50px 0 0 0;
+  }
 }
 
 .account-programs__left {
@@ -35,8 +39,16 @@
   right: 0;
   width: 310px;
   height: 530px;
-  background: url('../img/slider-1.png') no-repeat center;
-  background-size: cover;
+  
+  &--intro {
+    background: url('../img/slider-1.png') no-repeat center;
+    background-size: cover;
+  }
+  
+  &--student {
+    background: url('../img/slider-2.png') no-repeat center;
+    background-size: cover;
+  }
 }
 
 .account-programs__text {
@@ -70,7 +82,7 @@
 
 .account-programs__box {
   padding: 120px 0 0 0;
-  width: 250px;
+  width: 270px;
   
   b {
     font-size: 24px;
@@ -100,6 +112,16 @@
   
   &--demo {
     background: url('../img/demo.svg') no-repeat top left;
+    background-size: 100px;
+  }
+  
+  &--mentor {
+    background: url('../img/mentor.svg') no-repeat top left;
+    background-size: 100px;
+  }
+  
+  &--star {
+    background: url('../img/star.svg') no-repeat top left;
     background-size: 100px;
   }
 }
@@ -182,6 +204,16 @@
     
     &--demo {
       background: url('../img/demo.svg') no-repeat top;
+      background-size: 100px;
+    }
+    
+    &--mentor {
+      background: url('../img/mentor.svg') no-repeat top;
+      background-size: 100px;
+    }
+    
+    &--star {
+      background: url('../img/star.svg') no-repeat top;
       background-size: 100px;
     }
     
