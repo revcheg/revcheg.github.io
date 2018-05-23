@@ -27,6 +27,10 @@
   &--second {
     margin: 50px 0 0 0;
   }
+  
+  &--around {
+    justify-content: space-around;
+  }
 }
 
 .account-programs__left {
@@ -124,6 +128,16 @@
     background: url('../img/star.svg') no-repeat top left;
     background-size: 100px;
   }
+  
+  &--forex {
+    background: url('../img/forex.svg') no-repeat top left;
+    background-size: 100px;
+  }
+  
+  &--top {
+    background: url('../img/top.svg') no-repeat top left;
+    background-size: 100px;
+  }
 }
 
 @media screen and ($tablet-widths) {
@@ -214,6 +228,16 @@
     
     &--star {
       background: url('../img/star.svg') no-repeat top;
+      background-size: 100px;
+    }
+    
+    &--forex {
+      background: url('../img/forex.svg') no-repeat top;
+      background-size: 100px;
+    }
+    
+    &--top {
+      background: url('../img/top.svg') no-repeat top;
       background-size: 100px;
     }
     

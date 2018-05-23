@@ -953,6 +953,9 @@ body {
   justify-content: space-between; }
   .account-programs__flex--second {
     margin: 50px 0 0 0; }
+  .account-programs__flex--around {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
 
 .account-programs__left {
   width: 700px; }
@@ -1020,6 +1023,12 @@ body {
   .account-programs__box--star {
     background: url("../img/star.svg") no-repeat top left;
     background-size: 100px; }
+  .account-programs__box--forex {
+    background: url("../img/forex.svg") no-repeat top left;
+    background-size: 100px; }
+  .account-programs__box--top {
+    background: url("../img/top.svg") no-repeat top left;
+    background-size: 100px; }
 
 @media screen and (max-width: 1200px) {
   .account-programs__name {
@@ -1085,6 +1094,12 @@ body {
       background-size: 100px; }
     .account-programs__box--star {
       background: url("../img/star.svg") no-repeat top;
+      background-size: 100px; }
+    .account-programs__box--forex {
+      background: url("../img/forex.svg") no-repeat top;
+      background-size: 100px; }
+    .account-programs__box--top {
+      background: url("../img/top.svg") no-repeat top;
       background-size: 100px; }
     .account-programs__box:last-child {
       margin: 0; } }
