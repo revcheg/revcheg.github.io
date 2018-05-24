@@ -29,15 +29,20 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  margin: 0 0 50px 0;
   
-  &--second {
+  // &--second {
+  //   justify-content: space-around;
+  //   margin: 50px 0 0 0;
+  // }
+  
+  &--around {
     justify-content: space-around;
-    margin: 50px 0 0 0;
   }
   
-  // &--around {
-  //   justify-content: space-around;
-  // }
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .account-programs__left {
@@ -56,8 +61,8 @@
     background-size: cover;
   }
   
-  &--student {
-    background: url('../img/slider-2.png') no-repeat center;
+  &--advanced {
+    background: url('../img/advanced.png') no-repeat center;
     background-size: cover;
   }
 }

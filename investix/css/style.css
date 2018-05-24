@@ -1151,11 +1151,13 @@ body {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
-  .account-programs__flex--second {
+  justify-content: space-between;
+  margin: 0 0 50px 0; }
+  .account-programs__flex--around {
     -ms-flex-pack: distribute;
-    justify-content: space-around;
-    margin: 50px 0 0 0; }
+    justify-content: space-around; }
+  .account-programs__flex:last-child {
+    margin: 0; }
 
 .account-programs__left {
   width: 700px; }
@@ -1169,8 +1171,8 @@ body {
   .account-programs__right--basic {
     background: url("../img/basic.png") no-repeat top;
     background-size: cover; }
-  .account-programs__right--student {
-    background: url("../img/slider-2.png") no-repeat center;
+  .account-programs__right--advanced {
+    background: url("../img/advanced.png") no-repeat center;
     background-size: cover; }
 
 .account-programs__text {
