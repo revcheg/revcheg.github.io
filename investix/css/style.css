@@ -487,7 +487,7 @@ body {
     flex-wrap: wrap; }
   .services__box {
     margin: 30px 0 0 0;
-    padding: 270px 0 0 0; }
+    padding: 290px 0 0 0; }
     .services__box--basic {
       background-size: 170px; }
     .services__box--advanced {
@@ -964,29 +964,36 @@ body {
   font-weight: 600; }
 
 .account__wrapper {
-  padding: 50px 0; }
-  .account__wrapper--blue {
-    background: linear-gradient(-123deg, #4ed2de 0%, #8ee7ef 36%, #cefbff 100%); }
+  margin: 0 0 30px 0;
+  padding: 50px;
+  border-radius: 4px; }
+  .account__wrapper--basic {
+    background: linear-gradient(-123deg, #eeeeee 0%, #f3f3f3 53%, #f7f7f7 100%); }
+  .account__wrapper--advanced {
+    background: linear-gradient(-123deg, #c3f9cf 0%, #dcfce3 36%, #f4fff7 100%); }
+  .account__wrapper--expert {
+    background: linear-gradient(-123deg, #d7e6ff 0%, #e6eefa 58%, whitesmoke 100%); }
+  .account__wrapper--pro {
+    background: linear-gradient(-123deg, #ffeec2 0%, #faf2dc 54%, whitesmoke 100%); }
+  .account__wrapper--ultimate {
+    background: linear-gradient(-123deg, #8850c6 0%, #bfa3de 58%, whitesmoke 100%); }
+  .account__wrapper:last-child {
+    margin: 0 0 90px 0; }
 
 .account__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  .account__flex--around {
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    margin: 40px 0 0 0; }
   .account__flex--second {
-    margin: 40px 0 0 0; }
+    margin: 20px 0 0 0;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
 
 .account__img {
-  width: 250px;
+  width: 215px;
   padding: 350px 0 0 0; }
   .account__img p {
     font-size: 30px;
@@ -994,17 +1001,19 @@ body {
     text-align: center; }
     .account__img p b {
       font-weight: 700; }
-  .account__img--intro {
-    background: url("../img/services-intro.png") no-repeat top; }
-  .account__img--student {
-    background: url("../img/services-student.png") no-repeat top; }
+  .account__img--basic {
+    background: url("../img/basic-price.png") no-repeat top; }
+  .account__img--advanced {
+    background: url("../img/advanced-price.png") no-repeat top; }
   .account__img--expert {
-    background: url("../img/services-expert.png") no-repeat top; }
+    background: url("../img/expert-price.png") no-repeat top; }
   .account__img--pro {
-    background: url("../img/services-pro.png") no-repeat top; }
+    background: url("../img/pro-price.png") no-repeat top; }
+  .account__img--ultimate {
+    background: url("../img/ultimate-price.png") no-repeat top; }
 
 .account__desc {
-  width: 770px; }
+  width: 700px; }
 
 .account__name {
   display: block;
@@ -1017,34 +1026,30 @@ body {
   font-weight: normal; }
 
 .account__box {
-  width: 110px;
+  width: 150px;
   padding: 90px 0 0 0; }
-  .account__box p {
-    margin: 0;
+  .account__box b {
     font-weight: normal; }
-  .account__box--self {
-    background: url("../img/self.svg") no-repeat top left;
+  .account__box--video {
+    background: url("../img/video.svg") no-repeat top left;
     background-size: 70px; }
-  .account__box--chat {
-    background: url("../img/chat.svg") no-repeat top left;
+  .account__box--reviews {
+    background: url("../img/reviews.svg") no-repeat top left;
     background-size: 70px; }
-  .account__box--book {
-    background: url("../img/book.svg") no-repeat top left;
+  .account__box--weekly {
+    background: url("../img/weekly.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--room {
+    background: url("../img/room.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--webinar {
+    background: url("../img/webinar.svg") no-repeat top left;
     background-size: 70px; }
   .account__box--demo {
     background: url("../img/demo.svg") no-repeat top left;
     background-size: 70px; }
-  .account__box--mentor {
-    background: url("../img/mentor.svg") no-repeat top left;
-    background-size: 70px; }
-  .account__box--star {
-    background: url("../img/star.svg") no-repeat top left;
-    background-size: 70px; }
-  .account__box--forex {
-    background: url("../img/forex.svg") no-repeat top left;
-    background-size: 70px; }
-  .account__box--top {
-    background: url("../img/top.svg") no-repeat top left;
+  .account__box--analysis {
+    background: url("../img/analysis.svg") no-repeat top left;
     background-size: 70px; }
 
 .account__button {
@@ -1054,10 +1059,29 @@ body {
     margin: 40px 30px 0 0; }
 
 @media screen and (max-width: 1200px) {
+  .account__wrapper {
+    padding: 30px; }
   .account__desc {
-    width: 470px; } }
+    width: auto; }
+  .account__flex {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .account__flex--edge {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
 
 @media screen and (max-width: 768px) {
+  .account {
+    padding: 20px 0 0 0; }
+  .account__wrapper:last-child {
+    margin: 0 0 50px 0; }
   .account__flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1070,29 +1094,26 @@ body {
   .account__box {
     margin: 0 0 30px 0;
     text-align: center; }
-    .account__box--self {
-      background: url("../img/self.svg") no-repeat top;
+    .account__box--video {
+      background: url("../img/video.svg") no-repeat top;
       background-size: 70px; }
-    .account__box--chat {
-      background: url("../img/chat.svg") no-repeat top;
+    .account__box--reviews {
+      background: url("../img/reviews.svg") no-repeat top;
       background-size: 70px; }
-    .account__box--book {
-      background: url("../img/book.svg") no-repeat top;
+    .account__box--weekly {
+      background: url("../img/weekly.svg") no-repeat top;
+      background-size: 70px; }
+    .account__box--room {
+      background: url("../img/room.svg") no-repeat top;
+      background-size: 70px; }
+    .account__box--webinar {
+      background: url("../img/webinar.svg") no-repeat top;
       background-size: 70px; }
     .account__box--demo {
       background: url("../img/demo.svg") no-repeat top;
       background-size: 70px; }
-    .account__box--mentor {
-      background: url("../img/mentor.svg") no-repeat top;
-      background-size: 70px; }
-    .account__box--star {
-      background: url("../img/star.svg") no-repeat top;
-      background-size: 70px; }
-    .account__box--forex {
-      background: url("../img/forex.svg") no-repeat top;
-      background-size: 70px; }
-    .account__box--top {
-      background: url("../img/top.svg") no-repeat top;
+    .account__box--analysis {
+      background: url("../img/analysis.svg") no-repeat top;
       background-size: 70px; }
     .account__box:last-child {
       margin: 0; }

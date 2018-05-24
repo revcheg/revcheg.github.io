@@ -13,30 +13,53 @@
 }
 
 .account__wrapper {
-  padding: 50px 0;
+  margin: 0 0 30px 0;
+  padding: 50px;
+  border-radius: 4px;
   
-  &--blue {
-    background: linear-gradient( -123deg, rgb(78,210,222) 0%, rgb(142,231,239) 36%, rgb(206,251,255) 100%);
+  &--basic {
+    background: linear-gradient( -123deg, rgb(238,238,238) 0%, rgb(243,243,243) 53%, rgb(247,247,247) 100%);
+  }
+  
+  &--advanced {
+    background: linear-gradient( -123deg, rgb(195,249,207) 0%, rgb(220,252,227) 36%, rgb(244,255,247) 100%);
+  }
+  
+  &--expert {
+    background: linear-gradient( -123deg, rgb(215,230,255) 0%, rgb(230,238,250) 58%, rgb(245,245,245) 100%);
+  }
+  
+  &--pro {
+    background: linear-gradient( -123deg, rgb(255,238,194) 0%, rgb(250,242,220) 54%, rgb(245,245,245) 100%);
+  }
+  
+  &--ultimate {
+    background: linear-gradient( -123deg, rgb(136,80,198) 0%, rgb(191,163,222) 58%, rgb(245,245,245) 100%);
+  }
+  
+  &:last-child {
+    margin: 0 0 90px 0;
   }
 }
 
 .account__flex {
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: space-between;
   
-  &--around {
-    justify-content: space-around;
-    margin: 40px 0 0 0;
-  }
+  // &--around {
+  //   justify-content: space-around;
+  //   margin: 40px 0 0 0;
+  // }
   
   &--second {
-    margin: 40px 0 0 0;
+    margin: 20px 0 0 0;
+    justify-content: space-around;
   }
 }
 
 .account__img {
-  width: 250px;
+  width: 215px;
   padding: 350px 0 0 0;
   
   p {
@@ -49,25 +72,29 @@
     }
   }
   
-  &--intro {
-    background: url('../img/services-intro.png') no-repeat top;
+  &--basic {
+    background: url('../img/basic-price.png') no-repeat top;
   }
   
-  &--student {
-    background: url('../img/services-student.png') no-repeat top;
+  &--advanced {
+    background: url('../img/advanced-price.png') no-repeat top;
   }
   
   &--expert {
-    background: url('../img/services-expert.png') no-repeat top;
+    background: url('../img/expert-price.png') no-repeat top;
   }
   
   &--pro {
-    background: url('../img/services-pro.png') no-repeat top;
+    background: url('../img/pro-price.png') no-repeat top;
+  }
+  
+  &--ultimate {
+    background: url('../img/ultimate-price.png') no-repeat top;
   }
 }
 
 .account__desc {
-  width: 770px;
+  width: 700px;
 }
 
 .account__name {
@@ -83,26 +110,35 @@
 }
 
 .account__box {
-  width: 110px;
+  width: 150px;
   padding: 90px 0 0 0;
   
-  p {
-    margin: 0;
+  b {
     font-weight: normal;
   }
   
-  &--self {
-    background: url('../img/self.svg') no-repeat top left;
+  &--video {
+    background: url('../img/video.svg') no-repeat top left;
     background-size: 70px;
   }
   
-  &--chat {
-    background: url('../img/chat.svg') no-repeat top left;
+  &--reviews {
+    background: url('../img/reviews.svg') no-repeat top left;
     background-size: 70px;
   }
   
-  &--book {
-    background: url('../img/book.svg') no-repeat top left;
+  &--weekly {
+    background: url('../img/weekly.svg') no-repeat top left;
+    background-size: 70px;
+  }
+  
+  &--room {
+    background: url('../img/room.svg') no-repeat top left;
+    background-size: 70px;
+  }
+  
+  &--webinar {
+    background: url('../img/webinar.svg') no-repeat top left;
     background-size: 70px;
   }
   
@@ -111,23 +147,8 @@
     background-size: 70px;
   }
   
-  &--mentor {
-    background: url('../img/mentor.svg') no-repeat top left;
-    background-size: 70px;
-  }
-  
-  &--star {
-    background: url('../img/star.svg') no-repeat top left;
-    background-size: 70px;
-  }
-  
-  &--forex {
-    background: url('../img/forex.svg') no-repeat top left;
-    background-size: 70px;
-  }
-  
-  &--top {
-    background: url('../img/top.svg') no-repeat top left;
+  &--analysis {
+    background: url('../img/analysis.svg') no-repeat top left;
     background-size: 70px;
   }
 }
@@ -142,12 +163,36 @@
 }
 
 @media screen and ($tablet-widths) {
+  .account__wrapper {
+    padding: 30px;
+  }
+  
   .account__desc {
-    width: 470px;
+    width: auto;
+  }
+  
+  .account__flex {
+    align-items: center;
+    flex-direction: column;
+    
+    &--edge {
+      flex-direction: row;
+    }
   }
 }
 
 @media screen and ($mobile-widths) {
+  .account {
+    padding: 20px 0 0 0;
+  }
+  
+  .account__wrapper {
+    
+    &:last-child {
+      margin: 0 0 50px 0;
+    }
+  }
+  
   .account__flex {
     flex-direction: column;
   }
@@ -164,18 +209,28 @@
     margin: 0 0 30px 0;
     text-align: center;
     
-    &--self {
-      background: url('../img/self.svg') no-repeat top;
+    &--video {
+      background: url('../img/video.svg') no-repeat top;
       background-size: 70px;
     }
     
-    &--chat {
-      background: url('../img/chat.svg') no-repeat top;
+    &--reviews {
+      background: url('../img/reviews.svg') no-repeat top;
       background-size: 70px;
     }
     
-    &--book {
-      background: url('../img/book.svg') no-repeat top;
+    &--weekly {
+      background: url('../img/weekly.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--room {
+      background: url('../img/room.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--webinar {
+      background: url('../img/webinar.svg') no-repeat top;
       background-size: 70px;
     }
     
@@ -184,23 +239,8 @@
       background-size: 70px;
     }
     
-    &--mentor {
-      background: url('../img/mentor.svg') no-repeat top;
-      background-size: 70px;
-    }
-    
-    &--star {
-      background: url('../img/star.svg') no-repeat top;
-      background-size: 70px;
-    }
-    
-    &--forex {
-      background: url('../img/forex.svg') no-repeat top;
-      background-size: 70px;
-    }
-    
-    &--top {
-      background: url('../img/top.svg') no-repeat top;
+    &--analysis {
+      background: url('../img/analysis.svg') no-repeat top;
       background-size: 70px;
     }
     
