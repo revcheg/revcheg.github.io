@@ -1,13 +1,13 @@
 .slider {
   // height: 920px;
-  height: 700px;
+  height: 800px;
   background: #309ce4 url('../img/slider-bg.jpg') no-repeat center;
   background-size: cover;
 }
 
 .slider__box {
   // height: 920px;
-  height: 700px;
+  height: 800px;
 }
 
 .slider__container {
@@ -38,10 +38,13 @@
 }
 
 .slider__img {
-  width: 300px;
-  height: 508px;
-  background: url('../img/slider-1.png') no-repeat center;
-  background-size: cover;
+  width: 355px;
+  height: 606px;
+  
+  &--basic {
+    background: url('../img/basic.png') no-repeat center;
+    background-size: cover;
+  }
 }
 
 @media screen and ($tablet-widths) {
@@ -56,6 +59,7 @@
   }
   
   .slider__container {
+    justify-content: space-around;
     width: 95%;
     padding: 0;
   }
@@ -74,7 +78,7 @@
   
   .slider__img {
     width: 260px;
-    height: 458px;
+    height: 444px;
   }
 }
 

@@ -1,7 +1,6 @@
 .services {
   padding: 0 0 100px 0;
-  background: url('../img/services-bg.jpg') no-repeat 0 80px;
-  background-size: contain;
+  background: linear-gradient( -123deg, rgb(242,242,242) 0%, rgb(224,247,249) 52%, rgb(206,251,255) 100%) no-repeat 0 70px / 100% 510px;
   
   &--account-programs {
     padding: 60px 0 100px 0;
@@ -21,7 +20,7 @@
 }
 
 .services__subtitle {
-  margin: 50px 0;
+  margin: 55px 0 77px 0;
   font-size: 24px;
   font-weight: 300;
   
@@ -36,29 +35,33 @@
 }
 
 .services__box {
-  width: 245px;
-  padding: 400px 0 0 0;
+  width: 215px;
+  padding: 370px 0 0 0;
   
-  &--intro {
-    background: url('../img/services-intro.png') no-repeat top;
+  &--basic {
+    background: url('../img/basic-price.png') no-repeat top;
   }
   
-  &--student {
-    background: url('../img/services-student.png') no-repeat top;
+  &--advanced {
+    background: url('../img/advanced-price.png') no-repeat top;
   }
   
   &--expert {
-    background: url('../img/services-expert.png') no-repeat top;
+    background: url('../img/expert-price.png') no-repeat top;
   }
   
   &--pro {
-    background: url('../img/services-pro.png') no-repeat top;
+    background: url('../img/pro-price.png') no-repeat top;
+  }
+  
+  &--ultimate {
+    background: url('../img/ultimate-price.png') no-repeat top;
   }
 }
 
 .services__name {
   margin: 0 0 30px 0;
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 300;
   text-align: center;
   
@@ -77,27 +80,33 @@
 }
 
 @media screen and ($tablet-widths) {
+  .services {
+    background: linear-gradient( -123deg, rgb(242,242,242) 0%, rgb(224,247,249) 52%, rgb(206,251,255) 100%) no-repeat 0 49px / 100% 510px;
+  }
+  
   .services__title {
     font-size: 50px;
   }
   
   .services__subtitle {
+    margin: 20px 0 30px 0;
     font-size: 20px;
   }
   
   .services__flex {
+    justify-content: center;
     flex-wrap: wrap;
   }
   
   .services__box {
-    width: 170px;
+    margin: 30px 0 0 0;
     padding: 270px 0 0 0;
     
-    &--intro {
+    &--basic {
       background-size: 170px;
     }
     
-    &--student {
+    &--advanced {
       background-size: 170px;
     }
     
@@ -106,6 +115,10 @@
     }
     
     &--pro {
+      background-size: 170px;
+    }
+    
+    &--ultimate {
       background-size: 170px;
     }
   }

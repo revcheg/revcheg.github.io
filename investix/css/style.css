@@ -216,6 +216,9 @@ body {
     .nav__sublist a:after {
       background: none; }
 
+.nav__chat:after {
+  background: none !important; }
+
 .nav__active {
   color: #ff451c !important; }
 
@@ -267,12 +270,12 @@ body {
       padding: 0; } }
 
 .slider {
-  height: 700px;
+  height: 800px;
   background: #309ce4 url("../img/slider-bg.jpg") no-repeat center;
   background-size: cover; }
 
 .slider__box {
-  height: 700px; }
+  height: 800px; }
 
 .slider__container {
   display: -webkit-box;
@@ -304,10 +307,11 @@ body {
   font-weight: normal; }
 
 .slider__img {
-  width: 300px;
-  height: 508px;
-  background: url("../img/slider-1.png") no-repeat center;
-  background-size: cover; }
+  width: 355px;
+  height: 606px; }
+  .slider__img--basic {
+    background: url("../img/basic.png") no-repeat center;
+    background-size: cover; }
 
 @media screen and (max-width: 1200px) {
   .slider {
@@ -315,6 +319,8 @@ body {
   .slider__box {
     height: 600px; }
   .slider__container {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     width: 95%;
     padding: 0; }
   .slider__text {
@@ -325,7 +331,7 @@ body {
     font-size: 20px; }
   .slider__img {
     width: 260px;
-    height: 458px; } }
+    height: 444px; } }
 
 @media screen and (max-width: 768px) {
   .slider {
@@ -407,8 +413,7 @@ body {
 
 .services {
   padding: 0 0 100px 0;
-  background: url("../img/services-bg.jpg") no-repeat 0 80px;
-  background-size: contain; }
+  background: linear-gradient(-123deg, #f2f2f2 0%, #e0f7f9 52%, #cefbff 100%) no-repeat 0 70px/100% 510px; }
   .services--account-programs {
     padding: 60px 0 100px 0;
     background: none; }
@@ -422,7 +427,7 @@ body {
   font-weight: 600; }
 
 .services__subtitle {
-  margin: 50px 0;
+  margin: 55px 0 77px 0;
   font-size: 24px;
   font-weight: 300; }
   .services__subtitle--account-programs {
@@ -437,20 +442,22 @@ body {
   justify-content: space-between; }
 
 .services__box {
-  width: 245px;
-  padding: 400px 0 0 0; }
-  .services__box--intro {
-    background: url("../img/services-intro.png") no-repeat top; }
-  .services__box--student {
-    background: url("../img/services-student.png") no-repeat top; }
+  width: 215px;
+  padding: 370px 0 0 0; }
+  .services__box--basic {
+    background: url("../img/basic-price.png") no-repeat top; }
+  .services__box--advanced {
+    background: url("../img/advanced-price.png") no-repeat top; }
   .services__box--expert {
-    background: url("../img/services-expert.png") no-repeat top; }
+    background: url("../img/expert-price.png") no-repeat top; }
   .services__box--pro {
-    background: url("../img/services-pro.png") no-repeat top; }
+    background: url("../img/pro-price.png") no-repeat top; }
+  .services__box--ultimate {
+    background: url("../img/ultimate-price.png") no-repeat top; }
 
 .services__name {
   margin: 0 0 30px 0;
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 300;
   text-align: center; }
   .services__name b {
@@ -463,23 +470,31 @@ body {
     margin: 0 auto 20px auto; }
 
 @media screen and (max-width: 1200px) {
+  .services {
+    background: linear-gradient(-123deg, #f2f2f2 0%, #e0f7f9 52%, #cefbff 100%) no-repeat 0 49px/100% 510px; }
   .services__title {
     font-size: 50px; }
   .services__subtitle {
+    margin: 20px 0 30px 0;
     font-size: 20px; }
   .services__flex {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .services__box {
-    width: 170px;
+    margin: 30px 0 0 0;
     padding: 270px 0 0 0; }
-    .services__box--intro {
+    .services__box--basic {
       background-size: 170px; }
-    .services__box--student {
+    .services__box--advanced {
       background-size: 170px; }
     .services__box--expert {
       background-size: 170px; }
     .services__box--pro {
+      background-size: 170px; }
+    .services__box--ultimate {
       background-size: 170px; }
   .services__name {
     font-size: 20px; } }
@@ -944,47 +959,6 @@ body {
   margin: 0;
   font-size: 72px;
   font-weight: 600; }
-
-.services__subtitle {
-  margin: 50px 0;
-  font-size: 24px;
-  font-weight: 300; }
-  .services__subtitle--account-programs {
-    margin: 50px 0 0 0; }
-
-.services__flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
-
-.services__box {
-  width: 245px;
-  padding: 400px 0 0 0; }
-  .services__box--intro {
-    background: url("../img/services-intro.png") no-repeat top; }
-  .services__box--student {
-    background: url("../img/services-student.png") no-repeat top; }
-  .services__box--expert {
-    background: url("../img/services-expert.png") no-repeat top; }
-  .services__box--pro {
-    background: url("../img/services-pro.png") no-repeat top; }
-
-.services__name {
-  margin: 0 0 30px 0;
-  font-size: 24px;
-  font-weight: 300;
-  text-align: center; }
-  .services__name b {
-    font-weight: 700;
-    text-transform: uppercase; }
-
-.services__button {
-  margin: auto; }
-  .services__button:first-of-type {
-    margin: 0 auto 20px auto; }
 
 .account__wrapper {
   padding: 50px 0; }

@@ -66,6 +66,13 @@
   }
 }
 
+.nav__chat {
+
+  &:after {
+    background: none !important;
+  }
+}
+
 .nav__active {
   color: $mc !important;
 }

@@ -12,62 +12,6 @@
   font-weight: 600;
 }
 
-.services__subtitle {
-  margin: 50px 0;
-  font-size: 24px;
-  font-weight: 300;
-  
-  &--account-programs {
-    margin: 50px 0 0 0;
-  }
-}
-
-.services__flex {
-  display: flex;
-  justify-content: space-between;
-}
-
-.services__box {
-  width: 245px;
-  padding: 400px 0 0 0;
-  
-  &--intro {
-    background: url('../img/services-intro.png') no-repeat top;
-  }
-  
-  &--student {
-    background: url('../img/services-student.png') no-repeat top;
-  }
-  
-  &--expert {
-    background: url('../img/services-expert.png') no-repeat top;
-  }
-  
-  &--pro {
-    background: url('../img/services-pro.png') no-repeat top;
-  }
-}
-
-.services__name {
-  margin: 0 0 30px 0;
-  font-size: 24px;
-  font-weight: 300;
-  text-align: center;
-  
-  b {
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-}
-
-.services__button {
-  margin: auto;
-  
-  &:first-of-type {
-    margin: 0 auto 20px auto;
-  }
-}
-
 .account__wrapper {
   padding: 50px 0;
   
