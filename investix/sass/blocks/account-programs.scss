@@ -31,12 +31,13 @@
   justify-content: space-between;
   
   &--second {
+    justify-content: space-around;
     margin: 50px 0 0 0;
   }
   
-  &--around {
-    justify-content: space-around;
-  }
+  // &--around {
+  //   justify-content: space-around;
+  // }
 }
 
 .account-programs__left {
@@ -47,11 +48,11 @@
   position: absolute;
   top: -140px;
   right: 0;
-  width: 310px;
-  height: 530px;
+  width: 290px;
+  height: 480px;
   
-  &--intro {
-    background: url('../img/slider-1.png') no-repeat center;
+  &--basic {
+    background: url('../img/basic.png') no-repeat top;
     background-size: cover;
   }
   
@@ -91,58 +92,47 @@
 }
 
 .account-programs__box {
-  padding: 120px 0 0 0;
-  width: 270px;
+  padding: 80px 0 0 0;
+  width: 250px;
   
   b {
     font-size: 24px;
     font-weight: normal;
   }
   
-  ul {
-    margin: 25px 0 0 0;
-    padding: 0;
-    list-style: none;
+  &--video {
+    background: url('../img/video.svg') no-repeat top left;
+    background-size: 70px;
   }
   
-  &--self {
-    background: url('../img/self.svg') no-repeat top left;
-    background-size: 100px;
+  &--reviews {
+    background: url('../img/reviews.svg') no-repeat top left;
+    background-size: 70px;
   }
   
-  &--chat {
-    background: url('../img/chat.svg') no-repeat top left;
-    background-size: 100px;
+  &--weekly {
+    background: url('../img/weekly.svg') no-repeat top left;
+    background-size: 70px;
   }
   
-  &--book {
-    background: url('../img/book.svg') no-repeat top left;
-    background-size: 100px;
+  &--room {
+    background: url('../img/room.svg') no-repeat top left;
+    background-size: 70px;
+  }
+  
+  &--webinar {
+    background: url('../img/webinar.svg') no-repeat top left;
+    background-size: 70px;
   }
   
   &--demo {
     background: url('../img/demo.svg') no-repeat top left;
-    background-size: 100px;
+    background-size: 70px;
   }
   
-  &--mentor {
-    background: url('../img/mentor.svg') no-repeat top left;
-    background-size: 100px;
-  }
-  
-  &--star {
-    background: url('../img/star.svg') no-repeat top left;
-    background-size: 100px;
-  }
-  
-  &--forex {
-    background: url('../img/forex.svg') no-repeat top left;
-    background-size: 100px;
-  }
-  
-  &--top {
-    background: url('../img/top.svg') no-repeat top left;
-    background-size: 100px;
+  &--analysis {
+    background: url('../img/analysis.svg') no-repeat top left;
+    background-size: 70px;
   }
 }
 
@@ -153,6 +143,14 @@
     &--small {
       font-size: 30px;
     }
+  }
+  
+  .account-programs__box {
+    width: 190px;
+    
+    b {
+      font-size: 16px;
+    }  
   }
   
   .account-programs__left {
@@ -213,44 +211,39 @@
     margin: 0 0 50px 0;
     text-align: center;
     
-    &--self {
-      background: url('../img/self.svg') no-repeat top;
-      background-size: 100px;
+    &--video {
+      background: url('../img/video.svg') no-repeat top;
+      background-size: 70px;
     }
     
-    &--chat {
-      background: url('../img/chat.svg') no-repeat top;
-      background-size: 100px;
+    &--reviews {
+      background: url('../img/reviews.svg') no-repeat top;
+      background-size: 70px;
     }
     
-    &--book {
-      background: url('../img/book.svg') no-repeat top;
-      background-size: 100px;
+    &--weekly {
+      background: url('../img/weekly.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--room {
+      background: url('../img/room.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--webinar {
+      background: url('../img/webinar.svg') no-repeat top;
+      background-size: 70px;
     }
     
     &--demo {
       background: url('../img/demo.svg') no-repeat top;
-      background-size: 100px;
+      background-size: 70px;
     }
     
-    &--mentor {
-      background: url('../img/mentor.svg') no-repeat top;
-      background-size: 100px;
-    }
-    
-    &--star {
-      background: url('../img/star.svg') no-repeat top;
-      background-size: 100px;
-    }
-    
-    &--forex {
-      background: url('../img/forex.svg') no-repeat top;
-      background-size: 100px;
-    }
-    
-    &--top {
-      background: url('../img/top.svg') no-repeat top;
-      background-size: 100px;
+    &--analysis {
+      background: url('../img/analysis.svg') no-repeat top;
+      background-size: 70px;
     }
     
     &:last-child {

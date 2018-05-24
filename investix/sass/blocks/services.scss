@@ -82,6 +82,10 @@
 @media screen and ($tablet-widths) {
   .services {
     background: linear-gradient( -123deg, rgb(242,242,242) 0%, rgb(224,247,249) 52%, rgb(206,251,255) 100%) no-repeat 0 49px / 100% 510px;
+  
+    &--account-programs {
+      background: none;
+    }
   }
   
   .services__title {
@@ -131,7 +135,7 @@
 @media screen and ($mobile-widths) {
   .services {
     padding: 50px 0;
-    background: #d5f9fc;
+    background: linear-gradient( -123deg, rgb(242,242,242) 0%, rgb(224,247,249) 52%, rgb(206,251,255) 100%) no-repeat 0 / 100%;
     
     &--account-programs {
       background: none;
