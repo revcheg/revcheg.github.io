@@ -1,6 +1,6 @@
 .services {
   padding: 0 0 50px 0;
-  background: linear-gradient( -123deg, rgb(242,242,242) 0%, rgb(224,247,249) 52%, rgb(206,251,255) 100%) no-repeat 0 70px / 100% 510px;
+  background: linear-gradient( -123deg, rgb(242,242,242) 0%, rgb(224,247,249) 52%, rgb(206,251,255) 100%) no-repeat 0 0 / 100% 580px;
   
   &--account-programs {
     padding: 60px 0 50px 0;
@@ -71,8 +71,28 @@
   }
   
   &--desc {
-    width: 700px;
+    width: 800px;
     padding: 0;
+    
+    h2 {
+      margin: 0 0 30px 0;
+      font-size: 30px;
+      font-weight: 600;
+    }
+    
+    p {
+      font-weight: 300;
+    }
+    
+    b {
+      font-weight: 600;
+    }
+    
+    ul {
+      padding: 0;
+      font-weight: 300;
+      list-style: inside;
+    }
   }
 }
 
@@ -98,7 +118,7 @@
 
 @media screen and ($tablet-widths) {
   .services {
-    background: linear-gradient( -123deg, rgb(242,242,242) 0%, rgb(224,247,249) 52%, rgb(206,251,255) 100%) no-repeat 0 49px / 100% 510px;
+    background: linear-gradient( -123deg, rgb(242,242,242) 0%, rgb(224,247,249) 52%, rgb(206,251,255) 100%) no-repeat 0 0 / 100% 450px;
   
     &--account-programs {
       background: none;
@@ -145,6 +165,10 @@
     
     &--crypto {
       background-size: 170px;
+    }
+    
+    &--desc {
+      padding: 0;
     }
   }
   

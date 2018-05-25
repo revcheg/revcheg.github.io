@@ -413,7 +413,7 @@ body {
 
 .services {
   padding: 0 0 50px 0;
-  background: linear-gradient(-123deg, #f2f2f2 0%, #e0f7f9 52%, #cefbff 100%) no-repeat 0 70px/100% 510px; }
+  background: linear-gradient(-123deg, #f2f2f2 0%, #e0f7f9 52%, #cefbff 100%) no-repeat 0 0/100% 580px; }
   .services--account-programs {
     padding: 60px 0 50px 0;
     background: none; }
@@ -465,8 +465,20 @@ body {
     background: url("../img/crypto-price.png") no-repeat top;
     background-size: contain; }
   .services__box--desc {
-    width: 700px;
+    width: 800px;
     padding: 0; }
+    .services__box--desc h2 {
+      margin: 0 0 30px 0;
+      font-size: 30px;
+      font-weight: 600; }
+    .services__box--desc p {
+      font-weight: 300; }
+    .services__box--desc b {
+      font-weight: 600; }
+    .services__box--desc ul {
+      padding: 0;
+      font-weight: 300;
+      list-style: inside; }
 
 .services__name {
   margin: 0 0 30px 0;
@@ -484,7 +496,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   .services {
-    background: linear-gradient(-123deg, #f2f2f2 0%, #e0f7f9 52%, #cefbff 100%) no-repeat 0 49px/100% 510px; }
+    background: linear-gradient(-123deg, #f2f2f2 0%, #e0f7f9 52%, #cefbff 100%) no-repeat 0 0/100% 450px; }
     .services--account-programs {
       background: none; }
   .services__title {
@@ -513,6 +525,8 @@ body {
       background-size: 170px; }
     .services__box--crypto {
       background-size: 170px; }
+    .services__box--desc {
+      padding: 0; }
   .services__name {
     font-size: 20px; } }
 
