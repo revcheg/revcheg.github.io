@@ -44,12 +44,7 @@
 
 .account__flex {
   display: flex;
-  // align-items: center;
   justify-content: space-between;
-  
-  &--around {
-    justify-content: space-around;
-  }
   
   &--second {
     margin: 20px 0 0 0;
@@ -330,6 +325,10 @@
     &--bonus {
       background: url('../img/bonus.svg') no-repeat top;
       background-size: 70px;
+    }
+    
+    &--hidden {
+      display: none;
     }
     
     &:last-child {

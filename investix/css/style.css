@@ -987,9 +987,6 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  .account__flex--around {
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
   .account__flex--second {
     margin: 20px 0 0 0; }
 
@@ -1170,6 +1167,8 @@ body {
     .account__box--bonus {
       background: url("../img/bonus.svg") no-repeat top;
       background-size: 70px; }
+    .account__box--hidden {
+      display: none; }
     .account__box:last-child {
       margin: 0; }
   .account__button {
