@@ -62,22 +62,22 @@
   }
   
   &--advanced {
-    background: url('../img/advanced-price.png') no-repeat center;
+    background: url('../img/advanced-price.png') no-repeat top;
     background-size: cover;
   }
   
   &--expert {
-    background: url('../img/expert-price.png') no-repeat center;
+    background: url('../img/expert-price.png') no-repeat top;
     background-size: cover;
   }
   
   &--pro {
-    background: url('../img/pro-price.png') no-repeat center;
+    background: url('../img/pro-price.png') no-repeat top;
     background-size: cover;
   }
   
   &--ultimate {
-    background: url('../img/ultimate-price.png') no-repeat center;
+    background: url('../img/ultimate-price.png') no-repeat top;
     background-size: cover;
   }
 }
@@ -108,7 +108,27 @@
 
 .account-programs__edge {
   padding: 60px 0;
-  background: linear-gradient(-123deg, rgb(242,242,242) 0%, rgb(224,247,249) 52%, rgb(206,251,255) 100%);
+  // background: linear-gradient(-123deg, rgb(242,242,242) 0%, rgb(224,247,249) 52%, rgb(206,251,255) 100%);
+  
+  &--basic {
+    background: linear-gradient( -123deg, rgb(238,238,238) 0%, rgb(243,243,243) 53%, rgb(247,247,247) 100%);
+  }
+  
+  &--advanced {
+    background: linear-gradient( -123deg, rgb(195,249,207) 0%, rgb(220,252,227) 36%, rgb(244,255,247) 100%);
+  }
+  
+  &--expert {
+    background: linear-gradient( -123deg, rgb(215,230,255) 0%, rgb(230,238,250) 58%, rgb(245,245,245) 100%);
+  }
+  
+  &--pro {
+    background: linear-gradient( -123deg, rgb(255,238,194) 0%, rgb(250,242,220) 54%, rgb(245,245,245) 100%);
+  }
+  
+  &--ultimate {
+    background: linear-gradient( -123deg, rgb(136,80,198) 0%, rgb(191,163,222) 58%, rgb(245,245,245) 100%);
+  }
 }
 
 .account-programs__box {
@@ -308,6 +328,51 @@
     
     &--analysis {
       background: url('../img/analysis.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--learn {
+      background: url('../img/learn.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--risk {
+      background: url('../img/risk.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--session {
+      background: url('../img/session.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--signal {
+      background: url('../img/signal.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--live {
+      background: url('../img/live.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--pers {
+      background: url('../img/pers.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--market {
+      background: url('../img/market.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--fund {
+      background: url('../img/fund.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--bonus {
+      background: url('../img/bonus.svg') no-repeat top;
       background-size: 70px;
     }
     
