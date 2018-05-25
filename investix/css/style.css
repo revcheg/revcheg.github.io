@@ -1233,6 +1233,30 @@ body {
   .account-programs__box--analysis {
     background: url("../img/analysis.svg") no-repeat top left;
     background-size: 70px; }
+  .account-programs__box--learn {
+    background: url("../img/learn.svg") no-repeat top left;
+    background-size: 70px; }
+  .account-programs__box--risk {
+    background: url("../img/risk.svg") no-repeat top left;
+    background-size: 70px; }
+  .account-programs__box--session {
+    background: url("../img/session.svg") no-repeat top left;
+    background-size: 70px; }
+  .account-programs__box--signal {
+    background: url("../img/signal.svg") no-repeat top left;
+    background-size: 70px; }
+  .account-programs__box--live {
+    background: url("../img/live.svg") no-repeat top left;
+    background-size: 70px; }
+  .account-programs__box--market {
+    background: url("../img/market.svg") no-repeat top left;
+    background-size: 70px; }
+  .account-programs__box--fund {
+    background: url("../img/fund.svg") no-repeat top left;
+    background-size: 70px; }
+  .account-programs__box--bonus {
+    background: url("../img/bonus.svg") no-repeat top left;
+    background-size: 70px; }
 
 @media screen and (max-width: 1200px) {
   .account-programs__name {
