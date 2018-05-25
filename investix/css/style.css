@@ -987,10 +987,11 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  .account__flex--second {
-    margin: 20px 0 0 0;
+  .account__flex--around {
     -ms-flex-pack: distribute;
     justify-content: space-around; }
+  .account__flex--second {
+    margin: 20px 0 0 0; }
 
 .account__img {
   width: 215px;
@@ -1050,6 +1051,33 @@ body {
     background-size: 70px; }
   .account__box--analysis {
     background: url("../img/analysis.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--learn {
+    background: url("../img/learn.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--risk {
+    background: url("../img/risk.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--session {
+    background: url("../img/session.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--signal {
+    background: url("../img/signal.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--live {
+    background: url("../img/live.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--pers {
+    background: url("../img/pers.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--market {
+    background: url("../img/market.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--fund {
+    background: url("../img/fund.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--bonus {
+    background: url("../img/bonus.svg") no-repeat top left;
     background-size: 70px; }
 
 .account__button {
@@ -1247,6 +1275,9 @@ body {
     background-size: 70px; }
   .account-programs__box--live {
     background: url("../img/live.svg") no-repeat top left;
+    background-size: 70px; }
+  .account-programs__box--pers {
+    background: url("../img/pers.svg") no-repeat top left;
     background-size: 70px; }
   .account-programs__box--market {
     background: url("../img/market.svg") no-repeat top left;
