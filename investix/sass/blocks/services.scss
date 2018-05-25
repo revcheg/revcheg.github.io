@@ -1,9 +1,9 @@
 .services {
-  padding: 0 0 100px 0;
+  padding: 0 0 50px 0;
   background: linear-gradient( -123deg, rgb(242,242,242) 0%, rgb(224,247,249) 52%, rgb(206,251,255) 100%) no-repeat 0 70px / 100% 510px;
   
   &--account-programs {
-    padding: 60px 0 100px 0;
+    padding: 60px 0 50px 0;
     background: none;
   }
   
@@ -32,6 +32,13 @@
 .services__flex {
   display: flex;
   justify-content: space-between;
+  padding: 0 0 50px 0;
+  
+  &--second {
+    align-items: center;
+    padding: 50px 0;
+    border-top: 1px solid #ccc;
+  }
 }
 
 .services__box {
@@ -56,6 +63,16 @@
   
   &--ultimate {
     background: url('../img/ultimate-price.png') no-repeat top;
+  }
+  
+  &--crypto {
+    background: url('../img/crypto-price.png') no-repeat top;
+    background-size: contain;
+  }
+  
+  &--desc {
+    width: 700px;
+    padding: 0;
   }
 }
 
@@ -125,6 +142,10 @@
     &--ultimate {
       background-size: 170px;
     }
+    
+    &--crypto {
+      background-size: 170px;
+    }
   }
   
   .services__name {
@@ -134,7 +155,7 @@
 
 @media screen and ($mobile-widths) {
   .services {
-    padding: 50px 0;
+    padding: 50px 0 0 0;
     background: linear-gradient( -123deg, rgb(242,242,242) 0%, rgb(224,247,249) 52%, rgb(206,251,255) 100%) no-repeat 0 / 100%;
     
     &--account-programs {
@@ -161,13 +182,19 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
+    padding: 0;
+    
+    &--second {
+      padding: 0;
+      border: none;
+    }
   }
   
   .services__box {
     margin: 0 0 50px 0;
     
-    &:last-child {
-      margin: 0;
+    &--desc {
+      display: none;
     }
   }
 }

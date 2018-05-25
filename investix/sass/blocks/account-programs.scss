@@ -80,6 +80,11 @@
     background: url('../img/ultimate-price.png') no-repeat top;
     background-size: cover;
   }
+  
+  &--crypto {
+    background: url('../img/crypto-price.png') no-repeat top;
+    background-size: contain;
+  }
 }
 
 .account-programs__text {
@@ -128,6 +133,10 @@
   
   &--ultimate {
     background: linear-gradient( -123deg, rgb(136,80,198) 0%, rgb(191,163,222) 58%, rgb(245,245,245) 100%);
+  }
+  
+  &--crypto {
+    background: linear-gradient( -123deg, rgb(213,208,188) 0%, rgb(229,227,217) 54%, rgb(245,245,245) 100%);
   }
 }
 
@@ -217,6 +226,41 @@
   
   &--bonus {
     background: url('../img/bonus.svg') no-repeat top left;
+    background-size: 70px;
+  }
+  
+  &--buy {
+    background: url('../img/buy.svg') no-repeat top left;
+    background-size: 70px;
+  }
+  
+  &--altcoins {
+    background: url('../img/altcoins.svg') no-repeat top left;
+    background-size: 70px;
+  }
+  
+  &--exch {
+    background: url('../img/exch.svg') no-repeat top left;
+    background-size: 70px;
+  }
+  
+  &--exch {
+    background: url('../img/exch.svg') no-repeat top left;
+    background-size: 70px;
+  }
+  
+  &--port {
+    background: url('../img/port.svg') no-repeat top left;
+    background-size: 70px;
+  }
+  
+  &--behind {
+    background: url('../img/behind.svg') no-repeat top left;
+    background-size: 70px;
+  }
+  
+  &--secret {
+    background: url('../img/secret.svg') no-repeat top left;
     background-size: 70px;
   }
 }
@@ -373,6 +417,41 @@
     
     &--bonus {
       background: url('../img/bonus.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--buy {
+      background: url('../img/buy.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--altcoins {
+      background: url('../img/altcoins.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--exch {
+      background: url('../img/exch.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--exch {
+      background: url('../img/exch.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--port {
+      background: url('../img/port.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--behind {
+      background: url('../img/behind.svg') no-repeat top;
+      background-size: 70px;
+    }
+    
+    &--secret {
+      background: url('../img/secret.svg') no-repeat top;
       background-size: 70px;
     }
     

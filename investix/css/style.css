@@ -412,10 +412,10 @@ body {
     margin: auto; } }
 
 .services {
-  padding: 0 0 100px 0;
+  padding: 0 0 50px 0;
   background: linear-gradient(-123deg, #f2f2f2 0%, #e0f7f9 52%, #cefbff 100%) no-repeat 0 70px/100% 510px; }
   .services--account-programs {
-    padding: 60px 0 100px 0;
+    padding: 60px 0 50px 0;
     background: none; }
   .services--account {
     padding: 70px 0;
@@ -439,7 +439,14 @@ body {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 0 0 50px 0; }
+  .services__flex--second {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 50px 0;
+    border-top: 1px solid #ccc; }
 
 .services__box {
   width: 215px;
@@ -454,6 +461,12 @@ body {
     background: url("../img/pro-price.png") no-repeat top; }
   .services__box--ultimate {
     background: url("../img/ultimate-price.png") no-repeat top; }
+  .services__box--crypto {
+    background: url("../img/crypto-price.png") no-repeat top;
+    background-size: contain; }
+  .services__box--desc {
+    width: 700px;
+    padding: 0; }
 
 .services__name {
   margin: 0 0 30px 0;
@@ -498,12 +511,14 @@ body {
       background-size: 170px; }
     .services__box--ultimate {
       background-size: 170px; }
+    .services__box--crypto {
+      background-size: 170px; }
   .services__name {
     font-size: 20px; } }
 
 @media screen and (max-width: 768px) {
   .services {
-    padding: 50px 0;
+    padding: 50px 0 0 0;
     background: linear-gradient(-123deg, #f2f2f2 0%, #e0f7f9 52%, #cefbff 100%) no-repeat 0/100%; }
     .services--account-programs {
       background: none; }
@@ -525,11 +540,15 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    padding: 0; }
+    .services__flex--second {
+      padding: 0;
+      border: none; }
   .services__box {
     margin: 0 0 50px 0; }
-    .services__box:last-child {
-      margin: 0; } }
+    .services__box--desc {
+      display: none; } }
 
 .live {
   padding: 85px 0;
@@ -977,6 +996,8 @@ body {
     background: linear-gradient(-123deg, #ffeec2 0%, #faf2dc 54%, whitesmoke 100%); }
   .account__wrapper--ultimate {
     background: linear-gradient(-123deg, #8850c6 0%, #bfa3de 58%, whitesmoke 100%); }
+  .account__wrapper--crypto {
+    background: linear-gradient(-123deg, #d5d0bc 0%, #e5e3d9 54%, whitesmoke 100%); }
   .account__wrapper:last-child {
     margin: 0 0 90px 0; }
 
@@ -1009,6 +1030,9 @@ body {
     background: url("../img/pro-price.png") no-repeat top; }
   .account__img--ultimate {
     background: url("../img/ultimate-price.png") no-repeat top; }
+  .account__img--crypto {
+    background: url("../img/crypto-price.png") no-repeat top;
+    background-size: contain; }
 
 .account__desc {
   width: 700px; }
@@ -1075,6 +1099,27 @@ body {
     background-size: 70px; }
   .account__box--bonus {
     background: url("../img/bonus.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--buy {
+    background: url("../img/buy.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--altcoins {
+    background: url("../img/altcoins.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--exch {
+    background: url("../img/exch.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--exch {
+    background: url("../img/exch.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--port {
+    background: url("../img/port.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--behind {
+    background: url("../img/behind.svg") no-repeat top left;
+    background-size: 70px; }
+  .account__box--secret {
+    background: url("../img/secret.svg") no-repeat top left;
     background-size: 70px; }
 
 .account__button {
@@ -1167,6 +1212,27 @@ body {
     .account__box--bonus {
       background: url("../img/bonus.svg") no-repeat top;
       background-size: 70px; }
+    .account__box--buy {
+      background: url("../img/buy.svg") no-repeat top;
+      background-size: 70px; }
+    .account__box--altcoins {
+      background: url("../img/altcoins.svg") no-repeat top;
+      background-size: 70px; }
+    .account__box--exch {
+      background: url("../img/exch.svg") no-repeat top;
+      background-size: 70px; }
+    .account__box--exch {
+      background: url("../img/exch.svg") no-repeat top;
+      background-size: 70px; }
+    .account__box--port {
+      background: url("../img/port.svg") no-repeat top;
+      background-size: 70px; }
+    .account__box--behind {
+      background: url("../img/behind.svg") no-repeat top;
+      background-size: 70px; }
+    .account__box--secret {
+      background: url("../img/secret.svg") no-repeat top;
+      background-size: 70px; }
     .account__box--hidden {
       display: none; }
     .account__box:last-child {
@@ -1237,6 +1303,9 @@ body {
   .account-programs__right--ultimate {
     background: url("../img/ultimate-price.png") no-repeat top;
     background-size: cover; }
+  .account-programs__right--crypto {
+    background: url("../img/crypto-price.png") no-repeat top;
+    background-size: contain; }
 
 .account-programs__text {
   margin: 30px 0;
@@ -1268,6 +1337,8 @@ body {
     background: linear-gradient(-123deg, #ffeec2 0%, #faf2dc 54%, whitesmoke 100%); }
   .account-programs__edge--ultimate {
     background: linear-gradient(-123deg, #8850c6 0%, #bfa3de 58%, whitesmoke 100%); }
+  .account-programs__edge--crypto {
+    background: linear-gradient(-123deg, #d5d0bc 0%, #e5e3d9 54%, whitesmoke 100%); }
 
 .account-programs__box {
   padding: 80px 0 0 0;
@@ -1322,6 +1393,27 @@ body {
     background-size: 70px; }
   .account-programs__box--bonus {
     background: url("../img/bonus.svg") no-repeat top left;
+    background-size: 70px; }
+  .account-programs__box--buy {
+    background: url("../img/buy.svg") no-repeat top left;
+    background-size: 70px; }
+  .account-programs__box--altcoins {
+    background: url("../img/altcoins.svg") no-repeat top left;
+    background-size: 70px; }
+  .account-programs__box--exch {
+    background: url("../img/exch.svg") no-repeat top left;
+    background-size: 70px; }
+  .account-programs__box--exch {
+    background: url("../img/exch.svg") no-repeat top left;
+    background-size: 70px; }
+  .account-programs__box--port {
+    background: url("../img/port.svg") no-repeat top left;
+    background-size: 70px; }
+  .account-programs__box--behind {
+    background: url("../img/behind.svg") no-repeat top left;
+    background-size: 70px; }
+  .account-programs__box--secret {
+    background: url("../img/secret.svg") no-repeat top left;
     background-size: 70px; }
 
 @media screen and (max-width: 1200px) {
@@ -1426,6 +1518,27 @@ body {
       background-size: 70px; }
     .account-programs__box--bonus {
       background: url("../img/bonus.svg") no-repeat top;
+      background-size: 70px; }
+    .account-programs__box--buy {
+      background: url("../img/buy.svg") no-repeat top;
+      background-size: 70px; }
+    .account-programs__box--altcoins {
+      background: url("../img/altcoins.svg") no-repeat top;
+      background-size: 70px; }
+    .account-programs__box--exch {
+      background: url("../img/exch.svg") no-repeat top;
+      background-size: 70px; }
+    .account-programs__box--exch {
+      background: url("../img/exch.svg") no-repeat top;
+      background-size: 70px; }
+    .account-programs__box--port {
+      background: url("../img/port.svg") no-repeat top;
+      background-size: 70px; }
+    .account-programs__box--behind {
+      background: url("../img/behind.svg") no-repeat top;
+      background-size: 70px; }
+    .account-programs__box--secret {
+      background: url("../img/secret.svg") no-repeat top;
       background-size: 70px; }
     .account-programs__box:last-child {
       margin: 0; } }
