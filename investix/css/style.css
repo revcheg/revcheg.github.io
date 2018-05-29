@@ -988,11 +988,6 @@ body {
 .account {
   border-bottom: 1px solid #cccccc; }
 
-.account__title {
-  margin: 0;
-  font-size: 72px;
-  font-weight: 600; }
-
 .account__wrapper {
   margin: 0 0 30px 0;
   padding: 50px;
@@ -1247,8 +1242,6 @@ body {
       background-size: 50px; }
     .account__box--hidden {
       display: none; }
-    .account__box:last-child {
-      margin: 0; }
   .account__button {
     display: block;
     margin: auto; }

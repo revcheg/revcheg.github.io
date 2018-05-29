@@ -31,15 +31,6 @@
   justify-content: space-between;
   margin: 0 0 50px 0;
   
-  // &--second {
-  //   justify-content: space-around;
-  //   margin: 50px 0 0 0;
-  // }
-  
-  // &--around {
-  //   justify-content: space-around;
-  // }
-  
   &:last-child {
     margin: 0;
   }
@@ -113,7 +104,6 @@
 
 .account-programs__edge {
   padding: 60px 0;
-  // background: linear-gradient(-123deg, rgb(242,242,242) 0%, rgb(224,247,249) 52%, rgb(206,251,255) 100%);
   
   &--basic {
     background: linear-gradient( -123deg, rgb(238,238,238) 0%, rgb(243,243,243) 53%, rgb(247,247,247) 100%);
@@ -463,9 +453,5 @@
     &--hidden {
       display: none;
     }
-    
-    // &:last-child {
-    //   margin: 0;
-    // }
   }
 }
