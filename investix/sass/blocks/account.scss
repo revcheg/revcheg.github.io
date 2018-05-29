@@ -2,10 +2,6 @@
   border-bottom: 1px solid #cccccc;
 }
 
-.account__inner {
-  padding: 70px 0;
-}
-
 .account__title {
   margin: 0;
   font-size: 72px;
@@ -112,126 +108,127 @@
 }
 
 .account__box {
-  width: 150px;
-  padding: 90px 0 0 0;
+  width: 180px;
+  padding: 60px 0 0 0;
   
   b {
+    font-size: 14px;
     font-weight: normal;
   }
   
   &--video {
     background: url('../img/video.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--reviews {
     background: url('../img/reviews.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--weekly {
     background: url('../img/weekly.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--room {
     background: url('../img/room.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--webinar {
     background: url('../img/webinar.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--demo {
     background: url('../img/demo.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--analysis {
     background: url('../img/analysis.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--learn {
     background: url('../img/learn.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--risk {
     background: url('../img/risk.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--session {
     background: url('../img/session.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--signal {
     background: url('../img/signal.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--live {
     background: url('../img/live.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--pers {
     background: url('../img/pers.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--market {
     background: url('../img/market.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--fund {
     background: url('../img/fund.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--bonus {
     background: url('../img/bonus.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--buy {
     background: url('../img/buy.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--altcoins {
     background: url('../img/altcoins.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--exch {
     background: url('../img/exch.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--exch {
     background: url('../img/exch.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--port {
     background: url('../img/port.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--behind {
     background: url('../img/behind.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
   
   &--secret {
     background: url('../img/secret.svg') no-repeat top left;
-    background-size: 70px;
+    background-size: 50px;
   }
 }
 
@@ -293,117 +290,117 @@
     
     &--video {
       background: url('../img/video.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--reviews {
       background: url('../img/reviews.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--weekly {
       background: url('../img/weekly.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--room {
       background: url('../img/room.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--webinar {
       background: url('../img/webinar.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--demo {
       background: url('../img/demo.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--analysis {
       background: url('../img/analysis.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--learn {
       background: url('../img/learn.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--risk {
       background: url('../img/risk.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--session {
       background: url('../img/session.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--signal {
       background: url('../img/signal.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--live {
       background: url('../img/live.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--pers {
       background: url('../img/pers.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--market {
       background: url('../img/market.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--fund {
       background: url('../img/fund.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--bonus {
       background: url('../img/bonus.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--buy {
       background: url('../img/buy.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--altcoins {
       background: url('../img/altcoins.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--exch {
       background: url('../img/exch.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--exch {
       background: url('../img/exch.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--port {
       background: url('../img/port.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--behind {
       background: url('../img/behind.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--secret {
       background: url('../img/secret.svg') no-repeat top;
-      background-size: 70px;
+      background-size: 50px;
     }
     
     &--hidden {
