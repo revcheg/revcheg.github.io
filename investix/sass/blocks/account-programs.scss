@@ -36,9 +36,9 @@
   //   margin: 50px 0 0 0;
   // }
   
-  &--around {
-    justify-content: space-around;
-  }
+  // &--around {
+  //   justify-content: space-around;
+  // }
   
   &:last-child {
     margin: 0;
@@ -305,9 +305,14 @@
     text-align: center;
   }
   
+  .account-programs__edge {
+    padding: 60px 0 0 0;
+  }
+  
   .account-programs__flex {
     align-items: center;
     flex-direction: column;
+    margin: 0;
   }
   
   .account-programs__left {
@@ -455,8 +460,12 @@
       background-size: 60px;
     }
     
-    &:last-child {
-      margin: 0;
+    &--hidden {
+      display: none;
     }
+    
+    // &:last-child {
+    //   margin: 0;
+    // }
   }
 }

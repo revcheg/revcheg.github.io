@@ -1285,9 +1285,6 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0 0 50px 0; }
-  .account-programs__flex--around {
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
   .account-programs__flex:last-child {
     margin: 0; }
 
@@ -1452,6 +1449,8 @@ body {
     display: block;
     font-size: 18px;
     text-align: center; }
+  .account-programs__edge {
+    padding: 60px 0 0 0; }
   .account-programs__flex {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -1459,7 +1458,8 @@ body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    margin: 0; }
   .account-programs__left {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
@@ -1552,5 +1552,5 @@ body {
     .account-programs__box--secret {
       background: url("../img/secret.svg") no-repeat top;
       background-size: 60px; }
-    .account-programs__box:last-child {
-      margin: 0; } }
+    .account-programs__box--hidden {
+      display: none; } }
