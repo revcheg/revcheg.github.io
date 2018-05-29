@@ -44,27 +44,27 @@ $('.tab__button--equities').click(function(event){
 $(document).ready(function () {
   var summ = 0;
   var summ = 0;
-  $(document).on("change","input[name='EXP']",function(){
-    summ = summ + +$('[name="EXP"]:checked').val();
+  $(document).on("change","input[name='experience']",function(){
+    summ = summ + +$('[name="experience"]:checked').val();
   });  
-  $(document).on("change","input[name='CFDs']",function(){
-    summ = summ + +$('[name="CFDs"]:checked').val();
+  $(document).on("change","input[name='attended_course_or_seminar_on_cfds_or_forex']",function(){
+    summ = summ + +$('[name="attended_course_or_seminar_on_cfds_or_forex"]:checked').val();
 
   });
-  $(document).on("change","input[name='INST']",function(){
-    summ = summ + +$('[name="INST"]:checked').val();
+  $(document).on("change","input[name='employed_as_a_professional_in_financial_institution']",function(){
+    summ = summ + +$('[name="employed_as_a_professional_in_financial_institution"]:checked').val();
 
   });
-  $(document).on("change","input[name='HIGH']",function(){
-    summ = summ + +$('[name="HIGH"]:checked').val();
+  $(document).on("change","input[name='trading_with_higher_leverage']",function(){
+    summ = summ + +$('[name="trading_with_higher_leverage"]:checked').val();
 
   });
-  $(document).on("change","input[name='STP']",function(){
-    summ = summ + +$('[name="STP"]:checked').val();
+  $(document).on("change","input[name='the_market_is_moving_against_your_position']",function(){
+    summ = summ + +$('[name="the_market_is_moving_against_your_position"]:checked').val();
 
   });
-  $(document).on("change","input[name='RT']",function(){
-    summ = summ + +$('[name="RT"]:checked').val();
+  $(document).on("change","input[name='value_of_your_initial_position_in_a_cfd_contract']",function(){
+    summ = summ + +$('[name="value_of_your_initial_position_in_a_cfd_contract"]:checked').val();
 
   });
 
@@ -1310,3 +1310,5 @@ function set_code() {
   document.getElementById('country_code').value = x['dial_code'];
   console.log(x['dial_code']);
 }
+
+//test123
