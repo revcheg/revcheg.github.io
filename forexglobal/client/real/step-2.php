@@ -1,5 +1,6 @@
 <?php
   session_start();
+  echo session_id();
   if (isset($_SESSION['token']) && isset($_GET['token'])) :
     if ($_SESSION['token'] == $_GET['token']) :
 ?>
@@ -118,40 +119,40 @@
       <form class="client__form" action="../verification/step2_handler.php?token=<?php echo $_SESSION['token']; ?>" method="post">
         <div class="client__flex">
           <input type="date" max="<?php $year = intval(date('Y')) - 18; echo $year; echo date("-m-d");?>" name="Date of Birth" required>
-          <input type="text" name="Address Line" placeholder="Address" required>
+          <input type="text" name="address1" placeholder="Address" required>
         </div>
         <div class="client__flex">
-          <input type="text" name="City/Town" placeholder="City/Town">
-          <input type="text" name="Post Code" placeholder="Post Code">
+          <input type="text" name="city" placeholder="City/Town">
+          <input type="text" name="postCode" placeholder="Post Code">
         </div>
         <b class="client__question">Are you a U.S. citizen or U.S. Resident for tax purposes?</b>
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             Yes
-            <input type="radio" name="US" value="Yes">
+            <input type="radio" name="us_taxpayer" value="true">
           </label>
           <label class="client__label">
             No
-            <input type="radio" name="US" value="No">
+            <input type="radio" name="us_taxpayer" value="false">
           </label>
         </div>
         <b class="client__question">Provide us with your Taxpayer Identification Number ("TIN")</b>
         <div class="client__flex  client__flex--center">
-          <input type="text" name="TIN" placeholder="TIN">
+          <input type="text" name="tin" placeholder="TIN">
         </div>
         <b class="client__question">Are you a <a href="../../img/pdf/Politically-Exposed-Person-Definition.pdf" target="_blank">Politically Exposed Person</a> (PEP)?</b>
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             Yes
-            <input type="radio" name="PEP" value="Yes">
+            <input type="radio" name="pep" value="true">
           </label>
           <label class="client__label">
             No
-            <input type="radio" name="PEP" value="No">
+            <input type="radio" name="pep" value="false">
           </label>
         </div>
         <div class="client__flex">
-          <select name="Education" tabindex="0" required>
+          <select name="education" tabindex="0" required>
             <option hidden>Education</option>
             <option value="secondary">Secondary</option>
             <option value="high School">High School</option>
@@ -160,7 +161,7 @@
             <option value="doctorate">Doctorate</option>
             <option value="professional">Professional</option>
           </select>
-          <select name="Employment" tabindex="0" required>
+          <select name="employment" tabindex="0" required>
             <option hidden>Employment</option>
             <option value="employed">Employed</option>
             <option value="self-Employed">Self-Employed</option>
@@ -172,7 +173,7 @@
         <hr class="client__hr">
         <h2 class="client__subname">2. Investor Information</h2>
         <div class="client__flex">
-          <select name="Annual Income (in EUR)" tabindex="0" required>
+          <select name="annualincome" tabindex="0" required>
             <option hidden>Annual Income (in EUR)</option>
             <option value="0 - 15.000">0 - 15.000</option>
             <option value="15.001 - 30.000">15.001 - 30.000</option>
@@ -181,7 +182,7 @@
             <option value="500.001 - 1.000.000">500.001 - 1.000.000</option>
             <option value="> 1.000.000">> 1.000.000</option>
           </select>
-          <select name="Source of Income" tabindex="0" required>
+          <select name="sourceofincome" tabindex="0" required>
             <option hidden>Source of Income</option>
             <option value="salary">Salary</option>
             <option value="savings/investments">Savings/Investments</option>
@@ -194,7 +195,7 @@
           </select>
         </div>
         <div class="client__flex">
-          <select name="Estimated Net Worth (in EUR)" tabindex="0" required>
+          <select name="estimatenetworth" tabindex="0" required>
             <option hidden>Estimated Net Worth (in EUR)</option>
             <option value="0 - 50.000">0 - 50.000</option>
             <option value="50.001 - 250.000">50.001 - 250.000</option>
@@ -202,7 +203,7 @@
             <option value="500.001 - 1.000.000">500.001 - 1.000.000</option>
             <option value="> 1.000.000">&gt; 1.000.000</option>
           </select>
-          <select name="Purpose of Opening a Trading Account" tabindex="0" required>
+          <select name="purposeofopeningtradingaccount" tabindex="0" required>
             <option hidden>Purpose of Opening a Trading Account</option>
             <option value="speculation">Speculation</option>
             <option value="hedging">Hedging</option>
@@ -211,7 +212,7 @@
           </select>
         </div>
         <div class="client__flex">
-          <select name="Anticipated amount available to trade with us within then next 12 months (in EUR)" tabindex="0" required>
+          <select name="anticipatedamounttospendwithusforthenexttwelvemonths" tabindex="0" required>
             <option hidden>Anticipated amount available to trade with us within then next 12 months (in EUR)</option>
             <option value="up to 10.000">Up to 10.000</option>
             <option value="10.001 - 50.000">10.001 - 50.000</option>
@@ -230,27 +231,27 @@
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             Yes
-            <input type="radio" name="EXP" value="0">
+            <input type="radio" name="experience" value="0">
           </label>
           <label class="client__label">
             No
-            <input type="radio" name="EXP" value="5">
+            <input type="radio" name="experience" value="5">
           </label>
         </div>
         <b class="client__question">Which of the following financial products have you traded in the last 3 years?</b>
         <div class="client__flex  client__flex--center  client__flex--column">
           <label class="client__label">
             CFD's (Forex, Metals, Commodities)
-            <input class="client__checkbox" type="checkbox" name="PRD">
+            <input class="client__checkbox" type="checkbox" name="traded_cfds">
             <div class="client__flex  client__flex--hide  client__flex--center">
-              <select class="client__select" name="Frequency of transactions" tabindex="0" required>
+              <select class="client__select" name="traded_cfds_frequency" tabindex="0" required>
                 <option hidden>Frequency of transactions</option>
                 <option value="Daily">Daily</option>
                 <option value="Weekly">Weekly</option>
                 <option value="Monthly">Monthly</option>
                 <option value="Yearly">Yearly</option>
               </select>
-              <select class="client__select" name="Average volume size per transaction (USD)" tabindex="0" required>
+              <select class="client__select" name="traded_cfds_volume" tabindex="0" required>
                 <option hidden>Average volume size per transaction (USD)</option>
                 <option value="Less than $10,000">Less than $10,000</option>
                 <option value="$10,000 – $20,000">$10,000 – $20,000</option>
@@ -267,16 +268,16 @@
           </label>
           <label class="client__label">
             Other Derivatives (Swaps, Futures, Options)
-            <input class="client__checkbox" type="checkbox" name="PRD">
+            <input class="client__checkbox" type="checkbox" name="traded_other_derivatives">
             <div class="client__flex  client__flex--hide  client__flex--center">
-              <select class="client__select" name="Frequency of transactions" tabindex="0" required>
+              <select class="client__select" name="traded_other_derivatives_frequency" tabindex="0" required>
                 <option hidden>Frequency of transactions</option>
                 <option value="Daily">Daily</option>
                 <option value="Weekly">Weekly</option>
                 <option value="Monthly">Monthly</option>
                 <option value="Yearly">Yearly</option>
               </select>
-              <select class="client__select" name="Average volume size per transaction (USD)" tabindex="0" required>
+              <select class="client__select" name="traded_other_derivatives_volume" tabindex="0" required>
                 <option hidden>Average volume size per transaction (USD)</option>
                 <option value="Less than $10,000">Less than $10,000</option>
                 <option value="$10,000 – $20,000">$10,000 – $20,000</option>
@@ -293,16 +294,16 @@
           </label>
           <label class="client__label">
             Shares/Bonds
-            <input class="client__checkbox" type="checkbox" name="PRD">
+            <input class="client__checkbox" type="checkbox" name="shares_bonds">
             <div class="client__flex  client__flex--hide  client__flex--center">
-              <select class="client__select" name="Frequency of transactions" tabindex="0" required>
+              <select class="client__select" name="shares_bonds_frequency" tabindex="0" required>
                 <option hidden>Frequency of transactions</option>
                 <option value="Daily">Daily</option>
                 <option value="Weekly">Weekly</option>
                 <option value="Monthly">Monthly</option>
                 <option value="Yearly">Yearly</option>
               </select>
-              <select class="client__select" name="Average volume size per transaction (USD)" tabindex="0" required>
+              <select class="client__select" name="shares_bonds_volume" tabindex="0" required>
                 <option hidden>Average volume size per transaction (USD)</option>
                 <option value="Less than $10,000">Less than $10,000</option>
                 <option value="$10,000 – $20,000">$10,000 – $20,000</option>
@@ -346,22 +347,22 @@
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             Yes
-            <input type="radio" name="CFDs" value="0">
+            <input type="radio" name="attended_course_or_seminar_on_cfds_or_forex" value="0">
           </label>
           <label class="client__label">
             No
-            <input type="radio" name="CFDs" value="3">
+            <input type="radio" name="attended_course_or_seminar_on_cfds_or_forex" value="3">
           </label>
         </div>
         <b class="client__question">Have you ever been employed as a Professional in a Financial Institution and/or been in employment involved in Trading of Financial Instruments?</b>
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             Yes
-            <input type="radio" name="INST" value="0">
+            <input type="radio" name="employed_as_a_professional_in_financial_institution" value="0">
           </label>
           <label class="client__label">
             No
-            <input type="radio" name="INST" value="1">
+            <input type="radio" name="employed_as_a_professional_in_financial_institution" value="1">
           </label>
         </div>
         <h3 class="client__subsubname">Trading Quiz</h3>
@@ -369,44 +370,44 @@
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             True
-            <input type="radio" name="HIGH" value="0">
+            <input type="radio" name="trading_with_higher_leverage" value="0">
           </label>
           <label class="client__label">
             False
-            <input type="radio" name="HIGH" value="2">
+            <input type="radio" name="trading_with_higher_leverage" value="2">
           </label>
         </div>
         <b class="client__question">The market is moving against your position. Your CFD position will close automatically if your equity reaches the Stop out Level.</b>
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             True
-            <input type="radio" name="STP" value="0">
+            <input type="radio" name="the_market_is_moving_against_your_position" value="0">
           </label>
           <label class="client__label">
             False
-            <input type="radio" name="STP" value="2">
+            <input type="radio" name="the_market_is_moving_against_your_position" value="2">
           </label>
         </div>
         <b class="client__question">If the value of your initial position in a CFD contract is $10,000 and the leverage ratio is 1:50, then the initial margin requirement would be 4% (i.e. $400)</b>
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             True
-            <input type="radio" name="RT" value="2">
+            <input type="radio" name="value_of_your_initial_position_in_a_cfd_contract" value="2">
           </label>
           <label class="client__label">
             False
-            <input type="radio" name="RT" value="0">
+            <input type="radio" name="value_of_your_initial_position_in_a_cfd_contract" value="0">
           </label>
         </div>
         <hr class="client__hr">
         <h2 class="client__subname">4. Trading Account</h2>
         <div class="client__flex">
-          <select name="Trading Platform" tabindex="0" required>
+          <select name="tradingplatform" tabindex="0" required>
             <option hidden>Trading Platform</option>
             <option value="MT4">MT4</option>
             <option value="ZuluTrade">ZuluTrade</option>
           </select>
-          <select name="Account Type" tabindex="0" required>
+          <select name="accounttype" tabindex="0" required>
             <option hidden>Account Type</option>
             <option value="bronze">Bronze</option>
             <option value="silver">Silver</option>
@@ -416,13 +417,13 @@
           </select>
         </div>
         <div class="client__flex">
-          <select name="Currency" tabindex="0" required>
+          <select name="currency" tabindex="0" required>
             <option hidden>Currency</option>
             <option value="USD">USD</option>
             <option value="EUR">EUR</option>
             <option value="GBP">GBP</option>
           </select>
-          <select id="leverage" name="Leverage" tabindex="0" required>
+          <select id="leverage" name="leverage" tabindex="0" required>
             <option hidden>Leverage</option>
               <?php if ($_SESSION['first_step']['Country'] == 'MT' || $_SESSION['Leverage'] == 'Your leverage is only 1:50'): ?>
                 <option value="1:50">1:50</option>
@@ -537,9 +538,26 @@
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
   </script>
-  <script src="../../js/main.js" async></script>
+   <script src="../../js/score_count1.js" async></script>
 </body>
 </html>
+
+<?php
+    else:
+?>
+
+You don't have permssions
+
+<?php
+    endif;
+  else:
+?>
+
+You don't have permssions
+
+<?php
+  endif;
+?>
 
 <script type="text/javascript">
   var country = "<?php echo $_SESSION['first_step']['Country']; ?>";

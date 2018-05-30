@@ -1,5 +1,8 @@
 <?php
   session_start();
+  if($_SESSION['activated'] == true){
+    header('Location: /global/client/real/step-2.php?token=' . $_SESSION['token']);
+  }
 ?>
 
 <!DOCTYPE html>
@@ -122,7 +125,7 @@
           }
         }
       ?>
-      <?php if($_SESSION['Errors'][0] != "Email exists" && $_SESSION['Message'][0] != "Activation message is sent to your email address.") : ?>
+      <?php if($_SESSION['Errors'][0] != "Email exists" && $_SESSION['Message'][0] != "Activation message is sent to your email address." ) : ?>
       <form id="form1" class="client__form" action="../verification/step1_handler.php" method="POST">
         <div class="client__flex">
           <input type="text" name="First Name" placeholder="First Name" required>

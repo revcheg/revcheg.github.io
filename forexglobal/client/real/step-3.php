@@ -114,18 +114,18 @@
         <div class="register__flex  register__flex--center">
           <label class="register__label">
             Yes
-            <input type="radio" name="US" value="Yes">
+            <input type="radio" name="US" value="true">
           </label>
           <label class="register__label">
             No
-            <input type="radio" name="US" value="No">
+            <input type="radio" name="US" value="false">
           </label>
         </div>
         <h2 class="register__subsubname">Declaration</h2>
         <div class="register__flex  register__flex--center">
           <label class="register__label  register__label--checkbox">
             <input type="checkbox" name="Checkbox">
-            *I declare that I have read, fully understood and hereby accept the entire text of the <a href="../../img/pdf/Client-Agreement.pdf" target="_blank">Client Agreement</a>, <a href="../../img/pdf/Privacy-and-Cookies-Policy.pdf" target="_blank">Privacy and Cookies Policy</a>, <a href="../../img/pdf/Best-Interest-and-Order-Execution-Summary.pdf" target="_blank">Order Execution Policy</a>, <a href="../../img/pdf/Risk-Disclosure-Warning-Notice-1.0.1-2.pdf" target="_blank">Risk Disclosure</a>, <a href="../../img/pdf/Client-Categorisation-Policy.pdf" target="_blank">Client Categorisation Policy</a>, <a href="../../img/pdf/Conflicts-of-Interest-Policy-Summary.pdf" target="_blank">Conflicts of Interest Policy</a>, <a href="../../img/pdf/Complaints-Procedure.pdf" target="_blank">Complaint Handling Procedure</a>, <a href="../../img/pdf/Investor-Compensation-Fund.pdf" target="_blank">Investor Compensation Fund</a>.
+            *I declare that I have read, fully understood and hereby accept the entire text of the <a href="../../img/pdf/Client-Agreement-v1.3.1.pdf" target="_blank">Client Agreement</a>, <a href="../../img/pdf/Privacy-and-Cookies-Policy.pdf" target="_blank">Privacy and Cookies Policy</a>, <a href="../../img/pdf/Best-Interest-and-Order-Execution-Summary.pdf" target="_blank">Order Execution Policy</a>, <a href="../../img/pdf/Risk-Disclosure-Warning-Notice-1.0.1-2.pdf" target="_blank">Risk Disclosure</a>, <a href="../../img/pdf/Client-Categorisation-Policy.pdf" target="_blank">Client Categorisation Policy</a>, <a href="../../img/pdf/Conflicts-of-Interest-Policy-Summary.pdf" target="_blank">Conflicts of Interest Policy</a>, <a href="../../img/pdf/Complaints-Procedure.pdf" target="_blank">Complaint Handling Procedure</a>, <a href="../../img/pdf/Investor-Compensation-Fund.pdf" target="_blank">Investor Compensation Fund</a>.
           </label>
         </div>
         <div class="register__flex">

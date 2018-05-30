@@ -17,6 +17,12 @@
 	}
 
 	if ($response != null && $response->success) {
+	    //alreadyactivated error
+		if ($_SESSION['activated'] == true) {
+			$_SESSION['Errors'][1] = "Your account is already activated.";
+			header('Location:' . $_SERVER['HTTP_REFERER']);
+			die();
+		}
 		//check if email exists
 		$step1_get_data = array(
 				'email' => $_POST['Email']
@@ -53,11 +59,11 @@
 			//cache data
 			    $_SESSION['first_step'] = $_POST;
 			    $_SESSION['token'] = generateCode();
-			    //echo $_SESSION['token'];
+			    $_SESSION['token'];
 			    //echo "Message sent";
 			    //echo strval($_POST['Email']);
 			//post mail
-			    $message = "Hi, you applied for registration of a real ..... Please go to https://forex24.com/global/client/verification/?token=" . $_SESSION['token'] . " to proceed registration." . "\r\n";
+			    $message = "Hi, you applied for registration of a real ..... Please go to https://" . $_SERVER[HTTP_HOST] . "/global/client/verification/?token=" . $_SESSION['token'] . " to proceed registration." . "\r\n";
 				$to      = $_POST['Email'];
 				$subject = 'New query';
 				$headers = 'From: webmaster@example.com' . "\r\n" .
@@ -73,12 +79,7 @@
 			die();
 		}
 
-	//alreadyactivated error
-		if ($_SESSION['activated'] == true) {
-			$_SESSION['Errors'][1] = "Your account is already activated.";
-			header('Location:' . $_SERVER['HTTP_REFERER']);
-			die();
-		}
+	
 	}else{
 		$_SESSION['Errors'][2] = "You have not passed captcha.";
 		header('Location:' . $_SERVER['HTTP_REFERER']);
