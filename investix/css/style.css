@@ -1037,8 +1037,7 @@ body {
   .account__img--ultimate {
     background: url("../img/ultimate-price.png") no-repeat top; }
   .account__img--crypto {
-    background: url("../img/crypto-price.png") no-repeat top;
-    background-size: contain; }
+    background: url("../img/crypto-price.png") no-repeat top; }
 
 .account__desc {
   width: 700px; }
@@ -1291,22 +1290,22 @@ body {
   width: 290px;
   height: 480px; }
   .account-programs__right--basic {
-    background: url("../img/basic-price.png") no-repeat top;
+    background: url("../img/basic.png") no-repeat top;
     background-size: cover; }
   .account-programs__right--advanced {
-    background: url("../img/advanced-price.png") no-repeat top;
+    background: url("../img/advanced.png") no-repeat top;
     background-size: cover; }
   .account-programs__right--expert {
-    background: url("../img/expert-price.png") no-repeat top;
+    background: url("../img/expert.png") no-repeat top;
     background-size: cover; }
   .account-programs__right--pro {
-    background: url("../img/pro-price.png") no-repeat top;
+    background: url("../img/pro.png") no-repeat top;
     background-size: cover; }
   .account-programs__right--ultimate {
-    background: url("../img/ultimate-price.png") no-repeat top;
+    background: url("../img/ultimate.png") no-repeat top;
     background-size: cover; }
   .account-programs__right--crypto {
-    background: url("../img/crypto-price.png") no-repeat top;
+    background: url("../img/crypto.png") no-repeat top;
     background-size: contain; }
 
 .account-programs__text {

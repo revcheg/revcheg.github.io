@@ -48,32 +48,32 @@
   height: 480px;
   
   &--basic {
-    background: url('../img/basic-price.png') no-repeat top;
+    background: url('../img/basic.png') no-repeat top;
     background-size: cover;
   }
   
   &--advanced {
-    background: url('../img/advanced-price.png') no-repeat top;
+    background: url('../img/advanced.png') no-repeat top;
     background-size: cover;
   }
   
   &--expert {
-    background: url('../img/expert-price.png') no-repeat top;
+    background: url('../img/expert.png') no-repeat top;
     background-size: cover;
   }
   
   &--pro {
-    background: url('../img/pro-price.png') no-repeat top;
+    background: url('../img/pro.png') no-repeat top;
     background-size: cover;
   }
   
   &--ultimate {
-    background: url('../img/ultimate-price.png') no-repeat top;
+    background: url('../img/ultimate.png') no-repeat top;
     background-size: cover;
   }
   
   &--crypto {
-    background: url('../img/crypto-price.png') no-repeat top;
+    background: url('../img/crypto.png') no-repeat top;
     background-size: contain;
   }
 }
