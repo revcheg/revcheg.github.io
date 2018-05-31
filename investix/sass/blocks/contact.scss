@@ -1,5 +1,10 @@
 .contact {
   padding: 100px 0;
+  
+  &--inner {
+    margin: 0 0 65px 0;
+    padding: 0;
+  }
 }
 
 .contact__title {
@@ -16,12 +21,25 @@
 
 .contact__form {
   width: 770px;
+  
+  &--inner {
+    width: auto;
+  }
 }
 
 .contact__flex {
   display: flex;
   justify-content: space-between;
   margin: 0 0 20px 0;
+}
+
+.contact__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__left {
+  width: 770px;
 }
 
 .contact__double {
@@ -50,6 +68,12 @@
     background: transparent url('../img/nav-arrow.svg') no-repeat 340px;
     background-size: 10px;
     appearance: none;
+  }
+  
+  &--textarea {
+    height: 78px;
+    padding: 9px 15px;
+    resize: none;
   }
   
   &--code {
@@ -90,6 +114,18 @@
   
   .contact__form {
     width: 700px;
+    
+    &--inner {
+      width: auto;
+    }
+  }
+  
+  .contact__wrapper {
+    flex-direction: column;
+  }
+  
+  .contact__left {
+    width: auto;
   }
   
   .contact__input {
@@ -99,6 +135,11 @@
       width: 334px;
       background: transparent url('../img/nav-arrow.svg') no-repeat 305px;
       background-size: 10px;
+    }
+    
+    &--textarea {
+      width: 95%;
+      margin: 40px 0 0 0;
     }
     
     &--code {
@@ -116,12 +157,21 @@
   
   .contact__submit {
     width: 334px;
+    
+    &--inner {
+      margin: 40px auto 0 auto;
+    }
   }
 }
 
 @media screen and ($mobile-widths) {
   .contact {
     padding: 50px 0;
+    
+    &--inner {
+      padding: 0;
+      margin: 30px 0;
+    }
   }
   
   .contact__title {
@@ -172,5 +222,9 @@
   .contact__submit {
     width: 300px;
     margin: 10px 0 0 0;
+    
+    &--inner {
+      margin: 10px 0 20px 0;
+    }
   }
 }

@@ -1,0 +1,52 @@
+.inner {}
+
+.inner__title {
+  padding: 42px 0;
+  background: linear-gradient(66deg, rgb(0,96,255) 0%, rgb(78,210,222) 100%);
+}
+
+.inner__name {
+  margin: 0;
+  color: #fff;
+  font-size: 72px;
+  font-weight: 700;
+  
+  &--small {
+    margin: 55px 0 0 0;
+    color: #000;
+    font-size: 60px;
+  }
+}
+
+.inner__text {
+  margin: 50px 0;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+@media screen and ($tablet-widths) {
+  .inner__name {
+    font-size: 50px;
+    
+    &--small {
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .inner__name {
+    font-size: 30px;
+    text-align: center;
+    
+    &--small {
+      margin: 20px 0 0 0;
+      font-size: 25px;
+    }
+  }
+  
+  .inner__text {
+    margin: 16px 0;
+    font-size: 16px;
+  }
+}
