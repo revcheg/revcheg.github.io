@@ -1605,6 +1605,19 @@ body {
   font-size: 24px;
   font-weight: 300; }
 
+.inner__desc {
+  padding: 50px 0; }
+  .inner__desc p {
+    font-size: 16px;
+    font-weight: 300; }
+  .inner__desc h2 {
+    margin: 50px 0 0 0;
+    font-size: 30px;
+    font-weight: 600; }
+  .inner__desc h3 {
+    margin: 70px 0 0 0;
+    font-size: 60px; }
+
 @media screen and (max-width: 1200px) {
   .inner__name {
     font-size: 50px; }
