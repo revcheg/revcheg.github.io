@@ -5,18 +5,31 @@
     margin: 0 0 65px 0;
     padding: 0;
   }
+  
+  &--chat {
+    padding: 50px 0;
+    background: url('../img/contact-chat.jpg') no-repeat center / cover;
+  }
 }
 
 .contact__title {
   margin: 0;
   font-size: 72px;
   font-weight: 600;
+  
+  &--chat {
+    font-size: 60px;
+  }
 }
 
 .contact__subtitle {
   margin: 50px 0;
   font-size: 24px;
   font-weight: 300;
+  
+  &--chat {
+    margin: 0 0 50px 0;
+  }
 }
 
 .contact__form {
@@ -65,7 +78,7 @@
   &--select {
     width: 370px;
     height: inherit;
-    background: transparent url('../img/nav-arrow.svg') no-repeat 340px;
+    background: #fff url('../img/nav-arrow.svg') no-repeat 340px;
     background-size: 10px;
     appearance: none;
   }

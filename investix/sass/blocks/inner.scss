@@ -24,6 +24,25 @@
   font-weight: 300;
 }
 
+.inner__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner__mockup {
+  width: 370px;
+  height: 270px;
+  background: url('../img/mockup-1.png') no-repeat center / contain;
+}
+
+.inner__column {
+  width: 680px;
+}
+
+.inner__button {
+  margin: 40px 0 0 0;
+}
+
 .inner__desc {
   padding: 50px 0;
   

@@ -665,16 +665,23 @@ body {
   .contact--inner {
     margin: 0 0 65px 0;
     padding: 0; }
+  .contact--chat {
+    padding: 50px 0;
+    background: url("../img/contact-chat.jpg") no-repeat center/cover; }
 
 .contact__title {
   margin: 0;
   font-size: 72px;
   font-weight: 600; }
+  .contact__title--chat {
+    font-size: 60px; }
 
 .contact__subtitle {
   margin: 50px 0;
   font-size: 24px;
   font-weight: 300; }
+  .contact__subtitle--chat {
+    margin: 0 0 50px 0; }
 
 .contact__form {
   width: 770px; }
@@ -728,7 +735,7 @@ body {
   .contact__input--select {
     width: 370px;
     height: inherit;
-    background: transparent url("../img/nav-arrow.svg") no-repeat 340px;
+    background: #fff url("../img/nav-arrow.svg") no-repeat 340px;
     background-size: 10px;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1436,7 +1443,7 @@ body {
   .account-programs__edge--ultimate {
     background: linear-gradient(-123deg, #8850c6 0%, #bfa3de 58%, whitesmoke 100%); }
   .account-programs__edge--crypto {
-    background: linear-gradient(-123deg, #d5d0bc 0%, #e5e3d9 54%, whitesmoke 100%); }
+    background: linear-gradient(-123deg, #f0bd7a 0%, #e5e3d9 54%, whitesmoke 100%); }
 
 .account-programs__box {
   padding: 80px 0 0 0;
@@ -1663,6 +1670,25 @@ body {
   font-size: 24px;
   font-weight: 300; }
 
+.inner__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.inner__mockup {
+  width: 370px;
+  height: 270px;
+  background: url("../img/mockup-1.png") no-repeat center/contain; }
+
+.inner__column {
+  width: 680px; }
+
+.inner__button {
+  margin: 40px 0 0 0; }
+
 .inner__desc {
   padding: 50px 0; }
   .inner__desc p {
@@ -1692,3 +1718,66 @@ body {
   .inner__text {
     margin: 16px 0;
     font-size: 16px; } }
+
+.edge {
+  padding: 100px 0; }
+
+.edge__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.edge__box {
+  width: 270px;
+  padding: 150px 0 0 0;
+  text-align: center; }
+  .edge__box b {
+    font-size: 24px;
+    font-weight: 600; }
+  .edge__box p {
+    font-weight: normal; }
+  .edge__box--copy {
+    background: url("../img/edge-copy.svg") no-repeat top/130px; }
+  .edge__box--time {
+    background: url("../img/edge-time.svg") no-repeat top/130px; }
+  .edge__box--full {
+    background: url("../img/edge-full.svg") no-repeat top/130px; }
+
+.edge__button {
+  margin: 50px auto 0; }
+
+.scope {
+  height: 770px;
+  padding: 70px 0 0 0;
+  background: linear-gradient(66deg, #0060ff 0%, #4ed2de 100%) 0 0/100% 700px no-repeat; }
+  .scope h2 {
+    margin: 0 0 50px 0;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center; }
+
+.scope__img {
+  height: 600px;
+  background: url("../img/scope-bg.png") no-repeat top center; }
+
+.scope__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .scope__flex--second {
+    margin: 50px 0 0 0; }
+
+.scope__box {
+  width: 200px;
+  padding: 80px 0 0 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center; }

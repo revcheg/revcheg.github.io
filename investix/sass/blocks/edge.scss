@@ -1,0 +1,39 @@
+.edge {
+  padding: 100px 0;
+}
+
+.edge__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edge__box {
+  width: 270px;
+  padding: 150px 0 0 0;
+  text-align: center;
+  
+  b {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  p {
+    font-weight: normal;
+  }
+  
+  &--copy {
+    background: url('../img/edge-copy.svg') no-repeat top / 130px;
+  }
+  
+  &--time {
+    background: url('../img/edge-time.svg') no-repeat top / 130px;
+  }
+  
+  &--full {
+    background: url('../img/edge-full.svg') no-repeat top / 130px;
+  }
+}
+
+.edge__button {
+  margin: 50px auto 0;
+}
