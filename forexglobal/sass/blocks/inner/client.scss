@@ -132,6 +132,10 @@
       margin: 0 0 10px 0;
     }
   }
+  
+  &--desc {
+    display: none;
+  }
 }
 
 .client__checkbox:checked + .client__flex--hide {
@@ -242,6 +246,25 @@
 .client__demo {
   color: #6420ff;
   text-decoration: none;
+}
+
+.client__info {
+  height: 200px;
+  margin: 0 0 10px 0;
+  padding: 20px 50px;
+  border: 1px solid #6420ff;
+  border-radius: 3px;
+  overflow: scroll;
+  
+  b {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  p {
+    font-size: 14px;
+    font-weight: 300;
+  }
 }
 
 @media screen and ($tablet-widths) {

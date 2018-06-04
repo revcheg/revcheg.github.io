@@ -40,6 +40,20 @@ $('.tab__button--equities').click(function(event){
     event.preventDefault();
 });
 
+//Hidden
+var select = document.querySelector('.client__hidden');
+
+select.addEventListener('change', function () {
+  var selectValue = select.value;
+  var info = document.querySelector('.client__flex--desc');
+  
+  if (selectValue === 'ZuluTrade') {
+    info.style.display = 'block';
+  } else {
+    info.style.display = 'none';
+  };
+});
+
 //Leverage validation
 $(document).ready(function () {
   var summ = 0;

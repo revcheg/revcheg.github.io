@@ -3219,6 +3219,8 @@ body {
     .client__flex--column label,
     .client__flex--column select {
       margin: 0 0 10px 0; }
+  .client__flex--desc {
+    display: none; }
 
 .client__checkbox:checked + .client__flex--hide {
   display: -webkit-box !important;
@@ -3316,6 +3318,20 @@ body {
 .client__demo {
   color: #6420ff;
   text-decoration: none; }
+
+.client__info {
+  height: 200px;
+  margin: 0 0 10px 0;
+  padding: 20px 50px;
+  border: 1px solid #6420ff;
+  border-radius: 3px;
+  overflow: scroll; }
+  .client__info b {
+    font-size: 20px;
+    font-weight: 500; }
+  .client__info p {
+    font-size: 14px;
+    font-weight: 300; }
 
 @media screen and (max-width: 1200px) {
   .client {

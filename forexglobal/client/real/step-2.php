@@ -231,11 +231,11 @@
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             Yes
-            <input type="radio" name="experience" value="0">
+            <input type="radio" name="experience" class='experience-quiz' data-val="0" value="1">
           </label>
           <label class="client__label">
             No
-            <input type="radio" name="experience" value="5">
+            <input type="radio" name="experience" class='experience-quiz' data-val="5" value="0">
           </label>
         </div>
         <b class="client__question">Which of the following financial products have you traded in the last 3 years?</b>
@@ -347,22 +347,22 @@
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             Yes
-            <input type="radio" name="attended_course_or_seminar_on_cfds_or_forex" value="0">
+            <input type="radio" name="attended_course_or_seminar_on_cfds_or_forex" class='experience-quiz' data-val="0" value="1">
           </label>
           <label class="client__label">
             No
-            <input type="radio" name="attended_course_or_seminar_on_cfds_or_forex" value="3">
+            <input type="radio" name="attended_course_or_seminar_on_cfds_or_forex" class='experience-quiz' data-val="3" value="0">
           </label>
         </div>
         <b class="client__question">Have you ever been employed as a Professional in a Financial Institution and/or been in employment involved in Trading of Financial Instruments?</b>
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             Yes
-            <input type="radio" name="employed_as_a_professional_in_financial_institution" value="0">
+            <input type="radio" name="employed_as_a_professional_in_financial_institution" class='experience-quiz' data-val="0" value="1">
           </label>
           <label class="client__label">
             No
-            <input type="radio" name="employed_as_a_professional_in_financial_institution" value="1">
+            <input type="radio" name="employed_as_a_professional_in_financial_institution" class='experience-quiz' data-val="1" value="0">
           </label>
         </div>
         <h3 class="client__subsubname">Trading Quiz</h3>
@@ -370,51 +370,74 @@
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             True
-            <input type="radio" name="trading_with_higher_leverage" value="0">
+            <input type="radio" name="trading_with_higher_leverage" class='experience-quiz' data-val="0" value="1">
           </label>
           <label class="client__label">
             False
-            <input type="radio" name="trading_with_higher_leverage" value="2">
+            <input type="radio" name="trading_with_higher_leverage" class='experience-quiz' data-val="2" value="0">
           </label>
         </div>
         <b class="client__question">The market is moving against your position. Your CFD position will close automatically if your equity reaches the Stop out Level.</b>
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             True
-            <input type="radio" name="the_market_is_moving_against_your_position" value="0">
+            <input type="radio" name="the_market_is_moving_against_your_position" class='experience-quiz' data-val="0" value="1">
           </label>
           <label class="client__label">
             False
-            <input type="radio" name="the_market_is_moving_against_your_position" value="2">
+            <input type="radio" name="the_market_is_moving_against_your_position" class='experience-quiz' data-val="2" value="0">
           </label>
         </div>
         <b class="client__question">If the value of your initial position in a CFD contract is $10,000 and the leverage ratio is 1:50, then the initial margin requirement would be 4% (i.e. $400)</b>
         <div class="client__flex  client__flex--center">
           <label class="client__label">
             True
-            <input type="radio" name="value_of_your_initial_position_in_a_cfd_contract" value="2">
+            <input type="radio" name="value_of_your_initial_position_in_a_cfd_contract" class='experience-quiz' data-val="2" value="1">
           </label>
           <label class="client__label">
             False
-            <input type="radio" name="value_of_your_initial_position_in_a_cfd_contract" value="0">
+            <input type="radio" name="value_of_your_initial_position_in_a_cfd_contract" class='experience-quiz' data-val="0" value="0">
           </label>
         </div>
         <hr class="client__hr">
         <h2 class="client__subname">4. Trading Account</h2>
         <div class="client__flex">
-          <select name="tradingplatform" tabindex="0" required>
+          <select class="client__hidden" name="tradingplatform" tabindex="0" required>
             <option hidden>Trading Platform</option>
             <option value="MT4">MT4</option>
-            <option value="ZuluTrade">ZuluTrade</option>
+            <option class="client__zulu" value="ZuluTrade">ZuluTrade</option>
           </select>
           <select name="accounttype" tabindex="0" required>
             <option hidden>Account Type</option>
             <option value="bronze">Bronze</option>
             <option value="silver">Silver</option>
-            <option value="zulutrade">ZuluTrade</option>
+            <!--<option value="zulutrade">ZuluTrade</option>-->
             <option value="gold">Gold</option>
-            <option value="swap free">Swap Free</option>
+            <!--<option value="swap free">Swap Free</option>-->
           </select>
+        </div>
+        <div class="client__flex  client__flex--column  client__flex--desc">
+          <div class="client__info">
+            <b>Letter of Direction Form (LOD)</b>
+            <p>The undersigned (hereinafter the “Client”) hereby grants permission to link his/her Lydya Financial Ltd (with brand name: Forex24) trading account with Triple A Experts S.A. and use the services provided by Triple A Experts S.A., (hereby called ‘ZuluTrade’), pursuant to the Limited Power of Attorney granted by the Client to Triple A Experts S.A. whereby the Client authorizes Triple A to manage his/her account with Lydya Financial Ltd (“Managed Account”) as per the provisions of the Limited Power of Attorney.</p>
+            <p>The Client agrees to the following conditions:</p>
+            <p>1. That Lydya Financial Ltd has made no representation regarding the potential profitability of the ZuluTrade service.</p>
+            <p>2. That client is fully aware of the risk involved in trading in the foreign exchange market, and that Lydya Financial Ltd holds no liability for any losses to client’s account caused by mechanical, software, communication failure, system error or any other causes beyond its immediate control.</p>
+            <p>3. That Lydya Financial Ltd shall execute the signals generated by the Zulu Trade as delivered to Lydya Financial Ltd and that Lydya Financial Ltd takes no responsibility for advising the client of any changes, alterations, enhancements or optimizations made by ZuluTrade.</p>
+            <p>4. That Triple A is not permitted to make a deposit or withdrawal of funds into or from the client’s account. Only the owner of the trading account has the right to deposit and withdraw funds from the trading account.</p>
+            <p>5. That the client gives consent to Lydya Financial Ltd to increase the spreads by one pip for every round turn transaction executed in any account traded with Lydya Financial Ltd that subscribes to ZuluTrade. The increase in spreads is a Software Transmission Fee (STF) charged for as long as the undersigned client is using the ZuluTrade services.</p>
+            <p>6. That this LOD shall remain valid until revoked in writing by the client. This LOD shall not expire upon the death, bankruptcy or the loss of legal capacity of the client.</p>
+            <b>LIMITATION OF LIABILITY</b>
+            <p>You understand that in no event will Lydya Financial Ltd or its officers, directors, shareholders, parents, subsidiaries, affiliates, employees, agents, licensors or any data provider be liable for any consequential, punitive, incidental, special or indirect damages, loss of business revenue or lost profits arising as result of your use of the Managed Account or through the acts or omissions of the account manager, whether in an action under contract, negligence or any other theory, even if Lydya Financial Ltd is advised of the possibility of such.</p>
+            <b>INDEMNIFICATION</b>
+            <p>By signing you are hereby agree to indemnify, defend and hold harmless Lydya Financial Ltd and its officers, directors, shareholders, parents, subsidiaries, affiliates, employees, plan sponsors, consultants, agents and licensors from and against any and all third-party claims, liability, damages and/or costs (including, but not limited to, reasonable attorneys’ fees) arising from your use of a ZuluTrade account, including without limitation, any failure to comply with the terms and conditions of Lydya Financial Ltd websites, or other right of a third party, or from a violation of applicable law.</p>
+            <p>By signing below, I acknowledge that I have received and read the above information pertaining to the ZuluTrade service and agree to the terms and conditions set forth herein. I hereby confirm that I understand the risks embodied in foreign exchange trading, including those risks particular to foreign exchange trade via copy trading and I hereby agree to indemnify and hold Lydya Financial Ltd harmless from, and against any and all liabilities, losses, damages, costs and expenses including attorney's fees, arising therefrom.</p>
+            <p>I further acknowledge and agree that Lydya Financial Ltd shall execute the signals sent by ZuluTrade as delivered to my Forex24 Trading Account, and Lydya Financial Ltd shall have no liability and responsibility for any losses to my Forex24 Trading Account(s) for any reasons including but not limited to bad strategy, mechanical error, software error or system error.</p>
+          </div>
+          <label class="client__label">
+            <input class="client__checkbox" type="checkbox" name="">
+            *I/we hereby acknowledge that I/we have read and consent to the statements listed above. I/we hereby agree that I/we understand and certify that I/we have the financial resources to enter into this agreement and that all trading objectives have been explained. I/we acknowledge having received, read and understood the foregoing letter of direction, limited power-of-attorney, service authorisation, and incorporated risk disclosures.
+          </label>
         </div>
         <div class="client__flex">
           <select name="currency" tabindex="0" required>
@@ -538,7 +561,8 @@
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
   </script>
-   <script src="../../js/score_count1.js" async></script>
+   <script src="../../js/score_count42.js" async></script>
+   <script src="../../js/jquery-plugin.js"></script>
 </body>
 </html>
 
