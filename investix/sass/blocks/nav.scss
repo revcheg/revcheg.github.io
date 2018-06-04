@@ -82,6 +82,17 @@
   opacity: 1;
 }
 
+.nav__select {
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-bottom: 1px dotted #000;
+  border-radius: 0;
+  background: #fff;
+  appearance: none;
+  cursor: pointer;
+}
+
 @media screen and ($tablet-widths) {
   .nav {
     width: 550px;
