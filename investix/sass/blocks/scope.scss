@@ -96,3 +96,63 @@
     background: #fff;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .scope {
+    height: auto;
+    padding: 70px 0;
+  }
+  
+  .scope__img {
+    height: auto;
+    background: none;
+  }
+  
+  .scope__flex {
+    justify-content: center;
+  }
+  
+  .scope__box {
+    margin: 0 10px;
+  }
+  
+  .scope__box--right,
+  .scope__box--left {
+    
+    &::after,
+    &::before {
+      display: none;
+    } 
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .scope {
+    padding: 50px 0;
+    background: linear-gradient( 66deg, rgb(0,96,255) 0%, rgb(78,210,222) 100%) no-repeat;
+    
+    h2 {
+      font-size: 30px;
+    }
+  }
+  
+  .scope__flex {
+    align-items: center;
+    flex-direction: column;
+    
+    &--second {
+      margin: 0;
+      
+      .scope__box {
+        
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+  
+  .scope__box {
+    margin: 0 0 50px 0;
+  }
+}

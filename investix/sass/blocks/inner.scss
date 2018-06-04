@@ -88,4 +88,22 @@
     margin: 16px 0;
     font-size: 16px;
   }
+  
+  .inner__flex {
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .inner__mockup {
+    width: 300px;
+    height: 230px;
+  }
+  
+  .inner__column {
+    width: auto;
+  }
+  
+  .inner__button {
+    margin: 40px auto 0;
+  }
 }

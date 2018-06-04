@@ -37,3 +37,28 @@
 .edge__button {
   margin: 50px auto 0;
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .edge {
+    padding: 50px 0;
+  }
+  
+  .edge__flex {
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .edge__box {
+    margin: 0 0 50px 0;
+    
+    &:last-child {
+      margin: 0;
+    }
+  }
+  
+  .edge__button {
+    width: 270px;
+  }
+}
