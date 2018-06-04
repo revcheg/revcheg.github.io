@@ -33,6 +33,10 @@
   width: 370px;
   height: 270px;
   background: url('../img/mockup-1.png') no-repeat center / contain;
+  
+  &--2 {
+    background: url('../img/mockup-2.png') no-repeat center / contain;
+  }
 }
 
 .inner__column {
@@ -60,6 +64,16 @@
   h3 {
     margin: 70px 0 0 0;
     font-size: 60px;
+  }
+}
+
+.inner__price {
+  font-size: 24px;
+  font-weight: normal;
+  
+  span {
+    font-size: 30px;
+    font-weight: 900;
   }
 }
 

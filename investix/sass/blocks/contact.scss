@@ -10,6 +10,11 @@
     padding: 50px 0;
     background: url('../img/contact-chat.jpg') no-repeat center / cover;
   }
+  
+  &--star {
+    padding: 50px 0;
+    background: url('../img/contact-star.jpg') no-repeat center / cover;
+  }
 }
 
 .contact__title {
@@ -146,7 +151,7 @@
     
     &--select {
       width: 334px;
-      background: transparent url('../img/nav-arrow.svg') no-repeat 305px;
+      background: #fff url('../img/nav-arrow.svg') no-repeat 305px;
       background-size: 10px;
     }
     
@@ -219,7 +224,7 @@
     &--select {
       width: 300px;
       height: 40px;
-      background: transparent url('../img/nav-arrow.svg') no-repeat 270px;
+      background: #fff url('../img/nav-arrow.svg') no-repeat 270px;
       background-size: 10px;
     }
     
