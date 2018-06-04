@@ -51,10 +51,10 @@
 }
 
 .live__mockup {
-  width: 342px;
-  height: 272px;
+  width: 400px;
+  height: 400px;
   background: url('../img/live-mockup.png') no-repeat center;
-  background-size: cover;
+  background-size: contain;
 }
 
 @media screen and ($tablet-widths) {
