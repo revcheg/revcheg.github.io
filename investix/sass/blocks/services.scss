@@ -1,6 +1,6 @@
 .services {
   padding: 0 0 50px 0;
-  background: linear-gradient( -123deg, rgb(242,242,242) 0%, rgb(224,247,249) 52%, rgb(206,251,255) 100%) no-repeat 0 0 / 100% 580px;
+  background: linear-gradient( -123deg, rgb(242,242,242) 0%, rgb(224,247,249) 52%, rgb(206,251,255) 100%) no-repeat 0 0 / 100% 680px;
   
   &--account-programs {
     padding: 60px 0 50px 0;
@@ -15,6 +15,7 @@
 
 .services__title {
   margin: 0;
+  padding: 100px 0 0 0;
   font-size: 72px;
   font-weight: 600;
 }
@@ -192,6 +193,7 @@
   }
   
   .services__title {
+    padding: 0;
     font-size: 30px;
     text-align: center;
   }

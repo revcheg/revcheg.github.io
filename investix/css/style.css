@@ -413,7 +413,7 @@ body {
 
 .services {
   padding: 0 0 50px 0;
-  background: linear-gradient(-123deg, #f2f2f2 0%, #e0f7f9 52%, #cefbff 100%) no-repeat 0 0/100% 580px; }
+  background: linear-gradient(-123deg, #f2f2f2 0%, #e0f7f9 52%, #cefbff 100%) no-repeat 0 0/100% 680px; }
   .services--account-programs {
     padding: 60px 0 50px 0;
     background: none; }
@@ -423,6 +423,7 @@ body {
 
 .services__title {
   margin: 0;
+  padding: 100px 0 0 0;
   font-size: 72px;
   font-weight: 600; }
 
@@ -539,6 +540,7 @@ body {
     .services--account {
       display: none; }
   .services__title {
+    padding: 0;
     font-size: 30px;
     text-align: center; }
   .services__subtitle {
