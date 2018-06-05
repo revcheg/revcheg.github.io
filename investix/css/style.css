@@ -4,14 +4,15 @@ body {
   font-family: 'SF UI Display', sans-serif; }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding: 0 15px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 @media screen and (max-width: 1200px) {
   .container {
-    width: 95%;
-    padding: 0; } }
+    width: 100%; } }
 
 @font-face {
   font-family: 'SF UI Display';
@@ -1122,9 +1123,9 @@ body {
   .account__wrapper--pro {
     background: linear-gradient(-123deg, #ffeec2 0%, #faf2dc 54%, whitesmoke 100%); }
   .account__wrapper--ultimate {
-    background: linear-gradient(-123deg, #8850c6 0%, #bfa3de 58%, whitesmoke 100%); }
+    background: linear-gradient(-123deg, #f0e3ff 0%, whitesmoke 100%); }
   .account__wrapper--crypto {
-    background: linear-gradient(-123deg, #d5d0bc 0%, #e5e3d9 54%, whitesmoke 100%); }
+    background: linear-gradient(-123deg, #ffe5c4 0%, whitesmoke 100%); }
   .account__wrapper:last-child {
     margin: 0 0 90px 0; }
 
@@ -1458,9 +1459,9 @@ body {
   .account-programs__edge--pro {
     background: linear-gradient(-123deg, #ffeec2 0%, #faf2dc 54%, whitesmoke 100%); }
   .account-programs__edge--ultimate {
-    background: linear-gradient(-123deg, #8850c6 0%, #bfa3de 58%, whitesmoke 100%); }
+    background: linear-gradient(-123deg, #f0e3ff 0%, whitesmoke 100%); }
   .account-programs__edge--crypto {
-    background: linear-gradient(-123deg, #f0bd7a 0%, #e5e3d9 54%, whitesmoke 100%); }
+    background: linear-gradient(-123deg, #ffe5c4 0%, whitesmoke 100%); }
 
 .account-programs__box {
   padding: 80px 0 0 0;
