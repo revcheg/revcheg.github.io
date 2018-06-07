@@ -1,4 +1,35 @@
 .main {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+}
+
+.main__column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.main__slider {
+  display: flex;
+  flex-grow: 1;
+  padding: 35px;
+  background: url('../img/slider-1.jpg') no-repeat center / cover;
+}
+
+.main__box {
+  align-self: center;
+  width: 450px;
+}
+
+.main__name {
+  margin: 0 0 20px 0;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main__text {
+  color: #fff;
+  font-weight: 500;
 }
