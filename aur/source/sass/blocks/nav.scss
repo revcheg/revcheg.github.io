@@ -77,6 +77,55 @@
       letter-spacing: 2px;
     }
   }
+  
+  &--active {
+    
+    a {
+      position: relative;
+      color: rgba(182, 192, 212, 0.3);
+      
+      &::before {
+        content: '';
+        position: absolute;
+        top: 7px;
+        width: 70px;
+        height: 1px;
+        background: #cba570;
+        animation: line 0.3s both;
+      }
+      
+      &::after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: -31px;
+        width: 6px;
+        height: 6px;
+        background: url('../img/active.svg') no-repeat center / 6px;
+        animation: round 0.3s 0.25s both;
+      }
+    }
+  }
+}
+
+@keyframes line {
+  0% {
+    left: -200px;
+  }
+  
+  100% {
+    left: -100px;
+  }
+}
+
+@keyframes round {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
 }
 
 .nav__hr {

@@ -1,7 +1,8 @@
 .header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 60px 35px;
+  padding: 50px 35px;
   background: #202228;
 }
 
@@ -55,12 +56,18 @@
   width: 64px;
   margin: 0;
   padding: 0;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
   list-style: none;
 }
 
 .header__theme-control {
   width: 30px;
   height: 30px;
+  margin: 5px 0 0 0;
   padding: 0;
   border: 1px solid #46484d;
   cursor: pointer;
