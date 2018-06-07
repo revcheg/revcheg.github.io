@@ -14,9 +14,24 @@
     font-size: 14px;
     font-weight: normal;
     text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.2s;
+    outline: none;
     
-    &:first-child {
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid $title;
+    }
+  }
+  
+  &:nth-child(1) {
+    
+    a {
       padding: 40px 25px 40px 0;
+      
+      &:hover {
+        border: none;
+      }
     }
   }
   

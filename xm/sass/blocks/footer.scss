@@ -1,0 +1,67 @@
+.footer {
+  padding: 20px 0;
+  background: #0b0d17;
+}
+
+.footer__logo {
+  display: block;
+  width: 170px;
+  margin: auto;
+}
+
+.footer__hr {
+  height: 1px;
+  margin: 15px 0 40px 0;
+  border: none;
+  background: $title;
+}
+
+.footer__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 40px 0;
+}
+
+.footer__info {
+  width: 770px;
+}
+
+.footer__text {
+  color: $text;
+  font-size: 14px;
+  font-weight: 300;
+  
+  &:first-of-type {
+    margin: 0 0 14px 0;
+  }
+  
+  &:last-of-type {
+    margin: 14px 0 0 0;
+  }
+}
+
+.footer__social {
+  padding: 30px 0;
+  background: #000;
+}
+
+.footer__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__item {
+  font-size: 0;
+  
+  &--fb {
+    display: block;
+    width: 8px;
+    height: 14px;
+    background: url('../img/facebook.svg') no-repeat center / cover;
+  }
+}

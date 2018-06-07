@@ -17,8 +17,19 @@
     width: 270px;
   }
   
+  &--big {
+    width: 370px;
+  }
+  
   &--transparent {
     border: 1px solid #fff;
+    transition: 0.2s;
+    outline: none;
+    
+    &:hover,
+    &:focus {
+      border: 1px solid $title;
+    }
   }
   
   &--red {

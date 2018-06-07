@@ -1,0 +1,46 @@
+.web {
+  padding: 80px 0;
+}
+
+.web__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.web__mockup {
+  width: 570px;
+  height: 618px;
+  background: url('../img/web-mockup.png') no-repeat center / cover;
+}
+
+.web__info {
+  width: 570px;
+}
+
+.web__name {
+  margin: 0 0 20px 0;
+  font-size: 36px;
+  font-weight: 300;
+  
+  span {
+    font-weight: 700;
+  }
+}
+
+.web__text {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.web__list {
+  margin: 14px 0 30px 0;
+  font-size: 14px;
+  font-weight: normal;
+  list-style: url('../img/bullet.svg');
+  line-height: 25px;
+}
+
+.web__button {
+  margin: auto;
+}
