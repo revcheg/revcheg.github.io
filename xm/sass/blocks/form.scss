@@ -1,145 +1,45 @@
 .form {
-  
-  & label {
-    align-self: center;
-    width: 25%;
-    color: #272727;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: right;
-    opacity: 0.8;
-  }
-  
-  & input {
-    width: 30%;
-    padding: 5px 20px;
-    font-size: 18px;
-    border: 2px solid #f7c113;
-    border-radius: 5px;
-  }
-}
-
-.form__email,
-.form__password,
-.form__c-password,
-.form__f-name,
-.form__l-name,
-.form__phone,
-.form__pass-num,
-.form__gender,
-.form__adress,
-.form__city,
-.form__file,
-.form__checkbox {
   display: flex;
-  justify-content: space-around;
-  padding: 20px 0;
-}
-
-.form__choose {
-  display: flex;
-  width: 35%;
-  
-  & label {
-    width: auto;
-  }
-  
-  & input {
-    align-self: center;
-    width: auto;
-  }
-}
-
-.form__checkbox {
-  justify-content: center;
-  
-  & label,
-  & input {
-    width: auto;
-    cursor: pointer;
-  }
-  
-  & input {
-    width: 50px;
-  }
-}
-
-.form__file {
-  
-  & input {
-    border: none;
-  }
-}
-
-input[type='submit'] {
-  display: block;
-  width: 300px;
+  flex-direction: column;
+  width: 270px;
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  padding: 15px 50px;
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: 2px solid #2b2b2b;
-  border-radius: 50px;
-  background: #0038b8;
-  // transition: 0.2s;
-  cursor: pointer;
+}
+
+.form__name {
+  display: block;
+  margin: 0 0 20px 0;
+  color: $text;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.form__input {
+  margin: 0 0 10px 0;
+  padding: 20px 15px;
+  color: $text;
+  font-size: 14px;
+  font-weight: normal;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: transparent;
   
-  &:hover {
-    // transform: scale(1.1);
+  &::placeholder {
+    color: $text;
   }
 }
 
-@media screen and ($tablet-widths) {
+.form__textarea {
+  margin: 0 0 20px 0;
+  padding: 20px 15px;
+  color: $text;
+  font-size: 14px;
+  font-weight: normal;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: transparent;
+  resize: none;
   
-}
-
-@media screen and ($mobile-widths) {  
-  .form {
-    
-    & label {
-      width: auto;
-      text-align: center;
-    }
-    
-    & input {
-      width: 80%;
-      margin: auto;
-      margin-top: 10px;
-    }
-  }
-  
-  .form__email,
-  .form__password,
-  .form__c-password,
-  .form__f-name,
-  .form__l-name,
-  .form__phone,
-  .form__pass-num,
-  .form__gender,
-  .form__adress,
-  .form__city,
-  .form__file,
-  .form__checkbox {
-    flex-direction: column;
-  }
-  
-  .form__choose {
-    margin: auto;
-    margin-top: 10px;
-    
-    & input {
-      width: auto;
-      margin-top: 5px;
-    }
-  }
-  
-  .form__file {
-    
-    & input {
-      padding: 0;
-    }
+  &::placeholder {
+    color: $text;
   }
 }

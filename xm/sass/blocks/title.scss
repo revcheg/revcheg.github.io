@@ -1,103 +1,44 @@
 .title {
-  background: url('../img/title-bg.png') no-repeat top;
-  background-size: cover;
-  
-  & h3 {
-    color: #fff;
-    margin-top: 0;
-    padding-top: 50px;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-  }
+  padding: 0 0 160px 0;
+  background: #35355c url('../img/title-bg.jpg') no-repeat center / cover;
 }
 
-.title__flex {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 50px;
-}
-
-.title__box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: auto;
-  height: 150px;
-  padding-top: 200px;
-  color: #fff;
+.title__subname {
+  display: block;
+  margin: 150px 0 15px 0;
+  color: $text;
+  font-size: 30px;
+  font-weight: normal;
   text-align: center;
-  
-  & b {
-    font-size: 30px;
-  }
-  
-  & a {
-    width: 60px;
-    padding: 5px 0;
-    margin: auto;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: 2px solid #f7c107;
-    transition: 0.3s;
-    
-    &:hover {
-      background: #f7c107;
-    }
-  }
-  
-  & p {
-    margin: 0;
-    font-size: 20px;
-    font-weight: bold;
-  }
 }
 
-.title__box--bitcoin {
-  background: url('../img/title-bitcoin.png') no-repeat top;
+.title__hr {
+  width: 470px;
+  height: 1px;
+  margin: 0 auto 15px auto;
+  border: none;
+  background: #ab1419;
 }
 
-.title__box--ethereum {
-  background: url('../img/title-ethereum.png') no-repeat top;
+.title__name {
+  margin: 0 0 30px 0;
+  color: $text;
+  font-size: 60px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-@media screen and ($tablet-widths) {
-  
+.title__mockup {
+  display: block;
+  margin: 0 auto 30px auto;
 }
 
-@media screen and ($mobile-widths) {  
-  .title {
-    background: url('../img/title-bg.png') no-repeat top;
-    background-size: cover;
-    
-    & h3 {
-      font-size: 22px;
-    }
-  }
-  
-  .title__flex {
-    margin-top: 0px;
-  }
-  
-  .title__box {
-    height: 110px;
-    padding-top: 120px;
-    
-    & b {
-      font-size: 20px;
-    }
-    
-    & p {
-      font-size: 16px;
-    }
-  }
-  
-  .title__box--bitcoin {
-    background: url('../img/title-bitcoin-s.png') no-repeat top;
-  }
-  
-  .title__box--ethereum {
-    background: url('../img/title-ethereum-s.png') no-repeat top;
-  }
+.title__button {
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
 }

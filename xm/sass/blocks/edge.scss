@@ -1,0 +1,49 @@
+.edge {
+  padding: 70px 0;
+}
+
+.edge__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edge__box {
+  width: 270px;
+  padding: 100px 0 0 0;
+  text-align: center;
+  
+  h2 {
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  
+  hr {
+    width: 30px;
+    height: 1px;
+    border: none;
+    background: #ab1419;
+  }
+  
+  p {
+    color: #999999;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  
+  &--1 {
+    background: url('../img/edge-1.svg') no-repeat top / 90px;
+  }
+  
+  &--2 {
+    background: url('../img/edge-2.svg') no-repeat top / 90px;
+  }
+  
+  &--3 {
+    background: url('../img/edge-3.svg') no-repeat top / 90px;
+  }
+  
+  &--4 {
+    background: url('../img/edge-4.svg') no-repeat top / 90px;
+  }
+}

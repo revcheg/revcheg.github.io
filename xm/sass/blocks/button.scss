@@ -1,0 +1,28 @@
+.button {
+  display: block;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  
+  &--small {
+    width: 225px;
+  }
+  
+  &--medium {
+    width: 270px;
+  }
+  
+  &--transparent {
+    border: 1px solid #fff;
+  }
+  
+  &--red {
+    background: $title;
+    border: none;
+  }
+}

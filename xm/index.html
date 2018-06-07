@@ -2,167 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>XM-crypto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>XM Crypto</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="img/favicon/site.webmanifest">
-  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#2d89ef">
-  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-  <header class="header">
+  <div class="title">
     <div class="container">
-      <div class="header__flex">
-        <img class="header__logo" src="img/logo.svg" alt="XM-Crypto">
-        <ul class="header__nav">
-          <li><a href="#">Trade</a></li>
-          <li><a href="#">Media</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Blog</a></li>
-          <ul class="header__user">
-            <li><a href="#">Sign up</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">EN</a></li>
+      <header class="header">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__logo">
+                <img src="img/logo.svg" alt="XM Crypto">
+              </a>
+            </li>
+            <li class="nav__item"><a href="#">Sign up</a></li>
+            <li class="nav__item"><a href="#">Login</a></li>
+            <!-- select -->
           </ul>
+        </nav>
+      </header>
+      <b class="title__subname">A trusted and reliable</b>
+      <hr class="title__hr">
+      <h1 class="title__name">Digital currency exchanger</h1>
+      <img class="title__mockup" src="img/title-currency.png" alt="Mockup">
+      <ul class="title__button">
+        <li>
+          <a class="button  button--small  button--transparent" href="#">Buy Crypto</a>
+        </li>
+        <li>
+          <a class="button  button--small  button--transparent" href="#">Sell Crypto</a>
+        </li>
+      </ul>    
+    </div>
+  </div>
+  <section class="edge">
+    <div class="container">
+      <h1 class="visually-hidden">Advantages</h1>
+      <div class="edge__flex">
+        <div class="edge__box  edge__box--1">
+          <h2>Currency Conversion</h2>
+          <hr>
+          <p>If you need to quickly convert funds at the most favorable rate - funds will be automatically converted at the current market rates.</p>
+        </div>
+        <div class="edge__box  edge__box--2">
+          <h2>Protection of Investments</h2>
+          <hr>
+          <p>If you invest in cryptocurrency, stop loss and take profit orders will help secure your investment.</p>
+        </div>
+        <div class="edge__box  edge__box--3">
+          <h2>Quick Start</h2>
+          <hr>
+          <p>Fast and simple set-up allows you to start accepting cryptocurrencies. Conveniently used - content customers.</p>
+        </div>
+        <div class="edge__box  edge__box--4">
+          <h2>XMCrypto Coins Bank</h2>
+          <hr>
+          <p>Years of collaborating with the industry’s leading mining pools  enables XMCrypto to accumulate reserves of Cryptocurrencies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="online">
+    <div class="online__column">
+      <section class="online__info">
+        <h1 class="online__name">Exchange online with XMCrypto in 3 easy steps</h1>
+        <ul class="online__list">
+          <li class="online__item">
+            <b>Register on XMCrypto</b>
+            <p>Get access to XMCRYPTO capabilities in under 1 minute</p>
+          </li>
+          <li class="online__item">
+            <b>Add credit to your account</b>
+            <p>Deposit funds to your XMCRYPTO account using your preferred method (credit card included)</p>
+          </li>
+          <li class="online__item">
+            <b>Buy bitcoin or other cryptocurrency</b>
+            <p>Crypto will be instantly credited to an automatically generated</p>
+          </li>
         </ul>
-      </div>
+      </section>
     </div>
-  </header>
-  <section class="title">
-    <div class="container">
-      <h3>A trusted and reliable<br>digital currency exchanger</h3>
-      <div class="title__flex">
-        <div class="title__left">
-          <div class="title__box  title__box--bitcoin">
-            <b>Bitcoin</b>
-            <a href="#">Buy</a>
-            <p>₪53 675,7 per BTC</p>
-          </div>
-        </div>
-        <div class="title__right">
-          <div class="title__box  title__box--ethereum">
-            <b>Ethereum</b>
-            <a href="#">Buy</a>
-            <p>₪4 410,64 per ETH</p>
-          </div>
-        </div>
-      </div>
+    <div class="online__column">
+      <form class="form" action="" method="post">
+        <b class="form__name">Sign up</b>
+        <input class="form__input" type="text" name="First Name" placeholder="First Name">
+        <input class="form__input" type="text" name="Last Name" placeholder="Last Name">
+        <input class="form__input" type="email" name="Email" placeholder="Email">
+        <input class="form__input" type="tel" name="Phone" placeholder="Phone Number">
+        <textarea class="form__textarea" name="Message" placeholder="Message"></textarea>
+        <button class="button  button--medium  button--red" type="submit" name="Submit">Sign up</button>
+      </form>
     </div>
-  </section>
-  <section class="info">
-    <div class="container">
-      <div class="info__flex">
-        <div class="info__left">
-          <b>*secure:</b>
-          <p>the security of all personal informations, data and funds of our clients is our number one priority.</p>
-        </div>
-        <div class="info__center">
-          <b>*exchange:</b>
-          <p>with this platform you get the most liquid order book in the world. Any trader or investor can carry out any exchange of digital currencies.</p>
-        </div>
-        <div class="info__right">
-          <b>*margin funding:</b>
-          <p>interest can be earned  by those who provide liquidity through their funds to traders that wish to trade with leverage. Funding is traded on an order book at different periods and at different rates.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="traders">
-    <div class="container">
-      <h3>An ideal platform for traders</h3>
-      <p>Bits of Gold (name of site) is a full-featured, on spot trading platform for digital currencies such as Bitcoin, Ethereum, Litcoin, and many more others. On here peer-to-peer funding is carried out easily and swiftly. All transactions are 100% secured and are very suitable for both investors and traders.</p>
-    </div>
-  </section>
-  <section class="exchange">
-    <div class="container">
-      <div class="exchange__flex  exchange__flex--first">
-        <div class="exchange__first">
-          <label for="send">You Send</label>
-          <input type="text" name="send" id="send" placeholder="ILS">
-        </div>
-        <div class="exchange__second">
-          <button type="button" name="change"></button>
-        </div>
-        <div class="exchange__third">
-          <label for="receive">You Receive</label>
-          <input type="text" name="receive" id="receive" placeholder="BTC">
-        </div>
-        <div class="exchange__fourth">
-          <button type="button" name="exchange">Exchange</button>
-        </div>
-      </div>
-      <div class="exchange__flex  exchange__flex--second">
-        <div class="exchange__left">
-          <p>Available<br>payment methods</p>
-        </div>
-        <div class="exchange__middle"></div>
-        <div class="exchange__right">
-          <b>Credit Card</b>
-          <p>From<br>172,06 to 17 206,02<br>ILS</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="business">
-    <div class="container">
-      <h3>A Platform suitable for business</h3>
-      <p>Cryptocurrency is a digital currency that makes use of cryptography as a means of security. Due to its security feature, it is impossible to make counterfeits of this currency. This currency is not issued by any government authority, therefore it is impossible for any authority to interfere, influence or manipulate the currency. Just as paper money is used as a medium of exchange in the purchase of goods and services, cryptocurrencies such Bitcoin and Ethereum can also be used for such business purposes.</p>
-    </div>
-  </section>
-  <section class="contact">
-    <div class="container">
-      <div class="contact__flex">
-        <div class="contact__left">
-          <input type="text" placeholder="E-Mail">
-        </div>
-        <div class="contact__center">
-          <input type="text" placeholder="Phone">
-        </div>
-        <div class="contact__right">
-          <button class="contact__btn" type="button" name="button">Contact Us</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="media">
-    <div class="container">
-      <!-- <h3>Media Coverage</h3> -->
-      <!-- <div class="media__img"></div> -->
-      <img src="img/media-t.png" alt="">
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__flex">
-        <div class="footer__box">
-          <b>Trade</b>
-          <a href="#">Buy</a>
-          <a href="#">Buy</a>
-          <a href="#">Buy</a>
-          <a href="#">Buy</a>
-        </div>
-        <div class="footer__box">
-          <b>Social</b>
-          <a href="#">Buy</a>
-          <a href="#">Buy</a>
-          <a href="#">Buy</a>
-          <a href="#">Buy</a>
-        </div>
-        <div class="footer__box">
-          <b>Resources</b>
-          <a href="#">Buy</a>
-          <a href="#">Buy</a>
-          <a href="#">Buy</a>
-          <a href="#">Buy</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  </div>
 </body>
 </html>
