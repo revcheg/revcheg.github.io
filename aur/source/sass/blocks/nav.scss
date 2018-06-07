@@ -1,0 +1,90 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  height: 88.5vh;
+  padding: 55px 40px 40px 100px;
+  background: #131216;
+}
+
+.nav__list {
+  // margin: 55px 115px 0 100px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+  &:nth-child(2) {
+    margin-top: auto; 
+    opacity: 0.4;
+  }
+}
+
+.nav__item {
+  
+  a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  &--logo {
+    margin: 0 0 55px 0;
+    
+    a {
+      display: block;
+      width: 90px;
+      color: #fff;
+      font-size: 56px;
+      font-weight: bold;
+      letter-spacing: normal;
+      
+      span {
+        display: inherit;
+        color: #cba570;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        letter-spacing: 2.33px;
+      }
+    }
+  }
+  
+  &--phone {
+    
+    a {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 3.5px;
+    }
+  }
+  
+  &--mail {
+    
+    a {
+      color: #CFA056;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 3.5px;
+    }
+  }
+  
+  &--address {
+    
+    a {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.nav__hr {
+  width: 40px;
+  height: 1px;
+  margin: 20px 0;
+  border: none;
+  background: #fff;
+  opacity: 0.4;
+}
