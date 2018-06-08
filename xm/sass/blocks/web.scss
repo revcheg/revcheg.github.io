@@ -57,5 +57,21 @@
 }
 
 @media screen and ($mobile-widths) {
-
+  .web {
+    padding: 50px 0;
+  }
+  
+  .web__mockup {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .web__info {
+    width: auto;
+  }
+  
+  .web__name {
+    font-size: 30px;
+    text-align: center;
+  }
 }

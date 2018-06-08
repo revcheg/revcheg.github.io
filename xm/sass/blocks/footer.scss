@@ -115,5 +115,11 @@
 }
 
 @media screen and ($mobile-widths) {
-
+  .footer__button {
+    width: 270px;
+  }
+  
+  .footer__list {
+    width: 100%;
+  }
 }

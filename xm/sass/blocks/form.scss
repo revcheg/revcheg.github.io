@@ -55,3 +55,11 @@
     border: 1px solid $title;
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .form__name {
+    font-size: 30px;
+  }
+}

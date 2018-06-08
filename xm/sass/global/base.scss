@@ -28,8 +28,4 @@ body {
   }
 }
 
-@media screen and ($mobile-widths) {
-  .container {
-    background: aqua;
-  }
-}
+@media screen and ($mobile-widths) {}

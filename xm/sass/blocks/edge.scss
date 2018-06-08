@@ -56,5 +56,21 @@
 }
 
 @media screen and ($mobile-widths) {
+  .edge {
+    padding: 50px 0;
+  }
   
+  .edge__flex {
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  
+  .edge__box {
+    margin: 0 0 30px 0;
+    
+    &:last-child {
+      margin: 0;
+    }
+  }
 }

@@ -139,5 +139,33 @@
 }
 
 @media screen and ($mobile-widths) {
+  .online__column {
+    padding: 50px 0;
+  }
   
+  .online__info {
+    width: auto;
+    padding: 0 15px;
+  }
+  
+  .online__name {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .online__list {
+    text-align: center;
+  }
+  
+  .online__item {
+    
+    &--1,
+    &--2,
+    &--3 {
+      
+      &::after {
+        display: none;
+      }
+    }
+  }
 }
