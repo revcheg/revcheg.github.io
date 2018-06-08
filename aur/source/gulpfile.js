@@ -30,6 +30,7 @@ gulp.task('main', function () {
     .pipe(livereload());
     
   gulp.src('js/main.js')
+    .pipe(gulp.dest('../dist/js'))
     .pipe(jsmin())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('../dist/js'));
