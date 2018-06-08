@@ -1,16 +1,4 @@
 (function() {
-
-  // глобальная переменная нашего скрипта
-  // var message = "Привет";
-
-  // функция для вывода этой переменной
-  // function showMessage() {
-    // alert( message );
-  // }
-
-  // выводим сообщение
-  // showMessage();
-
   var main = document.querySelector('.main');
   var closeBtn = document.querySelector('.popup__close');
   var newsLink = document.querySelector('.nav__item--news');
