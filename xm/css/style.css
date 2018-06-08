@@ -83,6 +83,7 @@ body {
   background: #35355c url("../img/title-bg.jpg") no-repeat center/cover; }
 
 .title__subname {
+  position: relative;
   display: block;
   margin: 150px 0 15px 0;
   color: #f4f5f9;
