@@ -24,6 +24,10 @@ body {
   .container {
     width: 100%; } }
 
+@media screen and (max-width: 768px) {
+  .container {
+    background: aqua; } }
+
 @font-face {
   font-family: 'SF UI Display';
   src: local("SF UI Display Thin"), local("SFUIDisplay-Thin"), url("../fonts/SFUIDisplay-Thin.woff2") format("woff2");
@@ -120,6 +124,12 @@ body {
   margin: 0 auto;
   padding: 0;
   list-style: none; }
+
+@media screen and (max-width: 1200px) {
+  .title__subname {
+    margin: 80px 0 15px 0; }
+  .title__name {
+    font-size: 45px; } }
 
 .nav__list {
   display: -webkit-box;
@@ -222,6 +232,13 @@ body {
   .edge__box--4 {
     background: url("../img/edge-4.svg") no-repeat top/90px; }
 
+@media screen and (max-width: 1200px) {
+  .edge__flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; } }
+
 .online {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,6 +314,23 @@ body {
       background: rgba(255, 255, 255, 0.7) url("../img/online-3.svg") no-repeat center/40px; }
   .online__item:last-child {
     margin: 0; }
+
+@media screen and (max-width: 1200px) {
+  .online {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .online__column {
+    width: auto; }
+  .online__info {
+    margin: auto; }
+  .online__item--1::after {
+    right: 0px; }
+  .online__item--2::after {
+    right: -0px; }
+  .online__item--3::after {
+    right: 0px; } }
 
 .form {
   display: -webkit-box;
@@ -380,7 +414,7 @@ body {
 .web__mockup {
   width: 570px;
   height: 618px;
-  background: url("../img/web-mockup.png") no-repeat center/cover; }
+  background: url("../img/web-mockup.png") no-repeat center/contain; }
 
 .web__info {
   width: 570px; }
@@ -405,6 +439,16 @@ body {
 
 .web__button {
   margin: auto; }
+
+@media screen and (max-width: 1200px) {
+  .web__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .web__mockup {
+    height: 500px;
+    margin: 0 0 30px 0; } }
 
 .footer {
   padding: 20px 0 0 0;
@@ -494,3 +538,15 @@ body {
   color: #f4f5f9;
   font-size: 14px;
   font-weight: 300; }
+
+@media screen and (max-width: 1200px) {
+  .footer__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .footer__info {
+    width: auto;
+    margin: 40px 0 0 0; }
+  .footer__copyright {
+    margin: 30px 0 0 0; } }

@@ -99,3 +99,45 @@
     margin: 0;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .online {
+    flex-direction: column;
+  }
+  
+  .online__column {
+    width: auto;
+  }
+  
+  .online__info {
+    margin: auto;
+  }
+  
+  .online__item {
+    
+    &--1 {
+      
+      &::after {
+        right: 0px;
+      }
+    }
+    
+    &--2 {
+      
+      &::after {
+        right: -0px;
+      }
+    }
+    
+    &--3 {
+      
+      &::after {
+        right: 0px;
+      }
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  
+}
