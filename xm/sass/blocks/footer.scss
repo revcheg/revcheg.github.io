@@ -1,5 +1,5 @@
 .footer {
-  padding: 20px 0;
+  padding: 20px 0 0 0;
   background: #0b0d17;
 }
 
@@ -21,6 +21,10 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 0 40px 0;
+  
+  &--social {
+    margin: 0;
+  }
 }
 
 .footer__info {
@@ -50,6 +54,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 370px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -64,4 +69,32 @@
     height: 14px;
     background: url('../img/facebook.svg') no-repeat center / cover;
   }
+  
+  &--gp {
+    display: block;
+    width: 21px;
+    height: 14px;
+    background: url('../img/google-plus.svg') no-repeat center / cover;
+  }
+  
+  &--tw {
+    display: block;
+    width: 17px;
+    height: 14px;
+    background: url('../img/twitter.svg') no-repeat center / cover;
+  }
+  
+  &--em {
+    display: block;
+    width: 17px;
+    height: 14px;
+    background: url('../img/email.svg') no-repeat center / cover;
+  }
+}
+
+.footer__copyright {
+  margin: 0;
+  color: $text;
+  font-size: 14px;
+  font-weight: 300;
 }

@@ -11,7 +11,7 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item  nav__item--logo"><a href="index.html">Aur<span>Parkhause</span></a></li>
-        <li class="nav__item"><a href="#">Про проект</a></li>
+        <li class="nav__item  nav__item--active"><a href="#">Про проект</a></li>
         <li class="nav__item"><a href="#">Переваги</a></li>
         <li class="nav__item"><a href="#">Планування</a></li>
         <li class="nav__item"><a href="#">Розташування</a></li>
@@ -28,7 +28,31 @@
         <li class="nav__item  nav__item--address"><a href="#">вул. Хрещатик, 1</a></li>
       </ul>
     </nav>
-    <div class="main__column"></div>
+    <div class="main__column">
+      <header class="header">
+        <ul class="header__slider">
+          <li><button class="header__slider-control  header__slider-control--prev" type="button" aria-label="Слайдер назад"></button></li>
+          <li><span>1</span></li>
+          <li>/</li>
+          <li>3</li>
+          <li><button class="header__slider-control  header__slider-control--next" type="button" aria-label="Слайдер вперед"></button></li>
+        </ul>
+        <a class="header__pdf" href="img/example.pdf">Завантажити pdf<br>презентацію</a>
+        <ul class="header__theme">
+          <li>день/ніч</li>
+          <li>
+            <button class="header__theme-control  header__theme-control--light  header__theme-control--active" type="button" aria-label="Светлая тема"></button>
+            <button class="header__theme-control  header__theme-control--dark" type="button" aria-label="Черная тема"></button>
+          </li>
+        </ul>
+      </header>
+      <div class="main__slider">
+        <div class="main__box">
+          <h1 class="main__name">Aurocraft Park House - Життя змінюється на краще</h1>
+          <p class="main__text">Життя змінюється на краще, коли дім починається із затишного лобі, коли в будинку є власна зручна інфраструктура, коли діти зростають та навчаються в межах закритої території комплексу.</p>
+        </div>
+      </div>
+    </div>
   </main>
 </body>
 </html>
