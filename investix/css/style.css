@@ -2451,9 +2451,10 @@ body {
   font-weight: normal; }
 
 .table__main {
-  width: 100%; }
+  width: 100%;
+  margin: 0 0 60px 0; }
   .table__main th {
-    width: 145px;
+    width: 140px;
     padding: 0;
     text-align: left; }
 
@@ -2505,4 +2506,98 @@ body {
     background: #8731e8; }
   .table__footer--black {
     color: #000;
-    background: #000; }
+    background: #000000; }
+
+.table__row td {
+  padding: 15px 10px;
+  font-size: 14px;
+  font-weight: normal; }
+  .table__row td b {
+    font-size: 20px;
+    font-weight: 700; }
+  .table__row td p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400; }
+  .table__row td:nth-child(1) {
+    width: 210px;
+    background: #ebebeb; }
+  .table__row td:nth-child(2) {
+    color: #fff;
+    font-weight: 400;
+    background: #66c178; }
+  .table__row td:nth-child(3) {
+    color: #fff;
+    font-weight: 400;
+    background: #ffa453; }
+  .table__row td:nth-child(4) {
+    color: #fff;
+    font-weight: 400;
+    background: #1d8af3; }
+  .table__row td:nth-child(5) {
+    color: #fff;
+    font-weight: 400;
+    background: #f4ce34; }
+  .table__row td:nth-child(6) {
+    color: #fff;
+    font-weight: 400;
+    background: #8731e8; }
+  .table__row td:nth-child(7) {
+    color: #fff;
+    background: #000000; }
+    .table__row td:nth-child(7) b {
+      font-size: 14px; }
+
+.table__check img {
+  display: block;
+  width: 20px;
+  height: 16px;
+  margin: auto; }
+
+.table__button {
+  display: block;
+  margin: 10px 0 0 0;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  background: #3d964e; }
+
+.table__why {
+  padding: 45px 0;
+  background: #fafafa; }
+  .table__why h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600; }
+  .table__why p {
+    font-weight: normal; }
+  .table__why b {
+    font-weight: 700; }
+
+.table__how {
+  padding: 60px 0; }
+  .table__how h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600; }
+  .table__how p {
+    font-weight: normal; }
+    .table__how p a {
+      color: #0060ff;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 1px solid #0060ff; }
+
+@media screen and (max-width: 1200px) {
+  .table__main {
+    display: block;
+    overflow: scroll; } }
+
+@media screen and (max-width: 768px) {
+  .table__name {
+    font-size: 20px;
+    text-align: center; } }
