@@ -98,6 +98,8 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+  .header__link {
+    margin: 0 0 30px 0; }
   .header__logo {
     width: 130px;
     margin: 0 0 30px 0; }
@@ -111,6 +113,7 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row; }
+  .header__link,
   .header__logo {
     margin: 0; }
   .header__toggle {
@@ -262,7 +265,6 @@ body {
   .nav {
     position: absolute;
     top: 57px;
-    width: 100%;
     border-top: 1px solid #0060ff;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -276,6 +278,9 @@ body {
       clip: auto;
       opacity: 1; }
   .nav__list {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;

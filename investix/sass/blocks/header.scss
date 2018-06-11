@@ -26,6 +26,10 @@
     flex-direction: column;
   }
   
+  .header__link {
+    margin: 0 0 30px 0;
+  }
+  
   .header__logo {
     width: 130px;
     margin: 0 0 30px 0;
@@ -42,6 +46,7 @@
     flex-direction: row;
   }
   
+  .header__link,
   .header__logo {
     margin: 0;
   }
