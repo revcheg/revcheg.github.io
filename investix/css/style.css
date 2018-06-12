@@ -2624,3 +2624,56 @@ body {
   .table__name {
     font-size: 20px;
     text-align: center; } }
+
+.badge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.badge__box {
+  -ms-flex-preferred-size: 10%;
+  flex-basis: 10%;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin: 1px;
+  padding: 30px 30px 30px 130px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(-123deg, #c3fef2 0%, #c9fdf9 26%, #cefbff 100%); }
+  .badge__box p {
+    padding: 20px 0 20px 100px; }
+  .badge__box--1 p {
+    background: url("../img/badge-1.svg") no-repeat left/70px; }
+  .badge__box--2 p {
+    background: url("../img/badge-2.svg") no-repeat left/70px; }
+  .badge__box--3 p {
+    background: url("../img/badge-3.svg") no-repeat left/70px; }
+  .badge__box--4 p {
+    background: url("../img/badge-4.svg") no-repeat left/70px; }
+  .badge__box--5 p {
+    background: url("../img/badge-5.svg") no-repeat left/70px; }
+  .badge__box--6 p {
+    background: url("../img/badge-6.svg") no-repeat left/70px; }
+  .badge__box:hover {
+    background: linear-gradient(66deg, #2677fe 0%, #4ed2de 100%); }
+
+.text {
+  padding: 40px 0; }
+
+.text__small {
+  font-size: 16px;
+  font-weight: 300; }
+
+.text__title {
+  margin: 30px 0 0 0;
+  font-size: 30px;
+  font-weight: 600; }
+
+.text__list {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px; }
