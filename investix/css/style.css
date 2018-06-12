@@ -1695,6 +1695,9 @@ body {
 .inner__title {
   padding: 42px 0;
   background: linear-gradient(66deg, #0060ff 0%, #4ed2de 100%); }
+  .inner__title--img1 {
+    padding: 180px 0 42px 0;
+    background: url("../img/title1.jpg") no-repeat center/cover; }
 
 .inner__name {
   margin: 0;
@@ -2677,3 +2680,14 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 30px; }
+
+.text__banner {
+  margin: 0;
+  padding: 45px 0;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(-123deg, #c3fef2 0%, #c9fdf9 26%, #cefbff 100%); }
+  .text__banner span {
+    font-weight: 700; }

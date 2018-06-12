@@ -3,6 +3,11 @@
 .inner__title {
   padding: 42px 0;
   background: linear-gradient(66deg, rgb(0,96,255) 0%, rgb(78,210,222) 100%);
+  
+  &--img1 {
+    padding: 180px 0 42px 0;
+    background: url('../img/title1.jpg') no-repeat center / cover;
+  }
 }
 
 .inner__name {

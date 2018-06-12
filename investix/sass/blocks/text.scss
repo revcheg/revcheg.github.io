@@ -18,3 +18,17 @@
   font-weight: 300;
   line-height: 30px;
 }
+
+.text__banner {
+  margin: 0;
+  padding: 45px 0;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient( -123deg, rgb(195,254,242) 0%, rgb(201,253,249) 26%, rgb(206,251,255) 100%);
+
+  span {
+    font-weight: 700;
+  }
+}
