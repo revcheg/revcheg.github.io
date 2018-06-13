@@ -1767,6 +1767,8 @@ body {
       font-size: 30px; } }
 
 @media screen and (max-width: 768px) {
+  .inner__title--img1 {
+    padding: 42px 0; }
   .inner__name {
     font-size: 30px;
     text-align: center; }
@@ -2696,3 +2698,7 @@ body {
   background: linear-gradient(-123deg, #c3fef2 0%, #c9fdf9 26%, #cefbff 100%); }
   .text__banner span {
     font-weight: 700; }
+
+@media screen and (max-width: 768px) {
+  .text__banner {
+    font-size: 20px; } }

@@ -93,6 +93,13 @@
 }
 
 @media screen and ($mobile-widths) {
+  .inner__title {
+    
+    &--img1 {
+      padding: 42px 0;
+    }
+  }
+  
   .inner__name {
     font-size: 30px;
     text-align: center;
