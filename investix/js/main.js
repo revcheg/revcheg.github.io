@@ -62,7 +62,7 @@ var select = document.querySelector('.nav__select');
         window.location = 'https://revcheg.github.io/investix/en' + location;
         break;
       case 'ru':
-        window.location = 'https://revcheg.github.io/investix/ru' + location;
+        window.location = 'https://revcheg.github.io/investix/ru' + location - 2;
         break;
       default:
         window.location = 'https://revcheg.github.io/investix/en' + location;
