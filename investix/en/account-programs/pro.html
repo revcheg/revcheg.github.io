@@ -3,52 +3,51 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Investix</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <title>Pro Program - Investix</title>
+  <link rel="stylesheet" href="../../css/style.min.css">
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="194x194" href="img/favicon/favicon-194x194.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#cd2122">
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="msapplication-config" content="browserconfig.xml">
-  <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+  <link rel="icon" type="image/svg+xml" href="../../img/favicon/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="194x194" href="../../img/favicon/favicon-194x194.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../../img/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="../../img/favicon/safari-pinned-tab.svg" color="#cd2122">
+  <link rel="manifest" href="../../site.webmanifest">
+  <meta name="msapplication-config" content="../../browserconfig.xml">
+  <meta name="msapplication-TileImage" content="../../img/favicon/mstile-144x144.png">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
-  <!-- Slick -->
-  <link rel="stylesheet" href="js/slick/slick.css"/>
-  <link rel="stylesheet" href="js/slick/slick-theme.css"/>
 </head>
 <body>
   <header class="header">
     <div class="container">
       <div class="header__flex">
-        <img class="header__logo" src="img/logo.svg" alt="Investix">
+        <a class="header__link" href="../../index.html">
+          <img class="header__logo" src="../../img/logo.svg" alt="Investix">
+        </a>
         <button class="header__toggle  header__toggle--inactive" type="button"></button>
         <nav class="nav">
           <ul class="nav__list">
             <li>
-              <a href="en/account-programs/account.html">Account Programs</a>
+              <a class="nav__active" href="account.html">Account Programs</a>
               <ul class="nav__sublist">
-                <li><a href="en/account-programs/basic.html">Basic Program</a></li>
-                <li><a href="en/account-programs/advanced.html">Advanced Program</a></li>
-                <li><a href="en/account-programs/expert.html">Expert Program</a></li>
-                <li><a href="en/account-programs/pro.html">Pro Program</a></li>
-                <li><a href="en/account-programs/ultimate.html">Ultimate Program</a></li>
-                <li><a href="en/account-programs/crypto-master.html">Crypto Master</a></li>
+                <li><a href="basic.html">Basic Program</a></li>
+                <li><a href="advanced.html">Advanced Program</a></li>
+                <li><a href="expert.html">Expert Program</a></li>
+                <li><a class="nav__active">Pro Program</a></li>
+                <li><a href="ultimate.html">Ultimate Program</a></li>
+                <li><a href="crypto-master.html">Crypto Master</a></li>
               </ul>
             </li>
             <li>
               <a href="#">Education</a>
               <ul class="nav__sublist">
-                <li><a href="en/education/star-trader-course.html">Star Trader Course</a></li>
-                <li><a href="en/education/financial-news.html">Financial News</a></li>
+                <li><a href="../education/star-trader-course.html">Star Trader Course</a></li>
+                <li><a href="../education/financial-news.html">Financial News</a></li>
               </ul>
             </li>
-            <li><a class="nav__chat" href="en/trading-room.html">Chat Room</a></li>
+            <li><a class="nav__chat" href="../trading-room.html">Chat Room</a></li>
             <li>
               <div id="google_translate_element"></div>
               <script type="text/javascript">
@@ -70,36 +69,84 @@
       </div>
     </div>
   </header>
-  <section class="slider">
-    <div class="slider__box">
-      <div class="slider__container">
-        <div class="slider__text">
-          <h1 class="slider__title">Day Trading Education Package</h1>
-          <p class="slider__desc">Pay only for trading education and receive<br>all the trading capital you need</p>
-          <a class="button  button--small  slider__button" href="#">Get Started</a>
-        </div>
-        <div class="slider__img  slider__img--basic"></div>
+  <main class="account-programs">
+    <section class="account-programs__title">
+      <div class="container">
+        <h1 class="account-programs__name">Pro Program</h1>
       </div>
-    </div>
-    <div class="slider__box">
-      aaa
-    </div>
-  </section>
-  <section class="info">
-    <div class="container">
-      <div class="info__flex">
-        <div class="info__mockup"></div>
-        <div class="info__box">
-          <h1 class="info__title">Traders education at our<br>live trading academy</h1>
-          <p class="info__text">Enjoy extra income, and gain financial security by learning this great profession in our Day Trading Academy.</p>
-          <p class="info__text">Since 2004, Investix live day trading academy has educated more than 30,000 professional traders worldwide.</p>
-          <p class="info__text">You are welcome to select between our basic and advanced courses, or combine them in our world renowned Mentorship Program.</p>
-          <a class="button  button--small  button--green  info__button" href="#">Get Started</a>
+    </section>
+    <section class="account-programs__desc">
+      <div class="container">
+        <div class="account-programs__flex">
+          <div class="account-programs__left">
+            <h2 class="account-programs__name  account-programs__name--small">Professional Program 2018</h2>
+            <p class="account-programs__text">The $4,999 PRO Program is our premier program. It has all of the tools needed to make it as a professional trader. You receive all of the benefits of the BASIC, ADVANCED, EXPERT programs with 3 months of mentorship, plus the Top Trader Course and the ability to apply for a funded $240,000 trading account.</p>
+            <p class="account-programs__price">Price <b>$4999</b></p>
+            <small class="account-programs__guarantee">14-Day Full Money Back Guarantee!</small>
+            <a class="button  button--small  button--green  account-programs__button" href="#">Buy Now</a>
+          </div>
+          <div class="account-programs__right  account-programs__right--pro"></div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="services">
+    </section>
+    <section class="account-programs__edge  account-programs__edge--pro">
+      <div class="container">
+        <div class="account-programs__flex">
+          <div class="account-programs__box  account-programs__box--video">
+            <b>Unlimited Online Videos Lessons All Packages</b>
+          </div>
+          <div class="account-programs__box  account-programs__box--reviews">
+            <b>Daily Reviews</b>
+          </div>
+          <div class="account-programs__box  account-programs__box--weekly">
+            <b>Weekly Reviews</b>
+          </div>
+          <div class="account-programs__box  account-programs__box--room">
+            <b>1 Year Trading Room Access</b>
+          </div>
+        </div>
+        <div class="account-programs__flex">
+          <div class="account-programs__box  account-programs__box--webinar">
+            <b>1 Year Webinar Access</b>
+          </div>
+          <div class="account-programs__box  account-programs__box--demo">
+            <b>Demo Training Account</b>
+          </div>
+          <div class="account-programs__box  account-programs__box--analysis">
+            <b>Technical Analysis (Expert) + Price Action + Turtle Trading</b>
+          </div>
+          <div class="account-programs__box  account-programs__box--learn">
+            <b>Learn Advanced Trading Strategies</b>
+          </div>
+        </div>
+        <div class="account-programs__flex">
+          <div class="account-programs__box  account-programs__box--session">
+            <b>Weekly Group Mentoring Sessions</b>
+          </div>
+          <div class="account-programs__box  account-programs__box--risk">
+            <b>Risk Management Tools</b>
+          </div>
+          <div class="account-programs__box  account-programs__box--signal">
+            <b>Daily Signals</b>
+          </div>
+          <div class="account-programs__box  account-programs__box--live">
+            <b>Three Live 3-hours Online Sessions 1:1</b>
+          </div>
+        </div>
+        <div class="account-programs__flex">
+          <div class="account-programs__box  account-programs__box--pers">
+            <b>Personal Mentoring</b>
+          </div>
+          <div class="account-programs__box  account-programs__box--bonus">
+            <b><strong>Bonus:</strong> Introduction to Crypto and Cryptocurrencies</b>
+          </div>
+          <div class="account-programs__box  account-programs__box--hidden"></div>
+          <div class="account-programs__box  account-programs__box--hidden"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="services  services--account-programs">
     <div class="container">
       <h1 class="services__title">We will show you the way!</h1>
       <p class="services__subtitle">Our funded trading Account programs are designed to help you become a consistently profitable trader with the best education, but without the worry of losing your own capital.</p>
@@ -110,7 +157,7 @@
             Program
           </p>
           <a class="button  button--small  button--green  services__button" href="#">Buy Now</a>
-          <a class="button  button--small  button--transparent  services__button" href="en/account-programs/basic.html">Read More</a>
+          <a class="button  button--small  button--transparent  services__button" href="basic.html">Read More</a>
         </div>
         <div class="services__box  services__box--advanced">
           <p class="services__name">
@@ -118,7 +165,7 @@
             Program
           </p>
           <a class="button  button--small  button--green  services__button" href="#">Buy Now</a>
-          <a class="button  button--small  button--transparent  services__button" href="en/account-programs/advanced.html">Read More</a>
+          <a class="button  button--small  button--transparent  services__button" href="advanced.html">Read More</a>
         </div>
         <div class="services__box  services__box--expert">
           <p class="services__name">
@@ -126,7 +173,7 @@
             Program
           </p>
           <a class="button  button--small  button--green  services__button" href="#">Buy Now</a>
-          <a class="button  button--small  button--transparent  services__button" href="en/account-programs/expert.html">Read More</a>
+          <a class="button  button--small  button--transparent  services__button" href="expert.html">Read More</a>
         </div>
         <div class="services__box  services__box--pro">
           <p class="services__name">
@@ -134,7 +181,7 @@
             Program
           </p>
           <a class="button  button--small  button--green  services__button" href="#">Buy Now</a>
-          <a class="button  button--small  button--transparent  services__button" href="en/account-programs/pro.html">Read More</a>
+          <a class="button  button--small  button--transparent  services__button">Read More</a>
         </div>
         <div class="services__box  services__box--ultimate">
           <p class="services__name">
@@ -142,7 +189,7 @@
             Program
           </p>
           <a class="button  button--small  button--green  services__button" href="#">Buy Now</a>
-          <a class="button  button--small  button--transparent  services__button" href="en/account-programs/ultimate.html">Read More</a>
+          <a class="button  button--small  button--transparent  services__button" href="ultimate.html">Read More</a>
         </div>
       </div>
       <div class="services__flex  services__flex--second">
@@ -152,7 +199,7 @@
             Master
           </p>
           <a class="button  button--small  button--green  services__button" href="#">Buy Now</a>
-          <a class="button  button--small  button--transparent  services__button" href="en/account-programs/crypto-master.html">Read More</a>
+          <a class="button  button--small  button--transparent  services__button" href="crypto-master.html">Read More</a>
         </div>
         <div class="services__box  services__box--desc">
           <h2>Learn Trading Crypto with Investix</h2>
@@ -170,16 +217,12 @@
       </div>
     </div>
   </section>
-  <section class="live">
+  <section class="live  live--account-programs">
     <div class="container">
-      <div class="live__flex">
-        <div class="live__box">
-          <h1 class="live__title">Join our live<br>trading chat room</h1>
-          <p class="live__text">New to day trading? Looking to improve your skill set? Join us in our online Trading ChatRoom and allow Investix team to be your personal mentors. Join hundreds of traders from different countries; learn and mirror the trades of some of the world’s leading day traders.</p>
-          <a class="button  button--medium  live__button" href="#">14 Days Free Trial</a>
-          <a class="button  button--medium  button--white  live__button" href="#">Read More</a>
-        </div>
-        <div class="live__mockup"></div>
+      <div class="live__box  live__box--account-programs">
+        <h1 class="live__title">Become a Funded Account Trader</h1>
+        <p class="live__text  live__text--account-programs">Pay only for your education, and have all the trading capital you need. You will be eligible to apply for a funded account of up to $240,000 and receive up to 85% of the net profits you generate. Our Funded Trading Account programs are designed to help you become a consistently profitable trader with the best education, but without the worry of losing your own capital.</p>
+        <a class="button  button--medium  live__button" href="#">Learn More</a>
       </div>
     </div>
   </section>
@@ -470,31 +513,33 @@
   </section>
   <footer class="footer">
     <div class="container">
-      <img class="footer__logo" src="img/logo-white.svg" alt="Investix">
+      <a href="../../index.html">
+        <img class="footer__logo" src="../../img/logo-white.svg" alt="Investix">
+      </a>
       <div class="footer__flex">
         <ul class="footer__list">
           <li><b>Education</b></li>
-          <li><a href="en/education/star-trader-course.html">Star Trader Course</a></li>
-          <li><a href="en/education/financial-news.html">Financial News</a></li>
+          <li><a href="../education/star-trader-course.html">Star Trader Course</a></li>
+          <li><a href="../education/financial-news.html">Financial News</a></li>
         </ul>
         <ul class="footer__list">
           <li><b>Funded Accounts</b></li>
-          <li><a href="en/account-programs/basic.html">Basic Program</a></li>
-          <li><a href="en/account-programs/advanced.html">Advanced Program</a></li>
-          <li><a href="en/account-programs/expert.html">Expert Program</a></li>
-          <li><a href="en/account-programs/pro.html">Pro Program</a></li>
-          <li><a href="en/account-programs/ultimate.html">Ultimate Program</a></li>
-          <li><a href="en/account-programs/crypto-master.html">Crypto Master</a></li>
+          <li><a href="basic.html">Basic Program</a></li>
+          <li><a href="advanced.html">Advanced Program</a></li>
+          <li><a href="expert.html">Expert Program</a></li>
+          <li><a class="footer__active">Pro Program</a></li>
+          <li><a href="ultimate.html">Ultimate Program</a></li>
+          <li><a href="crypto-master.html">Crypto Master</a></li>
         </ul>
         <ul class="footer__list">
           <li><b>About</b></li>
-          <li><a href="en/about/terms-and-conditions.html">Terms and Conditions</a></li>
-          <li><a href="en/about/privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="en/about/contact-us.html">Contact Us</a></li>
+          <li><a href="../about/terms-and-conditions.html">Terms and Conditions</a></li>
+          <li><a href="../about/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../about/contact-us.html">Contact Us</a></li>
         </ul>
         <ul class="footer__list">
           <li><b>Trading Chat Room</b></li>
-          <li><a href="en/trading-room.html">Live Trading Chat Room</a></li>
+          <li><a href="../trading-room.html">Live Trading Chat Room</a></li>
         </ul>
         <ul class="footer__list">
           <li><b>Contact information</b></li>
@@ -517,10 +562,8 @@
       </div>
     </div>
   </footer>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-plugins.js"></script>
-  <script src="js/slick/slick.min.js"></script>
-  <script src="js/slider.js"></script>
-  <script src="js/main.min.js" async></script>
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/jquery-plugins.js"></script>
+  <script src="../../js/main.min.js" async></script>
 </body>
 </html>
