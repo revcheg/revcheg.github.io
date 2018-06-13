@@ -36,19 +36,36 @@ var select = document.querySelector('.nav__select');
   // });
   
   // Pathname
+  // select.addEventListener('change', function () {
+  //   var selectValue = select.value;
+  //   var location = window.location.pathname;
+  // 
+  //   switch (selectValue) {
+  //     case 'en':
+  //       window.location = 'https://investix.com/en' + location;
+  //       break;
+  //     case 'ru':
+  //       window.location = 'https://investix.com/ru' + location;
+  //       break;
+  //     default:
+  //       window.location = 'https://investix.com/en' + location;
+  //   }
+  // });
+  
+  // Temp
   select.addEventListener('change', function () {
     var selectValue = select.value;
     var location = window.location.pathname;
     
     switch (selectValue) {
       case 'en':
-        window.location = 'https://investix.com/en' + location;
+        window.location = 'https://revcheg.github.io/investix/en' + location;
         break;
       case 'ru':
-        window.location = 'https://investix.com/ru' + location;
+        window.location = 'https://revcheg.github.io/investix/ru' + location;
         break;
       default:
-        window.location = 'https://investix.com/en' + location;
+        window.location = 'https://revcheg.github.io/investix/en' + location;
     }
   });
 })();
