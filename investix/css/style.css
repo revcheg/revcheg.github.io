@@ -259,7 +259,12 @@ body {
 
 @media screen and (max-width: 1200px) {
   .nav {
-    width: 100%; } }
+    width: 100%; }
+  .nav__list {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .nav__sublist {
+    top: 36px; } }
 
 @media screen and (max-width: 768px) {
   .nav {
