@@ -1709,6 +1709,9 @@ body {
   .inner__title--img3 {
     padding: 180px 0 42px 0;
     background: url("../img/title3.jpg") no-repeat center/cover; }
+  .inner__title--img4 {
+    padding: 180px 0 42px 0;
+    background: url("../img/title4.jpg") no-repeat center/cover; }
 
 .inner__name {
   margin: 0;
@@ -2722,6 +2725,17 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  .text__flex--start {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+
+.text__address {
+  width: 500px;
+  font-weight: 700; }
+
+.text__map {
+  width: 100%; }
 
 .text__box {
   position: relative;
@@ -2874,7 +2888,9 @@ body {
   .text__title {
     text-align: center; }
     .text__title--medium {
-      font-size: 40px; } }
+      font-size: 40px; }
+  .text__address {
+    width: auto; } }
 
 .add {
   padding: 70px 0; }
