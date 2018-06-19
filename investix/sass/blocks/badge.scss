@@ -59,7 +59,78 @@
     }
   }
   
+  &--7 {
+    
+    p {
+      background: url('../img/badge-7.svg') no-repeat left / 70px;
+    }
+  }
+  
+  &--8 {
+    
+    p {
+      background: url('../img/badge-8.svg') no-repeat left / 70px;
+    }
+  }
+  
+  &--9 {
+    
+    p {
+      background: url('../img/badge-9.svg') no-repeat left / 70px;
+    }
+  }
+  
+  &--10 {
+    
+    p {
+      background: url('../img/badge-10.svg') no-repeat left / 70px;
+    }
+  }
+  
+  &--11 {
+    
+    p {
+      background: url('../img/badge-11.svg') no-repeat left / 70px;
+    }
+  }
+  
+  &--12 {
+    
+    p {
+      background: url('../img/badge-12.svg') no-repeat left / 70px;
+    }
+  }
+  
   &:hover {
     background: linear-gradient( 66deg, rgb(38,119,254) 0%, rgb(78,210,222) 100%);
+  }
+  
+  &--gray {
+    background: #f9f9f9;
+    
+    &:hover {
+      background: #ccfbfd;
+    }
+  }
+}
+
+.badge__button {
+  margin: 50px auto 90px auto;
+  box-shadow: 0px 4px 4px 0px rgba(18, 24, 61, 0.04);
+}
+
+@media screen and ($tablet-widths) {
+  
+}
+
+@media screen and ($mobile-widths) {
+  .badge__box {
+    // width: 100px;
+    padding: 20px;
+    font-size: 13px;
+  }
+  
+  .badge__button {
+    width: 270px;
   }
 }

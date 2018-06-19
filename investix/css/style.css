@@ -1712,6 +1712,9 @@ body {
   .inner__title--img4 {
     padding: 180px 0 42px 0;
     background: url("../img/title4.jpg") no-repeat center/cover; }
+  .inner__title--img5 {
+    padding: 180px 0 42px 0;
+    background: url("../img/title5.jpg") no-repeat center/cover; }
 
 .inner__name {
   margin: 0;
@@ -2677,8 +2680,36 @@ body {
     background: url("../img/badge-5.svg") no-repeat left/70px; }
   .badge__box--6 p {
     background: url("../img/badge-6.svg") no-repeat left/70px; }
+  .badge__box--7 p {
+    background: url("../img/badge-7.svg") no-repeat left/70px; }
+  .badge__box--8 p {
+    background: url("../img/badge-8.svg") no-repeat left/70px; }
+  .badge__box--9 p {
+    background: url("../img/badge-9.svg") no-repeat left/70px; }
+  .badge__box--10 p {
+    background: url("../img/badge-10.svg") no-repeat left/70px; }
+  .badge__box--11 p {
+    background: url("../img/badge-11.svg") no-repeat left/70px; }
+  .badge__box--12 p {
+    background: url("../img/badge-12.svg") no-repeat left/70px; }
   .badge__box:hover {
     background: linear-gradient(66deg, #2677fe 0%, #4ed2de 100%); }
+  .badge__box--gray {
+    background: #f9f9f9; }
+    .badge__box--gray:hover {
+      background: #ccfbfd; }
+
+.badge__button {
+  margin: 50px auto 90px auto;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(18, 24, 61, 0.04);
+  box-shadow: 0px 4px 4px 0px rgba(18, 24, 61, 0.04); }
+
+@media screen and (max-width: 768px) {
+  .badge__box {
+    padding: 20px;
+    font-size: 13px; }
+  .badge__button {
+    width: 270px; } }
 
 .text {
   padding: 40px 0; }
