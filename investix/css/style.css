@@ -1706,6 +1706,9 @@ body {
   .inner__title--img2 {
     padding: 180px 0 42px 0;
     background: url("../img/title2.jpg") no-repeat center/cover; }
+  .inner__title--img3 {
+    padding: 180px 0 42px 0;
+    background: url("../img/title3.jpg") no-repeat center/cover; }
 
 .inner__name {
   margin: 0;
@@ -2681,6 +2684,10 @@ body {
   font-size: 16px;
   font-weight: 300; }
 
+.text__medium {
+  font-size: 20px;
+  font-weight: 700; }
+
 .text__title {
   margin: 30px 0 0 0;
   font-size: 30px;
@@ -2693,6 +2700,9 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 30px; }
+  .text__list--about {
+    font-weight: 700;
+    list-style: url("../img/list-li.svg"); }
 
 .text__banner {
   margin: 0;
@@ -2825,6 +2835,19 @@ body {
       line-height: 60px;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%); }
+
+.text__human {
+  width: 170px;
+  margin: 0 0 60px 0; }
+  .text__human img {
+    margin: 25px 0 10px 0; }
+  .text__human b {
+    font-size: 14px;
+    font-weight: 800; }
+  .text__human p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300; }
 
 @media screen and (max-width: 1200px) {
   .text__flex {

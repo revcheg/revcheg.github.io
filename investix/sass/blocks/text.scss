@@ -7,6 +7,11 @@
   font-weight: 300;
 }
 
+.text__medium {
+  font-size: 20px;
+  font-weight: 700;
+}
+
 .text__title {
   margin: 30px 0 0 0;
   font-size: 30px;
@@ -22,6 +27,11 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 30px;
+  
+  &--about {
+    font-weight: 700;
+    list-style: url('../img/list-li.svg');
+  }
 }
 
 .text__banner {
@@ -158,6 +168,26 @@
       line-height: 60px;
       transform: translateX(-50%);  
     }
+  }
+}
+
+.text__human {
+  width: 170px;
+  margin: 0 0 60px 0;
+  
+  img {
+    margin: 25px 0 10px 0;
+  }
+  
+  b {
+    font-size: 14px;
+    font-weight: 800;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
   }
 }
 
