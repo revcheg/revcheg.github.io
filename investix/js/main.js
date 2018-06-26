@@ -20,35 +20,35 @@
 (function () {
 var select = document.querySelector('.nav__select');
 
-  // select.addEventListener('change', function () {
-  //   var selectValue = select.value;
-  // 
-  //   switch (selectValue) {
-  //     case 'en':
-  //       window.location = 'https://investix.com/index.html';
-  //       break;
-  //     case 'ru':
-  //       window.location = 'https://investix.com/ru/index.html';
-  //       break;
-  //     default:
-  //       window.location = 'https://investix.com/index.html';
-  //   }
-  // });
-  
-  // Pathname
   select.addEventListener('change', function () {
     var selectValue = select.value;
-    var location = window.location.pathname.substr(3);
   
     switch (selectValue) {
       case 'en':
-        window.location = 'https://investix.com/en' + location;
+        window.location = 'https://investix.com/index.html';
         break;
       case 'ru':
-        window.location = 'https://investix.com/ru' + location;
+        window.location = 'https://investix.com/ru/index.html';
         break;
       default:
-        window.location = 'https://investix.com/en' + location;
+        window.location = 'https://investix.com/index.html';
     }
   });
+  
+  // Pathname
+  // select.addEventListener('change', function () {
+  //   var selectValue = select.value;
+  //   var location = window.location.pathname.substr(3);
+  // 
+  //   switch (selectValue) {
+  //     case 'en':
+  //       window.location = 'https://investix.com/en' + location;
+  //       break;
+  //     case 'ru':
+  //       window.location = 'https://investix.com/ru' + location;
+  //       break;
+  //     default:
+  //       window.location = 'https://investix.com/en' + location;
+  //   }
+  // });
 })();

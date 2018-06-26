@@ -27,9 +27,9 @@
           </a>
           <ul class="sub-nav">
               <li>
-                <a class="sub__title">Accounts</a>
+                <a class="sub__title  lang-accounts">Accounts</a>
                 <ul class="sub-nav__list">
-                    <li><a>Trade with<br>MultiplyMarket</a></li>
+                    <li><a class="lang-trade-with-mm">Trade with<br>MultiplyMarket</a></li>
                     <li><a href="account-types.html">Account types</a></li>
                     <li><a href="segregated.html">Segregated account</a></li>
                     <li><a href="https://clients.multiplymarket.com/register">Open live account</a></li>
@@ -58,56 +58,60 @@
             <a class="button" href="https://clients.multiplymarket.com/register">Open live account</a>
             <a class="button  button--blue" href="https://clients.multiplymarket.com/">Log In</a>
             <a class="button  button--number" href="tel:++442038290032">+442038290032</a>
+            <select class="main-nav__select" id="languageSelector">
+                <option value="EN">EN</option>
+                <option value="RU">RU</option>
+            </select>
           </div>
         </nav>
       </div>
     </header>
     <div class="container">
       <div class="title  title--down">
-        <h1>Trade with MultiplyMarket</h1>
-        <p class="title__sub">MultiplyMarket presents its users with the optimal platform for investing in Forex, Futures and Commodities.<br>We are committed to providing each and every user with the best experience possible, and always aim to provide the necessary means and resources for successful trading.</p>
-        <a class="button  button--title" href="https://clients.multiplymarket.com/register">Open account</a>
+        <h1 class="lang-trade-with-mm-name">Trade with MultiplyMarket</h1>
+        <p class="title__sub  lang-trade-with-mm-sub">MultiplyMarket presents its users with the optimal platform for investing in Forex, Futures and Commodities.<br>We are committed to providing each and every user with the best experience possible, and always aim to provide the necessary means and resources for successful trading.</p>
+        <a class="button  button--title  lang-open-account" href="https://clients.multiplymarket.com/register">Open account</a>
       </div>
     </div>
   </section>
   <section class="give">
     <div class="container">
-      <h1>MultiplyMarket gives you</h1>
+      <h1 class="lang-give-name">MultiplyMarket gives you</h1>
       <div class="give__flex">
         <div class="give__box">
           <img src="../img/calc.svg" alt="">
-          <p>Means for investing in forex, futures and indices on a wide number of international marketplaces</p>
+          <p class="lang-give-box-1">Means for investing in forex, futures and indices on a wide number of international marketplaces</p>
         </div>
         <div class="give__box">
           <img src="../img/device.svg" alt="">
-          <p>Top notch trade platform, available on all relevant devices – PC, Mac, Android and Apple phones</p>
+          <p class="lang-give-box-2">Top notch trade platform, available on all relevant devices – PC, Mac, Android and Apple phones</p>
         </div>
         <div class="give__box">
           <img src="../img/signal.svg" alt="">
-          <p>Timely reports and indicators, which let you closely follow how your trade develops with each signal, along with vital success strategies</p>
+          <p class="lang-give-box-3">Timely reports and indicators, which let you closely follow how your trade develops with each signal, along with vital success strategies</p>
         </div>
         <div class="give__box">
           <img src="../img/lawyer.svg" alt="">
-          <p>A personalized education system – massive amounts of trading information at your disposal</p>
+          <p class="lang-give-box-4">A personalized education system – massive amounts of trading information at your disposal</p>
         </div>
       </div>
       <hr>
       <div class="give__flex">
         <div class="give__box">
           <img src="../img/graph.svg" alt="">
-          <p>Superior request processing and spreads</p>
+          <p class="lang-give-box-5">Superior request processing and spreads</p>
         </div>
         <div class="give__box">
           <img src="../img/algo.svg" alt="">
-          <p>Algo Trading – a clever computer program which aids you by making trading faster and better overall</p>
+          <p class="lang-give-box-6">Algo Trading – a clever computer program which aids you by making trading faster and better overall</p>
         </div>
         <div class="give__box">
           <img src="../img/acc.svg" alt="">
-          <p>Various account choices, catering to each user`s specific circumstances. You can also change the type of your account if there is a need</p>
+          <p class="lang-give-box-7">Various account choices, catering to each user`s specific circumstances. You can also change the type of your account if there is a need</p>
         </div>
         <div class="give__box">
           <img src="../img/support.svg" alt="">
-          <p>Excellent user care and technical support, which let you focus on trading and feel safe</p>
+          <p class="lang-give-box-8">Excellent user care and technical support, which let you focus on trading and feel safe</p>
         </div>
       </div>
     </div>
@@ -168,5 +172,7 @@
       <p>© 2017 ALL right reserved MultiplyMarket</p>
     </div>
   </footer>
+  <script src="../js/language.js"></script>
+  <script src="../js/dict.js"></script>
 </body>
 </html>

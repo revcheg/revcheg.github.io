@@ -133,6 +133,7 @@
 
   .trader__left {
     width: auto;
+    margin: 20px 0 0 0;
     order: 10;
 
     b {
@@ -146,6 +147,11 @@
 
     img {
       max-width: 100%;
+    }
+    
+    a {
+      display: block;
+      margin: 0 auto 30px auto;
     }
   }
 }
