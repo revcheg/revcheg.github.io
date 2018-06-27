@@ -49,27 +49,8 @@
   align-self: center;
 
   a {
-    position: relative;
     margin-right: 10px;
     font-size: 0;
-    opacity: 0.5;
-    transition: 0.3s;
-    
-    &::before {
-      content: 'Coming Soon';
-      position: absolute;
-      bottom: -20px;
-      width: 192px;
-      color: #000;
-      font-size: 15px;
-      font-family: 'SF UI Display Regular', sans-serif;
-      text-align: center;
-      opacity: 1;
-    }
-    
-    &:hover {
-      opacity: 1;
-    }
   }
 }
 

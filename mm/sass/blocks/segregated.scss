@@ -1,6 +1,10 @@
 .segregated {
   background: #646464 url('../img/a-bg.png') no-repeat top;
   background-size: cover;
+  
+  &--islamic {
+    background: url('../img/i-bg.jpg') no-repeat top;
+  }
 }
 
 .segregated__content {

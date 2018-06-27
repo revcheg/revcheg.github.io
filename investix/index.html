@@ -21,6 +21,9 @@
   <!-- Slick -->
   <link rel="stylesheet" href="js/slick/slick.css"/>
   <link rel="stylesheet" href="js/slick/slick-theme.css"/>
+  <!-- JS Libraries -->
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/misc.js"></script>
 </head>
 <body>
   <header class="header">
@@ -49,7 +52,7 @@
               </ul>
             </li>
             <li><a class="nav__chat" href="en/trading-room.html">Chat Room</a></li>
-            <li>
+            <li class="nav__chat">
               <div id="google_translate_element"></div>
               <script type="text/javascript">
                 function googleTranslateElementInit() {
@@ -183,17 +186,17 @@
       </div>
     </div>
   </section>
-  <section class="contact">
+  <section class="contact" id="registerForm">
     <div class="container">
       <h1 class="contact__title">Like to know more?</h1>
       <p class="contact__subtitle">If you have any questions about joining our trading academy, funded accounts programs, trading room or anything else, please contact us here and one of my team members will come back to you soon.</p>
-      <form class="contact__form" action="" method="post">
+      <form class="contact__form" action="FWD.php" method="post">
         <div class="contact__flex">
-          <input class="contact__input" type="text" name="First Name" placeholder="Your Name">
-          <input class="contact__input" type="email" name="Email" placeholder="Your Email">
+          <input class="contact__input" type="text" name="first_name" placeholder="Your Name" id="first_name">
+          <input class="contact__input" type="email" name="email" placeholder="Your Email" id="email">
         </div>
         <div class="contact__flex">
-          <select class="contact__input  contact__input--select" name="Country" tabindex="0" required>
+          <select class="contact__input  contact__input--select" name="country" tabindex="0" id="country" required>
             <option hidden>Country</option>
             <option value="AF">Afghanistan</option>
           	<option value="AX">Åland Islands</option>
@@ -447,10 +450,10 @@
           </select>
           <div class="contact__double">
             <input class="contact__input  contact__input--code" type="text" name="Country Code" placeholder="+000" disabled>
-            <input class="contact__input  contact__input--phone" type="tel" name="Phone" placeholder="Phone">
+            <input class="contact__input  contact__input--phone" type="tel" name="phone" placeholder="Phone" id="phone">
           </div>
         </div>
-        <button class="button  button--big  button--green  contact__submit" type="submit" name="Submit">Submit</button>
+        <button class="button  button--big  button--green  contact__submit" type="submit" name="Submit" id="SubmitForm">Submit</button>
       </form>
     </div>
   </section>

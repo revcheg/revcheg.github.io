@@ -281,6 +281,9 @@ body {
   -ms-flex-align: center;
   align-items: center; }
 
+.main-nav__user {
+  position: relative; }
+
 .main-nav__select {
   color: #fff;
   font-size: 12px;
@@ -293,6 +296,14 @@ body {
   -moz-appearance: none;
   appearance: none;
   cursor: pointer; }
+  .main-nav__select option {
+    color: #000;
+    background: transparent; }
+
+.flagicon {
+  position: absolute;
+  top: 2px;
+  right: -20px; }
 
 @media screen and (max-width: 768px) {
   .main-nav {
@@ -613,24 +624,8 @@ body {
   -ms-flex-item-align: center;
   align-self: center; }
   .trade__link a {
-    position: relative;
     margin-right: 10px;
-    font-size: 0;
-    opacity: 0.5;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-    .trade__link a::before {
-      content: 'Coming Soon';
-      position: absolute;
-      bottom: -20px;
-      width: 192px;
-      color: #000;
-      font-size: 15px;
-      font-family: 'SF UI Display Regular', sans-serif;
-      text-align: center;
-      opacity: 1; }
-    .trade__link a:hover {
-      opacity: 1; }
+    font-size: 0; }
 
 @media screen and (max-width: 1200px) {
   .trade__flex {
@@ -1477,6 +1472,8 @@ body {
 .segregated {
   background: #646464 url("../img/a-bg.png") no-repeat top;
   background-size: cover; }
+  .segregated--islamic {
+    background: url("../img/i-bg.jpg") no-repeat top; }
 
 .segregated__content {
   padding-top: 50px;
@@ -1566,22 +1563,7 @@ body {
 .trader__right {
   font-size: 0; }
   .trader__right a {
-    position: relative;
-    margin-right: 10px;
-    opacity: 0.5;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-    .trader__right a::before {
-      content: 'Coming Soon';
-      position: absolute;
-      bottom: -25px;
-      width: 210px;
-      color: #fff;
-      font-size: 20px;
-      font-family: 'SF UI Display Regular', sans-serif;
-      text-align: center; }
-    .trader__right a:hover {
-      opacity: 1; }
+    margin-right: 10px; }
 
 .trader__list {
   padding: 30px 50px;

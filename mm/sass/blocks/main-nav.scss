@@ -5,6 +5,10 @@
   // height: 90px;
 }
 
+.main-nav__user {
+  position: relative;
+}
+
 .main-nav__select {
   color: #fff;
   font-size: 12px;
@@ -15,6 +19,17 @@
   background: transparent;
   appearance: none; 
   cursor: pointer;
+  
+  option {
+    color: #000;
+    background: transparent;
+  }
+}
+
+.flagicon {
+  position: absolute;
+  top: 2px;
+  right: -20px;
 }
 
 @media screen and ($tablet-widths) {}
