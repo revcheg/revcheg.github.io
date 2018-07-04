@@ -1,0 +1,124 @@
+.app {
+  padding: 350px 0;
+  background: url('../img/app-bg.svg') no-repeat 0 370px;
+}
+
+.app__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__mockup {
+  width: 453px;
+  height: 903px;
+  background: url('../img/app-mockup.png') no-repeat center / contain;
+}
+
+.app__content {
+  position: relative;
+  width: 760px;
+  margin: 0 0 0 auto;
+  padding: 60px 0 0 0;
+  
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: -30px;
+  //   left: -650px;
+  //   width: 453px;
+  //   height: 903px;
+  //   background: url('../img/app-mockup.png') no-repeat center / contain;
+  // }
+}
+
+.app__name {
+  display: block;
+  margin: 0 0 30px 0;
+  color: #323232;
+  font-size: 56px;
+  font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
+  text-transform: uppercase;
+}
+
+.app__text {
+  width: 570px;
+  margin: 0 0 55px 0;
+  color: #636363;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media screen and ($tablet-widths) {
+  .app {
+    padding: 150px 0 200px 0;
+  }
+  
+  // .app__wrapper {
+  //   justify-content: space-around;
+  // }
+  
+  .app__content {
+    width: 50%;
+    margin: 0 0 0 30px;
+    
+    &::before {
+      display: none;
+      // left: -200px;
+      // top: 0;
+      // width: 300px;
+      // height: 500px;
+      // transform: translateX(-50%);
+    }
+  }
+  
+  .app__name {
+    font-size: 50px;
+  }
+  
+  .app__text {
+    width: auto;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .app {
+    padding: 50px 0;
+  }
+  
+  .app__wrapper {
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .app__mockup {
+    width: 300px;
+    height: 400px;
+  }
+  
+  .app__content {
+    width: auto;
+    margin: 0;
+    // padding: 550px 0 0 0;
+    text-align: center;
+    
+    // &::before {
+    //   left: 50%;
+    //   top: 0;
+    //   width: 300px;
+    //   height: 500px;
+    //   transform: translateX(-50%);
+    // }
+  }
+  
+  .app__name {
+    font-size: 35px;
+  }
+  
+  .app__text {
+    width: auto;
+  }
+  
+  .app__button {
+    margin: auto;
+  }
+}

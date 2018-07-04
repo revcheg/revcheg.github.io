@@ -1,0 +1,389 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: 'Roboto', sans-serif; }
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@media screen and (max-width: 1460px) {
+  .container {
+    width: 100%; } }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Roboto Thin"), local("Roboto-Thin"), url("../fonts/roboto-v18-latin-100.woff2") format("woff2"), url("../fonts/roboto-v18-latin-100.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url("../fonts/roboto-v18-latin-300.woff2") format("woff2"), url("../fonts/roboto-v18-latin-300.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v18-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v18-latin-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/roboto-v18-latin-700.woff2") format("woff2"), url("../fonts/roboto-v18-latin-700.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/roboto-v18-latin-500.woff2") format("woff2"), url("../fonts/roboto-v18-latin-500.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local("Roboto Black"), local("Roboto-Black"), url("../fonts/roboto-v18-latin-900.woff2") format("woff2"), url("../fonts/roboto-v18-latin-900.woff") format("woff"); }
+
+@font-face {
+  font-family: 'ITC Avant Garde Std Md';
+  src: local("ITCAvantGardeStd-Bold"), url("../fonts/ITCAvantGardeStd-Bold.woff2") format("woff2"), url("../fonts/ITCAvantGardeStd-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std Book';
+  src: local("ITC Avant Garde Gothic Std Book"), local("ITCAvantGardeStd-Bk"), url("../fonts/ITCAvantGardeStd-Bk.woff2") format("woff2"), url("../fonts/ITCAvantGardeStd-Bk.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.header {
+  padding: 25px 0;
+  background: #212121; }
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.nav__logo {
+  color: #E0E0E0;
+  font-size: 24px;
+  font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 385px;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.nav__item {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.nav__toggle {
+  display: none;
+  font-size: 0; }
+
+@media screen and (max-width: 1460px) {
+  .nav__list {
+    width: 250px; } }
+
+@media screen and (max-width: 768px) {
+  .nav {
+    position: relative; }
+  .nav__list {
+    position: absolute;
+    top: 80px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    padding: 25px 0;
+    background: #212121;
+    line-height: 30px;
+    opacity: 0;
+    clip: rect(0, 0, 0, 0);
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .nav__list--active {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      opacity: 1;
+      clip: auto; }
+    .nav__list:last-child {
+      display: none; }
+  .nav__logo {
+    font-size: 16px; }
+  .nav__toggle {
+    display: block; } }
+
+.button {
+  display: block;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .button--small {
+    width: 200px; }
+  .button--medium {
+    width: 300px; }
+  .button--red {
+    background: -webkit-gradient(linear, left top, left bottom, from(#DD1818), to(#333333));
+    background: linear-gradient(#DD1818, #333333); }
+  .button--black {
+    background: -webkit-gradient(linear, left top, left bottom, from(#171717), to(#333333));
+    background: linear-gradient(#171717, #333333); }
+
+@media screen and (max-width: 768px) {
+  .button--medium {
+    width: 250px; } }
+
+.title {
+  background: #ccc url("../img/title-bg.jpg") no-repeat center/cover; }
+
+.title__content {
+  padding: 320px 0;
+  text-align: center; }
+
+.title__name {
+  margin: 0;
+  color: #fff;
+  font-size: 72px;
+  font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
+  text-transform: uppercase; }
+
+.title__text {
+  margin: 0 0 60px 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400; }
+
+.title__button {
+  margin: auto; }
+
+@media screen and (max-width: 768px) {
+  .title__content {
+    padding: 150px 0; }
+  .title__name {
+    font-size: 35px; } }
+
+.help {
+  padding: 170px 0; }
+
+.help__content {
+  width: 900px;
+  margin: auto;
+  padding: 150px 0 0 0;
+  background: url("../img/help-icon.svg") no-repeat top/90px;
+  text-align: center; }
+
+.help__name {
+  margin: 0 0 30px 0;
+  color: #323232;
+  font-size: 56px;
+  font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
+  text-transform: uppercase; }
+
+.help__text {
+  margin: 0 0 55px 0;
+  color: #636363;
+  font-size: 16px;
+  font-weight: 400; }
+
+.help__button {
+  margin: auto; }
+
+@media screen and (max-width: 1460px) {
+  .help__content {
+    max-width: 500px; } }
+
+@media screen and (max-width: 768px) {
+  .help {
+    padding: 50px 0; }
+  .help__content {
+    width: auto; }
+  .help__name {
+    font-size: 35px; } }
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #F5F5F5; }
+
+.steps__left,
+.steps__right {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.steps__left {
+  padding: 175px 135px 175px 0; }
+
+.steps__content {
+  width: 580px;
+  margin: 0 0 0 auto; }
+
+.steps__title {
+  margin: 0 0 30px 0;
+  color: #383836;
+  font-size: 56px;
+  font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
+  text-transform: uppercase; }
+
+.steps__number {
+  margin: 0;
+  color: #3F3F3F;
+  font-size: 36px;
+  font-family: 'ITC Avant Garde Std Md', sans-serif;
+  text-align: right; }
+
+.steps__name {
+  margin: 0;
+  color: #852626;
+  font-size: 36px;
+  font-family: 'ITC Avant Garde Std Md', sans-serif;
+  border-bottom: 1px solid #852626; }
+
+.steps__text {
+  margin: 16px 0 25px 0;
+  color: #2A2B28;
+  font-size: 16px;
+  font-weight: 400; }
+
+.steps__right {
+  background: url("../img/steps-right.jpg") no-repeat center/cover; }
+
+@media screen and (max-width: 1460px) {
+  .steps__left {
+    padding: 175px 50px; }
+  .steps__content {
+    width: auto; } }
+
+@media screen and (max-width: 768px) {
+  .steps {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .steps__left,
+  .steps__right {
+    width: auto; }
+  .steps__left {
+    padding: 50px 15px; }
+  .steps__title {
+    display: block;
+    font-size: 35px;
+    text-align: center; } }
+
+.app {
+  padding: 350px 0;
+  background: url("../img/app-bg.svg") no-repeat 0 370px; }
+
+.app__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.app__mockup {
+  width: 453px;
+  height: 903px;
+  background: url("../img/app-mockup.png") no-repeat center/contain; }
+
+.app__content {
+  position: relative;
+  width: 760px;
+  margin: 0 0 0 auto;
+  padding: 60px 0 0 0; }
+
+.app__name {
+  display: block;
+  margin: 0 0 30px 0;
+  color: #323232;
+  font-size: 56px;
+  font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
+  text-transform: uppercase; }
+
+.app__text {
+  width: 570px;
+  margin: 0 0 55px 0;
+  color: #636363;
+  font-size: 16px;
+  font-weight: 400; }
+
+@media screen and (max-width: 1460px) {
+  .app {
+    padding: 150px 0 200px 0; }
+  .app__content {
+    width: 50%;
+    margin: 0 0 0 30px; }
+    .app__content::before {
+      display: none; }
+  .app__name {
+    font-size: 50px; }
+  .app__text {
+    width: auto; } }
+
+@media screen and (max-width: 768px) {
+  .app {
+    padding: 50px 0; }
+  .app__wrapper {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .app__mockup {
+    width: 300px;
+    height: 400px; }
+  .app__content {
+    width: auto;
+    margin: 0;
+    text-align: center; }
+  .app__name {
+    font-size: 35px; }
+  .app__text {
+    width: auto; }
+  .app__button {
+    margin: auto; } }
+
+.footer {
+  padding: 25px 0;
+  background: #212121; }

@@ -1,0 +1,85 @@
+.steps {
+  display: flex;
+  background: #F5F5F5;
+}
+
+.steps__left,
+.steps__right {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.steps__left {
+  padding: 175px 135px 175px 0; 
+}
+
+.steps__content {
+  width: 580px;
+  margin: 0 0 0 auto;
+}
+
+.steps__title {
+  margin: 0 0 30px 0;
+  color: #383836;
+  font-size: 56px;
+  font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
+  text-transform: uppercase;
+}
+
+.steps__number {
+  margin: 0;
+  color: #3F3F3F;
+  font-size: 36px;
+  font-family: 'ITC Avant Garde Std Md', sans-serif;
+  text-align: right;
+}
+
+.steps__name {
+  margin: 0;
+  color: #852626;
+  font-size: 36px;
+  font-family: 'ITC Avant Garde Std Md', sans-serif;
+  border-bottom: 1px solid #852626;
+}
+
+.steps__text {
+  margin: 16px 0 25px 0;
+  color: #2A2B28;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.steps__right {
+  background: url('../img/steps-right.jpg') no-repeat center / cover;
+}
+
+@media screen and ($tablet-widths) {
+  .steps__left {
+    padding: 175px 50px;
+  }
+  
+  .steps__content {
+    width: auto;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .steps {
+    flex-direction: column;
+  }
+  
+  .steps__left,
+  .steps__right {
+    width: auto;
+  }
+  
+  .steps__left {
+    padding: 50px 15px;
+  }
+  
+  .steps__title {
+    display: block;
+    font-size: 35px;
+    text-align: center;
+  }
+}

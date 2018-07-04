@@ -1,0 +1,39 @@
+.title {
+  background: #ccc url('../img/title-bg.jpg') no-repeat center / cover;
+}
+
+.title__content {
+  padding: 320px 0;
+  text-align: center;
+}
+
+.title__name {
+  margin: 0;
+  color: #fff;
+  font-size: 72px;
+  font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
+  text-transform: uppercase;
+}
+
+.title__text {
+  margin: 0 0 60px 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.title__button {
+  margin: auto;
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .title__content {
+    padding: 150px 0;
+  }
+  
+  .title__name {
+    font-size: 35px;
+  }
+}

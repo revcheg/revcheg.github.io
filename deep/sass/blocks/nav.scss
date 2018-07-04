@@ -1,0 +1,79 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.nav__logo {
+  color: #E0E0E0;
+  font-size: 24px;
+  font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 385px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav__toggle {
+  display: none;
+  font-size: 0;
+}
+
+@media screen and ($tablet-widths) {
+  .nav__list {
+    width: 250px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .nav {
+    position: relative;
+  }
+  
+  .nav__list {
+    position: absolute;
+    top: 80px;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 25px 0;
+    background: #212121;
+    line-height: 30px;
+    opacity: 0;
+    clip: rect(0, 0, 0, 0);
+    transition: 0.3s;
+    
+    &--active {
+      display: flex;
+      opacity: 1;
+      clip: auto;
+    }
+    
+    &:last-child {
+      display: none;
+    }
+  }
+  
+  .nav__logo {
+    font-size: 16px;
+  }
+  
+  .nav__toggle {
+    display: block;
+  }
+}
