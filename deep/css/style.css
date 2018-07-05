@@ -310,7 +310,7 @@ body {
 
 .app {
   padding: 350px 0;
-  background: url("../img/app-bg.svg") no-repeat 0 370px; }
+  background: url("../img/app-bg.png") no-repeat 0 370px; }
 
 .app__wrapper {
   display: -webkit-box;
