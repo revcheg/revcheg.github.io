@@ -4,29 +4,25 @@
   justify-content: space-between; 
 }
 
-.nav__logo {
-  color: #E0E0E0;
-  font-size: 24px;
-  font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 .nav__list {
   display: flex;
   justify-content: space-between;
   width: 385px;
-  margin: 0;
+  margin: 0 0 0 -130px;
   padding: 0;
   list-style: none;
 }
 
 .nav__item {
-  color: #fff;
+  color: #252525;
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
+  
+  &--white {
+    color: #fff;
+  }
 }
 
 .nav__toggle {

@@ -63,8 +63,12 @@ body {
   font-style: normal; }
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 50%;
   padding: 25px 0;
-  background: #212121; }
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
 
 .nav {
   display: -webkit-box;
@@ -77,13 +81,6 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.nav__logo {
-  color: #E0E0E0;
-  font-size: 24px;
-  font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
-  text-decoration: none;
-  text-transform: uppercase; }
-
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,16 +89,18 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 385px;
-  margin: 0;
+  margin: 0 0 0 -130px;
   padding: 0;
   list-style: none; }
 
 .nav__item {
-  color: #fff;
+  color: #252525;
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase; }
+  .nav__item--white {
+    color: #fff; }
 
 .nav__toggle {
   display: none;
@@ -156,7 +155,7 @@ body {
   text-decoration: none;
   text-transform: uppercase; }
   .button--small {
-    width: 200px; }
+    width: 205px; }
   .button--medium {
     width: 300px; }
   .button--red {
@@ -170,11 +169,25 @@ body {
   .button--medium {
     width: 250px; } }
 
-.title {
+.title__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-shadow: 0 2px 60px #C4C4C4;
+  box-shadow: 0 2px 60px #C4C4C4; }
+
+.title__left,
+.title__right {
+  width: 50%; }
+
+.title__right {
   background: #ccc url("../img/title-bg.jpg") no-repeat center/cover; }
 
 .title__content {
-  padding: 320px 0;
+  padding: 375px 0;
   text-align: center; }
 
 .title__name {

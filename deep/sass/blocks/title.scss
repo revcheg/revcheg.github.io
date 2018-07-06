@@ -1,9 +1,22 @@
-.title {
+.title {}
+
+.title__flex {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 60px #C4C4C4;
+}
+
+.title__left,
+.title__right {
+  width: 50%;
+}
+
+.title__right {
   background: #ccc url('../img/title-bg.jpg') no-repeat center / cover;
 }
 
 .title__content {
-  padding: 320px 0;
+  padding: 375px 0;
   text-align: center;
 }
 
