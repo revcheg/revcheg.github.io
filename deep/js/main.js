@@ -21,6 +21,7 @@
   var signIn = document.querySelector('.nav__signup');
   var register = document.querySelector('.modal--register');
   var overlay = document.querySelector('.modal__overlay');
+  var login = document.querySelector('.modal__input[type=text]');
   var close = document.querySelector('.modal__close');
   
   signIn.addEventListener('click', function () {
@@ -29,6 +30,8 @@
     
     overlay.classList.remove('modal__overlay--inactive');
     overlay.classList.add('modal__overlay--active');
+    
+    login.focus();
   });
   
   close.addEventListener('click', function () {
