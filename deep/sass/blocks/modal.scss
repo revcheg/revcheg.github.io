@@ -1,5 +1,5 @@
 .modal {
-  position: absolute;
+  position: fixed;
   // top: 130px;
   left: 50%;
   display: flex;
@@ -8,7 +8,7 @@
   // box-sizing: border-box;
   box-shadow: 2px 0 60px #828282;
   transition: 0.5s;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
   z-index: 2;
   
   &--inactive {
@@ -16,7 +16,7 @@
   }
   
   &--active {
-    top: 130px;
+    top: 50%;
   }
 }
 
@@ -67,9 +67,10 @@
   color: #171A36;
   font-size: 16px;
   font-weight: 400;
-  border: 0.5px solid #0F0F0F;
+  border: 1px solid #0F0F0F;
   border-radius: 5px;
   background: #fff;
+  outline: none;
   
   &:last-of-type {
     margin: 0 0 35px 0;
@@ -80,6 +81,30 @@
     font-size: 16px;
     font-weight: 400;
   }
+  
+  &--register {
+    width: 100%;
+    box-sizing: border-box;
+    
+    &:last-of-type {
+      margin: 0 0 25px 0;
+    }
+  }
+}
+
+.modal__password {
+  position: relative;
+}
+
+.modal__show {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  width: 27px;
+  height: 16px;
+  border: none;
+  background: url('../img/eye.svg') no-repeat center / cover;
+  cursor: pointer;
 }
 
 .modal__forgot {
@@ -88,6 +113,13 @@
   font-size: 16px;
   font-weight: 400;
   text-align: center;
+}
+
+.modal__agree {
+  margin: -10px 0 45px 0;
+  color: #CBCBCB;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .modal__submit {
@@ -149,6 +181,7 @@
   background: transparent;
   opacity: 0.8;
   transition: 0.3s;
+  cursor: pointer;
   
   &--inactive {
     z-index: -1;
@@ -157,5 +190,60 @@
   &--active {
     background: #fff;
     z-index: 1;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .modal {
+    width: 95%;
+    
+    &--active {
+      position: absolute;
+      top: 130px;
+      transform: translateX(-50%);
+    }
+  }
+  
+  .modal__right {
+    padding: 55px 50px 35px 50px;
+  }
+  
+  .modal__link {
+    padding: 5px 0 5px 40px;
+    
+    &--cta {
+      padding: 0;
+    }
+  }
+  
+  .modal__cta {
+    font-size: 15px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .modal__left {
+    display: none;
+  }
+  
+  .modal__left,
+  .modal__right {
+    width: 100%;
+  }
+  
+  .modal__social {
+    margin: 0 0 50px 0;
+  }
+  
+  .modal__flex {
+    flex-wrap: wrap;
+  }
+  
+  .modal__link {
+    
+    &--facebook,
+    &--google {
+      margin: 0 0 10px 0;
+    }
   }
 }
