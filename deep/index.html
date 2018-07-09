@@ -24,7 +24,7 @@
                 <li><a class="nav__item  nav__item--white" href="#">Boys</a></li>
                 <li><a class="nav__item  nav__item--white" href="#">Blog</a></li>
               </ul>
-              <a class="button  button--small  button--red" href="#">Sign Up</a>
+              <a class="button  button--small  button--red  nav__signup" href="#">Sign Up</a>
             </nav>
           </div>
         </header>
@@ -93,6 +93,28 @@
       </nav>
     </div>
   </footer>
+  <section class="modal  modal--login  modal--inactive">
+    <div class="modal__left"></div>
+    <div class="modal__right">
+      <button class="modal__close" type="button">Close</button>
+      <form class="modal__form" action="" method="post">
+        <h3 class="modal__name">Sign in</h3>
+        <input class="modal__input" type="text" name="Email" placeholder="Email">
+        <input class="modal__input" type="password" name="Password" placeholder="Password">
+        <a class="modal__forgot" href="#">Forgot password?</a>
+        <button class="button  button--small  button--red  modal__submit" type="submit" name="Submit">Sign in</button>
+      </form>
+      <div class="modal__social">
+        <b class="modal__another">Or Sign in as user</b>
+        <div class="modal__flex">
+          <a class="modal__link  modal__link--facebook" href="#">Facebook</a>
+          <a class="modal__link  modal__link--google" href="#">Google +</a>
+        </div>
+      </div>
+      <p class="modal__cta">Don't have an account? <a class="modal__link  modal__link--cta" href="#">Join</a></p>
+    </div>
+  </section>
+  <div class="modal__overlay  modal__overlay--inactive"></div>
   <script src="js/main.min.js" async></script>
 </body>
 </html>
