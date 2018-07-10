@@ -1,2 +1,28 @@
+$black: #343a40;
+$white: #ffffff;
+$grey: #b6b7c6;
+$blue: #7880cd;
+$silver: #7d888a;
+$facebook-color: #23589B;
+$orange: #FF6900;
+$orangeHover: #FF8015;
+$label-orange: #FF6901;
+$violet: #7581D1;
+$violetHover: #7C78BB;
+$green: #00C03C;
+$low-violet: #7581D1;
+$load-color: #F6F6F6;
+$body-color: #F7F9FC;
+$btn-violet: #7880CD;
+$input-bgc: #F2F7FC;
+$input-hover: #E0E5F5;
+$input-focus: #EDF2F7;
+$input-error: #FFE5D4;
+$label-black: #474349;
+
+@mixin translate($x,$y){
+  transform: translate($x,$y);
+}
+
 $mobile-widths: "max-width: 768px";
 $tablet-widths: "max-width: 1460px";
