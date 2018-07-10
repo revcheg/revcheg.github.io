@@ -494,6 +494,141 @@ body {
 .btn.next {
   background: url("../img/slider-arrow.png") no-repeat center; }
 
+.love-stories {
+  padding: 130px 0 132px;
+  background-color: #ffffff; }
+  .love-stories h1, .love-stories h2 {
+    text-align: center; }
+  .love-stories h1 {
+    margin-top: 0;
+    margin-bottom: 13px;
+    color: #2e373e;
+    font-size: 72px;
+    font-weight: 400; }
+  .love-stories h2 {
+    position: relative;
+    padding-bottom: 30px;
+    color: #2e373e;
+    font-size: 30px;
+    font-weight: 400; }
+    .love-stories h2:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      height: 1px;
+      max-width: 148px;
+      width: 100%;
+      background-color: #7880cd; }
+  .love-stories .preview {
+    text-align: center;
+    padding: 61px 0 0; }
+    .love-stories .preview .item {
+      display: none;
+      min-height: 492px; }
+      .love-stories .preview .item ul {
+        padding: 0;
+        margin: 0 0 52px;
+        display: inline-block; }
+        .love-stories .preview .item ul li {
+          display: inline-block;
+          padding: 0 13px;
+          float: left; }
+          .love-stories .preview .item ul li img {
+            min-height: 200px;
+            height: 2vh;
+            object-fit: cover;
+            -webkit-object-fit: cover;
+            -moz-object-fit: cover;
+            -ms-object-fit: cover;
+            -o-object-fit: cover;
+            object-position: center;
+            -webkit-object-position: center;
+            -moz-object-position: center;
+            -ms-object-position: center;
+            -o-object-position: center; }
+    .love-stories .preview h3 {
+      line-height: 1.3em;
+      max-width: 1075px;
+      margin: 0 auto;
+      letter-spacing: 0;
+      color: #474148;
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 36px; }
+  .love-stories .carousel {
+    margin: 44px auto 0;
+    padding: 0;
+    min-height: 232px; }
+    .love-stories .carousel li {
+      display: inline-block;
+      text-align: center;
+      opacity: 0.5;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+      padding-top: 45px;
+      outline: none; }
+      .love-stories .carousel li img {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 23px;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease; }
+      .love-stories .carousel li h3, .love-stories .carousel li h4 {
+        opacity: 0;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        white-space: nowrap; }
+      .love-stories .carousel li h3 {
+        margin: 0;
+        color: #474148;
+        font-size: 28px;
+        font-weight: 400;
+        text-transform: uppercase; }
+      .love-stories .carousel li h4 {
+        margin: 0;
+        color: #79898b;
+        font-size: 26px;
+        font-weight: 400; }
+    .love-stories .carousel li.slick-center {
+      opacity: 1;
+      padding-top: 0; }
+      .love-stories .carousel li.slick-center img {
+        width: 156px;
+        height: 156px; }
+      .love-stories .carousel li.slick-center h3, .love-stories .carousel li.slick-center h4 {
+        opacity: 1; }
+  .love-stories .col-xs-6 {
+    position: relative; }
+  .love-stories .btn.nav {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    border: 2px #7581D1 solid;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    z-index: 1; }
+    .love-stories .btn.nav .fa {
+      color: #7581D1; }
+  .love-stories .btn.nav.prev {
+    left: 0;
+    background: url("../img/slider-arrow-blue.png") no-repeat center;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  .love-stories .btn.nav.next {
+    right: 0;
+    background: url("../img/slider-arrow-blue.png") no-repeat center; }
+
+.col-md-offset-3 {
+  position: relative;
+  width: 50%;
+  margin: auto; }
+
 .footer {
   padding: 30px 0;
   background: #7581d1; }
