@@ -32,8 +32,26 @@
 }
 
 .nav__item {
+  position: relative;
+  padding: 5px 0;
   color: #fefeff;
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    transition: all 0.3s cubic-bezier(0.6, -0.28, 0.74, 0.05); 
+    transform: translate(-50%, 0);
+  }
+  
+  &:hover::before {
+    width: 100%;
+  }
 }

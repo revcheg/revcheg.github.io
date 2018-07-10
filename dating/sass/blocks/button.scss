@@ -36,12 +36,27 @@
   }
   
   &--facebook {
+    position: relative;
     color: #23589B;
     background: #fff;
     
     &:hover {
       color: #fff;
       background: #23599b;
+    }
+    
+    &:hover::before {
+      background: url('../img/facebook-hover.svg') no-repeat center / contain;
+    }
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 11px;
+      left: 70px;
+      width: 8px;
+      height: 15px;
+      background: url('../img/facebook.svg') no-repeat center / contain;
     }
   }
 }
