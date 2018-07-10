@@ -1,0 +1,39 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 180px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav__text {
+  margin: 0;
+  color: #fefeff;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 440px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  color: #fefeff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
