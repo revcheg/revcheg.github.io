@@ -515,6 +515,25 @@ body {
   font-weight: 400;
   text-align: center; }
 
+@media screen and (max-width: 768px) {
+  .features {
+    padding: 35px 15px 70px 15px; }
+  .features__title {
+    margin: 0 0 40px 0;
+    font-size: 36px; }
+  .features__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .features__box {
+    margin: 0 0 35px 0; }
+    .features__box:last-child {
+      margin: 0; } }
+
 .how-it-work {
   position: relative;
   margin: 0 auto; }
@@ -656,6 +675,27 @@ body {
     left: 70%; }
   .control {
     left: 40%; } }
+
+@media screen and (max-width: 768px) {
+  .how-it-work .item .parallax {
+    display: none; }
+  .how-it-work__box {
+    padding: 0 15px; }
+  .how-it-work__name {
+    margin-left: 0 !important;
+    margin-bottom: 180px !important;
+    font-size: 36px !important;
+    text-align: center; }
+  .how-it-work .item .container {
+    top: 200px; }
+  .how-it-work h2 {
+    margin: 0 0 30px 0;
+    text-align: center; }
+  .how-it-work p {
+    margin: 0;
+    text-align: center; }
+  .how-it-work .slick-dots {
+    top: 300px; } }
 
 .love-stories {
   padding: 130px 0 132px;
