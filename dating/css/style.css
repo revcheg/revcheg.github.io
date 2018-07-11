@@ -60,7 +60,7 @@ body {
     position: absolute;
     top: 0;
     right: -320px;
-    min-width: 864px;
+    width: 864px;
     height: 645px;
     background: url("../img/title-mockup.png") no-repeat center/cover; }
 
@@ -71,6 +71,7 @@ body {
   font-weight: 900; }
 
 .title__text {
+  width: 300px;
   margin: 0 0 30px 0;
   color: #fff;
   font-size: 28px;
@@ -97,10 +98,36 @@ body {
     right: -680px; } }
 
 @media screen and (max-width: 768px) {
+  .title {
+    background: #7581d1 url("../img/title-bg.jpg") no-repeat -670px/cover; }
   .title__content {
-    padding: 65px 15px 320px 15px; }
+    padding: 65px 15px 320px 15px;
+    text-align: center; }
     .title__content::after {
-      right: -680px; } }
+      top: 490px;
+      right: 0px;
+      width: 420px;
+      height: 303px;
+      background: url("../img/title-mockup.png") no-repeat top/cover; }
+  .title__name {
+    font-size: 60px; }
+  .title__text {
+    width: auto;
+    font-size: 24px; }
+  .title__links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    margin: auto;
+    height: auto; }
+  .title__button {
+    width: 280px !important;
+    margin: 0 0 30px 0; }
+    .title__button:last-child {
+      margin: 0; } }
 
 .header {
   padding: 50px 0; }
@@ -240,6 +267,14 @@ body {
       height: 15px;
       background: url("../img/facebook.svg") no-repeat center/contain; }
 
+@media screen and (max-width: 768px) {
+  .button {
+    padding: 15px 0;
+    font-size: 14px; }
+    .button--facebook::before {
+      top: 15px;
+      left: 40px; } }
+
 .girl {
   padding: 140px 0 75px 0; }
 
@@ -353,6 +388,88 @@ body {
     background: url("../img/mail.svg") no-repeat center/cover;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease; }
+
+.girl__links {
+  display: none; }
+
+@media screen and (max-width: 768px) {
+  .girl {
+    padding: 100px 15px 35px 15px; }
+  .girl__title {
+    margin: 0 0 30px 0;
+    font-size: 36px; }
+  .girl__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+  .girl__box {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: auto;
+    margin: 0 0 20px 0; }
+    .girl__box:last-child {
+      margin: 0; }
+  .girl__link {
+    width: 50%; }
+  .girl__photo {
+    height: 100%; }
+  .girl__status {
+    position: absolute;
+    left: 50%;
+    margin: 0;
+    font-size: 14px;
+    border-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .girl__desc {
+    width: 50%; }
+  .girl__name {
+    padding: 50px 0 0 0;
+    font-size: 28px; }
+  .girl__country {
+    margin: 0;
+    padding: 0 0 50px 0;
+    font-size: 24px; }
+  .girl__contact {
+    display: none; }
+  .girl__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-top: 1px solid #deebf1; }
+  .girl__control {
+    width: 50%;
+    padding: 33.5px 0;
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .girl__control--gift {
+      border-right: 1px solid #deebf1;
+      background: url("../img/girl-gift.png") no-repeat center; }
+    .girl__control--favorite {
+      background: url("../img/girl-favorite.png") no-repeat center; }
+    .girl__control--message {
+      border-top: 1px solid #deebf1;
+      border-right: 1px solid #deebf1;
+      background: url("../img/girl-message.png") no-repeat center; }
+    .girl__control--chat {
+      border-top: 1px solid #deebf1;
+      background: url("../img/girl-chat.png") no-repeat center; } }
 
 .features {
   padding: 75px 0 90px 0; }
