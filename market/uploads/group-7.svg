@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="132px" height="132px" viewBox="0 0 132 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>D51475D4-562F-4885-AA16-1CE389D03471</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-67.6%" y="-54.1%" width="235.1%" height="235.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.203921569   0 0 0 0 0.294117647   0 0 0 0 0.48627451  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Market_makers_desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main_1920" transform="translate(-583.000000, -2381.000000)">
+            <g id="Group-8" transform="translate(0.000000, 2176.000000)">
+                <g id="Group-7" filter="url(#filter-1)" transform="translate(612.000000, 224.000000)">
+                    <ellipse id="Oval" fill="#FFFFFF" cx="36.831368" cy="37" rx="36.831368" ry="37"></ellipse>
+                    <path d="M42.1507171,24.5010962 L54.3477422,49.0068342 C54.5938297,49.5012626 54.3925096,50.1015693 53.8980812,50.3476567 C53.7596512,50.4165563 53.6071291,50.452415 53.4525005,50.452415 L29.0584503,50.452415 C28.5061655,50.452415 28.0584503,50.0046997 28.0584503,49.452415 C28.0584503,49.2977863 28.094309,49.1452642 28.1632086,49.0068342 L40.3602336,24.5010962 C40.6063211,24.0066678 41.2066278,23.8053477 41.7010562,24.0514352 C41.8958777,24.148402 42.0537503,24.3062746 42.1507171,24.5010962 Z" id="Triangle" fill="#0082FF" transform="translate(41.255585, 37.196830) rotate(90.000000) translate(-41.255585, -37.196830) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
