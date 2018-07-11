@@ -158,3 +158,17 @@
   width: 50%;
   margin: auto;
 }
+
+@media screen and ($tablet-widths) {
+  .love-stories .preview .item ul li img {
+    width: 200px;
+  }
+  
+  .col-md-offset-3 {
+    width: auto;
+  }
+}
+
+@media screen and ($mobile-widths) {
+
+}

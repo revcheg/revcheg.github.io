@@ -41,3 +41,23 @@
   width: 320px;
   height: 110px;
 }
+
+@media screen and ($tablet-widths) {
+  .title__content {
+    
+    &::after {
+      right: -680px;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .title__content {
+    padding: 65px 15px 320px 15px;
+    
+    &::after {
+      
+      right: -680px;
+    }
+  }
+}

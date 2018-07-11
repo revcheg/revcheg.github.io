@@ -17,4 +17,8 @@ body {
   }
 }
 
-@media screen and ($mobile-widths) {}
+@media screen and ($mobile-widths) {
+  .container {
+    padding: 0;
+  }
+}

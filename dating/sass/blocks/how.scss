@@ -42,7 +42,6 @@
       overflow: hidden;
       transition: opacity 0.1s ease;
     }
-    
   }
   
   .slick-dots {
@@ -124,13 +123,14 @@
     }
 }
 
-.control{
+.control {
   position: absolute;
   top: 49.5%;
   left: 28.8%;
   transform: translate(-50%, -50%);
   z-index: 1;
 }
+
 .btn.nav{
   width: 32px;
   height: 32px;
@@ -158,4 +158,24 @@
 
 .btn.next {
   background: url('../img/slider-arrow.png') no-repeat center;
+}
+
+@media screen and ($tablet-widths) {
+  .how-it-work {
+    
+    .item {
+      
+      .parallax {
+        left: 70%;
+      }
+    }
+  }
+  
+  .control {
+    left: 40%;
+  }
+}
+
+@media screen and ($mobile-widths) {
+
 }

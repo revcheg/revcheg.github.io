@@ -55,3 +55,28 @@
     width: 100%;
   }
 }
+
+.nav__toggle {
+  display: none;
+  width: 24px;
+  height: 17px;
+  font-size: 0;
+  border: none;
+  background: url('../img/nav-toggle.png') no-repeat center / cover;
+}
+
+@media screen and ($tablet-widths) {
+  .nav__list {
+    display: none;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .nav__text {
+    color: #626ca8;
+  }
+  
+  .nav__toggle {
+    display: block;
+  }
+}

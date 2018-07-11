@@ -101,3 +101,17 @@
   font-weight: 400;
   text-align: center;
 }
+
+@media screen and ($tablet-widths) {
+  .footer__flex {
+    flex-direction: column;
+  }
+  
+  .footer__list {
+    padding: 20px 0;
+  }
+}
+
+@media screen and ($mobile-widths) {
+
+}

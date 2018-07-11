@@ -14,6 +14,10 @@ body {
   .container {
     width: 100%; } }
 
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0; } }
+
 @font-face {
   font-family: 'Lato';
   font-style: normal;
@@ -88,8 +92,23 @@ body {
   width: 320px;
   height: 110px; }
 
+@media screen and (max-width: 1460px) {
+  .title__content::after {
+    right: -680px; } }
+
+@media screen and (max-width: 768px) {
+  .title__content {
+    padding: 65px 15px 320px 15px; }
+    .title__content::after {
+      right: -680px; } }
+
 .header {
   padding: 50px 0; }
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 22px 30px;
+    background: #fff; } }
 
 .nav {
   display: -webkit-box;
@@ -159,6 +178,24 @@ body {
     transform: translate(-50%, 0); }
   .nav__item:hover::before {
     width: 100%; }
+
+.nav__toggle {
+  display: none;
+  width: 24px;
+  height: 17px;
+  font-size: 0;
+  border: none;
+  background: url("../img/nav-toggle.png") no-repeat center/cover; }
+
+@media screen and (max-width: 1460px) {
+  .nav__list {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .nav__text {
+    color: #626ca8; }
+  .nav__toggle {
+    display: block; } }
 
 .button {
   display: block;
@@ -497,6 +534,12 @@ body {
 .btn.next {
   background: url("../img/slider-arrow.png") no-repeat center; }
 
+@media screen and (max-width: 1460px) {
+  .how-it-work .item .parallax {
+    left: 70%; }
+  .control {
+    left: 40%; } }
+
 .love-stories {
   padding: 130px 0 132px;
   background-color: #ffffff; }
@@ -632,6 +675,12 @@ body {
   width: 50%;
   margin: auto; }
 
+@media screen and (max-width: 1460px) {
+  .love-stories .preview .item ul li img {
+    width: 200px; }
+  .col-md-offset-3 {
+    width: auto; } }
+
 .footer {
   padding: 30px 0;
   background: #7581d1; }
@@ -733,3 +782,12 @@ body {
   font-size: 14px;
   font-weight: 400;
   text-align: center; }
+
+@media screen and (max-width: 1460px) {
+  .footer__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .footer__list {
+    padding: 20px 0; } }
