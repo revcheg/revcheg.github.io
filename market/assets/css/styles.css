@@ -684,6 +684,10 @@ li {
   text-align: center;
 }
 
+.graph__img {
+  width: 100%;
+}
+
 .graph__title {
   margin-bottom: 1.5625rem;
   color: #344b7c;
