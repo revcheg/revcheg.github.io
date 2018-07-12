@@ -1,0 +1,30 @@
+.authorization {
+  position: relative;
+  top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.authorization__left {
+  width: 600px;
+}
+
+.authorization__name {
+  color: #474349;
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.authorization__subname {
+  color: #ff6901;
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.authorization__mockup {
+  height: 360px;
+  background: url('../img/authorization-mockup.png') no-repeat center / cover;
+}
