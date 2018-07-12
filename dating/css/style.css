@@ -215,15 +215,38 @@ body {
   border: none;
   background: url("../img/nav-toggle.png") no-repeat center/cover; }
 
-@media screen and (max-width: 1460px) {
-  .nav__list {
-    display: none; } }
-
 @media screen and (max-width: 768px) {
   .nav__logo--footer {
     margin: 0 0 49px 0; }
   .nav__text {
     color: #626ca8; }
+  .nav__list {
+    position: absolute;
+    top: 81px;
+    left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 0;
+    border-top: 1px solid #e6eef3;
+    background: #fff;
+    z-index: 5;
+    clip: rect(0, 0, 0, 0);
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .nav__list--active {
+      clip: auto;
+      opacity: 1; }
+    .nav__list li {
+      margin: 0 0 20px 0; }
+      .nav__list li:last-child {
+        margin: 0; }
+  .nav__item {
+    color: #8b94d5;
+    font-size: 26px; }
   .nav__toggle {
     display: block; } }
 

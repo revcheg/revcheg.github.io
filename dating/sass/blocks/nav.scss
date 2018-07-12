@@ -65,11 +65,7 @@
   background: url('../img/nav-toggle.png') no-repeat center / cover;
 }
 
-@media screen and ($tablet-widths) {
-  .nav__list {
-    display: none;
-  }
-}
+@media screen and ($tablet-widths) {}
 
 @media screen and ($mobile-widths) {
   .nav__logo {
@@ -81,6 +77,39 @@
   
   .nav__text {
     color: #626ca8;
+  }
+  
+  .nav__list {
+    position: absolute;
+    top: 81px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 0;
+    border-top: 1px solid #e6eef3;
+    background: #fff;
+    z-index: 5;
+    clip: rect(0, 0, 0, 0);
+    opacity: 0;
+    transition: all 0.3s ease;
+    
+    &--active {
+      clip: auto;
+      opacity: 1;
+    }
+    
+    li {
+      margin: 0 0 20px 0;
+      
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  
+  .nav__item {
+    color: #8b94d5;
+    font-size: 26px;
   }
   
   .nav__toggle {
