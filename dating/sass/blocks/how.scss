@@ -192,10 +192,15 @@
   }
   
   .how-it-work__name {
+    margin-top: 100px !important;
     margin-left: 0 !important;
     margin-bottom: 180px !important;
     font-size: 36px !important;
     text-align: center;
+  }
+  
+  .how-it-work .item {
+    min-height: 500px;
   }
   
   .how-it-work .item .container {
@@ -213,6 +218,22 @@
   }
   
   .how-it-work .slick-dots {
-    top: 300px;
+    top: 210px;
+    left: 50%;
+  }
+  
+  .control {
+    top: 200px;
+    left: 50%;
+  }
+  
+  .btn.next {
+    position: absolute;
+    right: -150px;
+  }
+  
+  .btn.prev {
+    position: absolute;
+    left: -150px;
   }
 }

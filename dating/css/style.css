@@ -104,7 +104,7 @@ body {
     padding: 65px 15px 320px 15px;
     text-align: center; }
     .title__content::after {
-      top: 490px;
+      top: 600px;
       right: 0px;
       width: 420px;
       height: 303px;
@@ -122,6 +122,7 @@ body {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     margin: auto;
+    width: auto;
     height: auto; }
   .title__button {
     width: 280px !important;
@@ -219,6 +220,8 @@ body {
     display: none; } }
 
 @media screen and (max-width: 768px) {
+  .nav__logo--footer {
+    margin: 0 0 49px 0; }
   .nav__text {
     color: #626ca8; }
   .nav__toggle {
@@ -309,8 +312,7 @@ body {
 
 .girl__link {
   position: relative;
-  display: block;
-  height: 300px; }
+  display: block; }
   .girl__link::before {
     content: '';
     position: absolute;
@@ -327,7 +329,7 @@ body {
 
 .girl__photo {
   width: 100%;
-  height: 300px; }
+  background: url("../img/girl-1.jpg") no-repeat top/cover; }
 
 .girl__status {
   position: relative;
@@ -682,10 +684,13 @@ body {
   .how-it-work__box {
     padding: 0 15px; }
   .how-it-work__name {
+    margin-top: 100px !important;
     margin-left: 0 !important;
     margin-bottom: 180px !important;
     font-size: 36px !important;
     text-align: center; }
+  .how-it-work .item {
+    min-height: 500px; }
   .how-it-work .item .container {
     top: 200px; }
   .how-it-work h2 {
@@ -695,7 +700,17 @@ body {
     margin: 0;
     text-align: center; }
   .how-it-work .slick-dots {
-    top: 300px; } }
+    top: 210px;
+    left: 50%; }
+  .control {
+    top: 200px;
+    left: 50%; }
+  .btn.next {
+    position: absolute;
+    right: -150px; }
+  .btn.prev {
+    position: absolute;
+    left: -150px; } }
 
 .love-stories {
   padding: 130px 0 132px;
@@ -838,6 +853,40 @@ body {
   .col-md-offset-3 {
     width: auto; } }
 
+@media screen and (max-width: 768px) {
+  .love-stories {
+    padding: 90px 0; }
+  .love-stories h1 {
+    font-size: 36px; }
+  .love-stories h2 {
+    font-size: 24px; }
+  .love-stories .carousel li.slick-center img {
+    width: 100px;
+    height: 100px; }
+  .love-stories .carousel li {
+    padding-top: 20px; }
+  .love-stories .btn.nav.next {
+    top: 57%; }
+  .love-stories .preview h3 {
+    padding: 0 15px;
+    font-size: 22px; }
+  .love-stories .carousel li h3,
+  .love-stories .carousel li h4 {
+    font-size: 24px; }
+  .love-stories .preview .item ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .love-stories .preview .item ul li {
+    margin: auto; }
+  .col-md-offset-3 {
+    width: 90%; } }
+
 .footer {
   padding: 30px 0;
   background: #7581d1; }
@@ -948,3 +997,56 @@ body {
     flex-direction: column; }
   .footer__list {
     padding: 20px 0; } }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 50px 0 20px 0;
+    border-top: 2px solid #e6eef3;
+    background: #f9fafd; }
+  .footer__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-ordinal-group: 10;
+    -ms-flex-order: 9;
+    order: 9;
+    width: 100%;
+    padding: 0 15px 35px 15px;
+    color: black;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .footer__item {
+    color: #8b94d5;
+    font-size: 26px; }
+  .footer__social {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+    width: 100%;
+    padding: 50px 15px;
+    border-top: 1px solid #7581d1;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .footer__media--vk {
+    width: 57px;
+    height: 32px;
+    background: url("../img/footer-vk-color.png") no-repeat center/cover; }
+  .footer__media--fb {
+    width: 17px;
+    height: 37px;
+    background: url("../img/footer-facebook-color.png") no-repeat center/cover; }
+  .footer__media--tw {
+    width: 43px;
+    height: 35px;
+    background: url("../img/footer-twitter-color.png") no-repeat center/cover; }
+  .footer__media--tm {
+    width: 25px;
+    height: 39px;
+    background: url("../img/footer-tumblr-color.png") no-repeat center/cover; }
+  .footer__media--in {
+    width: 38px;
+    height: 38px;
+    background: url("../img/footer-instagram-color.png") no-repeat center/cover; }
+  .footer__copyright {
+    font-size: 20px; } }

@@ -72,6 +72,13 @@
 }
 
 @media screen and ($mobile-widths) {
+  .nav__logo {
+    
+    &--footer {
+      margin: 0 0 49px 0;
+    }
+  }
+  
   .nav__text {
     color: #626ca8;
   }

@@ -170,5 +170,53 @@
 }
 
 @media screen and ($mobile-widths) {
-
+  .love-stories {
+    padding: 90px 0;
+  }
+  
+  .love-stories h1 {
+    font-size: 36px;
+  }
+  
+  .love-stories h2 {
+    font-size: 24px;
+  }
+  
+  .love-stories .carousel li.slick-center img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .love-stories .carousel li {
+    padding-top: 20px;
+  }
+  
+  .love-stories .btn.nav.next {
+    top: 57%;
+  }
+  
+  .love-stories .preview h3 {
+    padding: 0 15px;
+    font-size: 22px;
+  }
+  
+  .love-stories .carousel li h3,
+  .love-stories .carousel li h4 {
+    font-size: 24px;
+  }
+  
+  .love-stories .preview .item ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .love-stories .preview .item ul li {
+    margin: auto;
+  }
+  
+  .col-md-offset-3 {
+    // top: -850px;
+    width: 90%;
+  }
 }

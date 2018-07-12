@@ -62,7 +62,7 @@
     text-align: center;
     
     &::after {
-      top: 490px;
+      top: 600px;
       right: 0px;
       width: 420px;
       height: 303px;
@@ -83,6 +83,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     margin: auto;
+    width: auto;
     height: auto;
   }
   

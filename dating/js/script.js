@@ -29,7 +29,16 @@ $(document).ready(function () {
         nextArrow: '.love-stories .btn.nav.next',
         prevArrow: '.love-stories .btn.nav.prev',
         centerMode: true,
-        initialSlide: 1
+        initialSlide: 1,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              infinite: true
+            }
+          }
+        ]
     }).on('afterChange', function(event, slick, currentSlide, nextSlide){
         changeStories();
     });
