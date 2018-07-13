@@ -61,10 +61,11 @@ li {
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 40px !important;
 }
 
 .header {
-  padding: 0 20px;
+  /* padding: 0 50px; */
   z-index: 4;
   top: 0;
   left: 0;
@@ -954,7 +955,7 @@ li {
   content: '';
   position: absolute;
   top: 0;
-  right: 0;
+  right: 40px;
   width: 24.0625rem;
   height: 49rem;
   background: url('../../uploads/telegram-mockup.png') no-repeat center / cover;
@@ -1134,6 +1135,7 @@ li {
   border: 1px solid #344b7c;
   color: #344b7c;
   font-size: 1.125rem;
+  font-family: inherit;
   border-radius: 5px;
 }
 
@@ -1427,6 +1429,10 @@ li {
 
 
 @media only screen and (max-width: 768px) {
+  
+  .wrapper {
+    padding: 0 !important;
+  }
     
   .header__logo,
   .hero__container-image,
