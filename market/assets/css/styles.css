@@ -829,7 +829,7 @@ li {
 }
 
 .art__box {
-  width: 37.5rem;
+  width: 45%;
 }
 
 .art__name {
@@ -857,7 +857,8 @@ li {
 }
 
 .art__mockup {
-  margin: 0 0 0 -60px;
+  width: 100%;
+  margin: 0 0 0 -40px;
 }
 
 .daily {
@@ -888,8 +889,13 @@ li {
   margin-bottom: 10rem;
 }
 
+.daily__box {
+  width: 45%;
+}
+
 .daily__img {
-  margin: 0 0 0 -60px;
+  width: 100%;
+  margin: 0 0 0 -40px;
 }
 
 .daily__text {
@@ -930,7 +936,12 @@ li {
 }
 
 .book__img { 
-  margin: 0 0 0 -60px;
+  width: 100%;
+  margin: 0 0 0 -40px;
+}
+
+.book__box {
+  width: 45%;
 }
 
 .telegram {
