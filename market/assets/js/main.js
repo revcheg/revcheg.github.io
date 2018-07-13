@@ -41,10 +41,18 @@
 })();
 
 // Scroll
-$('.header__menu-item').click(function() {
+$('.header__menu-item, .container__list-item').click(function() {
 	var keyword = $(this).attr('ss');
 	var scrollTo = $('#' + keyword);
 	$('html, body').animate({
 		scrollTop: scrollTo.offset().top - 150
 	}, 1000);
 });
+
+// $('.container__list-item').click(function() {
+// 	var keyword = $(this).attr('ss');
+// 	var scrollTo = $('#' + keyword);
+// 	$('html, body').animate({
+// 		scrollTop: scrollTo.offset().top - 150
+// 	}, 1000);
+// });
