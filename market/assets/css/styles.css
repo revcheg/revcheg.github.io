@@ -1205,6 +1205,7 @@ li {
   color: #344b7c;
   font-size: 18px;
   font-weight: 400;
+  font-family: inherit;
   border: 1px solid #344b7c;
   border-radius: 5px;
   background: #fff;
@@ -1226,6 +1227,7 @@ li {
   color: #344b7c;
   font-size: 18px;
   font-weight: 400;
+  font-family: inherit;
   border: 1px solid #344b7c;
   border-radius: 5px;
   background: #fff;
