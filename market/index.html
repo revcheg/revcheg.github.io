@@ -21,16 +21,16 @@
       </a>
 
       <ul class="header__menu">
-        <li class="header__menu-item">
+        <li class="header__menu-item" ss="cases">
           <a href="javascript:void(0)">Cases</a>
         </li>
-        <li class="header__menu-item">
-          <a href="javascript:void(0)">Instruments</a>
-        </li>
-        <li class="header__menu-item">
+        <li class="header__menu-item" ss="telegram">
           <a href="javascript:void(0)">Telegram Bot</a>
         </li>
-        <li class="header__menu-item">
+        <li class="container__list-item">
+          <a href="javascript:void(0)">Instruments</a>
+        </li>
+        <li class="header__menu-item" ss="contact">
           <a href="javascript:void(0)">Contact Us</a>
         </li>
       </ul>
@@ -130,7 +130,7 @@
     <section class="graph">
       <div class="wrapper">
         <h3 class="graph__subtitle">Long-term and tangible result gives only an integrated approach</h3>
-        <h2 class="graph__title">Case Typical situation </h3>
+        <h2 class="graph__title" id="cases">Case Typical situation </h3>
         <p class="graph__text">It really is amazing when you think about it that just by looking up on any given night, you could see virtually hundreds of thousands of stars, star systems, planets, moons, asteroids, comets and maybe a even an occasional space shuttle might wander by. It is even more breathtaking when you realize that the sky you are looking up at is for all intents and purposes the exact same sky that our ancestors hundreds and thousands of years ago enjoyed when they just looked up.</p>
         <img src="uploads/ts.png" alt="" class="graph__img">
       </div>
@@ -261,11 +261,11 @@
           <p class="book__text">The example of increased volumes<br>at middle timeframes.</p>
           <img class="book__img" src="uploads/book-right.png" alt="">
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
     
-    <section class="telegram  wrapper">
-      <h2 class="telegram__title">Telegram bot </h3>
+    <section class="telegram  wrapper" >
+      <h2 class="telegram__title" id="telegram">Telegram bot </h3>
       <p class="telegram__subtitle">Active PR campaigns on bitcointalk, Telegram, and exchange rollboxes can create a favorable background to manipulate the market of certain cryptocurrency. Active PR campaigns on bitcointalk, Telegram, and exchange rollboxes can create</p>
       <ol class="pulled__list  pulled__list--telegram">
         <li>Lack of regular news about<br>the project</li>
@@ -277,7 +277,7 @@
     </section>
     
     <section class="tools  wrapper">
-      <h2 class="tools__title">Tools and approaches are selected individually for each project</h3>
+      <h2 class="tools__title" id="instruments">Tools and approaches are selected individually for each project</h3>
       <p class="tools__subtitle">Boosting of average trade volume of the token, which increases asset liquidity and attracts the attention of third parties on the market.Boosting of average trade volume of the token, which increases asset liquidity and attracts the attention of third parties on the market.</p>
       <div class="tools__flex">
         <div class="tools__box">
@@ -320,7 +320,7 @@
 
     <section class="help  wrapper">
       <div class="help__flex">
-        <div class="help__left">
+        <div class="help__left" id="contact">
           <b class="help__name">Artificial formation of figures<br>and patterns of technical analysis</b>
           <p class="help__text">Active PR campaigns on bitcointalk, Telegram, and exchange rollboxes can create a favorable background to manipulate the market of certain cryptocurrency. Active PR campaigns on bitcointalk, </p>
         </div>
@@ -345,10 +345,10 @@
             <a href="javascript:void(0)">Cases</a>
           </li>
           <li class="container__list-item">
-            <a href="javascript:void(0)">Instruments</a>
+            <a href="javascript:void(0)">Telegram bot</a>
           </li>
           <li class="container__list-item">
-            <a href="javascript:void(0)">Telegram bot</a>
+            <a href="javascript:void(0)">Instruments</a>
           </li>
           <li class="container__list-item">
             <a href="javascript:void(0)">Contact Us</a>
@@ -370,9 +370,8 @@
   
   <div class="modal__overlay  modal__overlay--inactive"></div>
   
-  <script src="assets/js/main.js">
-    
-  </script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
   
 </body>
 
