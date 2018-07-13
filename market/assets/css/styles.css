@@ -1361,15 +1361,31 @@ li {
     width: 1200px;
   }
   
-  .art__flex,
-  .daily__flex,
-  .book__flex,
   .tools__flex,
   .help__flex {
     flex-wrap: wrap;
   }
   
-  .art__box,
+  .art__box {
+    /* width: 45%; */
+  }
+  
+  .daily__box,
+  .book__box {
+    width: 45%;
+  }
+  
+  .art__name {
+    font-size: 1.5rem;
+  }
+  
+  .art__mockup,
+  .daily__img,
+  .book__img {
+    width: 100%;
+    margin: 0;
+  }
+  
   .daily__box,
   .book__box,
   .tools__box,
@@ -1383,6 +1399,8 @@ li {
   
   .telegram::after {
     top: 200px;
+    width: 350px;
+    height: 720px;
   }
   
   .tools__box {
@@ -1588,6 +1606,22 @@ li {
     padding-bottom: 20px;
     margin-top: 10px;
     font-size: 1rem;
+  }
+  
+  .pulled__flex,
+  .art__flex,
+  .daily__flex,
+  .book__flex {
+    flex-direction: column;
+  }
+  
+  .daily__box,
+  .book__box {
+    width: auto;
+  }
+  
+  .pulled__img {
+    width: 100%;
   }
 
   .pulled__text,
