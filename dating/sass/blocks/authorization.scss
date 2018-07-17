@@ -1,9 +1,12 @@
 .authorization {
-  position: relative;
-  top: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 90px 0;
+  
+  &--login {
+    padding: 200px 0;
+  }
 }
 
 .authorization__left {
@@ -27,4 +30,24 @@
 .authorization__mockup {
   height: 360px;
   background: url('../img/authorization-mockup.png') no-repeat center / cover;
+}
+
+@media screen and ($tablet-widths) {
+  .authorization {
+    flex-wrap: wrap;
+  }
+  
+  .authorization__left {
+    margin: 0 auto 50px auto;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .authorization {
+    padding: 50px 0;
+  }
+  
+  .authorization__left {
+    display: none;
+  }
 }

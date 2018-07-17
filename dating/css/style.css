@@ -1086,12 +1086,8 @@ body {
 
 .main {
   background: #f7f9fc; }
-  .main--authorization {
-    min-height: 100vh; }
 
 .authorization {
-  position: relative;
-  top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1100,7 +1096,10 @@ body {
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 90px 0; }
+  .authorization--login {
+    padding: 200px 0; }
 
 .authorization__left {
   width: 600px; }
@@ -1121,6 +1120,19 @@ body {
   height: 360px;
   background: url("../img/authorization-mockup.png") no-repeat center/cover; }
 
+@media screen and (max-width: 1460px) {
+  .authorization {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .authorization__left {
+    margin: 0 auto 50px auto; } }
+
+@media screen and (max-width: 768px) {
+  .authorization {
+    padding: 50px 0; }
+  .authorization__left {
+    display: none; } }
+
 .form {
   width: 600px;
   padding: 30px 80px;
@@ -1136,7 +1148,7 @@ body {
   margin: 0 0 20px 0;
   color: #474349;
   font-size: 25px;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center; }
 
 .form__button {
@@ -1260,6 +1272,11 @@ body {
   cursor: pointer; }
   .form__submit:hover {
     background: #ff8015; }
+  .form__submit--login {
+    width: 300px;
+    margin: 0 0 0 auto;
+    background: #ff6901;
+    cursor: pointer; }
 
 .form__sign {
   display: -webkit-box;
@@ -1284,3 +1301,79 @@ body {
   transition: 0.2s; }
   .form__signin:hover {
     border-bottom: 1px solid #ff6901; }
+
+.form__forgot,
+.form__join {
+  color: #ff6901;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.form__agree {
+  color: #343a40;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: none;
+  cursor: pointer; }
+
+.form__terms {
+  color: #FF6900;
+  text-decoration: none; }
+
+@media screen and (max-width: 1460px) {
+  .form {
+    margin: auto; } }
+
+@media screen and (max-width: 768px) {
+  .form {
+    width: 95%;
+    padding: 30px 20px; }
+  .form__cta {
+    font-size: 20px; }
+  .form__button {
+    width: 260px;
+    margin: 0 auto 20px auto; }
+    .form__button::before {
+      left: 25px; }
+  .form__another {
+    width: auto;
+    margin: 0 auto 20px auto;
+    font-size: 10px; }
+    .form__another--notline {
+      margin: 0; }
+  .form__label {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 16px; }
+  .form__input {
+    width: 100%;
+    margin: 10px 0 0 0; }
+  .form__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0 0 0; }
+  .form__select--country {
+    width: 100%;
+    margin: 10px 0 0 0; }
+  .form__sign {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: auto; }
+  .form__submit {
+    font-size: 11px; }
+    .form__submit--login {
+      width: 100%; } }
