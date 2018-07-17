@@ -69,6 +69,83 @@
   background: url('../img/nav-toggle.png') no-repeat center / cover;
 }
 
+.nav__search {
+  position: relative;
+  width: 400px;
+  box-sizing: border-box;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 30px;
+    width: 12px;
+    height: 13px;
+    background: url('../img/search.svg') no-repeat center / contain;
+  }  
+}
+
+.nav__input {
+  width: 100%;
+  padding: 12px 50px;
+  color: #474349;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  border-radius: 8px;
+  background: #f7f9fc;
+  outline: none;
+  transition: 0.2s;
+  cursor: pointer;
+  
+  &:hover,
+  &:focus {
+    background: #EDF2F7;
+  }
+  
+  &::placeholder {
+    color: #333333;
+    opacity: 0.4;
+  }
+  
+  &::-webkit-search-cancel-button {
+    display: none;
+  }
+}
+
+.nav__submit {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #4f5899;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.nav__credits {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__counter {
+  margin: 0 30px 0 0;
+  color: #7d888a;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.nav__number {
+  color: #687173;
+  font-weight: 700;
+}
+
 @media screen and ($tablet-widths) {}
 
 @media screen and ($mobile-widths) {
