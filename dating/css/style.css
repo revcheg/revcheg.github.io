@@ -1588,6 +1588,7 @@ body {
   transform: translateX(-50%); }
 
 .profile__img-button {
+  position: relative;
   width: 60px;
   height: 40px;
   border: none;
@@ -1614,6 +1615,29 @@ body {
     background: #7880ce url("../img/profile-img-crop.png") no-repeat center/17px; }
     .profile__img-button--crop:hover {
       background: #ff6901 url("../img/profile-img-crop.png") no-repeat center/17px; }
+    .profile__img-button--crop:hover + .profile__img-title {
+      clip: auto;
+      opacity: 1; }
+
+.profile__img-title {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 180px;
+  padding: 10px 0;
+  color: #7880cd;
+  font-size: 11px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  background: #fff;
+  cursor: pointer;
+  clip: rect(0, 0, 0, 0);
+  outline: none;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
 
 .profile__info {
   position: relative;
