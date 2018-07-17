@@ -26,6 +26,7 @@
   border-radius: 8px;
   box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.11);
   transition: all 0.2s ease-out;
+  overflow: hidden;
   
   &:hover {
     box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.21)
@@ -147,6 +148,55 @@
 
 .girl__links {
   display: none;
+}
+
+.girl__buttons {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #deebf1;
+}
+
+.girl__button {
+  width: 100%;
+  padding: 25px 0;
+  font-size: 0;
+  box-sizing: border-box;
+  transition: 0.2s;
+  
+  &--gift {
+    border-right: 1px solid #deebf1;
+    background: url('../img/girl-gift.png') no-repeat center / 20px;
+    
+    &:hover {
+      background: #7880cd url('../img/girl-gift.png') no-repeat center / 20px;
+    }
+  }
+  
+  &--favorite {
+    background: url('../img/girl-favorite.png') no-repeat center / 20px;
+    
+    &:hover {
+      background: #7880cd url('../img/girl-favorite.png') no-repeat center / 20px;
+    }
+  }
+  
+  &--message {
+    border-right: 1px solid #deebf1;
+    background: url('../img/girl-message.png') no-repeat center / 20px;
+    
+    &:hover {
+      background: #7880cd url('../img/girl-message.png') no-repeat center / 20px;
+    }
+  }
+  
+  &--chat {
+    border-right: 1px solid #deebf1;
+    background: url('../img/girl-chat.png') no-repeat center / 20px;
+    
+    &:hover {
+      background: #7880cd url('../img/girl-chat.png') no-repeat center / 20px;
+    }
+  }
 }
 
 @media screen and ($tablet-widths) {}
