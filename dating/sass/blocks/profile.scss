@@ -6,6 +6,10 @@
 .profile__nav {
   min-width: 190px; 
   margin: 0 50px 0 0;
+  
+  &--inner {
+    margin: 0 20px 0 0;
+  }
 }
 
 .profile__user {
@@ -79,6 +83,10 @@
   transition: 0.2s;
   
   &:hover {
+    color: #7880CD;
+  }
+  
+  &--active {
     color: #7880CD;
   }
 }
@@ -274,6 +282,12 @@
   border: 1px solid #ff6901;
   border-radius: 8px;
   box-sizing: border-box;
+  transition: 0.2s;
+  
+  &:hover {
+    color: #fff;
+    background: #ff6901;
+  }
 }
 
 .profile__about {

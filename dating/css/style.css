@@ -177,7 +177,7 @@ body {
   font-weight: 700;
   letter-spacing: 2.5px; }
   .nav__text--inner {
-    color: #4f5899; }
+    color: #7880cd; }
 
 .nav__list {
   display: -webkit-box;
@@ -391,6 +391,8 @@ body {
 
 .girl {
   padding: 140px 0 75px 0; }
+  .girl--inner {
+    padding: 0; }
 
 .girl__title {
   margin: 0 0 60px 0;
@@ -420,6 +422,8 @@ body {
   .girl__box:hover {
     -webkit-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.21);
     box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.21); }
+  .girl__box--inner {
+    width: 250px; }
 
 .girl__link {
   position: relative;
@@ -442,6 +446,8 @@ body {
   width: 100%;
   height: 300px;
   background: url("../img/girl-1.jpg") no-repeat top/cover; }
+  .girl__photo--inner {
+    height: 250px; }
 
 .girl__status {
   position: relative;
@@ -465,6 +471,9 @@ body {
   font-size: 22px;
   font-weight: 700;
   text-align: center; }
+  .girl__name--inner {
+    padding: 10px 0 0 0;
+    font-size: 16px; }
 
 .girl__country {
   margin: 0 0 15px 0;
@@ -472,6 +481,8 @@ body {
   font-size: 18px;
   font-weight: 400;
   text-align: center; }
+  .girl__country--inner {
+    font-size: 14px; }
 
 .girl__contact {
   position: relative;
@@ -1002,6 +1013,9 @@ body {
 .footer {
   padding: 30px 0;
   background: #7581d1; }
+  .footer--inner {
+    border-top: 1px solid #e1eaf0;
+    background: #f7f9fc; }
 
 .footer__flex {
   display: -webkit-box;
@@ -1050,6 +1064,10 @@ body {
     transform: translate(-50%, 0); }
   .footer__item:hover::before {
     width: 100%; }
+  .footer__item--inner {
+    color: #7880cd; }
+    .footer__item--inner::before {
+      background: #7880cd; }
 
 .footer__social {
   display: -webkit-box;
@@ -1476,6 +1494,8 @@ body {
 .profile__nav {
   min-width: 190px;
   margin: 0 50px 0 0; }
+  .profile__nav--inner {
+    margin: 0 20px 0 0; }
 
 .profile__user {
   position: relative;
@@ -1538,6 +1558,8 @@ body {
   -webkit-transition: 0.2s;
   transition: 0.2s; }
   .profile__item:hover {
+    color: #7880CD; }
+  .profile__item--active {
     color: #7880CD; }
 
 .profile__counter {
@@ -1699,7 +1721,12 @@ body {
   border: 1px solid #ff6901;
   border-radius: 8px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .profile__edit-button:hover {
+    color: #fff;
+    background: #ff6901; }
 
 .profile__about {
   width: 30%; }
