@@ -111,13 +111,13 @@
 }
 
 .girl__contact {
-  position: relative;
-  display: block;
-  padding: 15px 0 15px 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0 15px 0;
   color: #7581d1;
   font-size: 22px;
   font-weight: 400;
-  // text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   border-top: 1px solid #deebf1;
@@ -130,73 +130,58 @@
     background: #7581d1;
   }
   
-  &:hover::before {
-    background: url('../img/mail-hover.svg') no-repeat center / cover;
+  &:hover .girl__contact-icon {
+    fill: #fff;
   }
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 19px;
-    left: 55px;
-    width: 25px;
-    height: 20px;
-    background: url('../img/mail.svg') no-repeat center / cover;
-    transition: all 0.2s ease;
-  }
+}
+
+.girl__contact-icon {
+  fill: #7581d1;
+  margin: 0 10px 0 0;
 }
 
 .girl__links {
   display: none;
-}
-
-.girl__buttons {
-  display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   border-top: 1px solid #deebf1;
+  
+  &--inner {
+    display: flex;
+  }
 }
 
-.girl__button {
-  width: 100%;
-  padding: 25px 0;
+.girl__control {
+  width: 50%;
+  padding: 20px 0;
   font-size: 0;
   box-sizing: border-box;
-  transition: 0.2s;
   
   &--gift {
     border-right: 1px solid #deebf1;
-    background: url('../img/girl-gift.png') no-repeat center / 20px;
-    
-    &:hover {
-      background: #7880cd url('../img/girl-gift.png') no-repeat center / 20px;
-    }
+    background: url('../img/girl-gift.png') no-repeat center;
   }
   
   &--favorite {
-    background: url('../img/girl-favorite.png') no-repeat center / 20px;
-    
-    &:hover {
-      background: #7880cd url('../img/girl-favorite.png') no-repeat center / 20px;
-    }
+    background: url('../img/girl-favorite.png') no-repeat center;
   }
   
   &--message {
+    border-top: 1px solid #deebf1;
     border-right: 1px solid #deebf1;
-    background: url('../img/girl-message.png') no-repeat center / 20px;
-    
-    &:hover {
-      background: #7880cd url('../img/girl-message.png') no-repeat center / 20px;
-    }
+    background: url('../img/girl-message.png') no-repeat center;
   }
   
   &--chat {
-    border-right: 1px solid #deebf1;
-    background: url('../img/girl-chat.png') no-repeat center / 20px;
-    
-    &:hover {
-      background: #7880cd url('../img/girl-chat.png') no-repeat center / 20px;
-    }
+    border-top: 1px solid #deebf1;
+    background: url('../img/girl-chat.png') no-repeat center;
   }
+}
+
+.girl__icon {
+  fill: #8b94d5;
+  display: block;
+  margin: auto;
 }
 
 @media screen and ($tablet-widths) {}
@@ -254,13 +239,13 @@
   
   .girl__name {
     padding: 50px 0 0 0;
-    font-size: 28px;
+    font-size: 20px;
   }
   
   .girl__country {
     margin: 0;
     padding: 0 0 50px 0;
-    font-size: 24px;
+    font-size: 16px;
   }
   
   .girl__contact {
@@ -269,35 +254,5 @@
   
   .girl__links {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border-top: 1px solid #deebf1;
-  }
-  
-  .girl__control {
-    width: 50%;
-    padding: 33.5px 0;
-    font-size: 0;
-    box-sizing: border-box;
-    
-    &--gift {
-      border-right: 1px solid #deebf1;
-      background: url('../img/girl-gift.png') no-repeat center;
-    }
-    
-    &--favorite {
-      background: url('../img/girl-favorite.png') no-repeat center;
-    }
-    
-    &--message {
-      border-top: 1px solid #deebf1;
-      border-right: 1px solid #deebf1;
-      background: url('../img/girl-message.png') no-repeat center;
-    }
-    
-    &--chat {
-      border-top: 1px solid #deebf1;
-      background: url('../img/girl-chat.png') no-repeat center;
-    }
   }
 }

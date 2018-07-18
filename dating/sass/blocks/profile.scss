@@ -52,7 +52,7 @@
 
 .profile__hr {
   margin: 15px auto;
-  width: 70%;
+  width: 80%;
   height: 1px;
   border: none;
   background: #e1eaf0;
@@ -64,16 +64,30 @@
 
 .profile__list {
   margin: 0;
+  padding: 0 0 0 20px;
   list-style: none;
   
   li {
     position: relative;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.profile__icon {
+  order: 2;
+  fill: #7d888a;
+  transition: 0.2s;
+  
+  &--active {
+    fill: #7880CD;
   }
 }
 
 .profile__item {
+  order: 3;
   display: block;
-  padding: 10px 0;
+  padding: 10px 0 10px 10px;
   color: #7d888a;
   font-size: 13px;
   font-weight: 700;
@@ -82,12 +96,16 @@
   letter-spacing: 0.4px;
   transition: 0.2s;
   
+  &--active {
+    color: #7880CD;
+  }
+  
   &:hover {
     color: #7880CD;
   }
   
-  &--active {
-    color: #7880CD;
+  &:hover + .profile__icon {
+    fill: #7880CD;
   }
 }
 

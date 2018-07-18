@@ -486,9 +486,16 @@ body {
     font-size: 14px; }
 
 .girl__contact {
-  position: relative;
-  display: block;
-  padding: 15px 0 15px 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px 0 15px 0;
   color: #7581d1;
   font-size: 22px;
   font-weight: 400;
@@ -502,58 +509,49 @@ body {
   .girl__contact:hover {
     color: #fff;
     background: #7581d1; }
-  .girl__contact:hover::before {
-    background: url("../img/mail-hover.svg") no-repeat center/cover; }
-  .girl__contact::before {
-    content: '';
-    position: absolute;
-    top: 19px;
-    left: 55px;
-    width: 25px;
-    height: 20px;
-    background: url("../img/mail.svg") no-repeat center/cover;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
+  .girl__contact:hover .girl__contact-icon {
+    fill: #fff; }
+
+.girl__contact-icon {
+  fill: #7581d1;
+  margin: 0 10px 0 0; }
 
 .girl__links {
-  display: none; }
-
-.girl__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   border-top: 1px solid #deebf1; }
+  .girl__links--inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
-.girl__button {
-  width: 100%;
-  padding: 25px 0;
+.girl__control {
+  width: 50%;
+  padding: 20px 0;
   font-size: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: 0.2s;
-  transition: 0.2s; }
-  .girl__button--gift {
+  box-sizing: border-box; }
+  .girl__control--gift {
     border-right: 1px solid #deebf1;
-    background: url("../img/girl-gift.png") no-repeat center/20px; }
-    .girl__button--gift:hover {
-      background: #7880cd url("../img/girl-gift.png") no-repeat center/20px; }
-  .girl__button--favorite {
-    background: url("../img/girl-favorite.png") no-repeat center/20px; }
-    .girl__button--favorite:hover {
-      background: #7880cd url("../img/girl-favorite.png") no-repeat center/20px; }
-  .girl__button--message {
+    background: url("../img/girl-gift.png") no-repeat center; }
+  .girl__control--favorite {
+    background: url("../img/girl-favorite.png") no-repeat center; }
+  .girl__control--message {
+    border-top: 1px solid #deebf1;
     border-right: 1px solid #deebf1;
-    background: url("../img/girl-message.png") no-repeat center/20px; }
-    .girl__button--message:hover {
-      background: #7880cd url("../img/girl-message.png") no-repeat center/20px; }
-  .girl__button--chat {
-    border-right: 1px solid #deebf1;
-    background: url("../img/girl-chat.png") no-repeat center/20px; }
-    .girl__button--chat:hover {
-      background: #7880cd url("../img/girl-chat.png") no-repeat center/20px; }
+    background: url("../img/girl-message.png") no-repeat center; }
+  .girl__control--chat {
+    border-top: 1px solid #deebf1;
+    background: url("../img/girl-chat.png") no-repeat center; }
+
+.girl__icon {
+  fill: #8b94d5;
+  display: block;
+  margin: auto; }
 
 @media screen and (max-width: 768px) {
   .girl {
@@ -598,41 +596,17 @@ body {
     width: 50%; }
   .girl__name {
     padding: 50px 0 0 0;
-    font-size: 28px; }
+    font-size: 20px; }
   .girl__country {
     margin: 0;
     padding: 0 0 50px 0;
-    font-size: 24px; }
+    font-size: 16px; }
   .girl__contact {
     display: none; }
   .girl__links {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    border-top: 1px solid #deebf1; }
-  .girl__control {
-    width: 50%;
-    padding: 33.5px 0;
-    font-size: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
-    .girl__control--gift {
-      border-right: 1px solid #deebf1;
-      background: url("../img/girl-gift.png") no-repeat center; }
-    .girl__control--favorite {
-      background: url("../img/girl-favorite.png") no-repeat center; }
-    .girl__control--message {
-      border-top: 1px solid #deebf1;
-      border-right: 1px solid #deebf1;
-      background: url("../img/girl-message.png") no-repeat center; }
-    .girl__control--chat {
-      border-top: 1px solid #deebf1;
-      background: url("../img/girl-chat.png") no-repeat center; } }
+    display: flex; } }
 
 .features {
   padding: 75px 0 90px 0; }
@@ -1571,7 +1545,7 @@ body {
 
 .profile__hr {
   margin: 15px auto;
-  width: 70%;
+  width: 80%;
   height: 1px;
   border: none;
   background: #e1eaf0; }
@@ -1580,13 +1554,33 @@ body {
 
 .profile__list {
   margin: 0;
+  padding: 0 0 0 20px;
   list-style: none; }
   .profile__list li {
-    position: relative; }
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+.profile__icon {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  fill: #7d888a;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .profile__icon--active {
+    fill: #7880CD; }
 
 .profile__item {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
   display: block;
-  padding: 10px 0;
+  padding: 10px 0 10px 10px;
   color: #7d888a;
   font-size: 13px;
   font-weight: 700;
@@ -1595,10 +1589,12 @@ body {
   letter-spacing: 0.4px;
   -webkit-transition: 0.2s;
   transition: 0.2s; }
-  .profile__item:hover {
-    color: #7880CD; }
   .profile__item--active {
     color: #7880CD; }
+  .profile__item:hover {
+    color: #7880CD; }
+  .profile__item:hover + .profile__icon {
+    fill: #7880CD; }
 
 .profile__counter {
   position: absolute;
