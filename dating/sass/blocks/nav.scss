@@ -5,8 +5,8 @@
 }
 
 .nav__buttons {
-  // display: none;
-  display: flex;
+  display: none;
+  // display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -189,10 +189,23 @@
     }
   }
   
+  .nav__buttons {
+    display: flex;
+  }
+  
+  .nav__button {
+    outline: none;
+  }
+  
   .nav__logo {
     
     &--footer {
       margin: 0 0 49px 0;
+    }
+    
+    &--mobile {
+      margin: auto;
+      padding: 80px 0;
     }
   }
   
