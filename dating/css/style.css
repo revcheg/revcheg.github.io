@@ -527,31 +527,59 @@ body {
   .girl__links--inner {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
 
 .girl__control {
   width: 50%;
   padding: 20px 0;
   font-size: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-  .girl__control--gift {
-    border-right: 1px solid #deebf1;
-    background: url("../img/girl-gift.png") no-repeat center; }
-  .girl__control--favorite {
-    background: url("../img/girl-favorite.png") no-repeat center; }
-  .girl__control--message {
+  box-sizing: border-box;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .girl__control:nth-child(1) {
+    border-right: 1px solid #deebf1; }
+  .girl__control:nth-child(3) {
     border-top: 1px solid #deebf1;
-    border-right: 1px solid #deebf1;
-    background: url("../img/girl-message.png") no-repeat center; }
-  .girl__control--chat {
-    border-top: 1px solid #deebf1;
-    background: url("../img/girl-chat.png") no-repeat center; }
+    border-right: 1px solid #deebf1; }
+  .girl__control:nth-child(4) {
+    border-top: 1px solid #deebf1; }
+  .girl__control--inner {
+    width: 33.33%; }
+    .girl__control--inner:nth-child(1) {
+      border-right: 1px solid #deebf1; }
+      .girl__control--inner:nth-child(1):hover {
+        background: #ff6901; }
+      .girl__control--inner:nth-child(1):hover .girl__icon {
+        fill: #fff; }
+    .girl__control--inner:nth-child(2) {
+      border-right: 1px solid #deebf1; }
+      .girl__control--inner:nth-child(2):hover {
+        background: #7880cd; }
+      .girl__control--inner:nth-child(2):hover .girl__icon {
+        fill: #fff; }
+    .girl__control--inner:nth-child(3) {
+      border-top: none;
+      border-right: 1px solid #deebf1; }
+      .girl__control--inner:nth-child(3):hover {
+        background: #7880cd; }
+      .girl__control--inner:nth-child(3):hover .girl__icon {
+        fill: #fff; }
+    .girl__control--inner:nth-child(4) {
+      border-top: none; }
+      .girl__control--inner:nth-child(4):hover {
+        background: #ff6901; }
+      .girl__control--inner:nth-child(4):hover .girl__icon {
+        fill: #fff; }
 
 .girl__icon {
   fill: #8b94d5;
   display: block;
   margin: auto; }
+  .girl__icon--orange {
+    fill: #ff6901; }
 
 @media screen and (max-width: 768px) {
   .girl {

@@ -148,6 +148,7 @@
   
   &--inner {
     display: flex;
+    flex-wrap: nowrap;
   }
 }
 
@@ -156,25 +157,72 @@
   padding: 20px 0;
   font-size: 0;
   box-sizing: border-box;
+  transition: 0.2s;
   
-  &--gift {
+  &:nth-child(1) {
     border-right: 1px solid #deebf1;
-    background: url('../img/girl-gift.png') no-repeat center;
   }
   
-  &--favorite {
-    background: url('../img/girl-favorite.png') no-repeat center;
-  }
-  
-  &--message {
+  &:nth-child(3) {
     border-top: 1px solid #deebf1;
     border-right: 1px solid #deebf1;
-    background: url('../img/girl-message.png') no-repeat center;
   }
   
-  &--chat {
+  &:nth-child(4) {
     border-top: 1px solid #deebf1;
-    background: url('../img/girl-chat.png') no-repeat center;
+  }
+  
+  &--inner {
+    width: 33.33%;
+    
+    &:nth-child(1) {
+      border-right: 1px solid #deebf1;
+      
+      &:hover {
+        background: #ff6901;
+      }
+      
+      &:hover .girl__icon {
+        fill: #fff;
+      }
+    }
+    
+    &:nth-child(2) {
+      border-right: 1px solid #deebf1;
+      
+      &:hover {
+        background: #7880cd;
+      }
+      
+      &:hover .girl__icon {
+        fill: #fff;
+      }
+    }
+    
+    &:nth-child(3) {
+      border-top: none;
+      border-right: 1px solid #deebf1;
+      
+      &:hover {
+        background: #7880cd;
+      }
+      
+      &:hover .girl__icon {
+        fill: #fff;
+      }
+    }
+    
+    &:nth-child(4) {
+      border-top: none;
+      
+      &:hover {
+        background: #ff6901;
+      }
+      
+      &:hover .girl__icon {
+        fill: #fff;
+      }
+    }
   }
 }
 
@@ -182,6 +230,10 @@
   fill: #8b94d5;
   display: block;
   margin: auto;
+  
+  &--orange {
+    fill: #ff6901;
+  }
 }
 
 @media screen and ($tablet-widths) {}
