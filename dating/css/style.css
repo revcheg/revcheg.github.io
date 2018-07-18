@@ -143,7 +143,9 @@ body {
 @media screen and (max-width: 768px) {
   .header {
     padding: 22px 30px;
-    background: #fff; } }
+    background: #fff; }
+    .header--inner {
+      padding: 0; } }
 
 .nav {
   display: -webkit-box;
@@ -155,6 +157,38 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+
+.nav__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  height: 90px;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .nav__buttons li {
+    width: 33.33%; }
+
+.nav__button {
+  width: 100%;
+  padding: 30px 0;
+  font-size: 0;
+  border: none;
+  background: #fff; }
+  .nav__button--active {
+    background: #8b94d5; }
+    .nav__button--active .nav__button-icon {
+      fill: #fff; }
+
+.nav__button-icon {
+  fill: #8b94d5; }
 
 .nav__logo {
   display: -webkit-box;
@@ -302,6 +336,8 @@ body {
   font-weight: 700; }
 
 @media screen and (max-width: 768px) {
+  .nav--inner {
+    display: none; }
   .nav__logo--footer {
     margin: 0 0 49px 0; }
   .nav__text {
@@ -582,6 +618,9 @@ body {
 @media screen and (max-width: 768px) {
   .girl {
     padding: 100px 15px 35px 15px; }
+    .girl--inner {
+      width: 100%;
+      padding: 0 15px 0 0; }
   .girl__title {
     margin: 0 0 30px 0;
     font-size: 36px; }

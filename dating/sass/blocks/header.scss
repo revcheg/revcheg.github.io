@@ -16,5 +16,9 @@
   .header {
     padding: 22px 30px;
     background: #fff;
+    
+    &--inner {
+      padding: 0;
+    }
   }
 }

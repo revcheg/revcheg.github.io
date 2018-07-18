@@ -241,6 +241,11 @@
 @media screen and ($mobile-widths) {
   .girl {
     padding: 100px 15px 35px 15px;
+    
+    &--inner {
+      width: 100%;
+      padding: 0 15px 0 0;
+    }
   }
   
   .girl__title {
