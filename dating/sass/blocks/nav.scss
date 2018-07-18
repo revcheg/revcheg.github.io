@@ -71,18 +71,15 @@
 
 .nav__search {
   position: relative;
-  width: 400px;
+  width: 30%;
   box-sizing: border-box;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 13px;
-    left: 30px;
-    width: 12px;
-    height: 13px;
-    background: url('../img/search.svg') no-repeat center / contain;
-  }  
+}
+
+.nav__search-icon {
+  fill: #a6a9ac;
+  position: absolute;
+  top: 13px;
+  left: 30px;
 }
 
 .nav__input {

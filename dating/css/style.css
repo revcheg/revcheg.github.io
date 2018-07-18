@@ -226,17 +226,15 @@ body {
 
 .nav__search {
   position: relative;
-  width: 400px;
+  width: 30%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-  .nav__search::before {
-    content: '';
-    position: absolute;
-    top: 13px;
-    left: 30px;
-    width: 12px;
-    height: 13px;
-    background: url("../img/search.svg") no-repeat center/contain; }
+
+.nav__search-icon {
+  fill: #a6a9ac;
+  position: absolute;
+  top: 13px;
+  left: 30px; }
 
 .nav__input {
   width: 100%;
@@ -1226,6 +1224,11 @@ body {
   .main--profile {
     padding: 20px 0; }
 
+.main__title {
+  margin: 0 0 30px 10px;
+  color: #474349;
+  font-weight: 700; }
+
 .authorization {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1688,32 +1691,26 @@ body {
   width: 60px;
   height: 40px;
   border: none;
+  background: #7880ce;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer; }
+  .profile__img-button:hover {
+    background: #ff6901; }
   .profile__img-button--download {
     border-right: 2px solid #bcc0e6;
     border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    background: #7880ce url("../img/profile-img-download.png") no-repeat center/17px; }
-    .profile__img-button--download:hover {
-      background: #ff6901 url("../img/profile-img-download.png") no-repeat center/17px; }
+    border-bottom-left-radius: 8px; }
   .profile__img-button--upload {
-    border-right: 2px solid #bcc0e6;
-    background: #7880ce url("../img/profile-img-upload.png") no-repeat center/17px; }
-    .profile__img-button--upload:hover {
-      background: #ff6901 url("../img/profile-img-upload.png") no-repeat center/17px; }
+    border-right: 2px solid #bcc0e6; }
   .profile__img-button--crop {
     border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    background: #7880ce url("../img/profile-img-crop.png") no-repeat center/17px; }
-    .profile__img-button--crop:hover {
-      background: #ff6901 url("../img/profile-img-crop.png") no-repeat center/17px; }
-    .profile__img-button--crop:hover + .profile__img-title {
-      clip: auto;
-      opacity: 1; }
+    border-bottom-right-radius: 8px; }
+
+.profile__img-icon {
+  fill: #fff; }
 
 .profile__img-title {
   position: absolute;

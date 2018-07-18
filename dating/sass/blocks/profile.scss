@@ -172,45 +172,33 @@
   width: 60px;
   height: 40px;
   border: none;
+  background: #7880ce;
   box-sizing: border-box;
   transition: 0.2s;
   cursor: pointer;
+  
+  &:hover {
+    background: #ff6901;
+  }
   
   &--download {
     border-right: 2px solid #bcc0e6;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    background: #7880ce url('../img/profile-img-download.png') no-repeat center / 17px;
-    
-    &:hover {
-      background: #ff6901 url('../img/profile-img-download.png') no-repeat center / 17px;
-    }
   }
   
   &--upload {
     border-right: 2px solid #bcc0e6;
-    background: #7880ce url('../img/profile-img-upload.png') no-repeat center / 17px;
-    
-    &:hover {
-      background: #ff6901 url('../img/profile-img-upload.png') no-repeat center / 17px;
-    }
   }
   
   &--crop {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    background: #7880ce url('../img/profile-img-crop.png') no-repeat center / 17px;
-    
-    &:hover {
-      background: #ff6901 url('../img/profile-img-crop.png') no-repeat center / 17px;
-    }
-    
-    &:hover + .profile__img-title {
-      // display: block;
-      clip: auto;
-      opacity: 1;
-    }
   }
+}
+
+.profile__img-icon {
+  fill: #fff;
 }
 
 .profile__img-title {
