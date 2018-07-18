@@ -1560,9 +1560,21 @@ body {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #fff url("../img/settings.svg") no-repeat center/15px;
+  background: #fff;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2); }
+  .profile__settings:hover .profile__settings-icon {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(180deg);
+    transform: translateX(-50%) translateY(-50%) rotate(180deg); }
+
+.profile__settings-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
 
 .profile__name {
   display: block;
