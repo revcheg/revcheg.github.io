@@ -330,6 +330,10 @@ body {
   color: #7d888a;
   font-size: 13px;
   font-weight: 400; }
+  .nav__counter--mobile {
+    width: 50%;
+    padding: 20px 10px;
+    font-size: 16px; }
 
 .nav__number {
   color: #687173;
@@ -1604,6 +1608,10 @@ body {
   height: 80px;
   border-radius: 50%;
   overflow: hidden; }
+  .profile__avatar--mobile {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px 0 0; }
 
 .profile__img {
   width: 100%; }
@@ -1638,6 +1646,12 @@ body {
   font-size: 14px;
   font-weight: 700;
   text-align: center; }
+  .profile__name--mobile {
+    width: 100px;
+    padding: 15px 0;
+    text-align: left; }
+    .profile__name--mobile small {
+      color: #c3c4d0; }
 
 .profile__hr {
   margin: 15px auto;
