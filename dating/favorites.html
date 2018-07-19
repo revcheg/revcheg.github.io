@@ -149,17 +149,87 @@
             </button>
             <ul class="profile__list  profile__list--mobile  profile__list--full  profile__list--inactive">
               <li class="profile__tabs">
-                <button class="profile__tab  profile__tab--active">Balance</button>
-                <button class="profile__tab">Prices</button>
-                <button class="profile__tab">Bonus</button>
-                <button class="profile__tab">History</button>
+                <button class="profile__tab  profile__tab--active" onclick="openTab(event, 'Balance')">Balance</button>
+                <button class="profile__tab" onclick="openTab(event, 'Prices')">Prices</button>
+                <button class="profile__tab" onclick="openTab(event, 'Bonus')">Bonus</button>
+                <button class="profile__tab" onclick="openTab(event, 'History')">History</button>
               </li>
-              <li class="profile__balance">
+              <li class="profile__balance  profile__content" id="Balance">
                 <div class="profile__balance-content">
                   <p class="profile__balance-text">Your balance</p>
                   <b class="profile__balance-counter"><span>213</span><br>credits</b>
                   <a class="button  button--small  button--violet  profile__balance-button" href="#">+ Add credits</a>
                 </div>
+              </li>
+              <li class="profile__prices  profile__content" id="Prices">
+                <table class="profile__table  profile__table--price">
+                  <tr class="profile__table-tr">
+                    <th class="profile__table-th">Service</th>
+                    <th class="profile__table-th">Type</th> 
+                    <th class="profile__table-th">Amount of credits</th>
+                  </tr>
+                  <tr class="profile__table-tr">
+                    <td class="profile__table-td">Received Letters</td>
+                    <td class="profile__table-td">RL</td> 
+                    <td class="profile__table-td">5 Credits</td>
+                  </tr>
+                  <tr class="profile__table-tr">
+                    <td class="profile__table-td">Sent Letters</td>
+                    <td class="profile__table-td">SL</td> 
+                    <td class="profile__table-td">5 Credits</td>
+                  </tr>
+                  <tr class="profile__table-tr">
+                    <td class="profile__table-td">Live Chat</td>
+                    <td class="profile__table-td">LC</td> 
+                    <td class="profile__table-td">0,5 Credits/min</td>
+                  </tr>
+                  <tr class="profile__table-tr">
+                    <td class="profile__table-td">CamShare</td>
+                    <td class="profile__table-td">CS</td> 
+                    <td class="profile__table-td">1,5 Credits/min</td>
+                  </tr>
+                  <tr class="profile__table-tr">
+                    <td class="profile__table-td">Video Chat</td>
+                    <td class="profile__table-td">VC</td> 
+                    <td class="profile__table-td">1 Credits/min</td>
+                  </tr>
+                  <tr class="profile__table-tr">
+                    <td class="profile__table-td">Privat Photos</td>
+                    <td class="profile__table-td">PP</td> 
+                    <td class="profile__table-td">1 Credits</td>
+                  </tr>
+                  <tr class="profile__table-tr">
+                    <td class="profile__table-td">Sent Videos</td>
+                    <td class="profile__table-td">PV</td> 
+                    <td class="profile__table-td">2 Credits</td>
+                  </tr>
+                  <tr class="profile__table-tr">
+                    <td class="profile__table-td">Contact Info</td>
+                    <td class="profile__table-td">CI</td> 
+                    <td class="profile__table-td">30 Credits/e-mail</td>
+                  </tr>
+                  <tr class="profile__table-tr">
+                    <td class="profile__table-td">Video Presentation</td>
+                    <td class="profile__table-td">VP</td> 
+                    <td class="profile__table-td">20 Credits</td>
+                  </tr>
+                  <tr class="profile__table-tr">
+                    <td class="profile__table-td">Stickers</td>
+                    <td class="profile__table-td">ST</td> 
+                    <td class="profile__table-td">1 Credits</td>
+                  </tr>
+                  <tr class="profile__table-tr">
+                    <td class="profile__table-td">Voice Message</td>
+                    <td class="profile__table-td">RG</td> 
+                    <td class="profile__table-td">1 Credits</td>
+                  </tr>
+                  <tr class="profile__table-tr">
+                    <td class="profile__table-td">Real Dates</td>
+                    <td class="profile__table-td">RD</td> 
+                    <td class="profile__table-td">30 Credits</td>
+                  </tr>
+                </table>
+                <p class="profile__table-alert">* equivalent 1% = 4 credits</p>
               </li>
             </ul>
           </li>

@@ -110,6 +110,7 @@
     border-right: 1px solid #e6eef3;
     background: #fff;
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.11);
+    box-sizing: border-box;
     
     li {
       width: 100%;
@@ -324,7 +325,10 @@
 
 .profile__table {
   display: flex;
-  // justify-content: space-between;
+  
+  &--price {
+    display: table;
+  }
 }
 
 .profile__parameters {
@@ -392,18 +396,21 @@
 .profile__tabs {
   display: flex;
   padding: 0 !important;
+  border-bottom: none !important;
 }
 
 .profile__tab {
   width: 33.33%;
   padding: 30px 0;
   color: #8f9a9c;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
+  border-bottom: 2px solid transparent;
   background: transparent;
   outline: none;
+  transition: 0.2s;
   
   &--active {
     color: #59555b;
@@ -442,6 +449,59 @@
 
 .profile__balance-button {
   margin: auto;
+}
+
+.profile__prices {
+  flex-direction: column;
+  background: #fff !important;
+}
+
+.profile__table--price {
+  width: 100%;
+  margin: 20px 0 0 0;
+  border: 1px solid #e6eef3;
+  border-collapse: collapse;
+  overflow-x: scroll;
+}
+
+.profile__table-th {
+  padding: 30px 20px;
+  color: #59555b;
+  font-size: 20px;
+  background: #e6eef3;
+  
+  &:first-child {
+    border-top-left-radius: 8px;
+  }
+  
+  &:last-child {
+    border-top-right-radius: 8px;
+  }
+}
+
+.profile__table-tr {
+  border-bottom: 1px solid #e6eef3;
+  
+  &:nth-child(even) { 
+    background: #fff;
+  }
+  
+  &:nth-child(odd) {
+    background: #f9fafd;
+  }
+}
+
+.profile__table-td {
+  padding: 20px;
+  color: #8f9a9c;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.profile__table-alert {
+  color: #8f9a9c;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 @media screen and ($tablet-widths) {

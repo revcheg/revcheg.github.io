@@ -1,4 +1,4 @@
-// (function () {
+(function () {
   var buttons = document.querySelectorAll('.nav__button');
   var menus = document.querySelectorAll('.profile__list--mobile');
   
@@ -97,4 +97,18 @@
       buttons[3].classList.remove('nav__button--active');
     }
   });
-// })();
+})();
+
+function openTab(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("profile__content");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("profile__tab");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" profile__tab--active", "");
+  }
+  document.getElementById(cityName).style.display = "flex";
+  evt.currentTarget.className += " profile__tab--active";
+}
