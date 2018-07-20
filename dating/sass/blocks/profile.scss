@@ -423,6 +423,8 @@
 }
 
 .profile__balance-content {
+  position: relative;
+  width: 100%;
   margin: auto;
   text-align: center;
 }
@@ -505,6 +507,155 @@
   color: #8f9a9c;
   font-size: 18px;
   font-weight: 400;
+}
+
+.profile__popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  padding: 80px 40px; 
+  border: 1px solid red;
+  background: #fff;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.profile__popup-close {
+  position: absolute;
+  top: 20px;
+  right: 20px; 
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  border: none;
+  background: transparent;
+}
+
+.profile__popup-close-icon {
+  fill: #8b94d5;
+}
+
+.profile__popup-name {
+  display: block;
+  margin: 0 0 20px 0;
+  color: #59555b;
+  font-size: 20px;
+  font-weight: 400;
+  
+  &:last-of-type {
+    margin: 10px 0 20px 0;
+  }
+}
+
+.profile__popup-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.profile__popup-value {
+  width: 30%;
+  margin: 0 0 10px 0;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: inherit;
+  border: none;
+  border-radius: 8px;
+  background: #8b94d5;
+  
+  &--active {
+    color: #59555b;
+    background: #f4f9fc;
+  }
+}
+
+.profile__popup-amount {
+  width: 100%;
+  margin: 0 0 20px 0;
+  padding: 25px 30px;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: inherit;
+  border: none;
+  border-radius: 8px;
+  background: #f4f9fc;
+  box-sizing: border-box;
+  
+  &::placeholder {
+    opacity: 0.4;
+  }
+}
+
+.profile__popup-button {
+  margin: 0 auto 20px auto;
+}
+
+/* New */
+.checkbox__label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  color: #adadad;
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 100;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+}
+
+.checkbox__label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox__checkmark {
+  position: absolute;
+  top: 1px;
+  left: 40%;
+  height: 14px;
+  width: 14px;
+  background: transparent;
+  border: 1px solid #adadad;
+  transition: 0.2s;
+}
+
+/* .checkbox__label:hover input ~ .checkbox__checkmark {
+  background: #ccc;
+} */
+
+.checkbox__label input:checked ~ .checkbox__checkmark {
+  /* background: #ccc; */
+}
+
+.checkbox__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  transition: 0.2s;
+}
+
+.checkbox__label input:checked ~ .checkbox__checkmark:after {
+  display: block;
+}
+
+.checkbox__label .checkbox__checkmark:after {
+  left: 9px;
+  top: 0px;
+  left: 4px;
+  width: 5px;
+  height: 10px;
+  border: 1px solid #adadad;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 @media screen and ($tablet-widths) {
