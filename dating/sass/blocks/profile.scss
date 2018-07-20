@@ -513,11 +513,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 80%;
+  width: 50%;
   padding: 80px 40px; 
   background: #fff;
   transform: translateX(-50%) translateY(-50%);
-  transition: z-index 0.1s, opacity 0.7s ease-in;
+  transition: opacity 0.2s;
+  box-sizing: border-box;
   
   &--inactive {
     opacity: 0;
@@ -526,7 +527,7 @@
   
   &--active {
     opacity: 1;
-    z-index: 8;
+    z-index: 7;
   }
 }
 
@@ -540,6 +541,13 @@
   font-size: 0;
   border: none;
   background: transparent;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+  
+  &:hover {
+    transform: rotate(180deg);
+  }
 }
 
 .profile__popup-close-icon {
@@ -576,8 +584,15 @@
   border: none;
   border-radius: 8px;
   background: #8b94d5;
+  cursor: pointer;
+  transition: 0.2s;
   
   &--active {
+    color: #59555b;
+    background: #f4f9fc;
+  }
+  
+  &:hover {
     color: #59555b;
     background: #f4f9fc;
   }
@@ -594,6 +609,13 @@
   border-radius: 8px;
   background: #f4f9fc;
   box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  
+  &:hover,
+  &:focus {
+    background: #EDF2F7;
+  }
   
   &::placeholder {
     opacity: 0.4;
@@ -689,5 +711,9 @@
     &--inner {
       display: none;
     }
+  }
+  
+  .profile__popup {
+    width: 95%;
   }
 }

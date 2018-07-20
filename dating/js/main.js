@@ -114,12 +114,21 @@ function openTab(evt, cityName) {
 }
 
 (function () {
-  var add = document.querySelector('.profile__balance-button');
+  var addDesktop = document.querySelector('.popup__add--desktop');
+  var addMobile = document.querySelector('.popup__add--mobile');
   var popup = document.querySelector('.profile__popup');
   var overlay = document.querySelector('.popup__overlay');
   var close = document.querySelector('.profile__popup-close');
   
-  add.addEventListener('click', function () {
+  addDesktop.addEventListener('click', function () {
+    popup.classList.remove('profile__popup--inactive');
+    popup.classList.add('profile__popup--active');
+    
+    overlay.classList.remove('popup__overlay--inactive');
+    overlay.classList.add('popup__overlay--active');
+  });
+  
+  addMobile.addEventListener('click', function () {
     popup.classList.remove('profile__popup--inactive');
     popup.classList.add('profile__popup--active');
     
@@ -128,6 +137,14 @@ function openTab(evt, cityName) {
   });
   
   close.addEventListener('click', function () {
+    popup.classList.add('profile__popup--inactive');
+    popup.classList.remove('profile__popup--active');
+    
+    overlay.classList.remove('popup__overlay--active');
+    overlay.classList.add('popup__overlay--inactive');
+  });
+  
+  overlay.addEventListener('click', function () {
     popup.classList.add('profile__popup--inactive');
     popup.classList.remove('profile__popup--active');
     
