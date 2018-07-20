@@ -112,3 +112,26 @@ function openTab(evt, cityName) {
   document.getElementById(cityName).style.display = "flex";
   evt.currentTarget.className += " profile__tab--active";
 }
+
+(function () {
+  var add = document.querySelector('.profile__balance-button');
+  var popup = document.querySelector('.profile__popup');
+  var overlay = document.querySelector('.popup__overlay');
+  var close = document.querySelector('.profile__popup-close');
+  
+  add.addEventListener('click', function () {
+    popup.classList.remove('profile__popup--inactive');
+    popup.classList.add('profile__popup--active');
+    
+    overlay.classList.remove('popup__overlay--inactive');
+    overlay.classList.add('popup__overlay--active');
+  });
+  
+  close.addEventListener('click', function () {
+    popup.classList.add('profile__popup--inactive');
+    popup.classList.remove('profile__popup--active');
+    
+    overlay.classList.remove('popup__overlay--active');
+    overlay.classList.add('popup__overlay--inactive');
+  });
+})();

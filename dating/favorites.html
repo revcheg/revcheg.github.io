@@ -159,7 +159,7 @@
                   <p class="profile__balance-text">Your balance</p>
                   <b class="profile__balance-counter"><span>213</span><br>credits</b>
                   <a class="button  button--small  button--violet  profile__balance-button" href="#">+ Add credits</a>
-                  <div class="profile__popup">
+                  <!-- <div class="profile__popup  profile__popup--inactive">
                     <button class="profile__popup-close" type="button">
                       Close
                       <svg class="profile__popup-close-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 41.756 41.756"><path d="M27.948 20.878L40.291 8.536a5 5 0 1 0-7.07-7.071L20.878 13.809 8.535 1.465a5 5 0 0 0-7.07 7.071l12.342 12.342L1.465 33.22a5 5 0 1 0 7.07 7.071l12.343-12.342 12.343 12.343c.976.977 2.256 1.464 3.535 1.464s2.56-.487 3.535-1.464a5 5 0 0 0 0-7.071L27.948 20.878z"/></svg>
@@ -176,12 +176,12 @@
                     <b class="profile__popup-name">or enter manually</b>
                     <input class="profile__popup-amount" type="text" placeholder="Amount">
                     <a class="button  button--small  button--violet  profile__popup-button" href="#">Refill</a>
-                    <label class="checkbox__label">
-    									Recurring
-    								  <input class="checkbox__input4" type="checkbox">
-    								  <span class="checkbox__checkmark"></span>
+                    <label class="profile__popup-label">
+    								  <input class="profile__popup-checkbox" type="checkbox">
+    								  <span class="profile__popup-checkmark"></span>
+                      Auto-removal of funds<br>with a low balance
     								</label>
-                  </div>
+                  </div> -->
                 </div>
               </li>
               <li class="profile__prices  profile__content" id="Prices" style="display: none;">
@@ -591,6 +591,30 @@
       <p class="footer__copyright">© Dating 2018. All rights reserved.</p>
     </div>
   </footer> -->
+  <div class="profile__popup  profile__popup--inactive">
+    <button class="profile__popup-close" type="button">
+      Close
+      <svg class="profile__popup-close-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 41.756 41.756"><path d="M27.948 20.878L40.291 8.536a5 5 0 1 0-7.07-7.071L20.878 13.809 8.535 1.465a5 5 0 0 0-7.07 7.071l12.342 12.342L1.465 33.22a5 5 0 1 0 7.07 7.071l12.343-12.342 12.343 12.343c.976.977 2.256 1.464 3.535 1.464s2.56-.487 3.535-1.464a5 5 0 0 0 0-7.071L27.948 20.878z"/></svg>
+    </button>
+    <b class="profile__popup-name">Select the amount of credits from the list</b>
+    <div class="profile__popup-flex">
+      <button class="profile__popup-value">5</button>
+      <button class="profile__popup-value  profile__popup-value--active">10</button>
+      <button class="profile__popup-value">20</button>
+      <button class="profile__popup-value">50</button>
+      <button class="profile__popup-value">100</button>
+      <button class="profile__popup-value">200</button>
+    </div>
+    <b class="profile__popup-name">or enter manually</b>
+    <input class="profile__popup-amount" type="text" placeholder="Amount">
+    <a class="button  button--small  button--violet  profile__popup-button" href="#">Refill</a>
+    <label class="profile__popup-label">
+      <input class="profile__popup-checkbox" type="checkbox">
+      <span class="profile__popup-checkmark"></span>
+      Auto-removal of funds<br>with a low balance
+    </label>
+  </div>
+  <div class="popup  popup__overlay  popup__overlay--inactive"></div>
   <script src="js/script.js"></script>
   <script src="js/main.min.js" async></script>
 </body>
