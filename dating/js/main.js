@@ -1,3 +1,27 @@
+// Slick
+// $('.profile__photos').slick({
+//   autoplay: false,
+//   autoplaySpeed: 2000,
+//   dots: false,
+//   arrows: false,
+//   slidesToShow: 5,
+//   responsive: [{
+//     breakpoint: 1024,
+//     settings: {
+//       // slidesToShow: 3,
+//     }
+//   }, {
+//     breakpoint: 600,
+//     settings: {
+//       // slidesToShow: 2,
+//     }
+//   }, {
+//     breakpoint: 300,
+//     settings: 'uncslick'
+//   }]
+// });
+
+// Mobile Nav
 (function () {
   var buttons = document.querySelectorAll('.nav__button');
   var menus = document.querySelectorAll('.profile__list--mobile');
@@ -150,5 +174,15 @@ function openTab(evt, cityName) {
     
     overlay.classList.remove('popup__overlay--active');
     overlay.classList.add('popup__overlay--inactive');
+  });
+  
+  window.addEventListener('keydown', function(event) {
+    if (event.keyCode === 27) {
+      popup.classList.add('profile__popup--inactive');
+      popup.classList.remove('profile__popup--active');
+      
+      overlay.classList.remove('popup__overlay--active');
+      overlay.classList.add('popup__overlay--inactive');
+    }
   });
 })();

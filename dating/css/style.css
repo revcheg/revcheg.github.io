@@ -1695,6 +1695,12 @@ body {
     text-align: left; }
     .profile__name--mobile small {
       color: #c3c4d0; }
+  .profile__name--photos {
+    margin: 20px 0;
+    color: #474349;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left; }
 
 .profile__hr {
   margin: 15px auto;
@@ -1799,7 +1805,9 @@ body {
 .profile__flex {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #e1eaf0; }
 
 .profile__desc {
   -webkit-box-flex: 1;
@@ -1927,7 +1935,15 @@ body {
     margin: 0 20px 0 0; }
 
 .profile__edit-button {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 150px;
   margin: 15px 0 0 0;
   padding: 10px 0;
@@ -1946,6 +1962,11 @@ body {
   .profile__edit-button:hover {
     color: #fff;
     background: #ff6901; }
+    .profile__edit-button:hover .profile__edit-icon {
+      fill: #fff; }
+
+.profile__edit-icon {
+  fill: #ff6901; }
 
 .profile__about {
   width: 30%; }
@@ -2248,6 +2269,61 @@ body {
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg); }
+
+.profile__photos,
+.profile__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.profile__photos {
+  width: 100%; }
+
+.profile__photo {
+  position: relative;
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 8px; }
+  .profile__photo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #7880CD;
+    opacity: 0;
+    -webkit-transition: 0.2s ease-out;
+    transition: 0.2s ease-out; }
+  .profile__photo:hover::before {
+    opacity: 0.2; }
+
+.profile__photo-source {
+  width: 100%;
+  height: 100%; }
+
+.profile__upload {
+  width: 150px; }
+
+.profile__drop {
+  padding: 20px 0;
+  color: #7880cd;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  border: 3px dotted #7880cd;
+  border-radius: 8px; }
+
+.profile__drop-icon {
+  fill: #7880cd;
+  display: block;
+  margin: 0 auto 5px auto; }
+
+.profile__input {
+  width: 100%; }
 
 @media screen and (max-width: 768px) {
   .profile__nav--inner {

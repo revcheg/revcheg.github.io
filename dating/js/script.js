@@ -42,6 +42,8 @@ $(document).ready(function () {
     }).on('afterChange', function(event, slick, currentSlide, nextSlide){
         changeStories();
     });
+    
+    
 
     //chenage slides for love stories
     changeStories();
