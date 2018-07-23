@@ -2317,9 +2317,11 @@
   cursor: pointer; }
 
 .profile__file-icon {
+  fill: #fff;
   margin: 0 3px 0 0; }
 
-.profile__select {
+.profile__select,
+.profile__add {
   display: none; }
 
 @media screen and (max-width: 1460px) {
@@ -2349,7 +2351,10 @@
   .profile__img-settings,
   .profile__name-big::before,
   .profile__id,
-  .profile__hr--info {
+  .profile__hr--info,
+  .profile__about,
+  .profile__drop,
+  .profile__name--small {
     display: none; }
   .profile__inner {
     width: 100%; }
@@ -2357,6 +2362,10 @@
     width: 100%;
     padding: 40px 0;
     border-radius: 0; }
+  .profile__name--photos {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    text-align: center; }
   .profile__select {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2407,7 +2416,8 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    border: none; }
   .profile__info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2450,7 +2460,8 @@
         background: #8b94d5; }
   .profile__edit-icon {
     fill: #fff; }
-  .profile__table {
+  .profile__table,
+  .profile__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2466,7 +2477,29 @@
       margin: 0;
       padding: 20px 20px 0 20px; }
     .profile__parameters:last-child {
-      padding: 0px 20px 20px 20px; } }
+      padding: 0px 20px 20px 20px; }
+  .profile__photos {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    margin: 0; }
+  .profile__upload {
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin: 0 0 30px 0; }
+  .profile__file-label {
+    color: #8b94d5;
+    font-size: 12px;
+    border: 2px dashed #8b94d5;
+    background: transparent; }
+  .profile__file-icon {
+    fill: #8b94d5; }
+  .profile__add {
+    display: block;
+    margin: auto;
+    font-size: 0;
+    border: none;
+    background: transparent; } }
 
 .popup__overlay {
   position: fixed;
