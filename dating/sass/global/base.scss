@@ -1,7 +1,11 @@
-body {
+.body {
   min-width: 320px;
   margin: 0;
   font-family: 'Lato', sans-serif;
+  
+  &--inner {
+    background: #f7f9fc;
+  }
 }
 
 .container {

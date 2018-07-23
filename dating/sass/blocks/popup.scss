@@ -11,6 +11,7 @@
   transition: background 0.5s;
   
   &--inactive {
+    cursor: auto;
     z-index: -1;
   }
   
