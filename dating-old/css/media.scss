@@ -1,0 +1,607 @@
+@media only screen and (max-width : 1680px) {
+  .folder .parallax {
+    max-width: 770px;
+  }
+  .how-it-work .slick-dots {
+    left: 10%;
+  }
+  .control {
+    left: 20%;
+  }
+}
+@media only screen and (max-width : 1366px) {
+  h1 {
+    font-size: 68px;
+  }
+  .folder .parallax {
+    max-width: 690px;
+  }
+  .how-it-work .slick-dots {
+    top: 46%;
+  }
+  .control {
+    top: 45.5%;
+  }
+  .how-it-work .item .parallax{
+    max-width: 700px;
+  }
+}
+@media only screen and (max-width : 1200px) {
+  h1 {
+    font-size: 62px;
+  }
+  .folder .parallax {
+    max-width: 590px;
+    top: 20%;
+  }
+  .folder{
+    padding: 210px 0 0;
+    min-height: 720px;
+  }
+  .soc-list li {
+    padding: 0 0 0 10px;
+  }
+  .footer-nav li{
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width : 1100px) {
+  h1 {
+    font-size: 54px;
+  }
+  h3 {
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+  .folder .parallax {
+    max-width: 520px;
+    top: 25%;
+  }
+  .folder {
+    min-height: 630px;
+  }
+  .how-it-work h2 {
+    margin: 0 0 13px 30px;
+  }
+  .how-it-work p {
+    margin: 0 0 0 30px;
+  }
+  .how-it-work .slick-dots {
+    top: 43%;
+  }
+  .control {
+    top: 42.5%;
+    left: 23%;
+  }
+  .love-stories .preview .item {
+    min-height: 415px;
+  }
+  .love-stories {
+    padding: 90px 0 90px;
+  }
+}
+@media only screen and (max-width : 992px) {
+  .features .box {
+    margin-bottom: 60px;
+  }
+  .how-it-work .item .parallax {
+    max-width: 620px;
+    left: 55%;
+  }
+  .how-it-work .item {
+    min-height: 510px;
+  }
+  .love-stories {
+    padding: 40px 0 40px;
+  }
+}
+
+//original styles for width > 2880px
+@media only screen and (min-width : 2880px) {
+  .content {
+    max-width: 2430px;
+  }
+  .container {
+    max-width: 2080px;
+  }
+  .header{
+      .content{
+        min-height: 128px;
+          .btn{
+            height: 76px;
+            border-radius: 10px;
+            padding: 0 52px;
+            letter-spacing: 0;
+          }
+          span.label:not(.online){
+            border-radius: 15px;
+          }
+      }
+      .logo{
+        padding: 0 0 10px 0;
+        img{
+          max-width: 82px;
+          position: relative;
+          top: 6px;
+        }
+        p{
+          margin: 10px 0 0 7px;
+          letter-spacing: 3px;
+        }
+      }
+      .search{
+        max-width: 815px;
+          .form-control,
+          .fa{
+            font-size: 26px;
+          }
+          .fa{
+            left: 48px;
+          }
+          .form-control{
+            padding-left: 80px;
+          }
+          .btn{
+            padding: 0 48px;
+          }
+      }
+      .input-group.search{
+        margin-left: 170px;
+      }
+      .notif{
+        font-size: 48px;
+        margin: 0 0 0 156px;
+          .fa{
+            margin-top: 4px;
+          }
+          .label{
+            padding: 4px 12px;
+          }
+      }
+      .notif.btn{
+          .label{
+            left: 52%;
+            top: -2px;
+          }
+      }
+  }
+  .left-box{
+    max-width: 380px;
+  }
+  .fz16{
+    font-size: 32px;
+  }
+  .fz14{
+    font-size: 28px;
+  }
+  .fz12{
+    font-size: 24px;
+  }
+  .fz11{
+    font-size: 22px;
+  }
+  .form-control,
+  .btn{
+    height: 76px;
+    font-size: 26px;
+  }
+  .btn{
+    border-radius: 10px;
+  }
+  .balance{
+    font-size: 26px;
+    margin: 19px 55px 0 0;
+  }
+  .footer{
+    min-height: 256px;
+    padding: 52px 0 0;
+      .logo{
+        margin: -75px 0 0 0;
+        img{
+            max-width: 82px;
+            position: relative;
+            top: 6px;
+          }
+          p{
+            margin: 10px 0 0 7px;
+            letter-spacing: 3px;
+          }
+      }
+      .footer-nav{
+        padding: 25px 6px 0 0px;
+          li{
+            padding: 0 27.5px;
+          }
+      }
+      .copyright{
+        font-size: 26px;
+        margin-top: 40px;
+      }
+  }
+  .register{
+    padding: 33px 50px 1px 50px;
+  }
+
+}
+
+
+//
+@media (min-width:320px) and (max-width:992px) {
+  .block.profile button.orange, .block.profile button.c-orange, .block.profile .agree button.fa, .agree .block.profile button.fa {
+      margin: 5px 10px;
+  }
+  .block.profile .profile_top_name .online {
+    left: 70%;
+  }
+  .block.profile .btn-violet{
+    margin: -30px auto 0 8px;
+    width: 90%;
+  }
+  .profile.profile_girl .btn-group button {
+    padding: 5px 10px;
+    width: 100%;
+  }
+  .profile.profile_girl .btn-group {
+    margin: -25px 14px;
+  }
+  .block.profile {
+    max-width: 760px;
+  }
+  .block.view .btn-group button {
+    padding: 5px 15px;
+  }
+  .block.my_dates{
+    li.divider {
+      width: 82%;
+    }
+  }
+  .block.register.edit_profile{
+    padding: 27px 20px 20px 20px;
+  }
+  .block.support {
+    .s-label {
+      width: 33%;
+    }
+    .s-input {
+      width: 67%;
+    }
+  }
+  .block.view .btn-group button {
+    padding: 5px 15px;
+  }
+  .block.edit_profile_photo .btn_edit button {
+    width: 70%;
+    margin: 5px 10px;
+  }
+  .block.edit_profile_photo .img_first {
+    height: 68px;
+  }
+  .profile.profile_girl #profile_modal .modal-dialog.modal-lg {
+    margin: 80px 0 0 200px;
+  }
+  .profile.profile_girl #profile_modal .close {
+    width: 5%;
+  }
+  .block.my_dates.contact_info li{
+    padding: 0 15px 0 0;
+  }
+  .block.contact_info .my_dates_right button.btn-violet {
+    margin-bottom: 10px;
+  }
+  #newdates .my_dates_right .register .s-label {
+    width: 28%;
+  }
+  #newdates .my_dates_right .adress, #newdates .my_dates_right .message {
+    width: 70%;
+  }
+  .block.letters .border_tab{
+    // left: 25%;
+  }
+  .block.letters #messages .messages_btn {
+    margin-right: -125px;
+  }
+  .block.letters #messages .messages_part, .block.letters #all_sent .messages_part {
+    margin: 0px -84px;
+    width: 617px;
+  }
+  .block.letters #all_sent .input-group.search.pull-left{
+    margin-left: -75px;
+  }
+  .block.letters #messages button.btn.fi.bold.ttu.btn-violet.fac.btn_trash{
+    padding: 4px 0px 0px;
+    margin-left: 0;
+  }
+  .block.letters #all_sent button.btn.fi.bold.ttu.btn-violet.fac.pull-right.btn_trash {
+    margin: 0px -40px 10px 0px;
+  }
+  .block.letters  #messages {
+    button.btn.fi.bold.ttu.btn-violet.fac {
+      padding: 2px 20px 0;
+    }
+    button.btn.fi.bold.ttu.c-orange.fac{
+      margin-left: 5px;
+    }
+    .messages_part img {
+        height: 31px;
+    }
+  }
+  .block.letters li.dropdown .panel-body{
+    padding: 0;
+  }
+  .block.letters .my_dates_left button.btn.fi.bold.ttu.btn-violet.fac{
+    padding: 2px 22px 0;
+  }
+  .block.letters #open_letter, .block.letters #open_letter_one {
+    margin: -21px 0 0 -40px;
+  }
+  .block.letters #open_letter .letters_img,  .block.letters #open_letter_one .letters_img {
+    margin: 0px -83px 0 0;
+  }
+  .block.letters #open_letter .letters_img button,  .block.letters #open_letter_one .letters_img button {
+    margin: -26px 1px 0;
+  }
+  .block.letters #no_messages {
+    margin-left: -30px;
+  }
+  .block.letters #messages {
+    .my_dates_right_border{
+      margin-left: -77px;
+    }
+  }
+  .block.letters #write_messages {
+    margin-left: -26px;
+  }
+  .block.letters #write_messages button.btn.fi.bold.ttu.btn-violet.fac.btn_trash {
+    margin: 0 26px;
+  }
+  .header .input-group.search{
+    margin-top: 10px;
+  }
+  .block.balance .balance_part button {
+    padding: 1px 15px;
+  }
+  .block.balance .balance_part {
+    padding: 15px 63px 15px 10px;
+  }
+  .block.livechat .livechat_left ul a {
+    padding: 7px;
+  }
+  .block.livechat .notifications_part {
+    // padding: 10px 0;
+    width: 85%;
+  }
+  .block.livechat #open_letter .letters_file_bottom .letters_btn_bottom button, .block.livechat #open_letter_one .letters_file_bottom .letters_btn_bottom button {
+    padding: 2px 4px 0;
+  }
+  .block.livechat  #open_letter .letters_file_bottom a, .block.livechat #open_letter_one .letters_file_bottom a {
+    padding-right: 5px;
+  }
+  .block.livechat #open_letter .letters_part_new, .block.livechat #open_letter_one .letters_part_new {
+    height: 155px;
+  }
+  .block.livechat #open_letter .letters_file_bottom .letters_btn_bottom button, .block.livechat #open_letter_one .letters_file_bottom .letters_btn_bottom button {
+    padding: 2px 15px 0;
+    margin: 10px;
+  }
+  .block.profile #profile_modal_man .modal-dialog.modal-lg {
+    margin: 80px 0 0 230px;
+  }
+  .preview-container.preview-container_one {
+    width: 70px;
+    height: 70px;
+    margin: 0;
+  }
+  .preview-container.preview-container_two {
+    margin: 10px 0 8px 30px;
+  }
+  .upload_file{
+    button.btn.fi.bold.ttu.btn-violet.fac.fileinput-button{
+      margin: 0 0 0 7px;
+      padding: 0px 1px;
+      font-size: 11px;
+    }
+  }
+  .block.livechat{
+    #open_letter, #open_letter_one {
+      margin: -21px 0 0 -28px;
+    }
+    .border_tab{
+      left: 22.5%;
+    }
+  }
+  .parallax.reg, .parallax.log{
+    right: 44%;
+  }
+  .block.login .control-group, .block.forgot .control-group {
+    padding: 0 20px 0 20px;
+  }
+  // .block.letters #open_letter .letters_part_new, .block.letters #open_letter_one .letters_part_new {
+  //   height: 295px;
+  // }
+  .block.search .bizmoduleselect .btn{
+    padding: 7px 10px 0;
+  }
+  .block.search .s-label {
+    width: 100%;
+  }
+  .btn-group.bootstrap-select.input-group-btn.fi1.hev.fz16 {
+    margin-left: 5px;
+  }
+  .block.real_gift .box.gift_item a.photo:hover .make_gift{
+    left: 11%;
+  }
+  #newdates .my_dates_right .s-input .input_text{
+    width: 33%;
+    i{
+      padding: 1px 5px;
+    }
+  }
+  .register{
+    padding: 33px 50px 1px 50px;
+  }
+}
+
+
+
+
+
+
+
+@media (min-width:1000px) and (max-width:1200px) {
+  .block.my_dates{
+    li.divider {
+      width: 87%;
+    }
+  }
+  .header .input-group.search{
+    margin-top: 10px;
+  }
+  .block.profile {
+    max-width: 760px;
+  }
+  .block.register.edit_profile{
+    padding: 27px 28px 20px 28px;
+  }
+  .block.view .btn-group button {
+    padding: 5px 10px;
+  }
+  .block.edit_profile_photo .btn_edit button {
+    width: 70%;
+    margin: 5px 10px;
+  }
+  .block.support {
+    .s-label {
+      width: 30%;
+    }
+    .s-input {
+      width: 70%;
+    }
+  }
+  .upload_file{
+    button.btn.fi.bold.ttu.btn-violet.fac.fileinput-button{
+      margin: 0;
+      padding: 0px 1px;
+      font-size: 11px;
+    }
+  }
+  .block.view .drag_file{
+    padding: 5px;
+  }
+  .profile.profile_girl { 
+    .btn-group button {
+      padding: 5px 8px;
+    }
+    button.btn.orange.fi.fac.ttu.bold.fz12,
+    button.btn.c-orange.fi.fac.ttu.bold.fz12{
+      margin: 10px 10px 5px;
+    }
+  }
+  .block.my_dates.contact_info li{
+    padding: 0 15px 0 0;
+  }
+  .block.profile .btn-violet {
+    margin: -30px auto 0 10px;
+    padding: 1px 8px;
+  }
+  .block.real_gift .box.gift_item a.photo:hover .make_gift{
+    left: 13%;
+  }
+  .block.profile button.orange, .block.profile button.c-orange, .block.profile .agree button.fa, .agree .block.profile button.fa {
+    margin: 10px 10px 5px;
+  }
+  #newdates .my_dates_right .register .s-label {
+    width: 27%;
+  }
+  #newdates .my_dates_right .adress, #newdates .my_dates_right .message {
+    width: 70%;
+  }
+  .block.letters li.dropdown .panel-body ul li a{
+    padding-left: 10px;
+  }
+  .block.letters #messages .messages_btn {
+    margin-right: -70px;
+  }
+  .block.letters #messages .messages_part, .block.letters #all_sent .messages_part {
+    margin: 0px -17px;
+    width: 650px;
+  }
+  .block.letters #all_sent button.btn.fi.bold.ttu.btn-violet.fac.pull-right.btn_trash {
+    margin: 0px -50px 10px 0px;
+  }
+  .block.letters #messages button.btn.fi.bold.ttu.btn-violet.fac.btn_trash{
+    padding: 4px 0px 0px;
+  }
+  .block.letters button.btn.fi.bold.ttu.btn-violet.fac {
+    padding: 2px 20px 0;
+  }
+  .block.letters #open_letter, .block.letters #open_letter_one {
+    margin: -21px 0 0 27px;
+  }
+  .block.letters #open_letter .letters_img, .block.letters #open_letter_one .letters_img {
+    margin: 0px -78px 0 0;
+  }
+  .block.letters #open_letter .letters_img button, .block.letters #open_letter_one .letters_img button {
+    margin: -26px 10px 0;
+  }
+  .block.letters #write_messages button.btn.fi.bold.ttu.btn-violet.fac.btn_trash {
+    margin: 0 19px;
+  }
+  .block.letters #write_messages {
+    margin-left: 41px;
+  }
+  .block.balance .balance_part button {
+    padding: 1px 20px;
+  }
+  .block.balance .balance_part {
+    padding: 15px 56px 15px 10px;
+  }
+  .block.livechat .livechat_left ul a {
+    padding: 8px;
+  }
+  .block.livechat .notifications_part {
+    width: 90%;
+  }
+  .block.livechat #open_letter .letters_file_bottom .letters_btn_bottom button, .block.livechat #open_letter_one .letters_file_bottom .letters_btn_bottom button {
+    padding: 2px 4px 0;
+  }
+  .block.livechat  #open_letter .letters_file_bottom a, .block.livechat #open_letter_one .letters_file_bottom a {
+    padding-right: 5px;
+  }
+  .preview-container.preview-container_one {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+  }
+  // .block.letters #open_letter .letters_part_new, .block.letters #open_letter_one .letters_part_new {
+  //   height: 295px;
+  // }
+  .block.livechat{
+    #open_letter, #open_letter_one {
+      margin: -21px 0 0 35px;
+    }
+    .border_tab {
+      left: 22%;
+    }
+  }
+  .block.login .control-group, .block.forgot .control-group {
+    padding: 0 30px 0 50px;
+  }
+  .parallax.reg, .parallax.log{
+    right: 44%;
+  }
+  .block.profile #profile_modal_man .modal-dialog.modal-lg{
+    margin: 80px 0 0 200px;
+  }
+  .block.notifications{
+    padding: 18px 50px;
+  }
+  .block.search .s-label {
+    width: 100%;
+  }
+  .btn-group.bootstrap-select.input-group-btn.fi1.hev.fz16 {
+    margin-left: 5px;
+  }
+  .block.search .bizmoduleselect .btn{
+    padding: 7px 10px 0;
+  }
+}

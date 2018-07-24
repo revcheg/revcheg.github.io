@@ -1,0 +1,53 @@
+.authorization {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 90px 0;
+  
+  &--login {
+    padding: 200px 0;
+  }
+}
+
+.authorization__left {
+  width: 600px;
+}
+
+.authorization__name {
+  color: #474349;
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.authorization__subname {
+  color: #ff6901;
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.authorization__mockup {
+  height: 360px;
+  background: url('../img/authorization-mockup.png') no-repeat center / cover;
+}
+
+@media screen and ($tablet-widths) {
+  .authorization {
+    flex-wrap: wrap;
+  }
+  
+  .authorization__left {
+    margin: 0 auto 50px auto;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .authorization {
+    padding: 50px 0;
+  }
+  
+  .authorization__left {
+    display: none;
+  }
+}

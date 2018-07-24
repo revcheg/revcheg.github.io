@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html" />
+    <meta name="author" content="admin" />
+    <title>Dating with Stas</title>
+
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./img/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/favicon-64.png">
+
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="css/style.css?ver=1.0.10<?php echo time();?>" />
+    <link rel="stylesheet" href="css/media.css?ver=1.0.8" />
+
+</head>
+<body>
+<div id="wrapper">
+    <header class="header">
+        <div class="content fb fas">
+            <div class="left-box fi fal">
+                <a href="/" class="logo">
+                    <img src="img/logo-color.png" alt="Dating with Stas" />
+                    <p class="fz16 ttu white grb">dating</p>
+                </a>
+            </div>
+            <div class="container">
+                <div class="row fb fas">
+                    <div class="col-xs-12">
+                        <div class="input-group search pull-left">
+                            <input type="text" class="form-control hev fz16" placeholder="Search ladies">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <div class="input_text bold"> search</div>
+                        </div>
+                        <button class="btn fi bold ttu btn-violet fac pull-right">
+                            <span>+</span> add credits
+                        </button>
+                        <a href="#" class="balance pull-right">Your balance:<span class="hev">213 credits</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="content fb">
+        <div class="left-box">
+            <div class="panel panel-photo">
+                <div class="panel-body">
+                    <img src="img/love-stories/p3.jpg" alt="name" />
+                    <!-- <button class="change white">
+                        <i class="fa fa-camera" aria-hidden="true"></i>
+                        <br />
+                        <span class="ttu bold">change photo</span>
+                    </button> -->
+                </div>
+                <div class="dropdown menu_setting">
+                  <button type="button" class="btn edit-photo dropdown-toggle" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-cog" aria-hidden="true"></i> </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                    <li><a href="#" class="grey">My profile</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#" class="grey">My photos</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#" class="grey">Settings</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#" class="grey">Support</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#" class="grey">Log out</a></li>
+                  </ul>
+                </div>
+            </div>
+            <p class="silver profile-name fz14 bold">Patrick Nyman</p>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="new-ladies.html" class="fz12 ttu bold i-new-ladies">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>
+                            new ladies
+                        </a>
+                        <span class="label label-default fz11"></span></li>
+                    <li>
+                        <a href="#" class="fz12 ttu bold i-favorites">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            Favorites
+                        </a>
+                        <span class="label label-default fz11"></span></li>
+                    <li>
+                        <a href="#" class="fz12 ttu bold i-letters">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            Letters
+                        </a>
+                        <span class="label label-default fz11">11</span></li>
+                    <li>
+                        <a href="#" class="fz12 ttu bold i-live-chat">
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+                            Live chat
+                        </a>
+                        <span class="label label-default fz11"></span></li>
+                    <li>
+                        <a href="#" class="fz12 ttu bold i-real-gifts">
+                            <i class="fa fa-gift" aria-hidden="true"></i>
+                            real gifts
+                        </a>
+                        <span class="label label-default fz11"></span></li>
+                    <li>
+                        <a href="#" class="fz12 ttu bold i-contact-info">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            contact info
+                        </a>
+                        <span class="label label-default fz11"></span></li>
+                    <li class="active">
+                        <a href="#" class="fz12 ttu bold i-dates">
+                            <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                            dates
+                        </a>
+                        <span class="label label-default fz11"></span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="block my_dates letters livechat">
+                        <div class="row">
+                            <div class="col-xs-3 col-md-2">
+                                <div class="my_dates_left livechat_left">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <ul class="nav nav-tabs" role="tablist">
+                                                <li role="presentation" class="active"><a class="fz12 sbold" href="#favorites_tab" aria-controls="favorites_tab" role="tab" data-toggle="tab"><i class="fa fa-star" aria-hidden="true"></i>Favorites</a></li>
+                                                <li role="presentation"><a class="fz12 sbold" href="#online_tab" aria-controls="online_tab" role="tab" data-toggle="tab"><i class="fa fa-circle" aria-hidden="true"></i>Online</a></li>
+                                                <li role="presentation"><a class="fz12 sbold" href="#latest_tab" aria-controls="latest_tab" role="tab" data-toggle="tab"><i class="fa fa-clock-o" aria-hidden="true"></i>Latest</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div role="tabpanel" class="tab-pane active" id="favorites_tab">
+                                                    <div class="col-xs-12 notifications_part">
+                                                        <div class="row">
+                                                            <div class="col-xs-3">
+                                                                <img class="img-responsive img-circle" src="img/new/not_img.jpg" alt="person">
+                                                            </div>
+                                                            <div class="col-xs-9">
+                                                                <p class="silver bold fz13">Viviana</span></p>
+                                                                <p class="grey fz11 sbold">id34983498</p>
+                                                            </div>
+                                                            <a href="#"><p class="start_chat ttu fz13"><i class="grey fa fa-comments fz12" aria-hidden="true"></i> Start livechat</p></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 notifications_part">
+                                                        <div class="row">
+                                                            <div class="col-xs-3">
+                                                                <i class="grey fa fa-circle online_dot" aria-hidden="true"></i>
+                                                                <img class="img-responsive img-circle" src="img/new/not_img.jpg" alt="person">
+                                                            </div>
+                                                            <div class="col-xs-9">
+                                                                <p class="silver bold fz13">Alexis</span></p>
+                                                                <p class="grey fz11 sbold">id34983498</p>
+                                                                <span class="label label-default fz11">11</span></li>
+                                                            </div>
+                                                            <a href="#"><p class="start_chat ttu fz13"><i class="grey fa fa-comments fz12" aria-hidden="true"></i> Start livechat</p></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 notifications_part">
+                                                        <div class="row">
+                                                            <div class="col-xs-3">
+                                                                <img class="img-responsive img-circle" src="img/new/not_img.jpg" alt="person">
+                                                            </div>
+                                                            <div class="col-xs-9">
+                                                                <p class="silver bold fz13">Viviana</span></p>
+                                                                <p class="grey fz11 sbold">id34983498</p>
+                                                            </div>
+                                                            <a href="#"><p class="start_chat ttu fz13"><i class="grey fa fa-comments fz12" aria-hidden="true"></i> Start livechat</p></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 notifications_part">
+                                                        <div class="row">
+                                                            <div class="col-xs-3">
+                                                                <i class="grey fa fa-circle online_dot" aria-hidden="true"></i>
+                                                                <img class="img-responsive img-circle" src="img/new/not_img.jpg" alt="person">
+                                                            </div>
+                                                            <div class="col-xs-9">
+                                                                <p class="silver bold fz13">Alexis</span></p>
+                                                                <p class="grey fz11 sbold">id34983498</p>
+                                                                <span class="label label-default fz11">11</span></li>
+                                                            </div>
+                                                            <a href="#"><p class="start_chat ttu fz13"><i class="grey fa fa-comments fz12" aria-hidden="true"></i> Start livechat</p></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 notifications_part">
+                                                        <div class="row">
+                                                            <div class="col-xs-3">
+                                                                <img class="img-responsive img-circle" src="img/new/not_img.jpg" alt="person">
+                                                            </div>
+                                                            <div class="col-xs-9">
+                                                                <p class="silver bold fz13">Viviana</span></p>
+                                                                <p class="grey fz11 sbold">id34983498</p>
+                                                            </div>
+                                                            <a href="#"><p class="start_chat ttu fz13"><i class="grey fa fa-comments fz12" aria-hidden="true"></i> Start livechat</p></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 notifications_part">
+                                                        <div class="row">
+                                                            <div class="col-xs-3">
+                                                                <i class="grey fa fa-circle online_dot" aria-hidden="true"></i>
+                                                                <img class="img-responsive img-circle" src="img/new/not_img.jpg" alt="person">
+                                                            </div>
+                                                            <div class="col-xs-9">
+                                                                <p class="silver bold fz13">Alexis</span></p>
+                                                                <p class="grey fz11 sbold">id34983498</p>
+                                                                <span class="label label-default fz11">11</span></li>
+                                                            </div>
+                                                            <a href="#"><p class="start_chat ttu fz13"><i class="grey fa fa-comments fz12" aria-hidden="true"></i> Start livechat</p></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 notifications_part">
+                                                        <div class="row">
+                                                            <div class="col-xs-3">
+                                                                <img class="img-responsive img-circle" src="img/new/not_img.jpg" alt="person">
+                                                            </div>
+                                                            <div class="col-xs-9">
+                                                                <p class="silver bold fz13">Viviana</span></p>
+                                                                <p class="grey fz11 sbold">id34983498</p>
+                                                            </div>
+                                                            <a href="#"><p class="start_chat ttu fz13"><i class="grey fa fa-comments fz12" aria-hidden="true"></i> Start livechat</p></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 notifications_part">
+                                                        <div class="row">
+                                                            <div class="col-xs-3">
+                                                                <i class="grey fa fa-circle online_dot" aria-hidden="true"></i>
+                                                                <img class="img-responsive img-circle" src="img/new/not_img.jpg" alt="person">
+                                                            </div>
+                                                            <div class="col-xs-9">
+                                                                <p class="silver bold fz13">Alexis</span></p>
+                                                                <p class="grey fz11 sbold">id34983498</p>
+                                                                <span class="label label-default fz11">11</span></li>
+                                                            </div>
+                                                            <a href="#"><p class="start_chat ttu fz13"><i class="grey fa fa-comments fz12" aria-hidden="true"></i> Start livechat</p></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane" id="online_tab">...</div>
+                                                <div role="tabpanel" class="tab-pane" id="latest_tab">...</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border_tab"></div>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="open_letter">
+                                    <div id="open_letter" class="col-xs-8 col-md-9 col-xs-offset-1">
+                                        <div class="my_dates_right">
+                                            <div class="row">
+                                                <div class="col-xs-8 my_dates_right_border">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 letters_part">
+                                                            <div class="row">
+                                                                <div class="col-xs-7">
+                                                                    <span class="bold black fz16"><i class="grey fa fa-star-o" aria-hidden="true"></i> Lilia</span> <span class="grey fz13"> Almaty, Kazakhstan</span>
+                                                                </div>
+                                                                <div class="col-xs-5 pull-right letters_part_btn">
+                                                                    <div class="row">
+                                                                        <div class="col-xs-12">
+                                                                            <button class="btn fi bold ttu btn-violet fac btn_trash">
+                                                                                <i class="blue fa fa-comments fz12" aria-hidden="true"></i> end livechat
+                                                                            </button>
+                                                                            <div class="dropdown">
+                                                                                <button class="btn fi bold ttu btn-violet fac btn_trash btn_dots" id="dot_drop" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                    <span>...</span>
+                                                                                </button>
+                                                                                <ul class="dropdown-menu" aria-labelledby="dot_drop">
+                                                                                    <li><a class="blue fz12" href="">Report</a></li>
+                                                                                    <li><a class="blue fz12" href="">Clear chat</a></li>
+                                                                                    <li><a class="blue fz12" href="">Delete</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <!-- <button class="btn fi bold ttu btn-violet fac btn_trash btn_dots">
+                                                                                <span>...</span>
+                                                                            </button> -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 letters_part letters_part_mes">
+                                                            <div class="col-xs-12 pull-left">
+                                                                <div class="livechat_mes">
+                                                                    <p class="silver fz13">hello I am a good woman, very happy, romantic, sentimental and that values, respect a man. 😍😍😍 </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12"><p class="bold grey fz11">Today <span>17:20</span></p></div>
+                                                            <div class="col-xs-12 pull-left">
+                                                                <div class="livechat_mes">
+                                                                    <p class="silver fz13">I am looking for an educated, loving and very passionate man who wants to come and find me and make me happy, I am a good girl, I think I deserve someone special</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12"><p class="bold grey fz11">Today <span>17:20</span></p></div>
+                                                            <div class="col-xs-12">
+                                                                <div class="livechat_mes pull-right">
+                                                                    <p class="silver fz13">I think that there may be good men and I'm trying to find the right one someday, I believe in true love and marriage.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12"><p class="bold grey fz11 pull-right">Today <span>17:20</span></p></div>
+                                                            <div class="col-xs-12 pull-left">
+                                                                <div class="livechat_mes">
+                                                                    <p class="silver fz13">I like it!! ❤️</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12"><p class="bold grey fz11">Today <span>17:20</span></p></div>
+                                                            <div class="col-xs-12 pull-left">
+                                                                <div class="livechat_mes">
+                                                                    <p class="silver fz13">hello I am a good woman, very happy, romantic, sentimental and that values, respect a man. 😍😍😍 </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12"><p class="bold grey fz11">Today <span>17:20</span></p></div>
+                                                            <div class="col-xs-12">
+                                                                <div class="livechat_mes pull-right">
+                                                                    <p class="silver fz13">hello I am a good woman, very happy, romantic, sentimental and that values, respect a man. 😍😍😍 </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12"><p class="bold grey fz11 pull-right">Today <span>17:20</span></p></div>
+                                                        </div>
+                                                        <div class="col-xs-12 letters_part letters_part_new">
+                                                            <div class="">
+                                                                <div class="row">
+                                                                    <div class="col-xs-12">
+                                                                        <input type="text" class="form-control fi1 letters_part_new_item black" placeholder="Type your message">
+
+                                                                        <div class="btn-group dropup noclose">
+                                                                            <button type="button" class="btn noclose fi bold ttu fac btn_smile dropdown-toggle blue" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                               <i class="fa fa-smile-o fa-lg" aria-hidden="true"></i>
+                                                                            </button>
+                                                                            <ul class="dropdown-menu noclose">
+                                                                                <li><a href="#" type="button" class="ttu fac fz13 c-orange" data-toggle="modal" data-target="#new_stickers_modal"><i class="fa fa-shopping-cart" aria-hidden="true"></i> buy new stickers</a></li>
+                                                                                <li role="separator" class="divider"></li>
+                                                                                <div class="">
+                                                                                    <div class="tab-content">
+                                                                                        <div role="tabpanel" class="tab-pane active" id="home"><i class="fa fa-smile-o fa-lg" aria-hidden="true"></i><i class="fa fa-smile-o fa-lg" aria-hidden="true"></i><i class="fa fa-smile-o fa-lg" aria-hidden="true"></i><i class="fa fa-smile-o fa-lg" aria-hidden="true"></i><i class="fa fa-smile-o fa-lg" aria-hidden="true"></i><i class="fa fa-smile-o fa-lg" aria-hidden="true"></i></div>
+                                                                                        <div role="tabpanel" class="tab-pane" id="profile">
+                                                                                            <div class="tab_stickers">
+                                                                                                <a href="#"><img class="img-responsive" src="img/stickers/1.png" alt="sticker"></a>
+                                                                                            </div>
+                                                                                            <div class="tab_stickers">
+                                                                                                <a href="#"><img class="img-responsive" src="img/stickers/2.png" alt="sticker"></a>
+                                                                                            </div>
+                                                                                            <div class="tab_stickers">
+                                                                                                <a href="#"><img class="img-responsive" src="img/stickers/3.png" alt="sticker"></a>
+                                                                                            </div>
+                                                                                            <div class="tab_stickers">
+                                                                                                <a href="#"><img class="img-responsive" src="img/stickers/4.png" alt="sticker"></a>
+                                                                                            </div>
+                                                                                            <div class="tab_stickers">
+                                                                                                <a href="#"><img class="img-responsive" src="img/stickers/1.png" alt="sticker"></a>
+                                                                                            </div>
+                                                                                            <div class="tab_stickers">
+                                                                                                <a href="#"><img class="img-responsive" src="img/stickers/2.png" alt="sticker"></a>
+                                                                                            </div>
+                                                                                            <div class="tab_stickers">
+                                                                                                <a href="#"><img class="img-responsive" src="img/stickers/3.png" alt="sticker"></a>
+                                                                                            </div>
+                                                                                            <div class="tab_stickers">
+                                                                                                <a href="#"><img class="img-responsive" src="img/stickers/4.png" alt="sticker"></a>
+                                                                                            </div>
+                                                                                            <div class="tab_stickers">
+                                                                                                <a href="#"><img class="img-responsive" src="img/stickers/1.png" alt="sticker"></a>
+                                                                                            </div>
+                                                                                            <div class="tab_stickers">
+                                                                                                <a href="#"><img class="img-responsive" src="img/stickers/2.png" alt="sticker"></a>
+                                                                                            </div>
+                                                                                            <div class="tab_stickers">
+                                                                                                <a href="#"><img class="img-responsive" src="img/stickers/3.png" alt="sticker"></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div role="tabpanel" class="tab-pane" id="messages">...</div>
+                                                                                        <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                                                                                    </div>
+                                                                                    <ul class="nav nav-tabs" role="tablist">
+                                                                                        <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-smile-o fa-lg" aria-hidden="true"></i></a></li>
+                                                                                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><img class="img-responsive" src="img/stickers/1.png" alt="sticker"></a></li>
+                                                                                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><img class="img-responsive" src="img/stickers/2.png" alt="sticker"></a></li>
+                                                                                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><img class="img-responsive" src="img/stickers/3.png" alt="sticker"></a></li>
+                                                                                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><img class="img-responsive" src="img/stickers/2.png" alt="sticker"></a></li>
+                                                                                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><img class="img-responsive" src="img/stickers/3.png" alt="sticker"></a></li>
+                                                                                        <li role="presentation"><a href="#" class="next"><i class="fa fa-arrow-right " aria-hidden="true"></i></a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="modal fade modal_sticker" id="new_stickers_modal" tabindex="-1" role="dialog" aria-labelledby="new_stickers_modal">
+                                                                            <div class="modal-dialog" role="document">
+                                                                                <div class="modal-content">
+                                                                                    <div class="modal-header">
+                                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                                    <div class="row">
+                                                                                        <div class="col-xs-3 col-xs-offset-1 name_stickers">
+                                                                                            <img class="img-responsive" src="img/stickers/stickers.png">
+                                                                                        </div>
+                                                                                        <div class="col-xs-8">
+                                                                                            <p class="silver fz13 text_stickers">Every woman loves stickers. The surprise of all of them.</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="modal-body">
+                                                                                    <div>
+                                                                                      <ul class="nav nav-tabs" role="tablist">
+                                                                                        <li role="presentation" class="active"><a class="blue fz12 fac" href="#new_stick" aria-controls="new_stick" role="tab" data-toggle="tab">New</a></li>
+                                                                                        <li role="presentation"><a class="blue fz12 fac" href="#popular_stick" aria-controls="popular_stick" role="tab" data-toggle="tab">Popular</a></li>
+                                                                                        <li role="presentation"><a class="blue fz12 fac" href="#all_stick" aria-controls="all_stick" role="tab" data-toggle="tab">All</a></li>
+                                                                                        <li role="presentation"><a class="blue fz12 fac" href="#my_stick" aria-controls="my_stick" role="tab" data-toggle="tab">My</a></li>
+                                                                                      </ul>
+                                                                                      <div class="tab-content">
+                                                                                        <div role="tabpanel" class="tab-pane active" id="new_stick">
+                                                                                            <div class="row">
+                                                                                                <div class="col-xs-4">
+                                                                                                    <div class="buy_stickers_new">
+                                                                                                        <div class="row">
+                                                                                                            <div class="col-xs-12">
+                                                                                                                <img class="img-responsive" src="img/stickers/5.png">
+                                                                                                            </div>
+                                                                                                            <div class="col-xs-12 buy_stickers_new_text">
+                                                                                                                <div class="row">
+                                                                                                                    <div class="col-xs-6">
+                                                                                                                        <p class="bold fz16">Flowers</p>
+                                                                                                                        <p class="bold fz12">2 credits</p>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-xs-6">
+                                                                                                                        <button type="button" class="btn btn-violet ttu"  data-toggle="modal" data-target="#sticker_modal">buy</button>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-xs-4">
+                                                                                                    <div class="buy_stickers_new">
+                                                                                                        <div class="row">
+                                                                                                            <div class="col-xs-12">
+                                                                                                                <img class="img-responsive" src="img/stickers/5.png">
+                                                                                                            </div>
+                                                                                                            <div class="col-xs-12 buy_stickers_new_text">
+                                                                                                                <div class="row">
+                                                                                                                    <div class="col-xs-6">
+                                                                                                                        <p class="bold fz16">Flowers</p>
+                                                                                                                        <p class="bold fz12">2 credits</p>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-xs-6">
+                                                                                                                        <button type="button" class="btn btn-violet ttu">buy</button>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-xs-4">
+                                                                                                    <div class="buy_stickers_new">
+                                                                                                        <div class="row">
+                                                                                                            <div class="col-xs-12">
+                                                                                                                <img class="img-responsive" src="img/stickers/5.png">
+                                                                                                            </div>
+                                                                                                            <div class="col-xs-12 buy_stickers_new_text">
+                                                                                                                <div class="row">
+                                                                                                                    <div class="col-xs-6">
+                                                                                                                        <p class="bold fz16">Flowers</p>
+                                                                                                                        <p class="bold fz12">2 credits</p>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-xs-6">
+                                                                                                                        <button type="button" class="btn btn-violet ttu">buy</button>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-xs-4">
+                                                                                                    <div class="buy_stickers_new">
+                                                                                                        <div class="row">
+                                                                                                            <div class="col-xs-12">
+                                                                                                                <img class="img-responsive" src="img/stickers/5.png">
+                                                                                                            </div>
+                                                                                                            <div class="col-xs-12 buy_stickers_new_text">
+                                                                                                                <div class="row">
+                                                                                                                    <div class="col-xs-6">
+                                                                                                                        <p class="bold fz16">Flowers</p>
+                                                                                                                        <p class="bold fz12">2 credits</p>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-xs-6">
+                                                                                                                        <button type="button" class="btn btn-violet ttu">buy</button>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-xs-4">
+                                                                                                    <div class="buy_stickers_new">
+                                                                                                        <div class="row">
+                                                                                                            <div class="col-xs-12">
+                                                                                                                <img class="img-responsive" src="img/stickers/5.png">
+                                                                                                            </div>
+                                                                                                            <div class="col-xs-12 buy_stickers_new_text">
+                                                                                                                <div class="row">
+                                                                                                                    <div class="col-xs-6">
+                                                                                                                        <p class="bold fz16">Flowers</p>
+                                                                                                                        <p class="bold fz12">2 credits</p>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-xs-6">
+                                                                                                                        <button type="button" class="btn btn-violet ttu">buy</button>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-xs-4">
+                                                                                                    <div class="buy_stickers_new">
+                                                                                                        <div class="row">
+                                                                                                            <div class="col-xs-12">
+                                                                                                                <img class="img-responsive" src="img/stickers/5.png">
+                                                                                                            </div>
+                                                                                                            <div class="col-xs-12 buy_stickers_new_text">
+                                                                                                                <div class="row">
+                                                                                                                    <div class="col-xs-6">
+                                                                                                                        <p class="bold fz16">Flowers</p>
+                                                                                                                        <p class="bold fz12">2 credits</p>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-xs-6">
+                                                                                                                        <button type="button" class="btn btn-violet ttu">buy</button>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-xs-4">
+                                                                                                    <div class="buy_stickers_new">
+                                                                                                        <div class="row">
+                                                                                                            <div class="col-xs-12">
+                                                                                                                <img class="img-responsive" src="img/stickers/5.png">
+                                                                                                            </div>
+                                                                                                            <div class="col-xs-12 buy_stickers_new_text">
+                                                                                                                <div class="row">
+                                                                                                                    <div class="col-xs-6">
+                                                                                                                        <p class="bold fz16">Flowers</p>
+                                                                                                                        <p class="bold fz12">2 credits</p>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-xs-6">
+                                                                                                                        <button type="button" class="btn btn-violet ttu">buy</button>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-xs-4">
+                                                                                                    <div class="buy_stickers_new">
+                                                                                                        <div class="row">
+                                                                                                            <div class="col-xs-12">
+                                                                                                                <img class="img-responsive" src="img/stickers/5.png">
+                                                                                                            </div>
+                                                                                                            <div class="col-xs-12 buy_stickers_new_text">
+                                                                                                                <div class="row">
+                                                                                                                    <div class="col-xs-6">
+                                                                                                                        <p class="bold fz16">Flowers</p>
+                                                                                                                        <p class="bold fz12">2 credits</p>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-xs-6">
+                                                                                                                        <button type="button" class="btn btn-violet ttu">buy</button>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-xs-4">
+                                                                                                    <div class="buy_stickers_new">
+                                                                                                        <div class="row">
+                                                                                                            <div class="col-xs-12">
+                                                                                                                <img class="img-responsive" src="img/stickers/5.png">
+                                                                                                            </div>
+                                                                                                            <div class="col-xs-12 buy_stickers_new_text">
+                                                                                                                <div class="row">
+                                                                                                                    <div class="col-xs-6">
+                                                                                                                        <p class="bold fz16">Flowers</p>
+                                                                                                                        <p class="bold fz12">2 credits</p>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-xs-6">
+                                                                                                                        <button type="button" class="btn btn-violet ttu">buy</button>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div role="tabpanel" class="tab-pane" id="popular_stick">
+                                                                                        </div>
+                                                                                        <div role="tabpanel" class="tab-pane" id="all_stick">
+                                                                                        </div>
+                                                                                        <div role="tabpanel" class="tab-pane" id="my_stick">
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- <div class="modal-footer">
+                                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                </div> -->
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+
+                                                                        <div class="modal fade" id="sticker_modal" tabindex="-1" role="dialog" aria-labelledby="sticker_modal">
+                                                                            <div class="modal-dialog" role="document">
+                                                                                <div class="modal-content">
+                                                                                    <div class="modal-header">
+                                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                                        <div class="row">
+                                                                                            <div class="col-xs-4">
+                                                                                                <div class="header_text">
+                                                                                                    <p class="bold fz22">Flowers</p>
+                                                                                                    <p class="fz13">4 credits</p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-4">
+                                                                                                <img class="img-responsive" src="img/stickers/5.png">
+                                                                                            </div>
+                                                                                            <div class="col-xs-4">
+                                                                                                <div class="header_btn">
+                                                                                                    <button type="button" class="btn btn-violet ttu">buy</button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="modal-body">
+                                                                                        <div class="row">
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/4.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/3.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/2.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/1.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/4.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/3.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/2.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/1.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/4.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/3.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/2.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/1.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/4.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/3.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/2.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/1.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/4.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/3.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/2.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xs-3">
+                                                                                                <div class="body_sticker">
+                                                                                                    <img class="img-responsive" src="img/stickers/1.png" alt="sticker">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xs-12 letters_file_bottom">
+                                                                        <a href="" class="blue fz12 bold"><i class="fa fa-file-image-o" aria-hidden="true"></i> private photo</a>
+                                                                        <a href="" class="blue fz12 bold"><i class="fa fa-file-video-o" aria-hidden="true"></i> private video</a>
+                                                                        <a href="" class="blue fz12 bold"><i class="fa fa-file-audio-o" aria-hidden="true"></i> audio message</a>
+                                                                        <div class="pull-right letters_btn_bottom">
+                                                                            <!-- <button class="btn fi bold ttu fac btn_smile">
+                                                                               <i class="fa fa-smile-o fa-lg" aria-hidden="true"></i>
+                                                                            </button> -->
+                                                                            <button class="btn fi bold ttu btn-violet fac">
+                                                                               <i class="fa fa-paper-plane" aria-hidden="true"></i> Send
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4 pull-right letters_img">
+                                                    <div class="col-xs-12">
+                                                        <img class="img-responsive" src="img/new/girl.jpg" alt="machos">
+                                                        <button type="button" class="btn orange fi fac ttu bold fz12">
+                                                            <i class="fa fa-comments" aria-hidden="true"></i>start livechat
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <div class="letters_img_bottom">
+                                                            <div class="row">
+                                                                <div class="col-xs-5">
+                                                                    <img src="img/love-stories/p2.jpg" alt="photo">
+                                                                </div>
+                                                                <div class="col-xs-7">
+                                                                    <p class="black fz14 bold name">Patrick Nyman</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <footer class="footer">
+        <div class="content fb fas">
+            <div class="left-box fi fal">
+                <a href="/" class="logo">
+                    <img src="img/logo-color.png" alt="Dating with Stas" />
+                    <p class="fz16 ttu grb">dating</p>
+                </a>
+            </div>
+            <div class="container">
+                <div class="rows">
+                    <div class="col-xs-12">
+                        <ul class="footer-nav">
+                            <li><a href="#" class="fz14 bold undli">About our site</a></li>
+                            <li><a href="#" class="fz14 bold undli">Our services</a></li>
+                            <li><a href="#" class="fz14 bold undli">Terms and Conditions</a></li>
+                            <li><a href="#" class="fz14 bold undli">Privacy Policy</a></li>
+                            <li><a href="#" class="fz14 bold undli">Refund Policy</a></li>
+                            <li><a href="#" class="fz14 bold undli">Billing issues</a></li>
+                            <li><a href="#" class="fz14 bold undli">Site map</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="copyright">
+                            <p class="silver">&copy; Dating 2017. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="slick/slick.js"></script>
+<script src="js/script.js"></script> <!-- ?ver=<?php echo time();?> -->
+</body>
+</html>
