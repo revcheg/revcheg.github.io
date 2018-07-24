@@ -14,12 +14,7 @@ body {
 @media screen and ($tablet-widths) {
   .container {
     width: 100%;
-    // background: red;
   }
 }
 
-@media screen and ($mobile-widths) {
-  .container {
-    // background: yellow;
-  }
-}
+@media screen and ($mobile-widths) {}

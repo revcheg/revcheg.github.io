@@ -2,6 +2,17 @@
   position: absolute;
   top: 0;
   left: 50%;
+  width: 100%;
   padding: 25px 0;
   transform: translateX(-50%);
+}
+
+@media screen and ($tablet-widths) {
+  .header {
+    
+  }
+}
+
+@media screen and ($mobile-widths) {
+
 }

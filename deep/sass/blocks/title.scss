@@ -16,37 +16,67 @@
 }
 
 .title__content {
+  width: 550px;
+  margin: 0 155px 0 auto;
   padding: 375px 0;
-  text-align: center;
 }
 
 .title__name {
   margin: 0;
-  color: #fff;
-  font-size: 72px;
+  color: #A62727;
+  font-size: 64px;
   font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
   text-transform: uppercase;
 }
 
 .title__text {
-  margin: 0 0 60px 0;
-  color: #fff;
+  margin: 10px 0 65px 0;
+  color: #3D3D3D;
   font-size: 16px;
   font-weight: 400;
+  line-height: 25px;
 }
 
-.title__button {
-  margin: auto;
+@media screen and ($tablet-widths) {
+  .title__flex {
+    flex-direction: column;
+  }
+  
+  .title__left,
+  .title__right {
+    width: auto;
+  }
+  
+  .title__left {
+    background: url('../img/title-bg.jpg') no-repeat center / cover;
+  }
+  
+  .title__right {
+    display: none;
+  }
+  
+  .title__content {
+    padding: 300px 0;
+    margin: auto;
+  }
+  
+  .title__text {
+    color: #fff;
+  }
 }
-
-@media screen and ($tablet-widths) {}
 
 @media screen and ($mobile-widths) {
   .title__content {
-    padding: 150px 0;
+    width: auto;
+    padding: 150px 15px;
+    text-align: center;
   }
   
   .title__name {
     font-size: 35px;
+  }
+  
+  .title__button {
+    margin: auto;
   }
 }

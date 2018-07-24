@@ -46,6 +46,7 @@
   color: #636363;
   font-size: 16px;
   font-weight: 400;
+  line-height: 25px;
 }
 
 @media screen and ($tablet-widths) {
@@ -83,6 +84,7 @@
 @media screen and ($mobile-widths) {
   .app {
     padding: 50px 0;
+    background: url('../img/app-bg.png') no-repeat 0 300px;
   }
   
   .app__wrapper {
