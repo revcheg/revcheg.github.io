@@ -1,0 +1,33 @@
+.steps {
+  padding: 0 0 50px 0;
+  color: #fff;
+  
+  h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: 'SF UI Display Black', sans-serif;
+  }
+  
+  b {
+    font-size: 20px;
+    font-family: 'SF UI Display Regular', sans-serif;
+  }
+  
+  p {
+    font-family: 'SF UI Display Regular', sans-serif;
+    opacity: 0.7;
+  }
+  
+  hr {
+    width: 70px;
+    margin: 20px 0;
+  }
+}
+
+.steps__italy {
+  margin-top: 0;
+  font-style: italic;
+  font-family: 'SF UI Display Regular', sans-serif;
+  opacity: 0.7;
+}

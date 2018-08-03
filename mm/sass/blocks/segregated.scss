@@ -1,0 +1,71 @@
+.segregated {
+  background: #646464 url('../img/a-bg.png') no-repeat top;
+  background-size: cover;
+  
+  &--islamic {
+    background: url('../img/i-bg.jpg') no-repeat top;
+  }
+}
+
+.segregated__content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+  
+  h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-family: 'SF UI Display Black', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  b {
+    font-size: 30px;
+    font-family: 'SF UI Display Black', sans-serif;
+  }
+  
+  p, ul {
+    font-size: 18px;
+    font-family: 'SF UI Display Regular', sans-serif;
+    opacity: 0.7;
+  }
+  
+  a {
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+
+.segregated__text {
+  margin-bottom: 60px;
+  font-style: italic; 
+}
+
+.segregated__adv {
+  margin: 50px 0;
+  padding: 30px 50px;
+  border: 2px solid $sc;
+  border-radius: 10px;
+  
+  ul {
+    list-style-image: url('../img/r-arrow-s.png');
+  }
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .segregated__content {
+    
+    h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+  
+  
+}

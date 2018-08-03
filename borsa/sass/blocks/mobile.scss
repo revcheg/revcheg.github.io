@@ -1,0 +1,56 @@
+.mobile {
+  padding: 50px 0;
+}
+
+.mobile__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile__meta {
+  width: 200px;
+  background: url('../img/mobile-meta.png') no-repeat top;
+  background-size: 168px;
+}
+
+.mobile__text {
+  width: 950px;
+  
+  h1, h2 {
+    font-size: 25px;
+    font-family: 'Open Sans Bold', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  p {
+    font-family: 'Open Sans Regular', sans-serif;
+  }
+  
+  b {
+    font-family: 'Open Sans Bold', sans-serif;
+  }
+  
+  ul {
+    padding: 0;
+    font-family: 'Open Sans Regular', sans-serif;
+    line-height: 30px;
+    list-style-position: inside;
+  }
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .mobile__flex {
+    flex-direction: column;
+  }
+  
+  .mobile__meta {
+    height: 162px;
+    margin: auto;
+  }
+  
+  .mobile__text {
+    width: auto;
+  }
+}

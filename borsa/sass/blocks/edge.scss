@@ -1,0 +1,86 @@
+.edge {
+  padding: 50px 0;
+  text-align: center;
+  
+  h1 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 50px;
+    font-family: 'Open Sans Bold', sans-serif;
+  }
+  
+  p {
+    margin-top: 0;
+    font-size: 26px;
+    font-family: 'Open Sans Regular', sans-serif;
+  }
+}
+
+.edge__flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0 0 0;
+}
+
+.edge__box {
+  width: 350px;
+  padding-top: 120px;
+  
+  b {
+    font-family: 'Open Sans Bold', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  &--1 {
+    background: url('../img/edge-1.svg') no-repeat top;
+    background-size: 110px;
+  }
+  
+  &--2 {
+    background: url('../img/edge-2.svg') no-repeat top;
+    background-size: 90px;
+  }
+  
+  &--3 {
+    background: url('../img/edge-3.svg') no-repeat top;
+    background-size: 100px;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .edge {
+    
+    h1 {
+      font-size: 60px;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .edge {
+    padding: 50px 0;
+    
+    h1 {
+      font-size: 30px;
+    }
+    
+    p {
+      font-size: 16px;
+    }
+  }
+  
+  .edge__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .edge__box {
+    margin-bottom: 20px;
+  }
+}

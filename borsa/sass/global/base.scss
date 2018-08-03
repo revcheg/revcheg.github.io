@@ -1,0 +1,17 @@
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+@media screen and ($tablet-widths) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media screen and ($mobile-widths) {}

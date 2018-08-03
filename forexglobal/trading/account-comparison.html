@@ -1,0 +1,4361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Forex24 is a European CySEC Regulated online broker providing contracts for difference on foreign exchange, shares, futures and precious metals primarily to retail clients.">
+  <title>Account Comparison - Forex24 Global</title>
+  <link rel="stylesheet" href="../css/style.min.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../img/favicon/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="194x194" href="../img/favicon/favicon-194x194.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#2f2861">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="msapplication-config" content="../browserconfig.xml">
+  <meta name="msapplication-TileImage" content="../img/favicon/mstile-144x144.png">
+  <meta name="theme-color" content="#5a21ed">
+</head>
+<body>
+  <header class="header--inner  header--scroll">
+    <div class="header__container">
+      <div class="header__flex">
+        <a class="header__logo" href="../index.html">
+          <img src="../img/logo.svg" alt="Forex24 Global">
+        </a>
+        <button class="header__toggle">Open Menu</button>
+        <ul class="header__user  header__user--closed">
+          <li>
+            <a class="header__open" href="#">Open account</a>
+            <ul class="header__accounts  header__accounts--closed">
+              <li><a href="../client/real/step-1.php">Real</a></li>
+              <li><a href="../client/demo.html">Demo</a></li>
+              <li><a href="../trading/platforms/zulutrade.html">ZuluTrade</a></li>
+            </ul>
+          </li>
+          <li><a href="../client/login.html">Log in</a></li>
+          <li>
+            <select class="header__language">
+              <option>En</option>
+              <option>Ru</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+      <nav class="nav  nav--closed">
+        <ul class="nav__list">
+          <li>
+            <a class="nav__link" onclick="about()">About</a>
+            <div class="nav__wrapper  nav__wrapper--closed">
+              <ul class="nav__sub">
+                <li><a href="../about-us/licenses-and-regulations.html">Licenses and Regulations</a></li>
+                <li><a href="../about-us/security-of-funds.html">Security of Funds</a></li>
+                <li><a href="../about-us/stp-broker.html">STP Broker</a></li>
+                <li><a href="../about-us/legal-documents.html">Legal Documents</a></li>
+                <li><a href="../about-us/kids.html">KIDs</a></li>
+                <li><a href="../about-us/careers.html">Careers</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="nav__link" onclick="trading()">Trading</a>
+            <div class="nav__wrapper  nav__wrapper--closed">
+              <ul class="nav__sub">
+                <li><a href="account-types.html">Account Types</a></li>
+                <li><a class="nav__active">Account Comparison</a></li>
+                <li><a href="product-specification.html">Product Specification</a></li>
+                <!-- <li><a href="trading-specification.html">Trading Specification</a></li> -->
+                <li><a href="platforms.html">Platforms</a></li>
+                <li><a href="funding-and-withdrawal.html">Funding and Withdrawal</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="nav__link" onclick="resources()">Resources</a>
+            <div class="nav__wrapper  nav__wrapper--closed">
+              <ul class="nav__sub">
+                <li><a href="../resources/glossary.html">Glossary</a></li>
+                <li><a href="../resources/economic-calendar.html">Economic calendar</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="https://partners.forex24.com/" target="_blank">Partners</a></li>
+          <li>
+            <a class="nav__link" onclick="contact()">Contact Us</a>
+            <div class="nav__wrapper  nav__wrapper--closed">
+              <ul class="nav__sub">
+                <li><a href="../contact-us.html">Contact Us</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <label class="nav__search">
+          <input type="search">
+        </label>
+      </nav>
+    </div>
+  </header>
+  <section class="inner">
+    <div class="container">
+      <h1 class="inner__name">Account comparison</h1>
+      <div class="tab  tab--account">
+        <button class="tab__button  tab__button--account  tab__button--bronze  tab__active" onclick="openTab(event, 'Bronze')">Mini Bronze</button>
+        <button class="tab__button  tab__button--account  tab__button--silver" onclick="openTab(event, 'Silver')">Classic Silver</button>
+        <button class="tab__button  tab__button--account  tab__button--gold" onclick="openTab(event, 'Gold')">Premium Gold</button>
+      </div>
+      <div class="tab__anchor">
+        <a class="tab__button  tab__button--forex">Forex</a>
+        <a class="tab__button  tab__button--commodities">Commodities</a>
+        <a class="tab__button  tab__button--metals">Metals</a>
+        <a class="tab__button  tab__button--energies">Energies</a>
+        <a class="tab__button  tab__button--indices">Indices</a>
+        <a class="tab__button  tab__button--equities">Equities</a>
+      </div>
+      <div id="Bronze" class="tab__content  tab__content--account  tab__content--forex">
+        <div class="tab__inner">
+          <div class="tab__header">
+            <h3>Forex Pairs</h3>
+          </div>
+          <table class="tab__table  tab__table--right">
+          	<tr class="tab__name  tab__name--sticky">
+          		<th>Symbol</th>
+          		<th>Average Floating Spreads in pips</th>
+          		<th>Commission</th>
+          		<th>Leverage Up To</th>
+          	</tr>
+          	<tr>
+          		<td>AUDJPY</td>
+          		<td>3.7</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURGBP</td>
+          		<td>3.6</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURJPY</td>
+          		<td>3.5</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURUSD</td>
+          		<td>2.9</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPAUD</td>
+          		<td>6.2</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPCAD</td>
+          		<td>5.8</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPCHF</td>
+          		<td>4.3</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPJPY</td>
+          		<td>4.3</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPUSD</td>
+          		<td>3.5</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDCAD</td>
+          		<td>3.5</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDCHF</td>
+          		<td>3.9</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDJPY</td>
+          		<td>3.0</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>AUDUSD</td>
+          		<td>3.1</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>CHFJPY</td>
+          		<td>4.7</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURAUD</td>
+          		<td>4.8</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURCAD</td>
+          		<td>5.2</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURCHF</td>
+          		<td>4.2</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>AUDCHF</td>
+          		<td>5.4</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>AUDCAD</td>
+          		<td>4.8</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>AUDNZD</td>
+          		<td>5.0</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>AUDSGD</td>
+          		<td>6.7</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>CADCHF</td>
+          		<td>5.2</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>CADJPY</td>
+          		<td>4.8</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURNOK</td>
+          		<td>43.7</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURNZD</td>
+          		<td sdval="6.91037905727471">6.9</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>EURSEK</td>
+          		<td sdval="35.4951194445533">35.5</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>EURSGD</td>
+          		<td sdval="6.94473410316797">6.9</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>GBPNZD</td>
+          		<td sdval="7.17702494983531">7.2</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>GBPSGD</td>
+          		<td sdval="8.88742568597558">8.9</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>NZDCAD</td>
+          		<td sdval="5.04896419243725">5.0</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>NZDCHF</td>
+          		<td sdval="4.79403914590749">4.8</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>NZDJPY</td>
+          		<td sdval="4.43328617363343">4.4</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>NZDUSD</td>
+          		<td sdval="3.89175928733888">3.9</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>USDHKD</td>
+          		<td sdval="6.22529512830458">6.2</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>USDNOK</td>
+          		<td sdval="34.8538117602137">34.9</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>USDSEK</td>
+          		<td sdval="32.8076949152541">32.8</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>USDSGD</td>
+          		<td sdval="4.18522386913447">4.2</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>EURCZK</td>
+          		<td sdval="5.90449657224469">5.9</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>EURHUF</td>
+          		<td sdval="19.9189339926399">19.9</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>EURPLN</td>
+          		<td sdval="23.0096771978023">23.0</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>EURRUB</td>
+          		<td sdval="376.759423754643">376.8</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>EURTRY</td>
+          		<td sdval="33.8638827866669">33.9</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>GBPNOK</td>
+          		<td sdval="68.410490696965">68.4</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>GBPSEK</td>
+          		<td sdval="71.9200098900689">71.9</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>NOKSEK</td>
+          		<td sdval="12.2843737979845">12.3</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>SGDJPY</td>
+          		<td sdval="7.27201148769447">7.3</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>TRYJPY</td>
+          		<td sdval="6.97851647077017">7.0</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>USDCNH</td>
+          		<td sdval="14.020847020934">14.0</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>USDCZK</td>
+          		<td sdval="5.97976194217473">6.0</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>USDHUF</td>
+          		<td sdval="18.9909080411101">19.0</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>USDMXN</td>
+          		<td sdval="56.3549069694103">56.4</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>USDPLN</td>
+          		<td sdval="23.5363511029413">23.5</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>USDRUB</td>
+          		<td sdval="247.395951112732">247.4</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>USDTRY</td>
+          		<td sdval="17.7905685924161">17.8</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>USDZAR</td>
+          		<td sdval="71.6289532266651">71.6</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>ZARJPY</td>
+          		<td sdval="5.38300476450833">5.4</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>GBPDKK</td>
+          		<td sdval="12.7">12.7</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>AUDNOK</td>
+          		<td sdval="5.7">5.7</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>NOKJPY</td>
+          		<td sdval="3.66">3.7</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>AUDPLN</td>
+          		<td sdval="43.59">43.6</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>GBPHUF</td>
+          		<td sdval="16.38">16.4</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>GBPMXN</td>
+          		<td sdval="217.4">217.4</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>GBPPLN</td>
+          		<td sdval="77">77.0</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>GBPTRY</td>
+          		<td sdval="157">157.0</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          		
+          		
+          	</tr>
+          	<tr>
+          		<td>MXNJPY</td>
+          		<td>61.0</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDRON</td>
+          		<td>9.5</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>CADSGD</td>
+          		<td>7.5</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>CHFSGD</td>
+          		<td>7.6</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURRON</td>
+          		<td>9.5</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>AUDSEK</td>
+          		<td>7.7</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDDKK</td>
+          		<td>35.1</td>
+          		<td>NO</td>
+          		<td>50:1</td>
+          	</tr>
+          </table>
+        </div>
+        <div class="tab__inner">
+          <div class="tab__header">
+            <h3>Energies</h3>
+          </div>
+          <table class="tab__table  tab__table--right">
+          	<tr class="tab__name  tab__name--sticky">
+          		<th rowspan=2>Symbol</th>
+          		<th rowspan=2>Spreads</th>
+          		<th colspan=3>Commission Per Side</th>
+          		<th rowspan=2>Margin Applies Per 1 Lot</th>
+          	</tr>
+          	<tr class="tab__name  tab__name--sticky">
+          		<td>USD</td>
+          		<td>EUR</td>
+          		<td>GBP</td>
+          	</tr>
+            <tr>
+          		<td rowspan=2>WTI_OIL</td>
+          		<td rowspan=2>Floating</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>2%</td>
+          	</tr>
+          	<tr></tr>
+          	<tr>
+          		<td rowspan=2>UKOIL</td>
+          		<td rowspan=2>Floating</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>2%</td>
+          	</tr>
+          	<tr></tr>
+          	<tr>
+          		<td rowspan=2>NATGAS</td>
+          		<td rowspan=2>Floating</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>2%</td>
+          	</tr>
+          </table>
+        </div>
+        <div class="tab__inner">
+          <div class="tab__header">
+            <h3>Commodities</h3>
+          </div>
+          <table class="tab__table  tab__table--right">
+          	<tr class="tab__name  tab__name--sticky">
+          		<th rowspan=2>Symbol</th>
+          		<th rowspan=2>Spreads</th>
+          		<th colspan=3>Commission Per Side</th>
+          		<th rowspan=2>Margin Applies Per 1 Lot</th>
+          	</tr>
+          	<tr class="tab__name  tab__name--sticky">
+          		<td>USD</td>
+          		<td>EUR</td>
+          		<td>GBP</td>
+          	</tr>
+            <tr>
+          		<td>COCOA</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>COFFEE</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>SOYBEAN</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          </table>
+        </div>
+        <div class="tab__inner">
+          <div class="tab__header">
+            <h3>Metals</h3>
+          </div>
+          <table class="tab__table  tab__table--right">
+          	<tr class="tab__name  tab__name--sticky">
+          		<th rowspan=2>Symbol</th>
+          		<th rowspan=2>Spreads</th>
+          		<th colspan=3>Commission Per Side</th>
+          		<th rowspan=2>Margin Applies Per 1 Lot</th>
+          	</tr>
+          	<tr class="tab__name  tab__name--sticky">
+          		<td>USD</td>
+          		<td>EUR</td>
+          		<td>GBP</td>
+          	</tr>
+            <tr>
+          		<td>XAG/USD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAU/USD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUEUR</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUAUD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUCHF</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUGBP</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUJPY</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUNZD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUSGD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGCHF</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGAUD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGEUR</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGGBP</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGJPY</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGNZD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGSGD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XPDUSD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XPTUSD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>COPPER</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          </table>
+        </div>
+        <div class="tab__inner">
+          <div class="tab__header">
+            <h3>Indices</h3>
+          </div>
+          <table class="tab__table  tab__table--right">
+          	<tr class="tab__name  tab__name--sticky">
+          		<th rowspan=2>Symbol</th>
+          		<th rowspan=2>Spreads</th>
+          		<th colspan=3>Commission Per Side</th>
+          		<th rowspan=2>Margin Applies Per 1 Lot</th>
+          	</tr>
+          	<tr class="tab__name  tab__name--sticky">
+          		<td>USD</td>
+          		<td>EUR</td>
+          		<td>GBP</td>
+          	</tr>
+            <tr>
+          		<td>DJ30</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>AUS200</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>DE30</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>ES35</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>F40</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>JP225</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>STOXX50</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>SWIS20</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>USTEC</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>US500</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>UK100</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          </table>
+        </div>
+        <div class="tab__inner">
+          <div class="tab__header">
+            <h3>Equities</h3>
+          </div>
+          <table class="tab__table  tab__table--right">
+          	<tr class="tab__name  tab__name--sticky">
+          		<th rowspan=2>Symbol</th>
+          		<th rowspan=2>Spreads</th>
+          		<th colspan=3>Commission Per Side</th>
+          		<th rowspan=2>Margin Applies Per 1 Lot</th>
+          	</tr>
+          	<tr class="tab__name  tab__name--sticky">
+          		<td>USD</td>
+          		<td>EUR</td>
+          		<td>GBP</td>
+          	</tr>
+            <tr>
+          		<td>ADSGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>AIRF</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>ALVG</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BBVA</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BKIA</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BMWG</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BNPP</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>DAIGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>DANO</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>DBKGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>DPWGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>EONGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>IBE</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>LHAG</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>LVMH</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>MAP</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>SAN</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>SIEGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>SOGN</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>TEF</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>TOTF</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>VOWG_p</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>CBKG</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>AAPL</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>AXP</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BA</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BAC</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BAYGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>CSCO</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>CVX</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>FB</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>FDX</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>GE</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>GOOG</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>GS</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>HLT</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>HPQ</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>ILMN</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>INTC</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>KO</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>MA</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>MCD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>NFLX</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>ORCL</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>PFE</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>PG</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>QCOM</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>RACE</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>T</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>TSLA</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>TWTR</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>V</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>XOM</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>F</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>C</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          </table>
+        </div>
+      </div>
+      <div id="Silver" class="tab__content  tab__content--account">
+        <div class="tab__inner">
+          <div class="tab__header">
+            <h3>Forex Pairs</h3>
+          </div>
+          <table class="tab__table  tab__table--right">
+            <tr class="tab__name  tab__name--sticky">
+          		<th rowspan=2>Symbol</th>
+          		<th rowspan=2>Average Floating Spreads in Pips</th>
+          		<th colspan=3>Commission Per Lot</th>
+          		<th rowspan=2>Leverage Up To</th>
+          	</tr>
+          	<tr class="tab__name  tab__name--sticky">
+          		<td>USD</td>
+          		<td>EUR</td>
+          		<td>GBP</td>
+          	</tr>
+            <tr>
+          		<td>AUDJPY</td>
+          		<td>2.7</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURGBP</td>
+          		<td>2.6</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURJPY</td>
+          		<td>2.5</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURUSD</td>
+          		<td>1.9</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPAUD</td>
+          		<td>5.2</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPCAD</td>
+          		<td>4.8</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPCHF</td>
+          		<td>3.3</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPJPY</td>
+          		<td>3.3</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPUSD</td>
+          		<td sdval="2.47936494720508">2.5</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDCAD</td>
+          		<td sdval="2.54370151738752">2.5</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDCHF</td>
+          		<td sdval="2.88342504275129">2.9</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDJPY</td>
+          		<td sdval="1.96507339033062">2.0</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>AUDUSD</td>
+          		<td sdval="2.07293453553567">2.1</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>CHFJPY</td>
+          		<td sdval="3.74938922925649">3.7</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURAUD</td>
+          		<td sdval="3.77098143737476">3.8</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURCAD</td>
+          		<td sdval="4.23132768468435">4.2</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURCHF</td>
+          		<td sdval="3.23308467512786">3.2</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>AUDCHF</td>
+          		<td sdval="4.37805797320821">4.4</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>AUDCAD</td>
+          		<td sdval="3.81569574266793">3.8</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>AUDNZD</td>
+          		<td sdval="3.95053744326776">4.0</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>AUDSGD</td>
+          		<td sdval="5.7428812783647">5.7</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>CADCHF</td>
+          		<td sdval="4.16658144907773">4.2</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>CADJPY</td>
+          		<td sdval="3.81810475325461">3.8</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURNOK</td>
+          		<td sdval="42.6976344335071">42.7</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURNZD</td>
+          		<td sdval="5.91037905727471">5.9</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURSEK</td>
+          		<td sdval="34.4951194445533">34.5</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURSGD</td>
+          		<td sdval="5.94473410316797">5.9</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPNZD</td>
+          		<td sdval="6.17702494983531">6.2</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPSGD</td>
+          		<td sdval="7.88742568597558">7.9</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>NZDCAD</td>
+          		<td sdval="4.04896419243725">4.0</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>NZDCHF</td>
+          		<td sdval="3.79403914590749">3.8</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>NZDJPY</td>
+          		<td sdval="3.43328617363343">3.4</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>NZDUSD</td>
+          		<td sdval="2.89175928733888">2.9</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDHKD</td>
+          		<td sdval="5.22529512830458">5.2</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDNOK</td>
+          		<td sdval="33.8538117602137">33.9</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDSEK</td>
+          		<td sdval="31.8076949152541">31.8</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDSGD</td>
+          		<td sdval="3.18522386913447">3.2</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURCZK</td>
+          		<td sdval="4.90449657224469">4.9</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURHUF</td>
+          		<td sdval="18.9189339926399">18.9</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURPLN</td>
+          		<td sdval="22.0096771978023">22.0</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURRUB</td>
+          		<td sdval="375.759423754643">375.8</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURTRY</td>
+          		<td sdval="32.8638827866669">32.9</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPNOK</td>
+          		<td sdval="67.410490696965">67.4</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPSEK</td>
+          		<td sdval="70.9200098900689">70.9</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>NOKSEK</td>
+          		<td sdval="11.2843737979845">11.3</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>SGDJPY</td>
+          		<td sdval="6.27201148769447">6.3</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>TRYJPY</td>
+          		<td sdval="5.97851647077017">6.0</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDCNH</td>
+          		<td sdval="13.020847020934">13.0</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDCZK</td>
+          		<td sdval="4.97976194217473">5.0</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDHUF</td>
+          		<td sdval="17.9909080411101">18.0</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDMXN</td>
+          		<td sdval="55.3549069694103">55.4</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDPLN</td>
+          		<td sdval="22.5363511029413">22.5</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDRUB</td>
+          		<td sdval="246.395951112732">246.4</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDTRY</td>
+          		<td sdval="16.7905685924161">16.8</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDZAR</td>
+          		<td sdval="70.6289532266651">70.6</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>ZARJPY</td>
+          		<td sdval="4.38300476450833">4.4</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPDKK</td>
+          		<td sdval="11.7" sdnum="1033;">11.7</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>AUDNOK</td>
+          		<td sdval="5.7" sdnum="1033;">5.7</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>NOKJPY</td>
+          		<td sdval="2.69" sdnum="1033;">2.69</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>AUDPLN</td>
+          		<td sdval="42.59" sdnum="1033;">42.59</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPHUF</td>
+          		<td sdval="15.38" sdnum="1033;">15.38</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPMXN</td>
+          		<td sdval="216.4" sdnum="1033;">216.4</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPPLN</td>
+          		<td sdval="8.5" sdnum="1033;">8.5</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>GBPTRY</td>
+          		<td sdval="34.05" sdnum="1033;">34.05</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>MXNJPY</td>
+          		<td sdval="2.85" sdnum="1033;">2.85</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDRON</td>
+          		<td sdval="8.5" sdnum="1033;">8.5</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>CADSGD</td>
+          		<td sdval="6.5" sdnum="1033;">6.5</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>CHFSGD</td>
+          		<td sdval="6.6" sdnum="1033;">6.6</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>EURRON</td>
+          		<td sdval="8.5" sdnum="1033;">8.5</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>AUDSEK</td>
+          		<td sdval="6.7" sdnum="1033;">6.7</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          	<tr>
+          		<td>USDDKK</td>
+          		<td sdval="25.5" sdnum="1033;">25.5</td>
+          		<td>5.90 USD</td>
+          		<td>5.50 EUR</td>
+          		<td>4.90 GBP</td>
+          		<td>400:1</td>
+          	</tr>
+          </table>
+        </div>
+        <div class="tab__inner">
+          <div class="tab__header">
+            <h3>Energies</h3>
+          </div>
+          <table class="tab__table  tab__table--right">
+            <tr class="tab__name  tab__name--sticky">
+          		<th rowspan=2>Symbol</th>
+          		<th rowspan=2>Spreads</th>
+          		<th colspan=3>Commission Per Side</th>
+          		<th rowspan=2>Margin Applies Per 1 Lot</th>
+          	</tr>
+          	<tr class="tab__name  tab__name--sticky">
+          		<td>USD</td>
+          		<td>EUR</td>
+          		<td>GBP</td>
+          	</tr>
+            <tr>
+          		<td rowspan=2>WTI_OIL</td>
+          		<td rowspan=2>Floating</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>2%</td>
+          	</tr>
+          	<tr></tr>
+          	<tr>
+          		<td rowspan=2>UKOIL</td>
+          		<td rowspan=2>Floating</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>2%</td>
+          	</tr>
+          	<tr></tr>
+          	<tr>
+          		<td rowspan=2>NATGAS</td>
+          		<td rowspan=2>Floating</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>2%</td>
+          	</tr>
+          </table>
+        </div>
+        <div class="tab__inner">
+          <div class="tab__header">
+            <h3>Commodities</h3>
+          </div>
+          <table class="tab__table  tab__table--right">
+          	<tr class="tab__name  tab__name--sticky">
+          		<th rowspan=2>Symbol</th>
+          		<th rowspan=2>Spreads</th>
+          		<th colspan=3>Commission Per Side</th>
+          		<th rowspan=2>Margin Applies Per 1 Lot</th>
+          	</tr>
+          	<tr class="tab__name  tab__name--sticky">
+          		<td>USD</td>
+          		<td>EUR</td>
+          		<td>GBP</td>
+          	</tr>
+            <tr>
+          		<td rowspan=2>COCOA</td>
+          		<td rowspan=2>Floating</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>2%</td>
+          	</tr>
+          	<tr>
+          		</tr>
+          	<tr>
+          		<td rowspan=2>COFFEE</td>
+          		<td rowspan=2>Floating</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>2%</td>
+          	</tr>
+          	<tr>
+          		</tr>
+          	<tr>
+          		<td rowspan=2>SOYBEAN</td>
+          		<td rowspan=2>Floating</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>2%</td>
+          	</tr>
+          </table>
+        </div>
+        <div class="tab__inner">
+          <div class="tab__header">
+            <h3>Metals</h3>
+          </div>
+          <table class="tab__table  tab__table--right">
+            <tr class="tab__name  tab__name--sticky">
+          		<th rowspan=2>Symbol</th>
+          		<th rowspan=2>Spreads</th>
+          		<th colspan=3>Commission Per Side</th>
+          		<th rowspan=2>Margin Applies Per 1 Lot</th>
+          	</tr>
+          	<tr class="tab__name  tab__name--sticky">
+          		<td>USD</td>
+          		<td>EUR</td>
+          		<td>GBP</td>
+          	</tr>
+          	<tr>
+          		<td>XAG/USD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAU/USD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUEUR</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUAUD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUCHF</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUGBP</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUJPY</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUNZD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUSGD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGCHF</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGAUD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGEUR</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGGBP</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGJPY</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGNZD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGSGD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XPDUSD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XPTUSD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>COPPER</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          </table>
+        </div>
+        <div class="tab__inner">
+          <div class="tab__header">
+            <h3>Indices</h3>
+          </div>
+          <table class="tab__table  tab__table--right">
+            <tr class="tab__name  tab__name--sticky">
+          		<th rowspan=2>Symbol</th>
+          		<th rowspan=2>Spreads</th>
+          		<th colspan=3>Commission Per Side</th>
+          		<th rowspan=2>Margin Applies Per 1 Lot</th>
+          	</tr>
+          	<tr class="tab__name  tab__name--sticky">
+          		<td>USD</td>
+          		<td>EUR</td>
+          		<td>GBP</td>
+          	</tr>
+            <tr>
+          		<td>DJ30</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>AUS200</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>DE30</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>ES35</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>F40</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>JP225</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>STOXX50</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>SWIS20</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>USTEC</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>US500</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>UK100</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          </table>
+        </div>
+        <div class="tab__inner">
+          <div class="tab__header">
+            <h3>Equities</h3>
+          </div>
+          <table class="tab__table  tab__table--right">
+            <tr class="tab__name  tab__name--sticky">
+          		<th rowspan=2>Symbol</th>
+          		<th rowspan=2>Spreads</th>
+          		<th colspan=3>Commission Per Side</th>
+          		<th rowspan=2>Margin Applies Per 1 Lot</th>
+          	</tr>
+          	<tr class="tab__name  tab__name--sticky">
+          		<td>USD</td>
+          		<td>EUR</td>
+          		<td>GBP</td>
+          	</tr>
+            <tr>
+          		<td>ADSGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>AIRF</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>ALVG</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BBVA</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BKIA</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BMWG</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BNPP</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>DAIGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>DANO</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>DBKGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>DPWGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>EONGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>IBE</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>LHAG</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>LVMH</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>MAP</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>SAN</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>SIEGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>SOGN</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>TEF</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>TOTF</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>VOWG_p</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>CBKG</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>AAPL</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>AXP</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BA</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BAC</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BAYGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>CSCO</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>CVX</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>FB</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>FDX</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>GE</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>GOOG</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>GS</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>HLT</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>HPQ</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>ILMN</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>INTC</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>KO</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>MA</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>MCD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>NFLX</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>ORCL</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>PFE</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>PG</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>QCOM</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>RACE</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>T</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>TSLA</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>TWTR</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>V</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>XOM</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>F</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>C</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          </table>
+        </div>
+      </div>
+      <div id="Gold" class="tab__content  tab__content--account">
+        <div class="tab__inner">
+          <div class="tab__header">
+            <h3>Forex Pairs</h3>
+          </div>
+          <table class="tab__table  tab__table--right">
+            <tr class="tab__name  tab__name--sticky">
+          		<th rowspan=2>Symbol</th>
+          		<th rowspan=2>Average Floating Spreads in Pips</th>
+          		<th colspan=3>Commission Per Lot</th>
+          		<th rowspan=2>Leverage Up To</th>
+          	</tr>
+          	<tr class="tab__name  tab__name--sticky">
+          		<td>USD</td>
+          		<td>EUR</td>
+          		<td>GBP</td>
+          	</tr>
+            <tr>
+              <td>AUDJPY</td>
+              <td>2.2</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>EURGBP</td>
+              <td sdval="2.0583592093305">2.1</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>EURJPY</td>
+              <td sdval="1.99792717510492">2.0</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>EURUSD</td>
+              <td sdval="1.44098702379602">1.4</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>GBPAUD</td>
+              <td sdval="4.671316336952">4.7</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>GBPCAD</td>
+              <td sdval="4.34411836023337">4.3</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>GBPCHF</td>
+              <td sdval="2.76079024021188">2.8</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>GBPJPY</td>
+              <td sdval="2.84643605156705">2.8</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>GBPUSD</td>
+              <td sdval="1.97936494720508">2.0</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>USDCAD</td>
+              <td sdval="2.04370151738752">2.0</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>USDCHF</td>
+              <td sdval="2.38342504275129">2.4</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>USDJPY</td>
+              <td sdval="1.46507339033062">1.5</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>AUDUSD</td>
+              <td sdval="1.57293453553567">1.6</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>CHFJPY</td>
+              <td sdval="3.24938922925649">3.2</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>EURAUD</td>
+              <td sdval="3.27098143737476">3.3</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>EURCAD</td>
+              <td sdval="3.73132768468435">3.7</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>EURCHF</td>
+              <td sdval="2.73308467512786">2.7</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>AUDCHF</td>
+              <td sdval="3.87805797320821">3.9</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>AUDCAD</td>
+              <td sdval="3.31569574266793">3.3</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>AUDNZD</td>
+              <td sdval="3.45053744326776">3.5</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>AUDSGD</td>
+              <td sdval="5.2428812783647">5.2</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>CADCHF</td>
+              <td sdval="3.66658144907773">3.7</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>CADJPY</td>
+              <td sdval="3.31810475325461">3.3</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>EURNOK</td>
+              <td sdval="42.1976344335071">42.2</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>EURNZD</td>
+              <td sdval="5.41037905727471">5.4</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>EURSEK</td>
+              <td sdval="33.9951194445533">34.0</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>EURSGD</td>
+              <td sdval="5.44473410316797">5.4</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>GBPNZD</td>
+              <td sdval="5.67702494983531">5.7</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>GBPSGD</td>
+              <td sdval="7.38742568597558">7.4</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>NZDCAD</td>
+              <td sdval="3.54896419243725">3.5</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>NZDCHF</td>
+              <td sdval="3.29403914590749">3.3</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>NZDJPY</td>
+              <td sdval="2.93328617363343">2.9</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>NZDUSD</td>
+              <td sdval="2.39175928733888">2.4</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>USDHKD</td>
+              <td sdval="4.72529512830458">4.7</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>USDNOK</td>
+              <td sdval="33.3538117602137">33.4</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>USDSEK</td>
+              <td sdval="31.3076949152541">31.3</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>USDSGD</td>
+              <td sdval="2.68522386913447">2.7</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>EURCZK</td>
+              <td sdval="4.90449657224469">4.9</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>EURHUF</td>
+              <td sdval="18.9189339926399">18.9</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>EURPLN</td>
+              <td sdval="22.0096771978023">22.0</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>EURRUB</td>
+              <td sdval="375.759423754643">375.8</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>EURTRY</td>
+              <td sdval="32.8638827866669">32.9</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>GBPNOK</td>
+              <td sdval="67.410490696965">67.4</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>GBPSEK</td>
+              <td sdval="70.9200098900689">70.9</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>NOKSEK</td>
+              <td sdval="11.2843737979845">11.3</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>SGDJPY</td>
+              <td sdval="6.27201148769447">6.3</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>TRYJPY</td>
+              <td sdval="5.97851647077017">6.0</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>USDCNH</td>
+              <td sdval="13.020847020934">13.0</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>USDCZK</td>
+              <td sdval="4.97976194217473">5.0</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>USDHUF</td>
+              <td sdval="17.9909080411101">18.0</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>USDMXN</td>
+              <td sdval="55.3549069694103">55.4</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>USDPLN</td>
+              <td sdval="22.5363511029413">22.5</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>USDRUB</td>
+              <td sdval="246.395951112732">246.4</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>USDTRY</td>
+              <td sdval="16.7905685924161">16.8</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>USDZAR</td>
+              <td sdval="70.6289532266651">70.6</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>ZARJPY</td>
+              <td sdval="4.38300476450833">4.4</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>GBPDKK</td>
+              <td sdval="11.7" sdnum="1033;">11.7</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>AUDNOK</td>
+              <td sdval="5.7" sdnum="1033;">5.7</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>NOKJPY</td>
+              <td sdval="2.69" sdnum="1033;">2.69</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>AUDPLN</td>
+              <td sdval="42.59" sdnum="1033;">42.59</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>GBPHUF</td>
+              <td sdval="15.38" sdnum="1033;">15.38</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>GBPMXN</td>
+              <td sdval="216.4" sdnum="1033;">216.4</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>GBPPLN</td>
+              <td sdval="8.5" sdnum="1033;">8.5</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>GBPTRY</td>
+              <td sdval="34.05" sdnum="1033;">34.05</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>MXNJPY</td>
+              <td sdval="2.85" sdnum="1033;">2.85</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>USDRON</td>
+              <td sdval="8.5" sdnum="1033;">8.5</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>CADSGD</td>
+              <td sdval="6.5" sdnum="1033;">6.5</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>CHFSGD</td>
+              <td sdval="6.6" sdnum="1033;">6.6</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>EURRON</td>
+              <td sdval="8.5" sdnum="1033;">8.5</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>AUDSEK</td>
+              <td sdval="6.7" sdnum="1033;">6.7</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+            <tr>
+              <td>USDDKK</td>
+              <td sdval="25.5" sdnum="1033;">25.5</td>
+              <td>4.90 USD</td>
+              <td>4.50 EUR</td>
+              <td>3.90 GBP</td>
+              <td>200:1</td>
+            </tr>
+          </table>
+        </div>
+        <div class="tab__inner">
+          <div class="tab__header">
+            <h3>Energies</h3>
+          </div>
+          <table class="tab__table  tab__table--right">
+            <tr class="tab__name  tab__name--sticky">
+          		<th rowspan=2>Symbol</th>
+          		<th rowspan=2>Spreads</th>
+          		<th colspan=3>Commission Per Side</th>
+          		<th rowspan=2>Margin Applies Per 1 Lot</th>
+          	</tr>
+          	<tr class="tab__name  tab__name--sticky">
+          		<td>USD</td>
+          		<td>EUR</td>
+          		<td>GBP</td>
+          	</tr>
+            <tr>
+          		<td rowspan=2>WTI_OIL</td>
+          		<td rowspan=2>Floating</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>2%</td>
+          	</tr>
+          	<tr></tr>
+          	<tr>
+          		<td rowspan=2>UKOIL</td>
+          		<td rowspan=2>Floating</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>2%</td>
+          	</tr>
+          	<tr></tr>
+          	<tr>
+          		<td>NATGAS</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          </table>
+        </div>
+        <div class="tab__inner">
+          <div class="tab__header">
+            <h3>Commodities</h3>
+          </div>
+          <table class="tab__table  tab__table--right">
+            <tr class="tab__name  tab__name--sticky">
+          		<th rowspan=2>Symbol</th>
+          		<th rowspan=2>Spreads</th>
+          		<th colspan=3>Commission Per Side</th>
+          		<th rowspan=2>Margin Applies Per 1 Lot</th>
+          	</tr>
+          	<tr class="tab__name  tab__name--sticky">
+          		<td>USD</td>
+          		<td>EUR</td>
+          		<td>GBP</td>
+          	</tr>
+            <tr>
+          		<td rowspan=2>COCOA</td>
+          		<td rowspan=2>Floating</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>2%</td>
+          	</tr>
+          	<tr></tr>
+          	<tr>
+          		<td rowspan=2>COFFEE</td>
+          		<td rowspan=2>Floating</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>2%</td>
+          	</tr>
+          	<tr></tr>
+          	<tr>
+          		<td rowspan=2>SOYBEAN</td>
+          		<td rowspan=2>Floating</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>0.01% per side of order volume</td>
+          		<td rowspan=2>2%</td>
+          	</tr>
+          </table>
+        </div>
+        <div class="tab__inner">
+          <div class="tab__header">
+            <h3>Metals</h3>
+          </div>
+          <table class="tab__table  tab__table--right">
+            <tr class="tab__name  tab__name--sticky">
+          		<th rowspan=2>Symbol</th>
+          		<th rowspan=2>Spreads</th>
+          		<th colspan=3>Commission Per Side</th>
+          		<th rowspan=2>Margin Applies Per 1 Lot</th>
+          	</tr>
+          	<tr class="tab__name  tab__name--sticky">
+          		<td>USD</td>
+          		<td>EUR</td>
+          		<td>GBP</td>
+          	</tr>
+            <tr>
+          		<td>XAG/USD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAU/USD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUEUR</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUAUD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUCHF</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUGBP</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUJPY</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUNZD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAUSGD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGCHF</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGAUD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGEUR</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGGBP</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGJPY</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGNZD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XAGSGD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XPDUSD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>XPTUSD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>COPPER</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          </table>
+        </div>
+        <div class="tab__inner">
+          <div class="tab__header">
+            <h3>Indices</h3>
+          </div>
+          <table class="tab__table  tab__table--right">
+            <tr class="tab__name  tab__name--sticky">
+          		<th rowspan=2>Symbol</th>
+          		<th rowspan=2>Spreads</th>
+          		<th colspan=3>Commission Per Side</th>
+          		<th rowspan=2>Margin Applies Per 1 Lot</th>
+          	</tr>
+          	<tr class="tab__name  tab__name--sticky">
+          		<td>USD</td>
+          		<td>EUR</td>
+          		<td>GBP</td>
+          	</tr>
+          	<tr>
+          		<td>DJ30</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>AUS200</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>DE30</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>ES35</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>F40</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>JP225</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>STOXX50</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>SWIS20</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>USTEC</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>US500</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          	<tr>
+          		<td>UK100</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>2%</td>
+          	</tr>
+          </table>
+        </div>
+        <div class="tab__inner">
+          <div class="tab__header">
+            <h3>Equities</h3>
+          </div>
+          <table class="tab__table  tab__table--right">
+            <tr class="tab__name  tab__name--sticky">
+          		<th rowspan=2>Symbol</th>
+          		<th rowspan=2>Spreads</th>
+          		<th colspan=3>Commission Per Side</th>
+          		<th rowspan=2>Margin Applies Per 1 Lot</th>
+          	</tr>
+          	<tr class="tab__name  tab__name--sticky">
+          		<td>USD</td>
+          		<td>EUR</td>
+          		<td>GBP</td>
+          	</tr>
+            <tr>
+          		<td>ADSGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>AIRF</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>ALVG</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BBVA</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BKIA</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BMWG</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BNPP</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>DAIGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>DANO</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>DBKGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>DPWGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>EONGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>IBE</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>LHAG</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>LVMH</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>MAP</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>SAN</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>SIEGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>SOGN</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>TEF</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>TOTF</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>VOWG_p</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>CBKG</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>AAPL</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>AXP</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BA</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BAC</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>BAYGn</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>CSCO</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>CVX</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>FB</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>FDX</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>GE</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>GOOG</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>GS</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>HLT</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>HPQ</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>ILMN</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>INTC</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>KO</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>MA</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>MCD</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>NFLX</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>ORCL</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>PFE</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>PG</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>QCOM</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>RACE</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>T</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>TSLA</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>TWTR</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>V</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>XOM</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>F</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          	<tr>
+          		<td>C</td>
+          		<td>Floating</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>0.01% per side of order volume</td>
+          		<td>10%</td>
+          	</tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="payment  payment--inner">
+    <div class="container">
+      <div class="payment__flex">
+        <div class="payment__box  payment__box--mc"></div>
+        <div class="payment__box  payment__box--visa"></div>
+        <div class="payment__box  payment__box--bank"></div>
+        <div class="payment__box  payment__box--skrill"></div>
+        <div class="payment__box  payment__box--neteller"></div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__flex">
+        <ul class="footer__ul">
+          <li>
+            <img class="footer__logo" src="../img/logo-w.svg" alt="Forex24 Global">
+          </li>
+          <li>
+            <!-- <a class="footer__callme" href="tel:+442080891644">Call us</a> -->
+          </li>
+          <li class="footer__social">
+            <a class="footer__link  footer__link--fb" href="https://www.facebook.com/forex24com/" target="_blank"></a>
+            <a class="footer__link  footer__link--li" href="https://www.linkedin.com/in/forex24com/" target="_blank"></a>
+            <a class="footer__link  footer__link--gp" href="#"></a>
+            <a class="footer__link  footer__link--tw" href="https://twitter.com/forex24com/" target="_blank"></a>
+          </li>
+        </ul>
+        <ul class="footer__ul  footer__ul--links">
+          <li><b>About</b></li>
+          <li><hr></li>
+          <li><a href="../about-us/licenses-and-regulations.html">Licenses & Regulations</a></li>
+          <li><a href="../about-us/security-of-funds.html">Security Of Funds</a></li>
+          <li><a href="../about-us/stp-broker">STP Broker</a></li>
+          <li><a href="../about-us/legal-documents.html">Legal Documents</a></li>
+          <li><a href="../about-us/kids.html">KIDs</a></li>
+          <li><a href="../about-us/careers.html">Careers</a></li>
+        </ul>
+        <ul class="footer__ul  footer__ul--links">
+          <li><b>Trading</b></li>
+          <li><hr></li>
+          <li><a href="account-types.html">Account Types</a></li>
+          <li><a class="footer__active">Account Comparison</a></li>
+          <li><a href="product-specification.html">Product Spesification</a></li>
+          <li><a href="trading-specification.html">Trading Spesification</a></li>
+          <li><a href="platforms.html">Platforms</a></li>
+          <li><a href="funding-and-withdrawal.html">Funding and Withdrawal</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+        </ul>
+        <ul class="footer__ul  footer__ul--links">
+          <li><b>Resources</b></li>
+          <li><hr></li>
+          <li><a href="../resources/glossary.html">Glossary</a></li>
+          <li><a href="../resources/economic-calendar.html">Economic calendar</a></li>
+        </ul>
+        <ul class="footer__ul  footer__ul--links">
+          <li><b>Contacts</b></li>
+          <li><hr></li>
+          <li>Customer Service<br>CY Number: <a href="tel:+35725000199">+35725000199</a></li><br>
+          <li>Support<br>UK Number: <a href="tel:+442080891644">+442080891644</a><br><a href="mailto:support@forex24.com">support@forex24.com</a></li>
+        </ul>
+      </div>
+        <hr class="footer__hr">
+      <b class="footer__name">Risk warning:</b>
+      <p class="footer__text">Trading in Contracts for Difference (‘CFDs’) carries a high level of risk and can result in the loss of all your investment. As such, CFDs may not be appropriate for all investors. You should not invest money that you cannot afford to lose. Before deciding to trade, you should become aware of all the risks associated with CFD trading, and seek advice from an independent and suitably licensed financial advisor. Under no circumstances shall we have any liability to any person or entity for (a) any loss or damage in whole or part caused by, resulting from, or relating to any transactions related to CFDs or (b) any direct, indirect, special, consequential or incidental damages whatsoever. For more information about the risks associated with trading CFDs please find and read our <a href="../img/pdf/Risk-Disclosure-Warning-Notice-1.0.1-2.pdf" target="_blank">‘General Risk Disclosure’</a>.</p>
+      <p class="footer__text">Forex24 Global does not provide services to residents of the USA, Canada, Japan, North Korea, Iran, Belgium and some other regions.</p>
+        <hr class="footer__hr">
+      <p class="footer__text">© 2018 All rights reserved LYDYA FINANCIAL LTD.</p>
+      <p class="footer__text">Located at 155 Ayias Fylaxeos, Ersi Court Suite 202, 3083 Limassol, Cyprus.</p>
+      <p class="footer__text">Forex24 Global is a brand owned and operated by Lydya Financial Ltd, a Cyprus Investment Firm (CIF) regulated and supervised by the Cyprus Securities and Exchange Commission (CySEC) with CIF <a href="https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/79086/" target="_blank">Licence number 300/16</a> and Company registration number HE334292.</p>
+      <p class="footer__text">The Company is also registered with: FCA in UK with reg. no. 782501; BaFin in Germany with reg. no. 1349943; CONSOB in Italy with reg. no. 4624; ACP in France with reg. no. 75980; CNMV in Spain with reg. no. 4373.</p>
+    </div>
+  </footer>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery-plugin.js"></script>
+  <script src="../js/main.min.js" async></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+body {
+  // position: relative;
+  min-width: 320px;
+  margin: 0;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+@media screen and ($tablet-widths) {
+  .container {
+    width: 95%;
+    // background: red;
+  }
+}
+
+@media screen and ($mobile-widths) {}

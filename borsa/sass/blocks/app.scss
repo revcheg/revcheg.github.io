@@ -1,0 +1,87 @@
+.app {
+  padding-top: 70px;
+}
+
+.app__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__left {
+  width: 600px;
+  margin-top: -50px;
+  
+  h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: 'Open Sans Bold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  b {
+    font-size: 20px;
+    font-family: 'Open Sans Bold', sans-serif;
+  }
+  
+  p {
+    margin-top: 0;
+    // margin-bottom: 40px;
+    // font-size: 25px;
+    font-family: 'Open Sans Regular', sans-serif;
+  }
+}
+
+.app__apple {
+  display: inline-block;
+  width: 192px;
+  height: 60px;
+  margin-right: 15px;
+  background: url('../img/app-a.jpg');
+}
+
+.app__google {
+  display: inline-block;
+  width: 194px;
+  height: 60px;
+  margin-left: 15px;
+  background: url('../img/app-g.jpg');
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .app {
+    padding-top: 50px;
+    
+    img {
+      max-width: 100%;
+      align-self: center;
+      margin-top: 50px;
+    }
+  }
+  
+  .app__flex {
+    flex-direction: column;
+  }
+  
+  .app__left {
+    width: auto;
+    margin-top: 0;
+    
+    h3 {
+      // margin-top: 0;
+      // font-size: 30px;
+    }
+    
+    p {
+      // font-size: 16px;
+    }
+    
+    a {
+      margin: 0;
+    }
+  }
+}

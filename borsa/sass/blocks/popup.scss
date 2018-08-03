@@ -1,0 +1,195 @@
+.popup {  
+  width: 340px;
+  left: 50%;
+  padding: 30px;
+  // text-align: center;
+  border-radius: 10px;
+  background: #f1f4f4;
+  transform: translate(-50%, -50%);
+  transition: 0.6s;
+  z-index: 20;
+  
+  &--show {
+    position: fixed;
+    top: 50%;
+  }
+  
+  &--hide {
+    position: absolute;
+    top: -500px;
+  }
+  
+  b {
+    display: block;
+    color: #000;
+    font-size: 25px;
+    font-family: 'ProximaNovaBold', sans-serif;
+    // text-transform: uppercase;
+  }
+  
+  small {
+    font-family: 'ProximaNovaLight', sans-serif;
+  }
+  
+  p {
+    margin: 0 0 10px 0;
+    color: $mc;
+    font-size: 14px;
+    font-family: 'ProximaNovaLight', sans-serif;
+  }
+  
+  a {
+    color: #8e8e8e;
+    font-size: 12px;
+    font-family: 'ProximaNovaBold', sans-serif;
+    text-decoration: none;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0;
+    
+    input {
+      margin-bottom: 10px;
+      padding: 10px 15px;
+      font-size: 14px;
+      font-family: 'ProximaNovaLight', sans-serif;
+      border: 1px solid $mc;
+      border-radius: 5px;
+      opacity: 0.8;
+      transition: 0.5s;
+      
+      &:focus {
+        opacity: 1;
+      }
+      
+      // &:invalid {
+      //   border: 1px solid red;
+      //   opacity: 1;
+      // }
+      
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+    
+    select {
+      color: #8e8e8e;
+      height: 38px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      border: 1px solid $mc;
+      text-indent: 5px;
+    }
+    
+    // textarea {
+    //   height: 125px;
+    //   margin-bottom: 30px;
+    //   padding: 10px 15px;
+    //   font-size: 16px;
+    //   font-family: 'ProximaNovaLight', sans-serif;
+    //   border: none;
+    //   opacity: 0.8;
+    //   resize: none;
+    // 
+    //   &:focus {
+    //     opacity: 1;
+    //   }
+    // 
+    //   &::placeholder {
+    //     font-family: 'ProximaNovaLight', sans-serif;
+    //   }
+    // }
+    
+    button[type="submit"] {
+      width: 150px;
+      height: 30px;
+      margin-left: 64px;
+      padding: 5px 0;
+      color: #fff;
+      font-size: 15px;
+      font-family: 'ProximaNovaBold', sans-serif;
+      border: none;
+      border-radius: 5px;
+      background: #f31112;
+    }
+  }
+}
+
+.popup__submit {
+  margin-top: 20px !important;
+}
+
+.popup--signin {
+  
+  .popup__submit {
+    
+    button {
+      margin-left: 63px !important;
+    }
+  }
+}
+
+.popup--regi {
+  
+  button {
+    margin: auto !important;
+  }
+}
+
+.popup__links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px !important;
+}
+
+.popup__real {
+  padding: 10px 15px;
+  color: #fff !important;
+  border-radius: 5px;
+  background: #f31112;
+}
+
+.popup__demo {
+  padding: 10px 15px;
+  color: #8e8e8e;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.popup__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 13px;
+  height: 13px;
+  border: none;
+  background: url('../img/close.svg') no-repeat top;
+  transition: 0.3s;
+  cursor: pointer;
+  
+  &:hover {
+    transform: rotate(90deg);
+  }
+}
+
+.popup__overlay {
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  transition: 0.4s;
+  z-index: 15;
+  
+  &--show {
+    position: fixed;
+    opacity: 1;
+  }
+  
+  &--hide {
+    opacity: 0;
+  }
+}

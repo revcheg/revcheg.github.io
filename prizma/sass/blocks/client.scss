@@ -1,0 +1,112 @@
+.client {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 17px;
+  box-shadow: 0px 3px 30px 0px rgba(193, 186, 255, 0.2);
+}
+
+.client__info {
+  width: 285px;
+  padding: 80px 50px;
+  color: #fff;
+  border-top-left-radius: inherit; 
+  border-bottom-left-radius: inherit; 
+  background: linear-gradient(5deg, rgb(124,179,225) 0%, rgb(218,47,105) 100%);
+  
+  b {
+    font-size: 55px;
+    font-weight: normal;
+    font-family: 'ProximaNova-Bold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  p {
+    margin: 40px 0 180px 0;
+    font-size: 45px;
+    font-family: 'ProximaNova-LightIt', sans-serif;
+  }
+  
+  small {
+    font-size: 16px;
+    font-family: 'ProximaNova-LightIt', sans-serif;
+  }
+}
+
+.client__info--login {
+  
+  p {
+    margin: 25px 0 40px 0;
+  }
+}
+
+.client__flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 45px 0 0 0;
+}
+
+.client__list {
+  width: 350px;
+  padding: 0;
+  list-style: inside url('../img/list.svg');
+  
+  li {
+    font-family: 'ProximaNova-Regular', sans-serif;
+    
+    &:first-child {
+      margin: 0 0 20px 0;
+      list-style: none;
+    }
+  }
+  
+  b {
+    font-weight: normal;
+    font-family: 'ProximaNova-Bold', sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .client {
+    flex-direction: column;
+  }
+  
+  .client__info {
+    width: auto;
+    text-align: center;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 0px;
+    
+    p {
+      margin: 40px 0 100px 0;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .client__info {
+    padding: 40px 25px;
+    
+    b {
+      font-size: 37px;
+    }
+    
+    p {
+      font-size: 25px;
+    }
+    
+    small {
+      font-size: 10px;
+    }
+  }
+  
+  .client__flex {
+    flex-direction: column;
+    margin: 20px 0 0 0;
+  }
+  
+  .client__list {
+    width: auto;
+  }
+}

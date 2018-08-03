@@ -1,0 +1,62 @@
+.mobile__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 0 0;
+}
+
+.mobile__mockup {
+  width: 644px;
+  height: 641px;
+  background: url('../img/mobile-mockup.png') no-repeat center;
+}
+
+.mobile__list {
+  padding: 0;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  line-height: 40px;
+  list-style: none;
+}
+
+.mobile__button {
+  display: inline-block;
+  line-height: normal;
+  
+  &--appstore {
+    margin: 40px 15px 0 0;
+    background: $sc url('../img/mobile-appstore.svg') no-repeat;
+    background-position: 20px; 
+    background-size: 17px;
+  }
+  
+  &--googleplay {
+    margin: 40px 0 0 15px;
+    background: $sc url('../img/mobile-googleplay.svg') no-repeat;
+    background-position: 20px; 
+    background-size: 17px;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .mobile__flex {
+    flex-direction: column;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .mobile__mockup {
+    width: 300px;
+    height: 250px;
+    background-size: contain;
+  }
+  
+  .mobile__list {
+    font-size: 13px;
+    text-align: center;
+    line-height: 20px;
+  }
+  
+  .mobile__button {
+    margin: 40px auto 0;
+  }
+}

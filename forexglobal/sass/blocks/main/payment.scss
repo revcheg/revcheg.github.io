@@ -1,0 +1,48 @@
+.payment {
+  padding: 30px 0;
+  
+  &--inner {
+    border-top: 1px solid #b8b8b8;
+  }
+}
+
+.payment__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.payment__box {
+  transition: 0.3s;
+  
+  &--mc {
+    width: 50px;
+    height: 30px;
+    background: url('../img/payment-mc.svg') no-repeat top;
+  }
+  
+  &--visa {
+    width: 50px;
+    height: 15px;
+    background: url('../img/payment-visa.svg') no-repeat top;
+  }
+  
+  &--bank {
+    width: 41px;
+    height: 41px;
+    background: url('../img/payment-bank.svg') no-repeat top;
+  }
+  
+  &--skrill {
+    width: 50px;
+    height: 17px;
+    background: url('../img/payment-skrill.svg') no-repeat top;
+  }
+  
+  &--neteller {
+    width: 55px;
+    height: 10px;
+    background: url('../img/payment-neteller.svg') no-repeat center;
+  }
+}

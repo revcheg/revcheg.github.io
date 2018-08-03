@@ -1,0 +1,121 @@
+.plan {
+  padding: 0 0 100px 0;
+}
+
+.plan__name {
+  margin: 0 0 60px 0;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.plan__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plan__item {
+  width: 370px;
+  text-align: center;
+  border-radius: 4px;
+  background: linear-gradient( 0deg, rgb(77,207,223) 0%, rgb(255,109,51) 100%);
+
+  b {
+    display: block;
+    padding: 40px 0;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    
+    span {
+      font-size: 30px;
+      font-weight: 600;
+    }
+  }
+}
+
+.plan__info {
+  width: 290px;
+  padding: 40px 30px;
+  border-radius: 4px;
+  background: linear-gradient( -77deg, rgb(242,242,242) 0%, rgb(224,247,249) 52%, rgb(206,251,255) 100%);
+  box-shadow: 5px 0px 5px 0px rgba(18, 24, 61, 0.1);
+  transition: 0.3s;
+  
+  b {
+    padding: 0;
+    color: #000;
+    font-size: 30px;
+  }
+  
+  p {
+    margin: 40px 0 20px 0;
+    font-weight: normal; 
+  }
+  
+  ul {
+    margin: 0 0 30px 0;
+    padding: 0;
+    list-style: none;
+    
+    hr {
+      width: 70px;
+      height: 1px;
+      border: none;
+      background: #40bee3;
+    }
+  }
+  
+  &:hover {
+    width: 310px;
+  }
+}
+
+.plan__button {
+  margin: auto;
+}
+
+@media screen and ($tablet-widths) {
+  .plan {
+    padding: 100px 0;
+  }
+  
+  .plan__list {
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .plan__item {
+    margin: 0 0 50px 0;
+    
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .plan {
+    padding: 50px 0;
+  }
+  
+  .plan__name {
+    font-size: 30px;
+  }
+  
+  .plan__item {
+    width: 300px;
+  }
+  
+  .plan__info {
+    width: 210px;
+    
+    &:hover {
+      width: 240px;
+    }
+  }
+}

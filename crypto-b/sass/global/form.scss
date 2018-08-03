@@ -1,0 +1,274 @@
+.page-header__form {
+  display: flex;
+  justify-content: center;
+  // margin-top: 40px;
+}
+
+.page-header__nav--form {
+  background: transparent !important;
+}
+
+.page-header__checkbox {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 40px;
+  border-radius: 10px;
+  border: 5px solid $w;
+  
+  & p {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  & a {
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+input {
+  // width: 300px;
+  // height: 40px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  color: $w;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid $w;
+  background: transparent;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+select {
+  height: 45px;
+  padding: 0 20px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  color: $w;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 2px solid $w;
+  background: rgba(0, 174, 239, 0.7);
+  outline: none;
+}
+
+input[type="submit"] {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  color: $w;
+  font-size: 18px;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid $w;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  color: $w;
+  background: $b;
+  border: 2px solid $b;
+}
+
+label {
+  width: 300px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: $w;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+// Login
+.page-header__login input[type="checkbox"] {
+  margin-bottom: 10px;
+}
+
+.page-header__login label {
+  margin-top: 5px;
+  margin-left: 15px;
+  font-size: 22px;
+}
+
+.page-header__login .page-header__checkbox {
+  justify-content: center;
+}
+
+.page-header__login p {
+  margin-bottom: 0;
+}
+
+// Support
+.page-header__support {
+  width: 400px;
+  
+  & input {
+    width: auto;
+  }
+  
+  & input[type="submit"] {
+    width: 300px;
+  }
+  
+  & textarea {
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: transparent;
+    resize: none;
+  }
+}
+
+.page-header__rules--support {
+  display: flex;
+  justify-content: space-around;
+}
+
+.page-header__support-right {
+  width: auto;
+}
+
+// Media
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {    
+  .page-header__form {
+    // justify-content: center;
+    margin-top: 30px;
+  }
+  
+  form {
+    width: 80%;
+    padding: 30px;
+  }
+  
+  input {
+    // width: auto;
+    height: 40px;
+    padding: 0 20px;
+  }
+  
+  select {
+    // width: auto;
+    height: 45px;
+    padding: 0 15px;
+  }
+  
+  label {
+    padding-left: 10px;
+    // font-size: 14px;
+  }
+  
+  input[type="checkbox"] {
+    width: 18px;
+  }
+  
+  // Support
+  .page-header__rules--support {
+    flex-direction: column;
+  }
+  
+  .page-header__support {
+    width: 80%;
+    padding: 30px;
+    
+    & input[type="submit"] {
+      width: auto;
+    }
+    
+    & textarea {
+      height: 100px;
+    }
+  }
+  
+  .page-header__support-right {
+    
+    & p {
+      text-align: center;
+    }
+  }
+}
+
+/* Smartphones (горизонтальная) ----------- */
+@media only screen and (min-width: 321px) {}
+
+/* Smartphones (вертикальная) ----------- */
+@media only screen and (max-width: 320px) {  
+  .page-header__login {
+    padding: 30px;
+  }
+  
+  .page-header__form {
+    margin-top: 30px;
+  }
+  
+  form {
+    width: 75%;
+  }
+  
+  label {
+    font-size: 16px;
+  }
+  
+  // Support
+  .page-header__support {
+    width: 70%;
+    
+    & input {
+      // width: auto;
+    }
+    
+    & input[type="submit"] {
+      width: auto;
+    }
+    
+    & textarea {
+      margin-bottom: 50px;
+      padding: 10px 20px;
+      color: #fff;
+      font-size: 20px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      background: transparent;
+      resize: none;
+    }
+  }
+  
+  .page-header__rules--support {
+    flex-direction: column;
+  }
+  
+  .page-header__support-right {
+    width: auto;
+  }
+}
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  // Support
+  .page-header__rules--support {
+    flex-direction: column;
+  }
+  
+  .page-header__support-right {
+    text-align: center;
+  }
+}

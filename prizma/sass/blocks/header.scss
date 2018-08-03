@@ -1,0 +1,261 @@
+.header {
+  position: sticky;
+  top: 0;
+  padding: 35px 0;
+  box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
+  background: $bg;
+  transition: 0.5s;
+  
+  &--inner {
+    position: sticky;
+    top: 0;
+  }
+}
+
+.header--scroll {
+  padding: 26px 0;
+  background: rgba(233, 237, 241, 0.9);
+  z-index: 5;
+  
+  .header__settings {
+    z-index: 10;
+  }
+  
+  .header__menu {
+    position: relative;
+    left: 15px;
+    display: block;
+  }
+  
+  .header__language {
+    margin: 0 0 0 40px;
+  }
+  
+  .header__search {
+    display: none;
+  }
+  
+  .nav {
+    position: absolute;
+    top: 0;
+    width: 270px;
+    padding: 90px 0 30px 0;
+    box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
+    background: #fff;
+    transition: 0.3s linear;
+    opacity: 0;
+    clip: rect(0, 0, 0, 0);
+    
+    &--active {
+      opacity: 1;
+      clip: auto;
+    }
+  }
+  
+  .nav__list {
+    
+    li {
+      position: relative;
+      width: 120px;
+    }
+  }
+  
+  .nav__item {
+    width: 100px;
+    padding: 0 0 0 20px;
+    
+    &:hover {
+      padding: 0 0 0 15px;
+    }
+  }
+  
+  .nav__sublist {
+    top: 20px;
+    left: 0;
+    width: 270px;
+    border-bottom: 1px solid #61a3db;
+    z-index: 10;
+    
+    li {
+      width: auto;
+    }
+  }
+}
+
+.header__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__settings {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  width: 220px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__menu {
+  display: none;
+}
+
+.header__toggle {
+  width: 30px;
+  height: 20px;
+  font-size: 0;
+  border: none;
+  background: transparent url('../img/nav.svg') no-repeat center;
+  transition: 0.2s linear;
+  outline: none;
+  cursor: pointer;
+  
+  &--active {
+    background: transparent url('../img/nav-h.svg') no-repeat center;
+  }
+}
+
+.header__language {
+  font-size: 14px;
+  font-family: 'ProximaNova-Regular', sans-serif;
+  border: none;
+  background: transparent;
+  appearance: none;
+}
+
+.header__search {
+  position: relative;
+  
+  input {
+    width: 0px;
+    height: 35px;
+    margin: 0 0 0 20px;
+    padding: 0 15px 0 35px;
+    font-size: 14px;
+    font-family: 'ProximaNova-Regular', sans-serif;
+    border: 1px solid transparent;
+    border-radius: 17px;
+    background: transparent;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    background: url('../img/header-search.svg') no-repeat top;
+  }
+  
+  &:hover input {
+    width: 270px;
+    border: 1px solid #1600e6;
+  }
+}
+
+.header__logo {
+  width: 170px;
+  height: 21px;
+}
+
+.header__user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and ($tablet-widths) {
+  .header--scroll {
+    
+    .nav {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .header {
+    padding: 26px 0;
+  }
+  
+  .header--scroll {
+    
+    .nav {
+      left: 0;
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 30px 0;
+      box-shadow: none;
+    }
+    
+    .nav__list {
+      text-align: center;
+      
+      li {
+        width: inherit;
+      }
+    }
+    
+    .nav__item {
+      width: inherit;
+      padding: 0 15px;
+      
+      &:hover {
+        padding: inherit;
+      }
+    }
+    
+    .nav__sublist {
+      width: 100%;
+    }
+    
+    .nav__subitem {
+      padding: 5px 0;
+    }
+  }
+  
+  .header__flex {
+    justify-content: center;
+  }
+  
+  .header__settings {
+    position: absolute;
+    left: 0;
+    width: 30px;
+  }
+  
+  .header__language,
+  .header__search {
+    display: none;
+  }
+  
+  .header__user {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 0;
+    border-top: 1px solid #61a3db;
+    background: #fff;
+    box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
+    transition: 0.3s linear;
+    opacity: 0;
+    clip: rect(0, 0, 0, 0);
+    
+    &--active {
+      opacity: 1;
+      clip: auto;
+    }
+  }
+}

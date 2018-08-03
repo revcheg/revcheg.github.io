@@ -1,0 +1,31 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: 'SF UI Display', sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+@media screen and ($tablet-widths) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and ($mobile-widths) {}

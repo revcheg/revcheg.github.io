@@ -1,0 +1,96 @@
+.welcome {
+  padding: 90px 0;
+}
+
+.welcome__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  img {
+    max-width: 600px;
+    height: 400px;
+  }
+}
+
+.welcome__content {
+  width: 485px;
+}
+
+.welcome__name {
+  margin: 0;
+  color: $sc;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.welcome__text {
+  margin: 35px 0 50px 0;
+  color: $sc;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.welcome__button {
+  position: relative;
+  display: block;
+  width: 170px;
+  padding: 10px 0;
+  color: $sc;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  background: $mc;
+  transition: 0.3s;
+  
+  &::after {
+    content: 'Trading involves risk of loss';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: inherit;
+    color: $sc;
+    font-size: 10px;
+  }
+  
+  &:hover {
+    // box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
+    background: #ffd800;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .welcome__flex {
+    justify-content: center;
+    padding: 0 15px;
+    
+    img {
+      display: none;
+    }
+  }
+  
+  .welcome__name {
+    font-size: 50px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .welcome {
+    padding: 30px 0;
+  }
+  
+  .welcome__content {
+    width: auto;
+  }
+  
+  .welcome__name {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .welcome__button {
+    margin: auto;
+  }
+}

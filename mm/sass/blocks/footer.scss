@@ -1,0 +1,64 @@
+.footer {
+  padding: 50px 0 10px 0;
+  background: #212121;
+  
+  b {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: 'SF UI Display Heavy', sans-serif;
+  }
+  
+  ul {
+    padding-left: 0;
+    font-family: 'SF UI Display Light', sans-serif;
+    // list-style-image: url('../img/r-arrow-s.png');
+    list-style: none;
+    list-style-position: inside;
+    
+    a {
+      color: #818181;
+      text-decoration: none;
+      transition: 0.2s;
+      
+      &:hover {
+        color: $sc;
+      }
+    }
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'SF UI Display Heavy', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  p {
+    color: #818181;
+    font-family: 'SF UI Display Regular', sans-serif;
+    text-align: center;
+  }
+  
+  hr {
+    opacity: 0.2;
+  }
+}
+
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__active {
+  color: $sc !important;
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .footer__flex {
+    flex-wrap: wrap;
+  }
+}

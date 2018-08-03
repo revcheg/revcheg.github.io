@@ -1,0 +1,139 @@
+.trader__content {
+  color: #fff;
+  padding-bottom: 50px;
+
+  h1 {
+    margin-top: 50px;
+    font-size: 60px;
+    font-family: 'SF UI Display Black', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .button {
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 20px;
+  }
+}
+
+.trader__flex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.trader__flex--second {
+  justify-content: space-around;
+  padding-bottom: 0;
+}
+
+.trader__left {
+  width: 700px;
+  font-family: 'SF UI Display Regular', sans-serif;
+
+  b {
+    font-size: 30px;
+
+  }
+
+  p {
+    font-size: 18px;
+    opacity: 0.7;
+  }
+
+  ul {
+    font-size: 18px;
+    font-family: 'SF UI Display Regular', sans-serif;
+    list-style-image: url('../img/r-arrow-s.png');
+    opacity: 0.7;
+  }
+}
+
+.trader__right {
+  font-size: 0;
+
+  a {
+    margin-right: 10px;
+  }
+}
+
+.trader__list {
+  padding: 30px 50px;
+  font-size: 18px;
+  font-family: 'SF UI Display Regular', sans-serif;
+  border: 2px solid $sc;
+  border-radius: 10px;
+  list-style-image: url('../img/r-arrow-s.png');
+  opacity: 0.9;
+}
+
+.trader__sub-content {
+  font-family: 'SF UI Display Regular', sans-serif;
+
+  p {
+    font-size: 18px;
+    opacity: 0.8;
+  }
+
+  b {
+    font-size: 22px;
+  }
+
+  ul {
+    font-size: 18px;
+    list-style-image: url('../img/r-arrow-s.png');
+    opacity: 0.8;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .trader__right {
+
+    a {
+      display: block;
+      width: 200px;
+      margin: auto;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .trader__content {
+
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  .trader__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trader__left {
+    width: auto;
+    margin: 20px 0 0 0;
+    order: 10;
+
+    b {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .trader__right {
+    order: 5;
+
+    img {
+      max-width: 100%;
+    }
+    
+    a {
+      display: block;
+      margin: 0 auto 30px auto;
+    }
+  }
+}

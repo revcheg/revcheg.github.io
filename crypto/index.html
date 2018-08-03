@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cryptologi</title>
+  <link rel="stylesheet" href="css/crypto.css">
+  <link rel="stylesheet" href="css/media.css">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="theme-color" content="#ffffff">
+  <!-- API -->
+	<link rel="stylesheet" href="api/panelson.css"></link>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__flex-container">
+        <div class="page-header__logo">
+          <a href="index.html">
+            <img class="page-header__logo-full" src="img/n-logo.png" alt="CryptoLogi">
+          </a>
+        </div>
+        <div class="page-header__menu">
+          <nav class="page-header__main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="https://client.cryptologi.com/en/members/login">LOGIN</a></li>
+              <li class="main-nav__item"><a href="template/contact.html">CONTACT</a></li>
+              <li class="main-nav__item"><a href="https://client.cryptologi.com/en/members/register/real/">LOG UP</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="panels">
+    <div class="container">
+      <!-- <div class="row"> -->
+      <div class="panel__flex">
+        <div class="price-boxes">
+  				<div class="panel-group">
+  					<div class="panel panel-default">
+  						<div class="panel-body">
+  							<!-- <h6><a href="https://www.cryptocompare.com">Source: CryptoCompare.com</a></h6> -->
+  							<h2 class="price-display">BTCUSD <span class="price" id="PRICE_BTC"></span></h2>
+  							<h5>24h Change: <span id="CHANGE24HOUR_BTC"></span><span id="CHANGE24HOURPCT_BTC"></span><br></h5>
+  							<h5>Last Market: <span class="exchange" id="LASTMARKET_BTC"></span> <br></h5>
+  							<h5>Open Hour: <span id="OPENHOUR_BTC"></span><br></h5>
+  							<h5>High Hour: <span id="HIGHHOUR_BTC"></span><br></h5>
+  							<h5>Low Hour: <span id="LOWHOUR_BTC"></span><br></h5>
+  							<h5>Open Day: <span id="OPEN24HOUR_BTC"></span><br></h5>
+  							<h5>High Day: <span id="HIGH24HOUR_BTC"></span><br></h5>
+  							<h5>Low Day: <span id="LOW24HOUR_BTC"></span><br></h5>
+  							<h5>Last Trade Volume: <span id="LASTVOLUME_BTC"></span><br></h5>
+  							<h5>Last Trade Volume To: <span id="LASTVOLUMETO_BTC"></span><br></h5>
+  							<h5>24h Volume: <span id="VOLUME24HOUR_BTC"></span><br></h5>
+  							<h5>24h VolumeTo: <span id="VOLUME24HOURTO_BTC"></span><br></h5>
+  						</div>
+  					</div>
+  				</div>
+          <a class="panel__link  panel__link--btc" href="https://client.cryptologi.com/en/members/register/real/">TRADE NOW</a>
+  			</div>
+  			<div class="price-boxes    price-boxes--eth">
+  				<div class="panel-group">
+  					<div class="panel panel-default">
+  						<div class="panel-body">
+  							<!-- <h6><a href="https://www.cryptocompare.com">Source: CryptoCompare.com</a></h6> -->
+  							<h2 class="price-display">ETHUSD <span class="price" id="PRICE_ETH"></span></h2>
+  							<h5>24h Change: <span id="CHANGE24HOUR_ETH"></span><span id="CHANGE24HOURPCT_ETH"></span><br></h5>
+  							<h5>Last Market: <span class="exchange" id="LASTMARKET_ETH"></span> <br></h5>
+  							<h5>Open Hour: <span id="OPENHOUR_ETH"></span><br></h5>
+  							<h5>High Hour: <span id="HIGHHOUR_ETH"></span><br></h5>
+  							<h5>Low Hour: <span id="LOWHOUR_ETH"></span><br></h5>
+  							<h5>Open Day: <span id="OPEN24HOUR_ETH"></span><br></h5>
+  							<h5>High Day: <span id="HIGH24HOUR_ETH"></span><br></h5>
+  							<h5>Low Day: <span id="LOW24HOUR_ETH"></span><br></h5>
+  							<h5>Last Trade Volume: <span id="LASTVOLUME_ETH"></span><br></h5>
+  							<h5>Last Trade Volume To: <span id="LASTVOLUMETO_ETH"></span><br></h5>
+  							<h5>24h Volume: <span id="VOLUME24HOUR_ETH"></span><br></h5>
+  							<h5>24h VolumeTo: <span id="VOLUME24HOURTO_ETH"></span><br></h5>
+  						</div>
+  					</div>
+  				</div>
+          <a class="panel__link  panel__link--eth" href="https://client.cryptologi.com/en/members/register/real/">TRADE NOW</a>
+  			</div>
+        <div class="price-boxes">
+  				<div class="panel-group">
+  					<div class="panel panel-default">
+  						<div class="panel-body">
+  							<!-- <h6><a href="https://www.cryptocompare.com">Source: CryptoCompare.com</a></h6> -->
+  							<h2 class="price-display">LTCUSD <span class="price" id="PRICE_LTC"></span></h2>
+  							<h5>24h Change: <span id="CHANGE24HOUR_BTC"></span><span id="CHANGE24HOURPCT_LTC"></span><br></h5>
+  							<h5>Last Market: <span class="exchange" id="LASTMARKET_LTC"></span> <br></h5>
+  							<h5>Open Hour: <span id="OPENHOUR_LTC"></span><br></h5>
+  							<h5>High Hour: <span id="HIGHHOUR_LTC"></span><br></h5>
+  							<h5>Low Hour: <span id="LOWHOUR_LTC"></span><br></h5>
+  							<h5>Open Day: <span id="OPEN24HOUR_LTC"></span><br></h5>
+  							<h5>High Day: <span id="HIGH24HOUR_LTC"></span><br></h5>
+  							<h5>Low Day: <span id="LOW24HOUR_LTC"></span><br></h5>
+  							<h5>Last Trade Volume: <span id="LASTVOLUME_LTC"></span><br></h5>
+  							<h5>Last Trade Volume To: <span id="LASTVOLUMETO_LTC"></span><br></h5>
+  							<h5>24h Volume: <span id="VOLUME24HOUR_LTC"></span><br></h5>
+  							<h5>24h VolumeTo: <span id="VOLUME24HOURTO_LTC"></span><br></h5>
+  						</div>
+  					</div>
+  				</div>
+          <a class="panel__link  panel__link--ltc" href="https://client.cryptologi.com/en/members/register/real/">TRADE NOW</a>
+  			</div>
+      </div>
+		<!-- </div> -->
+    </div>
+  </section>
+  <section class="info">
+    <div class="container">
+      <div class="container__info">
+        <div class="flex-btn">
+          <h1 class="info__title">Cryptologi the science of<br>trading cryptocurrency</h1>
+          <p class="info__text">Cryptologi presents investors a unique opportunity<br>to trade or exchange digital assets<br>with ease on a 24/7 basic.</p>
+          <a class="info__link" href="https://client.cryptologi.com/en/members/register/real/">Create Account</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="coin">
+    <!-- <div class="container"> -->
+      <div class="coin__flex-container">
+        <div class="coin__box  coin__box--bitcoin">
+          <p><span>Bitcoin</span><br>2009</p>
+        </div>
+        <div class="coin__box  coin__box--lite">
+          <p><span>Litecoin</span><br>2011</p>
+        </div>
+        <div class="coin__box  coin__box--doge">
+          <p><span>Dogecoin</span><br>2013</p>
+        </div>
+        <div class="coin__box  coin__box--ripple">
+          <p><span>Ripple</span><br>2013</p>
+        </div>
+        <div class="coin__box  coin__box--peer">
+          <p><span>Peercoin</span><br>2014</p>
+        </div>
+        <div class="coin__box  coin__box--dash">
+          <p><span>Dash</span><br>2014</p>
+        </div>
+        <div class="coin__box  coin__box--monero">
+          <p><span>Monero</span><br>2014</p>
+        </div>
+        <div class="coin__box  coin__box--eth">
+          <p><span>Etherium</span><br>2015</p>
+        </div>
+        <div class="coin__box  coin__box--iota">
+          <p><span>Iota</span><br>2015</p>
+        </div>
+        <div class="coin__box  coin__box--nem">
+          <p><span>Nem</span><br>2015</p>
+        </div>
+        <div class="coin__box  coin__box--zcash">
+          <p><span>Zcash</span><br>2016</p>
+        </div>
+        <div class="coin__box  coin__box--stratis">
+          <p><span>Stratis</span><br>2017</p>
+        </div>
+      </div>
+    <!-- </div> -->
+  </section>
+  <section class="read">
+    <div class="container">
+      <div class="container__adv">
+        <div class="read__flex-container">
+          <div class="read__more  read__more--pb">
+            <b>NEW TO CRYPTO-<br>CURRENCY?</b>
+            <p>Cryptocurrency is a digital currency that makes use of cryptography as a means of security. Due to its security feature, it is practically difficult to make counterfeits of this currency. This currency is not issued by any government authority, therefore it is impossible for any authority to interfere, influence or manipulate the currency. Just as paper money is used as a medium of exchange in the purchase of goods and services, cryptocurrencies such Bitcoin and Ethereum can also be used for this medium. These currencies are decentralized and digital.</p>
+            <!-- <a class="open-1" href="#">Read More</a> -->
+          </div>
+          <div class="read__more">
+            <b>WHY CRYPTOLOGI<br>IS UNIQUE? </b>
+            <p>Сryptologi is a super world class trading platform that offers a very unique interface with real time updates about different digital currencies, charting tools, various trade histories. Cryptologi is very easy to understand and use. When trading with Cryptologi, you are sure to maximize profits. On here peer-to-peer funding is carried out easily and swiftly. All transactions are 100% secured. You have absolutely nothing to worry about whan trading or carrying out a transaction with Cryptologi. you can start trading from the very first day.</p>
+            <!-- <a class="open-2" href="#">Read More</a> -->
+          </div>
+          <div class="read__more">
+            <b>LEARN HOW<br>TO TRADE</b>
+            <p>Trading with Cryptologi gives you full access to numerous professional Bitcoin traders you can learn from. We have a live trading page where you can easily get access to market trends and updates, with very good documented and precise video tutorials on how to trade. Cryptologi also offers its clients a demo account to help them practice the act of trading and become good at it.  This demo accounts helps to prepare you for what to expect in the real market. The demo accounts offered my Cryptologi is what makes it one of the best.</p>
+            <!-- <a class="open-3" href="#">Read More</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="adv">
+    <div class="container">
+      <div class="container__adv">
+        <div class="adv__flex-container">
+          <div class="adv__box  adv__box--img1">
+            <b>highly regulated</b>
+            <p>operates under strict regulations of the EU</p>
+          </div>
+          <div class="adv__box  adv__box--img2">
+            <b>high level of privacy</b>
+            <p>your personal informations will never be disclosed to anyone without your</p>
+          </div>
+          <div class="adv__box  adv__box--img3">
+            <b>Security</b>
+            <p>your money is 100% secured</p>
+          </div>
+          <div class="adv__box  adv__box--img4">
+            <b>Educational tool</b>
+            <p>get a demo account to practice and learn trading skills</p>
+          </div>
+          <div class="adv__box  adv__box--img5">
+            <b>Customizable interface</b>
+            <p>setting your own algorithmic trading bots to give you a unique trading experience</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="trading">
+    <div class="container">
+      <h2 class="trading__title">Trading on the go</h2>
+      <div class="trading__flex-container">
+        <p class="trading__text">Cryptologi provides the possibility to trade Bitcoin or any other digital currency from your pc, tablet or mobile device. This is as a result of our multifaceted design interface. You can follow the market trends and get interesting live updates on the go. On here you can manage your portfolio wherever you are. Trade today with Cryptologi and move on the path to success.</p>
+      </div>
+      <div class="trading__flex-container  trading__flex-container--m">
+        <a class="info__link  info__link--red" href="https://client.cryptologi.com/en/members/register/real/">Create Account</a>
+      </div>
+    </div>
+  </section>
+  <section class="graph">
+    <div class="container">
+      <img src="img/graph.png" alt="" width="1400" height="650">
+    </div>
+  </section>
+  <section class="fly">
+    <div class="container">
+      <div class="container__adv">
+        <h2>Fly above<br>the clouds<br>of success</h2>
+        <p class="fly__text">Buy, sell and trade Bitcoin<br>with Cryptologi</p>
+        <p class="fly__desc">This platform was intended for professional and success motivated traders of bitcoin. The security of Cryptologi is impeccable. Bank relationships are very good and peer-to-peer transfer can be carried out fast and with ease. On here profits are multiplied with Bitcoin margin trading, and you can leverage long or short bitcoin positions.</p>
+      </div>
+    </div>
+  </section>
+  <section class="pre-footer">
+    <div class="container">
+      <h2>Cryptologi is a full-featured, on spot trading platform for digital currencies such as Bitcoin, Ethereum, Litcoin, and many more others. Peer-to-peer funding is carried out easily and swiftly. All transactions are 100% secured. Sign up today!</h2>
+    </div>
+  </section>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__flex-container">
+        <div class="page-footer__column">
+          <b>Account</b>
+          <ul>
+            <li><a href="template/login.html">Log In</a></li>
+            <li><a href="https://client.cryptologi.com/en/members/register/real/">Sign Up</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__column">
+          <b>About</b>
+          <ul>
+            <li><a href="template/about.html">About Us</a></li>
+            <li><a href="template/careers.html">Careers</a></li>
+            <li><a href="template/press.html">Press</a></li>
+            <li><a href="template/contact.html">Contact</a></li>
+            <li><a href="template/security.html">Security</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__column">
+          <b>Resources</b>
+          <ul>
+            <li><a href="template/faq.html">FAQ</a></li>
+            <li><a href="template/legal.html">Legal & Privacy</a></li>
+            <li><a href="template/terms.html">Terms & Conditions</a></li>
+            <li><a href="template/support.html">Support</a></li>
+            <!-- <li><a href="template/trading.html">Trading Guide</a></li> -->
+            <!-- <li><a href="template/disclaimer.html">Disclaimer</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <p class="page-footer__copyright  page-footer__copyright--main">Cryptologi is an online trading and exchange platform ONLY. It does not carry out any substantial review or independent scrutiny of any blockchain asset, cryptocurrency or related funds. Every client is fully and solely responsible for evaluating your assets and deciding whether or not you want to carry out a blockchain asset exchange with Cryptologi. In so many instances, the blockchain asset you decide to exchange or trade on the basis of your personal findings may not increase or decrease in value, however, the asset you have exchanged on the basis of your research may increase in value after the exchange. The past performances do not affect future results. Any investment in any cryptocurrency or blockchain asset involves the risk of the possibility of a loss of part or all of your investment. The value of the asset you trade or exchange is subject to market risk and other forms of investment risk.</p>
+    </div>
+  </footer>
+  <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.2/socket.io.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="api/ccc-streamer-utilities.js"></script>
+	<script src="api/stream.js"></script>
+</body>
+</html>

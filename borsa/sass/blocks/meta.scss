@@ -1,0 +1,25 @@
+.meta {
+  padding: 50px 0;
+  
+  small, p, ul {
+    font-family: 'Open Sans Regular', sans-serif;
+  }
+  
+  ul {
+    font-size: 15px;
+  }
+  
+  b {
+    font-size: 25px;
+    font-family: 'Open Sans Bold', sans-serif;
+  }
+  
+  a {
+    display: block;
+    width: 300px;
+    height: 70px;
+    margin: 20px 0;
+    background: url('../img/meta.jpg') no-repeat top;
+    background-size: cover;
+  }
+}

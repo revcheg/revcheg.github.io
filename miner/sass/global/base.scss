@@ -1,0 +1,22 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: 'SF UI Text', 'Arial' sans-serif;
+}
+
+.container {
+  width: 1150px;
+  margin: auto;
+}
+
+@media screen and ($tablet-widths) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .container {
+    width: 98%;
+  }
+}

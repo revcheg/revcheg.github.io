@@ -1,0 +1,253 @@
+.manual {
+  
+  h1 {
+    margin: 70px 0;
+    font-size: 48px;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.manual__tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #e6e6e6;
+}
+
+.manual__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.manual__links {
+  width: 100%;
+  margin: 0 0 3px 0;
+  padding: 50px;
+  padding-right: 80px;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Proxima Nova Rg', sans-serif;
+  text-align: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  
+  &--trade {
+    background: #68788a;
+    
+    &.active {     
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -28px;
+        width: 30px;
+        height: 128px;
+        background: url('../img/arrow-t.svg') no-repeat top;
+        background-size: contain;
+        animation-name: arrow;
+        animation-duration: 0.3s;
+        animation-timing-function: ease;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 56px;
+        right: 150px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $mc;
+      }
+    }
+  }
+  
+  &--manage {
+    background: #f58b23;
+    
+    &.active {     
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -28px;
+        width: 30px;
+        height: 128px;
+        background: url('../img/arrow-m.svg') no-repeat top;
+        background-size: contain;
+        animation-name: arrow;
+        animation-duration: 0.3s;
+        animation-timing-function: ease;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 56px;
+        right: 180px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $mc;
+      }
+    }
+  }
+  
+  &--integrate {
+    background: #0bbcfd;
+    
+    &.active {     
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -28px;
+        width: 30px;
+        height: 128px;
+        background: url('../img/arrow-i.svg') no-repeat top;
+        background-size: contain;
+        animation-name: arrow;
+        animation-duration: 0.3s;
+        animation-timing-function: ease;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 56px;
+        right: 190px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $mc;
+      }
+    }
+  }
+  
+  &--grow {
+    margin-bottom: 0;
+    background: #d4c2a5;
+    
+    &.active {     
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -28px;
+        width: 30px;
+        height: 128px;
+        background: url('../img/arrow-g.svg') no-repeat top;
+        background-size: contain;
+        animation-name: arrow;
+        animation-duration: 0.3s;
+        animation-timing-function: ease;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 56px;
+        right: 150px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $mc;
+      }
+    }
+  }
+}
+
+.active {
+  position: relative;
+  font-size: 23px;
+}
+
+.manual__content {
+  display: none;
+  padding: 40px 130px;
+  width: 60%;
+  font-size: 16px;
+  font-family: 'Proxima Nova Lt', sans-serif;
+  border-left: none;
+  transition: 0.6s;
+  
+  b {
+    text-transform: uppercase;
+  }
+  
+  p {
+    margin-top: 0;
+  }
+  
+  &--trade {
+    display: block;
+  }
+  
+  a {
+    display: block;
+    width: 100px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    right: 20px;
+  }
+  
+  100% {
+    right: -28px;
+  }
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .manual {
+    
+    h1 {
+      margin: 50px 0;
+      font-size: 30px;
+    }
+  }
+  
+  .manual__tabs {
+    flex-direction: column;
+    
+    button {
+      width: auto;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  
+  .manual__button {
+    width: auto;
+  }
+  
+  .manual__content {
+    width: auto;
+    padding: 20px 40px; 
+    
+    a {
+      width: auto;
+      padding: 20px;
+    }
+  }
+  
+  .active {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}

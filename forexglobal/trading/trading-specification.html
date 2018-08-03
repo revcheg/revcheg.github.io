@@ -1,0 +1,2386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Forex24 is a European CySEC Regulated online broker providing contracts for difference on foreign exchange, shares, futures and precious metals primarily to retail clients.">
+  <title>Trading Specification - Forex24 Global</title>
+  <link rel="stylesheet" href="../css/style.min.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../img/favicon/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="194x194" href="../img/favicon/favicon-194x194.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#2f2861">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="msapplication-config" content="../browserconfig.xml">
+  <meta name="msapplication-TileImage" content="../img/favicon/mstile-144x144.png">
+  <meta name="theme-color" content="#5a21ed">
+</head>
+<body>
+  <header class="header--inner  header--scroll">
+    <div class="header__container">
+      <div class="header__flex">
+        <a class="header__logo" href="../index.html">
+          <img src="../img/logo.svg" alt="Forex24 Global">
+        </a>
+        <button class="header__toggle">Open Menu</button>
+        <ul class="header__user  header__user--closed">
+          <li>
+            <a class="header__open" href="#">Open account</a>
+            <ul class="header__accounts  header__accounts--closed">
+              <li><a href="../client/real/step-1.php">Real</a></li>
+              <li><a href="../client/demo.html">Demo</a></li>
+              <li><a href="../trading/platforms/zulutrade.html">ZuluTrade</a></li>
+            </ul>
+          </li>
+          <li><a href="../client/login.html">Log in</a></li>
+          <li>
+            <select class="header__language">
+              <option>En</option>
+              <option>Ru</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+      <nav class="nav  nav--closed">
+        <ul class="nav__list">
+          <li>
+            <a class="nav__link" onclick="about()">About</a>
+            <div class="nav__wrapper  nav__wrapper--closed">
+              <ul class="nav__sub">
+                <li><a href="../about-us/licenses-and-regulations.html">Licenses and Regulations</a></li>
+                <li><a href="../about-us/security-of-funds.html">Security of Funds</a></li>
+                <li><a href="../about-us/stp-broker.html">STP Broker</a></li>
+                <li><a href="../about-us/legal-documents.html">Legal Documents</a></li>
+                <li><a href="../about-us/kids.html">KIDs</a></li>
+                <li><a href="../about-us/careers.html">Careers</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="nav__link" onclick="trading()">Trading</a>
+            <div class="nav__wrapper  nav__wrapper--closed">
+              <ul class="nav__sub">
+                <li><a href="account-types.html">Account Types</a></li>
+                <li><a href="account-comparison.html">Account Comparison</a></li>
+                <li><a href="product-specification.html">Product Specification</a></li>
+                <li><a class="nav__active">Trading Specification</a></li>
+                <li><a href="platforms.html">Platforms</a></li>
+                <li><a href="funding-and-withdrawal.html">Funding and Withdrawal</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="nav__link" onclick="resources()">Resources</a>
+            <div class="nav__wrapper  nav__wrapper--closed">
+              <ul class="nav__sub">
+                <li><a href="../resources/glossary.html">Glossary</a></li>
+                <li><a href="../resources/economic-calendar.html">Economic calendar</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="https://partners.forex24.com/" target="_blank">Partners</a></li>
+          <li>
+            <a class="nav__link" onclick="contact()">Contact Us</a>
+            <div class="nav__wrapper  nav__wrapper--closed">
+              <ul class="nav__sub">
+                <li><a href="../contact-us.html">Contact Us</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <label class="nav__search">
+          <input type="search">
+        </label>
+      </nav>
+    </div>
+  </header>
+  <section class="inner">
+    <div class="container">
+      <h1 class="inner__name">Trading Specification</h1>
+      <div class="tab">
+        <button class="tab__button" onclick="openFile(event, 'Forex')">Forex</button>
+        <button class="tab__button" onclick="openFile(event, 'Commodities')">Commodities</button>
+        <button class="tab__button" onclick="openFile(event, 'Metals')">Precious Metals</button>
+        <button class="tab__button" onclick="openFile(event, 'Bond')">Bond</button>
+        <button class="tab__button" onclick="openFile(event, 'IndicesC')">Indices Cash</button>
+        <button class="tab__button" onclick="openFile(event, 'IndicesF')">Indices Future</button>
+        <button class="tab__button" onclick="openFile(event, 'Stocks')">Stocks</button>
+      </div>
+      <div id="Forex" class="tab__content  tab__content--forex">
+        <table class="spreadsTable dataTable tab__table">
+        <thead>
+        <tr>
+        <th>Symbol</th>
+        <th>Mini Bronze<br>
+        (Average Floating Spreads in Pips)</th>
+        <th>Classic Silver<br>
+        (Average Floating Spreads in Pips)</th>
+        <th>Premium Gold<br>
+        (Average Floating Spreads in Pips)</th>
+        <th>Swap Free<br>
+        (Average Floating Spreads in Pips)</th>
+        <th>Swap Long</th>
+        <th>Swap Short</th>
+        <th>Decimal Places</th>
+        <th>Tick Size</th>
+        <th>Pip Size</th>
+        <th>Trading Hours<br>
+        (Server Time)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="forexAccountComparison">
+        <td>AUD/CHF</td>
+        <td>3</td>
+        <td>1,5</td>
+        <td>1,3</td>
+        <td>3</td>
+        <td>2,27</td>
+        <td>-9,98</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>AUD/CAD</td>
+        <td>2,9</td>
+        <td>1,6</td>
+        <td>1,4</td>
+        <td>2,9</td>
+        <td>0,8166</td>
+        <td>-5,5</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>AUD/JPY</td>
+        <td>1,9</td>
+        <td>0,9</td>
+        <td>0,8</td>
+        <td>1,9</td>
+        <td>1,8</td>
+        <td>-8,54</td>
+        <td>3</td>
+        <td>0,001</td>
+        <td>0,01</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>AUD/NZD</td>
+        <td>3,7</td>
+        <td>2,1</td>
+        <td>1,9</td>
+        <td>3,7</td>
+        <td>-2,7</td>
+        <td>-0,41</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>AUD/SGD</td>
+        <td>4</td>
+        <td>2,4</td>
+        <td>2,2</td>
+        <td>4</td>
+        <td>0,03</td>
+        <td>-2,94</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>AUD/USD</td>
+        <td>1,6</td>
+        <td>0,6</td>
+        <td>0,5</td>
+        <td>1,6</td>
+        <td>-2,25</td>
+        <td>-5,25</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>CAD/CHF</td>
+        <td>3,8</td>
+        <td>1,3</td>
+        <td>1,1</td>
+        <td>3,8</td>
+        <td>1,28</td>
+        <td>-6,9</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>CAD/JPY</td>
+        <td>3,4</td>
+        <td>1,3</td>
+        <td>1,1</td>
+        <td>3,4</td>
+        <td>0,63</td>
+        <td>-4,92</td>
+        <td>3</td>
+        <td>0,001</td>
+        <td>0,01</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>CHF/HUF</td>
+        <td>18,3</td>
+        <td>19,3</td>
+        <td>17,3</td>
+        <td>18,3</td>
+        <td>-17,5</td>
+        <td>0,47</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>CHF/JPY</td>
+        <td>2,2</td>
+        <td>1,5</td>
+        <td>1,4</td>
+        <td>2,2</td>
+        <td>-5,42</td>
+        <td>0,74</td>
+        <td>3</td>
+        <td>0,001</td>
+        <td>0,01</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>EUR/AUD</td>
+        <td>2,5</td>
+        <td>1,9</td>
+        <td>1,8</td>
+        <td>2,5</td>
+        <td>-16,52</td>
+        <td>3,45</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>EUR/USD</td>
+        <td>1,5</td>
+        <td>0,5</td>
+        <td>0,4</td>
+        <td>1,5</td>
+        <td>-9,99</td>
+        <td>2,33</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>EUR/CAD</td>
+        <td>2,5</td>
+        <td>1,6</td>
+        <td>1,4</td>
+        <td>2,5</td>
+        <td>-9,11</td>
+        <td>2,05</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>EUR/CHF</td>
+        <td>1,9</td>
+        <td>1</td>
+        <td>0,9</td>
+        <td>1,9</td>
+        <td>0,15</td>
+        <td>-3,56</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>EUR/CZK</td>
+        <td>13,7</td>
+        <td>11</td>
+        <td>10,9</td>
+        <td>13,7</td>
+        <td>-2,57</td>
+        <td>-12,44</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>EUR/DKK</td>
+        <td>18,2</td>
+        <td>15,6</td>
+        <td>15,4</td>
+        <td>18,2</td>
+        <td>-3</td>
+        <td>-21,36</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>EUR/GBP</td>
+        <td>1,9</td>
+        <td>1</td>
+        <td>0,9</td>
+        <td>1,9</td>
+        <td>-3,87</td>
+        <td>0,27</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>EUR/HUF</td>
+        <td>12,4</td>
+        <td>9,8</td>
+        <td>9,6</td>
+        <td>12,4</td>
+        <td>-11,22</td>
+        <td>-0,96</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>EUR/NZD</td>
+        <td>5,9</td>
+        <td>4,3</td>
+        <td>4,1</td>
+        <td>5,9</td>
+        <td>-19,3</td>
+        <td>4,37</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>GBP/JPY</td>
+        <td>1,9</td>
+        <td>1,5</td>
+        <td>1,4</td>
+        <td>1,9</td>
+        <td>-1,85</td>
+        <td>-7,22</td>
+        <td>3</td>
+        <td>0,001</td>
+        <td>0,01</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>GBP/NZD</td>
+        <td>6,7</td>
+        <td>6,3</td>
+        <td>6,1</td>
+        <td>6,7</td>
+        <td>-16,7</td>
+        <td>3,49</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>GBP/USD</td>
+        <td>1,9</td>
+        <td>0,9</td>
+        <td>0,8</td>
+        <td>1,9</td>
+        <td>-9,06</td>
+        <td>1,03</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>GBP/SGD</td>
+        <td>5,3</td>
+        <td>2,7</td>
+        <td>2,5</td>
+        <td>5,3</td>
+        <td>-14,28</td>
+        <td>0,7</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>USD/CAD</td>
+        <td>1,7</td>
+        <td>0,8</td>
+        <td>0,7</td>
+        <td>1,7</td>
+        <td>0,1</td>
+        <td>-5</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>EUR/JPY</td>
+        <td>1,9</td>
+        <td>1</td>
+        <td>0,9</td>
+        <td>1,9</td>
+        <td>-3,38</td>
+        <td>0,07</td>
+        <td>3</td>
+        <td>0,001</td>
+        <td>0,01</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>EUR/NOK</td>
+        <td>27,3</td>
+        <td>26,1</td>
+        <td>25,9</td>
+        <td>27,3</td>
+        <td>-65,21</td>
+        <td>3,36</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>EUR/PLN</td>
+        <td>20,1</td>
+        <td>17,5</td>
+        <td>17,3</td>
+        <td>20,1</td>
+        <td>-45,54</td>
+        <td>3,35</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>EUR/SEK</td>
+        <td>26,2</td>
+        <td>25,5</td>
+        <td>25,3</td>
+        <td>26,2</td>
+        <td>-7,14</td>
+        <td>-27,66</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>EUR/TRY</td>
+        <td>42,5</td>
+        <td>41,6</td>
+        <td>41,3</td>
+        <td>42,5</td>
+        <td>-184,16</td>
+        <td>100,53</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>GBP/CAD</td>
+        <td>3,9</td>
+        <td>2,2</td>
+        <td>2,1</td>
+        <td>3,9</td>
+        <td>-7,28</td>
+        <td>0,41</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>GBP/AUD</td>
+        <td>3,9</td>
+        <td>2,9</td>
+        <td>2,8</td>
+        <td>3,9</td>
+        <td>-13,88</td>
+        <td>2,58</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>GBP/CHF</td>
+        <td>2,5</td>
+        <td>1,7</td>
+        <td>1,6</td>
+        <td>2,5</td>
+        <td>0,85</td>
+        <td>-8,66</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>GBP/DKK</td>
+        <td>29,1</td>
+        <td>26,4</td>
+        <td>26,2</td>
+        <td>29,1</td>
+        <td>2,14</td>
+        <td>-54,42</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>GBP/NOK</td>
+        <td>28,2</td>
+        <td>25,06</td>
+        <td>25,04</td>
+        <td>28,2</td>
+        <td>-44,43</td>
+        <td>-3,78</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>GBP/SEK</td>
+        <td>24,8</td>
+        <td>22,4</td>
+        <td>22,2</td>
+        <td>24,8</td>
+        <td>2,35</td>
+        <td>-70,74</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>NOK/SEK</td>
+        <td>0,7</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0,7</td>
+        <td>0,49</td>
+        <td>-8,35</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>NZD/CAD</td>
+        <td>2,9</td>
+        <td>1,5</td>
+        <td>1,3</td>
+        <td>2,9</td>
+        <td>1,07</td>
+        <td>-6,29</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>NZD/CHF</td>
+        <td>2,9</td>
+        <td>1,5</td>
+        <td>1,3</td>
+        <td>2,9</td>
+        <td>2,32</td>
+        <td>-10,1</td>
+        <td>3</td>
+        <td>0,001</td>
+        <td>0,01</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>NZD/JPY</td>
+        <td>1,9</td>
+        <td>1,1</td>
+        <td>1</td>
+        <td>1,9</td>
+        <td>1,93</td>
+        <td>-8,95</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>NZD/USD</td>
+        <td>1,7</td>
+        <td>0,8</td>
+        <td>0,7</td>
+        <td>1,7</td>
+        <td>0,21</td>
+        <td>-3,71</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>USD/CHF</td>
+        <td>1,9</td>
+        <td>0,9</td>
+        <td>0,8</td>
+        <td>1,9</td>
+        <td>2,17</td>
+        <td>-11,05</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>USD/CZK</td>
+        <td>10</td>
+        <td>7,4</td>
+        <td>7,2</td>
+        <td>10</td>
+        <td>2,1</td>
+        <td>-29,1</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>USD/DKK</td>
+        <td>4,5</td>
+        <td>1,9</td>
+        <td>1,7</td>
+        <td>4,5</td>
+        <td>0,58</td>
+        <td>-7,59</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>USD/HUF</td>
+        <td>10</td>
+        <td>0,7</td>
+        <td>0,5</td>
+        <td>10</td>
+        <td>1,47</td>
+        <td>-24,6</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>USD/JPY</td>
+        <td>1,6</td>
+        <td>0,6</td>
+        <td>0,5</td>
+        <td>1,6</td>
+        <td>1,23</td>
+        <td>-9,7</td>
+        <td>3</td>
+        <td>0,001</td>
+        <td>0,01</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>USD/NOK</td>
+        <td>23,5</td>
+        <td>22</td>
+        <td>21,8</td>
+        <td>23,5</td>
+        <td>1,63</td>
+        <td>-44,67</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>USD/PLN</td>
+        <td>16,6</td>
+        <td>14</td>
+        <td>13,8</td>
+        <td>16,6</td>
+        <td>-8,28</td>
+        <td>-6,96</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>USD/SEK</td>
+        <td>18,3</td>
+        <td>16,6</td>
+        <td>16,4</td>
+        <td>18,3</td>
+        <td>7,25</td>
+        <td>-99</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>USD/SGD</td>
+        <td>10</td>
+        <td>7,4</td>
+        <td>7,2</td>
+        <td>10</td>
+        <td>-2,4</td>
+        <td>-1,62</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>USD/TRY</td>
+        <td>18,2</td>
+        <td>16,4</td>
+        <td>16,1</td>
+        <td>18,2</td>
+        <td>-144,6</td>
+        <td>72,72</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>USD/ZAR</td>
+        <td>106</td>
+        <td>105</td>
+        <td>97,3</td>
+        <td>106</td>
+        <td>-432,78</td>
+        <td>42,61</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>NZD/SGD</td>
+        <td>21</td>
+        <td>18,3</td>
+        <td>18,1</td>
+        <td>21</td>
+        <td>0,14</td>
+        <td>-4,26</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>USD/RUB</td>
+        <td>138</td>
+        <td>135,04</td>
+        <td>135,02</td>
+        <td>138</td>
+        <td>-2700</td>
+        <td>184,2</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 09:30-22:00</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>USD/CNH</td>
+        <td>9</td>
+        <td>6,4</td>
+        <td>6,3</td>
+        <td>9</td>
+        <td>-47,1</td>
+        <td>2,43</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>USD/ILS</td>
+        <td>11</td>
+        <td>8,4</td>
+        <td>8,2</td>
+        <td>11</td>
+        <td>0,02</td>
+        <td>-0,28</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>TRY/JPY</td>
+        <td>5,3</td>
+        <td>2,7</td>
+        <td>2,4</td>
+        <td>5,3</td>
+        <td>2,04</td>
+        <td>-19,91</td>
+        <td>3</td>
+        <td>0,001</td>
+        <td>0,01</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>EUR/RUB</td>
+        <td>527,50</td>
+        <td>526,20</td>
+        <td>527</td>
+        <td>527,50</td>
+        <td>-3294</td>
+        <td>328</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 09:30-22:00</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>USD/MXN</td>
+        <td>61</td>
+        <td>59,8</td>
+        <td>59,5</td>
+        <td>61</td>
+        <td>-574,56</td>
+        <td>55,36</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>ZAR/JPY</td>
+        <td>4,1</td>
+        <td>1,4</td>
+        <td>1,1</td>
+        <td>4,1</td>
+        <td>0,35</td>
+        <td>-3,54</td>
+        <td>3</td>
+        <td>0,001</td>
+        <td>0,01</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>USD/HKD</td>
+        <td>3,6</td>
+        <td>0,9</td>
+        <td>0,7</td>
+        <td>3,6</td>
+        <td>3,25</td>
+        <td>-58,5</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>EUR/HKD</td>
+        <td>23</td>
+        <td>20,04</td>
+        <td>20,02</td>
+        <td>23</td>
+        <td>-45,72</td>
+        <td>1,32</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>EUR/SGD</td>
+        <td>4,5</td>
+        <td>1,9</td>
+        <td>1,7</td>
+        <td>4,5</td>
+        <td>-18,06</td>
+        <td>1,17</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>SGD/JPY</td>
+        <td>10</td>
+        <td>8,4</td>
+        <td>8,6</td>
+        <td>10</td>
+        <td>0,57</td>
+        <td>-8,04</td>
+        <td>3</td>
+        <td>0,001</td>
+        <td>0,01</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>AUD/ILS</td>
+        <td>13</td>
+        <td>10,4</td>
+        <td>10,2</td>
+        <td>13</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>EUR/ILS</td>
+        <td>11</td>
+        <td>8,4</td>
+        <td>8,2</td>
+        <td>11</td>
+        <td>-1,3</td>
+        <td>-1,6</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        <tr class="forexAccountComparison">
+        <td>GBP/ILS</td>
+        <td>14</td>
+        <td>11,4</td>
+        <td>11,2</td>
+        <td>14</td>
+        <td>-1,47</td>
+        <td>-2,7</td>
+        <td>5</td>
+        <td>0,00001</td>
+        <td>0,0001</td>
+        <td>Mon-Fri 00:00-23:58</td>
+        </tr>
+        </tbody>
+        </table>
+      </div>
+      <div id="Commodities" class="tab__content">
+        <table class="spreadsTable dataTable tab__table">
+          <thead>
+          <tr>
+          <th>Symbol</th>
+          <th>Mini Bronze<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Classic Silver<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Premium Gold<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Swap Free<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Swap Long</th>
+          <th>Swap Short</th>
+          <th>Decimal Places</th>
+          <th>Tick Size</th>
+          <th>Pip Size</th>
+          <th>Trading Hours<br>
+          (Server Time)</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="commoditiesAccountComparison">
+          <td>USOIL</td>
+          <td>3</td>
+          <td>3</td>
+          <td>3</td>
+          <td>3</td>
+          <td>-1,4</td>
+          <td>0</td>
+          <td>3</td>
+          <td>0,001</td>
+          <td>0,01</td>
+          <td>Mon-Fri 00:00-22:45</td>
+          </tr>
+          <tr class="commoditiesAccountComparison">
+          <td>UKOIL</td>
+          <td>3</td>
+          <td>3</td>
+          <td>3</td>
+          <td>3</td>
+          <td>-1,729</td>
+          <td>1,0293</td>
+          <td>3</td>
+          <td>0,001</td>
+          <td>0,01</td>
+          <td>Mon-Fri 00:00-22:45</td>
+          </tr>
+          <tr class="commoditiesAccountComparison">
+          <td>NGAS</td>
+          <td>7,9</td>
+          <td>7,9</td>
+          <td>7,9</td>
+          <td>7,9</td>
+          <td>-3,688</td>
+          <td>0</td>
+          <td>4</td>
+          <td>0,0001</td>
+          <td>0,001</td>
+          <td>Mon-Fri 00:00-22:45</td>
+          </tr>
+          <tr class="commoditiesAccountComparison">
+          <td>WTI Crude Oil</td>
+          <td>4,2</td>
+          <td>4,2</td>
+          <td>4,2</td>
+          <td>4,2</td>
+          <td>-3</td>
+          <td>-1,4</td>
+          <td>3</td>
+          <td>0,001</td>
+          <td>0,01</td>
+          <td>Mon-Fri 10:30-20:00</td>
+          </tr>
+          <tr class="commoditiesAccountComparison">
+          <td>Brend Crud Oil</td>
+          <td>5,1</td>
+          <td>5,1</td>
+          <td>5,1</td>
+          <td>5,1</td>
+          <td>-2,4</td>
+          <td>0,02</td>
+          <td>3</td>
+          <td>0,001</td>
+          <td>0,01</td>
+          <td>Mon-Fri 03:00-00:00</td>
+          </tr>
+          <tr class="commoditiesAccountComparison">
+          <td>London Gasoil</td>
+          <td>4,9</td>
+          <td>4,9</td>
+          <td>4,9</td>
+          <td>4,9</td>
+          <td>0</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 03:00-01:00</td>
+          </tr>
+          <tr class="commoditiesAccountComparison">
+          <td>US Cocoa</td>
+          <td>90</td>
+          <td>90</td>
+          <td>90</td>
+          <td>90</td>
+          <td>0</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 01:00-00:00</td>
+          </tr>
+          <tr class="commoditiesAccountComparison">
+          <td>US Coffee</td>
+          <td>450</td>
+          <td>450</td>
+          <td>450</td>
+          <td>450</td>
+          <td>0</td>
+          <td>0</td>
+          <td>4</td>
+          <td>0,0001</td>
+          <td>0,001</td>
+          <td>Mon-Fri 23:45-20:30</td>
+          </tr>
+          <tr class="commoditiesAccountComparison">
+          <td>US Cotton</td>
+          <td>590</td>
+          <td>590</td>
+          <td>590</td>
+          <td>590</td>
+          <td>0</td>
+          <td>0</td>
+          <td>4</td>
+          <td>0,0001</td>
+          <td>0,001</td>
+          <td>Mon-Fri 23:45-20:30</td>
+          </tr>
+          <tr class="commoditiesAccountComparison">
+          <td>US sugar</td>
+          <td>70</td>
+          <td>70</td>
+          <td>70</td>
+          <td>70</td>
+          <td>0</td>
+          <td>0</td>
+          <td>4</td>
+          <td>0,0001</td>
+          <td>0,001</td>
+          <td>Mon-Fri 04:00-21:20</td>
+          </tr>
+          <tr class="commoditiesAccountComparison">
+          <td>Rice</td>
+          <td>0,6</td>
+          <td>0,6</td>
+          <td>0,6</td>
+          <td>0,6</td>
+          <td>-0,13</td>
+          <td>-0,05</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 02:05-14:40,15:35-20:10</td>
+          </tr>
+          <tr class="commoditiesAccountComparison">
+          <td>Corn</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>-4,45</td>
+          <td>-1,83</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 02:05-14:40,15:35-20:10</td>
+          </tr>
+          </tbody>
+          </table>
+      </div>
+      <div id="Metals" class="tab__content">
+        <table class="spreadsTable dataTable tab__table">
+          <thead>
+          <tr>
+          <th>Symbol</th>
+          <th>Mini Bronze<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Classic Silver<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Premium Gold<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Swap Free<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Swap Long</th>
+          <th>Swap Short</th>
+          <th>Decimal Places</th>
+          <th>Tick Size</th>
+          <th>Pip Size</th>
+          <th>Trading Hours<br>
+          (Server Time)</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="preciousMetalsAccountComparison">
+          <td>XAG/USD</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>-16,5</td>
+          <td>1,9</td>
+          <td>4</td>
+          <td>0,0001</td>
+          <td>0,001</td>
+          <td>Mon-Fri 00:00-23:00</td>
+          </tr>
+          <tr class="preciousMetalsAccountComparison">
+          <td>XAU/USD</td>
+          <td>15</td>
+          <td>15</td>
+          <td>15</td>
+          <td>15</td>
+          <td>-96</td>
+          <td>15,5</td>
+          <td>3</td>
+          <td>0,001</td>
+          <td>0,01</td>
+          <td>Mon-Fri 00:00-23:00</td>
+          </tr>
+          <tr class="preciousMetalsAccountComparison">
+          <td>COPPER</td>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+          <td>-3,915</td>
+          <td>-1,084</td>
+          <td>4</td>
+          <td>0,0001</td>
+          <td>0,001</td>
+          <td>Mon-Fri 00:00-22:45</td>
+          </tr>
+          <tr class="preciousMetalsAccountComparison">
+          <td>Palladium</td>
+          <td>18</td>
+          <td>15,2</td>
+          <td>15,4</td>
+          <td>18</td>
+          <td>-9,6</td>
+          <td>-4,1</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 00:00-23:00</td>
+          </tr>
+          </tbody>
+          </table>
+      </div>
+      <div id="Bond" class="tab__content">
+        <table class="spreadsTable dataTable tab__table">
+          <thead>
+          <tr>
+          <th>Symbol</th>
+          <th>Mini Bronze<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Classic Silver<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Premium Gold<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Swap Free<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Swap Long</th>
+          <th>Swap Short</th>
+          <th>Decimal Places</th>
+          <th>Tick Size</th>
+          <th>Pip Size</th>
+          <th>Trading Hours<br>
+          (Server Time)</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="bondsAccountComparison">
+          <td>Bund</td>
+          <td>0,3</td>
+          <td>0,3</td>
+          <td>0,3</td>
+          <td>0,3</td>
+          <td>0</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 08:00-22:00</td>
+          </tr>
+          <tr class="bondsAccountComparison">
+          <td>US 10 Yr Tnote</td>
+          <td>60</td>
+          <td>60</td>
+          <td>60</td>
+          <td>60</td>
+          <td>0</td>
+          <td>0</td>
+          <td>4</td>
+          <td>0,0001</td>
+          <td>0,001</td>
+          <td>Mon-Fri 00:30-23:00</td>
+          </tr>
+          </tbody>
+          </table>
+      </div>
+      <div id="IndicesC" class="tab__content">
+        <p><b>Dividend Adjustments on Cash Indices CFDs</b></p>
+        <p>CFDs on Indices will be subject to dividend adjustments. When a constituent member of an index pays Dividends to its Shareholders, dividend adjustments will be made to accounts of clients holding a position on the index.</p>
+        <ul>
+          <li>Long Positions (Buy) – Clients holding long positions on the ex-div date will receive a dividend in the form of a cash adjustment (CD)</li>
+          <li>Short Positions (Sell) – Clients holding short positions on the ex-div date will be charged the dividend amount in the form of a cash adjustment (CW)</li>
+        </ul>
+        <p>Calculated as Follows:<br>Dividend adjustment = Index Dividend declared x position size in Lots.</p>
+        <table class="spreadsTable dataTable tab__table">
+          <thead>
+          <tr>
+          <th>Symbol</th>
+          <th>Mini Bronze<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Classic Silver<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Premium Gold<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Swap Free<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Swap Long</th>
+          <th>Swap Short</th>
+          <th>Decimal Places</th>
+          <th>Tick Size</th>
+          <th>Pip Size</th>
+          <th>Trading Hours<br>
+          (Server Time)</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="indicesAccountComparison">
+          <td>Australian 200 Index</td>
+          <td>40</td>
+          <td>40</td>
+          <td>40</td>
+          <td>40</td>
+          <td>-5,95</td>
+          <td>-0,4</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Thu<br>
+          01:50:00-00:00:00</td>
+          </tr>
+          <tr class="indicesAccountComparison">
+          <td>Euro 50 Index</td>
+          <td>20</td>
+          <td>20</td>
+          <td>20</td>
+          <td>20</td>
+          <td>-2,63</td>
+          <td>-3,37</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri<br>
+          07:00:00-00:00:00</td>
+          </tr>
+          <tr class="indicesAccountComparison">
+          <td>France 40 Index</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+          <td>-2,62</td>
+          <td>-3,37</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Thu 00:00:00-23:15:00, 23:30:00-24:00:00,01:00:00-24:00:00 Fri: 00:00:00-23:15:00</td>
+          </tr>
+          <tr class="indicesAccountComparison">
+          <td>German 30 Index</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+          <td>-2,63</td>
+          <td>-3,35</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Thu 00:00:00-23:15:00, 23:30:00-24:00:00,01:00:00-24:00:00 Fri: 00:00:00-23:15:00</td>
+          </tr>
+          <tr class="indicesAccountComparison">
+          <td>German 30 Index (XETRA Trading Hours)</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+          <td>-2,63</td>
+          <td>-3,35</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 10:00-18:30</td>
+          </tr>
+          <tr class="indicesAccountComparison">
+          <td>Japan 225 Index</td>
+          <td>80</td>
+          <td>80</td>
+          <td>80</td>
+          <td>80</td>
+          <td>-2,99</td>
+          <td>-3,00</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 01:00:00-00:00:00</td>
+          </tr>
+          <tr class="indicesAccountComparison">
+          <td>Netherlands 25 Index</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>-2,62</td>
+          <td>-3,37</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon- Fri: 01:00:00-00:00:00</td>
+          </tr>
+          <tr class="indicesAccountComparison">
+          <td>Spain 35 Index</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>-2,62</td>
+          <td>-3,37</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 09:00:00-23:00:00</td>
+          </tr>
+          <tr class="indicesAccountComparison">
+          <td>Swiss 20 Index</td>
+          <td>30</td>
+          <td>30</td>
+          <td>30</td>
+          <td>30</td>
+          <td>-2,27</td>
+          <td>-3,73</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 10:00:00-18:30:00</td>
+          </tr>
+          <tr class="indicesAccountComparison">
+          <td>UK 100 Index</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+          <td>-3,3</td>
+          <td>-2,69</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 09:00:00-23:00:00</td>
+          </tr>
+          <tr class="indicesAccountComparison">
+          <td>US 500 Index</td>
+          <td>4</td>
+          <td>4</td>
+          <td>4</td>
+          <td>4</td>
+          <td>-4,29</td>
+          <td>-1,7</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 02:00:00 – 23:15:00, 23:30:00 – 00:00:00, 01:00:00 – 02:00:00</td>
+          </tr>
+          <tr class="indicesAccountComparison">
+          <td>US Dow Jones Index</td>
+          <td>20</td>
+          <td>20</td>
+          <td>20</td>
+          <td>20</td>
+          <td>-4,29</td>
+          <td>-1,7</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Thu 01:00:00-00:00:00, Fri: 00:00:00-23:15:00</td>
+          </tr>
+          <tr class="indicesAccountComparison">
+          <td>US Dow Jones Index (NYSE Trading Hours)</td>
+          <td>30</td>
+          <td>30</td>
+          <td>30</td>
+          <td>30</td>
+          <td>-4,29</td>
+          <td>-1,7</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 01:00:00-23:15:00, 23:30:00-24:00:00</td>
+          </tr>
+          <tr class="indicesAccountComparison">
+          <td>US Nasdaq Index</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+          <td>-4,29</td>
+          <td>-1,7</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30:00-23:00:00</td>
+          </tr>
+          <tr class="indicesAccountComparison">
+          <td>MIB 40 Index</td>
+          <td>160</td>
+          <td>160</td>
+          <td>160</td>
+          <td>160</td>
+          <td>-155,89</td>
+          <td>-155,89</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 10:01:00-18:40:00</td>
+          </tr>
+          <tr class="indicesAccountComparison">
+          <td>FTASE 20 Index</td>
+          <td>25</td>
+          <td>25</td>
+          <td>25</td>
+          <td>25</td>
+          <td>0</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 10:20:00-17:20:00</td>
+          </tr>
+          </tbody>
+          </table>
+      </div>
+      <div id="IndicesF" class="tab__content">
+        <p><b>Dividend Adjustments on Cash Indices CFDs</b></p>
+        <p>CFDs on Indices will be subject to dividend adjustments. When a constituent member of an index pays Dividends to its Shareholders, dividend adjustments will be made to accounts of clients holding a position on the index.</p>
+        <ul>
+          <li>Long Positions (Buy) – Clients holding long positions on the ex-div date will receive a dividend in the form of a cash adjustment (CD)</li>
+          <li>Short Positions (Sell) – Clients holding short positions on the ex-div date will be charged the dividend amount in the form of a cash adjustment (CW)</li>
+        </ul>
+        <p>Calculated as Follows:<br>Dividend adjustment = Index Dividend declared x position size in Lots.</p>
+        <table class="spreadsTable dataTable tab__table">
+          <thead>
+          <tr>
+          <th>Symbol</th>
+          <th>Mini Bronze<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Classic Silver<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Premium Gold<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Swap Free<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Swap Long</th>
+          <th>Swap Short</th>
+          <th>Decimal Places</th>
+          <th>Tick Size</th>
+          <th>Pip Size</th>
+          <th>Trading Hours<br>
+          (Server Time)</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="indicesFutureAccountComparison">
+          <td>China A50 Index</td>
+          <td>117</td>
+          <td>117</td>
+          <td>117</td>
+          <td>117</td>
+          <td>0</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 04:00:00-11:30:00, 12:15:00-21:00:00</td>
+          </tr>
+          <tr class="indicesFutureAccountComparison">
+          <td>German 30 Index Futures</td>
+          <td>40</td>
+          <td>40</td>
+          <td>40</td>
+          <td>40</td>
+          <td>0</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 07:00:00-21:00:00</td>
+          </tr>
+          <tr class="indicesFutureAccountComparison">
+          <td>Germany Mid-Cap 50 Index Futures</td>
+          <td>190</td>
+          <td>190</td>
+          <td>190</td>
+          <td>190</td>
+          <td>0</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 07:00:00-20:00:00</td>
+          </tr>
+          <tr class="indicesFutureAccountComparison">
+          <td>Germany Tech 30 Index Futures</td>
+          <td>5,5</td>
+          <td>5,5</td>
+          <td>5,5</td>
+          <td>5,5</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 08:00:00-21:00:00</td>
+          </tr>
+          <tr class="indicesFutureAccountComparison">
+          <td>Hong Kong 50 Index</td>
+          <td>80</td>
+          <td>80</td>
+          <td>80</td>
+          <td>80</td>
+          <td>-4,14</td>
+          <td>-1,85</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 03:15:00-06:00:00, 07:00:00-10:30:00, 11:15:00-17:45:00</td>
+          </tr>
+          <tr class="indicesFutureAccountComparison">
+          <td>India 50 Index</td>
+          <td>65</td>
+          <td>65</td>
+          <td>65</td>
+          <td>65</td>
+          <td>0</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 04:00:00-13:10:00, 14:15:00-21:00:00</td>
+          </tr>
+          <tr class="indicesFutureAccountComparison">
+          <td>Singapore Blue Chip Index</td>
+          <td>2,5</td>
+          <td>2,5</td>
+          <td>2,5</td>
+          <td>2,5</td>
+          <td>0</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 03:30:00-12:10:00,13:15:00-21:00:00</td>
+          </tr>
+          <tr class="indicesFutureAccountComparison">
+          <td>US 500 Index Futures</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>0</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Thu 01:00:00-21:15:00, 21:30:00-00:15:00, Fri: 01:00:00-23:15:00</td>
+          </tr>
+          <tr class="indicesFutureAccountComparison">
+          <td>US Dollar Index</td>
+          <td>3,5</td>
+          <td>3,5</td>
+          <td>3,5</td>
+          <td>3,5</td>
+          <td>0</td>
+          <td>0</td>
+          <td>3</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 01:00:00-22:00:00</td>
+          </tr>
+          <tr class="indicesFutureAccountComparison">
+          <td>US Dow Jones Index Futures</td>
+          <td>80</td>
+          <td>80</td>
+          <td>80</td>
+          <td>80</td>
+          <td>0</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Thu 01:00:00-23:15:00, 23:30:00-00:15:00,Fri: 01:00:00-23:15:00</td>
+          </tr>
+          </tbody>
+          </table>
+      </div>
+      <div id="Stocks" class="tab__content">
+        <p><b>Dividends Adjustments on Stocks CFDs</b></p>
+        <p>CFDs on stocks are subject to dividend adjustments. When a stock security pays dividend to its shareholders, dividend adjustments will be made to the trading accounts of clients who hold a position on the Stock.</p>
+        <ul>
+          <li>Long Positions (Buy) – Clients holding long positions on the ex-div date will receive a dividend in the form of a cash adjustment (CD)</li>
+          <li>Short Positions (Sell) – Clients holding short positions on the ex-div date will be charged the dividend amount in the form of a cash adjustment (CW)</li>
+        </ul>
+        <p>Calculated as Follows:<br>Dividend adjustment = Stock Dividend declared x position size in Lots.</p>
+        <table class="spreadsTable dataTable tab__table">
+          <thead>
+          <tr>
+          <th>Symbol</th>
+          <th>Mini Bronze<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Classic Silver<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Premium Gold<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Swap Free<br>
+          (Average Floating Spreads in Pips)</th>
+          <th>Swap Long</th>
+          <th>Swap Short</th>
+          <th>Decimal Places</th>
+          <th>Tick Size</th>
+          <th>Pip Size</th>
+          <th>Trading Hours<br>
+          (Server Time)</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="stocksAccountComparison">
+          <td>ADSGn.DE</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-0.19</td>
+          <td>-0.08</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 10:00-18:30</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>ALVG.DE</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-4.49</td>
+          <td>-1.84</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 10:00-18:30</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>BAYGn.DE</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-0.47</td>
+          <td>-0.19</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 10:00-18:30</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>BMWG.DE</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-30</td>
+          <td>-30</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 10:00-18:30</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>CBKG.DE</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-30</td>
+          <td>-30</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 10:00-18:30</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>DAIGn.DE</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-10</td>
+          <td>-10</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 10:00-18:30</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>EONGn.DE</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-10</td>
+          <td>-10</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 10:00-18:30</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>LHAG.DE</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-0.43</td>
+          <td>-0.17</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 10:00-18:30</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>SIEGn.DE</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-30</td>
+          <td>-30</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 10:00-18:30</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>TOTF.PA</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-16.06</td>
+          <td>-16.06</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 10:00-18:30</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>VOWG_p.DE</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-30</td>
+          <td>-30</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 10:00-18:30</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>BABA.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-0.0113</td>
+          <td>-0.0013</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>AMZN.OQ</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-0.63</td>
+          <td>-0.26</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>AXP.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-0.37</td>
+          <td>-0.15</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>AAPL.OQ</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-1.71</td>
+          <td>-0.2</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>T.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-10</td>
+          <td>-10</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>BAC.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-10</td>
+          <td>-10</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>BA.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-0.53</td>
+          <td>-0.22</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>CSCO.OQ</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>0</td>
+          <td>-1.7</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>C.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-10</td>
+          <td>-10</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>KO.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-10</td>
+          <td>-10</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>EBAY.OQ</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-1.8</td>
+          <td>-0.74</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>XOM.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-0.53</td>
+          <td>-0.21</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>FB.OQ</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-10</td>
+          <td>-10</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>RACE.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-11.51</td>
+          <td>-4.74</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>GE.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-0.95</td>
+          <td>-0.39</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>GM.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-0.06</td>
+          <td>-0.06</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>GS.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-0.45</td>
+          <td>-0.18</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>GOOG.OQ</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-2.66</td>
+          <td>-1.09</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>HPQ.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-9.71</td>
+          <td>-9.71</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>IBM.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-10</td>
+          <td>-10</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>INTC.OQ</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-10</td>
+          <td>-10</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>JNJ.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-10</td>
+          <td>-10</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>JPM.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-10</td>
+          <td>-10</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>MCD.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-10</td>
+          <td>-10</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>MSFT.OQ</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-10</td>
+          <td>-10</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>NFLX.OQ</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-16.35</td>
+          <td>-16.35</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>ORCL.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-0.96</td>
+          <td>-0.39</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>PFE.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-10</td>
+          <td>-10</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>QCOM.OQ</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-0.583</td>
+          <td>-0.24</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>TSLA.OQ</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-10</td>
+          <td>-10</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>TWTR.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-1.23</td>
+          <td>-0.5</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          <tr class="stocksAccountComparison">
+          <td>V.N</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>Floating</td>
+          <td>-0.2</td>
+          <td>-0.08</td>
+          <td>2</td>
+          <td>0,01</td>
+          <td>0,1</td>
+          <td>Mon-Fri 16:30-23:00</td>
+          </tr>
+          </tbody>
+          </table>
+      </div>
+    </div>
+  </section>
+  <section class="payment  payment--inner">
+    <div class="container">
+      <div class="payment__flex">
+        <div class="payment__box  payment__box--mc"></div>
+        <div class="payment__box  payment__box--visa"></div>
+        <div class="payment__box  payment__box--bank"></div>
+        <div class="payment__box  payment__box--skrill"></div>
+        <div class="payment__box  payment__box--neteller"></div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__flex">
+        <ul class="footer__ul">
+          <li>
+            <img class="footer__logo" src="../img/logo-w.svg" alt="Forex24 Global">
+          </li>
+          <li>
+            <!-- <a class="footer__callme" href="tel:+442080891644">Call us</a> -->
+          </li>
+          <li class="footer__social">
+            <a class="footer__link  footer__link--fb" href="https://www.facebook.com/forex24com/" target="_blank"></a>
+            <a class="footer__link  footer__link--li" href="https://www.linkedin.com/in/forex24com/" target="_blank"></a>
+            <a class="footer__link  footer__link--gp" href="#"></a>
+            <a class="footer__link  footer__link--tw" href="https://twitter.com/forex24com/" target="_blank"></a>
+          </li>
+        </ul>
+        <ul class="footer__ul  footer__ul--links">
+          <li><b>About</b></li>
+          <li><hr></li>
+          <li><a href="../about-us/licenses-and-regulations.html">Licenses & Regulations</a></li>
+          <li><a href="../about-us/security-of-funds.html">Security Of Funds</a></li>
+          <li><a href="../about-us/stp-broker.html">STP Broker</a></li>
+          <li><a href="../about-us/legal-documents.html">Legal Documents</a></li>
+          <li><a href="../about-us/kids.html">KIDs</a></li>
+          <li><a href="../about-us/careers.html">Careers</a></li>
+        </ul>
+        <ul class="footer__ul  footer__ul--links">
+          <li><b>Trading</b></li>
+          <li><hr></li>
+          <li><a href="account-types.html">Account Types</a></li>
+          <li><a href="account-comparison">Account Comparison</a></li>
+          <li><a href="product-specification.html">Product Spesification</a></li>
+          <li><a class="footer__active">Trading Spesification</a></li>
+          <li><a href="platforms.html">Platforms</a></li>
+          <li><a href="funding-and-withdrawal.html">Funding and Withdrawal</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+        </ul>
+        <ul class="footer__ul  footer__ul--links">
+          <li><b>Resources</b></li>
+          <li><hr></li>
+          <li><a href="../resources/glossary.html">Glossary</a></li>
+          <li><a href="../resources/economic-calendar.html">Economic calendar</a></li>
+        </ul>
+        <ul class="footer__ul  footer__ul--links">
+          <li><b>Contacts</b></li>
+          <li><hr></li>
+          <li>Customer Service<br>CY Number: <a href="tel:+35725000199">+35725000199</a></li><br>
+          <li>Support<br>UK Number: <a href="tel:+442080891644">+442080891644</a><br><a href="mailto:support@forex24.com">support@forex24.com</a></li>
+        </ul>
+      </div>
+        <hr class="footer__hr">
+      <b class="footer__name">Risk warning:</b>
+      <p class="footer__text">Trading in Contracts for Difference (‘CFDs’) carries a high level of risk and can result in the loss of all your investment. As such, CFDs may not be appropriate for all investors. You should not invest money that you cannot afford to lose. Before deciding to trade, you should become aware of all the risks associated with CFD trading, and seek advice from an independent and suitably licensed financial advisor. Under no circumstances shall we have any liability to any person or entity for (a) any loss or damage in whole or part caused by, resulting from, or relating to any transactions related to CFDs or (b) any direct, indirect, special, consequential or incidental damages whatsoever. For more information about the risks associated with trading CFDs please find and read our <a href="../img/pdf/Risk-Disclosure-Warning-Notice-1.0.1-2.pdf" target="_blank">‘General Risk Disclosure’</a>.</p>
+      <p class="footer__text">Forex24 Global does not provide services to residents of the USA, Canada, Japan, North Korea, Iran, Belgium and some other regions.</p>
+        <hr class="footer__hr">
+      <p class="footer__text">© 2018 All rights reserved LYDYA FINANCIAL LTD.</p>
+      <p class="footer__text">Located at 155 Ayias Fylaxeos, Ersi Court Suite 202, 3083 Limassol, Cyprus.</p>
+      <p class="footer__text">Forex24 Global is a brand owned and operated by Lydya Financial Ltd, a Cyprus Investment Firm (CIF) regulated and supervised by the Cyprus Securities and Exchange Commission (CySEC) with CIF <a href="https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/79086/" target="_blank">Licence number 300/16</a> and Company registration number HE334292.</p>
+      <p class="footer__text">The Company is also registered with: FCA in UK with reg. no. 782501; BaFin in Germany with reg. no. 1349943; CONSOB in Italy with reg. no. 4624; ACP in France with reg. no. 75980; CNMV in Spain with reg. no. 4373.</p>
+    </div>
+  </footer>
+  <script src="../js/main.min.js" async></script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+.form {
+  width: 725px;
+  padding: 40px 30px;
+}
+
+.form__wrapper {
+  width: 725px;
+  padding: 40px 30px;
+}
+
+.form--login {
+  width: 355px;
+  margin: 60px auto;
+  padding: 0;
+  
+  h3 {
+    margin: 0 0 30px 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'ProximaNova-Bold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.form__flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px 0;
+  
+  &--right {
+    justify-content: flex-end;
+  }
+  
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.form__label {
+  margin: 0 30px 0 0;
+  text-indent: 20px;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  
+  &--password {
+    position: relative;
+  }
+  
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.form__label--login {
+  display: block;
+  margin: 0 0 20px 0;
+  text-indent: 20px;
+}
+
+.form__select {
+  display: block;
+  height: 35px;
+  margin: 5px 0 0 0;
+  padding: 0 20px;
+  font-size: 14px;
+  font-family: 'ProximaNova-Regular', sans-serif;
+  border: 2px solid $sc;
+  border-radius: 17px;
+  background: #fff url('../img/select-arrow.svg') no-repeat center;
+  background-size: 6px;
+  outline: none;
+  appearance: none;
+  
+  &--title {
+    width: 125px;
+    background-position-x: 95px; 
+  }
+  
+  &--country {
+    width: 265px;
+    background-position-x: 235px; 
+  }
+  
+  &--phone {
+    width: 130px;
+    background-position-x: 100px; 
+  }
+  
+  &--account {
+    width: 348px;
+    background-position-x: 315px; 
+  }
+  
+  &:focus {
+    box-shadow: 0px 0px 10px 5px rgba(193, 186, 255, 0.5);
+  }
+}
+
+.form__input {
+  display: block;
+  height: 31px;
+  margin: 5px 0 0 0;
+  padding: 0 20px;
+  font-size: 14px;
+  font-family: 'ProximaNova-Regular', sans-serif;
+  border: 2px solid $sc;
+  border-radius: 17px;
+  transition: 0.3s;
+  outline: none;
+  
+  &--small {
+    width: 226px;
+  }
+  
+  &--big {
+    width: 304px;
+  }
+  
+  &::placeholder {
+    color: #000;
+  }
+  
+  &:focus {
+    box-shadow: 0px 0px 10px 5px rgba(193, 186, 255, 0.5);
+  }
+}
+
+.form__input--login {
+  width: 311px;
+}
+
+.form__warning {
+  padding: 0 0 0 10px;
+  color: #999999;
+  font-size: 13px;
+  font-family: 'ProximaNova-Regular', sans-serif;
+  background: url('../img/form-lock.svg') no-repeat left;
+  background-size: 8px;
+}
+
+.form__name {
+  margin: 25px 0 15px 20px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  text-transform: uppercase;
+}
+
+.form__switch {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  width: 20px;
+  height: 16px;
+  border: none;
+  background: transparent;
+  transition: 0.3s;
+  outline: none;
+  cursor: pointer;
+  
+  &--close {
+    background: transparent url('../img/form-password-close.svg') no-repeat center;
+  }
+  
+  &--open {
+    background: transparent url('../img/form-password-open.svg') no-repeat center;
+  }
+  
+  &:focus {
+    transform: scale(1.3);
+  }
+}
+
+.form__submit {
+  width: 348px;
+  height: 35px;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'ProximaNova-Regular', sans-serif;
+  border: none;
+  border-radius: 17px;
+  background: $sc;
+  transition: 0.3s;
+  cursor: pointer;
+  outline: none;
+  
+  &:hover {
+    box-shadow: 0px 0px 11px 5px rgba(22, 0, 230, 0.3);
+  }
+  
+  &:focus {
+    box-shadow: 0px 0px 11px 5px rgba(22, 0, 230, 0.3);
+  }
+}
+
+.form__submit--login {
+  width: 355px;
+}
+
+.form__links {
+  color: #000;
+  font-size: 14px;
+  font-family: 'ProximaNova-Regular', sans-serif;
+  transition: 0.3s;
+  
+  &:hover {
+    color: $sc;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .form {
+    width: 671px;
+    margin: auto;
+  }
+  
+  .form--login {
+    width: 300px;
+  }
+  
+  .form__wrapper {
+    width: auto; 
+  }
+  
+  .form__label {
+    margin: 0 15px 0 0;
+  }
+  
+  .form__label--login {
+    margin: 0 0 20px 0;
+  }
+  
+  .form__select {
+    
+    &--title {
+      width: 100px;
+      background-position-x: 70px; 
+    }
+    
+    &--country {
+      width: 240px;
+      background-position-x: 210px; 
+    }
+    
+    &--account {
+      width: 328px;
+      background-position-x: 295px; 
+    }
+  }
+  
+  .form__input {
+    
+    &--big {
+      width: 284px;
+    }
+  }
+  
+  .form__input--login {
+    width: 256px;
+  }
+  
+  .form__warning {
+    font-size: 12px;
+    background-size: 7px;
+  }
+  
+  .form__submit--login {
+    width: inherit;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .form {
+    width: 250px;
+    margin: auto;
+  }
+  
+  .form__flex {
+    flex-direction: column;
+  }
+  
+  .form__flex--login {
+    flex-direction: row;
+  }
+  
+  .form__label {
+    margin: 0 0 10px 0;
+  }
+  
+  .form__select {
+    width: 250px;
+    background-position-x: 220px;
+    
+    &--title {
+      // background-position-x: 220px;
+    }
+    
+    &--country {
+      // background-position-x: 220px;
+    }
+  }
+  
+  .form__input {
+    width: 206px;
+  }
+  
+  .form__name {
+    margin: 25px 0 15px 0;
+    text-align: center;
+  }
+  
+  .form__submit {
+    width: 250px;
+  }
+}

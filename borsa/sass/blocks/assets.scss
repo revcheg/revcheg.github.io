@@ -1,0 +1,33 @@
+.assets {
+  padding: 50px 0;
+  
+  b {
+    font-size: 25px;
+    font-family: 'Open Sans Bold', sans-serif;
+  }
+  
+  p {
+    font-family: 'Open Sans Regular', sans-serif;
+  }
+  
+  ul, ol {
+    font-size: 15px;
+    font-family: 'Open Sans Regular', sans-serif;
+  }
+  
+  small {
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    font-family: 'Open Sans Bold', sans-serif;
+  }
+  
+  a {
+    display: block;
+    margin: 20px 0;
+    color: #3097D1;
+    font-size: 18px;
+    font-family: 'Open Sans Regular', sans-serif;
+    text-decoration: none;
+  }
+}

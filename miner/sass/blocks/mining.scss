@@ -1,0 +1,22 @@
+.mining {
+  min-height: 600px;
+  background: url('../img/mining-bg.png') no-repeat top;
+  // background-size: cover;
+}
+
+@media screen and ($tablet-widths) {
+  .mining {
+    min-height: 600px;
+    background: url('../img/mining-bg-m.png') no-repeat top;
+    // background-size: cover;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .mining {
+    min-height: 370px;
+    margin-top: 20px;
+    background: url('../img/mining-bg-m.png') no-repeat top;
+    background-size: cover;
+  }
+}

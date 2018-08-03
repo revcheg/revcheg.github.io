@@ -1,0 +1,101 @@
+.edge {
+  // min-height: 230px;
+}
+
+.edge__flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.edge__box {
+  width: 150px;
+  margin-right: 50px;
+  padding-top: 100px;
+  color: #0054a6;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.2s;
+  cursor: pointer;
+  
+  & p {
+    margin: 0;
+  }
+}
+
+.edge__box--e-1 {
+  background: url("../img/e-1.png") no-repeat top;
+}
+
+.edge__box--e-2 {
+  background: url("../img/e-2.png") no-repeat top;
+}
+
+.edge__box--e-3 {
+  background: url("../img/e-3.png") no-repeat top;
+}
+
+.edge__box--e-4 {
+  background: url("../img/e-4.png") no-repeat top;
+}
+
+.edge__box--e-5 {
+  background: url("../img/e-5.png") no-repeat top;
+}
+
+.edge__box:hover {
+  transform: scale(1.1, 1.1);
+}
+// Media
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .edge__flex {
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  
+  .edge__box {
+    margin-right: 0;
+    padding-bottom: 30px;
+    font-size: 18px;
+  }
+}
+
+/* Smartphones (горизонтальная) ----------- */
+@media only screen and (min-width: 321px) {}
+
+/* Smartphones (вертикальная) ----------- */
+@media only screen and (max-width: 320px) {
+  .edge__flex {
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .edge__box {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+}
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .edge__box {
+    margin-right: 30px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  .edge__flex {
+    // justify-content: space-around;
+  }
+}

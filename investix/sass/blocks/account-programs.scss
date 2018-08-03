@@ -1,0 +1,457 @@
+.account-programs__title {
+  padding: 42px 0;
+  background: linear-gradient(66deg, rgb(0,96,255) 0%, rgb(78,210,222) 100%);
+}
+
+.account-programs__name {
+  margin: 0;
+  color: #fff;
+  font-size: 72px;
+  font-weight: 700;
+  
+  &--small {
+    color: #000;
+    font-size: 40px;
+  }
+}
+
+.account-programs__subname {
+  color: #fff;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.account-programs__desc {
+  padding: 40px 0 60px;
+}
+
+.account-programs__flex {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 50px 0;
+  
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.account-programs__left {
+  width: 700px;
+}
+
+.account-programs__right {
+  position: absolute;
+  top: -140px;
+  right: 0;
+  width: 290px;
+  height: 480px;
+  
+  &--basic {
+    background: url('../img/basic.png') no-repeat top;
+    background-size: cover;
+  }
+  
+  &--advanced {
+    background: url('../img/advanced.png') no-repeat top;
+    background-size: cover;
+  }
+  
+  &--expert {
+    background: url('../img/expert.png') no-repeat top;
+    background-size: cover;
+  }
+  
+  &--pro {
+    background: url('../img/pro.png') no-repeat top;
+    background-size: cover;
+  }
+  
+  &--ultimate {
+    background: url('../img/ultimate.png') no-repeat top;
+    background-size: cover;
+  }
+  
+  &--crypto {
+    background: url('../img/crypto.png') no-repeat top;
+    background-size: contain;
+  }
+}
+
+.account-programs__text {
+  margin: 30px 0;
+  font-weight: normal; 
+}
+
+.account-programs__price {
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal; 
+  
+  b {
+    font-weight: 700;
+  }
+}
+
+.account-programs__guarantee {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.account-programs__button {
+  margin: 20px 0 0 0;
+}
+
+.account-programs__edge {
+  padding: 60px 0;
+  
+  &--basic {
+    background: linear-gradient( -123deg, rgb(238,238,238) 0%, rgb(243,243,243) 53%, rgb(247,247,247) 100%);
+  }
+  
+  &--advanced {
+    background: linear-gradient( -123deg, rgb(195,249,207) 0%, rgb(220,252,227) 36%, rgb(244,255,247) 100%);
+  }
+  
+  &--expert {
+    background: linear-gradient( -123deg, rgb(215,230,255) 0%, rgb(230,238,250) 58%, rgb(245,245,245) 100%);
+  }
+  
+  &--pro {
+    background: linear-gradient( -123deg, rgb(255,238,194) 0%, rgb(250,242,220) 54%, rgb(245,245,245) 100%);
+  }
+  
+  &--ultimate {
+    background: linear-gradient( -123deg, rgb(240, 227, 255) 0%, rgb(245,245,245) 100%);
+  }
+  
+  &--crypto {
+    background: linear-gradient( -123deg, rgb(255, 229, 196) 0%, rgb(245,245,245) 100%);
+  }
+}
+
+.account-programs__box {
+  padding: 80px 0 0 0;
+  width: 230px;
+  
+  b {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
+  &--video {
+    background: url('../img/video.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--reviews {
+    background: url('../img/reviews.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--weekly {
+    background: url('../img/weekly.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--room {
+    background: url('../img/room.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--webinar {
+    background: url('../img/webinar.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--demo {
+    background: url('../img/demo.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--analysis {
+    background: url('../img/analysis.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--learn {
+    background: url('../img/learn.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--risk {
+    background: url('../img/risk.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--session {
+    background: url('../img/session.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--signal {
+    background: url('../img/signal.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--live {
+    background: url('../img/live.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--pers {
+    background: url('../img/pers.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--market {
+    background: url('../img/market.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--fund {
+    background: url('../img/fund.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--bonus {
+    background: url('../img/bonus.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--buy {
+    background: url('../img/buy.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--altcoins {
+    background: url('../img/altcoins.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--exch {
+    background: url('../img/exch.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--exch {
+    background: url('../img/exch.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--port {
+    background: url('../img/port.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--behind {
+    background: url('../img/behind.svg') no-repeat top left;
+    background-size: 60px;
+  }
+  
+  &--secret {
+    background: url('../img/secret.svg') no-repeat top left;
+    background-size: 60px;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .account-programs__name {
+    font-size: 50px;
+    
+    &--small {
+      font-size: 30px;
+    }
+  }
+  
+  .account-programs__box {
+    width: 190px;
+    
+    b {
+      font-size: 16px;
+    }  
+  }
+  
+  .account-programs__left {
+    width: 400px;
+  }
+  
+  .account-programs__right {
+    top: -100px;
+    width: 260px;
+    height: 458px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .account-programs__name {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .account-programs__subname {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .account-programs__edge {
+    padding: 60px 0 0 0;
+  }
+  
+  .account-programs__flex {
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  .account-programs__left {
+    order: 2;
+    width: auto;
+  }
+  
+  .account-programs__right {
+    order: 1;
+    position: static;
+    width: 300px;
+    height: 515px;
+    margin: auto;
+  }
+  
+  .account-programs__price {
+    text-align: center;
+  }
+  
+  .account-programs__guarantee {
+    display: block;
+    text-align: center;
+  }
+  
+  .account-programs__button {
+    margin: 20px auto 0;
+  }
+  
+  .account-programs__box {
+    margin: 0 0 50px 0;
+    text-align: center;
+    
+    &--video {
+      background: url('../img/video.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--reviews {
+      background: url('../img/reviews.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--weekly {
+      background: url('../img/weekly.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--room {
+      background: url('../img/room.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--webinar {
+      background: url('../img/webinar.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--demo {
+      background: url('../img/demo.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--analysis {
+      background: url('../img/analysis.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--learn {
+      background: url('../img/learn.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--risk {
+      background: url('../img/risk.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--session {
+      background: url('../img/session.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--signal {
+      background: url('../img/signal.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--live {
+      background: url('../img/live.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--pers {
+      background: url('../img/pers.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--market {
+      background: url('../img/market.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--fund {
+      background: url('../img/fund.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--bonus {
+      background: url('../img/bonus.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--buy {
+      background: url('../img/buy.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--altcoins {
+      background: url('../img/altcoins.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--exch {
+      background: url('../img/exch.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--exch {
+      background: url('../img/exch.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--port {
+      background: url('../img/port.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--behind {
+      background: url('../img/behind.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--secret {
+      background: url('../img/secret.svg') no-repeat top;
+      background-size: 60px;
+    }
+    
+    &--hidden {
+      display: none;
+    }
+  }
+}

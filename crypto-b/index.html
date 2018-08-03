@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>+500crypto</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aeef">
+  <meta name="theme-color" content="#ffffff">
+  <!-- API -->
+	<link rel="stylesheet" href="api/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__head">
+      <nav class="page-header__nav">
+        <div class="container">
+          <div class="page-header__flex">
+            <div class="page-header__logo">
+              <a>
+                <img class="page-header__logo" src="img/logo.png" alt="+500crypto">  
+              </a>
+            </div>
+            <div class="page-header__main-nav">
+              <ul class="page-header__nav-list">
+                <li class="page-header__item"><a href="https://client.+500crypto.com/en/members/login">Login</a></li>
+                <li class="page-header__item"><a href="https://client.+500crypto.com/en/members/register/real/">Sign Up</a></li>
+                <li class="page-header__item"><a href="templates/contact.html">Contacts</a></li>
+              </ul>
+            </div>
+            <div class="page-header__main-nav  page-header__main-nav--s">
+              <ul class="page-header__nav-list">
+                <li class="page-header__item"><a href="https://client.+500crypto.com/en/members/login">Login</a></li>
+                <li class="page-header__item"><a href="https://client.+500crypto.com/en/members/register/real/">Sign Up</a></li>
+                <li class="page-header__item"><a href="templates/contact.html">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="panel__flex">
+        <div class="price-boxes">
+  				<div class="panel-group">
+  					<div class="panel panel-default">
+  						<div class="panel-body">
+  							<h2 class="price-display">BTCUSD <span class="price" id="PRICE_BTC"></span></h2>
+  							<h5>24h Change: <span id="CHANGE24HOUR_BTC"></span><span id="CHANGE24HOURPCT_BTC"></span><br></h5>
+  							<h5>Last Market: <span class="exchange" id="LASTMARKET_BTC"></span> <br></h5>
+  							<h5>Open Hour: <span id="OPENHOUR_BTC"></span><br></h5>
+  							<h5>High Hour: <span id="HIGHHOUR_BTC"></span><br></h5>
+  							<h5>Low Hour: <span id="LOWHOUR_BTC"></span><br></h5>
+  							<h5>Open Day: <span id="OPEN24HOUR_BTC"></span><br></h5>
+  							<h5>High Day: <span id="HIGH24HOUR_BTC"></span><br></h5>
+  							<h5>Low Day: <span id="LOW24HOUR_BTC"></span><br></h5>
+  							<h5>Last Trade Volume: <span id="LASTVOLUME_BTC"></span><br></h5>
+  							<h5>Last Trade Volume To: <span id="LASTVOLUMETO_BTC"></span><br></h5>
+  							<h5>24h Volume: <span id="VOLUME24HOUR_BTC"></span><br></h5>
+  							<h5>24h VolumeTo: <span id="VOLUME24HOURTO_BTC"></span><br></h5>
+  						</div>
+  					</div>
+  				</div>
+          <a class="panel__link  panel__link--btc" href="">TRADE NOW</a>
+  			</div>
+  			<div class="price-boxes  price-boxes--eth">
+  				<div class="panel-group">
+  					<div class="panel panel-default">
+  						<div class="panel-body">
+  							<h2 class="price-display">ETHUSD <span class="price" id="PRICE_ETH"></span></h2>
+  							<h5>24h Change: <span id="CHANGE24HOUR_ETH"></span><span id="CHANGE24HOURPCT_ETH"></span><br></h5>
+  							<h5>Last Market: <span class="exchange" id="LASTMARKET_ETH"></span> <br></h5>
+  							<h5>Open Hour: <span id="OPENHOUR_ETH"></span><br></h5>
+  							<h5>High Hour: <span id="HIGHHOUR_ETH"></span><br></h5>
+  							<h5>Low Hour: <span id="LOWHOUR_ETH"></span><br></h5>
+  							<h5>Open Day: <span id="OPEN24HOUR_ETH"></span><br></h5>
+  							<h5>High Day: <span id="HIGH24HOUR_ETH"></span><br></h5>
+  							<h5>Low Day: <span id="LOW24HOUR_ETH"></span><br></h5>
+  							<h5>Last Trade Volume: <span id="LASTVOLUME_ETH"></span><br></h5>
+  							<h5>Last Trade Volume To: <span id="LASTVOLUMETO_ETH"></span><br></h5>
+  							<h5>24h Volume: <span id="VOLUME24HOUR_ETH"></span><br></h5>
+  							<h5>24h VolumeTo: <span id="VOLUME24HOURTO_ETH"></span><br></h5>
+  						</div>
+  					</div>
+  				</div>
+          <a class="panel__link  panel__link--eth" href="">TRADE NOW</a>
+  			</div>
+        <div class="price-boxes  price-boxes--ltc">
+  				<div class="panel-group">
+  					<div class="panel panel-default">
+  						<div class="panel-body">
+  							<h2 class="price-display">LTCUSD <span class="price" id="PRICE_LTC"></span></h2>
+  							<h5>24h Change: <span id="CHANGE24HOUR_BTC"></span><span id="CHANGE24HOURPCT_LTC"></span><br></h5>
+  							<h5>Last Market: <span class="exchange" id="LASTMARKET_LTC"></span> <br></h5>
+  							<h5>Open Hour: <span id="OPENHOUR_LTC"></span><br></h5>
+  							<h5>High Hour: <span id="HIGHHOUR_LTC"></span><br></h5>
+  							<h5>Low Hour: <span id="LOWHOUR_LTC"></span><br></h5>
+  							<h5>Open Day: <span id="OPEN24HOUR_LTC"></span><br></h5>
+  							<h5>High Day: <span id="HIGH24HOUR_LTC"></span><br></h5>
+  							<h5>Low Day: <span id="LOW24HOUR_LTC"></span><br></h5>
+  							<h5>Last Trade Volume: <span id="LASTVOLUME_LTC"></span><br></h5>
+  							<h5>Last Trade Volume To: <span id="LASTVOLUMETO_LTC"></span><br></h5>
+  							<h5>24h Volume: <span id="VOLUME24HOUR_LTC"></span><br></h5>
+  							<h5>24h VolumeTo: <span id="VOLUME24HOURTO_LTC"></span><br></h5>
+  						</div>
+  					</div>
+  				</div>
+          <a class="panel__link  panel__link--ltc" href="">TRADE NOW</a>
+  			</div>
+      </div>
+    </div>
+  </header>
+  <section class="trade">
+    <div class="container">
+      <div class="trade__flex">
+        <div class="trade__left-column">
+          Walk on the path to success. Buy, sell and trade cryptocurrencies
+        </div>
+        <div class="trade__right-column">
+          With +500crypto, you can easily change any blockchain leading asset for any other and it is 100% secured and fast
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="edge">
+    <div class="container">
+      <div class="edge__flex">
+        <div class="edge__box  edge__box--e-1">
+          <p>Secuirity of founds</p>
+        </div>
+        <div class="edge__box  edge__box--e-2">
+          <p>24/7 support</p>
+        </div>
+        <div class="edge__box  edge__box--e-3">
+          <p>High<br>Liqiudity</p>
+        </div>
+        <div class="edge__box  edge__box--e-4">
+          <p>No hidden<br>charges</p>
+        </div>
+        <div class="edge__box  edge__box--e-5">
+          <p>Robot-Friendly<br>API</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="news">
+    <div class="container">
+      <div class="news__flex">
+        <div class="news__left-column">
+          <b>Why to choose +500crypto</b>
+          <p>+500crypto offers traders a wide range of possibilities. We offer a better way to move money, as people all over the world now, make use of digital currencies to send money across the world irrespective of your geographical location. This way is faster, easier and cheaper to use than paper money. Investing in digital currencies also ensures financial freedom, as no single entity or government policy controls it. </p>
+        </div>
+        <div class="news__middle-column">
+          <b>A new type of investment</b>
+          <p>The emergence of cryptocurrencies into the market is something every trader is excited about. This is because of the ease and transparency involved in the use of digital currencies. When you think of trading cryptocurrencies you should think of +500crypto. +500crypto web socket feeds allows you to easily gain access to real-time market data and our trading API helps you develop safe programmatic trading bots.</p>
+        </div>
+        <div class="news__right-column">
+          <b>User friendly interface</b>
+          <p>+500crypto offers a very friendly and unique interface to trade on. Our amazing platform simplifies trading and makes the experience a great one for every trader. You can easily customize your interface. Arrange and organize your workspace as it suits you from theme selection, compose layouts, notifications set up and lots more. With +500crypto trading is on a whole new level entirely. Sign up today.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="crypto">
+    <div class="container container--crypto">
+      <div class="crypto__flex">
+        <h1>A cryptobank for everyone</h1>
+        <p>In 8 years’ time, the crypto-economy will exceed 1 trillion dollars.<br>Cryptobanks will become a cornerstone in the relations<br>between decentralized economy and future daily</p>
+        <a href="https://client.+500crypto.com/en/members/register/real/">Create Account</a>
+      </div>
+    </div>
+  </section>
+  <section class="trading">
+    <div class="container container--trading">
+      <div class="trading__flex">
+        <h2>NO EXPERIENCE?</h2>
+        <p>You have no worries. Are you thinking of venturing into the world of cryptocurrency trading? +500crypto has you covered. So sign up today and get a demo account. A demo account will prepare and teach you what to expect in the real market. We also have already prepared educational tool from top professionals to enhance your knowledge about trading.</p>
+      </div>
+    </div>
+    <div class="trading__coin">
+      <div class="container">
+        <div class="coin__flex">
+          <div class="coin__c-1"></div>
+          <div class="coin__c-2"></div>
+          <div class="coin__c-3"></div>
+          <div class="coin__c-4"></div>
+          <div class="coin__c-5"></div>
+          <div class="coin__c-6"></div>
+          <div class="coin__c-7"></div>
+          <div class="coin__c-8"></div>
+          <div class="coin__c-9"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__flex">
+        <div class="page-footer__column">
+          <b>Account</b>
+          <ul>
+            <li><a href="https://client.+500crypto.com/en/members/login">Sign In</a></li>
+            <li><a href="https://client.+500crypto.com/en/members/register/real/">Sign Up</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__column">
+          <b>About</b>
+          <ul>
+            <li><a href="templates/about.html">About Us</a></li>
+            <li><a href="templates/careers.html">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="templates/contact.html">Contact</a></li>
+            <li><a href="templates/security.html">Security</a></li>  
+          </ul>
+        </div>
+        <div class="page-footer__column">
+          <b>Resources</b>
+          <ul>
+            <li><a href="templates/faq.html">FAQ</a></li>
+            <li><a href="templates/privacy.html">Legal & Privacy</a></li>
+            <li><a href="templates/terms.html">Terms & Conditions</a></li>
+            <li><a href="templates/support.html">Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="page-footer__copyright">
+        © Copyright 2017 +500crypto, All right reserved. +500crypto is a property of GRANIT OAK WORLDWIDE LIMITED: Igoumenitsas 12, 2027 Nicosia, Cyprus. Operational address: Igoumenitsas 12, 2027 Nicosia, Cyprus<br><br>+500crypto is a software platform ONLY and does not conduct any independent diligence on or substantive review of any blockchain asset, digital currency, cryptocurrency or associated funds. You are fully and solely responsible for evaluating your investments, for determining whether you will exchange blockchain assets based on your own, and for all your decisions as to whether to exchange blockchain assets with Exodus. In many cases, blockchain assets you exchange on the basis of your research may not increase in value, and may decrease in value. Similarly, blockchain assets you exchange on the basis of your research may increase in value after your exchange. Past performance is not indicative of future results. Any investment in blockchain assets involves the risk of loss of part or all of your investment. The value of the blockchain assets you exchange is subject to market and other investment risks.
+      </p>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.2/socket.io.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="api/ccc-streamer-utilities.js"></script>
+	<script src="api/stream.js"></script>
+</body>
+</html>

@@ -1,0 +1,2204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Forex24 is a European CySEC Regulated online broker providing contracts for difference on foreign exchange, shares, futures and precious metals primarily to retail clients.">
+  <title>Product Specification - Forex24 Global</title>
+  <link rel="stylesheet" href="../css/style.min.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../img/favicon/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="194x194" href="../img/favicon/favicon-194x194.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#2f2861">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="msapplication-config" content="../browserconfig.xml">
+  <meta name="msapplication-TileImage" content="../img/favicon/mstile-144x144.png">
+  <meta name="theme-color" content="#5a21ed">
+</head>
+<body>
+  <header class="header--inner  header--scroll">
+    <div class="header__container">
+      <div class="header__flex">
+        <a class="header__logo" href="../index.html">
+          <img src="../img/logo.svg" alt="Forex24 Global">
+        </a>
+        <button class="header__toggle">Open Menu</button>
+        <ul class="header__user  header__user--closed">
+          <li>
+            <a class="header__open" href="#">Open account</a>
+            <ul class="header__accounts  header__accounts--closed">
+              <li><a href="../client/real/step-1.php">Real</a></li>
+              <li><a href="../client/demo.html">Demo</a></li>
+              <li><a href="../trading/platforms/zulutrade.html">ZuluTrade</a></li>
+            </ul>
+          </li>
+          <li><a href="../client/login.html">Log in</a></li>
+          <li>
+            <select class="header__language">
+              <option>En</option>
+              <option>Ru</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+      <nav class="nav  nav--closed">
+        <ul class="nav__list">
+          <li>
+            <a class="nav__link" onclick="about()">About</a>
+            <div class="nav__wrapper  nav__wrapper--closed">
+              <ul class="nav__sub">
+                <li><a href="../about-us/licenses-and-regulations.html">Licenses and Regulations</a></li>
+                <li><a href="../about-us/security-of-funds.html">Security of Funds</a></li>
+                <li><a href="../about-us/stp-broker.html">STP Broker</a></li>
+                <li><a href="../about-us/legal-documents.html">Legal Documents</a></li>
+                <li><a href="../about-us/kids.html">KIDs</a></li>
+                <li><a href="../about-us/careers.html">Careers</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="nav__link" onclick="trading()">Trading</a>
+            <div class="nav__wrapper  nav__wrapper--closed">
+              <ul class="nav__sub">
+                <li><a href="account-types.html">Account Types</a></li>
+                <li><a href="account-comparison.html">Account Comparison</a></li>
+                <li><a class="nav__active">Product Specification</a></li>
+                <!-- <li><a href="trading-specification.html">Trading Specification</a></li> -->
+                <li><a href="platforms.html">Platforms</a></li>
+                <li><a href="funding-and-withdrawal.html">Funding and Withdrawal</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="nav__link" onclick="resources()">Resources</a>
+            <div class="nav__wrapper  nav__wrapper--closed">
+              <ul class="nav__sub">
+                <li><a href="../resources/glossary.html">Glossary</a></li>
+                <li><a href="../resources/economic-calendar.html">Economic calendar</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="https://partners.forex24.com/" target="_blank">Partners</a></li>
+          <li>
+            <a class="nav__link" onclick="contact()">Contact Us</a>
+            <div class="nav__wrapper  nav__wrapper--closed">
+              <ul class="nav__sub">
+                <li><a href="../contact-us.html">Contact Us</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <label class="nav__search">
+          <input type="search">
+        </label>
+      </nav>
+    </div>
+  </header>
+  <section class="inner">
+    <div class="container">
+      <h1 class="inner__name">Product Specification</h1>
+      <div class="tab">
+        <button class="tab__button  tab__button--forex  tab__active" onclick="openTab(event, 'Forex')">Forex</button>
+        <button class="tab__button  tab__button--commodities" onclick="openTab(event, 'Commodities')">Commodities</button>
+        <button class="tab__button  tab__button--metals" onclick="openTab(event, 'Metals')">Metals</button>
+        <button class="tab__button  tab__button--energies" onclick="openTab(event, 'Energies')">Energies</button>
+        <button class="tab__button  tab__button--indices" onclick="openTab(event, 'Indices')">Indices</button>
+        <button class="tab__button  tab__button--equities" onclick="openTab(event, 'Equities')">Equities</button>
+      </div>
+      <div id="Forex" class="tab__content  tab__content--product  tab__content--forex">
+        <div class="tab__header">
+          <h3>Forex</h3>
+          <p>Foreign exchange or Forex is one of the largest and most liquid markets with over 5 trillion dollars traded daily. A trader can trade currencies against each other and based on the changing values of currencies over time he can make a profit or a loss. Exchange rates are defined by the market forces of supply and demand and are affected by geopolitical and economic events around the globe.</p>
+          <b>With Forex24:</b>
+          <ul>
+            <li>You can trade 68+ currency pairs: majors, minors and exotics</li>
+            <li>You get direct access to the forex market 24 hours a day, 5 days a week</li>
+            <li>Leverage up to 400:1</li>
+            <li>Low spreads and No re-quotes</li>
+            <li>No hidden fees</li>
+          </ul>
+        </div>
+        <table class="tab__table  tab__table--right">
+        	<tr class="tab__name  tab__name--forex">
+        		<th>Symbols</th>
+        		<th>Descripion</th>
+        		<th>Position Size Per Lot</th>
+        		<th>1 Pip Value Per Lot</th>
+        		<th>Min Position Size</th>
+        		<th>Max Position Size</th>
+        		<th>Swap Long In Points</th>
+        		<th>Swap Short In Points</th>
+        		<th>Trading Hours (Server Time)*</th>
+        	</tr>
+          <tr>
+        		<td>EURUSD</td>
+        		<td>Euro vs US Dollar</td>
+        		<td>100000 EUR</td>
+        		<td>10USD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-10.315">-10.32</td>
+        		<td sdval="2.44">2.44</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>GBPUSD</td>
+        		<td>Great Britan Pound vs US Dollar</td>
+        		<td>100000 GBP</td>
+        		<td>10 USD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-9.03">-9.03</td>
+        		<td sdval="0.995">1.00</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>USDCAD</td>
+        		<td>US Dollar vs Canadian Dollar</td>
+        		<td>100000 USD</td>
+        		<td>10 CAD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-1.3">-1.30</td>
+        		<td sdval="-5.6">-5.60</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>USDJPY</td>
+        		<td>US Dollar vs Japanese Yen</td>
+        		<td>100000 USD</td>
+        		<td>1000 JPY</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="1.216667">1.22</td>
+        		<td sdval="-9.515">-9.52</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>USDCHF</td>
+        		<td>US Dollar vs Swiss Franc</td>
+        		<td>100000 USD</td>
+        		<td>10 CHF</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="2.231666667">2.23</td>
+        		<td sdval="-11.105">-11.11</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>EURAUD</td>
+        		<td>Euro vs Australian Dollar</td>
+        		<td>100000 EUR</td>
+        		<td>10 AUD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-16.725">-16.73</td>
+        		<td sdval="3.533333">3.53</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>EURCAD</td>
+        		<td>Euro vs Canadian Dollar</td>
+        		<td>100000 EUR</td>
+        		<td>10 CAD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-10.15">-10.15</td>
+        		<td sdval="0.8">0.80</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>EURCHF</td>
+        		<td>Euro vs Swiss Franc</td>
+        		<td>100000 EUR</td>
+        		<td>10 CHF</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="0.02">0.02</td>
+        		<td sdval="5.08">5.08</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>EURGBP</td>
+        		<td>Euro vs Great Britan Pound</td>
+        		<td>100000 EUR</td>
+        		<td>10 GBP</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-4.1">-4.10</td>
+        		<td sdval="0.16">0.16</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>EURJPY</td>
+        		<td>Euro vs Japanese Yen</td>
+        		<td>100000 EUR</td>
+        		<td>1000 JPY</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-3.425">-3.43</td>
+        		<td sdval="-3.16">-3.16</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>GBPAUD</td>
+        		<td>Great British Pound vs Australian Dollar</td>
+        		<td>100000 GBP</td>
+        		<td>10USD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-13.49">-13.49</td>
+        		<td sdval="2.433333">2.43</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>GBPCAD</td>
+        		<td>Great Britan Pound vs Canadian Dollar</td>
+        		<td>100000 GBP</td>
+        		<td>10CAD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-9.865">-9.87</td>
+        		<td sdval="0.13">0.13</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>GBPCHF</td>
+        		<td>Great Britan Pound vs Swiss Franc</td>
+        		<td>100000 GBP</td>
+        		<td>10 CHF</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="0.885">0.89</td>
+        		<td sdval="-8.62">-8.62</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>GBPJPY</td>
+        		<td>Great Britan Pound vs Japanese Yen</td>
+        		<td>100000 GBP</td>
+        		<td>1000 JPY</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-1.815">-1.82</td>
+        		<td sdval="-1.17">-1.17</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>AUDUSD</td>
+        		<td>Australian Dollar vs US Dollar</td>
+        		<td>100000 AUD</td>
+        		<td>10 USD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-1.25">-1.25</td>
+        		<td sdval="-5.15">-5.15</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>CHFJPY</td>
+        		<td>Swiss Franc vs Japanese Yen</td>
+        		<td>100000 CHF</td>
+        		<td>1000 JPY</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-6.32">-6.32</td>
+        		<td sdval="0.726667">0.73</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>AUDJPY</td>
+        		<td>Australian Dollar vs Japanese Yen</td>
+        		<td>100000 AUD</td>
+        		<td>1000 JPY</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="1.736667">1.74</td>
+        		<td sdval="-8.35">-8.35</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>AUDCHF</td>
+        		<td>Australian Dollar vs Swiss Franc</td>
+        		<td>100000 AUD</td>
+        		<td>10 CHF</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="2.283333">2.28</td>
+        		<td sdval="-9.895">-9.90</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>AUDCAD</td>
+        		<td>Australian Dollar vs Canadian Dollar</td>
+        		<td>100000 AUD</td>
+        		<td>10 CAD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="0.17">0.17</td>
+        		<td sdval="-8.36">-8.36</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>AUDNZD</td>
+        		<td>Australian Dollar vs New Zealand Dollar</td>
+        		<td>100000 AUD</td>
+        		<td>10 NZD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-3.65">-3.65</td>
+        		<td sdval="-3.03">-3.03</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>AUDSGD</td>
+        		<td>Australian Dollar vs Singapore Dollar</td>
+        		<td>100000 AUD</td>
+        		<td>10 SGD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="0.04">0.04</td>
+        		<td sdval="-4.44">-4.44</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>CADCHF</td>
+        		<td>Canadian Dollar vs Swiss Franc</td>
+        		<td>100000 CAD</td>
+        		<td>10 CHF</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="1.405">1.41</td>
+        		<td sdval="-7.24">-7.24</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>CADJPY</td>
+        		<td>Canadian Dollar vs Japanese Yen</td>
+        		<td>100000 CAD</td>
+        		<td>1000 JPY</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="0.2">0.20</td>
+        		<td sdval="-6.64">-6.64</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>EURNOK</td>
+        		<td>Euro vs Norwegian Krona</td>
+        		<td>100000 EUR</td>
+        		<td>10 NOK</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-8.71">-8.71</td>
+        		<td sdval="0.14">0.14</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>EURNZD</td>
+        		<td>Euro vs New Zealand Dollar</td>
+        		<td>100000 EUR</td>
+        		<td>10 NZD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-21.03">-21.03</td>
+        		<td sdval="4.95">4.95</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>EURSEK</td>
+        		<td>Euro vs Swedish Krona</td>
+        		<td>100000 EUR</td>
+        		<td>10 SEK</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-5.16">-5.16</td>
+        		<td sdval="-8.62">-8.62</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>EURSGD</td>
+        		<td>Euro vs Singapore Dollar</td>
+        		<td>100000 EUR</td>
+        		<td>10 SGD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-18.12">-18.12</td>
+        		<td sdval="1.146667">1.15</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>GBPNZD</td>
+        		<td>Great Britan Pound vs New Zealand Dollar</td>
+        		<td>100000 GBP</td>
+        		<td>10 NZD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-17.75">-17.75</td>
+        		<td sdval="3.853333">3.85</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>GBPSGD</td>
+        		<td>Great Britan Pound vs Singapore Dollar</td>
+        		<td>100000 GBP</td>
+        		<td>10 SGD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-13.5">-13.50</td>
+        		<td sdval="0.626667">0.63</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>NZDCAD</td>
+        		<td>New Zealand Dollar vs Canadian Dollar</td>
+        		<td>100000 NZD</td>
+        		<td>10 CAD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-0.3">-0.30</td>
+        		<td sdval="-9.65">-9.65</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>NZDCHF</td>
+        		<td>New Zealand Dollar vs Swiss Franc</td>
+        		<td>100000 NZD</td>
+        		<td>10 CHF</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="2.516667">2.52</td>
+        		<td sdval="-10.635">-10.64</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>NZDJPY</td>
+        		<td>New Zealand Dollar vs Japanese Yen</td>
+        		<td>100000 NZD</td>
+        		<td>1000 JPY</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="1.08">1.08</td>
+        		<td sdval="-9.315">-9.32</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>NZDUSD</td>
+        		<td>New Zealand Dollar vs US Dollar</td>
+        		<td>100000 NZD</td>
+        		<td>10 USD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="0.383333">0.38</td>
+        		<td sdval="-4.19">-4.19</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>USDHKD</td>
+        		<td>US Dollar vs Hong Kong Dollar</td>
+        		<td>100000 USD</td>
+        		<td>10 HKD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-3.513333">-3.51</td>
+        		<td sdval="-60.54">-60.54</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>USDNOK</td>
+        		<td>US Dollar vs Norwegian Krona</td>
+        		<td>100000 USD</td>
+        		<td>10 NOK</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-1.36">-1.36</td>
+        		<td sdval="-3.6">-3.60</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>USDSEK</td>
+        		<td>US Dollar vs Swedish Krona</td>
+        		<td>100000 USD</td>
+        		<td>10 SEK</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="1.4">1.40</td>
+        		<td sdval="-9.89">-9.89</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>USDSGD</td>
+        		<td>US Dollar vs Singapore Dollar</td>
+        		<td>100000 USD</td>
+        		<td>10 SGD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-3.8">-3.80</td>
+        		<td sdval="-4.22">-4.22</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>EURCZK</td>
+        		<td>Euro vs Czech Koruna</td>
+        		<td>100000 EUR</td>
+        		<td>10 CZK</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-5.64">-5.64</td>
+        		<td sdval="-120">-120.00</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>EURHUF</td>
+        		<td>Euro vs Hungarian Forint</td>
+        		<td>100000 EUR</td>
+        		<td>10 HUF</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-80">-80.00</td>
+        		<td sdval="-65.07">-65.07</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>EURPLN</td>
+        		<td>Euro vs Polish Zloty</td>
+        		<td>100000 EUR</td>
+        		<td>10 PLN</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-6.71">-6.71</td>
+        		<td sdval="0.14">0.14</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>EURRUB</td>
+        		<td>Euro vs Russian Ruble</td>
+        		<td>100000 EUR</td>
+        		<td>10 RUB</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-280.48">-280.48</td>
+        		<td sdval="102">102.00</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>EURTRY</td>
+        		<td>Euro vs Turkish Lira</td>
+        		<td>100000 EUR</td>
+        		<td>10 TRY</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-186.72">-186.72</td>
+        		<td sdval="80">80.00</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>GBPNOK</td>
+        		<td>Great Britan Pound vs Norwegian Krona</td>
+        		<td>100000 GBP</td>
+        		<td>10 NOK</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-48">-48.00</td>
+        		<td sdval="-14.14">-14.14</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>GBPSEK</td>
+        		<td>Great Britan Pound vs Swedish Kroner</td>
+        		<td>100000 GBP</td>
+        		<td>10 SEK</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-2.693333">-2.69</td>
+        		<td sdval="-72">-72.00</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>NOKSEK</td>
+        		<td>Norwegian Krona vs Swedish Krona</td>
+        		<td>100000 NOK</td>
+        		<td>10 SEK</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-1.08">-1.08</td>
+        		<td sdval="-11.08">-11.08</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>SGDJPY</td>
+        		<td>Singapore Dollar vs Japanese Yen </td>
+        		<td>100000 SGD</td>
+        		<td>1000 JPY</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="0.413333">0.41</td>
+        		<td sdval="-7.74">-7.74</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>TRYJPY</td>
+        		<td>Turkish Lira vs Japanese Yen</td>
+        		<td>100000 TRY</td>
+        		<td>10 TRY</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="3.72">3.72</td>
+        		<td sdval="-19.434">-19.43</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>USDCNH</td>
+        		<td>US Dollar vs RMB Chinese Renminbi</td>
+        		<td>100000 USD</td>
+        		<td>10 CNH</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-40.8">-40.80</td>
+        		<td sdval="2.133333333">2.13</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>USDCZK</td>
+        		<td>US Dollar vs Czech Koruna</td>
+        		<td>100000 USD</td>
+        		<td>10 CZK</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="2">2.00</td>
+        		<td sdval="-108">-108.00</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>USDHUF</td>
+        		<td>US Dollar vs Hungarian Forint </td>
+        		<td>100000 USD</td>
+        		<td>10 HUF</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-40">-40.00</td>
+        		<td sdval="-80">-80.00</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>USDMXN</td>
+        		<td>US Dollar vs Mexican Peso</td>
+        		<td>100000 USD</td>
+        		<td>10 MXN</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-584.1">-584.10</td>
+        		<td sdval="57.113333">57.11</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>USDPLN</td>
+        		<td>US Dollar vs Polish Zloty</td>
+        		<td>100000 USD</td>
+        		<td>10 PLN</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-8.16">-8.16</td>
+        		<td sdval="-6.66">-6.66</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>USDRUB</td>
+        		<td>US Dollar vs Russian Ruble</td>
+        		<td>100000 USD</td>
+        		<td>10 RUB</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-190">-190.00</td>
+        		<td sdval="65">65.00</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>USDTRY</td>
+        		<td>US Dollar vs Turkish Lira</td>
+        		<td>100000 USD</td>
+        		<td>1000 JPY</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-141.48">-141.48</td>
+        		<td sdval="70.4">70.40</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>USDZAR</td>
+        		<td>US Dollar vs South African Rand</td>
+        		<td>100000 USD</td>
+        		<td>10 ZAR</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-411.45">-411.45</td>
+        		<td sdval="40.213333">40.21</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>ZARJPY</td>
+        		<td>South African Rand vs Japanise Yen</td>
+        		<td>100000 ZAR</td>
+        		<td>1000 JPY</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="6.98">6.98</td>
+        		<td sdval="-38.96">-38.96</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>GBPDKK</td>
+        		<td>Great Britan Pound vs Danish Krona</td>
+        		<td>100000 GBP</td>
+        		<td>10 DKK</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="2.306666667">2.31</td>
+        		<td sdval="-52.542">-52.54</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>AUDNOK</td>
+        		<td>Australian Dollar vs Norwegian Krone</td>
+        		<td>100000 AUD</td>
+        		<td>10 NOK</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="0.32">0.32</td>
+        		<td sdval="-4.75">-4.75</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>EURZAR</td>
+        		<td>Euro vs South African Rand</td>
+        		<td>100000 EUR</td>
+        		<td>10 ZAR</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-590.8">-590.80</td>
+        		<td sdval="130">130.00</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>NOKJPY</td>
+        		<td>Norwegian Krona vs Swiss Franc</td>
+        		<td>100000 NOK</td>
+        		<td>1000 JPY</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-9.8">-9.80</td>
+        		<td sdval="-93.8">-93.80</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>AUDPLN</td>
+        		<td>Australian Dollar vs Polish Zloty</td>
+        		<td>100000 AUD</td>
+        		<td>10 PLN</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-0.97">-0.97</td>
+        		<td sdval="0.08">0.08</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>GBPHUF</td>
+        		<td>Great Britain Pound vs Hungarian Forint</td>
+        		<td>100000 GBP</td>
+        		<td>10 HUF</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-0.55">-0.55</td>
+        		<td sdval="0.04">0.04</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>GBPMXN</td>
+        		<td>Great Britain Pound vs Mexican Peso</td>
+        		<td>100000 GBP</td>
+        		<td>10 MXN</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-78.44">-78.44</td>
+        		<td sdval="18.26">18.26</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>GBPPLN</td>
+        		<td>Great Britain Pound vs Polish Zloty</td>
+        		<td>100000 GBP</td>
+        		<td>10 PLN</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-6.27">-6.27</td>
+        		<td sdval="-1.58">-1.58</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>GBPTRY</td>
+        		<td>Great Britain Pound vs New Turkish Lira</td>
+        		<td>100000 GBP</td>
+        		<td>10 TRY</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-120">-120.00</td>
+        		<td sdval="86">86.00</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>MXNJPY</td>
+        		<td>Mexican Peso vs Japanese Yen</td>
+        		<td>100000 MXN</td>
+        		<td>10 TRY</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="0.05">0.05</td>
+        		<td sdval="-0.63">-0.63</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>USDRON</td>
+        		<td>US Dollar vs Romanian New Leu</td>
+        		<td>100000 USD</td>
+        		<td>10 RON</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-0.97">-0.97</td>
+        		<td sdval="-6">-6.00</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>CADSGD</td>
+        		<td>Canada Dollar vs Singapore Dollar</td>
+        		<td>100000 CAD</td>
+        		<td>10 SGD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-6.82">-6.82</td>
+        		<td sdval="-2.8">-2.80</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>CHFSGD</td>
+        		<td>Swiss Frank vs Singapore Dollar</td>
+        		<td>100000 CHF</td>
+        		<td>10 SGD</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-18.88">-18.88</td>
+        		<td sdval="0.07">0.07</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>EURRON</td>
+        		<td>Euro vs Romanian New Leu</td>
+        		<td>100000 EUR</td>
+        		<td>10 RON</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-3.81">-3.81</td>
+        		<td sdval="-2.19">-2.19</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>AUDSEK</td>
+        		<td>Australian Dollar vs Swedish Krona</td>
+        		<td>100000 AUD</td>
+        		<td>10 SEK</td>
+        		<td>0.01 Lots</td>
+        		<td>500 Lots</td>
+        		<td sdval="-2.22">-2.22</td>
+        		<td sdval="-7.64">-7.64</td>
+        		<td>Mon-Fri 00:00-23:58</td>
+        	</tr>
+        </table>
+        <p>Server Time = GMT+2 & GMT+3 DST</p>
+        <p>*Swap values are in points and may be adjusted daily based on market conditions and rates provided by our Price Provider applicable to all open positions. Triple swaps are applied every Wednesday.</p>
+      </div>
+      <div id="Commodities" class="tab__content  tab__content--product">
+        <div class="tab__header">
+          <h3>Commodities</h3>
+          <p>Commodity markets have had a major impact on nations and people throughout history. Currently there are about 50 major commodity markets worldwide that facilitate trading of approximately 100 raw or primary products. There are different categories of commodities, all supported by the same basic economic principles: lower supply equals higher prices and vice versa.</p>
+          <p>At Forex24 you can trade up to 3 CFDs on Commodities such as COCOA, COFFE and SOYBEAN with very favourable terms.</p>
+        </div>
+        <table class="tab__table  tab__table--right">
+        	<tr class="tab__name  tab__name--commodities">
+        		<th>Symbols</th>
+        		<th>Descripion</th>
+        		<th>Currency</th>
+        		<th>Nominal Value</th>
+        		<th>Min Position Size</th>
+        		<th>Max Position Size</th>
+        		<th>Swap Long In Points</th>
+        		<th>Swap Short In Points</th>
+        		<th>Trading Hours(Server Time)*</th>
+        	</tr>
+          <tr>
+        		<td>COCOA</td>
+        		<td>Cocoa CFD contract</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*10 Metric Tons</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lots</td>
+        		<td sdval="-3.445">-3.445</td>
+        		<td sdval="-8.804">-8.804</td>
+        		<td>Mon-Fri 11:45-20:30</td>
+        	</tr>
+        	<tr>
+        		<td>COFFEE</td>
+        		<td>Coffee CFD contract</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*375 LB</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lots</td>
+        		<td sdval="-1.579">-1.579</td>
+        		<td sdval="-0.416">-0.416</td>
+        		<td>Mon-Fri 11:15-20:30</td>
+        	</tr>
+        	<tr>
+        		<td>SOYBEAN</td>
+        		<td>Soybean CFD contract</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*50 Bushels</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lots</td>
+        		<td sdval="-13.595">-13.595</td>
+        		<td sdval="-3.578">-3.578</td>
+        		<td>Mon-Fri 03:15:45, 16:30-21:15</td>
+        	</tr>
+        </table>
+        <p>Server Time = GMT+2 & GMT+3 DST</p>
+        <p>*Swap values are in points and may be adjusted daily based on market conditions and rates provided by our Price Provider applicable to all open positions. Triple swaps are applied every Wednesday.</p>
+      </div>
+      <div id="Metals" class="tab__content  tab__content--product">
+        <div class="tab__header">
+          <h3>Metals</h3>
+          <p>Metals are physical commodities and they have always played an important role in history and will continue to be valued. Metals such as Gold and Silver have been recognized as valuable assets and have always been a very popular choice of investing. Precious metals, especially Gold has always been referred to as ‘Safe Heaven’ in times of economic uncertainty.</p>
+          <p>Forex24 offers investors, who do not want to face economic turbulence, access to three fives of metals: Gold, Silver, Palladium, Platinum and Copper.</p>
+        </div>
+        <table class="tab__table  tab__table--right">
+        	<tr class="tab__name  tab__name--metals">
+        		<th>Symbols</th>
+        		<th>Descripion</th>
+        		<th>Currency</th>
+        		<th>Lot Size Per 1Lot</th>
+        		<th>Min Position Size</th>
+        		<th>Max Position Size</th>
+        		<th>Swap Long In Points</th>
+        		<th>Swap Short In Points</th>
+        		<th>Trading Hours(Server Time)*</th>
+        	</tr>
+        	<tr>
+        		<td>XAGUSD</td>
+        		<td>Silver vs US Dollar</td>
+        		<td>USD</td>
+        		<td>5000 Oz</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="-1.96">-1.96</td>
+        		<td sdval="0.23">0.23</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        	<tr>
+        		<td>XAUUSD</td>
+        		<td>Gold vs US Dollar</td>
+        		<td>USD</td>
+        		<td>100 Oz</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="-10.09">-10.09</td>
+        		<td sdval="1.89">1.89</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        	<tr>
+        		<td>XAUEUR</td>
+        		<td>Gold vs. Euro</td>
+        		<td>EUR</td>
+        		<td>100 Oz</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="-1.27">-1.27</td>
+        		<td sdval="-2.8">-2.8</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        	<tr>
+        		<td>XAUAUD</td>
+        		<td>Gold vs Austrlian Dollar</td>
+        		<td>AUD</td>
+        		<td>100 Oz</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="-15.04">-15.04</td>
+        		<td sdval="4.65">4.65</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        	<tr>
+        		<td>XAUCHF</td>
+        		<td>Gold vs. Swiss Franc</td>
+        		<td>CHF</td>
+        		<td>100 Oz</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="-0.06">-0.06</td>
+        		<td sdval="-6.38">-6.38</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        	<tr>
+        		<td>XAUGBP</td>
+        		<td>Gold vs. Great Britain Pound</td>
+        		<td>GBP</td>
+        		<td>100 Oz</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="-2.53">-2.53</td>
+        		<td sdval="-1.1">-1.1</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        	<tr>
+        		<td>XAUJPY</td>
+        		<td>Gold vs. Japanese Yen</td>
+        		<td>JPY</td>
+        		<td>100 Oz</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="-3.16">-3.16</td>
+        		<td sdval="-3.46">-3.46</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        	<tr>
+        		<td>XAUNZD</td>
+        		<td>Gold vs. New Zealand Dollar</td>
+        		<td>NZD</td>
+        		<td>100 Oz</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="-17.65">-17.65</td>
+        		<td sdval="5.51">5.51</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        	<tr>
+        		<td>XAUSGD</td>
+        		<td>Gold vs. Singapore Dollar</td>
+        		<td>SGD</td>
+        		<td>100 Oz</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="-12.96">-12.96</td>
+        		<td sdval="2.09">2.09</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        	<tr>
+        		<td>XAGCHF</td>
+        		<td>Silver vs. Swiss Franc</td>
+        		<td>CHF</td>
+        		<td>5000 Oz</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="-0.06">-0.06</td>
+        		<td sdval="-0.97">-0.97</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        	<tr>
+        		<td>XAGAUD</td>
+        		<td>Silver vs Austrlian Dollar</td>
+        		<td>AUD</td>
+        		<td>5000 Oz</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="-1.86">-1.86</td>
+        		<td sdval="0.51">0.51</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        	<tr>
+        		<td>XAGEUR</td>
+        		<td>Silver vs. Euro</td>
+        		<td>EUR</td>
+        		<td>5000 Oz</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="-0.07">-0.07</td>
+        		<td sdval="0.48">0.48</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        	<tr>
+        		<td>XAGGBP</td>
+        		<td>Silver vs. Japanese Yen</td>
+        		<td>GBP</td>
+        		<td>5000 Oz</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="-0.25">-0.25</td>
+        		<td sdval="-0.24">-0.24</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        	<tr>
+        		<td>XAGJPY</td>
+        		<td>Silver vs. Japanese Yen</td>
+        		<td>JPY</td>
+        		<td>5000 Oz</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="-2.98">-2.98</td>
+        		<td sdval="-6">-6</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        	<tr>
+        		<td>XAGNZD</td>
+        		<td>Silver vs. New Zealand Dollar</td>
+        		<td>NZD</td>
+        		<td>5000 Oz</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="-2.2">-2.2</td>
+        		<td sdval="0.62">0.62</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        	<tr>
+        		<td>XAGSGD</td>
+        		<td>Silver vs.Singapore Dollar</td>
+        		<td>SGD</td>
+        		<td>5000 Oz</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="-1.57">-1.57</td>
+        		<td sdval="0.16">0.16</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        	<tr>
+        		<td>XPDUSD</td>
+        		<td>Palladium</td>
+        		<td>USD</td>
+        		<td>100 Oz</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="0">0</td>
+        		<td sdval="-120">-120</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        	<tr>
+        		<td>XPTUSD</td>
+        		<td>Platinum</td>
+        		<td>USD</td>
+        		<td>100 Oz</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="-48">-48</td>
+        		<td sdval="9.6">9.6</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        	<tr>
+        		<td>COPPER</td>
+        		<td>Copper CFD contract</td>
+        		<td>USD</td>
+        		<td>25000 CPU</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lot</td>
+        		<td sdval="-4.048">-4.048</td>
+        		<td sdval="-1.065">-1.065</td>
+        		<td>Mon-Fri 01:00-23:59</td>
+        	</tr>
+        </table>
+        <p>Server Time = GMT+2 & GMT+3 DST</p>
+        <p>*Swap values are in points and may be adjusted daily based on market conditions and rates provided by our Price Provider applicable to all open positions. Triple swaps are applied every Wednesday.</p>
+      </div>
+      <div id="Energies" class="tab__content  tab__content--product">
+        <div class="tab__header">
+          <h3>Energies</h3>
+          <p>Oil and gas are the two most popular commodities. They are traded in heavy volumes around the clock offering multiple opportunities to online traders. Whether it is US Crude Oil (WTI), Brent Oil (Brent) or Natural Gas (NATGAS), energy commodities are quoted in USD.</p>
+          <p>At Forex24 you can trade u3 CFDs on energies such as Crude Oil,Brrend Oil and Natural Gas, with very favourable terms.</p> 
+        </div>
+        <table class="tab__table  tab__table--right">
+        	<tr class="tab__name  tab__name--energies">
+        		<th>Symbols</th>
+        		<th>Descripion</th>
+        		<th>Currency</th>
+        		<th>Nominal Value</th>
+        		<th>Min Position Size</th>
+        		<th>Max Position Size</th>
+        		<th>Swap Long In Points</th>
+        		<th>Swap Short In Points</th>
+        		<th>Trading Hours (Server Time)*</th>
+        	</tr>
+          <tr>
+        		<td>WTI_OIL</td>
+        		<td>Crude Oil Brent Cash</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 Barrel</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="1.281">1.281</td>
+        		<td sdval="-3.185">-3.185</td>
+        		<td>Mon-Fri 01:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>UKOIL</td>
+        		<td>West Texas Intermediate Crude Oil cash</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 Barrel</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-2.34">-2.34</td>
+        		<td sdval="-5.317">-5.317</td>
+        		<td>Mon-Fri 03:00-23:58</td>
+        	</tr>
+        	<tr>
+        		<td>NATGAS</td>
+        		<td>Natural Gas (US) CFD contract</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*10000 MMBtu</td>
+        		<td>0.01 Lot</td>
+        		<td>500 Lots</td>
+        		<td sdval="-0.338">-0.338</td>
+        		<td sdval="-0.113">-0.113</td>
+        		<td>Mon-Fri 01:00-23:58</td>
+        	</tr>
+        </table>
+        <p>Server Time = GMT+2 & GMT+3 DST</p>
+        <p>*Swap values are in points and may be adjusted daily based on market conditions and rates provided by our Price Provider applicable to all open positions. Triple swaps are applied every Wednesday.</p>
+      </div>
+      <div id="Indices" class="tab__content  tab__content--product">
+        <div class="tab__header">
+          <h3>Indices</h3>
+          <p>An index is a statistical representation of an equity market through a basket of stocks. An index measures the value of a group of stocks and therefore investors can invest on indices that represent specific markets.</p>
+          <p>With Forex24 you can trade more than 10 of the world’s most prolific indices covering Asia, North America and Europe, including the renowned Dow Jones Industrial Average (DJIA) which is extremely popular with traders worldwide.</p>
+          <p>Dividend Adjustments on Cash Indices CFDs<br>CFDs on Indices will be subject to dividend adjustments. When a constituent member of an index pays Dividends to its Shareholders, dividend adjustments will be made to accounts of clients holding a position on the index.</p>
+          <ul>
+            <li>Long Positions (Buy) – Clients holding long positions on the ex-div date will receive a dividend in the form of a cash adjustment (CD)</li>
+            <li>Short Positions (Sell) – Clients holding short positions on the ex-div date will be charged the dividend amount in the form of a cash adjustment (CW)</li>
+          </ul>
+          <p>Calculated as Follows:<br>Dividend adjustment = Index Dividend declared x position size in Lots.</p>
+        </div>
+        <table class="tab__table  tab__table--right">
+        	<tr class="tab__name  tab__name--indices">
+        		<th>Symbols</th>
+        		<th>Descripion</th>
+        		<th>Currency</th>
+        		<th>Nominal Volume</th>
+        		<th>Contract Size</th>
+        		<th>Min Position Size</th>
+        		<th>Max Position Size</th>
+        		<th>Swap Long In Points</th>
+        		<th>Swap Short In Points</th>
+        		<th>Trading Hours(Server Time)*</th>
+        	</tr>
+          <tr>
+        		<td>DJ30</td>
+        		<td>Dow Jones 30 Cash Index</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td sdval="-289.696">-289.696</td>
+        		<td sdval="-45.263">-45.263</td>
+        		<td>Mon-Fri 01:00-23:15</td>
+        	</tr>
+        	<tr>
+        		<td>AUS200</td>
+        		<td>Australia 200 Cash Index</td>
+        		<td>AUD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td sdval="-68.673">-68.673</td>
+        		<td sdval="-12.651">-12.651</td>
+        		<td>Mon-Fri 00:50-07:30, 08:10-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>DE30</td>
+        		<td>Germany 30 Cash index</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td sdval="-70.316">-70.316</td>
+        		<td sdval="-96.141">-96.141</td>
+        		<td>Mon-Fri 09:00-23:30</td>
+        	</tr>
+        	<tr>
+        		<td>ES35</td>
+        		<td>Spain 35 Cash Index</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td sdval="-56.325">-56.325</td>
+        		<td sdval="-77.142">-77.142</td>
+        		<td>Mon-Fri 09:00-21:00</td>
+        	</tr>
+        	<tr>
+        		<td>F40</td>
+        		<td>France 40 Cash Index</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td sdval="-30.431">-30.431</td>
+        		<td sdval="-41.675">-41.675</td>
+        		<td>Mon-Fri 09:00-23:30</td>
+        	</tr>
+        	<tr>
+        		<td>JP225</td>
+        		<td>JPN225 Cash Index</td>
+        		<td>JPY</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td sdval="-145.065">-145.065</td>
+        		<td sdval="-149.176">-149.176</td>
+        		<td>Mon-Fri 01:00-24:00</td>
+        	</tr>
+        	<tr>
+        		<td>N25</td>
+        		<td>Netherlands 25 Cash Index</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td sdval="-3.179">-3.179</td>
+        		<td sdval="-4.292">-4.292</td>
+        		<td>Mon-Fri 09:00-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>STOXX50</td>
+        		<td>Euro 50 Cash index</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td sdval="-19.737">-19.737</td>
+        		<td sdval="-27.029">-27.029</td>
+        		<td>Mon-Fri 09:00-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>SWI20</td>
+        		<td>Switzerland 20 Cash index</td>
+        		<td>CHF</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td sdval="-41.833">-41.833</td>
+        		<td sdval="-78.837">-78.837</td>
+        		<td>Mon-Fri 09:00-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>USTEC</td>
+        		<td>NAS100 Cash Index</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td sdval="-79.095">-79.095</td>
+        		<td sdval="-12.297">-12.297</td>
+        		<td>Mon-Fri 01:00-23:15</td>
+        	</tr>
+        	<tr>
+        		<td>US500</td>
+        		<td>SPX500 Cash Index</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td sdval="-31.905">-31.905</td>
+        		<td sdval="-4.95">-4.95</td>
+        		<td>Mon-Fri 01:00-23:15</td>
+        	</tr>
+        	<tr>
+        		<td>UK100</td>
+        		<td>UK 100 Cash Index</td>
+        		<td>GBP</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Index Price</td>
+        		<td>0.01 Lot</td>
+        		<td>1000 Lots</td>
+        		<td sdval="-79.095">-79.095</td>
+        		<td sdval="-12.297">-12.297</td>
+        		<td>Mon-Fri 01:00-23:15</td>
+        	</tr>
+        </table>
+        <p>Server Time = GMT+2 & GMT+3 DST</p>
+        <p>*Swap values are in points and may be adjusted daily based on market conditions and rates provided by our Price Provider applicable to all open positions. Triple swaps are applied every Wednesday.</p>
+      </div>
+      <div id="Equities" class="tab__content  tab__content--product">
+        <div class="tab__header">
+          <h3>Equities</h3>
+          <p>Stocks or Equities belong to one of the major asset classes. Stocks are significant as they stand for the real value of one’s stake in a corporation listed in a stock exchange.</p>
+          <p>At Forex24 you can trade 40+ Stock CFDs that are traded in world major equity markets, such as Apple, Microsoft, Alibaba and Amazon.</p>
+          <p>Dividends Adjustments on Stocks CFDs<br>CFDs on stocks are subject to dividend adjustments. When a stock security pays dividend to its shareholders, dividend adjustments will be made to the trading accounts of clients who hold a position on the Stock.</p>
+          <ul>
+            <li>Long Positions (Buy) – Clients holding long positions on the ex-div date will receive a dividend in the form of a cash adjustment (CD)</li>
+            <li>Short Positions (Sell) – Clients holding short positions on the ex-div date will be charged the dividend amount in the form of a cash adjustment (CW)</li>
+          </ul>
+          <p>Calculated as Follows:<br>Dividend adjustment = Stock Dividend declared x position size in Lots.</p>
+        </div>
+        <table class="tab__table  tab__table--right">
+        	<tr class="tab__name  tab__name--equities">
+        		<th>Symbols</th>
+        		<th>Descripion</th>
+        		<th>Currency</th>
+        		<th>Nominal Value</th>
+        		<th>Contract Size</th>
+        		<th>Min Position Size</th>
+        		<th>Max Position Size</th>
+        		<th>Swap Long In Points</th>
+        		<th>Swap Short In Points</th>
+        		<th>Trading Hours(Server Time)*</th>
+        	</tr>
+          <tr>
+        		<td>ADSGn</td>
+        		<td>Adidas Salomon</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.548">-0.548</td>
+        		<td sdval="-1.067">-1.067</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>AIRF</td>
+        		<td>Air France - Klm</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.024">-0.024</td>
+        		<td sdval="-0.047">-0.047</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>ALVG</td>
+        		<td>Allianz AG</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.512">-0.512</td>
+        		<td sdval="-0.996">-0.996</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>BBVA</td>
+        		<td>BBVA</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.018">-0.018</td>
+        		<td sdval="-0.035">-0.035</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>BKIA</td>
+        		<td>Bankia SA</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.01">-0.01</td>
+        		<td sdval="-0.02">-0.02</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>BMWG</td>
+        		<td>(BMW) Bay Mot Werke </td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.246">-0.246</td>
+        		<td sdval="-0.479">-0.479</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>BNPP</td>
+        		<td>BNP Paribas</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.166">-0.166</td>
+        		<td sdval="-0.323">-0.323</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>DAIGn</td>
+        		<td>Daimler AG</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.191">-0.191</td>
+        		<td sdval="-0.371">-0.371</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>DANO</td>
+        		<td>Danone</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.182">-0.182</td>
+        		<td sdval="-0.354">-0.354</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>DBKGn</td>
+        		<td>Deutsche Bank</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.031">-0.031</td>
+        		<td sdval="-0.06">-0.06</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>DPWGn</td>
+        		<td>Deutsche Post</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.098">-0.098</td>
+        		<td sdval="-0.19">-0.19</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>EONGn</td>
+        		<td>E.On  AG</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.025">-0.025</td>
+        		<td sdval="-0.049">-0.049</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>IBE</td>
+        		<td>IBERDROLA</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.017">-0.017</td>
+        		<td sdval="-0.033">-0.033</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>LHAG</td>
+        		<td>DT Lufthansa</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.071">-0.071</td>
+        		<td sdval="-0.137">-0.137</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>LVMH</td>
+        		<td>L.V.M.H.</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.712">-0.712</td>
+        		<td sdval="-1.386">-1.386</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>MAP</td>
+        		<td>MAPFRE</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.008">-0.008</td>
+        		<td sdval="-0.015">-0.015</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>SAN</td>
+        		<td>Banco Santander</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.015">-0.015</td>
+        		<td sdval="-0.028">-0.028</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>SIEGn</td>
+        		<td>Siemens</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.283">-0.283</td>
+        		<td sdval="-0.552">-0.552</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>SOGN</td>
+        		<td>Societe Generale</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.121">-0.121</td>
+        		<td sdval="-0.236">-0.236</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>TEF</td>
+        		<td>TELEFONICA</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.022">-0.022</td>
+        		<td sdval="-0.043">-0.043</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>TOTF</td>
+        		<td>Total</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.132">-0.132</td>
+        		<td sdval="-0.258">-0.258</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>VOWG_p</td>
+        		<td>Volkswagen AG</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.449">-0.449</td>
+        		<td sdval="-0.875">-0.875</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>CBKG</td>
+        		<td>Commerzbank AG</td>
+        		<td>EUR</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.029">-0.029</td>
+        		<td sdval="-0.056">-0.056</td>
+        		<td>Mon-Fri 10:00-18:00</td>
+        	</tr>
+        	<tr>
+        		<td>AAPL</td>
+        		<td>Apple</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-1.762">-1.762</td>
+        		<td sdval="0.24">0.24</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>AXP</td>
+        		<td>American Express</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.971">-0.971</td>
+        		<td sdval="0.132">0.132</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>BA</td>
+        		<td>Boeing</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-3.465">-3.465</td>
+        		<td sdval="0.471">0.471</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>BAC</td>
+        		<td>Bank Of America</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.717">-0.717</td>
+        		<td sdval="0.097">0.097</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>BAYGn</td>
+        		<td>Bayer AG</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.255">-0.255</td>
+        		<td sdval="-0.496">-0.496</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>CSCO</td>
+        		<td>Cisco Systems</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.433">-0.433</td>
+        		<td sdval="0.059">0.059</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>CVX</td>
+        		<td>Chevron</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-1.203">-1.203</td>
+        		<td sdval="0.164">0.164</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>FB</td>
+        		<td>Facebook</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-1.633">-1.633</td>
+        		<td sdval="0.222">0.222</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>FDX</td>
+        		<td>Fedex</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-2.524">-2.524</td>
+        		<td sdval="0.343">0.343</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>GE</td>
+        		<td>General Electric</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.138">-0.138</td>
+        		<td sdval="0.019">0.019</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>GOOG</td>
+        		<td>Alphabet Inc Class C</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-10.598">-10.598</td>
+        		<td sdval="1.441">1.441</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>GS</td>
+        		<td>Goldman Sachs Group</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-2.623">-2.623</td>
+        		<td sdval="0.357">0.357</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>HLT</td>
+        		<td>Hilton Worldwide</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.37">-0.37</td>
+        		<td sdval="0.05">0.05</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>HPQ</td>
+        		<td>HP Inc</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.223">-0.223</td>
+        		<td sdval="0.03">0.03</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>ILMN</td>
+        		<td>Illumina</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-2.406">-2.406</td>
+        		<td sdval="0.327">0.327</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>INTC</td>
+        		<td>Intel</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.521">-0.521</td>
+        		<td sdval="0.071">0.071</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>KO</td>
+        		<td>Coca-Cola</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.454">-0.454</td>
+        		<td sdval="0.062">0.062</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>MA</td>
+        		<td>Mastercard Cl A</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-1.807">-1.807</td>
+        		<td sdval="0.246">0.246</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>MCD</td>
+        		<td>McDonalds</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-1.679">-1.679</td>
+        		<td sdval="0.228">0.228</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>NFLX</td>
+        		<td>Netflix</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-2.969">-2.969</td>
+        		<td sdval="0.404">0.404</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>ORCL</td>
+        		<td>Oracle</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.47">-0.47</td>
+        		<td sdval="0.064">0.064</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>PFE</td>
+        		<td>Pfizer</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.374">-0.374</td>
+        		<td sdval="0.051">0.051</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>PG</td>
+        		<td>Procter &amp;Gamb</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.821">-0.821</td>
+        		<td sdval="0.112">0.112</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>QCOM</td>
+        		<td>Qualcomm</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.573">-0.573</td>
+        		<td sdval="0.078">0.078</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>RACE</td>
+        		<td>Ferrari</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-1.262">-1.262</td>
+        		<td sdval="0.172">0.172</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>T</td>
+        		<td>At&amp;T</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.37">-0.37</td>
+        		<td sdval="0.05">0.05</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>TSLA</td>
+        		<td>Tesla Motors</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-2.799">-2.799</td>
+        		<td sdval="0.381">0.381</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>TWTR</td>
+        		<td>Twitter</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.288">-0.288</td>
+        		<td sdval="0.039">0.039</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>V</td>
+        		<td>Visa</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-1.248">-1.248</td>
+        		<td sdval="0.17">0.17</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>XOM</td>
+        		<td>Exxon Mobil</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.786">-0.786</td>
+        		<td sdval="0.107">0.107</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>F</td>
+        		<td>Ford Motor</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.117">-0.117</td>
+        		<td sdval="0.016">0.016</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        	<tr>
+        		<td>C</td>
+        		<td>Citigroup</td>
+        		<td>USD</td>
+        		<td>Number of Contracts * Market Price*1 </td>
+        		<td>1 Lot = 1 Stock Price</td>
+        		<td>1 Lot</td>
+        		<td>10000 Lots</td>
+        		<td sdval="-0.717">-0.717</td>
+        		<td sdval="0.097">0.097</td>
+        		<td>Mon-Fri 16:30-23:00</td>
+        	</tr>
+        </table>
+        <p>Server Time = GMT+2 & GMT+3 DST</p>
+        <p>*Swap values are in points and may be adjusted daily based on market conditions and rates provided by our Price Provider applicable to all open positions. Triple swaps are applied every Wednesday.</p>
+      </div>
+    </div>
+  </section>
+  <section class="payment  payment--inner">
+    <div class="container">
+      <div class="payment__flex">
+        <div class="payment__box  payment__box--mc"></div>
+        <div class="payment__box  payment__box--visa"></div>
+        <div class="payment__box  payment__box--bank"></div>
+        <div class="payment__box  payment__box--skrill"></div>
+        <div class="payment__box  payment__box--neteller"></div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__flex">
+        <ul class="footer__ul">
+          <li>
+            <img class="footer__logo" src="../img/logo-w.svg" alt="Forex24 Global">
+          </li>
+          <li>
+            <!-- <a class="footer__callme" href="tel:+442080891644">Call us</a> -->
+          </li>
+          <li class="footer__social">
+            <a class="footer__link  footer__link--fb" href="https://www.facebook.com/forex24com/" target="_blank"></a>
+            <a class="footer__link  footer__link--li" href="https://www.linkedin.com/in/forex24com/" target="_blank"></a>
+            <a class="footer__link  footer__link--gp" href="#"></a>
+            <a class="footer__link  footer__link--tw" href="https://twitter.com/forex24com/" target="_blank"></a>
+          </li>
+        </ul>
+        <ul class="footer__ul  footer__ul--links">
+          <li><b>About</b></li>
+          <li><hr></li>
+          <li><a href="../about-us/licenses-and-regulations.html">Licenses & Regulations</a></li>
+          <li><a href="../about-us/security-of-funds.html">Security Of Funds</a></li>
+          <li><a href="../about-us/stp-broker.html">STP Broker</a></li>
+          <li><a href="../about-us/legal-documents.html">Legal Documents</a></li>
+          <li><a href="../about-us/kids.html">KIDs</a></li>
+          <li><a href="../about-us/careers.html">Careers</a></li>
+        </ul>
+        <ul class="footer__ul  footer__ul--links">
+          <li><b>Trading</b></li>
+          <li><hr></li>
+          <li><a href="account-types.html">Account Types</a></li>
+          <li><a href="account-comparison.html">Account Comparison</a></li>
+          <li><a class="footer__active">Product Spesification</a></li>
+          <li><a href="trading-specification.html">Trading Spesification</a></li>
+          <li><a href="platforms.html">Platforms</a></li>
+          <li><a href="funding-and-withdrawal.html">Funding and Withdrawal</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+        </ul>
+        <ul class="footer__ul  footer__ul--links">
+          <li><b>Resources</b></li>
+          <li><hr></li>
+          <li><a href="../resources/glossary.html">Glossary</a></li>
+          <li><a href="../resources/economic-calendar.html">Economic calendar</a></li>
+        </ul>
+        <ul class="footer__ul  footer__ul--links">
+          <li><b>Contacts</b></li>
+          <li><hr></li>
+          <li>Customer Service<br>CY Number: <a href="tel:+35725000199">+35725000199</a></li><br>
+          <li>Support<br>UK Number: <a href="tel:+442080891644">+442080891644</a><br><a href="mailto:support@forex24.com">support@forex24.com</a></li>
+        </ul>
+      </div>
+        <hr class="footer__hr">
+      <b class="footer__name">Risk warning:</b>
+      <p class="footer__text">Trading in Contracts for Difference (‘CFDs’) carries a high level of risk and can result in the loss of all your investment. As such, CFDs may not be appropriate for all investors. You should not invest money that you cannot afford to lose. Before deciding to trade, you should become aware of all the risks associated with CFD trading, and seek advice from an independent and suitably licensed financial advisor. Under no circumstances shall we have any liability to any person or entity for (a) any loss or damage in whole or part caused by, resulting from, or relating to any transactions related to CFDs or (b) any direct, indirect, special, consequential or incidental damages whatsoever. For more information about the risks associated with trading CFDs please find and read our <a href="../img/pdf/Risk-Disclosure-Warning-Notice-1.0.1-2.pdf" target="_blank">‘General Risk Disclosure’</a>.</p>
+      <p class="footer__text">Forex24 Global does not provide services to residents of the USA, Canada, Japan, North Korea, Iran, Belgium and some other regions.</p>
+        <hr class="footer__hr">
+      <p class="footer__text">© 2018 All rights reserved LYDYA FINANCIAL LTD.</p>
+      <p class="footer__text">Located at 155 Ayias Fylaxeos, Ersi Court Suite 202, 3083 Limassol, Cyprus.</p>
+      <p class="footer__text">Forex24 Global is a brand owned and operated by Lydya Financial Ltd, a Cyprus Investment Firm (CIF) regulated and supervised by the Cyprus Securities and Exchange Commission (CySEC) with CIF <a href="https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/79086/" target="_blank">Licence number 300/16</a> and Company registration number HE334292.</p>
+      <p class="footer__text">The Company is also registered with: FCA in UK with reg. no. 782501; BaFin in Germany with reg. no. 1349943; CONSOB in Italy with reg. no. 4624; ACP in France with reg. no. 75980; CNMV in Spain with reg. no. 4373.</p>
+    </div>
+  </footer>
+  <script src="../js/main.min.js" async></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+.button {
+  display: block;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  background: $mc;
+  
+  &--small {
+    width: 170px;
+  }
+  
+  &--medium {
+    width: 270px;
+  }
+  
+  &--big {
+    width: 370px;
+  }
+  
+  &--transparent {
+    width: 168px;
+    padding: 9px 0;
+    color: #3d964e;
+    font-weight: normal;
+    border: 1px solid #3d964e;
+    background: transparent;
+  }
+  
+  &--white {
+    width: 268px;
+    padding: 9px 0;
+    font-weight: normal;
+    border: 1px solid #fff;
+    background: transparent;
+  }
+  
+  &--green {
+    background: #3d964e;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .button {
+    font-size: 14px;
+    
+    &--small {
+      width: 130px;
+    }
+    
+    &--transparent {
+      width: 128px;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+
+}

@@ -1,0 +1,39 @@
+.button {
+  display: block;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  
+  &--small {
+    width: 225px;
+  }
+  
+  &--medium {
+    width: 270px;
+  }
+  
+  &--big {
+    width: 370px;
+  }
+  
+  &--transparent {
+    border: 1px solid #fff;
+    transition: 0.2s;
+    outline: none;
+    
+    &:hover,
+    &:focus {
+      border: 1px solid $title;
+    }
+  }
+  
+  &--red {
+    background: $title;
+    border: none;
+  }
+}

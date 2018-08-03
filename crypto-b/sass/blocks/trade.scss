@@ -1,0 +1,89 @@
+.trade {
+  background: #000;
+}
+
+.trade__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trade__left-column,
+.trade__right-column {
+  color: $w;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.trade__left-column {
+  width: 40%;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.trade__right-column {
+  width: 60%;
+  font-size: 25px;
+}
+
+// Media
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {  
+  .trade__flex {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .trade__left-column,
+  .trade__right-column {
+    width: auto;
+    text-align: center;
+  }
+  
+  .trade__left-column {
+    font-size: 20px;
+  }
+  
+  .trade__right-column {
+    font-size: 16px;
+  }
+}
+
+/* Smartphones (горизонтальная) ----------- */
+@media only screen and (min-width: 321px) {}
+
+/* Smartphones (вертикальная) ----------- */
+@media only screen and (max-width: 320px) {  
+  .trade__flex {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .trade__left-column,
+  .trade__right-column {
+    text-align: center;
+  }
+  
+  .trade__left-column {
+    font-size: 20px;
+  }
+  
+  .trade__right-column {
+    font-size: 16px;
+  }
+}
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {  
+  .trade__left-column {
+    align-self: center;
+    // width: 45%;
+    font-size: 25px;
+  }
+  
+  .trade__right-column {
+    align-self: center;
+    // width: 45%;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,58 @@
+.tabs__flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-bottom: 30px;
+  
+  & p {
+    font-size: 18px;
+    opacity: 0.8;
+  }
+}
+
+.tabs {
+  
+  & th {
+    color: #fff;
+    background: #666666;
+  }
+  
+  & tr {
+    background: #a6a6a6;
+    text-align: center;
+  }
+  
+  & a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+    opacity: 0.5;
+    
+    &:hover {
+      color: #000;
+      text-decoration: underline;
+      opacity: 1;
+    }
+  }
+}
+
+.tabs__left {
+  width: 600px;
+}
+
+@media screen and ($tablet-widths) {
+
+}
+
+@media screen and ($mobile-widths) {
+  .tabs__flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+  
+  .tabs__left {
+    width: auto;
+    margin-bottom: 40px;
+  }
+}

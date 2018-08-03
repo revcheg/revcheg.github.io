@@ -1,0 +1,139 @@
+.table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.table__title {
+  height: 50px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  background: #6420ff;
+}
+
+.table__row {
+  height: 80px;
+  color: $sc;
+  font-weight: 300;
+  border-bottom: 1px solid #6420ff;
+}
+
+.table__logo {
+  
+  &--visa {
+    background: url('../img/table-visa.png') no-repeat center;
+  }
+  
+  &--mc {
+    background: url('../img/table-mc.png') no-repeat center;
+  }
+  
+  &--bank {
+    background: url('../img/table-bank.png') no-repeat center;
+  }
+  
+  &--paypal {
+    background: url('../img/table-paypal.png') no-repeat center;
+  }
+  
+  &--neteller {
+    background: url('../img/table-neteller.png') no-repeat center;
+  }
+  
+  &--skrill {
+    background: url('../img/table-skrill.png') no-repeat center;
+  }
+  
+  &--ecopayz {
+    background: url('../img/table-ecopayz.png') no-repeat center;
+  }
+  
+  &--intercash {
+    background: url('../img/table-intercash.png') no-repeat center;
+  }
+  
+  &--fast {
+    background: url('../img/table-fast.png') no-repeat center;
+  }
+  
+  &--paysafe {
+    background: url('../img/table-paysafe.png') no-repeat center;
+  }
+  
+  &--safety {
+    background: url('../img/table-safety.png') no-repeat center;
+  }
+  
+  &--trust {
+    background: url('../img/table-trust.png') no-repeat center;
+  }
+  
+  &--cash {
+    background: url('../img/table-cash.png') no-repeat center;
+  }
+  
+  &--ideal {
+    background: url('../img/table-ideal.png') no-repeat center;
+  }
+  
+  &--trustly {
+    background: url('../img/table-trustly.png') no-repeat center;
+  }
+  
+  &--neosurf {
+    background: url('../img/table-neosurf.png') no-repeat center;
+  }
+  
+  &--ekonto {
+    background: url('../img/table-ekonto.png') no-repeat center;
+  }
+  
+  &--ticket {
+    background: url('../img/table-ticket.png') no-repeat center;
+  }
+  
+  &--giro {
+    background: url('../img/table-giro.png') no-repeat center;
+  }
+  
+  &--sofort {
+    background: url('../img/table-sofort.png') no-repeat center;
+  }
+  
+  &--przelewy {
+    background: url('../img/table-przelewy.png') no-repeat center;
+  }
+  
+  &--qiwi {
+    background: url('../img/table-qiwi.png') no-repeat center;
+  }
+  
+  &--yandex {
+    background: url('../img/table-yandex.png') no-repeat center;
+  }
+  
+  &--wm {
+    background: url('../img/table-wm.png') no-repeat center;
+  }
+  
+  &--moneta {
+    background: url('../img/table-moneta.png') no-repeat center;
+  }
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .table__title {
+    font-size: 10px;
+  }
+  
+  .table__row {
+    font-size: 10px;
+  }
+  
+  .table__logo {
+    background-size: 40px;
+  }
+}

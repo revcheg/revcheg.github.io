@@ -1,0 +1,20 @@
+.truck {
+  min-height: 650px;
+  // margin-top: -50px;
+  margin-bottom: 50px;
+  background: url('../img/truck-bg.png') no-repeat top;
+  background-size: cover;
+}
+
+@media screen and ($tablet-widths) {
+  .truck {
+    min-height: 500px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .truck {
+    display: none;
+  }
+}
