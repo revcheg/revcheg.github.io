@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  height: 100vh;
+  background: url('../img/main-bg.jpg') no-repeat top / cover;
+}
+
+.main__wrapper {
+  width: 985px;
+  // height: 400px;
+  margin: auto;
+}
+
+.main__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 50px 0;
+  border: 1px solid rgba(12, 204, 204, 0.1);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.main__call {
+  display: block;
+  padding: 30px 0 30px 134px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+}
