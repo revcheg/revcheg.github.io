@@ -106,8 +106,6 @@ body {
     outline: none; }
     .title__form input::-webkit-input-placeholder {
       color: #fac93e; }
-    .title__form input:-ms-input-placeholder {
-      color: #fac93e; }
     .title__form input::-ms-input-placeholder {
       color: #fac93e; }
     .title__form input::placeholder {
@@ -292,9 +290,10 @@ body {
       text-decoration: none;
       border: 1px solid #fac93e;
       border-radius: 3px;
-      -webkit-transition: 0.2s linear;
-      transition: 0.2s linear; }
-      .header__user li a:hover {
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+      outline: none; }
+      .header__user li a:hover, .header__user li a:focus {
         color: #2f2861;
         background: #fac93e; }
 
@@ -320,7 +319,7 @@ body {
     background: url("../img/nav-arrow.svg") no-repeat center;
     -webkit-transition: 0.1s;
     transition: 0.1s; }
-  .header__open:hover::before {
+  .header__open:hover::before, .header__open:focus::before {
     background: url("../img/nav-arrow-h.svg") no-repeat center; }
   .header__open--active {
     color: #2f2861 !important;
@@ -370,8 +369,10 @@ body {
   transition: 0.2s linear;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; }
-  .header__language:hover {
+  appearance: none;
+  cursor: pointer;
+  outline: none; }
+  .header__language:hover, .header__language:focus {
     color: #2f2861;
     background: #fac93e url("../img/nav-arrow-h.svg") no-repeat right;
     background-position-x: 50px;
@@ -1257,8 +1258,6 @@ body {
       outline: none; }
       .form form input::-webkit-input-placeholder {
         color: #2f2861; }
-      .form form input:-ms-input-placeholder {
-        color: #2f2861; }
       .form form input::-ms-input-placeholder {
         color: #2f2861; }
       .form form input::placeholder {
@@ -1927,10 +1926,6 @@ body {
       color: #c1c1c1;
       -webkit-transition: 0.3s;
       transition: 0.3s; }
-    .contact__form input:-ms-input-placeholder {
-      color: #c1c1c1;
-      -webkit-transition: 0.3s;
-      transition: 0.3s; }
     .contact__form input::-ms-input-placeholder {
       color: #c1c1c1;
       -webkit-transition: 0.3s;
@@ -1943,8 +1938,6 @@ body {
       -webkit-box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
       box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35); }
       .contact__form input:focus::-webkit-input-placeholder {
-        color: #2f2861; }
-      .contact__form input:focus:-ms-input-placeholder {
         color: #2f2861; }
       .contact__form input:focus::-ms-input-placeholder {
         color: #2f2861; }
@@ -1963,8 +1956,6 @@ body {
     resize: none; }
     .contact__form textarea::-webkit-input-placeholder {
       color: #c1c1c1; }
-    .contact__form textarea:-ms-input-placeholder {
-      color: #c1c1c1; }
     .contact__form textarea::-ms-input-placeholder {
       color: #c1c1c1; }
     .contact__form textarea::placeholder {
@@ -1973,8 +1964,6 @@ body {
       -webkit-box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
       box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35); }
       .contact__form textarea:focus::-webkit-input-placeholder {
-        color: #2f2861; }
-      .contact__form textarea:focus:-ms-input-placeholder {
         color: #2f2861; }
       .contact__form textarea:focus::-ms-input-placeholder {
         color: #2f2861; }
@@ -3120,10 +3109,6 @@ body {
     color: #c1c1c1;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
-  .client__form input:-ms-input-placeholder {
-    color: #c1c1c1;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
   .client__form input::-ms-input-placeholder {
     color: #c1c1c1;
     -webkit-transition: 0.3s;
@@ -3136,8 +3121,6 @@ body {
     -webkit-box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
     box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35); }
     .client__form input:focus::-webkit-input-placeholder {
-      color: #2f2861; }
-    .client__form input:focus:-ms-input-placeholder {
       color: #2f2861; }
     .client__form input:focus::-ms-input-placeholder {
       color: #2f2861; }
@@ -3166,8 +3149,6 @@ body {
     -webkit-box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35);
     box-shadow: 0px 3px 7px 0px rgba(174, 165, 255, 0.35); }
     .client__form select:focus::-webkit-input-placeholder {
-      color: #2f2861; }
-    .client__form select:focus:-ms-input-placeholder {
       color: #2f2861; }
     .client__form select:focus::-ms-input-placeholder {
       color: #2f2861; }

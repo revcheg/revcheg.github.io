@@ -134,9 +134,11 @@
       text-decoration: none;
       border: 1px solid $mc;
       border-radius: 3px;
-      transition: 0.2s linear;
+      transition: 0.2s;
+      outline: none;
       
-      &:hover {
+      &:hover,
+      &:focus {
         color: $sc;
         background: $mc;
       }
@@ -169,7 +171,8 @@
     transition: 0.1s;
   }
   
-  &:hover {
+  &:hover,
+  &:focus {
 
     &::before {
       background: url('../img/nav-arrow-h.svg') no-repeat center;
@@ -238,8 +241,11 @@
   background-size: 6px 3px;
   transition: 0.2s linear;
   appearance: none;
+  cursor: pointer;
+  outline: none;
   
-  &:hover {
+  &:hover,
+  &:focus {
     color: $sc;
     background: $mc url('../img/nav-arrow-h.svg') no-repeat right;
     background-position-x: 50px;
