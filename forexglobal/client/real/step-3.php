@@ -22,7 +22,7 @@
   <link rel="manifest" href="../../site.webmanifest">
   <meta name="msapplication-config" content="../../browserconfig.xml">
   <meta name="msapplication-TileImage" content="../../img/favicon/mstile-144x144.png">
-  <meta name="theme-color" content="#5a21ed">
+  <meta name="theme-color" content="#2f2861">
 </head>
 <body>
   <header class="header--inner  header--scroll">
