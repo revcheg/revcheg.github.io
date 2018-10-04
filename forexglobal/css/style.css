@@ -628,7 +628,8 @@ body {
     width: 30px;
     height: 30px;
     background: url("../img/nav-search.svg") no-repeat top; }
-  .nav__search:hover input {
+  .nav__search:hover input,
+  .nav__search:focus-within input {
     opacity: 1; }
 
 .nav__list li:hover > .nav__wrapper,

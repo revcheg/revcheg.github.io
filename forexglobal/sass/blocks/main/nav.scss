@@ -162,7 +162,8 @@
     background: url('../img/nav-search.svg') no-repeat top;
   }
   
-  &:hover input {
+  &:hover input,
+  &:focus-within input {
     opacity: 1;
   }
 }
