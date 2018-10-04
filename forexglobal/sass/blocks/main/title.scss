@@ -113,6 +113,10 @@
 }
 
 @media screen and ($mobile-widths) {
+  .title__name {
+    padding: 200px 0 70px 0;
+  }
+  
   .title__form {
     flex-direction: column;
     align-items: center;

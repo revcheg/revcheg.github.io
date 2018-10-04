@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 15px;
+  padding: 0px 15px;
 }
 
 .nav__list {
@@ -15,21 +15,29 @@
   list-style: none;
   
   li {
+    padding: 27px 0;
+    border-bottom: 1px solid transparent;
+    transition: 0.5s;
     
     &:nth-child(4) {
       
       a {
+        outline: none;
         
         &::after {
           background: none;
         }
       }
     }
+    
+    &:hover,
+    &:focus-within {
+      border-bottom: 1px solid $mc;
+    }
   }
   
   a {
     position: relative;
-    padding: 0 0 27px 0;
     color: $mc;
     font-size: 18px;
     font-weight: 300;
@@ -56,20 +64,15 @@
 
 .nav__wrapper {
   position: absolute;
+  top: 157px;
   left: 0;
   width: 100%;
-  border-top: 2px solid $sc;
-  border-bottom: 2px solid $sc;
-  background: rgba(47, 40, 97, 0.9);
+  // border-top: 2px solid $sc;
+  // border-bottom: 2px solid $sc;
+  // background: rgba(47, 40, 97, 0.9);
   transition: 0.5s;
-  
-  &--closed {
-    top: -700px;
-  }
-  
-  &--opened {
-    top: 157px;
-  }
+  visibility: hidden;
+  opacity: 0;
 }
 
 .nav__sub {
@@ -78,7 +81,7 @@
   align-items: center;
   width: 1140px;
   margin: 0 auto;
-  padding: 27px 15px;
+  // padding: 27px 15px;
   list-style: none;
   
   b {
@@ -89,14 +92,21 @@
   
   li {
     margin: 0 30px 0 0;
+    padding: 27px 0;
     
     &:last-child {
       margin: 0;
+    }
+    
+    &:hover,
+    &:focus-within {
+      border-bottom: 1px solid $mc;
     }
   }
   
   a {
     font-size: 16px;
+    outline: none;
     
     &::after {
       display: none;
@@ -106,6 +116,7 @@
 
 .nav__link {
   border-bottom: 1px solid transparent;
+  outline: none;
   
   &--active {
     border-bottom: 1px solid $mc;
@@ -156,10 +167,19 @@
   }
 }
 
+.nav__list li:hover > .nav__wrapper,
+.nav__list li:focus-within > .nav__wrapper,
+.nav__list li .nav__wrapper:hover,
+.nav__list li .nav__wrapper:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
 @media screen and ($tablet-widths) {
   .nav {
     flex-wrap: wrap;
-    padding: 29px 15px;
+    // padding: 29px 15px;
   }
   
   .nav__wrapper {
@@ -194,7 +214,10 @@
   }
   
   .nav__wrapper {
+    top: 185px !important;
+    padding: 10px 0;
     border: none;
+    background: rgba(47, 40, 97, 0.9);
   }
   
   .nav__list {
@@ -205,10 +228,7 @@
     
     li {
       margin: 0 0 10px 0;
-      
-      &:last-child {
-        margin: 0;
-      }
+      padding: 0 0 3px 0;
       
       a {
         font-size: 14px;
@@ -224,6 +244,10 @@
     flex-direction: column;
     width: 100%;
     padding: 0;
+    
+    li {
+      margin: 0 0 10px 0;
+    }
     
     b {
       font-size: 18px;
