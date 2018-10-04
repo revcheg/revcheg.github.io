@@ -27,6 +27,7 @@ gulp.task('minifySVG', function () {
 
 gulp.task('styles', function () {
   gulp.src('sass/style.scss')
+    .pipe(plumber())
     .pipe(sass())
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],

@@ -9,6 +9,22 @@ body {
   margin: 0 auto;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $sc; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $mc; 
+}
+
 @media screen and ($tablet-widths) {
   .container {
     width: 100%;

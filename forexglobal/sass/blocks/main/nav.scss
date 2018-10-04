@@ -60,7 +60,7 @@
   width: 100%;
   border-top: 2px solid $sc;
   border-bottom: 2px solid $sc;
-  background: rgba(47, 40, 97, 0.8);
+  background: rgba(47, 40, 97, 0.9);
   transition: 0.5s;
   
   &--closed {
@@ -191,6 +191,10 @@
     &--opened {
       display: none;
     }
+  }
+  
+  .nav__wrapper {
+    border: none;
   }
   
   .nav__list {

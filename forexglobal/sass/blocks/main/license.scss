@@ -42,7 +42,7 @@
 
 .license__box {
   width: 350px;
-  padding: 180px 0 0 0;
+  padding: 130px 0 0 0;
   
   b {
     display: block;
@@ -67,17 +67,17 @@
   
   &--1 {
     background: url('../img/license-1.svg') no-repeat top;
-    background-size: 150px;
+    background-size: 100px;
   }
   
   &--2 {
     background: url('../img/license-2.svg') no-repeat top;
-    background-size: 170px;
+    background-size: 120px;
   }
   
   &--3 {
     background: url('../img/license-3.svg') no-repeat top;
-    background-size: 120px 150px;
+    background-size: 100px;
   }
 }
 

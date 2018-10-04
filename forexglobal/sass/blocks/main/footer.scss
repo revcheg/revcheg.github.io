@@ -35,8 +35,15 @@
       font-weight: 300;
       text-decoration: none;
       transition: 0.3s;
+      outline: none;
       
-      &:hover {
+      &[href^="tel:"],
+      &[href^="mailto:"] {
+        text-decoration: underline;
+      }
+      
+      &:hover,
+      &:focus {
         color: $mc;
       }
     }
@@ -70,6 +77,15 @@
   text-decoration: none;
   border: 1px solid #fff;
   border-radius: 3px;
+  outline: none;
+  transition: 0.3s;
+  
+  &:hover,
+  &:focus {
+    color: $mc;
+    border: 1px solid $mc;
+    transform: translateY(-5px);
+  }
 }
 
 .footer__hr {
@@ -100,8 +116,10 @@
   a {
     color: #fefeff;
     transition: 0.3s;
+    outline: none;
     
-    &:hover {
+    &:hover,
+    &:focus {
       color: $mc;
     }
   }
@@ -115,37 +133,46 @@
 .footer__link {
   width: 25px;
   height: 25px;
-  transition: 0.3s linear;
+  transition: 0.3s;
+  outline: none;
   
   &--fb {
     background: url('../img/footer-fb.svg') no-repeat top;
     
-    &:hover {
+    &:hover,
+    &:focus {
       background: url('../img/footer-fb-h.svg') no-repeat top;
+      transform: translateY(-5px);
     }
   }
   
   &--li {
     background: url('../img/footer-li.svg') no-repeat top;
     
-    &:hover {
+    &:hover,
+    &:focus {
       background: url('../img/footer-li-h.svg') no-repeat top;
+      transform: translateY(-5px);
     }
   }
   
   &--gp {
     background: url('../img/footer-gp.svg') no-repeat top;
     
-    &:hover {
+    &:hover,
+    &:focus {
       background: url('../img/footer-gp-h.svg') no-repeat top;
+      transform: translateY(-5px);
     }
   }
   
   &--tw {
     background: url('../img/footer-tw.svg') no-repeat top;
     
-    &:hover {
+    &:hover,
+    &:focus {
       background: url('../img/footer-tw-h.svg') no-repeat top;
+      transform: translateY(-5px);
     }
   }
 }
