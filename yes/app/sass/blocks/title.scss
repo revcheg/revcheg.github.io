@@ -1,0 +1,19 @@
+.title {
+  position: relative;
+}
+
+.title__decoration {
+  position: absolute;
+  top: 0;
+  color: #f5f5f5;
+  font-size: 370px;
+  font-weight: 800;
+  user-select: none;
+  z-index: -1;
+}
+
+.title__mockup {
+  width: 600px;
+  height: 800px;
+  background: url('../img/bus-mockup.png') no-repeat center;
+}
