@@ -1,0 +1,53 @@
+.desc__heading {
+  display: block;
+  margin: 0 0 30px 0;
+  font-size: 45px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.desc__box {
+  width: 200px;
+  padding: 0 0 100px 0;
+  
+  &:hover .desc__name,
+  &:hover .desc__text {
+    color: #fff;
+  }
+  
+  &:hover .desc__name::before {
+    top: -70px;
+    left: -40px;
+    width: 250px;
+    height: 250px;
+    background: $main-red;
+  }
+}
+
+.desc__name {
+  position: relative;
+  display: block;
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  font-weight: 800;
+  transition: 0.5s;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    transition: 0.5s;
+    z-index: -1;
+  }
+}
+
+.desc__text {
+  font-size: 18px;
+  font-weight: 300;
+  transition: 0.7s;
+}

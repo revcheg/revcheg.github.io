@@ -229,6 +229,9 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  .flex--desc {
+    width: 780px;
+    margin: 100px 0 0 0; }
 
 .hr {
   width: 65px;
@@ -280,6 +283,29 @@ body {
     width: 2px;
     height: 1200px;
     background: #e9e9e9; }
+  .situation::after {
+    content: '';
+    position: absolute;
+    top: 1400px;
+    left: 29.6%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2429ff;
+    -webkit-animation: decorate-updown 1.5s infinite alternate;
+    animation: decorate-updown 1.5s infinite alternate; }
+
+@-webkit-keyframes decorate-updown {
+  0% { }
+  100% {
+    -webkit-transform: translateY(336px);
+    transform: translateY(336px); } }
+
+@keyframes decorate-updown {
+  0% { }
+  100% {
+    -webkit-transform: translateY(336px);
+    transform: translateY(336px); } }
 
 .situation__heading {
   position: relative;
@@ -333,7 +359,19 @@ body {
     right: 250px; }
 
 .situation__dot {
-  color: #f5112c; }
+  color: #f5112c;
+  -webkit-animation: decorate-opacity 0.7s infinite alternate;
+  animation: decorate-opacity 0.7s infinite alternate; }
+
+@-webkit-keyframes decorate-opacity {
+  0% { }
+  100% {
+    opacity: 0; } }
+
+@keyframes decorate-opacity {
+  0% { }
+  100% {
+    opacity: 0; } }
 
 .situation__text {
   width: 280px;
@@ -353,3 +391,50 @@ body {
     background: url("../img/situation-3.jpg") no-repeat top/cover; }
   .situation__img--4 {
     background: url("../img/situation-4.jpg") no-repeat center/cover; }
+
+.desc__heading {
+  display: block;
+  margin: 0 0 30px 0;
+  font-size: 45px;
+  font-weight: 800;
+  text-transform: uppercase; }
+
+.desc__box {
+  width: 200px;
+  padding: 0 0 100px 0; }
+  .desc__box:hover .desc__name,
+  .desc__box:hover .desc__text {
+    color: #fff; }
+  .desc__box:hover .desc__name::before {
+    top: -70px;
+    left: -40px;
+    width: 250px;
+    height: 250px;
+    background: #f5112c; }
+
+.desc__name {
+  position: relative;
+  display: block;
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  font-weight: 800;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+  .desc__name::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    z-index: -1; }
+
+.desc__text {
+  font-size: 18px;
+  font-weight: 300;
+  -webkit-transition: 0.7s;
+  transition: 0.7s; }
