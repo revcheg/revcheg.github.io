@@ -269,34 +269,68 @@ body {
     transform: translateY(-5px); }
 
 .situation {
-  padding: 300px 0 0 0;
+  position: relative;
+  padding: 300px 0 50px 0;
   background: url("../img/situation-bg.png") no-repeat 0 -100px; }
+  .situation::before {
+    content: '';
+    position: absolute;
+    top: 600px;
+    left: 30%;
+    width: 2px;
+    height: 1200px;
+    background: #e9e9e9; }
 
 .situation__heading {
   position: relative;
   font-size: 45px;
   font-weight: 800;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  z-index: 5; }
   .situation__heading::before {
     content: '?';
     position: absolute;
-    bottom: 0;
+    top: -140px;
+    right: -170px;
     color: #e9e9e9;
     font-size: 300px;
-    font-weight: 800; }
+    font-weight: 800;
+    z-index: 2; }
 
 .situation__box {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 800px;
-  margin: 0 0 0 auto; }
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 800px; }
+  .situation__box--right {
+    margin: 0 0 80px auto; }
+    .situation__box--right::before {
+      content: '';
+      position: absolute;
+      bottom: -50px;
+      right: 100px;
+      width: 145px;
+      height: 20px;
+      background: url("../img/svg/wave.svg") no-repeat center; }
+  .situation__box--left {
+    margin: 0 auto 80px 0; }
 
 .situation__number {
   position: absolute;
+  top: 50px;
   font-size: 48px;
   font-weight: 800; }
+  .situation__number--right {
+    left: 250px; }
+  .situation__number--left {
+    right: 250px; }
 
 .situation__dot {
   color: #f5112c; }
@@ -307,3 +341,15 @@ body {
   font-size: 18px;
   font-weight: 300;
   line-height: 25px; }
+
+.situation__img {
+  width: 450px;
+  height: 350px; }
+  .situation__img--1 {
+    background: url("../img/situation-1.jpg") no-repeat center/cover; }
+  .situation__img--2 {
+    background: url("../img/situation-2.jpg") no-repeat center/cover; }
+  .situation__img--3 {
+    background: url("../img/situation-3.jpg") no-repeat top/cover; }
+  .situation__img--4 {
+    background: url("../img/situation-4.jpg") no-repeat center/cover; }
