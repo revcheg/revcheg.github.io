@@ -36,7 +36,7 @@
             <a class="nav__link" href="tel:+7945465467">+7 (945) 46-54-67</a>
           </li>
           <li>
-            <button class="nav__callback" type="button">Заказать звонок</button>
+            <button class="nav__callback  button__popup" type="button">Заказать звонок</button>
           </li>
         </ul>
       </nav>
@@ -51,7 +51,7 @@
           <h2 class="title__heading"><span class="title__small">Ускоренный</span><br>2-месячный курс английского языка</h2>
           <hr class="hr">
           <p class="title__text">Освойте английский для путешествий<br>и научитесь объясняться в любой ситуации</p>
-          <button class="button  button--entry" type="button">Записаться на пробное занятие</button>
+          <button class="button button__popup  button--entry" type="button">Записаться на пробное занятие</button>
         </section>
       </div>
     </div>
@@ -250,7 +250,7 @@
             <a class="nav__link" href="tel:+7945465467">+7 (945) 46-54-67</a>
           </li>
           <li>
-            <button class="nav__callback" type="button">Заказать звонок</button>
+            <button class="nav__callback  button__popup" type="button">Заказать звонок</button>
           </li>
         </ul>
       </nav>
@@ -276,5 +276,23 @@
       </ul>
     </div>
   </footer>
+  
+  <div class="popup  popup--inactive">
+    <button class="popup__close" type="button">
+      Закрыть
+      <svg class="popup__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="18"><path fill-rule="evenodd" d="M15.97 17.75L9.205 8.979 15.562.752h-2.039L8.151 7.653 2.814.752H.74l6.391 8.261L.332 17.75h2.074l5.745-7.411 5.746 7.411h2.073z"/></svg>
+    </button>
+    <b class="popup__heading">Пробное занятие</b>
+    <p class="popup__text">Оставьте свой номер телефона и наш оператор свяжется с вами для согласования даты занятия</p>
+    <form action="" method="post">
+      <input class="popup__tel" type="tel" name="Phone" placeholder="+7 ___" required>
+      <button class="button  button--red" type="submit">Записаться на пробное занятие</button>
+    </form>
+  </div>
+  
+  <div class="overlay  overlay--inactive"></div>
+  
+  <script src="js/main.js"></script>
+  
 </body>
 </html>

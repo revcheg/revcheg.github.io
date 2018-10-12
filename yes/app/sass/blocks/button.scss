@@ -14,18 +14,22 @@
   &--entry {
     background: $main-red;
     box-shadow: 0px 10px 18px 0px rgba(246, 27, 60, 0.5);
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      right: -145px;
+      width: 145px;
+      height: 20px;
+      background: url('../img/svg/wave.svg') no-repeat center;
+    }
   }
   
-  &::before {
-    content: '';
-    position: absolute;
-    top: -50px;
-    right: -145px;
-    width: 145px;
-    height: 20px;
-    background: url('../img/svg/wave.svg') no-repeat center;
+  &--red {
+    background: $main-red;
   }
-  
+
   &:hover,
   &:focus {
     box-shadow: 0px 15px 18px 0px rgba(246, 27, 60, 0.3);
