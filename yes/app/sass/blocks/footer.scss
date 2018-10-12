@@ -1,0 +1,44 @@
+.footer {
+  padding: 80px 0;
+  background: #f8f8f8;
+}
+
+.footer__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  margin: 30px 0 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__item {
+  font-size: 0;
+}
+
+.footer__icon {
+  fill: #cbcbcb;
+  transition: 0.3s;
+  
+  &--vk {
+    
+    &:hover {
+      fill: #5482b7;
+    }
+  }
+  
+  &--in {
+    
+    &:hover {
+      fill: #c20089;
+    }
+  }
+  
+  &--yt {
+    
+    &:hover {
+      fill: #fa0014;
+    }
+  }
+}
