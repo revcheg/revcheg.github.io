@@ -30,7 +30,7 @@
         </a>
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="#">г. Москва ул. Северная, 35</a>
+            <a class="nav__link  nav__map" href="https://goo.gl/maps/CBQrEoZwMJG2" target="_blank">г. Москва ул. Северная, 35</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="tel:+7945465467">+7 (945) 46-54-67</a>
@@ -244,7 +244,7 @@
         </a>
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="#">г. Москва ул. Северная, 35</a>
+            <a class="nav__link  nav__map" href="https://goo.gl/maps/CBQrEoZwMJG2" target="_blank">г. Москва ул. Северная, 35</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="tel:+7945465467">+7 (945) 46-54-67</a>
@@ -283,11 +283,21 @@
       <svg class="popup__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="18"><path fill-rule="evenodd" d="M15.97 17.75L9.205 8.979 15.562.752h-2.039L8.151 7.653 2.814.752H.74l6.391 8.261L.332 17.75h2.074l5.745-7.411 5.746 7.411h2.073z"/></svg>
     </button>
     <b class="popup__heading">Пробное занятие</b>
-    <p class="popup__text">Оставьте свой номер телефона и наш оператор свяжется с вами для согласования даты занятия</p>
+    <p class="popup__text">Оставьте свой номер телефона и наш оператор свяжется<br>с вами для согласования даты занятия</p>
     <form action="" method="post">
       <input class="popup__tel" type="tel" name="Phone" placeholder="+7 ___" required>
       <button class="button  button--red" type="submit">Записаться на пробное занятие</button>
     </form>
+  </div>
+  
+  <div class="popup  popup--map  popup--inactive">
+    <button class="popup__close" type="button">
+      Закрыть
+      <svg class="popup__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="18"><path fill-rule="evenodd" d="M15.97 17.75L9.205 8.979 15.562.752h-2.039L8.151 7.653 2.814.752H.74l6.391 8.261L.332 17.75h2.074l5.745-7.411 5.746 7.411h2.073z"/></svg>
+    </button>
+    <b class="popup__heading">Как доехать</b>
+    <p class="popup__text">г. Москва ул. Северная, 35</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.197510643652!2d37.25294931608678!3d55.685553804643895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5506ba588b2d7%3A0x19cd60052228bf24!2z0YPQuy4g0KHQtdCy0LXRgNC90LDRjywgMzUsINCe0LTQuNC90YbQvtCy0L4sINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgMTQzMDA5!5e0!3m2!1sru!2sua!4v1539349300693" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
   
   <div class="overlay  overlay--inactive"></div>
