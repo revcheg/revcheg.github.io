@@ -43,7 +43,14 @@
   text-transform: uppercase;
 }
 
-.teachers__box {
+.teachers__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.teachers__item {
+  // width: 350px;
   margin: 0 30px 0 0;
   transition: 0.3s;
   
@@ -80,7 +87,6 @@
 }
 
 .teachers__name {
-  display: block;
   margin: 0 0 15px 0;
   padding: 0 20px;
   font-size: 18px;

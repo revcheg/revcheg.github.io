@@ -1,0 +1,46 @@
+.impressions {
+  padding: 80px 0 0 0;
+}
+
+.impressions__heading {
+  margin: 0 0 30px 0;
+  font-size: 45px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.impressions__list {
+  margin: 70px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.impressions__item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.impressions__img {
+  margin: 0 60px 0 0;
+  border-radius: 5px;
+}
+
+.impressions__name {
+  display: block;
+  margin: 0 0 30px 0;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.impressions__blockquote {
+  margin: 0 0 30px 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.impressions__link {
+  color: $main-red;
+  font-size: 18px;
+  font-weight: 300;
+}

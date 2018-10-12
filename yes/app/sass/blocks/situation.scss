@@ -1,7 +1,7 @@
 .situation {
   position: relative;
   padding: 300px 0 50px 0;
-  background: url('../img/situation-bg.png') no-repeat 0 -100px;
+  background: url('../img/situation-bg.png') no-repeat 0 -100px / cover;
   
   &::before {
     content: '';
@@ -60,6 +60,10 @@
   justify-content: space-between;
   width: 800px;
   
+  &--fullwidth {
+    width: auto;
+  }
+  
   &--right {
     margin: 0 0 80px auto;
     
@@ -113,11 +117,16 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 25px;
+  
+  &--halfwidth {
+    width: 450px;
+  }
 }
 
 .situation__img {
   width: 450px;
   height: 350px;
+  border-radius: 5px;
   
   &--1 {
     background: url('../img/situation-1.jpg') no-repeat center / cover;

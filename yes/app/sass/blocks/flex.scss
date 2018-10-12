@@ -11,4 +11,9 @@
   &--teachers {
     align-items: stretch;
   }
+  
+  &--plan {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
