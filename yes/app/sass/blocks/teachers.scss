@@ -100,3 +100,26 @@
   font-weight: 300;
   line-height: 20px;
 }
+
+@media screen and ($tablet-widths) {
+  @keyframes decorate-leftright {
+    0% {}
+    
+    100% {
+      transform: translateX(500px);
+    }
+  }
+  
+  .teachers__item {
+    
+    &:last-child {
+      
+      &::before {
+        top: -200px;
+        right: 100px;
+      }
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {}

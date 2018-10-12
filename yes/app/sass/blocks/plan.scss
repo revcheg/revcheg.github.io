@@ -145,3 +145,17 @@
     }
   }
 }
+
+@media screen and ($tablet-widths) {
+  .plan__text {
+    
+    &--2 {
+      
+      &::after {
+        left: -50px;
+      }
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {}

@@ -29,6 +29,11 @@ body {
   background: darken($main-red, 5%);
 }
 
-@media screen and ($tablet-widths) {}
+@media screen and ($tablet-widths) {
+  .container {
+    width: 100%;
+    // background: $main-red;
+  }
+}
 
 @media screen and ($mobile-widths) {}

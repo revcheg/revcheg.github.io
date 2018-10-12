@@ -17,3 +17,14 @@
     flex-direction: column;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .flex {
+    
+    &--desc {
+      margin: 100px auto 0 auto;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {}

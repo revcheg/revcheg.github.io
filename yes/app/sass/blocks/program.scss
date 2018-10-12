@@ -87,3 +87,14 @@
   font-weight: 300;
   line-height: 25px;
 }
+
+@media screen and ($tablet-widths) {
+  .program {
+    
+    &::before {
+      left: -300px;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {}

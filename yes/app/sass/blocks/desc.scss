@@ -66,3 +66,18 @@
   font-weight: 300;
   transition: 0.7s;
 }
+
+@media screen and ($tablet-widths) {
+  .desc {
+    
+    &::before {
+      // display: none;
+      top: -100px;
+      right: 0;
+      width: 650px;
+      height: 450px;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {}

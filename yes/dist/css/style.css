@@ -25,6 +25,10 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #e30a23; }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%; } }
+
 @font-face {
   font-family: 'Gilroy';
   src: local("Gilroy-Light"), url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff");
@@ -137,7 +141,8 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  z-index: -1; }
+  z-index: -1;
+  word-wrap: break-word; }
 
 .title__mockup {
   position: relative;
@@ -259,6 +264,10 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+
+@media screen and (max-width: 1200px) {
+  .flex--desc {
+    margin: 100px auto 0 auto; } }
 
 .hr {
   width: 65px;
@@ -485,6 +494,13 @@ body {
   -webkit-transition: 0.7s;
   transition: 0.7s; }
 
+@media screen and (max-width: 1200px) {
+  .desc::before {
+    top: -100px;
+    right: 0;
+    width: 650px;
+    height: 450px; } }
+
 .teachers {
   position: relative;
   padding: 100px 0 70px 0; }
@@ -580,6 +596,21 @@ body {
   font-weight: 300;
   line-height: 20px; }
 
+@media screen and (max-width: 1200px) {
+  @-webkit-keyframes decorate-leftright {
+    0% { }
+    100% {
+      -webkit-transform: translateX(500px);
+      transform: translateX(500px); } }
+  @keyframes decorate-leftright {
+    0% { }
+    100% {
+      -webkit-transform: translateX(500px);
+      transform: translateX(500px); } }
+  .teachers__item:last-child::before {
+    top: -200px;
+    right: 100px; } }
+
 .program {
   position: relative;
   padding: 0 0 230px 0; }
@@ -656,6 +687,10 @@ body {
   font-size: 18px;
   font-weight: 300;
   line-height: 25px; }
+
+@media screen and (max-width: 1200px) {
+  .program::before {
+    left: -300px; } }
 
 .plan {
   padding: 60px 0 400px 0;
@@ -745,6 +780,10 @@ body {
     content: 'практика'; }
   .plan__text--4::after {
     content: 'повтор'; }
+
+@media screen and (max-width: 1200px) {
+  .plan__text--2::after {
+    left: -50px; } }
 
 .impressions {
   position: relative;
