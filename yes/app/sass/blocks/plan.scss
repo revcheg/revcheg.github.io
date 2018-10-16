@@ -109,9 +109,9 @@
     content: '';
     position: absolute;
     top: -120px;
-    left: 50px;
+    left: 0;
     color: #e9e9e9;
-    font-size: 125px;
+    font-size: 100px;
     font-weight: 800;
     opacity: 0.6;
   }
@@ -120,6 +120,7 @@
     
     &::after {
       content: 'просто';
+      left: 50px;
     }
   }
   
@@ -127,7 +128,7 @@
     
     &::after {
       content: 'общение';
-      
+      right: 50px;
     }
   }
   
@@ -135,6 +136,7 @@
     
     &::after {
       content: 'практика';
+      left: 50px;
     }
   }
   
@@ -142,6 +144,7 @@
     
     &::after {
       content: 'повтор';
+      right: 50px;
     }
   }
 }

@@ -30,10 +30,18 @@ body {
 }
 
 @media screen and ($tablet-widths) {
+  body {
+    // overflow: auto;
+  }
+  
   .container {
     width: 100%;
     // background: $main-red;
   }
 }
 
-@media screen and ($mobile-widths) {}
+@media screen and ($mobile-widths) {
+  .container {
+    // background: aqua;
+  }
+}

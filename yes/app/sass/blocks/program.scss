@@ -2,16 +2,6 @@
   position: relative;
   padding: 0 0 230px 0;
   
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100px;
-    width: 750px;
-    height: 1080px;
-    background: url('../img/program-bigben.png') no-repeat center;
-  }
-  
   &::after {
     content: '';
     position: absolute;
@@ -24,12 +14,36 @@
     box-sizing: border-box;
     animation: 1s decorate-bounce infinite alternate;
   }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 150px;
+    width: 600px;
+    height: 600px;
+    border: 100px solid #f5f5f5;
+    border-radius: 50%;
+    box-sizing: border-box;
+    // z-index: -1;
+  }
 }
 
 .program__content {
+  position: relative;
   width: 750px;
   margin: 0 0 0 auto;
   padding: 120px 0 0 0;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -800px;
+    width: 750px;
+    height: 1080px;
+    background: url('../img/program-bigben.png') no-repeat center;
+  }
 }
 
 .program__heading {
@@ -92,7 +106,7 @@
   .program {
     
     &::before {
-      left: -300px;
+      display: none;
     }
   }
 }

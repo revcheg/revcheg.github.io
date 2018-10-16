@@ -16,13 +16,14 @@
   &::after {
     content: '';
     position: absolute;
-    top: 1400px;
+    top: 700px;
     left: 29.6%;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background: $main-blue;
-    animation: decorate-updown 1.5s infinite alternate;
+    animation: decorate-updown 3s infinite alternate;
+    z-index: 2;
   }
 }
 
@@ -30,7 +31,7 @@
   0% {}
   
   100% {
-    transform: translateY(336px);
+    transform: translateY(1000px);
   }
 }
 
@@ -55,10 +56,8 @@
 
 .situation__box {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 800px;
+  z-index: 5;
   
   &--fullwidth {
     width: auto;
@@ -86,16 +85,10 @@
 .situation__number {
   position: absolute;
   top: 50px;
+  left: 50%;
   font-size: 48px;
   font-weight: 800;
-  
-  &--right {
-    left: 250px;
-  }
-  
-  &--left {
-    right: 250px;
-  }
+  transform: translateX(-50%);
 }
 
 .situation__dot {
@@ -112,7 +105,7 @@
 }
 
 .situation__text {
-  width: 280px;
+  width: 350px;
   margin: 0;
   font-size: 18px;
   font-weight: 300;
@@ -124,7 +117,7 @@
 }
 
 .situation__img {
-  width: 450px;
+  width: 400px;
   height: 350px;
   border-radius: 5px;
   
@@ -143,4 +136,14 @@
   &--4 {
     background: url('../img/situation-4.jpg') no-repeat center / cover;
   }
+}
+
+@media screen and ($tablet-widths) {
+  .situation__box {
+    width: auto;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  
 }
