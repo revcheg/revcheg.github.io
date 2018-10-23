@@ -16,14 +16,15 @@
 .nav__toggle {
   position: relative;
   display: none;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 30px;
   margin: 0;
   padding: 0;
   font-size: 0;
   border: none;
   background: url('../img/svg/menu.svg') no-repeat center / cover;
   z-index: 8;
+  transition: 0.3s;
 }
 
 .nav__list {
@@ -31,6 +32,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  transition: 0.3s;
 }
 
 .nav__link {
@@ -83,8 +85,19 @@
 }
 
 @media screen and ($mobile-widths) {
+  .nav__logo {
+    font-size: 40px;
+  }
+  
   .nav__toggle {
     display: block;
+    
+    &--active {
+      position: fixed;
+      top: 40px;
+      right: 15px;
+      background: url('../img/svg/close.svg') no-repeat center / contain;
+    }
   }
   
   .nav__list {
@@ -97,8 +110,16 @@
       bottom: 0;
       left: 0;
       background: #fff;
-      transform: translateY(-100%);
+      // transform: translateY(-100%);
       z-index: 7;
+      opacity: 0;
+      visibility: hidden;
+    }
+    
+    &--active {
+      // transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
     }
   }
   

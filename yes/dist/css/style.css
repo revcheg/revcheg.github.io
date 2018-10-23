@@ -111,20 +111,24 @@ body {
 .nav__toggle {
   position: relative;
   display: none;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 30px;
   margin: 0;
   padding: 0;
   font-size: 0;
   border: none;
   background: url("../img/svg/menu.svg") no-repeat center/cover;
-  z-index: 8; }
+  z-index: 8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
 
 .nav__list {
   width: 650px;
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
 
 .nav__link {
   display: block;
@@ -170,8 +174,15 @@ body {
     font-size: 16px; } }
 
 @media screen and (max-width: 768px) {
+  .nav__logo {
+    font-size: 40px; }
   .nav__toggle {
     display: block; }
+    .nav__toggle--active {
+      position: fixed;
+      top: 40px;
+      right: 15px;
+      background: url("../img/svg/close.svg") no-repeat center/contain; }
   .nav__list {
     width: auto; }
     .nav__list--mobile {
@@ -181,9 +192,12 @@ body {
       bottom: 0;
       left: 0;
       background: #fff;
-      -webkit-transform: translateY(-100%);
-      transform: translateY(-100%);
-      z-index: 7; }
+      z-index: 7;
+      opacity: 0;
+      visibility: hidden; }
+    .nav__list--active {
+      opacity: 1;
+      visibility: visible; }
   .nav__link,
   .nav__callback {
     font-size: 18px; } }
@@ -751,7 +765,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .teachers__item {
-    width: auto; } }
+    width: auto; }
+  .teachers__photo {
+    width: 100%; } }
 
 .program {
   position: relative;
@@ -834,15 +850,15 @@ body {
   .program {
     padding: 0; }
     .program::before {
+      top: 100px;
       left: 0;
       width: 300px;
       height: 300px;
       border: 50px solid #f5f5f5; }
     .program::after {
-      top: 50px;
-      right: 100px;
-      bottom: auto;
-      left: auto; }
+      top: -100px;
+      left: 50px;
+      bottom: auto; }
   .program__content {
     width: auto;
     padding: 450px 0 0 0;
@@ -939,7 +955,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .plan {
-    padding: 60px 0 100px 0; }
+    padding: 60px 0; }
+  .plan__list {
+    margin: 50px 0 0 0; }
   .plan__item {
     text-align: center; }
     .plan__item:nth-child(2n) .plan__content {
@@ -1115,7 +1133,6 @@ body {
   transition: 0.3s; }
 
 .popup__close:hover, .popup__close:focus {
-  fill: #f5112c;
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px); }
 
@@ -1181,7 +1198,7 @@ body {
   transition: 0.3s;
   opacity: 0;
   visibility: hidden;
-  z-index: 5; }
+  z-index: 8; }
   .overlay--active {
     opacity: 1;
     visibility: visible; }
