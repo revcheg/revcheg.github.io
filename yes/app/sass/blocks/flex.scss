@@ -20,7 +20,7 @@
 
 @media screen and ($tablet-widths) {
   .flex {
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     
     &--desc {
       width: auto;
@@ -30,6 +30,7 @@
     
     &--teachers {
       align-items: center;
+      flex-wrap: wrap;
     }
   }
 }

@@ -232,9 +232,17 @@ body {
   font-weight: 300; }
 
 @media screen and (max-width: 1200px) {
+  .title {
+    padding: 100px 0 0 0; }
   .title__mockup {
+    width: 50%;
     margin: auto; }
+  .title__heading {
+    font-size: 35px; }
+  .title__small {
+    font-size: 30px; }
   .title__content {
+    width: 50%;
     margin: auto; } }
 
 @media screen and (max-width: 768px) {
@@ -272,17 +280,16 @@ body {
     flex-direction: column; }
 
 @media screen and (max-width: 1200px) {
-  .flex {
+  .flex--desc {
+    width: auto;
+    margin: 100px auto 0 auto;
+    padding: 0 30px; }
+  .flex--teachers {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    .flex--desc {
-      width: auto;
-      margin: 100px auto 0 auto;
-      padding: 0 30px; }
-    .flex--teachers {
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; } }
+    flex-wrap: wrap; } }
 
 .hr {
   width: 65px;
@@ -436,7 +443,9 @@ body {
 
 @media screen and (max-width: 1200px) {
   .situation__box {
-    width: auto; } }
+    width: auto; }
+  .situation__text {
+    padding: 0 15px; } }
 
 .desc {
   position: relative;
@@ -498,8 +507,6 @@ body {
 
 @media screen and (max-width: 1200px) {
   .desc::before {
-    top: -250px;
-    right: 0;
     width: 650px;
     height: 450px; } }
 
@@ -650,7 +657,7 @@ body {
 
 .program__content {
   position: relative;
-  width: 750px;
+  width: 740px;
   margin: 0 0 0 auto;
   padding: 120px 0 0 0; }
   .program__content::before {
@@ -911,15 +918,16 @@ body {
   background: #fff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%); }
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden; }
   .popup--active {
-    z-index: 10; }
-  .popup--inactive {
-    z-index: -1;
-    opacity: 0; }
+    opacity: 1;
+    visibility: visible; }
   .popup--map {
     padding: 50px 30px 30px 30px; }
 
@@ -987,9 +995,10 @@ body {
   background: rgba(0, 0, 0, 0.6);
   cursor: pointer;
   -webkit-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 5; }
   .overlay--active {
-    z-index: 5; }
-  .overlay--inactive {
-    z-index: -1;
-    opacity: 0; }
+    opacity: 1;
+    visibility: visible; }

@@ -142,6 +142,10 @@
   .situation__box {
     width: auto;
   }
+  
+  .situation__text {
+    padding: 0 15px;
+  }
 }
 
 @media screen and ($mobile-widths) {

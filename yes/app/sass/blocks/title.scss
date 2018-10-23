@@ -83,19 +83,25 @@
 }
 
 @media screen and ($tablet-widths) {  
+  .title {
+    padding: 100px 0 0 0;
+  }
+  
   .title__mockup {
+    width: 50%;
     margin: auto;
   }
   
-  // .title__heading {
-  //   font-size: 35px;
-  // }
-  // 
-  // .title__small {
-  //   font-size: 30px;
-  // }
+  .title__heading {
+    font-size: 35px;
+  }
+  
+  .title__small {
+    font-size: 30px;
+  }
   
   .title__content {
+    width: 50%;
     margin: auto;
   }
 }

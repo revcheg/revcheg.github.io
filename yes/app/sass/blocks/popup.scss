@@ -7,16 +7,15 @@
   text-align: center;
   background: #fff;
   box-sizing: border-box;
-  transition: 0.3s;
+  transition: 0.5s;
   transform: translateX(-50%) translateY(-50%);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
   
   &--active {
-    z-index: 10;
-  }
-  
-  &--inactive {
-    z-index: -1;
-    opacity: 0;
+    opacity: 1;
+    visibility: visible;
   }
   
   &--map {
@@ -34,7 +33,6 @@
   font-size: 0;
   border: 0;
   background: transparent;
-  // background: url('../img/svg/close.svg') no-repeat center / cover;
   cursor: pointer;
   outline: none;
   transition: 0.3s;
