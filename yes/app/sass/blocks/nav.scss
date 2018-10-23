@@ -88,6 +88,7 @@
   }
   
   .nav__list {
+    width: auto;
     
     &--mobile {
       position: fixed;
@@ -95,7 +96,6 @@
       right: 0;
       bottom: 0;
       left: 0;
-      width: auto;
       background: #fff;
       transform: translateY(-100%);
       z-index: 7;

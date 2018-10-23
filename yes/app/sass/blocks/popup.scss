@@ -84,3 +84,30 @@
     transform: translateY(-5px);  
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .popup {
+    width: 95%;
+    padding: 100px 0;
+    
+    &--map {
+      padding: 50px 30px 30px 30px;
+    }
+  }
+  
+  .popup__heading {
+    font-size: 25px;
+  }
+  
+  .popup__text {
+    font-size: 14px;
+  }
+  
+  .popup__tel {
+    width: 275px;
+    height: 57px;
+    font-size: 14px;
+  }
+}

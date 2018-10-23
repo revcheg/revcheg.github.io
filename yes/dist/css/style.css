@@ -2,8 +2,7 @@
 body {
   min-width: 320px;
   margin: 0;
-  font-family: 'Gilroy', 'Open Sans', sans-serif;
-  overflow-x: hidden; }
+  font-family: 'Gilroy', 'Open Sans', sans-serif; }
 
 .container {
   width: 1200px;
@@ -72,6 +71,7 @@ body {
     font-weight: 800;
     z-index: 2; }
   .heading--right::before {
+    right: auto;
     left: 560px; }
 
 .heading__small {
@@ -172,17 +172,18 @@ body {
 @media screen and (max-width: 768px) {
   .nav__toggle {
     display: block; }
-  .nav__list--mobile {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: auto;
-    background: #fff;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-    z-index: 7; }
+  .nav__list {
+    width: auto; }
+    .nav__list--mobile {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: #fff;
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+      z-index: 7; }
   .nav__link,
   .nav__callback {
     font-size: 18px; } }
@@ -305,6 +306,7 @@ body {
     width: 70%;
     margin: 0 0 30px 0; }
   .title__content {
+    width: auto;
     text-align: center; }
     .title__content::before {
       display: none; }
@@ -542,7 +544,8 @@ body {
       .situation__box--right::before {
         display: none; }
   .situation__number {
-    top: 30px; }
+    top: 30px;
+    font-size: 34px; }
   .situation__text {
     width: 230px;
     margin: 0 0 20px 0;
@@ -746,6 +749,10 @@ body {
       .teachers__item:last-child::before {
         display: none; } }
 
+@media screen and (max-width: 768px) {
+  .teachers__item {
+    width: auto; } }
+
 .program {
   position: relative;
   padding: 0 0 230px 0; }
@@ -826,6 +833,11 @@ body {
 @media screen and (max-width: 768px) {
   .program {
     padding: 0; }
+    .program::before {
+      left: 0;
+      width: 300px;
+      height: 300px;
+      border: 50px solid #f5f5f5; }
     .program::after {
       top: 50px;
       right: 100px;
@@ -842,6 +854,8 @@ body {
       height: 400px; }
   .program__price {
     font-size: 25px; }
+  .program__list {
+    width: auto; }
   .program__desc,
   .program__schedule,
   .program__text {
@@ -932,8 +946,10 @@ body {
       -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
       order: 0; }
-  .plan__content::before {
-    display: none; }
+  .plan__content {
+    width: auto; }
+    .plan__content::before {
+      display: none; }
   .plan__name {
     font-size: 14px; }
   .plan__text {
@@ -1137,6 +1153,21 @@ body {
     border: 1px solid #f5112c;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px); }
+
+@media screen and (max-width: 768px) {
+  .popup {
+    width: 95%;
+    padding: 100px 0; }
+    .popup--map {
+      padding: 50px 30px 30px 30px; }
+  .popup__heading {
+    font-size: 25px; }
+  .popup__text {
+    font-size: 14px; }
+  .popup__tel {
+    width: 275px;
+    height: 57px;
+    font-size: 14px; } }
 
 .overlay {
   position: fixed;
