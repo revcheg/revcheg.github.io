@@ -39,3 +39,15 @@
     }
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .footer {
+    padding: 50px 0;
+  }
+  
+  .footer__list {
+    margin: 30px auto 0 auto;
+  }
+}

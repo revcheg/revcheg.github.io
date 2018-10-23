@@ -130,5 +130,53 @@
 }
 
 @media screen and ($mobile-widths) {
+  .situation {
+    padding: 100px 0 50px 0;
+    
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
   
+  .situation__box {
+    padding: 100px 0 0 0;
+    
+    &--left {
+      margin: 0 0 40px 0; 
+      
+      .situation__text {
+        order: 2;
+      }
+      
+      .situation__img {
+        order: 3;
+      }
+    }
+    
+    &--right {
+      margin: 0 0 40px 0;
+      
+      &::before {
+        display: none;
+      }
+    }
+  }
+  
+  .situation__number {
+    top: 30px;
+  }
+  
+  .situation__text {
+    width: 230px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .situation__img {
+    width: 290px;
+    height: 230px;
+  }
 }

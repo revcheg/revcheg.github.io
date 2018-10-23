@@ -33,7 +33,7 @@
   display: flex;
   align-items: flex-start;
   width: 100%;
-  margin: 0 50px 0 0;
+  margin: 0 50px;
 }
 
 .impressions__img {
@@ -62,4 +62,32 @@
   color: $main-red;
   font-size: 18px;
   font-weight: 300;
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .impressions__item {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .impressions__img {
+    margin: 0 0 20px 0;
+  }
+  
+  .impressions__content {
+    text-align: center;
+  }
+  
+  .impressions__name,
+  .impressions__blockquote,
+  .impressions__link {
+    font-size: 14px;
+  }
+  
+  .impressions__name {
+    margin: 0 0 10px 0;
+  }
 }

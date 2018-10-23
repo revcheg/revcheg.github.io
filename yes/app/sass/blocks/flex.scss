@@ -35,4 +35,22 @@
   }
 }
 
-@media screen and ($mobile-widths) {}
+@media screen and ($mobile-widths) {
+  .flex {
+    flex-direction: column;
+    
+    &--nav,
+    &--social {
+      flex-direction: row;
+    }
+    
+    &--list {
+      // flex-direction: column;
+      justify-content: center;
+    }
+    
+    &--desc {
+      margin: 50px 0 0 0;
+    }
+  }
+}

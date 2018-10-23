@@ -10,7 +10,6 @@
     width: 900px;
     height: 610px;
     background: url('../img/desc-mockup.png') no-repeat center / cover;
-    // z-index: -1;
   }
 }
 
@@ -69,4 +68,47 @@
   }
 }
 
-@media screen and ($mobile-widths) {}
+@media screen and ($mobile-widths) {
+  .desc {
+    padding: 0;
+    
+    &::before {
+      display: none;
+    }
+  }
+  
+  .desc__box {
+    margin: 0 0 50px 0;
+    text-align: center;
+    
+    &:last-child {
+      margin: 0;
+    }
+    
+    &:hover .desc__name,
+    &:hover .desc__text {
+      color: #fff;
+    }
+    
+    &:hover .desc__name::before {
+      top: -60px;
+      left: 100px;
+      width: 200px;
+      height: 200px;
+      background: $main-red;
+    }
+  }
+  
+  .desc__name,
+  .desc__text {
+    font-size: 14px;
+  }
+  
+  .desc__name {
+    
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

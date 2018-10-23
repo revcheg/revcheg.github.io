@@ -95,13 +95,26 @@
 }
 
 @media screen and ($mobile-widths) {
-  .title__decoration {
-    display: none;
+  .title {
+    padding: 0;
+    background: none;
   }
   
   .title__mockup {
-    width: 100%;
-    height: 500px;
-    background: url('../img/bus-mockup.png') no-repeat center / contain;
+    width: 70%;
+    margin: 0 0 30px 0;
+  }
+  
+  .title__content {
+    text-align: center;
+    
+    &::before {
+      display: none;
+    }
+  }
+  
+  .title__text {
+    margin: 10px 0 20px 0;
+    font-size: 14px;
   }
 }

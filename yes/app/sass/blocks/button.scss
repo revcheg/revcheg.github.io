@@ -33,4 +33,8 @@
   }
 }
 
-@media screen and ($mobile-widths) {}
+@media screen and ($mobile-widths) {
+  .button {
+    font-size: 14px;
+  }
+}

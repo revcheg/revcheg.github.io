@@ -5,3 +5,11 @@
   border: none;
   background: $main-red;
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .hr {
+    margin: 0 auto;
+  }
+}

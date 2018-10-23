@@ -39,10 +39,10 @@
     content: '';
     position: absolute;
     top: 0;
-    left: -800px;
+    left: -810px;
     width: 750px;
     height: 1080px;
-    background: url('../img/program-bigben.png') no-repeat center;
+    background: url('../img/program-bigben.png') no-repeat center / cover;
   }
 }
 
@@ -92,4 +92,38 @@
   }
 }
 
-@media screen and ($mobile-widths) {}
+@media screen and ($mobile-widths) {
+  .program {
+    padding: 0;
+    
+    &::after {
+      top: 50px;
+      right: 100px;
+      bottom: auto;
+      left: auto;
+    }
+  }
+  
+  .program__content {
+    width: auto;
+    padding: 450px 0 0 0;
+    text-align: center;
+    
+    &::before {
+      top: 0;
+      left: -15px;
+      width: 300px;
+      height: 400px;
+    }
+  }
+  
+  .program__price {
+    font-size: 25px;
+  }
+  
+  .program__desc,
+  .program__schedule,
+  .program__text {
+    font-size: 14px;
+  }
+}

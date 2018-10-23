@@ -50,4 +50,22 @@
   }
 }
 
-@media screen and ($mobile-widths) {}
+@media screen and ($mobile-widths) {
+  .heading {
+    display: block;
+    margin: 0 0 10px 0;
+    font-size: 25px;
+    text-align: center;
+    
+    &--decorate {
+      
+      &::before {
+        display: none;
+      }
+    }
+  }
+  
+  .heading__small {
+    font-size: 18px;
+  }
+}
