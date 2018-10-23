@@ -2,6 +2,7 @@ body {
   min-width: 320px;
   margin: 0;
   font-family: 'Gilroy', 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -30,18 +31,9 @@ body {
 }
 
 @media screen and ($tablet-widths) {
-  body {
-    // overflow: auto;
-  }
-  
   .container {
     width: 100%;
-    // background: $main-red;
   }
 }
 
-@media screen and ($mobile-widths) {
-  .container {
-    // background: aqua;
-  }
-}
+@media screen and ($mobile-widths) {}

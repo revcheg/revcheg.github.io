@@ -35,14 +35,6 @@
   }
 }
 
-.teachers__heading {
-  display: block;
-  margin: 0 0 30px 0;
-  font-size: 45px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
 .teachers__list {
   margin: 0;
   padding: 0;
@@ -51,12 +43,11 @@
 
 .teachers__item {
   width: 350px;
-  margin: 0 30px 0 0;
+  border-radius: 5px;
   transition: 0.3s;
   
   &:last-child {
     position: relative;
-    margin: 0;
     
     &::before {
       content: '';
@@ -74,7 +65,7 @@
   }
   
   &:hover {
-    border-radius: 5px;
+    
     box-shadow: 0px 10px 20px 0px rgba(246, 27, 60, 0.3);
     transform: translateY(-10px);
   }
@@ -82,8 +73,9 @@
 
 .teachers__photo {
   max-width: 100%;
-  height: auto;
+  height: 300px;
   margin: 0 0 20px 0;
+  object-fit: cover;
 }
 
 .teachers__name {

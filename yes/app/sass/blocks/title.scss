@@ -1,6 +1,5 @@
 .title {
   position: relative;
-  // padding: 0 0 100px 0;
   background: url('../img/title-bg.png') no-repeat 0 50px / contain;
   
   &::before {
@@ -64,18 +63,6 @@
   100% {transform:scale(1); opacity:1;}
 }
 
-.title__heading {
-  margin: 0 0 20px 0;
-  color: $main-black;
-  font-size: 45px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.title__small {
-  font-size: 35px;
-}
-
 .title__text {
   margin: 20px 0 90px 0;
   font-size: 18px;
@@ -85,6 +72,7 @@
 @media screen and ($tablet-widths) {  
   .title {
     padding: 100px 0 0 0;
+    background-position: 0 80px;
   }
   
   .title__mockup {

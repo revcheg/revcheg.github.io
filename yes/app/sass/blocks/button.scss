@@ -26,3 +26,11 @@
     transform: translateY(-5px);
   }
 }
+
+@media screen and ($tablet-widths) {
+  .button {
+    padding: 20px 30px;
+  }
+}
+
+@media screen and ($mobile-widths) {}
