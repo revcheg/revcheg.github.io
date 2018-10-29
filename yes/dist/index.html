@@ -25,8 +25,7 @@
     <div class="container">
       <nav class="nav  flex  flex--nav">
         <a class="nav__logo">
-          <!-- <img class="nav__logo" src="img/logo.png" width="99" height="36" alt=".YES"> -->
-          .<span class="nav__text">YES</span>
+          <img src="img/logo.png" width="99" height="36" alt=".YES">
         </a>
         <button class="nav__toggle  nav__toggle--inactive">Открыть меню</button>
         <ul class="flex  flex--list  nav__list  nav__list--mobile">
@@ -46,7 +45,7 @@
   <div class="title">
     <div class="container">
       <div class="flex">
-        <img class="title__mockup" src="img/bus-mockup.png" alt="Mockup">
+        <img class="title__mockup" src="img/bus-mockup.png">
         <section class="title__content">
           <h2 class="heading"><span class="heading__small">Ускоренный</span><br>2-месячный курс английского языка</h2>
           <hr class="hr">
@@ -56,68 +55,82 @@
       </div>
     </div>
   </div>
-  <div class="situation">
+  <section class="situation">
     <div class="container">
-      <b class="heading  heading--decorate">Бывали ли вы<br>в подобных<br>ситуациях</b>
-      <div class="flex  situation__box  situation__box--right">
-        <b class="situation__number">01<span class="situation__dot">.</span></b>
-        <p class="situation__text">Вы думали, что знаете английский, но в гостинице с трудом выговариваете, какой номер вам нужен</p>
-        <div class="situation__img  situation__img--1"></div>
-      </div>
-      <div class="flex  situation__box  situation__box--left">
-        <b class="situation__number">02<span class="situation__dot">.</span></b>
-        <div class="situation__img  situation__img--2"></div>
-        <p class="situation__text">Вы смогли спросить, до какой станции метро нужно дойти, но не поняли, куда вас отправили</p>
-      </div>
-      <div class="flex  situation__box  situation__box--right">
-        <b class="situation__number">03<span class="situation__dot">.</span></b>
-        <p class="situation__text">В аэропорту при любом подозрении на задрежку, вы ищите представителя, хоть как-то говоряшего по-русски</p>
-        <div class="situation__img  situation__img--3"></div>
-      </div>
-      <div class="flex  situation__box  situation__box--left">
-        <b class="situation__number">в итоге<span class="situation__dot">...</span></b>
-        <div class="situation__img  situation__img--4"></div>
-        <p class="situation__text">Все это портит впечатление от отдыха и отбивает желание посещать новые страны</p>
-      </div>
+      <h3 class="heading  heading--decorate">Бывали ли вы<br>в подобных<br>ситуациях</h3>
+      <ul class="situation__list">
+        <li class="flex  situation__box  situation__box--right">
+          <b class="situation__number">01<span class="situation__dot">.</span></b>
+          <p class="situation__text">Вы думали, что знаете английский, но в гостинице с трудом выговариваете, какой номер вам нужен</p>
+          <div class="situation__img  situation__img--1"></div>
+        </li>
+        <li class="flex  situation__box  situation__box--left">
+          <b class="situation__number">02<span class="situation__dot">.</span></b>
+          <div class="situation__img  situation__img--2"></div>
+          <p class="situation__text">Вы смогли спросить, до какой станции метро нужно дойти, но не поняли, куда вас отправили</p>
+        </li>
+        <li class="flex  situation__box  situation__box--right">
+          <b class="situation__number">03<span class="situation__dot">.</span></b>
+          <p class="situation__text">В аэропорту при любом подозрении на задрежку, вы ищите представителя, хоть как-то говоряшего по-русски</p>
+          <div class="situation__img  situation__img--3"></div>
+        </li>
+        <li class="flex  situation__box  situation__box--left">
+          <b class="situation__number">в итоге<span class="situation__dot">...</span></b>
+          <div class="situation__img  situation__img--4"></div>
+          <p class="situation__text">Все это портит впечатление от отдыха и отбивает желание посещать новые страны</p>
+        </li>
+      </ul>
     </div>
-  </div>
-  <div class="desc">
+  </section>
+  <section class="desc">
     <div class="container">
-      <b class="heading">Мы предусмотрели<br>эти ситуации</b>
+      <h3 class="heading">Мы предусмотрели<br>эти ситуации</h3>
       <hr class="hr">
-      <div class="flex  flex--desc">
-        <div class="desc__box">
-          <b class="desc__name">Значение</b>
+      <ul class="flex  flex--desc  desc__list">
+        <li class="desc__box">
+          <h4 class="desc__name">Значение</h4>
           <div class="desc__text">Разбираем те ситуации, с которыми сталкивается путешественник</div>
-        </div>
-        <div class="desc__box">
-          <b class="desc__name">Понимание</b>
+        </li>
+        <li class="desc__box">
+          <h4 class="desc__name">Понимание</h4>
           <div class="desc__text">Учим объясняться сами и понимать, что говорят другие</div>
-        </div>
-        <div class="desc__box">
-          <b class="desc__name">Практика</b>
+        </li>
+        <li class="desc__box">
+          <h4 class="desc__name">Практика</h4>
           <div class="desc__text">Проводим диалоги с преподавателями и носителями языка</div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
-  </div>
+  </section>
   <section class="teachers">
     <div class="container">
       <h3 class="heading">Кто ведет курс</h3>
       <ul class="flex  flex--teachers  teachers__list">
         <li class="teachers__item">
-          <img class="teachers__photo" src="img/teachers-1.jpg" alt="Алла Ристовская">
-          <h4 class="teachers__name">Алла Ристовская</h4>
+          <figure class="teachers__figure">
+            <img class="teachers__photo" src="img/teachers-1.jpg" alt="Алла Ристовская">
+            <figcaption>
+              <h4 class="teachers__name">Алла Ристовская</h4>
+            </figcaption>
+          </figure>
           <p class="teachers__text">Занимается преподаванием английского языка с 2007 года. За 7 лет практики Алла занималась более чем с 80 студентами. Очень любит путешествовать: неоднократно бывала зарубежом, проходила практику в США (Нью-Йорк) и Великобритании (Лондон).</p>
         </li>
         <li class="teachers__item">
-          <img class="teachers__photo" src="img/teachers-2.jpg" alt="Анастасия Левчук">
-          <h4 class="teachers__name">Анастасия Левчук</h4>
+          <figure class="teachers__figure">
+            <img class="teachers__photo" src="img/teachers-2.jpg" alt="Анастасия Левчук">
+            <figcaption>
+              <h4 class="teachers__name">Анастасия Левчук</h4>
+            </figcaption>
+          </figure>
           <p class="teachers__text">Закончила Алтайскую Государственную педагогическую Академию по специальности "теория и методика преподавания иностранных языков и культур". Также имеется дополнительная квалификация "переводчик в сфере профессиональной коммуникации".</p>
         </li>
         <li class="teachers__item">
-          <img class="teachers__photo" src="img/teachers-3.jpg" alt="Евгений Пак">
-          <h4 class="teachers__name">Евгений Пак</h4>
+          <figure class="teachers__figure">
+            <img class="teachers__photo" src="img/teachers-3.jpg" alt="Евгений Пак">
+            <figcaption>
+              <h4 class="teachers__name">Евгений Пак</h4>
+            </figcaption>
+          </figure>
           <p class="teachers__text">Сетифицированный спеуиалист (диплом ОмГПУ, TTC в Кембридже, TESOL в Лондоне). Имеет богатый опыт работы на английском языке: от обучения в языковых школах до выполнения функции переводчика на различных конференциях. Более года Евгений жил в г. Сиэтл (США).</p>
         </li>
       </ul>
@@ -216,7 +229,7 @@
           <li class="impressions__item">
             <img class="impressions__img" src="img/impressions-1.jpg" width="165"  height="165" alt="Александра Иванова">
             <div class="impressions__content">
-              <b class="impressions__name">Александра Иванова</b>
+              <h4 class="impressions__name">Александра Иванова</h4>
               <blockquote class="impressions__blockquote">
                 Курс прошел незаметно и оставил после себя только хорошие воспоминания. Нашу группу на постоянной основе вела Алла, Настя и Женя приходили к нам для нарабатывания практики общения. Неделю назад были с мужем в Лондоне - хоть люди разные и речь у всех разная, но было так легко и спокойно! Мы ни разу не заблудились, в аэропорту меня водила за собой пожилая пара в качестве переводчика. Спасибо вам, это было очень полезно!
               </blockquote>
@@ -226,7 +239,7 @@
           <li class="impressions__item">
             <img class="impressions__img" src="img/impressions-1.jpg" width="165"  height="165" alt="Александра Иванова">
             <div class="impressions__content">
-              <b class="impressions__name">Александра Иванова</b>
+              <h4 class="impressions__name">Александра Иванова</h4>
               <blockquote class="impressions__blockquote">
                 Курс прошел незаметно и оставил после себя только хорошие воспоминания. Нашу группу на постоянной основе вела Алла, Настя и Женя приходили к нам для нарабатывания практики общения. Неделю назад были с мужем в Лондоне - хоть люди разные и речь у всех разная, но было так легко и спокойно! Мы ни разу не заблудились, в аэропорту меня водила за собой пожилая пара в качестве переводчика. Спасибо вам, это было очень полезно!
               </blockquote>
@@ -236,7 +249,7 @@
           <li class="impressions__item">
             <img class="impressions__img" src="img/impressions-1.jpg" width="165"  height="165" alt="Александра Иванова">
             <div class="impressions__content">
-              <b class="impressions__name">Александра Иванова</b>
+              <h4 class="impressions__name">Александра Иванова</h4>
               <blockquote class="impressions__blockquote">
                 Курс прошел незаметно и оставил после себя только хорошие воспоминания. Нашу группу на постоянной основе вела Алла, Настя и Женя приходили к нам для нарабатывания практики общения. Неделю назад были с мужем в Лондоне - хоть люди разные и речь у всех разная, но было так легко и спокойно! Мы ни разу не заблудились, в аэропорту меня водила за собой пожилая пара в качестве переводчика. Спасибо вам, это было очень полезно!
               </blockquote>
@@ -251,8 +264,7 @@
     <div class="container">
       <nav class="nav  flex">
         <a class="nav__logo">
-          <!-- <img class="nav__logo" src="img/logo.png" width="99" height="36" alt=".YES"> -->
-          .<span class="nav__text">YES</span>
+          <img src="img/logo.png" width="99" height="36" alt=".YES">
         </a>
         <ul class="flex  nav__list">
           <li class="nav__item">
@@ -295,7 +307,7 @@
       <svg class="popup__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.971 47.971" fill="#f5112c"><path d="M28.228 23.986L47.092 5.122a2.998 2.998 0 0 0 0-4.242 2.998 2.998 0 0 0-4.242 0L23.986 19.744 5.121.88a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l18.865 18.864L.879 42.85a2.998 2.998 0 1 0 4.242 4.241l18.865-18.864L42.85 47.091c.586.586 1.354.879 2.121.879s1.535-.293 2.121-.879a2.998 2.998 0 0 0 0-4.242L28.228 23.986z"/></svg>
     </button>
     <b class="popup__heading">Пробное занятие</b>
-    <p class="popup__text">Оставьте свой номер телефона и наш оператор свяжется<br>с вами для согласования даты занятия</p>
+    <p class="popup__text">Оставьте свой номер телефона и наш оператор свяжется с вами для согласования даты занятия</p>
     <form action="" method="post">
       <input class="popup__tel" type="tel" name="Phone" placeholder="+7 ___" required>
       <button class="button  button--red" type="submit">Записаться на пробное занятие</button>

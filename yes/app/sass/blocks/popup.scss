@@ -3,7 +3,7 @@
   top: 50%;
   left: 50%;
   width: 950px;
-  padding: 120px 0;
+  padding: 120px 200px;
   text-align: center;
   background: #fff;
   box-sizing: border-box;
@@ -84,16 +84,35 @@
   }
 }
 
-@media screen and ($tablet-widths) {}
-
-@media screen and ($mobile-widths) {
+@media screen and ($tablet-widths) {
   .popup {
-    width: 95%;
-    padding: 100px 0;
+    width: 80%;
+    padding: 100px;
     
     &--map {
       padding: 50px 30px 30px 30px;
     }
+  }
+  
+  .popup__tel {
+    width: 336px;
+    height: 62px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .popup {
+    width: 95%;
+    padding: 50px 0;
+  
+    &--map {
+      padding: 50px 30px 30px 30px;
+    }
+  }
+  
+  .popup__close {
+    top: 20px;
+    right: 20px;
   }
   
   .popup__heading {
@@ -101,6 +120,7 @@
   }
   
   .popup__text {
+    padding: 0 20px;
     font-size: 14px;
   }
   
