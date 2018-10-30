@@ -30,9 +30,9 @@ body {
 }
 
 @media screen and ($tablet-widths) {
-  // .container {
-  //   width: 100%;
-  // }
+  .container {
+    width: 100%;
+  }
 }
 
 @media screen and ($mobile-widths) {}

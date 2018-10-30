@@ -24,6 +24,10 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #c40404; }
 
+@media screen and (max-width: 1210px) {
+  .container {
+    width: 100%; } }
+
 @font-face {
   font-family: 'Circe';
   src: local("Circe Bold"), local("Circe-Bold"), url("../fonts/Circe-Bold.woff2") format("woff2"), url("../fonts/Circe-Bold.woff") format("woff");
@@ -58,6 +62,13 @@ body {
     -ms-flex-align: end;
     align-items: flex-end; }
 
+@media screen and (max-width: 768px) {
+  .flex--column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
+
 .title {
   padding: 10px 0 50px 0;
   background: url("../img/title-bg.jpg") no-repeat top/cover; }
@@ -72,7 +83,7 @@ body {
   color: #dd0505;
   font-size: 44px;
   font-weight: bold;
-  line-height: 50px;
+  line-height: 45px;
   border-bottom: 2px solid #dd0505; }
 
 .title__subheading {
@@ -98,6 +109,26 @@ body {
   color: #3c3c3c;
   font-size: 22px;
   font-weight: bold; }
+
+@media screen and (max-width: 1210px) {
+  .title__content {
+    width: 50%; }
+  .title__heading {
+    font-size: 35px; }
+  .title__subheading {
+    font-size: 25px; }
+  .title__name {
+    font-size: 18px; } }
+
+@media screen and (max-width: 768px) {
+  .title {
+    background: none; }
+  .title__content {
+    width: auto; }
+  .title__heading,
+  .title__subheading,
+  .title__name {
+    text-align: center; } }
 
 .button {
   display: block;
@@ -139,7 +170,8 @@ body {
   margin: 0 10px 0 0; }
 
 .waiting {
-  padding: 45px 0 60px 0; }
+  padding-top: 45px;
+  padding-bottom: 60px; }
   .waiting--bg {
     position: relative; }
     .waiting--bg::after {
@@ -149,7 +181,8 @@ body {
       right: 0;
       width: 419px;
       height: 762px;
-      background: url("../img/canada-bg.png") no-repeat center/cover; }
+      background: url("../img/canada-bg.png") no-repeat center/cover;
+      z-index: -1; }
 
 .waiting__list {
   margin: 0 0 40px 0;
@@ -214,6 +247,43 @@ body {
   font-size: 18px;
   font-weight: normal; }
 
+@media screen and (max-width: 1210px) {
+  .waiting--bg::after {
+    display: none; }
+  .waiting__list--unbullet {
+    background-size: 380px; }
+  .waiting__item--right {
+    margin: 30px 0 30px 55%; } }
+
+@media screen and (max-width: 768px) {
+  .waiting__subheading {
+    display: block;
+    text-align: center; }
+  .waiting__list--unbullet {
+    background: none; }
+  .waiting__item--short {
+    width: 100%;
+    margin: 0 0 30px 0; }
+  .waiting__item--right {
+    margin: 0; }
+  .waiting__name--uppercase {
+    text-align: center; }
+  .waiting__column {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1; }
+  .waiting__img {
+    -ms-flex-item-align: center;
+    align-self: center; }
+    .waiting__img--1 {
+      width: 300px;
+      height: 290px; }
+    .waiting__img--2 {
+      width: 300px;
+      height: 290px;
+      background: url("../img/waiting-img-2.jpg") no-repeat center/contain; } }
+
 .heading {
   display: block;
   margin: 0 0 45px 0;
@@ -248,7 +318,8 @@ body {
       right: 0;
       width: 419px;
       height: 762px;
-      background: url("../img/canada-bg.png") no-repeat center/cover; }
+      background: url("../img/canada-bg.png") no-repeat center/cover;
+      z-index: 2; }
 
 .choice__list {
   margin: 0 0 80px 0;
@@ -266,8 +337,10 @@ body {
   box-sizing: border-box;
   -webkit-box-shadow: 0px 0px 9px 0px rgba(35, 31, 32, 0.3);
   box-shadow: 0px 0px 9px 0px rgba(35, 31, 32, 0.3);
+  background: #fff;
   -webkit-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  z-index: 5; }
   .choice__item:hover {
     -webkit-box-shadow: 0px 0px 20px 0px rgba(35, 31, 32, 0.3);
     box-shadow: 0px 0px 20px 0px rgba(35, 31, 32, 0.3);
@@ -284,6 +357,14 @@ body {
   font-size: 24px;
   font-weight: bold;
   text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .choice--bg::after {
+    display: none; }
+  .choice__list {
+    margin: 0; }
+  .choice__item {
+    margin: 0 0 30px 0; } }
 
 .program__subheading {
   margin: 0 0 20px 0;
@@ -332,6 +413,17 @@ body {
     display: block;
     color: #dd0505;
     font-weight: bold; }
+
+@media screen and (max-width: 768px) {
+  .program__item {
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(35, 31, 32, 0.3);
+    box-shadow: 0px 0px 9px 0px rgba(35, 31, 32, 0.3); }
+  .program__img {
+    margin: auto; }
+  .program__name,
+  .program__text {
+    text-align: center; } }
 
 .footer {
   padding: 15px 0;

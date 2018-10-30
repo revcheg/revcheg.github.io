@@ -50,3 +50,21 @@
     font-weight: bold;
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .program__item {
+    width: 100%;
+    box-shadow: 0px 0px 9px 0px rgba(35, 31, 32, 0.3);
+  }
+  
+  .program__img {
+    margin: auto;
+  }
+  
+  .program__name,
+  .program__text {
+    text-align: center;
+  }
+}

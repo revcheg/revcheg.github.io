@@ -15,3 +15,14 @@
     align-items: flex-end;
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .flex {
+    
+    &--column {
+      flex-direction: column;
+    }
+  }
+}

@@ -14,7 +14,7 @@
   color: $main-red;
   font-size: 44px;
   font-weight: bold;
-  line-height: 50px;
+  line-height: 45px;
   border-bottom: 2px solid $main-red;
 }
 
@@ -46,4 +46,39 @@
   color: $main-gray;
   font-size: 22px;
   font-weight: bold;
+}
+
+@media screen and ($tablet-widths) {
+  .title__content {
+    // width: 400px;
+    width: 50%;
+  }
+  
+  .title__heading {
+    font-size: 35px;
+  }
+  
+  .title__subheading {
+    font-size: 25px;
+  }
+  
+  .title__name {
+    font-size: 18px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .title {
+    background: none;
+  }
+  
+  .title__content {
+    width: auto;
+  }
+  
+  .title__heading,
+  .title__subheading,
+  .title__name {
+    text-align: center;
+  }
 }
