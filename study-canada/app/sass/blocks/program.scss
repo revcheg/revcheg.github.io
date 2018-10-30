@@ -1,3 +1,7 @@
+.program {
+  padding: 0 0 30px 0;
+}
+
 .program__subheading {
   margin: 0 0 20px 0;
   color: $main-gray;
@@ -61,6 +65,10 @@
   
   .program__img {
     margin: auto;
+  }
+  
+  .program__content {
+    width: 100%;
   }
   
   .program__name,

@@ -9,7 +9,7 @@
 }
 
 .title__heading {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   padding: 0 0 10px 0;
   color: $main-red;
   font-size: 44px;
@@ -21,9 +21,11 @@
 .title__subheading {
   display: block;
   margin: 0 0 60px 0;
+  padding: 0 0 10px 0;
   color: $main-gray;
   font-size: 30px;
   font-weight: normal;
+  border-bottom: 2px solid $main-red;
 }
 
 .title__list {
@@ -46,6 +48,15 @@
   color: $main-gray;
   font-size: 22px;
   font-weight: bold;
+  
+  &--big {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  
+  &--red {
+    color: $main-red;
+  }
 }
 
 @media screen and ($tablet-widths) {

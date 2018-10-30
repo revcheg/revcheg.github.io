@@ -108,6 +108,18 @@
   font-weight: normal;
 }
 
+@media screen and (max-width: 1880px) {
+  .waiting {
+    
+    &--bg {
+      
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
 @media screen and ($tablet-widths) {
   .waiting {
     
@@ -173,6 +185,7 @@
   }
   
   .waiting__name {
+    display: block;
     font-size: 23px;
     text-align: center;
     
@@ -205,5 +218,9 @@
   .waiting__text {
     margin: 0 0 30px 0;
     text-align: center;
+  }
+  
+  .waiting__inner {
+    width: 100%;
   }
 }
