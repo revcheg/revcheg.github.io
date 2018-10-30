@@ -1,5 +1,19 @@
 .choice {
   padding: 0 0 80px 0;
+  
+  &--bg {
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 419px;
+      height: 762px;
+      background: url('../img/canada-bg.png') no-repeat center / cover;
+    }
+  }
 }
 
 .choice__list {
