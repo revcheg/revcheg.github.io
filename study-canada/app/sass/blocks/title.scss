@@ -69,6 +69,7 @@
 
 @media screen and ($mobile-widths) {
   .title {
+    padding: 10px 0 0 0;
     background: none;
   }
   
@@ -80,5 +81,14 @@
   .title__subheading,
   .title__name {
     text-align: center;
+  }
+  
+  .title__heading {
+    font-size: 27px;
+    line-height: 30px;
+  }
+  
+  .title__subheading {
+    font-size: 20px;
   }
 }

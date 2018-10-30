@@ -96,7 +96,8 @@
   &--2 {
     width: 550px;
     height: 365px;
-    background: url('../img/waiting-img-2.jpg') no-repeat center / cover;
+    margin: 0 30px 0 0;
+    background: url('../img/waiting-img-2.jpg') no-repeat center / contain;
   }
 }
 
@@ -134,12 +135,18 @@
 }
 
 @media screen and ($mobile-widths) {
+  .waiting {
+    padding-bottom: 0;
+  }
+  
   .waiting__subheading {
     display: block;
+    font-size: 20px;
     text-align: center;
   }
   
   .waiting__list {
+    margin: 0;
     
     &--unbullet {
       background: none;
@@ -147,6 +154,8 @@
   }
   
   .waiting__item {
+    font-size: 16px;
+    text-align: center;
     
     &--short {
       width: 100%;
@@ -154,11 +163,18 @@
     }
     
     &--right {
-      margin: 0;
+      margin: 0 0 30px 0;
+    }
+    
+    &--icon {
+      padding: 100px 0 0 0;
+      background: url('../img/program-bg.png') no-repeat top / 90px 90px;
     }
   }
   
   .waiting__name {
+    font-size: 23px;
+    text-align: center;
     
     &--uppercase {
       text-align: center;
@@ -172,16 +188,22 @@
   
   .waiting__img {
     align-self: center;
+    margin: 0 0 30px 0;
     
     &--1 {
-      width: 300px;
-      height: 290px;
+      width: 250px;
+      height: 240px;
     }
     
     &--2 {
       width: 300px;
-      height: 290px;
-      background: url('../img/waiting-img-2.jpg') no-repeat center / contain;
+      height: 200px;
+      // background: url('../img/waiting-img-2.jpg') no-repeat center / contain;
     }
+  }
+  
+  .waiting__text {
+    margin: 0 0 30px 0;
+    text-align: center;
   }
 }
