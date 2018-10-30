@@ -1,0 +1,86 @@
+.waiting {
+  padding: 45px 0 60px 0;
+}
+
+.waiting__list {
+  margin: 0 0 40px 0;
+  padding: 0;
+  list-style: inside url('../img/bullet.png');
+  
+  &--unbullet {
+    background: url('../img/reasons-bg.png') no-repeat left;
+    list-style: none;
+  }
+}
+
+.waiting__item {
+  padding: 0 0 10px 0;
+  color: $main-gray;
+  font-size: 18px;
+  font-weight: normal;
+  
+  &--short {
+    width: 45%;
+  }
+  
+  &--right {
+    margin: 60px 0 130px 55%;
+  }
+}
+
+.waiting__subheading {
+  color: $main-gray;
+  font-size: 24px;
+  font-weight: bold;
+  
+  &--red {
+    color: $main-red;
+  }
+  
+  &--center {
+    display: block;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+}
+
+.waiting__name {
+  display: block;
+  color: $main-red;
+  font-size: 30px;
+  font-weight: normal;
+  
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.waiting__column {
+  width: 65%;
+  
+  &--small {
+    width: 535px;
+  }
+}
+
+.waiting__img {
+  
+  &--1 {
+    width: 350px;
+    height: 340px;
+    background: url('../img/waiting-img-1.jpg') no-repeat center / cover;
+  }
+  
+  &--2 {
+    width: 550px;
+    height: 365px;
+    background: url('../img/waiting-img-2.jpg') no-repeat center / cover;
+  }
+}
+
+.waiting__text {
+  margin: 0 0 10px 0;
+  color: $main-gray;
+  font-size: 18px;
+  font-weight: normal;
+}

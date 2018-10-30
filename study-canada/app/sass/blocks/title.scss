@@ -1,0 +1,49 @@
+.title {
+  padding: 10px 0 50px 0;
+  background: url('../img/title-bg.jpg') no-repeat top / cover;
+}
+
+.title__content {
+  width: 535px;
+  margin: 50px 0 0 auto;
+}
+
+.title__heading {
+  margin: 0 0 20px 0;
+  padding: 0 0 10px 0;
+  color: $main-red;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 50px;
+  border-bottom: 2px solid $main-red;
+}
+
+.title__subheading {
+  display: block;
+  margin: 0 0 60px 0;
+  color: $main-gray;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.title__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.title__item {
+  margin: 0 0 40px 0;
+  
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.title__name {
+  display: block;
+  margin: 0 0 20px 0;
+  color: $main-gray;
+  font-size: 22px;
+  font-weight: bold;
+}
