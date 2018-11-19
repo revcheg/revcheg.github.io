@@ -4,6 +4,7 @@
   justify-content: space-between;
   padding: 50px 35px;
   background: #202228;
+  transition: 0.3s;
 }
 
 .header__slider {
@@ -29,13 +30,14 @@
   padding: 0;
   border: none;
   cursor: pointer;
+  transition: 0.2s;
   
   &--prev {
     margin: 0 15px 0 0;
     background: transparent url('../img/control.svg') no-repeat center;
     
     &:hover {
-      animation: left 0.3s infinite alternate;
+      transform: translateX(-10px);
     }
   }
   
@@ -45,28 +47,8 @@
     transform: rotate(180deg);
     
     &:hover {
-      animation: right 0.3s infinite alternate;
+      transform: rotate(180deg) translateX(-10px);
     }
-  }
-}
-
-@keyframes left {
-  0% {
-    
-  }
-  
-  100% {
-    transform: translateX(-10px);
-  }
-}
-
-@keyframes right {
-  0% {
-    
-  }
-  
-  100% {
-    transform: rotate(180deg) translateX(-10px);
   }
 }
 
@@ -78,6 +60,11 @@
   text-decoration: none;
   text-transform: uppercase;
   background: url('../img/pdf.svg') no-repeat left top / 21px;
+  transition: 0.2s;
+  
+  &:hover {
+    color: rgba(182, 192, 212, 0.3);
+  }
 }  
 
 .header__theme {

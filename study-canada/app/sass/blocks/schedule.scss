@@ -7,6 +7,10 @@
   padding: 0;
   list-style: none;
   
+  &:last-child {
+    opacity: 0.3;
+  }
+  
   &:last-of-type {
     margin: 0;
   }

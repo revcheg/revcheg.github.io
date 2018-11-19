@@ -32,6 +32,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  
+  &:last-child {
+    opacity: 0.3;
+  }
 }
 
 .title__item {
@@ -101,5 +105,9 @@
   
   .title__subheading {
     font-size: 20px;
+  }
+  
+  .title__list {
+    margin: 0 0 35px 0;
   }
 }

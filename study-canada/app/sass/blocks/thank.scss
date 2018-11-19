@@ -1,0 +1,50 @@
+.thank {
+  display: flex;
+  height: 100vh;
+  background: url('../img/canada-bg.png') no-repeat bottom right;
+}
+
+.thank__inner {
+  margin: auto;
+  padding: 0 15px;
+}
+
+.thank__name {
+  display: block;
+  color: $main-red;
+  font-size: 30px;
+  text-align: center;
+}
+
+.thank__text {
+  margin: 0 0 30px 0;
+  color: $main-gray;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  
+  &--small {
+    font-weight: normal;
+    text-align: left;
+  }
+}
+
+.thank__button {
+  margin: 0 auto 30px auto;
+}
+
+@media screen and ($tablet-widths) {
+  .thank {
+    background: none;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .thank__name {
+    font-size: 20px;
+  }
+  
+  .thank__text {
+    font-size: 16px;
+  }
+}

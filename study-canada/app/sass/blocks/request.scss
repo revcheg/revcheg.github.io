@@ -9,6 +9,7 @@
   padding: 30px 20px;
   border-radius: 20px;
   background: #e2e2e2;
+  box-sizing: border-box;
 }
 
 .request__name {
@@ -22,4 +23,16 @@
 .request__form {
   width: 390px;
   margin: auto;
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .request__wrapper {
+    width: 300px;
+  }
+  
+  .request__form {
+    width: 100%;
+  }
 }

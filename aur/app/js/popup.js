@@ -5,14 +5,12 @@
   var popup = document.querySelector('.popup');
   
   newsLink.addEventListener('click', function () {
-    main.style.filter = 'blur(5px)';
-    popup.style.clip = 'auto';
-    popup.style.opacity = '1';
+    main.classList.add('main--blur');
+    popup.classList.add('popup--show');
   });
   
   closeBtn.addEventListener('click', function () {
-    main.style.filter = 'blur(0px)';
-    popup.style.clip = 'rect(0, 0, 0, 0)';
-    popup.style.opacity = '0';
+    main.classList.remove('main--blur');
+    popup.classList.remove('popup--show');
   });
 })();
