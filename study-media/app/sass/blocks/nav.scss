@@ -1,0 +1,47 @@
+.nav {
+  @include display-flex;
+  justify-content: space-between;
+}
+
+.nav__list {
+  @include display-flex;
+  @include clear-list;
+}
+
+.nav__logo {
+  margin: 0 30px 0 0;
+  transition: 0.3s;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.nav__item {
+  margin: 0 30px 0 0;
+  padding: 40px 0;
+  
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.nav__link {
+  padding: 0 0 36px 0;
+  color: #000;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+  transition: 0.3s;
+  
+  &:hover {
+    color: $main-red;
+    border-bottom: 4px solid $main-red;
+  }
+  
+  &--phone {
+    padding: 0 0 36px 30px;
+    background: url('../img/svg/phone.svg') no-repeat top left / 20px;
+  }
+}
