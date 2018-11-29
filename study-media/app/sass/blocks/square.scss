@@ -1,0 +1,56 @@
+.square {
+  position: absolute;
+  top: -40px;
+  left: -130px;
+  width: 200px;
+  height: 200px;
+  background: #ffe3a6;
+  transform: rotate(-45deg);
+  z-index: -1;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 300px;
+    height: 5px;
+    background: #ffa800;
+    animation: square-decorate-left 2s infinite alternate;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 300px;
+    height: 5px;
+    background: #dd0505;
+    animation: square-decorate-right 2s infinite alternate;
+  }
+  
+  &--rotate {
+    left: auto;
+    right: 300px;
+    width: 180px;
+    height: 180px;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes square-decorate-left {
+  0% {}
+  
+  100% {
+    right: -100px;
+  }
+}
+
+@keyframes square-decorate-right {
+  0% {}
+  
+  100% {
+    left: -100px;
+  }
+}

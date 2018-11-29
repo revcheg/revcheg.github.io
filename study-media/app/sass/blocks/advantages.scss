@@ -1,0 +1,146 @@
+.advantages {
+  
+}
+
+.advantages__name {
+  position: relative;
+  margin: 0 0 40px 0;
+  color: $main-red;
+  font-size: 70px;
+  font-weight: normal;
+  font-family: 'Sylfaen', sans-serif;
+  
+  &--small {
+    display: block;
+    font-size: 40px;
+  }
+}
+
+.advantages__inner {
+  position: relative;
+  margin: 0 0 30px 0;
+  z-index: 20;
+}
+
+.advantages__controll {
+  position: absolute;
+  top: 50%;
+  width: 120px;
+  height: 60px;
+  font-size: 0;
+  border: none;
+  background: $main-yellow;
+  cursor: pointer;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: translateX(-50%);
+  transition: 0.3s;
+  z-index: -1;
+  
+  &:hover .advantages__icon {
+    fill: $main-red;
+  }
+  
+  &--prev {
+    left: -70px;
+    transform: rotate(-90deg);
+    
+    &:hover {
+      left: -90px;
+    }
+  }
+  
+  &--next {
+    right: -70px;
+    transform: rotate(90deg);
+    
+    &:hover {
+      right: -90px;
+    }
+  }
+}
+
+.advantages__icon {
+  fill: #EBEBEB;
+  transition: 0.3s;
+  
+  &--prev {
+    transform: rotate(90deg);
+  }
+  
+  &--next {
+    transform: rotate(90deg);
+  }
+}
+
+.advantages__box {
+  position: relative;
+  box-sizing: border-box;
+  display: none;
+  padding: 0 40px 30px 40px;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.33);
+  background: #fff;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  visibility: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -115px;
+    left: -50px;
+    width: 1500px;
+    height: 500px;
+    background: #ebebeb;
+    transform: rotate(-15deg);
+  }
+  
+  &--show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.advantages__flex {
+  @include display-flex;
+  justify-content: space-between;
+}
+
+.advantages__content {
+  width: 600px;
+  z-index: 2;
+}
+
+.advantages__title {
+  position: relative;
+  margin: 0 0 0 150px;
+  font-size: 300px;
+  font-weight: normal;
+  font-family: 'Sylfaen', sans-serif;
+  
+  &--label {
+    position: absolute;
+    bottom: 110px;
+    left: 50px;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    background: $main-yellow;
+  }
+}
+
+.advantages__text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 150%;
+}
+
+.advantages__img {
+  width: 350px;
+  height: auto;
+  object-fit: cover;
+  z-index: 2;
+}
