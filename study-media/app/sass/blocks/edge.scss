@@ -1,24 +1,14 @@
 .edge {
-  padding: 120px 0;
+  padding: 0 0 120px 0;
 }
 
 .edge__flex {
   @include display-flex;
   justify-content: space-between;
-  margin: 0 0 30px 0;
 }
 
 .edge__content {
   width: 680px;
-}
-
-.edge__name {
-  position: relative;
-  margin: 0 0 100px 70px;
-  color: $main-red;
-  font-size: 70px;
-  font-weight: normal;
-  font-family: 'Sylfaen', sans-serif;
 }
 
 .edge__text {
@@ -31,6 +21,10 @@
     font-size: 24px;
     font-weight: 500;
   }
+  
+  &:first-of-type {
+    margin: 100px 0 0 0;
+  }
 }
 
 .edge__mockup {
@@ -38,7 +32,7 @@
   width: 537px;
   height: 537px;
   background: url('../img/edge-mockup.png') no-repeat center / contain;
-  animation: edge-mockup-rotate-reverse 2s 5 alternate;
+  animation: edge-mockup-rotate-reverse 2s infinite alternate;
   transform: rotate(-10deg);
   
   &::before {
@@ -50,7 +44,7 @@
     width: 400px;
     height: 400px;
     border: 10px solid $main-yellow;
-    animation: edge-mockup-rotate 2s 5 alternate;
+    animation: edge-mockup-rotate 2s infinite alternate;
     transform: rotate(-30deg);
   }
 }

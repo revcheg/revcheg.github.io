@@ -131,25 +131,32 @@ body {
     padding: 0 0 36px 30px;
     background: url("../img/svg/phone.svg") no-repeat top left/20px; }
 
+.heading {
+  position: relative;
+  margin: 0;
+  color: #dd0505;
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 100%; }
+  .heading--small {
+    display: inline-block;
+    font-size: 40px; }
+  .heading--center {
+    text-align: center; }
+  .heading--left {
+    padding: 0 0 0 60px;
+    font-size: 48px; }
+  .heading--smallest {
+    font-size: 28px; }
+
 .title {
-  padding: 230px 0 130px 0;
+  margin: 0 0 120px 0;
+  padding: 210px 0 130px 0;
   background: url("../img/title-bg.png") no-repeat top left; }
 
 .title__content {
   width: 560px;
   margin: 0 0 0 auto; }
-
-.title__name {
-  margin: 0 0 30px 0;
-  color: #dd0505;
-  font-size: 45px;
-  font-weight: 500;
-  text-align: center; }
-  .title__name--small {
-    display: block;
-    margin: 15px 0 0 0;
-    font-size: 30px;
-    font-weight: normal; }
 
 .title__text {
   padding: 10px 20px;
@@ -213,7 +220,7 @@ body {
   margin: 0 0 0 5px; }
 
 .edge {
-  padding: 120px 0; }
+  padding: 0 0 120px 0; }
 
 .edge__flex {
   display: -webkit-box;
@@ -224,19 +231,10 @@ body {
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 0 0 30px 0; }
+  justify-content: space-between; }
 
 .edge__content {
   width: 680px; }
-
-.edge__name {
-  position: relative;
-  margin: 0 0 100px 70px;
-  color: #dd0505;
-  font-size: 70px;
-  font-weight: normal;
-  font-family: 'Sylfaen', sans-serif; }
 
 .edge__text {
   font-size: 16px;
@@ -246,14 +244,16 @@ body {
     color: #dd0505;
     font-size: 24px;
     font-weight: 500; }
+  .edge__text:first-of-type {
+    margin: 100px 0 0 0; }
 
 .edge__mockup {
   position: relative;
   width: 537px;
   height: 537px;
   background: url("../img/edge-mockup.png") no-repeat center/contain;
-  -webkit-animation: edge-mockup-rotate-reverse 2s 5 alternate;
-  animation: edge-mockup-rotate-reverse 2s 5 alternate;
+  -webkit-animation: edge-mockup-rotate-reverse 2s infinite alternate;
+  animation: edge-mockup-rotate-reverse 2s infinite alternate;
   -webkit-transform: rotate(-10deg);
   transform: rotate(-10deg); }
   .edge__mockup::before {
@@ -266,8 +266,8 @@ body {
     width: 400px;
     height: 400px;
     border: 10px solid #ffa800;
-    -webkit-animation: edge-mockup-rotate 2s 5 alternate;
-    animation: edge-mockup-rotate 2s 5 alternate;
+    -webkit-animation: edge-mockup-rotate 2s infinite alternate;
+    animation: edge-mockup-rotate 2s infinite alternate;
     -webkit-transform: rotate(-30deg);
     transform: rotate(-30deg); }
 
@@ -327,11 +327,14 @@ body {
     animation: square-decorate-right 2s infinite alternate; }
   .square--rotate {
     left: auto;
-    right: 300px;
+    right: 250px;
     width: 180px;
     height: 180px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
+  .square--small {
+    width: 150px;
+    height: 150px; }
 
 @-webkit-keyframes square-decorate-left {
   0% { }
@@ -358,6 +361,7 @@ body {
   background: #e95356 url("../img/video-bg.jpg") no-repeat top/cover; }
 
 .video__name {
+  margin: 0;
   padding: 60px 0;
   color: #fff;
   font-size: 36px;
@@ -403,7 +407,7 @@ body {
     font-size: 40px; }
 
 .start__subtext {
-  margin: 0 0 30px 0;
+  margin: 50px 0 30px 0;
   font-weight: normal;
   line-height: 150%; }
 
@@ -494,7 +498,7 @@ body {
 
 .advantages__inner {
   position: relative;
-  margin: 0 0 30px 0;
+  margin: 40px 0 30px 0;
   z-index: 20; }
 
 .advantages__controll {
@@ -772,7 +776,8 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  margin: 70px 0 0 0; }
 
 .stages__item {
   position: relative;
@@ -920,6 +925,7 @@ body {
 
 .cost__table {
   width: 100%;
+  margin: 50px 0 0 0;
   border-collapse: collapse; }
 
 .cost__tr,
@@ -1001,7 +1007,8 @@ body {
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin: 50px 0 0 0; }
 
 .reviews__subtext {
   width: 300px;
