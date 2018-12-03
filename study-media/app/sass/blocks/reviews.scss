@@ -1,3 +1,20 @@
+.reviews {
+  position: relative;
+  margin: 0 0 150px 0;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background: #e6e6e6;
+    clip-path: polygon(0 20%, 100% 0, 100% 60%, 0 80%);
+    z-index: -1;
+  }
+}
+
 .reviews__name {
   margin: 0 0 50px 0;
   color: $main-red;
@@ -21,6 +38,15 @@
   margin: 0;
   font-size: 24px;
   font-weight: normal;
+  
+  &--red {
+    display: block;
+    margin: 20px 0 0 0;
+    color: $main-red;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: right;
+  }
 }
 
 .reviews__slider {
@@ -28,13 +54,16 @@
 }
 
 .reviews__list {
+  @include display-flex;
+  justify-content: space-between;
   @include clear-list;
 }
 
 .reviews__item {
   box-sizing: border-box;
   width: 360px;
-  padding: 15px 20px 30px 20px;
+  padding: 15px 20px 20px 20px;
+  background: #fff;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.33);
 }
 
@@ -44,13 +73,35 @@
 }
 
 .reviews__figure {
+  position: relative;
   margin: 0;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 15px;
+    height: 165px;
+    background: $main-yellow;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 175px;
+    height: 165px;
+    background: #ebebeb;
+    z-index: -1;
+  }
 }
 
 .reviews__img {
   width: 160px;
   height: 165px;
-  margin: 0 15px 0 0;
+  margin: 0 15px 0 15px;
   object-fit: cover;
 }
 
@@ -71,7 +122,29 @@
 }
 
 .reviews__quote {
+  height: 120px;
   margin: 0;
+  padding: 0 10px 0 0;
   font-weight: 300;
   line-height: 150%;
+  overflow-y: scroll;
+  
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: $main-yellow; 
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: darken($main-yellow, 5%); 
+  }
 }
