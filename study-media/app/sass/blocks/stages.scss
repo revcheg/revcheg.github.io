@@ -1,6 +1,6 @@
 .stages {
   position: relative;
-  padding: 70px 0 0 0;
+  padding: 70px 0 80px 0;
   
   &::before {
     content: '';
@@ -30,21 +30,50 @@
 }
 
 .stages__item {
-  // box-sizing: border-box;
-  // width: 220px;
-  // margin: 0 70px 0 0;
-  padding: 0 90px;
+  position: relative;
+  box-sizing: border-box;
+  width: 180px;
+  padding: 15px 0 15px 30px;
+  background: #fff;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
   
-  
-  &--1 {
-    background: url('../img/svg/stages-1.svg') no-repeat center / cover;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 40px;
+    height: 100%;
+    background: #fff;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
   }
+  
+  &:last-child {
+    
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.stages__number {
+  position: absolute;
+  top: -1px;
+  left: -70px;
+  color: $main-yellow;
+  font-size: 170px;
+  font-weight: 500;
+  line-height: 70%;
+}
+
+.stages__content {
+  border-left: 1px solid $main-yellow;
 }
 
 .stages__title {
   margin: 0 0 10px 0;
+  padding: 0 0 0 10px;
   color: $main-red;
   font-size: 15px;
   font-weight: 500;
-  padding: 0 90px;
 }
