@@ -69,7 +69,9 @@
   transition: 0.3s;
   
   &--center {
+    position: relative;
     text-align: center;
+    z-index: 1;
   }
 }
 

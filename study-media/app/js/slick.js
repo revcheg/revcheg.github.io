@@ -8,15 +8,15 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 1000,
-    responsive: [
-    {
+    responsive: [{
       breakpoint: 769,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
-       }
-     }
-   ]
+        slidesToScroll: 1,
+        arrow: false,
+        dots: true
+      }
+    }]
   });
   
   $('.advantages__list').slick({
