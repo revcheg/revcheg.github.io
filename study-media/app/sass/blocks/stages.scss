@@ -33,48 +33,52 @@
 .stages__item {
   position: relative;
   box-sizing: border-box;
-  width: 180px;
-  padding: 15px 0 15px 30px;
-  background: #fff;
-  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  width: 240px;
   
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -40px;
-    width: 40px;
-    height: 100%;
-    background: #fff;
-    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  &:nth-child(1) {
+    padding: 20px 0 20px 70px;
+    background: url('../img/stages-1.png') no-repeat center / cover;
   }
   
-  &:last-child {
-    
-    &::after {
-      display: none;
-    }
+  &:nth-child(2) {
+    padding: 20px 0 20px 80px;
+    background: url('../img/stages-2.png') no-repeat center / cover;
   }
-}
-
-.stages__number {
-  position: absolute;
-  top: -1px;
-  left: -70px;
-  color: $main-yellow;
-  font-size: 170px;
-  font-weight: 500;
-  line-height: 70%;
-}
-
-.stages__content {
-  border-left: 1px solid $main-yellow;
+  
+  &:nth-child(3) {
+    padding: 20px 0 20px 80px;
+    background: url('../img/stages-3.png') no-repeat center / cover;
+  }
+  
+  &:nth-child(4) {
+    padding: 20px 0 20px 80px;
+    background: url('../img/stages-4.png') no-repeat center / cover;
+  }
+  
+  &:nth-child(5) {
+    padding: 20px 0 20px 80px;
+    background: url('../img/stages-5.png') no-repeat center / cover;
+  }
 }
 
 .stages__title {
   margin: 0 0 10px 0;
   padding: 0 0 0 10px;
   color: $main-red;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
+}
+
+@media screen and ($tablet-widths) {
+  
+}
+
+@media screen and ($mobile-widths) {
+  .stages {
+    padding: 0;
+  }
+  
+  .stages__list {
+    flex-direction: column;
+  }
 }

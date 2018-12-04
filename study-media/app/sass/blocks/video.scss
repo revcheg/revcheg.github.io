@@ -37,3 +37,30 @@
   font-weight: normal;
   text-align: center;
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .video {
+    padding: 50px 0;
+  }
+  
+  .video__name {
+    box-sizing: border-box;
+    width: 300px;
+    margin: auto;
+    padding: 30px 10px;
+    font-size: 13px;
+    background: url('../img/border.png') no-repeat center / contain;
+  }
+  
+  .video__open {
+    width: 70px;
+    height: 70px;
+    margin: 30px auto 0 auto;
+  }
+  
+  .video__leading {
+    font-size: 16px;
+  }
+}

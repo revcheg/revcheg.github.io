@@ -69,3 +69,38 @@
   width: 670px;
   height: 670px;
 }
+
+@media screen and ($tablet-widths) {
+  
+}
+
+@media screen and ($mobile-widths) {
+  .contact__subtext {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .contact__phone {
+    text-align: center;
+  }
+  
+  .contact__flex {
+    flex-direction: column;
+  }
+  
+  .contact__content {
+    width: auto;
+  }
+  
+  .contact__item {
+    
+    &--media {
+      background: url('../img/svg/contact-point-media.svg') no-repeat left / 40px;
+    }
+  }
+  
+  .contact__map {
+    width: 100%;
+    height: 300px;
+  }
+}

@@ -11,6 +11,14 @@ body {
   padding: 0 15px;
 }
 
-@media screen and ($tablet-widths) {}
+@media screen and ($tablet-widths) {
+  .container {
+    width: 100%;
+  }
+}
 
-@media screen and ($mobile-widths) {}
+@media screen and ($mobile-widths) {
+  .container {
+    // background: lightgreen;
+  }
+}

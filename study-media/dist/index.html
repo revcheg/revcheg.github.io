@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Міжнародна Медіа-школа</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <!-- Slick -->
+  <link rel="stylesheet" href="js/slick/slick.css"/>
+  <link rel="stylesheet" href="js/slick/slick-theme.css"/>
 </head>
 <body>
   <header class="header">
@@ -44,7 +47,7 @@
     </div>
   </header>
   <main>
-    <div class="title">
+    <!-- <div class="title">
       <div class="container">
         <section class="title__content">
           <h1 class="heading">МІЖНАРОДНА<br>МЕДІА-ШКОЛА<span class="heading  heading--small">від 1+1 media та STUDY Academy</span></h1>
@@ -62,7 +65,7 @@
           </div>
         </section>
       </div>
-    </div>
+    </div> -->
     <section class="edge">
       <div class="container">
         <div class="edge__flex">
@@ -131,8 +134,8 @@
             Назад
             <svg class="advantages__icon  advantages__icon--prev" xmlns="http://www.w3.org/2000/svg" width="10" height="21"><path fill-rule="evenodd" d="M10 .003v1.996l-7.711 8.5 7.711 8.5v1.996L.004 10.499 10 .003z"/></svg>
           </button>
-          <ul class="advantages__slider">
-            <li>
+          <ul class="advantages__list">
+            <li class="advantages__item">
               <section class="advantages__box  advantages__box--show">
                 <div class="advantages__flex">
                   <div class="advantages__content">
@@ -143,7 +146,7 @@
                 </div>
               </section>
             </li>
-            <li>
+            <li class="advantages__item">
               <section class="advantages__box">
                 <div class="advantages__flex">
                   <div class="advantages__content">
@@ -154,7 +157,7 @@
                 </div>
               </section>
             </li>
-            <li>
+            <li class="advantages__item">
               <section class="advantages__box">
                 <div class="advantages__flex">
                   <div class="advantages__content">
@@ -165,7 +168,7 @@
                 </div>
               </section>
             </li>
-            <li>
+            <li class="advantages__item">
               <section class="advantages__box">
                 <div class="advantages__flex">
                   <div class="advantages__content">
@@ -176,7 +179,7 @@
                 </div>
               </section>
             </li>
-            <li>
+            <li class="advantages__item">
               <section class="advantages__box">
                 <div class="advantages__flex">
                   <div class="advantages__content">
@@ -187,7 +190,7 @@
                 </div>
               </section>
             </li>
-            <li>
+            <li class="advantages__item">
               <section class="advantages__box">
                 <div class="advantages__flex">
                   <div class="advantages__content">
@@ -198,7 +201,7 @@
                 </div>
               </section>
             </li>
-            <li>
+            <li class="advantages__item">
               <section class="advantages__box">
                 <div class="advantages__flex">
                   <div class="advantages__content">
@@ -224,7 +227,7 @@
     <section class="specialty">
       <h2 class="heading  heading--center"><span class="heading  heading--small">МЕДІА-ОСВІТA</span><br>ЗА КОРДОНОМ</h2>
       <ul class="specialty__list">
-        <li>
+        <li class="specialty__item">
           <section class="specialty__box">
             <div class="specialty__content">
               <h4 class="specialty__title">MEDIA & COMMUNICATION</h4>
@@ -235,11 +238,84 @@
               </p>
               <ul class="specialty__logo">
                 <li>
-                  <img src="img/svg/humber-logo.svg" width="67" height="36" alt="Humber">
+                  <img src="img/logo-humber.jpg" width="67" height="36" alt="Humber">
+                </li>
+                <li>
+                  <img src="img/logo-brunel.jpg" width="68" height="41" alt="Brunel">
+                </li>
+                <li>
+                  <img src="img/logo-pace.jpg" width="67" height="28" alt="Pace">
                 </li>
               </ul>
             </div>
             <img class="specialty__img" src="img/specialty-2.jpg" alt="MEDIA & COMMUNICATION">
+          </section>
+        </li>
+        <li class="specialty__item">
+          <section class="specialty__box">
+            <div class="specialty__content">
+              <h4 class="specialty__title">FILM & TV</h4>
+              <p class="specialty__text">
+                Режисура,<br>
+                Сценічне мистецтво,<br>
+                Акторська гра<br>
+                Телевиробництво
+              </p>
+              <ul class="specialty__logo">
+                <li>
+                  <img src="img/logo-bcit.jpg" width="56" height="56" alt="BCIT">
+                </li>
+                <li>
+                  <img src="img/logo-vancouver.jpg" width="60" height="31" alt="Vancouver">
+                </li>
+                <li>
+                  <img src="img/logo-trinity.jpg" width="86" height="51" alt="Trinity">
+                </li>
+              </ul>
+            </div>
+            <img class="specialty__img" src="img/specialty-3.jpg" alt="FILM & TV">
+          </section>
+        </li>
+        <li class="specialty__item">
+          <section class="specialty__box">
+            <div class="specialty__content">
+              <h4 class="specialty__title">JOURNALISM</h4>
+              <p class="specialty__text">
+                Журналістика,<br>
+                Письменництво,<br>
+                Аудіовізуальне мистецтво
+              </p>
+              <ul class="specialty__logo">
+                <li>
+                  <img src="img/logo-brighton.jpg" width="59" height="59" alt="Brighton">
+                </li>
+                <li>
+                  <img src="img/logo-holloway.jpg" width="58" height="29" alt="Holloway">
+                </li>
+                <li>
+                  <img src="img/logo-griffith.jpg" width="55" height="52" alt="Griffith">
+                </li>
+              </ul>
+            </div>
+            <img class="specialty__img" src="img/specialty-1.jpg" alt="JOURNALISM">
+          </section>
+        </li>
+        <li class="specialty__item">
+          <section class="specialty__box">
+            <div class="specialty__content">
+              <h4 class="specialty__title">INTERNATIONAL BROADCAST</h4>
+              <p class="specialty__text">
+                Ведучий програм на радіо і телебаченні,<br>
+                Диктор,<br>
+                Актор з озвучки текстів
+              </p>
+              <ul class="specialty__logo">
+                <li>
+                  <img src="" alt="">
+                </li>
+              </ul>
+            </div>
+            <img class="specialty__img" src="img/specialty-4.jpg" alt="INTERNATIONAL BROADCAST">
           </section>
         </li>
       </ul>
@@ -265,35 +341,30 @@
         <h2 class="heading  heading--center">ЕТАПИ ПРОГРАМИ</h2>
         <ul class="stages__list">
           <li class="stages__item">
-            <b class="stages__number">1</b>
             <div class="stages__content">
               <h3 class="stages__title">ІНТЕНСИВНА<br>АНГЛІЙСЬКА</h3>
               <a class="button  button--small" href="#">ДЕТАЛЬНІШЕ</a>
             </div>
           </li>
           <li class="stages__item">
-            <b class="stages__number">2</b>
             <div class="stages__content">
               <h3 class="stages__title">ПІДГОТОВКА<br>ДО IELTS</h3>
               <a class="button  button--small" href="#">ДЕТАЛЬНІШЕ</a>
             </div>
           </li>
           <li class="stages__item">
-            <b class="stages__number">3</b>
             <div class="stages__content">
               <h3 class="stages__title">АКАДЕМІЧНИЙ<br>МОДУЛЬ</h3>
               <a class="button  button--small" href="#">ДЕТАЛЬНІШЕ</a>
             </div>
           </li>
           <li class="stages__item">
-            <b class="stages__number">4</b>
             <div class="stages__content">
               <h3 class="stages__title">МЕДІА-БЛОК<br>ВІД 1+1 MEDIA</h3>
               <a class="button  button--small" href="#">ДЕТАЛЬНІШЕ</a>
             </div>
           </li>
           <li class="stages__item">
-            <b class="stages__number">5</b>
             <div class="stages__content">
               <h3 class="stages__title">ВСТУП ДО ВНЗ<br>ЗА КОРДОНОМ</h3>
               <a class="button  button--small" href="#">ДЕТАЛЬНІШЕ</a>
@@ -419,6 +490,10 @@
             </footer>
           </blockquote>
           <div class="reviews__slider">
+            <button class="advantages__controll  advantages__controll--prev">
+              Назад
+              <svg class="advantages__icon  advantages__icon--prev" xmlns="http://www.w3.org/2000/svg" width="10" height="21"><path fill-rule="evenodd" d="M10 .003v1.996l-7.711 8.5 7.711 8.5v1.996L.004 10.499 10 .003z"/></svg>
+            </button>
             <ul class="reviews__list">
               <li class="reviews__item">
                 <header class="reviews__header">
@@ -440,7 +515,31 @@
                 </header>
                 <blockquote class="reviews__quote">Ми часто подорожуємо з дітьми. А тепер старша дочка досить доросла і для самостійних закордонних поїздок. Після закінчення 7 класу вона провела 2 тижні в літньому таборі американської школи. Коли дитина повернулась із цієї подорожі, порівняння американської та української освіти стало звичною темою за нашими сімейними вечерями. Злата хоче поїхати до США на навчання, але, чесно кажучи, я ще не готова відпустити її так надовго. Тому можливість навчатись за американською шкільною програмою без виїзду за кордон стала справжньою знахідкою для нашої родини. Дитина вчиться виключно англійською мовою за програмою середньої школи США, дуже пишається цим та готується вступити до американського університету, а ми з чоловіком заспокоєні тим, що міжнародну освіту вона отримає в Україні. Це ідеальний варіант для нас!</blockquote>
               </li>
+              <li class="reviews__item">
+                <header class="reviews__header">
+                  <figure class="reviews__figure">
+                    <img class="reviews__img" src="img/review-2.jpg" alt="Ольга Фреймут">
+                    <figcaption class="reviews__author"><em>Ольга Фреймут</em></figcaption>
+                  </figure>
+                  <b class="reviews__short"><em>Це ідеальний варіант для нас</em></b>
+                </header>
+                <blockquote class="reviews__quote">Ми часто подорожуємо з дітьми. А тепер старша дочка досить доросла і для самостійних закордонних поїздок. Після закінчення 7 класу вона провела 2 тижні в літньому таборі американської школи. Коли дитина повернулась із цієї подорожі, порівняння американської та української освіти стало звичною темою за нашими сімейними вечерями. Злата хоче поїхати до США на навчання, але, чесно кажучи, я ще не готова відпустити її так надовго. Тому можливість навчатись за американською шкільною програмою без виїзду за кордон стала справжньою знахідкою для нашої родини. Дитина вчиться виключно англійською мовою за програмою середньої школи США, дуже пишається цим та готується вступити до американського університету, а ми з чоловіком заспокоєні тим, що міжнародну освіту вона отримає в Україні. Це ідеальний варіант для нас!</blockquote>
+              </li>
+              <li class="reviews__item">
+                <header class="reviews__header">
+                  <figure class="reviews__figure">
+                    <img class="reviews__img" src="img/review-2.jpg" alt="Ольга Фреймут">
+                    <figcaption class="reviews__author"><em>Ольга Фреймут</em></figcaption>
+                  </figure>
+                  <b class="reviews__short"><em>Це ідеальний варіант для нас</em></b>
+                </header>
+                <blockquote class="reviews__quote">Ми часто подорожуємо з дітьми. А тепер старша дочка досить доросла і для самостійних закордонних поїздок. Після закінчення 7 класу вона провела 2 тижні в літньому таборі американської школи. Коли дитина повернулась із цієї подорожі, порівняння американської та української освіти стало звичною темою за нашими сімейними вечерями. Злата хоче поїхати до США на навчання, але, чесно кажучи, я ще не готова відпустити її так надовго. Тому можливість навчатись за американською шкільною програмою без виїзду за кордон стала справжньою знахідкою для нашої родини. Дитина вчиться виключно англійською мовою за програмою середньої школи США, дуже пишається цим та готується вступити до американського університету, а ми з чоловіком заспокоєні тим, що міжнародну освіту вона отримає в Україні. Це ідеальний варіант для нас!</blockquote>
+              </li>
             </ul>
+            <button class="advantages__controll  advantages__controll--next">
+              Вперед
+              <svg class="advantages__icon  advantages__icon--next" xmlns="http://www.w3.org/2000/svg" width="10" height="21"><path fill-rule="evenodd" d="M10 .003v1.996l-7.711 8.5 7.711 8.5v1.996L.004 10.499 10 .003z"/></svg>
+            </button>
           </div>
         </div>
       </div>
@@ -494,6 +593,10 @@
       </div>
     </div>
   </main>
+  <!-- Slick -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick/slick.min.js"></script>
+  <!-- Main -->
   <script src="js/main.min.js" async></script>
 </body>
 </html>

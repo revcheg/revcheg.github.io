@@ -4,9 +4,7 @@
 
 .advantages__inner {
   position: relative;
-  height: 550px;
   margin: 40px 0 80px 0;
-  // z-index: 1;
 }
 
 .advantages__controll {
@@ -21,19 +19,19 @@
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   transform: translateX(-50%);
   transition: 0.3s;
-  // z-index: -1;
+  z-index: 1;
   
   &:hover .advantages__icon {
     fill: $main-red;
   }
   
   &--prev {
-    left: -70px;
+    left: -7px;
     transform: rotate(-90deg);
   }
   
   &--next {
-    right: -70px;
+    right: -8px;
     transform: rotate(90deg);
   }
 }
@@ -51,24 +49,26 @@
   }
 }
 
-.advantages__slider {
-  position: relative;
+.advantages__list {
+  width: 90%;
   @include clear-list;
-  background: #fff;
+  margin: auto;
+}
+
+.advantages__item {
+  margin: 5px;
+  outline: none;
 }
 
 .advantages__box {
-  position: absolute;
-  top: 10px;
-  right: -10px;
+  position: relative;
   box-sizing: border-box;
   width: 100%;
   height: 550px;
+  margin: 0 auto;
   padding: 0 40px 30px 40px;
-  background: #fff;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.33);
   overflow: hidden;
-  opacity: 0.5;
   transition: 0.5s;
   
   &::before {
@@ -80,13 +80,7 @@
     height: 500px;
     background: #ebebeb;
     transform: rotate(-15deg);
-  }
-  
-  &--show {
-    top: 0;
-    right: 0;
-    opacity: 1;
-    z-index: 1;
+    z-index: -1;
   }
 }
 
@@ -97,7 +91,6 @@
 
 .advantages__content {
   width: 600px;
-  z-index: 1;
 }
 
 .advantages__title {
@@ -105,7 +98,6 @@
   margin: 0 0 0 150px;
   font-size: 300px;
   font-weight: normal;
-  font-family: 'Sylfaen', sans-serif;
   
   &--label {
     position: absolute;
@@ -114,7 +106,6 @@
     padding: 10px 20px;
     font-size: 24px;
     font-weight: 300;
-    font-family: 'Montserrat', sans-serif;
     background: $main-yellow;
   }
 }
@@ -131,4 +122,43 @@
   height: auto;
   object-fit: cover;
   z-index: 1;
+}
+
+@media screen and ($tablet-widths) {
+  
+}
+
+@media screen and ($mobile-widths) {
+  .advantages__controll {
+    display: none !important;
+  }
+  
+  .advantages__list {
+    width: 100%;
+  }
+  
+  .advantages__box {
+    padding: 20px;
+  }
+  
+  .advantages__content {
+    width: auto;
+  }
+  
+  .advantages__flex {
+    flex-direction: column;
+  }
+  
+  .advantages__title {
+    margin: 0;
+    font-size: 200px;
+    
+    &--label {
+      font-size: 18px;
+    }
+  }
+  
+  .advantages__img {
+    display: none !important;
+  }
 }

@@ -24,3 +24,25 @@
     font-size: 28px;
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .heading {
+    font-size: 30px;
+    text-align: center;
+    
+    &--small {
+      display: block;
+      font-size: 20px;
+    }
+    
+    &--smallest {
+      font-size: 18px;
+    }
+    
+    &--left {
+      padding: 0;
+    }
+  }
+}
