@@ -42,8 +42,8 @@ $(document).ready(function(){
   });
   
   $('.reviews__list').slick({
-    prevArrow: $('.reviews__slider .advantages__controll--prev'),
-    nextArrow: $('.reviews__slider .advantages__controll--next'),
+    prevArrow: $('.reviews__controll--prev'),
+    nextArrow: $('.reviews__controll--next'),
     // autoplay: true,
     autoplaySpeed: 1500,
     arrow: true,

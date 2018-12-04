@@ -135,9 +135,46 @@ body {
     padding: 40px 0 36px 30px;
     background: url("../img/svg/phone.svg") no-repeat left/20px; }
 
+.nav__open {
+  display: none; }
+
 @media screen and (max-width: 768px) {
-  .nav {
-    display: none; } }
+  .nav__list {
+    padding: 10px 0; }
+    .nav__list--mobile {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100vw;
+      height: 100vh;
+      background: #fff;
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%); }
+      .nav__list--mobile--show {
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%); }
+  .nav__item {
+    margin: 0;
+    padding: 50px 0; }
+  .nav__logo {
+    margin: 0 10px 0 0; }
+  .nav__open {
+    display: block; } }
 
 .heading {
   position: relative;
@@ -580,7 +617,7 @@ body {
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg); }
   .advantages__controll--next {
-    right: -8px;
+    right: -7px;
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg); }
 
@@ -1200,6 +1237,44 @@ body {
   padding: 0;
   list-style: none; }
 
+.reviews__controll {
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 40px;
+  font-size: 0;
+  border: none;
+  background: #ffa800;
+  cursor: pointer;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 1; }
+  .reviews__controll:hover .reviews__icon {
+    fill: #dd0505; }
+  .reviews__controll--prev {
+    left: -65px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
+  .reviews__controll--next {
+    right: -65px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
+
+.reviews__icon {
+  fill: #EBEBEB;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .reviews__icon--prev {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
+  .reviews__icon--next {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
+
 .reviews__item {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1298,6 +1373,8 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     margin: 30px 0 0 0; }
+  .reviews__controll {
+    display: none; }
   .reviews__slider {
     width: 90%; }
   .reviews__item {

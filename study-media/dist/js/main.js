@@ -1,3 +1,11 @@
+(function () {
+  var openButton = document.querySelector('.nav__open');
+  var nav = document.querySelector('.nav__list--mobile');
+  
+  openButton.addEventListener('click', function () {
+    nav.classList.add('nav__list--mobile--show');
+  });
+})();
 $(document).ready(function(){
   $('.specialty__list').slick({
     // autoplay: true,
@@ -42,8 +50,8 @@ $(document).ready(function(){
   });
   
   $('.reviews__list').slick({
-    prevArrow: $('.reviews__slider .advantages__controll--prev'),
-    nextArrow: $('.reviews__slider .advantages__controll--next'),
+    prevArrow: $('.reviews__controll--prev'),
+    nextArrow: $('.reviews__controll--next'),
     // autoplay: true,
     autoplaySpeed: 1500,
     arrow: true,

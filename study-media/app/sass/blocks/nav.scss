@@ -48,10 +48,45 @@
   }
 }
 
+.nav__open {
+  display: none;
+}
+
 @media screen and ($tablet-widths) {}
 
 @media screen and ($mobile-widths) {
-  .nav {
-    display: none;
+  .nav__list {
+    padding: 10px 0;
+    
+    &--mobile {
+      position: fixed;
+      top: 0;
+      left: 0;
+      @include display-flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      width: 100vw;
+      height: 100vh;
+      background: #fff;
+      transform: translateY(-100%);
+      
+      &--show {
+        transform: translateY(0%);
+      }  
+    }
+  }
+  
+  .nav__item {
+    margin: 0;
+    padding: 50px 0;
+  }
+  
+  .nav__logo {
+    margin: 0 10px 0 0;
+  }
+  
+  .nav__open {
+    display: block;
   }
 }

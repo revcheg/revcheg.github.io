@@ -61,6 +61,48 @@
   @include clear-list;
 }
 
+.reviews__controll {
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 40px;
+  font-size: 0;
+  border: none;
+  background: $main-yellow;
+  cursor: pointer;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: translateX(-50%);
+  transition: 0.3s;
+  z-index: 1;
+  
+  &:hover .reviews__icon {
+    fill: $main-red;
+  }
+  
+  &--prev {
+    left: -65px;
+    transform: rotate(-90deg);
+  }
+  
+  &--next {
+    right: -65px;
+    transform: rotate(90deg);
+  }
+}
+
+.reviews__icon {
+  fill: #EBEBEB;
+  transition: 0.3s;
+  
+  &--prev {
+    transform: rotate(90deg);
+  }
+  
+  &--next {
+    transform: rotate(90deg);
+  }
+}
+
 .reviews__item {
   box-sizing: border-box;
   width: 360px;
@@ -175,6 +217,10 @@
   .reviews__flex {
     flex-direction: column;
     margin: 30px 0 0 0;
+  }
+  
+  .reviews__controll {
+    display: none;
   }
   
   .reviews__slider {
