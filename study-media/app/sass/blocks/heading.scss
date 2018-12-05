@@ -6,6 +6,10 @@
   font-weight: 500;
   line-height: 100%;
   
+  &--yellow {
+    color: $main-yellow;
+  }
+  
   &--small {
     display: inline-block;
     font-size: 40px;

@@ -70,7 +70,9 @@
 }
 
 @media screen and ($tablet-widths) {
-  
+  .stages__list {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and ($mobile-widths) {

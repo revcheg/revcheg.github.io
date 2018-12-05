@@ -112,7 +112,9 @@
 }
 
 @media screen and ($tablet-widths) {
-  
+  .process__flex {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and ($mobile-widths) {

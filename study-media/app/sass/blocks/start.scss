@@ -33,7 +33,7 @@
     content: '';
     position: absolute;
     top: 15px;
-    right: -20px;
+    right: 0;
     width: 1050px;
     height: 355px;
     background: #e5e5e5;
@@ -104,7 +104,11 @@
   margin: auto;
 }
 
-@media screen and ($tablet-widths) {}
+@media screen and ($tablet-widths) {
+  .start__flex {
+    flex-wrap: wrap;
+  }
+}
 
 @media screen and ($mobile-widths) {
   .start {

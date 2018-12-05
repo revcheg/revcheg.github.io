@@ -54,20 +54,31 @@
   font-weight: 500;
 }
 
-.popup__calendar {
+.popup__warning {
   margin: 0 0 0 30px;
   padding: 10px 0 10px 45px;
   font-size: 14px;
   font-weight: 500;
-  background: url('../img/svg/calendar.svg') no-repeat left / 30px;
-}
-
-.popup__map {
-  margin: 0 0 0 30px;
-  padding: 10px 0 10px 45px;
-  font-size: 14px;
-  font-weight: 500;
-  background: url('../img/svg/point.svg') no-repeat left / 30px;
+  
+  &--calendar {
+    background: url('../img/svg/calendar.svg') no-repeat left / 30px;
+  }
+  
+  &--academy {
+    background: url('../img/svg/contact-point.svg') no-repeat left / 30px;
+  }
+  
+  &--media {
+    background: url('../img/svg/contact-point-media.svg') no-repeat left / 30px;
+  }
+  
+  &--guarantee {
+    background: url('../img/svg/cap.svg') no-repeat left / 30px;
+  }
+  
+  &--experts {
+    background: url('../img/svg/employees.svg') no-repeat left / 30px;
+  }
 }
 
 .popup__text {
@@ -77,7 +88,7 @@
 }
 
 .popup__scroll {
-  height: 250px;
+  height: 200px;
   overflow-y: scroll;
   
   &::-webkit-scrollbar {

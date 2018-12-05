@@ -65,7 +65,15 @@
   }
 }
 
-@media screen and ($tablet-widths) {}
+@media screen and ($tablet-widths) {
+  .edge__flex {
+    flex-wrap: wrap;
+  }
+  
+  .edge__mockup {
+    margin: auto;
+  }
+}
 
 @media screen and ($mobile-widths) {
   .edge {

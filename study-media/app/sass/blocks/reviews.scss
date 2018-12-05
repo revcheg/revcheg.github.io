@@ -53,6 +53,7 @@
 .reviews__slider {
   position: relative;
   width: 730px;
+  margin: 0 50px 0 0;
 }
 
 .reviews__list {
@@ -196,7 +197,14 @@
 }
 
 @media screen and ($tablet-widths) {
+  .reviews__flex {
+    flex-wrap: wrap;
+  }
   
+  .reviews__slider {
+    width: 650px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and ($mobile-widths) {

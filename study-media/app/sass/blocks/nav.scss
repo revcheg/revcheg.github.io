@@ -66,7 +66,25 @@
   }
 }
 
-@media screen and ($tablet-widths) {}
+@media screen and ($tablet-widths) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav__item {
+    padding: 20px 0;
+  }
+  
+  .nav__link {
+    border: none;
+    font-size: 14px;
+    
+    &:hover {
+      border: none;
+    }
+  }
+}
 
 @media screen and ($mobile-widths) {
   .nav__list {
