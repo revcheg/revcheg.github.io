@@ -91,7 +91,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 15px 0;
+  padding: 10px 0;
   background: rgba(255, 255, 255, 0.9);
   -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
@@ -137,9 +137,9 @@ body {
     margin: 0; }
 
 .nav__link {
-  padding: 40px 0 36px 0;
+  padding: 30px 0 27px 0;
   color: #000;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   text-decoration: none;
   border-bottom: 4px solid transparent;
@@ -149,7 +149,7 @@ body {
     color: #dd0505;
     border-bottom: 4px solid #dd0505; }
   .nav__link--phone {
-    padding: 40px 0 36px 30px;
+    padding: 30px 0 27px 30px;
     background: url("../img/svg/phone.svg") no-repeat left/20px; }
 
 .nav__open {
@@ -260,8 +260,7 @@ body {
       padding: 0; } }
 
 .title {
-  margin: 0 0 120px 0;
-  padding: 210px 0 130px 0; }
+  padding: 200px 0; }
 
 .title__text {
   margin: 170px 0 30px 0;

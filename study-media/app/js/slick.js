@@ -7,7 +7,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    speed: 1000,
+    // speed: 1000,
     responsive: [{
       breakpoint: 769,
       settings: {
@@ -29,7 +29,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 1000,
+    // speed: 1000,
     responsive: [
     {
       breakpoint: 769,
@@ -51,7 +51,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 2,
-    speed: 1000,
+    // speed: 1000,
     responsive: [
     {
       breakpoint: 769,
