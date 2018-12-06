@@ -64,6 +64,32 @@
 
 @media screen and ($mobile-widths) {
   .square {
-    display: none;
+    // display: none;
+    top: 0;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      right: 0;
+      width: 200px;
+      height: 5px;
+      background: #ffa800;
+      animation: square-decorate-left 2s infinite alternate;
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 200px;
+      height: 5px;
+      background: #dd0505;
+      animation: square-decorate-right 2s infinite alternate;
+    }
   }
 }

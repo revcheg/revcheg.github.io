@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('.specialty__list').slick({
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 1500,
     arrow: false,
     dots: false,
@@ -22,7 +22,7 @@ $(document).ready(function(){
   $('.advantages__list').slick({
     prevArrow: $('.advantages__controll--prev'),
     nextArrow: $('.advantages__controll--next'),
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 1500,
     arrow: true,
     dots: false,
@@ -44,7 +44,7 @@ $(document).ready(function(){
   $('.reviews__list').slick({
     prevArrow: $('.reviews__controll--prev'),
     nextArrow: $('.reviews__controll--next'),
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 1500,
     arrow: true,
     dots: false,
