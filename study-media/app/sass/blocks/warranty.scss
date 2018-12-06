@@ -1,5 +1,5 @@
 .warranty {
-  padding: 50px 0 100px 0;
+  padding: 50px 0 0 0;
 }
 
 .warranty__flex {
@@ -47,7 +47,7 @@
     width: 572px;
     height: 430px;
     border: 10px solid $main-yellow;
-    animation: 1s mockup infinite alternate;
+    animation: 1.5s mockup infinite alternate;
   }
 }
 
@@ -55,8 +55,8 @@
   0% {}
   
   100% {
-    top: -50px;
-    left: -50px;
+    top: -20px;
+    left: -20px;
   }
 }
 

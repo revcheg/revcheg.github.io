@@ -19,6 +19,7 @@
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   transform: translateX(-50%);
   transition: 0.3s;
+  outline: none;
   z-index: 1;
   
   &:hover .advantages__icon {
@@ -98,7 +99,8 @@
   margin: 0 0 0 150px;
   font-size: 300px;
   font-weight: normal;
-  
+  font-family: 'Sylfaen', sans-serif;
+
   &--label {
     position: absolute;
     bottom: 110px;
@@ -106,6 +108,7 @@
     padding: 10px 20px;
     font-size: 24px;
     font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
     background: $main-yellow;
   }
 }
@@ -129,6 +132,10 @@
 }
 
 @media screen and ($mobile-widths) {
+  .advantages {
+    padding: 0 0 50px 0;
+  }
+  
   .advantages__controll {
     display: none !important;
   }
@@ -154,7 +161,7 @@
     font-size: 200px;
     
     &--label {
-      font-size: 18px;
+      font-size: 16px;
     }
   }
   

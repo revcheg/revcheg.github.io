@@ -1,6 +1,6 @@
 .stages {
   position: relative;
-  padding: 70px 0 80px 0;
+  padding: 170px 0 80px 0;
   
   &::before {
     content: '';
@@ -56,7 +56,7 @@
   }
   
   &:nth-child(5) {
-    padding: 20px 0 20px 80px;
+    padding: 20px 0 20px 85px;
     background: url('../img/stages-5.png') no-repeat center / cover;
   }
 }
@@ -77,10 +77,51 @@
 
 @media screen and ($mobile-widths) {
   .stages {
-    padding: 0;
+    padding: 50px 0 0 0;
   }
   
   .stages__list {
     flex-direction: column;
+    margin: 30px 0;
+  }
+  
+  .stages__item {
+    margin: 0 0 20px 0;
+    
+    &:nth-child(1) {
+      background: url('../img/stages-1-mobile.png') no-repeat center / cover;
+    }
+    
+    &:nth-child(2) {
+      background: url('../img/stages-2-mobile.png') no-repeat center / cover;
+    }
+    
+    &:nth-child(3) {
+      background: url('../img/stages-3-mobile.png') no-repeat center / cover;
+    }
+    
+    &:nth-child(4) {
+      background: url('../img/stages-4-mobile.png') no-repeat center / cover;
+    }
+    
+    &:nth-child(5) {
+      margin: 0;
+      background: url('../img/stages-5-mobile.png') no-repeat center / cover;
+      
+      &::after {
+        display: none;
+      }
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -21px;
+      left: 50%;
+      width: 90px;
+      height: 30px;
+      background: url('../img/stage-arrow-mobile.png') no-repeat center / cover;
+      transform: translateX(-50%);
+    }
   }
 }

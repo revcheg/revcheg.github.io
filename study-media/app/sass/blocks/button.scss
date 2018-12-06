@@ -2,8 +2,9 @@
   // display: block;
   @include display-flex;
   justify-content: center;
+  box-sizing: border-box;
   width: 195px;
-  padding: 13px 0;
+  padding: 13px;
   color: #fff;
   font-size: 18px;
   font-weight: normal;
@@ -34,4 +35,21 @@
 .button__icon {
   fill: #fff;
   margin: 0 0 0 5px;
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .button {
+    width: 170px;
+    padding: 10px;
+    font-size: 16px;
+    
+    &--small {
+      width: 130px;
+      margin: 0 0 0 10px;
+      padding: 8px;
+      font-size: 12px;
+    }
+  }
 }

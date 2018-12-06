@@ -1,5 +1,4 @@
 .title {
-  // margin: 0 0 120px 0;
   padding: 200px 0;
 }
 
@@ -7,6 +6,7 @@
   margin: 170px 0 30px 0;
   font-size: 18px;
   font-weight: normal;
+  line-height: 150%;
 }
 
 .title__flex {
@@ -17,4 +17,29 @@
   margin: 0 70px 0 0;
   font-size: 18px;
   font-weight: 600;
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .title {
+    padding: 100px 0 0 0;
+  }
+  
+  .title__text {
+    margin: 30px 0 10px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .title__flex {
+    flex-direction: column;
+  }
+  
+  .title__warning {
+    display: inline-block;
+    margin: 0;
+    font-size: 13px;
+    text-align: center;
+  }
 }
