@@ -1,5 +1,5 @@
 .edge {
-  padding: 0 0 120px 0;
+  padding: 100px 0;
 }
 
 .edge__flex {
@@ -44,7 +44,7 @@
     width: 380px;
     height: 380px;
     border: 10px solid $main-yellow;
-    // animation: edge-mockup-rotate 2s infinite alternate;
+    animation: edge-mockup-rotate 2s infinite alternate;
     transform: rotate(-30deg);
   }
 }

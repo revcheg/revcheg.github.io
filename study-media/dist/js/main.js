@@ -143,7 +143,7 @@ $(document).ready(function(){
     dots: false,
     infinite: true,
     slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     // speed: 100a0,
     responsive: [
     {

@@ -1,0 +1,17 @@
+.request {
+  padding: 150px 0;
+  background: #e6e6e6 url('../img/request-bg.jpg') no-repeat center / cover;
+}
+
+.request__form {
+  width: 435px;
+  margin: auto;
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .request__form {
+    width: 95%;
+  }
+}
