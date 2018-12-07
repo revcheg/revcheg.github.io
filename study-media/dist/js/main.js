@@ -94,12 +94,13 @@
 $(document).ready(function(){
   $('.specialty__list').slick({
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 2000,
     arrow: false,
     dots: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    centerMode: true,
     // speed: 1000,
     responsive: [{
       breakpoint: 769,
