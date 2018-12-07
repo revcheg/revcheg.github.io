@@ -962,7 +962,6 @@ body {
 .specialty__img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 45%;
   height: 215px;
   border: 10px solid #ffa800;
   -o-object-fit: cover;
