@@ -29,28 +29,27 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__logo">
-            <a href="#">
-              <img src="img/svg/logo-study.svg" width="57" height="57" alt="STUDY.UA">
-            </a>
+            <img src="img/svg/logo-study.svg" width="57" height="57" alt="STUDY.UA">
           </li>
           <li class="nav__logo">
-            <a href="#">
-              <img src="img/svg/logo-media.svg" width="57" height="57" alt="Вища школа Media and Production">
-            </a>
+            <img src="img/svg/logo-media.svg" width="57" height="57" alt="Вища школа Media and Production">
           </li>
         </ul>
         <ul class="nav__list  nav__list--mobile  nav__list--inactive">
           <li class="nav__item">
-            <a class="nav__link" href="#program">Про програму</a>
+            <a class="nav__link" href="#whom">Для кого?</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#stages">Етапи програми</a>
+            <a class="nav__link" href="#advantages">Переваги</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#process">Навчальний процес</a>
+            <a class="nav__link" href="#structure">Структура курсу</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link  nav__link--phone" href="tel:044 500 03 20">(044) 500-03-20</a>
+            <a class="nav__link" href="#contacts">Контакти</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link  nav__link--phone" href="tel:044 290 77 77">(044) 290-77-77</a>
           </li>
         </ul>
         <button class="nav__open">Открыть Меню</button>
@@ -97,7 +96,7 @@
       <button class="video__open">Перегляд Відео</button>
       <p class="video__leading">Жанна Хромова, куратор программы</p>
     </section>
-    <section class="start">
+    <section class="start" id="whom">
       <div class="container">
         <h2 class="heading  heading--center">СТАРТ<br><span class="heading--small">БЕЗМЕЖНИХ МОЖЛИВОСТЕЙ</span>
           <div class="square  square--small  square--rotate"></div>
@@ -141,7 +140,7 @@
         </a>
       </div>
     </section>
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <div class="container">
         <h2 class="heading">ПЕРЕВАГИ<br><span class="heading--small">МІЖНАРОДНОЇ МЕДІА-ШКОЛИ</span>
           <div class="square  square--small"></div>
@@ -212,7 +211,7 @@
               <section class="advantages__box">
                 <div class="advantages__flex">
                   <div class="advantages__content">
-                    <h4 class="advantages__title">5<span class="advantages__title--label">Зйомки в студіях "Сніданку з 1+1" та "ТСН"</span></h4>
+                    <h4 class="advantages__title">5<span class="advantages__title--label">ЗЙОМКИ В СТУДІЯХ "СНІДАНКУ З 1+1" ТА "ТСН"</span></h4>
                     <p class="advantages__text">Навчальний блок медіа-предметів викладається у самому серці студії 1+1. Заняття проводять найкращі спеціалісти українського медіа-ринку. Завдяки цьому студенти отримують знання та досвід в сфері телебачення, журналістики та медіа-менеджменту.</p>
                   </div>
                   <picture>
@@ -444,7 +443,7 @@
         </a>
       </div>
     </section>
-    <section class="stages" id="stages">
+    <section class="stages" id="structure">
       <div class="container">
         <h2 class="heading  heading--center">ЕТАПИ ПРОГРАМИ</h2>
         <ul class="stages__list">
@@ -481,7 +480,7 @@
         </ul>
       </div>
     </section>
-    <section class="process" id="process">
+    <section class="process">
       <div class="container">
         <h2 class="heading">
           ПРОЦЕС НАВЧАННЯ
@@ -527,16 +526,16 @@
         <h2 class="heading  heading--center">ВАРТІСТЬ НАВЧАННЯ</h2>
         <table class="cost__table">
           <tr class="cost__tr">
-            <td class="cost__th">INTERMEDIATE</td>
-            <td class="cost__th">UPPER</td>
-            <td class="cost__th">IELTS</td>
-            <td class="cost__th">ACADEMIC</td>
+            <td class="cost__th" data-label="Name">INTERMEDIATE</td>
+            <td class="cost__th" data-label="sss">UPPER</td>
+            <td class="cost__th" data-label="Name">IELTS</td>
+            <td class="cost__th" data-label="Name">ACADEMIC</td>
           </tr>
           <tr class="cost__tr">
-            <th class="cost__td  cost__td--summary">€2490<span class="cost__td  cost__td--small">/курс</span></th>
-            <th class="cost__td  cost__td--summary">€2230<span class="cost__td  cost__td--small">/курс</span></th>
-            <th class="cost__td  cost__td--summary">€1960<span class="cost__td  cost__td--small">/курс</span></th>
-            <th class="cost__td  cost__td--summary">€1590<span class="cost__td  cost__td--small">/курс</span></th>
+            <th class="cost__td  cost__td--summary" data-label="Cost">€2490<span class="cost__td  cost__td--small">/курс</span></th>
+            <th class="cost__td  cost__td--summary" data-label="Cost">€2230<span class="cost__td  cost__td--small">/курс</span></th>
+            <th class="cost__td  cost__td--summary" data-label="Cost">€1960<span class="cost__td  cost__td--small">/курс</span></th>
+            <th class="cost__td  cost__td--summary" data-label="Cost">€1590<span class="cost__td  cost__td--small">/курс</span></th>
           </tr>
           <tr class="cost__tr">
             <td class="cost__td">Рекомендовано для рівня англійської Pre-Intermediate.</td>
@@ -690,20 +689,22 @@
         </div>
       </div>
     </section>
-    <div class="contact">
+    <div class="contact" id="contacts">
       <div class="container">
         <div class="contact__flex">
           <div class="contact__content">
-            <h2 class="heading  heading--small">
-              ЗАЛИШИЛИСЬ ПИТАННЯ?
+            <h2 class="heading  heading--smallest">
+              Запишіться на зустріч з менеджером!
               <div class="square  square--small"></div>
             </h2>
-            <p class="contact__subtext">Зателефонуйте, щоб дізнатися про програму більше</p>
+            <p class="contact__subtext">Телефонуйте за номером:</p>
             <a class="contact__phone" href="tel:044 290 77 77">(044) 290-7777</a>
+            <p class="contact__subtext">Приходьте до нас за адресою:</p>
+            <p class="contact__subtext  contact__subtext--second">Офіс компанії STUDY.UA<br>вул. Драгомирова, 16<br>ЖК Новопечерські Липки</p>
             <section class="contact__address">
-              <h3 class="contact__title">АКАДЕМІЧНІ ЦЕНТРИ</h3>
+              <h3 class="contact__title">ДЕ ПРОХОДИТЬ НАВЧАННЯ?</h3>
               <ul class="contact__list">
-                <li class="contact__item">
+                <li class="contact__item  contact__item--study">
                   <b class="contact__station">ПЕЧЕРСЬК</b>
                   вул. Драгомирова, 18
                 </li>
@@ -758,6 +759,10 @@
           <p class="popup__text">Необхідність та тривалість курсу інтенсивного вивчення англійської мови залежить від результатів вступного тестування, яке ми проводимо для всіх абітурієнтів Міжнародної медіа-школи. Цей етап може складатися з одного, двох або трьох навчальних рівнів (12, 24 або 36 тижнів).</p>
           <p class="popup__text"><b>Учні займаються по 6 академічних годин на тиждень.</b> Один рівень включає 30 занять, 10 з яких проводить носій мови. Таким чином, за 12 тижнів опановується один мовний рівень. Навчання відбувається за новітніми методиками з використанням посібників іноземних видавництв (Oxford University Press, Cambridge University Press, Cengage Learning і т.д.).</p>
         </div>
+        <a class="button  start__button" href="#form_103850_1">
+          Подати заявку
+          <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 129 129"><g><path d="M40.5 61.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l18.9 18.9c.8.8 1.8 1.2 2.9 1.2h.2c1.1-.1 2.2-.6 3-1.5L107 28.8c1.4-1.7 1.2-4.3-.5-5.8-1.7-1.4-4.3-1.2-5.8.5L56.2 76.8 40.5 61.1z"/><path d="M95.1 15.3c-23-14.4-52.5-11-71.7 8.2C.8 46.1.8 83 23.4 105.6a57.94 57.94 0 0 0 82 0c19.3-19.3 22.6-48.9 8.1-71.9-1.2-1.9-3.7-2.5-5.6-1.3-1.9 1.2-2.5 3.7-1.3 5.6 12.5 19.8 9.6 45.2-7 61.8-19.4 19.4-51.1 19.4-70.5 0s-19.4-51.1 0-70.5C45.7 12.8 71 9.9 90.8 22.2c1.9 1.2 4.4.6 5.6-1.3 1.2-1.9.6-4.4-1.3-5.6z"/></g></svg>
+        </a>
       </div>
       <picture>
         <source srcset="img/popup-1.webp" type="image/webp">
@@ -778,6 +783,10 @@
           <p class="popup__text">Результат міжнародного іспиту на знання англійської мови — важлива вимога для вступу до закордонного вишу. Для гарантованого зарахування необхідно володіти англійською мовою на високому рівні та підтвердити свої знання офіційним сертифікатом.</p>
           <p class="popup__text">Ми надаємо тренувальні вправи до кожної секції екзамену, влаштовуємо <b>безкоштовний пробний іспит</b> на завершення цього етапу та проводимо роботу над помилками задля покращення результату в реальних умовах. Всі викладачі сертифіковані для ведення підготовчого курсу (сертифікати CELTA, TEFL, TESOL, TKT).</p>
         </div>
+        <a class="button  start__button" href="#form_103850_1">
+          Подати заявку
+          <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 129 129"><g><path d="M40.5 61.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l18.9 18.9c.8.8 1.8 1.2 2.9 1.2h.2c1.1-.1 2.2-.6 3-1.5L107 28.8c1.4-1.7 1.2-4.3-.5-5.8-1.7-1.4-4.3-1.2-5.8.5L56.2 76.8 40.5 61.1z"/><path d="M95.1 15.3c-23-14.4-52.5-11-71.7 8.2C.8 46.1.8 83 23.4 105.6a57.94 57.94 0 0 0 82 0c19.3-19.3 22.6-48.9 8.1-71.9-1.2-1.9-3.7-2.5-5.6-1.3-1.9 1.2-2.5 3.7-1.3 5.6 12.5 19.8 9.6 45.2-7 61.8-19.4 19.4-51.1 19.4-70.5 0s-19.4-51.1 0-70.5C45.7 12.8 71 9.9 90.8 22.2c1.9 1.2 4.4.6 5.6-1.3 1.2-1.9.6-4.4-1.3-5.6z"/></g></svg>
+        </a>
       </div>
       <picture>
         <source srcset="img/popup-2.webp" type="image/webp">
@@ -799,6 +808,10 @@
           <p class="popup__text"><b>100% занять проводять носії мови.</b> Студенти вивчатимуть базові академічні предмети англійською мовою, розвиватимуть life & soft skills, навчаться створенню власних проектів та проведенню презентацій англійською мовою.</p>
           <p class="popup__text">Програма підготовки забезпечує можливість на одному з місцевими студентами рівні претендувати на високі оцінки, що розширює перспективи подальшого працевлаштування та підвищує вірогідність отримання стипендії.</p>
         </div>
+        <a class="button  start__button" href="#form_103850_1">
+          Подати заявку
+          <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 129 129"><g><path d="M40.5 61.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l18.9 18.9c.8.8 1.8 1.2 2.9 1.2h.2c1.1-.1 2.2-.6 3-1.5L107 28.8c1.4-1.7 1.2-4.3-.5-5.8-1.7-1.4-4.3-1.2-5.8.5L56.2 76.8 40.5 61.1z"/><path d="M95.1 15.3c-23-14.4-52.5-11-71.7 8.2C.8 46.1.8 83 23.4 105.6a57.94 57.94 0 0 0 82 0c19.3-19.3 22.6-48.9 8.1-71.9-1.2-1.9-3.7-2.5-5.6-1.3-1.9 1.2-2.5 3.7-1.3 5.6 12.5 19.8 9.6 45.2-7 61.8-19.4 19.4-51.1 19.4-70.5 0s-19.4-51.1 0-70.5C45.7 12.8 71 9.9 90.8 22.2c1.9 1.2 4.4.6 5.6-1.3 1.2-1.9.6-4.4-1.3-5.6z"/></g></svg>
+        </a>
       </div>
       <picture>
         <source srcset="img/popup-3.webp" type="image/webp">
@@ -819,6 +832,10 @@
           <p class="popup__text">Програма курсу Вищої Школи Media&Production передбачає екскурсії студіями та знімальними майданчиками, майстер-класи, лекції, практичні роботи, зйомки та інтерв'ю. Студенти програми мають можливість зробити перший крок до опанування професій ведучого, режисера або журналіста та створити власне портфоліо.</p>
           <p class="popup__text"><b>Навчальний модуль викладається українською мовою.</b> По завершенню програми студенти отримують диплом англійською від Вищої школи Media&Production групи 1+1 media. Відвідування занять можливе на будь-якому етапі навчання у Міжнародній школі STUDY Academy.</p>
         </div>
+        <a class="button  start__button" href="#form_103850_1">
+          Подати заявку
+          <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 129 129"><g><path d="M40.5 61.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l18.9 18.9c.8.8 1.8 1.2 2.9 1.2h.2c1.1-.1 2.2-.6 3-1.5L107 28.8c1.4-1.7 1.2-4.3-.5-5.8-1.7-1.4-4.3-1.2-5.8.5L56.2 76.8 40.5 61.1z"/><path d="M95.1 15.3c-23-14.4-52.5-11-71.7 8.2C.8 46.1.8 83 23.4 105.6a57.94 57.94 0 0 0 82 0c19.3-19.3 22.6-48.9 8.1-71.9-1.2-1.9-3.7-2.5-5.6-1.3-1.9 1.2-2.5 3.7-1.3 5.6 12.5 19.8 9.6 45.2-7 61.8-19.4 19.4-51.1 19.4-70.5 0s-19.4-51.1 0-70.5C45.7 12.8 71 9.9 90.8 22.2c1.9 1.2 4.4.6 5.6-1.3 1.2-1.9.6-4.4-1.3-5.6z"/></g></svg>
+        </a>
       </div>
       <picture>
         <source srcset="img/popup-4.webp" type="image/webp">
@@ -839,6 +856,10 @@
           <p class="popup__text">Після завершення навчання у Міжнародній медіа-школі випускники отримують ідеальні знання англійської, професійне портфоліо та ґрунтовну підготовку до навчання за західними стандартами. Наші фахівці за потреби проведуть тренінги з профорієнтації і допоможуть обрати спеціальності сфери медіа, які найкраще відповідатимуть схильностям, побажанням та досвіду кожного студента.</p>
           <p class="popup__text">Компанія <b>STUDY.UA має прямі договори про партнерство з університетами і коледжами</b> Канади, США, Великої Британії та країн ЄС. Завдяки цьому успішне завершення освітньої програми у Міжнародній медіа-школі та складання іспиту IELTS є гарантією зарахування до одного зі 150 найкращих університетів медіа-сфери!</p>
         </div>
+        <a class="button  start__button" href="#form_103850_1">
+          Подати заявку
+          <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 129 129"><g><path d="M40.5 61.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l18.9 18.9c.8.8 1.8 1.2 2.9 1.2h.2c1.1-.1 2.2-.6 3-1.5L107 28.8c1.4-1.7 1.2-4.3-.5-5.8-1.7-1.4-4.3-1.2-5.8.5L56.2 76.8 40.5 61.1z"/><path d="M95.1 15.3c-23-14.4-52.5-11-71.7 8.2C.8 46.1.8 83 23.4 105.6a57.94 57.94 0 0 0 82 0c19.3-19.3 22.6-48.9 8.1-71.9-1.2-1.9-3.7-2.5-5.6-1.3-1.9 1.2-2.5 3.7-1.3 5.6 12.5 19.8 9.6 45.2-7 61.8-19.4 19.4-51.1 19.4-70.5 0s-19.4-51.1 0-70.5C45.7 12.8 71 9.9 90.8 22.2c1.9 1.2 4.4.6 5.6-1.3 1.2-1.9.6-4.4-1.3-5.6z"/></g></svg>
+        </a>
       </div>
       <picture>
         <source srcset="img/popup-5.webp" type="image/webp">

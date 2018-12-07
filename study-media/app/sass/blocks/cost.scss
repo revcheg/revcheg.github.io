@@ -35,7 +35,7 @@
   transition: 0.3s;
   
   &:hover {
-    background: $main-yellow;
+    background: lightgray;
   }
 }
 
@@ -74,6 +74,7 @@
   }
   
   &--media {
+    font-weight: 600;
     background: $main-yellow;
   }
 }

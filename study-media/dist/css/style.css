@@ -378,7 +378,7 @@ body {
 
 .edge__text {
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 150%; }
   .edge__text--red {
     color: #dd0505;
@@ -602,7 +602,7 @@ body {
     font-size: 16px; } }
 
 .start {
-  padding: 200px 0 120px 0; }
+  padding: 200px 0 50px 0; }
 
 .start__name {
   position: relative;
@@ -686,7 +686,7 @@ body {
 
 .start__text {
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 150%; }
 
 .start__button {
@@ -715,7 +715,7 @@ body {
     margin: 0 0 30px 0; } }
 
 .advantages {
-  padding: 0 0 100px 0; }
+  padding: 100px 0; }
 
 .advantages__inner {
   position: relative;
@@ -851,7 +851,7 @@ body {
 .advantages__text {
   margin: 0;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 150%; }
 
 .advantages__img {
@@ -872,7 +872,8 @@ body {
   .advantages__list {
     width: 100%; }
   .advantages__box {
-    padding: 20px; }
+    padding: 20px;
+    height: 600px; }
   .advantages__content {
     width: auto; }
   .advantages__flex {
@@ -885,6 +886,8 @@ body {
     font-size: 200px; }
     .advantages__title--label {
       font-size: 16px; }
+  .advantages__text {
+    font-size: 15px; }
   .advantages__img {
     display: none !important; } }
 
@@ -933,6 +936,9 @@ body {
   -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3); }
 
+.specialty__content {
+  width: 50%; }
+
 .specialty__title {
   margin: 0 0 40px 0;
   color: #dd0505;
@@ -942,7 +948,7 @@ body {
 .specialty__text {
   margin: 0 10px 40px 0;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 150%; }
 
 .specialty__logo {
@@ -1015,7 +1021,8 @@ body {
     padding: 0 0 0 60px; }
 
 .warranty__text {
-  font-weight: 200;
+  margin: 30px 0 0 0;
+  font-weight: 400;
   line-height: 150%; }
 
 .warranty__mockup {
@@ -1262,7 +1269,7 @@ body {
   margin: 0;
   padding: 0 0 10px 40px;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 150%; }
   .process__text--red {
     border-left: 2px solid #dd0505; }
@@ -1336,7 +1343,7 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s; }
   .cost__tr:hover {
-    background: #ffa800; }
+    background: lightgray; }
 
 .cost__td {
   padding: 15px;
@@ -1364,6 +1371,7 @@ body {
     color: #fff;
     background: #32004b; }
   .cost__td--media {
+    font-weight: 600;
     background: #ffa800; }
 
 @media screen and (max-width: 768px) {
@@ -1607,7 +1615,7 @@ body {
     font-size: 15px; } }
 
 .contact {
-  padding: 0 0 100px 0; }
+  padding: 100px 0; }
 
 .contact__flex {
   display: -webkit-box;
@@ -1631,12 +1639,17 @@ body {
   font-weight: 500; }
 
 .contact__subtext {
-  margin: 0 0 20px 0;
-  font-weight: 200; }
+  margin: 30px 0 5px 0;
+  font-weight: 400; }
+  .contact__subtext--second {
+    margin: 5px 0 30px 0;
+    color: #dd0505;
+    font-size: 25px;
+    font-weight: normal; }
 
 .contact__phone {
   display: block;
-  margin: 0 0 50px 0;
+  margin: 0 0 30px 0;
   color: #dd0505;
   font-size: 25px;
   font-weight: normal;
@@ -1660,9 +1673,14 @@ body {
   margin: 0 0 20px 0;
   padding: 0 0 0 55px;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 400;
   background: url("../img/svg/contact-point.svg") no-repeat left; }
+  .contact__item--study {
+    font-size: 18px;
+    font-weight: normal; }
   .contact__item--media {
+    font-size: 18px;
+    font-weight: normal;
     background: url("../img/svg/contact-point-media.svg") no-repeat left; }
 
 .contact__station {
@@ -1679,6 +1697,9 @@ body {
   .contact__subtext {
     margin: 10px 0;
     text-align: center; }
+    .contact__subtext--second {
+      margin: 0 0 30px 0;
+      font-size: 18px; }
   .contact__phone {
     text-align: center; }
   .contact__flex {
@@ -1793,7 +1814,7 @@ body {
 
 .popup__text {
   padding: 0 15px 0 0;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 150%; }
 
 .popup__scroll {

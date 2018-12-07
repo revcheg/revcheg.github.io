@@ -1,5 +1,5 @@
 .contact {
-  padding: 0 0 100px 0;
+  padding: 100px 0;
 }
 
 .contact__flex {
@@ -20,13 +20,20 @@
 }
 
 .contact__subtext {
-  margin: 0 0 20px 0;
-  font-weight: 200;
+  margin: 30px 0 5px 0;
+  font-weight: 400;
+  
+  &--second {
+    margin: 5px 0 30px 0;
+    color: $main-red;
+    font-size: 25px;
+    font-weight: normal;
+  }
 }
 
 .contact__phone {
   display: block;
-  margin: 0 0 50px 0;
+  margin: 0 0 30px 0;
   color: $main-red;
   font-size: 25px;
   font-weight: normal;
@@ -54,10 +61,17 @@
   margin: 0 0 20px 0;
   padding: 0 0 0 55px;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 400;
   background: url('../img/svg/contact-point.svg') no-repeat left;
   
+  &--study {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
   &--media {
+    font-size: 18px;
+    font-weight: normal;
     background: url('../img/svg/contact-point-media.svg') no-repeat left;
   }
 }
@@ -81,7 +95,13 @@
 @media screen and ($mobile-widths) {
   .contact__subtext {
     margin: 10px 0;
+    // font-size: 20px;
     text-align: center;
+    
+    &--second {
+      margin: 0 0 30px 0;
+      font-size: 18px;
+    }
   }
   
   .contact__phone {
