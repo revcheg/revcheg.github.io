@@ -43,7 +43,8 @@
 }
 
 .popup__content {
-  padding: 50px 15px 50px 65px;
+  width: 600px;
+  padding: 40px 15px 40px 50px;
 }
 
 .popup__name {
@@ -119,10 +120,10 @@
 }
 
 .popup__img {
-  align-self: stretch;
-  width: 290px;
-  height: 100%;
+  object-fit: cover;
 }
+
+.popup__next {}
 
 .popup__overlay {
   position: fixed;
@@ -162,6 +163,13 @@
   .popup__warning {
     margin: 0;
     font-size: 12px;
+  }
+  
+  .popup__flex {
+    
+    &--column {
+      flex-direction: column;
+    }
   }
   
   .popup__img {

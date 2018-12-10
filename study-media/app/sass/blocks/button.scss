@@ -8,10 +8,13 @@
   color: #fff;
   font-size: 18px;
   font-weight: normal;
+  font-family: inherit;
   text-align: center;
   text-decoration: none;
+  border: none;
   border-radius: 15px;
   background: $main-red;
+  cursor: pointer;
   transition: 0.3s;
   
   &:hover,
@@ -29,6 +32,24 @@
     margin: 0 0 0 10px;
     padding: 8px;
     font-size: 12px;
+  }
+  
+  &--yellow {
+    width: auto;
+    margin: 30px 0 0 0;
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  &:disabled {
+    background: lightgray;
+    cursor: not-allowed;
+    
+    &:hover {
+      box-shadow: none;
+      transform: none;
+    }
   }
 }
 
