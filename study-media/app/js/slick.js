@@ -1,23 +1,35 @@
 $(document).ready(function(){
   $('.specialty__list').slick({
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2000,
     arrow: false,
     dots: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: true,
+    // centerMode: true,
     // speed: 1000,
-    responsive: [{
-      breakpoint: 769,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrow: false,
-        dots: true
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrow: false,
+          dots: true
+        }
+      },
+      
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          // arrow: false,
+          // dots: true
+        }
       }
-    }]
+    ]
   });
   
   $('.advantages__list').slick({
@@ -36,7 +48,8 @@ $(document).ready(function(){
       breakpoint: 769,
       settings: {
         arrow: false,
-        dots: true
+        dots: true,
+        adaptiveHeight: true
        }
      }
    ]

@@ -3,7 +3,19 @@
   var popups = document.querySelectorAll('.popup');
   var closePopups = document.querySelectorAll('.popup__close');
   var overlay = document.querySelector('.popup__overlay');
-
+  var openForms = document.querySelectorAll('.popup__form');
+  
+  for (var i = 0; i < openForms.length; i++) {
+    openForms[i].addEventListener('click', function () {
+      popups[0].classList.remove('popup--show');
+      popups[1].classList.remove('popup--show');
+      popups[2].classList.remove('popup--show');
+      popups[3].classList.remove('popup--show');
+      popups[4].classList.remove('popup--show');
+      overlay.classList.remove('popup__overlay--show');
+    });
+  }
+  
   openPopups[0].addEventListener('click', function (evt) {
     evt.preventDefault();
     popups[0].classList.add('popup--show');

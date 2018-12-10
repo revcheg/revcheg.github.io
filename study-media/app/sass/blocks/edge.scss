@@ -104,6 +104,8 @@
     height: 300px;
     
     &::before {
+      top: 50px;
+      left: 50px;
       width: 200px;
       height: 200px;
     }

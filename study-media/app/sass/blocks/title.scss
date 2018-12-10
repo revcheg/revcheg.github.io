@@ -5,7 +5,6 @@
 
 .title__text {
   margin: 150px 0 30px 0;
-  font-size: 18px;
   font-weight: normal;
   line-height: 150%;
 }
@@ -16,8 +15,13 @@
 
 .title__warning {
   margin: 0 70px 0 0;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: normal;
+  
+  &--red {
+    margin: 0;
+    color: $main-red;
+  }
 }
 
 @media screen and ($tablet-widths) {}
