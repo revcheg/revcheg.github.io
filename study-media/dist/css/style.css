@@ -253,6 +253,11 @@ body {
     font-size: 48px; }
   .heading--smallest {
     font-size: 28px; }
+  .heading--kostil {
+    display: block;
+    margin: 20px 0 0 0;
+    font-size: 27px;
+    line-height: 150%; }
 
 @media screen and (max-width: 768px) {
   .heading {
@@ -345,7 +350,6 @@ body {
     margin: auto; }
   .button--small {
     width: 110px;
-    margin: 0 0 0 10px;
     padding: 8px;
     font-size: 12px; }
   .button--yellow {
@@ -576,7 +580,7 @@ body {
   margin: 0;
   padding: 60px 0;
   color: #fff;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 500;
   text-align: center;
   background: url("../img/border.png") no-repeat center; }
@@ -797,7 +801,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  height: 450px;
+  height: 480px;
   margin: 0 auto;
   padding: 0 40px 30px 40px;
   -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.33);
@@ -1171,26 +1175,17 @@ body {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 240px; }
-  .stages__item:nth-child(1) {
-    padding: 20px 0 20px 70px;
-    background: url("../img/stages-1.png") no-repeat center/cover; }
+  width: 250px;
+  padding: 30px 0 30px 40px;
+  background: url("../img/stage-arrow.png") no-repeat center/cover; }
   .stages__item:nth-child(2) {
-    padding: 20px 0 20px 80px;
-    background: url("../img/stages-2.png") no-repeat center/cover; }
-  .stages__item:nth-child(3) {
-    padding: 20px 0 20px 80px;
-    background: url("../img/stages-3.png") no-repeat center/cover; }
-  .stages__item:nth-child(4) {
-    padding: 20px 0 20px 80px;
-    background: url("../img/stages-4.png") no-repeat center/cover; }
+    background: url("../img/stage-media.png") no-repeat center/cover; }
   .stages__item:nth-child(5) {
-    padding: 20px 0 20px 85px;
-    background: url("../img/stages-5.png") no-repeat center/cover; }
+    padding: 30px 0 30px 50px;
+    background: url("../img/stage-square.png") no-repeat center/210px; }
 
 .stages__title {
   margin: 0 0 10px 0;
-  padding: 0 0 0 10px;
   color: #dd0505;
   font-size: 14px;
   font-weight: 500; }
@@ -1210,24 +1205,19 @@ body {
     flex-direction: column;
     margin: 30px 0; }
   .stages__item {
-    margin: 0 0 20px 0; }
-    .stages__item:nth-child(1) {
-      background: url("../img/stages-1-mobile.png") no-repeat center/cover; }
-    .stages__item:nth-child(2) {
-      background: url("../img/stages-2-mobile.png") no-repeat center/cover; }
-    .stages__item:nth-child(3) {
-      background: url("../img/stages-3-mobile.png") no-repeat center/cover; }
-    .stages__item:nth-child(4) {
-      background: url("../img/stages-4-mobile.png") no-repeat center/cover; }
+    width: 300px;
+    margin: 0 0 40px 0;
+    background: url("../img/stage-square.png") no-repeat center/cover; }
     .stages__item:nth-child(5) {
       margin: 0;
-      background: url("../img/stages-5-mobile.png") no-repeat center/cover; }
+      padding: 30px 0 30px 40px;
+      background: url("../img/stage-square.png") no-repeat center/cover; }
       .stages__item:nth-child(5)::after {
         display: none; }
     .stages__item::after {
       content: '';
       position: absolute;
-      bottom: -21px;
+      bottom: -30px;
       left: 50%;
       width: 90px;
       height: 30px;
@@ -1471,9 +1461,9 @@ body {
 
 .reviews__subtext {
   position: relative;
-  width: 300px;
+  width: 350px;
   margin: 0;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: normal; }
   .reviews__subtext--red {
     display: block;
@@ -1635,6 +1625,7 @@ body {
   .reviews {
     margin: 0 0 50px 0; }
   .reviews__subtext {
+    width: auto;
     margin: 0 0 30px 0;
     font-size: 16px;
     text-align: center; }

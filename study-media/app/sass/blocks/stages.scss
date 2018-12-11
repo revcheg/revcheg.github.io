@@ -33,37 +33,35 @@
 .stages__item {
   position: relative;
   box-sizing: border-box;
-  width: 240px;
+  width: 250px;
+  // margin: 0 30px 0 0;
+  padding: 30px 0 30px 40px;
+  background: url('../img/stage-arrow.png') no-repeat center / cover;
   
   &:nth-child(1) {
-    padding: 20px 0 20px 70px;
-    background: url('../img/stages-1.png') no-repeat center / cover;
+
   }
   
   &:nth-child(2) {
-    padding: 20px 0 20px 80px;
-    background: url('../img/stages-2.png') no-repeat center / cover;
+    background: url('../img/stage-media.png') no-repeat center / cover;
   }
   
   &:nth-child(3) {
-    padding: 20px 0 20px 80px;
-    background: url('../img/stages-3.png') no-repeat center / cover;
+
   }
   
   &:nth-child(4) {
-    padding: 20px 0 20px 80px;
-    background: url('../img/stages-4.png') no-repeat center / cover;
+
   }
   
   &:nth-child(5) {
-    padding: 20px 0 20px 85px;
-    background: url('../img/stages-5.png') no-repeat center / cover;
+    padding: 30px 0 30px 50px;
+    background: url('../img/stage-square.png') no-repeat center / 210px;
   }
 }
 
 .stages__title {
   margin: 0 0 10px 0;
-  padding: 0 0 0 10px;
   color: $main-red;
   font-size: 14px;
   font-weight: 500;
@@ -86,27 +84,30 @@
   }
   
   .stages__item {
-    margin: 0 0 20px 0;
+    width: 300px;
+    margin: 0 0 40px 0;
+    background: url('../img/stage-square.png') no-repeat center / cover;
     
     &:nth-child(1) {
-      background: url('../img/stages-1-mobile.png') no-repeat center / cover;
+      // background: url('../img/stages-1-mobile.png') no-repeat center / cover;
     }
     
     &:nth-child(2) {
-      background: url('../img/stages-2-mobile.png') no-repeat center / cover;
+      // background: url('../img/stages-2-mobile.png') no-repeat center / cover;
     }
     
     &:nth-child(3) {
-      background: url('../img/stages-3-mobile.png') no-repeat center / cover;
+      // background: url('../img/stages-3-mobile.png') no-repeat center / cover;
     }
     
     &:nth-child(4) {
-      background: url('../img/stages-4-mobile.png') no-repeat center / cover;
+      // background: url('../img/stages-4-mobile.png') no-repeat center / cover;
     }
     
     &:nth-child(5) {
       margin: 0;
-      background: url('../img/stages-5-mobile.png') no-repeat center / cover;
+      padding: 30px 0 30px 40px;
+      background: url('../img/stage-square.png') no-repeat center / cover;
       
       &::after {
         display: none;
@@ -116,7 +117,7 @@
     &::after {
       content: '';
       position: absolute;
-      bottom: -21px;
+      bottom: -30px;
       left: 50%;
       width: 90px;
       height: 30px;
