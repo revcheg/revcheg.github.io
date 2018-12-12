@@ -1,11 +1,11 @@
 .video {
-  padding: 190px 0 90px 0;
+  padding: 150px 0 90px 0;
   background: #e95356 url('../img/video-bg.jpg') no-repeat top / cover;
 }
 
 .video__name {
   margin: 0;
-  padding: 60px 0;
+  padding: 85px 0;
   color: #fff;
   font-size: 30px;
   font-weight: 500;
@@ -38,7 +38,54 @@
   text-align: center;
 }
 
-@media screen and ($tablet-widths) {}
+.video__content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 1200px;
+  height: auto;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  z-index: 4;
+  
+  &--show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.video__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  font-size: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5) url('../img/svg/close-black.svg') no-repeat center / 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 5;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 1) url('../img/svg/close-black.svg') no-repeat center / 15px;
+  }
+}
+
+.video__source {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and ($tablet-widths) {
+  .video__content {
+    width: 95%;
+  }
+}
 
 @media screen and ($mobile-widths) {
   .video {
