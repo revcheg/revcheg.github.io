@@ -8,13 +8,14 @@
   videoSource.volume = 0.2;
   
   videoOpen.addEventListener('click', function () {
+    videoSource.play();
     videoContent.classList.add('video__content--show');
     overlay.classList.add('popup__overlay--show');
   });
   
   videoClose.addEventListener('click', function () {
     videoSource.pause();
-    // videoSource.currentTime = 0;
+    videoSource.currentTime = 0;
     videoContent.classList.remove('video__content--show');
     overlay.classList.remove('popup__overlay--show');
   });
