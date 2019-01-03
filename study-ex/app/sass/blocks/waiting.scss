@@ -1,0 +1,48 @@
+.waiting {
+  padding: 120px 0;
+  background: url('../img/waiting-bg.webp') no-repeat top / cover;
+}
+
+.waiting__content {
+  width: 630px;
+  margin: 0 0 0 auto;
+}
+
+.waiting__subheading {
+  display: block;
+  margin: 10px 0 30px 0;
+  color: #2f2f2f;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.waiting__list {
+  margin: 0 0 30px 0;
+  padding: 0 0 0 20px;
+  list-style: none;
+}
+
+.waiting__item {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 200%;
+  
+  &--warning {
+    color: #e13939;
+    font-weight: 600;
+  }
+  
+  &--new {
+    padding: 10px;
+    background: #ffd491;
+  }
+  
+  &::before {
+    content: "\2022";
+    display: inline-block;
+    color: #e13939;
+    width: 1em;
+    margin-left: -1em;
+    font-weight: bold;
+  }
+}

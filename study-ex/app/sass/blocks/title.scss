@@ -1,0 +1,24 @@
+.title {
+  padding: 180px 0 0 0;
+  background: url('../img/title-bg.webp') no-repeat right / contain;
+}
+
+.title__flex {
+  @include display-flex;
+  margin: 0 0 50px 0;
+}
+
+.title__text {
+  color: #3e3e3e;
+  font-size: 20px;
+  font-weight: normal;
+  
+  &:first-child {
+    padding: 0 40px 0 0;
+    border-right: 2px solid $main-red;
+  }
+  
+  &:last-child {
+    padding: 0 0 0 40px;
+  }
+}

@@ -1,0 +1,19 @@
+.heading {
+  margin: 0;
+  color: $main-red;
+  font-weight: normal;
+  line-height: 100%;
+  
+  &--big {
+    margin: 0 0 50px 0;
+    font-size: 72px;
+  }
+  
+  &--small {
+    font-size: 48px;
+  }
+  
+  &--center {
+    text-align: center;
+  }
+}

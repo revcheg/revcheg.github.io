@@ -1,0 +1,141 @@
+.nav {
+  @include display-flex;
+  justify-content: space-between;
+}
+
+.nav__list {
+  @include display-flex;
+  @include clear-list;
+}
+
+.nav__logo {
+  transition: 0.3s;
+  
+  &:hover,
+  &:focus {
+    transform: translateY(-5px);
+  }
+}
+
+.nav__item {
+  margin: 0 30px 0 0;
+  
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.nav__link {
+  padding: 33px 0;
+  color: #000;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+  
+  &:hover,
+  &:focus {
+    color: $main-red;
+    border-bottom: 2px solid $main-red;
+  }
+  
+  &--phone {
+    padding: 33px 0 33px 30px;
+    background: url('../img/svg/phone.svg') no-repeat left / 20px;
+  }
+}
+
+.nav__open {
+  display: none;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  border: none;
+  background: url('../img/svg/nav.svg') no-repeat center / cover;
+  transition: 0.5s;
+  
+  &--close {
+    position: fixed;
+    top: 38px;
+    right: 15px;
+    background: url('../img/svg/close.svg') no-repeat center / cover;
+    z-index: 2;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav__item {
+    padding: 20px 0;
+  }
+  
+  .nav__link {
+    border: none;
+    font-size: 14px;
+    
+    &:hover {
+      border: none;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .nav {
+    justify-content: space-between;
+  }
+  
+  .nav__list {
+    
+    &--mobile {
+      position: fixed;
+      top: 0;
+      left: 0;
+      @include display-flex;
+      flex-direction: column;
+      justify-content: center;
+      // box-sizing: border-box;
+      width: 100%;
+      height: 100vh;
+      background: #fff;
+      transition: 0.5s;
+      transform: translateY(-100%); 
+    }
+    
+    &--show {
+      transform: translateY(0%);
+    } 
+  }
+  
+  .nav__item {
+    margin: 0;
+    padding: 0 0 30px 0;  
+  }
+  
+  .nav__link {
+    padding: 0;
+    border: none;
+    
+    &--phone {
+      padding: 0 0 0 30px;
+    }
+    
+    &:hover,
+    &:focus {
+      border: none;
+    }
+  }
+  
+  .nav__logo {
+    margin: 0 10px 0 0;
+  }
+  
+  .nav__open {
+    display: block;
+  }
+}
