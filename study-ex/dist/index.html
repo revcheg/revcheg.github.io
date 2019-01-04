@@ -31,16 +31,16 @@
         </a>
         <ul class="nav__list  nav__list--mobile  nav__list--inactive">
           <li class="nav__item">
-            <a class="nav__link" href="#">Учасники виставки</a>
+            <a class="nav__link" href="#members">Учасники виставки</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Освітні семінари</a>
+            <a class="nav__link" href="#seminars">Освітні семінари</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Адреса виставки</a>
+            <a class="nav__link" href="#address">Адреса виставки</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Отримати запрошення</a>
+            <a class="nav__link" href="#register">Отримати запрошення</a>
           </li>
           <li class="nav__item">
             <a class="nav__link  nav__link--phone" href="tel:044 500 03 20">(044) 500-03-20</a>
@@ -60,7 +60,7 @@
             <p class="title__text">9 та 10 лютого<br>10:00-17:00</p>
           </div>
         </section>
-        <form class="form" action="">
+        <form class="form" enctype="multipart/form-data" name="form_submit" accept-charset="utf-8" autocomplete="off" action="https://formdesigner.ru/form/view/105398" method="post">
           <div class="form__wrapper">
             <input class="form__input" type="text" placeholder="Ваше ім‘я та прізвище" required>
             <input class="form__input" type="email" placeholder="Ваш e-mail" required>
@@ -87,11 +87,11 @@
           <li class="waiting__item"><span class="waiting__item--warning">STUDY Academy:</span> мовні курси англійської в Києві.</li>
         </ul>
         <p class="waiting__attention">Участь у виставці за обов'язковою попередньою реєстрацією.</p>
-        <a class="button" href="#">Зареєструватись</a>
+        <a class="button" href="#register">Зареєструватись</a>
       </section>
     </div>
   </div>
-  <section class="programs">
+  <section class="programs" id="seminars">
     <div class="container">
       <h2 class="heading  heading--small  heading--center">ОСВІТНІ ПРОГРАМИ НА ВИСТАВЦІ</h2>
       <hr class="heading__hr">
@@ -173,14 +173,14 @@
             <source srcset="img/programs-9.webp" type="image/webp">
             <img class="programs__img" src="img/programs-9.jpg" alt="Академія англійської мови">
           </picture>
-          <h3 class="programs__heading">Академія англійської мови</h3>
+          <h3 class="programs__heading">Академія англійської мови<br><br></h3>
           <p class="programs__text">Мовні курси для школярів, студентів та дорослих.</p>
           <button class="button  button--center  button--programs">Детальніше</button>
         </li>
       </ul>
     </div>
   </section>
-  <section class="members">
+  <section class="members" id="members">
     <div class="container">
       <h2 class="heading  heading--small  heading--center">Учасники виставки «Освіта за кордоном»</h2>
       <hr class="heading__hr">
@@ -221,7 +221,7 @@
         <a class="members__all" href="#">Ознайомитись з повним списком навчальних закладів</a>
       </div>
       <p class="members__attention">Участь у виставці за обов’язковою попередньою реєстрацією.</p>
-      <a class="button  button--center" href="#">Зареєструватись</a>
+      <a class="button  button--center" href="#register">Зареєструватись</a>
     </div>
   </section>
   <section class="seminars">
@@ -230,10 +230,10 @@
       <hr class="heading__hr">
       <div class="table__wrapper">
         <div class="table__controll">
-          <button class="table__button  table__button--active">Суббота, 9 лютого</button>
-          <button class="table__button">Неділя, 10 лютого</button>
+          <button class="table__button  table__button--saturday  table__button--active">Суббота, 9 лютого</button>
+          <button class="table__button  table__button--wednesday">Неділя, 10 лютого</button>
         </div>
-        <table class="table">
+        <table class="table  table--saturday">
           <tr class="table__tr">
             <td class="table__td">
               <b class="table__name">Tania Boika</b>
@@ -251,12 +251,30 @@
             </td>
           </tr>
         </table>
+        <table class="table  table--wednesday  table--hide">
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">Tania Boika</b>
+              <p class="table__text">Представник Thompson Rivers University</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">10:30</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Навчання в канадському університеті</b>
+              <p class="table__text">Переваги для українських студентів під час та після навчання.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--blue">Синiй зал</b>
+            </td>
+          </tr>
+        </table>
       </div>
       <p class="seminars__attention">Для участі в семінарах необхідно зареєструватись на виставку.</p>
-      <a class="button  button--center" href="#">Зареєструватись</a>
+      <a class="button  button--center" href="#register">Зареєструватись</a>
     </div>
   </section>
-  <section class="address">
+  <section class="address" id="address">
     <div class="container">
       <h2 class="heading  heading--small  heading--center">Місце проведення виставки</h2>
       <hr class="heading__hr">
@@ -272,11 +290,11 @@
       </div>
     </div>
   </section>
-  <div class="register">
+  <div class="register" id="register">
     <div class="container">
       <div class="register__wrapper">
         <b class="register__heading">До зустрічі 9 та 10 лютого на виставці<br>«Освіта за кордоном»!</b>
-        <form class="form" action="">
+        <form class="form" enctype="multipart/form-data" name="form_submit" accept-charset="utf-8" autocomplete="off" action="https://formdesigner.ru/form/view/105398" method="post">
           <div class="form__wrapper">
             <input class="form__input" type="text" placeholder="Ваше ім‘я та прізвище" required>
             <input class="form__input" type="email" placeholder="Ваш e-mail" required>

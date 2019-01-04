@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 body {
   min-width: 320px;
   margin: 0;
@@ -307,7 +310,7 @@ body {
 .form__input {
   margin: 0 0 40px 0;
   padding: 10px 30px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: normal;
   font-family: inherit;
   border: none;
@@ -461,7 +464,7 @@ body {
   box-sizing: border-box;
   width: 370px;
   margin: 0 0 40px 0;
-  padding: 10px 30px 35px 30px;
+  padding: 10px 25px 35px 25px;
   -webkit-box-shadow: 0px 18px 16px 0px rgba(225, 228, 231, 0.6);
   box-shadow: 0px 18px 16px 0px rgba(225, 228, 231, 0.6);
   background: #fff;
@@ -569,7 +572,8 @@ body {
   text-align: center; }
 
 .table__wrapper {
-  margin: 0 0 50px 0;
+  position: relative;
+  margin: 0 0 100px 0;
   background: #fff; }
 
 .table__controll {
@@ -605,8 +609,18 @@ body {
     background: #dd0505; }
 
 .table {
+  position: absolute;
+  top: 43px;
+  left: 0;
   width: 100%;
-  border-collapse: collapse; }
+  background: #fff;
+  border-collapse: collapse;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+  .table--hide {
+    left: -100px;
+    opacity: 0;
+    visibility: hidden; }
 
 .table__td {
   padding: 10px;
