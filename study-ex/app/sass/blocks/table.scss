@@ -1,0 +1,79 @@
+.table__wrapper {
+  margin: 0 0 50px 0;
+  background: #fff;
+}
+
+.table__controll {
+  @include display-flex;
+  justify-content: space-between;
+  background: #f7f7f7;
+}
+
+.table__button {
+  width: 100%;
+  padding: 10px;
+  color: #2c3638;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid #e3e3e3;
+  border-top-left-radius: 15px; 
+  border-top-right-radius: 15px; 
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: $main-red;
+  }
+  
+  &--active {
+    color: #fff;
+    background: $main-red;
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table__td {
+  padding: 10px;
+  border-bottom: 1px solid #dedede;
+}
+
+.table__name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.table__text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.table__time {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.table__hall {
+  font-size: 18px;
+  font-weight: 600;
+  
+  &--red {
+    color: $main-red;
+  }
+  
+  &--blue {
+    color: #2222a8;
+  }
+}
+
+
+
+
+

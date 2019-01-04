@@ -1,3 +1,14 @@
+// Book Antiqua
+@font-face {
+  font-family: 'Book Antiqua';
+  src: local('Book Antiqua'), local('BookAntiqua'),
+    url('../fonts/BookAntiqua.woff2') format('woff2'),
+    url('../fonts/BookAntiqua.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Open Sans
 @font-face {
   font-family: 'Open Sans';
   src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),

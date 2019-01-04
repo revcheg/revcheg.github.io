@@ -2,7 +2,7 @@
   margin: 0;
   color: $main-red;
   font-weight: normal;
-  line-height: 100%;
+  font-family: 'Book Antiqua', 'Open Sans', 'Arial', sans-serif;
   
   &--big {
     margin: 0 0 50px 0;
@@ -15,5 +15,29 @@
   
   &--center {
     text-align: center;
+  }
+}
+
+.heading__hr {
+  width: 100px;
+  height: 2px;
+  margin: 50px auto;
+  border: none;
+  background: $main-red;
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .heading {
+    text-align: center;
+    
+    &--big {
+      font-size: 40px;
+    }
+    
+    &--small {
+      font-size: 25px;
+    }
   }
 }

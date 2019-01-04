@@ -1,5 +1,8 @@
 .programs {
-  padding: 60px 0 0 0;
+  margin: -120px 0 0 0;
+  padding: 130px 0 180px 0;
+  background: #f7f7f7;
+  z-index: 1;
 }
 
 .programs__list {
@@ -15,6 +18,7 @@
   margin: 0 0 40px 0;
   padding: 10px 30px 35px 30px;
   box-shadow: 0px 18px 16px 0px rgba(225, 228, 231, 0.6);
+  background: #fff;
   transition: 0.3s;
   
   &:hover,
@@ -34,6 +38,7 @@
   color: #12161b;
   font-size: 40px;
   font-weight: normal;
+  font-family: 'Book Antiqua', 'Open Sans', 'Arial', sans-serif;
   text-align: center;
 }
 
