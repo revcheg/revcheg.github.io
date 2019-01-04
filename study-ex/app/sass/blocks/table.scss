@@ -85,7 +85,11 @@
   }
 }
 
+@media screen and ($tablet-widths) {}
 
-
-
-
+@media screen and ($mobile-widths) {
+  .table {
+    display: block;
+    overflow: scroll;
+  }
+}

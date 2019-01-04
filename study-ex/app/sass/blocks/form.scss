@@ -36,3 +36,11 @@
     transition: 0.3s;
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .form__wrapper {
+    flex-direction: column;
+  }
+}

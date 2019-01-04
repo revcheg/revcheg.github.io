@@ -38,8 +38,4 @@ body {
   }
 }
 
-@media screen and ($mobile-widths) {
-  .container {
-    // background: lightgreen;
-  }
-}
+@media screen and ($mobile-widths) {}

@@ -65,3 +65,37 @@
   font-style: italic; 
   text-align: center;
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .members {
+    background: url('../img/members-bg.png') no-repeat right / cover;
+  }
+  
+  .members__content {
+    width: auto;
+  }
+  
+  .members__subheading {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .members__warning,
+  .members__all {
+    display: block;
+    text-align: center;
+  }
+  
+  .members__list {
+    
+    &--university {
+      flex-wrap: wrap;
+    }
+  }
+  
+  .members__logo {
+    margin: auto;
+  }
+}
