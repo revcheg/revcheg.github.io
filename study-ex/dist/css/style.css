@@ -208,8 +208,11 @@ body {
     display: block; } }
 
 .title {
-  padding: 180px 0 0 0;
+  padding: 180px 0 20px 0;
   background: url("../img/title-bg.webp") no-repeat right/contain; }
+
+.title__wrapper {
+  width: 760px; }
 
 .title__flex {
   display: -webkit-box;
@@ -243,17 +246,23 @@ body {
   .heading--center {
     text-align: center; }
 
-.form {
-  width: 735px; }
+.form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .form__input {
-  margin: 0 15px 40px 0;
+  margin: 0 0 40px 0;
   padding: 10px 30px;
-  color: #dd0505;
   font-size: 16px;
   font-weight: normal;
   font-family: inherit;
-  text-align: center;
   border: none;
   border-bottom: 1px solid #dcc1ad;
   background: transparent;
@@ -261,9 +270,8 @@ body {
   outline: none;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
-  .form__input:last-child {
-    margin: 0; }
   .form__input:hover, .form__input:focus {
+    color: #dd0505;
     border-bottom: 1px solid #dd0505; }
     .form__input:hover::-webkit-input-placeholder, .form__input:focus::-webkit-input-placeholder {
       color: #dd0505; }
@@ -275,18 +283,22 @@ body {
       color: #dd0505; }
   .form__input::-webkit-input-placeholder {
     color: #a9a8a8;
+    text-align: center;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
   .form__input:-ms-input-placeholder {
     color: #a9a8a8;
+    text-align: center;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
   .form__input::-ms-input-placeholder {
     color: #a9a8a8;
+    text-align: center;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
   .form__input::placeholder {
     color: #a9a8a8;
+    text-align: center;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
 
@@ -295,7 +307,7 @@ body {
   box-sizing: border-box;
   display: block;
   width: 200px;
-  padding: 20px 40px 20px 10px;
+  padding: 15px 40px 15px 10px;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -303,7 +315,7 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  background: #dd0505 url("../img/svg/button.svg") no-repeat 170px 20px/20px;
+  background: #dd0505 url("../img/svg/button.svg") no-repeat 170px 15px/20px;
   border: none;
   border-radius: 15px;
   -webkit-box-shadow: 0px 1px 13px 0px rgba(255, 0, 25, 0.8);
@@ -318,7 +330,7 @@ body {
     margin: 0 auto; }
   .button--programs {
     width: 170px;
-    padding: 15px 0;
+    padding: 10px 0;
     background: #e13939;
     -webkit-box-shadow: none;
     box-shadow: none; }
@@ -333,7 +345,7 @@ body {
   background: url("../img/waiting-bg.webp") no-repeat top/cover; }
 
 .waiting__content {
-  width: 630px;
+  width: 650px;
   margin: 0 0 0 auto; }
 
 .waiting__subheading {
@@ -366,8 +378,14 @@ body {
     margin-left: -1em;
     font-weight: bold; }
 
+.waiting__attention {
+  margin: 0 0 20px 0;
+  color: #3e3e3e;
+  font-size: 16px;
+  font-style: italic; }
+
 .programs {
-  padding: 30px 0 0 0; }
+  padding: 60px 0 0 0; }
 
 .programs__list {
   display: -webkit-box;
@@ -397,7 +415,9 @@ body {
   transition: 0.3s; }
   .programs__item:hover, .programs__item:focus {
     -webkit-box-shadow: 0px 35px 49.6px 12.4px rgba(1, 26, 76, 0.4);
-    box-shadow: 0px 35px 49.6px 12.4px rgba(1, 26, 76, 0.4); }
+    box-shadow: 0px 35px 49.6px 12.4px rgba(1, 26, 76, 0.4);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01); }
 
 .programs__img {
   width: 100%;
@@ -414,6 +434,27 @@ body {
   margin: 0 0 40px 0;
   color: #3e3e3e;
   font-size: 16px;
+  font-weight: normal;
+  text-align: center; }
+
+.register {
+  padding: 220px 0;
+  background: #e6e1d5 url("../img/register-bg.jpg") no-repeat center/cover; }
+
+.register__wrapper {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 780px;
+  margin: 0 auto;
+  padding: 20px 30px 40px 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.9); }
+
+.register__heading {
+  display: block;
+  margin: 0 0 30px 0;
+  color: #dd0505;
+  font-size: 30px;
   font-weight: normal;
   text-align: center; }
 

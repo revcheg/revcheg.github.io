@@ -1,6 +1,10 @@
 .title {
-  padding: 180px 0 0 0;
+  padding: 180px 0 20px 0;
   background: url('../img/title-bg.webp') no-repeat right / contain;
+}
+
+.title__wrapper {
+  width: 760px;
 }
 
 .title__flex {

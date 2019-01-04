@@ -1,15 +1,18 @@
 .form {
-  width: 735px;
+  // width: 735px;
+}
+
+.form__wrapper {
+  @include display-flex;
+  justify-content: space-between;
 }
 
 .form__input {
-  margin: 0 15px 40px 0;
+  margin: 0 0 40px 0;
   padding: 10px 30px;
-  color: $main-red;
   font-size: 16px;
   font-weight: normal;
   font-family: inherit;
-  text-align: center;
   border: none;
   border-bottom: 1px solid #dcc1ad;
   background: transparent;
@@ -17,12 +20,9 @@
   outline: none;
   transition: 0.3s;
   
-  &:last-child {
-    margin: 0;
-  }
-  
   &:hover,
   &:focus {
+    color: $main-red;
     border-bottom: 1px solid $main-red;
     
     &::placeholder {
@@ -32,6 +32,7 @@
   
   &::placeholder {
     color: #a9a8a8;
+    text-align: center;
     transition: 0.3s;
   }
 }

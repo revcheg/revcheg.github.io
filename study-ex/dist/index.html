@@ -52,21 +52,23 @@
   </header>
   <div class="title">
     <div class="container">
-      <section class="title__content">
-        <h1 class="heading  heading--big">Виставка<br>«Освіта за кордоном»</h1>
-        <div class="title__flex">
-          <p class="title__text">Fairmont Grand Hotel Kyiv<br>вул. Набережно-Хрещатицька, 1</p>
-          <p class="title__text">9 та 10 лютого<br>10:00-17:00</p>
-        </div>
-      </section>
-      <form class="form" action="">
-        <div class="form__wrapper">
-          <input class="form__input" type="text" placeholder="Ваше ім‘я та прізвище" required>
-          <input class="form__input" type="email" placeholder="Ваш e-mail" required>
-          <input class="form__input" type="tel" placeholder="Ваш телефон" required>
-        </div>
-        <button class="button  button--center" type="submit">Зареєструватись</button>
-      </form>
+      <div class="title__wrapper">
+        <section class="title__content">
+          <h1 class="heading  heading--big">Виставка<br>«Освіта за кордоном»</h1>
+          <div class="title__flex">
+            <p class="title__text">Fairmont Grand Hotel Kyiv<br>вул. Набережно-Хрещатицька, 1</p>
+            <p class="title__text">9 та 10 лютого<br>10:00-17:00</p>
+          </div>
+        </section>
+        <form class="form" action="">
+          <div class="form__wrapper">
+            <input class="form__input" type="text" placeholder="Ваше ім‘я та прізвище" required>
+            <input class="form__input" type="email" placeholder="Ваш e-mail" required>
+            <input class="form__input" type="tel" placeholder="Ваш телефон" required>
+          </div>
+          <button class="button  button--center" type="submit">Зареєструватись</button>
+        </form>
+      </div>
     </div>
   </div>
   <div class="waiting">
@@ -84,6 +86,7 @@
           <li class="waiting__item"><span class="waiting__item--warning  waiting__item--new">Новий проект!</span> Міжнародна медіа-школа від Вищої Школи Media&Production 1+1 та STUDY Academy.</li>
           <li class="waiting__item"><span class="waiting__item--warning">STUDY Academy:</span> мовні курси англійської в Києві.</li>
         </ul>
+        <p class="waiting__attention">На всіх гостей виставки «Освіта за кордоном» чекають індивідуальні консультації експертів з навчання за кордоном та спеціальні пропозиції від учасників виставки!</p>
         <a class="button" href="#">Зареєструватись</a>
       </section>
     </div>
@@ -125,15 +128,75 @@
             <img class="programs__img" src="img/programs-4.jpg" alt="Вища освіта в США та Великій Британії">
           </picture>
           <h3 class="programs__heading">Вища освіта в США та Великій Британії</h3>
-          <p class="programs__text">Престижна англомовна освіта в топ-університетах світу. .</p>
+          <p class="programs__text">Престижна англомовна освіта в топ-університетах світу.</p>
+          <button class="button  button--center  button--programs">Детальніше</button>
+        </li>
+        <li class="programs__item">
+          <picture>
+            <source srcset="img/programs-5.webp" type="image/webp">
+            <img class="programs__img" src="img/programs-5.jpg" alt="Вища освіта англійською в Європі">
+          </picture>
+          <h3 class="programs__heading">Вища освіта англійською в Європі</h3>
+          <p class="programs__text">Навчання в Німеччині, Швейцарії, Нідерландах та на Кіпрі.</p>
+          <button class="button  button--center  button--programs">Детальніше</button>
+        </li>
+        <li class="programs__item">
+          <picture>
+            <source srcset="img/programs-6.webp" type="image/webp">
+            <img class="programs__img" src="img/programs-6.jpg" alt="Середня освіта англійською за кордоном">
+          </picture>
+          <h3 class="programs__heading">Середня освіта англійською за кордоном</h3>
+          <p class="programs__text">Навчання в престижних школа-пансіонах світу.</p>
+          <button class="button  button--center  button--programs">Детальніше</button>
+        </li>
+        <li class="programs__item">
+          <picture>
+            <source srcset="img/programs-7.webp" type="image/webp">
+            <img class="programs__img" src="img/programs-7.jpg" alt="Міжнародна школа STUDY Academy">
+          </picture>
+          <h3 class="programs__heading">Міжнародна школа STUDY Academy</h3>
+          <p class="programs__text">Канадська та американська освіта в Україні.</p>
+          <button class="button  button--center  button--programs">Детальніше</button>
+        </li>
+        <li class="programs__item">
+          <picture>
+            <source srcset="img/programs-8.webp" type="image/webp">
+            <img class="programs__img" src="img/programs-8.jpg" alt="Міжнародна медіа-школа">
+          </picture>
+          <h3 class="programs__heading">Міжнародна медіа-школа<br><br></h3>
+          <p class="programs__text">Від STUDY Academy та Вищої Школи Media&Production 1+1.</p>
+          <button class="button  button--center  button--programs">Детальніше</button>
+        </li>
+        <li class="programs__item">
+          <picture>
+            <source srcset="img/programs-9.webp" type="image/webp">
+            <img class="programs__img" src="img/programs-9.jpg" alt="Академія англійської мови">
+          </picture>
+          <h3 class="programs__heading">Академія англійської мови</h3>
+          <p class="programs__text">Мовні курси для школярів, студентів та дорослих.</p>
           <button class="button  button--center  button--programs">Детальніше</button>
         </li>
       </ul>
     </div>
   </section>
-  <!-- <footer class="footer">
-    <p class="footer__text">2018 © STUDY.UA - Все права защищены.</p>
-  </footer> -->
+  <div class="register">
+    <div class="container">
+      <div class="register__wrapper">
+        <b class="register__heading">До зустрічі 9 та 10 лютого на виставці<br>«Освіта за кордоном»!</b>
+        <form class="form" action="">
+          <div class="form__wrapper">
+            <input class="form__input" type="text" placeholder="Ваше ім‘я та прізвище" required>
+            <input class="form__input" type="email" placeholder="Ваш e-mail" required>
+            <input class="form__input" type="tel" placeholder="Ваш телефон" required>
+          </div>
+          <button class="button  button--center" type="submit">Зареєструватись</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p class="footer__text">2019 © STUDY.UA - Все права защищены.</p>
+  </footer>
   <script src="js/main.min.js" async></script>
 </body>
 </html>

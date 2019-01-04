@@ -4,7 +4,7 @@
 }
 
 .waiting__content {
-  width: 630px;
+  width: 650px;
   margin: 0 0 0 auto;
 }
 
@@ -45,4 +45,11 @@
     margin-left: -1em;
     font-weight: bold;
   }
+}
+
+.waiting__attention {
+  margin: 0 0 20px 0;
+  color: #3e3e3e;
+  font-size: 16px;
+  font-style: italic;
 }
