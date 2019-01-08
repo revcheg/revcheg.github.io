@@ -141,3 +141,48 @@
     visibility: hidden;
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .popup {
+    top: 50%;
+    width: 95%;
+    height: 95%;
+    padding: 50px 15px 30px 15px;
+    overflow-x: auto;
+    
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+  }
+  
+  .popup__close {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .popup__wrapper,
+  .popup__flex {
+    flex-direction: column;
+  }
+  
+  .popup__left {
+    width: 100%;
+    max-width: 345px;
+    margin: 0 0 20px 0;
+  }
+  
+  .popup__img {
+    width: 100%;
+  }
+  
+  .popup__content {
+    width: 100%;
+  }
+  
+  .popup__attention {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+}
