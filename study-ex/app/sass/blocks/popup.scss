@@ -1,0 +1,139 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  width: 980px;
+  padding: 30px;
+  box-shadow: 0px 35px 50px 12px rgba(1, 26, 76, 0.4);
+  background: #fff;
+  transition: 0.3s;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  
+  &--hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.popup__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  border: none;
+  background: url('../img/svg/close.svg') no-repeat center / contain;
+  cursor: pointer;
+  transition: 0.3s;
+  
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+}
+
+.popup__wrapper,
+.popup__flex,
+.popup__controll {
+  @include display-flex;
+  justify-content: space-between;
+}
+
+.popup__left {
+  box-sizing: border-box;
+  width: 345px;
+  margin: 0 30px 0 0;
+  padding: 15px;
+  box-shadow: 0px 3px 16px 0px rgba(71, 75, 87, 0.4);
+  border: 1px solid #f9f9f6;
+}
+
+.popup__img {
+  margin: 0 0 50px 0;
+}
+
+.popup__all {
+  margin: 0;
+  color: #3e3e3e;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'Book Antiqua', 'Open Sans', 'Arial', sans-serif;
+}
+
+.popup__button {
+  width: 20px;
+  height: 15px;
+  font-size: 0;
+  border: none;
+  background: url('../img/svg/arrow.svg') no-repeat center / cover;
+  cursor: pointer;
+  transition: 0.3s;
+  
+  &--prev {
+    transform: rotate(180deg);
+    
+    &:hover,
+    &:focus {
+      transform: rotate(180deg) translateX(5px); 
+    }
+  }
+  
+  &--next {
+    
+    &:hover,
+    &:focus {
+      transform: translateX(5px); 
+    }
+  }
+}
+
+.popup__counter {
+  color: #3e3e3e;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'Book Antiqua', 'Open Sans', 'Arial', sans-serif;
+}
+
+.popup__text {
+  color: #3e3e3e;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Book Antiqua', 'Open Sans', 'Arial', sans-serif;
+}
+
+.popup__list {
+  margin: 20px 0 50px 0;
+  color: #3e3e3e;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.popup__attention {
+  margin: 0 0 0 30px;
+  color: $main-red;
+  font-size: 14px;
+  font-style: italic;
+}
+
+// Overlay
+.popup__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(235, 235, 235, 0.6);
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 2;
+  
+  &--hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

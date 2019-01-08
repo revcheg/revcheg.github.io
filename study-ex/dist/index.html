@@ -103,7 +103,7 @@
           </picture>
           <h3 class="programs__heading">Групові поїздки за кордон</h3>
           <p class="programs__text">10 країн, 30 міст і 100 поїздок для школярів і студентів.</p>
-          <button class="button  button--center  button--programs">Детальніше</button>
+          <button class="button  button--center  button--programs" id="1">Детальніше</button>
         </li>
         <li class="programs__item">
           <picture>
@@ -112,7 +112,7 @@
           </picture>
           <h3 class="programs__heading">Літні канікули в Україні</h3>
           <p class="programs__text">Англомовні канікули для дітей в Україні від STUDY.UA.</p>
-          <button class="button  button--center  button--programs">Детальніше</button>
+          <button class="button  button--center  button--programs" id="2">Детальніше</button>
         </li>
         <li class="programs__item">
           <picture>
@@ -236,36 +236,340 @@
         <table class="table  table--saturday">
           <tr class="table__tr">
             <td class="table__td">
-              <b class="table__name">Tania Boika</b>
-              <p class="table__text">Представник Thompson Rivers University</p>
+              <b class="table__name">Magdy Attalla</b>
+              <p class="table__text">B.H.M.S. Business and Hospitality Management School</p>
             </td>
             <td class="table__td">
               <b class="table__time">10:30</b>
             </td>
             <td class="table__td">
-              <b class="table__name">Навчання в канадському університеті</b>
-              <p class="table__text">Переваги для українських студентів під час та після навчання.</p>
+              <b class="table__name">Престижна бізнес-освіта у Швейцарії.</b>
+              <p class="table__text">Дізнайтесь, як побудувати міжнародну кар’єру в сфері туризму та готельно-ресторанного менеджменту.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--blue">Синій зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">Елізабет Нудельман</b>
+              <p class="table__text">Мотиваційний тренер</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">11:00</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Освіта як стратегія.</b>
+              <p class="table__text">Як правильний вибір може змінити життя?</p>
             </td>
             <td class="table__td">
               <b class="table__hall  table__hall--red">Червоний зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">Cape Breton University</b>
+              <p class="table__text">Канада</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">11:30</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Вища освіта в Новій Шотландії, Канада.</b>
+              <p class="table__text">Навчання у сфері гуманітарних наук, бізнесу, науки та техніки.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--blue">Синій зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">Елізабет Нудельман</b>
+              <p class="table__text">Мотиваційний тренер</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">12:00</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Яким буде навчання вже завтра?</b>
+              <p class="table__text">Дізнайтесь про інноваційні освітні тренди 2019-2020.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--red">Червоний зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">Douglas College</b>
+              <p class="table__text">Канада</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">12:30</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Навчання в канадському коледжі.</b>
+              <p class="table__text">Чим відрізняється навчання в коледжі від навчання в університеті? Умови вступу, вартість навчання, переваги для студентів.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--blue">Синій зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">Андрій Ткаченко</b>
+              <p class="table__text">Операційний директор STUDY.UA</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">13:00</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Групові поїздки за кордон 2019.</b>
+              <p class="table__text">Канікули для школярів та студентів з користю для майбутнього.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--red">Червоний зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">Ravi Philips</b>
+              <p class="table__text">University of the Fraser Valley, Канада</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">13:30</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Вища освіта в Британській Колумбії, Канада.</b>
+              <p class="table__text">Навчання у сфері бізнесу, інженерії, інформаційних технологій, авіації, медіа і комунікацій.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--blue">Синій зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">Людмила Листопад</b>
+              <p class="table__text">Shorelight Education, США</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">14:00</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Як стати студентом рейтингового університету США?</b>
+              <p class="table__text">Дізнайтесь про можливості вступу до University of Central Florida, Florida International University та інших вишів США.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--red">Червоний зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">GISMA Business School</b>
+              <p class="table__text">Німеччина</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">14:30</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Магістратура у сфері бізнесу в Німеччині.</b>
+              <p class="table__text">Англомовна освіта в Берліні та Ганновері.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--blue">Синій зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">Галина Арнаутова</b>
+              <p class="table__text">Fanshawe College, Канада</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">15:00</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Вища освіта в галузі прикладних наук і технологій в Канаді.</b>
+              <p class="table__text">Як стати студентом одного з ведучих державних коледжів провінції Онтаріо?</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--red">Червоний зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">NHL Stenden University of Applied Sciences</b>
+              <p class="table__text">Нідерланди</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">15:30</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Освіта в Нідерландах 2019.</b>
+              <p class="table__text">Переваги, вимоги до вступу, вартість навчання та кар’єрні можливості.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--blue">Синій зал</b>
             </td>
           </tr>
         </table>
         <table class="table  table--wednesday  table--hide">
           <tr class="table__tr">
             <td class="table__td">
-              <b class="table__name">Tania Boika</b>
-              <p class="table__text">Представник Thompson Rivers University</p>
+              <b class="table__name">Віталій Бреслер, Костянтин Соловйов</b>
+              <p class="table__text">Британський табір STUDY.UA</p>
             </td>
             <td class="table__td">
-              <b class="table__time">10:30</b>
+              <b class="table__time">11:00</b>
             </td>
             <td class="table__td">
-              <b class="table__name">Навчання в канадському університеті</b>
-              <p class="table__text">Переваги для українських студентів під час та після навчання.</p>
+              <b class="table__name">Британські канікули в Україні.</b>
+              <p class="table__text">Як поєднати активний відпочинок з вивченням англійської, творчістю і спортом?</p>
             </td>
             <td class="table__td">
               <b class="table__hall  table__hall--blue">Синiй зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">Посольство Канади в Україні</b>
+              <p class="table__text">Торгівельна та міграційна секції</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">11:00</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Освіта і життя в Канаді.</b>
+              <p class="table__text">Переваги навчання та кар’єрні можливості для українських студентів.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--red">Червоний зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">Conestoga College Institute of Technology & Advanced Learning</b>
+              <p class="table__text">Канада</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">12:00</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Політехнічна освіта в канадському коледжі.</b>
+              <p class="table__text">Популярні програми, вимоги до вступу, вартість навчання та можливості для студентів.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--blue">Синій зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">Елізабет Нудельман</b>
+              <p class="table__text">Мотиваційний тренер</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">12:30</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Яким буде навчання вже завтра?</b>
+              <p class="table__text">Дізнайтесь про  інноваційні освітні тренди 2019-2020.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--red">Червоний зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">Matthew Marois</b>
+              <p class="table__text">Niagara College</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">13:00</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Освіта у сфері Hospitality в Канаді.</b>
+              <p class="table__text">Можливості навчання за спеціальностями Hotel and Restaurant Operations, Tourism Management та Business Administration.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--blue">Синій зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">Валентина Кресько</b>
+              <p class="table__text">Міжнародна медіа-школа</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">13:30</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Старт кар’єри в медіа та телебаченні.</b>
+              <p class="table__text">Дізнайтесь про можливості навчання на новому курсі від STUDY Academy та Вищої Школи Media&Production 1+1.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--red">Червоний зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">Ashley Dunlop</b>
+              <p class="table__text">The University of Winnipeg</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">14:00</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Прямий вступ до канадського університету.</b>
+              <p class="table__text">Як вступити одразу на 2 курс The University of Winnipeg? Переваги навчання в провінції Манітоба.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--blue">Синій зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">Андрій Ткаченко</b>
+              <p class="table__text">Операційний директор STUDY.UA</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">14:30</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Групові поїздки за кордон 2019.</b>
+              <p class="table__text">Канікули для школярів та студентів з користю для майбутнього.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--red">Червоний зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">Wittenborg University of Applied Sciences</b>
+              <p class="table__text">Нідерланди</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">15:00</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Вища освіта в Нідерландах.</b>
+              <p class="table__text">Навчання у сфері міжнародного бізнесу та менеджменту.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--blue">Синій зал</b>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">
+              <b class="table__name">Alex Prokopenko</b>
+              <p class="table__text">Humber Institute of Technology and Advanced Learning</p>
+            </td>
+            <td class="table__td">
+              <b class="table__time">15:30</b>
+            </td>
+            <td class="table__td">
+              <b class="table__name">Вища та післядипломна освіта в Канаді.</b>
+              <p class="table__text">Переваги та можливості навчання в державному канадському ВНЗ в Торонто.</p>
+            </td>
+            <td class="table__td">
+              <b class="table__hall  table__hall--red">Червоний зал</b>
             </td>
           </tr>
         </table>
@@ -308,6 +612,78 @@
   <footer class="footer">
     <p class="footer__text">2019 © STUDY.UA - Все права защищены.</p>
   </footer>
+  
+  <article class="popup  popup--hide" id="1.1">
+    <button class="popup__close">Закрити попап</button>
+    <h4 class="heading  heading--popup  heading--center">Групові поїздки за кордон влітку 2019 року.<br>10 країн, 30 міст і 100 поїздок для школярів і студентів.</h4>
+    <div class="popup__wrapper">
+      <div class="popup__left">
+        <picture>
+          <source src="img/programs-1.webp" type="image/webp">
+          <img class="popup__img" src="img/programs-1.jpg" alt="">
+        </picture>
+        <div class="popup__flex">
+          <p class="popup__all">Переглянути всі пропозиції</p>
+          <div class="popup__controll">
+            <button class="popup__button  popup__button--prev">Попередня</button>
+            <p class="popup__counter">1/9</p>
+            <button class="popup__button  popup__button--next">Наступна</button>
+          </div>
+        </div>
+      </div>
+      <div class="popup__content">
+        <p class="popup__text">Групова поїздка за кордон — літо з користю для майбутнього! Вперше влітку 2019: 10 країн, 30 міст і 100 поїздок для школярів і студентів у супроводі керівника групи від компанії STUDY.UA. Приходьте на виставку і обирайте ідеальний варіант літніх канікул за кордоном!</p>
+        <ul class="popup__list">
+          <li>Вивчення іноземних мов у топових школах США, Великої Британії, Канади та Європейського Союзу.</li>
+          <li>Спеціалізовані курси: бізнес, туризм, академічні предмети, кінематограф, футбол, кінний спорт, серфінг.</li>
+          <li>Екскурсії та подорожі найцікавішими містами світу: Лондон, Нью-Йорк, Торонто, Ванкувер та інші мегаполіси.</li>
+          <li>Повне занурення в англомовне середовище.</li>
+          <li>Нові друзі з усього світу!</li>
+        </ul>
+        <div class="popup__flex">
+          <a class="button" href="#register">Зареєструватись</a>
+          <p class="popup__attention">Дізнайтесь більше та забронюйте місце в групі на виставці 9 та 10 лютого!</p>
+        </div>
+      </div>
+    </div>
+  </article>
+  
+  <article class="popup  popup--hide" id="1.2">
+    <button class="popup__close">Закрити попап</button>
+    <h4 class="heading  heading--popup  heading--center">Літні канікули для школярів в Україні</h4>
+    <div class="popup__wrapper">
+      <div class="popup__left">
+        <picture>
+          <source src="img/programs-1.webp" type="image/webp">
+          <img class="popup__img" src="img/programs-1.jpg" alt="">
+        </picture>
+        <div class="popup__flex">
+          <p class="popup__all">Переглянути всі пропозиції</p>
+          <div class="popup__controll">
+            <button class="popup__button  popup__button--prev">Попередня</button>
+            <p class="popup__counter">1/9</p>
+            <button class="popup__button  popup__button--next">Наступна</button>
+          </div>
+        </div>
+      </div>
+      <div class="popup__content">
+        <p class="popup__text">Плануєте літні канікули для дітей в Україні? На виставці «Освіта за кордоном» будуть представлені програми англомовних канікул в Україні від STUDY.UA.</p>
+        <ul class="popup__list">
+          <li><b>Британський табір під Києвом:</b> англійська з носіями мови з Англії та США, спорт, ігри, квести англійською мовою та 12 напрямків творчості.</li>
+          <li><b>Британський табір в Карпатах:</b> англійська з носіями мови, розвиток креативності, критичного мислення та комунікабельності, спорт і активний відпочинок серед мальовничих карпатських пейзажів.</li>
+          <li><b>Англомовний денний табір у Києві</b> — подорож за кордон, не виїжджаючи з Києва! 40 інтерактивних уроків з викладачами з англомовними викладачами, три напрямки програми (Англія, Канада, США), активний відпочинок, творчі майстер-класи, екскурсійна програма, розвиток soft & life skills.</li>
+          <li><b>Американське літо в Києві:</b> англомовні сесії зі справжніми профі для тих, хто хочу обрати майбутню професію та напрямок навчання за кордоном; навчання в англомовному середовищі: практика та лекції лише англійською.</li>
+        </ul>
+        <div class="popup__flex">
+          <a class="button" href="#register">Зареєструватись</a>
+          <p class="popup__attention">Дізнайтесь більше про програми канікул на виставці в Києві!</p>
+        </div>
+      </div>
+    </div>
+  </article>
+  
+  <div class="popup__overlay  popup__overlay--hide"></div>
+  
   <script src="js/main.min.js" async></script>
 </body>
 </html>
