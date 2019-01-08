@@ -100,16 +100,19 @@
 
 .popup__text {
   color: #3e3e3e;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: normal;
-  font-family: 'Book Antiqua', 'Open Sans', 'Arial', sans-serif;
 }
 
 .popup__list {
   margin: 20px 0 50px 0;
   color: #3e3e3e;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: normal;
+}
+
+.popup__item {
+  margin: 0 0 10px 0;
 }
 
 .popup__attention {

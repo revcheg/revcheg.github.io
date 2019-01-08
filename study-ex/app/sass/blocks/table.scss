@@ -1,8 +1,9 @@
 .table__wrapper {
   position: relative;
-  height: 820px;
+  height: 500px;
   margin: 0 0 30px 0;
   background: #fff;
+  overflow: scroll;
 }
 
 .table__controll {
@@ -38,7 +39,7 @@
 
 .table {
   position: absolute;
-  top: 43px;
+  top: 0;
   left: 0;
   width: 100%;
   background: #fff;
@@ -101,8 +102,28 @@
 @media screen and ($tablet-widths) {}
 
 @media screen and ($mobile-widths) {
+  .table__wrapper {
+    
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+  }
+  
+  .table__button {
+    font-size: 14px;
+  }
+  
   .table {
     display: block;
-    overflow: scroll;
+  }
+  
+  .table__name,
+  .table__hall {
+    font-size: 15px;
+  }
+  
+  .table__text {
+    font-size: 14px;
   }
 }
