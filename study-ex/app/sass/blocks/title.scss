@@ -1,10 +1,19 @@
 .title {
   padding: 180px 0 0 0;
   background: url('../img/title-bg.png') no-repeat center / contain;
+  
+  &--partner {
+    padding: 230px 0;
+    background: url('../img/title-bg-partner.png') no-repeat 100px 0 / contain;
+  }
 }
 
 .title__wrapper {
   width: 760px;
+  
+  &--partner {
+    margin: 0 0 0 auto;
+  }
 }
 
 .title__flex {
@@ -27,7 +36,15 @@
   }
 }
 
-@media screen and ($tablet-widths) {}
+@media screen and ($tablet-widths) {
+  .title {
+    background: #fff;
+  }
+  
+  .title__wrapper {
+    width: 700px;
+  }
+}
 
 @media screen and ($mobile-widths) {
   .title {

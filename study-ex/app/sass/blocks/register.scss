@@ -1,6 +1,10 @@
 .register {
   padding: 220px 0;
   background: #e6e1d5 url('../img/register-bg.jpg') no-repeat center / cover;
+  
+  &--partner {
+    background: #f7f6f6;
+  }
 }
 
 .register__wrapper {
@@ -18,10 +22,15 @@
   color: $main-red;
   font-size: 30px;
   font-weight: normal;
+  font-family: 'Book Antiqua', 'Open Sans', 'Arial', sans-serif;
   text-align: center;
 }
 
-@media screen and ($tablet-widths) {}
+@media screen and ($tablet-widths) {
+  .register__wrapper {
+    width: 700px;
+  }
+}
 
 @media screen and ($mobile-widths) {
   .register__wrapper {

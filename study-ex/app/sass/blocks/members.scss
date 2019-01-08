@@ -66,12 +66,15 @@
   text-align: center;
 }
 
-@media screen and ($tablet-widths) {}
+@media screen and ($tablet-widths) {
+  .members {
+    background: url('../img/members-bg.png') no-repeat right / cover;
+  }
+}
 
 @media screen and ($mobile-widths) {
   .members {
     padding: 100px 0;
-    background: url('../img/members-bg.png') no-repeat right / cover;
   }
   
   .members__content {
