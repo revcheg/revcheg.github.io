@@ -7,11 +7,3 @@
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
   z-index: 2;
 }
-
-@media screen and ($tablet-widths) {}
-
-@media screen and ($mobile-widths) {
-  .header {
-    // position: relative;
-  }
-}

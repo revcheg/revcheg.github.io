@@ -122,7 +122,6 @@
   font-style: italic;
 }
 
-// Overlay
 .popup__overlay {
   position: fixed;
   top: 0;
@@ -141,8 +140,6 @@
     visibility: hidden;
   }
 }
-
-@media screen and ($tablet-widths) {}
 
 @media screen and ($mobile-widths) {
   .popup {

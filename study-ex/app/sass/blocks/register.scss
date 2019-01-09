@@ -33,6 +33,11 @@
 }
 
 @media screen and ($mobile-widths) {
+  .register {
+    padding: 100px 0;
+    background: #f7f6f6;
+  }
+  
   .register__wrapper {
     width: auto;
   }

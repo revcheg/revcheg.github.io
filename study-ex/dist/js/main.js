@@ -32,54 +32,85 @@
   var nextButtons = document.querySelectorAll('.popup__button--next');
   var registerButtons = document.querySelectorAll('.button--register');
   
+  // var currentPopup;
+  
+  var currentPopup;
+  var arrayOpenButtons = [];
+  
   // for (var i = 0; i < openButtons.length; i++) {
   //   openButtons[i].addEventListener('click', function () {
-  //     overlay.classList.remove('popup__overlay--hide');
-  //     var openId = this.id;
-  //     switch (openId) {
-  //       default:
-  //         popups[openId - 1].classList.remove('popup--hide');
-  //         break;
-  //     };
+  //     var buttonId = this.id;
+  //     currentPopup = buttonId;
+  //     showPopup(currentPopup);
   //   });
   // };
   
-  var currentPopup;
-  
-  for (var i = 0; i < openButtons.length; i++) {
-    openButtons[i].addEventListener('click', function () {
-      var buttonId = this.id;
-      currentPopup = buttonId;
-      showPopup(currentPopup);
+  // Рабочий вариант
+  for (var i = 0; i < openButtons.length; i++){
+    arrayOpenButtons.push(openButtons[i]);
+    openButtons[i].addEventListener('click', function(e){
+       currentPopup = arrayOpenButtons.indexOf(e.target);
+       showPopup(currentPopup);
     });
   };
   
-  var showPopup = function (number) {
+  var showPopup = function (currentPopup) {
     overlay.classList.remove('popup__overlay--hide');
-    if (currentPopup === 0) {
-      currentPopup = 9;
-      showPopup(currentPopup);
-    };
-    if (currentPopup === 10) {
-      currentPopup = 1;
-      showPopup(currentPopup);
-    };
-    popups[number - 1].classList.remove('popup--hide');
+    popups[currentPopup].classList.remove('popup--hide');
   };
   
+  // Старый вариант
+  // var showPopup = function (number) {
+  //   overlay.classList.remove('popup__overlay--hide');
+  //   if (currentPopup === 0) {
+  //     currentPopup = 9;
+  //     showPopup(currentPopup);
+  //   };
+  //   if (currentPopup === 10) {
+  //     currentPopup = 1;
+  //     showPopup(currentPopup);
+  //   };
+  //   popups[number - 1].classList.remove('popup--hide');
+  // };
+  
+  // for (var p = 0; p < prevButtons.length; p++) {
+  //   prevButtons[p].addEventListener('click', function () {
+  //     popups[currentPopup - 1].classList.add('popup--hide');
+  //     currentPopup--;
+  //     showPopup(currentPopup);
+  //     console.log(currentPopup);
+  //   });
+  // };
+  
+  // Рабочий вариант
   for (var p = 0; p < prevButtons.length; p++) {
     prevButtons[p].addEventListener('click', function () {
-      popups[currentPopup - 1].classList.add('popup--hide');
+      popups[currentPopup].classList.add('popup--hide');
       currentPopup--;
+      if (currentPopup < 0) {
+        currentPopup = 8;
+      };
       showPopup(currentPopup);
-      console.log(currentPopup);
     });
   };
   
+  // Старый вариант
+  // for (var k = 0; k < nextButtons.length; k++) {
+  //   nextButtons[k].addEventListener('click', function () {
+  //     popups[currentPopup - 1].classList.add('popup--hide');
+  //     currentPopup++;
+  //     showPopup(currentPopup);
+  //   });
+  // };
+  
+  // Рабочий вариант
   for (var k = 0; k < nextButtons.length; k++) {
     nextButtons[k].addEventListener('click', function () {
-      popups[currentPopup - 1].classList.add('popup--hide');
+      popups[currentPopup].classList.add('popup--hide');
       currentPopup++;
+      if (currentPopup === 9) {
+        currentPopup = 0;
+      };
       showPopup(currentPopup);
     });
   };
@@ -108,6 +139,57 @@
       };
     });
   };
+  
+  
+  // Попытка получить данные
+  
+  // function getRemoteData() {
+  //   var xhr = new XMLHttpRequest();
+  //   var url = 'https://img0.study.com.ua/datapopup/dataPopup';
+  // 
+  //   xhr.open('GET', url);
+  //   xhr.send(null);
+  // 
+  //   xhr.onreadystatechange = function () {
+  //     if (xhr.readyState === 4 && xhr.status === 200) {
+  //       var data = JSON.parse(xhr.responseText);
+  //       var pins = getPins(data);
+  // 
+  //       document.querySelector('.map__pins')
+  //         .appendChild(pins);
+  // 
+  //       removeClass('.map', 'map--faded');
+  // 
+  //       housesData = data;
+  // 
+  //       searchPins();
+  //     }
+  // 
+  //     return false;
+  //   };
+  // }
+  
+  // Временный массив с данными
+  // var popupData = [
+  //   {
+  //     'title': 'Групові поїздки за кордон влітку 2019 року.<br>10 країн, 30 міст і 100 поїздок для школярів і студентів.',
+  //     'img': 'img/programs-1.jpg',
+  //     'counter': '1/9',
+  //     'text': '<b>Групова поїздка за кордон</b> — літо з користю для майбутнього! Вперше влітку 2019: 10 країн, 30 міст і 100 поїздок для школярів і студентів у супроводі керівника групи від компанії STUDY.UA. Приходьте на виставку і обирайте ідеальний варіант літніх канікул за кордоном!',
+  //   },
+  //   {
+  //     'title': 'Літні канікули для школярів в Україні.'
+  //   }
+  // ]
+  
+  // Отрисовка попапов
+  // var popupTemplate = document.querySelector('.popup__template').content.querySelector('.popup');
+  // 
+  // for (var index = 0; index < popups.length; index++) {
+  //   var popup = popupTemplate.cloneNode(true);
+  //   popup.querySelector('.heading--popup').innerHTML = popupData[index].title;
+  //   document.body.appendChild(popup);
+  // };
 })();
 (function () {
   var buttonSaturday = document.querySelector('.table__button--saturday');
