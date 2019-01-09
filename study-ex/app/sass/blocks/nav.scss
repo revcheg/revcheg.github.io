@@ -44,6 +44,11 @@
     padding: 33px 0 33px 30px;
     background: url('../img/svg/phone.svg') no-repeat left / 20px;
   }
+  
+  &--active {
+    color: $main-red;
+    border-bottom: 2px solid $main-red;
+  }
 }
 
 .nav__open {

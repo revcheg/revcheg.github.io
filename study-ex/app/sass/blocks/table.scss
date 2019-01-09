@@ -132,6 +132,10 @@
   
   .table {
     display: block;
+    
+    &--partner {
+      display: table;
+    }
   }
   
   .table__name,

@@ -6,3 +6,9 @@
 .participants__item {
   margin: 0 0 10px 0;
 }
+
+@media screen and ($mobile-widths) {
+  .participants {
+    background: url('../img/participants-bg.png') no-repeat left / cover;
+  }
+}
