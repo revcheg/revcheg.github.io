@@ -41,7 +41,7 @@
         </a>
         <ul class="nav__list  nav__list--mobile  nav__list--inactive">
           <li class="nav__item">
-            <a class="nav__link" href="#">Учасники виставки</a>
+            <a class="nav__link" href="members.html" target="_blank">Учасники виставки</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#seminars">Освітні семінари</a>
@@ -70,21 +70,27 @@
             <p class="title__text">9 та 10 лютого<br>10:00-17:00</p>
           </div>
         </section>
-        <form class="form" enctype="multipart/form-data" name="form_submit" accept-charset="utf-8" autocomplete="off" action="https://formdesigner.ru/form/view/105398" method="post">
+        <div id="form_1053982_1"></div>
+        <!-- <form class="form" enctype="multipart/form-data" name="form_submit" accept-charset="utf-8" autocomplete="off" action="https://formdesigner.ru/form/view/105398" method="post">
+          <input type="hidden" value="" name="email" id="email">
+          <input type="hidden" value="1" name="current_page" id="current_page">
+          <input type="hidden" value="https://formdesigner.ru/form/view/105398" name="pageurl" id="pageurl">
+          <input type="hidden" value="" name="referrer" id="referrer">
           <div class="form__wrapper">
-            <input class="form__input" type="text" placeholder="Ваше ім‘я та прізвище" required>
-            <input class="form__input" type="email" placeholder="Ваш e-mail" required>
-            <input class="form__input" type="tel" placeholder="Ваш телефон" required>
+            <input class="form__input" type="text" name="field855390" placeholder="Ваше ім‘я та прізвище">
+            <input class="form__input" type="email" name="field855396" placeholder="Ваш e-mail">
+            <input class="form__input" type="tel" name="field855391" placeholder="Ваш телефон">
           </div>
-          <button class="button  button--center" type="submit">Зареєструватись</button>
-        </form>
+          <input type="hidden" name="field855393">
+          <button class="button  button--center" type="submit" name="submit">Зареєструватись</button>
+        </form> -->
       </div>
     </div>
   </div>
   <div class="waiting">
     <div class="container">
       <section class="waiting__content">
-        <h2 class="heading  heading--small">На виставці на вас чекають</h2>
+        <h2 class="heading  heading--small">На вас чекають</h2>
         <b class="waiting__subheading">індивідуальні консультації експертів з навчання за кордоном, спеціальні пропозиції від учасників виставки, а також:</b>
         <ul class="waiting__list">
           <li class="waiting__item"><span class="waiting__item--warning">25</span> освітніх семінарів.</li>
@@ -92,7 +98,7 @@
           <li class="waiting__item"><span class="waiting__item--warning">100</span> програм літніх канікул для школярів та студентів.</li>
           <li class="waiting__item"><span class="waiting__item--warning">Вища освіта</span> в Канаді, Великій Британії, США та Європі.</li>
           <li class="waiting__item"><span class="waiting__item--warning">Середня освіта</span> в престижних школах-пансіонах світу.</li>
-          <li class="waiting__item"><span class="waiting__item--warning">Міжнародна школа</span> STUDY Academy: навчання за стандартами шкіл та університетів Канади та США в Києві та online.</li>
+          <li class="waiting__item"><span class="waiting__item--warning">Міжнародна школа</span> STUDY Academy: навчання за стандартами шкіл та університетів Канади і США в Києві, online-програми.</li>
           <li class="waiting__item"><span class="waiting__item--warning  waiting__item--new">Новий проект!</span> Міжнародна медіа-школа<br>від STUDY Academy та Вищої Школи Media&Production 1+1.</li>
           <li class="waiting__item"><span class="waiting__item--warning">STUDY Academy:</span> Академія англійської мови у Києві.</li>
         </ul>
@@ -101,7 +107,7 @@
       </section>
     </div>
   </div>
-  <section class="programs" id="seminars">
+  <section class="programs">
     <div class="container">
       <h2 class="heading  heading--small  heading--center">ОСВІТНІ ПРОГРАМИ НА ВИСТАВЦІ</h2>
       <hr class="heading__hr">
@@ -195,7 +201,7 @@
       <h2 class="heading  heading--small  heading--center">Учасники виставки «Освіта за кордоном»</h2>
       <hr class="heading__hr">
       <div class="members__content">
-        <p class="members__subheading">Цього лютого у виставці беруть участь 70 учасників з Великої Британії, США, Канади та Європейського Союзу, серед яких:</p>
+        <p class="members__subheading">У виставці беруть участь 70 партнерських навчальних закладів компанії STUDY.UA з Великої Британії, США, Канади та Європейського Союзу, серед яких:</p>
         <ul class="members__list">
           <li class="members__item">університети та коледжі з програмами бакалаврату, магістратури та післядипломної освіти;</li>
           <li class="members__item">бордингові школи-пансіони з програмами середньої освіти;</li>
@@ -234,7 +240,7 @@
       <a class="button  button--center" href="#register">Зареєструватись</a>
     </div>
   </section>
-  <section class="seminars">
+  <section class="seminars" id="seminars">
     <div class="container">
       <h2 class="heading  heading--small  heading--center">ОСВІТНІ СЕМІНАРИ НА ВИСТАВЦІ</h2>
       <hr class="heading__hr">
@@ -278,15 +284,15 @@
           </tr>
           <tr class="table__tr">
             <td class="table__td">
-              <b class="table__name">Cape Breton University</b>
-              <p class="table__text">Канада</p>
+              <b class="table__name">Victor Tomiczek</b>
+              <p class="table__text">Cape Breton University</p>
             </td>
             <td class="table__td">
               <b class="table__time">11:30</b>
             </td>
             <td class="table__td">
-              <b class="table__name">Вища освіта в Новій Шотландії, Канада.</b>
-              <p class="table__text">Навчання у сфері гуманітарних наук, бізнесу, науки та техніки.</p>
+              <b class="table__name">Навчання на найкрасивішому канадському острові.</b>
+              <p class="table__text">Вища освіта в провінції Нова Шотландія.</p>
             </td>
             <td class="table__td">
               <b class="table__hall  table__hall--blue">Синій зал</b>
@@ -397,8 +403,8 @@
               <b class="table__time">15:00</b>
             </td>
             <td class="table__td">
-              <b class="table__name">Вища освіта в галузі прикладних наук і технологій в Канаді.</b>
-              <p class="table__text">Як стати студентом одного з ведучих державних коледжів провінції Онтаріо?</p>
+              <b class="table__name">Перспективні спеціальності майбутнього в коледжі Fanshawe.</b>
+              <p class="table__text">Вища освіта в галузі прикладних наук і технологій в Канаді.</p>
             </td>
             <td class="table__td">
               <b class="table__hall  table__hall--red">Червоний зал</b>
@@ -456,15 +462,15 @@
           </tr>
           <tr class="table__tr">
             <td class="table__td">
-              <b class="table__name">Conestoga College Institute of Technology & Advanced Learning</b>
-              <p class="table__text">Канада</p>
+              <b class="table__name">Валерія Тищенко</b>
+              <p class="table__text">Conestoga College Institute of<br>Technology & Advanced Learning</p>
             </td>
             <td class="table__td">
               <b class="table__time">12:00</b>
             </td>
             <td class="table__td">
-              <b class="table__name">Політехнічна освіта в канадському коледжі.</b>
-              <p class="table__text">Популярні програми, вимоги до вступу та вартість навчання в 2019 році, можливості для випускників.</p>
+              <b class="table__name">Conestoga College: навчання в канадській кремнієвій долині.</b>
+              <p class="table__text">Політехнічна освіта в канадському коледжі.</p>
             </td>
             <td class="table__td">
               <b class="table__hall  table__hall--blue">Синій зал</b>
@@ -495,8 +501,8 @@
               <b class="table__time">13:00</b>
             </td>
             <td class="table__td">
-              <b class="table__name">Освіта у сфері Hospitality в Канаді.</b>
-              <p class="table__text">Можливості навчання за спеціальностями Hotel and Restaurant Operations, Tourism Management та Business Administration.</p>
+              <b class="table__name">Canada is Working. Niagara is Living.</b>
+              <p class="table__text">Можливості навчання в Niagara College — вища освіта у сфері Hospitality.</p>
             </td>
             <td class="table__td">
               <b class="table__hall  table__hall--blue">Синій зал</b>
@@ -568,14 +574,14 @@
           </tr>
           <tr class="table__tr">
             <td class="table__td">
-              <b class="table__name">Alex Prokopenko</b>
+              <b class="table__name">Кирило Мурахтанов</b>
               <p class="table__text">Humber Institute of Technology and Advanced Learning</p>
             </td>
             <td class="table__td">
               <b class="table__time">15:30</b>
             </td>
             <td class="table__td">
-              <b class="table__name">Вища та післядипломна освіта в Канаді.</b>
+              <b class="table__name">Обирайте майбутню кар'єру в Канаді з Humber Institute.</b>
               <p class="table__text">Переваги та можливості навчання в державному канадському ВНЗ в Торонто.</p>
             </td>
             <td class="table__td">
@@ -605,14 +611,15 @@
     <div class="container">
       <div class="register__wrapper">
         <b class="register__heading">До зустрічі 9 та 10 лютого на виставці<br>«Освіта за кордоном»!</b>
-        <form class="form" enctype="multipart/form-data" name="form_submit" accept-charset="utf-8" autocomplete="off" action="https://formdesigner.ru/form/view/105398" method="post">
+        <div id="form_1053982_2"></div>
+        <!-- <form class="form" enctype="multipart/form-data" name="form_submit" accept-charset="utf-8" autocomplete="off" action="https://formdesigner.ru/form/view/105398" method="post">
           <div class="form__wrapper">
             <input class="form__input" type="text" placeholder="Ваше ім‘я та прізвище" required>
             <input class="form__input" type="email" placeholder="Ваш e-mail" required>
             <input class="form__input" type="tel" placeholder="Ваш телефон" required>
           </div>
           <button class="button  button--center" type="submit">Зареєструватись</button>
-        </form>
+        </form> -->
       </div>
     </div>
   </div>
@@ -677,8 +684,8 @@
         <ul class="popup__list">
           <li class="popup__item"><b>Британський табір під Києвом:</b> англійська з носіями мови з Англії та США, спорт, ігри, квести англійською мовою та 12 напрямків творчості.</li>
           <li class="popup__item"><b>Британський табір в Карпатах:</b> англійська з носіями мови, розвиток креативності, критичного мислення та комунікабельності, спорт і активний відпочинок серед мальовничих карпатських пейзажів.</li>
-          <li class="popup__item"><b>Англомовний денний табір у Києві:</b> 40 інтерактивних уроків з викладачами з англомовними викладачами, три напрямки програми (Англія, Канада, США), активний відпочинок, творчі майстер-класи, екскурсійна програма, розвиток soft & life skills.</li>
-          <li class="popup__item"><b>Американське літо в Києві:</b> англомовні сесії зі справжніми профі для тих, хто хоче обрати майбутню професію та напрямок навчання за кордоном; навчання в англомовному середовищі: практика та лекції лише англійською.</li>
+          <li class="popup__item"><b>Англомовний денний табір у Києві:</b> 40 інтерактивних уроків з англомовними викладачами, три напрямки програми (Англія, Канада, США), активний відпочинок, творчі майстер-класи, екскурсійна програма, розвиток soft & life skills.</li>
+          <li class="popup__item"><b>Американське літо в Києві:</b> англомовні сесії зі справжніми профі для тих, хто хоче обрати майбутню професію та напрямок навчання за кордоном; практика та лекції лише англійською мовою.</li>
         </ul>
         <div class="popup__flex">
           <a class="button  button--register" href="#register">Зареєструватись</a>
@@ -748,7 +755,7 @@
           <li>Дізнайтеся про вимоги до вступу і вартість навчання для українських студентів.</li>
           <li>Особисто запитайте представників університетів про навчання і життя в США та Великій Британії.</li>
           <li>Скористайтеся спеціальними пропозиціями від університетів.</li>
-          <li>Оберіть спеціальність і забронюйте програму прямо на виставці.</li>
+          <li>Оберіть спеціальність і забронюйте програму на виставці.</li>
         </ul>
         <div class="popup__flex">
           <a class="button  button--register" href="#register">Зареєструватись</a>
@@ -966,5 +973,12 @@
   <div class="popup__overlay  popup__overlay--hide"></div>
   
   <script src="js/main.min.js" async></script>
+  <!-- <script>
+    function parseGetParams(){var e,r,t,o,a,s,n={},c=function(e){return decodeURIComponent(e).replace(/\+/g," ")},p=window.location.search.substring(1),i=/([^&;=]+)=?([^&;]*)/g;for(a=function(e){return"object"!=typeof e&&(r=e,e={length:0},r&&Array.prototype.push.call(e,r)),e};t=i.exec(p);)e=t[1].indexOf("["),s=c(t[2]),0>e?(o=c(t[1]),n[o]?(n[o]=a(n[o]),Array.prototype.push.call(n[o],s)):n[o]=s):(o=c(t[1].slice(0,e)),e=c(t[1].slice(e+1,t[1].indexOf("]",e))),n[o]=a(n[o]),e?n[o][e]=s:Array.prototype.push.call(n[o],s));return n}var getParams=parseGetParams();!function(e,r,t){(r[t]=r[t]||[]).push({formId:105398,host:"formdesigner.ru",formHeight:391,el:"form_1053982_1",center:0,fields:{field855393:getParams.gclid||""}});var o=e.createElement("script"),a="getElementsByTagName";o.type="text/javascript",o.charset="UTF-8",o.async=!1,o.src=("https:"==e.location.protocol?"https:":"http:")+"//formdesigner.ru/js/iform.js",(e[a]("head")[0]||e[a]("body")[0]).appendChild(o)}(document,window,"fdforms");
+  </script> -->
+  <!-- <script>
+   function parseGetParams(){var e,r,t,o,a,s,n={},c=function(e){return decodeURIComponent(e).replace(/\+/g," ")},p=window.location.search.substring(1),i=/([^&;=]+)=?([^&;]*)/g;for(a=function(e){return"object"!=typeof e&&(r=e,e={length:0},r&&Array.prototype.push.call(e,r)),e};t=i.exec(p);)e=t[1].indexOf("["),s=c(t[2]),0>e?(o=c(t[1]),n[o]?(n[o]=a(n[o]),Array.prototype.push.call(n[o],s)):n[o]=s):(o=c(t[1].slice(0,e)),e=c(t[1].slice(e+1,t[1].indexOf("]",e))),n[o]=a(n[o]),e?n[o][e]=s:Array.prototype.push.call(n[o],s));return n}var getParams=parseGetParams();!function(e,r,t){(r[t]=r[t]||[]).push({formId:105398,host:"formdesigner.ru",formHeight:391,el:"form_1053982_1",center:0,fields:{field855393:getParams.gclid||""}});var o=e.createElement("script"),a="getElementsByTagName";o.type="text/javascript",o.charset="UTF-8",o.async=!1,o.src=("https:"==e.location.protocol?"https:":"http:")+"//formdesigner.ru/js/iform.js",(e[a]("head")[0]||e[a]("body")[0]).appendChild(o)}(document,window,"fdforms");
+   function parseGetParams(){var e,r,t,o,a,s,n={},c=function(e){return decodeURIComponent(e).replace(/\+/g," ")},p=window.location.search.substring(1),i=/([^&;=]+)=?([^&;]*)/g;for(a=function(e){return"object"!=typeof e&&(r=e,e={length:0},r&&Array.prototype.push.call(e,r)),e};t=i.exec(p);)e=t[1].indexOf("["),s=c(t[2]),0>e?(o=c(t[1]),n[o]?(n[o]=a(n[o]),Array.prototype.push.call(n[o],s)):n[o]=s):(o=c(t[1].slice(0,e)),e=c(t[1].slice(e+1,t[1].indexOf("]",e))),n[o]=a(n[o]),e?n[o][e]=s:Array.prototype.push.call(n[o],s));return n}var getParams=parseGetParams();!function(e,r,t){(r[t]=r[t]||[]).push({formId:105398,host:"formdesigner.ru",formHeight:391,el:"form_1053982_2",center:0,fields:{field855393:getParams.gclid||""}});var o=e.createElement("script"),a="getElementsByTagName";o.type="text/javascript",o.charset="UTF-8",o.async=!1,o.src=("https:"==e.location.protocol?"https:":"http:")+"//formdesigner.ru/js/iform.js",(e[a]("head")[0]||e[a]("body")[0]).appendChild(o)}(document,window,"fdforms");
+  </script> -->
 </body>
 </html>
