@@ -36,3 +36,18 @@
   width: 500px;
   margin: auto;
 }
+
+@media screen and ($mobile-widths) {
+  .thankyou__text {
+    font-size: 16px;
+    
+    &--small {
+      text-align: center;
+    }
+  }
+  
+  .thankyou__flex {
+    flex-direction: column;
+    width: 100%;
+  }
+}

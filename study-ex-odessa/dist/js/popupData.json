@@ -72,7 +72,7 @@ var popupData = [
     'attention': ''
   },
   {
-    'title': 'STUDY Academy.<br>Академия английского языка в Одессе.',
+    'title': 'Академия английского языка в Одессе.',
     'imgWebp': 'img/programs-9.webp',
     'img': 'img/programs-9.jpg',
     'counter': '9/9',

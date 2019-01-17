@@ -967,3 +967,12 @@ body {
   justify-content: space-between;
   width: 500px;
   margin: auto; }
+
+@media screen and (max-width: 768px) {
+  .thankyou__text {
+    font-size: 16px; }
+    .thankyou__text--small {
+      text-align: center; }
+  .thankyou__flex {
+    flex-direction: column;
+    width: 100%; } }
