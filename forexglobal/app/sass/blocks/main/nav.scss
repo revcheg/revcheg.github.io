@@ -1,63 +1,29 @@
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 0px 15px;
 }
 
 .nav__list {
-  // position: relative;
   display: flex;
   justify-content: space-between;
-  width: 470px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.nav__item {
+  margin: 0 30px 0 0;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
   
-  li {
-    padding: 27px 0;
-    border-bottom: 1px solid transparent;
-    transition: 0.5s;
+  &:hover,
+  &:focus-within {
+    border-bottom: 1px solid $mc;
     
-    &:nth-child(4) {
-      
-      a {
-        outline: none;
-        
-        &::after {
-          background: none;
-        }
-      }
-    }
-    
-    &:hover,
-    &:focus-within {
-      border-bottom: 1px solid $mc;
-    }
-  }
-  
-  a {
-    position: relative;
-    color: $mc;
-    font-size: 18px;
-    font-weight: 300;
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.3s linear;
-    
-    &::after {
-      content: '';
-      position: absolute;
-      top: 10px;
-      right: -10px;
-      width: 6px;
-      height: 3px;
-      background: url('../img/nav-arrow.svg') no-repeat top;
-      transition: 0.2s;
-    }
-    
-    &:hover {
-      color: #ffd800;
+    .nav__icon {
+      transform: rotate(180deg);
     }
   }
 }
@@ -67,114 +33,99 @@
   top: 157px;
   left: 0;
   width: 100%;
-  // border-top: 2px solid $sc;
-  // border-bottom: 2px solid $sc;
-  // background: rgba(47, 40, 97, 0.9);
+  opacity: 0;
   transition: 0.5s;
   visibility: hidden;
-  opacity: 0;
 }
 
 .nav__sub {
   display: flex;
-  // justify-content: space-between;
   align-items: center;
   width: 1140px;
   margin: 0 auto;
-  // padding: 27px 15px;
   list-style: none;
-  
-  b {
-    color: $mc;
-    font-size: 30px;
-    font-weight: 500;
-  }
-  
-  li {
-    margin: 0 30px 0 0;
-    padding: 27px 0;
-    
-    &:last-child {
-      margin: 0;
-    }
-    
-    &:hover,
-    &:focus-within {
-      border-bottom: 1px solid $mc;
-    }
-  }
-  
-  a {
-    font-size: 16px;
-    outline: none;
-    
-    &::after {
-      display: none;
-    }
-  }
 }
 
 .nav__link {
-  border-bottom: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+  color: $mc;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
   outline: none;
+  transition: 0.3s linear;
   
-  &--active {
-    border-bottom: 1px solid $mc;
-    
-    &::after {
-      transform: rotate(180deg);
-    }
+  &:hover,
+  &:focus {
+    color: #ffd800;
+  }
+  
+  &--small {
+    font-size: 16px;
   }
 }
 
-.nav__active {
-  border-bottom: 1px solid $mc;
+.nav__icon {
+  fill: $mc;
+  margin: 0 0 0 10px;
+  transition: 0.3s;
 }
 
-.nav__search {
+.nav__label {
   position: relative;
   top: 0;
   transition: 0.5s;
   
-  input {
-    width: 470px;
-    height: 42px;
-    padding: 0 15px;
-    color: $mc;
-    font-size: 14px;
-    font-weight: 300;
-    font-family: inherit;
-    border: 1px solid $mc;
-    border-radius: 3px;
-    background: transparent;
-    transition: 0.5s;
-    outline: none;
-    opacity: 0;
-  }
-  
   &:after {
     content: '';
     position: absolute;
-    top: 5px;
-    right: 15px;
-    width: 30px;
-    height: 30px;
-    background: url('../img/nav-search.svg') no-repeat top;
+    top: 8px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background: url('../img/svg/nav-search.svg') no-repeat top;
   }
   
-  &:hover input,
-  &:focus-within input {
-    opacity: 1;
+  &:hover,
+  &:focus-within {
+    
+    .nav__search {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 }
 
-.nav__list li:hover > .nav__wrapper,
-.nav__list li:focus-within > .nav__wrapper,
-.nav__list li .nav__wrapper:hover,
-.nav__list li .nav__wrapper:focus {
+.nav__search {
+  width: 470px;
+  height: 42px;
+  padding: 0 15px;
+  color: $mc;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: inherit;
+  border: 1px solid $mc;
+  border-radius: 3px;
+  background: transparent;
+  appearance: none;
+  transition: 0.5s;
+  opacity: 0;
+  outline: none;
+  visibility: hidden;
+  
+  &::-webkit-search-cancel-button {
+    appearance: none;
+  }
+}
+
+.nav__list .nav__item:hover > .nav__wrapper,
+.nav__list .nav__item:focus-within > .nav__wrapper,
+.nav__list .nav__item .nav__wrapper:hover,
+.nav__list .nav__item .nav__wrapper:focus {
    visibility: visible;
    opacity: 1;
-   display: block;
 }
 
 @media screen and ($tablet-widths) {

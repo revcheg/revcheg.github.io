@@ -1,12 +1,10 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
-  transition: 1s;
+  // transition: 2s;
   
   &--scroll {
-    position: fixed;
-    top: 0;
     background: rgba(47, 40, 97, 0.9);
     z-index: 1;
     
@@ -76,23 +74,17 @@
   }
 }
 
-.header__container {
-  width: 1170px;
-  margin: auto;
-}
-
 .header__flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 15px;
-  border-bottom: 1px solid #2f2861;
+  border-bottom: 1px solid $mc;
 }
 
 .header__logo {
   width: 170px;
   transition: 0.3s;
-  z-index: 20;
 }
 
 .header__toggle {
@@ -102,7 +94,7 @@
   padding: 0;
   font-size: 0;
   border: none;
-  background: transparent url('../img/nav-toggle.svg') no-repeat top;
+  background: transparent url('../img/svg/nav-toggle.svg') no-repeat center;
   outline: none;
 }
 
@@ -110,82 +102,10 @@
   display: flex;
   justify-content: space-between;
   width: 470px;
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none;
   transition: 0.5s;
-  
-  li {
-    text-align: center;
-    
-    &:last-child {
-      width: 70px;
-    }
-    
-    a {
-      display: block;
-      width: 168px;
-      padding: 9px 0;
-      color: $mc;
-      font-size: 18px;
-      font-weight: 300;
-      text-decoration: none;
-      border: 1px solid $mc;
-      border-radius: 3px;
-      transition: 0.3s;
-      outline: none;
-      
-      &:hover,
-      &:focus {
-        color: $sc;
-        background: $mc;
-      }
-    }
-  }
-}
-
-.header__open {
-  position: relative;
-  transition: 0.3s;
-  
-  &::after {
-    content: 'Trading involves risk of loss';
-    position: absolute;
-    bottom: -15px;
-    left: 0;
-    width: inherit;
-    color: $mc;
-    font-size: 10px;
-  }
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 19px;
-    right: 13px;
-    width: 6px;
-    height: 3px;
-    background: url('../img/nav-arrow.svg') no-repeat center;
-    transition: 0.1s;
-  }
-  
-  &:hover,
-  &:focus {
-
-    &::before {
-      background: url('../img/nav-arrow-h.svg') no-repeat center;
-    }
-  }
-  
-  &--active {
-    color: $sc !important;
-    background: $mc;
-    
-    &::before {
-      background: url('../img/nav-arrow-h.svg') no-repeat center;
-      transform: rotate(180deg);
-    }
-  }
 }
 
 .header__accounts {
@@ -226,7 +146,7 @@
 
 .header__language {
   width: 70px;
-  height: 41px;
+  height: 43px;
   padding: 0 20px;
   color: $mc;
   font-size: 18px;
@@ -234,18 +154,18 @@
   font-family: inherit;
   border: 1px solid $mc;
   border-radius: 3px;
-  background: transparent url('../img/nav-arrow.svg') no-repeat right;
+  background: transparent url('../img/svg/nav-arrow.svg') no-repeat right;
   background-position-x: 50px;
   background-size: 6px 3px;
-  transition: 0.3s linear;
   appearance: none;
+  transition: 0.3s linear;
   cursor: pointer;
   outline: none;
   
   &:hover,
   &:focus {
     color: $sc;
-    background: $mc url('../img/nav-arrow-h.svg') no-repeat right;
+    background: $mc url('../img/svg/nav-arrow-h.svg') no-repeat right;
     background-position-x: 50px;
     background-size: 6px 3px;
   }
@@ -286,7 +206,7 @@
     }
   }
   
-  .header__container {
+  .header__wrapper {
     width: 100%;
   }
 }

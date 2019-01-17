@@ -1,7 +1,7 @@
 .title {
-  padding: 0 0 40px 0;
-  background: #32138c url('../img/title-bg.jpg') no-repeat top;
-  background-size: cover;
+  padding: 395px 0 40px 0;
+  background: #32138c url('../img/title-bg.jpg') no-repeat top / cover;
+  background-attachment: fixed;
   
   &--inner {
     padding: 0 0 200px 0;
@@ -11,7 +11,7 @@
 
 .title__name {
   margin: 0;
-  padding: 395px 0 95px 0;
+  padding: 0 0 95px 0;
   color: #fff;
   font-size: 65px;
   font-weight: 300;
@@ -22,63 +22,52 @@
   display: flex;
   justify-content: space-between;
   width: 770px;
-  margin: 0 auto 130px;
+  margin: 0 auto 200px auto;
+}
+
+.title__input {
+  width: 250px;
+  height: 38px;
+  padding: 0 10px;
+  color: $mc;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: inherit;
+  border: 1px solid $mc;
+  border-radius: 3px;
+  background: transparent;
+  transition: 0.3s;
+  cursor: pointer;
+  outline: none;
   
-  input {
-    width: 248px;
-    height: 38px;
-    padding: 0 10px;
+  &::placeholder {
     color: $mc;
-    font-size: 18px;
-    font-weight: 300;
-    font-family: inherit;
-    border: 1px solid $mc;
-    border-radius: 3px;
-    background: transparent;
-    transition: 0.3s;
-    cursor: pointer;
-    outline: none;
-    
-    &::placeholder {
-      color: $mc;
-    }
-    
-    &:hover,
-    &:focus {
-      border: 1px solid #7865ff;
-    }
   }
   
-  button {
-    position: relative;
-    width: 170px;
-    height: 40px;
-    color: #2f2861;
-    font-size: 18px;
-    font-weight: 300;
-    font-family: inherit;
-    border: none;
-    border-radius: 3px;
-    background: $mc;
-    cursor: pointer;
-    transition: 0.3s;
-    outline: none;
-    
-    &::after {
-      content: 'Trading involves risk of loss';
-      position: absolute;
-      bottom: -15px;
-      left: 0;
-      width: inherit;
-      color: $mc;
-      font-size: 10px;
-    }
-    
-    &:hover,
-    &:focus {
-      background: #ffd800;
-      transform: translateY(-5px);
-    }
+  &:hover,
+  &:focus {
+    border: 1px solid #7865ff;
+  }
+}
+
+.title__submit {
+  width: 170px;
+  height: 40px;
+  color: #2f2861;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: inherit;
+  border: none;
+  border-radius: 3px;
+  background: $mc;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+  
+  &:hover,
+  &:focus {
+    background: #ffd800;
+    transform: translateY(-5px);
   }
 }
 
@@ -90,20 +79,9 @@
   margin: auto;
   font-size: 0;
   border: none;
-  background: url('../img/title-arrow.svg');
-  animation: down 0.5s alternate infinite;
+  background: url('../img/svg/title-arrow.svg');
   cursor: pointer;
   outline: none;
-}
-
-@keyframes down {
-  0% {
-    top: 0;
-  }
-  
-  100% {
-    top: 10px;
-  }
 }
 
 @media screen and ($tablet-widths) {

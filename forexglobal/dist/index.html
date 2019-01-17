@@ -9,114 +9,126 @@
   <link rel="stylesheet" href="css/style.min.css">
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="194x194" href="img/favicon/favicon-194x194.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#2f2861">
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-chrome-192x192.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png"> -->
   <link rel="manifest" href="site.webmanifest">
+  <!-- <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#2f2861"> -->
+  <meta name="msapplication-TileColor" content="#2f2861">
+  <!-- <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png"> -->
   <meta name="msapplication-config" content="browserconfig.xml">
-  <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
   <meta name="theme-color" content="#2f2861">
   <!-- Slick -->
   <link rel="stylesheet" href="js/slick/slick.css"/>
   <link rel="stylesheet" href="js/slick/slick-theme.css"/>
 </head>
 <body>
-  <section class="title">
-    <header class="header">
-      <div class="header__container">
-        <div class="header__flex">
-          <img class="header__logo" src="img/logo.svg" alt="Forex24 Global">
-          <button class="header__toggle">Open Menu</button>
-          <ul class="header__user  header__user--closed">
-            <li>
-              <a class="header__open" href="#">Open account</a>
-              <ul class="header__accounts  header__accounts--closed">
-                <li><a href="client/real/step-1.php">Real</a></li>
-                <li><a href="client/demo.html">Demo</a></li>
-                <li><a href="trading/platforms/zulutrade.html">ZuluTrade</a></li>
-              </ul>
-            </li>
-            <li><a href="client/login.html">Log in</a></li>
-            <li>
-              <label class="visuallyhidden" for="language">Choose your language</label>
-              <select class="header__language" id="language">
-                <option>En</option>
-                <option>Ru</option>
-              </select>
-            </li>
-          </ul>
-        </div>
-        <nav class="nav  nav--closed">
-          <ul class="nav__list">
-            <li>
-              <a class="nav__link" href="#">About</a>
-              <div class="nav__wrapper">
-                <ul class="nav__sub">
-                  <li><a href="about-us/licenses-and-regulations.html">Licenses and Regulations</a></li>
-                  <li><a href="about-us/security-of-funds.html">Security of Funds</a></li>
-                  <li><a href="about-us/stp-broker.html">STP Broker</a></li>
-                  <li><a href="about-us/legal-documents.html">Legal Documents</a></li>
-                  <li><a href="about-us/kids.html">KIDs</a></li>
-                  <li><a href="about-us/careers.html">Careers</a></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a class="nav__link" href="#">Trading</a>
-              <div class="nav__wrapper  nav__wrapper--closed">
-                <ul class="nav__sub">
-                  <li><a href="trading/account-types.html">Account Types</a></li>
-                  <li><a href="trading/account-comparison.html">Account Comparison</a></li>
-                  <li><a href="trading/product-specification.html">Product Specification</a></li>
-                  <!-- <li><a href="trading/trading-specification.html">Trading Specification</a></li> -->
-                  <li><a href="trading/platforms.html">Platforms</a></li>
-                  <li><a href="trading/funding-and-withdrawal.html">Funding and Withdrawal</a></li>
-                  <li><a href="trading/announcements.html">Announcements</a></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a class="nav__link" href="#">Resources</a>
-              <div class="nav__wrapper  nav__wrapper--closed">
-                <ul class="nav__sub">
-                  <li><a href="resources/glossary.html">Glossary</a></li>
-                  <li><a href="resources/economic-calendar.html">Economic calendar</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="https://partners.forex24.com/" target="_blank">Partners</a></li>
-            <li>
-              <a class="nav__link" href="#">Contact Us</a>
-              <div class="nav__wrapper  nav__wrapper--closed">
-                <ul class="nav__sub">
-                  <li><a href="contact-us.html">Contact Us</a></li>
-                  <li><a href="faq.html">FAQ</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <label class="nav__search">
-            <input type="search">
-          </label>
-        </nav>
-      </div>
-    </header>
+  <header class="header">
     <div class="container">
+      <div class="header__flex">
+        <img class="header__logo" src="img/logo.svg" width="170" alt="Forex24 Global">
+        <button class="header__toggle">Open Menu</button>
+        <ul class="header__user  header__user--closed">
+          <li>
+            <a class="button  button--arrow" href="client/register.html">
+              Open account
+              <svg class="button__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 31" width="6"><path d="M33 31L0 0h66L33 31z"/></svg>
+            </a>
+            <ul class="header__accounts  header__accounts--closed">
+              <li><a href="client/real/step-1.php">Real</a></li>
+              <li><a href="client/demo.html">Demo</a></li>
+              <li><a href="trading/platforms/zulutrade.html">ZuluTrade</a></li>
+            </ul>
+          </li>
+          <li><a class="button" href="client/login.html">Log in</a></li>
+          <li>
+            <label class="visuallyhidden" for="language">Choose your language</label>
+            <select class="header__language" id="language">
+              <option>En</option>
+              <option>Ru</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+      <nav class="nav  nav--closed">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              About
+              <svg class="nav__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 31" width="6"><path d="M33 31L0 0h66L33 31z"/></svg>
+            </a>
+            <div class="nav__wrapper">
+              <ul class="nav__sub">
+                <li class="nav__item"><a class="nav__link  nav__link--small" href="about-us/licenses-and-regulations.html">Licenses and Regulations</a></li>
+                <li class="nav__item"><a class="nav__link  nav__link--small" href="about-us/security-of-funds.html">Security of Funds</a></li>
+                <li class="nav__item"><a class="nav__link  nav__link--small" href="about-us/stp-broker.html">STP Broker</a></li>
+                <li class="nav__item"><a class="nav__link  nav__link--small" href="about-us/legal-documents.html">Legal Documents</a></li>
+                <li class="nav__item"><a class="nav__link  nav__link--small" href="about-us/kids.html">KIDs</a></li>
+                <li class="nav__item"><a class="nav__link  nav__link--small" href="about-us/careers.html">Careers</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Trading
+              <svg class="nav__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 31" width="6"><path d="M33 31L0 0h66L33 31z"/></svg>
+            </a>
+            <div class="nav__wrapper  nav__wrapper--closed">
+              <ul class="nav__sub">
+                <li class="nav__item"><a class="nav__link  nav__link--small" href="trading/account-types.html">Account Types</a></li>
+                <li class="nav__item"><a class="nav__link  nav__link--small" href="trading/account-comparison.html">Account Comparison</a></li>
+                <li class="nav__item"><a class="nav__link  nav__link--small" href="trading/product-specification.html">Product Specification</a></li>
+                <li class="nav__item"><a class="nav__link  nav__link--small" href="trading/platforms.html">Platforms</a></li>
+                <li class="nav__item"><a class="nav__link  nav__link--small" href="trading/funding-and-withdrawal.html">Funding and Withdrawal</a></li>
+                <li class="nav__item"><a class="nav__link  nav__link--small" href="trading/announcements.html">Announcements</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Resources
+              <svg class="nav__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 31" width="6"><path d="M33 31L0 0h66L33 31z"/></svg>
+            </a>
+            <div class="nav__wrapper  nav__wrapper--closed">
+              <ul class="nav__sub">
+                <li class="nav__item"><a class="nav__link  nav__link--small" href="resources/glossary.html">Glossary</a></li>
+                <li class="nav__item"><a class="nav__link  nav__link--small" href="resources/economic-calendar.html">Economic calendar</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="https://partners.forex24.com/" target="_blank">Partners</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Contact Us
+              <svg class="nav__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 31" width="6"><path d="M33 31L0 0h66L33 31z"/></svg>
+            </a>
+            <div class="nav__wrapper  nav__wrapper--closed">
+              <ul class="nav__sub">
+                <li class="nav__item"><a class="nav__link  nav__link--small" href="contact-us.html">Contact Us</a></li>
+                <li class="nav__item"><a class="nav__link  nav__link--small" href="faq.html">FAQ</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <label class="nav__label">
+          <input class="nav__search" type="search">
+        </label>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="title">
       <h1 class="title__name">Trade Online With Forex24 Global</h1>
       <form class="title__form" action="" method="post">
         <label class="visuallyhidden" for="name">Write your name</label>
-        <input id="name" type="text" name="Name" placeholder="Name">
+        <input class="title__input" id="name" type="text" name="Name" placeholder="Name" required>
         <label class="visuallyhidden" for="email">Write your email</label>
-        <input id="email" type="email" name="Email" placeholder="Email">
-        <button type="submit" name="Submit">Create account</button>
+        <input class="title__input" id="email" type="email" name="Email" placeholder="Email" required>
+        <button class="title__submit" type="submit" name="Submit">Create account</button>
       </form>
       <button class="title__down">Scroll Down</button>
-    </div>
-  </section>
-  <main>
+    </section>
     <section class="slider">
       <div class="slider__box  slider__box--1">
         <div class="slider__container">
