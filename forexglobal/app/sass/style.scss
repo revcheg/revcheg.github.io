@@ -3,11 +3,9 @@
 @import 'global/base';
 @import 'global/fonts';
 
-// Main Page
 @import 'blocks/main/title';
 @import 'blocks/main/header';
 @import 'blocks/main/nav';
-@import 'blocks/main/welcome';
 @import 'blocks/main/slider';
 @import 'blocks/main/edge';
 @import 'blocks/main/account';
@@ -18,7 +16,6 @@
 @import 'blocks/main/payment';
 @import 'blocks/main/footer';
 
-// Inner Page
 @import 'blocks/inner/account-types';
 @import 'blocks/inner/tab';
 @import 'blocks/inner/announcements';

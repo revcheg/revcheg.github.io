@@ -21,13 +21,13 @@ function styles() {
       .pipe(csso())
       .pipe(rename({suffix: '.min'}))
       .pipe(gulp.dest('dist/css'))
-      .pipe(livereload());
+      .pipe(livereload())
 }
 
 function markup() {
   return gulp
     .src('dist/members.html')
-      .pipe(livereload());
+      .pipe(livereload())
 }
 
 function scripts() {
@@ -38,14 +38,14 @@ function scripts() {
       .pipe(jsmin())
       .pipe(rename({suffix: '.min'}))
       .pipe(gulp.dest('dist/js'))
-      .pipe(livereload());
+      .pipe(livereload())
 }
 
 function watch() {
-  livereload.listen();
-  gulp.watch('app/sass/**/*.scss', styles);
-  gulp.watch('dist/**/*.html', markup);
-  gulp.watch('app/js/**/*.js', scripts);
+  livereload.listen()
+  gulp.watch('app/sass/**/*.scss', styles)
+  gulp.watch('dist/**/*.html', markup)
+  gulp.watch('app/js/**/*.js', scripts)
 }
 
 exports.default = watch;

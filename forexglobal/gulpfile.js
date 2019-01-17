@@ -7,16 +7,17 @@ var htmlmin = require('gulp-htmlmin');
 var jsmin = require('gulp-jsmin');
 var rename = require('gulp-rename');
 var svgmin = require('gulp-svgmin');
+var concat = require('gulp-concat');
 var livereload = require('gulp-livereload');
 
-gulp.task('default', ['watch']);
+// gulp.task('default', ['watch']);
 
 gulp.task('minifyHTML', function () {
-  gulp.src('index.html')
+  gulp.src('dist/index.html')
     .pipe(gulp.dest('dist'))
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest(''));
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('minifySVG', function () {
@@ -25,22 +26,55 @@ gulp.task('minifySVG', function () {
     .pipe(gulp.dest('dist/img/svg'));
 });
 
+gulp.task('markup', function () {
+  gulp.src('dist/index.html')
+    .pipe(livereload());
+});
+
+gulp.task('scripts', function () {
+  gulp.src('app/js/*.js')
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('dist/js'))
+    .pipe(jsmin())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('dist/js'))
+    .pipe(livereload());  
+});
+
 gulp.task('styles', function () {
-  gulp.src('sass/style.scss')
+  gulp.src('app/sass/style.scss')
     .pipe(plumber())
     .pipe(sass())
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('dist/css'))
     .pipe(csso())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('dist/css'))
     .pipe(livereload());
 });
 
-gulp.task('watch', function () {
-  livereload.listen();
-  gulp.watch('sass/**/*.scss', ['styles']);
+// gulp.task('watch', function () {
+//   livereload.listen();
+//   gulp.watch('app/sass/**/*.scss', gulp.parallel(['styles']));
+//   gulp.watch('dist/index.html', gulp.parallel(['markup']));
+//   gulp.watch('app/js/**/*.js', gulp.parallel(['scripts']));
+// });
+
+gulp.task('watch:styles', function () {
+  gulp.watch(paths.sass.src, gulp.series('sass'));
 });
+
+gulp.task('watch', gulp.series('sass',
+  gulp.parallel('watch:styles')
+));
+
+
+// -------------------------------------------- Default task
+gulp.task('default', gulp.series('sass', 
+  gulp.parallel('message', 'watch')
+));
+
+// gulp.task('default', gulp.series('watch'));

@@ -27,8 +27,27 @@ function parseGetParams(){var e,r,t,o,a,s,n={},c=function(e){return decodeURICom
 })();
 (function () {
   var openButtons = document.querySelectorAll('.button--programs');
-  var popups = document.querySelectorAll('.popup');
+  // var popups = document.querySelectorAll('.popup');
   var overlay = document.querySelector('.popup__overlay');
+  // var closeButtons = document.querySelectorAll('.popup__close');
+  // var prevButtons = document.querySelectorAll('.popup__button--prev');
+  // var nextButtons = document.querySelectorAll('.popup__button--next');
+  // var registerButtons = document.querySelectorAll('.button--register');
+  var popupTemplate = document.querySelector('.popup__template').content.querySelector('.popup');
+  
+  for (var g = 0; g < 9; g++) {
+    var popup = popupTemplate.cloneNode(true);
+    popup.querySelector('.heading--popup').innerHTML = popupData[g].title;
+    popup.querySelector('.popup__webp').srcset = popupData[g].imgWebp;
+    popup.querySelector('.popup__img').src = popupData[g].img;
+    popup.querySelector('.popup__counter').innerHTML = popupData[g].counter;
+    popup.querySelector('.popup__text').innerHTML = popupData[g].text;
+    popup.querySelector('.popup__list').innerHTML = popupData[g].list;
+    popup.querySelector('.popup__attention').innerHTML = popupData[g].attention;
+    document.body.appendChild(popup);
+  };
+  
+  var popups = document.querySelectorAll('.popup');
   var closeButtons = document.querySelectorAll('.popup__close');
   var prevButtons = document.querySelectorAll('.popup__button--prev');
   var nextButtons = document.querySelectorAll('.popup__button--next');
@@ -142,48 +161,6 @@ function parseGetParams(){var e,r,t,o,a,s,n={},c=function(e){return decodeURICom
     });
   };
   
-  
-  // Попытка получить данные
-  
-  // function getRemoteData() {
-  //   var xhr = new XMLHttpRequest();
-  //   var url = 'https://img0.study.com.ua/datapopup/dataPopup';
-  // 
-  //   xhr.open('GET', url);
-  //   xhr.send(null);
-  // 
-  //   xhr.onreadystatechange = function () {
-  //     if (xhr.readyState === 4 && xhr.status === 200) {
-  //       var data = JSON.parse(xhr.responseText);
-  //       var pins = getPins(data);
-  // 
-  //       document.querySelector('.map__pins')
-  //         .appendChild(pins);
-  // 
-  //       removeClass('.map', 'map--faded');
-  // 
-  //       housesData = data;
-  // 
-  //       searchPins();
-  //     }
-  // 
-  //     return false;
-  //   };
-  // }
-  
-  // Временный массив с данными
-  // var popupData = [
-  //   {
-  //     'title': 'Групові поїздки за кордон влітку 2019 року.<br>10 країн, 30 міст і 100 поїздок для школярів і студентів.',
-  //     'img': 'img/programs-1.jpg',
-  //     'counter': '1/9',
-  //     'text': '<b>Групова поїздка за кордон</b> — літо з користю для майбутнього! Вперше влітку 2019: 10 країн, 30 міст і 100 поїздок для школярів і студентів у супроводі керівника групи від компанії STUDY.UA. Приходьте на виставку і обирайте ідеальний варіант літніх канікул за кордоном!',
-  //   },
-  //   {
-  //     'title': 'Літні канікули для школярів в Україні.'
-  //   }
-  // ]
-  
   // Отрисовка попапов
   // var popupTemplate = document.querySelector('.popup__template').content.querySelector('.popup');
   // 
@@ -192,6 +169,8 @@ function parseGetParams(){var e,r,t,o,a,s,n={},c=function(e){return decodeURICom
   //   popup.querySelector('.heading--popup').innerHTML = popupData[index].title;
   //   document.body.appendChild(popup);
   // };
+  
+  
 })();
 (function () {
   var buttonSaturday = document.querySelector('.table__button--saturday');

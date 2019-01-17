@@ -432,6 +432,10 @@ body {
       background: #fff;
       -webkit-box-shadow: 0px 18px 16px 0px rgba(225, 228, 231, 0.6);
       box-shadow: 0px 18px 16px 0px rgba(225, 228, 231, 0.6); }
+  .button--thankyou {
+    width: 150px;
+    padding: 10px;
+    background: #dd0505; }
 
 .waiting {
   position: relative;
@@ -1031,3 +1035,46 @@ body {
 @media screen and (max-width: 768px) {
   .participants {
     background: url("../img/participants-bg.png") no-repeat left/cover; } }
+
+.thankyou {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("../img/thankyou-bg.jpg") no-repeat center/cover; }
+
+.thankyou__text {
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center; }
+  .thankyou__text--bold {
+    font-weight: bold; }
+  .thankyou__text--small {
+    font-size: 16px;
+    text-align: inherit; }
+
+.thankyou__divider {
+  width: 150px;
+  height: 2px;
+  margin: 30px auto;
+  border: none;
+  background: #dd0505; }
+
+.thankyou__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 500px;
+  margin: auto; }
