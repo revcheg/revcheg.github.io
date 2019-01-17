@@ -1,0 +1,50 @@
+.heading {
+  margin: 0;
+  color: $main-red;
+  font-weight: normal;
+  font-family: 'Book Antiqua', 'Open Sans', 'Arial', sans-serif;
+  
+  &--big {
+    margin: 0 0 50px 0;
+    font-size: 72px;
+  }
+  
+  &--small {
+    font-size: 48px;
+  }
+  
+  &--center {
+    text-align: center;
+  }
+  
+  &--popup {
+    margin: 0 0 30px 0;
+    font-size: 40px;
+  }
+}
+
+.heading__hr {
+  width: 100px;
+  height: 2px;
+  margin: 50px auto;
+  border: none;
+  background: $main-red;
+}
+
+@media screen and ($mobile-widths) {
+  .heading {
+    text-align: center;
+    
+    &--big {
+      font-size: 40px;
+    }
+    
+    &--small {
+      font-size: 25px;
+    }
+    
+    &--popup {
+      font-size: 20px;
+    }
+  }
+}
