@@ -1,0 +1,23 @@
+.title {
+  @include display-flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+  background-image: url('../img/title-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.title__list {
+  @include clear-list;
+  margin: 30px 0 0 0;
+}
+
+.title__item {
+  margin: 0 0 10px 0;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+}

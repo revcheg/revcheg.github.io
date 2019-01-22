@@ -1,0 +1,41 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  // background: $main-red; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  // background: darken($main-red, 5%); 
+}
+
+@media screen and ($tablet-widths) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and ($mobile-widths) {}

@@ -1,0 +1,27 @@
+
+
+.nav__list {
+  @include display-flex;
+  @include clear-list;
+}
+
+.nav__item {
+  margin: 0 30px 0 0;
+  
+  &:nth-child(2) {
+    margin: 0 30px 0 auto;
+  }
+}
+
+.nav__link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  
+  &:hover,
+  &:focus {
+    color: #cb42f4;
+  }
+}

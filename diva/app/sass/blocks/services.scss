@@ -1,0 +1,31 @@
+.services {
+  padding: 50px 0;
+}
+
+.services__wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0 0 0;
+}
+
+.services__table {
+  width: 100%;
+  text-align: center;
+}
+
+.services__th {
+  font-size: 25px;
+  
+  &--pink {
+    color: #cb42f4;
+  }
+  
+  &--blue {
+    color: #2ecdf4;
+  }
+}
+
+.services__category {
+  font-size: 20px;
+  font-weight: bold;
+}
