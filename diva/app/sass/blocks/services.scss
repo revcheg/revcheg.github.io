@@ -29,3 +29,16 @@
   font-size: 20px;
   font-weight: bold;
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .services__wrapper {
+    flex-direction: column;
+  }
+  
+  .services__table {
+    display: block;
+    overflow-x: scroll;
+  }
+}

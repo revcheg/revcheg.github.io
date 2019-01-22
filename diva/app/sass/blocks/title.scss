@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .title__list {
@@ -20,4 +21,12 @@
   font-size: 25px;
   font-weight: 300;
   text-align: center;
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .title__item {
+    font-size: 18px;
+  }
 }

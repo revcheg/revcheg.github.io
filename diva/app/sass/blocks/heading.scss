@@ -33,3 +33,15 @@
     color: #000;
   }
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .heading {
+    padding: 0 15px;
+    
+    &--big {
+      font-size: 50px;
+    }
+  }
+}

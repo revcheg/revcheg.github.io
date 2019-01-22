@@ -5,3 +5,11 @@
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
   background: #000;
 }
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .header {
+    padding: 10px 0;
+  }
+}
