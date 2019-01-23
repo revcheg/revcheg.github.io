@@ -6,6 +6,16 @@
   <meta name="description" content="Forex24 is a European CySEC Regulated online broker providing contracts for difference on foreign exchange, shares, futures and precious metals primarily to retail clients.">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="preload" href="fonts/SFUIDisplay-Light.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SFUIDisplay-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SFUIDisplay-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SFUIDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SFUIDisplay-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SFUIDisplay-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SFUIDisplay-Semibold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SFUIDisplay-Semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SFUIDisplay-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SFUIDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
@@ -31,17 +41,14 @@
         <button class="header__toggle">Open Menu</button>
         <ul class="header__user  header__user--closed">
           <li>
-            <a class="button  button--arrow" href="client/register.html">
-              Open account
-              <svg class="button__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 31" width="6"><path d="M33 31L0 0h66L33 31z"/></svg>
-            </a>
+            <a class="header__button" href="client/register.html">Open account</a>
             <ul class="header__accounts  header__accounts--closed">
               <li><a href="client/real/step-1.php">Real</a></li>
               <li><a href="client/demo.html">Demo</a></li>
               <li><a href="trading/platforms/zulutrade.html">ZuluTrade</a></li>
             </ul>
           </li>
-          <li><a class="button" href="client/login.html">Log in</a></li>
+          <li><a class="header__button" href="client/login.html">Log in</a></li>
           <li>
             <label class="visuallyhidden" for="language">Choose your language</label>
             <select class="header__language" id="language">
@@ -163,32 +170,33 @@
     </section>
     <section class="edge">
       <div class="container">
-        <div class="edge__flex">
-          <div class="edge__box">
-            <b>170+</b>
-            <p>currency pairs, Indices,<br>commodities, metals & Equities</p>
-          </div>
-          <div class="edge__box">
-            <b>0.4</b>
-            <p>spreads<br>from</p>
-          </div>
-          <div class="edge__box">
-            <b>1:400</b>
-            <p>leverage<br>up to</p>
-          </div>
-          <div class="edge__box">
-            <b>$200</b>
-            <p>minimum<br>deposit</p>
-          </div>
-          <div class="edge__box">
-            <b>6</b>
-            <p>asset<br>classes</p>
-          </div>
-          <div class="edge__box">
-            <b>0</b>
-            <p>zero deposit<br>fees</p>
-          </div>
-        </div>
+        <!-- Heading? -->
+        <ul class="edge__list">
+          <li class="edge__box">
+            <b class="edge__count">170+</b>
+            <p class="edge__text">currency pairs, Indices,<br>commodities, metals & Equities</p>
+          </li>
+          <li class="edge__box">
+            <b class="edge__count">0.4</b>
+            <p class="edge__text">spreads<br>from</p>
+          </li>
+          <li class="edge__box">
+            <b class="edge__count">1:400</b>
+            <p class="edge__text">leverage<br>up to</p>
+          </li>
+          <li class="edge__box">
+            <b class="edge__count">$200</b>
+            <p class="edge__text">minimum<br>deposit</p>
+          </li>
+          <li class="edge__box">
+            <b class="edge__count">6</b>
+            <p class="edge__text">asset<br>classes</p>
+          </li>
+          <li class="edge__box">
+            <b class="edge__count">0</b>
+            <p class="edge__text">zero deposit<br>fees</p>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="account">
@@ -196,10 +204,10 @@
         <h1 class="account__name">Join a Global Award-Winning Forex Broker</h1>
         <div class="account__flex">
           <div class="account__box">
-            <h2>Zulutrade</h2>
-              <hr>
-            <b>Advanced Platform</b>
-            <ul>
+            <h2 class="account__title">Zulutrade</h2>
+              <hr class="account__divider">
+            <b class="account__call">Advanced Platform</b>
+            <ul class="account__list">
               <li>Free Demo Accounts</li>
               <li>EUR, GBP and USD Deposit Currencies</li>
               <li>Leverage up to 1:400</li>
@@ -207,13 +215,13 @@
               <li>Automator Trading Rules</li>
               <li>Desktop Widget</li>
             </ul>
-            <a href="trading/platforms/zulutrade.html">Create account</a>
+            <a class="account__button" href="trading/platforms/zulutrade.html">Create account</a>
           </div>
           <div class="account__box">
-            <h2>Real account</h2>
-              <hr>
-            <b>Start live trading</b>
-            <ul>
+            <h2 class="account__title">Real account</h2>
+              <hr class="account__divider">
+            <b class="account__call">Start live trading</b>
+            <ul class="account__list">
               <li>Tight spreads from 0.04 pips</li>
               <li>Up to 1:400 leverage* </li>
               <li>170+ CFDs</li>
@@ -222,13 +230,13 @@
               <li>Multi-platforms</li>
               <li>Fast Deposits and withdrawals</li>
             </ul>
-            <a href="client/real/step-1.php">Create account</a>
+            <a class="account__button" href="client/real/step-1.php">Create account</a>
           </div>
           <div class="account__box">
-            <h2>Demo account</h2>
-              <hr>
-            <b>Start practicing for free</b>
-            <ul>
+            <h2 class="account__title">Demo account</h2>
+              <hr class="account__divider">
+            <b class="account__call">Start practicing for free</b>
+            <ul class="account__list">
               <li>Risk Free Account</li>
               <li>No initial deposit</li>
               <li>Fast Registration</li>
@@ -236,38 +244,48 @@
               <li>Multiplatforms </li>
               <li>No strategy<br>Limitations</li>
             </ul>
-            <a href="client/demo.html">Create account</a>
+            <a class="account__button" href="client/demo.html">Create account</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="tabs">
+    <section class="tab">
       <div class="container">
-        <div class="tabs__flex">
-          <img class="tabs__mockup" src="img/tabs-mockup.png" alt="Mockup">
-          <div class="tabs__inner">
-            <ul class="tabs__control">
-              <li><button class="tabs__button">PC</button></li>
-              <li><button class="tabs__button">Mac</button></li>
-              <li><button class="tabs__button" onclick="openTabs(event, 'webtrader')">Web Trader</button></li>
-              <li><button class="tabs__button  tabs__active" onclick="openTabs(event, 'android')">Android</button></li>
-              <li><button class="tabs__button">Iphone/Ipad</button></li>
-            </ul>
-            <div class="tabs__content">
-              <div class="tabs__wrapper  tabs__wrapper--webtrader" id="webtrader">
-                <b class="tabs__name">Web Trader</b>
-                <p class="tabs__text">Get the MetaTrader 4 trading software for your smartphone or tablet and access Vipro markets’ best trading conditions anytime and anywhere!</p>
-                <a class="tabs__download" href="#">Download</a>
-                <a class="tabs__more" href="#">Read more</a>
-              </div>
-              <div class="tabs__wrapper  tabs__wrapper--android" id="android">
-                <b class="tabs__name">MetaTrader 4 for Android</b>
-                <p class="tabs__text">Get the MetaTrader 4 trading software for your smartphone or tablet and access Vipro markets’ best trading conditions anytime and anywhere!</p>
-                <a class="tabs__download" href="#">Download</a>
-                <a class="tabs__more" href="#">Read more</a>
-              </div>
-            </div>
-          </div>
+        <div class="tab__wrapper">
+          <ul class="tab__control">
+            <li><button class="tab__button">PC</button></li>
+            <li><button class="tab__button">Mac</button></li>
+            <li><button class="tab__button">Web Trader</button></li>
+            <li><button class="tab__button  tab__active">Android</button></li>
+            <li><button class="tab__button">Iphone/Ipad</button></li>
+          </ul>
+          <ul class="tab__list">
+            <li class="tab__content">
+              <picture>
+                <source srcset="img/tab-mockup.webp" type="image/webp">
+                <img class="tab__preview" src="img/tab-mockup.png" alt="Web Trader Preview">
+              </picture>  
+              <div class="tab__inner">
+                <h2 class="tab__name">Web Trader</h2>
+                <p class="tab__text">Get the MetaTrader 4 trading software for your smartphone or tablet and access Vipro markets’ best trading conditions anytime and anywhere!</p>
+                <a class="tab__download" href="#">Download</a>
+                <a class="tab__more" href="#">Read more</a>
+              </div>  
+            </li>
+            <li class="tab__content  tab__content--hide">
+              <div class="tab__inner">
+                <picture>
+                  <source srcset="img/tab-mockup.webp" type="image/webp">
+                  <img src="img/tab-mockup.png" alt="Web Trader Preview">
+                </picture>
+                <h2 class="tab__name">Android</h2>
+                <p class="tab__text">Get the MetaTrader 4 trading software for your smartphone or tablet and access Vipro markets’ best trading conditions anytime and anywhere!</p>
+                <p class="tab__text">Get the MetaTrader 4 trading software for your smartphone or tablet and access Vipro markets’ best trading conditions anytime and anywhere!</p>
+                <a class="tab__download" href="#">Download</a>
+                <a class="tab__more" href="#">Read more</a>
+              </div>  
+            </li>
+          </ul>
         </div>
       </div>
     </section>

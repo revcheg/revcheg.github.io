@@ -1,7 +1,10 @@
 .title {
   padding: 395px 0 40px 0;
-  background: #32138c url('../img/title-bg.jpg') no-repeat top / cover;
-  background-attachment: fixed;
+  background-color: #32138c;
+  background-image: url('../img/title-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   
   &--inner {
     padding: 0 0 200px 0;

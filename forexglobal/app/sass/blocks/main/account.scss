@@ -1,5 +1,5 @@
 .account {
-  padding: 70px 0 300px 0;
+  padding: 70px 0;
 }
 
 .account__name {
@@ -21,82 +21,76 @@
   padding: 100px 70px 50px;
   color: #fff;
   border-bottom-right-radius: 20px;
-  background: #0e0b39;
-  
-  h2 {
-    margin: 0;
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center;
-  }
-  
-  hr {
-    width: 30px;
-    height: 1px;
-    margin: 10px auto;
-    border: none;
-    background: $mc;
-  }
-  
-  b {
-    display: block;
-    font-weight: 500;
-    text-align: center;
-  }
-  
-  ul {
-    margin: 30px 0 35px 0;
-    padding: 0;
-    font-weight: 300;
-    list-style-image: url('../img/list.svg');
-  }
-  
-  a {
-    position: relative;
-    display: block;
-    width: 168px;
-    margin: auto;
-    padding: 9px 0;
-    color: $mc;
-    font-size: 18px;
-    font-weight: 300;
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid $mc;
-    border-radius: 3px;
-    transition: 0.3s;
-    outline: none;
-    
-    &:hover,
-    &:focus {
-      color: $sc;
-      background: $mc;
-      transform: translateY(-5px);
-    }
-    
-    &::after {
-      content: 'Trading involves risk of loss';
-      position: absolute;
-      bottom: -15px;
-      left: 0;
-      width: inherit;
-      color: $mc;
-      font-size: 10px;
-    }
-  }
-  
+  background-color: #0e0b39;
+  background-repeat: no-repeat;
+
   &:nth-child(1) {
-    background: #0e0b39 url('../img/account-zulu.png') no-repeat 70px -30px;
+    background-image: url('../img/account-zulu.png');
+    background-position: 70px -30px;
     background-size: 256px;
   }
   
   &:nth-child(2) {
-    background: #0e0b39 url('../img/account-real.png') no-repeat 0 -40px;
+    background-image: url('../img/account-real.png');
+    background-position: 0 -40px;
   }
   
   &:nth-child(3) {
-    background: #0e0b39 url('../img/account-demo.png') no-repeat 40px 10px;
+    background-image: url('../img/account-demo.png');
+    background-position: 40px 10px;
     background-size: 300px;
+  }
+}
+
+.account__title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.account__divider {
+  width: 30px;
+  height: 1px;
+  margin: 10px auto;
+  border: none;
+  background: $mc;
+}
+
+.account__call {
+  display: block;
+  font-weight: 500;
+  text-align: center;
+}
+
+.account__list {
+  margin: 30px 0 35px 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+  list-style-image: url('../img/list.svg');
+}
+
+.account__button {
+  display: block;
+  width: 168px;
+  margin: 0 auto;
+  padding: 10px 0;
+  color: $mc;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid $mc;
+  border-radius: 3px;
+  transition: 0.3s;
+  outline: none;
+  
+  &:hover,
+  &:focus {
+    color: $sc;
+    background: $mc;
+    transform: translateY(-5px);
   }
 }
 

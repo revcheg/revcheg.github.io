@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  // transition: 2s;
+  transition: 0.3s;
   
   &--scroll {
     background: rgba(47, 40, 97, 0.9);
@@ -17,50 +17,9 @@
       width: 100px;
     }
     
-    .header__user {
-      width: 400px;
-      z-index: 3;
-      
-      li {
-        
-        a {
-          width: 155px;
-          padding: 9px 0;
-          transition: 0.3s;
-        }
-      }
-    }
-    
-    .header__open {
-      
-      &::before {
-        right: 10px;
-      }
-    }
-    
-    .nav__search {
+    .nav,
+    .nav__label {
       display: none;
-    }
-    
-    .nav {
-      // position: relative;
-      top: 0;
-      margin: -77px 0 0 0;
-      padding: 0px 15px 0px 190px;
-      transition: 0.5s;
-    }
-    
-    .nav__wrapper {
-      width: 100%;
-      top: 76px;
-      background: rgba(47, 40, 97, 0.9);
-    }
-    
-    .nav__list {
-      
-      a {
-        padding: 0 0 26px 0;
-      }
     }
   }
   
@@ -106,6 +65,29 @@
   padding: 0;
   list-style: none;
   transition: 0.5s;
+}
+
+.header__button {
+  box-sizing: border-box;
+  display: block;
+  width: 170px;
+  padding: 10px 0;
+  color: $mc;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid $mc;
+  border-radius: 3px;
+  background: transparent;
+  outline: none;
+  transition: 0.3s;
+  
+  &:hover,
+  &:focus {
+    color: $sc;
+    background: $mc;
+  }
 }
 
 .header__accounts {

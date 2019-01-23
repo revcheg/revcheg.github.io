@@ -1,15 +1,21 @@
-.tabs {
-  height: 330px;
-  background: #e4b748 url('../img/tabs-bg.jpg') no-repeat top;
+.tab {
+  margin: 250px 0 0 0;
+  // background-color: #ddb43d;
+  background-image: url('../img/tab-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
-.tabs__control {
+.tab__control {
+  position: absolute;
+  top: -35px;
+  right: 0;
   display: flex;
   justify-content: space-between;
-  margin: -35px 0 0 0;
-  padding: 0;
   width: 430px;
+  margin: 0;
+  padding: 0;
   list-style: none;
   
   li {
@@ -35,53 +41,52 @@
   }
 }
 
-.tabs__active {
+.tab__active {
   font-weight: 900 !important;
   border-bottom: 2px solid #f58a39 !important;
 }
 
-.tabs__flex {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 0 0 15px;
-}
-
-.tabs__mockup {
-  width: 732px;
-  height: 403px;
-  margin: -130px 0 0 0;
-}
-
-.tabs__content {
+.tab__wrapper {
   position: relative;
-  height: 330px;
-  overflow: hidden;
+  margin: 0 0 0 auto;
 }
 
-.tabs__wrapper {
-  position: absolute;
-  opacity: 0;
-  transition: 0.9s;
+.tab__list {
+  margin: 0 0 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.tab__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
   
-  &--android {
-    top: 70px;
-    opacity: 1;
+  &--hide {
+    display: none;
   }
 }
 
-.tabs__name {
+.tab__preview {
+  position: relative;
+  top: -140px;
+}
+
+.tab__name {
+  margin: 0;
   color: $sc;
   font-size: 30px;
   font-weight: 500;
 }
 
-.tabs__text {
+.tab__text {
   margin: 15px 0 35px 0;
   color: $sc;
   font-weight: 300;
 }
 
-.tabs__download {
+.tab__download {
   display: inline-block;
   width: 170px;
   margin: 0 25px 0 0;
@@ -103,7 +108,7 @@
   }
 }
 
-.tabs__more {
+.tab__more {
   display: inline-block;
   width: 168px;
   padding: 9px 0;
@@ -124,25 +129,25 @@
 }
 
 @media screen and ($tablet-widths) {
-  .tabs__flex {
+  .tab__flex {
     padding: 0 15px;
   }
   
-  .tabs__mockup {
+  .tab__mockup {
     display: none;
   }
   
-  .tabs__inner {
+  .tab__inner {
     width: 100%;
   }
 }
 
 @media screen and ($mobile-widths) {
-  .tabs {
+  .tab {
     // height: 400px;
   }
   
-  .tabs__control {
+  .tab__control {
     width: auto;
     margin: -34px 0 0 0;
     
@@ -154,17 +159,17 @@
     }
   }
   
-  .tabs__content {
+  .tab__content {
     // height: 400px;
   }
   
-  .tabs__download {
+  .tab__download {
     width: 135px;
     margin: 0 10px 0 0;
     font-size: 16px;
   }
   
-  .tabs__more {
+  .tab__more {
     width: 133px;
     font-size: 16px;
   }

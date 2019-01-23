@@ -40,18 +40,6 @@ body {
 
 @font-face {
   font-family: 'SF UI Display';
-  src: local("SF UI Display Thin"), local("SFUIDisplay-Thin"), url("../fonts/SFUIDisplay-Thin.woff2") format("woff2"), url("../fonts/SFUIDisplay-Thin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'SF UI Display';
-  src: local("SF UI Display Ultralight"), local("SFUIDisplay-Ultralight"), url("../fonts/SFUIDisplay-Ultralight.woff2") format("woff2"), url("../fonts/SFUIDisplay-Ultralight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'SF UI Display';
   src: local("SF UI Display Light"), local("SFUIDisplay-Light"), url("../fonts/SFUIDisplay-Light.woff2") format("woff2"), url("../fonts/SFUIDisplay-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
@@ -80,22 +68,13 @@ body {
   font-weight: 700;
   font-style: normal; }
 
-@font-face {
-  font-family: 'SF UI Display';
-  src: local("SF UI Display Heavy"), local("SFUIDisplay-Heavy"), url("../fonts/SFUIDisplay-Heavy.woff2") format("woff2"), url("../fonts/SFUIDisplay-Heavy.woff") format("woff");
-  font-weight: 800;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'SF UI Display';
-  src: local("SF UI Display Black"), local("SFUIDisplay-Black"), url("../fonts/SFUIDisplay-Black.woff2") format("woff2"), url("../fonts/SFUIDisplay-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal; }
-
 .title {
   padding: 395px 0 40px 0;
-  background: #32138c url("../img/title-bg.jpg") no-repeat top/cover;
-  background-attachment: fixed; }
+  background-color: #32138c;
+  background-image: url("../img/title-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
   .title--inner {
     padding: 0 0 200px 0;
     background: none; }
@@ -187,7 +166,8 @@ body {
 .header {
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  transition: 0.3s; }
   .header--scroll {
     background: rgba(47, 40, 97, 0.9);
     z-index: 1; }
@@ -196,28 +176,9 @@ body {
       border: none; }
     .header--scroll .header__logo {
       width: 100px; }
-    .header--scroll .header__user {
-      width: 400px;
-      z-index: 3; }
-      .header--scroll .header__user li a {
-        width: 155px;
-        padding: 9px 0;
-        transition: 0.3s; }
-    .header--scroll .header__open::before {
-      right: 10px; }
-    .header--scroll .nav__search {
+    .header--scroll .nav,
+    .header--scroll .nav__label {
       display: none; }
-    .header--scroll .nav {
-      top: 0;
-      margin: -77px 0 0 0;
-      padding: 0px 15px 0px 190px;
-      transition: 0.5s; }
-    .header--scroll .nav__wrapper {
-      width: 100%;
-      top: 76px;
-      background: rgba(47, 40, 97, 0.9); }
-    .header--scroll .nav__list a {
-      padding: 0 0 26px 0; }
   .header--inner {
     width: 100%;
     z-index: 10; }
@@ -253,6 +214,25 @@ body {
   padding: 0;
   list-style: none;
   transition: 0.5s; }
+
+.header__button {
+  box-sizing: border-box;
+  display: block;
+  width: 170px;
+  padding: 10px 0;
+  color: #fac93e;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #fac93e;
+  border-radius: 3px;
+  background: transparent;
+  outline: none;
+  transition: 0.3s; }
+  .header__button:hover, .header__button:focus {
+    color: #2f2861;
+    background: #fac93e; }
 
 .header__accounts {
   position: absolute;
@@ -391,7 +371,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 15px; }
+  padding: 0px 15px;
+  transition: 0.3s; }
 
 .nav__list {
   display: flex;
@@ -412,7 +393,6 @@ body {
 
 .nav__wrapper {
   position: absolute;
-  top: 157px;
   left: 0;
   width: 100%;
   opacity: 0;
@@ -529,36 +509,6 @@ body {
     .nav__sub b {
       font-size: 18px; } }
 
-.button {
-  box-sizing: border-box;
-  display: block;
-  width: 170px;
-  padding: 10px 0;
-  color: #fac93e;
-  font-size: 18px;
-  font-weight: 300;
-  text-align: center;
-  text-decoration: none;
-  border: 1px solid #fac93e;
-  border-radius: 3px;
-  background: transparent;
-  outline: none;
-  transition: 0.3s; }
-  .button:hover, .button:focus {
-    color: #2f2861;
-    background: #fac93e; }
-  .button--arrow {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 15px 10px 30px; }
-    .button--arrow:hover .button__arrow, .button--arrow:focus .button__arrow {
-      fill: #2f2861; }
-
-.button__arrow {
-  fill: #fac93e;
-  transition: 0.3s; }
-
 .slider__container {
   width: 1170px;
   height: inherit;
@@ -626,28 +576,35 @@ body {
 
 .edge {
   padding: 40px 0;
-  background: #0c194f url("../img/edge-bg.jpg") no-repeat top;
+  background-color: #0c194f;
+  background-image: url("../img/edge-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover; }
 
-.edge__flex {
+.edge__list {
   display: flex;
   justify-content: space-between;
-  padding: 0 15px; }
+  margin: 0;
+  padding: 0;
+  list-style: none; }
 
 .edge__box {
   width: 170px;
   text-align: center; }
-  .edge__box b {
-    display: inline-block;
-    padding: 0 0 9px 0;
-    color: #fff;
-    font-size: 30px;
-    font-weight: 500;
-    border-bottom: 1px solid #fac93e; }
-  .edge__box p {
-    margin: 10px 0 0 0;
-    color: #fff;
-    font-weight: 300; }
+
+.edge__count {
+  display: inline-block;
+  padding: 0 0 10px 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  border-bottom: 1px solid #fac93e; }
+
+.edge__text {
+  margin: 10px 0 0 0;
+  color: #fff;
+  font-weight: 300; }
 
 @media screen and (max-width: 768px) {
   .edge {
@@ -661,7 +618,7 @@ body {
       margin: 0; } }
 
 .account {
-  padding: 70px 0 300px 0; }
+  padding: 70px 0; }
 
 .account__name {
   margin: 0 0 60px 0;
@@ -680,63 +637,64 @@ body {
   padding: 100px 70px 50px;
   color: #fff;
   border-bottom-right-radius: 20px;
-  background: #0e0b39; }
-  .account__box h2 {
-    margin: 0;
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center; }
-  .account__box hr {
-    width: 30px;
-    height: 1px;
-    margin: 10px auto;
-    border: none;
-    background: #fac93e; }
-  .account__box b {
-    display: block;
-    font-weight: 500;
-    text-align: center; }
-  .account__box ul {
-    margin: 30px 0 35px 0;
-    padding: 0;
-    font-weight: 300;
-    list-style-image: url("../img/list.svg"); }
-  .account__box a {
-    position: relative;
-    display: block;
-    width: 168px;
-    margin: auto;
-    padding: 9px 0;
-    color: #fac93e;
-    font-size: 18px;
-    font-weight: 300;
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid #fac93e;
-    border-radius: 3px;
-    transition: 0.3s;
-    outline: none; }
-    .account__box a:hover, .account__box a:focus {
-      color: #2f2861;
-      background: #fac93e;
-      -webkit-transform: translateY(-5px);
-              transform: translateY(-5px); }
-    .account__box a::after {
-      content: 'Trading involves risk of loss';
-      position: absolute;
-      bottom: -15px;
-      left: 0;
-      width: inherit;
-      color: #fac93e;
-      font-size: 10px; }
+  background-color: #0e0b39;
+  background-repeat: no-repeat; }
   .account__box:nth-child(1) {
-    background: #0e0b39 url("../img/account-zulu.png") no-repeat 70px -30px;
+    background-image: url("../img/account-zulu.png");
+    background-position: 70px -30px;
     background-size: 256px; }
   .account__box:nth-child(2) {
-    background: #0e0b39 url("../img/account-real.png") no-repeat 0 -40px; }
+    background-image: url("../img/account-real.png");
+    background-position: 0 -40px; }
   .account__box:nth-child(3) {
-    background: #0e0b39 url("../img/account-demo.png") no-repeat 40px 10px;
+    background-image: url("../img/account-demo.png");
+    background-position: 40px 10px;
     background-size: 300px; }
+
+.account__title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center; }
+
+.account__divider {
+  width: 30px;
+  height: 1px;
+  margin: 10px auto;
+  border: none;
+  background: #fac93e; }
+
+.account__call {
+  display: block;
+  font-weight: 500;
+  text-align: center; }
+
+.account__list {
+  margin: 30px 0 35px 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+  list-style-image: url("../img/list.svg"); }
+
+.account__button {
+  display: block;
+  width: 168px;
+  margin: 0 auto;
+  padding: 10px 0;
+  color: #fac93e;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #fac93e;
+  border-radius: 3px;
+  transition: 0.3s;
+  outline: none; }
+  .account__button:hover, .account__button:focus {
+    color: #2f2861;
+    background: #fac93e;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px); }
 
 @media screen and (max-width: 1200px) {
   .account {
@@ -766,19 +724,24 @@ body {
       background: #0e0b39 url("../img/account-demo.png") no-repeat 15px 10px;
       background-size: 300px; } }
 
-.tabs {
-  height: 330px;
-  background: #e4b748 url("../img/tabs-bg.jpg") no-repeat top;
+.tab {
+  margin: 250px 0 0 0;
+  background-image: url("../img/tab-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover; }
 
-.tabs__control {
+.tab__control {
+  position: absolute;
+  top: -35px;
+  right: 0;
   display: flex;
   justify-content: space-between;
-  margin: -35px 0 0 0;
-  padding: 0;
   width: 430px;
+  margin: 0;
+  padding: 0;
   list-style: none; }
-  .tabs__control li button {
+  .tab__control li button {
     padding: 0 0 14px 0;
     color: #2f2861;
     font-size: 16px;
@@ -790,47 +753,46 @@ body {
     outline: none;
     transition: 0.3s;
     cursor: pointer; }
-    .tabs__control li button:hover, .tabs__control li button:focus {
+    .tab__control li button:hover, .tab__control li button:focus {
       border-bottom: 2px solid #2f2861; }
 
-.tabs__active {
+.tab__active {
   font-weight: 900 !important;
   border-bottom: 2px solid #f58a39 !important; }
 
-.tabs__flex {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 0 0 15px; }
-
-.tabs__mockup {
-  width: 732px;
-  height: 403px;
-  margin: -130px 0 0 0; }
-
-.tabs__content {
+.tab__wrapper {
   position: relative;
-  height: 330px;
-  overflow: hidden; }
+  margin: 0 0 0 auto; }
 
-.tabs__wrapper {
-  position: absolute;
-  opacity: 0;
-  transition: 0.9s; }
-  .tabs__wrapper--android {
-    top: 70px;
-    opacity: 1; }
+.tab__list {
+  margin: 0 0 0 auto;
+  padding: 0;
+  list-style: none; }
 
-.tabs__name {
+.tab__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s; }
+  .tab__content--hide {
+    display: none; }
+
+.tab__preview {
+  position: relative;
+  top: -140px; }
+
+.tab__name {
+  margin: 0;
   color: #2f2861;
   font-size: 30px;
   font-weight: 500; }
 
-.tabs__text {
+.tab__text {
   margin: 15px 0 35px 0;
   color: #2f2861;
   font-weight: 300; }
 
-.tabs__download {
+.tab__download {
   display: inline-block;
   width: 170px;
   margin: 0 25px 0 0;
@@ -845,11 +807,11 @@ body {
   box-shadow: 5px 5px 5px 0px rgba(210, 156, 1, 0.5);
   transition: 0.3s;
   outline: none; }
-  .tabs__download:hover, .tabs__download:focus {
+  .tab__download:hover, .tab__download:focus {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px); }
 
-.tabs__more {
+.tab__more {
   display: inline-block;
   width: 168px;
   padding: 9px 0;
@@ -862,29 +824,29 @@ body {
   border-radius: 3px;
   transition: 0.3s;
   outline: none; }
-  .tabs__more:hover, .tabs__more:focus {
+  .tab__more:hover, .tab__more:focus {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px); }
 
 @media screen and (max-width: 1200px) {
-  .tabs__flex {
+  .tab__flex {
     padding: 0 15px; }
-  .tabs__mockup {
+  .tab__mockup {
     display: none; }
-  .tabs__inner {
+  .tab__inner {
     width: 100%; } }
 
 @media screen and (max-width: 768px) {
-  .tabs__control {
+  .tab__control {
     width: auto;
     margin: -34px 0 0 0; }
-    .tabs__control li button {
+    .tab__control li button {
       font-size: 14px; }
-  .tabs__download {
+  .tab__download {
     width: 135px;
     margin: 0 10px 0 0;
     font-size: 16px; }
-  .tabs__more {
+  .tab__more {
     width: 133px;
     font-size: 16px; } }
 
@@ -1374,237 +1336,6 @@ body {
   .account-types__name {
     margin: 0 0 20px 0;
     font-size: 40px; } }
-
-.tab {
-  display: flex;
-  margin: 30px 0 0 0; }
-  .tab--account {
-    justify-content: center; }
-
-.tab__button {
-  position: relative;
-  width: 170px;
-  margin: 0 10px 0 0;
-  padding: 15px 0;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 300;
-  text-align: center;
-  border: none;
-  border-top-right-radius: 30px;
-  background: #2f2861;
-  outline: none;
-  cursor: pointer;
-  transition: 0.3s; }
-  .tab__button--bronze {
-    background: #af7940; }
-    .tab__button--bronze.tab__active {
-      background: #af7940; }
-  .tab__button--silver {
-    background: #b1b1b1; }
-    .tab__button--silver.tab__active {
-      background: #b1b1b1; }
-  .tab__button--gold {
-    background: #d2ad53; }
-    .tab__button--gold.tab__active {
-      background: #d2ad53; }
-  .tab__button--forex:after {
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    width: 20px;
-    height: 20px;
-    background: url("../img/tab-forex.svg") no-repeat center;
-    transition: 0.3s; }
-  .tab__button--commodities:after {
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    width: 20px;
-    height: 20px;
-    background: url("../img/tab-commodities.svg") no-repeat center;
-    transition: 0.3s; }
-  .tab__button--metals:after {
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    width: 20px;
-    height: 20px;
-    background: url("../img/tab-metals.svg") no-repeat center;
-    transition: 0.3s; }
-  .tab__button--energies:after {
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    width: 20px;
-    height: 20px;
-    background: url("../img/tab-energies.svg") no-repeat center;
-    transition: 0.3s; }
-  .tab__button--indices:after {
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    width: 20px;
-    height: 20px;
-    background: url("../img/tab-indices.svg") no-repeat center;
-    transition: 0.3s; }
-  .tab__button--equities:after {
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    width: 20px;
-    height: 20px;
-    background: url("../img/tab-equities.svg") no-repeat center;
-    transition: 0.3s; }
-  .tab__button:hover {
-    background: #6420ff; }
-
-.tab__active {
-  width: 200px;
-  color: #fff;
-  font-weight: 600;
-  background: #6420ff; }
-  .tab__active:after {
-    left: 15px; }
-
-.tab__anchor {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0 0 0; }
-
-.tab__header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  padding: 10px 0;
-  background: #fff;
-  z-index: 5; }
-
-.tab__content {
-  display: none;
-  padding: 0 25px 25px 25px;
-  border: 1px solid #6420ff;
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px; }
-  .tab__content h3 {
-    margin: 0;
-    padding: 30px 0;
-    color: #2f2861;
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center;
-    text-transform: uppercase; }
-  .tab__content p {
-    color: #2f2861;
-    font-size: 17px;
-    font-weight: 300; }
-  .tab__content b {
-    color: #2f2861;
-    font-size: 20px;
-    font-weight: 500; }
-  .tab__content ul {
-    color: #2f2861;
-    font-weight: 300; }
-  .tab__content--forex {
-    display: block; }
-  .tab__content--comparison {
-    height: 500px;
-    overflow: scroll; }
-  .tab__content--account {
-    padding: 0;
-    border: none; }
-  .tab__content--product {
-    height: 700px;
-    overflow: scroll; }
-
-.tab__inner {
-  height: 400px;
-  margin: 0 0 50px 0;
-  padding: 0 25px 25px 25px;
-  border: 1px solid #6420ff;
-  border-top-right-radius: 30px;
-  overflow: scroll; }
-
-.tab__table {
-  width: 100%;
-  margin: 0 0 10px 0;
-  color: #fff;
-  text-align: center;
-  border-collapse: collapse; }
-  .tab__table th {
-    padding: 10px;
-    font-size: 13px;
-    font-weight: 500;
-    background: #6420ff; }
-    .tab__table th:last-child {
-      border-top-right-radius: 30px; }
-  .tab__table tr {
-    font-size: 12px;
-    font-weight: 300;
-    border-bottom: 1px solid #6420ff;
-    background: #2f2861; }
-  .tab__table td {
-    padding: 10px 0; }
-  .tab__table--header {
-    margin: 0; }
-  .tab__table--right th:last-child {
-    border-top-right-radius: 0; }
-
-.tab__name {
-  position: -webkit-sticky;
-  position: sticky; }
-  .tab__name th {
-    position: -webkit-sticky;
-    position: sticky;
-    border-radius: none;
-    z-index: 1; }
-  .tab__name td {
-    position: -webkit-sticky;
-    position: sticky; }
-  .tab__name--forex th {
-    top: 361px; }
-  .tab__name--metals th {
-    top: 247px; }
-  .tab__name--indices th {
-    top: 436px; }
-  .tab__name--equities th {
-    top: 416px; }
-  .tab__name--sticky th {
-    top: 116px; }
-  .tab__name--sticky td {
-    top: 150px;
-    background: #2f2861; }
-
-@media screen and (max-width: 1200px) {
-  .tab__button {
-    font-size: 15px; } }
-
-@media screen and (max-width: 768px) {
-  .tab {
-    flex-direction: column; }
-    .tab--account {
-      margin: 30px 0; }
-  .tab__button {
-    width: 100%;
-    border-radius: 0; }
-    .tab__button--forex:after, .tab__button--commodities:after, .tab__button--metals:after, .tab__button--energies:after, .tab__button--indices:after, .tab__button--equities:after {
-      left: 80px; }
-  .tab__anchor {
-    display: none; }
-  .tab__header {
-    border-top-right-radius: 30px; }
-  .tab__content {
-    border-top: none;
-    border-radius: 3px; }
-  .tab__inner {
-    padding: 0; } }
 
 .announcements__list {
   padding: 0;

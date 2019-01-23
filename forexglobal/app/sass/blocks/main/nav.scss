@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 15px;
+  transition: 0.3s;
 }
 
 .nav__list {
@@ -30,7 +31,6 @@
 
 .nav__wrapper {
   position: absolute;
-  top: 157px;
   left: 0;
   width: 100%;
   opacity: 0;
