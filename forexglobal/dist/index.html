@@ -256,11 +256,35 @@
             <li><button class="tab__button">PC</button></li>
             <li><button class="tab__button">Mac</button></li>
             <li><button class="tab__button">Web Trader</button></li>
-            <li><button class="tab__button  tab__active">Android</button></li>
+            <li><button class="tab__button  tab__button--active">Android</button></li>
             <li><button class="tab__button">Iphone/Ipad</button></li>
           </ul>
           <ul class="tab__list">
-            <li class="tab__content">
+            <li class="tab__content  tab__content--hide">
+              <picture>
+                <source srcset="img/tab-mockup.webp" type="image/webp">
+                <img class="tab__preview" src="img/tab-mockup.png" alt="Web Trader Preview">
+              </picture>  
+              <div class="tab__inner">
+                <h2 class="tab__name">PC</h2>
+                <p class="tab__text">Get the MetaTrader 4 trading software for your smartphone or tablet and access Vipro markets’ best trading conditions anytime and anywhere!</p>
+                <a class="tab__download" href="#">Download</a>
+                <a class="tab__more" href="#">Read more</a>
+              </div>  
+            </li>
+            <li class="tab__content  tab__content--hide">
+              <picture>
+                <source srcset="img/tab-mockup.webp" type="image/webp">
+                <img class="tab__preview" src="img/tab-mockup.png" alt="Web Trader Preview">
+              </picture>  
+              <div class="tab__inner">
+                <h2 class="tab__name">Mac</h2>
+                <p class="tab__text">Get the MetaTrader 4 trading software for your smartphone or tablet and access Vipro markets’ best trading conditions anytime and anywhere!</p>
+                <a class="tab__download" href="#">Download</a>
+                <a class="tab__more" href="#">Read more</a>
+              </div>  
+            </li>
+            <li class="tab__content  tab__content--hide">
               <picture>
                 <source srcset="img/tab-mockup.webp" type="image/webp">
                 <img class="tab__preview" src="img/tab-mockup.png" alt="Web Trader Preview">
@@ -272,14 +296,25 @@
                 <a class="tab__more" href="#">Read more</a>
               </div>  
             </li>
-            <li class="tab__content  tab__content--hide">
+            <li class="tab__content">
+              <picture>
+                <source srcset="img/tab-mockup.webp" type="image/webp">
+                <img class="tab__preview" src="img/tab-mockup.png" alt="Web Trader Preview">
+              </picture>  
               <div class="tab__inner">
-                <picture>
-                  <source srcset="img/tab-mockup.webp" type="image/webp">
-                  <img src="img/tab-mockup.png" alt="Web Trader Preview">
-                </picture>
                 <h2 class="tab__name">Android</h2>
                 <p class="tab__text">Get the MetaTrader 4 trading software for your smartphone or tablet and access Vipro markets’ best trading conditions anytime and anywhere!</p>
+                <a class="tab__download" href="#">Download</a>
+                <a class="tab__more" href="#">Read more</a>
+              </div>  
+            </li>
+            <li class="tab__content  tab__content--hide">
+              <picture>
+                <source srcset="img/tab-mockup.webp" type="image/webp">
+                <img class="tab__preview" src="img/tab-mockup.png" alt="Web Trader Preview">
+              </picture>  
+              <div class="tab__inner">
+                <h2 class="tab__name">Iphone/Ipad</h2>
                 <p class="tab__text">Get the MetaTrader 4 trading software for your smartphone or tablet and access Vipro markets’ best trading conditions anytime and anywhere!</p>
                 <a class="tab__download" href="#">Download</a>
                 <a class="tab__more" href="#">Read more</a>
@@ -292,29 +327,23 @@
     <section class="license">
       <div class="container">
         <h1 class="license__name">Regulated and Licensed</h1>
-        <!-- <ul class="license__list">
-          <li><b>CySEC</b> – CySEC authorised and regulated under licence number 300/16</li>
-          <li><b>MiFID</b> – As a regulated investment firm within the EU, we follow the Markets in Financial Instruments Directive (MiFID), which aims to improve market transparency and protect investors.</li>
-          <li><b>I.C.F</b> – We are a member of the Investor Compensation Fund, which is an additional protection for Covered Clients who can make a claim if the company ever stops fulfilling its obligations.</li>
+        <ul class="license__list">
+          <li class="license__box">
+            <h2 class="license__title">Low Spreads &<br>Competitive Pricing</h2>
+            <hr class="license__divider">
+            <p class="license__text">Forex24 Global has very low spreads and a competitive pricing model for all trading accounts. This is possible by having a deep and varied liquidity pool with tier 1 banks and top finance institutional companies.</p>
+          </li>
+          <li class="license__box">
+            <h2 class="license__title">Transparent &<br>Trustworthy</h2>
+            <hr class="license__divider">
+            <p class="license__text">As an STP (Straight Through Processing) broker, we do not have any conflict of interest regarding our clients’ trades, as we only receive commission on the volume of the trades and do not benefit in any additional way by any client losses. We aim to give you the best possible service to help boost your trading experience with us.</p>
+          </li>
+          <li class="license__box">
+            <h2 class="license__title">Safety of<br>Funds</h2>
+            <hr class="license__divider">
+            <p class="license__text">Your funds are kept in segregated accounts and we use encryption tools to keep all of your transaction data safe and secure. The company offers Negative Balance Protection.</p>
+          </li>
         </ul>
-          <hr> -->
-        <div class="license__flex">
-          <div class="license__box  license__box--1">
-            <b>Low Spreads &<br>Competitive Pricing</b>
-              <hr>
-            <p>Forex24 Global has very low spreads and a competitive pricing model for all trading accounts. This is possible by having a deep and varied liquidity pool with tier 1 banks and top finance institutional companies.</p>
-          </div>
-          <div class="license__box  license__box--2">
-            <b>Transparent &<br>Trustworthy</b>
-              <hr>
-            <p>As an STP (Straight Through Processing) broker, we do not have any conflict of interest regarding our clients’ trades, as we only receive commission on the volume of the trades and do not benefit in any additional way by any client losses. We aim to give you the best possible service to help boost your trading experience with us.</p>
-          </div>
-          <div class="license__box  license__box--3">
-            <b>Safety of<br>Funds</b>
-              <hr>
-            <p>Your funds are kept in segregated accounts and we use encryption tools to keep all of your transaction data safe and secure. The company offers Negative Balance Protection.</p>
-          </div>
-        </div>
       </div>
     </section>
     <section class="quote">

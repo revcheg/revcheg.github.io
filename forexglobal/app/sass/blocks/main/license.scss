@@ -1,5 +1,5 @@
 .license {
-  padding: 30px 0 60px 0;
+  padding: 50px 0;
 }
 
 .license__name {
@@ -11,74 +11,59 @@
 }
 
 .license__list {
-  margin: 0;
-  padding: 0;
-  color: $sc;
-  font-size: 20px;
-  font-weight: 300;
-  list-style: url('../img/list.svg');
-  list-style-position: inside;
-  
-  li {
-    margin: 0 0 20px 0;
-  }
-  
-  b {
-    font-weight: 500;
-  }
-  
-  & + hr {
-    height: 1px;
-    margin: 30px 0 20px 0;
-    border: none;
-    background: $sc;
-  }
-}
-
-.license__flex {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .license__box {
   width: 350px;
-  padding: 130px 0 0 0;
+  padding: 50px 0 0 0;
   
-  b {
-    display: block;
-    color: $sc;
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center;
+  &:nth-child(1) {
+    background-image: url('../img/license-1.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 50px;
   }
   
-  hr {
-    width: 30px;
-    height: 1px;
-    margin: 20px auto;
-    border: none;
-    background: $mc;
+  &:nth-child(2) {
+    background-image: url('../img/license-2.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 50px;
   }
   
-  p {
-    color: $sc;
-    font-weight: 300;
+  &:nth-child(3) {
+    background-image: url('../img/license-3.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 40px;
   }
-  
-  &--1 {
-    background: url('../img/license-1.svg') no-repeat top;
-    background-size: 100px;
-  }
-  
-  &--2 {
-    background: url('../img/license-2.svg') no-repeat top;
-    background-size: 120px;
-  }
-  
-  &--3 {
-    background: url('../img/license-3.svg') no-repeat top;
-    background-size: 100px;
-  }
+}
+
+.license__title {
+  display: block;
+  color: $sc;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.license__divider {
+  width: 30px;
+  height: 1px;
+  margin: 20px auto;
+  border: none;
+  background: $mc;
+}
+
+.license__text {
+  color: $sc;
+  font-weight: 300;
+  text-align: center;
 }
 
 @media screen and ($tablet-widths) {
