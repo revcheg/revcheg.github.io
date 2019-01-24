@@ -284,47 +284,114 @@
         <li class="master__item">
           <figure class="master__figure">
             <picture>
-              <source srcset="img/master-photo.webp" type="image/webp">
-              <img class="master__photo" src="img/master-photo.jpg" alt="Имя Имя">
+              <source srcset="img/master-photo-1.webp" type="image/webp">
+              <img class="master__photo" src="img/master-photo-1.jpg" width="200" height="200" alt="Елена">
             </picture>
             <figcaption>
-              <h5 class="master__name">Имя Имя</h5>
+              <h5 class="master__name">Елена</h5>
             </figcaption>
           </figure>
           <ul class="master__skilllist">
-            <li class="master__skill">Маникюр</li>
-            <li class="master__skill">Стрижка</li>
+            <li class="master__skill">Парикмахер универсал</li>
+            <li class="master__skill">Опыт работы выше 10 лет</li>
           </ul>
         </li>
         <li class="master__item">
           <figure class="master__figure">
             <picture>
-              <source srcset="img/master-photo.webp" type="image/webp">
-              <img class="master__photo" src="img/master-photo.jpg" alt="Имя Имя">
+              <source srcset="img/master-photo-2.webp" type="image/webp">
+              <img class="master__photo" src="img/master-photo-2.jpg" width="200" height="200" alt="Ольга">
             </picture>
             <figcaption>
-              <h5 class="master__name">Имя Имя</h5>
+              <h5 class="master__name">Ольга</h5>
             </figcaption>
           </figure>
           <ul class="master__skilllist">
-            <li class="master__skill">Маникюр</li>
-            <li class="master__skill">Стрижка</li>
+            <li class="master__skill">Парикмахер универсал</li>
+            <li class="master__skill">Опыт работы выше 10 лет</li>
           </ul>
         </li>
         <li class="master__item">
           <figure class="master__figure">
             <picture>
-              <source srcset="img/master-photo.webp" type="image/webp">
-              <img class="master__photo" src="img/master-photo.jpg" alt="Имя Имя">
+              <source srcset="img/master-photo-4.webp" type="image/webp">
+              <img class="master__photo" src="img/master-photo-4.jpg" width="200" height="200" alt="Алена">
             </picture>
             <figcaption>
-              <h5 class="master__name">Имя Имя</h5>
+              <h5 class="master__name">Алена</h5>
             </figcaption>
           </figure>
           <ul class="master__skilllist">
-            <li class="master__skill">Маникюр</li>
-            <li class="master__skill">Стрижка</li>
+            <li class="master__skill">Мастер маникюра</li>
+            <li class="master__skill">Мастер педикюра</li>
+            <li class="master__skill">Опыт работы 6 лет</li>
           </ul>
+        </li>
+        <li class="master__item">
+          <figure class="master__figure">
+            <picture>
+              <source srcset="img/master-photo-3.webp" type="image/webp">
+              <img class="master__photo" src="img/master-photo-3.jpg" width="200" height="200" alt="Яна">
+            </picture>
+            <figcaption>
+              <h5 class="master__name">Яна</h5>
+            </figcaption>
+          </figure>
+          <ul class="master__skilllist">
+            <li class="master__skill">Мастер колорист</li>
+            <li class="master__skill">Парикмахер</li>
+            <li class="master__skill">Женский мастер</li>
+            <li class="master__skill">Опыт работы 9 лет</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2 class="heading  heading--small  heading--black">Галерея</h2>
+      <ul class="gallery__wrapper">
+        <li class="gallery__item">
+          <picture>
+            <source srcset="img/gallery-1.webp" type="image/webp">
+            <img class="gallery__photo" src="img/gallery-1.jpg" alt="Интерьер салона">
+          </picture>
+        </li>
+        <li class="gallery__item">
+          <picture>
+            <source srcset="img/gallery-2.webp" type="image/webp">
+            <img class="gallery__photo" src="img/gallery-2.jpg" alt="Интерьер салона">
+          </picture>
+        </li>
+        <li class="gallery__item">
+          <picture>
+            <source srcset="img/gallery-3.webp" type="image/webp">
+            <img class="gallery__photo" src="img/gallery-3.jpg" alt="Интерьер салона">
+          </picture>
+        </li>
+        <li class="gallery__item">
+          <picture>
+            <source srcset="img/gallery-4.webp" type="image/webp">
+            <img class="gallery__photo" src="img/gallery-4.jpg" alt="Интерьер салона">
+          </picture>
+        </li>
+        <li class="gallery__item">
+          <picture>
+            <source srcset="img/gallery-5.webp" type="image/webp">
+            <img class="gallery__photo" src="img/gallery-5.jpg" alt="Интерьер салона">
+          </picture>
+        </li>
+        <li class="gallery__item">
+          <picture>
+            <source srcset="img/gallery-6.webp" type="image/webp">
+            <img class="gallery__photo" src="img/gallery-6.jpg" alt="Интерьер салона">
+          </picture>
+        </li>
+        <li class="gallery__item">
+          <picture>
+            <source srcset="img/gallery-7.webp" type="image/webp">
+            <img class="gallery__photo" src="img/gallery-7.jpg" alt="Интерьер салона">
+          </picture>
         </li>
       </ul>
     </div>
@@ -350,6 +417,21 @@
       </div>
     </div>
   </footer>
+  
+  <template class="popup__template">
+    <article class="popup  popup--hide">
+      <button class="popup__close">Закрыть попап</button>
+      <button class="popup__controll  popup__controll--prev">Предыдущая</button>
+      <picture>
+        <source srcset="img/gallery-1.webp" type="image/webp">
+        <img class="popup__photo" src="img/gallery-1.jpg" alt="Интерьер салона">
+      </picture>
+      <button class="popup__controll  popup__controll--next">Следующая</button>
+    </article>
+  </template>
+  
+  <div class="popup__overlay  popup__overlay--hide"></div>
+  
   <script src="js/main.min.js" async></script>
 </body>
 </html>

@@ -19,7 +19,7 @@
 
 .master__item {
   box-sizing: border-box;
-  width: 300px;
+  width: 280px;
   padding: 20px;
   border-radius: 2px;
   background: #fff;
@@ -33,6 +33,7 @@
   display: block;
   margin: 0 auto;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .master__name {
@@ -53,6 +54,10 @@
 }
 
 @media screen and ($mobile-widths) {
+  .master {
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+  }
+  
   .master__list {
     flex-direction: column;
   }

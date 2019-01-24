@@ -12,6 +12,10 @@
 .services__table {
   width: 100%;
   text-align: center;
+  
+  &::-webkit-scrollbar {
+    height: 5px;
+  }
 }
 
 .services__th {
