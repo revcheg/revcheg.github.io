@@ -11,6 +11,11 @@
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
 
+.title__logo {
+  display: block;
+  margin: 0 auto;
+}
+
 .title__list {
   @include clear-list;
   margin: 30px 0 0 0;

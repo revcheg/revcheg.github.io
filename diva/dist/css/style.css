@@ -66,6 +66,10 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); }
 
+.title__logo {
+  display: block;
+  margin: 0 auto; }
+
 .title__list {
   margin: 0;
   padding: 0;
@@ -124,14 +128,10 @@ body {
   .header {
     padding: 10px 0; } }
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-
 .nav__list {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -154,6 +154,7 @@ body {
   display: none;
   width: 30px;
   height: 40px;
+  margin: 0 0 0 auto;
   font-size: 0;
   border: none;
   background-color: transparent;
