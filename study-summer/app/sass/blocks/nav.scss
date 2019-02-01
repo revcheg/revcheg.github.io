@@ -1,0 +1,46 @@
+.nav__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  margin-right: 25px;
+  
+  &:first-child {
+    margin-right: auto; 
+  }
+  
+  &:last-child {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+.nav__link {
+  color: $text;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  transition: 0.3s;
+  
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+}
+
+.nav__phone {
+  color: $red;
+  font-size: 22px;
+  font-weight: normal;
+  text-decoration: none;
+  transition: 0.3s;
+  
+  &:hover,
+  &:focus {
+    color: $text;
+  }
+}
