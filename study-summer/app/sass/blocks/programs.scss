@@ -1,0 +1,142 @@
+.programs {
+  margin-bottom: 70px;
+}
+
+.programs__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.programs__title {
+  margin: 0;
+  color: $text;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.programs__button {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  padding: 0;
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: 0.3s;
+  
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+  
+  &:last-child {
+    margin: 0;
+  }
+  
+  &--active {
+    opacity: 1;
+  }
+}
+
+.programs__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  list-style: none;
+}
+
+.programs__item {
+  height: 440px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.programs__figure {
+  margin: 0;
+}
+
+.programs__name {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: $text;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.programs__table {
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.programs__text {
+  padding-bottom: 10px;
+  color: $text;
+  font-size: 16px;
+  font-weight: normal;
+  
+  &--caption {
+    display: flex;
+    align-items: center;
+    color: $blue;
+    font-size: 14px;
+  }
+  
+  &--cost {
+    color: $blue;
+    font-weight: 500;
+  }
+}
+
+.programs__icon {
+  margin-right: 5px;
+}
+
+.programs__load {
+  position: relative;
+  display: block;
+  width: 250px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: inherit;
+  border: none;
+  border-radius: 43px;
+  background-color: $blue;
+  cursor: pointer;
+  transition: 0.3s;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    width: 17px;
+    height: 20px;
+    background-image: url('../img/svg/refresh.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+  }
+  
+  &:hover, 
+  &:focus {
+    background-color: darken($blue, 5%);
+    transform: translateY(-5px);
+    
+    &::before {
+      transform: rotate(360deg);
+    }
+  }
+}

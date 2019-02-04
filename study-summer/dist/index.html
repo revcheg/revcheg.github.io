@@ -2,11 +2,19 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>STUDY.UA лето 2019</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preload" href="fonts/GothamPro.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/GothamPro.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/GothamPro-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/GothamPro-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/GothamPro-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/GothamPro-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/GothamPro-Black.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/GothamPro-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
@@ -59,7 +67,7 @@
           <h1 class="slider__title">Поездки в Великобританию</h1>
           <ul class="slider__list">
             <li class="slider__item">
-              <h2 class="slider__name">Royal Holloway London</h2>
+              <h3 class="slider__name">Royal Holloway London</h3>
               <b class="slider__subname">Один из самых красивых кампусов мира!</b>
               <a class="slider__button" href="#">Забронировать</a>
             </li>
@@ -76,29 +84,453 @@
         <b class="gallery__call">Групповая поездка в Великобританию — это лучший способ провести каникулы, преодолеть языковой барьер и получить море незабываемых впечатлений</b>
       </div>
       <ul class="gallery__list">
-        <li>
-          <img src="img/gallery-1.jpg" width="960" alt="">
+        <li class="gallery__item">
+          <picture>
+            <source srcset="img/gallery-1.webp" type="image/webp">
+            <img class="gallery__img" src="img/gallery-1.jpg" alt="">
+          </picture>
         </li>
-        <li>
-          <img src="img/gallery-2.jpg" width="480" alt="">
+        <li class="gallery__item">
+          <picture>
+            <source srcset="img/gallery-2.webp" type="image/webp">
+            <img class="gallery__img" src="img/gallery-2.jpg" alt="">
+          </picture>
         </li>
-        <li>
-          <img src="img/gallery-3.jpg" width="480" alt="">
+        <li class="gallery__item">
+          <picture>
+            <source srcset="img/gallery-3.webp" type="image/webp">
+            <img class="gallery__img" src="img/gallery-3.jpg" alt="">
+          </picture>
         </li>
-        <li>
-          <img src="img/gallery-4.jpg" width="320" alt="">
+        <li class="gallery__item">
+          <picture>
+            <source srcset="img/gallery-4.webp" type="image/webp">
+            <img class="gallery__img" src="img/gallery-4.jpg" alt="">
+          </picture>
         </li>
-        <li>
-          <img src="img/gallery-5.jpg" width="640" alt="">
+        <li class="gallery__item">
+          <picture>
+            <source srcset="img/gallery-5.webp" type="image/webp">
+            <img class="gallery__img" src="img/gallery-5.jpg" alt="">
+          </picture>
         </li>
-        <li>
-          <img src="img/gallery-6.jpg" width="960" alt="">
+        <li class="gallery__item">
+          <picture>
+            <source srcset="img/gallery-6.webp" type="image/webp">
+            <img class="gallery__img" src="img/gallery-6.jpg" alt="">
+          </picture>
         </li>
       </ul>
     </div>
+    <section class="features">
+      <div class="container">
+        <ul class="features__list">
+          <li class="features__item">
+            <b class="features__name">Валюта</b>
+            <p class="features__text">Фунт стерлингов</p>
+          </li>
+          <li class="features__item">
+            <b class="features__name">Разница времени с Киевом</b>
+            <p class="features__text">2 часа</p>
+          </li>
+          <li class="features__item">
+            <b class="features__name">Авиаперелет из Киева</b>
+            <p class="features__text">3 часа 20 минут</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="advantages__wrapper">
+        <div class="advantages__img"></div>
+        <div class="advantages__content">
+          <h2 class="advantages__title">Почему стоит выбрать групповые<br>поездки в Великобританию?</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">Идеально подходят для первой групповой поездки ребенка.</li>
+            <li class="advantages__item">Высокие стандарты обучения и безопасности летних школ.</li>
+            <li class="advantages__item">Самые красивые школы-пансионы и кампусы университетов.</li>
+            <li class="advantages__item">Множество легендарных достопримечательностей, музеев и традиций.</li>
+            <li class="advantages__item">Все хотят сделать селфи с гвардейцем и, конечно же, увидеть Королеву :)</li>
+          </ul>
+          <a class="advantages__button" href="#">Подобрать программу</a>
+        </div>
+      </div>
+      <div class="advantages__wrapper">
+        <div class="advantages__content  advantages__content--second">
+          <img src="img/british-airways.jpg" alt="British Airways">
+          <p class="advantages__text">Все групповые поездки в Лондон компания STUDY.UA осуществляет исключительно рейсами British Airways.</p>
+        </div>
+        <div class="advantages__video">
+          <button class="advantages__play">Открыть видео</button>
+        </div>
+      </div>
+    </section>
+    <section class="programs">
+      <div class="container">
+        <div class="programs__wrapper">
+          <h2 class="programs__title">Выбор групповых программ</h2>
+          <div>
+            <button class="programs__button  programs__button--tile  programs__button--active">
+              Плитка
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" fill="none"><path fill="#6A7EFC" fill-rule="evenodd" d="M10.938 8.594l-.01-6.254A2.343 2.343 0 0 0 8.584 0c-1.77 0-3.424.118-4.963.354A3.906 3.906 0 0 0 .354 3.62 32.229 32.229 0 0 0 0 8.595a2.342 2.342 0 0 0 2.342 2.342h6.254a2.343 2.343 0 0 0 2.341-2.343zm13.72-4.974A3.906 3.906 0 0 0 21.39.355 32.821 32.821 0 0 0 16.417 0a2.344 2.344 0 0 0-2.344 2.34l-.01 6.252a2.344 2.344 0 0 0 2.343 2.345h6.262a2.344 2.344 0 0 0 2.344-2.343 32.181 32.181 0 0 0-.354-4.974zm-9.033 4.974l.01-6.252c.001-.43.35-.78.782-.78 1.696 0 3.275.113 4.736.337a2.344 2.344 0 0 1 1.96 1.96c.228 1.47.34 3.048.337 4.733 0 .433-.35.783-.782.783h-6.262a.781.781 0 0 1-.781-.781zM3.859 1.899a2.344 2.344 0 0 0-1.96 1.959 30.68 30.68 0 0 0-.336 4.736c0 .431.349.781.779.781h6.254c.43 0 .779-.35.779-.78l-.01-6.253a.78.78 0 0 0-.78-.78A31.19 31.19 0 0 0 3.86 1.9zM21.153 23.1a2.344 2.344 0 0 0 1.96-1.96c.228-1.47.34-3.048.337-4.735a.781.781 0 0 0-.782-.781h-6.262a.781.781 0 0 0-.781.78l.01 6.253c.001.43.35.78.782.78 1.696 0 3.275-.113 4.736-.337zm-7.09-6.695l.01 6.254A2.344 2.344 0 0 0 16.417 25c1.773 0 3.43-.118 4.973-.355a3.906 3.906 0 0 0 3.268-3.265c.24-1.553.358-3.212.354-4.975a2.343 2.343 0 0 0-2.344-2.343h-6.262a2.344 2.344 0 0 0-2.343 2.344zm-4.698 6.252l.01-6.252a.78.78 0 0 0-.78-.781H2.343a.78.78 0 0 0-.78.783 30.675 30.675 0 0 0 .336 4.734 2.344 2.344 0 0 0 1.96 1.96c1.46.223 3.035.335 4.727.335a.78.78 0 0 0 .78-.78zM.354 21.38a3.906 3.906 0 0 0 3.268 3.266c1.54.236 3.194.354 4.963.354a2.343 2.343 0 0 0 2.342-2.34l.01-6.252a2.343 2.343 0 0 0-2.341-2.346H2.342A2.343 2.343 0 0 0 0 16.407c-.004 1.762.114 3.42.354 4.974z" clip-rule="evenodd"/></svg>
+            </button>
+            <button class="programs__button  programs__button--list">
+              Список
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" fill="none"><path fill="#6A7EFC" fill-rule="evenodd" d="M12.499 0C8.709 0 5.59.14 3.136.42a3.52 3.52 0 0 0-3.12 3.483A2.344 2.344 0 0 0 2.359 6.25h20.322a2.344 2.344 0 0 0 2.344-2.344A3.505 3.505 0 0 0 21.918.424C19.44.141 16.302 0 12.498 0zM1.579 3.906c.004-.988.749-1.82 1.734-1.933 2.389-.273 5.452-.41 9.186-.41 3.748 0 6.83.138 9.242.413a1.942 1.942 0 0 1 1.722 1.93c0 .432-.35.781-.782.781H2.36a.781.781 0 0 1-.78-.78zm10.92 19.532c3.748 0 6.83-.139 9.242-.414a1.942 1.942 0 0 0 1.722-1.93.781.781 0 0 0-.782-.782H2.36a.78.78 0 0 0-.78.778c.004.992.749 1.824 1.734 1.937 2.389.273 5.452.41 9.186.41zM2.359 18.75a2.344 2.344 0 0 0-2.343 2.344 3.521 3.521 0 0 0 3.12 3.485C5.59 24.86 8.71 25 12.499 25c3.803 0 6.941-.14 9.42-.424a3.505 3.505 0 0 0 3.106-3.482 2.344 2.344 0 0 0-2.343-2.344H2.358zm.006-7.813c-.43 0-.78.349-.782.78l-.005 1.56c0 .436.35.786.781.786h20.322c.432 0 .782-.35.782-.782V11.72a.781.781 0 0 0-.782-.781H2.366zM22.68 9.376H2.365A2.344 2.344 0 0 0 .02 11.711L.016 13.28a2.344 2.344 0 0 0 2.343 2.345h20.322a2.344 2.344 0 0 0 2.344-2.344V11.72a2.344 2.344 0 0 0-2.344-2.344z" clip-rule="evenodd"/></svg>
+            </button>
+          </div>
+        </div>
+        <ul class="programs__list">
+          <li class="programs__item">
+            <figure class="programs__figure">
+              <picture>
+                <source srcset="img/brunel-university.webp" type="image/webp">
+                <img class="programs__img" src="img/brunel-university.jpg" alt="Brunel University">
+              </picture>
+              <figcaption>
+                <h3 class="programs__name">Brunel University</h3>
+              </figcaption>
+            </figure>
+            <table class="programs__table">
+              <tr>
+                <td class="programs__text  programs__text--caption">
+                  <svg class="programs__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="22" fill="none"><path fill="#6A7EFC" fill-rule="evenodd" d="M0 8.38C0 13.219 5.077 22 8.38 22c3.304 0 8.382-8.782 8.382-13.62A8.381 8.381 0 0 0 0 8.38zm15.714 0c0 4.336-4.762 12.572-7.333 12.572-2.571 0-7.333-8.236-7.333-12.571a7.333 7.333 0 1 1 14.666 0zm-7.333 3.144a3.143 3.143 0 1 1 0-6.286 3.143 3.143 0 0 1 0 6.286zm2.095-3.143a2.095 2.095 0 1 1-4.19 0 2.095 2.095 0 0 1 4.19 0z" clip-rule="evenodd"/></svg>
+                  Город:
+                </td>
+                <td class="programs__text">Лондон</td>
+              </tr>
+              <tr>
+                <td class="programs__text  programs__text--caption">
+                  <svg class="programs__icon" xmlns="http://www.w3.org/2000/svg" width="25" height="22" fill="none"><path fill="#6A7EFC" d="M19.782 2.198h.55c.691 0 1.357.183 1.942.526.57.333 1.045.81 1.379 1.379a3.83 3.83 0 0 1 .525 1.942 501.024 501.024 0 0 0 0 6.6 57.796 57.796 0 0 1-.243 5.491 3.846 3.846 0 0 1-3.568 3.494c-3.598.246-6.347.37-8.25.37-1.905 0-4.669-.124-8.296-.371a3.847 3.847 0 0 1-3.57-3.5A62.57 62.57 0 0 1 0 12.648V6.045c0-.692.183-1.358.526-1.942.333-.57.81-1.046 1.379-1.38a3.83 3.83 0 0 1 1.942-.525h.55v-.55a1.649 1.649 0 0 1 3.296 0v.55h8.792v-.55a1.649 1.649 0 0 1 3.297 0v.55zm-.093 1.099a1.65 1.65 0 0 1-3.11 0h-8.98a1.65 1.65 0 0 1-3.11 0h-.642c-.495 0-.97.13-1.387.375-.407.238-.748.579-.986.986a2.732 2.732 0 0 0-.375 1.387v6.604c0 1.719.082 3.513.247 5.383a2.747 2.747 0 0 0 2.55 2.5c3.604.246 6.346.369 8.221.369 1.873 0 4.6-.123 8.175-.368a2.747 2.747 0 0 0 2.548-2.495c.17-1.881.249-3.677.24-5.386-.015-2.56-.015-4.762 0-6.61-.001-.494-.132-.967-.375-1.384a2.764 2.764 0 0 0-.987-.986 2.732 2.732 0 0 0-1.386-.375h-.643zm-1.555-2.198a.55.55 0 0 0-.55.55v1.099a.55.55 0 0 0 1.1 0v-1.1a.55.55 0 0 0-.55-.549zm-12.09 0a.55.55 0 0 0-.549.55v1.099a.55.55 0 0 0 1.1 0v-1.1a.55.55 0 0 0-.55-.549zM8.793 7.47a.55.55 0 0 1 1.1 0v10.296a.55.55 0 1 1-1.1 0V7.47zm5.495 0a.55.55 0 1 1 1.1 0v10.296a.55.55 0 1 1-1.1 0V7.47zm-9.341.223a.55.55 0 0 0-.55.55v8.792c0 .303.246.55.55.55h14.287a.55.55 0 0 0 .55-.55V8.243a.55.55 0 0 0-.55-.55H4.946zm0-1.099h14.287c.91 0 1.648.738 1.648 1.649v8.792c0 .91-.738 1.648-1.648 1.648H4.946c-.91 0-1.649-.738-1.649-1.648V8.243c0-.91.738-1.649 1.649-1.649zm-.55 6.594a.55.55 0 1 1 0-1.099h15.386a.55.55 0 0 1 0 1.1H4.396z"/></svg>
+                  Даты:
+                </td>
+                <td class="programs__text"><a href="#">23.06 - 14.07 (3 нед.)</a></td>
+              </tr>
+              <tr>
+                <td class="programs__text  programs__text--caption">
+                  <svg class="programs__icon" xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none"><path fill="#6A7EFC" d="M.845 12.167L9.387 3.62a2.382 2.382 0 0 1 1.69-.703c.053 0 .105 0 .157.005l6.178.408c.67.043 1.21.584 1.253 1.254l.147 2.193c.314-.18.613-.408.883-.679.66-.66 1.069-1.48 1.154-2.317.08-.793-.147-1.5-.64-1.994-1.05-1.05-2.983-.816-4.317.513a.57.57 0 1 1-.807-.807c1.785-1.771 4.444-2 5.935-.508.74.74 1.083 1.77.969 2.915-.11 1.097-.637 2.165-1.482 3.01a5.303 5.303 0 0 1-1.61 1.107l.181 2.749a2.389 2.389 0 0 1-.698 1.852l-8.546 8.546A2.837 2.837 0 0 1 7.81 22c-.765 0-1.482-.3-2.023-.836L.836 16.212A2.837 2.837 0 0 1 0 14.189c.005-.769.304-1.486.845-2.022zm.803 3.233l4.957 4.957a1.71 1.71 0 0 0 1.215.503c.46 0 .893-.18 1.216-.503l8.546-8.546a1.25 1.25 0 0 0 .366-.97l-.166-2.487c-.095.014-.19.028-.285.038a4.279 4.279 0 0 1-.422.024c-.974 0-1.843-.342-2.489-.988a.57.57 0 1 1 .808-.807c.493.494 1.2.721 1.994.64.109-.009.213-.028.318-.047l-.171-2.545a.21.21 0 0 0-.195-.194l-6.177-.409c-.029 0-.057-.004-.085-.004-.333 0-.656.132-.888.365L1.648 12.97a1.71 1.71 0 0 0-.504 1.216c0 .46.18.892.504 1.215z"/></svg>
+                  Цена:
+                </td>
+                <td class="programs__text  programs__text--cost">$4550</td>
+              </tr>
+            </table>
+          </li>
+          <li class="programs__item">
+            <figure class="programs__figure">
+              <picture>
+                <source srcset="img/cats.webp" type="image/webp">
+                <img class="programs__img" src="img/cats.jpg" alt="CATS College London Bloomsbury">
+              </picture>
+              <figcaption>
+                <h3 class="programs__name">CATS College London<br>Bloomsbury</h3>
+              </figcaption>
+            </figure>
+            <table class="programs__table">
+              <tr>
+                <td class="programs__text  programs__text--caption">
+                  <svg class="programs__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="22" fill="none"><path fill="#6A7EFC" fill-rule="evenodd" d="M0 8.38C0 13.219 5.077 22 8.38 22c3.304 0 8.382-8.782 8.382-13.62A8.381 8.381 0 0 0 0 8.38zm15.714 0c0 4.336-4.762 12.572-7.333 12.572-2.571 0-7.333-8.236-7.333-12.571a7.333 7.333 0 1 1 14.666 0zm-7.333 3.144a3.143 3.143 0 1 1 0-6.286 3.143 3.143 0 0 1 0 6.286zm2.095-3.143a2.095 2.095 0 1 1-4.19 0 2.095 2.095 0 0 1 4.19 0z" clip-rule="evenodd"/></svg>
+                  Город:
+                </td>
+                <td class="programs__text">Лондон</td>
+              </tr>
+              <tr>
+                <td class="programs__text  programs__text--caption">
+                  <svg class="programs__icon" xmlns="http://www.w3.org/2000/svg" width="25" height="22" fill="none"><path fill="#6A7EFC" d="M19.782 2.198h.55c.691 0 1.357.183 1.942.526.57.333 1.045.81 1.379 1.379a3.83 3.83 0 0 1 .525 1.942 501.024 501.024 0 0 0 0 6.6 57.796 57.796 0 0 1-.243 5.491 3.846 3.846 0 0 1-3.568 3.494c-3.598.246-6.347.37-8.25.37-1.905 0-4.669-.124-8.296-.371a3.847 3.847 0 0 1-3.57-3.5A62.57 62.57 0 0 1 0 12.648V6.045c0-.692.183-1.358.526-1.942.333-.57.81-1.046 1.379-1.38a3.83 3.83 0 0 1 1.942-.525h.55v-.55a1.649 1.649 0 0 1 3.296 0v.55h8.792v-.55a1.649 1.649 0 0 1 3.297 0v.55zm-.093 1.099a1.65 1.65 0 0 1-3.11 0h-8.98a1.65 1.65 0 0 1-3.11 0h-.642c-.495 0-.97.13-1.387.375-.407.238-.748.579-.986.986a2.732 2.732 0 0 0-.375 1.387v6.604c0 1.719.082 3.513.247 5.383a2.747 2.747 0 0 0 2.55 2.5c3.604.246 6.346.369 8.221.369 1.873 0 4.6-.123 8.175-.368a2.747 2.747 0 0 0 2.548-2.495c.17-1.881.249-3.677.24-5.386-.015-2.56-.015-4.762 0-6.61-.001-.494-.132-.967-.375-1.384a2.764 2.764 0 0 0-.987-.986 2.732 2.732 0 0 0-1.386-.375h-.643zm-1.555-2.198a.55.55 0 0 0-.55.55v1.099a.55.55 0 0 0 1.1 0v-1.1a.55.55 0 0 0-.55-.549zm-12.09 0a.55.55 0 0 0-.549.55v1.099a.55.55 0 0 0 1.1 0v-1.1a.55.55 0 0 0-.55-.549zM8.793 7.47a.55.55 0 0 1 1.1 0v10.296a.55.55 0 1 1-1.1 0V7.47zm5.495 0a.55.55 0 1 1 1.1 0v10.296a.55.55 0 1 1-1.1 0V7.47zm-9.341.223a.55.55 0 0 0-.55.55v8.792c0 .303.246.55.55.55h14.287a.55.55 0 0 0 .55-.55V8.243a.55.55 0 0 0-.55-.55H4.946zm0-1.099h14.287c.91 0 1.648.738 1.648 1.649v8.792c0 .91-.738 1.648-1.648 1.648H4.946c-.91 0-1.649-.738-1.649-1.648V8.243c0-.91.738-1.649 1.649-1.649zm-.55 6.594a.55.55 0 1 1 0-1.099h15.386a.55.55 0 0 1 0 1.1H4.396z"/></svg>
+                  Даты:
+                </td>
+                <td class="programs__text">
+                  <a href="#">4.08 - 18.08 (2 нед.)</a><br>
+                  <a href="#">4.08 - 25.08 (3 нед.)</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="programs__text  programs__text--caption">
+                  <svg class="programs__icon" xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none"><path fill="#6A7EFC" d="M.845 12.167L9.387 3.62a2.382 2.382 0 0 1 1.69-.703c.053 0 .105 0 .157.005l6.178.408c.67.043 1.21.584 1.253 1.254l.147 2.193c.314-.18.613-.408.883-.679.66-.66 1.069-1.48 1.154-2.317.08-.793-.147-1.5-.64-1.994-1.05-1.05-2.983-.816-4.317.513a.57.57 0 1 1-.807-.807c1.785-1.771 4.444-2 5.935-.508.74.74 1.083 1.77.969 2.915-.11 1.097-.637 2.165-1.482 3.01a5.303 5.303 0 0 1-1.61 1.107l.181 2.749a2.389 2.389 0 0 1-.698 1.852l-8.546 8.546A2.837 2.837 0 0 1 7.81 22c-.765 0-1.482-.3-2.023-.836L.836 16.212A2.837 2.837 0 0 1 0 14.189c.005-.769.304-1.486.845-2.022zm.803 3.233l4.957 4.957a1.71 1.71 0 0 0 1.215.503c.46 0 .893-.18 1.216-.503l8.546-8.546a1.25 1.25 0 0 0 .366-.97l-.166-2.487c-.095.014-.19.028-.285.038a4.279 4.279 0 0 1-.422.024c-.974 0-1.843-.342-2.489-.988a.57.57 0 1 1 .808-.807c.493.494 1.2.721 1.994.64.109-.009.213-.028.318-.047l-.171-2.545a.21.21 0 0 0-.195-.194l-6.177-.409c-.029 0-.057-.004-.085-.004-.333 0-.656.132-.888.365L1.648 12.97a1.71 1.71 0 0 0-.504 1.216c0 .46.18.892.504 1.215z"/></svg>
+                  Цена:
+                </td>
+                <td class="programs__text  programs__text--cost">
+                  $3700 (2 нед.)<br>
+                  $4770 (3 нед.)
+                </td>
+              </tr>
+            </table>
+          </li>
+          <li class="programs__item">
+            <figure class="programs__figure">
+              <picture>
+                <source srcset="img/royal-holloway.webp" type="image/webp">
+                <img class="programs__img" src="img/royal-holloway.jpg" alt="Royal Holloway, University of London">
+              </picture>
+              <figcaption>
+                <h3 class="programs__name">Royal Holloway, University of<br>London</h3>
+              </figcaption>
+            </figure>
+            <table class="programs__table">
+              <tr>
+                <td class="programs__text  programs__text--caption">
+                  <svg class="programs__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="22" fill="none"><path fill="#6A7EFC" fill-rule="evenodd" d="M0 8.38C0 13.219 5.077 22 8.38 22c3.304 0 8.382-8.782 8.382-13.62A8.381 8.381 0 0 0 0 8.38zm15.714 0c0 4.336-4.762 12.572-7.333 12.572-2.571 0-7.333-8.236-7.333-12.571a7.333 7.333 0 1 1 14.666 0zm-7.333 3.144a3.143 3.143 0 1 1 0-6.286 3.143 3.143 0 0 1 0 6.286zm2.095-3.143a2.095 2.095 0 1 1-4.19 0 2.095 2.095 0 0 1 4.19 0z" clip-rule="evenodd"/></svg>
+                  Город:
+                </td>
+                <td class="programs__text">Лондон</td>
+              </tr>
+              <tr>
+                <td class="programs__text  programs__text--caption">
+                  <svg class="programs__icon" xmlns="http://www.w3.org/2000/svg" width="25" height="22" fill="none"><path fill="#6A7EFC" d="M19.782 2.198h.55c.691 0 1.357.183 1.942.526.57.333 1.045.81 1.379 1.379a3.83 3.83 0 0 1 .525 1.942 501.024 501.024 0 0 0 0 6.6 57.796 57.796 0 0 1-.243 5.491 3.846 3.846 0 0 1-3.568 3.494c-3.598.246-6.347.37-8.25.37-1.905 0-4.669-.124-8.296-.371a3.847 3.847 0 0 1-3.57-3.5A62.57 62.57 0 0 1 0 12.648V6.045c0-.692.183-1.358.526-1.942.333-.57.81-1.046 1.379-1.38a3.83 3.83 0 0 1 1.942-.525h.55v-.55a1.649 1.649 0 0 1 3.296 0v.55h8.792v-.55a1.649 1.649 0 0 1 3.297 0v.55zm-.093 1.099a1.65 1.65 0 0 1-3.11 0h-8.98a1.65 1.65 0 0 1-3.11 0h-.642c-.495 0-.97.13-1.387.375-.407.238-.748.579-.986.986a2.732 2.732 0 0 0-.375 1.387v6.604c0 1.719.082 3.513.247 5.383a2.747 2.747 0 0 0 2.55 2.5c3.604.246 6.346.369 8.221.369 1.873 0 4.6-.123 8.175-.368a2.747 2.747 0 0 0 2.548-2.495c.17-1.881.249-3.677.24-5.386-.015-2.56-.015-4.762 0-6.61-.001-.494-.132-.967-.375-1.384a2.764 2.764 0 0 0-.987-.986 2.732 2.732 0 0 0-1.386-.375h-.643zm-1.555-2.198a.55.55 0 0 0-.55.55v1.099a.55.55 0 0 0 1.1 0v-1.1a.55.55 0 0 0-.55-.549zm-12.09 0a.55.55 0 0 0-.549.55v1.099a.55.55 0 0 0 1.1 0v-1.1a.55.55 0 0 0-.55-.549zM8.793 7.47a.55.55 0 0 1 1.1 0v10.296a.55.55 0 1 1-1.1 0V7.47zm5.495 0a.55.55 0 1 1 1.1 0v10.296a.55.55 0 1 1-1.1 0V7.47zm-9.341.223a.55.55 0 0 0-.55.55v8.792c0 .303.246.55.55.55h14.287a.55.55 0 0 0 .55-.55V8.243a.55.55 0 0 0-.55-.55H4.946zm0-1.099h14.287c.91 0 1.648.738 1.648 1.649v8.792c0 .91-.738 1.648-1.648 1.648H4.946c-.91 0-1.649-.738-1.649-1.648V8.243c0-.91.738-1.649 1.649-1.649zm-.55 6.594a.55.55 0 1 1 0-1.099h15.386a.55.55 0 0 1 0 1.1H4.396z"/></svg>
+                  Даты:
+                </td>
+                <td class="programs__text">
+                  <a href="#">1.07 - 15.07 (2 нед.)</a><br>
+                  <a href="#">15.07 - 29.07 (2 нед.)</a><br>
+                  <a href="#">29.07 - 12.08 (2 нед.)</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="programs__text  programs__text--caption">
+                  <svg class="programs__icon" xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none"><path fill="#6A7EFC" d="M.845 12.167L9.387 3.62a2.382 2.382 0 0 1 1.69-.703c.053 0 .105 0 .157.005l6.178.408c.67.043 1.21.584 1.253 1.254l.147 2.193c.314-.18.613-.408.883-.679.66-.66 1.069-1.48 1.154-2.317.08-.793-.147-1.5-.64-1.994-1.05-1.05-2.983-.816-4.317.513a.57.57 0 1 1-.807-.807c1.785-1.771 4.444-2 5.935-.508.74.74 1.083 1.77.969 2.915-.11 1.097-.637 2.165-1.482 3.01a5.303 5.303 0 0 1-1.61 1.107l.181 2.749a2.389 2.389 0 0 1-.698 1.852l-8.546 8.546A2.837 2.837 0 0 1 7.81 22c-.765 0-1.482-.3-2.023-.836L.836 16.212A2.837 2.837 0 0 1 0 14.189c.005-.769.304-1.486.845-2.022zm.803 3.233l4.957 4.957a1.71 1.71 0 0 0 1.215.503c.46 0 .893-.18 1.216-.503l8.546-8.546a1.25 1.25 0 0 0 .366-.97l-.166-2.487c-.095.014-.19.028-.285.038a4.279 4.279 0 0 1-.422.024c-.974 0-1.843-.342-2.489-.988a.57.57 0 1 1 .808-.807c.493.494 1.2.721 1.994.64.109-.009.213-.028.318-.047l-.171-2.545a.21.21 0 0 0-.195-.194l-6.177-.409c-.029 0-.057-.004-.085-.004-.333 0-.656.132-.888.365L1.648 12.97a1.71 1.71 0 0 0-.504 1.216c0 .46.18.892.504 1.215z"/></svg>
+                  Цена:
+                </td>
+                <td class="programs__text  programs__text--cost">
+                  $4550<br>
+                  $4770 (3 нед.)
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+        <button class="programs__load">Загрузить еще</button>
+      </div>
+    </section>
+    <section class="leaders">
+      <div class="container">
+        <div class="leaders__wrapper">
+          <h2 class="leaders__title">Руководители групповых поездок в Великобританию</h2>
+          <div>
+            <button class="leaders__button  leaders__button--prev">Назад</button>
+            <button class="leaders__button  leaders__button--next">Вперед</button>
+          </div>
+        </div>
+        <ul class="leaders__list">
+          <li class="leaders__item">
+            <figure class="leaders__figure">
+              <picture>
+                <source srcset="img/name-1.webp" type="image/webp">
+                <img class="leaders__img" src="img/name-1.jpg" alt="Name Name">
+              </picture>
+              <figcaption>
+                <h3 class="leaders__name">Paul Kelly</h3>
+              </figcaption>
+            </figure>
+            <b class="leaders__position">English Teacher</b>
+            <p class="leaders__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore liqua</p>
+          </li>
+          <li class="leaders__item">
+            <figure class="leaders__figure">
+              <picture>
+                <source srcset="img/name-2.webp" type="image/webp">
+                <img class="leaders__img" src="img/name-2.jpg" alt="Name Name">
+              </picture>
+              <figcaption>
+                <h3 class="leaders__name">Paul Kelly</h3>
+              </figcaption>
+            </figure>
+            <b class="leaders__position">English Teacher</b>
+            <p class="leaders__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore liqua</p>
+          </li>
+          <li class="leaders__item">
+            <figure class="leaders__figure">
+              <picture>
+                <source srcset="img/name-3.webp" type="image/webp">
+                <img class="leaders__img" src="img/name-3.jpg" alt="Name Name">
+              </picture>
+              <figcaption>
+                <h3 class="leaders__name">Paul Kelly</h3>
+              </figcaption>
+            </figure>
+            <b class="leaders__position">English Teacher</b>
+            <p class="leaders__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore liqua</p>
+          </li>
+          <li class="leaders__item">
+            <figure class="leaders__figure">
+              <picture>
+                <source srcset="img/name-1.webp" type="image/webp">
+                <img class="leaders__img" src="img/name-1.jpg" alt="Name Name">
+              </picture>
+              <figcaption>
+                <h3 class="leaders__name">Paul Kelly</h3>
+              </figcaption>
+            </figure>
+            <b class="leaders__position">English Teacher</b>
+            <p class="leaders__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore liqua</p>
+          </li>
+        </ul>
+        <div class="leaders__control">
+          <button class="leaders__dots  leaders__dots--active">1</button>
+          <button class="leaders__dots">2</button>
+          <button class="leaders__dots">3</button>
+        </div>
+      </div>
+    </section>
+    <section class="geography">
+      <div class="container">
+        <h2 class="geography__title">География групповых поездок STUDY.UA</h2>
+      </div>
+      <ul class="geography__list">
+        <li class="geography__item">
+          <a class="geography__link" href="#">
+            <figure class="geography__figure">
+              <picture>
+                <source srcset="img/britain-bg.webp" type="image/webp">
+                <img class="geography__img" src="img/britain-bg.jpg" alt="Великобритания">
+              </picture>
+              <figcaption>
+                <h4 class="geography__name">Великобритания</h4>
+              </figcaption>
+            </figure>
+            <picture>
+              <source srcset="img/britain-flag.webp" type="image/webp">
+              <img class="geography__flag" src="img/britain-flag.png" alt="Флаг Великобритании">
+            </picture>
+          </a>
+        </li>
+        <li class="geography__item">
+          <a class="geography__link" href="#">
+            <figure class="geography__figure">
+              <picture>
+                <source srcset="img/malta-bg.webp" type="image/webp">
+                <img class="geography__img" src="img/malta-bg.jpg" alt="Мальта">
+              </picture>
+              <figcaption>
+                <h4 class="geography__name">Мальта</h4>
+              </figcaption>
+            </figure>
+            <picture>
+              <source srcset="img/malta-flag.webp" type="image/webp">
+              <img class="geography__flag" src="img/malta-flag.png" alt="Флаг Мальты">
+            </picture>
+          </a>
+        </li>
+        <li class="geography__item">
+          <a class="geography__link" href="#">
+            <figure class="geography__figure">
+              <picture>
+                <source srcset="img/france-bg.webp" type="image/webp">
+                <img class="geography__img" src="img/france-bg.jpg" alt="Франция">
+              </picture>
+              <figcaption>
+                <h4 class="geography__name">Франция</h4>
+              </figcaption>
+            </figure>
+            <picture>
+              <source srcset="img/france-flag.webp" type="image/webp">
+              <img class="geography__flag" src="img/france-flag.png" alt="Флаг Франции">
+            </picture>
+          </a>
+        </li>
+        <li class="geography__item">
+          <a class="geography__link" href="#">
+            <figure class="geography__figure">
+              <picture>
+                <source srcset="img/usa-bg.webp" type="image/webp">
+                <img class="geography__img" src="img/usa-bg.jpg" alt="США">
+              </picture>
+              <figcaption>
+                <h4 class="geography__name">США</h4>
+              </figcaption>
+            </figure>
+            <picture>
+              <source srcset="img/usa-flag.webp" type="image/webp">
+              <img class="geography__flag" src="img/usa-flag.png" alt="Флаг США">
+            </picture>
+          </a>
+        </li>
+        <li class="geography__item">
+          <a class="geography__link" href="#">
+            <figure class="geography__figure">
+              <picture>
+                <source srcset="img/germany-bg.webp" type="image/webp">
+                <img class="geography__img" src="img/germany-bg.jpg" alt="Германия">
+              </picture>
+              <figcaption>
+                <h4 class="geography__name">Германия</h4>
+              </figcaption>
+            </figure>
+            <picture>
+              <source srcset="img/germany-flag.webp" type="image/webp">
+              <img class="geography__flag" src="img/germany-flag.png" alt="Флаг Германии">
+            </picture>
+          </a>
+        </li>
+        <li class="geography__item">
+          <a class="geography__link" href="#">
+            <figure class="geography__figure">
+              <picture>
+                <source srcset="img/canada-bg.webp" type="image/webp">
+                <img class="geography__img" src="img/canada-bg.jpg" alt="Канада">
+              </picture>
+              <figcaption>
+                <h4 class="geography__name">Канада</h4>
+              </figcaption>
+            </figure>
+            <picture>
+              <source srcset="img/canada-flag.webp" type="image/webp">
+              <img class="geography__flag" src="img/canada-flag.png" alt="Флаг Канады">
+            </picture>
+          </a>
+        </li>
+        <li class="geography__item">
+          <a class="geography__link" href="#">
+            <figure class="geography__figure">
+              <picture>
+                <source srcset="img/switz-bg.webp" type="image/webp">
+                <img class="geography__img" src="img/switz-bg.jpg" alt="Швейцария">
+              </picture>
+              <figcaption>
+                <h4 class="geography__name">Швейцария</h4>
+              </figcaption>
+            </figure>
+            <picture>
+              <source srcset="img/switz-flag.webp" type="image/webp">
+              <img class="geography__flag" src="img/switz-flag.png" alt="Флаг Швейцарии">
+            </picture>
+          </a>
+        </li>
+        <li class="geography__item">
+          <a class="geography__link" href="#">
+            <figure class="geography__figure">
+              <picture>
+                <source srcset="img/ireland-bg.webp" type="image/webp">
+                <img class="geography__img" src="img/ireland-bg.jpg" alt="Ирландия">
+              </picture>
+              <figcaption>
+                <h4 class="geography__name">Ирландия</h4>
+              </figcaption>
+            </figure>
+            <picture>
+              <source srcset="img/ireland-flag.webp" type="image/webp">
+              <img class="geography__flag" src="img/ireland-flag.png" alt="Флаг Ирландии">
+            </picture>
+          </a>
+        </li>
+        <li class="geography__item">
+          <a class="geography__link" href="#">
+            <figure class="geography__figure">
+              <picture>
+                <source srcset="img/spain-bg.webp" type="image/webp">
+                <img class="geography__img" src="img/spain-bg.jpg" alt="Испания">
+              </picture>
+              <figcaption>
+                <h4 class="geography__name">Испания</h4>
+              </figcaption>
+            </figure>
+            <picture>
+              <source srcset="img/spain-flag.webp" type="image/webp">
+              <img class="geography__flag" src="img/spain-flag.png" alt="Флаг Испании">
+            </picture>
+          </a>
+        </li>
+      </ul>
+    </section>
   </main>
-  
-  
-  <script src="js/main.min.js" async></script>
+  <!-- <script src="js/main.min.js" async></script> -->
 </body>
 </html>
