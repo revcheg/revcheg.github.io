@@ -1,0 +1,38 @@
+.footer {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background-image: url('../img/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__address {
+  padding-left: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.footer__phones {
+  padding-left: 30px;
+}
+
+.footer__phone {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.footer__link {
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+}

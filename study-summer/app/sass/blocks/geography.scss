@@ -1,4 +1,6 @@
-.geography {}
+.geography {
+  margin-bottom: 70px;
+}
 
 .geography__title {
   margin-top: 0;
@@ -10,8 +12,6 @@
 
 .geography__list {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -20,30 +20,10 @@
 .geography__item {
   position: relative;
   height: 200px;
-  margin-bottom: 3px;
+  margin-right: 5px;
+  margin-bottom: 5px;
   border-radius: 7px;
   overflow: hidden;
-  
-  &:nth-child(1) {
-    // width: 30%;
-    border-radius: 0;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-  }
-  
-  &:nth-child(2) {
-    // width: 10%;
-  }
-  
-  &:nth-child(3) {
-    // width: 10%;
-  }
-  
-  &:nth-child(4) {
-    // width: 50%;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
 }
 
 .geography__link {
