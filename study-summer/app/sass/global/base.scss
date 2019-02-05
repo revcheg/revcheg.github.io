@@ -20,16 +20,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #fff;
+  background-color: rgba(106, 126, 252, 0.2);
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  background: $blue; 
+  background-color: $blue; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: darken($blue, 5%); 
+  background-color: darken($blue, 5%); 
 }
 
 @media screen and ($tablet-widths) {

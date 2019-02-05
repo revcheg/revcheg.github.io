@@ -19,7 +19,7 @@
 }
 
 .gallery__item {
-  overflow: hidden;
+  // overflow: hidden;
   
   &:nth-child(1) {
     width: 50%;
@@ -35,17 +35,17 @@
   
   &:nth-child(4) {
     width: 15%;
-    // margin-top: -4px;
+    margin-top: -4px;
   }
   
   &:nth-child(5) {
     width: 35%;
-    // margin-top: -4px;
+    margin-top: -4px;
   }
   
   &:nth-child(6) {
     width: 50%;
-    // margin-top: -4px;
+    margin-top: -4px;
   }
 }
 
