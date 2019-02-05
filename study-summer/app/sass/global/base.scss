@@ -35,5 +35,9 @@ body {
 @media screen and ($tablet-widths) {
   .container {
     width: 100%;
+    
+    &--full {
+      padding: 0;
+    }
   }
 }

@@ -17,10 +17,16 @@
   color: #fff;
   font-size: 16px;
   font-weight: normal;
+  background-image: url('../img/svg/address.svg');
+  background-repeat: no-repeat;
+  background-position: top left;
 }
 
 .footer__phones {
-  padding-left: 30px;
+  padding-left: 40px;
+  background-image: url('../img/svg/tel.svg');
+  background-repeat: no-repeat;
+  background-position: top left;
 }
 
 .footer__phone {

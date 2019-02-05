@@ -126,3 +126,35 @@
     background-color: darken($blue, 5%); 
   }
 }
+
+.reviews__dots {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__dot {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  padding: 0;
+  font-size: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: $blue;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s;
+  
+  &:last-child {
+    margin-right: 0;
+  }
+  
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+  
+  &--active {
+    opacity: 1;
+  }
+}
