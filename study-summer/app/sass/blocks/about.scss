@@ -35,3 +35,13 @@
     width: 100%;
   }
 }
+
+@media screen and ($mobile-widths) {
+  .about {
+    margin-bottom: 50px;
+  }
+  
+  .about__text {
+    font-size: 18px;
+  }
+}

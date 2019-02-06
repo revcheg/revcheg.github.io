@@ -115,3 +115,9 @@
     background-size: cover;
   }
 }
+
+@media screen and ($mobile-widths) {
+  .nav__logo {
+    width: 200px;
+  }
+}

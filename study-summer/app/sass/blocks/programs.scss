@@ -165,3 +165,35 @@
     margin-bottom: 20px;
   }
 }
+
+@media screen and ($mobile-widths) {
+  .programs {
+    margin-bottom: 50px;
+  }
+  
+  .programs__wrapper {
+    flex-direction: column;
+  }
+  
+  .programs__title {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .programs__list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: 0;
+  }
+  
+  .programs__item {
+    width: 290px;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  
+  .programs__table {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

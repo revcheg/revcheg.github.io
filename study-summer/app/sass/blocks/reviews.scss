@@ -183,3 +183,9 @@
     width: 460px;
   }
 }
+
+@media screen and ($mobile-widths) {
+  .reviews {
+    display: none;
+  }
+}

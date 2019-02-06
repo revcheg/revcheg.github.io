@@ -42,3 +42,28 @@
   font-weight: normal;
   text-decoration: none;
 }
+
+@media screen and ($tablet-widths) {
+  .footer__wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .footer {
+    padding-top: 40px;
+    background-image: url('../img/footer-bg-mobile.jpg');
+  }
+  
+  .footer__address,
+  .footer__phones {
+    margin: 0 auto;
+    margin-bottom: 25px; 
+  }
+  
+  .footer__links {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}

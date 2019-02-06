@@ -133,3 +133,27 @@
     margin-bottom: 20px;
   }
 }
+
+@media screen and ($mobile-widths) {
+  .leaders {
+    margin-bottom: 50px;
+  }
+  
+  .leaders__wrapper {
+    flex-direction: column;
+  }
+  
+  .leaders__title {
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .leaders__list {
+    margin-bottom: 0;
+  }
+  
+  .leaders__item {
+    width: 290px;
+  }
+}

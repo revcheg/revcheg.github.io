@@ -67,7 +67,7 @@
   font-size: 0;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   transition: 0.3s;
   
   &--facebook {
@@ -96,5 +96,29 @@
   
   .photo__call {
     font-size: 22px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .photo__title,
+  .photo__subtitle {
+    text-align: center;
+  }
+  
+  .photo__call {
+    font-size: 20px;
+  }
+  
+  .photo__hashtag {
+    flex-direction: column;
+  }
+  
+  .photo__link {
+    width: 290px;
+    
+    &--facebook {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
   }
 }

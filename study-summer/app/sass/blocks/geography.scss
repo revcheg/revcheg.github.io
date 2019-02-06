@@ -117,3 +117,57 @@
     }
   }
 }
+
+@media screen and ($mobile-widths) {
+  .geography {
+    margin-bottom: 50px;
+  }
+  
+  .geography__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .geography__item {
+    margin-bottom: 3px;
+    
+    &:nth-child(1) {
+      width: 100%;
+    }
+    
+    &:nth-child(2) {
+      width: 49.5%;
+    }
+    
+    &:nth-child(3) {
+      width: 49.5%;
+    }
+    
+    &:nth-child(4) {
+      width: 100%;
+    }
+    
+    &--second {
+      
+      &:nth-child(1) {
+        width: 49.5%;
+      }
+      
+      &:nth-child(2) {
+        width: 49.5%;
+      }
+      
+      &:nth-child(3) {
+        width: 100%;
+      }
+      
+      &:nth-child(4) {
+        width: 49.5%;
+      }
+      
+      &:nth-child(5) {
+        width: 49.5%;
+      }
+    }
+  }
+}

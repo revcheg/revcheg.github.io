@@ -153,3 +153,31 @@
     order: 2;
   }
 }
+
+@media screen and ($mobile-widths) {
+  .advantages__wrapper {
+    margin-bottom: 50px;
+    
+    &--second {
+      flex-direction: column;
+    }
+  }
+  
+  .advantages__content {
+    
+    &--second {
+      width: auto;
+    }
+  }
+  
+  .advantages__img {
+    height: 200px;
+    background-position: top;
+  }
+  
+  .advantages__video {
+    width: 100%;
+    height: 250px;
+    background-position: center;
+  }
+}

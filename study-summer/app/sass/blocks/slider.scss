@@ -10,14 +10,14 @@
   position: absolute;
   top: 0;
   left: 50%;
+  width: 450px;
   margin: 0;
   padding-top: 10px;
-  padding-right: 40px;
   padding-bottom: 15px;
-  padding-left: 40px;
   color: $blue;
   font-size: 25px;
   font-weight: bold;
+  text-align: center;
   border-bottom-left-radius: 15px; 
   border-bottom-right-radius: 15px; 
   background-color: #fff;
@@ -27,7 +27,7 @@
 
 .slider__list {
   position: relative;
-  height: 505px;
+  height: 500px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -37,9 +37,11 @@
 .slider__item {
   position: absolute;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  padding-top: 195px;
-  padding-bottom: 195px;
+  height: inherit;
   padding-left: 180px;
   border-radius: 7px;
   background-color: #000;
@@ -71,20 +73,21 @@
 
 .slider__subname {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: #fff;
   font-size: 24px;
   font-weight: bold;
 }
 
 .slider__button {
+  width: 235px;
   padding-top: 10px;
-  padding-right: 30px;
   padding-bottom: 10px;
-  padding-left: 60px;
+  padding-left: 20px;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
+  text-align: center;
   text-decoration: none;
   border-radius: 43px;
   background-color: $red;
@@ -226,12 +229,17 @@
 
 @media screen and ($tablet-widths) {
   .slider__title {
+    width: 350px;
     font-size: 20px;
   }
   
   .slider__item {
     padding-left: 0;
     text-align: center;
+  }
+  
+  .slider__button {
+    margin: 0 auto;
   }
   
   .slider__control {
@@ -243,5 +251,32 @@
     &--next {
       right: 20px;
     }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .slider {
+    margin-bottom: 40px;
+  }
+  
+  .slider__title {
+    width: 300px;
+    font-size: 18px;
+  }
+  
+  .slider__list {
+    height: 375px;
+  }
+  
+  .slider__name {
+    font-size: 28px;
+  }
+  
+  .slider__subname {
+    font-size: 20px;
+  }
+  
+  .slider__control {
+    display: none;
   }
 }
