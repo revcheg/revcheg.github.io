@@ -52,6 +52,7 @@
 }
 
 .programs__item {
+  width: 370px;
   height: 440px;
   border-radius: 7px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
@@ -59,6 +60,10 @@
 
 .programs__figure {
   margin: 0;
+}
+
+.programs__img {
+  width: 100%;
 }
 
 .programs__name {
@@ -138,5 +143,25 @@
     &::before {
       transform: rotate(360deg);
     }
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .programs__wrapper {
+    margin-bottom: 25px;
+  }
+  
+  .programs__title {
+    font-size: 22px;
+  }
+  
+  .programs__list {
+    flex-wrap: wrap;
+  }
+  
+  .programs__item {
+    width: 345px;
+    margin: auto;
+    margin-bottom: 20px;
   }
 }

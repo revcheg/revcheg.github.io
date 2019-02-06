@@ -6,7 +6,9 @@
 
 .about__text {
   width: 570px;
+  margin-top: 0;
   margin-right: 15px;
+  margin-bottom: 0;
   margin-left: auto;
   color: $text;
   font-size: 20px;
@@ -14,4 +16,22 @@
 
 .about__map {
   width: 50%;
+}
+
+@media screen and ($tablet-widths) {
+  .about {
+    flex-direction: column;
+  }
+  
+  .about__text {
+    width: auto;
+    margin: 0;
+    margin-bottom: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .about__map {
+    width: 100%;
+  }
 }

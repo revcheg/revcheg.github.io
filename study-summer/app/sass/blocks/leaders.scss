@@ -57,6 +57,10 @@
   margin: 0;
 }
 
+.leaders__img {
+  width: 100%;
+}
+
 .leaders__name {
   margin-top: 20px;
   margin-bottom: 5px;
@@ -111,5 +115,21 @@
   
   &--active {
     opacity: 1;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .leaders__title {
+    font-size: 22px;
+  }
+  
+  .leaders__list {
+    flex-wrap: wrap;
+  }
+  
+  .leaders__item {
+    width: 220px;
+    margin: auto;
+    margin-bottom: 20px;
   }
 }

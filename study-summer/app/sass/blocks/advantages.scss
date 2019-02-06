@@ -109,3 +109,47 @@
     transform: translate(-50%, -50%) scale(1.2);
   }
 }
+
+@media screen and ($tablet-widths) {
+  .advantages__wrapper {
+    align-items: flex-start;
+    flex-direction: column;
+    
+    &--second {
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+  
+  .advantages__img {
+    order: 2;
+    width: 100%;
+  }
+  
+  .advantages__content {
+    order: 1;
+    width: auto;
+    margin-left: 0;
+    margin-bottom: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+    &--second {
+      order: 1;
+      width: 50%;
+      margin: 0;
+    }
+  }
+  
+  .advantages__title {
+    font-size: 22px;
+  }
+  
+  .advantages__text {
+    font-size: 16px;
+  }
+  
+  .advantages__video {
+    order: 2;
+  }
+}

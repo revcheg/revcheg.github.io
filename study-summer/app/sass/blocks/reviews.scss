@@ -90,6 +90,11 @@
   padding-right: 30px;
   padding-bottom: 35px;
   padding-left: 35px;
+  background-image: url('../img/svg/quote.svg'),
+                    url('../img/svg/quote.svg');
+  background-repeat: no-repeat;
+  background-position: 410px 15px,
+                       20px 249px;
 }
 
 .reviews__name {
@@ -156,5 +161,25 @@
   
   &--active {
     opacity: 1;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .reviews__title {
+    font-size: 22px;
+  }
+  
+  .reviews__list {
+    flex-wrap: wrap;
+  }
+  
+  .reviews__item {
+    width: 700px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  
+  .reviews__right {
+    width: 460px;
   }
 }

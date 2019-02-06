@@ -223,3 +223,25 @@
     display: none;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .slider__title {
+    font-size: 20px;
+  }
+  
+  .slider__item {
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  .slider__control {
+    
+    &--prev {
+      left: 20px;
+    }
+    
+    &--next {
+      right: 20px;
+    }
+  }
+}
