@@ -1,28 +1,77 @@
-// (function () {
-//   var openButton = document.querySelector('.nav__open');
-//   var nav = document.querySelector('.nav__list--mobile');
-//   var navLinks = document.querySelectorAll('.nav__link[href^="#"]');
-// 
-//   openButton.addEventListener('click', function () {
-//     if (nav.classList.contains('nav__list--inactive')) {
-//       nav.classList.remove('nav__list--inactive');
-//       nav.classList.add('nav__list--show');
-//       openButton.classList.add('nav__open--close');
-//     } else {
-//       openButton.classList.remove('nav__open--close');
-//       nav.classList.remove('nav__list--show');
-//       nav.classList.add('nav__list--inactive');
-//     }
-//   });
-// 
-//   for (var i = 0; i < navLinks.length; i++) {
-//     navLinks[i].addEventListener('click', function () {
-//       openButton.classList.remove('nav__open--close');
-//       nav.classList.remove('nav__list--show');
-//       nav.classList.add('nav__list--inactive');
-//     });
-//   };
-// })();
+(function () {
+  var photos = document.querySelectorAll('.gallery__img');
+  // var buttons = document.querySelectorAll('.gallery__button');
+  var popup = document.querySelector('.popup');
+  var prev = document.querySelector('.popup__control--prev');
+  var next = document.querySelector('.popup__control--next');
+  var overlay = document.querySelector('.popup__overlay');
+  
+  var currentPhoto = 0;
+
+  var clearArrayPhotos = [];
+  for (var i = 0; i < photos.length; i++){
+    clearArrayPhotos.push(photos[i]);
+    photos[i].addEventListener('click', function(e){
+      currentPhoto = clearArrayPhotos.indexOf(e.target);
+      showPopup(currentPhoto);
+    });
+  }
+  
+  // for (var i = 0; i < buttons.length; i++){
+  //   clearArrayPhotos.push(buttons[i]);
+  //   buttons[i].addEventListener('click', function(evt){
+  //     currentPhoto = buttons.indexOf(evt.target);
+  //     console.log(currentPhoto);
+  //     showPopup(currentPhoto);
+  //   });
+  // }
+  
+  var showPopup = function () {
+    popup.classList.remove('popup--hide');
+    popup.querySelector('.popup__webp').srcset = photos[currentPhoto].srcset;
+    popup.querySelector('.popup__jpg').src = photos[currentPhoto].src;
+    overlay.classList.remove('popup__overlay--hide');
+  };
+  
+  prev.addEventListener('click', function () {
+    currentPhoto--;
+    if (currentPhoto < 0) {
+      currentPhoto = 5;
+    }
+    showPopup(currentPhoto);
+  });
+  
+  next.addEventListener('click', function () {
+    currentPhoto++;
+    if (currentPhoto > 5) {
+      currentPhoto = 0;
+    }
+    showPopup(currentPhoto);
+  });
+  
+  overlay.addEventListener('click', function () {
+    popup.classList.add('popup--hide');
+    overlay.classList.add('popup__overlay--hide');
+  })
+})();
+(function () {
+  var button = document.querySelector('.nav__menu');
+  var nav = document.querySelector('.nav__list');
+
+  button.addEventListener('click', function () {
+    if (button.classList.contains('nav__menu--open')) {
+      nav.classList.add('nav__list--show');
+      button.classList.remove('nav__menu--open');
+      button.classList.add('nav__menu--close');
+      document.body.style.overflow = 'hidden';
+    } else {
+      nav.classList.remove('nav__list--show');
+      button.classList.remove('nav__menu--close');
+      button.classList.add('nav__menu--open');
+      document.body.style.overflow = 'auto';
+    }
+  });
+})();
 // (function () {
 //   var openButtons = document.querySelectorAll('.button--programs');
 //   var overlay = document.querySelector('.popup__overlay');
