@@ -541,7 +541,9 @@ body {
     margin-bottom: 50px; }
   .features__item {
     box-sizing: border-box;
-    width: 100%; } }
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px; } }
 
 .advantages__wrapper {
   display: flex;
@@ -1414,17 +1416,19 @@ body {
 
 .popup__overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #6A7EFC;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
   cursor: pointer;
-  opacity: 0.5;
   transition: 0.3s;
   z-index: 1; }
   .popup__overlay--hide {
-    opacity: 0;
     visibility: hidden; }
 
 @media screen and (max-width: 1210px) {

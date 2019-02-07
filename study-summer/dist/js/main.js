@@ -31,6 +31,7 @@
     popup.querySelector('.popup__webp').srcset = photos[currentPhoto].srcset;
     popup.querySelector('.popup__jpg').src = photos[currentPhoto].src;
     overlay.classList.remove('popup__overlay--hide');
+    overlay.style.backgroundImage = 'url('+ photos[currentPhoto].src +')';
   };
   
   prev.addEventListener('click', function () {

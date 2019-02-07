@@ -43,18 +43,22 @@
 
 .popup__overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: $blue;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  // background-color: $blue;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(10px);
   cursor: pointer;
-  opacity: 0.5;
+  // opacity: 0.5;
   transition: 0.3s;
   z-index: 1;
   
   &--hide {
-    opacity: 0;
+    // opacity: 0;
     visibility: hidden;
   }
 }
