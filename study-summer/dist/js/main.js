@@ -167,6 +167,11 @@
   var currentSlide = 0;
 
   var showSlide = function () {
+    if (currentSlide > 1) {
+      currentSlide = 0;
+    } else if (currentSlide < 0) {
+      currentSlide = 1;
+    };
     slides[currentSlide].classList.add('slider__item--show');
     dots[currentSlide].classList.add('slider__dot--active');
   };
@@ -175,9 +180,6 @@
     slides[currentSlide].classList.remove('slider__item--show');
     dots[currentSlide].classList.remove('slider__dot--active');
     currentSlide++;
-    if (currentSlide > 1) {
-      currentSlide = 0;
-    };
     showSlide(currentSlide);
   });
   
@@ -185,9 +187,6 @@
     slides[currentSlide].classList.remove('slider__item--show');
     dots[currentSlide].classList.remove('slider__dot--active');
     currentSlide--;
-    if (currentSlide < 0) {
-      currentSlide = 1;
-    };
     showSlide(currentSlide);
   });
   
@@ -201,4 +200,23 @@
        showSlide(currentSlide);
     });
   };
+  
+  for (var j = 0; j < slides.length; j++) {
+    slides[j].addEventListener('touchstart', function (evt) {
+      pozX = evt.changedTouches[0].pageX;
+      var width = document.body.clientWidth;
+      
+      if (pozX > width/2) {
+        slides[currentSlide].classList.remove('slider__item--show');
+        dots[currentSlide].classList.remove('slider__dot--active');
+        currentSlide++;
+        showSlide(currentSlide);
+      } else {
+        slides[currentSlide].classList.remove('slider__item--show');
+        dots[currentSlide].classList.remove('slider__dot--active');
+        currentSlide--;
+        showSlide(currentSlide);
+      }
+    })
+  }
 })();
