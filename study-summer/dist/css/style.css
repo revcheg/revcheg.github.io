@@ -725,12 +725,45 @@ body {
   margin-bottom: 25px;
   padding: 0;
   list-style: none; }
+  .programs__list--column {
+    flex-direction: column; }
 
 .programs__item {
   width: 370px;
   height: 440px;
   border-radius: 7px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); }
+  .programs__item--column {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px; }
+    .programs__item--column .programs__img {
+      display: none; }
+    .programs__item--column .programs__table {
+      width: 50%;
+      padding: 0; }
+    .programs__item--column .programs__tbody {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+    .programs__item--column .programs__name {
+      margin: 0;
+      font-size: 16px;
+      text-align: left; }
+    .programs__item--column .programs__text {
+      padding-bottom: 0; }
+      .programs__item--column .programs__text--caption {
+        display: none; }
+    .programs__item--column:last-child {
+      margin-bottom: 0; }
 
 .programs__figure {
   margin: 0; }
@@ -814,7 +847,11 @@ body {
   .programs__item {
     width: 345px;
     margin: auto;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+    .programs__item--column {
+      width: 100%; }
+      .programs__item--column .programs__table {
+        width: 60%; } }
 
 @media screen and (max-width: 768px) {
   .programs {
@@ -832,6 +869,19 @@ body {
     width: 290px;
     height: auto;
     padding-bottom: 10px; }
+    .programs__item--column {
+      flex-direction: column;
+      padding-right: 10px;
+      padding-left: 10px; }
+      .programs__item--column .programs__name {
+        text-align: center; }
+      .programs__item--column .programs__table {
+        width: 100%;
+        text-align: center; }
+      .programs__item--column .programs__tbody {
+        flex-direction: column; }
+      .programs__item--column:last-child {
+        margin-bottom: 20px; }
   .programs__table {
     padding-right: 20px;
     padding-left: 20px; } }
