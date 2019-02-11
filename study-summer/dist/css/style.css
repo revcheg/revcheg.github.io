@@ -747,8 +747,8 @@ body {
 .programs__list {
   display: flex;
   justify-content: space-between;
-  margin-top: 0;
-  margin-bottom: 25px;
+  flex-wrap: wrap;
+  margin: 0;
   padding: 0;
   list-style: none; }
   .programs__list--column {
@@ -757,6 +757,7 @@ body {
 .programs__item {
   width: 370px;
   height: 440px;
+  margin-bottom: 30px;
   border-radius: 7px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); }
   .programs__item--column {
@@ -788,8 +789,6 @@ body {
       padding-bottom: 0; }
       .programs__item--column .programs__text--caption {
         display: none; }
-    .programs__item--column:last-child {
-      margin-bottom: 0; }
 
 .programs__figure {
   margin: 0; }
@@ -872,7 +871,7 @@ body {
     flex-wrap: wrap; }
   .programs__item {
     width: 345px;
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 20px; }
     .programs__item--column {
       width: 100%; }

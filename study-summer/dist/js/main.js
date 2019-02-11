@@ -72,100 +72,34 @@
     }
   });
 })();
-// (function () {
-//   var openButtons = document.querySelectorAll('.button--programs');
-//   var overlay = document.querySelector('.popup__overlay');
-//   var popupTemplate = document.querySelector('.popup__template').content.querySelector('.popup');
-// 
-//   for (var g = 0; g < 9; g++) {
-//     var popup = popupTemplate.cloneNode(true);
-//     popup.querySelector('.heading--popup').innerHTML = popupData[g].title;
-//     popup.querySelector('.popup__webp').srcset = popupData[g].imgWebp;
-//     popup.querySelector('.popup__img').src = popupData[g].img;
-//     popup.querySelector('.popup__counter').innerHTML = popupData[g].counter;
-//     popup.querySelector('.popup__text').innerHTML = popupData[g].text;
-//     popup.querySelector('.popup__list').innerHTML = popupData[g].list;
-//     popup.querySelector('.popup__attention').innerHTML = popupData[g].attention;
-//     document.body.appendChild(popup);
-//   };
-// 
-//   var popups = document.querySelectorAll('.popup');
-//   var closeButtons = document.querySelectorAll('.popup__close');
-//   var prevButtons = document.querySelectorAll('.popup__button--prev');
-//   var nextButtons = document.querySelectorAll('.popup__button--next');
-//   var registerButtons = document.querySelectorAll('.button--register');
-// 
-//   var currentPopup;
-//   var arrayOpenButtons = [];
-// 
-//   for (var i = 0; i < openButtons.length; i++){
-//     arrayOpenButtons.push(openButtons[i]);
-//     openButtons[i].addEventListener('click', function(e){
-//        currentPopup = arrayOpenButtons.indexOf(e.target);
-//        showPopup(currentPopup);
-//     });
-//   };
-// 
-//   var showPopup = function (currentPopup) {
-//     overlay.classList.remove('popup__overlay--hide');
-//     popups[currentPopup].classList.remove('popup--hide');
-//   };
-// 
-//   for (var p = 0; p < prevButtons.length; p++) {
-//     prevButtons[p].addEventListener('click', function () {
-//       popups[currentPopup].classList.add('popup--hide');
-//       currentPopup--;
-//       if (currentPopup < 0) {
-//         currentPopup = 8;
-//       };
-//       showPopup(currentPopup);
-//     });
-//   };
-// 
-//   for (var k = 0; k < nextButtons.length; k++) {
-//     nextButtons[k].addEventListener('click', function () {
-//       popups[currentPopup].classList.add('popup--hide');
-//       currentPopup++;
-//       if (currentPopup === 9) {
-//         currentPopup = 0;
-//       };
-//       showPopup(currentPopup);
-//     });
-//   };
-// 
-//   for (var j = 0; j < closeButtons.length; j++) {
-//     closeButtons[j].addEventListener('click', function () {
-//       for (var n = 0; n < popups.length; n++) {
-//         popups[n].classList.add('popup--hide');
-//       };
-//       overlay.classList.add('popup__overlay--hide');
-//     });
-//   };
-// 
-//   overlay.addEventListener('click', function () {
-//     for (var m = 0; m < popups.length; m++) {
-//       popups[m].classList.add('popup--hide');
-//     };
-//     overlay.classList.add('popup__overlay--hide');
-//   });
-// 
-//   for (var r = 0; r < registerButtons.length; r++) {
-//     registerButtons[r].addEventListener('click', function () {
-//       for (var t = 0; t < popups.length; t++) {
-//         popups[t].classList.add('popup--hide');
-//         overlay.classList.add('popup__overlay--hide');
-//       };
-//     });
-//   };
-// })();
+var programsData = [
+  {
+    webp: 'img/brunel-university.webp',
+    jpg: 'img/brunel-university.jpg',
+    alt: 'Brunel University',
+    name: 'Brunel University'
+  },
+  {
+    webp: 'img/cats.webp',
+    jpg: 'img/cats.jpg',
+    alt: 'CATS College London Bloomsbury',
+    name: 'CATS College London<br>Bloomsbury'
+  },
+  {
+    webp: 'img/royal-holloway.webp',
+    jpg: 'img/royal-holloway.jpg',
+    alt: 'Royal Holloway, University of London',
+    name: 'Royal Holloway, University of<br>London'
+  }
+];
 (function () {
   var listButton = document.querySelector('.programs__button--list');
   var tileButton = document.querySelector('.programs__button--tile');
   var list = document.querySelector('.programs__list');
-  var item = document.querySelectorAll('.programs__item');
   
   listButton.addEventListener('click', function () {
     list.classList.add('programs__list--column');
+    var item = document.querySelectorAll('.programs__item');
     listButton.classList.add('programs__button--active');
     tileButton.classList.remove('programs__button--active');
     
@@ -176,6 +110,7 @@
   
   tileButton.addEventListener('click', function () {
     list.classList.remove('programs__list--column');
+    var item = document.querySelectorAll('.programs__item');
     tileButton.classList.add('programs__button--active');
     listButton.classList.remove('programs__button--active');
     
@@ -183,6 +118,22 @@
       item[i].classList.remove('programs__item--column');
     }
   });
+})();
+(function () {
+  var list = document.querySelector('.programs__list');
+  var popupTemplate = document.querySelector('.programs__template').content;
+
+  for (var i = 0; i < programsData.length; i++) {
+    var item = document.createElement('li');
+    item.classList.add('programs__item');
+    var content = popupTemplate.cloneNode(true);
+    content.querySelector('.programs__name').innerHTML = programsData[i].name;
+    content.querySelector('source').srcset = programsData[i].webp;
+    content.querySelector('img').src = programsData[i].jpg;
+    content.querySelector('img').alt = programsData[i].alt;
+    item.appendChild(content);
+    list.appendChild(item);
+  };
 })();
 (function () {
   var slides = document.querySelectorAll('.slider__item');
