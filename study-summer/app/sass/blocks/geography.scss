@@ -21,10 +21,14 @@
 .geography__item {
   position: relative;
   height: 200px;
-  // margin-right: 5px;
-  margin-bottom: 3px;
+  margin-right: 5px;
+  margin-bottom: 5px;
   border-radius: 7px;
   overflow: hidden;
+  
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .geography__link {
@@ -75,7 +79,7 @@
   }
   
   .geography__item {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     
     &:nth-child(1) {
       width: 49.5%;
@@ -83,6 +87,7 @@
     
     &:nth-child(2) {
       width: 49.5%;
+      margin-right: 0;
     }
     
     &:nth-child(3) {
@@ -97,10 +102,12 @@
       
       &:nth-child(1) {
         width: 100%;
+        margin-right: 0;
       }
       
       &:nth-child(2) {
         width: 24.5%;
+        margin-right: 5px;
       }
       
       &:nth-child(3) {
@@ -129,44 +136,54 @@
   }
   
   .geography__item {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
     
     &:nth-child(1) {
       width: 100%;
+      margin-right: 5px;
+      margin-left: 5px;
     }
     
     &:nth-child(2) {
-      width: 49.5%;
+      width: 47.6%;
+      margin-right: 5px;
+      margin-left: 5px;
     }
     
     &:nth-child(3) {
-      width: 49.5%;
+      width: 47.6%;
     }
     
     &:nth-child(4) {
       width: 100%;
+      margin-right: 5px;
+      margin-left: 5px;
     }
     
     &--second {
       
       &:nth-child(1) {
-        width: 49.5%;
+        width: 47.6%;
       }
       
       &:nth-child(2) {
-        width: 49.5%;
+        width: 47.6%;
+        margin-left: 0;
       }
       
       &:nth-child(3) {
         width: 100%;
+        margin-right: 5px;
+        margin-left: 5px;
       }
       
       &:nth-child(4) {
-        width: 49.5%;
+        width: 47.6%;
       }
       
       &:nth-child(5) {
-        width: 49.5%;
+        width: 47.6%;
+        margin-right: 5px;
       }
     }
   }

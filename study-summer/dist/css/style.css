@@ -861,6 +861,16 @@ body {
     .programs__load:hover::before, .programs__load:focus::before {
       -webkit-transform: rotate(360deg);
               transform: rotate(360deg); }
+  .programs__load:disabled {
+    background-color: gray;
+    cursor: not-allowed; }
+    .programs__load:disabled:hover, .programs__load:disabled:focus {
+      background-color: gray;
+      -webkit-transform: translateY(0);
+              transform: translateY(0); }
+      .programs__load:disabled:hover::before, .programs__load:disabled:focus::before {
+        -webkit-transform: rotate(0);
+                transform: rotate(0); }
 
 @media screen and (max-width: 1210px) {
   .programs__wrapper {
@@ -1054,9 +1064,12 @@ body {
 .geography__item {
   position: relative;
   height: 200px;
-  margin-bottom: 3px;
+  margin-right: 5px;
+  margin-bottom: 5px;
   border-radius: 7px;
   overflow: hidden; }
+  .geography__item:last-child {
+    margin-right: 0; }
 
 .geography__link:hover .geography__img, .geography__link:focus .geography__img {
   -webkit-transform: scale(1.05);
@@ -1092,19 +1105,22 @@ body {
   .geography__list {
     flex-wrap: wrap; }
   .geography__item {
-    margin-bottom: 8px; }
+    margin-bottom: 10px; }
     .geography__item:nth-child(1) {
       width: 49.5%; }
     .geography__item:nth-child(2) {
-      width: 49.5%; }
+      width: 49.5%;
+      margin-right: 0; }
     .geography__item:nth-child(3) {
       width: 49.5%; }
     .geography__item:nth-child(4) {
       width: 49.5%; }
     .geography__item--second:nth-child(1) {
-      width: 100%; }
+      width: 100%;
+      margin-right: 0; }
     .geography__item--second:nth-child(2) {
-      width: 24.5%; }
+      width: 24.5%;
+      margin-right: 5px; }
     .geography__item--second:nth-child(3) {
       width: 24.5%; }
     .geography__item--second:nth-child(4) {
@@ -1119,25 +1135,35 @@ body {
     margin-bottom: 30px;
     text-align: center; }
   .geography__item {
-    margin-bottom: 3px; }
+    margin-bottom: 5px; }
     .geography__item:nth-child(1) {
-      width: 100%; }
+      width: 100%;
+      margin-right: 5px;
+      margin-left: 5px; }
     .geography__item:nth-child(2) {
-      width: 49.5%; }
+      width: 47.6%;
+      margin-right: 5px;
+      margin-left: 5px; }
     .geography__item:nth-child(3) {
-      width: 49.5%; }
+      width: 47.6%; }
     .geography__item:nth-child(4) {
-      width: 100%; }
+      width: 100%;
+      margin-right: 5px;
+      margin-left: 5px; }
     .geography__item--second:nth-child(1) {
-      width: 49.5%; }
+      width: 47.6%; }
     .geography__item--second:nth-child(2) {
-      width: 49.5%; }
+      width: 47.6%;
+      margin-left: 0; }
     .geography__item--second:nth-child(3) {
-      width: 100%; }
+      width: 100%;
+      margin-right: 5px;
+      margin-left: 5px; }
     .geography__item--second:nth-child(4) {
-      width: 49.5%; }
+      width: 47.6%; }
     .geography__item--second:nth-child(5) {
-      width: 49.5%; } }
+      width: 47.6%;
+      margin-right: 5px; } }
 
 .reviews {
   margin-bottom: 70px; }
@@ -1327,7 +1353,6 @@ body {
 .photo__list {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -1335,17 +1360,21 @@ body {
     margin-bottom: 25px; }
 
 .photo__item {
-  margin: auto; }
+  width: auto;
+  margin-right: 5px; }
+  .photo__item:last-child {
+    margin-right: 0; }
 
 .photo__img {
+  width: 100%;
   border-radius: 7px;
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
   transition: 0.3s; }
   .photo__img:hover, .photo__img:focus {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05); }
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03); }
 
 .photo__call {
   color: #292F48;
@@ -1388,6 +1417,11 @@ body {
   .photo__title,
   .photo__subtitle {
     text-align: center; }
+  .photo__list {
+    align-items: center;
+    flex-direction: column; }
+  .photo__item {
+    width: 300px; }
   .photo__call {
     font-size: 20px; }
   .photo__hashtag {

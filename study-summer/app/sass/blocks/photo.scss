@@ -1,7 +1,3 @@
-.photo {
-  
-}
-
 .photo__title {
   margin-top: 0;
   margin-bottom: 15px;
@@ -21,7 +17,6 @@
 .photo__list {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -32,10 +27,16 @@
 }
 
 .photo__item {
-  margin: auto;
+  width: auto;
+  margin-right: 5px;
+  
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .photo__img {
+  width: 100%;
   border-radius: 7px;
   object-fit: cover;
   cursor: pointer;
@@ -43,7 +44,7 @@
   
   &:hover,
   &:focus {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
 }
 
@@ -103,6 +104,15 @@
   .photo__title,
   .photo__subtitle {
     text-align: center;
+  }
+  
+  .photo__list {
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .photo__item {
+    width: 300px;
   }
   
   .photo__call {

@@ -16,5 +16,23 @@ var programsData = [
     jpg: 'img/royal-holloway.jpg',
     alt: 'Royal Holloway, University of London',
     name: 'Royal Holloway, University of<br>London'
+  },
+  {
+    webp: 'img/royal-holloway.webp',
+    jpg: 'img/royal-holloway.jpg',
+    alt: 'Royal Holloway, University of London',
+    name: 'Royal Holloway, University of<br>London'
+  },
+  {
+    webp: 'img/royal-holloway.webp',
+    jpg: 'img/royal-holloway.jpg',
+    alt: 'Royal Holloway, University of London',
+    name: 'Royal Holloway, University of<br>London'
+  },
+  {
+    webp: 'img/royal-holloway.webp',
+    jpg: 'img/royal-holloway.jpg',
+    alt: 'Royal Holloway, University of London',
+    name: 'Royal Holloway, University of<br>London'
   }
 ];
