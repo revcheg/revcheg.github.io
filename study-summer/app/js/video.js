@@ -4,17 +4,20 @@
   var videoWrapper = document.createElement('div');
   var overlay = document.querySelector('.popup__overlay');
   
+  videoWrapper.classList.add('advantages__media', 'advantages__media--hide');
+  document.body.appendChild(videoWrapper);
+  videoWrapper.appendChild(video);
+  video.classList.add('advantages__video');
+  
   button.addEventListener('click', function () {
-    videoWrapper.classList.add('advantages__media');
-    video.classList.add('advantages__video');
-    video.src = 'https://www.youtube.com/embed/akjTJCHz3pA?rel=0&showinfo=0&autoplay=1';
+    videoWrapper.classList.remove('advantages__media--hide');
+    video.src = 'https://www.youtube.com/embed/akjTJCHz3pA?autoplay=1';
     overlay.classList.remove('popup__overlay--hide');
-    document.body.appendChild(videoWrapper);
-    videoWrapper.appendChild(video);
   });
   
   overlay.addEventListener('click', function () {
+    videoWrapper.classList.add('advantages__media--hide');
+    video.src = '';
     overlay.classList.add('popup__overlay--hide');
-    document.body.removeChild(videoWrapper);
   });
 })();

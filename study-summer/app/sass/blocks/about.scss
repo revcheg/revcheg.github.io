@@ -14,8 +14,12 @@
   font-size: 20px;
 }
 
-.about__map {
+.about__picture {
   width: 50%;
+}
+
+.about__map {
+  width: 100%;
 }
 
 @media screen and ($tablet-widths) {
@@ -31,7 +35,7 @@
     padding-left: 15px;
   }
   
-  .about__map {
+  .about__picture {
     width: 100%;
   }
 }

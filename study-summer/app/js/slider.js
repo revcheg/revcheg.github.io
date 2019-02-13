@@ -7,7 +7,7 @@
   var currentSlide = 0;
 
   var showSlide = function () {
-    if (currentSlide > 1) {
+    if (currentSlide > 4) {
       currentSlide = 0;
     } else if (currentSlide < 0) {
       currentSlide = 1;

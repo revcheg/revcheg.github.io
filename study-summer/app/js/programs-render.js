@@ -1,6 +1,7 @@
 (function () {
   var list = document.querySelector('.programs__list');
   var load = document.querySelector('.programs__load');
+  var listButton = document.querySelector('.programs__button--list');
   var popupTemplate = document.querySelector('.programs__template').content;
 
   var programsCounter = 3;
@@ -25,11 +26,19 @@
     for (var i = 0; i < programsLength; i++) {
       var item = document.createElement('li');
       item.classList.add('programs__item');
+      
+      if (listButton.classList.contains('programs__button--active')) {
+        item.classList.add('programs__item--column');
+      } 
+      
       var content = popupTemplate.cloneNode(true);
-      content.querySelector('.programs__name').innerHTML = programsData[i].name;
       content.querySelector('source').srcset = programsData[i].webp;
       content.querySelector('img').src = programsData[i].jpg;
       content.querySelector('img').alt = programsData[i].alt;
+      content.querySelector('.programs__name').innerHTML = programsData[i].name;
+      content.querySelector('.programs__location').innerHTML = programsData[i].location;
+      content.querySelector('.programs__date').innerHTML = programsData[i].date;
+      content.querySelector('.programs__cost').innerHTML = programsData[i].cost;
       item.appendChild(content);
       list.appendChild(item);
     }

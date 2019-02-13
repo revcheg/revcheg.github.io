@@ -1,6 +1,5 @@
 (function () {
   var photos = document.querySelectorAll('.gallery__img');
-  // var buttons = document.querySelectorAll('.gallery__button');
   var popup = document.querySelector('.popup');
   var prev = document.querySelector('.popup__control--prev');
   var next = document.querySelector('.popup__control--next');
@@ -11,20 +10,17 @@
   var clearArrayPhotos = [];
   for (var i = 0; i < photos.length; i++){
     clearArrayPhotos.push(photos[i]);
-    photos[i].addEventListener('click', function(e){
-      currentPhoto = clearArrayPhotos.indexOf(e.target);
+    photos[i].addEventListener('click', function(evt){
+      currentPhoto = clearArrayPhotos.indexOf(evt.target);
       showPopup(currentPhoto);
     });
+    photos[i].addEventListener('keydown', function(evt){
+      if (evt.keyCode == 13) {
+        currentPhoto = clearArrayPhotos.indexOf(evt.target);
+        showPopup(currentPhoto);
+      }
+    });
   }
-  
-  // for (var i = 0; i < buttons.length; i++){
-  //   clearArrayPhotos.push(buttons[i]);
-  //   buttons[i].addEventListener('click', function(evt){
-  //     currentPhoto = buttons.indexOf(evt.target);
-  //     console.log(currentPhoto);
-  //     showPopup(currentPhoto);
-  //   });
-  // }
   
   var showPopup = function () {
     popup.classList.remove('popup--hide');
@@ -52,5 +48,5 @@
   overlay.addEventListener('click', function () {
     popup.classList.add('popup--hide');
     overlay.classList.add('popup__overlay--hide');
-  })
+  });
 })();

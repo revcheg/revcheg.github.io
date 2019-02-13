@@ -26,11 +26,17 @@
   background-color: transparent;
   cursor: pointer;
   opacity: 0.4;
+  outline: none;
   transition: 0.3s;
   
   &:hover,
   &:focus {
+    
+  }
+  
+  &:active {
     opacity: 1;
+    transform: scale(1.05);
   }
   
   &:last-child {
@@ -97,7 +103,7 @@
     }
     
     .programs__text {
-      padding-bottom: 0;
+      padding: 0;
       
       &--caption {
         display: none;
@@ -130,7 +136,8 @@
 }
 
 .programs__text {
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   color: $text;
   font-size: 16px;
   font-weight: normal;
@@ -138,11 +145,30 @@
   &--caption {
     display: flex;
     align-items: center;
+    padding-left: 35px;
     color: $blue;
     font-size: 14px;
   }
   
+  &--location {
+    background-image: url('../img/svg/location.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+  
+  &--date {
+    background-image: url('../img/svg/date.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+  
   &--cost {
+    background-image: url('../img/svg/cost.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+  
+  &--blue {
     color: $blue;
     font-weight: 500;
   }

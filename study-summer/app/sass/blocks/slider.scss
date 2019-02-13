@@ -22,7 +22,7 @@
   border-bottom-right-radius: 15px; 
   background-color: #fff;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 2;
 }
 
 .slider__list {
@@ -49,7 +49,7 @@
   background-position: center;
   background-size: cover;
   opacity: 0;
-  transition: 0.8s;
+  transition: 1s;
   
   &:nth-child(1) {
     background-image: url('../img/slider-1.jpg');
@@ -61,6 +61,7 @@
   
   &--show {
     opacity: 1;
+    z-index: 1;
   }
 }
 
@@ -94,11 +95,16 @@
   background-image: url('../img/svg/button.svg');
   background-repeat: no-repeat;
   background-position: 30px;
+  outline: none;
   transition: 0.3s;
   
   &:hover,
   &:focus {
     background-color: darken($red, 10%);
+  }
+  
+  &:active {
+    transform: scale(0.95);
   }
 }
 
@@ -113,6 +119,8 @@
   background-color: transparent;
   cursor: pointer;
   transform: translateY(-50%);
+  outline: none;
+  z-index: 1;
   
   &--prev {
     left: 100px;
@@ -129,6 +137,11 @@
       opacity: 1;
     }
   }
+  
+  &:active {
+    transform: translateY(-50%) 
+               scale(1.05);
+  }
 }
 
 .slider__icon {
@@ -143,6 +156,7 @@
   left: 50%;
   display: flex;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 .slider__dot {
@@ -156,12 +170,16 @@
   background-color: #fff;
   cursor: pointer;
   opacity: 0.5;
+  outline: none;
   transition: 0.3s;
   
   &:hover,
   &:focus {
     background-color: $blue;
     opacity: 1;
+  }
+  
+  &:active {
     transform: scale(1.2);
   }
   
@@ -196,6 +214,7 @@
   background-position: center;
   background-size: cover;
   opacity: 0.7;
+  outline: none;
   transition: 0.3s;
   
   &:hover,
