@@ -194,6 +194,7 @@
   border-radius: 43px;
   background-color: $blue;
   cursor: pointer;
+  outline: none;
   transition: 0.3s;
   
   &::before {

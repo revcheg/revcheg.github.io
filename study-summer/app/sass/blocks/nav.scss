@@ -64,7 +64,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    z-index: 3;
+    z-index: 4;
   }
   
   .nav__list {
@@ -82,7 +82,7 @@
     background-size: contain;
     transition: 0.5s;
     transform: translateY(-100%);
-    z-index: 2;
+    z-index: 3;
     
     &--show {
       transform: translateY(0%);
