@@ -216,6 +216,12 @@ body {
     background-image: url("../img/slider-1.jpg"); }
   .slider__item:nth-child(2) {
     background-image: url("../img/slider-2.jpg"); }
+  .slider__item:nth-child(3) {
+    background-image: url("../img/slider-3.jpg"); }
+  .slider__item:nth-child(4) {
+    background-image: url("../img/slider-4.jpg"); }
+  .slider__item:nth-child(5) {
+    background-image: url("../img/slider-5.jpg"); }
   .slider__item--show {
     opacity: 1;
     z-index: 1; }
@@ -223,14 +229,14 @@ body {
 .slider__name {
   margin: 0;
   color: #fff;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 900; }
 
 .slider__subname {
   display: block;
   margin-bottom: 20px;
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold; }
 
 .slider__button {
@@ -446,6 +452,7 @@ body {
   position: relative;
   height: 250px;
   cursor: pointer;
+  outline: none;
   overflow: hidden; }
   .gallery__item:nth-child(1) {
     width: 50%; }
@@ -459,20 +466,41 @@ body {
     width: 35%; }
   .gallery__item:nth-child(6) {
     width: 50%; }
+  .gallery__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    transition: 0.3s; }
+  .gallery__item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/svg/maximize.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0;
+    transition: 0.3s;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .gallery__item:hover::before, .gallery__item:focus::before {
+    opacity: 0.5; }
+  .gallery__item:hover::after, .gallery__item:focus::after {
+    opacity: 1; }
 
 .gallery__img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
-  cursor: pointer;
-  -webkit-filter: brightness(100%);
-          filter: brightness(100%);
-  outline: none;
-  transition: 0.3s; }
-  .gallery__img:hover, .gallery__img:focus {
-    -webkit-filter: brightness(120%);
-            filter: brightness(120%); }
+     object-fit: cover; }
 
 @media screen and (max-width: 1210px) {
   .gallery__call {
@@ -826,6 +854,8 @@ body {
   width: 100%; }
 
 .programs__name {
+  padding-right: 15px;
+  padding-left: 15px;
   margin-top: 20px;
   margin-bottom: 10px;
   color: #292F48;
@@ -899,12 +929,10 @@ body {
     background-size: cover;
     transition: 0.3s; }
   .programs__load:hover, .programs__load:focus {
-    background-color: #5168fb;
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px); }
-    .programs__load:hover::before, .programs__load:focus::before {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg); }
+    background-color: #5168fb; }
+  .programs__load:active::before {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); }
   .programs__load:disabled {
     background-color: gray;
     cursor: not-allowed; }
@@ -1417,21 +1445,51 @@ body {
     margin-bottom: 25px; }
 
 .photo__item {
-  width: auto;
-  margin-right: 5px; }
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-right: 5px;
+  cursor: pointer;
+  outline: none; }
   .photo__item:last-child {
     margin-right: 0; }
+  .photo__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    background-color: #000;
+    opacity: 0;
+    transition: 0.3s; }
+  .photo__item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/svg/maximize.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0;
+    transition: 0.3s;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .photo__item:hover::before, .photo__item:focus::before {
+    opacity: 0.5; }
+  .photo__item:hover::after, .photo__item:focus::after {
+    opacity: 1; }
 
 .photo__img {
   width: 100%;
+  height: 100%;
   border-radius: 7px;
   -o-object-fit: cover;
-     object-fit: cover;
-  cursor: pointer;
-  transition: 0.3s; }
-  .photo__img:hover, .photo__img:focus {
-    -webkit-transform: scale(1.03);
-            transform: scale(1.03); }
+     object-fit: cover; }
 
 .photo__call {
   color: #292F48;

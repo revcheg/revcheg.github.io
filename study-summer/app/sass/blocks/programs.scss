@@ -121,6 +121,8 @@
 }
 
 .programs__name {
+  padding-right: 15px;
+  padding-left: 15px;
   margin-top: 20px;
   margin-bottom: 10px;
   color: $text;
@@ -213,7 +215,9 @@
   &:hover, 
   &:focus {
     background-color: darken($blue, 5%);
-    transform: translateY(-5px);
+  }
+  
+  &:active {
     
     &::before {
       transform: rotate(360deg);

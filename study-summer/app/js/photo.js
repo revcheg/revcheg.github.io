@@ -1,6 +1,6 @@
 (function () {
-  var photos = document.querySelectorAll('.gallery__img');
-  var item = document.querySelectorAll('.gallery__item');
+  var photos = document.querySelectorAll('.photo__img');
+  var item = document.querySelectorAll('.photo__item');
   var popup = document.querySelector('.popup');
   var prev = document.querySelector('.popup__control--prev');
   var next = document.querySelector('.popup__control--next');
