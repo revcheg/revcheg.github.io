@@ -16,6 +16,11 @@
       z-index: -1;
     }
   }
+  
+  &--alone {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
 }
 
 .waiting__list {
