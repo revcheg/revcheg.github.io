@@ -365,6 +365,17 @@ body {
   background: #fff;
   transition: 0.3s;
   z-index: 5; }
+  .choice__item::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    width: 30px;
+    height: 20px;
+    background: url("../img/svg/arrow.svg") no-repeat center/contain;
+    transition: 0.3s;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
   .choice__item:hover {
     box-shadow: 0px 0px 20px 0px rgba(35, 31, 32, 0.3);
     -webkit-transform: scale(1.1);
@@ -373,6 +384,8 @@ body {
       opacity: 0; }
     .choice__item:hover .choice__edge {
       opacity: 1; }
+    .choice__item:hover:after {
+      opacity: 0; }
 
 .choice__content {
   transition: 0.3s; }
