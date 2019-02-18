@@ -27,12 +27,7 @@ function parseGetParams(){var e,r,t,o,a,s,n={},c=function(e){return decodeURICom
 })();
 (function () {
   var openButtons = document.querySelectorAll('.button--programs');
-  // var popups = document.querySelectorAll('.popup');
   var overlay = document.querySelector('.popup__overlay');
-  // var closeButtons = document.querySelectorAll('.popup__close');
-  // var prevButtons = document.querySelectorAll('.popup__button--prev');
-  // var nextButtons = document.querySelectorAll('.popup__button--next');
-  // var registerButtons = document.querySelectorAll('.button--register');
   var popupTemplate = document.querySelector('.popup__template').content.querySelector('.popup');
   
   for (var g = 0; g < 9; g++) {
@@ -53,20 +48,9 @@ function parseGetParams(){var e,r,t,o,a,s,n={},c=function(e){return decodeURICom
   var nextButtons = document.querySelectorAll('.popup__button--next');
   var registerButtons = document.querySelectorAll('.button--register');
   
-  // var currentPopup;
-  
   var currentPopup;
   var arrayOpenButtons = [];
   
-  // for (var i = 0; i < openButtons.length; i++) {
-  //   openButtons[i].addEventListener('click', function () {
-  //     var buttonId = this.id;
-  //     currentPopup = buttonId;
-  //     showPopup(currentPopup);
-  //   });
-  // };
-  
-  // Рабочий вариант
   for (var i = 0; i < openButtons.length; i++){
     arrayOpenButtons.push(openButtons[i]);
     openButtons[i].addEventListener('click', function(e){
@@ -79,31 +63,7 @@ function parseGetParams(){var e,r,t,o,a,s,n={},c=function(e){return decodeURICom
     overlay.classList.remove('popup__overlay--hide');
     popups[currentPopup].classList.remove('popup--hide');
   };
-  
-  // Старый вариант
-  // var showPopup = function (number) {
-  //   overlay.classList.remove('popup__overlay--hide');
-  //   if (currentPopup === 0) {
-  //     currentPopup = 9;
-  //     showPopup(currentPopup);
-  //   };
-  //   if (currentPopup === 10) {
-  //     currentPopup = 1;
-  //     showPopup(currentPopup);
-  //   };
-  //   popups[number - 1].classList.remove('popup--hide');
-  // };
-  
-  // for (var p = 0; p < prevButtons.length; p++) {
-  //   prevButtons[p].addEventListener('click', function () {
-  //     popups[currentPopup - 1].classList.add('popup--hide');
-  //     currentPopup--;
-  //     showPopup(currentPopup);
-  //     console.log(currentPopup);
-  //   });
-  // };
-  
-  // Рабочий вариант
+
   for (var p = 0; p < prevButtons.length; p++) {
     prevButtons[p].addEventListener('click', function () {
       popups[currentPopup].classList.add('popup--hide');
@@ -115,16 +75,6 @@ function parseGetParams(){var e,r,t,o,a,s,n={},c=function(e){return decodeURICom
     });
   };
   
-  // Старый вариант
-  // for (var k = 0; k < nextButtons.length; k++) {
-  //   nextButtons[k].addEventListener('click', function () {
-  //     popups[currentPopup - 1].classList.add('popup--hide');
-  //     currentPopup++;
-  //     showPopup(currentPopup);
-  //   });
-  // };
-  
-  // Рабочий вариант
   for (var k = 0; k < nextButtons.length; k++) {
     nextButtons[k].addEventListener('click', function () {
       popups[currentPopup].classList.add('popup--hide');
@@ -160,17 +110,6 @@ function parseGetParams(){var e,r,t,o,a,s,n={},c=function(e){return decodeURICom
       };
     });
   };
-  
-  // Отрисовка попапов
-  // var popupTemplate = document.querySelector('.popup__template').content.querySelector('.popup');
-  // 
-  // for (var index = 0; index < popups.length; index++) {
-  //   var popup = popupTemplate.cloneNode(true);
-  //   popup.querySelector('.heading--popup').innerHTML = popupData[index].title;
-  //   document.body.appendChild(popup);
-  // };
-  
-  
 })();
 (function () {
   var buttonSaturday = document.querySelector('.table__button--saturday');

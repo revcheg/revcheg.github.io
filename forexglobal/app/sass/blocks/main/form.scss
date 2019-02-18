@@ -1,115 +1,117 @@
-.form {
+.register {
   padding: 95px 0 110px;
-  background: url('../img/form-bg.jpg') no-repeat top;
+  background-color: #ececec;
+  background-image: url('../img/form-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  margin: 0 0 0 215px;
+  padding: 30px 40px 55px;
+  text-align: center;
+  border-bottom-right-radius: 20px;
+  background-color: #0e0b39;
+}
+
+.register__call {
+  margin: 0 0 5px 0;
+  color: #fff;
+  font-weight: 500;
   
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 290px;
-    margin: 0 0 0 215px;
-    padding: 30px 40px 55px;
-    text-align: center;
-    border-bottom-right-radius: 20px;
-    background: #0e0b39;
-    
-    p {
-      margin: 0 0 5px 0;
-      color: #fff;
-      font-weight: 500;
-    }
-    
-    b {
-      color: #fff;
-      font-size: 30px;
-      font-weight: 500;
-    }
-    
-    hr {
-      width: 30px;
-      height: 1px;
-      margin: 20px auto 25px;
-      border: none;
-      background: $mc;
-    }
-    
-    input {
-      margin: 0 0 10px 0;
-      padding: 8px 15px;
-      font-size: 18px;
-      font-weight: 300;
-      font-family: inherit;
-      border: 2px solid #fff;
-      border-radius: 3px;
-      transition: 0.3s;
-      cursor: pointer;
-      outline: none;
-      
-      &::placeholder {
-        color: $sc;
-      }
-      
-      &:hover,
-      &:focus {
-        border: 2px solid #7865ff;
-      }
-    }
-    
-    select {
-      height: 41px;
-      margin: 0 0 10px 0;
-      padding: 8px 15px;
-      color: $sc;
-      font-size: 18px;
-      font-weight: 300;
-      font-family: inherit;
-      border: 2px solid #fff;
-      border-radius: 3px;
-      background: #fff url('../img/nav-arrow.svg') no-repeat center;
-      background-size: 10px;
-      background-position-x: 260px; 
-      appearance: none;
-      cursor: pointer;
-      transition: 0.3s;
-      outline: none;
-      
-      &:hover,
-      &:focus {
-        border: 2px solid #7865ff;
-      }
-    }
-    
-    button {
-      position: relative;
-      margin: 25px 0 0 0;
-      padding: 10px 0;
-      color: $sc;
-      font-size: 18px;
-      font-weight: 500;
-      font-family: inherit;
-      border: none;
-      border-radius: 3px;
-      background: $mc;
-      cursor: pointer;
-      transition: 0.3s;
-      outline: none;
-      
-      &::after {
-        content: 'Trading involves risk of loss';
-        position: absolute;
-        bottom: -15px;
-        left: 0;
-        width: 100%;
-        color: $mc;
-        font-size: 10px;
-      }
-      
-      &:hover,
-      &:focus {
-        background: #ffd800;
-        transform: translateY(-5px);
-      }
-    }
+  &--bold {
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
+
+.register__divider {
+  width: 30px;
+  height: 1px;
+  margin: 20px auto 25px;
+  border: none;
+  background-color: $mc;
+}
+
+.register__input {
+  margin: 0 0 10px 0;
+  padding: 8px 15px;
+  color: $sc;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: inherit;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  transition: 0.3s;
+  cursor: pointer;
+  outline: none;
+  
+  &::placeholder {
+    color: $sc;
+  }
+  
+  &:hover,
+  &:focus {
+    border: 2px solid #7865ff;
+  }
+}
+
+.register__select {
+  height: 41px;
+  margin: 0 0 10px 0;
+  padding: 8px 15px;
+  color: $sc;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: inherit;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  background-color: #fff;
+  background-image: url('../img/svg/nav-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-position-x: 260px; 
+  appearance: none;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+  
+  &:hover,
+  &:focus {
+    border: 2px solid #7865ff;
+  }
+}
+
+.register__option {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.register__submit {
+  margin: 25px 0 0 0;
+  padding: 10px 0;
+  color: $sc;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: inherit;
+  border: none;
+  border-radius: 3px;
+  background-color: $mc;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+  
+  &:hover,
+  &:focus {
+    background-color: #ffd800;
+    transform: translateY(-5px);
   }
 }
 

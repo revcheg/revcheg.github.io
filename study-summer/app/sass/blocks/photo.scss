@@ -14,10 +14,15 @@
   font-weight: normal;
 }
 
+.photo__button {
+  display: none;
+}
+
 .photo__list {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  margin-bottom: 5px;
   padding: 0;
   list-style: none;
   
@@ -145,13 +150,82 @@
     text-align: center;
   }
   
+  .photo__subtitle {
+    margin-bottom: 25px;
+  }
+  
+  .photo__control {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .photo__button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    padding: 0;
+    font-size: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url('../img/svg/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    outline: none;
+    transition: 0.1s;
+    
+    &:active {
+      transform: scale(1.05);
+    }
+    
+    &:last-child {
+      margin-right: 0;
+      transform: rotate(180deg);
+      
+      &:active {
+        transform: rotate(180deg)
+                   scale(1.05);
+      }
+    }
+  }
+  
+  .photo__wrapper {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .photo__slider {
+    position: relative;
+    left: 0px;
+    display: flex;
+    width: 1200%;
+    height: inherit;
+    transition: 0.5s;
+  }
+  
   .photo__list {
-    align-items: center;
-    flex-direction: column;
+    width: 600%;
+    margin-bottom: 0;
   }
   
   .photo__item {
+    width: 100%;
+    margin-right: 0;
+    
+    &::before {
+      width: 300px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  .photo__img {
+    display: block;
     width: 300px;
+    margin: auto;
   }
   
   .photo__call {

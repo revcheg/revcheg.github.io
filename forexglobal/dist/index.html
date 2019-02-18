@@ -40,21 +40,17 @@
         <img class="header__logo" src="img/logo.svg" width="170" alt="Forex24 Global">
         <button class="header__toggle">Open Menu</button>
         <ul class="header__user  header__user--closed">
-          <li>
-            <a class="header__button" href="client/register.html">Open account</a>
-            <ul class="header__accounts  header__accounts--closed">
-              <li><a href="client/real/step-1.php">Real</a></li>
-              <li><a href="client/demo.html">Demo</a></li>
-              <li><a href="trading/platforms/zulutrade.html">ZuluTrade</a></li>
-            </ul>
-          </li>
+          <li><a class="header__button" href="client/register.html">Open account</a></li>
           <li><a class="header__button" href="client/login.html">Log in</a></li>
           <li>
             <label class="visuallyhidden" for="language">Choose your language</label>
-            <select class="header__language" id="language">
-              <option>En</option>
-              <option>Ru</option>
-            </select>
+            <div class="header__language">
+              <select class="header__select" id="language">
+                <option class="header__option">En</option>
+                <option class="header__option">Ru</option>
+              </select>
+              <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 31" width="6"><path d="M33 31L0 0h66L33 31z"/></svg>
+            </div>
           </li>
         </ul>
       </div>
@@ -136,38 +132,34 @@
       </form>
       <button class="title__down">Scroll Down</button>
     </section>
-    <section class="slider">
-      <div class="slider__box  slider__box--1">
-        <div class="slider__container">
-          <div class="slider__flex  slider__flex--1">
-            <div class="slider__text">
-              <b>Innovative power tools that align with your goals</b>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet tenetur qui sapiente quos, expedita quas ad eius ex consequatur aperiam!</p>
+    <div class="slider">
+      <ul class="slider__list">
+        <li class="slider__item  slider__item--show">
+          <div class="slider__wrapper">
+            <div class="slider__content">
+              <b class="slider__name">Innovative power tools that align with your goals</b>
+              <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet tenetur qui sapiente quos, expedita quas ad eius ex consequatur aperiam!</p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="slider__box  slider__box--2">
-        <div class="slider__container">
-          <div class="slider__flex  slider__flex--2">
-            <div class="slider__text">
-              <b>New features, easy navigation<br>Account assets on the go</b>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet tenetur qui sapiente quos, expedita quas ad eius ex consequatur aperiam!</p>
+        </li>
+        <li class="slider__item">
+          <div class="slider__wrapper">
+            <div class="slider__content">
+              <b class="slider__name">New features, easy navigation<br>Account assets on the go</b>
+              <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet tenetur qui sapiente quos, expedita quas ad eius ex consequatur aperiam!</p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="slider__box  slider__box--3">
-        <div class="slider__container">
-          <div class="slider__flex  slider__flex--3">
-            <div class="slider__text">
-              <b>Premium Trader Tools<br>Trading with added confidence</b>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet tenetur qui sapiente quos, expedita quas ad eius ex consequatur aperiam!</p>
+        </li>
+        <li class="slider__item">
+          <div class="slider__wrapper">
+            <div class="slider__content">
+              <b class="slider__name">Premium Trader Tools<br>Trading with added confidence</b>
+              <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet tenetur qui sapiente quos, expedita quas ad eius ex consequatur aperiam!</p>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </li>
+      </ul>
+    </div>
     <section class="edge">
       <div class="container">
         <!-- Heading? -->
@@ -346,50 +338,64 @@
         </ul>
       </div>
     </section>
-    <section class="quote">
+    <div class="quote">
       <div class="container">
-        <p>“Investing is laying out money now<br>to get more money back in the future.”<br><span>Warren Buffet</span></p>
+        <blockquote class="quote__text">
+          “Investing is laying out money now<br>to get more money back in the future.”
+          <b class="quote__author">Warren Buffet</b>
+        </blockquote>
       </div>
-    </section>
-    <section class="form">
+    </div>
+    <section class="register">
       <div class="container">
-        <form method="post">
-          <p>Fast & Easy Account Opening</p>
-          <b>Start Now!</b>
-          <hr>
+        <form class="register__form" action="" method="post">
+          <p class="register__call">Fast & Easy Account Opening <span class="register__call--bold">Start Now!</span></p>
+          <hr class="register__divider">
           <label class="visuallyhidden" for="first-name">Write your First Name:</label>
-          <input id="first-name" type="text" name="First Name" placeholder="First Name" required>
+          <input class="register__input" id="first-name" type="text" name="First Name" placeholder="First Name" required>
           <label class="visuallyhidden" for="last-name">Write your Last Name:</label>
-          <input id="last-name" type="text" name="Last Name" placeholder="Last Name" required>
+          <input class="register__input" id="last-name" type="text" name="Last Name" placeholder="Last Name" required>
           <label class="visuallyhidden" for="country">Choose your Country:</label>
-          <select id="country" name="Country" tabindex="0" required>
+          <select class="register__select" id="country" name="Country" required>
             <option hidden>Country</option>
-            <option value="US">United States</option>
-          	<option value="RU">Russian Federation</option>
+            <option class="register__option" value="US">United States</option>
+          	<option class="register__option" value="RU">Russian Federation</option>
           </select>
           <label class="visuallyhidden" for="email">Write your email:</label>
-          <input id="email" type="email" name="Email" placeholder="Email" required>
-          <input type="tel" name="Phone" placeholder="Phone" required>
+          <input class="register__input" id="email" type="email" name="Email" placeholder="Email" required>
+          <label class="visuallyhidden" for="phone">Write your phone:</label>
+          <input class="register__input" id="phone" type="tel" name="Phone" placeholder="Phone" required>
           <label class="visuallyhidden" for="account-type">Choose account type:</label>
-          <select id="account-type" name="Account" tabindex="0" required>
+          <select class="register__select" id="account-type" name="Account" required>
             <option hidden>Account Type</option>
-            <option value="zulu">ZuluTrade</option>
-            <option value="real">Real</option>
-            <option value="demo">Demo</option>
+            <option class="register__option" value="zulu">ZuluTrade</option>
+            <option class="register__option" value="real">Real</option>
+            <option class="register__option" value="demo">Demo</option>
           </select>
-          <button type="submit" name="Open">Open Account</button>
+          <button class="register__submit" type="submit" name="Submit">Open Account</button>
         </form>
       </div>
     </section>
     <section class="payment">
       <div class="container">
-        <div class="payment__flex">
-          <div class="payment__box  payment__box--mc"></div>
-          <div class="payment__box  payment__box--visa"></div>
-          <div class="payment__box  payment__box--bank"></div>
-          <div class="payment__box  payment__box--skrill"></div>
-          <div class="payment__box  payment__box--neteller"></div>
-        </div>
+        <h1 class="visuallyhidden">Payment methods</h1>
+        <ul class="payment__flex">
+          <li>
+            <img class="payment__mc" src="img/payment-mc.svg" alt="MasterCard">
+          </li>
+          <li>
+            <img class="payment__visa" src="img/payment-visa.svg" alt="">
+          </li>
+          <li>
+            <img class="payment__bank" src="img/payment-bank.svg" alt="">
+          </li>
+          <li>
+            <img class="payment__scrill" src="img/payment-skrill.svg" alt="">
+          </li>
+          <li>
+            <img class="payment__neteller" src="img/payment-neteller.svg" alt="">
+          </li>
+        </ul>
       </div>
     </section>
   </main>

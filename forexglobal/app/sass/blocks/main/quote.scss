@@ -1,18 +1,19 @@
 .quote {
   padding: 65px 0;
   background-image: linear-gradient(85deg, #31266e 0%, #6420ff 100%);
-  
-  p {
-    margin: 0;
-    color: #fff;
-    font-size: 30px;
-    font-weight: 300;
-    text-align: center;
-    
-    span {
-      font-weight: 500;
-    }
-  }
+}
+
+.quote__text {
+  margin: 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.quote__author {
+  display: block;
+  font-weight: 500;
 }
 
 @media screen and ($tablet-widths) {}

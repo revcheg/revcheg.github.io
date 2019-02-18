@@ -10,17 +10,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
+  margin: 0;
+  padding: 0;
+  // padding: 0 15px;
+  list-style: none;
+}
+
+.payment__mc {
+  width: 50px;
+  height: 30px;
+  background: url('../img/payment-mc.svg') no-repeat top;
 }
 
 .payment__box {
   transition: 0.3s;
   
-  &--mc {
-    width: 50px;
-    height: 30px;
-    background: url('../img/payment-mc.svg') no-repeat top;
-  }
+  
   
   &--visa {
     width: 50px;

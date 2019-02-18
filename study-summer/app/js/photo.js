@@ -37,14 +37,14 @@
   prev.addEventListener('click', function () {
     currentPhoto--;
     if (currentPhoto < 0) {
-      currentPhoto = 5;
+      currentPhoto = 11;
     }
     showPopup(currentPhoto);
   });
   
   next.addEventListener('click', function () {
     currentPhoto++;
-    if (currentPhoto > 5) {
+    if (currentPhoto > 11) {
       currentPhoto = 0;
     }
     showPopup(currentPhoto);
@@ -53,5 +53,108 @@
   overlay.addEventListener('click', function () {
     popup.classList.add('popup--hide');
     overlay.classList.add('popup__overlay--hide');
+  });
+  
+  var previewList = document.querySelector('.photo__slider');
+  var mobileButtonPrev = document.querySelector('.photo__button--prev');
+  var mobileButtonNext = document.querySelector('.photo__button--next');
+  
+  var currentCounter = 0;
+  var currentPosition;
+  
+  mobileButtonNext.addEventListener('click', function () {
+    currentCounter++;
+    
+    switch (currentCounter) {
+      case 0:
+        currentPosition = '0%';
+        break;
+      case 1:
+        currentPosition = '-100%';
+        break;
+      case 2:
+        currentPosition = '-200%';
+        break;
+      case 3:
+        currentPosition = '-300%';
+        break;
+      case 4:
+        currentPosition = '-400%';
+        break;
+      case 5:
+        currentPosition = '-500%';
+        break;
+      case 6:
+        currentPosition = '-600%';
+        break;
+      case 7:
+        currentPosition = '-700%';
+        break;
+      case 8:
+        currentPosition = '-800%';
+        break;
+      case 9:
+        currentPosition = '-900%';
+        break;
+      case 10:
+        currentPosition = '-1000%';
+        break;
+      case 11:
+        currentPosition = '-1100%';
+        break;
+      default:
+        currentPosition = '0%';
+        currentCounter = 0;
+    }
+    
+    previewList.style.left = currentPosition;
+  });
+  
+  mobileButtonPrev.addEventListener('click', function () {
+    currentCounter--;
+    
+    switch (currentCounter) {
+      case 0:
+        currentPosition = '0%';
+        break;
+      case 1:
+        currentPosition = '-100%';
+        break;
+      case 2:
+        currentPosition = '-200%';
+        break;
+      case 3:
+        currentPosition = '-300%';
+        break;
+      case 4:
+        currentPosition = '-400%';
+        break;
+      case 5:
+        currentPosition = '-500%';
+        break;
+      case 6:
+        currentPosition = '-600%';
+        break;
+      case 7:
+        currentPosition = '-700%';
+        break;
+      case 8:
+        currentPosition = '-800%';
+        break;
+      case 9:
+        currentPosition = '-900%';
+        break;
+      case 10:
+        currentPosition = '-1000%';
+        break;
+      case 11:
+        currentPosition = '-1100%';
+        break;
+      default:
+        currentPosition = '-1100%';
+        currentCounter = 11;
+    }
+    
+    previewList.style.left = currentPosition;
   });
 })();

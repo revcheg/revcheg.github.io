@@ -75,8 +75,7 @@
 
 .nav__label {
   position: relative;
-  top: 0;
-  transition: 0.5s;
+  transition: 0.3s;
   
   &:after {
     content: '';
@@ -87,21 +86,12 @@
     height: 25px;
     background: url('../img/svg/nav-search.svg') no-repeat top;
   }
-  
-  &:hover,
-  &:focus-within {
-    
-    .nav__search {
-      opacity: 1;
-      visibility: visible;
-    }
-  }
 }
 
 .nav__search {
-  width: 470px;
+  width: 0;
   height: 42px;
-  padding: 0 15px;
+  padding: 0 40px 0 15px;
   color: $mc;
   font-size: 14px;
   font-weight: 300;
@@ -113,10 +103,15 @@
   transition: 0.5s;
   opacity: 0;
   outline: none;
-  visibility: hidden;
   
   &::-webkit-search-cancel-button {
     appearance: none;
+  }
+  
+  &:hover,
+  &:focus {
+    width: 470px;
+    opacity: 1;
   }
 }
 

@@ -2,7 +2,7 @@
   var list = document.querySelector('.programs__list');
   var load = document.querySelector('.programs__load');
   var listButton = document.querySelector('.programs__button--list');
-  var popupTemplate = document.querySelector('.programs__template').content;
+  var programsTemplate = document.querySelector('.programs__template').content;
 
   var programsCounter = 3;
   renderPrograms();
@@ -31,7 +31,7 @@
         item.classList.add('programs__item--column');
       } 
       
-      var content = popupTemplate.cloneNode(true);
+      var content = programsTemplate.cloneNode(true);
       content.querySelector('source').srcset = programsData[i].webp;
       content.querySelector('img').src = programsData[i].jpg;
       content.querySelector('img').alt = programsData[i].alt;
