@@ -24,10 +24,21 @@
   font-size: 0;
   border: none;
   background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   cursor: pointer;
   opacity: 0.4;
   outline: none;
   transition: 0.3s;
+  
+  &--tile {
+    background-image: url('../img/svg/button-tile.svg');
+  }
+  
+  &--list {
+    background-image: url('../img/svg/button-list.svg');
+  }
   
   &:active {
     opacity: 1;
@@ -204,7 +215,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transition: 0.3s;
+    transition: 0.5s;
   }
   
   &:hover, 
@@ -249,9 +260,10 @@
   }
   
   .programs__item {
-    width: 345px;
-    margin: 0 auto;
+    width: 49%;
+    height: auto;
     margin-bottom: 20px;
+    padding-bottom: 15px;
     
     &--column {
       width: 100%;
@@ -278,6 +290,7 @@
   }
   
   .programs__list {
+    align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
     margin-bottom: 0;
@@ -286,11 +299,9 @@
   .programs__item {
     width: 290px;
     height: auto;
-    padding-bottom: 10px;
     
     &--column {
       flex-direction: column;
-      // width: 100%;
       padding-right: 10px;
       padding-left: 10px;
       
@@ -314,7 +325,7 @@
   }
   
   .programs__table {
-    padding-right: 20px;
+    padding-right: 10px;
     padding-left: 20px;
   }
 }

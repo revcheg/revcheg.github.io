@@ -5,10 +5,17 @@
   var programsTemplate = document.querySelector('.programs__template').content;
 
   var programsCounter = 3;
+  var programsIncrement = 3;
+  
+  if (document.body.clientWidth < 1210) {
+    programsCounter = 2;
+    programsIncrement = 2;
+  }
+  
   renderPrograms();
   
   load.addEventListener('click', function () {
-    programsCounter = programsCounter + 3;
+    programsCounter = programsCounter + programsIncrement;
     clearPrograms();
     renderPrograms();
   });

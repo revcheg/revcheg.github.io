@@ -139,6 +139,21 @@
     font-size: 18px;
   }
   
+  .gallery__wrapper {
+    padding-bottom: 5px;
+    overflow-x: scroll;
+    
+    &::-webkit-scrollbar {
+      height: 5px;
+    }
+  }
+  
+  .gallery__list {
+    width: 600%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
   .gallery__item {
     height: 200px;
     
@@ -149,6 +164,7 @@
     &:nth-child(5),
     &:nth-child(6) {
       width: 100%;
+      // width: 100px;
     }
   }
 }

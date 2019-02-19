@@ -23,6 +23,7 @@
   font-size: 0;
   border: none;
   background-color: transparent;
+  background-image: url('../img/svg/arrow-blue.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -31,11 +32,9 @@
   
   &--prev {
     margin-right: 20px;
-    background-image: url('../img/svg/arrow.svg');
   }
   
   &--next {
-    background-image: url('../img/svg/arrow.svg');
     transform: rotate(180deg);
   }
 }

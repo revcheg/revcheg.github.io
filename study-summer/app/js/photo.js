@@ -1,5 +1,6 @@
 (function () {
   var photos = document.querySelectorAll('.photo__img');
+  var photosSources = document.querySelectorAll('.photo__source');
   var item = document.querySelectorAll('.photo__item');
   var popup = document.querySelector('.popup');
   var prev = document.querySelector('.popup__control--prev');
@@ -29,7 +30,7 @@
   
   var showPopup = function () {
     popup.classList.remove('popup--hide');
-    popup.querySelector('.popup__webp').srcset = photos[currentPhoto].srcset;
+    popup.querySelector('.popup__webp').srcset = photosSources[currentPhoto].srcset;
     popup.querySelector('.popup__jpg').src = photos[currentPhoto].src;
     overlay.classList.remove('popup__overlay--hide');
   };

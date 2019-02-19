@@ -23,7 +23,7 @@
   font-size: 0;
   border: none;
   background-color: transparent;
-  background-image: url('../img/svg/arrow.svg');
+  background-image: url('../img/svg/arrow-blue.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -40,8 +40,7 @@
     transform: rotate(180deg);
     
     &:active {
-      transform: rotate(180deg)
-                 scale(1.05);
+      transform: rotate(180deg) scale(1.05);
     }
   }
 }
@@ -54,8 +53,7 @@
 
 .leaders__list {
   position: absolute;
-  top: 3px;
-  left: 3px;
+  left: 0px;
   display: flex;
   justify-content: space-between;
   width: 200%;
@@ -68,7 +66,7 @@
 .leaders__item {
   box-sizing: border-box;
   width: 270px;
-  // margin-right: 28px;
+  margin: 3px;
   padding-bottom: 30px;
   text-align: center;
   border-radius: 7px;
@@ -145,9 +143,17 @@
     font-size: 22px;
   }
   
+  .leaders__slider {
+    height: 400px;
+  }
+  
+  .leaders__list {
+    width: 400%;
+  }
+  
   .leaders__item {
-    width: 220px;
-    
+    width: 320px;
+    margin: 3px auto;
   }
 }
 
@@ -166,11 +172,16 @@
     text-align: center;
   }
   
+  .leaders__slider {
+    height: 370px;
+  }
+  
   .leaders__list {
-    margin-bottom: 0;
+    width: 800%;
   }
   
   .leaders__item {
-    width: 290px;
+    width: 285px;
+    
   }
 }

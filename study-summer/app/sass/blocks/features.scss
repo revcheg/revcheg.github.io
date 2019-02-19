@@ -15,23 +15,19 @@
   padding-top: 12px;
   padding-left: 85px;
   padding-bottom: 12px;
+  background-repeat: no-repeat;
+  background-position: left;
   
   &:nth-child(1) {
     background-image: url('../img/svg/exchange.svg');
-    background-repeat: no-repeat;
-    background-position: left;
   }
   
   &:nth-child(2) {
     background-image: url('../img/svg/clock.svg');
-    background-repeat: no-repeat;
-    background-position: left;
   }
   
   &:nth-child(3) {
     background-image: url('../img/svg/air.svg');
-    background-repeat: no-repeat;
-    background-position: left;
   }
 }
 
