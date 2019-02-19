@@ -349,8 +349,8 @@ var programsData = [
     cost: '$4700 (2 нед.)'
   },
   {
-    webp: 'img/program-14.webp',
-    jpg: 'img/program-14.jpg',
+    webp: 'img/program-15.webp',
+    jpg: 'img/program-15.jpg',
     alt: 'Abbey DLD Academic summer Medical School',
     name: 'Abbey DLD Academic summer Medical School',
     location: 'Лондон',
@@ -358,8 +358,8 @@ var programsData = [
     cost: '$5000 (2 нед.)'
   },
   {
-    webp: 'img/program-15.webp',
-    jpg: 'img/program-15.jpg',
+    webp: 'img/program-16.webp',
+    jpg: 'img/program-16.jpg',
     alt: 'High School Immersion with British students',
     name: 'High School Immersion with British students',
     location: 'Брайтон',
