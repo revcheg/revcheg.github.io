@@ -56,11 +56,11 @@
   left: 0px;
   display: flex;
   justify-content: space-between;
-  width: 200%;
+  width: 300%;
   margin: 0;
   padding: 0;
   list-style: none;
-  transition: 0.8s;
+  transition: 1s;
 }
 
 .leaders__item {
@@ -121,6 +121,7 @@
   border-radius: 50%;
   background-color: $blue;
   cursor: pointer;
+  outline: none;
   opacity: 0.5;
   transition: 0.3s;
   
@@ -148,7 +149,7 @@
   }
   
   .leaders__list {
-    width: 400%;
+    width: 600%;
   }
   
   .leaders__item {
@@ -164,6 +165,7 @@
   
   .leaders__wrapper {
     flex-direction: column;
+    margin-bottom: 20px;
   }
   
   .leaders__title {
@@ -177,7 +179,8 @@
   }
   
   .leaders__list {
-    width: 800%;
+    width: 1200%;
+    transition: 0.5s;
   }
   
   .leaders__item {

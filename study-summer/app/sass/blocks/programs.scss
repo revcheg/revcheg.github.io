@@ -242,12 +242,13 @@
     transition: 0.5s;
   }
   
-  &:hover, 
+  &:hover,
   &:focus {
-    background-color: darken($blue, 5%);
+    box-shadow: 0 0 10px 2px darken($blue, 20%);
   }
   
   &:active {
+    box-shadow: 0 0 10px 5px darken($blue, 20%);
     
     &::before {
       transform: rotate(360deg);
@@ -306,11 +307,11 @@
   
   .programs__wrapper {
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   
   .programs__title {
-    margin-bottom: 5px;
+    margin-bottom: 25px;
     text-align: center;
   }
   

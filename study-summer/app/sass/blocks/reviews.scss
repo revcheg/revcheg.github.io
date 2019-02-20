@@ -19,6 +19,7 @@
 .reviews__button {
   width: 40px;
   height: 40px;
+  margin-right: 20px;
   padding: 0;
   font-size: 0;
   border: none;
@@ -28,14 +29,20 @@
   background-position: center;
   background-size: cover;
   cursor: pointer;
+  outline: none;
   transition: 0.3s;
   
-  &--prev {
-    margin-right: 20px;
+  &:active {
+    transform: scale(1.05);
   }
   
-  &--next {
+  &:last-child {
+    margin-right: 0;
     transform: rotate(180deg);
+    
+    &:active {
+      transform: rotate(180deg) scale(1.05);
+    }
   }
 }
 
@@ -146,6 +153,7 @@
   border-radius: 50%;
   background-color: $blue;
   cursor: pointer;
+  outline: none;
   opacity: 0.5;
   transition: 0.3s;
   
@@ -190,10 +198,12 @@
   
   .reviews__wrapper {
     flex-direction: column;
+    margin-bottom: 20px;
   }
   
   .reviews__title {
     text-align: center;
+    margin-bottom: 25px;
   }
   
   .reviews__list {

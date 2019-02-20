@@ -66,8 +66,11 @@
   
   &:hover,
   &:focus {
-    background-color: darken($red, 10%);
-    transform: translateY(-5px);
+    box-shadow: 0 0 10px 2px darken($red, 20%);
+  }
+  
+  &:active {
+    box-shadow: 0 0 10px 5px darken($red, 20%);
   }
 }
 

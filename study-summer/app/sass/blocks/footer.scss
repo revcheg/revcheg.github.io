@@ -9,38 +9,36 @@
 
 .footer__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.footer__address {
-  padding-left: 30px;
-  color: #fff;
-  font-size: 16px;
-  font-weight: normal;
-  background-image: url('../img/svg/address.svg');
+.footer__text {
+  padding-left: 35px;
   background-repeat: no-repeat;
   background-position: top left;
-}
-
-.footer__phones {
-  padding-left: 40px;
-  background-image: url('../img/svg/tel.svg');
-  background-repeat: no-repeat;
-  background-position: top left;
-}
-
-.footer__phone {
-  color: #fff;
-  font-size: 16px;
-  font-weight: normal;
-  text-decoration: none;
+  
+  &:nth-child(1) {
+    background-image: url('../img/svg/address.svg');
+  }
+  
+  &:nth-child(2) {
+    background-image: url('../img/svg/tel.svg');
+  }
 }
 
 .footer__link {
+  display: block;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   text-decoration: none;
+  outline: none;
+  transition: 0.3s;
+  
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
 @media screen and ($tablet-widths) {
