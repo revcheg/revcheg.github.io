@@ -448,6 +448,8 @@ body {
     background: url("../img/svg/university.svg") no-repeat 0 0/20px; }
   .choice__short:nth-child(3) {
     background: url("../img/svg/discount.svg") no-repeat 0 0/20px; }
+  .choice__short--uni {
+    background: url("../img/svg/university.svg") no-repeat 0 0/20px !important; }
 
 @media screen and (max-width: 768px) {
   .choice {

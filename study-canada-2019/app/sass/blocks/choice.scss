@@ -132,6 +132,10 @@
   &:nth-child(3) {
     background: url('../img/svg/discount.svg') no-repeat 0 0 / 20px;
   }
+  
+  &--uni {
+    background: url('../img/svg/university.svg') no-repeat 0 0 / 20px !important;
+  }
 }
 
 @media screen and ($tablet-widths) {}
