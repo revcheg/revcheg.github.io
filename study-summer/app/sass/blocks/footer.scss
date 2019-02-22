@@ -53,6 +53,11 @@
     background-image: url('../img/footer-bg-mobile.jpg');
   }
   
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  
   .footer__address,
   .footer__phones {
     margin: 0 auto;

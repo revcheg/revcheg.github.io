@@ -193,7 +193,6 @@
   }
   
   .photo__wrapper {
-    height: 200px;
     overflow: hidden;
   }
   
@@ -202,29 +201,32 @@
     left: 0px;
     display: flex;
     width: 1200%;
-    height: inherit;
     transition: 0.5s;
   }
   
   .photo__list {
     width: 600%;
+    height: 100%;
     margin-bottom: 0;
   }
   
   .photo__item {
     width: 100%;
+    height: auto;
     margin-right: 0;
     
-    &::before {
-      width: 300px;
-      left: 50%;
-      transform: translateX(-50%);
+    &::before,
+    &::after {
+      display: none;
     }
   }
   
   .photo__img {
     display: block;
-    width: 300px;
+    width: 90%;
+    max-width: 395px;
+    min-width: 300px;
+    height: auto;
     margin: auto;
   }
   

@@ -323,7 +323,8 @@
   }
   
   .programs__item {
-    width: 290px;
+    width: 100%;
+    max-width: 395px;
     height: auto;
     
     &--column {

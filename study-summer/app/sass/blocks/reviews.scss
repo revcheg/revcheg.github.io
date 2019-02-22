@@ -64,7 +64,6 @@
 }
 
 .reviews__left {
-  position: relative;
   width: 240px;
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
@@ -72,17 +71,14 @@
 }
 
 .reviews__img {
-  position: absolute;
-  top: 20px;
-  left: -15px;
   width: 270px;
+  margin-bottom: 40px;
   border-radius: 7px;
+  transform: translate(-15px, 20px);
 }
 
 .reviews__school {
-  position: absolute;
-  bottom: 30px;
-  width: 100%;
+  display: block;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -212,18 +208,20 @@
   
   .reviews__item {
     flex-direction: column;
-    width: 280px;
+    width: 100%;
+    max-width: 395px;
   }
   
   .reviews__left {
-    width: 100%;
-    height: 300px;
+    width: auto;
+    padding-bottom: 15px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 0;
   }
   
   .reviews__img {
-    width: 310px;
+    width: 100%;
+    transform: translate(-3%, 20px);
   }
   
   .reviews__school {
