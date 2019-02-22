@@ -30,8 +30,10 @@
   
   var showPopup = function () {
     popup.classList.remove('popup--hide');
-    popup.querySelector('.popup__webp').srcset = photosSources[currentPhoto].srcset;
-    popup.querySelector('.popup__jpg').src = photos[currentPhoto].src;
+    // popup.querySelector('.popup__webp').srcset = photosSources[currentPhoto].srcset;
+    // popup.querySelector('.popup__jpg').src = photos[currentPhoto].src;
+    popup.querySelector('.popup__webp').srcset = 'img/photo-' + currentPhoto + '.webp';
+    popup.querySelector('.popup__jpg').src = 'img/photo-' + currentPhoto + '.jpg';
     overlay.classList.remove('popup__overlay--hide');
   };
   
