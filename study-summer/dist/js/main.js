@@ -201,13 +201,13 @@
   for (var i = 0; i < item.length; i++){
     clearArrayPhotos.push(item[i]);
     item[i].addEventListener('click', function(evt){
-      currentPhoto = clearArrayPhotos.indexOf(evt.target);
+      currentPhoto = clearArrayPhotos.indexOf(evt.currentTarget);
       showPopup(currentPhoto);
     });
     
     item[i].addEventListener('keydown', function(evt){
       if (evt.keyCode == 13) {
-        currentPhoto = clearArrayPhotos.indexOf(evt.target);
+        currentPhoto = clearArrayPhotos.indexOf(evt.currentTarget);
         showPopup(currentPhoto);
       } else if (evt.keyCode == 27) {
         popup.classList.add('popup--hide');
@@ -218,8 +218,6 @@
   
   var showPopup = function () {
     popup.classList.remove('popup--hide');
-    // popup.querySelector('.popup__webp').srcset = photosSources[currentPhoto].srcset;
-    // popup.querySelector('.popup__jpg').src = photos[currentPhoto].src;
     popup.querySelector('.popup__webp').srcset = 'img/photo-' + currentPhoto + '.webp';
     popup.querySelector('.popup__jpg').src = 'img/photo-' + currentPhoto + '.jpg';
     overlay.classList.remove('popup__overlay--hide');

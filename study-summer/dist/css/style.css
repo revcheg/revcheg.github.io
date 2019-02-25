@@ -67,6 +67,9 @@ body {
   align-items: center;
   justify-content: space-between; }
 
+.nav__logo {
+  width: 250px; }
+
 .nav__list {
   display: flex;
   align-items: center;
@@ -1723,7 +1726,6 @@ body {
     width: 90%;
     max-width: 395px;
     min-width: 300px;
-    height: auto;
     margin: auto; }
   .photo__call {
     font-size: 20px; }
