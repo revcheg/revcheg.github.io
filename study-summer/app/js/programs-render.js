@@ -3,13 +3,16 @@
   var load = document.querySelector('.programs__load');
   var listButton = document.querySelector('.programs__button--list');
   var programsTemplate = document.querySelector('.programs__template').content;
-
-  var programsCounter = 3;
-  var programsIncrement = 3;
   
-  if (document.body.clientWidth < 1210) {
+  if (document.body.clientWidth > 1210) {
+    programsCounter = 3;
+    programsIncrement = 3;
+  } else if (document.body.clientWidth > 768 && document.body.clientWidth < 1210) {
     programsCounter = 2;
     programsIncrement = 2;
+  } else if (document.body.clientWidth <= 768) {
+    programsCounter = 1;
+    programsIncrement = 1;
   }
   
   renderPrograms();

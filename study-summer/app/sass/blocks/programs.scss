@@ -261,6 +261,7 @@
     
     &:hover,
     &:focus {
+      box-shadow: none;
       background-color: gray;
       transform: translateY(0);
       

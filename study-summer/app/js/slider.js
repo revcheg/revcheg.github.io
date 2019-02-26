@@ -5,7 +5,8 @@
   var dots = document.querySelectorAll('.slider__dot');
   
   var currentSlide = 0;
-
+  
+  // Отрисовка слайдов
   var showSlide = function () {
     if (currentSlide > 4) {
       currentSlide = 0;
@@ -16,6 +17,7 @@
     dots[currentSlide].classList.add('slider__dot--active');
   };
   
+  // Тогглы назад/вперед
   next.addEventListener('click', function () {
     slides[currentSlide].classList.remove('slider__item--show');
     dots[currentSlide].classList.remove('slider__dot--active');
@@ -30,6 +32,7 @@
     showSlide(currentSlide);
   });
   
+  // Тогглы, точки
   var dotsArray = [];
   for (var i = 0; i < dots.length; i++){
     dotsArray.push(dots[i]);
@@ -41,22 +44,28 @@
     });
   };
   
+  // Тач для телефонов
+  var clientWidth = document.body.clientWidth;
+  
   for (var j = 0; j < slides.length; j++) {
     slides[j].addEventListener('touchstart', function (evt) {
-      pozX = evt.changedTouches[0].pageX;
-      var width = document.body.clientWidth;
+      pozXStart = evt.changedTouches[0].pageX;
+    });
+        
+    slides[j].addEventListener('touchend', function (evt) {
+      pozXEnd = evt.changedTouches[0].pageX;
       
-      if (pozX > width/2) {
+      if (pozXStart > clientWidth / 2) {
         slides[currentSlide].classList.remove('slider__item--show');
         dots[currentSlide].classList.remove('slider__dot--active');
         currentSlide++;
-        showSlide(currentSlide);
       } else {
         slides[currentSlide].classList.remove('slider__item--show');
         dots[currentSlide].classList.remove('slider__dot--active');
         currentSlide--;
-        showSlide(currentSlide);
       }
-    })
+      
+      showSlide(currentSlide);
+    });
   }
 })();

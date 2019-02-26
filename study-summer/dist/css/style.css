@@ -1027,6 +1027,7 @@ body {
     background-color: gray;
     cursor: not-allowed; }
     .programs__load:disabled:hover, .programs__load:disabled:focus {
+      box-shadow: none;
       background-color: gray;
       -webkit-transform: translateY(0);
               transform: translateY(0); }

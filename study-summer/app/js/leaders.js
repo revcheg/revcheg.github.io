@@ -5,120 +5,35 @@
   var next = document.querySelector('.leaders__button--next');
   var dots = document.querySelectorAll('.leaders__dots');
   
-  var currentSlide = 0;
-  var currentPosition = '0%';
+  var currentPosition = 0;
+  var possibleSlide = 0;
   var clientWidth = document.body.clientWidth;
   
+  if (clientWidth <= 768) {
+    possibleSlide = 11;
+  } else if (clientWidth > 768 && clientWidth < 1210) {
+    possibleSlide = 5;
+  } else if (clientWidth >= 1210) {
+    possibleSlide = 2;
+  }
+  
   var showSlide = function () {
-    if (clientWidth > 1210) {
-      switch (currentSlide) {
-        case 0:
-          currentPosition = '0%';
-          break;
-        case 1:
-          currentPosition = '-100%';
-          break;
-        case 2:
-          currentPosition = '-200%';
-          break;
-        default:
-          if (currentSlide > 2) {
-            currentPosition = '0%';
-            currentSlide = 0;
-          } else if (currentSlide < 0) {
-            currentPosition = '-200%';
-            currentSlide = 2;
-          }
-      }
-    } else if (clientWidth > 768) {
-      switch (currentSlide) {
-        case 0:
-          currentPosition = '0%';
-          break;
-        case 1:
-          currentPosition = '-100%';
-          break;
-        case 2:
-          currentPosition = '-200%';
-          break;
-        case 3:
-          currentPosition = '-300%';
-          break;
-        case 4:
-          currentPosition = '-400%';
-          break;
-        case 5:
-          currentPosition = '-500%';
-          break;
-        default:
-          if (currentSlide > 5) {
-            currentPosition = '0%';
-            currentSlide = 0;
-          } else if (currentSlide < 0) {
-            currentPosition = '-500%';
-            currentSlide = 5;
-          }
-      }
-    } else if (clientWidth < 768) {
-      switch (currentSlide) {
-        case 0:
-          currentPosition = '0%';
-          break;
-        case 1:
-          currentPosition = '-100%';
-          break;
-        case 2:
-          currentPosition = '-200%';
-          break;
-        case 3:
-          currentPosition = '-300%';
-          break;
-        case 4:
-          currentPosition = '-400%';
-          break;
-        case 5:
-          currentPosition = '-500%';
-          break;
-        case 6:
-          currentPosition = '-600%';
-          break;
-        case 7:
-          currentPosition = '-700%';
-          break;
-        case 8:
-          currentPosition = '-800%';
-          break;
-        case 9:
-          currentPosition = '-900%';
-          break;
-        case 10:
-          currentPosition = '-1000%';
-          break;
-        case 11:
-          currentPosition = '-1100%';
-          break;
-        default:
-          if (currentSlide > 11) {
-            currentPosition = '0%';
-            currentSlide = 0;
-          } else if (currentSlide < 0) {
-            currentPosition = '-1100%';
-            currentSlide = 11;
-          }
-      }
+    if (currentPosition > possibleSlide) {
+      currentPosition = 0;
+    } else if (currentPosition < 0) {
+      currentPosition = possibleSlide;
     }
-    
-    list.style.left = currentPosition;
+    list.style.left = '-' + currentPosition * 100 + '%';
   };
   
   prev.addEventListener('click', function () {
-    currentSlide--;
-    showSlide(currentSlide);
+    currentPosition--;
+    showSlide(currentPosition);
   });
   
   next.addEventListener('click', function () {
-    currentSlide++;
-    showSlide(currentSlide);
+    currentPosition++;
+    showSlide(currentPosition);
   });
   
   // var dotsCounter;
@@ -146,15 +61,26 @@
   
   for (var j = 0; j < item.length; j++) {
     item[j].addEventListener('touchstart', function (evt) {
-      pozX = evt.changedTouches[0].pageX;
-      
-      if (pozX > clientWidth/2) {
-        currentSlide++;
-        showSlide(currentSlide);
+      pozXStart = evt.changedTouches[0].pageX;
+    });
+    
+    item[j].addEventListener('touchmove', function (evt) {
+      if (pozXStart > clientWidth / 2) {
+        list.style.left = '-' + currentPosition * 100 - 30 + '%';
       } else {
-        currentSlide--;
-        showSlide(currentSlide);
+        list.style.left = '-' + currentPosition * 100 - '-30' + '%';
       }
-    })
+    });
+    
+    item[j].addEventListener('touchend', function (evt) {
+      pozXEnd = evt.changedTouches[0].pageX;
+      
+      if (pozXStart > clientWidth / 2) {
+        currentPosition++;
+      } else {
+        currentPosition--;
+      }
+      showSlide(currentPosition);
+    });
   }
 })();

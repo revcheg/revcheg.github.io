@@ -94,7 +94,6 @@
   });
   
   popupImg.addEventListener('touchmove', function (evt) {
-    
     if (pozXStart > clientWidth / 2) {
       popup.style.left = '40%';
     } else {
