@@ -113,27 +113,25 @@ body {
   font-size: 18px; }
 
 @media screen and (max-width: 1210px) {
+  .title {
+    background: url("../img/title-bg.jpg") no-repeat right/cover; }
   .title__content {
-    width: 50%; }
-  .title__heading {
-    font-size: 35px; }
-  .title__subheading {
-    font-size: 25px; } }
+    width: auto; } }
 
 @media screen and (max-width: 768px) {
   .title {
     padding: 10px 0 0 0;
     background: none; }
-  .title__content {
-    width: auto; }
   .title__heading,
   .title__subheading {
     text-align: center; }
   .title__heading {
-    font-size: 27px;
-    line-height: 30px; }
+    font-size: 30px; }
+    .title__heading--big {
+      padding-left: 0;
+      font-size: 40px; }
   .title__subheading {
-    font-size: 20px; } }
+    width: auto; } }
 
 .button {
   display: block;
