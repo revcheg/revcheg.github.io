@@ -145,6 +145,10 @@
 }
 
 @media screen and ($mobile-widths) {
+  .photo {
+    padding-top: 50px;
+  }
+  
   .photo__title,
   .photo__subtitle {
     text-align: center;

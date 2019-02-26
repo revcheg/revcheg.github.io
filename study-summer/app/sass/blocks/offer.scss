@@ -84,6 +84,10 @@
 }
 
 @media screen and ($mobile-widths) {
+  .offer {
+    margin-bottom: 0;
+  }
+  
   .offer__wrapper {
     align-items: center;
   }

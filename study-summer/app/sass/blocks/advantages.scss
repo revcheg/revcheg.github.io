@@ -217,6 +217,10 @@
 }
 
 @media screen and ($mobile-widths) {
+  .advantages {
+    padding-top: 50px;
+  }
+  
   .advantages__wrapper {
     margin-bottom: 50px;
     

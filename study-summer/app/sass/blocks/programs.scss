@@ -303,7 +303,8 @@
 
 @media screen and ($mobile-widths) {
   .programs {
-    margin-bottom: 50px;
+    margin-bottom: 0;
+    padding-top: 50px;
   }
   
   .programs__wrapper {

@@ -578,7 +578,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .features {
-    margin-bottom: 50px; }
+    margin-bottom: 0; }
   .features__item {
     box-sizing: border-box;
     width: 100%;
@@ -732,6 +732,8 @@ body {
     width: 95%; } }
 
 @media screen and (max-width: 768px) {
+  .advantages {
+    padding-top: 50px; }
   .advantages__wrapper {
     margin-bottom: 50px; }
     .advantages__wrapper--reverse {
@@ -809,6 +811,8 @@ body {
     align-self: center; } }
 
 @media screen and (max-width: 768px) {
+  .offer {
+    margin-bottom: 0; }
   .offer__wrapper {
     align-items: center; }
   .offer__title,
@@ -1043,7 +1047,8 @@ body {
 
 @media screen and (max-width: 768px) {
   .programs {
-    margin-bottom: 50px; }
+    margin-bottom: 0;
+    padding-top: 50px; }
   .programs__wrapper {
     flex-direction: column;
     margin-bottom: 20px; }
@@ -1210,7 +1215,8 @@ body {
 
 @media screen and (max-width: 768px) {
   .leaders {
-    margin-bottom: 50px; }
+    margin-bottom: 0;
+    padding-top: 50px; }
   .leaders__wrapper {
     flex-direction: column;
     margin-bottom: 20px; }
@@ -1331,7 +1337,8 @@ body {
 
 @media screen and (max-width: 768px) {
   .geography {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    padding-top: 50px; }
   .geography__title {
     margin-bottom: 30px;
     text-align: center; }
@@ -1516,7 +1523,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .reviews {
-    margin-bottom: 50px; }
+    margin-bottom: 0; }
   .reviews__wrapper {
     flex-direction: column;
     margin-bottom: 20px; }
@@ -1658,6 +1665,8 @@ body {
     font-size: 22px; } }
 
 @media screen and (max-width: 768px) {
+  .photo {
+    padding-top: 50px; }
   .photo__title,
   .photo__subtitle {
     text-align: center; }
