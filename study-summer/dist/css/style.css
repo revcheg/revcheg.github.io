@@ -696,7 +696,7 @@ body {
   transition: 0.3s;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 1; }
+  z-index: 6; }
   .advantages__media--hide {
     opacity: 0;
     visibility: hidden; }
@@ -1717,8 +1717,10 @@ body {
     margin-bottom: 0; }
   .photo__item {
     width: 100%;
-    height: auto;
-    margin-right: 0; }
+    height: 100%;
+    margin-top: 3px;
+    margin-right: 0;
+    margin-bottom: 3px; }
     .photo__item::before, .photo__item::after {
       display: none; }
   .photo__img {
@@ -1726,7 +1728,8 @@ body {
     width: 90%;
     max-width: 395px;
     min-width: 300px;
-    margin: auto; }
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); }
   .photo__call {
     font-size: 20px; }
   .photo__hashtag {
@@ -1798,7 +1801,7 @@ body {
   transition: 0.3s;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  z-index: 2; }
+  z-index: 6; }
   .popup--hide {
     opacity: 0;
     -webkit-transform: translate(-50%, -50%) scale(0.7);
@@ -1822,17 +1825,26 @@ body {
   font-size: 0;
   border: none;
   background-color: transparent;
+  background-image: url("../img/svg/arrow-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   cursor: pointer;
   outline: none;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
   .popup__control--prev {
     left: -50px; }
-  .popup__control--next {
-    right: -50px; }
   .popup__control:active {
     -webkit-transform: translateY(-50%) scale(1.05);
             transform: translateY(-50%) scale(1.05); }
+  .popup__control--next {
+    right: -50px;
+    -webkit-transform: translateY(-50%) rotate(180deg);
+            transform: translateY(-50%) rotate(180deg); }
+    .popup__control--next:active {
+      -webkit-transform: translateY(-50%) rotate(180deg) scale(1.05);
+              transform: translateY(-50%) rotate(180deg) scale(1.05); }
 
 .popup__overlay {
   position: fixed;
@@ -1847,7 +1859,7 @@ body {
   cursor: pointer;
   opacity: 0.8;
   transition: 0.3s;
-  z-index: 1; }
+  z-index: 5; }
   .popup__overlay--hide {
     opacity: 0;
     visibility: hidden; }
@@ -1855,18 +1867,8 @@ body {
 @media screen and (max-width: 1210px) {
   .popup {
     width: 95%;
-    height: 600px; }
-  .popup__control {
-    top: -50px; }
-    .popup__control--prev {
-      left: 42%; }
-    .popup__control--next {
-      right: 42%; } }
-
-@media screen and (max-width: 768px) {
-  .popup {
-    height: 400px; }
+    height: auto; }
   .popup__control--prev {
-    left: 33%; }
+    left: 20px; }
   .popup__control--next {
-    right: 33%; } }
+    right: 20px; } }

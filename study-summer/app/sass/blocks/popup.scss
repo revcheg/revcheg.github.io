@@ -5,14 +5,12 @@
   width: 1080px;
   height: 800px;
   transition: 0.3s;
-  transform: translate(-50%, -50%)
-             scale(1);
-  z-index: 2;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 6;
   
   &--hide {
     opacity: 0;
-    transform: translate(-50%, -50%)
-               scale(0.7);
+    transform: translate(-50%, -50%) scale(0.7);
     visibility: hidden;
   }
 }
@@ -34,6 +32,10 @@
   font-size: 0;
   border: none;
   background-color: transparent;
+  background-image: url('../img/svg/arrow-white.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   cursor: pointer;
   outline: none;
   transform: translateY(-50%);
@@ -41,14 +43,18 @@
   &--prev {
     left: -50px;
   }
+
+  &:active {
+    transform: translateY(-50%) scale(1.05);
+  }
   
   &--next {
     right: -50px;
-  }
-  
-  &:active {
-    transform: translateY(-50%)
-               scale(1.05);
+    transform: translateY(-50%) rotate(180deg);
+    
+    &:active {
+      transform: translateY(-50%) rotate(180deg) scale(1.05);
+    }
   }
 }
 
@@ -65,7 +71,7 @@
   cursor: pointer;
   opacity: 0.8;
   transition: 0.3s;
-  z-index: 1;
+  z-index: 5;
   
   &--hide {
     opacity: 0;
@@ -76,35 +82,17 @@
 @media screen and ($tablet-widths) {
   .popup {
     width: 95%;
-    height: 600px;
-  }
-  
-  .popup__control {
-    top: -50px;
-    
-    &--prev {
-      left: 42%;
-    }
-    
-    &--next {
-      right: 42%;
-    }
-  }
-}
-
-@media screen and ($mobile-widths) {
-  .popup {
-    height: 400px;
+    height: auto;
   }
   
   .popup__control {
     
     &--prev {
-      left: 33%;
+      left: 20px;
     }
     
     &--next {
-      right: 33%;
+      right: 20px;
     }
   }
 }
