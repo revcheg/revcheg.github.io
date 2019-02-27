@@ -3,16 +3,16 @@
   "short_name": "SUMMER.STUDY.UA",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "/favicon.ico",
       "sizes": "16x16 32x32 64x64"
     },
     {
-      "src": "apple-touch-icon.png",
+      "src": "/apple-touch-icon.png",
 			"sizes": "180x180",
 			"type": "image/png"
     },
     {
-      "src": "img/favicon/favicon.svg",
+      "src": "/img/favicon/favicon.svg",
       "sizes": "any",
       "type": "image/svg"
     }
