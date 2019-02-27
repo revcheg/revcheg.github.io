@@ -1,16 +1,21 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "SUMMER.STUDY.UA лето 2019",
+  "short_name": "SUMMER.STUDY.UA",
   "icons": [
     {
-      "src": "https://revcheg.github.io/study-summer/dist/img/favicon/android-chrome-192x192.png",
+      "src": "/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://revcheg.github.io/study-summer/dist/img/favicon/android-chrome-384x384.png",
+      "src": "/android-chrome-384x384.png",
       "sizes": "384x384",
       "type": "image/png"
+    },
+    {
+      "src": "img/favicon/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg"
     }
   ],
   "theme_color": "#6A7EFC",
