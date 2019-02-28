@@ -5,16 +5,6 @@
     {
       "src": "favicon.ico",
       "sizes": "16x16 32x32 64x64"
-    },
-    {
-      "src": "apple-touch-icon.png",
-			"sizes": "350x350",
-			"type": "image/png"
-    },
-    {
-      "src": "img/favicon/favicon.svg",
-			"sizes": "any",
-			"type": "image/svg"
     }
   ],
   "theme_color": "#6a7efc",
