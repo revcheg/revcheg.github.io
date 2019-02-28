@@ -3,11 +3,11 @@
   "short_name": "summer",
   "icons": [
     {
-      "src": "study-summer/dist/favicon.ico",
+      "src": "favicon.ico",
       "sizes": "16x16 32x32 64x64"
     },
     {
-      "src": "/apple-touch-icon.png",
+      "src": "apple-touch-icon.png",
 			"sizes": "350x350",
 			"type": "image/png"
     },
