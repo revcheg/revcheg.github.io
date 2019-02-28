@@ -1599,11 +1599,6 @@ body {
     padding-left: 20px;
     background-image: none; } }
 
-.form {
-  position: fixed;
-  top: 50%;
-  z-index: 888888888; }
-
 .geography {
   margin-bottom: 70px; }
 
