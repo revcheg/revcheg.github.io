@@ -3,7 +3,7 @@
   "short_name": "summer",
   "icons": [
     {
-      "src": "/favicon.ico",
+      "src": "study-summer/dist/favicon.ico",
       "sizes": "16x16 32x32 64x64"
     },
     {
