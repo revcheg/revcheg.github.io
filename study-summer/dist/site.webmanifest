@@ -3,8 +3,9 @@
   "short_name": "summer",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "16x16 32x32 64x64"
+      "src": "img/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "theme_color": "#6a7efc",
