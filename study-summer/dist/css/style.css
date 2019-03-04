@@ -1133,7 +1133,7 @@ body {
   left: 0px;
   display: flex;
   justify-content: space-between;
-  width: 300%;
+  width: 200%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1162,16 +1162,16 @@ body {
   font-weight: 500; }
 
 .leaders__position {
-  color: #6A7EFC;
-  font-size: 18px;
-  font-weight: 500; }
+  color: #292F48;
+  font-size: 15px;
+  font-weight: normal; }
 
 .leaders__text {
   margin-top: 10px;
   margin-bottom: 0;
   padding-right: 25px;
   padding-left: 25px;
-  color: #292F48;
+  color: #6A7EFC;
   font-size: 14px;
   font-weight: normal; }
 
@@ -1206,7 +1206,7 @@ body {
   .leaders__slider {
     height: 400px; }
   .leaders__list {
-    width: 600%; }
+    width: 400%; }
   .leaders__item {
     width: 320px;
     margin: 3px auto; } }
@@ -1225,7 +1225,7 @@ body {
   .leaders__slider {
     height: 370px; }
   .leaders__list {
-    width: 1200%;
+    width: 800%;
     transition: 0.5s; }
   .leaders__item {
     width: 285px; } }
