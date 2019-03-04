@@ -14,7 +14,7 @@ var programsData = [
     alt: 'CATS College London Bloomsbury',
     name: 'CATS College London Bloomsbury',
     location: 'Лондон',
-    date: '<a href="http://summer.study.ua/trip/look/58" target="_blank">4.08 - 18.08 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/58" target="_blank">4.08 - 25.08 (3 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/58" target="_blank">04.08 - 18.08 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/58" target="_blank">04.08 - 25.08 (3 нед.)</a>',
     cost: '$3700 (2 нед.)<br>$4770 (3 нед.)'
   },
   {
@@ -23,7 +23,7 @@ var programsData = [
     alt: 'Royal Holloway, University of London',
     name: 'Royal Holloway, University of London',
     location: 'Лондон',
-    date: '<a href="http://summer.study.ua/trip/look/38" target="_blank">1.07 - 15.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/23" target="_blank">15.07 - 29.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/22" target="_blank">29.07 - 12.08 (2 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/38" target="_blank">01.07 - 15.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/23" target="_blank">15.07 - 29.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/22" target="_blank">29.07 - 12.08 (2 нед.)</a>',
     cost: '$3100 (2 нед.)'
   },
   {
@@ -32,7 +32,7 @@ var programsData = [
     alt: 'Royal Holloway, University of London + Tottenham Hotspur Football',
     name: 'Royal Holloway, University of London + Tottenham Hotspur Football',
     location: 'Лондон',
-    date: '<a href="http://summer.study.ua/trip/look/35" target="_blank">1.07 - 15.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1093" target="_blank">15.07 - 29.07 (2 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/35" target="_blank">01.07 - 15.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1093" target="_blank">15.07 - 29.07 (2 нед.)</a>',
     cost: '$3900 (2 нед.)'
   },
   {
@@ -59,7 +59,7 @@ var programsData = [
     alt: 'Brighton College',
     name: 'Brighton College',
     location: 'Брайтон',
-    date: '<a href="http://summer.study.ua/trip/look/1104" target="_blank">3.07 - 17.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1105" target="_blank">17.07 - 31.07 (2 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1104" target="_blank">03.07 - 17.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1105" target="_blank">17.07 - 31.07 (2 нед.)</a>',
     cost: '$3450 (2 нед.)'
   },
   {
@@ -68,7 +68,7 @@ var programsData = [
     alt: 'Wellington College',
     name: 'Wellington College',
     location: 'Виндзор',
-    date: '<a href="http://summer.study.ua/trip/look/1111" target="_blank">2.07 - 16.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1112" target="_blank">16.07 - 30.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1113" target="_blank">30.07 - 13.08 (2 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1111" target="_blank">02.07 - 16.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1112" target="_blank">16.07 - 30.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1113" target="_blank">30.07 - 13.08 (2 нед.)</a>',
     cost: '$3450 (2 нед.)'
   },
   {
@@ -77,7 +77,7 @@ var programsData = [
     alt: 'Bradfield College',
     name: 'Bradfield College',
     location: 'Рединг',
-    date: '<a href="http://summer.study.ua/trip/look/1109" target="_blank">2.07 - 16.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1109" target="_blank">30.07 - 13.08 (2 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1109" target="_blank">02.07 - 16.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1109" target="_blank">30.07 - 13.08 (2 нед.)</a>',
     cost: '$3200 (2 нед.)'
   },
   {
@@ -104,7 +104,7 @@ var programsData = [
     alt: 'Oxford School of English',
     name: 'Oxford School of English',
     location: 'Оксфорд',
-    date: '<a href="http://summer.study.ua/trip/look/16" target="_blank">5.07 - 19.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/4" target="_blank">19.07 - 09.08 (3 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/16" target="_blank">05.07 - 19.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/4" target="_blank">19.07 - 09.08 (3 нед.)</a>',
     cost: '$3000 (2 нед.)<br>$3600 (3 нед.)'
   },
   {
@@ -113,7 +113,7 @@ var programsData = [
     alt: 'Kings Oxford academic summer',
     name: 'Kings Oxford academic summer',
     location: 'Оксфорд',
-    date: '<a href="http://summer.study.ua/trip/look/1114" target="_blank">7.07 - 21.07 (2 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1114" target="_blank">07.07 - 21.07 (2 нед.)</a>',
     cost: '$4000 (2 нед.)'
   },
   {
@@ -122,7 +122,7 @@ var programsData = [
     alt: 'Abbey DLD Academic summer',
     name: 'Abbey DLD Academic summer',
     location: 'Лондон',
-    date: '<a href="http://summer.study.ua/trip/look/65" target="_blank">6.07 - 20.07 (2 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/65" target="_blank">06.07 - 20.07 (2 нед.)</a>',
     cost: '$4700 (2 нед.)'
   },
   {
@@ -131,7 +131,7 @@ var programsData = [
     alt: 'Abbey DLD Academic summer Medical School',
     name: 'Abbey DLD Academic summer Medical School',
     location: 'Лондон',
-    date: '<a href="http://summer.study.ua/trip/look/1098" target="_blank">6.07 - 20.07 (2 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1098" target="_blank">06.07 - 20.07 (2 нед.)</a>',
     cost: '$5000 (2 нед.)'
   },
   {

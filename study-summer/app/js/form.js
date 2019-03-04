@@ -1,5 +1,5 @@
 (function () {
-  var phone = document.querySelector('.phone');
+  var phone = document.querySelector('.request__input--phone');
   var currentValue = phone.value;
   
   phone.addEventListener('focus', function () {
