@@ -99,8 +99,6 @@ body {
   margin: 0;
   padding: 0;
   list-style: none; }
-  .title__list:last-child {
-    opacity: 0.3; }
 
 .title__item {
   margin: 0 0 40px 0; }
@@ -494,12 +492,17 @@ body {
 .schedule {
   padding: 0 15px 40px 15px; }
 
+.schedule__call {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #3c3c3c;
+  font-size: 23px;
+  text-align: center; }
+
 .schedule__list {
   margin: 0 0 50px 0;
   padding: 0;
   list-style: none; }
-  .schedule__list:last-child {
-    opacity: 0.3; }
   .schedule__list:last-of-type {
     margin: 0; }
 

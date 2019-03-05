@@ -1,0 +1,28 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  &--unjustify {
+    justify-content: flex-start;
+  }
+  
+  &--wrap {
+    flex-wrap: wrap;
+  }
+  
+  &--unalign {
+    align-items: flex-end;
+  }
+}
+
+@media screen and ($tablet-widths) {}
+
+@media screen and ($mobile-widths) {
+  .flex {
+    
+    &--column {
+      flex-direction: column;
+    }
+  }
+}

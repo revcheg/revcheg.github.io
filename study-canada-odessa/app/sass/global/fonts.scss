@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Pacifico';
+  src: local('Pacifico Regular'), local('Pacifico-Regular'),
+    url('../fonts/Pacifico-Regular.woff2') format('woff2'),
+    url('../fonts/Pacifico-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: local('Circe Bold'), local('Circe-Bold'),
+    url('../fonts/Circe-Bold.woff2') format('woff2'),
+    url('../fonts/Circe-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: local('Circe'), local('Circe-Regular'),
+    url('../fonts/Circe-Regular.woff2') format('woff2'),
+    url('../fonts/Circe-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
