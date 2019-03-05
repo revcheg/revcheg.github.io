@@ -142,8 +142,8 @@
     <div class="about">
       <p class="about__text">Великобритания — самое популярное направление среди наших клиентов! И причина не в родине английского языка, а в том, что здесь предлагаются программы обучения и развлечений на любой вкус. Лето 2019 не станет исключением, ведь мы подготовили для вас <b>более 30 поездок в лучшие школы и университеты!</b> Выбирайте программу вашей мечты.</p>
       <picture class="about__picture">
-        <source srcset="https://img0.study.com.ua/summer_uk/map.webp" type="image/webp">
-        <img class="about__map" src="https://img0.study.com.ua/summer_uk/map.jpg" alt="Карта школ">
+        <source srcset="https://revcheg.github.io/study-summer/dist/img/map.webp" type="image/webp">
+        <img class="about__map" src="https://revcheg.github.io/study-summer/dist/img/map.jpg" alt="Карта школ">
       </picture>
     </div>
     <div class="gallery">
