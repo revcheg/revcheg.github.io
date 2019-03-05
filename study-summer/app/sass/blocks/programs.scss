@@ -68,6 +68,7 @@
 }
 
 .programs__item {
+  position: relative;
   width: 370px;
   height: 440px;
   margin-bottom: 30px;
@@ -86,6 +87,10 @@
     padding-right: 30px;
     padding-bottom: 15px;
     padding-left: 30px;
+    
+    .programs__full {
+      opacity: 0;
+    }
     
     .programs__figure {
       width: 40%;
@@ -140,6 +145,24 @@
       } 
     }
   }
+}
+
+.programs__full {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-top-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color: $red;
 }
 
 .programs__figure {

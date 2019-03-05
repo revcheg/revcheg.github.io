@@ -42,6 +42,9 @@
       } 
       
       var content = programsTemplate.cloneNode(true);
+      if (programsData[i].full) {
+        content.querySelector('.programs__full').style.display = 'block';
+      }
       content.querySelector('source').srcset = programsData[i].webp;
       content.querySelector('img').src = programsData[i].jpg;
       content.querySelector('img').alt = programsData[i].alt;

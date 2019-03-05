@@ -262,6 +262,7 @@
 })();
 var programsData = [
   {
+    full: false,
     webp: 'img/program-1.webp',
     jpg: 'img/program-1.jpg',
     alt: 'Brunel University',
@@ -271,6 +272,7 @@ var programsData = [
     cost: '$4550 (3 нед.)'
   },
   {
+    full: false,
     webp: 'img/program-2.webp',
     jpg: 'img/program-2.jpg',
     alt: 'CATS College London Bloomsbury',
@@ -280,15 +282,17 @@ var programsData = [
     cost: '$3700 (2 нед.)<br>$4770 (3 нед.)'
   },
   {
+    full: false,
     webp: 'img/program-3.webp',
     jpg: 'img/program-3.jpg',
     alt: 'Royal Holloway, University of London',
     name: 'Royal Holloway, University of London',
     location: 'Лондон',
-    date: '<a href="http://summer.study.ua/trip/look/38" target="_blank">01.07 - 15.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/23" target="_blank">15.07 - 29.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/22" target="_blank">29.07 - 12.08 (2 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/23" target="_blank">15.07 - 29.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/22" target="_blank">29.07 - 12.08 (2 нед.)</a>',
     cost: '$3100 (2 нед.)'
   },
   {
+    full: false,
     webp: 'img/program-4.webp',
     jpg: 'img/program-4.jpg',
     alt: 'Royal Holloway, University of London + Tottenham Hotspur Football',
@@ -298,6 +302,7 @@ var programsData = [
     cost: '$3900 (2 нед.)'
   },
   {
+    full: false,
     webp: 'img/program-5.webp',
     jpg: 'img/program-5.jpg',
     alt: 'South Bank University',
@@ -307,6 +312,7 @@ var programsData = [
     cost: '$3500 (2 нед.)<br>$4500 (3 нед.)'
   },
   {
+    full: false,
     webp: 'img/program-6.webp',
     jpg: 'img/program-6.jpg',
     alt: 'Roedean School',
@@ -316,6 +322,7 @@ var programsData = [
     cost: '$3300 (2 нед.)'
   },
   {
+    full: false,
     webp: 'img/program-7.webp',
     jpg: 'img/program-7.jpg',
     alt: 'Brighton College',
@@ -325,15 +332,17 @@ var programsData = [
     cost: '$3450 (2 нед.)'
   },
   {
+    full: false,
     webp: 'img/program-8.webp',
     jpg: 'img/program-8.jpg',
     alt: 'Wellington College',
     name: 'Wellington College',
     location: 'Виндзор',
-    date: '<a href="http://summer.study.ua/trip/look/1111" target="_blank">02.07 - 16.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1112" target="_blank">16.07 - 30.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1113" target="_blank">30.07 - 13.08 (2 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1111" target="_blank">02.07 - 16.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1113" target="_blank">30.07 - 13.08 (2 нед.)</a>',
     cost: '$3450 (2 нед.)'
   },
   {
+    full: false,
     webp: 'img/program-9.webp',
     jpg: 'img/program-9.jpg',
     alt: 'Bradfield College',
@@ -343,6 +352,7 @@ var programsData = [
     cost: '$3200 (2 нед.)'
   },
   {
+    full: false,
     webp: 'img/program-10.webp',
     jpg: 'img/program-10.jpg',
     alt: 'Christ Hospital School',
@@ -352,6 +362,7 @@ var programsData = [
     cost: '$3000 (2 нед.)'
   },
   {
+    full: false,
     webp: 'img/program-11.webp',
     jpg: 'img/program-11.jpg',
     alt: 'Queen Ethelburga’s College + Edinburgh trip',
@@ -361,15 +372,17 @@ var programsData = [
     cost: '$3600 (2 нед.)'
   },
   {
+    full: false,
     webp: 'img/program-12.webp',
     jpg: 'img/program-12.jpg',
     alt: 'Oxford School of English',
     name: 'Oxford School of English',
     location: 'Оксфорд',
-    date: '<a href="http://summer.study.ua/trip/look/16" target="_blank">05.07 - 19.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/4" target="_blank">19.07 - 09.08 (3 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/16" target="_blank">05.07 - 19.07 (2 нед.)</a>',
     cost: '$3000 (2 нед.)<br>$3600 (3 нед.)'
   },
   {
+    full: false,
     webp: 'img/program-13.webp',
     jpg: 'img/program-13.jpg',
     alt: 'Kings Oxford academic summer',
@@ -379,6 +392,7 @@ var programsData = [
     cost: '$4000 (2 нед.)'
   },
   {
+    full: false,
     webp: 'img/program-14.webp',
     jpg: 'img/program-14.jpg',
     alt: 'Abbey DLD Academic summer',
@@ -388,6 +402,7 @@ var programsData = [
     cost: '$4700 (2 нед.)'
   },
   {
+    full: false,
     webp: 'img/program-15.webp',
     jpg: 'img/program-15.jpg',
     alt: 'Abbey DLD Academic summer Medical School',
@@ -397,6 +412,7 @@ var programsData = [
     cost: '$5000 (2 нед.)'
   },
   {
+    full: false,
     webp: 'img/program-16.webp',
     jpg: 'img/program-16.jpg',
     alt: 'High School Immersion with British students',
@@ -477,6 +493,9 @@ var programsData = [
       } 
       
       var content = programsTemplate.cloneNode(true);
+      if (programsData[i].full) {
+        content.querySelector('.programs__full').style.display = 'block';
+      }
       content.querySelector('source').srcset = programsData[i].webp;
       content.querySelector('img').src = programsData[i].jpg;
       content.querySelector('img').alt = programsData[i].alt;
