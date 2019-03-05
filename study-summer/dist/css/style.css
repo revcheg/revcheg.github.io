@@ -2005,3 +2005,93 @@ body {
     left: 20px; }
   .popup__control--next {
     right: 20px; } }
+
+.thankyou {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #798bfc; }
+
+.thankyou__content {
+  box-sizing: border-box;
+  width: 770px;
+  border-radius: 7px;
+  background-color: #fff; }
+
+.thankyou__header {
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-image: url("../img/thankyou-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover; }
+
+.thankyou__title {
+  margin: 0;
+  padding-top: 95px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  background-image: url("../img/svg/thankyou.svg");
+  background-repeat: no-repeat;
+  background-position: top; }
+
+.thankyou__text {
+  padding-right: 100px;
+  padding-left: 100px;
+  color: #292F48;
+  font-size: 18px;
+  font-weight: normal; }
+  .thankyou__text--bold {
+    font-size: 20px;
+    font-weight: 500; }
+
+.thankyou__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-right: 100px;
+  padding-left: 100px; }
+
+.thankyou__contact {
+  margin: 0;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-position: top left; }
+  .thankyou__contact:nth-child(1) {
+    background-image: url("../img/svg/address-thankyou.svg"); }
+  .thankyou__contact:nth-child(2) {
+    padding-left: 35px;
+    background-image: url("../img/svg/tel-thankyou.svg"); }
+
+.thankyou__link {
+  display: block;
+  color: #292F48;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  transition: 0.3s; }
+  .thankyou__link:hover, .thankyou__link:focus {
+    color: #6A7EFC; }
+
+.thankyou__button {
+  box-sizing: border-box;
+  display: block;
+  width: 120px;
+  margin: auto;
+  margin-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 40px;
+  background-color: #6A7EFC; }
