@@ -2115,3 +2115,33 @@ body {
   text-decoration: none;
   border-radius: 40px;
   background-color: #6A7EFC; }
+
+@media screen and (max-width: 1210px) {
+  .thankyou__content {
+    width: 750px; } }
+
+@media screen and (max-width: 768px) {
+  .thankyou__content {
+    width: 95%; }
+  .thankyou__title {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 20px; }
+  .thankyou__text {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 16px;
+    text-align: center; }
+  .thankyou__wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .thankyou__contact {
+    margin-bottom: 30px;
+    padding-top: 35px;
+    padding-left: 0;
+    background-position: top; }
+    .thankyou__contact:nth-child(2) {
+      margin-bottom: 0;
+      padding-left: 0; } }

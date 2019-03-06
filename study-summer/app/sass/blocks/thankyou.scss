@@ -105,3 +105,47 @@
   border-radius: 40px;
   background-color: $blue;
 }
+
+@media screen and ($tablet-widths) {
+  .thankyou__content {
+    width: 750px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .thankyou__content {
+    width: 95%;
+  }
+  
+  .thankyou__title {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 20px;
+  }
+  
+  .thankyou__text {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .thankyou__wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .thankyou__contact {
+    margin-bottom: 30px;
+    padding-top: 35px;
+    padding-left: 0;
+    background-position: top;
+    
+    &:nth-child(2) {
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+  }
+}
