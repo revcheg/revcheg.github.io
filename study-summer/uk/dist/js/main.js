@@ -2,6 +2,7 @@
   var phone = document.querySelector('.request__input--phone');
   var currentValue = phone.value;
   
+  // Custom mask
   phone.addEventListener('focus', function () {
     phone.value = '+38 (';
   });
@@ -23,8 +24,8 @@
     } 
   });
   
+  // Decorate
   var inputs = document.querySelectorAll('.request__input');
-  
   for (var i = 0; i < inputs.length; i++) {
     inputs[i].addEventListener('focus', function () {
       var label = this.nextElementSibling;

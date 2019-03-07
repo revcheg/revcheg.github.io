@@ -53,31 +53,6 @@
   font-weight: normal;
 }
 
-.advantages__button {
-  display: inline-block;
-  padding-top: 10px;
-  padding-right: 30px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  text-decoration: none;
-  border-radius: 43px;
-  background-color: $red;
-  outline: none;
-  transition: 0.3s;
-  
-  &:hover,
-  &:focus {
-    box-shadow: 0 0 10px 2px darken($red, 20%);
-  }
-  
-  &:active {
-    box-shadow: 0 0 10px 5px darken($red, 20%);
-  }
-}
-
 .advantages__text {
   color: $text;
   font-size: 22px;

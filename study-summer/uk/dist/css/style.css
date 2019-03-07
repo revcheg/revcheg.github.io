@@ -628,25 +628,6 @@ body {
   font-size: 16px;
   font-weight: normal; }
 
-.advantages__button {
-  display: inline-block;
-  padding-top: 10px;
-  padding-right: 30px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  text-decoration: none;
-  border-radius: 43px;
-  background-color: #FF3434;
-  outline: none;
-  transition: 0.3s; }
-  .advantages__button:hover, .advantages__button:focus {
-    box-shadow: 0 0 10px 2px #cd0000; }
-  .advantages__button:active {
-    box-shadow: 0 0 10px 5px #cd0000; }
-
 .advantages__text {
   color: #292F48;
   font-size: 22px;
@@ -795,27 +776,6 @@ body {
   text-align: center; }
   .offer__desc--big {
     font-size: 25px; }
-
-.offer__button {
-  box-sizing: border-box;
-  display: block;
-  width: 270px;
-  margin: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 43px;
-  background-color: #FF3434;
-  outline: none;
-  transition: 0.3s; }
-  .offer__button:hover, .offer__button:focus {
-    box-shadow: 0 0 10px 2px #cd0000; }
-  .offer__button:active {
-    box-shadow: 0 0 10px 5px #cd0000; }
 
 @media screen and (max-width: 1210px) {
   .offer__wrapper {
@@ -1067,27 +1027,6 @@ body {
       .programs__load:disabled:hover::before, .programs__load:disabled:focus::before {
         -webkit-transform: rotate(0);
                 transform: rotate(0); }
-
-.programs__select {
-  box-sizing: border-box;
-  display: block;
-  width: 270px;
-  margin: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 43px;
-  background-color: #FF3434;
-  outline: none;
-  transition: 0.3s; }
-  .programs__select:hover, .programs__select:focus {
-    box-shadow: 0 0 10px 2px #cd0000; }
-  .programs__select:active {
-    box-shadow: 0 0 10px 5px #cd0000; }
 
 @media screen and (max-width: 1210px) {
   .programs__wrapper {
@@ -1758,6 +1697,29 @@ body {
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover; }
+
+.request__select {
+  box-sizing: border-box;
+  display: block;
+  width: 270px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 43px;
+  background-color: #FF3434;
+  outline: none;
+  transition: 0.3s; }
+  .request__select--left {
+    margin: 0; }
+  .request__select:hover, .request__select:focus {
+    box-shadow: 0 0 10px 2px #cd0000; }
+  .request__select:active {
+    box-shadow: 0 0 10px 5px #cd0000; }
 
 @media screen and (max-width: 1210px) {
   .request__title {
