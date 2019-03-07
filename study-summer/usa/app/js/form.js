@@ -22,4 +22,13 @@
       phone.value = currentValue + '-';
     } 
   });
+  
+  var inputs = document.querySelectorAll('.request__input');
+  
+  for (var i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener('focus', function () {
+      var label = this.nextElementSibling;
+      label.classList.add('request__label--active');
+    });
+  }
 })();    

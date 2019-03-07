@@ -7,12 +7,9 @@
   if (document.body.clientWidth > 1210) {
     programsCounter = 3;
     programsIncrement = 3;
-  } else if (document.body.clientWidth > 768 && document.body.clientWidth < 1210) {
+  } else if (document.body.clientWidth < 1210) {
     programsCounter = 2;
     programsIncrement = 2;
-  } else if (document.body.clientWidth <= 768) {
-    programsCounter = 1;
-    programsIncrement = 1;
   }
   
   renderPrograms();

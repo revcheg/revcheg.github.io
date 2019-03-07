@@ -12,6 +12,7 @@
   width: 770px;
   margin-right: 30px;
   margin-left: auto;
+  padding-left: 15px;
 }
 
 .request__title {
@@ -42,11 +43,18 @@
 .request__label {
   position: absolute;
   top: 0;
+  left: 0;
   color: $text;
   font-size: 16px;
   font-weight: normal;
   cursor: pointer;
   transition: 0.3s;
+  
+  &--active {
+    top: -15px;
+    color: #6a7efc;
+    font-size: 12px;  
+  }
 }
 
 .request__input {
@@ -68,31 +76,12 @@
     resize: none;
   }
   
-  &:hover {
-    border-bottom: 1px solid $blue;
-    
-    + .request__label {
-      color: $blue;
-    }
-  }
-  
+  &:hover,
   &:focus {
     border-bottom: 1px solid $blue;
     
     + .request__label {
-      top: -15px;
       color: $blue;
-      font-size: 12px;
-    }
-  }
-  
-  &:valid {
-    border-bottom: 1px solid $blue;
-  
-    + .request__label {
-      top: -15px;
-      color: $blue;
-      font-size: 12px;
     }
   }
 }

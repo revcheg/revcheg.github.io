@@ -751,7 +751,8 @@ body {
 .offer__wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 30px; }
 
 .offer__title {
   margin: 0;
@@ -794,6 +795,27 @@ body {
   text-align: center; }
   .offer__desc--big {
     font-size: 25px; }
+
+.offer__button {
+  box-sizing: border-box;
+  display: block;
+  width: 270px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 43px;
+  background-color: #FF3434;
+  outline: none;
+  transition: 0.3s; }
+  .offer__button:hover, .offer__button:focus {
+    box-shadow: 0 0 10px 2px #cd0000; }
+  .offer__button:active {
+    box-shadow: 0 0 10px 5px #cd0000; }
 
 @media screen and (max-width: 1210px) {
   .offer__wrapper {
@@ -1002,6 +1024,7 @@ body {
   display: block;
   width: 250px;
   margin: auto;
+  margin-bottom: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -1044,6 +1067,27 @@ body {
       .programs__load:disabled:hover::before, .programs__load:disabled:focus::before {
         -webkit-transform: rotate(0);
                 transform: rotate(0); }
+
+.programs__select {
+  box-sizing: border-box;
+  display: block;
+  width: 270px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 43px;
+  background-color: #FF3434;
+  outline: none;
+  transition: 0.3s; }
+  .programs__select:hover, .programs__select:focus {
+    box-shadow: 0 0 10px 2px #cd0000; }
+  .programs__select:active {
+    box-shadow: 0 0 10px 5px #cd0000; }
 
 @media screen and (max-width: 1210px) {
   .programs__wrapper {
@@ -1627,7 +1671,8 @@ body {
 .request__column {
   width: 770px;
   margin-right: 30px;
-  margin-left: auto; }
+  margin-left: auto;
+  padding-left: 15px; }
 
 .request__title {
   margin: 0;
@@ -1653,11 +1698,16 @@ body {
 .request__label {
   position: absolute;
   top: 0;
+  left: 0;
   color: #292F48;
   font-size: 16px;
   font-weight: normal;
   cursor: pointer;
   transition: 0.3s; }
+  .request__label--active {
+    top: -15px;
+    color: #6a7efc;
+    font-size: 12px; }
 
 .request__input {
   box-sizing: border-box;
@@ -1675,22 +1725,10 @@ body {
   .request__input--text {
     height: 31px;
     resize: none; }
-  .request__input:hover {
+  .request__input:hover, .request__input:focus {
     border-bottom: 1px solid #6A7EFC; }
-    .request__input:hover + .request__label {
+    .request__input:hover + .request__label, .request__input:focus + .request__label {
       color: #6A7EFC; }
-  .request__input:focus {
-    border-bottom: 1px solid #6A7EFC; }
-    .request__input:focus + .request__label {
-      top: -15px;
-      color: #6A7EFC;
-      font-size: 12px; }
-  .request__input:valid {
-    border-bottom: 1px solid #6A7EFC; }
-    .request__input:valid + .request__label {
-      top: -15px;
-      color: #6A7EFC;
-      font-size: 12px; }
 
 .request__submit {
   align-self: center;

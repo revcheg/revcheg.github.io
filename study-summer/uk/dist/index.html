@@ -256,6 +256,7 @@
             </li>
           </ul>
         </div>
+        <a class="offer__button" href="#request">Подобрать программу</a>
       </div>
     </section>
     <section class="programs" id="programs">
@@ -271,6 +272,7 @@
           <!-- Generate content with programs-render.js, data in programs-data.js -->
         </ul>
         <button class="programs__load">Загрузить еще</button>
+        <a class="programs__select" href="#request">Подобрать программу</a>
       </div>
     </section>
     <section class="leaders" id="leaders">
@@ -534,7 +536,7 @@
         </div> -->
       </div>
     </section>
-    <section class="request">
+    <section class="request" id="request">
       <div class="request__wrapper">
         <div class="request__column">
           <h2 class="request__title">Оставьте заявку и получите индивидуальную консультацию</h2>
@@ -543,13 +545,13 @@
               <div class="request__group">
                 <input class="request__input" id="name" type="text" name="field885772" required>
                 <label class="request__label" for="name">
-                  Ваше имя
+                  Ваше имя *
                 </label>
               </div>
               <div class="request__group">
                 <input class="request__input" id="email" type="email" name="field885773" required>
                 <label class="request__label" for="email">
-                  E-mail
+                  E-mail *
                 </label>
               </div>
             </div>
@@ -557,13 +559,13 @@
               <div class="request__group">
                 <input class="request__input  request__input--phone" id="phone" type="tel" name="field885774" maxlength="18" required>
                 <label class="request__label" for="phone">
-                  Номер телефона
+                  Номер телефона *
                 </label>
               </div>
               <div class="request__group">
                 <textarea class="request__input  request__input--text" id="text" name="field885779"></textarea>
                 <label class="request__label" for="text">
-                  Дополнительная информация (необязательно)
+                  Дополнительная информация
                 </label>
               </div>
             </div>
@@ -579,7 +581,7 @@
       </div>
       <ul class="geography__list">
         <li class="geography__item">
-          <a class="geography__link" href="#" aria-label="Великобритания">
+          <a class="geography__link" aria-label="Великобритания">
             <figure class="geography__figure">
               <picture>
                 <source srcset="img/britain-bg.webp" type="image/webp">
@@ -630,7 +632,7 @@
           </a>
         </li>
         <li class="geography__item">
-          <a class="geography__link" href="#" aria-label="США">
+          <a class="geography__link" href="https://holidays.study.ua/usa" aria-label="США">
             <figure class="geography__figure">
               <picture>
                 <source srcset="img/usa-bg.webp" type="image/webp">
