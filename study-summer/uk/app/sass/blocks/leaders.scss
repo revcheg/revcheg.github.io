@@ -48,7 +48,7 @@
 
 .leaders__slider {
   position: relative;
-  height: 330px;
+  height: 350px;
   overflow: hidden;
 }
 
@@ -57,7 +57,7 @@
   left: 0px;
   display: flex;
   justify-content: space-between;
-  width: 200%;
+  width: 425%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -146,11 +146,11 @@
   }
   
   .leaders__slider {
-    height: 360px;
+    height: 380px;
   }
   
   .leaders__list {
-    width: 400%;
+    width: 850%;
   }
   
   .leaders__item {
@@ -177,11 +177,11 @@
   }
   
   .leaders__slider {
-    height: 340px;
+    height: 360px;
   }
   
   .leaders__list {
-    width: 800%;
+    width: 1700%;
     transition: 0.5s;
   }
   

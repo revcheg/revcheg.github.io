@@ -119,7 +119,7 @@
   }
   
   .geography__item {
-    margin-bottom: 10px;
+    flex-grow: 1;
     
     &:nth-child(1) {
       width: 49.5%;
@@ -177,7 +177,6 @@
   }
   
   .geography__item {
-    margin-bottom: 10px;
     
     &:nth-child(1) {
       width: 100%;
