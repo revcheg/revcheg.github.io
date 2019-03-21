@@ -1,0 +1,32 @@
+.request__button {
+  box-sizing: border-box;
+  display: block;
+  width: 185px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  background-color: $orange;
+  outline: none;
+  transition: 0.3s;
+  
+  &:hover,
+  &:focus {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.35);
+    background-color: darken($orange, 10%);
+  }
+  
+  &:active {
+    transform: scale(1.05);
+  }
+  
+  &--center {
+    margin: auto;
+  }
+}
