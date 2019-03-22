@@ -273,6 +273,7 @@
 var programsData = [
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/29',
     webp: 'img/program-1.webp',
     jpg: 'img/program-1.jpg',
     alt: 'Brunel University',
@@ -283,6 +284,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/58',
     webp: 'img/program-2.webp',
     jpg: 'img/program-2.jpg',
     alt: 'CATS College London Bloomsbury',
@@ -293,16 +295,18 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/22',
     webp: 'img/program-3.webp',
     jpg: 'img/program-3.jpg',
     alt: 'Royal Holloway, University of London',
     name: 'Royal Holloway, University of London',
     location: 'Лондон',
-    date: '<a href="http://summer.study.ua/trip/look/23" target="_blank">15.07 - 29.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/22" target="_blank">29.07 - 12.08 (2 нед.)</a>',
-    cost: '$3100 (2 нед.)'
+    date: '<a href="http://summer.study.ua/trip/look/22" target="_blank">29.07 - 12.08 (2 нед.)</a>',
+    cost: '$3300 (2 нед.)'
   },
   {
-    full: false,
+    full: true,
+    href: 'http://summer.study.ua/trip/look/35',
     webp: 'img/program-4.webp',
     jpg: 'img/program-4.jpg',
     alt: 'Royal Holloway, University of London + Tottenham Hotspur Football',
@@ -313,6 +317,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1083',
     webp: 'img/program-5.webp',
     jpg: 'img/program-5.jpg',
     alt: 'South Bank University',
@@ -323,6 +328,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1107',
     webp: 'img/program-6.webp',
     jpg: 'img/program-6.jpg',
     alt: 'Roedean School',
@@ -333,6 +339,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1105',
     webp: 'img/program-7.webp',
     jpg: 'img/program-7.jpg',
     alt: 'Brighton College',
@@ -343,6 +350,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1111',
     webp: 'img/program-8.webp',
     jpg: 'img/program-8.jpg',
     alt: 'Wellington College',
@@ -353,6 +361,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1109',
     webp: 'img/program-9.webp',
     jpg: 'img/program-9.jpg',
     alt: 'Bradfield College',
@@ -363,6 +372,7 @@ var programsData = [
   },
   {
     full: false,
+    href: '',
     webp: 'img/program-10.webp',
     jpg: 'img/program-10.jpg',
     alt: 'Christ Hospital School',
@@ -373,6 +383,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/34',
     webp: 'img/program-11.webp',
     jpg: 'img/program-11.jpg',
     alt: 'Queen Ethelburga’s College + Edinburgh trip',
@@ -383,16 +394,18 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/16',
     webp: 'img/program-12.webp',
     jpg: 'img/program-12.jpg',
     alt: 'Oxford School of English',
     name: 'Oxford School of English',
     location: 'Оксфорд',
-    date: '<a href="http://summer.study.ua/trip/look/16" target="_blank">05.07 - 19.07 (2 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/16" target="_blank">05.07 - 19.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/4" target="_blank">28.06 - 19.07 (3 нед.)</a>',
     cost: '$3000 (2 нед.)<br>$3600 (3 нед.)'
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1114',
     webp: 'img/program-13.webp',
     jpg: 'img/program-13.jpg',
     alt: 'Kings Oxford academic summer',
@@ -403,6 +416,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/65',
     webp: 'img/program-14.webp',
     jpg: 'img/program-14.jpg',
     alt: 'Abbey DLD Academic summer',
@@ -413,6 +427,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1098',
     webp: 'img/program-15.webp',
     jpg: 'img/program-15.jpg',
     alt: 'Abbey DLD Academic summer Medical School',
@@ -423,6 +438,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1130',
     webp: 'img/program-16.webp',
     jpg: 'img/program-16.jpg',
     alt: 'High School Immersion with British students',
@@ -503,6 +519,7 @@ var programsData = [
       if (programsData[i].full) {
         content.querySelector('.programs__full').style.display = 'block';
       }
+      content.querySelector('.programs__link').href = programsData[i].href;
       content.querySelector('source').srcset = programsData[i].webp;
       content.querySelector('img').src = programsData[i].jpg;
       content.querySelector('img').alt = programsData[i].alt;

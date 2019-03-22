@@ -819,6 +819,11 @@ body {
   color: #292F48;
   font-size: 30px;
   font-weight: bold; }
+  .programs__title--sub {
+    display: block;
+    color: #6A7EFC;
+    font-size: 20px;
+    font-weight: 500; }
 
 .programs__button {
   width: 25px;
@@ -1177,6 +1182,9 @@ body {
   color: #6A7EFC;
   font-size: 14px;
   font-weight: normal; }
+
+.leaders__link {
+  color: inherit; }
 
 .leaders__control {
   display: flex;
