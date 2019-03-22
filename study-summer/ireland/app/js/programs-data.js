@@ -1,6 +1,7 @@
 var programsData = [
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/5',
     webp: 'img/program-1.webp',
     jpg: 'img/program-1.jpg',
     alt: 'St. Raphaela’s School',
@@ -11,6 +12,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1106',
     webp: 'img/program-2.webp',
     jpg: 'img/program-2.jpg',
     alt: 'Marino Institute',
