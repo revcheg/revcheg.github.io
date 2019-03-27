@@ -88,3 +88,57 @@
     margin-bottom: 0;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .people__wrapper {
+    width: 739px;
+  }
+  
+  .people__list {
+    padding-right: 20px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .people__title {
+    font-size: 25px;
+  }
+  
+  .people__wrapper {
+    width: auto;
+  }
+  
+  .people__row {
+    margin-bottom: 35px;
+    padding-bottom: 0;
+    background-position: top;
+    background-size: 300px auto;
+    
+    &--1 {
+      padding-top: 250px;
+    }
+    
+    &--2 {
+      padding-top: 180px;
+    }
+    
+    &--3 {
+      padding-top: 200px;
+    }
+  }
+  
+  .people__target {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 0;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .people__content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

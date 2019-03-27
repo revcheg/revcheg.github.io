@@ -273,6 +273,17 @@
 var programsData = [
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/22',
+    webp: 'img/program-3.webp',
+    jpg: 'img/program-3.jpg',
+    alt: 'Royal Holloway, University of London',
+    name: 'Royal Holloway, University of London',
+    location: 'Лондон',
+    date: '<a href="http://summer.study.ua/trip/look/22" target="_blank">29.07 - 12.08 (2 нед.)</a>',
+    cost: '$3300 (2 нед.)'
+  },
+  {
+    full: false,
     href: 'http://summer.study.ua/trip/look/29',
     webp: 'img/program-1.webp',
     jpg: 'img/program-1.jpg',
@@ -292,17 +303,6 @@ var programsData = [
     location: 'Лондон',
     date: '<a href="http://summer.study.ua/trip/look/58" target="_blank">04.08 - 18.08 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/58" target="_blank">04.08 - 25.08 (3 нед.)</a>',
     cost: '$3700 (2 нед.)<br>$4770 (3 нед.)'
-  },
-  {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/22',
-    webp: 'img/program-3.webp',
-    jpg: 'img/program-3.jpg',
-    alt: 'Royal Holloway, University of London',
-    name: 'Royal Holloway, University of London',
-    location: 'Лондон',
-    date: '<a href="http://summer.study.ua/trip/look/22" target="_blank">29.07 - 12.08 (2 нед.)</a>',
-    cost: '$3300 (2 нед.)'
   },
   {
     full: true,
@@ -369,17 +369,6 @@ var programsData = [
     location: 'Рединг',
     date: '<a href="http://summer.study.ua/trip/look/1109" target="_blank">02.07 - 16.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1109" target="_blank">30.07 - 13.08 (2 нед.)</a>',
     cost: '$3200 (2 нед.)'
-  },
-  {
-    full: false,
-    href: '',
-    webp: 'img/program-10.webp',
-    jpg: 'img/program-10.jpg',
-    alt: 'Christ Hospital School',
-    name: 'Christ Hospital School',
-    location: 'Хоршем',
-    date: '17.07 - 31.07 (2 нед.)<br>31.07 - 14.08 (2 нед.)',
-    cost: '$3000 (2 нед.)'
   },
   {
     full: false,

@@ -1,0 +1,30 @@
+.thankyou {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('../img/svg/features-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.thankyou__main {
+  
+}
+
+.thankyou__title {
+  color: $green;
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.thankyou__text {
+  font-size: 20px;
+}
+
+.thankyou__divider {
+  height: 2px;
+  border: none;
+  background-color: $green;
+}

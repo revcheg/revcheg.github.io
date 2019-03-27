@@ -1,0 +1,51 @@
+.holidays {
+  margin-bottom: 100px;
+}
+
+.holidays__title {
+  margin-top: 0;
+  margin-bottom: 35px;
+  color: $text;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.holidays__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.holidays__item {
+  width: 370px;
+  padding-top: 170px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.holidays__camp {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: $text;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #C7F2E3;
+}
+
+.holidays__location {
+  padding-right: 20px;
+  padding-left: 20px;
+  color: $text;
+  font-size: 16px;
+  font-weight: 300;
+  
+  &--source {
+    color: #FF5959;
+    font-weight: 500;
+  }
+}

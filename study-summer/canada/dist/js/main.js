@@ -272,16 +272,18 @@
 var programsData = [
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/51',
     webp: 'img/program-1.webp',
     jpg: 'img/program-1.jpg',
     alt: 'University of Toronto',
     name: 'University of Toronto',
     location: 'Торонто',
-    date: '<a href="http://summer.study.ua/trip/look/39" target="_blank">22.06 - 13.07 (3 нед.)</a><br><a href="http://summer.study.ua/trip/look/51" target="_blank">20.07 - 10.08 (3 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/51" target="_blank">20.07 - 10.08 (3 нед.)</a>',
     cost: '$5500 (3 нед.)'
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1133',
     webp: 'img/program-2.webp',
     jpg: 'img/program-2.jpg',
     alt: 'University of Toronto Advanced Academic Program',
@@ -292,6 +294,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/63',
     webp: 'img/program-3.webp',
     jpg: 'img/program-3.jpg',
     alt: 'University of Toronto + McGill University',
@@ -302,16 +305,18 @@ var programsData = [
   },
   {
     full: false,
+    href: '',
     webp: 'img/program-4.webp',
     jpg: 'img/program-4.jpg',
     alt: 'Braemar College',
     name: 'Braemar College',
     location: 'Торонто',
-    date: '<a href="http://summer.study.ua/trip/look/27" target="_blank">1.07 - 27.07 (4 нед.)</a><br><a>1.07 - 17.08 (7 нед.)</a>',
-    cost: '$5100 (4 нед.)<br>$7600 (7 нед.)'
+    date: '<a>01.07 - 17.08 (7 нед.)</a>',
+    cost: '$7600 (7 нед.)'
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1118',
     webp: 'img/program-5.webp',
     jpg: 'img/program-5.jpg',
     alt: 'Ryerson University',
@@ -322,6 +327,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1134',
     webp: 'img/program-6.webp',
     jpg: 'img/program-6.jpg',
     alt: 'Sheridan College',
@@ -332,6 +338,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1129',
     webp: 'img/program-7.webp',
     jpg: 'img/program-7.jpg',
     alt: 'ILAC',
@@ -341,13 +348,14 @@ var programsData = [
     cost: '$4800 (3 нед.)'
   },
   {
-    full: false,
+    full: true,
+    href: '',
     webp: 'img/program-8.webp',
     jpg: 'img/program-8.jpg',
     alt: 'University of British Columbia',
     name: 'University of British Columbia',
     location: 'Ванкувер',
-    date: '<a href="http://summer.study.ua/trip/look/1117" target="_blank">7.07 - 28.07 (3 нед.)</a>',
+    date: '<a>07.07 - 28.07 (3 нед.)</a>',
     cost: '$5800 (3 нед.)'
   }
 ];
@@ -422,6 +430,7 @@ var programsData = [
       if (programsData[i].full) {
         content.querySelector('.programs__full').style.display = 'block';
       }
+      content.querySelector('.programs__link').href = programsData[i].href;
       content.querySelector('source').srcset = programsData[i].webp;
       content.querySelector('img').src = programsData[i].jpg;
       content.querySelector('img').alt = programsData[i].alt;

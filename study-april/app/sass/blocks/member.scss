@@ -11,9 +11,9 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
-  // margin-bottom: 45px;
-  margin-bottom: 445px;
+  margin-bottom: 45px;
   padding: 0;
   list-style: none;
 }
@@ -21,17 +21,18 @@
 .members__item {
   position: relative;
   width: 370px;
-  // max-height: 265px;
+  margin-bottom: 45px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   border-radius: 7px;
+  background-color: #fff;
   transition: 0.3s;
   
   &--show {
-    // max-height: 500px;
+    z-index: 2;
     
     .members__desc {
-      // opacity: 1;
-      // transform: translateY(0%);
+      max-height: inherit;
+      opacity: 1;
     }
   }
 }
@@ -46,6 +47,12 @@
   font-size: 20px;
   font-weight: bold;
   background-color: $yellow;
+  vertical-align: top;
+  
+  &--short {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
 }
 
 .members__logo {
@@ -54,14 +61,13 @@
 }
 
 .members__desc {
-  padding: 20px;
+  max-height: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
   border-radius: 7px;
-  // opacity: 0;
+  opacity: 0;
   background-color: #fff;
   transition: 0.3s;
-  // transform: translateY(-100%);
-  // visibility: hidden;
-  z-index: 0;
 }
 
 .members__button {
@@ -84,5 +90,88 @@
   
   &--show {
     transform: rotate(180deg);
+  }
+}
+
+.members__text {
+  color: $text;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.members__icon {
+  display: block;
+  margin-bottom: 5px;
+  color: $orange;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  background-repeat: no-repeat;
+  background-position: top left;
+  
+  &--1 {
+    padding-left: 20px;
+    background-image: url('../img/svg/location.svg');
+  }
+  
+  &--2 {
+    padding-left: 23px;
+    background-image: url('../img/svg/human.svg');
+  }
+  
+  &--3 {
+    padding-left: 25px;
+    background-image: url('../img/svg/programs.svg');
+  }
+}
+
+.members__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(185, 230, 211, 0.4);
+  transition: 0.3s;
+  z-index: 1;
+  
+  &--hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .members__item {
+    
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .members__title {
+    font-size: 25px;
+  }
+  
+  .members__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .members__item {
+    width: 100%;
+    min-width: 290px;
+    max-width: 370px;
+  }
+  
+  .members__logo {
+    width: 100%;
+  }
+  
+  .members__name {
+    font-size: 18px;
   }
 }

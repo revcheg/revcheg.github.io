@@ -1,0 +1,44 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: 'Museo Sans Cyrl', 'Arial', sans-serif;
+  background-color: #FAFAFA;
+  background-image: url('../img/svg/polygon-yellow.svg'),
+                    url('../img/svg/polygon-green.svg');
+  background-repeat: no-repeat;
+  background-position: 100% 0, 0 420px;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(106, 126, 252, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #C7F2E3; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: darken(#C7F2E3, 5%); 
+}
+
+@media screen and ($tablet-widths) {
+  .container {
+    width: 100%;
+  }
+}

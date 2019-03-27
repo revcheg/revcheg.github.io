@@ -42,6 +42,7 @@
       if (programsData[i].full) {
         content.querySelector('.programs__full').style.display = 'block';
       }
+      content.querySelector('.programs__link').href = programsData[i].href;
       content.querySelector('.programs__img-webp').srcset = programsData[i].webp;
       content.querySelector('.programs__img').src = programsData[i].jpg;
       content.querySelector('.programs__img').alt = programsData[i].alt;

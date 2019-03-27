@@ -72,3 +72,33 @@
   font-weight: normal;
   letter-spacing: 0.03em;
 }
+
+@media screen and ($tablet-widths) {
+  .features__list {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .features__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .features {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-position: -300px;
+  }
+  
+  .features__title {
+    font-size: 25px;
+  }
+  
+  .features__item {
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

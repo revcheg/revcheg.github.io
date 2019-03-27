@@ -1,6 +1,7 @@
 var programsData = [
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1125',
     webp: 'img/program-1.webp',
     jpg: 'img/program-1.jpg',
     alt: 'EC English, London',
@@ -11,6 +12,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1126',
     webp: 'img/program-2.webp',
     jpg: 'img/program-2.jpg',
     alt: 'EC English, London + Dublin experience',
@@ -21,6 +23,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1124',
     webp: 'img/program-3.webp',
     jpg: 'img/program-3.jpg',
     alt: 'Malta Summer',
@@ -31,6 +34,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1099',
     webp: 'img/program-4.webp',
     jpg: 'img/program-4.jpg',
     alt: 'EU Business School',
@@ -41,6 +45,7 @@ var programsData = [
   },
   {
     full: false,
+    href: '',
     webp: 'img/program-5.webp',
     jpg: 'img/program-5.jpg',
     alt: 'Barcelona Spanish',
@@ -51,6 +56,7 @@ var programsData = [
   },
   {
     full: false,
+    href: '',
     webp: 'img/program-6.webp',
     jpg: 'img/program-6.jpg',
     alt: 'Barcelona English',
@@ -61,6 +67,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/69',
     webp: 'img/program-7.webp',
     jpg: 'img/program-7.jpg',
     alt: 'Oxford School of English',
@@ -71,6 +78,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/73',
     webp: 'img/program-8.webp',
     jpg: 'img/program-8.jpg',
     alt: 'ILAC',
@@ -81,16 +89,18 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1123',
     webp: 'img/program-9.webp',
     jpg: 'img/program-9.jpg',
     alt: 'EC English Toronto + Vancouver',
     name: 'EC English Toronto + Vancouver',
     location: 'Канада, Торонто, Ванкувер',
-    date: '<a href="http://summer.study.ua/trip/look/73" target="_blank">27.07 - 24.08 (4 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1123" target="_blank">27.07 - 24.08 (4 нед.)</a>',
     cost: '$5700 (резиденция)<br>$4750 (семья)'
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/42',
     webp: 'img/program-10.webp',
     jpg: 'img/program-10.jpg',
     alt: 'Niagara College',
@@ -101,6 +111,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1128',
     webp: 'img/program-11.webp',
     jpg: 'img/program-11.jpg',
     alt: 'EC English New York',
@@ -111,6 +122,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1137',
     webp: 'img/program-12.webp',
     jpg: 'img/program-12.jpg',
     alt: 'EC English New York + Miami',
@@ -121,6 +133,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/61',
     webp: 'img/program-13.webp',
     jpg: 'img/program-13.jpg',
     alt: 'Hotel and Restaurant business experience',

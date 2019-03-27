@@ -1,6 +1,7 @@
 var programsData = [
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1090',
     flagWebp: 'img/programs-spain.webp',
     flag: 'img/programs-spain.jpg',
     flagAlt: 'Испания',
@@ -14,6 +15,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1096',
     flagWebp: 'img/programs-spain.webp',
     flag: 'img/programs-spain.jpg',
     flagAlt: 'Испания',
@@ -27,6 +29,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1103',
     flagWebp: 'img/programs-spain.webp',
     flag: 'img/programs-spain.jpg',
     flagAlt: 'Испания',
@@ -40,6 +43,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1094',
     flagWebp: 'img/programs-switzerland.webp',
     flag: 'img/programs-switzerland.jpg',
     flagAlt: 'Швейцария',
@@ -53,6 +57,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1121',
     flagWebp: 'img/programs-malta.webp',
     flag: 'img/programs-malta.jpg',
     flagAlt: 'Мальта',
@@ -66,6 +71,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1122',
     flagWebp: 'img/programs-germany.webp',
     flag: 'img/programs-germany.jpg',
     flagAlt: 'Германия',
@@ -79,6 +85,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1077',
     flagWebp: 'img/programs-france.webp',
     flag: 'img/programs-france.jpg',
     flagAlt: 'Франция',
@@ -92,6 +99,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/61',
     flagWebp: 'img/programs-switzerland.webp',
     flag: 'img/programs-switzerland.jpg',
     flagAlt: 'Швейцария',

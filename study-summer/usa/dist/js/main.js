@@ -272,26 +272,29 @@
 var programsData = [
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1115',
     webp: 'img/program-1.webp',
     jpg: 'img/program-1.jpg',
     alt: 'Miami Lynn University + New York  Fordham University',
     name: 'Miami Lynn University + New York  Fordham University',
     location: 'Майами + Нью-Йорк',
-    date: '<a href="http://summer.study.ua/trip/look/76" target="_blank">26.06 - 17.07 (3 нед.)</a><br><a href="http://summer.study.ua/trip/look/1115" target="_blank">03.07 - 24.07 (3 нед.)</a><br><a href="http://summer.study.ua/trip/look/1080" target="_blank">10.07 -31.07 (3 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1115" target="_blank">03.07 - 24.07 (3 нед.)</a>',
     cost: '$5900 (3 нед.)'
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1132',
     webp: 'img/program-2.webp',
     jpg: 'img/program-2.jpg',
     alt: 'Miami Lynn University',
     name: 'Miami Lynn University',
     location: 'Майами',
     date: '<a href="http://summer.study.ua/trip/look/1132" target="_blank">10.07 - 24.07 (2 нед.)</a>',
-    cost: '$5900 (2 нед.)'
+    cost: '$4500 (2 нед.)'
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1081',
     webp: 'img/program-3.webp',
     jpg: 'img/program-3.jpg',
     alt: 'California State University',
@@ -301,7 +304,8 @@ var programsData = [
     cost: '$6200 (3 нед.)'
   },
   {
-    full: false,
+    full: true,
+    href: 'http://summer.study.ua/trip/look/1087',
     webp: 'img/program-4.webp',
     jpg: 'img/program-4.jpg',
     alt: 'От Лос-Анджелеса до Гавайев!',
@@ -312,16 +316,18 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1092',
     webp: 'img/program-5.webp',
     jpg: 'img/program-5.jpg',
     alt: 'Kings Malibu Los Angeles',
     name: 'Kings Malibu Los Angeles',
-    location: 'Лос-Анджелес, Сан-Франциско, Гавайи',
+    location: 'Малибу',
     date: '<a href="http://summer.study.ua/trip/look/1092" target="_blank">26.06 - 16.07 (3 нед.)</a><br><a href="http://summer.study.ua/trip/look/14" target="_blank">10.07 - 30.07 (3 нед.)</a>',
     cost: '$6150 (3 нед.)'
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1119',
     webp: 'img/program-6.webp',
     jpg: 'img/program-6.jpg',
     alt: 'California State University Northridge',
@@ -331,6 +337,7 @@ var programsData = [
     cost: '$6600 (3 нед.)'
   },
   {
+    href: 'http://summer.study.ua/trip/look/60',
     full: false,
     webp: 'img/program-7.webp',
     jpg: 'img/program-7.jpg',
@@ -342,6 +349,7 @@ var programsData = [
   },
   {
     full: false,
+    href: 'http://summer.study.ua/trip/look/1117',
     webp: 'img/program-8.webp',
     jpg: 'img/program-8.jpg',
     alt: 'Long Island University',
@@ -422,6 +430,7 @@ var programsData = [
       if (programsData[i].full) {
         content.querySelector('.programs__full').style.display = 'block';
       }
+      content.querySelector('.programs__link').href = programsData[i].href;
       content.querySelector('source').srcset = programsData[i].webp;
       content.querySelector('img').src = programsData[i].jpg;
       content.querySelector('img').alt = programsData[i].alt;
