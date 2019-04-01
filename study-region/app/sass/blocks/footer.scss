@@ -1,0 +1,29 @@
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #FEFF89;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__text {
+  margin: 0;
+  color: $text;
+  font-size: 16px;
+  font-weight: 300;
+  
+  &--phone {
+    margin-left: 30px;
+    padding-left: 30px;
+    color: inherit;
+    font-size: 20px;
+    text-decoration: none;
+    background-image: url('../img/svg/phone.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+}

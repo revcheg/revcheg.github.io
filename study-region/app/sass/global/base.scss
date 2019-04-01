@@ -8,9 +8,11 @@ body {
   font-family: 'Museo Sans Cyrl', 'Arial', sans-serif;
   background-color: #FAFAFA;
   background-image: url('../img/svg/polygon-yellow.svg'),
+                    url('../img/svg/polygon-green.svg'),
+                    url('../img/svg/polygon-yellow.svg'),
                     url('../img/svg/polygon-green.svg');
   background-repeat: no-repeat;
-  background-position: 100% 0, 0 420px;
+  background-position: 100% -50%, 0 420px, 100% 1900px, 0 3300px;
 }
 
 .container {

@@ -6,9 +6,9 @@ body {
   margin: 0;
   font-family: 'Museo Sans Cyrl', 'Arial', sans-serif;
   background-color: #FAFAFA;
-  background-image: url("../img/svg/polygon-yellow.svg"), url("../img/svg/polygon-green.svg");
+  background-image: url("../img/svg/polygon-yellow.svg"), url("../img/svg/polygon-green.svg"), url("../img/svg/polygon-yellow.svg"), url("../img/svg/polygon-green.svg");
   background-repeat: no-repeat;
-  background-position: 100% 0, 0 420px; }
+  background-position: 100% -50%, 0 420px, 100% 1900px, 0 3300px; }
 
 .container {
   box-sizing: border-box;
@@ -265,17 +265,21 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   list-style: none; }
 
 .holidays__item {
   width: 370px;
-  padding-top: 170px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
   background-color: #fff; }
 
-.holidays__camp {
+.holidays__logo {
+  display: block;
+  margin: auto; }
+
+.holidays__name {
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -294,6 +298,158 @@ body {
   .holidays__location--source {
     color: #FF5959;
     font-weight: 500; }
+
+.holidays__wrapper {
+  background-image: url("../img/holidays-bg.png");
+  background-repeat: no-repeat;
+  background-position: right; }
+
+.holidays__sublist {
+  width: 460px;
+  list-style-image: url("../img/svg/li.svg"); }
+
+.holidays__subitem {
+  margin-bottom: 10px;
+  color: #49515E;
+  font-size: 16px;
+  font-weight: 300; }
+  .holidays__subitem:last-child {
+    margin-bottom: 25px; }
+
+.group {
+  margin-bottom: 70px; }
+
+.group__wrapper {
+  background-image: url("../img/group-bg.png");
+  background-repeat: no-repeat;
+  background-position: left; }
+
+.group__content {
+  width: 570px;
+  margin-left: auto;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.group__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #49515E;
+  font-size: 35px;
+  font-weight: 900; }
+
+.group__text {
+  margin-bottom: 20px;
+  color: #49515E;
+  font-size: 16px;
+  font-weight: 300; }
+
+.group__list {
+  list-style-image: url("../img/svg/li.svg"); }
+
+.group__item {
+  margin-bottom: 10px;
+  color: #49515E;
+  font-size: 16px;
+  font-weight: 300; }
+  .group__item:last-child {
+    margin-bottom: 25px; }
+
+.call {
+  margin-bottom: 100px; }
+
+.call__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #49515E;
+  font-size: 25px;
+  font-weight: 700; }
+
+.call__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.call__column {
+  width: 570px; }
+
+.call__subtitle {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #49515E;
+  font-size: 25px;
+  font-weight: 500; }
+
+.call__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 570px;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.call__item {
+  width: 175px;
+  margin-bottom: 30px; }
+
+.call__city {
+  display: block;
+  margin-bottom: 5px;
+  color: #FF5959;
+  font-size: 24px;
+  font-weight: 700; }
+
+.call__date {
+  display: block;
+  margin-bottom: 5px;
+  color: #49515E;
+  font-size: 18px;
+  font-weight: 500; }
+
+.call__location {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #49515E;
+  font-size: 16px;
+  font-weight: 300; }
+
+.call__request {
+  padding-right: 40px;
+  color: #FF5959;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  background-image: url("../img/svg/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  transition: 0.3s; }
+  .call__request:hover, .call__request:focus {
+    padding-right: 50px; }
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #FEFF89; }
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.footer__text {
+  margin: 0;
+  color: #49515E;
+  font-size: 16px;
+  font-weight: 300; }
+  .footer__text--phone {
+    margin-left: 30px;
+    padding-left: 30px;
+    color: inherit;
+    font-size: 20px;
+    text-decoration: none;
+    background-image: url("../img/svg/phone.svg");
+    background-repeat: no-repeat;
+    background-position: left; }
 
 .request__button {
   display: block;
