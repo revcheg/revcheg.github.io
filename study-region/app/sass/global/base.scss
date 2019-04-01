@@ -12,7 +12,7 @@ body {
                     url('../img/svg/polygon-yellow.svg'),
                     url('../img/svg/polygon-green.svg');
   background-repeat: no-repeat;
-  background-position: 100% -700px, 0 420px, 100% 1900px, 0 3240px;
+  background-position: 100% 300px, 0 420px, 100% 1900px, 0 3240px;
 }
 
 .container {
@@ -42,5 +42,12 @@ body {
 @media screen and ($tablet-widths) {
   .container {
     width: 100%;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  body {
+    background-position: 100% 350px, 0 1350px, 100% 3300px, 0 5920px;
+    background-size: 100%;
   }
 }
