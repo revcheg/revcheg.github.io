@@ -44,3 +44,37 @@
     margin-bottom: 0;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .children {
+    margin-bottom: 50px;
+  }
+  
+  .children__wrapper {
+    background-position: center 120px;
+  }
+  
+  .children__content {
+    margin: auto;
+  }
+  
+  .children__title {
+    padding-bottom: 450px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .children__wrapper {
+    background-position: center 100px;
+    background-size: 290px;
+  }
+  
+  .children__content {
+    width: auto;
+  }
+  
+  .children__title {
+    padding-bottom: 250px;
+    font-size: 23px;
+  }
+}

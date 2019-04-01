@@ -61,3 +61,42 @@
   font-weight: 500;
   text-align: center;
 }
+
+@media screen and ($tablet-widths) {
+  .people {
+    margin-bottom: 50px;
+  }
+  
+  .people__list {
+    flex-wrap: wrap;
+  }
+  
+  .people__item {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .people__title {
+    margin-bottom: 30px;
+    font-size: 23px;
+  }
+  
+  .people__list {
+    margin-bottom: 0;
+  }
+  
+  .people__item {
+    width: 100%;
+    max-width: 370px;
+  }
+  
+  .people__age {
+    font-size: 18px;
+  }
+  
+  .people__call {
+    font-size: 18px;
+  }
+}

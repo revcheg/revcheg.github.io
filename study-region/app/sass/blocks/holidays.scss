@@ -76,3 +76,62 @@
     margin-bottom: 25px;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .holidays {
+    margin-bottom: 50px;
+  }
+  
+  .holidays__list {
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+  
+  .holidays__item {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  .holidays__wrapper {
+    padding-top: 320px;
+    background-position: top;
+  }
+  
+  .holidays__sublist {
+    margin: auto;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .holidays__title {
+    font-size: 23px;
+  }
+  
+  .holidays__item {
+    width: 100%;
+    max-width: 370px;
+  }
+  
+  .holidays__logo {
+    width: 100%;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+  }
+  
+  .holidays__name {
+    font-size: 18px;
+  }
+  
+  .holidays__wrapper {
+    padding-top: 150px;
+    background-size: 290px; 
+  }
+  
+  .holidays__sublist {
+    width: auto;
+  }
+}

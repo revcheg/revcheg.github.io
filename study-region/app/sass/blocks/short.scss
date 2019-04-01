@@ -39,3 +39,33 @@
     margin-bottom: 0;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .short {
+    margin-bottom: 50px;
+  }
+  
+  .short__wrapper {
+    padding-top: 350px;
+    background-position: top;
+  }
+  
+  .short__content {
+    margin: auto;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .short__wrapper {
+    padding-top: 170px;
+    background-size: 290px;
+  }
+  
+  .short__content {
+    width: auto;
+  }
+  
+  .short__title {
+    font-size: 23px;
+  }
+}

@@ -26,3 +26,9 @@
     margin: auto;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .request__button {
+    margin: auto;
+  }
+}

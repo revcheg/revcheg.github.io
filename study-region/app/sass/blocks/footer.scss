@@ -27,3 +27,27 @@
     background-position: left;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .footer__wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .footer__wrapper {
+    flex-direction: column;
+  }
+  
+  .footer__text {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+      
+    &--phone {
+      display: block;
+    }
+  }
+}
