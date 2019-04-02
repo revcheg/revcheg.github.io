@@ -1,0 +1,185 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy-Regular'),
+    url('https://study.ua/april/fonts/Gilroy-Regular.woff2') format('woff2'),
+    url('https://study.ua/april/fonts/Gilroy-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy-SemiBold'),
+    url('https://study.ua/april/fonts/Gilroy-SemiBold.woff2') format('woff2'),
+    url('https://study.ua/april/fonts/Gilroy-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy-Bold'),
+    url('https://study.ua/april/fonts/Gilroy-Bold.woff2') format('woff2'),
+    url('https://study.ua/april/fonts/Gilroy-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy-Black'),
+    url('https://study.ua/april/fonts/Gilroy-Black.woff2') format('woff2'),
+    url('https://study.ua/april/fonts/Gilroy-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.add {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  width: 770px;
+  padding-top: 25px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  font-family: 'Gilroy', 'Gotham Pro', sans-serif;
+  background-color: #fff;
+  background-image: url('../img/add-decorate.png'), url('../img/svg/add-bg.svg');
+  background-repeat: no-repeat;
+  background-position: 410px 30px, center;
+  background-size: auto, cover;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translate(-50%, -50%) scale(0.8);
+  visibility: hidden;
+  z-index: 6;
+  
+  &--show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+  }
+}
+
+.add__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  border: 0;
+  background-color: transparent;
+  background-image: url('../img/svg/add-close.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+  
+  &:hover,
+  &:focus {
+    transform: scale(1.4);
+  }
+  
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.add__desc {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  color: #EF6C57;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  background-repeat: no-repeat;
+  background-position: left;
+  
+  &--date {
+    background-image: url('../img/svg/add-date.svg');
+  }
+  
+  &--locate {
+    margin-bottom: 50px;
+    background-image: url('../img/svg/add-locate.svg');
+  }
+}
+
+.add__title {
+  margin-top: 0;
+  margin-bottom: 35px;
+  color: #7ED3B2;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  text-shadow: 3px 2px #B9E6D3;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.add__list {
+  margin-top: 0;
+  margin-bottom: 70px;
+  padding-left: 25px;
+  list-style-image: url('../img/svg/add-li.svg');
+}
+
+.add__item {
+  margin-bottom: 10px;
+  color: #49515E;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.add__call {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #EF6C57;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.add__link {
+  box-sizing: border-box;
+  display: block;
+  width: 210px;
+  margin: auto;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 40px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  background-color: #EF6C57;
+  background-image: url('../img/svg/add-link.svg');
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  outline: none;
+  transition: 0.3s;
+  
+  &:hover,
+  &:active {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+    background-color: darken(#EF6C57, 5%);
+  }
+}

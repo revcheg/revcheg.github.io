@@ -5,6 +5,7 @@
 .about__wrapper {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .about__text {
@@ -34,8 +35,6 @@
     width: auto;
     margin: 0;
     margin-bottom: 30px;
-    padding-right: 15px;
-    padding-left: 15px;
   }
   
   .about__picture {

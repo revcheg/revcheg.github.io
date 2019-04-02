@@ -411,9 +411,12 @@ body {
     display: none; } }
 
 .about {
+  margin-bottom: 70px; }
+
+.about__wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 70px; }
+  margin-bottom: 30px; }
 
 .about__text {
   width: 570px;
