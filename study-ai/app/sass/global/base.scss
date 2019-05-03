@@ -1,0 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: 'Proxima Nova', 'Arial', sans-serif;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media screen and ($tablet-widths) {
+  .container {
+    width: 100%;
+  }
+}

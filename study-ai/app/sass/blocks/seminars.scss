@@ -1,0 +1,163 @@
+.seminars__box {
+  margin-bottom: 70px;
+}
+
+.seminars__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.seminars__time {
+  margin: 0;
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 800;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  background-color: #506BFE;
+}
+
+.seminars__title {
+  width: 100%;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  color: #180D5B;
+  font-size: 30px;
+  font-weight: 700;
+  border-bottom: 1px solid #506BFE;
+}
+
+.seminars__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.seminars__photo {
+  width: 370px;
+  height: auto;
+  margin-right: 30px;
+  
+  &:nth-child(2),
+  &:nth-child(4) {
+    margin-right: 0;
+    margin-left: 30px;
+  }
+}
+
+.seminars__content {
+  padding-top: 60px;
+}
+
+.seminars__flex {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.seminars__name {
+  margin: 0;
+  margin-right: 20px;
+  padding-left: 25px;
+  color: #180D5B;
+  font-size: 20px;
+  font-weight: 700;
+  background-image: url('../img/svg/speaker.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.seminars__speechname {
+  margin: 0;
+  color: #180D5B;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.seminars__text {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #180D5B;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.seminars__call {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #180D5B;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.seminars__list {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  list-style: url('../img/svg/li.svg');
+}
+
+.seminars__item {
+  margin-bottom: 5px;
+  color: #180D5B;
+  font-size: 16px;
+  font-weight: 400;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.seminars__break {
+  margin-bottom: 70px;
+  background-color: #180D5B;
+  background-image: url('../img/seminars-break-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.seminars__break-content {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.seminars__break-time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 800;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color: #506BFE;
+}
+
+.seminars__break-text {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  
+  &--small {
+    margin: 0;
+    font-size: 20px;
+  }
+}
