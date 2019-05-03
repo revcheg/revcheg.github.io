@@ -31,3 +31,25 @@
     background-image: url('../img/svg/loc.svg');
   }
 }
+
+@media screen and ($mobile-widths) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .header__logo {
+    margin-bottom: 30px;
+  }
+  
+  .header__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .header__item {
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+}

@@ -117,6 +117,18 @@ body {
   font-size: 20px;
   font-weight: 700; }
 
+@media screen and (max-width: 1200px) {
+  .title {
+    background-position: left; } }
+
+@media screen and (max-width: 768px) {
+  .title {
+    margin-bottom: 0; }
+  .title__content {
+    width: auto; }
+  .title__title {
+    font-size: 30px; } }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -143,6 +155,20 @@ body {
   .header__item:nth-child(2) {
     margin-right: 0;
     background-image: url("../img/svg/loc.svg"); }
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start; }
+  .header__logo {
+    margin-bottom: 30px; }
+  .header__list {
+    flex-direction: column;
+    align-items: flex-start; }
+  .header__item {
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 18px; } }
 
 .button {
   display: block;
@@ -234,6 +260,19 @@ body {
   font-size: 18px;
   font-style: italic;
   font-weight: 600; }
+  .seminars__speechname:nth-child(2) {
+    position: relative; }
+
+.seminars__tooltip {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  background-image: url("../img/svg/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: help; }
 
 .seminars__text {
   margin-top: 0;
@@ -303,6 +342,38 @@ body {
     margin: 0;
     font-size: 20px; }
 
+@media screen and (max-width: 768px) {
+  .seminars__header {
+    flex-direction: column;
+    align-items: flex-start; }
+  .seminars__time {
+    margin-bottom: 10px;
+    font-size: 30px;
+    border-radius: 7px; }
+  .seminars__title {
+    padding-left: 0;
+    font-size: 20px; }
+  .seminars__wrapper {
+    flex-direction: column; }
+  .seminars__photo {
+    order: 1;
+    width: 100%;
+    max-width: 370px;
+    min-width: 290px;
+    margin: 0 auto; }
+    .seminars__photo:nth-child(2), .seminars__photo:nth-child(4) {
+      margin-left: 0;
+      margin: 0 auto; }
+  .seminars__content {
+    order: 2; }
+  .seminars__flex {
+    flex-direction: column; }
+  .seminars__break-content {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+  .seminars__break-time {
+    font-size: 30px; } }
+
 .contacts {
   margin-bottom: 100px; }
 
@@ -342,6 +413,21 @@ body {
     margin-right: 0;
     background-image: url("../img/svg/loc.svg"); }
 
+@media screen and (max-width: 768px) {
+  .contacts__title {
+    font-size: 24px; }
+  .contacts__wrapper {
+    flex-direction: column; }
+  .contact__column {
+    width: auto; }
+  .contacts__flex {
+    flex-wrap: wrap; }
+  .contacts__info {
+    margin-right: 0;
+    margin-bottom: 20px; }
+    .contacts__info:last-child {
+      margin-bottom: 0; } }
+
 .footer {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -375,3 +461,72 @@ body {
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 400; }
+
+@media screen and (max-width: 768px) {
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: center; }
+  .footer__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center; }
+  .footer__phone {
+    margin-left: 0; } }
+
+.thankyou {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #180D5B;
+  background-image: url("../img/footer-bg.jpg"); }
+
+.thankyou__main {
+  box-sizing: border-box;
+  width: 750px;
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  border-radius: 10px;
+  background-color: #FFFFFF; }
+
+.thankyou__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #180D5B;
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center; }
+
+.thankyou__text {
+  color: #180D5B;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center; }
+
+.thankyou__divider {
+  margin-bottom: 50px;
+  height: 1px;
+  border: none;
+  background-color: #180D5B; }
+
+.thankyou__contact {
+  color: #180D5B;
+  font-size: 16px;
+  font-weight: 400; }
+
+.thankyou__phone {
+  color: #180D5B;
+  font-size: 16px;
+  font-weight: 400; }
+
+@media screen and (max-width: 1200px) {
+  .thankyou__main {
+    width: 95%; } }
+
+@media screen and (max-width: 768px) {
+  .thankyou__text {
+    font-size: 18px; } }

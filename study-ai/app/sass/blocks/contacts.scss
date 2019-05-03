@@ -48,3 +48,30 @@
     background-image: url('../img/svg/loc.svg');
   }
 }
+
+@media screen and ($mobile-widths) {
+  .contacts__title {
+    font-size: 24px;
+  }
+  
+  .contacts__wrapper {
+    flex-direction: column;
+  }
+  
+  .contact__column {
+    width: auto;
+  }
+  
+  .contacts__flex {
+    flex-wrap: wrap;
+  }
+  
+  .contacts__info {
+    margin-right: 0;
+    margin-bottom: 20px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

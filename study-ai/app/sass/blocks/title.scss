@@ -85,3 +85,23 @@
   font-size: 20px;
   font-weight: 700;
 }
+
+@media screen and ($tablet-widths) {
+  .title {
+    background-position: left;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .title {
+    margin-bottom: 0;
+  }
+  
+  .title__content {
+    width: auto;
+  }
+  
+  .title__title {
+    font-size: 30px;
+  }
+}
