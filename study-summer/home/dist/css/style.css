@@ -1,0 +1,437 @@
+html {
+  scroll-behavior: smooth; }
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: 'Gotham Pro', 'Arial', sans-serif;
+  background-color: #6A7EFC; }
+
+::-webkit-scrollbar {
+  width: 0; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local("GothamPro"), url("../fonts/GothamPro.woff2") format("woff2"), url("../fonts/GothamPro.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local("GothamPro-Medium"), url("../fonts/GothamPro-Medium.woff2") format("woff2"), url("../fonts/GothamPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local("GothamPro-Bold"), url("../fonts/GothamPro-Bold.woff2") format("woff2"), url("../fonts/GothamPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local("GothamPro-Black"), url("../fonts/GothamPro-Black.woff2") format("woff2"), url("../fonts/GothamPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+.aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  background-color: rgba(106, 126, 252, 0.8);
+  z-index: 3; }
+
+.title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../img/title-1-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  transition: 0.3s ease-in-out; }
+
+.title__content {
+  width: 950px; }
+
+.title__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #FFFFFF;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  text-align: center; }
+
+.title__subtitle {
+  margin-bottom: 40px;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center; }
+
+.title__call {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center; }
+
+.title__controls {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 210px;
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: rgba(106, 126, 252, 0.8); }
+
+.title__counter {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700; }
+
+.title__progress {
+  width: 100px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.4); }
+
+.title__status {
+  height: 3px;
+  background-color: #FFFFFF;
+  -webkit-animation-name: status-run;
+          animation-name: status-run;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+@-webkit-keyframes status-run {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+@keyframes status-run {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 40px;
+  padding-right: 120px;
+  padding-bottom: 130px;
+  padding-left: 30px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+  z-index: 2; }
+
+.header__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.header__home {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.2s; }
+  .header__home:hover, .header__home:focus {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px); }
+  .header__home:active {
+    -webkit-transform: translateY(-5px) scale(0.95);
+            transform: translateY(-5px) scale(0.95); }
+
+.header__item:nth-child(2) {
+  margin-left: auto; }
+
+.header__link {
+  margin-right: 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  outline: 0;
+  transition: 0.2s; }
+  .header__link:hover, .header__link:focus {
+    opacity: 0.6; }
+  .header__link:active {
+    opacity: 1; }
+
+.header__social {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  outline: 0;
+  transition: 0.2s; }
+  .header__social--info {
+    background-image: url(../img/svg/social-info.svg); }
+  .header__social--facebook {
+    background-image: url(../img/svg/social-facebook.svg); }
+  .header__social--instagram {
+    background-image: url(../img/svg/social-instagram.svg); }
+  .header__social:hover, .header__social:focus {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px); }
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.nav__item {
+  margin-bottom: 30px; }
+  .nav__item:last-child {
+    margin-bottom: 0; }
+
+.nav__anchor {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.2s; }
+  .nav__anchor--canada {
+    background-image: url(../img/svg/nav-canada.svg); }
+  .nav__anchor--usa {
+    background-image: url(../img/svg/nav-usa.svg); }
+  .nav__anchor--uk {
+    background-image: url(../img/svg/nav-uk.svg); }
+  .nav__anchor--ireland {
+    background-image: url(../img/svg/nav-ireland.svg); }
+  .nav__anchor--europe {
+    background-image: url(../img/svg/nav-europe.svg); }
+  .nav__anchor--students {
+    background-image: url(../img/svg/nav-students.svg); }
+    .nav__anchor--students::before {
+      display: none; }
+  .nav__anchor::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 2px;
+    height: 33px;
+    background-color: #FFFFFF;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .nav__anchor[aria-label]::after {
+    content: attr(aria-label);
+    position: absolute;
+    top: 0;
+    right: 20%;
+    padding: 7.1px 25px 7.1px 10px;
+    color: #292f48;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Gotham Pro', 'Arial', sans-serif;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #FFFFFF;
+    opacity: 0;
+    transition: 0.2s;
+    visibility: hidden;
+    z-index: -1; }
+  .nav__anchor:hover[aria-label]::after, .nav__anchor:focus[aria-label]::after {
+    right: 50%;
+    opacity: 1;
+    visibility: visible; }
+
+.canada {
+  display: flex;
+  height: 100vh; }
+
+.canada__column {
+  display: flex;
+  flex-direction: column;
+  width: 50%; }
+
+.canada__column--left {
+  background-image: url(../img/canada-left-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.canada__row {
+  flex-grow: 1; }
+  .canada__row--top {
+    position: relative;
+    background-image: url(../img/canada-row-top-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    .canada__row--top::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -3px;
+      width: 8px;
+      height: 100%;
+      background-image: url(../img/svg/country-arrow.svg);
+      background-position: top; }
+  .canada__row--double {
+    display: flex; }
+
+.canada__content {
+  position: relative;
+  box-sizing: border-box;
+  padding: 50px 110px 50px 60px;
+  background-color: #fff; }
+
+.canada__subtitle {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  width: 375px;
+  margin: 0;
+  padding: 10px 30px;
+  color: #6a7efc;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #FFFFFF;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+  .canada__subtitle--number {
+    font-size: 40px;
+    font-weight: 900; }
+
+.canada__list,
+.canada__title {
+  margin-top: 0;
+  margin-bottom: 30px; }
+
+.canada__title {
+  color: #292f48;
+  font-size: 40px;
+  font-weight: 900; }
+
+.canada__list {
+  padding-left: 15px;
+  list-style-image: url(../img/svg/li.svg); }
+
+.canada__item {
+  margin-bottom: 15px;
+  color: #292f48;
+  font-size: 18px;
+  font-weight: 400; }
+
+.canada__link {
+  padding-right: 45px;
+  color: #ff3434;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  background-image: url(../img/svg/link-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  outline: 0;
+  transition: 0.2s; }
+
+.canada__link:focus,
+.canada__link:hover {
+  padding-right: 55px; }
+
+.canada__video {
+  position: relative;
+  width: 50%;
+  background-image: url(../img/canada-video-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.canada__play,
+.canada__video::before {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-repeat: no-repeat; }
+
+.canada__video::before {
+  content: '';
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 1;
+  left: -3px;
+  width: 8px;
+  background-image: url(../img/svg/country-arrow.svg);
+  background-position: top;
+  background-size: cover; }
+
+.canada__play {
+  left: 0;
+  width: 100%;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(../img/svg/play.svg);
+  background-position: center;
+  background-size: 60px;
+  cursor: pointer;
+  outline: 0;
+  transition: .2s; }
+
+.canada__play:focus,
+.canada__play:hover {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.canada__photo,
+.canada__photo::before {
+  position: relative;
+  width: 50%;
+  background-image: url(../img/canada-photo-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.canada__photo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -3px;
+  width: 8px;
+  height: 100%;
+  background-image: url(../img/svg/country-arrow.svg);
+  background-position: top; }

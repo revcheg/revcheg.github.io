@@ -1,0 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: 'Gotham Pro', 'Arial', sans-serif;
+  background-color: $blue;
+  // overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}

@@ -1,0 +1,94 @@
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  margin-bottom: 30px;
+    
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.nav__anchor {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.2s;
+  
+  &--canada {
+    background-image: url(../img/svg/nav-canada.svg);
+  }
+  
+  &--usa {
+    background-image: url(../img/svg/nav-usa.svg);
+  }
+  
+  &--uk {
+    background-image: url(../img/svg/nav-uk.svg);
+  }
+  
+  &--ireland {
+    background-image: url(../img/svg/nav-ireland.svg);
+  }
+  
+  &--europe {
+    background-image: url(../img/svg/nav-europe.svg);
+  }
+  
+  &--students {
+    background-image: url(../img/svg/nav-students.svg);
+    
+    &::before {
+      display: none;
+    }
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 2px;
+    height: 33px;
+    background-color: #FFFFFF;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  
+  &[aria-label]::after {
+    content: attr(aria-label);
+    position: absolute;
+    top: 0;
+    right: 20%;
+    padding: 7.1px 25px 7.1px 10px;
+    color: #292f48;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Gotham Pro', 'Arial', sans-serif;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #FFFFFF;
+    opacity: 0;
+    transition: 0.2s;
+    visibility: hidden;
+    z-index: -1;
+  }
+  
+  &:hover[aria-label]::after,
+  &:focus[aria-label]::after {
+    right: 50%;
+    opacity: 1;
+    visibility: visible;
+  }
+}
