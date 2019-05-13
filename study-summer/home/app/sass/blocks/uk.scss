@@ -1,27 +1,27 @@
-.canada {
+.uk {
   display: flex;
   height: 100vh;
 }
 
-.canada__column {
+.uk__column {
   display: flex;
   flex-direction: column;
   width: 50%;
   
   &--left {
-    background-image: url('../img/canada-left-bg.jpg');
+    background-image: url(../img/uk-left-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 }
 
-.canada__row {
+.uk__row {
   flex-grow: 1;
   
   &--top {
     position: relative;
-    background-image: url('../img/canada-row-top-bg.jpg');
+    background-image: url(../img/uk-row-top-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -33,7 +33,7 @@
       left: -3px;
       width: 8px;
       height: 100%;
-      background-image: url('../img/svg/country-arrow.svg');
+      background-image: url(../img/svg/country-arrow.svg);
       background-position: top;
     }
   }
@@ -43,20 +43,26 @@
   }
 }
 
-.canada__content {
+.uk__content {
   position: relative;
   box-sizing: border-box;
-  padding: 50px 110px 50px 60px;
-  background-color: #fff;
+  padding-top: 50px;
+  padding-right: 110px;
+  padding-bottom: 50px;
+  padding-left: 60px;
+  background-color: #FFFFFF;
 }
 
-.canada__subtitle {
+.uk__subtitle {
   position: absolute;
   top: -30px;
   left: 50%;
   width: 375px;
   margin: 0;
-  padding: 10px 30px;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
   color: #6a7efc;
   font-size: 25px;
   font-weight: 400;
@@ -72,110 +78,104 @@
   }
 }
 
-.canada__list,
-.canada__title {
+.uk__title {
   margin-top: 0;
   margin-bottom: 30px;
-}
-
-.canada__title {
   color: #292f48;
   font-size: 40px;
   font-weight: 900;
 }
 
-.canada__list {
+.uk__list {
+  margin-top: 0;
+  margin-bottom: 30px;
   padding-left: 15px;
-  list-style-image: url('../img/svg/li.svg');
+  list-style-image: url(../img/svg/li.svg);
 }
 
-.canada__item {
+.uk__item {
   margin-bottom: 15px;
   color: #292f48;
   font-size: 18px;
   font-weight: 400;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.canada__link {
+.uk__link {
   padding-right: 45px;
   color: #ff3434;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
-  background-image: url('../img/svg/link-arrow.svg');
+  background-image: url(../img/svg/link-arrow.svg);
   background-repeat: no-repeat;
   background-position: right;
   outline: 0;
   transition: 0.2s;
+  
+  &:hover,
+  &:focus {
+    padding-right: 55px;
+  }
 }
 
-.canada__link:focus,
-.canada__link:hover {
-  padding-right: 55px;
-}
-
-.canada__video {
+.uk__video {
   position: relative;
   width: 50%;
-  background-image: url('../img/canada-video-bg.jpg');
+  background-image: url(../img/uk-video-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  
+  &::before {
+    transform: rotate(180deg);
+    z-index: 1;
+    left: -3px;
+    width: 8px;
+    background-image: url(../img/svg/country-arrow.svg);
+    background-position: top;
+    background-size: cover
+  }
 }
 
-.canada__play,
-.canada__video::before {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  background-repeat: no-repeat;
-}
-
-.canada__video::before {
-  content: '';
-  transform: rotate(180deg);
-  z-index: 1;
-  left: -3px;
-  width: 8px;
-  background-image: url('../img/svg/country-arrow.svg');
-  background-position: top;
-  background-size: cover;
-}
-
-.canada__play {
+.uk__play {
   left: 0;
   width: 100%;
   border: 0;
   background-color: rgba(0, 0, 0, .4);
-  background-image: url('../img/svg/play.svg');
+  background-image: url(../img/svg/play.svg);
   background-position: center;
   background-size: 60px;
   cursor: pointer;
   outline: 0;
-  transition: .2s;
+  transition: 0.2s;
+  
+  &:hover,
+  &:focus {
+      background-color: rgba(0, 0, 0, 0.2);
+  }
 }
 
-.canada__play:focus,
-.canada__play:hover {
-    background-color: rgba(0, 0, 0, .2)
-}
-
-.canada__photo {
-    position: relative;
-    width: 50%;
-    background-image: url('../img/canada-photo-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover
-}
-
-.canada__photo::before {
+.uk__photo {
+  position: relative;
+  width: 50%;
+  background-image: url(../img/uk-photo-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  &::before {
     content: '';
     position: absolute;
     top: 0;
     left: -3px;
     width: 8px;
     height: 100%;
-    background-image: url('../img/svg/country-arrow.svg');
-    background-position: top
+    background-image: url(../img/svg/country-arrow.svg);
+    background-position: top;
+    transform: rotate(180deg);
+  }
 }

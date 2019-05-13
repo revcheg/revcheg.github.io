@@ -47,7 +47,7 @@
 
 .header__link {
   margin-right: 30px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
@@ -76,15 +76,15 @@
   transition: 0.2s;
   
   &--info {
-    background-image: url(../img/svg/social-info.svg);
+    background-image: url('../img/svg/social-info.svg');
   }
   
   &--facebook {
-    background-image: url(../img/svg/social-facebook.svg);
+    background-image: url('../img/svg/social-facebook.svg');
   }
   
   &--instagram {
-    background-image: url(../img/svg/social-instagram.svg);
+    background-image: url('../img/svg/social-instagram.svg');
   }
   
   &:hover,
