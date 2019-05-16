@@ -331,7 +331,7 @@ var programsData = [
     name: 'Alpadia Summer camp',
     location: 'Энгельберг',
     date: '<a href="http://summer.study.ua/trip/look/57" target="_blank">30.06 - 13.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1094" target="_blank">14.07 - 27.07 (2 нед.)</a>',
-    cost: '$3800 (2 нед.)'
+    cost: '$3650 (2 нед.)'
   },
   {
     full: false,
@@ -345,7 +345,7 @@ var programsData = [
     name: 'Malta IELS',
     location: 'Слима',
     date: '<a href="http://summer.study.ua/trip/look/1120" target="_blank">22.06 – 06.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1121" target="_blank">10.08 - 24.08 (2 нед.)</a>',
-    cost: '€2800 (2 нед.)'
+    cost: '€2650 (2 нед.)'
   },
   {
     full: false,
