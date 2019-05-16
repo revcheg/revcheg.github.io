@@ -1,36 +1,36 @@
-.canada {
+.students {
   display: flex;
   height: 100vh;
 }
 
-.canada__column {
+.students__column {
   display: flex;
   flex-direction: column;
   width: 50%;
-  
-  &--left {
-    background-image: url('../img/canada-left-bg.jpg');
+
+  &--right {
+    background-image: url('../img/students-right-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover
   }
 }
 
-.canada__row {
+.students__row {
   flex-grow: 1;
   
   &--top {
     position: relative;
-    background-image: url('../img/canada-row-top-bg.jpg');
+    background-image: url('../img/students-row-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+  
     &::before {
       content: '';
       position: absolute;
       top: 0;
-      left: -3px;
+      right: -3px;
       width: 8px;
       height: 100%;
       background-image: url('../img/svg/country-arrow.svg');
@@ -45,23 +45,25 @@
   }
 }
 
-.canada__content {
+.students__content {
   position: relative;
   box-sizing: border-box;
   padding-top: 50px;
-  padding-right: 110px;
+  padding-right: 20px;
   padding-bottom: 50px;
   padding-left: 60px;
   background-color: #FFFFFF;
 }
 
-.canada__subtitle {
+.students__subtitle {
   position: absolute;
   top: -30px;
   left: 50%;
-  width: 375px;
   margin: 0;
-  padding: 10px 30px;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
   color: $blue;
   font-size: 25px;
   font-weight: 400;
@@ -77,7 +79,7 @@
   }
 }
 
-.canada__title {
+.students__title {
   margin-top: 0;
   margin-bottom: 30px;
   color: $text;
@@ -85,21 +87,25 @@
   font-weight: 900;
 }
 
-.canada__list {
+.students__list {
   margin-top: 0;
   margin-bottom: 30px;
   padding-left: 15px;
   list-style-image: url('../img/svg/li.svg');
 }
 
-.canada__item {
+.students__item {
   margin-bottom: 15px;
   color: $text;
   font-size: 18px;
   font-weight: 400;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.canada__link {
+.students__link {
   padding-right: 45px;
   color: $red;
   font-size: 16px;
@@ -117,10 +123,10 @@
   }
 }
 
-.canada__video {
+.students__video {
   position: relative;
   width: 50%;
-  background-image: url('../img/canada-video-bg.jpg');
+  background-image: url('../img/students-video-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -129,7 +135,7 @@
     content: '';
     position: absolute;
     top: 0;
-    left: -3px;
+    right: -3px;
     width: 8px;
     height: 100%;
     background-image: url('../img/svg/country-arrow.svg');
@@ -141,7 +147,7 @@
   }
 }
 
-.canada__play {
+.students__play {
   position: absolute;
   top: 0;
   left: 0;
@@ -163,19 +169,19 @@
   }
 }
 
-.canada__photo {
+.students__photo {
   position: relative;
   width: 50%;
-  background-image: url('../img/canada-photo-bg.jpg');
+  background-image: url('../img/students-photo-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
+
   &::before {
     content: '';
     position: absolute;
     top: 0;
-    left: -3px;
+    right: -3px;
     width: 8px;
     height: 100%;
     background-image: url('../img/svg/country-arrow.svg');

@@ -9,7 +9,7 @@
   width: 50%;
   
   &--left {
-    background-image: url(../img/uk-left-bg.jpg);
+    background-image: url('../img/uk-left-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -21,7 +21,7 @@
   
   &--top {
     position: relative;
-    background-image: url(../img/uk-row-top-bg.jpg);
+    background-image: url('../img/uk-row-top-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -33,8 +33,10 @@
       left: -3px;
       width: 8px;
       height: 100%;
-      background-image: url(../img/svg/country-arrow.svg);
+      background-image: url('../img/svg/country-arrow.svg');
+      background-repeat: no-repeat;
       background-position: top;
+      background-size: cover;
     }
   }
   
@@ -63,7 +65,7 @@
   padding-right: 30px;
   padding-bottom: 10px;
   padding-left: 30px;
-  color: #6a7efc;
+  color: $blue;
   font-size: 25px;
   font-weight: 400;
   text-align: center;
@@ -81,7 +83,7 @@
 .uk__title {
   margin-top: 0;
   margin-bottom: 30px;
-  color: #292f48;
+  color: $text;
   font-size: 40px;
   font-weight: 900;
 }
@@ -90,12 +92,12 @@
   margin-top: 0;
   margin-bottom: 30px;
   padding-left: 15px;
-  list-style-image: url(../img/svg/li.svg);
+  list-style-image: url('../img/svg/li.svg');
 }
 
 .uk__item {
   margin-bottom: 15px;
-  color: #292f48;
+  color: $text;
   font-size: 18px;
   font-weight: 400;
   
@@ -106,11 +108,11 @@
 
 .uk__link {
   padding-right: 45px;
-  color: #ff3434;
+  color: $red;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
-  background-image: url(../img/svg/link-arrow.svg);
+  background-image: url('../img/svg/link-arrow.svg');
   background-repeat: no-repeat;
   background-position: right;
   outline: 0;
@@ -125,44 +127,7 @@
 .uk__video {
   position: relative;
   width: 50%;
-  background-image: url(../img/uk-video-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  
-  &::before {
-    transform: rotate(180deg);
-    z-index: 1;
-    left: -3px;
-    width: 8px;
-    background-image: url(../img/svg/country-arrow.svg);
-    background-position: top;
-    background-size: cover
-  }
-}
-
-.uk__play {
-  left: 0;
-  width: 100%;
-  border: 0;
-  background-color: rgba(0, 0, 0, .4);
-  background-image: url(../img/svg/play.svg);
-  background-position: center;
-  background-size: 60px;
-  cursor: pointer;
-  outline: 0;
-  transition: 0.2s;
-  
-  &:hover,
-  &:focus {
-      background-color: rgba(0, 0, 0, 0.2);
-  }
-}
-
-.uk__photo {
-  position: relative;
-  width: 50%;
-  background-image: url(../img/uk-photo-bg.jpg);
+  background-image: url('../img/uk-video-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -174,7 +139,54 @@
     left: -3px;
     width: 8px;
     height: 100%;
-    background-image: url(../img/svg/country-arrow.svg);
+    background-image: url('../img/svg/country-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    transform: rotate(180deg);
+    z-index: 1;
+  }
+}
+
+.uk__play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url('../img/svg/play.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.2s;
+  
+  &:hover,
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.uk__photo {
+  position: relative;
+  width: 50%;
+  background-image: url('../img/uk-photo-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -3px;
+    width: 8px;
+    height: 100%;
+    background-image: url('../img/svg/country-arrow.svg');
+    background-repeat: no-repeat;
     background-position: top;
     transform: rotate(180deg);
   }
