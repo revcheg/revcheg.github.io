@@ -1,0 +1,60 @@
+.profit {
+  height: 100vh;
+  background-image: url('../img/profit-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.profit__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  margin-left: auto;
+  padding-left: 30px;
+  padding-right: 140px;
+  background-color: rgba(41, 47, 72, 0.7);
+}
+
+.profit__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+}
+
+.profit__list {
+  // width: 750px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profit__item {
+  margin-bottom: 30px;
+  padding-left: 125px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.profit__subtitle {
+  display: block;
+  margin-bottom: 15px;
+  color: #FFFFFF;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.profit__text {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+}

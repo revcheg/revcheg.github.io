@@ -91,8 +91,8 @@
       scrollCounter--;
     }
     
-    if (scrollCounter > 8) {
-      scrollCounter = 8;
+    if (scrollCounter > 9) {
+      scrollCounter = 9;
     } else if (scrollCounter < 0) {
       scrollCounter = 0;
     }
