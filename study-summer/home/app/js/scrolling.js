@@ -1,6 +1,7 @@
+var sections = document.querySelectorAll('.section');
+var scrollCounter = 0;
+
 (function() {
-  var sections = document.querySelectorAll('.section');
-  var scrollCounter = 0;
   var marker = true;
   var delta;
   var interval = 150;
@@ -50,13 +51,22 @@
     scrolling();
   };
   
-  var offsetTopBlock;
-  function scrolling() {
-    offsetTopBlock = sections[scrollCounter].offsetTop;
-    
-    window.scrollTo({
-      top: offsetTopBlock,
-      behavior: "smooth"
-    });
-  };
+  // var offsetTopBlock;
+  // function scrolling() {
+  //   offsetTopBlock = sections[scrollCounter].offsetTop;
+  // 
+  //   window.scrollTo({
+  //     top: offsetTopBlock,
+  //     behavior: "smooth"
+  //   });
+  // };
 })();
+
+function scrolling() {
+  var offsetTopBlock = sections[scrollCounter].offsetTop;
+  
+  window.scrollTo({
+    top: offsetTopBlock,
+    behavior: "smooth"
+  });
+};

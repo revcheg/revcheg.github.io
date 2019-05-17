@@ -4,11 +4,11 @@
   var iframe = document.querySelector('.video__iframe');
   
   var indexButton = 0;
-  var clearButtonsArray = [];
+  var buttonsArray = [];
   for (var i = 0; i < buttons.length; i++){
-    clearButtonsArray.push(buttons[i]);
+    buttonsArray.push(buttons[i]);
     buttons[i].addEventListener('click', function(evt){
-      indexButton = clearButtonsArray.indexOf(evt.currentTarget);
+      indexButton = buttonsArray.indexOf(evt.currentTarget);
       showVideo();
     });
   }

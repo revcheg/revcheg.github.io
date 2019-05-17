@@ -87,8 +87,7 @@
     z-index: -1;
   }
   
-  &:hover,
-  &:focus {
+  &:hover {
     
     &::after {
       right: 50%;

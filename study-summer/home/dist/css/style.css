@@ -390,7 +390,7 @@ body {
     transition: 0.2s;
     visibility: hidden;
     z-index: -1; }
-  .nav__anchor:hover::after, .nav__anchor:focus::after {
+  .nav__anchor:hover::after {
     right: 50%;
     opacity: 1;
     visibility: visible; }

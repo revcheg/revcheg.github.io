@@ -40,8 +40,19 @@
   }
 })();
 (function () {
+  var anchors = document.querySelectorAll('.nav__anchor');
   
-})()
+  var indexButton = 0;
+  var anchorsArray = [];
+  for (var i = 0; i < anchors.length; i++){
+    anchorsArray.push(anchors[i]);
+    anchors[i].addEventListener('click', function(evt){
+      indexButton = anchorsArray.indexOf(evt.currentTarget);
+      scrollCounter = indexButton + 1;
+      scrolling();
+    });
+  }
+})();
 // (function () {
 //   var preloader = document.querySelector('.preloader');
 //   var logo = document.querySelector('.preloader__logo');
@@ -51,9 +62,10 @@
 //     logo.classList.add('preloader__logo--hide');
 //   };
 // })();
+var sections = document.querySelectorAll('.section');
+var scrollCounter = 0;
+
 (function() {
-  var sections = document.querySelectorAll('.section');
-  var scrollCounter = 0;
   var marker = true;
   var delta;
   var interval = 150;
@@ -103,16 +115,25 @@
     scrolling();
   };
   
-  var offsetTopBlock;
-  function scrolling() {
-    offsetTopBlock = sections[scrollCounter].offsetTop;
-    
-    window.scrollTo({
-      top: offsetTopBlock,
-      behavior: "smooth"
-    });
-  };
+  // var offsetTopBlock;
+  // function scrolling() {
+  //   offsetTopBlock = sections[scrollCounter].offsetTop;
+  // 
+  //   window.scrollTo({
+  //     top: offsetTopBlock,
+  //     behavior: "smooth"
+  //   });
+  // };
 })();
+
+function scrolling() {
+  var offsetTopBlock = sections[scrollCounter].offsetTop;
+  
+  window.scrollTo({
+    top: offsetTopBlock,
+    behavior: "smooth"
+  });
+};
 (function() {
   var title = document.querySelector('.title');
   var progress = document.querySelector('.title__progress');
@@ -137,11 +158,11 @@
   var iframe = document.querySelector('.video__iframe');
   
   var indexButton = 0;
-  var clearButtonsArray = [];
+  var buttonsArray = [];
   for (var i = 0; i < buttons.length; i++){
-    clearButtonsArray.push(buttons[i]);
+    buttonsArray.push(buttons[i]);
     buttons[i].addEventListener('click', function(evt){
-      indexButton = clearButtonsArray.indexOf(evt.currentTarget);
+      indexButton = buttonsArray.indexOf(evt.currentTarget);
       showVideo();
     });
   }
