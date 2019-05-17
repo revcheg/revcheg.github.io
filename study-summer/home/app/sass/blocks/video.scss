@@ -1,0 +1,44 @@
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($blue, 0.8);
+  cursor: pointer;
+  transition: 0.2s;
+  z-index: 4;
+  
+  &--hide {
+    opacity: 0;
+    visibility: hidden;
+    
+    .video__wrapper {
+      transform: scale(0.6);
+    }
+  }
+}
+
+.video__wrapper {
+  width: 1200px;
+  border-radius: 10px;
+  background-color: #000000;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.video__ratio {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.video__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

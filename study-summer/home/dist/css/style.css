@@ -1694,10 +1694,42 @@ body {
   list-style: none; }
 
 .profit__item {
+  position: relative;
   margin-bottom: 30px;
-  padding-left: 125px; }
-  .profit__item:last-child {
-    margin-bottom: 0; }
+  padding-left: 125px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 85px; }
+  .profit__item::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #FFFFFF;
+    font-size: 45px;
+    font-weight: 900;
+    opacity: 0.4; }
+  .profit__item:nth-child(1) {
+    background-image: url("../img/svg/profit-1.svg"); }
+    .profit__item:nth-child(1)::before {
+      content: '1'; }
+  .profit__item:nth-child(2) {
+    background-image: url("../img/svg/profit-2.svg"); }
+    .profit__item:nth-child(2)::before {
+      content: '2'; }
+  .profit__item:nth-child(3) {
+    background-image: url("../img/svg/profit-3.svg"); }
+    .profit__item:nth-child(3)::before {
+      content: '3'; }
+  .profit__item:nth-child(4) {
+    background-image: url("../img/svg/profit-4.svg"); }
+    .profit__item:nth-child(4)::before {
+      content: '4'; }
+  .profit__item:nth-child(5) {
+    margin-bottom: 0;
+    background-image: url("../img/svg/profit-5.svg"); }
+    .profit__item:nth-child(5)::before {
+      content: '5'; }
 
 .profit__subtitle {
   display: block;
@@ -1711,3 +1743,41 @@ body {
   color: #FFFFFF;
   font-size: 20px;
   font-weight: 400; }
+
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(106, 126, 252, 0.8);
+  cursor: pointer;
+  transition: 0.2s;
+  z-index: 4; }
+  .video--hide {
+    opacity: 0;
+    visibility: hidden; }
+    .video--hide .video__wrapper {
+      -webkit-transform: scale(0.6);
+              transform: scale(0.6); }
+
+.video__wrapper {
+  width: 1200px;
+  border-radius: 10px;
+  background-color: #000000;
+  overflow: hidden;
+  transition: 0.2s; }
+
+.video__ratio {
+  position: relative;
+  padding-bottom: 56.25%; }
+
+.video__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
