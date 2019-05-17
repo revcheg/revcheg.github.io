@@ -50,16 +50,6 @@ var scrollCounter = 0;
     
     scrolling();
   };
-  
-  // var offsetTopBlock;
-  // function scrolling() {
-  //   offsetTopBlock = sections[scrollCounter].offsetTop;
-  // 
-  //   window.scrollTo({
-  //     top: offsetTopBlock,
-  //     behavior: "smooth"
-  //   });
-  // };
 })();
 
 function scrolling() {

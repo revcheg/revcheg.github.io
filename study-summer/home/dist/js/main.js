@@ -114,16 +114,6 @@ var scrollCounter = 0;
     
     scrolling();
   };
-  
-  // var offsetTopBlock;
-  // function scrolling() {
-  //   offsetTopBlock = sections[scrollCounter].offsetTop;
-  // 
-  //   window.scrollTo({
-  //     top: offsetTopBlock,
-  //     behavior: "smooth"
-  //   });
-  // };
 })();
 
 function scrolling() {
@@ -180,13 +170,13 @@ function scrolling() {
         source = 'd4FKC4Bg2hc';
         break;
       case 2:
-        source = 'eOnwaoM_Dlc';
+        source = 'LpO92XC8050';
         break;
       case 3:
-        source = 'eOnwaoM_Dlc';
+        source = 'wNHeDbpEvHM';
         break;
       case 4:
-        source = '91JRNaliIQc';
+        source = 'wNHeDbpEvHM';
         break;
       case 5:
         source = '91JRNaliIQc';
