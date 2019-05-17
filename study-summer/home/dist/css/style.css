@@ -298,7 +298,7 @@ body {
   text-decoration: none;
   outline: 0;
   transition: 0.2s; }
-  .header__link:hover, .header__link:focus {
+  .header__link:hover {
     opacity: 0.6; }
   .header__link:active {
     opacity: 1; }
