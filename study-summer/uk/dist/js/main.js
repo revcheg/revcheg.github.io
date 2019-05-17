@@ -272,25 +272,25 @@
 })();
 var programsData = [
   {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/22',
+    full: true,
+    href: '',
     webp: 'img/program-3.webp',
     jpg: 'img/program-3.jpg',
     alt: 'Royal Holloway, University of London',
     name: 'Royal Holloway, University of London',
     location: 'Лондон',
-    date: '<a href="http://summer.study.ua/trip/look/22" target="_blank">29.07 - 12.08 (2 нед.)</a>',
+    date: '29.07 - 12.08 (2 нед.)',
     cost: '$3300 (2 нед.)'
   },
   {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/29',
+    full: true,
+    href: '',
     webp: 'img/program-1.webp',
     jpg: 'img/program-1.jpg',
     alt: 'Brunel University',
     name: 'Brunel University',
     location: 'Лондон',
-    date: '<a href="http://summer.study.ua/trip/look/29" target="_blank">23.06 - 14.07 (3 нед.)</a>',
+    date: '23.06 - 14.07 (3 нед.)',
     cost: '$4550 (3 нед.)'
   },
   {
@@ -317,24 +317,24 @@ var programsData = [
   },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/1083',
+    href: 'http://summer.study.ua/trip/look/1088',
     webp: 'img/program-5.webp',
     jpg: 'img/program-5.jpg',
     alt: 'South Bank University',
     name: 'South Bank University',
     location: 'Лондон',
-    date: '<a href="http://summer.study.ua/trip/look/1083" target="_blank">23.06 - 07.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1088" target="_blank">07.07 - 21.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1089" target="_blank">21.07 - 11.08 (3 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1088" target="_blank">07.07 - 21.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1089" target="_blank">21.07 - 11.08 (3 нед.)</a>',
     cost: '$3500 (2 нед.)<br>$4500 (3 нед.)'
   },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/1107',
+    href: 'http://summer.study.ua/trip/look/1108',
     webp: 'img/program-6.webp',
     jpg: 'img/program-6.jpg',
     alt: 'Roedean School',
     name: 'Roedean School',
     location: 'Брайтон',
-    date: '<a href="http://summer.study.ua/trip/look/1107" target="_blank">30.07 - 13.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1108" target="_blank">14.07 - 27.07 (2 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1108" target="_blank">14.07 - 27.07 (2 нед.)</a>',
     cost: '$3300 (2 нед.)'
   },
   {
@@ -356,7 +356,7 @@ var programsData = [
     alt: 'Wellington College',
     name: 'Wellington College',
     location: 'Виндзор',
-    date: '<a href="http://summer.study.ua/trip/look/1111" target="_blank">02.07 - 16.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1113" target="_blank">30.07 - 13.08 (2 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1111" target="_blank">02.07 - 16.07 (2 нед.)</a>',
     cost: '$3450 (2 нед.)'
   },
   {
@@ -367,73 +367,73 @@ var programsData = [
     alt: 'Bradfield College',
     name: 'Bradfield College',
     location: 'Рединг',
-    date: '<a href="http://summer.study.ua/trip/look/1109" target="_blank">02.07 - 16.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1109" target="_blank">30.07 - 13.08 (2 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1109" target="_blank">02.07 - 16.07 (2 нед.)</a>',
     cost: '$3200 (2 нед.)'
   },
   {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/34',
+    full: true,
+    href: '',
     webp: 'img/program-11.webp',
     jpg: 'img/program-11.jpg',
     alt: 'Queen Ethelburga’s College + Edinburgh trip',
     name: 'Queen Ethelburga’s College + Edinburgh trip',
     location: 'Йорк',
-    date: '<a href="http://summer.study.ua/trip/look/1082" target="_blank">30.06 -14.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/34" target="_blank">14.07 - 28.07 (2 нед.)</a>',
+    date: '30.06 -14.07 (2 нед.)<br>14.07 - 28.07 (2 нед.)',
     cost: '$3600 (2 нед.)'
   },
   {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/16',
+    full: true,
+    href: '',
     webp: 'img/program-12.webp',
     jpg: 'img/program-12.jpg',
     alt: 'Oxford School of English',
     name: 'Oxford School of English',
     location: 'Оксфорд',
-    date: '<a href="http://summer.study.ua/trip/look/16" target="_blank">05.07 - 19.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/4" target="_blank">28.06 - 19.07 (3 нед.)</a>',
+    date: '05.07 - 19.07 (2 нед.)<br>28.06 - 19.07 (3 нед.)',
     cost: '$3000 (2 нед.)<br>$3600 (3 нед.)'
   },
   {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/1114',
+    full: true,
+    href: '',
     webp: 'img/program-13.webp',
     jpg: 'img/program-13.jpg',
     alt: 'Kings Oxford academic summer',
     name: 'Kings Oxford academic summer',
     location: 'Оксфорд',
-    date: '<a href="http://summer.study.ua/trip/look/1114" target="_blank">07.07 - 21.07 (2 нед.)</a>',
+    date: '07.07 - 21.07 (2 нед.)',
     cost: '$4000 (2 нед.)'
   },
   {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/65',
+    full: true,
+    href: '',
     webp: 'img/program-14.webp',
     jpg: 'img/program-14.jpg',
     alt: 'Abbey DLD Academic summer',
     name: 'Abbey DLD Academic summer',
     location: 'Лондон',
-    date: '<a href="http://summer.study.ua/trip/look/65" target="_blank">06.07 - 20.07 (2 нед.)</a>',
+    date: '06.07 - 20.07 (2 нед.)',
     cost: '$4700 (2 нед.)'
   },
   {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/1098',
+    full: true,
+    href: '',
     webp: 'img/program-15.webp',
     jpg: 'img/program-15.jpg',
     alt: 'Abbey DLD Academic summer Medical School',
     name: 'Abbey DLD Academic summer Medical School',
     location: 'Лондон',
-    date: '<a href="http://summer.study.ua/trip/look/1098" target="_blank">06.07 - 20.07 (2 нед.)</a>',
+    date: '06.07 - 20.07 (2 нед.)',
     cost: '$5000 (2 нед.)'
   },
   {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/1130',
+    full: true,
+    href: '',
     webp: 'img/program-16.webp',
     jpg: 'img/program-16.jpg',
     alt: 'High School Immersion with British students',
     name: 'High School Immersion with British students',
     location: 'Брайтон',
-    date: '<a href="http://summer.study.ua/trip/look/1130" target="_blank">23.06 - 07.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1131" target="_blank">23.06 - 14.07 (3 нед.)</a>',
+    date: '23.06 - 07.07 (2 нед.)<br>23.06 - 14.07 (3 нед.)',
     cost: '$3700 (2 нед.)<br>$4400 (2 нед.)'
   }
 ];
