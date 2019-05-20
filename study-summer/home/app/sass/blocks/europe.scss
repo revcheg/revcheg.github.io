@@ -192,3 +192,40 @@
     transform: rotate(180deg);
   }
 }
+
+@media screen and ($notebook-widths) {
+  .europe__column {
+    width: 60%;
+    
+    &--left {
+      width: 40%;
+    }
+  }
+  
+  .europe__content {
+    padding: 30px;
+  }
+  
+  .europe__subtitle {
+    box-sizing: border-box;
+    width: 335px;
+    font-size: 18px;
+    
+    &--number {
+      font-size: 30px;
+    }
+  }
+  
+  .europe__title {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .europe__list {
+    margin-bottom: 20px;
+  }
+  
+  .europe__item {
+    font-size: 15px;
+  }
+}

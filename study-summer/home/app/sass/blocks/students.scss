@@ -191,3 +191,40 @@
     transform: rotate(180deg);
   }
 }
+
+@media screen and ($notebook-widths) {
+  .students__column {
+    width: 60%;
+    
+    &--right {
+      width: 40%;
+    }
+  }
+  
+  .students__content {
+    padding: 30px;
+  }
+  
+  .students__subtitle {
+    box-sizing: border-box;
+    // width: 330px;
+    font-size: 18px;
+    
+    &--number {
+      font-size: 30px;
+    }
+  }
+  
+  .students__title {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .students__list {
+    margin-bottom: 20px;
+  }
+  
+  .students__item {
+    font-size: 15px;
+  }
+}

@@ -109,3 +109,32 @@
   font-size: 20px;
   font-weight: 400;
 }
+
+@media screen and (max-width: 1550px) {
+  .profit__column {
+    width: 60%;
+    padding-right: 100px;
+  }
+  
+  .profit__title {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+  
+  .profit__item {
+    height: 70px;
+    margin-bottom: 20px;
+    padding-left: 90px;
+    background-size: contain;
+  }
+  
+  .profit__subtitle {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .profit__text {
+    font-size: 15px;
+  }
+}

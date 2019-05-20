@@ -192,3 +192,40 @@
     transform: rotate(180deg);
   }
 }
+
+@media screen and ($notebook-widths) {
+  .ireland__column {
+    width: 60%;
+    
+    &--right {
+      width: 40%;
+    }
+  }
+  
+  .ireland__content {
+    padding: 30px;
+  }
+  
+  .ireland__subtitle {
+    box-sizing: border-box;
+    width: 330px;
+    font-size: 18px;
+    
+    &--number {
+      font-size: 30px;
+    }
+  }
+  
+  .ireland__title {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .ireland__list {
+    margin-bottom: 20px;
+  }
+  
+  .ireland__item {
+    font-size: 15px;
+  }
+}

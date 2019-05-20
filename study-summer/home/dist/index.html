@@ -77,20 +77,20 @@
         <ul class="header__list">
           <li class="header__item">
             <button class="header__home" aria-label="На главный экран">
-              <img src="img/svg/logo.svg" alt="STUDY.UA лето 2019">
+              <img class="header__logo" src="img/svg/logo.svg" alt="STUDY.UA лето 2019">
             </button>
           </li>
           <li class="header__item">
-            <a class="header__link" href="#">Для школьников</a>
+            <button class="header__link">Для школьников</button>
           </li>
           <li class="header__item">
-            <a class="header__link" href="#">Для студентов</a>
+            <button class="header__link">Для студентов</button>
           </li>
           <li class="header__item">
-            <a class="header__link" href="#">Почему мы?</a>
+            <button class="header__link">Почему мы?</button>
           </li>
           <li class="header__item">
-            <a class="header__link" href="#">Контакты</a>
+            <button class="header__link">Контакты</button>
           </li>
           <li class="header__item">
             <a class="header__social  header__social--info" href="https://www.study.ua/info" target="_blank" aria-label="Info"></a>
@@ -321,52 +321,56 @@
     <div class="contacts__column  contacts__column--left">
       <div class="contacts__row  contacts__row--topleft"></div>
       <section class="contacts__content">
-        <h2 class="contacts__title">Как с нами связаться?</h2>
-        <a class="contacts__location" href="https://goo.gl/maps/3gGno95YD8urdan2A" target="_blank">г. Киев, ул. Драгомирова, 16</a>
-        <p class="contacts__text">Приходите на консультацию,<br>мы всегда рады Вас видеть!</p>
-        <b class="contacts__call">Заинтересовало предложение?</b>
-        <p class="contacts__text">Позвоните в наш офис и получите консультацию по<br>телефону прямо сейчас!</p>
-        <div class="contacts__phones">
-          <a class="contacts__phone" href="tel:044 500 03 20">+38 044 500-03-20</a>
-          <a class="contacts__phone" href="tel:097 000 03 20">+38 097 000-03-20</a>
-          <a class="contacts__phone" href="tel:093 000 03 20">+38 093 000-03-20</a>
-          <a class="contacts__phone" href="tel:099 000 03 20">+38 099 000-03-20</a>
+        <div class="contacts__subcolumn">
+          <h2 class="contacts__title">Как с нами связаться?</h2>
+          <a class="contacts__location" href="https://goo.gl/maps/3gGno95YD8urdan2A" target="_blank">г. Киев, ул. Драгомирова, 16</a>
+          <p class="contacts__text">Приходите на консультацию,<br>мы всегда рады вас видеть!</p>
+          <b class="contacts__call">Заинтересовало предложение?</b>
+          <p class="contacts__text">Позвоните в наш офис и получите консультацию по<br>телефону прямо сейчас!</p>
+          <div class="contacts__phones">
+            <a class="contacts__phone" href="tel:044 500 03 20">+38 044 500-03-20</a>
+            <a class="contacts__phone" href="tel:097 000 03 20">+38 097 000-03-20</a>
+            <a class="contacts__phone" href="tel:093 000 03 20">+38 093 000-03-20</a>
+            <a class="contacts__phone" href="tel:099 000 03 20">+38 099 000-03-20</a>
+          </div>
         </div>
-        <b class="contacts__call">Сейчас неудобно? Мы перезвоним</b>
-        <form class="contacts__form" action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" autocomplete="off" method="post">
-          <input type="hidden" name="campaign_token" value="8kCUL">
-          <input type="hidden" name="thankyou_url" value="https://holidays.study.ua/thankyou.html">
-          <input type="hidden" name="forward_data" value="">
-          <div class="contacts__set">
-            <div class="contacts__group">
-              <input class="contacts__input" id="name" type="text" name="first_name" minlength="3" required>
-              <label class="contacts__label" for="name">
-                Ваше имя *
-              </label>
+        <div class="contacts__subcolumn">
+          <b class="contacts__call">Сейчас неудобно? Мы перезвоним</b>
+          <form class="contacts__form" action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" autocomplete="off" method="post">
+            <input type="hidden" name="campaign_token" value="8kCUL">
+            <input type="hidden" name="thankyou_url" value="https://holidays.study.ua/thankyou.html">
+            <input type="hidden" name="forward_data" value="">
+            <div class="contacts__set">
+              <div class="contacts__group">
+                <input class="contacts__input" id="name" type="text" name="first_name" minlength="3" required>
+                <label class="contacts__label" for="name">
+                  Ваше имя *
+                </label>
+              </div>
+              <div class="contacts__group">
+                <input class="contacts__input" id="email" type="email" name="email" required>
+                <label class="contacts__label" for="email">
+                  E-mail *
+                </label>
+              </div>
             </div>
-            <div class="contacts__group">
-              <input class="contacts__input" id="email" type="email" name="email" required>
-              <label class="contacts__label" for="email">
-                E-mail *
-              </label>
+            <div class="contacts__set">
+              <div class="contacts__group">
+                <input class="contacts__input" id="phone" type="tel" name="custom_phone" minlength="13" maxlength="13" required>
+                <label class="contacts__label" for="phone">
+                  Номер телефона *
+                </label>
+              </div>
+              <div class="contacts__group">
+                <textarea class="contacts__input  contacts__input--text" id="textarea" maxlength="100" name="custom_comment"></textarea>
+                <label class="contacts__label" for="textarea">
+                  Когда вам удобно?
+                </label>
+              </div>
             </div>
-          </div>
-          <div class="contacts__set">
-            <div class="contacts__group">
-              <input class="contacts__input" id="phone" type="tel" name="custom_phone" minlength="13" maxlength="13" required>
-              <label class="contacts__label" for="phone">
-                Номер телефона *
-              </label>
-            </div>
-            <div class="contacts__group">
-              <textarea class="contacts__input  contacts__input--text" id="textarea" maxlength="100" name="custom_comment"></textarea>
-              <label class="contacts__label" for="textarea">
-                Когда Вам удобно?
-              </label>
-            </div>
-          </div>
-          <button class="contacts__submit" type="submit">Отправить</button>
-        </form>
+            <button class="contacts__submit" type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
     </div>
     <div class="contacts__column  contacts__column--right">

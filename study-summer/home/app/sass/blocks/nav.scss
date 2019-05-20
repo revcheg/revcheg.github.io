@@ -27,27 +27,27 @@
   transition: 0.2s;
   
   &--canada {
-    background-image: url('../img/svg/nav-canada.svg');
+    background-image: url('../img/nav-canada.png');
   }
   
   &--usa {
-    background-image: url('../img/svg/nav-usa.svg');
+    background-image: url('../img/nav-usa.png');
   }
   
   &--uk {
-    background-image: url('../img/svg/nav-uk.svg');
+    background-image: url('../img/nav-uk.png');
   }
   
   &--ireland {
-    background-image: url('../img/svg/nav-ireland.svg');
+    background-image: url('../img/nav-ireland.png');
   }
   
   &--europe {
-    background-image: url('../img/svg/nav-europe.svg');
+    background-image: url('../img/nav-europe.png');
   }
   
   &--students {
-    background-image: url('../img/svg/nav-students.svg');
+    background-image: url('../img/nav-students.png');
     
     &::before {
       display: none;
@@ -93,6 +93,23 @@
       right: 50%;
       opacity: 1;
       visibility: visible;
+    }
+  }
+}
+
+@media screen and ($notebook-widths) {
+  .nav__anchor {
+    width: 20px;
+    height: 20px;
+    
+    &::before {
+      top: 20px;
+    }
+    
+    &::after {
+      padding-top: 3.3px;
+      padding-bottom: 3.3px;
+      font-size: 12px;
     }
   }
 }

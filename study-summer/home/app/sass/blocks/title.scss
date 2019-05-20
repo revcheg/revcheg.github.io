@@ -26,6 +26,7 @@
 }
 
 .title__subtitle {
+  margin-top: 0;
   margin-bottom: 40px;
   color: #FFFFFF;
   font-size: 32px;
@@ -87,5 +88,24 @@
   
   100% {
     width: 100%;
+  }
+}
+
+@media screen and ($notebook-widths) {
+  .title__content {
+    width: 670px;
+  }
+  
+  .title__title {
+    font-size: 32px;
+  }
+  
+  .title__subtitle {
+    margin-bottom: 35px;
+    font-size: 22px;
+  }
+  
+  .title__call {
+    font-size: 28px;
   }
 }

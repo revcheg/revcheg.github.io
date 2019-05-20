@@ -10,3 +10,9 @@
   background-color: rgba(106, 126, 252, 0.8);
   z-index: 3;
 }
+
+@media screen and ($notebook-widths) {
+  .aside {
+    width: 70px;
+  }
+}

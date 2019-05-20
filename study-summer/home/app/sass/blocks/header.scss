@@ -28,8 +28,7 @@
   outline: 0;
   transition: 0.2s;
   
-  &:hover,
-  &:focus {
+  &:hover {
     transform: translateY(-5px);
   }
   
@@ -47,10 +46,15 @@
 
 .header__link {
   margin-right: 30px;
+  padding: 0;
   color: #FFFFFF;
   font-size: 18px;
   font-weight: 500;
+  font-family: inherit;
   text-decoration: none;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
   outline: 0;
   transition: 0.2s;
   
@@ -89,5 +93,29 @@
   &:hover,
   &:focus {
     transform: translateY(-5px);
+  }
+}
+
+@media screen and ($notebook-widths) {
+  .header {
+    padding-right: 90px;
+    padding-bottom: 90px;
+  }
+  
+  .header__home {
+    width: 240px;
+  }
+  
+  .header__logo {
+    width: 100%;
+  }
+  
+  .header__link {
+    font-size: 15px;
+  }
+  
+  .header__social {
+    width: 25px;
+    height: 25px;
   }
 }
