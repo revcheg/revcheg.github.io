@@ -229,3 +229,53 @@
     font-size: 15px;
   }
 }
+
+@media screen and ($mobile-widths) {
+  .europe__column {
+    width: 100%;
+    
+    &--left {
+      display: none;
+    }
+  }
+  
+  .europe__row {
+    
+    &--top {
+      
+      &::before {
+        display: none;
+      }
+    }
+    
+    &--double {
+      display: none;
+    }
+  }
+  
+  .europe__content {
+    padding-bottom: 85px;
+  }
+  
+  .europe__subtitle {
+    width: 300px;
+    font-size: 16px;
+    
+    &--number {
+      font-size: 25px;
+    }
+  }
+  
+  .europe__title {
+    font-size: 22px;
+  }
+  
+  .europe__item {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  
+  .europe__link {
+    font-size: 14px;
+  }
+}

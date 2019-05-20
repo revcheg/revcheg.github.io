@@ -109,3 +109,36 @@
     font-size: 28px;
   }
 }
+
+@media screen and ($mobile-widths) {
+  .title__content {
+    width: 100%;
+    max-width: 670px;
+    min-width: 290px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .title__title {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  
+  .title__subtitle {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  .title__call {
+    font-size: 18px;
+  }
+  
+  .title__controls {
+    right: 15px;
+    bottom: 75px;
+    left: auto;
+    width: 155px;
+    padding: 0;
+    background-color: transparent;
+  }
+}

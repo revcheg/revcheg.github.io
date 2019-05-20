@@ -228,3 +228,53 @@
     font-size: 15px;
   }
 }
+
+@media screen and ($mobile-widths) {
+  .students__column {
+    width: 100%;
+    
+    &--right {
+      display: none;
+    }
+  }
+  
+  .students__row {
+    
+    &--top {
+      
+      &::before {
+        display: none;
+      }
+    }
+    
+    &--double {
+      display: none;
+    }
+  }
+  
+  .students__content {
+    padding-bottom: 85px;
+  }
+  
+  .students__subtitle {
+    width: 300px;
+    font-size: 16px;
+    
+    &--number {
+      font-size: 25px;
+    }
+  }
+  
+  .students__title {
+    font-size: 22px;
+  }
+  
+  .students__item {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  
+  .students__link {
+    font-size: 14px;
+  }
+}

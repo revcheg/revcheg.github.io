@@ -155,3 +155,20 @@
     font-size: 15px;
   }
 }
+
+@media screen and ($mobile-widths) {
+  .edge__content {
+    width: 100%;
+    margin-left: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-y: scroll;
+  }
+  
+  .edge__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+  }
+}

@@ -220,3 +220,63 @@
     font-size: 15px;
   }
 }
+
+@media screen and ($mobile-widths) {
+  .usa__column {
+    width: 100%;
+    
+    &--right {
+      display: none;
+    }
+  }
+  
+  .usa__row {
+    
+    &--top {
+      
+      &::before {
+        display: none;
+      }
+    }
+    
+    &--double {
+      display: none;
+    }
+  }
+  
+  .usa__content {
+    padding-bottom: 85px;
+  }
+  
+  .usa__subtitle {
+    width: 300px;
+    font-size: 16px;
+    
+    &--number {
+      font-size: 25px;
+    }
+  }
+  
+  .usa__title {
+    font-size: 22px;
+  }
+  
+  .usa__item {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  
+  .usa__link {
+    font-size: 14px;
+  }
+  
+  .usa__photo {
+    
+    &--topright {
+      
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

@@ -74,12 +74,10 @@
   <div class="title  section">
     <header class="header">
       <nav class="header__nav">
+        <button class="header__home" aria-label="На главный экран">
+          <img class="header__logo" src="img/svg/logo.svg" alt="STUDY.UA лето 2019">
+        </button>
         <ul class="header__list">
-          <li class="header__item">
-            <button class="header__home" aria-label="На главный экран">
-              <img class="header__logo" src="img/svg/logo.svg" alt="STUDY.UA лето 2019">
-            </button>
-          </li>
           <li class="header__item">
             <button class="header__link">Для школьников</button>
           </li>
@@ -102,6 +100,7 @@
             <a class="header__social  header__social--instagram" href="https://www.instagram.com/studyua/" target="_blank" aria-label="Instagram"></a>
           </li>
         </ul>
+        <button class="header__menu" aria-label="Открыть меню"></button>
       </nav>
     </header>
     <section class="title__content">
@@ -334,7 +333,7 @@
             <a class="contacts__phone" href="tel:099 000 03 20">+38 099 000-03-20</a>
           </div>
         </div>
-        <div class="contacts__subcolumn">
+        <div class="contacts__subcolumn  contacts__subcolumn--popup">
           <b class="contacts__call">Сейчас неудобно? Мы перезвоним</b>
           <form class="contacts__form" action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" autocomplete="off" method="post">
             <input type="hidden" name="campaign_token" value="8kCUL">
@@ -371,6 +370,7 @@
             <button class="contacts__submit" type="submit">Отправить</button>
           </form>
         </div>
+        <button class="contacts__cta">Написать</button>
       </section>
     </div>
     <div class="contacts__column  contacts__column--right">

@@ -113,3 +113,35 @@
     }
   }
 }
+
+@media screen and ($mobile-widths) {
+  .nav__list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav__item {
+    margin-right: 30px;
+    margin-bottom: 0;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  .nav__anchor {
+    width: 25px;
+    height: 25px;
+    
+    &::before {
+      top: auto;
+      left: 40px;
+      width: 33px;
+      height: 2px;
+    }
+    
+    &::after {
+      display: none;
+    }
+  }
+}

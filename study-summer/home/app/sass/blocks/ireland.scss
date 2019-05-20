@@ -229,3 +229,53 @@
     font-size: 15px;
   }
 }
+
+@media screen and ($mobile-widths) {
+  .ireland__column {
+    width: 100%;
+    
+    &--right {
+      display: none;
+    }
+  }
+  
+  .ireland__row {
+    
+    &--top {
+      
+      &::before {
+        display: none;
+      }
+    }
+    
+    &--double {
+      display: none;
+    }
+  }
+  
+  .ireland__content {
+    padding-bottom: 85px;
+  }
+  
+  .ireland__subtitle {
+    width: 300px;
+    font-size: 16px;
+    
+    &--number {
+      font-size: 25px;
+    }
+  }
+  
+  .ireland__title {
+    font-size: 22px;
+  }
+  
+  .ireland__item {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  
+  .ireland__link {
+    font-size: 14px;
+  }
+}

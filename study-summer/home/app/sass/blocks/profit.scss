@@ -138,3 +138,25 @@
     font-size: 15px;
   }
 }
+
+@media screen and ($mobile-widths) {
+  .profit__column {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .profit__title {
+    margin-top: 0;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .profit__subtitle {
+    font-size: 16px;
+  }
+  
+  .profit__text {
+    font-size: 13px;
+  }
+}

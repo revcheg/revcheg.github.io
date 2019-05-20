@@ -222,3 +222,53 @@
     font-size: 15px;
   }
 }
+
+@media screen and ($mobile-widths) {
+  .canada__column {
+    width: 100%;
+    
+    &--left {
+      display: none;
+    }
+  }
+  
+  .canada__row {
+    
+    &--top {
+      
+      &::before {
+        display: none;
+      }
+    }
+    
+    &--double {
+      display: none;
+    }
+  }
+  
+  .canada__content {
+    padding-bottom: 85px;
+  }
+  
+  .canada__subtitle {
+    width: 300px;
+    font-size: 16px;
+    
+    &--number {
+      font-size: 25px;
+    }
+  }
+  
+  .canada__title {
+    font-size: 22px;
+  }
+  
+  .canada__item {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  
+  .canada__link {
+    font-size: 14px;
+  }
+}
