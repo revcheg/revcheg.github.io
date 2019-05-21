@@ -168,7 +168,7 @@ body {
   .aside {
     width: 70px; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .aside {
     top: auto;
     right: auto;
@@ -278,7 +278,7 @@ body {
   .title__call {
     font-size: 28px; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .title__content {
     width: 100%;
     max-width: 670px;
@@ -406,16 +406,21 @@ body {
     width: 25px;
     height: 25px; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1060px) {
   .header {
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 40px;
-    padding-left: 15px; }
+    padding-right: 20px;
+    z-index: 3; }
   .header__list {
     display: none; }
   .header__menu {
     display: block; } }
+
+@media screen and (max-width: 800px) {
+  .header {
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+    padding-left: 15px; } }
 
 .nav__list {
   margin: 0;
@@ -500,7 +505,7 @@ body {
       padding-bottom: 3.3px;
       font-size: 12px; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .nav__list {
     display: flex;
     align-items: center; }
@@ -701,6 +706,10 @@ body {
     font-size: 15px; } }
 
 @media screen and (max-width: 1200px) {
+  .canada__content {
+    padding-right: 80px; } }
+
+@media screen and (max-width: 800px) {
   .canada__column {
     width: 100%; }
     .canada__column--left {
@@ -898,7 +907,7 @@ body {
   .usa__item {
     font-size: 15px; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .usa__column {
     width: 100%; }
     .usa__column--right {
@@ -1108,7 +1117,7 @@ body {
   .uk__item {
     font-size: 15px; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .uk__column {
     width: 100%; }
     .uk__column--left {
@@ -1317,7 +1326,7 @@ body {
   .ireland__item {
     font-size: 15px; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .ireland__column {
     width: 100%; }
     .ireland__column--right {
@@ -1526,7 +1535,7 @@ body {
   .europe__item {
     font-size: 15px; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .europe__column {
     width: 100%; }
     .europe__column--left {
@@ -1733,7 +1742,7 @@ body {
   .students__item {
     font-size: 15px; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .students__column {
     width: 100%; }
     .students__column--right {
@@ -1863,18 +1872,85 @@ body {
   .edge__text {
     font-size: 15px; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
   .edge__content {
+    position: relative;
+    bottom: 0;
     width: 100%;
     margin-left: 0;
-    padding-right: 15px;
-    padding-left: 15px;
+    margin-bottom: -90px; }
+  .edge__title {
+    margin-bottom: 30px; }
+  .edge__wrapper {
+    position: relative;
+    width: 350px;
+    height: 430px;
+    margin: auto;
     overflow-y: scroll; }
   .edge__list {
     position: absolute;
     top: 0;
     left: 0;
-    width: 300%; } }
+    width: 1110px;
+    height: 430px; }
+  .edge__item {
+    width: 350px;
+    height: auto;
+    margin-top: 50px;
+    padding-bottom: 20px; }
+    .edge__item:first-child {
+      margin-bottom: 0; }
+  .edge__controls {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    display: flex; }
+  .edge__toggle {
+    width: 40px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    background-image: url("../img/svg/mobile-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    outline: none; }
+    .edge__toggle--prev {
+      border-left: 1px solid #FFFFFF;
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); } }
+
+@media screen and (max-width: 800px) {
+  .edge {
+    position: relative; }
+  .edge__content {
+    position: static;
+    margin-bottom: 0; }
+  .edge__title {
+    margin-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 22px; }
+  .edge__wrapper {
+    width: 335px; }
+  .edge__item {
+    width: 335px; }
+  .edge__controls {
+    right: 15px;
+    bottom: 70px; } }
+
+@media screen and (max-width: 325px) {
+  .edge__title {
+    margin-bottom: 20px; }
+  .edge__wrapper {
+    width: 300px;
+    height: 240px; }
+  .edge__list {
+    width: 1950px;
+    height: 220px; }
+  .edge__item {
+    width: 300px; } }
 
 .contacts {
   display: flex;
@@ -2143,6 +2219,20 @@ body {
       margin-bottom: 30px; } }
 
 @media screen and (max-width: 1200px) {
+  .contacts__content {
+    flex-direction: column;
+    align-items: flex-start; }
+  .contacts__subcolumn:first-child {
+    margin-right: 0; }
+  .contacts__subcolumn--popup {
+    display: none; }
+  .contacts__phones {
+    margin-bottom: 10px; }
+  .contacts__cta {
+    align-self: flex-start;
+    display: block; } }
+
+@media screen and (max-width: 800px) {
   .contacts__column {
     width: 100%; }
     .contacts__column--right {
@@ -2159,8 +2249,6 @@ body {
     width: 100%; }
     .contacts__subcolumn:first-child {
       margin-right: 0; }
-    .contacts__subcolumn--popup {
-      display: none; }
   .contacts__title {
     margin-bottom: 25px;
     font-size: 22px; }
@@ -2177,12 +2265,11 @@ body {
   .contacts__phones {
     box-sizing: border-box;
     width: 100%;
-    margin-bottom: 10px;
     padding-left: 20px; }
   .contacts__phone {
     font-size: 13px; }
   .contacts__cta {
-    display: block; } }
+    align-self: center; } }
 
 .profit {
   height: 100vh;
@@ -2286,7 +2373,7 @@ body {
   .profit__text {
     font-size: 15px; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .profit__column {
     width: 100%;
     padding-right: 15px;

@@ -223,6 +223,12 @@
   }
 }
 
+@media screen and ($tablet-widths) {
+  .canada__content {
+    padding-right: 80px;
+  }
+}
+
 @media screen and ($mobile-widths) {
   .canada__column {
     width: 100%;

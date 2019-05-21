@@ -372,6 +372,33 @@
   }
 }
 
+@media screen and ($tablet-widths) {
+  .contacts__content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contacts__subcolumn {
+    
+    &:first-child {
+      margin-right: 0;
+    }
+    
+    &--popup {
+      display: none;
+    }
+  }
+  
+  .contacts__phones {
+    margin-bottom: 10px;
+  }
+  
+  .contacts__cta {
+    align-self: flex-start;
+    display: block;
+  }
+}
+
 @media screen and ($mobile-widths) {
   .contacts__column {
     width: 100%;
@@ -402,10 +429,6 @@
     &:first-child {
       margin-right: 0;
     }
-    
-    &--popup {
-      display: none;
-    }
   }
   
   .contacts__title {
@@ -434,7 +457,6 @@
   .contacts__phones {
     box-sizing: border-box;
     width: 100%;
-    margin-bottom: 10px;
     padding-left: 20px;
   }
   
@@ -443,6 +465,6 @@
   }
   
   .contacts__cta {
-    display: block;
+    align-self: center;
   }
 }

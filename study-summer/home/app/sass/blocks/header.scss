@@ -134,12 +134,10 @@
   }
 }
 
-@media screen and ($mobile-widths) {
+@media screen and (max-width: 1060px) {
   .header {
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 40px;
-    padding-left: 15px;
+    padding-right: 20px;
+    z-index: 3;
   }
   
   .header__list {
@@ -148,5 +146,14 @@
   
   .header__menu {
     display: block;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .header {
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+    padding-left: 15px;
   }
 }
