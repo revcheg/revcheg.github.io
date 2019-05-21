@@ -258,23 +258,40 @@
   }
   
   .europe__subtitle {
-    width: 300px;
+    width: 320px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .europe__content {
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 75px;
+    padding-left: 20px;
+  }
+  
+  .europe__subtitle {
+    width: 280px;
+    padding-right: 15px;
+    padding-left: 15px;
     font-size: 16px;
-    
+
     &--number {
       font-size: 25px;
     }
   }
-  
+
   .europe__title {
     font-size: 22px;
   }
-  
+
   .europe__item {
     margin-bottom: 10px;
     font-size: 13px;
   }
-  
+
   .europe__link {
     font-size: 14px;
   }

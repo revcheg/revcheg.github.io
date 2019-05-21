@@ -63,6 +63,7 @@
     height: 33px;
     background-color: #FFFFFF;
     transform: translateX(-50%);
+    pointer-events: none;
   }
   
   &::after {

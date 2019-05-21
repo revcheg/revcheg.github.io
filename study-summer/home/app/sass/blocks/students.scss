@@ -257,23 +257,40 @@
   }
   
   .students__subtitle {
-    width: 300px;
+    width: 180px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .students__content {
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 75px;
+    padding-left: 20px;
+  }
+  
+  .students__subtitle {
+    width: 160px;
+    padding-right: 15px;
+    padding-left: 15px;
     font-size: 16px;
-    
+
     &--number {
       font-size: 25px;
     }
   }
-  
+
   .students__title {
     font-size: 22px;
   }
-  
+
   .students__item {
     margin-bottom: 10px;
     font-size: 13px;
   }
-  
+
   .students__link {
     font-size: 14px;
   }

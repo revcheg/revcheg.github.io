@@ -257,23 +257,40 @@
   }
   
   .canada__subtitle {
-    width: 300px;
+    width: 320px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .canada__content {
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 75px;
+    padding-left: 20px;
+  }
+  
+  .canada__subtitle {
+    width: 280px;
+    padding-right: 15px;
+    padding-left: 15px;
     font-size: 16px;
-    
+
     &--number {
       font-size: 25px;
     }
   }
-  
+
   .canada__title {
     font-size: 22px;
   }
-  
+
   .canada__item {
     margin-bottom: 10px;
     font-size: 13px;
   }
-  
+
   .canada__link {
     font-size: 14px;
   }

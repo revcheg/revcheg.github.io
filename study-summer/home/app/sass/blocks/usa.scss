@@ -232,14 +232,14 @@
   
   .usa__row {
     
-    &--top {
-      
-      &::before {
-        display: none;
-      }
-    }
-    
     &--double {
+      display: none;
+    }
+  }
+  
+  .usa__photo {  
+      
+    &::before {
       display: none;
     }
   }
@@ -249,34 +249,41 @@
   }
   
   .usa__subtitle {
-    width: 300px;
+    width: 320px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .usa__content {
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 75px;
+    padding-left: 20px;
+  }
+  
+  .usa__subtitle {
+    width: 280px;
+    padding-right: 15px;
+    padding-left: 15px;
     font-size: 16px;
-    
+
     &--number {
       font-size: 25px;
     }
   }
-  
+
   .usa__title {
     font-size: 22px;
   }
-  
+
   .usa__item {
     margin-bottom: 10px;
     font-size: 13px;
   }
-  
+
   .usa__link {
     font-size: 14px;
-  }
-  
-  .usa__photo {
-    
-    &--topright {
-      
-      &::before {
-        display: none;
-      }
-    }
   }
 }

@@ -39,7 +39,7 @@
   margin-bottom: 30px;
   padding-left: 125px;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: left top;
   background-size: 85px;
   
   &::before {
@@ -139,6 +139,12 @@
   }
 }
 
+@media screen and ($tablet-widths) {
+  .profit__column {
+    width: 80%;
+  }
+}
+
 @media screen and ($mobile-widths) {
   .profit__column {
     width: 100%;
@@ -152,11 +158,47 @@
     text-align: center;
   }
   
+  .profit__item {
+    height: auto;
+    padding-left: 80px;
+    background-size: 65px;
+    
+    &:last-child {
+      padding-bottom: 10px;
+    }
+    
+    &::before {
+      top: -10px;
+      font-size: 30px;
+    }
+  }
+  
   .profit__subtitle {
     font-size: 16px;
   }
   
   .profit__text {
     font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .profit__title {
+    margin-bottom: 15px;
+  }
+  
+  .profit__item {
+    margin-bottom: 10px;
+    padding-left: 60px;
+    background-size: 50px;
+  }
+  
+  .profit__subtitle {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .profit__text {
+    font-size: 12px;
   }
 }

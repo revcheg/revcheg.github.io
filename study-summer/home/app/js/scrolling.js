@@ -9,7 +9,7 @@ var scrollCounter = 0;
   var secondCounter;
   
   window.addEventListener('wheel', function(evt) {
-    firstCounter += 1;
+    firstCounter++;
     delta = evt.deltaY;
     if (marker) wheelStart();
     return false;
@@ -42,17 +42,17 @@ var scrollCounter = 0;
       scrollCounter--;
     }
     
-    if (scrollCounter > 9) {
-      scrollCounter = 9;
-    } else if (scrollCounter < 0) {
-      scrollCounter = 0;
-    }
-    
     scrolling();
   };
 })();
 
 function scrolling() {
+  if (scrollCounter > 9) {
+    scrollCounter = 9;
+  } else if (scrollCounter < 0) {
+    scrollCounter = 0;
+  }
+  
   var offsetTopBlock = sections[scrollCounter].offsetTop;
   
   window.scrollTo({

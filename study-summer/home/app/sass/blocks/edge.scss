@@ -174,7 +174,7 @@
     width: 350px;
     height: 430px;
     margin: auto;
-    overflow-y: scroll;
+    overflow: hidden;
   }
   
   .edge__list {
@@ -233,7 +233,7 @@
   }
   
   .edge__title {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding-right: 15px;
     padding-left: 15px;
     font-size: 22px;
@@ -249,7 +249,7 @@
   
   .edge__controls {
     right: 15px;
-    bottom: 70px;
+    bottom: 65px;
   }
 }
 
