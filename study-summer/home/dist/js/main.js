@@ -1,5 +1,47 @@
 (function () {
+  var list = document.querySelector('.edge__list');
+  var prev = document.querySelector('.edge__toggle--prev');
+  var next = document.querySelector('.edge__toggle--next');
   
+  var counter = 0;
+  var possibleSwipe = 0;
+  var clientWidth = document.body.clientWidth;
+  
+  if (clientWidth > 325) {
+  
+  }
+  
+  next.addEventListener('click', function () {
+    counter++;
+    swipe();
+  });
+  
+  prev.addEventListener('click', function () {
+    counter--;
+    swipe();
+  });
+  
+  function swipe () {
+    var position = 0;
+    
+    switch (counter) {
+      case -1:
+        position = -775;
+        counter = 2;
+        break;
+      case 1:
+        position = -388;
+        break;
+      case 2:
+        position = -775;
+        break;
+      default:
+        position = 0;
+        counter = 0;
+    }
+    
+    list.style.left = position + 'px';
+  };
 })();
 (function() {
   var phone = document.querySelector('.contacts__input[type=tel]');
@@ -215,6 +257,7 @@ function scrolling() {
 })();
 (function () {
   var pozYStart;
+  var pozYEnd;
   
   document.addEventListener('touchstart', function (evt) {
     pozYStart = evt.changedTouches[0].pageY;
@@ -222,11 +265,11 @@ function scrolling() {
   
   document.addEventListener('touchend', function (evt) {
     pozYEnd = evt.changedTouches[0].pageY;
-    
-    if (pozYStart > pozYEnd) {
+    console.log(pozYStart)
+    if (pozYStart > pozYEnd + 50) {
       scrollCounter++;
       scrolling();
-    } else if (pozYStart < pozYEnd) {
+    } else if (pozYStart < pozYEnd - 50) {
       scrollCounter--;
       scrolling();
     }

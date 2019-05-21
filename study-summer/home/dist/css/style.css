@@ -2015,7 +2015,8 @@ body {
     top: 0;
     left: 0;
     width: 1110px;
-    height: 430px; }
+    height: 430px;
+    transition: 0.2s; }
   .edge__item {
     width: 350px;
     height: auto;
