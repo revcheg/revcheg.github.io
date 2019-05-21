@@ -224,6 +224,14 @@
 }
 
 @media screen and ($tablet-widths) {
+  .canada__column {
+    width: 70%;
+  
+    &--left {
+      width: 30%;
+    }
+  }
+  
   .canada__content {
     padding-right: 80px;
   }
@@ -253,6 +261,7 @@
   }
   
   .canada__content {
+    padding-right: 30px;
     padding-bottom: 85px;
   }
   

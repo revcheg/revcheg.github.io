@@ -110,6 +110,13 @@
   }
 }
 
+@media screen and ($tablet-widths) {
+  .title__content {
+    padding-right: 80px;
+    padding-left: 30px;
+  }
+}
+
 @media screen and ($mobile-widths) {
   .title__content {
     width: 100%;

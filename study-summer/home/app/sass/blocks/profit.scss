@@ -141,7 +141,12 @@
 
 @media screen and ($tablet-widths) {
   .profit__column {
-    width: 80%;
+    width: 90%;
+  }
+  
+  .profit__item {
+    height: 90px;
+    background-size: 70px;
   }
 }
 
@@ -154,12 +159,13 @@
   
   .profit__title {
     margin-top: 0;
+    margin-bottom: 20px;
     font-size: 22px;
     text-align: center;
   }
   
   .profit__item {
-    height: auto;
+    height: 70px;
     padding-left: 80px;
     background-size: 65px;
     
@@ -182,12 +188,13 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 370px) {
   .profit__title {
     margin-bottom: 15px;
   }
   
   .profit__item {
+    height: auto;
     margin-bottom: 10px;
     padding-left: 60px;
     background-size: 50px;

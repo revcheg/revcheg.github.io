@@ -207,7 +207,6 @@
   
   .students__subtitle {
     box-sizing: border-box;
-    // width: 330px;
     font-size: 18px;
     
     &--number {
@@ -226,6 +225,16 @@
   
   .students__item {
     font-size: 15px;
+  }
+}
+
+@media screen and ($tablet-widths) {
+  .students__column {
+    width: 70%;
+  
+    &--right {
+      width: 30%;
+    }
   }
 }
 
@@ -260,6 +269,10 @@
     width: 180px;
     padding-right: 15px;
     padding-left: 15px;
+  }
+  
+  .students__title {
+    font-size: 25px;
   }
 }
 

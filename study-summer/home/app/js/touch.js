@@ -8,7 +8,6 @@
   
   document.addEventListener('touchend', function (evt) {
     pozYEnd = evt.changedTouches[0].pageY;
-    console.log(pozYStart)
     if (pozYStart > pozYEnd + 50) {
       scrollCounter++;
       scrolling();

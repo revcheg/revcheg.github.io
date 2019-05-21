@@ -4,12 +4,7 @@
   var next = document.querySelector('.edge__toggle--next');
   
   var counter = 0;
-  var possibleSwipe = 0;
   var clientWidth = document.body.clientWidth;
-  
-  if (clientWidth > 325) {
-  
-  }
   
   next.addEventListener('click', function () {
     counter++;
@@ -22,24 +17,26 @@
   });
   
   function swipe () {
-    var position = 0;
+    console.log(counter);
     
-    switch (counter) {
-      case -1:
-        position = -775;
-        counter = 2;
-        break;
-      case 1:
-        position = -388;
-        break;
-      case 2:
-        position = -775;
-        break;
-      default:
-        position = 0;
-        counter = 0;
+    if (clientWidth < 375 && counter > 5) {
+      counter = 0;
+    } else if (clientWidth < 375 && counter < 0) {
+      counter = 5;
+    } 
+    
+    if (clientWidth > 375 && counter > 2) {
+      counter = 0;
+    } else if (clientWidth > 375 && counter < 0) {
+      counter = 2;
+    } 
+    
+    if (clientWidth > 910 && counter > 1) {
+      counter = 0;
+    } else if (clientWidth > 910 && counter < 0) {
+      counter = 2;
     }
     
-    list.style.left = position + 'px';
+    list.style.left = '-' + counter * 100 + '%';
   };
 })();

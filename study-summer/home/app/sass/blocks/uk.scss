@@ -229,6 +229,20 @@
   }
 }
 
+@media screen and ($tablet-widths) {
+  .uk__column {
+    width: 70%;
+  
+    &--left {
+      width: 30%;
+    }
+  }
+  
+  .uk__content {
+    padding-right: 80px;
+  }
+}
+
 @media screen and ($mobile-widths) {
   .uk__column {
     width: 100%;
@@ -253,6 +267,7 @@
   }
   
   .uk__content {
+    padding-right: 30px;
     padding-bottom: 85px;
   }
   

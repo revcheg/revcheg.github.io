@@ -230,6 +230,20 @@
   }
 }
 
+@media screen and ($tablet-widths) {
+  .europe__column {
+    width: 70%;
+  
+    &--left {
+      width: 30%;
+    }
+  }
+  
+  .europe__content {
+    padding-right: 80px;
+  }
+}
+
 @media screen and ($mobile-widths) {
   .europe__column {
     width: 100%;
@@ -254,6 +268,7 @@
   }
   
   .europe__content {
+    padding-right: 30px;
     padding-bottom: 85px;
   }
   

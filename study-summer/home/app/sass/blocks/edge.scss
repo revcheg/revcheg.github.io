@@ -4,7 +4,9 @@
   align-items: center;
   height: 100vh;
   background-image: url('../img/edge-bg.jpg');
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .edge__content {
@@ -156,13 +158,15 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
-  .edge__content {
+@media screen and ($tablet-widths) {
+  .edge {
     position: relative;
-    bottom: 0;
+  }
+  
+  .edge__content {
+    position: static;
     width: 100%;
     margin-left: 0;
-    margin-bottom: -90px;
   }
   
   .edge__title {
@@ -171,7 +175,7 @@
   
   .edge__wrapper {
     position: relative;
-    width: 350px;
+    width: 730px;
     height: 430px;
     margin: auto;
     overflow: hidden;
@@ -183,7 +187,7 @@
     left: 0;
     width: 1110px;
     height: 430px;
-    transition: 0.2s;
+    transition: 0.5s;
   }
   
   .edge__item {
@@ -200,7 +204,7 @@
   .edge__controls {
     position: absolute;
     right: 100px;
-    bottom: 0;
+    bottom: 100px;
     display: flex;
   }
   
@@ -223,11 +227,7 @@
   }
 }
 
-@media screen and ($mobile-widths) {
-  .edge {
-    position: relative;
-  }
-  
+@media screen and (max-width: 910px) {
   .edge__content {
     position: static;
     margin-bottom: 0;
@@ -247,14 +247,26 @@
   .edge__item {
     width: 335px;
   }
-  
+}
+
+@media screen and ($mobile-widths) {
   .edge__controls {
     right: 15px;
     bottom: 65px;
   }
+  
+  .edge__list {
+    width: 1005px;
+  }
+  
+  .edge__item {
+    width: 325px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 370px) {
   .edge__title {
     margin-bottom: 20px;
   }
@@ -265,11 +277,13 @@
   }
   
   .edge__list {
-    width: 1950px;
+    width: 1800px;
     height: 220px;
   }
   
   .edge__item {
-    width: 300px;
+    width: 290px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }

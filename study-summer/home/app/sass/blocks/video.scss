@@ -23,7 +23,7 @@
 }
 
 .video__wrapper {
-  width: 1200px;
+  width: 1190px;
   border-radius: 10px;
   background-color: #000000;
   overflow: hidden;
@@ -41,4 +41,10 @@
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media screen and ($tablet-widths) {
+  .video__wrapper {
+    width: 95%;
+  }
 }

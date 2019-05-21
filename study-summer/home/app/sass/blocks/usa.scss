@@ -221,6 +221,16 @@
   }
 }
 
+@media screen and ($tablet-widths) {
+  .usa__column {
+    width: 70%;
+  
+    &--right {
+      width: 30%;
+    }
+  }
+}
+
 @media screen and ($mobile-widths) {
   .usa__column {
     width: 100%;
