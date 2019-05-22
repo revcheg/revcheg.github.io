@@ -1,4 +1,4 @@
-(function() {
+(function () {
   var phone = document.querySelector('.contacts__input[type=tel]');
   
   phone.addEventListener('focus', function() {

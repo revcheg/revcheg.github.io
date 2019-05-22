@@ -40,7 +40,7 @@
     list.style.left = '-' + counter * 100 + '%';
   };
 })();
-(function() {
+(function () {
   var phone = document.querySelector('.contacts__input[type=tel]');
   
   phone.addEventListener('focus', function() {
@@ -163,6 +163,32 @@
     });
   }
 })();
+(function () {
+  var open = document.querySelector('.contacts__cta');
+  var form = document.querySelector('.contacts__subcolumn--popup');
+  var overlay = document.querySelector('.contacts__overlay--hide');
+  var close = document.querySelector('.contacts__close');
+
+  open.addEventListener('click', function () {
+    form.classList.remove('contacts__subcolumn--hide');
+    overlay.classList.remove('contacts__overlay--hide');
+  });
+  
+  close.addEventListener('click', function () {
+    form.classList.add('contacts__subcolumn--hide');
+    overlay.classList.add('contacts__overlay--hide');
+  });
+  
+  overlay.addEventListener('click', function () {
+    form.classList.add('contacts__subcolumn--hide');
+    overlay.classList.add('contacts__overlay--hide');
+  });
+  
+  form.addEventListener('submit', function () {
+    form.classList.add('contacts__subcolumn--hide');
+    overlay.classList.add('contacts__overlay--hide');
+  });
+})();
 // (function () {
 //   var preloader = document.querySelector('.preloader');
 //   var logo = document.querySelector('.preloader__logo');
@@ -175,7 +201,7 @@
 var sections = document.querySelectorAll('.section');
 var scrollCounter = 0;
 
-(function() {
+(function () {
   var marker = true;
   var delta;
   var interval = 150;
@@ -234,7 +260,7 @@ function scrolling() {
     behavior: "smooth"
   });
 };
-(function() {
+(function () {
   var title = document.querySelector('.title');
   var progress = document.querySelector('.title__progress');
   var current = document.querySelector('.title__counter--current');

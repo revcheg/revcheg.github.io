@@ -140,6 +140,28 @@
   }
 }
 
+.contacts__close {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url('../img/svg/popup-close.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  outline: none;
+  transition: 0.2s;
+  
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
 .contacts__form {
   display: flex;
   flex-direction: column;
@@ -385,17 +407,68 @@
     }
     
     &--popup {
-      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      box-sizing: border-box;
+      width: 500px;
+      padding-top: 40px;
+      padding-right: 20px;
+      padding-bottom: 40px;
+      padding-left: 20px;
+      border-radius: 7px;
+      background-color: #FFFFFF;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      transition: 0.2s;
+      visibility: visible;
+      z-index: 4;
     }
+    
+    &--hide {
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+  }
+  
+  .contacts__call {
+    text-align: center;
   }
   
   .contacts__phones {
     margin-bottom: 10px;
   }
   
+  .contacts__close {
+    display: block;
+  }
+  
+  .contacts__submit {
+    align-self: center;
+  }
+  
   .contacts__cta {
     align-self: flex-start;
     display: block;
+  }
+  
+  .contacts__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($blue, 0.8);
+    opacity: 1;
+    transition: 0.2s;
+    visibility: visible;
+    z-index: 3;
+    
+    &--hide {
+      opacity: 0;
+      visibility: hidden;
+    }
   }
 }
 
@@ -429,6 +502,10 @@
     &:first-child {
       margin-right: 0;
     }
+    
+    &--popup {
+      width: 95%;
+    }
   }
   
   .contacts__title {
@@ -449,8 +526,7 @@
     font-size: 17px;
     
     &:last-of-type {
-      margin-bottom: 10px;
-      text-align: center;
+      // margin-bottom: 10px;  
     }
   }
   

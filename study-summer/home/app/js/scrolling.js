@@ -1,7 +1,7 @@
 var sections = document.querySelectorAll('.section');
 var scrollCounter = 0;
 
-(function() {
+(function () {
   var marker = true;
   var delta;
   var interval = 150;

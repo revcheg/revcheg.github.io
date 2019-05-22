@@ -343,7 +343,8 @@
             <a class="contacts__phone" href="tel:099 000 03 20">+38 099 000-03-20</a>
           </div>
         </div>
-        <div class="contacts__subcolumn  contacts__subcolumn--popup">
+        <div class="contacts__subcolumn  contacts__subcolumn--popup  contacts__subcolumn--hide">
+          <button class="contacts__close" aria-label="Закрыть"></button>
           <b class="contacts__call">Сейчас неудобно? Мы перезвоним</b>
           <form class="contacts__form" action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" autocomplete="off" method="post">
             <input type="hidden" name="campaign_token" value="8kCUL">
@@ -381,6 +382,7 @@
           </form>
         </div>
         <button class="contacts__cta">Написать</button>
+        <div class="contacts__overlay  contacts__overlay--hide"></div>
       </section>
     </div>
     <div class="contacts__column  contacts__column--right">

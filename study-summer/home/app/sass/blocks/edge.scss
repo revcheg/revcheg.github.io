@@ -250,40 +250,60 @@
 }
 
 @media screen and ($mobile-widths) {
-  .edge__controls {
-    right: 15px;
-    bottom: 65px;
-  }
-  
-  .edge__list {
-    width: 1005px;
-  }
-  
-  .edge__item {
-    width: 325px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-@media screen and (max-width: 370px) {
   .edge__title {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 25px;
   }
   
   .edge__wrapper {
-    width: 300px;
+    width: 375px;
     height: 240px;
   }
   
   .edge__list {
-    width: 1800px;
+    width: 2250px;
     height: 220px;
   }
   
   .edge__item {
-    width: 290px;
+    width: 345px;
     margin-right: auto;
     margin-left: auto;
+    padding-top: 40px;
+  }
+  
+  .edge__name {
+    font-size: 20px;
+  }
+  
+  .edge__text {
+    font-size: 16px;
+  }
+  
+  .edge__controls {
+    right: 10px;
+    bottom: 65px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .edge__title {
+    font-size: 22px;
+  }
+  
+  .edge__wrapper {
+    width: 320px;
+  }
+  
+  .edge__list {
+    width: 1920px;
+  }
+  
+  .edge__item {
+    width: 290px;
+  }
+  
+  .edge__name {
+    font-size: 18px;
   }
 }

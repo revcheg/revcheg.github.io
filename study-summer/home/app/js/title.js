@@ -1,4 +1,4 @@
-(function() {
+(function () {
   var title = document.querySelector('.title');
   var progress = document.querySelector('.title__progress');
   var current = document.querySelector('.title__counter--current');
