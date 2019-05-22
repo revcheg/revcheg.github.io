@@ -227,28 +227,6 @@
   }
 }
 
-@media screen and (max-width: 910px) {
-  .edge__content {
-    position: static;
-    margin-bottom: 0;
-  }
-  
-  .edge__title {
-    margin-bottom: 20px;
-    padding-right: 15px;
-    padding-left: 15px;
-    font-size: 22px;
-  }
-  
-  .edge__wrapper {
-    width: 335px;
-  }
-  
-  .edge__item {
-    width: 335px;
-  }
-}
-
 @media screen and ($mobile-widths) {
   .edge__title {
     margin-bottom: 30px;

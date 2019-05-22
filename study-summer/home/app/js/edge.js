@@ -9,6 +9,7 @@
   next.addEventListener('click', function () {
     counter++;
     swipe();
+    // clone();
   });
   
   prev.addEventListener('click', function () {
@@ -17,26 +18,32 @@
   });
   
   function swipe () {
-    console.log(counter);
-    
-    if (clientWidth < 375 && counter > 5) {
+    if (clientWidth < 600 && counter > 5) {
       counter = 0;
-    } else if (clientWidth < 375 && counter < 0) {
+    } else if (clientWidth < 600 && counter < 0) {
       counter = 5;
     } 
     
-    if (clientWidth > 375 && counter > 2) {
+    if (clientWidth > 600 && counter > 1) {
       counter = 0;
-    } else if (clientWidth > 375 && counter < 0) {
-      counter = 2;
+    } else if (clientWidth > 600 && counter < 0) {
+      counter = 1;
     } 
-    
-    if (clientWidth > 910 && counter > 1) {
-      counter = 0;
-    } else if (clientWidth > 910 && counter < 0) {
-      counter = 2;
-    }
     
     list.style.left = '-' + counter * 100 + '%';
   };
+  
+  // var zero = 0;
+  // var www = 2250;
+  // function clone () {
+  //   // var prevElement = list.firstElementChild;\
+  //   var prevElement = list.children[zero];
+  //   console.log(prevElement);
+  //   var cloneElement = prevElement.cloneNode(true);
+  //   list.appendChild(cloneElement);
+  //   zero++;
+  //   testwww = www + 375;
+  //   list.style.width = testwww + 'px';
+  //   www = testwww;
+  // };
 })();
