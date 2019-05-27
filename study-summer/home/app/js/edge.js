@@ -9,7 +9,6 @@
   next.addEventListener('click', function () {
     counter++;
     swipe();
-    // clone();
   });
   
   prev.addEventListener('click', function () {
@@ -32,18 +31,4 @@
     
     list.style.left = '-' + counter * 100 + '%';
   };
-  
-  // var zero = 0;
-  // var www = 2250;
-  // function clone () {
-  //   // var prevElement = list.firstElementChild;\
-  //   var prevElement = list.children[zero];
-  //   console.log(prevElement);
-  //   var cloneElement = prevElement.cloneNode(true);
-  //   list.appendChild(cloneElement);
-  //   zero++;
-  //   testwww = www + 375;
-  //   list.style.width = testwww + 'px';
-  //   www = testwww;
-  // };
 })();

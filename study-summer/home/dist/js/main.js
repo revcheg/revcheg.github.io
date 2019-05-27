@@ -9,7 +9,6 @@
   next.addEventListener('click', function () {
     counter++;
     swipe();
-    // clone();
   });
   
   prev.addEventListener('click', function () {
@@ -32,20 +31,6 @@
     
     list.style.left = '-' + counter * 100 + '%';
   };
-  
-  // var zero = 0;
-  // var www = 2250;
-  // function clone () {
-  //   // var prevElement = list.firstElementChild;\
-  //   var prevElement = list.children[zero];
-  //   console.log(prevElement);
-  //   var cloneElement = prevElement.cloneNode(true);
-  //   list.appendChild(cloneElement);
-  //   zero++;
-  //   testwww = www + 375;
-  //   list.style.width = testwww + 'px';
-  //   www = testwww;
-  // };
 })();
 (function () {
   var phone = document.querySelector('.contacts__input[type=tel]');
@@ -148,13 +133,6 @@
       menu.classList.add('header__list--hide');
     }
   });
-
-  // for (var i = 0; i < link.length; i++) {
-  //   link[i].addEventListener('click', function () {
-  //     menu.classList.add('header__list--hide');
-  //     button.classList.remove('header__menu--close');
-  //   });
-  // }
 })();
 (function () {
   var anchors = document.querySelectorAll('.nav__anchor');
@@ -196,15 +174,6 @@
     overlay.classList.add('contacts__overlay--hide');
   });
 })();
-// (function () {
-//   var preloader = document.querySelector('.preloader');
-//   var logo = document.querySelector('.preloader__logo');
-// 
-//   window.onload = function () {
-//     preloader.classList.add('preloader--hide');
-//     logo.classList.add('preloader__logo--hide');
-//   };
-// })();
 var sections = document.querySelectorAll('.section');
 var scrollCounter = 0;
 
