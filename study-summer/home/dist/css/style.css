@@ -201,7 +201,11 @@ body {
     left: auto;
     width: 155px;
     padding: 0;
-    background-color: transparent; } }
+    background-color: transparent; }
+  @supports ((-webkit-backdrop-filter: blur(30px)) or (backdrop-filter: blur(30px))) {
+    .title__controls {
+      -webkit-backdrop-filter: blur(0);
+              backdrop-filter: blur(0); } } }
 
 .header {
   position: fixed;

@@ -154,4 +154,10 @@
     padding: 0;
     background-color: transparent;
   }
+  
+  @supports (backdrop-filter: blur(30px)) {
+    .title__controls {
+      backdrop-filter: blur(0);
+    }
+  }
 }
