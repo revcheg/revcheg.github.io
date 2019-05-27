@@ -11,6 +11,12 @@
   z-index: 3;
 }
 
+@supports (backdrop-filter: blur(30px)) {
+  .aside {
+    backdrop-filter: blur(30px);
+  }
+}
+
 @media screen and ($notebook-widths) {
   .aside {
     width: 70px;

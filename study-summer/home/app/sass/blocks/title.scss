@@ -91,6 +91,12 @@
   }
 }
 
+@supports (backdrop-filter: blur(30px)) {
+  .title__controls {
+    backdrop-filter: blur(30px);
+  }
+}
+
 @media screen and ($notebook-widths) {
   .title__content {
     width: 670px;

@@ -43,6 +43,12 @@
   height: 100%;
 }
 
+@supports (backdrop-filter: blur(30px)) {
+  .video {
+    backdrop-filter: blur(30px);
+  }
+}
+
 @media screen and ($tablet-widths) {
   .video__wrapper {
     width: 95%;

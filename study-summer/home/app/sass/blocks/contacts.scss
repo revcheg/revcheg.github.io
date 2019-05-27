@@ -470,6 +470,12 @@
       visibility: hidden;
     }
   }
+  
+  @supports (backdrop-filter: blur(30px)) {
+    .contacts__overlay {
+      backdrop-filter: blur(30px);
+    }
+  }
 }
 
 @media screen and ($mobile-widths) {
