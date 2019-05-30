@@ -1,6 +1,6 @@
 var programsData = [
   {
-    full: false,
+    full: true,
     href: 'http://summer.study.ua/trip/look/1115',
     webp: 'img/program-1.webp',
     jpg: 'img/program-1.jpg',
@@ -29,7 +29,7 @@ var programsData = [
     alt: 'California State University',
     name: 'California State University',
     location: 'Лос-Анджелес',
-    date: '<a href="http://summer.study.ua/trip/look/1081" target="_blank">23.06 - 14.07 (3 нед.)</a><br><a href="http://summer.study.ua/trip/look/1081" target="_blank">13.07 - 03.08 (3 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1081" target="_blank">23.06 - 14.07 (3 нед.)</a>',
     cost: '$6200 (3 нед.)'
   },
   {
@@ -51,7 +51,7 @@ var programsData = [
     alt: 'Kings Malibu Los Angeles',
     name: 'Kings Malibu Los Angeles',
     location: 'Малибу',
-    date: '<a href="http://summer.study.ua/trip/look/1092" target="_blank">26.06 - 16.07 (3 нед.)</a><br><a href="http://summer.study.ua/trip/look/14" target="_blank">10.07 - 30.07 (3 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/14" target="_blank">10.07 - 30.07 (3 нед.)</a>',
     cost: '$6150 (3 нед.)'
   },
   {
@@ -62,7 +62,7 @@ var programsData = [
     alt: 'California State University Northridge',
     name: 'California State University Northridge',
     location: 'Лос-Анджелес, Лас-Вегасе, Сан-Диего',
-    date: '<a href="http://summer.study.ua/trip/look/1116" target="_blank">24.07 - 14.08 (3 нед.)</a><br><a href="http://summer.study.ua/trip/look/1119" target="_blank">01.07 - 22.07 (3 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1116" target="_blank">24.07 - 14.08 (3 нед.)</a>',
     cost: '$6600 (3 нед.)'
   },
   {
@@ -73,7 +73,7 @@ var programsData = [
     alt: 'Concordia College',
     name: 'Concordia College',
     location: 'Нью-Йорк',
-    date: '<a href="http://summer.study.ua/trip/look/60" target="_blank">03.07 - 23.07 (3 нед.)</a><br><a href="http://summer.study.ua/trip/look/1091" target="_blank">17.07 - 06.08 (3 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1091" target="_blank">17.07 - 06.08 (3 нед.)</a>',
     cost: '$5700 (3 нед.)'
   },
   {

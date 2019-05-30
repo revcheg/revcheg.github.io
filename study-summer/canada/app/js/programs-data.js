@@ -1,13 +1,13 @@
 var programsData = [
   {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/51',
+    full: true,
+    href: '',
     webp: 'img/program-1.webp',
     jpg: 'img/program-1.jpg',
     alt: 'University of Toronto',
     name: 'University of Toronto',
     location: 'Торонто',
-    date: '<a href="http://summer.study.ua/trip/look/51" target="_blank">20.07 - 10.08 (3 нед.)</a>',
+    date: '20.07 - 10.08 (3 нед.)',
     cost: '$5500 (3 нед.)'
   },
   {
@@ -66,14 +66,14 @@ var programsData = [
     cost: '$5300 (3 нед.)'
   },
   {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/1129',
+    full: true,
+    href: '',
     webp: 'img/program-7.webp',
     jpg: 'img/program-7.jpg',
     alt: 'ILAC',
     name: 'ILAC',
     location: 'Торонто',
-    date: '<a href="http://summer.study.ua/trip/look/7" target="_blank">6.07 - 27.07 (3 нед.)</a><br><a href="http://summer.study.ua/trip/look/1129" target="_blank">3.08 - 24.08 (3 нед.)</a>',
+    date: '06.07 - 27.07 (3 нед.)<br>03.08 - 24.08 (3 нед.)',
     cost: '$4800 (3 нед.)'
   },
   {
@@ -84,7 +84,18 @@ var programsData = [
     alt: 'University of British Columbia',
     name: 'University of British Columbia',
     location: 'Ванкувер',
-    date: '<a>07.07 - 28.07 (3 нед.)</a>',
+    date: '07.07 - 28.07 (3 нед.)',
     cost: '$5800 (3 нед.)'
+  },
+  {
+    full: false,
+    href: 'http://summer.study.ua/trip/look/21',
+    webp: 'img/program-9.webp',
+    jpg: 'img/program-9.jpg',
+    alt: 'ILSC',
+    name: 'ILSC',
+    location: 'Торонто',
+    date: '<a href="http://summer.study.ua/trip/look/21" target="_blank">22.07 - 12.08 (3 нед.)</a>',
+    cost: '$4600 (3 нед.)'
   }
 ];

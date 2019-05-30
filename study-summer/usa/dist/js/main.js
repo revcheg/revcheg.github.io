@@ -271,7 +271,7 @@
 })();
 var programsData = [
   {
-    full: false,
+    full: true,
     href: 'http://summer.study.ua/trip/look/1115',
     webp: 'img/program-1.webp',
     jpg: 'img/program-1.jpg',
@@ -300,7 +300,7 @@ var programsData = [
     alt: 'California State University',
     name: 'California State University',
     location: 'Лос-Анджелес',
-    date: '<a href="http://summer.study.ua/trip/look/1081" target="_blank">23.06 - 14.07 (3 нед.)</a><br><a href="http://summer.study.ua/trip/look/1081" target="_blank">13.07 - 03.08 (3 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1081" target="_blank">23.06 - 14.07 (3 нед.)</a>',
     cost: '$6200 (3 нед.)'
   },
   {
@@ -322,7 +322,7 @@ var programsData = [
     alt: 'Kings Malibu Los Angeles',
     name: 'Kings Malibu Los Angeles',
     location: 'Малибу',
-    date: '<a href="http://summer.study.ua/trip/look/1092" target="_blank">26.06 - 16.07 (3 нед.)</a><br><a href="http://summer.study.ua/trip/look/14" target="_blank">10.07 - 30.07 (3 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/14" target="_blank">10.07 - 30.07 (3 нед.)</a>',
     cost: '$6150 (3 нед.)'
   },
   {
@@ -333,7 +333,7 @@ var programsData = [
     alt: 'California State University Northridge',
     name: 'California State University Northridge',
     location: 'Лос-Анджелес, Лас-Вегасе, Сан-Диего',
-    date: '<a href="http://summer.study.ua/trip/look/1116" target="_blank">24.07 - 14.08 (3 нед.)</a><br><a href="http://summer.study.ua/trip/look/1119" target="_blank">01.07 - 22.07 (3 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1116" target="_blank">24.07 - 14.08 (3 нед.)</a>',
     cost: '$6600 (3 нед.)'
   },
   {
@@ -344,7 +344,7 @@ var programsData = [
     alt: 'Concordia College',
     name: 'Concordia College',
     location: 'Нью-Йорк',
-    date: '<a href="http://summer.study.ua/trip/look/60" target="_blank">03.07 - 23.07 (3 нед.)</a><br><a href="http://summer.study.ua/trip/look/1091" target="_blank">17.07 - 06.08 (3 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1091" target="_blank">17.07 - 06.08 (3 нед.)</a>',
     cost: '$5700 (3 нед.)'
   },
   {
@@ -448,6 +448,38 @@ var programsData = [
   };
 })();
 (function () {
+  var openButtons = document.querySelectorAll('.reviews__open');
+  var videoWrapper = document.querySelector('.reviews__container');
+  var video = document.querySelector('.reviews__iframe');
+  var overlay = document.querySelector('.popup__overlay');
+  
+  var openButtonsArray = [];
+
+  for (var i = 0; i < openButtons.length; i++){
+    openButtonsArray.push(openButtons[i]);
+    openButtons[i].addEventListener('click', function(evt){
+      var indexButton = openButtonsArray.indexOf(evt.target);
+      videoWrapper.classList.remove('reviews__container--hide');
+      overlay.classList.remove('popup__overlay--hide');
+      if (indexButton == 0) {
+        video.src = 'https://www.youtube.com/embed/nx0v3hMM4iw?&autoplay=1';
+      } else if (indexButton == 1) {
+        video.src = 'https://www.youtube.com/embed/snx6LOb2bno?&autoplay=1';
+      } else {
+        video.src = 'https://www.youtube.com/embed/dVKHwTR9Tws?&autoplay=1';
+      }
+      document.body.style.overflow = 'hidden';
+    });
+  }
+  
+  overlay.addEventListener('click', function () {
+    videoWrapper.classList.add('reviews__container--hide');
+    video.src = '';
+    overlay.classList.add('popup__overlay--hide');
+    document.body.style.overflow = 'auto';
+  });
+})();
+(function () {
   var slides = document.querySelectorAll('.slider__item');
   var prev = document.querySelector('.slider__control--prev');
   var next = document.querySelector('.slider__control--next');
@@ -457,10 +489,10 @@ var programsData = [
   
   // Отрисовка слайдов
   var showSlide = function () {
-    if (currentSlide > 4) {
+    if (currentSlide > 3) {
       currentSlide = 0;
     } else if (currentSlide < 0) {
-      currentSlide = 4;
+      currentSlide = 3;
     };
     slides[currentSlide].classList.add('slider__item--show');
     dots[currentSlide].classList.add('slider__dot--active');
@@ -517,4 +549,13 @@ var programsData = [
       showSlide(currentSlide);
     });
   }
+})();
+(function () {
+  var video = document.querySelector('.about__iframe');
+  var button = document.querySelector('.about__open');
+  
+  button.addEventListener('click', function () {
+    button.style.display = 'none';
+    video.src = 'https://www.youtube.com/embed/d4FKC4Bg2hc?&autoplay=1';
+  });
 })();

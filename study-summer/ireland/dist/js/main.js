@@ -278,7 +278,7 @@ var programsData = [
     name: 'St. Raphaela’s School',
     location: 'Дублин',
     date: '<a href="http://summer.study.ua/trip/look/5" target="_blank">08.07 - 22.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/5" target="_blank">08.07 - 29.07 (3 нед.)</a>',
-    cost: '€3000 (2 нед.)<br>€3000 (3 нед.)'
+    cost: '€3000 (2 нед.)<br>€3500 (2 нед.<br>+ horse riding)<br>€3600 (3 нед.)'
   },
   {
     full: false,
@@ -288,8 +288,8 @@ var programsData = [
     alt: 'Marino Institute',
     name: 'Marino Institute',
     location: 'Дублин',
-    date: '<a href="http://summer.study.ua/trip/look/1106" target="_blank">22.07 - 05.08 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1106" target="_blank">22.07 - 12.08 (3 нед.)</a>',
-    cost: '€3300 (2 нед.)<br>€3900 (3 нед.)'
+    date: '<a href="http://summer.study.ua/trip/look/1106" target="_blank">22.07 - 05.08 (2 нед.)</a>',
+    cost: '€3300 (2 нед.)'
   }
 ];
 (function () {
@@ -363,6 +363,38 @@ var programsData = [
       list.appendChild(item);
     }
   };
+})();
+(function () {
+  var openButtons = document.querySelectorAll('.reviews__open');
+  var videoWrapper = document.querySelector('.reviews__container');
+  var video = document.querySelector('.reviews__iframe');
+  var overlay = document.querySelector('.popup__overlay');
+  
+  var openButtonsArray = [];
+
+  for (var i = 0; i < openButtons.length; i++){
+    openButtonsArray.push(openButtons[i]);
+    openButtons[i].addEventListener('click', function(evt){
+      var indexButton = openButtonsArray.indexOf(evt.target);
+      videoWrapper.classList.remove('reviews__container--hide');
+      overlay.classList.remove('popup__overlay--hide');
+      if (indexButton == 0) {
+        video.src = 'https://www.youtube.com/embed/nx0v3hMM4iw?&autoplay=1';
+      } else if (indexButton == 1) {
+        video.src = 'https://www.youtube.com/embed/snx6LOb2bno?&autoplay=1';
+      } else {
+        video.src = 'https://www.youtube.com/embed/dVKHwTR9Tws?&autoplay=1';
+      }
+      document.body.style.overflow = 'hidden';
+    });
+  }
+  
+  overlay.addEventListener('click', function () {
+    videoWrapper.classList.add('reviews__container--hide');
+    video.src = '';
+    overlay.classList.add('popup__overlay--hide');
+    document.body.style.overflow = 'auto';
+  });
 })();
 (function () {
   var slides = document.querySelectorAll('.slider__item');

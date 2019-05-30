@@ -51,11 +51,11 @@
   var clientWidth = document.body.clientWidth;
   
   if (clientWidth <= 768) {
-    possibleSlide = 3;
+    possibleSlide = 7;
   } else if (clientWidth > 768 && clientWidth < 1210) {
-    possibleSlide = 1;
+    possibleSlide = 3;
   } else if (clientWidth >= 1210) {
-    possibleSlide = 0;
+    possibleSlide = 1;
   }
   
   var showSlide = function () {
@@ -76,29 +76,6 @@
     currentPosition++;
     showSlide(currentPosition);
   });
-  
-  // var dotsCounter;
-  // if (clientWidth > 1210) {
-  //    dotsCounter = item / 4;
-  //    renderDots();
-  // }
-  // 
-  // var renderDots = function () {
-  //   var dotsClone = dots.cloneNode(true);
-  //   for (var i = 0; i < dotsCounter; i++) {
-  // 
-  //   }
-  // };
-  // 
-  // var dotsArray = [];
-  // for (var i = 0; i < dots.length; i++){
-  //   dotsArray.push(dots[i]);
-  //   dots[i].addEventListener('click', function(e){
-  //      // dots[currentSlide].classList.remove('slider__dot--active');
-  //      currentSlide = dotsArray.indexOf(e.target);
-  //      showSlide(currentSlide);
-  //   });
-  // };
   
   for (var j = 0; j < item.length; j++) {
     item[j].addEventListener('touchstart', function (evt) {
@@ -482,6 +459,38 @@ var programsData = [
   };
 })();
 (function () {
+  var openButtons = document.querySelectorAll('.reviews__open');
+  var videoWrapper = document.querySelector('.reviews__container');
+  var video = document.querySelector('.reviews__iframe');
+  var overlay = document.querySelector('.popup__overlay');
+  
+  var openButtonsArray = [];
+
+  for (var i = 0; i < openButtons.length; i++){
+    openButtonsArray.push(openButtons[i]);
+    openButtons[i].addEventListener('click', function(evt){
+      var indexButton = openButtonsArray.indexOf(evt.target);
+      videoWrapper.classList.remove('reviews__container--hide');
+      overlay.classList.remove('popup__overlay--hide');
+      if (indexButton == 0) {
+        video.src = 'https://www.youtube.com/embed/nx0v3hMM4iw?&autoplay=1';
+      } else if (indexButton == 1) {
+        video.src = 'https://www.youtube.com/embed/snx6LOb2bno?&autoplay=1';
+      } else {
+        video.src = 'https://www.youtube.com/embed/dVKHwTR9Tws?&autoplay=1';
+      }
+      document.body.style.overflow = 'hidden';
+    });
+  }
+  
+  overlay.addEventListener('click', function () {
+    videoWrapper.classList.add('reviews__container--hide');
+    video.src = '';
+    overlay.classList.add('popup__overlay--hide');
+    document.body.style.overflow = 'auto';
+  });
+})();
+(function () {
   var slides = document.querySelectorAll('.slider__item');
   var prev = document.querySelector('.slider__control--prev');
   var next = document.querySelector('.slider__control--next');
@@ -551,4 +560,13 @@ var programsData = [
       showSlide(currentSlide);
     });
   }
+})();
+(function () {
+  var video = document.querySelector('.about__iframe');
+  var button = document.querySelector('.about__open');
+  
+  button.addEventListener('click', function () {
+    button.style.display = 'none';
+    video.src = 'https://www.youtube.com/embed/wNHeDbpEvHM?&autoplay=1';
+  });
 })();

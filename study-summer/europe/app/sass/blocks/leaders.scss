@@ -17,7 +17,6 @@
 }
 
 .leaders__button {
-  display: none;
   width: 40px;
   height: 40px;
   margin-right: 20px;
@@ -58,7 +57,7 @@
   left: 0px;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 200%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -159,7 +158,7 @@
   }
   
   .leaders__list {
-    width: 200%;
+    width: 400%;
   }
   
   .leaders__item {
@@ -190,7 +189,7 @@
   }
   
   .leaders__list {
-    width: 400%;
+    width: 800%;
     transition: 0.5s;
   }
   

@@ -8,10 +8,10 @@
   
   // Отрисовка слайдов
   var showSlide = function () {
-    if (currentSlide > 4) {
+    if (currentSlide > 3) {
       currentSlide = 0;
     } else if (currentSlide < 0) {
-      currentSlide = 4;
+      currentSlide = 3;
     };
     slides[currentSlide].classList.add('slider__item--show');
     dots[currentSlide].classList.add('slider__dot--active');

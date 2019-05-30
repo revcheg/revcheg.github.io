@@ -1,33 +1,3 @@
-(function () {
-  var add = document.querySelector('.add');
-  var overlay = document.querySelector('.popup__overlay');
-  var close = document.querySelector('.add__close');
-  var link = document.querySelector('.add__link');
-  
-  window.onload = function () {
-    add.classList.add('add--show');
-    overlay.classList.remove('popup__overlay--hide');
-    // document.body.style.overflow = 'hidden';
-  };
-  
-  close.addEventListener('click', function () {
-    add.classList.remove('add--show');
-    overlay.classList.add('popup__overlay--hide');
-    // document.body.style.overflow = 'auto';
-  });
-  
-  overlay.addEventListener('click', function () {
-    add.classList.remove('add--show');
-    overlay.classList.add('popup__overlay--hide');
-    // document.body.style.overflow = 'auto';
-  });
-  
-  link.addEventListener('click', function () {
-    add.classList.remove('add--show');
-    overlay.classList.add('popup__overlay--hide');
-    // document.body.style.overflow = 'auto';
-  });
-})();
 // (function () {
 //   var phone = document.querySelector('.request__input--phone');
 //   var currentValue = phone.value;
@@ -301,14 +271,14 @@
 })();
 var programsData = [
   {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/51',
+    full: true,
+    href: '',
     webp: 'img/program-1.webp',
     jpg: 'img/program-1.jpg',
     alt: 'University of Toronto',
     name: 'University of Toronto',
     location: 'Торонто',
-    date: '<a href="http://summer.study.ua/trip/look/51" target="_blank">20.07 - 10.08 (3 нед.)</a>',
+    date: '20.07 - 10.08 (3 нед.)',
     cost: '$5500 (3 нед.)'
   },
   {
@@ -367,14 +337,14 @@ var programsData = [
     cost: '$5300 (3 нед.)'
   },
   {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/1129',
+    full: true,
+    href: '',
     webp: 'img/program-7.webp',
     jpg: 'img/program-7.jpg',
     alt: 'ILAC',
     name: 'ILAC',
     location: 'Торонто',
-    date: '<a href="http://summer.study.ua/trip/look/7" target="_blank">6.07 - 27.07 (3 нед.)</a><br><a href="http://summer.study.ua/trip/look/1129" target="_blank">3.08 - 24.08 (3 нед.)</a>',
+    date: '06.07 - 27.07 (3 нед.)<br>03.08 - 24.08 (3 нед.)',
     cost: '$4800 (3 нед.)'
   },
   {
@@ -385,8 +355,19 @@ var programsData = [
     alt: 'University of British Columbia',
     name: 'University of British Columbia',
     location: 'Ванкувер',
-    date: '<a>07.07 - 28.07 (3 нед.)</a>',
+    date: '07.07 - 28.07 (3 нед.)',
     cost: '$5800 (3 нед.)'
+  },
+  {
+    full: false,
+    href: 'http://summer.study.ua/trip/look/21',
+    webp: 'img/program-9.webp',
+    jpg: 'img/program-9.jpg',
+    alt: 'ILSC',
+    name: 'ILSC',
+    location: 'Торонто',
+    date: '<a href="http://summer.study.ua/trip/look/21" target="_blank">22.07 - 12.08 (3 нед.)</a>',
+    cost: '$4600 (3 нед.)'
   }
 ];
 (function () {
@@ -478,6 +459,38 @@ var programsData = [
   };
 })();
 (function () {
+  var openButtons = document.querySelectorAll('.reviews__open');
+  var videoWrapper = document.querySelector('.reviews__container');
+  var video = document.querySelector('.reviews__iframe');
+  var overlay = document.querySelector('.popup__overlay');
+  
+  var openButtonsArray = [];
+
+  for (var i = 0; i < openButtons.length; i++){
+    openButtonsArray.push(openButtons[i]);
+    openButtons[i].addEventListener('click', function(evt){
+      var indexButton = openButtonsArray.indexOf(evt.target);
+      videoWrapper.classList.remove('reviews__container--hide');
+      overlay.classList.remove('popup__overlay--hide');
+      if (indexButton == 0) {
+        video.src = 'https://www.youtube.com/embed/nx0v3hMM4iw?&autoplay=1';
+      } else if (indexButton == 1) {
+        video.src = 'https://www.youtube.com/embed/snx6LOb2bno?&autoplay=1';
+      } else {
+        video.src = 'https://www.youtube.com/embed/dVKHwTR9Tws?&autoplay=1';
+      }
+      document.body.style.overflow = 'hidden';
+    });
+  }
+  
+  overlay.addEventListener('click', function () {
+    videoWrapper.classList.add('reviews__container--hide');
+    video.src = '';
+    overlay.classList.add('popup__overlay--hide');
+    document.body.style.overflow = 'auto';
+  });
+})();
+(function () {
   var slides = document.querySelectorAll('.slider__item');
   var prev = document.querySelector('.slider__control--prev');
   var next = document.querySelector('.slider__control--next');
@@ -487,10 +500,10 @@ var programsData = [
   
   // Отрисовка слайдов
   var showSlide = function () {
-    if (currentSlide > 4) {
+    if (currentSlide > 3) {
       currentSlide = 0;
     } else if (currentSlide < 0) {
-      currentSlide = 4;
+      currentSlide = 3;
     };
     slides[currentSlide].classList.add('slider__item--show');
     dots[currentSlide].classList.add('slider__dot--active');
@@ -547,4 +560,13 @@ var programsData = [
       showSlide(currentSlide);
     });
   }
+})();
+(function () {
+  var video = document.querySelector('.about__iframe');
+  var button = document.querySelector('.about__open');
+  
+  button.addEventListener('click', function () {
+    button.style.display = 'none';
+    video.src = 'https://www.youtube.com/embed/eOnwaoM_Dlc?&autoplay=1';
+  });
 })();
