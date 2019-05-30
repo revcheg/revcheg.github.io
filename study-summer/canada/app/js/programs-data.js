@@ -11,14 +11,14 @@ var programsData = [
     cost: '$5500 (3 нед.)'
   },
   {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/1133',
+    full: true,
+    href: '',
     webp: 'img/program-2.webp',
     jpg: 'img/program-2.jpg',
     alt: 'University of Toronto Advanced Academic Program',
     name: 'University of Toronto Advanced Academic Program',
     location: 'Торонто',
-    date: '<a href="http://summer.study.ua/trip/look/1133" target="_blank">27.07 - 24.08 (4 нед.)</a>',
+    date: '27.07 - 24.08 (4 нед.)',
     cost: '$6200 (4 нед.)'
   },
   {
@@ -33,14 +33,14 @@ var programsData = [
     cost: '$6500 (4 нед.)'
   },
   {
-    full: false,
+    full: true,
     href: '',
     webp: 'img/program-4.webp',
     jpg: 'img/program-4.jpg',
     alt: 'Braemar College',
     name: 'Braemar College',
     location: 'Торонто',
-    date: '<a>01.07 - 17.08 (7 нед.)</a>',
+    date: '01.07 - 17.08 (7 нед.)',
     cost: '$7600 (7 нед.)'
   },
   {

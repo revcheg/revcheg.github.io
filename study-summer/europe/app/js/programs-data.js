@@ -15,7 +15,7 @@ var programsData = [
   },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/1096',
+    href: 'http://summer.study.ua/trip/look/1097',
     flagWebp: 'img/programs-spain.webp',
     flag: 'img/programs-spain.jpg',
     flagAlt: 'Испания',
@@ -24,7 +24,7 @@ var programsData = [
     alt: 'Barcelona Summer camp',
     name: 'Barcelona Summer camp',
     location: 'Барселона',
-    date: '<a href="http://summer.study.ua/trip/look/1097" target="_blank">14.07 - 27.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1096" target="_blank">28.07 - 10.08 (2 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1097" target="_blank">14.07 - 27.07 (2 нед.)</a>',
     cost: '€2800 (2 нед.)'
   },
   {
@@ -38,8 +38,8 @@ var programsData = [
     alt: 'EU International Business school',
     name: 'EU International Business school',
     location: 'Барселона',
-    date: '<a>07.07 - 20.07 (2 нед.)</a><br><a>04.08 - 17.08 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1103" target="_blank">07.07 - 27.07 (3 нед.)</a><br><a href="http://summer.study.ua/trip/look/1101" target="_blank">04.08 - 24.08 (3 нед.)</a>',
-    cost: '€3200 (2 нед.)<br>€4200 (3 нед.)'
+    date: '<a href="http://summer.study.ua/trip/look/1103" target="_blank">07.07 - 27.07 (3 нед.)</a>',
+    cost: '€4200 (3 нед.)'
   },
   {
     full: false,
@@ -94,7 +94,7 @@ var programsData = [
     alt: 'French Riviera summer',
     name: 'French Riviera summer',
     location: 'Ницца',
-    date: '<a href="http://summer.study.ua/trip/look/62" target="_blank">29.06 - 13.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/75" target="_blank">13.07 - 27.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1077" target="_blank">27.07 - 10.08 (2 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/62" target="_blank">29.06 - 13.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1077" target="_blank">27.07 - 10.08 (2 нед.)</a>',
     cost: '€2700 (2 нед.)'
   },
   {

@@ -29,7 +29,7 @@ var programsData = [
     alt: 'CATS College London Bloomsbury',
     name: 'CATS College London Bloomsbury',
     location: 'Лондон',
-    date: '<a href="http://summer.study.ua/trip/look/58" target="_blank">04.08 - 18.08 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/58" target="_blank">04.08 - 25.08 (3 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/58" target="_blank">04.08 - 25.08 (3 нед.)</a><br><a href="http://summer.study.ua/trip/look/58" target="_blank">11.08 - 25.08 (2 нед.)</a>',
     cost: '$3700 (2 нед.)<br>$4770 (3 нед.)'
   },
   {
@@ -44,25 +44,25 @@ var programsData = [
     cost: '$3900 (2 нед.)'
   },
   {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/1088',
+    full: true,
+    href: '',
     webp: 'img/program-5.webp',
     jpg: 'img/program-5.jpg',
     alt: 'South Bank University',
     name: 'South Bank University',
     location: 'Лондон',
-    date: '<a href="http://summer.study.ua/trip/look/1088" target="_blank">07.07 - 21.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1089" target="_blank">21.07 - 11.08 (3 нед.)</a>',
+    date: '07.07 - 21.07 (2 нед.)<br>21.07 - 11.08 (3 нед.)',
     cost: '$3500 (2 нед.)<br>$4500 (3 нед.)'
   },
   {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/1108',
+    full: true,
+    href: '',
     webp: 'img/program-6.webp',
     jpg: 'img/program-6.jpg',
     alt: 'Roedean School',
     name: 'Roedean School',
     location: 'Брайтон',
-    date: '<a href="http://summer.study.ua/trip/look/1108" target="_blank">14.07 - 27.07 (2 нед.)</a>',
+    date: '14.07 - 27.07 (2 нед.)',
     cost: '$3300 (2 нед.)'
   },
   {
@@ -73,18 +73,18 @@ var programsData = [
     alt: 'Brighton College',
     name: 'Brighton College',
     location: 'Брайтон',
-    date: '<a href="http://summer.study.ua/trip/look/1104" target="_blank">03.07 - 17.07 (2 нед.)</a><br><a href="http://summer.study.ua/trip/look/1105" target="_blank">17.07 - 31.07 (2 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1104" target="_blank">03.07 - 17.07 (2 нед.)</a>',
     cost: '$3450 (2 нед.)'
   },
   {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/1111',
+    full: true,
+    href: '',
     webp: 'img/program-8.webp',
     jpg: 'img/program-8.jpg',
     alt: 'Wellington College',
     name: 'Wellington College',
     location: 'Виндзор',
-    date: '<a href="http://summer.study.ua/trip/look/1111" target="_blank">02.07 - 16.07 (2 нед.)</a>',
+    date: '02.07 - 16.07 (2 нед.)',
     cost: '$3450 (2 нед.)'
   },
   {

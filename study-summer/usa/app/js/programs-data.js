@@ -22,14 +22,14 @@ var programsData = [
     cost: '$4500 (2 нед.)'
   },
   {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/1081',
+    full: true,
+    href: '',
     webp: 'img/program-3.webp',
     jpg: 'img/program-3.jpg',
     alt: 'California State University',
     name: 'California State University',
     location: 'Лос-Анджелес',
-    date: '<a href="http://summer.study.ua/trip/look/1081" target="_blank">23.06 - 14.07 (3 нед.)</a>',
+    date: '23.06 - 14.07 (3 нед.)',
     cost: '$6200 (3 нед.)'
   },
   {

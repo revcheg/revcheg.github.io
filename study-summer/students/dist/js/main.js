@@ -281,22 +281,11 @@ var programsData = [
     date: '<a href="http://summer.study.ua/trip/look/1125" target="_blank">20.07 - 03.08 (2 нед.)</a>',
     cost: '$3550 (2 нед.)'
   },
-  // {
-  //   full: false,
-  //   href: 'http://summer.study.ua/trip/look/1126',
-  //   webp: 'img/program-2.webp',
-  //   jpg: 'img/program-2.jpg',
-  //   alt: 'EC English, London + Dublin experience',
-  //   name: 'EC English, London + Dublin experience',
-  //   location: 'Великобритания, Лондон. Ирландия, Дублин',
-  //   date: '<a href="http://summer.study.ua/trip/look/1126" target="_blank">20.07 - 10.08 (3 нед.)</a><br><a href="http://summer.study.ua/trip/look/1127" target="_blank">20.07 - 17.08 (3 нед.)</a>',
-  //   cost: '$4600 (3 нед.)<br>$5300 (4 нед.)'
-  // },
   {
     full: true,
     href: 'http://summer.study.ua/trip/look/1124',
-    webp: 'img/program-3.webp',
-    jpg: 'img/program-3.jpg',
+    webp: 'img/program-2.webp',
+    jpg: 'img/program-2.jpg',
     alt: 'Malta Summer',
     name: 'Malta Summer',
     location: 'Мальта, Сент-Джулианс',
@@ -306,30 +295,30 @@ var programsData = [
   {
     full: false,
     href: 'http://summer.study.ua/trip/look/1099',
-    webp: 'img/program-4.webp',
-    jpg: 'img/program-4.jpg',
+    webp: 'img/program-3.webp',
+    jpg: 'img/program-3.jpg',
     alt: 'EU Business School',
     name: 'EU Business School',
     location: 'Испания, Барселона',
-    date: '<a href="http://summer.study.ua/trip/look/1099" target="_blank">11.08 - 25.08 (2 нед.)</a>',
+    date: '<a href="http://summer.study.ua/trip/look/1099" target="_blank">11.08 - 24.08 (2 нед.)</a>',
     cost: '€4100 (2 нед.)'
   },
   {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/69',
-    webp: 'img/program-5.webp',
-    jpg: 'img/program-5.jpg',
+    full: true,
+    href: '',
+    webp: 'img/program-4.webp',
+    jpg: 'img/program-4.jpg',
     alt: 'Oxford School of English',
     name: 'Oxford School of English',
     location: 'Великобритания, Оксфорд',
-    date: '<a href="http://summer.study.ua/trip/look/69" target="_blank">27.07 - 18.08 (3 нед.)</a>',
+    date: '27.07 - 18.08 (3 нед.)',
     cost: '$3750 (3 нед.)'
   },
   {
     full: false,
     href: 'http://summer.study.ua/trip/look/73',
-    webp: 'img/program-6.webp',
-    jpg: 'img/program-6.jpg',
+    webp: 'img/program-5.webp',
+    jpg: 'img/program-5.jpg',
     alt: 'ILAC',
     name: 'ILAC',
     location: 'Канада, Торонто',
@@ -339,8 +328,8 @@ var programsData = [
   {
     full: false,
     href: 'http://summer.study.ua/trip/look/1123',
-    webp: 'img/program-7.webp',
-    jpg: 'img/program-7.jpg',
+    webp: 'img/program-6.webp',
+    jpg: 'img/program-6.jpg',
     alt: 'EC English Toronto + Vancouver',
     name: 'EC English Toronto + Vancouver',
     location: 'Канада, Торонто, Ванкувер',
@@ -350,8 +339,8 @@ var programsData = [
   {
     full: false,
     href: 'http://summer.study.ua/trip/look/42',
-    webp: 'img/program-8.webp',
-    jpg: 'img/program-8.jpg',
+    webp: 'img/program-7.webp',
+    jpg: 'img/program-7.jpg',
     alt: 'Niagara College',
     name: 'Niagara College',
     location: 'Канада, Велланд',
@@ -360,31 +349,9 @@ var programsData = [
   },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/1128',
-    webp: 'img/program-9.webp',
-    jpg: 'img/program-9.jpg',
-    alt: 'EC English New York',
-    name: 'EC English New York',
-    location: 'США, Нью-Йорк',
-    date: '<a href="http://summer.study.ua/trip/look/1128" target="_blank">13.07 - 27.07 (2 нед.)</a>',
-    cost: '$4700 (2 нед.)'
-  },
-  {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/1137',
-    webp: 'img/program-10.webp',
-    jpg: 'img/program-10.jpg',
-    alt: 'EC English New York + Miami',
-    name: 'EC English New York + Miami',
-    location: 'США,  Нью-Йорк, Майами',
-    date: '<a href="http://summer.study.ua/trip/look/1137" target="_blank">13.07 - 03.08 (3 нед.)</a>',
-    cost: '$5700 (3 нед.)'
-  },
-  {
-    full: false,
     href: 'http://summer.study.ua/trip/look/61',
-    webp: 'img/program-11.webp',
-    jpg: 'img/program-11.jpg',
+    webp: 'img/program-8.webp',
+    jpg: 'img/program-8.jpg',
     alt: 'Hotel and Restaurant business experience',
     name: 'Hotel and Restaurant business experience',
     location: 'Швейцария, Люцерн',
@@ -522,10 +489,10 @@ var programsData = [
   
   // Отрисовка слайдов
   var showSlide = function () {
-    if (currentSlide > 4) {
+    if (currentSlide > 2) {
       currentSlide = 0;
     } else if (currentSlide < 0) {
-      currentSlide = 4;
+      currentSlide = 2;
     };
     slides[currentSlide].classList.add('slider__item--show');
     dots[currentSlide].classList.add('slider__dot--active');
