@@ -56,7 +56,7 @@ body {
     -webkit-backdrop-filter: blur(30px);
             backdrop-filter: blur(30px); } }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1550px) {
   .aside {
     width: 70px; } }
 
@@ -164,7 +164,7 @@ body {
     -webkit-backdrop-filter: blur(30px);
             backdrop-filter: blur(30px); } }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1550px) {
   .title__content {
     width: 670px; }
   .title__title {
@@ -196,9 +196,8 @@ body {
   .title__call {
     font-size: 18px; }
   .title__controls {
-    right: 15px;
+    left: 15px;
     bottom: 75px;
-    left: auto;
     width: 155px;
     padding: 0;
     background-color: transparent; }
@@ -239,7 +238,7 @@ body {
   cursor: pointer;
   outline: 0;
   transition: 0.2s; }
-  .header__home:hover {
+  .header__home:hover, .header__home:focus {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px); }
   .header__home:active {
@@ -259,7 +258,7 @@ body {
   cursor: pointer;
   outline: 0;
   transition: 0.2s; }
-  .header__link:hover {
+  .header__link:hover, .header__link:focus {
     opacity: 0.6; }
   .header__link:active {
     opacity: 1; }
@@ -303,7 +302,7 @@ body {
   .header__menu--close {
     background-image: url("../img/svg/nav-close.svg"); }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1550px) {
   .header {
     padding-right: 90px;
     padding-bottom: 90px; }
@@ -399,7 +398,7 @@ body {
   background-position: center;
   background-size: cover;
   cursor: pointer;
-  outline: 0;
+  outline: none;
   transition: 0.2s; }
   .nav__anchor--canada {
     background-image: url("../img/nav-canada.png"); }
@@ -446,12 +445,12 @@ body {
     transition: 0.2s;
     visibility: hidden;
     z-index: -1; }
-  .nav__anchor:hover::after {
+  .nav__anchor:hover::after, .nav__anchor:focus::after {
     right: 50%;
     opacity: 1;
     visibility: visible; }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1550px) {
   .nav__anchor {
     width: 20px;
     height: 20px; }
@@ -641,7 +640,7 @@ body {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1550px) {
   .canada__column {
     width: 60%; }
     .canada__column--left {
@@ -861,7 +860,7 @@ body {
   .usa__play:hover, .usa__play:focus {
     background-color: rgba(0, 0, 0, 0.2); }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1550px) {
   .usa__column {
     width: 60%; }
     .usa__column--right {
@@ -1088,7 +1087,7 @@ body {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1550px) {
   .uk__column {
     width: 60%; }
     .uk__column--left {
@@ -1319,7 +1318,7 @@ body {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1550px) {
   .ireland__column {
     width: 60%; }
     .ireland__column--right {
@@ -1547,7 +1546,7 @@ body {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1550px) {
   .europe__column {
     width: 60%; }
     .europe__column--left {
@@ -1777,7 +1776,7 @@ body {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1550px) {
   .students__column {
     width: 60%; }
     .students__column--right {
@@ -1982,7 +1981,7 @@ body {
   .edge__controls {
     position: absolute;
     right: 100px;
-    bottom: 100px;
+    bottom: 20px;
     display: flex; }
   .edge__toggle {
     width: 40px;
@@ -2000,7 +1999,7 @@ body {
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg); } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 910px) {
   .edge__title {
     margin-bottom: 30px;
     font-size: 25px; }
@@ -2020,7 +2019,7 @@ body {
   .edge__text {
     font-size: 16px; }
   .edge__controls {
-    right: 10px;
+    left: 10px;
     bottom: 65px; } }
 
 @media screen and (max-width: 374px) {
@@ -2294,7 +2293,7 @@ body {
     color: #FFFFFF;
     background-color: #FF3434; }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1550px) {
   .contacts__column--left {
     width: 60%; }
   .contacts__column--right {

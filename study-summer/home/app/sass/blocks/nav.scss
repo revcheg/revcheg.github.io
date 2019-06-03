@@ -23,7 +23,7 @@
   background-position: center;
   background-size: cover;
   cursor: pointer;
-  outline: 0;
+  outline: none;
   transition: 0.2s;
   
   &--canada {
@@ -88,7 +88,8 @@
     z-index: -1;
   }
   
-  &:hover {
+  &:hover,
+  &:focus {
     
     &::after {
       right: 50%;

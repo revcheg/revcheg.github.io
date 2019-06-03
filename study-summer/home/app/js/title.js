@@ -7,7 +7,7 @@
   setInterval(function() {
     currentPhoto++;
     
-    if (currentPhoto > 2) {
+    if (currentPhoto > 4) {
       currentPhoto = 1;
     }
     

@@ -122,7 +122,7 @@
   text-align: center
 }
 
-@media screen and (max-width: 1550px) {
+@media screen and ($notebook-widths) {
   .edge__content {
     position: relative;
     bottom: -35px;
@@ -204,7 +204,7 @@
   .edge__controls {
     position: absolute;
     right: 100px;
-    bottom: 100px;
+    bottom: 20px;
     display: flex;
   }
   
@@ -227,7 +227,7 @@
   }
 }
 
-@media screen and ($mobile-widths) {
+@media screen and (max-width: 910px) {
   .edge__title {
     margin-bottom: 30px;
     font-size: 25px;
@@ -259,7 +259,7 @@
   }
   
   .edge__controls {
-    right: 10px;
+    left: 10px;
     bottom: 65px;
   }
 }

@@ -1,4 +1,17 @@
 (function () {
+  document.addEventListener('keyup', function (evt) {
+    var code = evt.keyCode;
+    
+    if (code == 40) {
+      scrollCounter++;
+    } else if (code == 38) {
+      scrollCounter--;
+    }
+    
+    scrolling();
+  });
+})();
+(function () {
   var list = document.querySelector('.edge__list');
   var prev = document.querySelector('.edge__toggle--prev');
   var next = document.querySelector('.edge__toggle--next');
@@ -245,7 +258,7 @@ function scrolling() {
   setInterval(function() {
     currentPhoto++;
     
-    if (currentPhoto > 2) {
+    if (currentPhoto > 4) {
       currentPhoto = 1;
     }
     

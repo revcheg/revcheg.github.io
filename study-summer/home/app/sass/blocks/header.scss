@@ -34,7 +34,8 @@
   outline: 0;
   transition: 0.2s;
   
-  &:hover {
+  &:hover,
+  &:focus {
     transform: translateY(-5px);
   }
   
@@ -57,7 +58,8 @@
   outline: 0;
   transition: 0.2s;
   
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
   
