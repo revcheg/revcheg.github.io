@@ -289,8 +289,8 @@ var programsData = [
     alt: 'Malta Summer',
     name: 'Malta Summer',
     location: 'Мальта, Сент-Джулианс',
-    date: '20.07 - 03.08 (2 нед.)',
-    cost: '€2450 (2 нед.)'
+    date: '<a href="http://summer.study.ua/trip/look/1124" target="_blank">20.07 - 03.08 (2 нед.)</a>',
+    cost: '€2600 (2 нед.)'
   },
   {
     full: false,
