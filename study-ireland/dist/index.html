@@ -2,15 +2,15 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <!-- <title></title> -->
-  <!-- <meta name="description" content=""> -->
+  <title>Середня та вища англомовна освіта в Ірландії зі STUDY.UA</title>
+  <meta name="description" content="Програми комплексної підготовки та гарантія вступу до середніх шкіл і ВНЗ Ірландії. Повний супровід та підтримка на всіх етапах оформлення від компанії STUDY.UA.">
   <!-- <meta name="keywords" content=""> -->
-  <!-- <meta property="og:image" content="img/og-image.jpg"> -->
-  <!-- <meta property="og:image:width" content="1200"> -->
-  <!-- <meta property="og:image:height" content="628"> -->
-  <!-- <meta property="og:title" content=""> -->
-  <!-- <meta property="og:description" content=""> -->
-  <!-- <meta property="og:url" content=""> -->
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="628">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:image" content="https://example.com/image/og-image.jpg">
+  <meta property="og:description" content="Програми комплексної підготовки та гарантія вступу до середніх шкіл і ВНЗ Ірландії. Повний супровід та підтримка на всіх етапах оформлення від компанії STUDY.UA.">
+  <meta property="og:title" content="Середня та вища англомовна освіта в Ірландії зі STUDY.UA">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="preload" href="fonts/AvenirNextCyr-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
@@ -36,12 +36,10 @@
   <header class="header">
     <div class="container">
       <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#">
-              <img class="nav__logo" src="img/svg/logo.svg" alt="STUDY.UA">
-            </a>
-          </li>
+        <a class="nav__item  nav__item--logo" href="#">
+          <img class="nav__logo" src="img/svg/logo.svg" alt="STUDY.UA">
+        </a>
+        <ul class="nav__list  nav__list--hide">
           <li class="nav__item">
             <a class="nav__link" href="#why">Чому Ірландія?</a>
           </li>
@@ -55,6 +53,7 @@
             <a class="nav__link" href="#center">Ірландський центр STUDY.UA</a>
           </li>
         </ul>
+        <button class="nav__button" aria-label="Вiдкрити меню"></button>
       </nav>
     </div>
   </header>
@@ -66,7 +65,7 @@
           <p class="intro__subtitle">Бажаєте отримати англомовну освіту та побудувати кар'єру в Google, Facebook, Apple або IBM?</p>
           <p class="intro__promo">Обирайте освіту в Ірландії —<br>інноваційному хабі Європи.</p>
           <p class="intro__cta">Залиште заявку та отримайте індивідуальну<br>стратегію вступу до навчальних закладів Ірландії!</p>
-          <a class="button" href="#form_114629_1">Хочу навчатися в Ірландії</a>
+          <a class="button  button--block  intro__button" href="#form_114629_1">Хочу навчатися в Ірландії</a>
         </section>
       </div>
     </div>
@@ -101,22 +100,22 @@
         </section>
       </div>
     </div>
-    <!-- <section class="career" id="career">
+    <section class="career" id="career">
       <div class="container">
         <h2 class="heading">Кар'єра в Ірландії: нові можливості</h2>
         <div class="career__wrapper">
-          <div>
+          <div class="career__subwrapper">
             <b class="career__title">Випускники ірландських університетів</b>
             <div class="career__content">
               <p class="career__text">автоматично отримують офіційний дозвіл на роботу в Ірландії після закінчення навчання за програмами бакалаврату та магістратури.</p>
               <div class="career__wrapper  career__wrapper--sub">
                 <div class="career__column">
                   <p class="career__year"><span class="career__year--number">1</span> рік</p>
-                  <p class="career__text">Дозвіл на роботу в Ірландії<br>для випускників-бакалаврів</p>
+                  <p class="career__text">Дозвіл на роботу в Ірландії<br> для випускників-бакалаврів</p>
                 </div>
                 <div class="career__column">
                   <p class="career__year"><span class="career__year--number">2</span> роки</p>
-                  <p class="career__text">Дозвіл на роботу в Ірландії<br>для випускників-магістрів</p>
+                  <p class="career__text">Дозвіл на роботу в Ірландії<br> для випускників-магістрів</p>
                 </div>
               </div>
               <b class="career__bold">Випускники ірландських університетів і коледжів працевлаштовуються після закінчення навчання, адже в Дубліні відкриті хед-офіси та представництва світових топ-корпорацій.</b>
@@ -133,8 +132,8 @@
         </div>
         <a class="button  button--center" href="#form_114629_1">Хочу в Ірландію!</a>
       </div>
-    </section> -->
-    <!-- <section class="study" id="where">
+    </section>
+    <section class="study" id="where">
       <div class="container">
         <h2 class="heading">Де навчатися?</h2>
         <section class="study__wrapper">
@@ -185,8 +184,8 @@
           </picture>
         </section>
       </div>
-    </section> -->
-    <!-- <section class="advantages">
+    </section>
+    <section class="advantages" id="center">
       <div class="container">
         <h2 class="heading  heading--white">Чому STUDY.UA?</h2>
         <b class="advantages__subheading">STUDY.UA – лідер українського ринку у сфері освіти за кордоном.</b>
@@ -224,8 +223,8 @@
         <p class="advantages__cta">Залиште заявку і дізнайтеся ще більше про можливості навчання в Ірландії!</p>
         <a class="button  advantages__button" href="#form_114629_1">Хочу навчатися в Ірландії!</a>
       </div>
-    </section> -->
-    <!-- <section class="contacts">
+    </section>
+    <section class="contacts">
       <div class="container">
         <h2 class="heading  heading--left">Контакти</h2>
         <article class="contacts__wrapper">
@@ -239,8 +238,8 @@
           <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.638735085854!2d30.54329081594287!3d50.41056999811834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf42f0aa10b1%3A0x7e3413e147baabc1!2z0J7QsdGA0LDQt9C-0LLQsNC90LjQtSDQt9CwINGA0YPQsdC10LbQvtC8IC0gU1RVRFkuVUE!5e0!3m2!1sru!2sua!4v1562074639873!5m2!1sru!2sua" allowfullscreen></iframe>
         </article>
       </div>
-    </section> -->
-    <!-- <section class="request">
+    </section>
+    <section class="request">
       <div class="container">
         <p class="heading  heading--left">Бажаєте навчатися в Ірландії?</p>
         <p class="request__text">Готуйтеся до вступу на програми вищої та середньої освіти<br>з Міжнародною школою STUDY Academy.</p>
@@ -250,7 +249,7 @@
         </div>
         <div class="request__form" id="form_114629_1"></div>
       </div>
-    </section> -->
+    </section>
   </main>
   <footer class="footer">
     2019 © STUDY.UA - Всі права захищені.

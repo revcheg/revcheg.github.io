@@ -56,3 +56,71 @@
   color: $green;
   font-weight: 500;
 }
+
+.career__image {
+  border-radius: 7px;
+}
+
+@media screen and ($tablet-width) {
+  .career__wrapper {
+    flex-direction: column;
+    align-items: center;
+    
+    &--sub {
+      flex-direction: row;
+    }
+  }
+  
+  .career__subwrapper {
+    order: 1;
+    width: 570px;
+  }
+  
+  .career__title {
+    font-size: 25px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .career__image {
+    align-self: center;
+    order: 2;
+    width: 570px;
+    height: 300px;
+    margin-bottom: 30px;
+    object-fit: cover;
+  }
+}
+
+@media screen and ($mobile-width) {
+  .career__subwrapper {
+    width: 100%;
+  }
+  
+  .career__title {
+    font-size: 22px;
+  }
+  
+  .career__content {
+    padding: 0;
+  }
+  
+  .career__text {
+    
+    br {
+      display: none;
+    }
+  }
+  
+  .career__bold {
+    text-align: center;
+  }
+  
+  .career__partners {
+    width: 100%;
+  }
+  
+  .career__image {
+    width: 100%;
+  }
+}

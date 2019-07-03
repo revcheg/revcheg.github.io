@@ -46,3 +46,42 @@
     background-position: left;
   }
 }
+
+@media screen and ($mobile-width) {
+  .intro {
+    padding-top: 140px;
+  }
+  
+  .intro__content {
+    width: auto;
+  }
+  
+  .intro__title {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .intro__subtitle {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .intro__promo {
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .intro__cta {
+    font-size: 20px;
+    text-align: center;
+    
+    br {
+      display: none;
+    }
+  }
+  
+  .intro__button {
+    width: 295px;
+    margin: 0 auto;
+  }
+}

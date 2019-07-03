@@ -97,3 +97,31 @@
   width: 305px;
   margin: auto;
 }
+
+@media screen and ($mobile-width) {
+  .advantages__subheading {
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  
+  .advantages__list {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  
+  .advantages__item {
+    margin-bottom: 20px;
+    
+    &--second {
+      width: auto;
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  .advantages__title {
+    font-size: 23px;
+  }
+}

@@ -48,3 +48,13 @@
   width: 700px;
   border: none;
 }
+
+@media screen and ($mobile-width) {
+  .contacts__wrapper {
+    flex-direction: column;
+  }
+  
+  .contacts__map {
+    width: 100%;
+  }
+}

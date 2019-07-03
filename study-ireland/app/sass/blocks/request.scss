@@ -49,3 +49,23 @@
   width: 99%;
   margin-left: -10px;
 }
+
+@media screen and ($mobile-width) {
+  .request__text {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .request__wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .request__info {
+    margin-bottom: 15px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

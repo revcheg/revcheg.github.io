@@ -33,3 +33,16 @@
     z-index: -1;
   }
 }
+
+@media screen and ($tablet-width) {
+  .heading {
+    font-size: 35px;
+  }
+}
+
+@media screen and ($mobile-width) {
+  .heading {
+    font-size: 30px;
+    text-align: center;
+  }
+}

@@ -111,7 +111,34 @@
 
 @media screen and ($tablet-width) {
   .edge__wrapper {
-    // flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .edge__image {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  
+  .edge__video {
+    
+    &::after {
+      right: -90px;
+    }
+  }
+}
+
+@media screen and ($mobile-width) {
+  .edge__image {
+    width: 100%;
+  }
+  
+  .edge__video {
+    width: 100%;
+    
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 }
