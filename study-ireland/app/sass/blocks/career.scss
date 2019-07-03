@@ -1,0 +1,58 @@
+.career {
+  padding-top: 70px;
+}
+
+.career__wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 30px;
+  
+  &--sub {
+    margin-bottom: 0;
+  }
+}
+
+.career__title {
+  display: block;
+  margin-bottom: 20px;
+  padding: 15px 30px;
+  color: #FFFFFF;
+  font-size: 26px;
+  font-weight: 700;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: $green;
+}
+
+.career__content {
+  padding: 0 30px;
+}
+
+.career__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.career__column {
+  
+  &:first-child {
+    margin-right: 50px;
+  }
+}
+
+.career__year {
+  margin: 0;
+  color: $green;
+  
+  &--number {
+    font-size: 46px;
+    font-weight: 700;
+  }
+}
+
+.career__bold {
+  display: block;
+  margin-bottom: 25px;
+  color: $green;
+  font-weight: 500;
+}

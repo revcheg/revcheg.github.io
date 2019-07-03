@@ -1,0 +1,35 @@
+.heading {
+  position: relative;
+  left: 50%;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 46px;
+  font-weight: 900;
+  transform: translateX(-50%);
+  
+  &--left {
+    left: 0;
+    transform: translateX(0);
+  }
+  
+  &--white {
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    
+    &::before {
+      display: none;
+    }
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: rgba($orange, 0.5);
+    z-index: -1;
+  }
+}

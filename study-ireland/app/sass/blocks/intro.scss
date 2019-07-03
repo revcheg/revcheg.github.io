@@ -1,0 +1,48 @@
+.intro {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-color: #0CAA54;
+  background-image: url('../img/intro-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.intro__content {
+  width: 595px;
+  color: #FFFFFF;
+}
+
+.intro__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.intro__subtitle {
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-size: 22px;
+}
+
+.intro__promo {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.intro__cta {
+  margin-top: 0;
+  margin-bottom: 35px;
+  padding: 18px 25px;
+  font-size: 22px;
+  border: 1px solid #FFFFFF;
+  border-radius: 7px;
+}
+
+@media screen and ($tablet-width) {
+  .intro {
+    background-position: left;
+  }
+}
