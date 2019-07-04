@@ -19,9 +19,14 @@
     width: 145px;
     margin: auto;
   }
-  
-  &--block {
-    box-sizing: border-box;
-    display: block;
+}
+
+@media screen and ($mobile-width) {
+  .button {
+    
+    &--block {
+      box-sizing: border-box;
+      display: block;
+    }
   }
 }

@@ -1,0 +1,36 @@
+.thankyou {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../img/advantages-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.thankyou__content {
+  padding: 30px 50px;
+  border-radius: 7px;
+  background-color: #FFFFFF;
+}
+
+.thankyou__title {
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.thankyou__text {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.thankyou__divider {
+  width: 50%;
+  height: 1px;
+  border: none;
+  background-color: $green;
+}

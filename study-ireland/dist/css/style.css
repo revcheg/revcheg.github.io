@@ -235,9 +235,11 @@ body {
     display: block;
     width: 145px;
     margin: auto; }
+
+@media screen and (max-width: 768px) {
   .button--block {
     box-sizing: border-box;
-    display: block; }
+    display: block; } }
 
 .edge {
   padding-top: 60px; }
@@ -770,7 +772,8 @@ body {
     -webkit-box-direction: normal;
             flex-direction: column; }
   .contacts__map {
-    width: 100%; } }
+    width: 100%;
+    height: 300px; } }
 
 .request {
   padding-top: 80px;
@@ -827,10 +830,47 @@ body {
   .request__info {
     margin-bottom: 15px; }
     .request__info:last-child {
-      margin-bottom: 0; } }
+      margin-bottom: 0; }
+  .request__form {
+    margin: auto; } }
 
 .footer {
   padding: 15px;
   color: #FFFFFF;
   text-align: center;
+  background-color: #0CAA54; }
+
+.thankyou {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  height: 100vh;
+  background-image: url("../img/advantages-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.thankyou__content {
+  padding: 30px 50px;
+  border-radius: 7px;
+  background-color: #FFFFFF; }
+
+.thankyou__title {
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center; }
+
+.thankyou__text {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center; }
+
+.thankyou__divider {
+  width: 50%;
+  height: 1px;
+  border: none;
   background-color: #0CAA54; }
