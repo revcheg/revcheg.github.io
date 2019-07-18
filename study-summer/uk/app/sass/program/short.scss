@@ -1,0 +1,59 @@
+.short {
+  margin-bottom: 70px;
+}
+
+.short__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.short__table {
+  width: 450px;
+}
+
+.short__row {
+  background-repeat: no-repeat;
+  background-position: left top;
+  
+  &:nth-child(1) {
+    background-image: url('../img/svg/program-age.svg');
+  }
+  
+  &:nth-child(2) {
+    background-image: url('../img/svg/program-study.svg');
+  }
+  
+  &:nth-child(3) {
+    background-image: url('../img/svg/program-residence.svg');
+  }
+  
+  &:nth-child(4) {
+    background-image: url('../img/svg/program-date.svg');
+  }
+  
+  &:nth-child(5) {
+    background-image: url('../img/svg/program-cost.svg');
+  }
+}
+
+.short__cell {
+  padding-top: 5px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3em;
+  vertical-align: top;  
+}
+
+.short__bold {
+  padding-left: 45px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.short__map {
+  width: 720px;
+  height: 320px;
+  border: none;
+  border-radius: 7px;
+}

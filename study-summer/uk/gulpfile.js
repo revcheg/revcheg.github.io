@@ -13,7 +13,7 @@ const livereload = require('gulp-livereload');
 
 function styles() {
   return gulp
-    .src('app/sass/style.scss')
+    .src('app/sass/program.scss')
       .pipe(plumber())
       .pipe(sass())
       .pipe(postcss([ autoprefixer() ]))
@@ -32,8 +32,8 @@ function markup() {
 
 function scripts() {
   return gulp
-    .src('app/js/*.js')
-      .pipe(concat('main.js'))
+    .src('app/js/program/*.js')
+      .pipe(concat('program.js'))
       .pipe(gulp.dest('dist/js'))
       .pipe(jsmin())
       .pipe(rename({suffix: '.min'}))

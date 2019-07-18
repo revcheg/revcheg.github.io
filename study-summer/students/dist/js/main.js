@@ -282,7 +282,7 @@ var programsData = [
     cost: '$3550 (2 нед.)'
   },
   {
-    full: true,
+    full: false,
     href: 'http://summer.study.ua/trip/look/1124',
     webp: 'img/program-2.webp',
     jpg: 'img/program-2.jpg',
