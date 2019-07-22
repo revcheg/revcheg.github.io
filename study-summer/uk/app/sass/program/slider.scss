@@ -4,6 +4,8 @@
 
 .slider__wrapper {
   position: relative;
+  border-radius: 7px;
+  overflow: hidden;
 }
 
 .slider__list {
@@ -133,23 +135,18 @@
   }
 }
 
-@media screen and ($tablet-widths) {
-  .slider__item {
-    padding-left: 0;
-    text-align: center;
-  }
-  
-  .slider__button {
-    margin: 0 auto;
+@media screen and ($tablet-widths) {  
+  .slider__title {
+    font-size: 28px;
   }
   
   .slider__control {
     
-    &--prev {
+    &:first-of-type {
       left: 20px;
     }
     
-    &--next {
+    &:last-of-type {
       right: 20px;
     }
   }
@@ -164,12 +161,16 @@
     height: 375px;
   }
   
-  .slider__name {
-    font-size: 25px;
+  .slider__item {
+    padding: 0 15px;
   }
   
-  .slider__subname {
-    font-size: 18px;
+  .slider__title {
+    font-size: 25px;
+    
+    &--small {
+      font-size: 18px;
+    }
   }
   
   .slider__control {

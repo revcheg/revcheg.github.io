@@ -129,7 +129,7 @@
     background-position: center;
     background-size: cover;
     outline: none;
-    transition: 0.5s linear;
+    transition: 0.3s;
     
     &--open {
       background-image: url('../img/svg/nav.svg');

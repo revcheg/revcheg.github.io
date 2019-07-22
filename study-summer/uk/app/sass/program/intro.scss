@@ -91,3 +91,36 @@
     transform: scale(0.95);
   }
 }
+
+@media screen and ($tablet-widths) {
+  .intro__play {
+    background-size: 60px;
+  }
+  
+  .intro__text {
+    font-size: 18px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .intro {
+    margin-bottom: 50px;
+  }
+  
+  .intro__wrapper {
+    flex-direction: column;
+  }
+  
+  .intro__column {
+    width: 100%;
+    
+    &:first-child {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+  
+  .intro__play {
+    background-size: 55px;
+  }
+}

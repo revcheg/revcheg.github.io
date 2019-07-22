@@ -37,6 +37,7 @@
 }
 
 .short__cell {
+  color: $text;
   padding-top: 5px;
   padding-bottom: 20px;
   font-size: 18px;
@@ -56,4 +57,50 @@
   height: 320px;
   border: none;
   border-radius: 7px;
+}
+
+@media screen and ($tablet-widths) {
+  .short__table {
+    width: 50%;
+    max-width: 400px;
+    margin-right: 30px;
+  }
+  
+  .short__cell {
+    font-size: 16px;
+  }
+  
+  .short__bold {
+    padding-left: 40px;
+    font-size: 18px;
+  }
+  
+  .short__map {
+    width: 50%;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .short {
+    margin-bottom: 50px;
+  }
+  
+  .short__wrapper {
+    flex-direction: column;
+  }
+  
+  .short__table {
+    align-self: center;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .short__bold {
+    font-size: 16px;
+  }
+  
+  .short__map {
+    width: 100%;
+  }
 }
