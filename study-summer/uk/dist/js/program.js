@@ -44,6 +44,7 @@
       index = tempArray.indexOf(evt.currentTarget);
       activateTab();
       setGallery();
+      resetPhoto();
     });
   }
   
@@ -61,21 +62,33 @@
     var galleryList = tabSections[index].querySelector('.info__gallery');
     var galleryPrev = tabSections[index].querySelector('.info__swipe--prev');
     var galleryNext = tabSections[index].querySelector('.info__swipe--next');
-    var numberOfPhoto = tabSections[index].querySelectorAll('.info__gallery li').length;
+    var numberOfPhoto = tabSections[index].querySelectorAll('.info__gallery li');
     var counter = 0;
     
     galleryNext.addEventListener('click', function () {
-      // counter++;
-      if (counter >= numberOfPhoto) {
-        counter = numberOfPhoto - 1;
-      } else {
-        counter++;
+      if (counter >= numberOfPhoto.length - 2) {
+        counter = numberOfPhoto.length - 2;
+      }
+      counter++;
+      galleryList.style.left = '-' + counter + '00%';
+    });
+    
+    galleryPrev.addEventListener('click', function () {
+      counter--;
+      if (counter <= 0) {
+        counter = 0;
       }
       galleryList.style.left = '-' + counter + '00%';
     });
   };
+  
+  function resetPhoto () {
+    var galleryList = document.querySelectorAll('.info__gallery');
+    for (var g = 0; g < galleryList.length; g++) {
+      galleryList[g].style.left = '0%';
+    }
+  };
 })();
-
 (function () {
   var button = document.querySelector('.intro__play');
   var column = document.querySelector('.intro__column');
