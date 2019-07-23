@@ -136,6 +136,10 @@
 }
 
 @media screen and ($tablet-widths) {  
+  .slider__wrapper {
+    border-radius: 0;
+  }
+  
   .slider__title {
     font-size: 28px;
   }

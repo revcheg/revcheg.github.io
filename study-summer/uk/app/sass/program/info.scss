@@ -242,6 +242,10 @@
 }
 
 @media screen and ($mobile-widths) {
+  .info {
+    margin-bottom: 50px;
+  }
+  
   .info__button {
     display: block;
     width: 100%;
@@ -254,7 +258,7 @@
   }
   
   .info__tabs {
-    height: auto;
+    height: 683px;
   }
   
   .info__tab {
