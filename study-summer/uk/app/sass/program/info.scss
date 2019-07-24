@@ -249,15 +249,19 @@
   .info__button {
     display: block;
     width: 100%;
+    max-width: 500px;
+    margin: auto;
     margin-bottom: 5px;
     border-radius: 7px;
     
     &:first-child {
-      margin-left: 0;
+      margin-left: inherit;
     }
   }
   
   .info__tabs {
+    max-width: 500px;
+    margin: auto;
     height: 683px;
   }
   

@@ -397,12 +397,19 @@ body {
   .intro__wrapper {
     flex-direction: column; }
   .intro__column {
-    width: 100%; }
+    width: 100%;
+    max-width: 500px; }
     .intro__column:first-child {
       margin-right: 0;
       margin-bottom: 30px; }
   .intro__play {
-    background-size: 55px; } }
+    background-size: 55px; }
+  .intro__button {
+    box-sizing: border-box;
+    display: block;
+    width: 205px;
+    margin: auto;
+    text-align: center; } }
 
 .short {
   margin-bottom: 70px; }
@@ -474,7 +481,9 @@ body {
   .short__bold {
     font-size: 16px; }
   .short__map {
-    width: 100%; } }
+    width: 100%;
+    max-width: 500px;
+    margin: auto; } }
 
 .info {
   margin-bottom: 100px; }
@@ -666,11 +675,15 @@ body {
   .info__button {
     display: block;
     width: 100%;
+    max-width: 500px;
+    margin: auto;
     margin-bottom: 5px;
     border-radius: 7px; }
     .info__button:first-child {
-      margin-left: 0; }
+      margin-left: inherit; }
   .info__tabs {
+    max-width: 500px;
+    margin: auto;
     height: 683px; }
   .info__tab {
     flex-direction: column;
@@ -846,6 +859,7 @@ body {
 @media screen and (max-width: 767px) {
   .leader__slider {
     width: 100%;
+    max-width: 500px;
     margin-bottom: 35px; }
   .leader__content {
     width: 100%; }
@@ -874,3 +888,56 @@ body {
       .leader__button--next:active {
         -webkit-transform: rotate(180deg) scale(0.9);
                 transform: rotate(180deg) scale(0.9); } }
+
+.photo {
+  margin-bottom: 70px; }
+
+.photo__wrapper {
+  display: flex;
+  margin-bottom: 30px; }
+
+.photo__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.photo__item {
+  width: 225px; }
+  .photo__item--big {
+    width: 470px; }
+  .photo__item:first-child {
+    margin-bottom: 4px; }
+
+.photo__source {
+  width: 100%;
+  border-radius: 7px; }
+  .photo__source--big {
+    width: 470px;
+    margin-right: 8px; }
+
+.photo__cta {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #292F48;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center; }
+
+.photo__hashtags {
+  display: flex;
+  justify-content: center; }
+
+.photo__link {
+  width: 320px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .photo__link:first-child {
+    margin-right: 30px;
+    background-image: url("../img/svg/facebook-hashtag.svg"); }
+  .photo__link:last-child {
+    background-image: url("../img/svg/instagram-hashtag.svg"); }
