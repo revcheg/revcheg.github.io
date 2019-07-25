@@ -1,0 +1,39 @@
+.request {
+  margin-bottom: 100px;
+}
+
+.request__wrapper {
+  display: flex;
+}
+
+.request__content {
+  width: 370px;
+}
+
+.request__cta {
+  display: block;
+  margin-bottom: 30px;
+  color: $text;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.request__phones {
+  padding-left: 30px;
+  background-image: url('../img/svg/program-phone.svg');
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.request__phone {
+  display: block;
+  margin-bottom: 10px;
+  color: $text;
+  text-decoration: none;
+  transition: 0.3s;
+  
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
+}

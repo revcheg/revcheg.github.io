@@ -1,7 +1,4 @@
 (function () {
-  
-})();
-(function () {
   var list = document.querySelector('.leader__list');
   var numberOfSlide = list.querySelectorAll('li');
   var prev = document.querySelector('.leader__button--prev');
@@ -51,6 +48,13 @@
       document.body.style.overflow = 'auto';
     });
   }
+})();
+(function () {
+  var photo = document.querySelector('.photo__source--big');
+  
+  photo.addEventListener('click', function () {
+    this.classList.toggle('photo__source--open');
+  });
 })();
 (function () {
   var tabButtons = document.querySelectorAll('.info__button');

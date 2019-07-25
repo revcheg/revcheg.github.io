@@ -177,6 +177,10 @@
 }
 
 @media screen and ($mobile-widths) {
+  .leader {
+    margin-bottom: 50px;
+  }
+  
   .leader__slider {
     width: 100%;
     max-width: 500px;
@@ -203,7 +207,6 @@
   }
   
   .leader__control {
-    // display: flex;
     margin-bottom: 20px;
     text-align: center;
   }

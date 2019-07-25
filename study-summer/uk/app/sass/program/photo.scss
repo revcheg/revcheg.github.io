@@ -68,3 +68,77 @@
     background-image: url('../img/svg/instagram-hashtag.svg');
   }
 }
+
+@media screen and ($tablet-widths) {
+  .photo__wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  
+  .photo__item {
+    flex-grow: 1;
+    margin: 5px;
+  }
+  
+  .photo__source {
+    
+    &--big {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .photo {
+    margin-bottom: 50px;
+  }
+  
+  .photo__wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .photo__item {
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0;
+    padding: 5px;
+    
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  .photo__source {
+    
+    &--big {
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 0;
+      padding: 5px;
+    }
+  }
+  
+  .photo__cta {
+    font-size: 20px;
+  }
+  
+  .photo__hashtags {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .photo__link {
+    width: 100%;
+    background-size: contain;
+    
+    &:first-child {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
