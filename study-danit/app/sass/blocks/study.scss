@@ -1,0 +1,140 @@
+.study {
+  padding-top: 45px;
+  padding-bottom: 35px;
+}
+
+.study__title {
+  box-sizing: border-box;
+  width: 1070px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  padding-left: 85px;
+  color: #3a68ac;
+  font-size: 36px;
+  font-weight: 600;
+  background-image: url('../img/heading-2.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  
+  &--bracket {
+    color: #1ecdaa;
+  }
+}
+
+.study__wrapper {
+  width: 1070px;
+  margin: auto;
+  padding-top: 290px;
+  background-image: url('../img/study-1.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.study__control {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.study__button {
+  position: relative;
+  flex-grow: 1;
+  margin-right: 15px;
+  padding: 15px 0;
+  padding-left: 70px;
+  color: $text;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 1px 13px 0px rgba(64, 64, 64, 0.8);
+  background-color: #FFFFFF;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  transition: 0.2s;
+  
+  &:last-child {
+    margin-right: 0;
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background-color: #78b4fb;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 13px;
+    height: 13px;
+    background-image: url('../img/study-button-p.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translateY(-50%);
+  }
+    
+  &--active {
+    
+    &::after {
+      background-image: url('../img/study-button-m.png');
+    }
+  }
+  
+  &:nth-child(1) {
+    
+    &::before {
+      background-image: url('../img/study-button-1.png');
+    }
+  }
+  
+  &:nth-child(2) {
+    
+    &::before {
+      background-image: url('../img/study-button-2.png');
+    }
+  }
+  
+  &:nth-child(3) {
+    
+    &::before {
+      background-image: url('../img/study-button-3.png');
+    }
+  }
+}
+
+.study__content {
+  padding: 25px 30px;
+  border-left: 50px solid #78b4fb;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0px 1px 13px 0px rgba(64, 64, 64, 0.8);
+  background-color: #FFFFFF;
+}
+
+.study__text {
+  color: $text;
+  font-size: 16px;
+  font-weight: 400;
+  
+  &:first-child {
+    margin-top: 0;
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

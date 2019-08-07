@@ -1,0 +1,166 @@
+.edu {
+  padding-top: 55px;
+  padding-bottom: 60px;
+  background-image: linear-gradient(-115deg, rgb(50, 214, 232) 0%, rgb(74, 66, 222) 100%);
+}
+
+.edu__title {
+  box-sizing: border-box;
+  width: 1000px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  padding-left: 85px;
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: 600;
+  background-image: url('../img/heading-3.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  
+  &--bracket {
+    color: #1ecdaa;
+  }
+}
+
+.edu__text {
+  width: 1000px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.edu__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.edu__column {
+  width: 225px;
+}
+
+.edu__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 3px;
+    background-color: #6dcff6;
+    z-index: 1;
+  }
+}
+
+.edu__flag {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border: 3px solid #6dcff6;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.edu__name {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.edu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.edu__item {
+  margin-bottom: 25px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.edu__figure {
+  margin: 0;
+}
+
+.edu__caption {
+  padding: 5px 0;
+  color: #303976;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #78b4fb;
+}
+
+.edu__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85px;
+}
+
+.edu__cta {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+
+@media screen and ($tablet-widths) {
+  .edu__title {
+    width: auto;
+  }
+  
+  .edu__text {
+    width: auto;
+  }
+  
+  .edu__wrapper {
+    flex-wrap: wrap;
+    width: auto;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .edu__title {
+    padding-top: 70px;
+    padding-left: 0;
+    font-size: 30px;
+    text-align: center;
+    background-position: top;
+  }
+  
+  .edu__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .edu__column {
+    margin-bottom: 30px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
