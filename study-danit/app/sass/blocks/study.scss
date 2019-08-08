@@ -138,3 +138,40 @@
     margin-bottom: 0;
   }
 }
+
+@media screen and ($tablet-widths) {
+  .study__title {
+    width: auto;
+  }
+  
+  .study__wrapper {
+    width: auto;
+  }
+  
+  .study__button {
+    font-size: 14px;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .study__title {
+    padding-top: 70px;
+    padding-left: 0;
+    font-size: 30px;
+    text-align: center;
+    background-position: top;
+  }
+  
+  .study__control {
+    flex-direction: column;
+  }
+  
+  .study__button {
+    margin-right: 0;
+    margin-bottom: 15px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

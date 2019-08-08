@@ -1,0 +1,237 @@
+.danit {
+  padding-top: 70px;
+  padding-bottom: 45px;
+  background-image: linear-gradient(-115deg, rgb(50, 214, 232) 0%, rgb(74, 66, 222) 100%);
+}
+
+.danit__title {
+  margin-top: 0;
+  margin-bottom: 45px;
+  color: #FFFFFF;
+  font-size: 55px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.danit__subtitle {
+  box-sizing: border-box;
+  width: 1000px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  padding-left: 85px;
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: 600;
+  background-image: url('../img/heading-1.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  
+  &--bracket {
+    color: #1ecdaa;
+  }
+}
+
+.danit__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.danit__column {
+  width: 270px;
+  
+  &:first-child {
+    margin-right: 20px;
+  }
+  
+  &:last-child {
+    margin-left: 20px;
+  }
+}
+
+.danit__button {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  padding-left: 75px;
+  color: $text;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: inherit;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 1px 13px 0px rgba(64, 64, 64, 0.8);
+  background-color: #FFFFFF;
+  background-image: url('../img/study-button-m.png');
+  background-repeat: no-repeat;
+  background-position: 240px center;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  transition: 0.3s;
+  
+  &--bold {
+    font-weight: 700;
+  }
+  
+  &--hide {
+    background-image: url('../img/study-button-p.png');
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #78b4fb;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  &:nth-child(1) {
+    
+    &::before {
+      background-image: url('../img/danit-button-1.png');
+    }
+  }
+  
+  &:nth-child(2) {
+    
+    &::before {
+      background-image: url('../img/danit-button-2.png');
+    }
+  }
+  
+  &:nth-child(3) {
+    
+    &::before {
+      background-image: url('../img/danit-button-3.png');
+    }
+  }
+  
+  &:nth-child(4) {
+    
+    &::before {
+      background-image: url('../img/danit-button-4.png');
+    }
+  }
+  
+  &:nth-child(5) {
+    
+    &::before {
+      background-image: url('../img/danit-button-6.png');
+    }
+  }
+  
+  &:nth-child(7) {
+    
+    &::before {
+      background-image: url('../img/danit-button-7.png');
+    }
+  }
+  
+  &:nth-child(8) {
+    
+    &::before {
+      background-image: url('../img/danit-button-8.png');
+    }
+  }
+  
+  &:hover,
+  &:focus {
+    top: -5px;
+  }
+}
+
+.danit__desc {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 13px 0px rgba(64, 64, 64, 0.8);
+  background-color: #FFFFFF;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  transition: 0.5s;
+  
+  &--hide {
+    height: 0;
+    padding: 0 15px;
+  }
+}
+
+.danit__image {
+  flex-grow: 1;
+  height: 230px;
+  background-image: url('../img/danit-image.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.danit__cta {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+
+@media screen and ($tablet-widths) {
+  .danit__title {
+    width: auto;
+  }
+  
+  .danit__subtitle {
+    width: auto;
+  }
+  
+  .danit__wrapper {
+    width: auto;
+  }
+}
+
+@media screen and ($mobile-widths) {
+  .danit__title {
+    font-size: 35px;
+  }
+  
+  .danit__subtitle {
+    padding-top: 70px;
+    padding-left: 0;
+    font-size: 30px;
+    text-align: center;
+    background-position: top;
+  }
+  
+  .danit__wrapper {
+    flex-direction: column;
+  }
+  
+  .danit__column {
+    
+    &:first-child {
+      margin-right: 0;
+    }
+    
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+  
+  .danit__image {
+    display: none;
+  }
+}
