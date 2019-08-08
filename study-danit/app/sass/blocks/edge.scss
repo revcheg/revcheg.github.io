@@ -73,7 +73,7 @@
   background-color: #FFFFFF;
   opacity: 0;
   transition: 0.5s;
-  transform: translateX(50px);
+  transform: translateX(15px);
   
   &--show {
     opacity: 1;
@@ -85,7 +85,7 @@
   position: absolute;
   top: -40px;
   left: -50px;
-  font-size: 55px;
+  font-size: 53px;
   font-weight: 600;
   text-shadow: 0 0 10px #5599d1;
   -webkit-text-fill-color: transparent;
@@ -139,6 +139,10 @@
 }
 
 @media screen and ($mobile-widths) {
+  .edge {
+    padding-bottom: 600px;
+  }
+  
   .edge__title {
     position: static;
     margin-bottom: 30px;
@@ -170,11 +174,14 @@
   }
   
   .edge__content {
-    position: relative;
-    top: 0;
-    width: 100%;
+    top: 510px;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    width: 290px;
     padding-top: 20px;
     padding-right: 15px;
+    transform: translateX(-50%);
   }
   
   .edge__name {

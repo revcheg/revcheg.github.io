@@ -411,7 +411,7 @@ body {
   background-color: #FFFFFF;
   opacity: 0;
   transition: 0.5s;
-  transform: translateX(50px); }
+  transform: translateX(15px); }
   .edge__content--show {
     opacity: 1;
     transform: none; }
@@ -420,7 +420,7 @@ body {
   position: absolute;
   top: -40px;
   left: -50px;
-  font-size: 55px;
+  font-size: 53px;
   font-weight: 600;
   text-shadow: 0 0 10px #5599d1;
   -webkit-text-fill-color: transparent;
@@ -463,6 +463,8 @@ body {
     right: 10px; } }
 
 @media screen and (max-width: 900px) {
+  .edge {
+    padding-bottom: 600px; }
   .edge__title {
     position: static;
     margin-bottom: 30px;
@@ -486,11 +488,14 @@ body {
     font-size: 14px;
     text-align: center; }
   .edge__content {
-    position: relative;
-    top: 0;
-    width: 100%;
+    top: 510px;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    width: 290px;
     padding-top: 20px;
-    padding-right: 15px; }
+    padding-right: 15px;
+    transform: translateX(-50%); }
   .edge__name {
     position: static;
     top: 0;
