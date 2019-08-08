@@ -7,7 +7,7 @@
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.7);
   transition: 0.2s;
-  z-index: 3;
+  z-index: 4;
   
   &:hover {
     background-color: rgba(255, 255, 255, 1);
@@ -111,9 +111,26 @@
   }
   
   .header__list {
+    transition: 0.3s;
+    
+    &--hide {
+      transform: translateX(-100%);
+    }
     
     &:last-of-type {
-      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: calc(100% - 64px);
+      background-color: #FFFFFF;
+      
+      .header__item {
+        margin-right: 0; 
+        margin-bottom: 15px; 
+      }
     }
   }
   
@@ -123,6 +140,16 @@
   
   .header__logo {
     width: 100px;
+  }
+  
+  .header__anchor {
+    display: block;
+    padding: 0;
+    font-size: 20px;
+    
+    &--phone {
+      padding-left: 30px;
+    }
   }
   
   .header__menu {
