@@ -723,6 +723,7 @@ body {
   top: 0;
   width: 100%;
   height: 50px;
+  margin-bottom: 20px;
   padding-left: 75px;
   color: #464646;
   font-size: 16px;
@@ -730,7 +731,8 @@ body {
   font-family: inherit;
   text-align: left;
   border: none;
-  border-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
   box-shadow: 0px 1px 13px 0px rgba(64, 64, 64, 0.8);
   background-color: #FFFFFF;
   background-image: url("../img/study-button-m.png");
@@ -743,6 +745,7 @@ body {
   .danit__button--bold {
     font-weight: 700; }
   .danit__button--hide {
+    border-radius: 5px;
     background-image: url("../img/study-button-p.png"); }
   .danit__button::before {
     content: '';
@@ -754,38 +757,75 @@ body {
     background-color: #78b4fb;
     background-repeat: no-repeat;
     background-position: center; }
-  .danit__button:nth-child(1)::before {
+  .danit__button--1::before {
     background-image: url("../img/danit-button-1.png"); }
-  .danit__button:nth-child(2)::before {
+  .danit__button--2::before {
     background-image: url("../img/danit-button-2.png"); }
-  .danit__button:nth-child(3)::before {
+  .danit__button--3::before {
     background-image: url("../img/danit-button-3.png"); }
-  .danit__button:nth-child(4)::before {
+  .danit__button--4::before {
     background-image: url("../img/danit-button-4.png"); }
-  .danit__button:nth-child(5)::before {
+  .danit__button--5::before {
+    background-image: url("../img/danit-button-5.png"); }
+  .danit__button--6::before {
     background-image: url("../img/danit-button-6.png"); }
-  .danit__button:nth-child(7)::before {
+  .danit__button--7::before {
     background-image: url("../img/danit-button-7.png"); }
-  .danit__button:nth-child(8)::before {
+  .danit__button--8::before {
     background-image: url("../img/danit-button-8.png"); }
-  .danit__button:hover, .danit__button:focus {
-    top: -5px; }
+
+.danit__box {
+  position: relative; }
 
 .danit__desc {
+  position: absolute;
+  top: 40px;
+  left: 0;
   box-sizing: border-box;
   width: 100%;
-  height: 100px;
   margin: 10px 0;
-  padding: 15px;
-  border-radius: 5px;
+  padding: 10px 0;
+  padding-right: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   box-shadow: 0px 1px 13px 0px rgba(64, 64, 64, 0.8);
   background-color: #FFFFFF;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  transition: 0.5s; }
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 1; }
   .danit__desc--hide {
     height: 0;
-    padding: 0 15px; }
+    padding: 0;
+    padding-right: 10px;
+    opacity: 0; }
+  .danit__desc::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #78b4fb; }
+
+.danit__list {
+  position: relative;
+  margin: 0;
+  margin-left: 23px;
+  padding: 0;
+  list-style: none;
+  z-index: 1; }
+
+.danit__item {
+  margin-bottom: 10px;
+  padding-left: 55px;
+  background-image: url("../img/svg/tick.svg");
+  background-repeat: no-repeat;
+  background-position: left 4px;
+  background-size: 15px; }
+  .danit__item:last-child {
+    margin-bottom: 0; }
 
 .danit__image {
   flex-grow: 1;
@@ -932,14 +972,39 @@ body {
   transition: 0.5s; }
 
 .study__content {
+  position: relative;
+  width: 100%;
   padding: 25px 0;
   padding-right: 30px;
   background-color: #FFFFFF; }
+  .study__content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background-color: #78b4fb; }
+
+.study__list {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  margin-left: 18px;
+  padding: 0;
+  list-style: none;
+  z-index: 1; }
 
 .study__text {
+  margin-bottom: 10px;
+  padding-left: 55px;
   color: #464646;
   font-size: 16px;
-  font-weight: 400; }
+  font-weight: 400;
+  background-image: url("../img/svg/tick.svg");
+  background-repeat: no-repeat;
+  background-position: left 4px;
+  background-size: 15px; }
   .study__text:first-child {
     margin-top: 0; }
   .study__text:last-child {
