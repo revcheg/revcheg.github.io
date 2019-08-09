@@ -86,7 +86,6 @@
 
 .contact__list {
   display: flex;
-  // justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -104,7 +103,7 @@
   font-weight: 400;
   background-image: url('../img/svg/contact-loc.svg');
   background-repeat: no-repeat;
-  background-position: left 4px;
+  background-position: left top;
   background-size: 16px;
   
   &--blue {

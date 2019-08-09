@@ -86,7 +86,7 @@
   font-weight: 400;
   background-image: url('../img/cost-li.png');
   background-repeat: no-repeat;
-  background-position: 15px center;
+  background-position: 15px 4px;
   background-size: 13px;
   
   &--blue {
@@ -95,6 +95,7 @@
     color: #FFFFFF;
     background-color: #4a58c3;
     background-image: url('../img/cost-li-white.png');
+    background-position: 15px center
   }
 }
 

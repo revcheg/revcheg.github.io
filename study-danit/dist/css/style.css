@@ -71,7 +71,7 @@ body {
   width: 100%;
   padding: 20px 0;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
   transition: 0.2s;
   z-index: 4; }
   .header:hover {
@@ -222,47 +222,11 @@ body {
 .intro__left {
   width: 860px; }
 
-.intro__poster {
-  position: relative;
+.intro__video {
   width: 100%;
   height: 515px;
-  background-color: #adb9da;
-  background-image: url("../img/video-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-.intro__video {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 0;
-  transition: 0.5s; }
-
-.intro__play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 52px;
-  height: 52px;
-  border: none;
-  background-color: transparent;
-  background-image: url("../img/video-play.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  cursor: pointer;
-  outline: none;
-  transition: 0.2s;
-  transform: translate(-50%, -50%); }
-  .intro__play:hover, .intro__play:focus {
-    transform: translate(-50%, -50%) scale(1.1); }
-  .intro__play:active {
-    transform: translate(-50%, -50%) scale(0.9); }
+     object-fit: cover; }
 
 .intro__list {
   position: relative;
@@ -311,8 +275,6 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3); }
-  .intro__play {
-    z-index: 1; }
   .intro__list {
     padding-right: 50px;
     padding-left: 50px; } }
@@ -330,8 +292,6 @@ body {
     padding: 0 20px; }
   .intro__poster {
     height: 450px; }
-  .intro__play {
-    top: 35%; }
   .intro__right::after {
     display: none; }
   .intro__list {
@@ -349,7 +309,8 @@ body {
   background-image: linear-gradient(-115deg, #32d6e8 40%, #4a42de 100%); }
 
 .edge__wrapper {
-  position: relative; }
+  position: relative;
+  perspective: 1000px; }
 
 .edge__title {
   position: absolute;
@@ -392,6 +353,9 @@ body {
   cursor: pointer;
   outline: none;
   transition: 0.3s; }
+  .edge__button--hide {
+    opacity: 0;
+    transform: translateX(30px); }
   .edge__button--active {
     color: #FFFFFF; }
   .edge__button:hover, .edge__button:focus {
@@ -410,11 +374,14 @@ body {
   box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
   opacity: 0;
-  transition: 0.5s;
-  transform: translateX(15px); }
+  transition: 0.8s;
+  transform: rotateX(180deg); }
   .edge__content--show {
     opacity: 1;
-    transform: none; }
+    transform: rotateX(0deg); }
+  .edge__content--hide {
+    opacity: 0;
+    transform: translateX(50px); }
 
 .edge__name {
   position: absolute;
@@ -739,7 +706,7 @@ body {
 .danit__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 1000px;
   margin: auto;
   margin-bottom: 50px; }
@@ -822,7 +789,7 @@ body {
 
 .danit__image {
   flex-grow: 1;
-  height: 230px;
+  height: 262px;
   background-image: url("../img/danit-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -916,7 +883,8 @@ body {
   outline: none;
   transition: 0.2s; }
   .study__button--active {
-    flex-grow: 2; }
+    flex-grow: 2;
+    font-weight: 800; }
   .study__button:last-child {
     margin-right: 0; }
   .study__button::before {
@@ -964,8 +932,8 @@ body {
   transition: 0.5s; }
 
 .study__content {
-  padding: 25px 30px;
-  border-left: 50px solid #78b4fb;
+  padding: 25px 0;
+  padding-right: 30px;
   background-color: #FFFFFF; }
 
 .study__text {
@@ -1317,14 +1285,15 @@ body {
   font-weight: 400;
   background-image: url("../img/cost-li.png");
   background-repeat: no-repeat;
-  background-position: 15px center;
+  background-position: 15px 4px;
   background-size: 13px; }
   .cost__subitem--blue {
     padding: 10px 0;
     padding-left: 35px;
     color: #FFFFFF;
     background-color: #4a58c3;
-    background-image: url("../img/cost-li-white.png"); }
+    background-image: url("../img/cost-li-white.png");
+    background-position: 15px center; }
 
 .cost__during {
   margin: 0;
@@ -1600,7 +1569,7 @@ body {
   font-weight: 400;
   background-image: url("../img/svg/contact-loc.svg");
   background-repeat: no-repeat;
-  background-position: left 4px;
+  background-position: left top;
   background-size: 16px; }
   .contact__item--blue {
     color: #3a68ac; }

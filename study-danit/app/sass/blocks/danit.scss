@@ -36,7 +36,7 @@
 .danit__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 1000px;
   margin: auto;
   margin-bottom: 50px;
@@ -172,7 +172,7 @@
 
 .danit__image {
   flex-grow: 1;
-  height: 230px;
+  height: 262px;
   background-image: url('../img/danit-image.jpg');
   background-repeat: no-repeat;
   background-position: center;

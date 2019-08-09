@@ -59,6 +59,7 @@
   
   &--active {
     flex-grow: 2;
+    font-weight: 800;
   }
   
   &:last-child {
@@ -136,8 +137,8 @@
 }
 
 .study__content {
-  padding: 25px 30px;
-  border-left: 50px solid #78b4fb;
+  padding: 25px 0;
+  padding-right: 30px;
   background-color: #FFFFFF;
 }
 
