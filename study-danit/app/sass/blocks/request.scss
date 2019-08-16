@@ -10,8 +10,8 @@
   &::after {
     content: '';
     position: absolute;
-    top: -104px;
-    right: 0;
+    top: -110px;
+    right: -140px;
     width: 736px;
     height: 509px;
     background-image: url('../img/request-bg.jpg');
@@ -24,9 +24,8 @@
 .request__title {
   margin-top: 0;
   margin-bottom: 50px;
-  margin-left: 20px;
   color: #FFFFFF;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 800;
 }
 
@@ -110,7 +109,7 @@
   .request__wrapper {
     
     &::after {
-      width: 50%;
+      display: none;
     }
   }
 }
@@ -129,7 +128,12 @@
   
   .request__title {
     margin-left: 0;
+    font-size: 20px;
     text-align: center;
+    
+    br {
+      display: none;
+    }
   }
   
   .request__form {
