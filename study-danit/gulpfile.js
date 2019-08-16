@@ -10,6 +10,7 @@ const jsmin = require('gulp-jsmin');
 const rename = require('gulp-rename');
 const concat = require('gulp-concat');
 const livereload = require('gulp-livereload');
+const imagemin = require('gulp-imagemin');
 
 function styles() {
   return gulp
@@ -41,6 +42,18 @@ function scripts() {
       .pipe(livereload())
 }
 
+function images() {
+  return gulp
+    .src('dist/img-test/*')
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest('dist/img-test'))
+}
+
 function watch() {
   livereload.listen()
   gulp.watch('app/sass/**/*.scss', styles)
@@ -49,3 +62,4 @@ function watch() {
 }
 
 exports.default = watch;
+exports.images = images;
