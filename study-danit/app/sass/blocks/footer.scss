@@ -1,6 +1,10 @@
 .footer {
   padding: 15px 0;
   background-color: #78b4fb;
+  
+  &--thankyou {
+    background-color: #3a68ac;
+  }
 }
 
 .footer__text {

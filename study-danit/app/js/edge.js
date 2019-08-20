@@ -21,10 +21,10 @@
     contents[currentButton].classList.add('edge__content--show');
   }
   
-  var block = document.querySelector('.edge');
-  var blockOffset = block.offsetTop;
   
   window.addEventListener('scroll', function() {
+    var block = document.querySelector('.edge');
+    var blockOffset = block.offsetTop;
     var topOffset = window.pageYOffset;
     
     if (topOffset > blockOffset - 300) {

@@ -27,7 +27,7 @@ function styles() {
 
 function markup() {
   return gulp
-    .src('dist/index.html')
+    .src('dist/*.html')
       .pipe(livereload())
 }
 

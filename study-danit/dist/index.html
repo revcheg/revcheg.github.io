@@ -2,19 +2,24 @@
 <html lang="uk">
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Міжнародна IT-освіта від STUDY Academy та DAN.IT Education</title>
+  <meta name="description" content="Програма комплексної підготовки до вступу та навчання у рейтингових навчальних закладах за кордоном. Гарантія вступу на IT-спеціальності.">
   <meta property="og:image" content="img/og-image.jpg">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="preload" href="fonts/OpenSans-Italic.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/OpenSans-ExtraBold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/OpenSans-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="img/video.mp4" as="video" type="video/mp4">
+  <!-- <link rel="preload" href="img/video.mp4" as="video" type="video/mp4" crossorigin="anonymous"> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="img/favicon/favicon-48x48.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#dd0505">
+  <meta name="msapplication-TileColor" content="#dd0505">
+  <meta name="theme-color" content="#32d6e8">
 </head>
 <body>
   <header class="header">
@@ -22,28 +27,24 @@
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
-            <a class="header__link" href="#" aria-label="Ссылка на ресурс STUDY Academy">
-              <img class="header__logo" src="img/svg/study-logo.svg" width="128" height="50" alt="STUDY Academy">
-            </a>
+            <img class="header__logo" src="img/svg/study-logo.svg" width="128" height="50" alt="STUDY Academy">
           </li>
           <li class="header__item">
-            <a class="header__link" href="#" aria-label="Ссылка на ресурс DAN.IT">
-              <img class="header__logo" src="img/svg/danit-logo.svg" width="146" height="43" alt="DAN.IT">
-            </a>
+            <img class="header__logo" src="img/svg/danit-logo.svg" width="146" height="43" alt="DAN.IT">
           </li>
         </ul>
         <ul class="header__list  header__list--hide">
           <li class="header__item">
-            <a class="header__anchor" href="#">Напрями</a>
+            <a class="header__anchor" href="#direction">Напрями</a>
           </li>
           <li class="header__item">
-            <a class="header__anchor" href="#">Етапи</a>
+            <a class="header__anchor" href="#stages">Етапи</a>
           </li>
           <li class="header__item">
-            <a class="header__anchor" href="#">Про нас</a>
+            <a class="header__anchor" href="#about">Про нас</a>
           </li>
           <li class="header__item">
-            <a class="header__anchor" href="#">Контакти</a>
+            <a class="header__anchor" href="#contact">Контакти</a>
           </li>
           <li class="header__item">
             <a class="header__anchor  header__anchor--phone" href="tel:0445000320">(044) 500-03-20</a>
@@ -58,7 +59,7 @@
       <div class="intro__wrapper">
         <h1 class="intro__title"><span class="intro__title--blue">Міжнародна IT-школа<br></span> від STUDY Academy та<br>DAN.IT education</h1>
         <p class="intro__text">Гарантія вступу до 275 університетів світу<br>на спеціальності сфери IT.</p>
-        <a class="intro__button" href="#">Подати заявку</a>
+        <a class="intro__button" href="#request">Подати заявку</a>
         <video class="intro__video" src="img/video.mp4" poster="img/video-bg.jpg" preload autoplay loop></video>
         <div class="intro__box">
           <p class="intro__sublist">Підготовка до вступу на спеціальності сфери інформаційних технологій.<br> Відкрито набір на програму!</p>
@@ -72,7 +73,7 @@
       </div>
     </div>
   </section>
-  <section class="edge">
+  <section class="edge" id="direction">
     <div class="container">
       <div class="edge__wrapper">
         <h2 class="edge__title">Переваги міжнародної<br> it-школи</h2>
@@ -130,7 +131,7 @@
       </div>
     </div>
   </section>
-  <div class="about">
+  <div class="about" id="about">
     <div class="container">
       <div class="about__wrapper">
         <p class="about__promo">Міжнародна школа STUDY Academy у партнерстві з DAN.IT education пропонує унікальну програму комплексної підготовки до вступу за кордон на спеціальності сфери IT.</p>
@@ -180,10 +181,10 @@
           </div>
         </div>
       </div>
-      <a class="about__link" href="#">Подати заявку</a>
+      <a class="about__link" href="#request">Подати заявку</a>
     </div>
   </div>
-  <div class="danit">
+  <div class="danit" id="stages">
     <div class="container">
       <h2 class="danit__title">ЕТАПИ УСПІХУ</h2>
       <h3 class="danit__subtitle"><span class="edu__title--bracket">&lt;/</span>Програма IT-підготовки від DAN.IT education<span class="edu__title--bracket">&gt;</span></h3>
@@ -518,7 +519,7 @@
             </picture>
           </li>
         </ul>
-        <a class="career__button" href="#">Подати заявку</a>
+        <a class="career__button" href="#request">Подати заявку</a>
       </div>
     </div>
   </div>
@@ -585,7 +586,7 @@
           <p class="cost__during">Тривалість курсу: 6-9 місяців</p>
         </li>
       </ul>
-      <a class="cost__button" href="#">Подати заявку</a>
+      <a class="cost__button" href="#request">Подати заявку</a>
     </div>
   </section>
   <section class="review">
@@ -630,7 +631,7 @@
       </div>
     </div>
   </section>
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="container">
       <h2 class="contact__title">Контакти</h2>
       <div class="contact__wrapper">
@@ -655,16 +656,19 @@
       </ul>      
     </div>
   </section>
-  <div class="request">
+  <div class="request" id="request">
     <div class="container">
       <div class="request__wrapper">
         <h2 class="request__title">Відкрийте безмежні<br>можливості міжнародної IT-освіти!</h2>
-        <form class="request__form" action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" autocomplete="off" method="post">
+        <div class="request__container">
+          <div id="form_114567_1"></div>
+        </div>
+        <!-- <form class="request__form" action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" autocomplete="off" method="post">
           <input class="request__input" type="text" name="first_name" minlength="3" placeholder="Ім'я та прізвище *" required>
           <input class="request__input" type="email" name="email" placeholder="Номер мобильного телефона *" required>
           <input class="request__input" type="tel" name="custom_phone" minlength="13" maxlength="13" placeholder="Ваш E-mail *" required>
           <button class="request__submit" type="submit">Подати заявку</button>
-        </form>
+        </form> -->
       </div>
     </div>
   </div>
