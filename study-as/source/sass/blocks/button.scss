@@ -12,6 +12,10 @@
   background-color: $blue;
   outline: none;
   transition: 0.2s;
+  
+  &--center {
+    margin: 0 auto;
+  }
 }
 
 @media screen and ($tablet) {

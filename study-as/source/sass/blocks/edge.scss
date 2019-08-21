@@ -1,0 +1,157 @@
+.edge {
+  padding: 30px 0;
+  background-color: #EBEBEB;
+}
+
+.edge__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.edge__item {
+  position: relative;
+  box-sizing: border-box;
+  width: 360px; 
+  margin-bottom: 50px;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  background-color: #FFFFFF;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(#4a58c3, 0.5);
+  }
+  
+  &::after {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100px;
+    padding: 2px 0;
+    color: #FFFFFF;
+    font-size: 90px;
+    font-weight: 700;
+    font-family: inherit;
+    text-align: center;
+    line-height: 1em;
+    border-radius: 50%;
+    background-color: rgba(#6dcff6, 0.5);
+  }
+  
+  &:nth-child(1) {
+    
+    &::after {
+      content: '1';
+    }
+  }
+  
+  &:nth-child(2) {
+    
+    &::after {
+      content: '2';
+    }
+  }
+  
+  &:nth-child(3) {
+    
+    &::after {
+      content: '3';
+    }
+  }
+  
+  &:nth-child(4) {
+    
+    &::after {
+      content: '4';
+    }
+  }
+  
+  &:nth-child(5) {
+    
+    &::after {
+      content: '5';
+    }
+  }
+  
+  &:nth-child(6) {
+    
+    &::after {
+      content: '6';
+    }
+  }
+}
+
+.edge__name {
+  display: block;
+  width: 170px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  padding-bottom: 10px;
+  color: #35495f;
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 2px solid #ffa800;
+}
+
+.edge__text {
+  margin: 0;
+  color: $text;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media screen and ($tablet) {
+  .edge__list {
+    justify-content: center;
+  }
+  
+  .edge__item {
+    width: 45%;
+    
+    &:nth-child(odd) {
+      margin-right: 20px;
+    }
+  }
+  
+  .edge__name {
+    margin-right: 40px;
+  }
+}
+
+@media screen and ($mobile) {
+  .edge__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .edge__item {
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 30px;
+    
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+  }
+  
+  .edge__name {
+    width: 160px;
+    margin-right: 0;
+    font-size: 18px;
+  }
+}
