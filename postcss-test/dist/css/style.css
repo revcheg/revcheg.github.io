@@ -1,0 +1,1 @@
+.footer{color:red;background:red}.header{position:fixed;top:0;left:0;width:100px;-webkit-transform:translateY(-100px);transform:translateY(-100px);-webkit-backdrop-filter:blue(30px);backdrop-filter:blue(30px);z-index:2;z-index:555}.header:focus,.header:hover{color:red;background:green}

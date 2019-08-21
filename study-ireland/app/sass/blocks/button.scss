@@ -19,6 +19,16 @@
     width: 145px;
     margin: auto;
   }
+  
+  &--small {
+    box-sizing: border-box;
+    display: block;
+    width: 185px;
+    margin: auto;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 14px;
+  }
 }
 
 @media screen and ($mobile-width) {

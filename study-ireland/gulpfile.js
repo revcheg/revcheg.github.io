@@ -7,6 +7,7 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const csso = require('gulp-csso');
 const jsmin = require('gulp-jsmin');
+const svgmin = require('gulp-svgmin');
 const rename = require('gulp-rename');
 const concat = require('gulp-concat');
 const livereload = require('gulp-livereload');
@@ -41,6 +42,13 @@ function scripts() {
       .pipe(livereload())
 }
 
+function svg() {
+  return gulp
+    .src('dist/img/svg/*.svg')
+      .pipe(svgmin())
+      .pipe(gulp.dest('dist/img/svg'));
+}
+
 function watch() {
   livereload.listen()
   gulp.watch('app/sass/**/*.scss', styles)
@@ -49,3 +57,4 @@ function watch() {
 }
 
 exports.default = watch;
+exports.svg = svg;

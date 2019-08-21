@@ -109,6 +109,16 @@
   width: 500px;
 }
 
+@media screen and (max-width: 1465px) {
+  .request__wrapper {
+    
+    &::after {
+      right: 0;
+      width: 620px;
+    }
+  }
+}
+
 @media screen and ($tablet-widths) {
   .request__wrapper {
     
@@ -147,5 +157,9 @@
   .request__submit {
     right: -10px;
     bottom: -40px;
+  }
+  
+  .request__container {
+    width: 100%;
   }
 }

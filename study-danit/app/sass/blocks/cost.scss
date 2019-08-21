@@ -149,14 +149,38 @@
     font-size: 30px;
   }
   
+  .cost__swipe {
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    
+    &::-webkit-scrollbar {
+      width: auto;
+      height: 10px;
+    }
+    
+    &::-webkit-scrollbar-track {
+      background-color: rgba(106, 126, 252, 0.2);
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      border-radius: 20px;
+      background-color: #3b9ee4; 
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: darken(#3b9ee4, 5%); 
+    }
+  }
+  
   .cost__list {
-    flex-direction: column-reverse;
+    flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: 400%;
     margin-bottom: 15px;
   }
   
   .cost__item {
+    margin: 0 auto;
     margin-bottom: 20px;
   }
 }

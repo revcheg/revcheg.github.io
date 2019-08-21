@@ -129,6 +129,10 @@
 }
 
 @media screen and ($mobile-width) {
+  .edge {
+    padding-top: 100px;
+  }
+  
   .edge__image {
     width: 100%;
   }

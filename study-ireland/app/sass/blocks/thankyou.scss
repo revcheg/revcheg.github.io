@@ -34,3 +34,19 @@
   border: none;
   background-color: $green;
 }
+
+@media screen and ($mobile-width) {
+  .thankyou__content {
+    box-sizing: border-box;
+    width: 95%;
+    padding: 15px 20px;
+  }
+  
+  .thankyou__title {
+    font-size: 20px;
+    
+    br {
+      display: none;
+    }
+  }
+}

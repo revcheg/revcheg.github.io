@@ -44,14 +44,14 @@ function scripts() {
 
 function images() {
   return gulp
-    .src('dist/img-test/*')
+    .src('dist/img/*')
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
       imagemin.jpegtran({progressive: true}),
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest('dist/img-test'))
+    .pipe(gulp.dest('dist/img'))
 }
 
 function watch() {

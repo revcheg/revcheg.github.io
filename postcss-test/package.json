@@ -1,0 +1,25 @@
+{
+  "name": "postcss-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "cssnano": "^4.1.10",
+    "cssnext": "^1.8.4",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "postcss-preset-env": "^6.6.0",
+    "postcss-scss": "^2.0.0",
+    "postcss-syntax": "^0.36.2",
+    "precss": "^4.0.0",
+    "stylelint": "^10.0.1"
+  }
+}

@@ -93,6 +93,10 @@
 }
 
 @media screen and ($mobile-width) {
+  .career {
+    padding-top: 100px;
+  }
+  
   .career__subwrapper {
     width: 100%;
   }
