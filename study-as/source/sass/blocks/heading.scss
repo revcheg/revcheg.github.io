@@ -11,6 +11,10 @@
   &--small {
     font-size: 35px;
   }
+  
+  &--right {
+    text-align: right;
+  }
 }
 
 @media screen and ($tablet) {

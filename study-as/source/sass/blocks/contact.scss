@@ -1,0 +1,156 @@
+.contact {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.contact__box {
+  display: flex;
+  margin: 40px 0;
+  border-radius: 5px;
+  box-shadow: 0px 1px 13px 0px rgba(64, 64, 64, 0.8);
+}
+
+.contact__content {
+  box-sizing: border-box;
+  width: 550px;
+  padding: 20px;
+}
+
+.contact__map {
+  flex-grow: 1;
+  border: none;
+}
+
+.contact__title {
+  display: block;
+  margin-bottom: 20px;
+  color: $red;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.contact__cta {
+  display: block;
+  margin-bottom: 10px;
+  color: $text;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contact__phone {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  color: $red;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.contact__address {
+  margin: 0;
+  padding-left: 20px;
+  color: $text;
+  font-size: 16px;
+  font-weight: 400;
+  background-image: url('../img/loc.svg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 15px;
+}
+
+.contact__subtitle {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: $red;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.contact__category {
+  margin-bottom: 20px;
+  color: #35495f;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contact__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact__item {
+  width: 300px;
+  margin-bottom: 30px;
+  padding-left: 25px;
+  color: $text;
+  font-size: 16px;
+  font-weight: 400;
+  background-image: url('../img/loc.svg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 15px;
+}
+
+.contact__bold {
+  font-weight: 700;
+}
+
+@media screen and ($tablet) {
+  .contact__content {
+    width: 450px;
+  }
+  
+  .contact__title {
+    
+    br {
+      display: none;
+    }
+  }
+  
+  .contact__item {
+    width: 210px;
+  }
+}
+
+@media screen and ($mobile) {
+  .contact__box {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .contact__content {
+    width: 100%;
+  }
+  
+  .contact__title {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .contact__map {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .contact__subtitle {
+    text-align: center;
+  }
+  
+  .contact__category {
+    text-align: center;
+  }
+  
+  .contact__list {
+    justify-content: center;
+  }
+  
+  .contact__item {
+    width: 250px;
+  }
+}

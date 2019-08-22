@@ -21,6 +21,15 @@
   &:focus {
     background-color: lighten($blue, 20%);
   }
+  
+  &--red {
+    background-color: $red;
+    
+    &:hover,
+    &:focus {
+      background-color: darken($red, 10%);
+    }
+  }
 }
 
 @media screen and ($tablet) {

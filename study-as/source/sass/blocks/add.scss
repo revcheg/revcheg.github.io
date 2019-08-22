@@ -1,0 +1,118 @@
+.add {
+  padding: 70px 0;
+}
+
+.add__block {
+  display: flex;
+  margin-top: 50px;
+  border: 2px solid #35495f;
+}
+
+.add__image {
+  width: 570px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.add__content {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+
+.add__name {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: $red;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.add__divider {
+  margin: 0;
+  margin-bottom: 20px;
+  width: 240px;
+  height: 2px;
+  border: none;
+  background-color: #ffa800;
+}
+
+.add__text {
+  color: $text;
+  font-size: 16px;
+  font-weight: 400;
+  
+  &--blue {
+    color: $blue;
+    font-weight: 700;
+  }
+}
+
+.add__caption {
+  display: block;
+  margin-bottom: 10px;
+  color: $blue;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.add__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.add__item {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  color: $text;
+  font-size: 16px;
+  font-weight: 400;
+  
+  &:last-child {
+    margin-bottom: 20px;
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: $blue;
+  }
+}
+
+.add__button {
+
+  &--right {
+    position: absolute;
+    right: 30px;
+    bottom: -25px;
+  }
+}
+
+@media screen and ($tablet) {
+  .add__image {
+    width: 350px;
+  }
+}
+
+@media screen and ($mobile) {
+  .add__block {
+    flex-direction: column;
+  }
+  
+  .add__image {
+    order: 1;
+    width: 100%;
+  }
+  
+  .add__content {
+    order: 2;
+  }
+}

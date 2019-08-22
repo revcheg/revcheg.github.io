@@ -88,15 +88,9 @@
   text-align: center;
 }
 
-@media screen and ($mobile) {
-  .video {
-    padding-top: 100px;
-  }
-  
+@media screen and (max-width: 895px) {
   .video__quote {
     width: 95%;
-    padding: 30px 0;
-    font-size: 22px;
     
     &::before {
       top: -20px;
@@ -107,6 +101,17 @@
       bottom: -20px;
       right: -15px;
     }
+  }
+}
+
+@media screen and ($mobile) {
+  .video {
+    padding-top: 100px;
+  }
+  
+  .video__quote {
+    padding: 30px 0;
+    font-size: 22px;
   }
   
   .video__play {
