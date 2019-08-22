@@ -42,12 +42,6 @@
   position: absolute;
   right: 40px;
   bottom: -20px;
-  
-  &:hover,
-  &:focus {
-    bottom: -15px;
-    background-color: lighten($blue, 20%);
-  }
 }
 
 .intro__box {

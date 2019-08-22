@@ -182,9 +182,6 @@ body {
   position: absolute;
   right: 40px;
   bottom: -20px; }
-  .intro__button:hover, .intro__button:focus {
-    bottom: -15px;
-    background-color: #5a7ba0; }
 
 .intro__box {
   position: absolute;
@@ -319,6 +316,8 @@ body {
   transition: 0.2s; }
   .button--center {
     margin: 0 auto; }
+  .button:hover, .button:focus {
+    background-color: #5a7ba0; }
 
 @media screen and (max-width: 1220px) {
   .button {
@@ -661,6 +660,7 @@ body {
   background-size: cover; }
 
 .video__quote {
+  position: relative;
   width: 750px;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -670,15 +670,54 @@ body {
   font-size: 36px;
   font-weight: 500;
   text-align: center;
-  border: 2px solid #ffa800; }
+  border: 2px solid #ffa800;
+  border-radius: 10px; }
+  .video__quote::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -45px;
+    width: 70px;
+    height: 45px;
+    background-image: url("../img/quote.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(160deg); }
+  .video__quote::after {
+    content: '';
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    width: 70px;
+    height: 45px;
+    background-image: url("../img/quote.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(-30deg); }
 
 .video__play {
+  position: relative;
+  top: 0;
   display: block;
   width: 100px;
   height: 100px;
   margin: auto;
   margin-bottom: 40px;
-  background: red; }
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/youtube-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s; }
+  .video__play:hover, .video__play:focus {
+    top: -5px; }
+  .video__play:active {
+    transform: scale(0.9); }
 
 .video__author {
   margin: 0;
@@ -686,3 +725,78 @@ body {
   font-size: 24px;
   font-weight: 400;
   text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .video {
+    padding-top: 100px; }
+  .video__quote {
+    width: 95%;
+    padding: 30px 0;
+    font-size: 22px; }
+    .video__quote::before {
+      top: -20px;
+      left: -15px; }
+    .video__quote::after {
+      bottom: -20px;
+      right: -15px; }
+  .video__play {
+    width: 90px;
+    height: 90px; }
+  .video__author {
+    font-size: 20px; } }
+
+.stage {
+  padding: 50px 0;
+  background-color: #ebebeb; }
+
+.stage__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 55px; }
+
+.stage__box {
+  -webkit-filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3)); }
+
+.stage__open {
+  position: relative;
+  top: 0;
+  width: 240px;
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  color: #35495f;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  border: none;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  -webkit-clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
+          clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
+  outline: none;
+  transition: 0.2s; }
+  .stage__open--detail {
+    box-sizing: border-box;
+    display: block;
+    width: 130px;
+    margin-top: 15px;
+    padding: 3px 0;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: #ffa800; }
+  .stage__open--square {
+    width: 200px;
+    padding-top: 5px;
+    -webkit-clip-path: none;
+            clip-path: none; }
+    .stage__open--square .stage__open--detail {
+      margin-top: 7px; }
+  .stage__open--red {
+    border-left: 5px solid #f14e4d; }
+  .stage__open:hover, .stage__open:focus {
+    top: -5px; }

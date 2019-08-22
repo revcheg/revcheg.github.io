@@ -16,6 +16,11 @@
   &--center {
     margin: 0 auto;
   }
+  
+  &:hover,
+  &:focus {
+    background-color: lighten($blue, 20%);
+  }
 }
 
 @media screen and ($tablet) {

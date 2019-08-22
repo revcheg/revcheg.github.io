@@ -25,16 +25,16 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#">Переваги</a>
+              <a class="nav__link" href="#advantages">Переваги</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Етапи</a>
+              <a class="nav__link" href="#stages">Етапи</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Можливостi</a>
+              <a class="nav__link" href="#opportunities">Можливостi</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Вартiсть</a>
+              <a class="nav__link" href="#cost">Вартiсть</a>
             </li>
             <li class="nav__item">
               <a class="nav__link  nav__link--phone" href="#">(044) 500-03-20</a>
@@ -53,7 +53,7 @@
           <div class="intro__headings">
             <h1 class="heading  heading--center  heading--small">ПРОГРАМА<br>ACADEMIC START UNIVERSITY</h1>
             <p class="intro__subheading">Гарантія вступу до 275 університетів світу</p>
-            <a class="button  intro__button" href="#">Подати заявку</a>
+            <a class="button  intro__button" href="#request">Подати заявку</a>
           </div>
           <div class="intro__box">
             <p class="intro__info">Відкрито набір на програму академічної підготовки до навчання в університетах за кордоном.</p>
@@ -93,7 +93,7 @@
         </ul>
       </div>
     </section>
-    <section class="edge">
+    <section class="edge" id="advantages">
       <div class="container">
         <h2 class="heading  heading--center">Переваги програми</h2>
         <ul class="edge__list">
@@ -122,7 +122,7 @@
             <p class="edge__text">Цього року студенти вперше можуть обрати не тільки класичну підготовку до навчання за кордоном Academic Start, але й спеціалізовані програми, що включають блоки Media, IT або International Business.</p>
           </li>
         </ul>
-        <a class="button  button--center" href="#">Подати заявку</a>
+        <a class="button  button--center" href="#request">Подати заявку</a>
       </div>
     </section>
     <section class="direction">
@@ -177,6 +177,53 @@
         <p class="video__author">Валентина Кресько<br>Координатор програми «Academic Start University»</p>
       </div>
     </div>
+    <section class="stage" id="stages">
+      <div class="container">
+        <h2 class="heading  heading--center">Етапи програми</h2>
+        <div class="stage__control">
+          <div class="stage__box">
+            <button class="stage__open">Інтенсивна Англійська <span class="stage__open--detail">Детальніше ></span></button>
+          </div>
+          <div class="stage__box">
+            <button class="stage__open">Підготовка до IELTS <span class="stage__open--detail">Детальніше ></span></button>
+          </div>
+          <div class="stage__box">
+            <button class="stage__open">Академічний модуль <span class="stage__open--detail">Детальніше ></span></button>
+          </div>
+          <div class="stage__box">
+            <button class="stage__open  stage__open--red">Додатковий блок <span class="stage__open--detail">Детальніше ></span></button>
+          </div>
+          <div class="stage__box  stage__box--square">
+            <button class="stage__open  stage__open--square">Вступ до закордонного вишу <span class="stage__open--detail">Детальніше ></span></button>
+          </div>
+        </div>
+        <div class="stage__wrapper">
+          <button class="stage__close" aria-label="Закрити попап"></button>
+          <article class="stage__article">
+            <div class="stage__content">
+              <div class="stage__left">
+                <h3 class="stage__title"></h3>
+                <picture>
+                  <source srcset="img/stage-1.webp" type="image/webp">
+                  <img class="stage__image" src="img/stage-1.jpg" alt="">
+                </picture>
+              </div>
+              <div class="stage__right">
+                <p class="stage__text"><strong class="stage__text--blue">Тривалість:</strong> 8 тижнів</p>
+                <p class="stage__text"><strong class="stage__text--blue">Де проходить навчання?</strong> Академічні центри та навчальні STUDY Academy в Києві та Одесі або онлайн.</p>
+                <p class="stage__text"><strong class="stage__text--blue">Мова навчання:</strong> англійська.</p>
+                <hr class="stage__divider">
+                <p class="stage__text">Ми надаємо тренувальні вправи до кожної секції екзамену, влаштовуємо безкоштовний пробний іспит на завершення цього етапу та проводимо роботу над помилками задля покращення результату в реальних умовах. Всі викладачі сертифіковані для ведення підготовчого курсу (сертифікати CELTA, TEFL, TESOL, TKT).</p>
+              </div>
+            </div>
+          </article>
+          <div class="stage__flex">
+            <button class="stage__button  stage__button--prev">Попередній етап</button>
+            <button class="stage__button  stage__button--next">Наступний етап</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <!-- <script src="js/main.min.js" async></script> -->
 </body>
