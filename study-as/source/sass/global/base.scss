@@ -25,11 +25,11 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  background-color: #3b9ee4; 
+  background-color: $red; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: darken(#3b9ee4, 5%); 
+  background-color: darken($red, 5%); 
 }
 
 @media screen and ($tablet) {

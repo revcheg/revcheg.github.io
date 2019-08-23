@@ -5,8 +5,14 @@
   <title></title>
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <meta property="og:image" content="">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="628">
+  <meta property="og:url" content="https://study.ua">
+  <meta property="og:image" content="https://study.ua/img/og-image.jpg">
+  <meta property="og:title" content="lorem lorem lorem lorem">
+  <meta property="og:description" content="loremloremloremloremloremloremloremlorem">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="preconnect" href="">
   <link rel="preload" href="fonts/Montserrat-Italic.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2">
@@ -14,6 +20,13 @@
   <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/Montserrat-Black.woff2" as="font" type="font/woff2">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="img/favicon/favicon-48x48.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#f14e4d">
+  <meta name="msapplication-TileColor" content="#f14e4d">
+  <meta name="theme-color" content="#f14e4d">
 </head>
 <body>
   <header class="header">
@@ -173,7 +186,7 @@
         <blockquote class="video__quote">
           Почни шлях до<br>успіху та визнання з<br>Academic Start University!
         </blockquote>
-        <button class="video__play" aria-label="Ввiмкнути вiдео"></button>
+        <!-- <button class="video__play" aria-label="Ввiмкнути вiдео"></button> -->
         <p class="video__author">Валентина Кресько<br>Координатор програми «Academic Start University»</p>
       </div>
     </div>
@@ -201,23 +214,100 @@
         <div class="stage__wrapper">
           <button class="stage__close" aria-label="Закрити попап"></button>
           <article class="stage__article">
-            <!-- <div class="stage__content"> -->
-              <div class="stage__left">
-                <h3 class="stage__title">Підготовка до IELTS</h3>
-                <picture>
-                  <source srcset="img/stage-2.webp" type="image/webp">
+            <div class="stage__left">
+              <h3 class="stage__title">Інтенсивна Англійська</h3>
+              <picture>
+                <source srcset="img/stage-2.webp" type="image/webp">
+                <img class="stage__image" src="img/stage-2.jpg" alt="">
+              </picture>
+            </div>
+            <div class="stage__right">
+              <p class="stage__text"><strong class="stage__text--blue">Тривалість:</strong> 12-36 тижнів</p>
+              <p class="stage__text"><strong class="stage__text--blue">Де проходить навчання?</strong><br> Академічні центри та навчальні STUDY<br>Academy в Києві та Одесі або онлайн.</p>
+              <p class="stage__text"><strong class="stage__text--blue">Мова навчання:</strong> англійська.</p>
+              <hr class="stage__divider">
+              <p class="stage__text">Необхідність та тривалість курсу інтенсивного вивчення англійської мови залежить від результатів вступного тестування. Навчання відбувається за новітніми методиками з використанням посібників іноземних видавництв (Oxford University Press, Cambridge University Press, Cengage Learning тощо).</p>
+            </div>
+          </article>
+          <article class="stage__article">
+            <div class="stage__left">
+              <h3 class="stage__title">Підготовка до IELTS</h3>
+              <picture>
+                <source srcset="img/stage-2.webp" type="image/webp">
+                <img class="stage__image" src="img/stage-2.jpg" alt="">
+              </picture>
+            </div>
+            <div class="stage__right">
+              <p class="stage__text"><strong class="stage__text--blue">Тривалість:</strong> 8 тижнів</p>
+              <p class="stage__text"><strong class="stage__text--blue">Де проходить навчання?</strong><br> Академічні центри та навчальні STUDY<br> Academy в Києві та Одесі або онлайн.</p>
+              <p class="stage__text"><strong class="stage__text--blue">Мова навчання:</strong> англійська.</p>
+              <hr class="stage__divider">
+              <p class="stage__text">Ми надаємо тренувальні вправи до кожної секції екзамену, влаштовуємо безкоштовний пробний іспит на завершення цього етапу та проводимо роботу над помилками задля покращення результату в реальних умовах. Всі викладачі сертифіковані для ведення підготовчого курсу (сертифікати CELTA, TEFL, TESOL, TKT).</p>
+            </div>
+          </article>
+          <article class="stage__article">
+            <div class="stage__left">
+              <h3 class="stage__title">Академічний модуль</h3>
+              <picture>
+                <source srcset="img/stage-2.webp" type="image/webp">
+                <img class="stage__image" src="img/stage-2.jpg" alt="">
+              </picture>
+            </div>
+            <div class="stage__right">
+              <p class="stage__text"><strong class="stage__text--blue">Тривалість:</strong> 8 тижнів</p>
+              <p class="stage__text"><strong class="stage__text--blue">Де проходить навчання?</strong><br> Академічні центри та навчальні STUDY<br> Academy в Києві та Одесі або онлайн.</p>
+              <p class="stage__text"><strong class="stage__text--blue">Мова навчання:</strong> англійська.</p>
+              <hr class="stage__divider">
+              <p class="stage__text">Академічний блок готує до подальшого навчання за кордоном та допомагає адаптуватися до західних освітніх стандартів.100% занять проводять носії мови. Студенти вивчатимуть базові академічні предмети англійською мовою та розвиватимуть life & soft skills.</p>
+            </div>
+          </article>
+          <article class="stage__article  stage__article--add">
+            <div class="stage__left">
+              <h3 class="stage__title">Додатковий блок</h3>
+              <picture>
+                <source srcset="img/stage-2.webp" type="image/webp">
+                <img class="stage__image" src="img/stage-2.jpg" alt="">
+              </picture>
+            </div>
+            <div class="stage__right">
+              <p class="stage__text">Відвідування занять можливе на будь-якому етапі навчання у Міжнародній школі STUDY Academy.</p>
+              <p class="stage__name"><b>Медіа-блок від Вищої Школи Media&Production</b></p>
+              <p class="stage__text">Додатковий блок для тих, кого цікавлять професії у галузі медіа, телебачання, режисури та журналістики, а також подальша освіта в цьому напрямку.</p>
+              <p class="stage__text"><strong class="stage__text--blue">Графік навчання:</strong> субота та неділя, повний робочий день</p>
+              <p class="stage__text"><strong class="stage__text--blue">Де проходить навчання?</strong><br> Хедофіс 1+1 Media.</p>
+              <p class="stage__text"><strong class="stage__text--blue">Мова навчання:</strong> українська, російська.</p>
+              <p class="stage__text">Навчання передбачає екскурсії студіями та знімальними майданчиками, майстер-класи, лекції, практичні роботи, зйомки та інтерв'ю.</p>
+              <hr class="stage__divider">
+              
+              <p class="stage__name"><b>IT-блок від DAN.IT education</b></p>
+              <p class="stage__text">Додатковий блок для тих, хто планує побудувати міжнародну кар'єру у галузі інформаційних технологій та хоче визначитися із спеціальністю сфери IT.</p>
+              <p class="stage__text"><strong class="stage__text--blue">Графік навчання:</strong> субота та неділя, повний робочий день</p>
+              <p class="stage__text"><strong class="stage__text--blue">Де проходить навчання?</strong><br> Освітній простір DAN.IT education.</p>
+              <p class="stage__text"><strong class="stage__text--blue">Мова навчання:</strong> українська, російська.</p>
+              <p class="stage__text">Навчання передбачає професійні майстер-класи, фахові лекції, роботу над власними проектами.</p>
+              <hr class="stage__divider">
+              
+              <p class="stage__name"><b>Блок International Business</b></p>
+              <p class="stage__text">Додатковий блок для тих, хто планує здобути вищу освіту за кордоном у напрямку бізнесу, менеджменту, економіки та суміжних спеціальностей.</p>
+              <p class="stage__text"><strong class="stage__text--blue">Графік навчання:</strong> неділя, повний робочий день</p>
+              <p class="stage__text"><strong class="stage__text--blue">Де проходить навчання?</strong><br> STUDY Academy Печерськ.</p>
+              <p class="stage__text"><strong class="stage__text--blue">Мова навчання:</strong> англійська.</p>
+              <p class="stage__text">Навчання передбачає практичні заняття, майстер-класи, лекції від бізнес-коучів, візити до топових компаній, роботу над командними проектами та публічні виступи.</p>
+            </div>
+          </article>
+          <article class="stage__article">
+            <div class="stage__left">
+              <h3 class="stage__title">Вступ до закордонного вишу</h3>
+              <picture>
+                <source srcset="img/stage-2.webp" type="image/webp">
                   <img class="stage__image" src="img/stage-2.jpg" alt="">
                 </picture>
               </div>
               <div class="stage__right">
-                <p class="stage__text"><strong class="stage__text--blue">Тривалість:</strong> 8 тижнів</p>
-                <p class="stage__text"><strong class="stage__text--blue">Де проходить навчання?</strong><br> Академічні центри та навчальні STUDY<br> Academy в Києві та Одесі або онлайн.</p>
-                <p class="stage__text"><strong class="stage__text--blue">Мова навчання:</strong> англійська.</p>
-                <hr class="stage__divider">
-                <p class="stage__text">Ми надаємо тренувальні вправи до кожної секції екзамену, влаштовуємо безкоштовний пробний іспит на завершення цього етапу та проводимо роботу над помилками задля покращення результату в реальних умовах. Всі викладачі сертифіковані для ведення підготовчого курсу (сертифікати CELTA, TEFL, TESOL, TKT).</p>
+                <p class="stage__text">Випускники програми Academic Start University отримують ідеальні знання англійської, професійне портфоліо та ґрунтовну підготовку до навчання за західними стандартами. Наші фахівці за потреби проведуть тренінги з профорієнтації та допоможуть обрати спеціальності, які найкраще відповідатимуть схильностям, побажанням і досвіду кожного студента.</p>
+                <p class="stage__text">Успішне завершення освітньої програми Academic Start University та складання іспиту IELTS є гарантією зарахування до одного з 275 найкращих університетів світу!</p>
               </div>
-            <!-- </div> -->
-          </article>
+            </article>
           <div class="stage__flex">
             <button class="stage__button  stage__button--prev">Попередній етап</button>
             <button class="stage__button  stage__button--next">Наступний етап</button>
