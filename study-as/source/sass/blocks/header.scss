@@ -7,7 +7,7 @@
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
   background-color: rgba(#FFFFFF, 0.7);
   backdrop-filter: blur(10px);
-  z-index: 1;
+  z-index: 4;
 }
 
 .header__wrapper {
@@ -24,6 +24,10 @@
 @media screen and ($mobile) {
   .header {
     padding: 5px 0;
+  }
+  
+  .header__box {
+    z-index: 1;
   }
   
   .header__logo {

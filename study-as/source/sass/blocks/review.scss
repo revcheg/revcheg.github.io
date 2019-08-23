@@ -60,6 +60,11 @@
   &:active {
     transform: scale(0.9);
   }
+  
+  &--hide {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .review__content {

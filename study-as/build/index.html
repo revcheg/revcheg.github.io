@@ -41,7 +41,7 @@
             </li>
           </ul>
         </nav>
-        <button class="nav__menu" aria-label=""></button>
+        <button class="nav__menu" aria-label="Вiдкрити меню"></button>
       </div>
     </div>
   </header>
@@ -226,7 +226,7 @@
         <a class="button  button--center  button--red" href="#request">Подати заявку</a>
       </div>
     </section>
-    <section class="add">
+    <section class="add" id="opportunities">
       <div class="container">
         <h2 class="heading">Додаткові навчальні блоки</h2>
         <article class="add__block">
@@ -297,36 +297,79 @@
         </article>
       </div>
     </section>
+    <div class="info">
+      <div class="container">
+        <div class="info__wrapper">
+          <div class="info__left">
+            <div class="info__photo"></div>
+          </div>
+          <div class="info__right">
+            <p class="heading  heading--right">Освіта за кордоном</p>
+            <p class="info__subheading">Гарантія вступу до 275 університетів у 10 країнах світу</p>
+            <p class="info__text">STUDY.UA має партнерські договори з 275 рейтинговими університетами та коледжами Канади, США, Австралії, Великої Британії й країн ЄС. Іноземні партнери довіряють нам самостійно проводити попередній відбір, тестування та зарахування абітурієнтів на спеціальності бакалавріату. Вперше в Україні ми відкриваємо дійсно безмежні можливості для отримання престижної вищої освіти та побудови успішної кар'єри у майбутньому!</p>
+            <!-- <div class="info__image"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="teacher">
       <div class="container">
         <h2 class="heading">Викладачі STUDY Academy</h2>
-        <ul class="teacher__wrapper">
+        <ul class="teacher__list">
           <li class="teacher__item">
             <header class="teacher__header">
-              <picture>
+              <picture class="teacher__picture">
                 <source srcset="img/teacher-1.webp" type="image/webp">
                 <img class="teacher__photo" src="img/teacher-1.jpg" alt="Джеф Оллер">
               </picture>
-              
+              <strong class="teacher__name">Джеф<br>Оллер</strong>
             </header>
+            <p class="teacher__position">Магістр з освіти Waine State University (CША).</p>
+          </li>
+          <li class="teacher__item">
+            <header class="teacher__header">
+              <picture class="teacher__picture">
+                <source srcset="img/teacher-2.webp" type="image/webp">
+                <img class="teacher__photo" src="img/teacher-2.jpg" alt="Ерік Гілльятт">
+              </picture>
+              <strong class="teacher__name">Ерік<br>Гілльятт</strong>
+            </header>
+            <p class="teacher__position">Професор Единбурзької бізнес-школи.<br>Магістр гуманітарних наук California State University San Diego (США).</p>
+          </li>
+          <li class="teacher__item">
+            <header class="teacher__header">
+              <picture class="teacher__picture">
+                <source srcset="img/teacher-3.webp" type="image/webp">
+                <img class="teacher__photo" src="img/teacher-3.jpg" alt="Елізабет Нудельман">
+              </picture>
+              <strong class="teacher__name">Елізабет<br>Нудельман</strong>
+            </header>
+            <p class="teacher__position">Мотиваційний тренер.<br>Бізнес-консультант.<br>Закінчила Ukrainian-American Concordia University (США).</p>
           </li>
         </ul>
+        <a class="button  button--center" href="#request">Подати заявку</a>
       </div>
     </div>
-    <div class="cost">
+    <div class="cost" id="cost">
       <div class="container">
         <h2 class="heading  heading--center">Вартість та тривалість навчання</h2>
         <div class="cost__wrapper">
           <ul class="cost__list">
             <li class="cost__item">
               <strong class="cost__name">Intermediate</strong>
-              <p class="cost__cost">€2640<span class="cost__cost--small">/курс</span></p>
+              <p class="cost__cost">€<span class="cost__value">2640</span><span class="cost__cost--small">/курс</span></p>
               <p class="cost__recommend">Рекомендовано для рівня<br>англійської Pre-Intermediate</p>
               <p class="cost__caption">Структура програми:</p>
               <ul class="cost__checklist">
                 <li class="cost__check">Курс англійської Intermediate</li>
                 <li class="cost__check">Курс Upper-Intermediate</li>
-                <li class="cost__check">Медіа-блок / IT-блок / Бізнес</li>
+                <li class="cost__check  cost__check--add">
+                  <label class="cost__label">
+                    <input class="cost__input" type="checkbox">
+                    Медіа-блок / IT-блок / Бізнес
+                    <span class="cost__checkmark"></span>
+                  </label>
+                </li>
                 <li class="cost__check">Підготовка та складання IELTS</li>
                 <li class="cost__check">Академічний модуль</li>
                 <li class="cost__check">Підбір спеціальності та ВНЗ</li>
@@ -336,13 +379,19 @@
             </li>
             <li class="cost__item">
               <strong class="cost__name">Upper</strong>
-              <p class="cost__cost">€2380<span class="cost__cost--small">/курс</span></p>
+              <p class="cost__cost">€<span class="cost__value">2380</span><span class="cost__cost--small">/курс</span></p>
               <p class="cost__recommend">Рекомендовано для рівня<br>англійської Intermediate</p>
               <p class="cost__caption">Структура програми:</p>
               <ul class="cost__checklist">
                 <li class="cost__check">Курс Upper-Intermediate</li>
                 <li class="cost__check">Підготовка та складання IELTS</li>
-                <li class="cost__check">Медіа-блок / IT-блок / Бізнес</li>
+                <li class="cost__check  cost__check--add">
+                  <label class="cost__label">
+                    <input class="cost__input" type="checkbox">
+                    Медіа-блок / IT-блок / Бізнес
+                    <span class="cost__checkmark"></span>
+                  </label>
+                </li>
                 <li class="cost__check">Академічний модуль</li>
                 <li class="cost__check">Підбір спеціальності та ВНЗ</li>
                 <li class="cost__check">Вступ до закордоного університету</li>
@@ -351,13 +400,19 @@
             </li>
             <li class="cost__item">
               <strong class="cost__name">IELTS</strong>
-              <p class="cost__cost">€2110<span class="cost__cost--small">/курс</span></p>
+              <p class="cost__cost">€<span class="cost__value">2110</span><span class="cost__cost--small">/курс</span></p>
               <p class="cost__recommend">Рекомендовано для рівня<br>англійської Upper-Intermediate</p>
               <p class="cost__caption">Структура програми:</p>
               <ul class="cost__checklist">
                 <li class="cost__check">Підготовка та складання IELTS</li>
                 <li class="cost__check">Академічний модуль</li>
-                <li class="cost__check">Медіа-блок / IT-блок / Бізнес</li>
+                <li class="cost__check  cost__check--add">
+                  <label class="cost__label">
+                    <input class="cost__input" type="checkbox">
+                    Медіа-блок / IT-блок / Бізнес
+                    <span class="cost__checkmark"></span>
+                  </label>
+                </li>
                 <li class="cost__check">Підбір спеціальності та ВНЗ</li>
                 <li class="cost__check">Вступ до закордоного університету</li>
               </ul>
@@ -365,13 +420,19 @@
             </li>
             <li class="cost__item">
               <strong class="cost__name">Academic</strong>
-              <p class="cost__cost">€1740<span class="cost__cost--small">/курс</span></p>
+              <p class="cost__cost">€<span class="cost__value">1740</span><span class="cost__cost--small">/курс</span></p>
               <p class="cost__recommend">Для рівня Upper-Intermediate<br>+ складений екзамен IELTS</p>
               <p class="cost__caption">Структура програми:</p>
               <ul class="cost__checklist">
                 <li class="cost__check">Академічний модуль</li>
                 <li class="cost__check">Підбір спеціальності та ВНЗ</li>
-                <li class="cost__check">Медіа-блок / IT-блок / Бізнес</li>
+                <li class="cost__check  cost__check--add">
+                  <label class="cost__label">
+                    <input class="cost__input" type="checkbox">
+                    Медіа-блок / IT-блок / Бізнес
+                    <span class="cost__checkmark"></span>
+                  </label>
+                </li>
                 <li class="cost__check">Вступ до закордоного університету</li>
               </ul>
               <p class="cost__duration">Тривалість курсу: 6-12 місяців</p>
@@ -388,7 +449,7 @@
         <div class="review__wrapper">
           <div class="review__column">
             <div class="review__ratio">
-              <iframe class="review__iframe"></iframe>
+              <iframe class="review__iframe" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <button class="review__play" aria-label="Ввiмкнути вiдео"></button>
             </div>
           </div>
@@ -454,6 +515,6 @@
       <p class="footer__text">2019 © STUDY.UA - Все права защищены.</p>
     </div>
   </footer>
-  <!-- <script src="js/main.min.js" async></script> -->
+  <script src="js/main.min.js" async></script>
 </body>
 </html>
