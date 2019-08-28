@@ -1855,3 +1855,38 @@ body {
   font-size: 16px;
   font-weight: 500;
   text-align: center; }
+
+.thankyou {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ebebeb; }
+
+.thankyou__content {
+  padding: 30px 50px;
+  border-radius: 10px;
+  background-color: #FFFFFF; }
+
+.thankyou__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #f14e4d;
+  font-size: 55px;
+  font-weight: 700;
+  text-align: center; }
+
+.thankyou__subtitle {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #35495f;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center; }
+
+.thankyou__text {
+  margin: 0;
+  color: #464646;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center; }
