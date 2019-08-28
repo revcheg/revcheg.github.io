@@ -1,5 +1,42 @@
 .request {
+  position: relative;
   padding-top: 50px;
-  padding-bottom: 80px;
+  padding-bottom: 19px;
   background-color: #ebebeb;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 10%;
+    width: 736px;
+    height: 509px;
+    background-image: url('../img/request-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 1;
+  }
+}
+
+.request__wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.request__form {
+  width: 500px;
+}
+
+@media screen and ($tablet) {
+  .request {
+    
+    &::after {
+      display: none;
+    }
+  }
+  
+  .request__form {
+    width: 100%;
+    max-width: 500px;
+  }
 }

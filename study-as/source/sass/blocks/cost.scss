@@ -132,26 +132,20 @@
 .cost__label {
   
   &:hover {
-    
-    .cost__input {
-      
-      ~ .cost__checkmark {
-        background-color: #FFFFFF;
-      }
+
+    .cost__checkmark {
+      background-color: #FFFFFF;
     }
   }
 }
 
-.cost__label {
+.cost__input {
   
-  .cost__input {
+  &:checked {
     
-    &:checked {
-      
-      ~ .cost__checkmark {
-        border: 1px solid #2196F3;
-        background-color: #2196F3;
-      }
+    ~ .cost__checkmark {
+      border: 1px solid transparent;
+      background-color: transparent;
     }
   }
 }
@@ -162,37 +156,24 @@
     content: '';
     position: absolute;
     display: none;
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/check-white.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
-.cost__label {
+.cost__input {
   
-  .cost__input {
+  &:checked {
     
-    &:checked {
+    ~ .cost__checkmark {
       
-      ~ .cost__checkmark {
-        
-        &::after {
-          display: block;
-        }
+      &::after {
+        display: block;
       }
-    }
-  }
-}
-
-.cost__label {
-  
-  .cost__checkmark {
-    
-    &::after {
-      top: 0px;
-      left: 4px;
-      width: 5px;
-      height: 10px;
-      border: solid white;
-      border-width: 0 3px 3px 0;
-      transform: rotate(45deg);
     }
   }
 }

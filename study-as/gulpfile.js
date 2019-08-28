@@ -49,7 +49,7 @@ function images() {
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
       imagemin.jpegtran({progressive: true}),
-      imagemin.optipng({optimizationLevel: 5}),
+      imagemin.optipng({optimizationLevel: 3}),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest('build/img'))

@@ -25,6 +25,12 @@
   padding-left: 20px;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
   background-color: #FFFFFF;
+  transition: 0.8s;
+  
+  &--hide {
+    opacity: 0;
+    transform: translateY(50px);
+  }
   
   &::before {
     content: '';
@@ -35,64 +41,90 @@
     height: 100px;
     border-radius: 50%;
     background-color: rgba(#4a58c3, 0.5);
+    z-index: 1;
   }
   
   &::after {
+    content: '';
     position: absolute;
     top: -5px;
     left: 0;
     width: 100px;
+    height: 95px;
     padding: 2px 0;
-    color: #FFFFFF;
-    font-size: 90px;
-    font-weight: 700;
-    font-family: inherit;
-    text-align: center;
-    line-height: 1em;
     border-radius: 50%;
     background-color: rgba(#6dcff6, 0.5);
+    z-index: 1;
   }
   
-  &:nth-child(1) {
+  &:hover {
+    transform: scale(1.05);
     
-    &::after {
-      content: '1';
+    .edge__number {
+      transform: scale(0);
+    }
+    
+    .edge__icon {
+      transform: none;
     }
   }
+}
+
+.edge__number {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100px;
+  color: #FFFFFF;
+  font-size: 100px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 0.8em;
+  transition: 0.2s;
+  z-index: 2;
+}
+
+.edge__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.2s;
+  transform: scale(0);
+  z-index: 2;
   
-  &:nth-child(2) {
-    
-    &::after {
-      content: '2';
-    }
+  &--1 {
+    background-image: url('../img/edge-1.svg');
+    background-size: 75px;
   }
   
-  &:nth-child(3) {
-    
-    &::after {
-      content: '3';
-    }
+  &--2 {
+    background-image: url('../img/edge-2.svg');
+    background-position: center 10px;
+    background-size: 65px;
   }
   
-  &:nth-child(4) {
-    
-    &::after {
-      content: '4';
-    }
+  &--3 {
+    background-image: url('../img/edge-3.svg');
+    background-size: 70px;
   }
   
-  &:nth-child(5) {
-    
-    &::after {
-      content: '5';
-    }
+  &--4 {
+    background-image: url('../img/edge-4.svg');
+    background-size: 60px;
   }
   
-  &:nth-child(6) {
-    
-    &::after {
-      content: '6';
-    }
+  &--5 {
+    background-image: url('../img/edge-5.svg');
+    background-size: 50px;
+  }
+  
+  &--6 {
+    background-image: url('../img/edge-6.svg');
+    background-size: 60px;
   }
 }
 

@@ -124,6 +124,10 @@
 }
 
 @media screen and ($mobile) {
+  .contact {
+    padding-bottom: 30px;
+  }
+  
   .contact__box {
     flex-direction: column;
     margin-top: 20px;
@@ -148,6 +152,7 @@
   }
   
   .contact__category {
+    font-size: 18px;
     text-align: center;
   }
   
