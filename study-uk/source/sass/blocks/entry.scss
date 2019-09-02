@@ -60,3 +60,35 @@
     background-image: url('../img/entry-5.svg');
   }
 }
+
+@media screen and ($tablet) {
+  .entry__list {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .entry__item {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and ($mobile) {
+  .entry__wrapper {
+    overflow-x: scroll;
+    margin-bottom: 30px;
+    
+    &::-webkit-scrollbar {
+      height: 5px;
+    }
+    
+    &::-webkit-scrollbar-track {
+      border-radius: 20px;
+    }
+  }
+  
+  .entry__list {
+    width: 500%;
+    margin-bottom: 0;
+  }
+}
