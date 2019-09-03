@@ -13,7 +13,7 @@
       videoWrapper.classList.remove('reviews__container--hide');
       overlay.classList.remove('popup__overlay--hide');
       if (indexButton == 0) {
-        video.src = 'https://www.youtube.com/embed/nx0v3hMM4iw?&autoplay=1';
+        video.src = 'https://www.youtube.com/embed/AsEZlS0epI4?&autoplay=1';
       } else if (indexButton == 1) {
         video.src = 'https://www.youtube.com/embed/snx6LOb2bno?&autoplay=1';
       } else {
