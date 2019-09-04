@@ -606,7 +606,8 @@ body {
   overflow-y: scroll; }
   .info__content--small {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     overflow: auto; }
   .info__content::-webkit-scrollbar {
     width: 4px; }
@@ -689,7 +690,7 @@ body {
   .info__content {
     padding-right: 10px; }
     .info__content--small {
-      align-items: flex-start; } }
+      justify-content: flex-start; } }
 
 .heading {
   margin-top: 0;

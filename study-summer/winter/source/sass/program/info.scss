@@ -172,7 +172,8 @@
   
   &--small {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     overflow: auto;
   }
   
@@ -297,8 +298,7 @@
     padding-right: 10px;
     
     &--small {
-      // display: block;
-      align-items: flex-start;
+      justify-content: flex-start;
     }
   }
 }
