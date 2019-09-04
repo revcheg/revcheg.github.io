@@ -14,7 +14,7 @@ const imagemin = require('gulp-imagemin');
 
 function styles() {
   return gulp
-    .src('source/sass/style.scss')
+    .src('source/sass/program.scss')
       .pipe(plumber())
       .pipe(sass())
       .pipe(postcss([ autoprefixer() ]))
@@ -27,14 +27,14 @@ function styles() {
 
 function markup() {
   return gulp
-    .src('build/index.html')
+    .src('build/**/*.html')
       .pipe(livereload())
 }
 
 function scripts() {
   return gulp
-    .src('source/js/*.js')
-      .pipe(concat('main.js'))
+    .src('source/js/program/*.js')
+      .pipe(concat('program.js'))
       .pipe(gulp.dest('build/js'))
       .pipe(jsmin())
       .pipe(rename({suffix: '.min'}))
@@ -55,6 +55,19 @@ function images() {
     .pipe(gulp.dest('build/img'))
 }
 
+function imgPrograms() {
+  return gulp
+    .src('source/img/london-winter-holidays/*')
+    .pipe(plumber())
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest('build/img/london-winter-holidays'))
+}
+
 function watch() {
   livereload.listen()
   gulp.watch('source/sass/**/*.scss', styles)
@@ -65,3 +78,4 @@ function watch() {
 
 exports.default = watch;
 exports.images = images;
+exports.imgPrograms = imgPrograms;

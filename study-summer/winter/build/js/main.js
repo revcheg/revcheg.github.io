@@ -211,8 +211,8 @@ var programsData = [
     alt: 'London Winter Holidays',
     name: 'London Winter Holidays',
     location: 'Лондон',
-    date: '02.01 - 11.01 (2 нед.)<br>04.01 - 18.01 (3 нед.)',
-    cost: '$2950 (2 нед.)<br>$3500 (3 нед.)'
+    date: '02.01 - 11.01 (9 дней)<br>04.01 - 18.01 (2 нед.)',
+    cost: '$2950 (9 дней)<br>$3500 (2 нед.)'
   },
   {
     full: false,
