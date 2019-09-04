@@ -781,13 +781,12 @@ body {
   justify-content: center; }
 
 .photo__link {
-  width: 320px;
+  width: 280px;
   height: 30px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; }
+  background-size: contain; }
   .photo__link:first-child {
-    margin-right: 30px;
     background-image: url("../img/facebook-hashtag.svg"); }
   .photo__link:last-child {
     background-image: url("../img/instagram-hashtag.svg"); }
@@ -828,7 +827,7 @@ body {
     background-size: contain; }
     .photo__link:first-child {
       margin-right: 0;
-      margin-bottom: 10px; } }
+      margin-bottom: 15px; } }
 
 .review {
   margin-bottom: 70px; }
