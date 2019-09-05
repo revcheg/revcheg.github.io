@@ -138,12 +138,10 @@
 
 .stage__article {
   display: none;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 20px;
   
   &--show {
-    display: flex;
+    display: block;
     opacity: 1;
     visibility: visible;
   }
@@ -172,6 +170,12 @@
       font-size: 20px;
     }
   }
+}
+
+.stage__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .stage__left {
@@ -293,7 +297,7 @@
     }
   }
   
-  .stage__article {
+  .stage__content {
     flex-direction: column;
   }
   

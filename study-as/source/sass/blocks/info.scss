@@ -42,6 +42,7 @@
   color: $text;
   font-size: 16px;
   font-weight: 400;
+  text-align: right;
   line-height: 1.4em;
 }
 
@@ -56,6 +57,10 @@
 
 @media screen and ($tablet) {
   .info__subheading {
+    text-align: center;
+  }
+  
+  .info__text {
     text-align: center;
   }
 }

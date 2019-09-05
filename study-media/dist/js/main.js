@@ -1,4 +1,22 @@
 (function () {
+  var mobile = document.querySelector('.popupC__mobile');
+  var popup = document.querySelector('.popupC');
+  var overlay = document.querySelector('.popup__overlay');
+  var close = document.querySelector('.popupC__close');
+  
+  close.addEventListener('click', function () {
+    popup.classList.add('popupC--hide');
+    mobile.classList.add('popupC__mobile--hide');
+    overlay.classList.remove('popup__overlay--show');
+  });
+  
+  overlay.addEventListener('click', function () {
+    popup.classList.add('popupC--hide');
+    mobile.classList.add('popupC__mobile--hide');
+    overlay.classList.remove('popup__overlay--show');
+  });
+})();
+(function () {
   document.querySelectorAll('a[href^="form_103850_1"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();

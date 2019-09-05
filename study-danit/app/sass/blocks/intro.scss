@@ -7,7 +7,7 @@
   position: relative;
   margin-top: 0;
   margin-bottom: 20px;
-  padding-top: 100px;
+  padding-top: 140px;
   color: #FFFFFF;
   font-size: 35px;
   font-weight: 600;
@@ -131,6 +131,8 @@
   }
   
   .intro__title {
+    padding: 0 15px;
+    padding-top: 100px;
     font-size: 22px;
     
     &--blue {

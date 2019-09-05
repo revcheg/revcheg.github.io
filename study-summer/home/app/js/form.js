@@ -38,4 +38,16 @@
       }
     });
   }
+  
+  var form = document.querySelector('.contacts__form');
+  
+  form.addEventListener('submit', function (evt) {
+    var email = form.querySelector('#email').value;
+    
+    if (email == localStorage.getItem('email')) {
+      evt.preventDefault();
+    }
+    
+    localStorage.setItem('email', email);
+  });
 })();

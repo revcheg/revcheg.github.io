@@ -88,6 +88,7 @@
   }
   
   &:nth-child(3) {
+    padding-top: 30px;
     padding-left: 40px;
     
     &::after {
@@ -123,7 +124,7 @@
   }
   
   &:nth-child(5) {
-    padding-top: 55px;
+    padding-top: 60px;
     padding-left: 60px;
     border-top: 2px dashed #ffa903;
     border-left: 2px dashed #ffa903;
@@ -131,7 +132,7 @@
   }
   
   &:nth-child(6) {
-    padding-top: 55px;
+    padding-top: 60px;
     padding-left: 100px;
     border-top: 2px dashed #ffa903;
     
