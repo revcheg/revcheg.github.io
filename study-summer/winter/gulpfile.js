@@ -33,8 +33,8 @@ function markup() {
 
 function scripts() {
   return gulp
-    .src('source/js/program/*.js')
-      .pipe(concat('program.js'))
+    .src('source/js/*.js')
+      .pipe(concat('main.js'))
       .pipe(gulp.dest('build/js'))
       .pipe(jsmin())
       .pipe(rename({suffix: '.min'}))

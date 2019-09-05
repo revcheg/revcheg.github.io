@@ -7,8 +7,8 @@ var programsData = [
     alt: 'London Winter Holidays',
     name: 'London Winter Holidays',
     location: 'Лондон',
-    date: '<a href="https://holidays.study.ua/winter/program/london-winter-holidays-9.html" target="_blank">02.01 - 11.01 (9 дней)</a><br><a href="https://holidays.study.ua/winter/program/london-winter-holidays-14.html" taget="_blank">04.01 - 18.01 (2 нед.)</a>',
-    cost: '$2950 (9 дней)<br>$3500 (2 нед.)'
+    date: '<a href="https://holidays.study.ua/winter/program/london-winter-holidays-10.html" target="_blank">02.01 - 11.01 (10 дней)</a><br><a href="https://holidays.study.ua/winter/program/london-winter-holidays-14.html" taget="_blank">04.01 - 18.01 (2 нед.)</a>',
+    cost: '$2950 (10 дней)<br>$3500 (2 нед.)'
   },
   {
     full: false,
