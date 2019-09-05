@@ -1,5 +1,7 @@
 (function () {
   var item = document.querySelectorAll('.photo__item');
+  var images = document.querySelectorAll('.photo__source');
+  var webp = document.querySelectorAll('.photo__webp');
   var popup = document.querySelector('.popup');
   var prev = document.querySelector('.popup__control--prev');
   var next = document.querySelector('.popup__control--next');
@@ -39,8 +41,10 @@
     }
     
     popup.classList.remove('popup--hide');
-    popup.querySelector('.popup__webp').srcset = '../img/london-winter-holidays/photo-' + currentPhoto + '.webp';
-    popup.querySelector('.popup__jpg').src = '../img/london-winter-holidays/photo-' + currentPhoto + '.jpg';
+    // popup.querySelector('.popup__webp').srcset = '../img/london-winter-holidays/photo-' + currentPhoto + '.webp';
+    // popup.querySelector('.popup__jpg').src = '../img/london-winter-holidays/photo-' + currentPhoto + '.jpg';
+    // popup.querySelector('.popup__webp').srcset = webp[currentPhoto].srcset;
+    // popup.querySelector('.popup__jpg').src = images[currentPhoto].src;
     overlay.classList.remove('popup__overlay--hide');
     document.body.style.overflow = 'hidden';
   };

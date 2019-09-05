@@ -199,8 +199,6 @@ body {
   opacity: 0;
   transition: 1s;
   visibility: hidden; }
-  .slider__item:nth-child(1) {
-    background-image: url("../img/london-winter-holidays/slider-1.jpg"); }
   .slider__item--show {
     opacity: 1;
     visibility: visible; }
@@ -219,7 +217,8 @@ body {
   color: #FFFFFF;
   font-size: 32px;
   font-weight: 900;
-  text-align: center; }
+  text-align: center;
+  z-index: 1; }
   .slider__title--small {
     display: block;
     margin-top: 10px;
@@ -241,7 +240,8 @@ body {
   cursor: pointer;
   transition: 0.1s;
   transform: translateY(-50%);
-  outline: none; }
+  outline: none;
+  z-index: 1; }
   .slider__control:first-of-type {
     left: 100px; }
     .slider__control:first-of-type:active {

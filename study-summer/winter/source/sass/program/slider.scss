@@ -32,10 +32,6 @@
   transition: 1s;
   visibility: hidden;
   
-  &:nth-child(1) {
-    background-image: url('../img/london-winter-holidays/slider-1.jpg');
-  }
-  
   &--show {
     opacity: 1;
     visibility: visible;
@@ -57,6 +53,7 @@
   font-size: 32px;
   font-weight: 900;
   text-align: center;
+  z-index: 1;
   
   &--small {
     display: block;
@@ -82,7 +79,7 @@
   transition: 0.1s;
   transform: translateY(-50%);
   outline: none;
-  // z-index: 2;
+  z-index: 1;
   
   &:first-of-type {
     left: 100px;
