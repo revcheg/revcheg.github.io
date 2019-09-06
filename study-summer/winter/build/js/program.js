@@ -144,11 +144,17 @@
       currentPhoto = 0;
     }
     
+    var webpSource = webp[currentPhoto].srcset;
+    var jpgSource = images[currentPhoto].src;
+    
+    if (document.body.clientWidth > 768) {
+      webpSource = webp[currentPhoto].srcset.replace('-mobile', '');
+      jpgSource = images[currentPhoto].src.replace('-mobile', '');
+    }
+    
     popup.classList.remove('popup--hide');
-    // popup.querySelector('.popup__webp').srcset = '../img/london-winter-holidays/photo-' + currentPhoto + '.webp';
-    // popup.querySelector('.popup__jpg').src = '../img/london-winter-holidays/photo-' + currentPhoto + '.jpg';
-    // popup.querySelector('.popup__webp').srcset = webp[currentPhoto].srcset;
-    // popup.querySelector('.popup__jpg').src = images[currentPhoto].src;
+    popup.querySelector('.popup__webp').srcset = webpSource;
+    popup.querySelector('.popup__jpg').src = jpgSource;
     overlay.classList.remove('popup__overlay--hide');
     document.body.style.overflow = 'hidden';
   };

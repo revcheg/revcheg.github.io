@@ -7,51 +7,51 @@ var programsData = [
     alt: 'London Winter Holidays',
     name: 'London Winter Holidays',
     location: 'Лондон',
-    date: '<a href="https://holidays.study.ua/winter/program/london-winter-holidays-10.html" target="_blank">02.01 - 11.01 (10 дней)</a><br><a href="https://holidays.study.ua/winter/program/london-winter-holidays-14.html" taget="_blank">04.01 - 18.01 (2 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/winter/program/london-winter-holidays-10.html">02.01 - 11.01 (10 дней)</a><br><a href="https://holidays.study.ua/winter/program/london-winter-holidays-14.html" taget="_blank">04.01 - 18.01 (2 нед.)</a>',
     cost: '$2950 (10 дней)<br>$3500 (2 нед.)'
   },
   {
     full: false,
-    href: '',
+    href: 'https://holidays.study.ua/winter/program/toronto-academic-holidays.html',
     webp: 'img/program-2.webp',
     jpg: 'img/program-2.jpg',
     alt: 'Toronto Academic Holidays',
     name: 'Toronto Academic Holidays',
     location: 'Торонто',
-    date: '04.01 - 18.01 (2 нед.)',
+    date: '<a href="https://holidays.study.ua/winter/program/toronto-academic-holidays.html">04.01 - 18.01 (2 нед.)</a>',
     cost: '$4150 (2 нед.)'
   },
   {
     full: false,
-    href: '',
+    href: 'https://holidays.study.ua/winter/program/canadian-high-school.html',
     webp: 'img/program-3.webp',
     jpg: 'img/program-3.jpg',
     alt: 'Canadian High School',
     name: 'Canadian High School',
     location: 'Гамильтон',
-    date: '04.01 - 18.01 (2 нед.)',
+    date: '<a href="https://holidays.study.ua/winter/program/canadian-high-school.html">04.01 - 18.01 (2 нед.)</a>',
     cost: '$4350 (2 нед.)'
   },
   {
     full: false,
-    href: '',
+    href: 'https://holidays.study.ua/winter/program/explore-toronto.html',
     webp: 'img/program-4.webp',
     jpg: 'img/program-4.jpg',
     alt: 'Explore Toronto',
     name: 'Explore Toronto',
     location: 'Торонто',
-    date: '04.01 - 18.01 (2 нед.)',
+    date: '<a href="https://holidays.study.ua/winter/program/explore-toronto.html">04.01 - 18.01 (2 нед.)</a>',
     cost: '$3900 (2 нед.)'
   },
   {
     full: false,
-    href: '',
+    href: 'https://holidays.study.ua/winter/program/discover-california.html',
     webp: 'img/program-5.webp',
     jpg: 'img/program-5.jpg',
     alt: 'Discover California',
     name: 'Discover California',
     location: 'Лос-Анджелес',
-    date: '04.01 - 18.01 (2 нед.)',
+    date: '<a href="https://holidays.study.ua/winter/program/discover-california.html">04.01 - 18.01 (2 нед.)</a>',
     cost: '$5150 (2 нед.)'
   }
 ];
