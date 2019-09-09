@@ -132,6 +132,13 @@
   }
 }
 
+.cost__caution {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
 @media screen and ($tablet-widths) {
   .cost__list {
     flex-wrap: wrap;

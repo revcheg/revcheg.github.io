@@ -1181,6 +1181,7 @@ body {
   height: 85px; }
 
 .edu__cta {
+  display: block;
   margin-top: 0;
   margin-bottom: 10px;
   color: #FFFFFF;
@@ -1434,6 +1435,12 @@ body {
   .cost__button:hover, .cost__button:focus {
     background-color: #5fa6fa;
     transform: translateY(-5px); }
+
+.cost__caution {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center; }
 
 @media screen and (max-width: 1210px) {
   .cost__list {

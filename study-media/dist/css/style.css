@@ -1461,6 +1461,11 @@ body {
     background-color: #32004b;
   }
   
+  .cost__caution {
+    font-size: 14px;
+    text-align: center;
+  }
+  
   @media screen and (max-width: 1210px) {
     .cost__list {
       flex-wrap: wrap;

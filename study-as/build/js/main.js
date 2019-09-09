@@ -98,14 +98,6 @@ h.appendChild(s);
 })(document, window, "fdforms");
 })();
 (function () {
-  var popup = document.querySelector('.invite');
-  var close = document.querySelector('.invite__close');
-
-  close.addEventListener('click', function () {
-    popup.classList.add('invite--hide');
-  });
-})();
-(function () {
   var button = document.querySelector('.nav__menu');
   var menu = document.querySelector('.nav');
   var links = document.querySelectorAll('.nav__link');
