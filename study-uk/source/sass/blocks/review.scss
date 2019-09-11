@@ -71,6 +71,10 @@
 }
 
 @media screen and ($mobile) {
+  .review {
+    padding-top: 0;
+  }
+  
   .review__wrapper {
     flex-direction: column;
   }

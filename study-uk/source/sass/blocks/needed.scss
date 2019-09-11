@@ -66,6 +66,10 @@
 }
 
 @media screen and ($mobile) {
+  .needed {
+    padding-bottom: 0;
+  }
+  
   .needed__wrapper {
     flex-direction: column;
   }
