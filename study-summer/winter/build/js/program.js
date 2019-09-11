@@ -84,12 +84,10 @@
       nav.classList.add('nav__list--show');
       button.classList.remove('nav__menu--open');
       button.classList.add('nav__menu--close');
-      document.body.style.overflow = 'hidden';
     } else {
       nav.classList.remove('nav__list--show');
       button.classList.remove('nav__menu--close');
       button.classList.add('nav__menu--open');
-      document.body.style.overflow = 'auto';
     }
   });
   
@@ -98,7 +96,6 @@
       nav.classList.remove('nav__list--show');
       button.classList.remove('nav__menu--close');
       button.classList.add('nav__menu--open');
-      document.body.style.overflow = 'auto';
     });
   }
 })();
@@ -119,23 +116,22 @@
       currentPhoto = index.indexOf(evt.currentTarget);
       showPopup(currentPhoto);
     });
-    
-    item[i].addEventListener('keydown', function(evt){
-      if (evt.keyCode == 13 || evt.keyCode == 32) {
-        showPopup(currentPhoto);
-      } else if (evt.keyCode == 37) {
-        currentPhoto--;
-        showPopup();
-      } else if (evt.keyCode == 39) {
-        currentPhoto++;
-        showPopup();
-      } else if (evt.keyCode == 27) {
-        popup.classList.add('popup--hide');
-        overlay.classList.add('popup__overlay--hide');
-        document.body.style.overflow = 'auto';
-      }
-    });
   }
+  
+  document.body.addEventListener('keydown', function (evt) {
+    if (evt.keyCode == 13) {
+      showPopup(currentPhoto);
+    } else if (evt.keyCode == 37) {
+      currentPhoto--;
+      showPopup();
+    } else if (evt.keyCode == 39) {
+      currentPhoto++;
+      showPopup();
+    } else if (evt.keyCode == 27) {
+      popup.classList.add('popup--hide');
+      overlay.classList.add('popup__overlay--hide');
+    }
+  });
   
   var showPopup = function () {
     if (currentPhoto < 0) {
@@ -156,7 +152,6 @@
     popup.querySelector('.popup__webp').srcset = webpSource;
     popup.querySelector('.popup__jpg').src = jpgSource;
     overlay.classList.remove('popup__overlay--hide');
-    document.body.style.overflow = 'hidden';
   };
 
   prev.addEventListener('click', function () {
@@ -172,7 +167,6 @@
   overlay.addEventListener('click', function () {
     popup.classList.add('popup--hide');
     overlay.classList.add('popup__overlay--hide');
-    document.body.style.overflow = 'auto';
   });
 })();
 (function () {

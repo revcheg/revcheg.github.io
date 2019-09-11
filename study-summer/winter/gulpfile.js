@@ -14,7 +14,7 @@ const imagemin = require('gulp-imagemin');
 
 function styles() {
   return gulp
-    .src('source/sass/program.scss')
+    .src('source/sass/style.scss')
       .pipe(plumber())
       .pipe(sass())
       .pipe(postcss([ autoprefixer() ]))
@@ -27,7 +27,7 @@ function styles() {
 
 function markup() {
   return gulp
-    .src('build/**/*.html')
+    .src('build/index.html')
       .pipe(livereload())
 }
 
@@ -57,7 +57,7 @@ function images() {
 
 function imgPrograms() {
   return gulp
-    .src('source/img/canadian-high-school/*')
+    .src('source/img/explore-toronto/*')
     .pipe(plumber())
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
@@ -65,7 +65,7 @@ function imgPrograms() {
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest('build/img/canadian-high-school'))
+    .pipe(gulp.dest('build/img/explore-toronto'))
 }
 
 function watch() {

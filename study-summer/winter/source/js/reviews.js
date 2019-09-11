@@ -19,7 +19,6 @@
       } else {
         video.src = 'https://www.youtube.com/embed/dVKHwTR9Tws?&autoplay=1';
       }
-      document.body.style.overflow = 'hidden';
     });
   }
   
@@ -27,6 +26,5 @@
     videoWrapper.classList.add('reviews__container--hide');
     video.src = '';
     overlay.classList.add('popup__overlay--hide');
-    document.body.style.overflow = 'auto';
   });
 })();

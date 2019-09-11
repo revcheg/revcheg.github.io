@@ -40,14 +40,30 @@
   }
   
   var form = document.querySelector('.request__form');
+  var sorry = document.querySelector('.sorry');
+  var overlay = document.querySelector('.popup__overlay');
   
   form.addEventListener('submit', function (evt) {
     var email = form.querySelector('#email').value;
     
     if (email == localStorage.getItem('email')) {
       evt.preventDefault();
+      sorry.classList.remove('sorry--hide');
+      overlay.classList.remove('popup__overlay--hide');
     }
     
     localStorage.setItem('email', email);
+  });
+  
+  overlay.addEventListener('click', function () {
+    sorry.classList.add('sorry--hide');
+    overlay.classList.add('popup__overlay--hide');
+  });
+  
+  document.body.addEventListener('keydown', function (evt) {
+    if (evt.keyCode == 27) {
+      sorry.classList.add('sorry--hide');
+      overlay.classList.add('popup__overlay--hide');
+    }
   });
 })();

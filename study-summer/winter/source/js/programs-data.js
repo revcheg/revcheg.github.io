@@ -1,7 +1,7 @@
 var programsData = [
   {
     full: false,
-    href: 'https://holidays.study.ua/winter/program/london-winter-holidays-9.html',
+    href: 'https://holidays.study.ua/winter/program/london-winter-holidays-14.html',
     webp: 'img/program-1.webp',
     jpg: 'img/program-1.jpg',
     alt: 'London Winter Holidays',

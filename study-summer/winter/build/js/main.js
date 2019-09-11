@@ -40,15 +40,31 @@
   }
   
   var form = document.querySelector('.request__form');
+  var sorry = document.querySelector('.sorry');
+  var overlay = document.querySelector('.popup__overlay');
   
   form.addEventListener('submit', function (evt) {
     var email = form.querySelector('#email').value;
     
     if (email == localStorage.getItem('email')) {
       evt.preventDefault();
+      sorry.classList.remove('sorry--hide');
+      overlay.classList.remove('popup__overlay--hide');
     }
     
     localStorage.setItem('email', email);
+  });
+  
+  overlay.addEventListener('click', function () {
+    sorry.classList.add('sorry--hide');
+    overlay.classList.add('popup__overlay--hide');
+  });
+  
+  document.body.addEventListener('keydown', function (evt) {
+    if (evt.keyCode == 27) {
+      sorry.classList.add('sorry--hide');
+      overlay.classList.add('popup__overlay--hide');
+    }
   });
 })();
 (function () {
@@ -61,12 +77,10 @@
       nav.classList.add('nav__list--show');
       button.classList.remove('nav__menu--open');
       button.classList.add('nav__menu--close');
-      document.body.style.overflow = 'hidden';
     } else {
       nav.classList.remove('nav__list--show');
       button.classList.remove('nav__menu--close');
       button.classList.add('nav__menu--open');
-      document.body.style.overflow = 'auto';
     }
   });
   
@@ -75,7 +89,6 @@
       nav.classList.remove('nav__list--show');
       button.classList.remove('nav__menu--close');
       button.classList.add('nav__menu--open');
-      document.body.style.overflow = 'auto';
     });
   }
 })();
@@ -99,17 +112,22 @@
       currentPhoto = clearArrayPhotos.indexOf(evt.currentTarget);
       showPopup(currentPhoto);
     });
-    
-    item[i].addEventListener('keydown', function(evt){
-      if (evt.keyCode == 13) {
-        currentPhoto = clearArrayPhotos.indexOf(evt.currentTarget);
-        showPopup(currentPhoto);
-      } else if (evt.keyCode == 27) {
-        popup.classList.add('popup--hide');
-        overlay.classList.add('popup__overlay--hide');
-      }
-    });
   }
+  
+  document.body.addEventListener('keydown', function (evt) {
+    if (evt.keyCode == 13) {
+      showPopup(currentPhoto);
+    } else if (evt.keyCode == 37) {
+      currentPhoto--;
+      showPopup();
+    } else if (evt.keyCode == 39) {
+      currentPhoto++;
+      showPopup();
+    } else if (evt.keyCode == 27) {
+      popup.classList.add('popup--hide');
+      overlay.classList.add('popup__overlay--hide');
+    }
+  });
   
   // Отрисовываем попап с картинкой
   var showPopup = function () {
@@ -122,7 +140,6 @@
     popup.querySelector('.popup__webp').srcset = 'img/photo-' + currentPhoto + '.webp';
     popup.querySelector('.popup__jpg').src = 'img/photo-' + currentPhoto + '.jpg';
     overlay.classList.remove('popup__overlay--hide');
-    document.body.style.overflow = 'hidden';
   };
   
   // Тогглы назад/вперед
@@ -199,13 +216,12 @@
   overlay.addEventListener('click', function () {
     popup.classList.add('popup--hide');
     overlay.classList.add('popup__overlay--hide');
-    document.body.style.overflow = 'auto';
   });
 })();
 var programsData = [
   {
     full: false,
-    href: 'https://holidays.study.ua/winter/program/london-winter-holidays-9.html',
+    href: 'https://holidays.study.ua/winter/program/london-winter-holidays-14.html',
     webp: 'img/program-1.webp',
     jpg: 'img/program-1.jpg',
     alt: 'London Winter Holidays',
@@ -368,7 +384,6 @@ var programsData = [
       } else {
         video.src = 'https://www.youtube.com/embed/dVKHwTR9Tws?&autoplay=1';
       }
-      document.body.style.overflow = 'hidden';
     });
   }
   
@@ -376,7 +391,6 @@ var programsData = [
     videoWrapper.classList.add('reviews__container--hide');
     video.src = '';
     overlay.classList.add('popup__overlay--hide');
-    document.body.style.overflow = 'auto';
   });
 })();
 (function () {

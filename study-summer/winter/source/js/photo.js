@@ -18,17 +18,22 @@
       currentPhoto = clearArrayPhotos.indexOf(evt.currentTarget);
       showPopup(currentPhoto);
     });
-    
-    item[i].addEventListener('keydown', function(evt){
-      if (evt.keyCode == 13) {
-        currentPhoto = clearArrayPhotos.indexOf(evt.currentTarget);
-        showPopup(currentPhoto);
-      } else if (evt.keyCode == 27) {
-        popup.classList.add('popup--hide');
-        overlay.classList.add('popup__overlay--hide');
-      }
-    });
   }
+  
+  document.body.addEventListener('keydown', function (evt) {
+    if (evt.keyCode == 13) {
+      showPopup(currentPhoto);
+    } else if (evt.keyCode == 37) {
+      currentPhoto--;
+      showPopup();
+    } else if (evt.keyCode == 39) {
+      currentPhoto++;
+      showPopup();
+    } else if (evt.keyCode == 27) {
+      popup.classList.add('popup--hide');
+      overlay.classList.add('popup__overlay--hide');
+    }
+  });
   
   // Отрисовываем попап с картинкой
   var showPopup = function () {
@@ -41,7 +46,6 @@
     popup.querySelector('.popup__webp').srcset = 'img/photo-' + currentPhoto + '.webp';
     popup.querySelector('.popup__jpg').src = 'img/photo-' + currentPhoto + '.jpg';
     overlay.classList.remove('popup__overlay--hide');
-    document.body.style.overflow = 'hidden';
   };
   
   // Тогглы назад/вперед
@@ -118,6 +122,5 @@
   overlay.addEventListener('click', function () {
     popup.classList.add('popup--hide');
     overlay.classList.add('popup__overlay--hide');
-    document.body.style.overflow = 'auto';
   });
 })();
