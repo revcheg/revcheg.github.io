@@ -4,21 +4,21 @@
   var listButton = document.querySelector('.programs__button--list');
   var programsTemplate = document.querySelector('.programs__template').content;
   
-  if (document.body.clientWidth > 1210) {
-    programsCounter = 3;
-    programsIncrement = 3;
-  } else if (document.body.clientWidth < 1210) {
-    programsCounter = 2;
-    programsIncrement = 2;
+  if (document.body.clientWidth <= 768) {
+    programsCounter = 5;
+    programsIncrement = 5;
+  } else if (document.body.clientWidth > 768) {
+    programsCounter = 5;
+    programsIncrement = 5;
   }
   
   renderPrograms();
   
-  load.addEventListener('click', function () {
-    programsCounter = programsCounter + programsIncrement;
-    clearPrograms();
-    renderPrograms();
-  });
+  // load.addEventListener('click', function () {
+  //   programsCounter = programsCounter + programsIncrement;
+  //   clearPrograms();
+  //   renderPrograms();
+  // });
   
   function clearPrograms() {
     var item = document.querySelectorAll('.programs__item');
@@ -54,8 +54,8 @@
       list.appendChild(item);
     }
     
-    if (programsCounter >= programsData.length) {
-      load.disabled = true;
-    }
+    // if (programsCounter >= programsData.length) {
+    //   load.disabled = true;
+    // }
   };
 })();

@@ -14,7 +14,7 @@ const imagemin = require('gulp-imagemin');
 
 function styles() {
   return gulp
-    .src('source/sass/style.scss')
+    .src('source/sass/program.scss')
       .pipe(plumber())
       .pipe(sass())
       .pipe(postcss([ autoprefixer() ]))
@@ -57,7 +57,7 @@ function images() {
 
 function imgPrograms() {
   return gulp
-    .src('source/img/explore-toronto/*')
+    .src('source/img/toronto-academic-holidays/*')
     .pipe(plumber())
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
@@ -65,7 +65,7 @@ function imgPrograms() {
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest('build/img/explore-toronto'))
+    .pipe(gulp.dest('build/img/toronto-academic-holidays'))
 }
 
 function watch() {

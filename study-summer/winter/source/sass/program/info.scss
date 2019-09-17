@@ -3,7 +3,8 @@
 }
 
 .info__button {
-  padding: 15px 30px;
+  flex-grow: 1;
+  padding: 15px 25px;
   color: $text;
   font-size: 18px;
   font-weight: 500;
@@ -190,6 +191,11 @@
   margin-top: 0;
   margin-bottom: 20px;
   color: $text;
+  
+  &--bold {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
   
   &:last-child {
     margin-bottom: 0;

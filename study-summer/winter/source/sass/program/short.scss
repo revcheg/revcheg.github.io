@@ -13,31 +13,10 @@
 }
 
 .short__row {
-  background-repeat: no-repeat;
-  background-position: left top;
-  
-  &:nth-child(1) {
-    background-image: url('../img/program-age.svg');
-  }
-  
-  &:nth-child(2) {
-    background-image: url('../img/program-study.svg');
-  }
-  
-  &:nth-child(3) {
-    background-image: url('../img/program-residence.svg');
-  }
-  
-  &:nth-child(4) {
-    background-image: url('../img/program-date.svg');
-  }
-  
-  &:nth-child(5) {
-    background-image: url('../img/program-cost.svg');
-  }
 }
 
 .short__cell {
+  padding-left: 45px;
   color: $text;
   padding-top: 5px;
   padding-bottom: 20px;
@@ -45,10 +24,33 @@
   font-weight: 400;
   line-height: 1.3em;
   vertical-align: top;  
+  
+  background-repeat: no-repeat;
+  background-position: left top;
+    
+  &--age {
+    background-image: url('../img/program-age.svg');
+  }
+  
+  &--uni {
+    background-image: url('../img/program-study.svg');
+  }
+  
+  &--leave {
+    background-image: url('../img/program-residence.svg');
+  }
+  
+  &--date {
+    background-image: url('../img/program-date.svg');
+  }
+  
+  &--cost {
+    background-image: url('../img/program-cost.svg');
+  }
 }
 
 .short__bold {
-  padding-left: 45px;
+  
   font-size: 20px;
   font-weight: 500;
 }
@@ -69,11 +71,11 @@
   }
   
   .short__cell {
+    padding-left: 40px;
     font-size: 16px;
   }
   
   .short__bold {
-    padding-left: 40px;
     font-size: 18px;
   }
   

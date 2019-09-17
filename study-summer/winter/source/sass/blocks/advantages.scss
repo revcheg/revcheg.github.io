@@ -5,7 +5,7 @@
 .advantages__wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 
 .advantages__img {
@@ -55,6 +55,7 @@
   .advantages__wrapper {
     align-items: flex-start;
     flex-direction: column;
+    margin-bottom: 0;
     
     &--reverse {
       align-items: center;
@@ -93,7 +94,6 @@
   }
   
   .advantages__wrapper {
-    margin-bottom: 50px;
     
     &--reverse {
       flex-direction: column;

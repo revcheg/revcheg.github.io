@@ -6,7 +6,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 60px;
 }
 
 .programs__title {
@@ -51,6 +50,14 @@
   &--active {
     opacity: 1;
   }
+}
+
+.programs__offer {
+  margin-top: 5px;
+  margin-bottom: 60px;
+  color: $text;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .programs__list {
@@ -243,7 +250,7 @@
 
 .programs__load {
   position: relative;
-  display: block;
+  display: none;
   width: 250px;
   margin: auto;
   margin-bottom: 20px;
@@ -305,24 +312,25 @@
 }
 
 @media screen and ($tablet) {
-  .programs__wrapper {
-    margin-bottom: 50px;
-  }
-  
   .programs__title {
     font-size: 22px;
   }
   
+  .programs__offer {
+    margin-bottom: 50px;
+  }
+  
   .programs__list {
-    justify-content: space-between;
+    justify-content: center;
   }
   
   .programs__item {
-    width: 49%;
     height: auto;
-    margin-right: 0;
-    margin-bottom: 20px;
     padding-bottom: 15px;
+    
+    &:nth-child(3n) {
+      margin-right: 30px;
+    }
     
     &--column {
       width: 100%;
@@ -350,6 +358,12 @@
     text-align: center;
   }
   
+  .programs__offer {
+    margin-bottom: 25px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
   .programs__list {
     align-items: center;
     flex-direction: column;
@@ -361,6 +375,11 @@
     width: 100%;
     max-width: 395px;
     height: auto;
+    margin-right: 0;
+    
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
     
     &--column {
       flex-direction: column;
@@ -403,5 +422,9 @@
   .programs__table {
     padding-right: 10px;
     padding-left: 20px;
+  }
+  
+  .programs__load {
+    display: block;
   }
 }

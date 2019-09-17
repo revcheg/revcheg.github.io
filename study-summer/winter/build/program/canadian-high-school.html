@@ -43,7 +43,9 @@
     <div class="container">
       <nav class="nav">
         <div class="nav__control">
-          <img class="nav__logo" src="../img/logo.svg" alt="STUDY.UA зима 2020">
+          <a href="https://holidays.study.ua/winter/">
+            <img class="nav__logo" src="../img/logo.svg" alt="STUDY.UA зима 2020">
+          </a>
           <button class="nav__menu  nav__menu--open" aria-label="Открыть меню"></button>
         </div>
         <ul class="nav__list">
@@ -71,26 +73,26 @@
             <li class="slider__item  slider__item--show">
               <picture>
                 <source srcset="../img/canadian-high-school/slider-1.webp" type="image/webp">
-                <img class="slider__photo" src="../img/canadian-high-school/slider-1.png" alt="">
+                <img class="slider__photo" src="../img/canadian-high-school/slider-1.jpg" alt="">
               </picture>
               <h1 class="slider__title">Групповая поездка Canadian High School <span class="slider__title--small">Гамильтон, Канада</span></h1>
             </li>
             <li class="slider__item">
               <picture>
                 <source srcset="../img/canadian-high-school/slider-2.webp" type="image/webp">
-                <img class="slider__photo" src="../img/canadian-high-school/slider-2.png" alt="">
+                <img class="slider__photo" src="../img/canadian-high-school/slider-2.jpg" alt="">
               </picture>
             </li>
             <li class="slider__item">
               <picture>
                 <source srcset="../img/canadian-high-school/slider-3.webp" type="image/webp">
-                <img class="slider__photo" src="../img/canadian-high-school/slider-3.png" alt="">
+                <img class="slider__photo" src="../img/canadian-high-school/slider-3.jpg" alt="">
               </picture>
             </li>
             <li class="slider__item">
               <picture>
                 <source srcset="../img/canadian-high-school/slider-4.webp" type="image/webp">
-                <img class="slider__photo" src="../img/canadian-high-school/slider-4.png" alt="">
+                <img class="slider__photo" src="../img/canadian-high-school/slider-4.jpg" alt="">
               </picture>
             </li>
           </ul>
@@ -110,7 +112,7 @@
         <div class="intro__wrapper">
           <div class="intro__column">
             <div class="intro__ratio">
-              <iframe class="intro__video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="intro__video  intro__video--canada" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <button class="intro__play" aria-label="Включить видео"></button>
             </div>
           </div>
@@ -126,23 +128,23 @@
         <div class="short__wrapper">
           <table class="short__table">
             <tr class="short__row">
-              <td class="short__cell"><strong class="short__bold">Возраст:</strong></td>
+              <td class="short__cell  short__cell--age"><strong class="short__bold">Возраст:</strong></td>
               <td class="short__cell">14-17 лет</td>
             </tr>
             <tr class="short__row">
-              <td class="short__cell"><strong class="short__bold">Учеба:</strong></td>
+              <td class="short__cell  short__cell--uni"><strong class="short__bold">Учеба:</strong></td>
               <td class="short__cell">Columbia International college</td>
             </tr>
             <tr class="short__row">
-              <td class="short__cell"><strong class="short__bold">Проживание:</strong></td>
+              <td class="short__cell  short__cell--leave"><strong class="short__bold">Проживание:</strong></td>
               <td class="short__cell">резиденция</td>
             </tr>
             <tr class="short__row">
-              <td class="short__cell"><strong class="short__bold">Даты:</strong></td>
+              <td class="short__cell  short__cell--date"><strong class="short__bold">Даты:</strong></td>
               <td class="short__cell">4 - 18 января 2020</td>
             </tr>
             <tr class="short__row">
-              <td class="short__cell"><strong class="short__bold">Стоимость:</strong></td>
+              <td class="short__cell  short__cell--cost"><strong class="short__bold">Стоимость:</strong></td>
               <td class="short__cell">$4350</td>
             </tr>
           </table>
@@ -154,6 +156,7 @@
       <div class="container">
         <button class="info__button  info__button--active">Учеба</button>
         <button class="info__button">Инфраструктура</button>
+        <button class="info__button">Проживание и питание</button>
         <button class="info__button">Экскурсии и досуг</button>
         <button class="info__button">Что входит в стоимость</button>
         <div class="info__tabs">
@@ -184,13 +187,14 @@
             </div>
             <div class="info__wrapper">
               <div class="info__content">
+                <p class="info__text">Обучение вместе с канадскими учениками. STUDY.UA — единственная иностранная группа в период поездки!</p>
                 <ul class="info__list">
                   <li class="info__item">30 уроков в неделю.</li>
                   <li class="info__item">Полная интеграция в учебный процесс — группа придерживается расписания канадской школы.</li>
                   <li class="info__item">Мастер-классы от канадских преподавателей на различные тематики (отельно-ресторанное дело, искусство).</li>
                   <li class="info__item">Уроки на тему канадской культуры и традиций.</li>
                 </ul>
-                <p class="info__text"><b>Полный список предметов:</b></p>
+                <p class="info__text  info__text--bold">Полный список предметов:</p>
                 <ul class="info__list">
                   <li class="info__item">Canadian Studies</li>
                   <li class="info__item">Math</li>
@@ -240,7 +244,7 @@
             <div class="info__wrapper">
               <div class="info__content  info__content--small">
                 <p class="info__text">Columbia International college находится в Гамильтоне (провинция Онтарио). В Гамильтоне — около 100 различных водопадов. Совсем неподалеку расположена одна из самых известных природных диковинок мира – Ниагарский водопад. Гамильтон также является главным промышленным центром Канады.</p>
-                <p class="info__text"><b>На территории кампуса есть:</b></p>
+                <p class="info__text  info__text--bold">На территории кампуса есть:</p>
                 <ul class="info__list">
                   <li class="info__item">компьютерные классы;</li>
                   <li class="info__item">спортивные площадки;</li>
@@ -248,6 +252,38 @@
                   <li class="info__item">театр;</li>
                   <li class="info__item">резиденции.</li>
                 </ul>
+              </div>
+            </div>
+          </section>
+          <section class="info__tab">
+            <div class="info__slider">
+              <ul class="info__gallery">
+                <li>
+                  <picture>
+                    <source srcset="../img/canadian-high-school/h1.webp" type="image/webp">
+                    <img class="info__photo" src="../img/canadian-high-school/h1.jpg" alt="">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <source srcset="../img/canadian-high-school/h2.webp" type="image/webp">
+                    <img class="info__photo" src="../img/canadian-high-school/h2.jpg" alt="">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <source srcset="../img/canadian-high-school/h3.webp" type="image/webp">
+                    <img class="info__photo" src="../img/canadian-high-school/h3.jpg" alt="">
+                  </picture>
+                </li>
+              </ul>
+              <button class="info__swipe  info__swipe--prev" aria-label="Предыдущая фотография"></button>
+              <button class="info__swipe  info__swipe--next" aria-label="Следующая фотография"></button>
+            </div>
+            <div class="info__wrapper">
+              <div class="info__content  info__content--small">
+                <p class="info__text">Ребята размещаются в комфортабельной резиденции, в комнатах на 2 человека. В ночное время персонал школы дежурит и следит за порядком. Территория школы охраняема 24 часа в сутки.</p>
+                <p class="info__text">Полноценное питание по системе «шведский стол»: завтрак, горячий ланч и ужин проходит в кафетерии резиденции.</p>
               </div>
             </div>
           </section>
@@ -393,7 +429,7 @@
             <li class="photo__item  photo__item--big" tabindex="0">
               <picture>
                 <source class="photo__webp" srcset="../img/canadian-high-school/photo-0-mobile.webp" type="image/webp">
-                <img class="photo__source  photo__source--big" src="../img/canadian-high-school/photo-0-mobile.jpg" alt="Фотография с поездки">
+                <img class="photo__jpg  photo__jpg--big" src="../img/canadian-high-school/photo-0-mobile.jpg" alt="Фотография с поездки">
               </picture>
             </li>
           </ul>
@@ -401,37 +437,37 @@
             <li class="photo__item" tabindex="0">
               <picture>
                 <source class="photo__webp" srcset="../img/canadian-high-school/photo-1-mobile.webp" type="image/webp">
-                <img class="photo__source" src="../img/canadian-high-school/photo-1-mobile.jpg" alt="Фотография с поездки">
+                <img class="photo__jpg" src="../img/canadian-high-school/photo-1-mobile.jpg" alt="Фотография с поездки">
               </picture>
             </li>
             <li class="photo__item" tabindex="0">
               <picture>
                 <source class="photo__webp" srcset="../img/canadian-high-school/photo-2-mobile.webp" type="image/webp">
-                <img class="photo__source" src="../img/canadian-high-school/photo-2-mobile.jpg" alt="Фотография с поездки">
+                <img class="photo__jpg" src="../img/canadian-high-school/photo-2-mobile.jpg" alt="Фотография с поездки">
               </picture>
             </li>
             <li class="photo__item" tabindex="0">
               <picture>
                 <source class="photo__webp" srcset="../img/canadian-high-school/photo-3-mobile.webp" type="image/webp">
-                <img class="photo__source" src="../img/canadian-high-school/photo-3-mobile.jpg" alt="Фотография с поездки">
+                <img class="photo__jpg" src="../img/canadian-high-school/photo-3-mobile.jpg" alt="Фотография с поездки">
               </picture>
             </li>
             <li class="photo__item" tabindex="0">
               <picture>
                 <source class="photo__webp" srcset="../img/canadian-high-school/photo-4-mobile.webp" type="image/webp">
-                <img class="photo__source" src="../img/canadian-high-school/photo-4-mobile.jpg" alt="Фотография с поездки">
+                <img class="photo__jpg" src="../img/canadian-high-school/photo-4-mobile.jpg" alt="Фотография с поездки">
               </picture>
             </li>
             <li class="photo__item" tabindex="0">
               <picture>
                 <source class="photo__webp" srcset="../img/canadian-high-school/photo-5-mobile.webp" type="image/webp">
-                <img class="photo__source" src="../img/canadian-high-school/photo-5-mobile.jpg" alt="Фотография с поездки">
+                <img class="photo__jpg" src="../img/canadian-high-school/photo-5-mobile.jpg" alt="Фотография с поездки">
               </picture>
             </li>
             <li class="photo__item" tabindex="0">
               <picture>
                 <source class="photo__webp" srcset="../img/canadian-high-school/photo-6-mobile.webp" type="image/webp">
-                <img class="photo__source" src="../img/canadian-high-school/photo-6-mobile.jpg" alt="Фотография с поездки">
+                <img class="photo__jpg" src="../img/canadian-high-school/photo-6-mobile.jpg" alt="Фотография с поездки">
               </picture>
             </li>
           </ul>
@@ -451,13 +487,17 @@
             <div class="review__column">
               <picture>
                 <source srcset="../img/program-review-1.webp" type="image/webp">
-                <img class="review__photo" src="../img/program-review-2.jpg" alt="Ольга Сумська">
+                <img class="review__photo" src="../img/program-review-1.jpg" alt="Ольга Сумська">
               </picture>
             </div>
             <div class="review__content">
               <blockquote class="review__quote">
                 <strong class="review__name">Ольга Сумська</strong>
-                <p class="review__text">Мрії мають здійснюватися! Сьогодні донечка надіслала свої фото, й на мене нахлинули спогади про Лондон — місто, куди хочеться повертатися знову і знову. Переглядаю їх і відчуваю такий знайомий захват від лондонської. Мрії мають здійснюватися! Сьогодні донечка надіслала свої фото, й на мене нахлинули спогади про Лондон — місто, куди хочеться повертатися знову і знову. Переглядаю їх і відчуваю такий знайомий захват від лондонської</p>
+                <p class="review__text">Мрії мають здійснюватися! Сьогодні донечка надіслала свої фото, й на мене нахлинули спогади про Лондон — місто, куди хочеться повертатися знову і знову.</p>
+                <p class="review__text">Переглядаю фото і відчуваю такий знайомий захват від лондонської атмосфери, неповторної британської архітектури і довгоочікуваних поїздок двоповерховими автобусами).</p>
+                <p class="review__text">Моя Аня пише: “Нарешті збулась моя мрія! Тут нереально красиво, наш Royal Holloway — це справжній Hogwarts! А ще ми гуляли по всіх тих місцях, які я раніше бачила так часто в підручниках з англійської…”</p>
+                <p class="review__text">Я бачу, що Royal Holloway припав до душі моїй дівчинці. Впевнена, що ця поїздка допоможе зберегти прагнення отримати в майбутньому гарну освіту в омріяному університеті. Цієї порції літнього натхнення вистачить на весь навчальний рік в Міжнародній школі STUDY Academy!</p>
+                <p class="review__text">Щастя — це коли найщиріші прагнення стають реальністю. Спасибі @studyua за можливість відкривати світ і нові можливості у ньому, за позитивні емоції моєї Ані і за можливість обмінятися з нею враженнями про місто, яке закохує у себе з першого погляду!</p>
               </blockquote>
             </div>
           </div>
@@ -471,7 +511,11 @@
             <div class="review__content">
               <blockquote class="review__quote">
                 <strong class="review__name">Маша Ефросинина</strong>
-                <p class="review__text">У нас в семье вопрос английского языка определенно важен. Я - лингвист по образованию. Мой муж получил диплом Американского университета. Поэтому наша дочь Нана с детства отдает себе отчет, что. У нас в семье вопрос английского языка определенно важен. Я - лингвист по образованию. Мой муж получил диплом Американского университета. Поэтому наша дочь Нана с детства отдает себе отчет, что.</p>
+                <p class="review__text">У нас в семье вопрос английского языка определенно важен. Я — лингвист по образованию. Мой муж получил диплом Американского университета. Поэтому наша дочь Нана с детства отдает себе отчет, что любому современному человеку просто необходимо знать английский язык. Это расширяет возможности для собственной реализации.</p>
+                <p class="review__text">Программа в школе Наны обширная, однако этого недостаточно для свободного владения языком. Мы с мужем долго думали, как же правильно использовать свободное время нашего ребенка на каникулах. Чтобы Нана могла совершенствовать свои знания языка, но не ощущать себя, при этом, за партой.</p>
+                <p class="review__text">Многие наши друзья и знакомые отправляли детей летом на языковые программы за границу, и мы заинтересовались этим, обратившись в компанию STUDY.UA. Признаюсь, больше всего меня волновало то, что придется отпустить Наночку в таком юном возрасте куда-то одну. Однако я доверилась положительным рекомендациям родителей, которые уже несколько лет отправляют детей за границу.</p>
+                <p class="review__text">Ребята путешествовали группами, в сопровождении кураторов. Меня на протяжении всего пребывания дочери в языковом лагере детально информировали о том, как у нее обстоят дела! Сама же Нануся осталась очень довольна как организацией, так и всей программой тура. Они занимались английским по шесть часов в день, а затем их ждала насыщенная культурная программа.</p>
+                <p class="review__text">В общем, мой ребенок вернулся с массой впечатлений, адресами новых друзей-иностранцев и значительно улучшенным английским! В этом году будет уже третий раз, как мы доверим нашу девочку STUDY.UA. Это говорит о нашем полном доверии и удовлетворенностью предоставляемыми услугами!</p>
               </blockquote>
             </div>
           </div>
