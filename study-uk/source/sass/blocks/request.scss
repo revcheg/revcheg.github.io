@@ -17,9 +17,17 @@
   font-weight: 400;
 }
 
+.request__form {
+  width: 1000px;
+}
+
 @media screen and ($tablet) {
   .request__wrapper {
     background-image: none;
+  }
+  
+  .request__form {
+    width: auto;
   }
 }
 

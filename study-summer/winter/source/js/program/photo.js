@@ -50,15 +50,7 @@
   }); 
   
   document.body.addEventListener('keydown', function (evt) {
-    if (evt.keyCode == 13) {
-      showPopup(currentPhoto);
-    } else if (evt.keyCode == 37) {
-      currentPhoto--;
-      showPopup();
-    } else if (evt.keyCode == 39) {
-      currentPhoto++;
-      showPopup();
-    } else if (evt.keyCode == 27) {
+    if (evt.keyCode == 27) {
       popup.classList.add('popup--hide');
       overlay.classList.add('popup__overlay--hide');
     }

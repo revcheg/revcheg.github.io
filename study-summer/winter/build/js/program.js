@@ -40,15 +40,31 @@
   }
   
   var form = document.querySelector('.request__form');
+  var sorry = document.querySelector('.sorry');
+  var overlay = document.querySelector('.popup__overlay');
   
   form.addEventListener('submit', function (evt) {
     var email = form.querySelector('#email').value;
     
     if (email == localStorage.getItem('email')) {
       evt.preventDefault();
+      sorry.classList.remove('sorry--hide');
+      overlay.classList.remove('popup__overlay--hide');
     }
     
     localStorage.setItem('email', email);
+  });
+  
+  overlay.addEventListener('click', function () {
+    sorry.classList.add('sorry--hide');
+    overlay.classList.add('popup__overlay--hide');
+  });
+  
+  document.body.addEventListener('keydown', function (evt) {
+    if (evt.keyCode == 27) {
+      sorry.classList.add('sorry--hide');
+      overlay.classList.add('popup__overlay--hide');
+    }
   });
 })();
 // (function () {
@@ -74,6 +90,13 @@
 //     list.style.left = '-' + counter + '00%';
 //   });
 // })();
+// (function () {
+//   var iframe = document.querySelector('.short__map');
+// 
+//   iframe.addEventListener('mouseover', function () {
+//     this.src = 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1088.4094561287006!2d-79.90590150505048!3d43.25761206235831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c9b5ad285329d%3A0x6433b0053afef018!2z0JrQvtC70LvQtdC00LYg0JrQvtC70YPQvNCx0LjRjyDQmNC90YLQtdGA0L3QtdGI0L3QtdC7!5e0!3m2!1sru!2sua!4v1567765101160!5m2!1sru!2sua';
+//   }, {once: true});
+// })();
 (function () {
   var button = document.querySelector('.nav__menu');
   var nav = document.querySelector('.nav__list');
@@ -98,6 +121,14 @@
       button.classList.add('nav__menu--open');
     });
   }
+})();
+(function () {
+  var offer = document.querySelector('.offer');
+  var close = document.querySelector('.offer__close');
+
+  close.addEventListener('click', function () {
+    offer.classList.add('offer--hide');
+  });
 })();
 (function () {
   var items = document.querySelectorAll('.photo__item');
@@ -151,15 +182,7 @@
   }); 
   
   document.body.addEventListener('keydown', function (evt) {
-    if (evt.keyCode == 13) {
-      showPopup(currentPhoto);
-    } else if (evt.keyCode == 37) {
-      currentPhoto--;
-      showPopup();
-    } else if (evt.keyCode == 39) {
-      currentPhoto++;
-      showPopup();
-    } else if (evt.keyCode == 27) {
+    if (evt.keyCode == 27) {
       popup.classList.add('popup--hide');
       overlay.classList.add('popup__overlay--hide');
     }
@@ -195,6 +218,44 @@
   
   overlay.addEventListener('click', function () {
     popup.classList.add('popup--hide');
+    overlay.classList.add('popup__overlay--hide');
+  });
+})();
+(function () {
+  var openButtons = document.querySelectorAll('.reviews__open');
+  var videoWrapper = document.querySelector('.reviews__container');
+  var video = document.querySelector('.reviews__iframe');
+  var overlay = document.querySelector('.popup__overlay');
+  
+  var openButtonsArray = [];
+
+  for (var i = 0; i < openButtons.length; i++){
+    openButtonsArray.push(openButtons[i]);
+    openButtons[i].addEventListener('click', function(evt){
+      var indexButton = openButtonsArray.indexOf(evt.target);
+      videoWrapper.classList.remove('reviews__container--hide');
+      overlay.classList.remove('popup__overlay--hide');
+      if (indexButton == 0) {
+        video.src = 'https://www.youtube.com/embed/AsEZlS0epI4?&autoplay=1';
+      } else if (indexButton == 1) {
+        video.src = 'https://www.youtube.com/embed/snx6LOb2bno?&autoplay=1';
+      } else {
+        video.src = 'https://www.youtube.com/embed/dVKHwTR9Tws?&autoplay=1';
+      }
+    });
+  }
+  
+  document.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+      videoWrapper.classList.add('reviews__container--hide');
+      video.src = '';
+      overlay.classList.add('popup__overlay--hide');
+    }
+  });
+  
+  overlay.addEventListener('click', function () {
+    videoWrapper.classList.add('reviews__container--hide');
+    video.src = '';
     overlay.classList.add('popup__overlay--hide');
   });
 })();

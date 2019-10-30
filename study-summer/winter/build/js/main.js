@@ -93,6 +93,14 @@
   }
 })();
 (function () {
+  var offer = document.querySelector('.offer');
+  var close = document.querySelector('.offer__close');
+
+  close.addEventListener('click', function () {
+    offer.classList.add('offer--hide');
+  });
+})();
+(function () {
   var items = document.querySelectorAll('.photo__item');
   var webp = document.querySelectorAll('.photo__webp');
   var jpg = document.querySelectorAll('.photo__jpg');
@@ -114,8 +122,8 @@
   
   var showPopup = function () {
     if (currentPhoto < 0) {
-      currentPhoto = 6;
-    } else if (currentPhoto > 6) {
+      currentPhoto = 11;
+    } else if (currentPhoto > 11) {
       currentPhoto = 0;
     }
     
@@ -144,15 +152,7 @@
   }); 
   
   document.body.addEventListener('keydown', function (evt) {
-    if (evt.keyCode == 13) {
-      showPopup(currentPhoto);
-    } else if (evt.keyCode == 37) {
-      currentPhoto--;
-      showPopup();
-    } else if (evt.keyCode == 39) {
-      currentPhoto++;
-      showPopup();
-    } else if (evt.keyCode == 27) {
+    if (evt.keyCode == 27) {
       popup.classList.add('popup--hide');
       overlay.classList.add('popup__overlay--hide');
     }
@@ -227,8 +227,8 @@ var programsData = [
     alt: 'London Winter Holidays',
     name: 'London Winter Holidays',
     location: 'Лондон',
-    date: '<a href="https://holidays.study.ua/winter/program/london-winter-holidays-10.html">02.01 - 11.01 (10 дней)</a><br><a href="https://holidays.study.ua/winter/program/london-winter-holidays-14.html" taget="_blank">04.01 - 18.01 (2 нед.)</a>',
-    cost: '$2950 (10 дней)<br>$3500 (2 нед.)'
+    date: '<a href="https://holidays.study.ua/winter/program/london-winter-holidays-14.html" taget="_blank">04.01 - 18.01 (2 нед.)</a>',
+    cost: '$3500 (2 нед.)'
   },
   {
     full: false,
@@ -439,30 +439,38 @@ var programsData = [
     });
   };
   
-  // Тач для телефонов
-  var clientWidth = document.body.clientWidth;
+  // Таймер
+  var slideInterval = setInterval(function () {
+    slides[currentSlide].classList.remove('slider__item--show');
+    dots[currentSlide].classList.remove('slider__dot--active');
+    currentSlide++;
+    showSlide(currentSlide);
+  }, 4000);
   
-  for (var j = 0; j < slides.length; j++) {
-    slides[j].addEventListener('touchstart', function (evt) {
-      pozXStart = evt.changedTouches[0].pageX;
-    });
-        
-    slides[j].addEventListener('touchend', function (evt) {
-      pozXEnd = evt.changedTouches[0].pageX;
-      
-      if (pozXStart > clientWidth / 2) {
-        slides[currentSlide].classList.remove('slider__item--show');
-        dots[currentSlide].classList.remove('slider__dot--active');
-        currentSlide++;
-      } else {
-        slides[currentSlide].classList.remove('slider__item--show');
-        dots[currentSlide].classList.remove('slider__dot--active');
-        currentSlide--;
-      }
-      
-      showSlide(currentSlide);
-    });
-  }
+  // Тач для телефонов
+  // var clientWidth = document.body.clientWidth;
+  // 
+  // for (var j = 0; j < slides.length; j++) {
+  //   slides[j].addEventListener('touchstart', function (evt) {
+  //     pozXStart = evt.changedTouches[0].pageX;
+  //   });
+  // 
+  //   slides[j].addEventListener('touchend', function (evt) {
+  //     pozXEnd = evt.changedTouches[0].pageX;
+  // 
+  //     if (pozXStart > clientWidth / 2) {
+  //       slides[currentSlide].classList.remove('slider__item--show');
+  //       dots[currentSlide].classList.remove('slider__dot--active');
+  //       currentSlide++;
+  //     } else {
+  //       slides[currentSlide].classList.remove('slider__item--show');
+  //       dots[currentSlide].classList.remove('slider__dot--active');
+  //       currentSlide--;
+  //     }
+  // 
+  //     showSlide(currentSlide);
+  //   });
+  // }
 })();
 (function () {
   var video = document.querySelector('.about__iframe');

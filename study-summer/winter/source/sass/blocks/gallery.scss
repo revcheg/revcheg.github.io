@@ -107,6 +107,9 @@
   .gallery__wrapper {
     padding-bottom: 5px;
     overflow-x: scroll;
+    scrollbar-color: #6a7efc rgba(106, 126, 252, 0.2);
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
     
     &::-webkit-scrollbar {
       height: 5px;

@@ -99,7 +99,7 @@
   }
   
   &:nth-child(11) {
-    background-image: url('../img/uni-back-11.jpg');
+    width: 580px;
   }
 }
 
@@ -134,7 +134,7 @@
 .uni__text {
   padding-left: 20px;
   color: $orange;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -167,6 +167,17 @@
 @media screen and ($mobile) {
   .uni__subheading {
     font-size: 20px;
+  }
+  
+  .uni__item {
+    
+    &:last-child {
+      width: 305px;
+    }
+  }
+  
+  .uni__text {
+    font-size: 18px;
   }
   
   .uni__cta {

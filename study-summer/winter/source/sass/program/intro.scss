@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .intro__column {
@@ -23,7 +24,6 @@
   border-radius: 7px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   background-color: #000000;
-  background-image: url('../img/intro-bg-uk.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -72,7 +72,10 @@
 }
 
 .intro__button {
-  display: inline-block;
+  box-sizing: border-box;
+  display: block;
+  width: 205px;
+  margin: auto;
   padding: 10px 30px;
   color: #FFFFFF;
   font-size: 18px;
@@ -117,8 +120,8 @@
     max-width: 500px;
     
     &:first-child {
+      order: 1;
       margin-right: 0;
-      margin-bottom: 30px;
     }
   }
   

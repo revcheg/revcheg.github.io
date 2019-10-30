@@ -20,8 +20,8 @@
   
   var showPopup = function () {
     if (currentPhoto < 0) {
-      currentPhoto = 6;
-    } else if (currentPhoto > 6) {
+      currentPhoto = 11;
+    } else if (currentPhoto > 11) {
       currentPhoto = 0;
     }
     
@@ -50,15 +50,7 @@
   }); 
   
   document.body.addEventListener('keydown', function (evt) {
-    if (evt.keyCode == 13) {
-      showPopup(currentPhoto);
-    } else if (evt.keyCode == 37) {
-      currentPhoto--;
-      showPopup();
-    } else if (evt.keyCode == 39) {
-      currentPhoto++;
-      showPopup();
-    } else if (evt.keyCode == 27) {
+    if (evt.keyCode == 27) {
       popup.classList.add('popup--hide');
       overlay.classList.add('popup__overlay--hide');
     }

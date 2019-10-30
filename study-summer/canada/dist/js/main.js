@@ -271,103 +271,81 @@
 })();
 var programsData = [
   {
-    full: true,
-    href: '',
+    full: false,
+    href: 'http://summer.study.ua/trip/look/39',
     webp: 'img/program-1.webp',
     jpg: 'img/program-1.jpg',
     alt: 'University of Toronto',
     name: 'University of Toronto',
     location: 'Торонто',
-    date: '20.07 - 10.08 (3 нед.)',
+    date: '<a href="http://summer.study.ua/trip/look/39" target="_blank">27.06 - 18.07 (3 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/51" target="_blank">18.07 - 08.08 (3 нед.)</a>',
     cost: '$5500 (3 нед.)'
-  },
-  {
-    full: true,
-    href: '',
-    webp: 'img/program-2.webp',
-    jpg: 'img/program-2.jpg',
-    alt: 'University of Toronto Advanced Academic Program',
-    name: 'University of Toronto Advanced Academic Program',
-    location: 'Торонто',
-    date: '27.07 - 24.08 (4 нед.)',
-    cost: '$6200 (4 нед.)'
   },
   {
     full: false,
     href: 'http://summer.study.ua/trip/look/63',
-    webp: 'img/program-3.webp',
-    jpg: 'img/program-3.jpg',
+    webp: 'img/program-2.webp',
+    jpg: 'img/program-2.jpg',
     alt: 'University of Toronto + McGill University',
     name: 'University of Toronto + McGill University',
     location: 'Торонто + Монреаль',
-    date: '<a href="http://summer.study.ua/trip/look/63" target="_blank">13.07 - 10.08 (4 нед.)</a>',
-    cost: '$6500 (4 нед.)'
-  },
-  {
-    full: true,
-    href: '',
-    webp: 'img/program-4.webp',
-    jpg: 'img/program-4.jpg',
-    alt: 'Braemar College',
-    name: 'Braemar College',
-    location: 'Торонто',
-    date: '01.07 - 17.08 (7 нед.)',
-    cost: '$7600 (7 нед.)'
+    date: '<a href="http://summer.study.ua/trip/look/63" target="_blank">27.06 - 25.07 (3 нед.)</a>',
+    cost: '$6500 (3 нед.)'
   },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/1118',
-    webp: 'img/program-5.webp',
-    jpg: 'img/program-5.jpg',
-    alt: 'Ryerson University',
-    name: 'Ryerson University',
+    href: 'http://summer.study.ua/trip/look/27',
+    webp: 'img/program-3.webp',
+    jpg: 'img/program-3.jpg',
+    alt: 'Braemar College',
+    name: 'Braemar College',
     location: 'Торонто',
-    date: '<a href="http://summer.study.ua/trip/look/1118" target="_blank">29.06 - 20.07 (3 нед.)</a>',
-    cost: '$5600 (3 нед.)'
+    date: '<a href="http://summer.study.ua/trip/look/27" target="_blank">01.07 - 19.08 (7 нед.)</a>',
+    cost: '$7700 (7 нед.)'
   },
   {
     full: false,
     href: 'http://summer.study.ua/trip/look/1134',
-    webp: 'img/program-6.webp',
-    jpg: 'img/program-6.jpg',
+    webp: 'img/program-4.webp',
+    jpg: 'img/program-4.jpg',
     alt: 'Sheridan College',
     name: 'Sheridan College',
     location: 'Оуквилль',
-    date: '<a href="http://summer.study.ua/trip/look/1134" target="_blank">1.07 — 22.07 (3 нед.)</a>',
-    cost: '$5300 (3 нед.)'
+    date: '<a href="http://summer.study.ua/trip/look/1134" target="_blank">01.07 - 15.07 (2 нед.)</a>',
+    cost: '$4400 (2 нед.)'
   },
   {
-    full: true,
-    href: '',
-    webp: 'img/program-7.webp',
-    jpg: 'img/program-7.jpg',
+    full: false,
+    href: 'http://summer.study.ua/trip/look/7',
+    webp: 'img/program-5.webp',
+    jpg: 'img/program-5.jpg',
     alt: 'ILAC',
     name: 'ILAC',
     location: 'Торонто',
-    date: '06.07 - 27.07 (3 нед.)<br>03.08 - 24.08 (3 нед.)',
-    cost: '$4800 (3 нед.)'
+    date: '<a href="http://summer.study.ua/trip/look/7" target="_blank">11.07 - 01.08 (3 нед.)</a>',
+    cost: '$4650 (3 нед.)'
   },
   {
-    full: true,
-    href: '',
-    webp: 'img/program-8.webp',
-    jpg: 'img/program-8.jpg',
+    full: false,
+    href: 'http://summer.study.ua/trip/look/64',
+    webp: 'img/program-6.webp',
+    jpg: 'img/program-6.jpg',
     alt: 'University of British Columbia',
     name: 'University of British Columbia',
     location: 'Ванкувер',
-    date: '07.07 - 28.07 (3 нед.)',
+    date: '<a href="http://summer.study.ua/trip/look/64" target="_blank">12.07 - 02.08 (3 нед.)</a>',
     cost: '$5800 (3 нед.)'
   },
   {
     full: false,
     href: 'http://summer.study.ua/trip/look/21',
-    webp: 'img/program-9.webp',
-    jpg: 'img/program-9.jpg',
+    webp: 'img/program-7.webp',
+    jpg: 'img/program-7.jpg',
     alt: 'ILSC',
     name: 'ILSC',
     location: 'Торонто',
-    date: '<a href="http://summer.study.ua/trip/look/21" target="_blank">22.07 - 12.08 (3 нед.)</a>',
-    cost: '$4600 (3 нед.)'
+    date: '<a href="http://summer.study.ua/trip/look/21" target="_blank">13.06 - 11.07 (4 нед.)</a>',
+    cost: '$5250 (4 нед.)'
   }
 ];
 (function () {
@@ -500,10 +478,10 @@ var programsData = [
   
   // Отрисовка слайдов
   var showSlide = function () {
-    if (currentSlide > 1) {
+    if (currentSlide > 3) {
       currentSlide = 0;
     } else if (currentSlide < 0) {
-      currentSlide = 1;
+      currentSlide = 3;
     };
     slides[currentSlide].classList.add('slider__item--show');
     dots[currentSlide].classList.add('slider__dot--active');

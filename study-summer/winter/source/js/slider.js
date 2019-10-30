@@ -44,28 +44,36 @@
     });
   };
   
-  // Тач для телефонов
-  var clientWidth = document.body.clientWidth;
+  // Таймер
+  var slideInterval = setInterval(function () {
+    slides[currentSlide].classList.remove('slider__item--show');
+    dots[currentSlide].classList.remove('slider__dot--active');
+    currentSlide++;
+    showSlide(currentSlide);
+  }, 4000);
   
-  for (var j = 0; j < slides.length; j++) {
-    slides[j].addEventListener('touchstart', function (evt) {
-      pozXStart = evt.changedTouches[0].pageX;
-    });
-        
-    slides[j].addEventListener('touchend', function (evt) {
-      pozXEnd = evt.changedTouches[0].pageX;
-      
-      if (pozXStart > clientWidth / 2) {
-        slides[currentSlide].classList.remove('slider__item--show');
-        dots[currentSlide].classList.remove('slider__dot--active');
-        currentSlide++;
-      } else {
-        slides[currentSlide].classList.remove('slider__item--show');
-        dots[currentSlide].classList.remove('slider__dot--active');
-        currentSlide--;
-      }
-      
-      showSlide(currentSlide);
-    });
-  }
+  // Тач для телефонов
+  // var clientWidth = document.body.clientWidth;
+  // 
+  // for (var j = 0; j < slides.length; j++) {
+  //   slides[j].addEventListener('touchstart', function (evt) {
+  //     pozXStart = evt.changedTouches[0].pageX;
+  //   });
+  // 
+  //   slides[j].addEventListener('touchend', function (evt) {
+  //     pozXEnd = evt.changedTouches[0].pageX;
+  // 
+  //     if (pozXStart > clientWidth / 2) {
+  //       slides[currentSlide].classList.remove('slider__item--show');
+  //       dots[currentSlide].classList.remove('slider__dot--active');
+  //       currentSlide++;
+  //     } else {
+  //       slides[currentSlide].classList.remove('slider__item--show');
+  //       dots[currentSlide].classList.remove('slider__dot--active');
+  //       currentSlide--;
+  //     }
+  // 
+  //     showSlide(currentSlide);
+  //   });
+  // }
 })();

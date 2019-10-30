@@ -33,8 +33,8 @@ function markup() {
 
 function scripts() {
   return gulp
-    .src('source/js/*')
-      .pipe(concat('main.js'))
+    .src('source/js/program/*')
+      .pipe(concat('program.js'))
       .pipe(gulp.dest('build/js'))
       .pipe(jsmin())
       .pipe(rename({suffix: '.min'}))
@@ -57,7 +57,7 @@ function images() {
 
 function imgPrograms() {
   return gulp
-    .src('source/img/toronto-academic-holidays/*')
+    .src('source/img/canadian-high-school/*')
     .pipe(plumber())
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
@@ -65,7 +65,7 @@ function imgPrograms() {
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest('build/img/toronto-academic-holidays'))
+    .pipe(gulp.dest('build/img/canadian-high-school'))
 }
 
 function watch() {

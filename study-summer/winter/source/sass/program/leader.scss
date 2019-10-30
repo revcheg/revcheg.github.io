@@ -18,7 +18,7 @@
   position: relative;
   left: 0%;
   display: flex;
-  width: 200%;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -29,6 +29,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  max-width: 890px;
   overflow: hidden;
 }
 
@@ -53,7 +54,8 @@
 
 .leader__position {
   margin-top: 0;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
+  margin-bottom: 30px;
   margin-left: 30px;
   color: $text;
 }
@@ -74,7 +76,7 @@
   position: relative;
   padding-top: 56.25%;
   background-color: #000000;
-  background-image: url('../img/london-winter-holidays/leader-1-video.jpg');
+  background-image: url('../img/royal-holloway/leader-1-video.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -154,6 +156,7 @@
   
   .leader__item {
     flex-direction: column;
+    // max-width: 500px;
   }
   
   .leader__column {
@@ -172,7 +175,7 @@
   }
 }
 
-@media screen and ($mobile-widths) {
+@media screen and ($mobile) {
   .leader {
     margin-bottom: 50px;
   }
