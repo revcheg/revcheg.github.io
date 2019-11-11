@@ -44,6 +44,10 @@
   }
 }
 
+.header__logo {
+  width: 100%;
+}
+
 .header__link {
   margin-right: 30px;
   padding: 0;
@@ -128,10 +132,6 @@
   
   .header__home {
     width: 240px;
-  }
-  
-  .header__logo {
-    width: 100%;
   }
   
   .header__link {

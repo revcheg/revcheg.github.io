@@ -7,6 +7,8 @@
 }
 
 .leader__slider {
+  display: flex;
+  justify-content: space-between;
   width: 890px;
   margin: auto;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
@@ -14,32 +16,37 @@
   overflow: hidden;
 }
 
+.leader__content {
+  width: 290px;
+}
+
 .leader__list {
   position: relative;
-  left: 0%;
-  display: flex;
-  width: 100%;
+  top: 0;
   margin: 0;
   padding: 0;
   list-style: none;
-  transition: 0.5s;
 }
 
 .leader__item {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 890px;
-  overflow: hidden;
-}
-
-.leader__content {
-  width: 290px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: 1;
+  
+  &--active {
+    transform: none;
+    z-index: 2;
+  }
 }
 
 .leader__photo {
   width: 100%;
   margin-bottom: 20px;
+  border-top-left-radius: 7px;
   border-bottom-right-radius: 7px;
 }
 
@@ -76,7 +83,7 @@
   position: relative;
   padding-top: 56.25%;
   background-color: #000000;
-  background-image: url('../img/royal-holloway/leader-1-video.jpg');
+  background-image: url('../img/leader-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -110,8 +117,24 @@
   transition: 0.1s;
   transform: translate(-50%, -50%);
   
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
   &:active {
     transform: translate(-50%, -50%) scale(0.9); 
+  }
+  
+  &--hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.leader__control {
+  
+  &--hide {
+    display: none;
   }
 }
 
@@ -151,12 +174,17 @@
 
 @media screen and (max-width: 1023px) {
   .leader__slider {
+    flex-direction: column;
     width: 500px;
   }
   
   .leader__item {
-    flex-direction: column;
-    // max-width: 500px;
+    position: static;
+    display: none;
+    
+    &--active {
+      display: block;
+    }
   }
   
   .leader__column {
@@ -188,9 +216,19 @@
   
   .leader__content {
     width: 100%;
+    // height: auto;
+  }
+  
+  .leader__list {
+    // position: static;
+  }
+  
+  .leader__item {
+    width: 100%;
   }
   
   .leader__photo {
+    border-top-right-radius: 7px;
     border-bottom-right-radius: 0;
   }
   
@@ -199,6 +237,11 @@
   .leader__date {
     margin-left: 0;
     text-align: center;
+  }
+  
+  .leader__name {
+    margin-bottom: 5px;
+    font-size: 20px;
   }
   
   .leader__play {

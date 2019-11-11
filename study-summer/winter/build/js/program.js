@@ -67,29 +67,38 @@
     }
   });
 })();
-// (function () {
-//   var list = document.querySelector('.leader__list');
-//   var numberOfSlide = list.querySelectorAll('li');
-//   var prev = document.querySelector('.leader__button--prev');
-//   var next = document.querySelector('.leader__button--next');
-//   var counter = 0;
-// 
-//   next.addEventListener('click', function () {
-//     if (counter >= numberOfSlide.length - 2) {
-//       counter = numberOfSlide.length - 2;
-//     }
-//     counter++;
-//     list.style.left = '-' + counter + '00%';
-//   });
-// 
-//   prev.addEventListener('click', function () {
-//     counter--;
-//     if (counter <= 0) {
-//       counter = 0;
-//     }
-//     list.style.left = '-' + counter + '00%';
-//   });
-// })();
+(function () {
+  var items = document.querySelectorAll('.leader__item');
+  var prev = document.querySelector('.leader__button--prev');
+  var next = document.querySelector('.leader__button--next');
+  var counter = 0;
+
+  next.addEventListener('click', function () {
+    items[counter].classList.remove('leader__item--active');
+    counter++;
+    if (counter > 1) {
+      counter = 0;
+    }
+    items[counter].classList.add('leader__item--active');
+  });
+
+  prev.addEventListener('click', function () {
+    items[counter].classList.remove('leader__item--active');
+    counter--;
+    if (counter < 0) {
+      counter = 1;
+    }
+    items[counter].classList.add('leader__item--active');
+  });
+  
+  var video = document.querySelector('.leader__video');
+  var play = document.querySelector('.leader__play');
+  
+  play.addEventListener('click', function () {
+    this.classList.add('leader__play--hide');
+    video.src = 'https://www.youtube.com/embed/Npl8YrYihXw?&autoplay=1'
+  });
+})();
 // (function () {
 //   var iframe = document.querySelector('.short__map');
 // 
@@ -126,8 +135,16 @@
   var offer = document.querySelector('.offer');
   var close = document.querySelector('.offer__close');
 
+  var flag = localStorage.getItem('close');
+  if (flag == 'true') {
+    offer.classList.add('offer--hide');
+  } else {
+    offer.classList.remove('offer--hide');
+  }
+
   close.addEventListener('click', function () {
     offer.classList.add('offer--hide');
+    localStorage.setItem('close', 'true');
   });
 })();
 (function () {

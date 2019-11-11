@@ -325,14 +325,14 @@
       <div class="container">
         <h2 class="heading">Руководитель группы</h2>
         <div class="leader__wrapper">
-          <!-- <div class="leader__control">
+          <div class="leader__control">
             <button class="leader__button  leader__button--prev" aria-label="Следующий руководитель"></button>
             <button class="leader__button  leader__button--next" aria-label="Предыдущий руководитель"></button>
-          </div> -->
+          </div>
           <div class="leader__slider">
-            <ul class="leader__list">
-              <li class="leader__item">
-                <div class="leader__content">
+            <div class="leader__content">
+              <ul class="leader__list">
+                <li class="leader__item  leader__item--active">
                   <picture>
                     <source srcset="../img/leader-maria.webp" type="image/webp">
                     <img class="leader__photo" src="../img/leader-maria.jpg" alt="Фотография Марии">   
@@ -340,32 +340,24 @@
                   <strong class="leader__name">Мария</strong>
                   <p class="leader__position">Native speaker, преподаватель STUDY Academy</p>
                   <!-- <p class="leader__date">Дата поездки: 24.07 - 7.08</p> -->
-                </div>
-                <div class="leader__column">
-                  <div class="leader__ratio">
-                    <iframe class="leader__video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <button class="leader__play" aria-label="Включить видео Марии"></button>                    
-                  </div>
-                </div>
-              </li>
-              <!-- <li class="leader__item">
-                <div class="leader__content">
+                </li>
+                <li class="leader__item">
                   <picture>
                     <source srcset="../img/leader-pogrebnaya.webp" type="image/webp">
                     <img class="leader__photo" src="../img/leader-pogrebnaya.jpg" alt="Фотография Анны Погребной">   
                   </picture>       
                   <strong class="leader__name">Анна Погребная</strong>
                   <p class="leader__position">Менеджер компании STUDY.UA</p>
-                  <p class="leader__date">Дата поездки: 24.07 - 7.08</p>
-                </div>
-                <div class="leader__column">
-                  <div class="leader__ratio">
-                    <iframe class="leader__video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <button class="leader__play" aria-label="Включить видео Анны Погребной"></button>                    
-                  </div>
-                </div>
-              </li> -->
-            </ul>
+                  <!-- <p class="leader__date">Дата поездки: 24.07 - 7.08</p> -->
+                </li>
+              </ul>
+            </div>
+            <div class="leader__column">
+              <div class="leader__ratio">
+                <iframe class="leader__video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button class="leader__play" aria-label="Включить видео Анны Погребной"></button>                    
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -505,7 +497,7 @@
               <div class="request__group">
                 <textarea class="request__input  request__input--text" id="textarea" maxlength="100" name="custom_comment"></textarea>
                 <label class="request__label" for="textarea">
-                  Когда вам удобно?
+                  Ваш вопрос
                 </label>
               </div>
             </div>
@@ -581,7 +573,7 @@
     <button class="offer__close" aria-label="Закрыть попап"></button>
     <p class="offer__title">ЛЕТО 2020</p>
     <p class="offer__subtitle">Предварительное бронирование открыто!</p>
-    <p class="offer__text">Только до 31 октября -<br> скидка на программы $300</p>
+    <p class="offer__text">Только до 20 ноября -<br> скидка на программы $300</p>
     <a class="offer__button" href="#request">Подать заявку</a>
   </div>
   

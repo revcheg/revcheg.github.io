@@ -5,7 +5,6 @@
 .advantages__wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 70px;
 }
 
 .advantages__img {
@@ -55,11 +54,6 @@
   .advantages__wrapper {
     align-items: flex-start;
     flex-direction: column;
-    
-    &--reverse {
-      align-items: center;
-      flex-direction: row;
-    }
   }
   
   .advantages__img {
@@ -74,12 +68,6 @@
     margin-bottom: 25px;
     padding-right: 15px;
     padding-left: 15px;
-    
-    &--reverse {
-      order: 1;
-      width: 50%;
-      margin: 0;
-    }
   }
   
   .advantages__title {
@@ -90,21 +78,6 @@
 @media screen and ($mobile-widths) {
   .advantages {
     padding-top: 50px;
-  }
-  
-  .advantages__wrapper {
-    margin-bottom: 50px;
-    
-    &--reverse {
-      flex-direction: column;
-    }
-  }
-  
-  .advantages__content {
-    
-    &--reverse {
-      width: auto;
-    }
   }
   
   .advantages__img {

@@ -27,11 +27,11 @@
   <meta name="theme-color" content="#6a7efc">
   <!-- Google Tag Manager -->
   <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WP9DZCS');
+    // (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    // new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    // j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    // 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    // })(window,document,'script','dataLayer','GTM-WP9DZCS');
   </script>
   <!-- End Google Tag Manager -->
 </head>
@@ -384,14 +384,14 @@
       <div class="container">
         <h2 class="heading">Руководитель группы</h2>
         <div class="leader__wrapper">
-          <!-- <div class="leader__control">
+          <div class="leader__control  leader__control--hide">
             <button class="leader__button  leader__button--prev" aria-label="Следующий руководитель"></button>
             <button class="leader__button  leader__button--next" aria-label="Предыдущий руководитель"></button>
-          </div> -->
+          </div>
           <div class="leader__slider">
-            <ul class="leader__list">
-              <li class="leader__item">
-                <div class="leader__content">
+            <div class="leader__content">
+              <ul class="leader__list">
+                <li class="leader__item  leader__item--active">
                   <picture>
                     <source srcset="../img/leader-konoplya.webp" type="image/webp">
                     <img class="leader__photo" src="../img/leader-konoplya.jpg" alt="Фотография Оксаны Конопли">   
@@ -399,15 +399,15 @@
                   <strong class="leader__name">Оксана Конопля</strong>
                   <p class="leader__position">Академический директор STUDY Academy</p>
                   <!-- <p class="leader__date">Дата поездки: 24.07 - 7.08</p> -->
-                </div>
-                <div class="leader__column">
-                  <div class="leader__ratio">
-                    <iframe class="leader__video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <button class="leader__play" aria-label="Включить видео Оксаны Конопли"></button>                    
-                  </div>
-                </div>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="leader__column">
+              <div class="leader__ratio">
+                <iframe class="leader__video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button class="leader__play" aria-label="Включить видео Оксаны Конопли"></button>                    
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -547,7 +547,7 @@
               <div class="request__group">
                 <textarea class="request__input  request__input--text" id="textarea" maxlength="100" name="custom_comment"></textarea>
                 <label class="request__label" for="textarea">
-                  Когда вам удобно?
+                  Ваш вопрос
                 </label>
               </div>
             </div>
@@ -619,11 +619,11 @@
     <p class="sorry__bold">Благодарим вас за интерес к нашим программам!</p>
   </div>
   
-  <div class="offer">
+  <div class="offer  offer--hide">
     <button class="offer__close" aria-label="Закрыть попап"></button>
     <p class="offer__title">ЛЕТО 2020</p>
     <p class="offer__subtitle">Предварительное бронирование открыто!</p>
-    <p class="offer__text">Только до 31 октября -<br> скидка на программы $300</p>
+    <p class="offer__text">Только до 20 ноября -<br> скидка на программы $300</p>
     <a class="offer__button" href="#request">Подать заявку</a>
   </div>
   
