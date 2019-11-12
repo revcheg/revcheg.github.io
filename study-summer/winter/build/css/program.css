@@ -1528,11 +1528,35 @@ body {
     color: #6A7EFC; }
 
 .sorry__bold {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   color: #292F48;
   font-size: 18px;
   font-weight: 500;
   text-align: center; }
+
+.sorry__close {
+  display: block;
+  width: 135px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  border: 2px solid #6A7EFC;
+  border-radius: 40px;
+  background-color: #6A7EFC;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.2s; }
+  .sorry__close:hover, .sorry__close:focus {
+    box-shadow: 0 0 10px 2px #6A7EFC; }
+  .sorry__close:active {
+    box-shadow: 0 0 10px 5px #6A7EFC; }
 
 @media screen and (max-width: 1210px) {
   .sorry {

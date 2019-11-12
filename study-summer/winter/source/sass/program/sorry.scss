@@ -73,11 +73,41 @@
 }
 
 .sorry__bold {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   color: $text;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
+}
+
+.sorry__close {
+  display: block;
+  width: 135px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  border: 2px solid $blue;
+  border-radius: 40px;
+  background-color: $blue;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.2s;
+  
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px 2px $blue;
+  }
+  
+  &:active {
+    box-shadow: 0 0 10px 5px $blue;
+  }
 }
 
 @media screen and ($tablet) {

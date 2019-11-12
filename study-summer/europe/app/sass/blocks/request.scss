@@ -15,43 +15,28 @@
 }
 
 .request__title {
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 40px;
   color: $text;
   font-size: 30px;
   font-weight: bold;
 }
 
-// .request__iframe {
-//   width: 100%;
-//   height: 190px;
-//   border: none;
-// }
-// 
-// .request__call {
-//   margin: 0;
-//   text-align: center;
-// }
-
-.request__tel {
-  color: $blue;
-  font-weight: 500;
-  text-decoration: none;
-}
-
 .request__form {
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 
 .request__group {
   position: relative;
   width: 100%;
-  margin-right: 15px;
+  
+  &:nth-child(odd) {
+    margin-right: 30px;
+  }
 }
 
-.request__row {
+.request__set {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,14 +49,14 @@
   left: 0;
   color: $text;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
   cursor: pointer;
-  transition: 0.3s;
-
+  transition: 0.2s;
+  
   &--active {
     top: -15px;
-    color: #6a7efc;
-    font-size: 12px;  
+    color: $blue;
+    font-size: 12px;
   }
 }
 
@@ -79,37 +64,21 @@
   box-sizing: border-box;
   width: 100%;
   padding-bottom: 8px;
-  color: rgba(41, 47, 72, 0.5);
+  color: $text;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
   font-family: inherit;
-  border: none;
-  border-bottom: 1px solid $text;
+  border: 0;
+  border-bottom: 1px solid #BDC3C7;
   cursor: pointer;
-  outline: none;
-  transition: 0.3s;
-
+  opacity: 0.6;
+  outline: 0;
+  transition: 0.2s;
+  
   &--text {
     height: 31px;
+    padding: 0;
     resize: none;
-  }
-
-  &:hover,
-  &:focus {
-    border-bottom: 1px solid $blue;
-
-    + .request__label {
-      color: $blue;
-    }
-  }
-  
-  &:focus {
-    
-    + .request__label {
-      top: -15px;
-      color: #6a7efc;
-      font-size: 12px; 
-    }
   }
   
   &--invalid {
@@ -123,6 +92,27 @@
   &--valid {
     border-bottom: 1px solid $blue !important;
   }
+  
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $blue;
+  }
+  
+  &:hover {
+    
+    + .request__label {
+      color: $blue;
+    }
+  }
+  
+  &:focus {
+    
+    + .request__label {
+      top: -15px;
+      color: $blue;
+      font-size: 12px;
+    }
+  }
 }
 
 .request__submit {
@@ -131,20 +121,24 @@
   padding-right: 30px;
   padding-bottom: 10px;
   padding-left: 30px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: normal;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
   font-family: inherit;
-  border: none;
+  border: 2px solid $red;
   border-radius: 40px;
-  background-color: $blue;
+  background-color: $red;
   cursor: pointer;
-  outline: none;
-  transition: 0.3s;
-
+  outline: 0;
+  transition: 0.2s;
+  
   &:hover,
   &:focus {
-    box-shadow: 0 0 10px 2px darken($blue, 20%);
+    box-shadow: 0 0 10px 2px $red;
+  }
+  
+  &:active {
+    box-shadow: 0 0 10px 5px $red;
   }
 }
 
@@ -190,9 +184,16 @@
   }
 }
 
+.request__phone {
+  margin-top: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
 @media screen and ($tablet-widths) {
   .request__wrapper {
     flex-direction: column;
+    align-items: flex-start;
   }
   
   .request__title {
@@ -222,8 +223,17 @@
 }
 
 @media screen and ($mobile-widths) {
+  .request {
+    margin-bottom: 20px;
+  }
+  
   .request__title {
     text-align: center;
+  }
+  
+  .request__column {
+    width: 100%;
+    padding-right: 15px;
   }
   
   .request__form {
@@ -232,36 +242,27 @@
     margin: auto;
   }
   
-  .request__column {
-    width: 100%;
-    margin: 0;
-    padding-right: 15px;
-  }
-  
-  // .request__iframe {
-  //   display: block;
-  //   width: 290px;
-  //   height: 320px;
-  //   margin: auto;
-  // }
-  
-  .request__row {
+  .request__set {
     flex-direction: column;
     margin-bottom: 0;
   }
   
   .request__group {
-    width: 100%;
-    margin-right: 0;
+    
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
   }
   
   .request__input {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    
+    &:last-child {
+      margin-bottom: 30px;
+    }
   }
   
-  .request__decorate {
-    display: none;
+  .request__select {
+    margin: 0 auto;
   }
 }

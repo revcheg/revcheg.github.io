@@ -2,7 +2,9 @@
   var phone = document.querySelector('.contacts__input[type=tel]');
   
   phone.addEventListener('focus', function() {
-    phone.value = '+380';
+    if (phone.value == '') {
+      phone.value = '+380';
+    } 
     var label = this.nextElementSibling;
     label.classList.add('contacts__label--active');
   });
@@ -13,6 +15,14 @@
     if (regExp.test(currentValue)) {
       currentValue = currentValue.replace(regExp, '');
       phone.value = currentValue;
+    }
+  });
+  
+  phone.addEventListener('blur', function () {
+    if (phone.value == '+380') {
+      phone.value = '';
+      var label = this.nextElementSibling;
+      label.classList.remove('contacts__label--active');
     }
   });
   
@@ -40,14 +50,36 @@
   }
   
   var form = document.querySelector('.contacts__form');
+  var sorry = document.querySelector('.sorry');
+  var close = document.querySelector('.sorry__close');
+  var overlay = document.querySelector('.sorry__overlay');
   
-  form.addEventListener('submit', function (evt) {
+  form.addEventListener('submit', function (evt) {    
     var email = form.querySelector('#email').value;
     
     if (email == localStorage.getItem('email')) {
       evt.preventDefault();
+      sorry.classList.remove('sorry--hide');
+      overlay.classList.remove('sorry__overlay--hide');
     }
     
     localStorage.setItem('email', email);
+  });
+  
+  overlay.addEventListener('click', function () {
+    sorry.classList.add('sorry--hide');
+    overlay.classList.add('sorry__overlay--hide');
+  });
+  
+  close.addEventListener('click', function () {
+    sorry.classList.add('sorry--hide');
+    overlay.classList.add('sorry__overlay--hide');
+  });
+  
+  document.body.addEventListener('keydown', function (evt) {
+    if (evt.keyCode == 27) {
+      sorry.classList.add('sorry--hide');
+      overlay.classList.add('sorry__overlay--hide');
+    }
   });
 })();

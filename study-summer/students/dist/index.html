@@ -471,39 +471,41 @@
       <div class="request__wrapper">
         <div class="request__column">
           <h2 class="request__title">Оставьте заявку и получите индивидуальную консультацию</h2>
-          <iframe class="request__iframe" src="https://formdesigner.ru/form/iframe/108203"></iframe>
-          <p class="request__call">или звоните по номеру<br><a class="request__tel" href="tel:044 500 03 20">(044) 500-03-20</a></p>
-          <!-- <form class="request__form" action="https://formdesigner.ru/form/iframe/108203" method="post">
-            <div class="request__row">
+          <form class="request__form" action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" autocomplete="off" method="post">
+            <input type="hidden" name="campaign_token" value="y1Kp0">
+            <input type="hidden" name="thankyou_url" value="https://holidays.study.ua/thankyou.html">
+            <!-- <input type="hidden" name="forward_data" value="get"> -->
+            <div class="request__set">
               <div class="request__group">
-                <input class="request__input" id="name" type="text" name="field885772" required>
+                <input class="request__input" id="name" type="text" name="first_name" minlength="3" required>
                 <label class="request__label" for="name">
                   Ваше имя *
                 </label>
               </div>
               <div class="request__group">
-                <input class="request__input" id="email" type="email" name="field885773" required>
+                <input class="request__input" id="email" type="email" name="email" required>
                 <label class="request__label" for="email">
                   E-mail *
                 </label>
               </div>
             </div>
-            <div class="request__row">
+            <div class="request__set">
               <div class="request__group">
-                <input class="request__input  request__input--phone" id="phone" type="tel" name="field885774" maxlength="18" required>
+                <input class="request__input" id="phone" type="tel" name="custom_phone" minlength="13" maxlength="13" required>
                 <label class="request__label" for="phone">
                   Номер телефона *
                 </label>
               </div>
               <div class="request__group">
-                <textarea class="request__input  request__input--text" id="text" name="field885779"></textarea>
-                <label class="request__label" for="text">
-                  Дополнительная информация
+                <textarea class="request__input  request__input--text" id="textarea" maxlength="100" name="custom_comment"></textarea>
+                <label class="request__label" for="textarea">
+                  Ваш вопрос
                 </label>
               </div>
             </div>
             <button class="request__submit" type="submit">Отправить</button>
-          </form> -->
+            <p class="request__phone">Или звоните нам по<br> номеру <a href="tel:0445000320">044 500-03-20</a></p>
+          </form>
         </div>
         <div class="request__decorate"></div>
       </div>
@@ -746,6 +748,18 @@
       </tbody>  
     </table>
   </template>
+  
+  <div class="sorry  sorry--hide">
+    <div class="sorry__header">
+      <p class="sorry__title">Упс...</p>
+    </div>
+    <p class="sorry__text">Мы уже получили вашу заявку на программу! Наш менеджер обязательно вам перезвонит. Если вы хотите узнать детали прямо сейчас, позвоните по телефону:</p>
+    <p class="sorry__box">
+      <a class="sorry__phone" href="tel:0442907777">+38 044 290-77-77</a>
+    </p>
+    <p class="sorry__bold">Благодарим вас за интерес к нашим программам!</p>
+    <button class="sorry__close">Закрыть</button>
+  </div>
   
   <div class="popup__overlay  popup__overlay--hide"></div>
   

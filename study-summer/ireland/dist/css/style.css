@@ -1492,25 +1492,95 @@ body {
   margin-left: auto; }
 
 .request__title {
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 40px;
   color: #292F48;
   font-size: 30px;
   font-weight: bold; }
 
-.request__iframe {
+.request__form {
+  display: flex;
+  flex-direction: column; }
+
+.request__group {
+  position: relative;
+  width: 100%; }
+  .request__group:nth-child(odd) {
+    margin-right: 30px; }
+
+.request__set {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px; }
+
+.request__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #292F48;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.2s; }
+  .request__label--active {
+    top: -15px;
+    color: #6A7EFC;
+    font-size: 12px; }
+
+.request__input {
+  box-sizing: border-box;
   width: 100%;
-  height: 190px;
-  border: none; }
+  padding-bottom: 8px;
+  color: #292F48;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: inherit;
+  border: 0;
+  border-bottom: 1px solid #BDC3C7;
+  cursor: pointer;
+  opacity: 0.6;
+  outline: 0;
+  transition: 0.2s; }
+  .request__input--text {
+    height: 31px;
+    padding: 0;
+    resize: none; }
+  .request__input--invalid {
+    border-bottom: 1px solid #FF3434 !important; }
+    .request__input--invalid + .request__label {
+      color: #FF3434 !important; }
+  .request__input--valid {
+    border-bottom: 1px solid #6A7EFC !important; }
+  .request__input:hover, .request__input:focus {
+    border-bottom: 1px solid #6A7EFC; }
+  .request__input:hover + .request__label {
+    color: #6A7EFC; }
+  .request__input:focus + .request__label {
+    top: -15px;
+    color: #6A7EFC;
+    font-size: 12px; }
 
-.request__call {
-  margin: 0;
-  text-align: center; }
-
-.request__tel {
-  color: #6A7EFC;
+.request__submit {
+  align-self: center;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  color: #FFFFFF;
+  font-size: 16px;
   font-weight: 500;
-  text-decoration: none; }
+  font-family: inherit;
+  border: 2px solid #FF3434;
+  border-radius: 40px;
+  background-color: #FF3434;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.2s; }
+  .request__submit:hover, .request__submit:focus {
+    box-shadow: 0 0 10px 2px #FF3434; }
+  .request__submit:active {
+    box-shadow: 0 0 10px 5px #FF3434; }
 
 .request__decorate {
   width: 50%;
@@ -1545,6 +1615,11 @@ body {
   .request__select:active {
     box-shadow: 0 0 10px 5px #cd0000; }
 
+.request__phone {
+  margin-top: 10px;
+  font-weight: 500;
+  text-align: center; }
+
 @media screen and (max-width: 1210px) {
   .request__wrapper {
     flex-direction: column;
@@ -1558,6 +1633,9 @@ body {
     margin-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px; }
+  .request__form {
+    width: 700px;
+    margin: auto; }
   .request__decorate {
     width: 100%;
     border-top-right-radius: 6px;
@@ -1565,19 +1643,28 @@ body {
     background-position: center; } }
 
 @media screen and (max-width: 768px) {
+  .request {
+    margin-bottom: 20px; }
   .request__title {
     text-align: center; }
   .request__column {
     width: 100%;
-    margin: 0;
     padding-right: 15px; }
-  .request__iframe {
-    display: block;
-    width: 290px;
-    height: 320px;
+  .request__form {
+    width: 100%;
+    max-width: 395px;
     margin: auto; }
-  .request__decorate {
-    display: none; } }
+  .request__set {
+    flex-direction: column;
+    margin-bottom: 0; }
+  .request__group:nth-child(odd) {
+    margin-right: 0; }
+  .request__input {
+    margin-bottom: 30px; }
+    .request__input:last-child {
+      margin-bottom: 30px; }
+  .request__select {
+    margin: 0 auto; } }
 
 .geography {
   margin-bottom: 70px; }
@@ -1970,3 +2057,123 @@ body {
     .thankyou__contact:nth-child(2) {
       margin-bottom: 0;
       padding-left: 0; } }
+
+.sorry {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 770px;
+  border-radius: 7px;
+  background-color: #FFFFFF;
+  transition: 0.3s;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 6; }
+  .sorry--hide {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+            transform: translate(-50%, -50%) scale(0.8); }
+
+.sorry__header {
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-image: url("../img/sorry-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover; }
+
+.sorry__title {
+  margin: 0;
+  padding-top: 95px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  background-image: url("../img/sorry.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 90px; }
+
+.sorry__text {
+  padding: 0 100px;
+  color: #292F48;
+  font-size: 18px;
+  font-weight: 400; }
+
+.sorry__box {
+  margin-left: 100px;
+  padding: 6px 0;
+  padding-left: 35px;
+  background-image: url("../img/sorry-tel.svg");
+  background-repeat: no-repeat;
+  background-position: left 4px;
+  background-size: 25px; }
+
+.sorry__phone {
+  display: block;
+  color: #292F48;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  outline: 0;
+  transition: 0.3s; }
+  .sorry__phone:hover, .sorry__phone:focus {
+    color: #6A7EFC; }
+
+.sorry__bold {
+  margin-bottom: 15px;
+  color: #292F48;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center; }
+
+.sorry__close {
+  display: block;
+  width: 135px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  border: 2px solid #6A7EFC;
+  border-radius: 40px;
+  background-color: #6A7EFC;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.2s; }
+  .sorry__close:hover, .sorry__close:focus {
+    box-shadow: 0 0 10px 2px #6A7EFC; }
+  .sorry__close:active {
+    box-shadow: 0 0 10px 5px #6A7EFC; }
+
+@media screen and (max-width: 1210px) {
+  .sorry {
+    width: 95%;
+    max-width: 770px; } }
+
+@media screen and (max-width: 768px) {
+  .sorry__header {
+    padding-bottom: 20px; }
+  .sorry__title {
+    font-size: 20px;
+    background-size: 80px; }
+  .sorry__text {
+    padding: 0 15px;
+    font-size: 16px;
+    text-align: center; }
+  .sorry__box {
+    box-sizing: border-box;
+    display: block;
+    width: 200px;
+    margin: 0 auto; }
+  .sorry__bold {
+    padding: 0 15px;
+    font-size: 16px; } }

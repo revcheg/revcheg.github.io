@@ -2,7 +2,9 @@
   var phone = document.querySelector('.request__input[type=tel]');
   
   phone.addEventListener('focus', function() {
-    phone.value = '+380';
+    if (phone.value == '') {
+      phone.value = '+380';
+    } 
     var label = this.nextElementSibling;
     label.classList.add('request__label--active');
   });
@@ -13,6 +15,14 @@
     if (regExp.test(currentValue)) {
       currentValue = currentValue.replace(regExp, '');
       phone.value = currentValue;
+    }
+  });
+  
+  phone.addEventListener('blur', function () {
+    if (phone.value == '+380') {
+      phone.value = '';
+      var label = this.nextElementSibling;
+      label.classList.remove('request__label--active');
     }
   });
   
@@ -41,9 +51,10 @@
   
   var form = document.querySelector('.request__form');
   var sorry = document.querySelector('.sorry');
+  var close = document.querySelector('.sorry__close');
   var overlay = document.querySelector('.popup__overlay');
   
-  form.addEventListener('submit', function (evt) {
+  form.addEventListener('submit', function (evt) {    
     var email = form.querySelector('#email').value;
     
     if (email == localStorage.getItem('email')) {
@@ -56,6 +67,11 @@
   });
   
   overlay.addEventListener('click', function () {
+    sorry.classList.add('sorry--hide');
+    overlay.classList.add('popup__overlay--hide');
+  });
+  
+  close.addEventListener('click', function () {
     sorry.classList.add('sorry--hide');
     overlay.classList.add('popup__overlay--hide');
   });
