@@ -141,5 +141,16 @@ var programsData = [
     location: 'Бат',
     date: '<a href="program/the-royal-high-school.html" target="_blank">08.07 - 22.07 (2 нед.)</a> <br> <a href="program/the-royal-high-school.html" target="_blank">22.07 - 05.08 (2 нед.)</a>',
     cost: '$3500 (2 нед.)'
+  },
+  {
+    full: false,
+    href: 'program/dover-college.html',
+    webp: 'img/program-14.webp',
+    jpg: 'img/program-14.jpg',
+    alt: 'Dover College',
+    name: 'Dover College',
+    location: 'Дувр',
+    date: '<a href="program/dover-college.html" target="_blank">07.06 - 21.06 (2 нед.)</a> <br> <a href="program/dover-school.html" target="_blank">07.06 - 28.06 (3 нед.)</a>',
+    cost: '$3700 (2 нед.) <br> $4800 (3 нед.)'
   }
 ];

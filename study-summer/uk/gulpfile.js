@@ -81,7 +81,7 @@ function images() {
 
 function imagesProgram() {
   return gulp
-    .src('source/img/the-royal-high-school/*')
+    .src('source/img/dover-college/*')
     .pipe(plumber())
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
@@ -89,7 +89,7 @@ function imagesProgram() {
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest('build/img/the-royal-high-school'))
+    .pipe(gulp.dest('build/img/dover-college'))
 }
 
 function watch() {

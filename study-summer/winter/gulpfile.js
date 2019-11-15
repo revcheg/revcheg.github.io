@@ -14,6 +14,19 @@ const imagemin = require('gulp-imagemin');
 
 function styles() {
   return gulp
+    .src('source/sass/style.scss')
+      .pipe(plumber())
+      .pipe(sass())
+      .pipe(postcss([ autoprefixer() ]))
+      .pipe(gulp.dest('build/css'))
+      .pipe(csso())
+      .pipe(rename({suffix: '.min'}))
+      .pipe(gulp.dest('build/css'))
+      .pipe(livereload())
+}
+
+function stylesProgram() {
+  return gulp
     .src('source/sass/program.scss')
       .pipe(plumber())
       .pipe(sass())
@@ -32,6 +45,17 @@ function markup() {
 }
 
 function scripts() {
+  return gulp
+    .src('source/js/*')
+      .pipe(concat('main.js'))
+      .pipe(gulp.dest('build/js'))
+      .pipe(jsmin())
+      .pipe(rename({suffix: '.min'}))
+      .pipe(gulp.dest('build/js'))
+      .pipe(livereload())
+}
+
+function scriptsProgram() {
   return gulp
     .src('source/js/program/*')
       .pipe(concat('program.js'))
@@ -55,9 +79,9 @@ function images() {
     .pipe(gulp.dest('build/img'))
 }
 
-function imgPrograms() {
+function imagesProgram() {
   return gulp
-    .src('source/img/canadian-high-school/*')
+    .src('source/img/the-royal-high-school/*')
     .pipe(plumber())
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
@@ -65,17 +89,21 @@ function imgPrograms() {
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest('build/img/canadian-high-school'))
+    .pipe(gulp.dest('build/img/the-royal-high-school'))
 }
 
 function watch() {
   livereload.listen()
-  gulp.watch('source/sass/**/*.scss', styles)
+  gulp.watch('source/sass/blocks/**/*.scss', styles)
+  gulp.watch('source/sass/program/**/*.scss', stylesProgram)
   gulp.watch('build/**/*.html', markup)
-  gulp.watch('source/js/**/*.js', scripts)
+  gulp.watch('source/js/*.js', scripts)
+  gulp.watch('source/js/program/*.js', scriptsProgram)
   gulp.watch('source/img/*', images)
 }
 
 exports.default = watch;
+exports.stylesProgram = stylesProgram;
+exports.scripts = scripts;
 exports.images = images;
-exports.imgPrograms = imgPrograms;
+exports.imagesProgram = imagesProgram;

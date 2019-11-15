@@ -1,6 +1,7 @@
 var programsData = [
   {
     full: false,
+    place: 3,
     href: 'https://holidays.study.ua/winter/program/london-winter-holidays-14.html',
     webp: 'img/program-1.webp',
     jpg: 'img/program-1.jpg',
@@ -12,6 +13,7 @@ var programsData = [
   },
   {
     full: false,
+    place: 0,
     href: 'https://holidays.study.ua/winter/program/toronto-academic-holidays.html',
     webp: 'img/program-2.webp',
     jpg: 'img/program-2.jpg',
@@ -23,6 +25,7 @@ var programsData = [
   },
   {
     full: false,
+    place: 0,
     href: 'https://holidays.study.ua/winter/program/canadian-high-school.html',
     webp: 'img/program-3.webp',
     jpg: 'img/program-3.jpg',
@@ -34,6 +37,7 @@ var programsData = [
   },
   {
     full: false,
+    place: 0,
     href: 'https://holidays.study.ua/winter/program/explore-toronto.html',
     webp: 'img/program-4.webp',
     jpg: 'img/program-4.jpg',
@@ -44,7 +48,8 @@ var programsData = [
     cost: '$3900 (2 нед.)'
   },
   {
-    full: false,
+    full: true,
+    place: 0,
     href: 'https://holidays.study.ua/winter/program/discover-california.html',
     webp: 'img/program-5.webp',
     jpg: 'img/program-5.jpg',

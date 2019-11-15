@@ -796,7 +796,7 @@ body {
   display: none;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   margin: 0;
   padding-top: 10px;
   padding-right: 20px;
@@ -805,8 +805,8 @@ body {
   color: #fff;
   font-size: 16px;
   font-weight: 500;
-  border-top-right-radius: 7px;
-  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 7px;
   background-color: #FF3434; }
 
 .programs__figure {
