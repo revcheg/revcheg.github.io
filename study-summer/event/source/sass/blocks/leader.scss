@@ -12,11 +12,8 @@
 .leader__controls {
   display: flex;
   align-items: center;
-  
-  &--hide {
-    opacity: 0;
-    visibility: hidden;
-  }
+  opacity: 0;
+  visibility: hidden;
 }
 
 .leader__button {
@@ -104,5 +101,18 @@
   
   .leader__controls {
     margin-top: 20px;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .leader__slider {
+    overflow: hidden;
+  }
+  
+  .leader__list {
+    position: relative;
+    left: 0px;
+    width: 400%;
+    transition: 0.3s;
   }
 }
