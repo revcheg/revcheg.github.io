@@ -16,6 +16,9 @@
     case 'uk':
       videoSource = 'https://www.youtube.com/embed/LpO92XC8050';
       break;
+    case 'default':
+      videoSource = 'https://www.youtube.com/embed/Npl8YrYihXw';
+      break;
   }
   
   ratio.style.backgroundImage = 'url(../img/intro-bg-' + videoName + '.jpg)';

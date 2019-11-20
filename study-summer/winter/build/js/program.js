@@ -114,6 +114,30 @@
     this.classList.add('leader__play--hide');
     video.src = 'https://www.youtube.com/embed/Npl8YrYihXw?&autoplay=1'
   });
+  
+  var videoSource;
+  var videoName = video.className.replace('leader__video  leader__video--', '');
+  console.log(videoName);
+  
+  switch (videoName) {
+    case 'canadian-high-school':
+      videoSource = 'https://www.youtube.com/embed/tcumUKuXnRk';
+      break;
+    case 'explore-toronto':
+      videoSource = 'https://www.youtube.com/embed/tb8t1yVA96k';
+      break;
+    case 'toronto-winter-holidays':
+      videoSource = 'https://www.youtube.com/embed/lChKRs1wzps';
+      break;
+    case 'default':
+      videoSource = 'https://www.youtube.com/embed/Npl8YrYihXw';
+      break;
+  }
+    
+  play.addEventListener('click', function () {
+    this.classList.add('leader__play--hide');
+    video.src = videoSource + '?&autoplay=1';
+  });
 })();
 // (function () {
 //   var iframe = document.querySelector('.short__map');
@@ -440,6 +464,9 @@
       break;
     case 'uk':
       videoSource = 'https://www.youtube.com/embed/LpO92XC8050';
+      break;
+    case 'default':
+      videoSource = 'https://www.youtube.com/embed/Npl8YrYihXw';
       break;
   }
   

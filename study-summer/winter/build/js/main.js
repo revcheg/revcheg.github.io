@@ -244,8 +244,8 @@
 })();
 var programsData = [
   {
-    full: false,
-    place: 3,
+    full: true,
+    place: 0,
     href: 'https://holidays.study.ua/winter/program/london-winter-holidays-14.html',
     webp: 'img/program-1.webp',
     jpg: 'img/program-1.jpg',
@@ -438,10 +438,10 @@ var programsData = [
   
   // Отрисовка слайдов
   var showSlide = function () {
-    if (currentSlide > 4) {
+    if (currentSlide > 2) {
       currentSlide = 0;
     } else if (currentSlide < 0) {
-      currentSlide = 4;
+      currentSlide = 2;
     };
     slides[currentSlide].classList.add('slider__item--show');
     dots[currentSlide].classList.add('slider__dot--active');
