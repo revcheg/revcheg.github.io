@@ -1856,14 +1856,16 @@ body {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  padding: 25px 35px;
+  width: 100%;
+  max-width: 400px;
+  padding: 25px 15px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   background-color: #FFFFFF;
   background-image: url("../img/offer-bg.png");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100%;
+  background-size: cover;
   transition: 0.3s;
   z-index: 1; }
   .offer--hide {
@@ -1885,36 +1887,44 @@ body {
   cursor: pointer; }
 
 .offer__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #FF3434;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center; }
+  .offer__title--bold {
+    font-size: 25px;
+    font-weight: 900; }
+
+.offer__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; }
+
+.offer__date {
   margin: 0;
-  color: #FF3434;
-  font-size: 30px;
-  font-weight: 900;
-  text-align: center; }
+  margin-right: 20px;
+  padding-left: 25px;
+  color: #292F48;
+  background-image: url("../img/offer-date.svg");
+  background-repeat: no-repeat;
+  background-position: left; }
 
-.offer__subtitle {
-  margin-top: 0;
-  margin-bottom: 10px;
-  color: #FF3434;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center; }
-
-.offer__text {
-  margin-top: 0;
-  margin-bottom: 10px;
-  padding: 10px;
-  color: #FFFFFF;
-  font-size: 16px;
-  font-weight: 500;
-  background-color: #FF3434;
-  text-align: center;
-  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-          clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%); }
+.offer__place {
+  margin: 0;
+  padding-left: 20px;
+  color: #292F48;
+  background-image: url("../img/offer-place.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 16px; }
 
 .offer__button {
   box-sizing: border-box;
   display: block;
-  width: 160px;
+  width: 150px;
   margin: auto;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1937,8 +1947,14 @@ body {
     right: 10px;
     bottom: 10px;
     left: 10px;
+    width: auto;
+    max-width: 100%;
     padding: 15px;
-    padding-top: 20px; }
-  .offer__text {
-    -webkit-clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
-            clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%); } }
+    padding-top: 20px; } }
+
+@media screen and (max-width: 435px) {
+  .offer__flex {
+    flex-direction: column; }
+  .offer__date {
+    margin-right: 0;
+    margin-bottom: 10px; } }
