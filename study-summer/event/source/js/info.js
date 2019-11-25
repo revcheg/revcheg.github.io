@@ -3,7 +3,7 @@
   let playButton = document.querySelector('.info__play');
   
   playButton.addEventListener('click', function () {
-    // frame.src = '';
+    iframe.src = 'https://www.youtube.com/embed/CWJEGNaUFic?&autoplay=1';
     this.classList.add('info__play--hide');
   });
 })();

@@ -105,5 +105,6 @@ function watch() {
 exports.default = watch;
 exports.stylesProgram = stylesProgram;
 exports.scripts = scripts;
+exports.scriptsProgram = scriptsProgram;
 exports.images = images;
 exports.imagesProgram = imagesProgram;

@@ -1393,7 +1393,7 @@ body {
   margin-bottom: 70px; }
 
 .photo__link {
-  width: 320px;
+  width: 290px;
   height: 30px;
   font-size: 0;
   background-repeat: no-repeat;
@@ -1494,11 +1494,9 @@ body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column; }
-  .photo__link {
-    width: 290px; }
-    .photo__link--facebook {
-      margin-right: 0;
-      margin-bottom: 15px; } }
+  .photo__link--facebook {
+    margin-right: 0;
+    margin-bottom: 20px; } }
 
 .reviews__wrapper {
   display: -webkit-box;

@@ -111,7 +111,7 @@
 }
 
 .photo__link {
-  width: 320px;
+  width: 280px;
   height: 30px;
   font-size: 0;
   background-repeat: no-repeat;
@@ -248,11 +248,10 @@
   }
   
   .photo__link {
-    width: 290px;
     
     &--facebook {
       margin-right: 0;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
   }
 }

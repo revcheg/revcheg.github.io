@@ -12,8 +12,6 @@
 .leader__controls {
   display: flex;
   align-items: center;
-  opacity: 0;
-  visibility: hidden;
 }
 
 .leader__button {
@@ -43,16 +41,25 @@
   }
 }
 
+.leader__slider {
+  overflow: hidden;
+}
+
 .leader__list {
+  position: relative;
+  left: 0;
   display: flex;
   justify-content: space-between;
+  width: 200%;
   margin: 0;
   padding: 0;
   list-style: none;
+  transition: 0.6s ease-in-out;
 }
 
 .leader__item {
   width: 270px;
+  margin: 5px;
   padding-bottom: 25px;
   border-radius: 7px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -84,8 +91,8 @@
 
 @media screen and ($tablet) {
   .leader__list {
-    flex-wrap: wrap;
     justify-content: space-around;
+    width: 400%;
   }
   
   .leader__item {
@@ -101,18 +108,10 @@
   
   .leader__controls {
     margin-top: 20px;
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .leader__slider {
-    overflow: hidden;
   }
   
   .leader__list {
-    position: relative;
-    left: 0px;
-    width: 400%;
-    transition: 0.3s;
+    width: 800%;
+    transition: 0.4s ease-in-out;
   }
 }

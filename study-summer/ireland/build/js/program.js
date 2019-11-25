@@ -404,6 +404,7 @@
   var column = document.querySelector('.intro__column');
   var ratio = document.querySelector('.intro__ratio');
   var video = document.querySelector('.intro__video');
+  var videoSource;
   
   var videoName = video.className.replace('intro__video  intro__video--', '');
   
@@ -416,6 +417,12 @@
       break;
     case 'uk':
       videoSource = 'https://www.youtube.com/embed/LpO92XC8050';
+      break;
+    case 'europe':
+      videoSource = 'https://www.youtube.com/embed/wNHeDbpEvHM';
+      break;
+    case 'default':
+      videoSource = 'https://www.youtube.com/embed/wNHeDbpEvHM';
       break;
   }
   

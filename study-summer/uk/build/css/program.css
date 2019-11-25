@@ -1113,7 +1113,7 @@ body {
           justify-content: center; }
 
 .photo__link {
-  width: 280px;
+  width: 290px;
   height: 30px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1162,12 +1162,9 @@ body {
             flex-direction: column;
     -webkit-box-align: center;
             align-items: center; }
-  .photo__link {
-    width: 100%;
-    background-size: contain; }
-    .photo__link:first-child {
-      margin-right: 0;
-      margin-bottom: 15px; } }
+  .photo__link:first-child {
+    margin-right: 0;
+    margin-bottom: 20px; } }
 
 .reviews__wrapper {
   display: -webkit-box;

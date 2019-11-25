@@ -51,35 +51,22 @@
   
   var form = document.querySelector('.request__form');
   var sorry = document.querySelector('.sorry');
-  var close = document.querySelector('.sorry__close');
   var overlay = document.querySelector('.overlay');
+  var close = document.querySelector('.overlay__close');
   
   form.addEventListener('submit', function (evt) {    
     var email = form.querySelector('#email').value;
   
-    if (email == localStorage.getItem('email')) {
+    if (email == localStorage.getItem('event')) {
       evt.preventDefault();
       sorry.classList.remove('sorry--hide');
       overlay.classList.remove('overlay--hide');
     }
   
-    localStorage.setItem('email', email);
-  });
-  
-  overlay.addEventListener('click', function () {
-    sorry.classList.add('sorry--hide');
-    overlay.classList.add('overlay--hide');
+    localStorage.setItem('event', email);
   });
   
   close.addEventListener('click', function () {
     sorry.classList.add('sorry--hide');
-    overlay.classList.add('overlay--hide');
-  });
-  
-  document.body.addEventListener('keydown', function (evt) {
-    if (evt.keyCode == 27) {
-      sorry.classList.add('sorry--hide');
-      overlay.classList.add('overlay--hide');
-    }
   });
 })();
