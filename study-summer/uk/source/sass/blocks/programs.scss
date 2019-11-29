@@ -112,7 +112,7 @@
     }
     
     .programs__table {
-      width: 50%;
+      width: 60%;
       padding: 0;
     }
     
@@ -218,6 +218,12 @@
   
   &--location {
     background-image: url('../img/location.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+  
+  &--age {
+    background-image: url('../img/age.svg');
     background-repeat: no-repeat;
     background-position: left;
   }

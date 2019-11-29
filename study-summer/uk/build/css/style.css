@@ -937,7 +937,7 @@ body {
     .programs__item--column .programs__img {
       display: none; }
     .programs__item--column .programs__table {
-      width: 50%;
+      width: 60%;
       padding: 0; }
     .programs__item--column .programs__tbody {
       display: -webkit-box;
@@ -1020,6 +1020,10 @@ body {
     font-size: 14px; }
   .programs__text--location {
     background-image: url("../img/location.svg");
+    background-repeat: no-repeat;
+    background-position: left; }
+  .programs__text--age {
+    background-image: url("../img/age.svg");
     background-repeat: no-repeat;
     background-position: left; }
   .programs__text--date {

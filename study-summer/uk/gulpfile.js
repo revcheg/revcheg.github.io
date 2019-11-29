@@ -81,7 +81,7 @@ function images() {
 
 function imagesProgram() {
   return gulp
-    .src('source/img/dover-college/*')
+    .src('source/img/university-of-brighton/*')
     .pipe(plumber())
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
@@ -89,7 +89,7 @@ function imagesProgram() {
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest('build/img/dover-college'))
+    .pipe(gulp.dest('build/img/university-of-brighton'))
 }
 
 function watch() {
@@ -103,6 +103,7 @@ function watch() {
 }
 
 exports.default = watch;
+exports.styles = styles;
 exports.stylesProgram = stylesProgram;
 exports.scripts = scripts;
 exports.images = images;

@@ -7,6 +7,7 @@ var programsData = [
     alt: 'Royal Holloway, University of London',
     name: 'Royal Holloway, University of London',
     location: 'Лондон',
+    age: '12-17',
     date: '<a href="http://summer.study.ua/trip/look/38" target="_blank">18.06 - 02.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/23" target="_blank">02.07 - 16.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/1135" target="_blank">16.07 - 30.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/22" target="_blank">30.07 - 13.08 (2 нед.)</a>',
     cost: '$3600 (2 нед.)'
   },
@@ -18,7 +19,8 @@ var programsData = [
     alt: 'CATS College London Bloomsbury',
     name: 'CATS College London Bloomsbury',
     location: 'Лондон',
-    date: '<a href="http://summer.study.ua/trip/look/58" target="_blank">2.08 - 23.08 (3 нед.)</a>',
+    age: '12-17',
+    date: '<a href="http://summer.study.ua/trip/look/58" target="_blank">02.08 - 23.08 (3 нед.)</a>',
     cost: '$4800 (3 нед.)'
   },
   {
@@ -29,6 +31,7 @@ var programsData = [
     alt: 'Brunel University',
     name: 'Brunel University',
     location: 'Лондон',
+    age: '12-17',
     date: '<a href="http://summer.study.ua/trip/look/33" target="_blank">21.06 - 05.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/29" target="_blank">05.07 - 26.07 (3 нед.)</a>',
     cost: '$3500 (2 нед.) <br> $4800 (3 нед.)'
   },
@@ -40,6 +43,7 @@ var programsData = [
     alt: 'Royal Holloway, University of London + Tottenham Hotspur Football',
     name: 'Royal Holloway, University of London + Tottenham Hotspur Football',
     location: 'Лондон',
+    age: '12-17',
     date: '<a href="http://summer.study.ua/trip/look/35" target="_blank">02.07 - 16.07 (2 нед.)</a>',
     cost: '$3980 (2 нед.)'
   },
@@ -51,6 +55,7 @@ var programsData = [
     alt: 'Roedean School',
     name: 'Roedean School',
     location: 'Брайтон',
+    age: '12-17',
     date: '<a href="http://summer.study.ua/trip/look/1108" target="_blank">28.06 - 11.07 (2 нед.)</a>',
     cost: '$3400 (2 нед.)'
   },
@@ -62,6 +67,7 @@ var programsData = [
     alt: 'Brighton College',
     name: 'Brighton College',
     location: 'Брайтон',
+    age: '12-17',
     date: '<a href="http://summer.study.ua/trip/look/1104" target="_blank">03.07 - 17.07 (2 нед.)</a>',
     cost: '$3450 (2 нед.)'
   },
@@ -73,6 +79,7 @@ var programsData = [
     alt: 'Wellington College',
     name: 'Wellington College',
     location: 'Виндзор',
+    age: '12-17',
     date: '<a href="http://summer.study.ua/trip/look/1111" target="_blank">01.07 - 15.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/1112" target="_blank">15.07 - 29.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/1113" target="_blank">29.07 - 12.08 (2 нед.)</a>',
     cost: '$3300 (2 нед.)'
   },
@@ -84,6 +91,7 @@ var programsData = [
     alt: 'Queen Ethelburga’s College + Edinburgh trip',
     name: 'Queen Ethelburga’s College + Edinburgh trip',
     location: 'Йорк',
+    age: '12-17',
     date: '<a href="http://summer.study.ua/trip/look/1082" target="_blank">28.06 - 12.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/34" target="_blank">05.07 - 19.07 (2 нед.)</a>',
     cost: '$3750 (2 нед.)'
   },
@@ -95,6 +103,7 @@ var programsData = [
     alt: 'Oxford School of English',
     name: 'Oxford School of English',
     location: 'Оксфорд',
+    age: '12-17',
     date: '<a href="http://summer.study.ua/trip/look/4" target="_blank">05.07 - 26.07 (3 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/16" target="_blank">26.07 - 09.08 (2 нед.)</a>',
     cost: '$3600 (3 нед.) <br> $3000 (2 нед.)'
   },
@@ -106,6 +115,7 @@ var programsData = [
     alt: 'Abbey DLD Academic summer',
     name: 'Abbey DLD Academic summer',
     location: 'Лондон',
+    age: '12-17',
     date: '<a href="http://summer.study.ua/trip/look/65" target="_blank">04.07 - 18.07 (2 нед.)</a>',
     cost: '$4700 (2 нед.)'
   },
@@ -117,6 +127,7 @@ var programsData = [
     alt: 'Abbey DLD Academic summer Medical School',
     name: 'Abbey DLD Academic summer Medical School',
     location: 'Лондон',
+    age: '12-17',
     date: '<a target="_blank">04.07 - 18.07 (2 нед.)</a>',
     cost: '$5250 (2 нед.)'
   },
@@ -128,6 +139,7 @@ var programsData = [
     alt: 'Studio Cambridge',
     name: 'Studio Cambridge',
     location: 'Кембридж',
+    age: '12-17',
     date: '<a href="program/studio-cambridge.html" target="_blank">09.08 - 23.08 (2 нед.)</a>',
     cost: '$3500 (2 нед.)'
   },
@@ -139,6 +151,7 @@ var programsData = [
     alt: 'The Royal High School',
     name: 'The Royal High School',
     location: 'Бат',
+    age: '12-17',
     date: '<a href="program/the-royal-high-school.html" target="_blank">08.07 - 22.07 (2 нед.)</a> <br> <a href="program/the-royal-high-school.html" target="_blank">22.07 - 05.08 (2 нед.)</a>',
     cost: '$3500 (2 нед.)'
   },
@@ -150,7 +163,56 @@ var programsData = [
     alt: 'Dover College',
     name: 'Dover College',
     location: 'Дувр',
+    age: '12-17',
     date: '<a href="program/dover-college.html" target="_blank">07.06 - 21.06 (2 нед.)</a> <br> <a href="program/dover-school.html" target="_blank">07.06 - 28.06 (3 нед.)</a>',
     cost: '$3700 (2 нед.) <br> $4800 (3 нед.)'
+  },
+  {
+    full: false,
+    href: 'program/kings-college-london.html',
+    webp: 'img/program-15.webp',
+    jpg: 'img/program-15.jpg',
+    alt: "King's College London",
+    name: "King's College London",
+    location: 'Лондон',
+    age: '12-17',
+    date: '<a href="program/kings-college-london.html" target="_blank">15.08 - 29.08 (2 нед.)</a>',
+    cost: '$3750 (2 нед.)'
+  },
+  {
+    full: false,
+    href: 'program/university-of-brighton.html',
+    webp: 'img/program-16.webp',
+    jpg: 'img/program-16.jpg',
+    alt: "University of Brighton",
+    name: "University of Brighton",
+    location: 'Брайтон',
+    age: '10-17',
+    date: '<a href="program/university-of-brighton.html" target="_blank">15.07 - 29.07 (2 нед.)</a>',
+    cost: '$3600 (2 нед.)'
+  },
+  {
+    full: false,
+    href: 'program/university-of-brighton-academic-course.html',
+    webp: 'img/program-17.webp',
+    jpg: 'img/program-17.jpg',
+    alt: "University of Brighton Academic course",
+    name: "University of Brighton Academic course",
+    location: 'Брайтон',
+    age: '10-17',
+    date: '<a href="program/university-of-brighton-academic-course.html" target="_blank">15.07 - 29.07 (2 нед.)</a>',
+    cost: '$3950 (2 нед.)'
+  },
+  {
+    full: false,
+    href: 'program/university-of-brighton-football-camp.html',
+    webp: 'img/program-18.webp',
+    jpg: 'img/program-18.jpg',
+    alt: "University of Brighton Football Camp",
+    name: "University of Brighton Football Camp",
+    location: 'Брайтон',
+    age: '12-17',
+    date: '<a href="program/university-of-brighton-football-camp.html" target="_blank">15.07 - 29.07 (2 нед.)</a>',
+    cost: '$3900 (2 нед.)'
   }
 ];

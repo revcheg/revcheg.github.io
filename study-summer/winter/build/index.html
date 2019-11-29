@@ -27,11 +27,11 @@
   <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#dd0505">
   <meta name="theme-color" content="#6a7efc">
   <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WP9DZCS');
+    // (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    // new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    // j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    // 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    // })(window,document,'script','dataLayer','GTM-WP9DZCS');
   </script>
 </head>
 <body>
@@ -53,9 +53,9 @@
           <li class="nav__item">
             <a class="nav__link" href="#photo">Фото из поездок</a>
           </li>
-          <li class="nav__item">
+          <!-- <li class="nav__item">
             <a class="nav__link" href="#countries">Все страны</a>
-          </li>
+          </li> -->
           <li class="nav__item">
             <a class="nav__phone" href="tel:044 500 03 20">044 500-03-20</a>
           </li>
@@ -217,6 +217,55 @@
           </div>
         </div>
         <p class="programs__offer">Только до 30 ноября — регистрируйтесь на программу зимних групповых поездок со скидкой $300!</p>
+        <div class="programs__filter">
+          <select class="programs__select">
+            <option hidden>Страна</option>
+            <option value="uk">Великобритания</option>
+            <option value="usa">США</option>
+            <option value="canada">Канада</option>
+            <option value="ireland">Ирландия</option>
+            <option value="france">Франция</option>
+            <option value="switzerland">Швейцария</option>
+            <option value="germany">Германия</option>
+            <option value="spain">Испания</option>
+            <option value="malta">Мальта</option>
+            <option value="all">Все страны</option>
+          </select>
+          <select class="programs__select">
+            <option hidden>Возраст</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+          </select>
+          <select class="programs__select">
+            <option hidden>Дата</option>
+            <option value="june">июнь</option>
+            <option value="july">июль</option>
+            <option value="august">август</option>
+          </select>
+          <select class="programs__select">
+            <option hidden>Количество недель</option>
+            <option value="2">2 недели</option>
+            <option value="3">3 недели</option>
+            <option value="4">4 недели</option>
+            <option value="7">7 недель</option>
+          </select>
+        </div>
         <ul class="programs__list">
           <!-- Generate content with programs-render.js, data in programs-data.js -->
         </ul>

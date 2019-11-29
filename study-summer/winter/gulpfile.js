@@ -103,6 +103,7 @@ function watch() {
 }
 
 exports.default = watch;
+exports.styles = styles;
 exports.stylesProgram = stylesProgram;
 exports.scripts = scripts;
 exports.images = images;
