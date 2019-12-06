@@ -1,0 +1,140 @@
+.career {
+  padding-top: 60px;
+}
+
+.career__row {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.career__picture {
+  width: 50%;
+}
+
+.career__photo {
+  width: 100%;
+}
+
+.career__content {
+  width: 550px;
+}
+
+.career__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding: 10px 0;
+  padding-left: 20px;
+  color: #FFFFFF;
+  font-size: 25px;
+  font-weight: 500;
+  border-top-right-radius: 20px;
+  background-color: #5780B9;
+}
+
+.career__subtitle {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  color: $text;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.career__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.career__box {
+  width: 250px;
+}
+
+.career__year {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #5780B9;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.career__number {
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 1px 1px #FFFFFF, 2px 2px #5780B9;
+}
+
+.career__text {
+  margin-top: 0;
+  color: $text;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.career__alert {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  color: #FF1F00;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.career__logo {
+  position: relative;
+  padding-left: 20px;
+  z-index: 1;
+}
+
+@media screen and ($mobile) {
+  .career {
+    padding-top: 40px;
+  }
+  
+  .career__row {
+    flex-direction: column-reverse;
+  }
+  
+  .career__content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+  .career__title {
+    padding-left: 0;
+    font-size: 20px;
+    text-align: center;
+    border-top-left-radius: 20px;
+  }
+  
+  .career__subtitle {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .career__subtitle,
+  .career__wrapper,
+  .career__alert,
+  .career__logo {
+    padding-left: 0;
+  }
+  
+  .career__text {
+    font-size: 15px;
+  }
+  
+  .career__alert {
+    font-size: 18px;
+  }
+  
+  .career__logo {
+    width: 100%;
+  }
+  
+  .career__photo {
+    display: none;
+  }
+}

@@ -1,0 +1,89 @@
+.contact {
+  
+}
+
+.contact__wrapper {
+  display: flex;
+  margin-top: 30px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 100px;
+}
+
+.contact__column {
+  box-sizing: border-box;
+  width: 450px;
+  padding: 40px 70px;
+}
+
+.contact__text {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: $text;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contact__source {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contact__link {
+  display: block;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  color: $text;
+  font-size: 20px;
+  font-weight: 400;
+  background-image: url('../img/tel.svg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 20px;
+}
+
+.contact__address {
+  margin: 0;
+  padding-left: 30px;
+  color: $text;
+  font-size: 20px;
+  font-weight: 400;
+  background-image: url('../img/loc.svg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 20px;
+}
+
+.contact__map {
+  flex-grow: 1;
+  border: none;
+}
+
+@media screen and ($mobile) {
+  .contact {
+    margin-bottom: 60px;
+  }
+  
+  .contact__wrapper {
+    flex-direction: column;
+  }
+  
+  .contact__column {
+    width: auto;
+    padding: 40px;
+  }
+  
+  .contact__source {
+    font-size: 18px;
+  }
+  
+  .contact__link,
+  .contact__address {
+    font-size: 18px;
+  }
+  
+  .contact__map {
+    height: 300px;
+  }
+}

@@ -1,0 +1,122 @@
+.intro {
+  padding-top: 140px;
+  padding-bottom: 700px;
+  background-color: #2F4C77;
+  background-image: url('../img/intro-bg.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.intro__subheading {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  color: #FFFFFF;
+  font-size: 25px;
+  font-weight: 400;
+  border-bottom: 2px solid $yellow;
+}
+
+.intro__list {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  list-style: none;
+}
+
+.intro__item {
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 15px;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $yellow;
+  }
+}
+
+.intro__box {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 550px;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  border: 1px solid #FFFFFF;
+  border-radius: 7px;
+}
+
+.intro__cta {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.intro__link {
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $orange;
+  background-image: url('../img/intro-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+  transition: 0.3s;
+  
+  &:hover,
+  &:focus {
+    transform: rotate(90deg);
+  }
+}
+
+@media screen and ($mobile) {
+  .intro {
+    padding-top: 100px;
+    padding-bottom: 900px;
+  }
+  
+  .intro__subheading {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .intro__list {
+    margin-bottom: 20px;
+  }
+  
+  .intro__item {
+    font-size: 18px;
+    
+    &::before {
+      top: 6px;
+    }
+  }
+  
+  .intro__cta {
+    text-align: center;
+  }
+  
+  .intro__link {
+    right: 5px;
+  }
+}
