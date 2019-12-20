@@ -54,6 +54,7 @@
       content.querySelector('img').alt = programsData[i].alt;
       content.querySelector('.programs__name').innerHTML = programsData[i].name;
       content.querySelector('.programs__location').innerHTML = programsData[i].location;
+      content.querySelector('.programs__age').innerHTML = programsData[i].age + ' лет';
       content.querySelector('.programs__date').innerHTML = programsData[i].date;
       content.querySelector('.programs__cost').innerHTML = programsData[i].cost;
       item.appendChild(content);

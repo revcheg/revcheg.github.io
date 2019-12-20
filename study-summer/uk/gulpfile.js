@@ -81,7 +81,7 @@ function images() {
 
 function imagesProgram() {
   return gulp
-    .src('source/img/university-of-brighton/*')
+    .src('source/img/university-of-stirling/*')
     .pipe(plumber())
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
@@ -89,7 +89,7 @@ function imagesProgram() {
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest('build/img/university-of-brighton'))
+    .pipe(gulp.dest('build/img/university-of-stirling'))
 }
 
 function watch() {

@@ -962,14 +962,17 @@ body {
   height: 110px;
   margin: 0;
   padding-right: 15px;
-  color: #242D3C;
-  font-size: 16px;
-  font-weight: 400;
   overflow-y: scroll; }
   .review__quote::-webkit-scrollbar {
     width: 3px; }
   .review__quote::-webkit-scrollbar-thumb {
     background-color: #28306C; }
+
+.review__text {
+  margin-top: 0;
+  color: #242D3C;
+  font-size: 16px;
+  font-weight: 400; }
 
 @media screen and (max-width: 1210px) {
   .review__article {
@@ -1062,10 +1065,10 @@ body {
     height: 250px; } }
 
 .request {
-  padding-top: 50px;
-  padding-bottom: 80px; }
+  padding-top: 50px; }
 
 .request__wrapper {
+  padding-bottom: 80px;
   background-image: url("../img/request-bg.png");
   background-repeat: no-repeat;
   background-position: right top; }
@@ -1146,8 +1149,15 @@ body {
   color: #FFFFFF;
   font-size: 25px;
   font-weight: 400; }
+  .thankyou__text--full {
+    width: auto;
+    text-align: center; }
   .thankyou__text:last-child {
     margin-bottom: 0; }
+
+.thankyou__link {
+  color: #FFFFFF;
+  text-decoration: none; }
 
 @media screen and (max-width: 768px) {
   .thankyou__section {

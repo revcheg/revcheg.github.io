@@ -1,0 +1,132 @@
+.request {
+  padding-top: 100px;
+  padding-bottom: 180px;
+  background-color: #CA2122;
+  background-image: url('../img/request-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.request__heading {
+  margin-bottom: 30px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.request__form {
+  width: 400px;
+  margin: auto;
+}
+
+.request__group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.request__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.2s;
+  
+  &--active {
+    top: -15px;
+    color: #FFFFFF;
+    font-size: 12px;
+  }
+}
+
+.request__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 8px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: inherit;
+  border: 0;
+  border-bottom: 1px solid #FFFFFF;
+  background-color: transparent;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.2s;
+  
+  &--invalid {
+    border-bottom: 1px solid $red !important;
+    
+    + .request__label {
+      color: $red !important;
+    }
+  }
+  
+  &--valid {
+    border-bottom: 1px solid #60EB7A !important;
+  }
+  
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid #FFFFFF;
+  }
+  
+  &:hover {
+    
+    + .request__label {
+      color: #FFFFFF;
+    }
+  }
+  
+  &:focus {
+    
+    + .request__label {
+      top: -15px;
+      color: #FFFFFF;
+      font-size: 12px;
+    }
+  }
+}
+
+.request__submit {
+  display: block;
+  width: 155px;
+  margin: auto;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  border: 2px solid $red;
+  border-radius: 40px;
+  background-color: $red;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.2s;
+  
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px 2px $red;
+  }
+  
+  &:active {
+    box-shadow: 0 0 10px 5px $red;
+  }
+}
+
+.request__phone {
+  margin-top: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media screen and ($mobile) {  
+  .request__form {
+    width: 290px;
+  }
+}

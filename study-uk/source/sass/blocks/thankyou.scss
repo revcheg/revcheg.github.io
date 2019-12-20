@@ -45,9 +45,19 @@
   font-size: 25px;
   font-weight: 400;
   
+  &--full {
+    width: auto;
+    text-align: center;
+  }
+  
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.thankyou__link {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 @media screen and ($mobile) {

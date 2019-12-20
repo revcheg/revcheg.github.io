@@ -13,3 +13,9 @@ body {
 ::-webkit-scrollbar {
   width: 0;
 }
+
+@media screen and ($mobile-widths) {
+  body {
+    overflow: auto;
+  }
+}

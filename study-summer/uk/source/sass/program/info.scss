@@ -230,6 +230,10 @@
   margin-bottom: 5px;
   padding-left: 15px;
   
+  &--red {
+    color: $red;
+  }
+  
   &::before {
     content: '';
     position: absolute;

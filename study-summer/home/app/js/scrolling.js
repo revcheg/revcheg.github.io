@@ -44,12 +44,6 @@ var scrollCounter = 0;
 
     scrolling();
   };
-  
-  var platform = navigator.userAgent;
-  
-  if (platform.indexOf('iPhone') > -1) {
-    document.body.style.overflow = 'auto';
-  }
 })();
 
 function scrolling() {

@@ -196,22 +196,6 @@
   }
 })();
 (function () {
-  var offer = document.querySelector('.offer');
-  var close = document.querySelector('.offer__close');
-
-  var flag = localStorage.getItem('event-popup');
-  if (flag == 'true') {
-    offer.classList.add('offer--hide');
-  } else {
-    offer.classList.remove('offer--hide');
-  }
-
-  close.addEventListener('click', function () {
-    offer.classList.add('offer--hide');
-    localStorage.setItem('event-popup', 'true');
-  });
-})();
-(function () {
   var photos = document.querySelectorAll('.photo__img');
   var photosSources = document.querySelectorAll('.photo__source');
   var item = document.querySelectorAll('.photo__item');
@@ -343,6 +327,7 @@ var programsData = [
     alt: 'St. Raphaela’s School',
     name: 'St. Raphaela’s School',
     location: 'Дублин',
+    age: '11-17',
     date: '<a href="http://summer.study.ua/trip/look/5" target="_blank">28.06 - 19.07 (3 нед.)</a>',
     cost: '€3600 (3 нед.)'
   },
@@ -354,8 +339,9 @@ var programsData = [
     alt: 'Maynooth University',
     name: 'Maynooth University',
     location: 'Мейнут/Дублин',
+    age: '11-17',
     date: '<a href="program/maynooth-university.html" target="_blank">05.07 - 19.07 (2 нед.)</a> <br> <a href="program/maynooth-university.html" target="_blank">05.07 - 26.07 (3 нед.)</a>',
-    cost: '€3150 (3 нед.) <br> €3900 (3 нед.)'
+    cost: '€3150 (2 нед.) <br> €3900 (3 нед.)'
   }
 ];
 (function () {
@@ -423,6 +409,7 @@ var programsData = [
       content.querySelector('img').alt = programsData[i].alt;
       content.querySelector('.programs__name').innerHTML = programsData[i].name;
       content.querySelector('.programs__location').innerHTML = programsData[i].location;
+      content.querySelector('.programs__age').innerHTML = programsData[i].age + ' лет';
       content.querySelector('.programs__date').innerHTML = programsData[i].date;
       content.querySelector('.programs__cost').innerHTML = programsData[i].cost;
       item.appendChild(content);

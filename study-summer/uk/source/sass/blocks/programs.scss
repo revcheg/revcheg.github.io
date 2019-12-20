@@ -76,7 +76,7 @@
 .programs__item {
   position: relative;
   width: 370px;
-  height: 420px;
+  height: 440px;
   margin-right: 30px;
   margin-bottom: 30px;
   border-radius: 7px;
@@ -135,6 +135,10 @@
         display: none;
       }
     }  
+    
+    .programs__location {
+      width: 130px;
+    }
     
     &:first-of-type {
       

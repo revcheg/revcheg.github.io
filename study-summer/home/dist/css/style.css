@@ -11,6 +11,10 @@ body {
 ::-webkit-scrollbar {
   width: 0; }
 
+@media screen and (max-width: 600px) {
+  body {
+    overflow: auto; } }
+
 @font-face {
   font-family: 'Gotham Pro';
   src: local("GothamPro"), url("../fonts/GothamPro.woff2") format("woff2"), url("../fonts/GothamPro.woff") format("woff");

@@ -118,28 +118,22 @@ h.appendChild(s);
     });
   }
 })();
-(function () {
-  let popup = document.querySelector('.offer');
-  let close = document.querySelector('.offer__close');
-  let anchor = document.querySelector('.offer__button');
-  let counter = 0;
-  
-  counter = localStorage.getItem('counter');
-  if (counter >= 3) {
-    popup.classList.add('offer--hide');
-  } else {
-    popup.classList.remove('offer--hide');
-  }
-  
-  close.addEventListener('click', closePopup);
-  anchor.addEventListener('click', closePopup);
-  
-  function closePopup() {
-    popup.classList.add('offer--hide');
-    counter++;
-    localStorage.setItem('counter', counter);
-  }
-})();
+// (function () {
+//   var offer = document.querySelector('.offer');
+//   var close = document.querySelector('.offer__close');
+// 
+//   var flag = localStorage.getItem('popup-02.1');
+//   if (flag == 'true') {
+//     // offer.classList.add('offer--hide');
+//   } else {
+//     offer.classList.remove('offer--hide');
+//   }
+// 
+//   close.addEventListener('click', function () {
+//     offer.classList.add('offer--hide');
+//     localStorage.setItem('popup-02.1', 'true');
+//   });
+// })();
 (function () {
   var button = document.querySelector('.review__play');
   var video = document.querySelector('.review__iframe');

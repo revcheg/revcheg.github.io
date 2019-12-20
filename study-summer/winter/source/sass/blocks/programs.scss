@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .programs__title {
@@ -141,7 +142,7 @@
 .programs__item {
   position: relative;
   width: 370px;
-  height: 340px;
+  height: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
   border-radius: 7px;
@@ -203,7 +204,7 @@
     }  
     
     .programs__location {
-      width: 250px;
+      width: 130px;
     }
     
     &:first-of-type {
@@ -292,6 +293,12 @@
   
   &--location {
     background-image: url('../img/location.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+  
+  &--age {
+    background-image: url('../img/age.svg');
     background-repeat: no-repeat;
     background-position: left;
   }
