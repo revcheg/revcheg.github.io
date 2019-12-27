@@ -581,6 +581,18 @@ var programsData = [
     age: '12-17',
     date: '<a href="program/kings-college-london-edinburgh-academy.html" target="_blank">05.07 - 26.07 (3 нед.)</a>',
     cost: '$4800 (2 нед.)'
+  },
+  {
+    full: false,
+    href: 'program/studio-cambridge-smm.html',
+    webp: 'img/program-12.webp',
+    jpg: 'img/program-12.jpg',
+    alt: "Studio Cambridge, SMM + Global Leaders",
+    name: "Studio Cambridge, SMM + Global Leaders",
+    location: 'Кембридж, Англия',
+    age: '13-17',
+    date: '<a href="program/studio-cambridge-smm.html" target="_blank">12.07 - 26.07 (2 нед.)</a>',
+    cost: '$3800 (2 нед.)'
   }
 ];
 (function () {

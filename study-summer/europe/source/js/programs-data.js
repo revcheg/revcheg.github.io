@@ -24,7 +24,7 @@ var programsData = [
     jpg: 'img/program-2.jpg',
     alt: 'Barcelona Summer camp',
     name: 'Barcelona Summer camp',
-    location: 'Барселона',
+    location: 'Барселона, Испания',
     age: '14-18',
     date: '<a href="http://summer.study.ua/trip/look/1097" target="_blank">05.07 - 18.07 (2 нед.)</a>',
     cost: '€2800 (2 нед.)'
@@ -39,7 +39,7 @@ var programsData = [
     jpg: 'img/program-3.jpg',
     alt: 'EU International Business school',
     name: 'EU International Business school',
-    location: 'Барселона',
+    location: 'Барселона, Испания',
     age: '16-18',
     date: '<a href="http://summer.study.ua/trip/look/1101" target="_blank">05.07 - 25.07 (3 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/1103" target="_blank">02.08 - 22.08 (3 нед.)</a>',
     cost: '€4600 (3 нед.)'
@@ -54,26 +54,26 @@ var programsData = [
     jpg: 'img/program-4.jpg',
     alt: 'Alpadia Summer camp',
     name: 'Alpadia Summer camp',
-    location: 'Энгельберг',
+    location: 'Энгельберг, Швейцария',
     age: '10-17',
     date: '<a href="http://summer.study.ua/trip/look/57" target="_blank">28.06 - 11.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/1094" target="_blank">11.07 - 25.07 (2 нед.)</a>',
-    cost: '$2800 (2 нед.) <br> $2900 (2 нед.)'
+    cost: '$3800 (2 нед.)'
   },
-  {
-    full: false,
-    href: 'http://summer.study.ua/trip/look/1120',
-    flagWebp: 'img/programs-malta.webp',
-    flag: 'img/programs-malta.jpg',
-    flagAlt: 'Мальта',
-    webp: 'img/program-5.webp',
-    jpg: 'img/program-5.jpg',
-    alt: 'Malta IELS',
-    name: 'Malta IELS',
-    location: 'Слима',
-    age: '13-17',
-    date: '<a href="http://summer.study.ua/trip/look/1120" target="_blank">05.07 - 19.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/1121" target="_blank">26.07 - 09.08 (2 нед.)</a>',
-    cost: '$2550 (2 нед.)'
-  },
+  // {
+  //   full: false,
+  //   href: 'http://summer.study.ua/trip/look/1120',
+  //   flagWebp: 'img/programs-malta.webp',
+  //   flag: 'img/programs-malta.jpg',
+  //   flagAlt: 'Мальта',
+  //   webp: 'img/program-5.webp',
+  //   jpg: 'img/program-5.jpg',
+  //   alt: 'Malta IELS',
+  //   name: 'Malta IELS',
+  //   location: 'Слима',
+  //   age: '13-17',
+  //   date: '<a href="http://summer.study.ua/trip/look/1120" target="_blank">05.07 - 19.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/1121" target="_blank">26.07 - 09.08 (2 нед.)</a>',
+  //   cost: '$2550 (2 нед.)'
+  // },
   {
     full: false,
     href: 'http://summer.study.ua/trip/look/1122',
@@ -84,7 +84,7 @@ var programsData = [
     jpg: 'img/program-6.jpg',
     alt: 'GLS Munich Castle',
     name: 'GLS Munich Castle',
-    location: 'Мюнхен',
+    location: 'Мюнхен, Германия',
     age: '14-17',
     date: '<a href="http://summer.study.ua/trip/look/1122" target="_blank">19.07 - 02.08 (2 нед.)</a>',
     cost: '€3100 (2 нед.)'
@@ -99,7 +99,7 @@ var programsData = [
     jpg: 'img/program-7.jpg',
     alt: 'French Riviera summer',
     name: 'French Riviera summer',
-    location: 'Ницца',
+    location: 'Ницца, Франция',
     age: '12-17',
     date: '<a href="http://summer.study.ua/trip/look/62" target="_blank">04.07 - 18.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/75" target="_blank">18.07 - 01.08 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/1077" target="_blank">01.08 - 15.08 (2 нед.)</a>',
     cost: '€3100 (2 нед.)'
@@ -114,7 +114,7 @@ var programsData = [
     jpg: 'img/program-8.jpg',
     alt: 'Business and Hotel Management School',
     name: 'Business and Hotel Management School',
-    location: 'Люцерн',
+    location: 'Люцерн, Швейцария',
     age: '15-23',
     date: '<a href="http://summer.study.ua/trip/look/61" target="_blank">04.07 - 18.07 (2 нед.)</a>',
     cost: '$4500 (2 нед.)'
@@ -142,11 +142,26 @@ var programsData = [
     flagAlt: 'Мальта',
     webp: 'img/program-10.webp',
     jpg: 'img/program-10.jpg',
-    alt: 'Malta Junior School, Howard hotel',
-    name: 'Malta Junior School, Howard hotel',
+    alt: 'Malta Junior School',
+    name: 'Malta Junior School',
     location: 'Слима, Мальта',
     age: '13-17',
     date: '<a href="program/malta-junior-school.html" target="_blank">05.07 - 19.07 (2 нед.)</a> <br> <a href="program/malta-junior-school.html" target="_blank">26.07 - 09.08 (2 нед.)</a> <br> <a href="program/malta-junior-school.html" target="_blank">09.08 - 23.08 (2 нед.)</a>',
     cost: '$2550 (2 нед.)'
+  },
+  {
+    full: false,
+    href: 'program/malta-kids-school.html',
+    flagWebp: 'img/programs-malta.webp',
+    flag: 'img/programs-malta.jpg',
+    flagAlt: 'Мальта',
+    webp: 'img/program-11.webp',
+    jpg: 'img/program-11.jpg',
+    alt: 'Malta Kids School',
+    name: 'Malta Kids School',
+    location: 'Слима, Мальта',
+    age: '8-12',
+    date: '<a href="program/malta-kids-school.html" target="_blank">18.07 - 01.08 (2 нед.)</a> <br> <a href="program/malta-kids-school.html" target="_blank">01.08 - 15.08 (2 нед.)</a>',
+    cost: '€2500 (2 нед.)'
   }
 ];

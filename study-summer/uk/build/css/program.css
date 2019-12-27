@@ -411,6 +411,14 @@ body {
   .intro__text--red {
     color: #FF3434; }
 
+.intro__list {
+  margin: 0;
+  padding-left: 20px; }
+
+.intro__item {
+  color: #292F48;
+  font-size: 20px; }
+
 .intro__button {
   box-sizing: border-box;
   display: block;
