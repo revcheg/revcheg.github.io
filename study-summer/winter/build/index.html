@@ -27,11 +27,11 @@
   <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#dd0505">
   <meta name="theme-color" content="#6a7efc">
   <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WP9DZCS');
+    // (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    // new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    // j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    // 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    // })(window,document,'script','dataLayer','GTM-WP9DZCS');
   </script>
 </head>
 <body>
@@ -217,58 +217,110 @@
           </div>
         </div>
         <!-- <p class="programs__offer">Только до 30 ноября — регистрируйтесь на программу зимних групповых поездок со скидкой $300!</p> -->
-        <!-- <div class="programs__filter">
-          <select class="programs__select">
-            <option hidden>Страна</option>
-            <option value="uk">Великобритания</option>
-            <option value="usa">США</option>
-            <option value="canada">Канада</option>
-            <option value="ireland">Ирландия</option>
-            <option value="france">Франция</option>
-            <option value="switzerland">Швейцария</option>
-            <option value="germany">Германия</option>
-            <option value="spain">Испания</option>
-            <option value="malta">Мальта</option>
-            <option value="all">Все страны</option>
+        <form class="filter" action="#" id="filter" method="POST" autocomplete="off">
+          <select class="filter__select" name="country">
+            <option value="" hidden>Страна</option>
+            <option value="2">Велика Британія</option> 
+            <option value="3">США</option> 
+            <option value="4">Канада</option> 
+            <option value="5">Ирландия</option> 
+            <option value="6">Франция</option> 
+            <option value="7">Швейцария</option> 
+            <option value="8">Германия</option> 
+  			    <option value="9">Мальта</option> 
           </select>
-          <select class="programs__select">
-            <option hidden>Возраст</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-            <option value="25">25</option>
+          
+          <select class="filter__select" name="old">
+            <option value="" hidden>Возраст</option>
+            <option value="61">8</option>
+            <option value="62">9</option>
+            <option value="62">10</option>
+            <option value="63">11</option>
+            <option value="64">12</option>
+            <option value="65">13</option>
+            <option value="66">14</option>
+            <option value="67">15</option>
+            <option value="68">16</option>
+            <option value="69">17</option>
+      			<option value="70">18</option>
+      			<option value="71">19</option>
+      			<option value="72">20</option>
+      			<option value="73">21</option>
+      			<option value="74">22</option>
+      			<option value="75">23</option>
+      			<option value="76">24</option>
+      			<option value="77">25</option>
           </select>
-          <select class="programs__select">
-            <option hidden>Дата</option>
-            <option value="june">июнь</option>
-            <option value="july">июль</option>
-            <option value="august">август</option>
+
+          <select class="filter__select" name="date">
+            <option value="" hidden>Месяц</option>
+            <option value="01">январь</option>
+            <option value="02">февраль</option>
+            <option value="03">март</option>
+      			<option value="04">апрель</option>
+      			<option value="05">май</option>
+      			<option value="06">июнь</option>
+      			<option value="07">июль</option>
+      			<option value="08">август</option>
+      			<option value="09">сентябрь</option>
+      			<option value="10">октябрь</option>
+      			<option value="11">ноябрь</option>
+      			<option value="12">декабрь</option>
           </select>
-          <select class="programs__select">
-            <option hidden>Количество недель</option>
-            <option value="2">2 недели</option>
-            <option value="3">3 недели</option>
-            <option value="4">4 недели</option>
-            <option value="7">7 недель</option>
-          </select>
-        </div> -->
-        <ul class="programs__list">
+          
+          <input class="filter__select" type="text" name="days" placeholder="К-во недель" value="">
+          
+          <div class="filter__interest">
+            <span class="filter__name">Интересы</span>
+            <label>
+              <input type="checkbox" name="attributes[]" value="101">
+              Первая поездка
+            </label>
+            
+            <label>
+              <input type="checkbox" name="attributes[]" value="102">
+        			Изучение предметов
+            </label>
+            
+            <label>
+              <input type="checkbox" name="attributes[]" value="103">
+              Учеба с британцами
+            </label>
+            
+            <label>
+              <input type="checkbox" name="attributes[]" value="104">
+              ВУЗы+профориентация
+            </label>
+            
+            <label>
+              <input type="checkbox" name="attributes[]" value="105">
+              Для самых маленьких
+            </label>
+            
+            <label>
+              <input type="checkbox" name="attributes[]" value="106">
+              Морской отдых
+            </label>
+            
+            <label>
+              <input type="checkbox" name="attributes[]" value="107">
+              Спорт, кино .творчество
+            </label>
+            
+            <label>
+              <input type="checkbox" name="attributes[]" value="108">
+              NEW 2020!
+            </label>
+          </div>
+    	
+      		<input type="submit" class="filter__submit  button button-filter" name="submit" value="Фильтровать">
+        </form>
+
+        <div class="filter__result  loop"></div>
+        
+        <!-- <ul class="programs__list"> -->
           <!-- Generate content with programs-render.js, data in programs-data.js -->
-        </ul>
+        <!-- </ul> -->
         <!-- <button class="programs__load">Загрузить еще</button> -->
         <a class="request__select" href="#request">Подобрать программу</a>
       </div>
@@ -548,6 +600,7 @@
   
   <div class="popup__overlay  popup__overlay--hide"></div>
   
+  <script src="https://holidays.study.ua/trips/views/admin-panel/scripts/jquery.js"></script>
   <script src="js/main.min.js" async></script>
 </body>
 </html>

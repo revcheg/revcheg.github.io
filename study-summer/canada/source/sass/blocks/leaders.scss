@@ -57,7 +57,7 @@
   left: 0px;
   display: flex;
   justify-content: space-between;
-  width: 175%;
+  width: 200%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -154,7 +154,7 @@
   }
   
   .leaders__list {
-    width: 350%;
+    width: 400%;
   }
   
   .leaders__item {
@@ -185,7 +185,8 @@
   }
   
   .leaders__list {
-    width: 700%;
+    align-items: flex-start;
+    width: 800%;
     transition: 0.5s;
   }
   

@@ -443,7 +443,7 @@
   }
   
   .programs__title {
-    margin-bottom: 25px;
+    // margin-bottom: 25px;
     text-align: center;
   }
   
@@ -457,6 +457,10 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
+  }
+  
+  .programs__button {
+    display: none;
   }
   
   .programs__select {

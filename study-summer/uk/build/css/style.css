@@ -794,7 +794,7 @@ body {
 .programs__item {
   position: relative;
   width: 370px;
-  height: 440px;
+  height: 460px;
   margin-right: 30px;
   margin-bottom: 30px;
   border-radius: 7px;
@@ -1107,7 +1107,7 @@ body {
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
-  width: 425%;
+  width: 200%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1118,7 +1118,7 @@ body {
   box-sizing: border-box;
   width: 270px;
   margin: 3px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   text-align: center;
   border-radius: 7px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); }
@@ -1133,7 +1133,7 @@ body {
   margin-top: 20px;
   margin-bottom: 5px;
   color: #292F48;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500; }
 
 .leaders__position {
@@ -1188,7 +1188,7 @@ body {
   .leaders__slider {
     height: 380px; }
   .leaders__list {
-    width: 850%; }
+    width: 400%; }
   .leaders__item {
     width: 320px;
     margin: 3px auto; } }
@@ -1209,7 +1209,7 @@ body {
   .leaders__slider {
     height: 360px; }
   .leaders__list {
-    width: 1700%;
+    width: 800%;
     -webkit-transition: 0.5s;
     transition: 0.5s; }
   .leaders__item {
@@ -2286,3 +2286,55 @@ body {
   .sorry__bold {
     padding: 0 15px;
     font-size: 16px; } }
+
+.event {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 400px;
+  height: 200px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #FF3434;
+  background-image: url("../img/popup-event.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 1; }
+  .event--hide {
+    opacity: 0;
+    visibility: hidden; }
+
+.event__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/close-event.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  outline: none; }
+
+.event__link {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+@media screen and (max-width: 767px) {
+  .event {
+    bottom: 10px;
+    left: 50%;
+    width: 290px;
+    height: 150px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .event__close {
+    width: 20px;
+    height: 20px; } }

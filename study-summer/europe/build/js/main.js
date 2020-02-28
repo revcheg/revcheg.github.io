@@ -1,4 +1,20 @@
 (function () {
+  let popup = document.querySelector('.event');
+  let close = document.querySelector('.event__close');
+
+  let flag = localStorage.getItem('event-march');
+  if (flag == 'true') {
+    popup.classList.add('event--hide');
+  } else {
+    popup.classList.remove('event--hide');
+  }
+
+  close.addEventListener('click', function () {
+    popup.classList.add('event--hide');
+    localStorage.setItem('event-march', 'true');
+  });
+})();
+(function () {
   var phone = document.querySelector('.request__input[type=tel]');
   
   phone.addEventListener('focus', function() {
@@ -315,7 +331,7 @@ var programsData = [
   // },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/1097',
+    href: 'https://holidays.study.ua/trips/page/barcelona-summer-camp/',
     flagWebp: 'img/programs-spain.webp',
     flag: 'img/programs-spain.jpg',
     flagAlt: 'Испания',
@@ -325,12 +341,12 @@ var programsData = [
     name: 'Barcelona Summer camp',
     location: 'Барселона, Испания',
     age: '14-18',
-    date: '<a href="http://summer.study.ua/trip/look/1097" target="_blank">05.07 - 18.07 (2 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/barcelona-summer-camp/" target="_blank">05.07 - 18.07 (2 нед.)</a>',
     cost: '€2800 (2 нед.)'
   },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/1101',
+    href: 'https://holidays.study.ua/trips/page/eu-business-school/',
     flagWebp: 'img/programs-spain.webp',
     flag: 'img/programs-spain.jpg',
     flagAlt: 'Испания',
@@ -340,12 +356,12 @@ var programsData = [
     name: 'EU International Business school',
     location: 'Барселона, Испания',
     age: '16-18',
-    date: '<a href="http://summer.study.ua/trip/look/1101" target="_blank">05.07 - 25.07 (3 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/1103" target="_blank">02.08 - 22.08 (3 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/eu-business-school/" target="_blank">05.07 - 25.07 (3 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/eu-business-school/" target="_blank">02.08 - 22.08 (3 нед.)</a>',
     cost: '€4600 (3 нед.)'
   },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/57',
+    href: 'https://holidays.study.ua/trips/page/alpadia-swiss-summer-camp/',
     flagWebp: 'img/programs-switzerland.webp',
     flag: 'img/programs-switzerland.jpg',
     flagAlt: 'Швейцария',
@@ -355,7 +371,7 @@ var programsData = [
     name: 'Alpadia Summer camp',
     location: 'Энгельберг, Швейцария',
     age: '10-17',
-    date: '<a href="http://summer.study.ua/trip/look/57" target="_blank">28.06 - 11.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/1094" target="_blank">11.07 - 25.07 (2 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/alpadia-swiss-summer-camp/" target="_blank">28.06 - 11.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/alpadia-swiss-summer-camp/" target="_blank">11.07 - 25.07 (2 нед.)</a>',
     cost: '$3800 (2 нед.)'
   },
   // {
@@ -375,7 +391,7 @@ var programsData = [
   // },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/1122',
+    href: 'https://holidays.study.ua/trips/page/gls-munich-castle/',
     flagWebp: 'img/programs-germany.webp',
     flag: 'img/programs-germany.jpg',
     flagAlt: 'Германия',
@@ -385,12 +401,12 @@ var programsData = [
     name: 'GLS Munich Castle',
     location: 'Мюнхен, Германия',
     age: '14-17',
-    date: '<a href="http://summer.study.ua/trip/look/1122" target="_blank">19.07 - 02.08 (2 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/gls-munich-castle/" target="_blank">19.07 - 02.08 (2 нед.)</a>',
     cost: '€3100 (2 нед.)'
   },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/62',
+    href: 'https://holidays.study.ua/trips/page/french-riviera-summer/',
     flagWebp: 'img/programs-france.webp',
     flag: 'img/programs-france.jpg',
     flagAlt: 'Франция',
@@ -400,12 +416,12 @@ var programsData = [
     name: 'French Riviera summer',
     location: 'Ницца, Франция',
     age: '12-17',
-    date: '<a href="http://summer.study.ua/trip/look/62" target="_blank">04.07 - 18.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/75" target="_blank">18.07 - 01.08 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/1077" target="_blank">01.08 - 15.08 (2 нед.)</a>',
-    cost: '€3100 (2 нед.)'
+    date: '<a href="https://holidays.study.ua/trips/page/french-riviera-summer/" target="_blank">04.07 - 18.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/french-riviera-summer/" target="_blank">18.07 - 01.08 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/french-riviera-summer/" target="_blank">01.08 - 15.08 (2 нед.)</a>',
+    cost: '€2700 (2 нед.)'
   },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/61',
+    href: 'https://holidays.study.ua/trips/page/bhms-students/',
     flagWebp: 'img/programs-switzerland.webp',
     flag: 'img/programs-switzerland.jpg',
     flagAlt: 'Швейцария',
@@ -415,12 +431,12 @@ var programsData = [
     name: 'Business and Hotel Management School',
     location: 'Люцерн, Швейцария',
     age: '15-23',
-    date: '<a href="http://summer.study.ua/trip/look/61" target="_blank">04.07 - 18.07 (2 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/bhms-students/" target="_blank">04.07 - 18.07 (2 нед.)</a>',
     cost: '$4500 (2 нед.)'
   },
   {
     full: false,
-    href: 'program/hospitality-business-experience.html',
+    href: 'https://holidays.study.ua/trips/page/hospitality-business-experience-hotel-institute-montreux/',
     flagWebp: 'img/programs-switzerland.webp',
     flag: 'img/programs-switzerland.jpg',
     flagAlt: 'Швейцария',
@@ -430,12 +446,12 @@ var programsData = [
     name: 'Hospitality business experience',
     location: 'Монтрё, Швейцария',
     age: '15-23',
-    date: '<a href="program/hospitality-business-experience.html" target="_blank">21.07 - 03.08 (2 нед.)</a> <br> <a href="program/hospitality-business-experience.html" target="_blank">04.08 - 17.08 (2 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/hospitality-business-experience-hotel-institute-montreux/" target="_blank">21.07 - 03.08 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/hospitality-business-experience-hotel-institute-montreux/" target="_blank">04.08 - 17.08 (2 нед.)</a>',
     cost: '$4600 (2 нед.)'
   },
   {
     full: false,
-    href: 'program/malta-junior-school.html',
+    href: 'https://holidays.study.ua/trips/page/malta-junior-school/',
     flagWebp: 'img/programs-malta.webp',
     flag: 'img/programs-malta.jpg',
     flagAlt: 'Мальта',
@@ -445,12 +461,12 @@ var programsData = [
     name: 'Malta Junior School',
     location: 'Слима, Мальта',
     age: '13-17',
-    date: '<a href="program/malta-junior-school.html" target="_blank">05.07 - 19.07 (2 нед.)</a> <br> <a href="program/malta-junior-school.html" target="_blank">26.07 - 09.08 (2 нед.)</a> <br> <a href="program/malta-junior-school.html" target="_blank">09.08 - 23.08 (2 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/malta-junior-school/" target="_blank">04.07 - 17.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/malta-junior-school/" target="_blank">25.07 - 07.08 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/malta-junior-school/" target="_blank">08.08 - 21.08 (2 нед.)</a>',
     cost: '$2550 (2 нед.)'
   },
   {
     full: false,
-    href: 'program/malta-kids-school.html',
+    href: 'https://holidays.study.ua/trips/page/malta-kids-topaz-hotel/',
     flagWebp: 'img/programs-malta.webp',
     flag: 'img/programs-malta.jpg',
     flagAlt: 'Мальта',
@@ -460,8 +476,38 @@ var programsData = [
     name: 'Malta Kids School',
     location: 'Слима, Мальта',
     age: '8-12',
-    date: '<a href="program/malta-kids-school.html" target="_blank">18.07 - 01.08 (2 нед.)</a> <br> <a href="program/malta-kids-school.html" target="_blank">01.08 - 15.08 (2 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/malta-kids-topaz-hotel/" target="_blank">18.07 - 31.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/malta-kids-topaz-hotel/" target="_blank">01.08 - 14.08 (2 нед.)</a>',
     cost: '€2500 (2 нед.)'
+  },
+  {
+    full: false,
+    href: 'https://holidays.study.ua/trips/page/canary-islands-barcelona/',
+    flagWebp: 'img/programs-spain.webp',
+    flag: 'img/programs-spain.jpg',
+    flagAlt: 'Мальта',
+    webp: 'img/program-12.webp',
+    jpg: 'img/program-12.jpg',
+    alt: 'Canary Islands + Barcelona',
+    name: 'Canary Islands + Barcelona',
+    location: 'Лас-Пальмас, Барселона',
+    age: '14-17',
+    date: '<a href="https://holidays.study.ua/trips/page/canary-islands-barcelona/" target="_blank">05.07 - 26.07 (3 нед.)</a>',
+    cost: '€3800 (3 нед.)'
+  },
+  {
+    full: false,
+    href: 'https://holidays.study.ua/trips/page/barcelona-canary-islands/',
+    flagWebp: 'img/programs-spain.webp',
+    flag: 'img/programs-spain.jpg',
+    flagAlt: 'Мальта',
+    webp: 'img/program-13.webp',
+    jpg: 'img/program-13.jpg',
+    alt: 'Barcelona + Canary Islands',
+    name: 'Barcelona + Canary Islands',
+    location: 'Барселона, Лас-Пальмас',
+    age: '14-17',
+    date: '<a href="https://holidays.study.ua/trips/page/barcelona-canary-islands/" target="_blank">05.07 - 26.07 (3 нед.)</a>',
+    cost: '€3900 (3 нед.)'
   }
 ];
 (function () {

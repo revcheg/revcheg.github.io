@@ -1,4 +1,80 @@
 (function () {
+//   $('#filter').submit(function (e) {
+//     e.preventDefault();
+//     $.ajax({
+//       url: "https://holidays.study.ua/trips/filter/",
+//       type: "POST",
+//       data: new FormData(this),
+//       processData: false,
+//       contentType: false
+//     }).done(function (data) {
+//       $(".loop").html(data);
+//     });
+//   });
+// 
+//   $(document).on("click", ".pagination", function (e) {
+//     e.preventDefault();
+//     var btn = $(this);
+//     var next = btn.data('next');
+// 
+//     form = new FormData($('#filter')[0]);
+//     btn.css('display', 'none');
+//     btn.data('next', next + 1)
+// 
+//     $.ajax({
+//       url: "https://holidays.study.ua/trips/filter/page-"+next+"/",
+//       type: "POST",
+//       data: form,
+//       processData: false,
+//       contentType: false
+//     }).done(function (data) {
+//       $(".loop").append(data);
+//     });
+// });
+// 
+// 
+// 
+
+	
+	$(document).ready(function(){
+		 $('#filter').submit();
+	});
+		
+    $('#filter').submit(function (e) {
+        e.preventDefault();
+		$.ajax({
+			url: "https://holidays.study.ua/trips/filter/",
+			type: "POST",
+			data: new FormData(this),
+			processData: false,
+			contentType: false
+		}).done(function (data) {
+			$(".loop").html(data);
+		});
+    });
+	
+	
+	$(document).on("click", ".pagination", function (e) {
+		e.preventDefault();
+		var btn = $(this);
+		var next = btn.data('next') + 1;
+		console.log(next);
+		
+		form = new FormData($('#filter')[0]);
+		btn.remove();
+		
+		$.ajax({
+			url: "https://holidays.study.ua/trips/filter/page-"+next+"/",
+			type: "POST",
+			data: form,
+			processData: false,
+			contentType: false
+		}).done(function (data) {
+			$(".loop").append(data);
+		});
+	});
+})();
+(function () {
   var phone = document.querySelector('.request__input[type=tel]');
   
   phone.addEventListener('focus', function() {
@@ -296,28 +372,28 @@ var programsData = [
 (function () {
   var listButton = document.querySelector('.programs__button--list');
   var tileButton = document.querySelector('.programs__button--tile');
-  var list = document.querySelector('.programs__list');
-  
+  var list = document.querySelector('.filter__result');
+
   listButton.addEventListener('click', function () {
-    list.classList.add('programs__list--column');
-    var item = document.querySelectorAll('.programs__item');
+    list.classList.add('filter__result--column');
+    // var item = document.querySelectorAll('.filter__result a');
     listButton.classList.add('programs__button--active');
     tileButton.classList.remove('programs__button--active');
-    
-    for (var i = 0; i < item.length; i++) {
-      item[i].classList.add('programs__item--column');
-    }
+
+    // for (var i = 0; i < item.length; i++) {
+    //   item[i].classList.add('filter__result--column');
+    // }
   });
-  
+
   tileButton.addEventListener('click', function () {
-    list.classList.remove('programs__list--column');
-    var item = document.querySelectorAll('.programs__item');
+    list.classList.remove('filter__result--column');
+    // var item = document.querySelectorAll('.programs__item');
     tileButton.classList.add('programs__button--active');
     listButton.classList.remove('programs__button--active');
-    
-    for (var i = 0; i < item.length; i++) {
-      item[i].classList.remove('programs__item--column');
-    }
+
+    // for (var i = 0; i < item.length; i++) {
+    //   item[i].classList.remove('programs__item--column');
+    // }
   });
 })();
 (function () {
@@ -334,7 +410,7 @@ var programsData = [
     programsIncrement = 5;
   }
   
-  renderPrograms();
+  // renderPrograms(); OPEN!!!!
   
   // load.addEventListener('click', function () {
   //   programsCounter = programsCounter + programsIncrement;

@@ -53,10 +53,10 @@ body {
 .intro {
   padding-bottom: 200px;
   background-color: #CA2122;
-  background-image: url("../img/intro-bg.jpg");
+  background-image: url("../img/intro-days.svg"), url("../img/intro-bg.jpg");
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover; }
+  background-position: right 95%, top;
+  background-size: 300px, cover; }
 
 .intro__header {
   margin-bottom: 200px;
@@ -92,6 +92,8 @@ body {
   font-weight: 700;
   text-align: center;
   line-height: 70px; }
+  .intro__title--small {
+    font-size: 40px; }
 
 .intro__subtitle {
   margin-top: 0;
@@ -106,6 +108,7 @@ body {
   display: block;
   width: 330px;
   margin: auto;
+  margin-bottom: 60px;
   padding-left: 65px;
   color: #FFFFFF;
   font-size: 20px;
@@ -124,7 +127,8 @@ body {
 
 @media screen and (max-width: 767px) {
   .intro {
-    padding-bottom: 150px; }
+    padding-bottom: 150px;
+    background-size: 200px, cover; }
   .intro__header {
     margin-bottom: 50px; }
   .intro__logo {
@@ -138,6 +142,8 @@ body {
     margin-bottom: 10px;
     font-size: 30px;
     line-height: normal; }
+    .intro__title--small {
+      font-size: 25px; }
   .intro__subtitle {
     font-size: 20px; }
   .intro__date {
@@ -1076,7 +1082,7 @@ body {
 
 .overlay__close {
   position: absolute;
-  bottom: 100px;
+  bottom: 20px;
   left: 50%;
   width: 60px;
   height: 60px;

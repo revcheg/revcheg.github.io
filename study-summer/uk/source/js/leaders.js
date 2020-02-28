@@ -10,11 +10,11 @@
   var clientWidth = document.body.clientWidth;
   
   if (clientWidth <= 768) {
-    possibleSlide = 16;
+    possibleSlide = 7;
   } else if (clientWidth > 768 && clientWidth < 1210) {
-    possibleSlide = 8;
+    possibleSlide = 3;
   } else if (clientWidth >= 1210) {
-    possibleSlide = 4;
+    possibleSlide = 1;
   }
   
   var showSlide = function () {

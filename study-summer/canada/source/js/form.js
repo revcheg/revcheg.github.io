@@ -57,13 +57,13 @@
   form.addEventListener('submit', function (evt) {    
     var email = form.querySelector('#email').value;
     
-    if (email == localStorage.getItem('email')) {
+    if (email == localStorage.getItem('summer-2020')) {
       evt.preventDefault();
       sorry.classList.remove('sorry--hide');
       overlay.classList.remove('popup__overlay--hide');
     }
     
-    localStorage.setItem('email', email);
+    localStorage.setItem('summer-2020', email);
   });
   
   overlay.addEventListener('click', function () {

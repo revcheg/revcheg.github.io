@@ -81,7 +81,7 @@ function images() {
 
 function imagesProgram() {
   return gulp
-    .src('source/img/maynooth-university/*')
+    .src('source/img/trinity-college/*')
     .pipe(plumber())
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
@@ -89,7 +89,7 @@ function imagesProgram() {
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest('build/img/maynooth-university'))
+    .pipe(gulp.dest('build/img/trinity-college'))
 }
 
 function watch() {

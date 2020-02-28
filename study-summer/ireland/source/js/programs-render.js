@@ -3,8 +3,8 @@
   var listButton = document.querySelector('.programs__button--list');
   var programsTemplate = document.querySelector('.programs__template').content;
   
-  programsCounter = 2;
-  programsIncrement = 2;
+  programsCounter = 3;
+  programsIncrement = 3;
   
   renderPrograms();
   

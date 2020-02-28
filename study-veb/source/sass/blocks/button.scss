@@ -1,0 +1,21 @@
+.button {
+  box-sizing: border-box;
+  display: block;
+  width: 255px;
+  margin: 0 auto;
+  padding: 15px 35px;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  background: linear-gradient(90deg, #FE4F4F 22.92%, #EBCCDC 100%);
+  cursor: pointer;
+  
+  &--submit {
+    width: 100%;
+  }
+}

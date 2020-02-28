@@ -3,7 +3,7 @@
   let button = document.querySelector('.sale__button');
 
   let flag = localStorage.getItem('new-year-sale');
-  if (flag == 'true') {
+  if (flag == ') {
     sale.classList.add('sale--hide');
   } else {
     sale.classList.remove('sale--hide');

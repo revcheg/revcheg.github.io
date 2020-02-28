@@ -1,4 +1,15 @@
 (function () {
+  let popup = document.querySelector('.ex');
+  let close = document.querySelector('.ex__close');
+
+  close.addEventListener('click', closePopup);
+  popup.addEventListener('click', closePopup);
+  
+  function closePopup() {
+    popup.classList.add('ex--hide');
+  };
+})();
+(function () {
   function parseGetParams(){var c,g,d,a,h,e,b={},f=function(a){return decodeURIComponent(a).replace(/\+/g," ")},k=window.location.search.substring(1),l=/([^&;=]+)=?([^&;]*)/g;for(h=function(a){"object"!=typeof a&&(g=a,a={length:0},g&&Array.prototype.push.call(a,g));return a};d=l.exec(k);)c=d[1].indexOf("["),e=f(d[2]),0>c?(a=f(d[1]),b[a]?(b[a]=h(b[a]),Array.prototype.push.call(b[a],e)):b[a]=e):(a=f(d[1].slice(0,c)),c=f(d[1].slice(c+1,d[1].indexOf("]",c))),b[a]=h(b[a]),c?b[a][c]=e:Array.prototype.push.call(b[a], e));return b};
 
                           var getParams = parseGetParams();

@@ -57,7 +57,7 @@
   left: 0px;
   display: flex;
   justify-content: space-between;
-  width: 425%;
+  width: 200%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -69,7 +69,7 @@
   width: 270px;
   margin: 3px;
   // padding-bottom: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   text-align: center;
   border-radius: 7px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
@@ -87,7 +87,7 @@
   margin-top: 20px;
   margin-bottom: 5px;
   color: $text;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -155,7 +155,7 @@
   }
   
   .leaders__list {
-    width: 850%;
+    width: 400%;
   }
   
   .leaders__item {
@@ -186,7 +186,7 @@
   }
   
   .leaders__list {
-    width: 1700%;
+    width: 800%;
     transition: 0.5s;
   }
   

@@ -12,7 +12,7 @@
     programsIncrement = 5;
   }
   
-  renderPrograms();
+  // renderPrograms(); OPEN!!!!
   
   // load.addEventListener('click', function () {
   //   programsCounter = programsCounter + programsIncrement;

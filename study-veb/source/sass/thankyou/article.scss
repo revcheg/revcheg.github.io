@@ -1,0 +1,39 @@
+.article {
+  background-image: url('../img/article-mock.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.article__content {
+  width: 500px;
+}
+
+.article__text {
+  font-size: 23px;
+  font-weight: 400;
+  
+  b {
+    color: #FFF8BD;
+  }
+  
+  &--border {
+    // box-sizing: border-box;
+    margin-bottom: 80px;
+    padding: 20px 30px;
+    border: 2px solid #FFFFFF;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .article {
+    background-position: 500px;
+  }
+}
+
+@media screen and ($mobile) {
+  .article__content {
+    width: auto;
+  }
+}

@@ -1,0 +1,114 @@
+.intro {
+  padding-top: 180px;
+  background: url('../img/intro-decor.png'), url('../img/journal-mock.png'), linear-gradient(41.76deg, #47E7DD 9.1%, #0BC5BA 58.37%);
+  background-repeat: no-repeat;
+  background-position: top left, calc(100% - 200px) 120px;
+}
+
+.intro__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #FFFFFF;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1em;
+  
+  &--small {
+    display: block;
+    font-size: 40px;
+    font-weight: 400;
+  }
+}
+
+.intro__photo {
+  display: none;
+}
+
+.intro__subtitle {
+  margin: 0;
+  padding-bottom: 300px;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+  background-image: url('../img/arrow-1.svg');
+  background-repeat: no-repeat;
+  background-position: 100px bottom;
+}
+
+.intro__wrapper {
+  margin-top: -50px;
+  padding-bottom: 190px;
+  background-image: url('../img/arrow-2.svg');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 100px) bottom;
+}
+
+.intro__att {
+  margin-top: 25px;
+  margin-bottom: 0;
+  color: #FFF8BD;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media screen and (max-width: 1500px) {
+  .intro {
+    background-position: top left, calc(100% - 50px) 120px;
+  }
+}
+
+@media screen and ($tablet) {
+  .intro {
+    background-position: top left, calc(100% - 10px) 120px;
+    background-size: auto, 450px;
+  }
+}
+
+@media screen and ($mobile) {
+  .intro {
+    padding-top: 150px;
+    background: url('../img/intro-decor.png'), linear-gradient(41.76deg, #47E7DD 9.1%, #0BC5BA 58.37%);
+    background-repeat: no-repeat;
+    background-size: 150px, auto;
+  }
+  
+  .intro__title {
+    font-size: 35px;
+    text-align: center;
+    
+    &--small {
+      font-size: 30px;
+    }
+    
+    br {
+      display: none;
+    }
+  }
+  
+  .intro__photo {
+    display: block;
+    width: 100%;
+  }
+  
+  .intro__subtitle {
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    font-size: 20px;
+    background-image: none;
+    
+    br {
+      display: none;
+    }
+  }
+  
+  .intro__wrapper {
+    margin-top: 0;
+    padding-bottom: 30px;
+    background-image: none;
+  }
+  
+  .intro__att {
+    margin-top: 15px;
+  }
+}

@@ -8,6 +8,22 @@
   });
 })();
 (function () {
+  let popup = document.querySelector('.event');
+  let close = document.querySelector('.event__close');
+
+  let flag = localStorage.getItem('event-march');
+  if (flag == 'true') {
+    popup.classList.add('event--hide');
+  } else {
+    popup.classList.remove('event--hide');
+  }
+
+  close.addEventListener('click', function () {
+    popup.classList.add('event--hide');
+    localStorage.setItem('event-march', 'true');
+  });
+})();
+(function () {
   var phone = document.querySelector('.request__input[type=tel]');
   
   phone.addEventListener('focus', function() {
@@ -104,11 +120,11 @@
   var clientWidth = document.body.clientWidth;
   
   if (clientWidth <= 768) {
-    possibleSlide = 16;
+    possibleSlide = 7;
   } else if (clientWidth > 768 && clientWidth < 1210) {
-    possibleSlide = 8;
+    possibleSlide = 3;
   } else if (clientWidth >= 1210) {
-    possibleSlide = 4;
+    possibleSlide = 1;
   }
   
   var showSlide = function () {
@@ -332,63 +348,63 @@
 var programsData = [
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/38',
+    href: 'https://holidays.study.ua/trips/page/royal-holloway-university-of-london/',
     webp: 'img/program-1.webp',
     jpg: 'img/program-1.jpg',
     alt: 'Royal Holloway, University of London',
     name: 'Royal Holloway, University of London',
     location: 'Лондон',
     age: '10-17',
-    date: '<a href="http://summer.study.ua/trip/look/38" target="_blank">18.06 - 02.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/23" target="_blank">02.07 - 16.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/1135" target="_blank">16.07 - 30.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/22" target="_blank">30.07 - 13.08 (2 нед.)</a>',
-    cost: '$3600 (2 нед.)'
+    date: '<a href="https://holidays.study.ua/trips/page/royal-holloway-university-of-london/" target="_blank">18.06 - 02.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/royal-holloway-university-of-london/" target="_blank">02.07 - 16.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/royal-holloway-university-of-london/" target="_blank">16.07 - 30.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/royal-holloway-university-of-london/" target="_blank">30.07 - 13.08 (2 нед.)</a>',
+    cost: '$3650 (2 нед.)'
   },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/58',
+    href: 'https://holidays.study.ua/trips/page/cats-london-bloomsbury/',
     webp: 'img/program-2.webp',
     jpg: 'img/program-2.jpg',
     alt: 'CATS College London Bloomsbury',
     name: 'CATS College London Bloomsbury',
     location: 'Лондон',
     age: '12-17',
-    date: '<a href="http://summer.study.ua/trip/look/58" target="_blank">02.08 - 23.08 (3 нед.)</a>',
-    cost: '$4800 (3 нед.)'
+    date: '<a href="https://holidays.study.ua/trips/page/cats-london-bloomsbury/" target="_blank">28.06 - 12.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/cats-london-bloomsbury/" target="_blank">12.07 - 26.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/cats-london-bloomsbury/" target="_blank">02.08 - 23.08 (3 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/cats-london-bloomsbury/" target="_blank">09.08 - 23.08 (2 нед.)</a>',
+    cost: '$3750 (2 нед.) <br> $4850 (3 нед.)'
   },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/33',
+    href: 'https://holidays.study.ua/trips/page/brunel-university/',
     webp: 'img/program-3.webp',
     jpg: 'img/program-3.jpg',
     alt: 'Brunel University',
     name: 'Brunel University',
     location: 'Лондон',
     age: '10-17',
-    date: '<a href="http://summer.study.ua/trip/look/33" target="_blank">21.06 - 05.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/29" target="_blank">05.07 - 26.07 (3 нед.)</a>',
-    cost: '$3500 (2 нед.) <br> $4800 (3 нед.)'
+    date: '<a href="https://holidays.study.ua/trips/page/brunel-university/" target="_blank">20.06 - 04.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/brunel-university/" target="_blank">04.07 - 18.07 (2 нед.)</a><br> <a href="https://holidays.study.ua/trips/page/brunel-university/" target="_blank">04.07 - 25.07 (3 нед.)</a><br> <a href="https://holidays.study.ua/trips/page/brunel-university/" target="_blank">25.07 - 08.08 (2 нед.)</a>',
+    cost: '$3550 (2 нед.) <br> $4850 (3 нед.)'
   },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/35',
+    href: 'https://holidays.study.ua/trips/page/royal-holloway-university-of-london/',
     webp: 'img/program-4.webp',
     jpg: 'img/program-4.jpg',
     alt: 'Royal Holloway, University of London + Tottenham Hotspur Football',
     name: 'Royal Holloway, University of London + Tottenham Hotspur Football',
     location: 'Лондон',
     age: '12-17',
-    date: '<a href="http://summer.study.ua/trip/look/35" target="_blank">02.07 - 16.07 (2 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/royal-holloway-university-of-london/" target="_blank">02.07 - 16.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/royal-holloway-university-of-london/" target="_blank">16.07 - 30.07 (2 нед.)</a>',
     cost: '$3980 (2 нед.)'
   },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/1108',
+    href: 'https://holidays.study.ua/trips/page/roedean-school/',
     webp: 'img/program-5.webp',
     jpg: 'img/program-5.jpg',
     alt: 'Roedean School',
     name: 'Roedean School',
     location: 'Брайтон',
     age: '10-17',
-    date: '<a href="http://summer.study.ua/trip/look/1108" target="_blank">28.06 - 11.07 (2 нед.)</a>',
-    cost: '$3400 (2 нед.)'
+    date: '<a href="https://holidays.study.ua/trips/page/roedean-school/" target="_blank">28.06 - 11.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/roedean-school/" target="_blank">18.07 - 01.08 (2 нед.)</a>',
+    cost: '$3500 (2 нед.)'
   },
   // {
   //   full: false,
@@ -404,195 +420,219 @@ var programsData = [
   // },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/1111',
+    href: 'https://holidays.study.ua/trips/page/wellington-college/ ',
     webp: 'img/program-7.webp',
     jpg: 'img/program-7.jpg',
     alt: 'Wellington College',
     name: 'Wellington College',
     location: 'Виндзор',
     age: '10-17',
-    date: '<a href="http://summer.study.ua/trip/look/1111" target="_blank">01.07 - 15.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/1112" target="_blank">15.07 - 29.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/1113" target="_blank">29.07 - 12.08 (2 нед.)</a>',
-    cost: '$3300 (2 нед.)'
+    date: '<a href="https://holidays.study.ua/trips/page/wellington-college/" target="_blank">01.07 - 15.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/wellington-college/" target="_blank">15.07 - 29.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/wellington-college/" target="_blank">29.07 - 12.08 (2 нед.)</a>',
+    cost: '$3400 (2 нед.)'
   },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/1082',
+    href: 'https://holidays.study.ua/trips/page/queen-ethelburgas-college/',
     webp: 'img/program-8.webp',
     jpg: 'img/program-8.jpg',
     alt: 'Queen Ethelburga’s College + Edinburgh trip',
     name: 'Queen Ethelburga’s College + Edinburgh trip',
     location: 'Йорк',
     age: '8-17',
-    date: '<a href="http://summer.study.ua/trip/look/1082" target="_blank">28.06 - 12.07 (2 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/34" target="_blank">05.07 - 19.07 (2 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/queen-ethelburgas-college/" target="_blank">28.06 - 12.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/queen-ethelburgas-college/" target="_blank">05.07 - 19.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/queen-ethelburgas-college/" target="_blank">12.07 - 26.07 (2 нед.)</a>',
     cost: '$3750 (2 нед.)'
   },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/4',
+    href: 'https://holidays.study.ua/trips/page/oxford-school-of-english/',
     webp: 'img/program-9.webp',
     jpg: 'img/program-9.jpg',
     alt: 'Oxford School of English',
     name: 'Oxford School of English',
     location: 'Оксфорд',
     age: '12-17',
-    date: '<a href="http://summer.study.ua/trip/look/4" target="_blank">05.07 - 26.07 (3 нед.)</a> <br> <a href="http://summer.study.ua/trip/look/16" target="_blank">26.07 - 09.08 (2 нед.)</a>',
-    cost: '$3600 (3 нед.) <br> $3000 (2 нед.)'
+    date: '<a href="https://holidays.study.ua/trips/page/oxford-school-of-english/" target="_blank">05.07 - 26.07 (3 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/oxford-school-of-english/" target="_blank">25.07 - 08.08 (2 нед.)</a>',
+    cost: '$3750 (3 нед.) <br> $3100 (2 нед.)'
   },
   {
     full: false,
-    href: 'http://summer.study.ua/trip/look/65',
+    href: 'https://holidays.study.ua/trips/page/academic-summer-abbey-dld-london/',
     webp: 'img/program-10.webp',
     jpg: 'img/program-10.jpg',
     alt: 'Abbey DLD Academic summer',
     name: 'Abbey DLD Academic summer',
     location: 'Лондон',
     age: '13-18',
-    date: '<a href="http://summer.study.ua/trip/look/65" target="_blank">04.07 - 18.07 (2 нед.)</a>',
-    cost: '$4700 (2 нед.)'
+    date: '<a href="https://holidays.study.ua/trips/page/academic-summer-abbey-dld-london/" target="_blank">04.07 - 18.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/academic-summer-abbey-dld-london/" target="_blank">08.08 - 22.08 (2 нед.)</a>',
+    cost: '$4800 (2 нед.)'
   },
   {
     full: false,
-    href: '',
+    href: 'https://holidays.study.ua/trips/page/medical-course-abbey-dld-london/',
     webp: 'img/program-11.webp',
     jpg: 'img/program-11.jpg',
     alt: 'Abbey DLD Academic summer Medical School',
     name: 'Abbey DLD Academic summer Medical School',
     location: 'Лондон',
     age: '12-17',
-    date: '<a target="_blank">04.07 - 18.07 (2 нед.)</a>',
-    cost: '$5250 (2 нед.)'
+    date: '<a href="https://holidays.study.ua/trips/page/medical-course-abbey-dld-london/" target="_blank">04.07 - 18.07 (2 нед.)</a>',
+    cost: '$5350 (2 нед.)'
   },
   {
     full: false,
-    href: 'program/studio-cambridge.html',
+    href: 'https://holidays.study.ua/trips/page/studio-cambridge/',
     webp: 'img/program-12.webp',
     jpg: 'img/program-12.jpg',
     alt: 'Studio Cambridge',
     name: 'Studio Cambridge',
     location: 'Кембридж',
     age: '13-17',
-    date: '<a href="program/studio-cambridge.html" target="_blank">09.08 - 23.08 (2 нед.)</a>',
-    cost: '$3500 (2 нед.)'
+    date: '<a href="https://holidays.study.ua/trips/page/studio-cambridge/" target="_blank">09.08 - 23.08 (2 нед.)</a>',
+    cost: '$3600 (2 нед.)'
   },
   {
     full: false,
-    href: 'program/the-royal-high-school.html',
+    href: 'https://holidays.study.ua/trips/page/the-royal-high-school/',
     webp: 'img/program-13.webp',
     jpg: 'img/program-13.jpg',
     alt: 'The Royal High School',
     name: 'The Royal High School',
     location: 'Бат',
     age: '10-17',
-    date: '<a href="program/the-royal-high-school.html" target="_blank">08.07 - 22.07 (2 нед.)</a> <br> <a href="program/the-royal-high-school.html" target="_blank">22.07 - 05.08 (2 нед.)</a>',
-    cost: '$3500 (2 нед.)'
+    date: '<a href="https://holidays.study.ua/trips/page/the-royal-high-school/" target="_blank">08.07 - 22.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/the-royal-high-school/" target="_blank">22.07 - 05.08 (2 нед.)</a>',
+    cost: '$3550 (2 нед.)'
   },
   {
     full: false,
-    href: 'program/dover-college.html',
+    href: 'https://holidays.study.ua/trips/page/dover-college/',
     webp: 'img/program-14.webp',
     jpg: 'img/program-14.jpg',
     alt: 'Dover College',
     name: 'Dover College',
     location: 'Дувр',
     age: '11-17',
-    date: '<a href="program/dover-college.html" target="_blank">07.06 - 21.06 (2 нед.)</a> <br> <a href="program/dover-school.html" target="_blank">07.06 - 28.06 (3 нед.)</a>',
-    cost: '$3700 (2 нед.) <br> $4800 (3 нед.)'
+    date: '<a href="https://holidays.study.ua/trips/page/dover-college/" target="_blank">06.06 - 20.06 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/dover-college/" target="_blank">06.06 - 27.06 (3 нед.)</a>',
+    cost: '$3750 (2 нед.) <br> $4850 (3 нед.)'
   },
   {
     full: false,
-    href: 'program/kings-college-london.html',
+    href: 'https://holidays.study.ua/trips/page/kings-college-london/',
     webp: 'img/program-15.webp',
     jpg: 'img/program-15.jpg',
     alt: "King's College London",
     name: "King's College London",
     location: 'Лондон',
     age: '12-17',
-    date: '<a href="program/kings-college-london.html" target="_blank">15.08 - 29.08 (2 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/kings-college-london/" target="_blank">15.08 - 29.08 (2 нед.)</a>',
     cost: '$3750 (2 нед.)'
   },
   {
     full: false,
-    href: 'program/university-of-brighton.html',
+    href: 'https://holidays.study.ua/trips/page/university-of-brighton/',
     webp: 'img/program-16.webp',
     jpg: 'img/program-16.jpg',
     alt: "University of Brighton",
     name: "University of Brighton",
     location: 'Брайтон',
     age: '10-17',
-    date: '<a href="program/university-of-brighton.html" target="_blank">15.07 - 29.07 (2 нед.)</a>',
-    cost: '$3600 (2 нед.)'
+    date: '<a href="https://holidays.study.ua/trips/page/university-of-brighton/" target="_blank">15.07 - 29.07 (2 нед.)</a>',
+    cost: '$3650 (2 нед.)'
   },
   {
     full: false,
-    href: 'program/university-of-brighton-academic-course.html',
+    href: 'https://holidays.study.ua/trips/page/university-of-brighton-academic-course/',
     webp: 'img/program-17.webp',
     jpg: 'img/program-17.jpg',
     alt: "University of Brighton Academic course",
     name: "University of Brighton Academic course",
     location: 'Брайтон',
     age: '10-17',
-    date: '<a href="program/university-of-brighton-academic-course.html" target="_blank">15.07 - 29.07 (2 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/university-of-brighton-academic-course/" target="_blank">15.07 - 29.07 (2 нед.)</a>',
     cost: '$3950 (2 нед.)'
   },
   {
     full: false,
-    href: 'program/university-of-brighton-football-camp.html',
+    href: 'https://holidays.study.ua/trips/page/university-of-brighton-football-camp/',
     webp: 'img/program-18.webp',
     jpg: 'img/program-18.jpg',
     alt: "University of Brighton Football Camp",
     name: "University of Brighton Football Camp",
     location: 'Брайтон',
     age: '12-17',
-    date: '<a href="program/university-of-brighton-football-camp.html" target="_blank">15.07 - 29.07 (2 нед.)</a>',
-    cost: '$3900 (2 нед.)'
+    date: '<a href="https://holidays.study.ua/trips/page/university-of-brighton-football-camp/" target="_blank">15.07 - 29.07 (2 нед.)</a>',
+    cost: '$4000 (2 нед.)'
   },
   {
     full: false,
-    href: 'program/charterhouse-school.html',
+    href: 'https://holidays.study.ua/trips/page/charterhouse-school/',
     webp: 'img/program-19.webp',
     jpg: 'img/program-19.jpg',
     alt: "Charterhouse School Chelsea Camp",
     name: "Charterhouse School Chelsea Camp",
     location: 'Годалминг, Лондон',
     age: '13-17',
-    date: '<a href="program/charterhouse-school.html" target="_blank">27.07 - 09.08 (2 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/charterhouse-school/" target="_blank">27.07 - 09.08 (2 нед.)</a>',
     cost: '$4800 (2 нед.)'
   },
   {
     full: false,
-    href: 'program/university-of-stirling.html',
+    href: 'https://holidays.study.ua/trips/page/university-of-stirling/',
     webp: 'img/program-20.webp',
     jpg: 'img/program-20.jpg',
     alt: "University of Stirling",
     name: "University of Stirling",
     location: 'Стирлинг',
     age: '11-17',
-    date: '<a href="program/university-of-stirling.html" target="_blank">01.07 - 15.07 (2 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/university-of-stirling/" target="_blank">01.07 - 15.07 (2 нед.)</a>',
     cost: '$3600 (2 нед.)'
   },
   {
     full: false,
-    href: 'program/kings-college-london-edinburgh-academy.html',
+    href: 'https://holidays.study.ua/trips/page/london-edinburgh/',
     webp: 'img/program-21.webp',
     jpg: 'img/program-21.jpg',
     alt: "King's College London + Edinburgh Academy",
     name: "King's College London + Edinburgh Academy",
     location: 'Лондон, Англия <br> Эдинбург, Шотландия',
     age: '12-17',
-    date: '<a href="program/kings-college-london-edinburgh-academy.html" target="_blank">05.07 - 26.07 (3 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/london-edinburgh/" target="_blank">05.07 - 26.07 (3 нед.)</a>',
     cost: '$4800 (2 нед.)'
   },
   {
     full: false,
-    href: 'program/studio-cambridge-smm.html',
+    href: 'https://holidays.study.ua/trips/page/studio-cambridge-smm-global-leaders/',
     webp: 'img/program-12.webp',
     jpg: 'img/program-12.jpg',
     alt: "Studio Cambridge, SMM + Global Leaders",
     name: "Studio Cambridge, SMM + Global Leaders",
     location: 'Кембридж, Англия',
     age: '13-17',
-    date: '<a href="program/studio-cambridge-smm.html" target="_blank">12.07 - 26.07 (2 нед.)</a>',
-    cost: '$3800 (2 нед.)'
+    date: '<a href="https://holidays.study.ua/trips/page/studio-cambridge-smm-global-leaders/" target="_blank">12.07 - 26.07 (2 нед.)</a>',
+    cost: '$3900 (2 нед.)'
+  },
+  {
+    full: false,
+    href: 'https://holidays.study.ua/trips/page/edinburgh-manchester-london/',
+    webp: 'img/program-22.webp',
+    jpg: 'img/program-22.jpg',
+    alt: "Edinburgh Academy + Chetham's school + King's College",
+    name: "Edinburgh Academy + Chetham's school + King's College",
+    location: 'Эдинбург, Шотландия<br> Манчестер, Англия<br> Лондон, Англия',
+    age: '12-17',
+    date: '<a href="https://holidays.study.ua/trips/page/edinburgh-manchester-london/" target="_blank">05.07 - 26.07 (3 нед.)</a>',
+    cost: '$5000 (3 нед.)'
+  },
+  {
+    full: false,
+    href: 'https://holidays.study.ua/trips/page/brighton-high-school/',
+    webp: 'img/program-23.webp',
+    jpg: 'img/program-23.jpg',
+    alt: "Brighton High School Integration",
+    name: "Brighton High School Integration",
+    location: 'Брайтон',
+    age: '12-16',
+    date: '<a href="https://holidays.study.ua/trips/page/brighton-high-school/" target="_blank">14.06 - 05.07 (3 нед.)</a>',
+    cost: '$4450 (3 нед.)'
   }
 ];
 (function () {
