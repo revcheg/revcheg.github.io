@@ -1,20 +1,4 @@
 (function () {
-  let popup = document.querySelector('.event');
-  let close = document.querySelector('.event__close');
-
-  let flag = localStorage.getItem('event-march');
-  if (flag == 'true') {
-    popup.classList.add('event--hide');
-  } else {
-    popup.classList.remove('event--hide');
-  }
-
-  close.addEventListener('click', function () {
-    popup.classList.add('event--hide');
-    localStorage.setItem('event-march', 'true');
-  });
-})();
-(function () {
   var phone = document.querySelector('.request__input[type=tel]');
   
   phone.addEventListener('focus', function() {
@@ -344,8 +328,8 @@ var programsData = [
     name: 'St. Raphaela’s School',
     location: 'Дублин',
     age: '11-17',
-    date: '<a href="https://holidays.study.ua/trips/page/st-raphaelas-school/" target="_blank">28.06 - 19.07 (3 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/st-raphaelas-school/" target="_blank">12.07 - 02.08 (3 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/st-raphaelas-school/" target="_blank">12.07 - 26.07 (2 нед.)</a>',
-    cost: '€3600 (3 нед.) <br> $3600 (3 нед.) <br> €3000 (2 нед.)'
+    date: '<a href="https://holidays.study.ua/trips/page/st-raphaelas-school/" target="_blank">28.06 - 19.07 (3 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/st-raphaelas-school/" target="_blank">12.07 - 02.08 (3 нед.)</a>',
+    cost: '€3600 (3 нед.) <br> €3600 (3 нед.)'
   },
   {
     full: false,

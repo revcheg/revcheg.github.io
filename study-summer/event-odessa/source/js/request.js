@@ -57,13 +57,13 @@
   form.addEventListener('submit', function (evt) {    
     var email = form.querySelector('#email').value;
   
-    if (email == localStorage.getItem('event-odessa')) {
+    if (email == localStorage.getItem('event-march-odessa')) {
       evt.preventDefault();
       sorry.classList.remove('sorry--hide');
       overlay.classList.remove('overlay--hide');
     }
   
-    localStorage.setItem('event-odessa', email);
+    localStorage.setItem('event-march-odessa', email);
   });
   
   close.addEventListener('click', function () {

@@ -521,6 +521,11 @@ body {
   text-align: center;
   background-color: #FF3434; }
 
+.seminar__author {
+  display: block;
+  width: 200px;
+  margin: auto; }
+
 .seminar__desc {
   color: #292F48;
   text-align: center; }

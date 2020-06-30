@@ -8,22 +8,6 @@
   });
 })();
 (function () {
-  let popup = document.querySelector('.event');
-  let close = document.querySelector('.event__close');
-
-  let flag = localStorage.getItem('event-march');
-  if (flag == 'true') {
-    popup.classList.add('event--hide');
-  } else {
-    popup.classList.remove('event--hide');
-  }
-
-  close.addEventListener('click', function () {
-    popup.classList.add('event--hide');
-    localStorage.setItem('event-march', 'true');
-  });
-})();
-(function () {
   var phone = document.querySelector('.request__input[type=tel]');
   
   phone.addEventListener('focus', function() {
@@ -379,7 +363,7 @@ var programsData = [
     name: 'Brunel University',
     location: 'Лондон',
     age: '10-17',
-    date: '<a href="https://holidays.study.ua/trips/page/brunel-university/" target="_blank">20.06 - 04.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/brunel-university/" target="_blank">04.07 - 18.07 (2 нед.)</a><br> <a href="https://holidays.study.ua/trips/page/brunel-university/" target="_blank">04.07 - 25.07 (3 нед.)</a><br> <a href="https://holidays.study.ua/trips/page/brunel-university/" target="_blank">25.07 - 08.08 (2 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/brunel-university/" target="_blank">20.06 - 04.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/brunel-university/" target="_blank">04.07 - 18.07 (2 нед.)</a><br> <a href="https://holidays.study.ua/trips/page/brunel-university/" target="_blank">04.07 - 25.07 (3 нед.)</a>',
     cost: '$3550 (2 нед.) <br> $4850 (3 нед.)'
   },
   {
@@ -394,18 +378,18 @@ var programsData = [
     date: '<a href="https://holidays.study.ua/trips/page/royal-holloway-university-of-london/" target="_blank">02.07 - 16.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/royal-holloway-university-of-london/" target="_blank">16.07 - 30.07 (2 нед.)</a>',
     cost: '$3980 (2 нед.)'
   },
-  {
-    full: false,
-    href: 'https://holidays.study.ua/trips/page/roedean-school/',
-    webp: 'img/program-5.webp',
-    jpg: 'img/program-5.jpg',
-    alt: 'Roedean School',
-    name: 'Roedean School',
-    location: 'Брайтон',
-    age: '10-17',
-    date: '<a href="https://holidays.study.ua/trips/page/roedean-school/" target="_blank">28.06 - 11.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/roedean-school/" target="_blank">18.07 - 01.08 (2 нед.)</a>',
-    cost: '$3500 (2 нед.)'
-  },
+  // {
+  //   full: false,
+  //   href: 'https://holidays.study.ua/trips/page/roedean-school/',
+  //   webp: 'img/program-5.webp',
+  //   jpg: 'img/program-5.jpg',
+  //   alt: 'Roedean School',
+  //   name: 'Roedean School',
+  //   location: 'Брайтон',
+  //   age: '10-17',
+  //   date: '<a href="https://holidays.study.ua/trips/page/roedean-school/" target="_blank">28.06 - 11.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/roedean-school/" target="_blank">18.07 - 01.08 (2 нед.)</a>',
+  //   cost: '$3500 (2 нед.)'
+  // },
   // {
   //   full: false,
   //   href: 'http://summer.study.ua/trip/look/1104',
@@ -499,7 +483,7 @@ var programsData = [
     name: 'The Royal High School',
     location: 'Бат',
     age: '10-17',
-    date: '<a href="https://holidays.study.ua/trips/page/the-royal-high-school/" target="_blank">08.07 - 22.07 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/the-royal-high-school/" target="_blank">22.07 - 05.08 (2 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/the-royal-high-school/" target="_blank">08.07 - 22.07 (2 нед.)</a>',
     cost: '$3550 (2 нед.)'
   },
   {
@@ -511,8 +495,8 @@ var programsData = [
     name: 'Dover College',
     location: 'Дувр',
     age: '11-17',
-    date: '<a href="https://holidays.study.ua/trips/page/dover-college/" target="_blank">06.06 - 20.06 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/dover-college/" target="_blank">06.06 - 27.06 (3 нед.)</a>',
-    cost: '$3750 (2 нед.) <br> $4850 (3 нед.)'
+    date: '<a href="https://holidays.study.ua/trips/page/dover-college/" target="_blank">06.06 - 27.06 (3 нед.)</a>',
+    cost: '$4850 (3 нед.)'
   },
   {
     full: false,
@@ -766,10 +750,10 @@ var programsData = [
   
   // Отрисовка слайдов
   var showSlide = function () {
-    if (currentSlide > 3) {
+    if (currentSlide > 2) {
       currentSlide = 0;
     } else if (currentSlide < 0) {
-      currentSlide = 3;
+      currentSlide = 2;
     };
     slides[currentSlide].classList.add('slider__item--show');
     dots[currentSlide].classList.add('slider__dot--active');

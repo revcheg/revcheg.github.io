@@ -133,18 +133,6 @@ var programsData = [
   },
   {
     full: false,
-    href: 'https://holidays.study.ua/trips/page/calgary-toronto-canada/',
-    webp: 'img/program-12.webp',
-    jpg: 'img/program-12.jpg',
-    alt: 'Calgary + Toronto',
-    name: 'Calgary + Toronto',
-    location: 'Калгари, Торонто',
-    age: '13-17',
-    date: '<a href="https://holidays.study.ua/trips/page/calgary-toronto-canada/" target="_blank">28.06 - 26.07 (4 нед.)</a>',
-    cost: '$5400 (4 нед.)'
-  },
-  {
-    full: false,
     href: 'https://holidays.study.ua/trips/page/niagara-college-students/',
     webp: 'img/program-13.webp',
     jpg: 'img/program-13.jpg',

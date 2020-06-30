@@ -1,0 +1,148 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  width: 250px;
+  margin-right: 45px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  margin-right: 25px;
+  
+  &:last-child {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+.nav__link {
+  color: $text;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  outline: none;
+  transition: 0.3s;
+  
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+}
+
+.nav__phone {
+  color: $red;
+  font-size: 22px;
+  font-weight: 400;
+  text-decoration: none;
+  outline: none;
+  transition: 0.3s;
+  
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
+}
+
+.nav__menu {
+  display: none;
+}
+
+@media screen and ($tablet) {
+  .nav {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .nav__control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 4;
+  }
+  
+  .nav__logo {
+    margin-right: 0;
+  }
+  
+  .nav__list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    background-image: url('../img/nav-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    transition: 0.5s;
+    transform: translateY(-100%);
+    z-index: 3;
+    
+    &--show {
+      transform: translateY(0%);
+    }
+  }
+  
+  .nav__item {
+    margin-right: 0;
+    margin-bottom: 30px;
+    
+    &:first-child,
+    &:last-child {
+      margin-left: 0;
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  .nav__link {
+    font-size: 22px;
+  }
+  
+  .nav__menu {
+    display: block;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    font-size: 0;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    outline: none;
+    transition: 0.3s;
+    
+    &--open {
+      background-image: url('../img/nav.svg');
+    }
+    
+    &--close {
+      background-image: url('../img/nav-close.svg');
+    }
+  }
+}
+
+@media screen and ($mobile) {
+  .nav__logo {
+    width: 200px;
+  }
+}

@@ -41,7 +41,7 @@ var programsData = [
     name: 'EU International Business school',
     location: 'Барселона, Испания',
     age: '16-18',
-    date: '<a href="https://holidays.study.ua/trips/page/eu-business-school/" target="_blank">05.07 - 25.07 (3 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/eu-business-school/" target="_blank">02.08 - 22.08 (3 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/eu-business-school/" target="_blank">02.08 - 22.08 (3 нед.)</a>',
     cost: '€4600 (3 нед.)'
   },
   {

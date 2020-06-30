@@ -1,20 +1,4 @@
 (function () {
-  let popup = document.querySelector('.event');
-  let close = document.querySelector('.event__close');
-
-  let flag = localStorage.getItem('event-march');
-  if (flag == 'true') {
-    popup.classList.add('event--hide');
-  } else {
-    popup.classList.remove('event--hide');
-  }
-
-  close.addEventListener('click', function () {
-    popup.classList.add('event--hide');
-    localStorage.setItem('event-march', 'true');
-  });
-})();
-(function () {
   var phone = document.querySelector('.request__input[type=tel]');
   
   phone.addEventListener('focus', function() {
@@ -356,7 +340,7 @@ var programsData = [
     name: 'EU International Business school',
     location: 'Барселона, Испания',
     age: '16-18',
-    date: '<a href="https://holidays.study.ua/trips/page/eu-business-school/" target="_blank">05.07 - 25.07 (3 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/eu-business-school/" target="_blank">02.08 - 22.08 (3 нед.)</a>',
+    date: '<a href="https://holidays.study.ua/trips/page/eu-business-school/" target="_blank">02.08 - 22.08 (3 нед.)</a>',
     cost: '€4600 (3 нед.)'
   },
   {

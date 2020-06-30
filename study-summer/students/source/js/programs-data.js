@@ -106,17 +106,17 @@ var programsData = [
     age: '18-23',
     date: '<a href="https://holidays.study.ua/trips/page/stay-campus-camden/" target="_blank">02.08 - 16.08 (2 нед.)</a> <br> <a href="https://holidays.study.ua/trips/page/stay-campus-camden/" target="_blank">02.08 - 23.08 (3 нед.)</a>',
     cost: '$3650 (2 нед.) <br> $4550 (3 нед.)'
-  },
-  {
-    full: false,
-    href: 'https://holidays.study.ua/trips/page/business-simulation-program/',
-    webp: 'img/program-10.webp',
-    jpg: 'img/program-10.jpg',
-    alt: 'Business Simulation Program',
-    name: 'Business Simulation Program',
-    location: 'Борнмут, Великобритания',
-    age: '16-25',
-    date: '<a href="https://holidays.study.ua/trips/page/business-simulation-program/" target="_blank">25.07 - 22.08 (4 нед.)</a>',
-    cost: '$4300 (5 нед.)'
   }
+  // {
+  //   full: false,
+  //   href: 'https://holidays.study.ua/trips/page/business-simulation-program/',
+  //   webp: 'img/program-10.webp',
+  //   jpg: 'img/program-10.jpg',
+  //   alt: 'Business Simulation Program',
+  //   name: 'Business Simulation Program',
+  //   location: 'Борнмут, Великобритания',
+  //   age: '16-25',
+  //   date: '<a href="https://holidays.study.ua/trips/page/business-simulation-program/" target="_blank">25.07 - 22.08 (4 нед.)</a>',
+  //   cost: '$4300 (5 нед.)'
+  // }
 ];

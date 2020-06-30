@@ -1,20 +1,4 @@
 (function () {
-  let popup = document.querySelector('.event');
-  let close = document.querySelector('.event__close');
-
-  let flag = localStorage.getItem('event-march');
-  if (flag == 'true') {
-    popup.classList.add('event--hide');
-  } else {
-    popup.classList.remove('event--hide');
-  }
-
-  close.addEventListener('click', function () {
-    popup.classList.add('event--hide');
-    localStorage.setItem('event-march', 'true');
-  });
-})();
-(function () {
   var phone = document.querySelector('.request__input[type=tel]');
   
   phone.addEventListener('focus', function() {
@@ -468,18 +452,6 @@ var programsData = [
     age: '13-17',
     date: '<a href="https://holidays.study.ua/trips/page/ilsc-toronto-vancouver/" target="_blank">18.07 - 08.08 (3 нед.)</a>',
     cost: '$5650 (3 нед.)'
-  },
-  {
-    full: false,
-    href: 'https://holidays.study.ua/trips/page/calgary-toronto-canada/',
-    webp: 'img/program-12.webp',
-    jpg: 'img/program-12.jpg',
-    alt: 'Calgary + Toronto',
-    name: 'Calgary + Toronto',
-    location: 'Калгари, Торонто',
-    age: '13-17',
-    date: '<a href="https://holidays.study.ua/trips/page/calgary-toronto-canada/" target="_blank">28.06 - 26.07 (4 нед.)</a>',
-    cost: '$5400 (4 нед.)'
   },
   {
     full: false,
