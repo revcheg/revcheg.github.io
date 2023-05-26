@@ -116,6 +116,9 @@ fullButton.addEventListener('click', fullscreenVideo);
 let FILE;
 let FILETYPE;
 let FILEURL;
+let FILESIZE;
+
+const MAX_FILE_SIZE = 1073741824;
 
 const INPUTFILE = document.querySelector('.settings__file');
 
@@ -127,8 +130,29 @@ INPUTFILE.addEventListener('change', function () {
   FILE = INPUTFILE.files[0];
   FILEURL = URL.createObjectURL(FILE);
   FILETYPE = INPUTFILE.files[0].type.replace('video/', '');
-  VIDEO.src = FILEURL; 
+  FILESIZE = FILE.size;
+  validateFILE(FILE);
 });
+
+function validateFILE(FILE) {
+  if (FILESIZE < MAX_FILE_SIZE) {
+    if (!isSupportedFileType(FILE.type)) {
+      console.log('Непідтримуваний тип файлу');
+      INPUTFILE.value = '';
+    } else {
+      VIDEO.src = FILEURL; 
+      VIDEO.setAttribute('crossorigin', 'anonymous');
+    }
+  } else {
+    console.log('Файл завеликий');
+    INPUTFILE.value = '';
+  }
+}
+
+function isSupportedFileType(fileType) {
+  let supportedFormats = ['video/mp4', 'video/webm'];
+  return supportedFormats.includes(fileType);
+}
 
 // Keyboard
 let videoKey;
@@ -229,6 +253,142 @@ function clearScheme() {
   localStorage.removeItem('localTheme');
 }
 
+// // Scheme BETA
+// const schemeRadios = document.querySelectorAll('.footer__theme');
+// let darkSchemeMedia = matchMedia('(prefers-color-scheme: dark)').matches;
+
+// function setupSwitcher() {
+//   const savedScheme = getSavedScheme();
+
+//   if (savedScheme !== null) {
+//     const currentRadio = document.querySelector(`.footer__theme[value=${savedScheme}]`);
+//     currentRadio.checked = true;
+//   }
+
+//   [...schemeRadios].forEach((radio) => {
+//     radio.addEventListener('change', (event) => {
+//         setScheme(event.target.value);
+//     });
+//   });
+// }
+
+// function setupScheme() {
+//   const savedScheme = getSavedScheme();
+//   const systemScheme = getSystemScheme();
+
+//   if (savedScheme === null) return;
+
+//   if (savedScheme !== systemScheme) {
+//     setScheme(savedScheme);
+//   }
+// }
+
+// function setScheme(scheme) {
+//   switchMedia(scheme);
+
+//   if (scheme === 'auto') {
+//     clearScheme();
+//   } else {
+//     saveScheme(scheme);
+//   }
+// }
+
+// let favicon = document.querySelector('link[href="img/favicons/favicon.svg"]');
+
+// function switchMedia(scheme) {
+//   BODY.className = '';
+
+//   switch (scheme) {
+//     case 'light':
+//       BODY.classList.add(scheme);
+//       favicon.href = 'img/favicons/favicon.svg'
+//       break;
+
+//     case 'auto':
+//       BODY.classList.add(scheme);
+//       favicon.href = 'img/favicons/favicon.svg'
+//       break;
+
+//     case 'dark':
+//       BODY.classList.add(scheme);
+//       favicon.href = 'img/favicons/favicon-dark.svg'
+//       break;
+//   }
+// }
+
+// function getSystemScheme() {
+//   return darkSchemeMedia ? 'dark' : 'light';
+// }
+
+// setupSwitcher();
+// setupScheme();
+
+// Scheme
+let scheme = 'light';
+let buttonIndex;
+
+const themeButtons = document.querySelectorAll('.footer__theme');
+
+// Check client scheme
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  scheme = 'dark';
+} else {
+  scheme = 'light';
+}
+
+// Set button
+themeButtons.forEach(function (button, index) {
+  button.addEventListener('click', function () {
+    buttonIndex = Array.from(themeButtons).indexOf(button);
+    scheme = this.getAttribute('data-theme');
+
+    setButton(buttonIndex);
+    setScheme(scheme);
+    saveScheme(scheme);
+  });
+});
+
+function setButton() {
+  themeButtons.forEach((button) => {
+    button.removeAttribute('disabled');
+    button.classList.remove('footer__theme--active');
+  });
+  
+  themeButtons[buttonIndex].setAttribute('disabled', 'disabled'); 
+  themeButtons[buttonIndex].classList.add('footer__theme--active');
+}
+
+// Set scheme
+let favicon = document.querySelector('link[href="img/favicons/favicon.svg"]');
+
+function setScheme(scheme) {
+  BODY.className = '';
+
+  switch (scheme) {
+    case 'light':
+      BODY.classList.add(scheme);
+      buttonIndex = 0;
+      favicon.href = 'img/favicons/favicon.svg'
+      break;
+
+    case 'dark':
+      BODY.classList.add(scheme);
+      buttonIndex = 1;
+      favicon.href = 'img/favicons/favicon-dark.svg'
+      break;
+
+    case 'cyberpunk':
+      BODY.classList.add(scheme);
+      buttonIndex = 2;
+      break;
+  }
+}
+
+setScheme(scheme);
+setButton(buttonIndex);
+
+loadScheme();
+
 // Set Video
 let game;
 
@@ -252,6 +412,7 @@ function setVideo() {
 // Reset video
 function resetVideo() {
   VIDEO.load();
+  VIDEO.removeAttribute('crossorigin');
   WRAPPER.className = 'video__wrapper';
   STARTBUTTON.classList.remove('video__start--hide');
   CONTROLS.classList.add('control--hide');
@@ -342,13 +503,6 @@ lineCheckbox.addEventListener('change', function (event) {
 
 // 3D scale
 const scaleCheckbox = SETTINGS.querySelector('.settings__checkbox--scale');
-
-// Little fix mobile settings height
-const settingsButtonHeight = SETTINGS.querySelector('.settings__control').clientHeight;
-const settingsWrapper = SETTINGS.querySelector('.settings__wrapper');
-if (BODY.clientWidth < 1440) {
-  settingsWrapper.style.height = `calc(100vh - ${settingsButtonHeight}px - 60px)`;
-}
 
 // Start 
 function startVideo() {
@@ -441,150 +595,46 @@ const tabs = SETTINGS.querySelectorAll('.settings__tab');
 tabButtons.forEach(button => {
   button.addEventListener('click', () => {
     tabButtons.forEach(btn => btn.classList.remove('settings__button--active'));
-    tabs.forEach(tab => tab.classList.remove('settings__tab--active'));
+    // tabs.forEach(tab => tab.classList.remove('settings__tab--active'));
+    tabs.forEach(tab => {
+      tab.classList.remove('settings__tab--active');
+      tab.classList.remove('settings__tab--relative');
+      tab.removeAttribute('tabIndex');
+    });
 
     const tabName = button.getAttribute('data-tab');
 
     button.classList.add('settings__button--active');
     document.querySelector(`.settings__tab[data-tab="${tabName}"]`).classList.add('settings__tab--active');
+    document.querySelector(`.settings__tab[data-tab="${tabName}"]`).setAttribute('tabIndex', '0');
+    document.querySelector(`.settings__tab[data-tab="${tabName}"]`).focus();
+    updateSettingsHeight();
   });
 });
 
-// // THEME BETA
-// const schemeRadios = document.querySelectorAll('.footer__theme');
-// let darkSchemeMedia = matchMedia('(prefers-color-scheme: dark)').matches;
+// Little fix mobile settings height
+function updateSettingsHeight() {
+  const settingsButtonHeight = SETTINGS.querySelector('.settings__control').clientHeight;
+  const settingsWrapper = SETTINGS.querySelector('.settings__wrapper');
+  const settingsWrapperHeight = settingsWrapper.clientHeight;
+  const activeTab = document.querySelector('.settings__tab--active');
+  const activeTabHeight = activeTab.clientHeight;
 
-// function setupSwitcher() {
-//   const savedScheme = getSavedScheme();
+  if (BODY.clientWidth < 1440) {
+    settingsWrapper.style.height = `calc(100vh - ${settingsButtonHeight}px - 61px)`;
+    settingsWrapper.style.margin = '0';
 
-//   if (savedScheme !== null) {
-//     const currentRadio = document.querySelector(`.footer__theme[value=${savedScheme}]`);
-//     currentRadio.checked = true;
-//   }
-
-//   [...schemeRadios].forEach((radio) => {
-//     radio.addEventListener('change', (event) => {
-//         setScheme(event.target.value);
-//     });
-//   });
-// }
-
-// function setupScheme() {
-//   const savedScheme = getSavedScheme();
-//   const systemScheme = getSystemScheme();
-
-//   if (savedScheme === null) return;
-
-//   if (savedScheme !== systemScheme) {
-//     setScheme(savedScheme);
-//   }
-// }
-
-// function setScheme(scheme) {
-//   switchMedia(scheme);
-
-//   if (scheme === 'auto') {
-//     clearScheme();
-//   } else {
-//     saveScheme(scheme);
-//   }
-// }
-
-// let favicon = document.querySelector('.favicon');
-
-// function switchMedia(scheme) {
-//   BODY.className = '';
-
-//   switch (scheme) {
-//     case 'light':
-//       BODY.classList.add(scheme);
-//       favicon.href = 'img/favicons/favicon.svg'
-//       break;
-
-//     case 'auto':
-//       BODY.classList.add(scheme);
-//       favicon.href = 'img/favicons/favicon.svg'
-//       break;
-
-//     case 'dark':
-//       BODY.classList.add(scheme);
-//       favicon.href = 'img/favicons/favicon-dark.svg'
-//       break;
-//   }
-// }
-
-// function getSystemScheme() {
-//   return darkSchemeMedia ? 'dark' : 'light';
-// }
-
-// setupSwitcher();
-// setupScheme();
-
-// THEME
-let scheme = 'light';
-let buttonIndex;
-
-const themeButtons = document.querySelectorAll('.footer__theme');
-
-// Check client theme
-if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  scheme = 'dark';
-} else {
-  scheme = 'light';
-}
-
-// Set button
-themeButtons.forEach(function (button, index) {
-  button.addEventListener('click', function () {
-    buttonIndex = Array.from(themeButtons).indexOf(button);
-    scheme = this.getAttribute('data-theme');
-
-    setButton(buttonIndex);
-    setScheme(scheme);
-    saveScheme(scheme);
-  });
-});
-
-function setButton() {
-  themeButtons.forEach((button) => {
-    button.removeAttribute('disabled');
-    button.classList.remove('footer__theme--active');
-  });
-  
-  themeButtons[buttonIndex].setAttribute('disabled', 'disabled'); 
-  themeButtons[buttonIndex].classList.add('footer__theme--active');
-}
-
-// Set theme
-let favicon = document.querySelector('.favicon');
-
-function setScheme(scheme) {
-  BODY.className = '';
-
-  switch (scheme) {
-    case 'light':
-      BODY.classList.add(scheme);
-      buttonIndex = 0;
-      favicon.href = 'img/favicons/favicon.svg'
-      break;
-
-    case 'dark':
-      BODY.classList.add(scheme);
-      buttonIndex = 1;
-      favicon.href = 'img/favicons/favicon-dark.svg'
-      break;
-
-    case 'cyberpunk':
-      BODY.classList.add(scheme);
-      buttonIndex = 2;
-      break;
+    if (activeTabHeight > settingsWrapperHeight) {
+      activeTab.classList.add('settings__tab--relative');
+      settingsWrapper.style.height = activeTabHeight + 'px';
+      settingsWrapper.style.margin = '15px 0 40px 0';
+    } 
   }
 }
 
-setScheme(scheme);
-setButton(buttonIndex);
+updateSettingsHeight();
 
-loadScheme();
+window.addEventListener('resize', updateSettingsHeight);
 
 // Video
 let progressInterval;
