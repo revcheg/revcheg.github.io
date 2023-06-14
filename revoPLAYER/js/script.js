@@ -120,10 +120,19 @@ function updateVolume() {
 
 volumeRange.addEventListener('input', updateVolume);
 
+// Wheel volume
+function wheelVolume(event) {
+  event.preventDefault();
+  const delta = -Math.sign(event.deltaY);
+  changeVolume(delta * 0.1);
+};
+
+volumeRange.addEventListener('wheel', wheelVolume);
+
 // Range
 let rangeValue;
 
-VIDEORANGE.addEventListener('mousedown', () => {
+VIDEORANGE.addEventListener('mousedown', function() {
   VIDEO.pause();
   stopProgress();
 
@@ -132,16 +141,16 @@ VIDEORANGE.addEventListener('mousedown', () => {
   }
 });
 
-VIDEORANGE.addEventListener('change', function () {
+function changeDuration() {
   VIDEO.currentTime = VIDEORANGE.value;
   VIDEO.play();
 
   if (pauseButtonIcon.classList.contains('control__icon--hide')) {
     changePauseIcon();
   }
-});
+};
 
-VIDEORANGE.addEventListener('input', function () {
+function setDuration() {
   rangeValue = VIDEORANGE.value;
 
   currentVideoPassed = formatTime(rangeValue);
@@ -149,26 +158,109 @@ VIDEORANGE.addEventListener('input', function () {
 
   videoPassed.innerHTML = currentVideoPassed;
   videoLeft.innerHTML = currentVideoLeft;
-});
+};
 
-// Zoom
-const fillButton = CONTROLS.querySelector('.control__button--fit');
+VIDEORANGE.addEventListener('change', changeDuration);
+VIDEORANGE.addEventListener('input', setDuration);
+
+// Wheel duration
+function wheelDuration(event) {
+  event.preventDefault();
+  const delta = -Math.sign(event.deltaY);
+  let currentValue = parseFloat(VIDEORANGE.value);
+  let changedValue = currentValue + delta;
+
+  VIDEORANGE.value = changedValue;
+
+  changeDuration();
+};
+
+VIDEORANGE.addEventListener('wheel', wheelDuration);
+
+// Playback speed
+const speedButton = CONTROLS.querySelector('.control__button--speed');
+let playbackRate = 1.0;
+
+function changeSpeed() {
+  playbackRate += 0.25;
+
+  if (playbackRate > 2.0) {
+    playbackRate = 1.0;
+  }
+
+  VIDEO.playbackRate = playbackRate;
+};
+
+speedButton.addEventListener('click', changeSpeed);
+
+// Fit
+const fitButton = CONTROLS.querySelector('.control__button--fit');
 
 function changeFitscreen() {
   let currentFit = VIDEO.style.objectFit;
-  let newFit = currentFit === 'cover' ? 'contain' : 'cover';
-  VIDEO.style.objectFit = newFit;
+  let changedFit = currentFit === 'cover' ? 'contain' : 'cover';
+  VIDEO.style.objectFit = changedFit;
 
-  if (newFit === 'contain') {
-    fillButton.setAttribute('aria-label', 'Збільшити зображення');
-    fillButton.setAttribute('title', 'Збільшити зображення (z)');
+  if (changedFit === 'contain') {
+    fitButton.setAttribute('aria-label', 'Ростягнути зображення');
+    fitButton.setAttribute('title', 'Ростягнути зображення (x)');
   } else {
-    fillButton.setAttribute('aria-label', 'Зменшити зображення');
-    fillButton.setAttribute('title', 'Зменшити зображення (z)');
+    fitButton.setAttribute('aria-label', 'Зменшити зображення');
+    fitButton.setAttribute('title', 'Зменшити зображення (x)');
   }
 };
 
-fillButton.addEventListener('click', changeFitscreen);
+fitButton.addEventListener('click', changeFitscreen);
+
+// Touch, object fit
+let startX = null;
+let startY = null;
+let direction;
+
+function handleTouchStart(event) {
+  startX = event.touches[0].clientX;
+  startY = event.touches[0].clientY;
+};
+
+function handleTouchMove (event) {
+  let currentX = event.touches[0].clientX;
+  let currentY = event.touches[0].clientY;
+
+  let deltaX = currentX - startX;
+  let deltaY = currentY - startY;
+
+  if (Math.abs(deltaX) > Math.abs(deltaY)) {
+    if (deltaX > 0) {
+      direction = 'right';
+    } else {
+      direction = 'left';
+    }
+  } else {
+    if (deltaY > 0) {
+      direction = 'down';
+    } else {
+      direction = 'up';
+    }
+  }
+
+  if (direction === 'up') {
+    VIDEO.style.objectFit = 'contain';
+  } else if (direction === 'down') {
+    VIDEO.style.objectFit = 'cover';
+  }
+
+  startX = currentX;
+  startY = currentY;
+};
+
+function handleTouchEnd() {
+  startX = null;
+  startY = null;
+};
+
+VIDEO.addEventListener('touchstart', handleTouchStart);
+VIDEO.addEventListener('touchmove', handleTouchMove);
+VIDEO.addEventListener('touchend', handleTouchEnd);
 
 // Full screen
 const fullButton = CONTROLS.querySelector('.control__button--size');
@@ -244,56 +336,6 @@ function hideControls() {
 WRAPPER.addEventListener("mousemove", handleMouseMove);
 WRAPPER.addEventListener("mouseleave", hideControls);
 
-// Touch, object fit
-let startX = null;
-let startY = null;
-let direction;
-
-function handleTouchStart(event) {
-  startX = event.touches[0].clientX;
-  startY = event.touches[0].clientY;
-};
-
-function handleTouchMove (event) {
-  let currentX = event.touches[0].clientX;
-  let currentY = event.touches[0].clientY;
-
-  let deltaX = currentX - startX;
-  let deltaY = currentY - startY;
-
-  if (Math.abs(deltaX) > Math.abs(deltaY)) {
-    if (deltaX > 0) {
-      direction = 'right';
-    } else {
-      direction = 'left';
-    }
-  } else {
-    if (deltaY > 0) {
-      direction = 'down';
-    } else {
-      direction = 'up';
-    }
-  }
-
-  if (direction === 'right') {
-    VIDEO.style.objectFit = 'contain';
-  } else if (direction === 'left') {
-    VIDEO.style.objectFit = 'cover';
-  }
-
-  startX = currentX;
-  startY = currentY;
-};
-
-function handleTouchEnd() {
-  startX = null;
-  startY = null;
-};
-
-VIDEO.addEventListener('touchstart', handleTouchStart);
-VIDEO.addEventListener('touchmove', handleTouchMove);
-VIDEO.addEventListener('touchend', handleTouchEnd);
-
 // Error
 function showError(errorMessage) {
   ERROR.classList.remove('error--hide');
@@ -312,8 +354,13 @@ let selectedVideos = [];
 function handleFileSelection(event) {
   let files = event.target.files;
 
+  while (seriesList.firstChild) {
+    seriesList.removeChild(seriesList.firstChild);
+  }
+
   Array.from(files).forEach(file => {
     let fileUrl = URL.createObjectURL(file);
+    let fileDescription = file.name;
 
     selectedVideos.push({
       file: file,
@@ -322,8 +369,18 @@ function handleFileSelection(event) {
       type: file.type,
       size: file.size
     });
+
+    const li = document.createElement('li');
+    li.className = 'series__item';
+    const button = document.createElement('button');
+    button.className = 'button series__button';
+    button.type = 'button';
+    button.textContent = fileDescription;
+    li.appendChild(button);
+    seriesList.appendChild(li);
   });
 
+  showError('Відео обрано, готові грати &#128526;');
   validateFiles(selectedVideos);
 };
 
@@ -341,11 +398,11 @@ function validateFiles(videos) {
     fileType = video.file.type;
 
     if (fileSize > MAX_FILE_SIZE) {
-      showError('Файл завеликий');
+      showError('Файл завеликий &#128548;');
       INPUTFILE.value = '';
     } else {
       if (!isSupportedFileType(fileType)) {
-        showError('Непідтримуваний тип файлу');
+        showError('Непідтримуваний тип файлу &#128552;');
         INPUTFILE.value = '';
       } else {
         VIDEO.setAttribute('crossorigin', 'anonymous');
@@ -402,7 +459,7 @@ function playCurrentVideo() {
   VIDEO.setAttribute('alt', currentVideo.description);
 
   VIDEO.addEventListener('error', () => {
-    showError('Не вдалося завантажити відео &#128531;');
+    showError('Не вдалось завантажити відео &#128531;');
   });
 };
 
@@ -485,130 +542,6 @@ function previousVideo() {
 prevButton.addEventListener('click', previousVideo);
 nextButton.addEventListener('click', nextVideo);
 
-// // Autoplay video list
-// const prevButton = CONTROLS.querySelector('.control__button--prev');
-// const nextButton = CONTROLS.querySelector('.control__button--next');
-
-// let currentCategory = 'TheWitcher';
-// let currentSubcategory = 'deep';
-// let currentVideoIndex = 0;
-// let data = null;
-
-// fetch('videos.json')
-//   .then(response => {
-//     if (!response.ok) {
-//       showError('Помилка загрузки json &#128531;');
-//       throw new Error('Failed to load videos.json');
-//     }
-//     return response.json();
-//   })
-//   .then(videoData => {
-//     data = videoData;
-//     currentCategory = 'TheWitcher';
-//     currentSubcategory = 'deep';
-//     currentVideoIndex = 0;
-
-//     playCurrentVideo();
-//   })
-//   .catch(error => {
-//     console.error('An error occurred:', error);
-//   });
-
-// function nextVideo() {
-//   resetVideo();
-//   if (selectedVideos.length > 0) {
-//     currentVideoIndex++;
-
-//     if (currentVideoIndex >= selectedVideos.length) {
-//       currentVideoIndex = 0;
-//     }
-
-//     playSelectedVideo();
-//   } else {
-//     currentVideoIndex++;
-
-//     if (currentVideoIndex >= data[currentCategory][currentSubcategory].length) {
-//       const subcategories = Object.keys(data[currentCategory]);
-//       const currentSubcategoryIndex = subcategories.indexOf(currentSubcategory);
-
-//       if (currentSubcategoryIndex < subcategories.length - 1) {
-//         currentSubcategory = subcategories[currentSubcategoryIndex + 1];
-//         currentVideoIndex = 0;
-//       } else {
-//         const categories = Object.keys(data);
-//         const currentCategoryIndex = categories.indexOf(currentCategory);
-
-//         if (currentCategoryIndex < categories.length - 1) {
-//           currentCategory = categories[currentCategoryIndex + 1];
-//           currentSubcategory = Object.keys(data[currentCategory])[0];
-//           currentVideoIndex = 0;
-//         } else {
-//           currentCategory = categories[0];
-//           currentSubcategory = Object.keys(data[currentCategory])[0];
-//           currentVideoIndex = 0;
-//         }
-//       }
-//     }
-//     playCurrentVideo();
-//   }
-// }
-
-// function previousVideo() {
-//   resetVideo();
-//   if (selectedVideos.length > 0) {
-//     currentVideoIndex--;
-
-//     if (currentVideoIndex < 0) {
-//       currentVideoIndex = selectedVideos.length - 1;
-//     }
-
-//     playSelectedVideo();
-//   } else {
-
-//     if (currentVideoIndex > 0) {
-//       currentVideoIndex--;
-//     } else {
-//       const subcategories = Object.keys(data[currentCategory]);
-//       const currentSubcategoryIndex = subcategories.indexOf(currentSubcategory);
-
-//       if (currentSubcategoryIndex > 0) {
-//         currentSubcategory = subcategories[currentSubcategoryIndex - 1];
-//         currentVideoIndex = data[currentCategory][currentSubcategory].length - 1;
-//       } else {
-//         const categories = Object.keys(data);
-//         const currentCategoryIndex = categories.indexOf(currentCategory);
-
-//         if (currentCategoryIndex > 0) {
-//           currentCategory = categories[currentCategoryIndex - 1];
-//           const previousSubcategory = Object.keys(data[currentCategory]).pop();
-//           currentSubcategory = previousSubcategory;
-//           currentVideoIndex = data[currentCategory][previousSubcategory].length - 1;
-//         } else {
-//           currentCategory = categories[categories.length - 1];
-//           const previousSubcategory = Object.keys(data[currentCategory]).pop();
-//           currentSubcategory = previousSubcategory;
-//           currentVideoIndex = data[currentCategory][previousSubcategory].length - 1;
-//         }
-//       }
-//     }
-//     playCurrentVideo();
-//   }
-// }
-
-// function playCurrentVideo() {
-//   const currentVideo = data[currentCategory][currentSubcategory][currentVideoIndex];
-//   // const videoTitle = currentVideo.title;
-//   const videoUrl = currentVideo.url;
-//   const videoDescription = currentVideo.description;
-
-//   // VIDEO.setAttribute('title', videoTitle);
-//   VIDEO.setAttribute('src', videoUrl);
-//   VIDEO.setAttribute('alt', videoDescription);
-// }
-
-// prevButton.addEventListener('click', previousVideo);
-// nextButton.addEventListener('click', nextVideo);
-
 // Keyboard
 let videoKey;
 
@@ -645,7 +578,11 @@ VIDEO.addEventListener('keyup', (event) => {
       changeMuteIcon();
       break;
 
-    case 'z':
+    case 's':
+      changeSpeed();
+      break;
+
+    case 'x':
       changeFitscreen();
       break;
 
@@ -668,7 +605,7 @@ BODY.addEventListener('keyup', (event) => {
   videoKey = event.key;
 
   switch (videoKey) {
-    case 's':
+    case 'i':
       openSettings();
       break;
 
@@ -709,72 +646,6 @@ function getSavedScheme() {
 function clearScheme() {
 	localStorage.removeItem('color-scheme');
 }
-
-// // Scheme
-// let scheme = 'light';
-// let buttonIndex;
-
-// const themeButtons = document.querySelectorAll('.footer__theme');
-
-// // Check client scheme
-// if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-//   scheme = 'dark';
-// } else {
-//   scheme = 'light';
-// }
-
-// // Set button
-// themeButtons.forEach(function (button, index) {
-//   button.addEventListener('click', function () {
-//     buttonIndex = Array.from(themeButtons).indexOf(button);
-//     scheme = this.getAttribute('data-theme');
-
-//     setButton(buttonIndex);
-//     setScheme(scheme);
-//     saveScheme(scheme);
-//   });
-// });
-
-// function setButton() {
-//   themeButtons.forEach((button) => {
-//     button.removeAttribute('disabled');
-//     button.classList.remove('footer__theme--active');
-//   });
-
-//   themeButtons[buttonIndex].setAttribute('disabled', 'disabled');
-//   themeButtons[buttonIndex].classList.add('footer__theme--active');
-// }
-
-// // Set scheme
-// let favicon = document.querySelector('link[href="img/favicons/favicon.svg"]');
-
-// function setScheme(scheme) {
-//   BODY.className = '';
-
-//   switch (scheme) {
-//     case 'light':
-//       BODY.classList.add(scheme);
-//       buttonIndex = 0;
-//       favicon.href = 'img/favicons/favicon.svg'
-//       break;
-
-//     case 'dark':
-//       BODY.classList.add(scheme);
-//       buttonIndex = 1;
-//       favicon.href = 'img/favicons/favicon-dark.svg'
-//       break;
-
-//     case 'cyberpunk':
-//       BODY.classList.add(scheme);
-//       buttonIndex = 2;
-//       break;
-//   }
-// }
-
-// setScheme(scheme);
-// setButton(buttonIndex);
-
-// loadScheme();
 
 // Scheme BETA
 const favicon = document.querySelector('link[href="img/favicons/favicon.svg"]');
@@ -962,29 +833,7 @@ deepCheckbox.addEventListener('change', function (event) {
 //   };
 // });
 
-// Extra line
-let lineProgress;
-
-const line = CONTROLS.querySelector('.control__line');
-const lineCheckbox = SETTINGS.querySelector('.settings__checkbox--line');
-
-function showExtraLine() {
-  if (lineCheckbox.checked) {
-    line.classList.remove('control__line--hide');
-  } else {
-    line.classList.add('control__line--hide');
-  }
-}
-
-function extraLine() {
-  lineProgress = Math.round((videoCurrentTime / videoDuration) * 100);
-  line.style.width = lineProgress + '%';
-  line.value = lineProgress;
-}
-
-lineCheckbox.addEventListener('change', showExtraLine);
-
-// 3D scale
+// Scale player
 const scaleCheckbox = SETTINGS.querySelector('.settings__checkbox--scale');
 
 function setupScale() {
@@ -1027,6 +876,58 @@ scaleCheckbox.addEventListener('change', setupScale);
 
 // BODY.addEventListener('mousemove', setScale);
 // BODY.addEventListener('deviceorientation', movingMobileVideo);
+
+// Extra line
+let lineProgress;
+
+const line = CONTROLS.querySelector('.control__line');
+const lineCheckbox = SETTINGS.querySelector('.settings__checkbox--line');
+
+function showExtraLine() {
+  if (lineCheckbox.checked) {
+    line.classList.remove('control__line--hide');
+  } else {
+    line.classList.add('control__line--hide');
+  }
+}
+
+function extraLine() {
+  lineProgress = Math.round((videoCurrentTime / videoDuration) * 100);
+  line.style.width = lineProgress + '%';
+  line.value = lineProgress;
+}
+
+lineCheckbox.addEventListener('change', showExtraLine);
+
+// Additional controls
+const controlsCheckbox = SETTINGS.querySelector('.settings__checkbox--controls');
+const additionalControls = CONTROLS.querySelectorAll('.control__button--hide');
+
+function showAddControls() {
+  additionalControls.forEach(control => {
+    if (controlsCheckbox.checked) {
+      control.classList.remove('control__button--hide');
+    } else {
+      control.classList.add('control__button--hide');
+    }
+  });
+};
+
+controlsCheckbox.addEventListener('click', showAddControls);
+
+// Series list
+const seriesCheckbox = SETTINGS.querySelector('.settings__checkbox--series');
+const seriesList = document.querySelector('.series');
+
+function showSeriesList() {
+  if (seriesCheckbox.checked) {
+    seriesList.classList.remove('series--off');
+  } else {
+    seriesList.classList.add('series--off');
+  }
+};
+
+seriesCheckbox.addEventListener('click', showSeriesList);
 
 // Start
 // const srcRegex = /^(http:|https:|file:).*/;
@@ -1141,7 +1042,6 @@ tabButtons.forEach(button => {
   });
 });
 
-// Little fix mobile settings height
 function updateSettingsHeight() {
   const settingsButtonHeight = SETTINGS.querySelector('.settings__control').clientHeight;
   const settingsWrapper = SETTINGS.querySelector('.settings__wrapper');
