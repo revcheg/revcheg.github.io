@@ -1,5 +1,9 @@
 const BODY = document.querySelector('.body');
 
+const HEADER = document.querySelector('.header');
+const FOOTER = document.querySelector('.footer');
+
+const MAIN = document.querySelector('.main');
 const VIDEO = document.querySelector('.video');
 const WRAPPER = document.querySelector('.video__wrapper');
 const SETTINGS = document.querySelector('.settings');
@@ -13,6 +17,64 @@ const CONTROLS = document.querySelector('.control');
 const ERROR = document.querySelector('.error');
 
 // const backgroundVideo = document.querySelector('.video__background');
+
+// Console
+const consoleContainer = document.querySelector('.console');
+const consoleInput = consoleContainer.querySelector('.console__input');
+
+let consoleFlag = false;
+
+function openConsole() {
+  consoleFlag = !consoleFlag;
+
+  if (consoleFlag) {
+    consoleContainer.classList.remove('console--hide');
+    VIDEO.blur();
+    consoleInput.focus();
+  } else {
+    consoleContainer.classList.add('console--hide');
+    VIDEO.focus();
+    consoleInput.blur();
+  }
+}
+
+function stopPropagation(event) {
+  event.stopPropagation();
+}
+
+function checkBonus(event) {
+  if (event.key === 'Enter') {
+    let clientText = consoleInput.value;
+
+    switch (clientText) {
+      case 'unlimited spider man':
+        VIDEO.src = 'video/USP-intro.mp4';
+        if (autoplayFlag) {
+          VIDEO.addEventListener('loadeddata', startVideo);
+        } else {
+          VIDEO.removeEventListener('loadeddata', startVideo);
+        }
+        break;
+
+      case 'spider man':
+        VIDEO.src = 'video/SP-intro.mp4';
+        if (autoplayFlag) {
+          VIDEO.addEventListener('loadeddata', startVideo);
+        } else {
+          VIDEO.removeEventListener('loadeddata', startVideo);
+        }
+        break;
+    }
+
+    consoleInput.value = '';
+    openConsole();
+    showError('Відкрито бонусне відео &#128521;');
+  }
+}
+
+consoleInput.addEventListener('input', stopPropagation);
+consoleInput.addEventListener('keydown', stopPropagation);
+consoleInput.addEventListener('keydown', checkBonus);
 
 // CONTROLS
 VIDEO.controls = false;
@@ -269,18 +331,10 @@ function closePip() {
     playButtonIcon.classList.add('control__icon--hide');
     pauseButtonIcon.classList.remove('control__icon--hide');
   }
-
-  // if (document.pictureInPictureElement) {
-  //   document.exitPictureInPicture()
-  //     .catch((error) => {
-  //       console.error(error);
-  //     });
-  // }
 }
 
 pipButton.addEventListener('click', openPip);
 document.addEventListener('leavepictureinpicture', closePip);
-// VIDEO.addEventListener('ended', closePip);
 
 // Fit
 const fitButton = CONTROLS.querySelector('.control__button--fit');
@@ -303,55 +357,50 @@ function changeFitscreen() {
 
 fitButton.addEventListener('click', changeFitscreen);
 
-// Touch, object fit
-let startX = null;
-let startY = null;
-let direction;
+// Cinema mode
+const cinemaButton = CONTROLS.querySelector('.control__button--cinema');
 
-function handleTouchStart(event) {
-  startX = event.touches[0].clientX;
-  startY = event.touches[0].clientY;
-};
+let cinemaFlag = false;
 
-function handleTouchMove (event) {
-  let currentX = event.touches[0].clientX;
-  let currentY = event.touches[0].clientY;
+function setCinema() {
+  cinemaFlag = !cinemaFlag;
 
-  let deltaX = currentX - startX;
-  let deltaY = currentY - startY;
-
-  if (Math.abs(deltaX) > Math.abs(deltaY)) {
-    if (deltaX > 0) {
-      direction = 'right';
-    } else {
-      direction = 'left';
-    }
+  if (cinemaFlag) {
+    cinemaButton.classList.add('control__button--active');
+    cinemaButton.setAttribute('aria-label', 'Вийти з режиму кінотеатра');
+    cinemaButton.setAttribute('title', 'Вийти з режиму кінотеатра (t)');
+    HEADER.classList.add('header--hide');
+    FOOTER.classList.add('footer--hide');
+    SERIESLIST.classList.add('series--off');
+    BODY.style.overflow = 'hidden';
+    setTimeout(() => {
+      HEADER.style.display = 'none';
+      FOOTER.style.display = 'none';
+      WRAPPER.classList.add('video__wrapper--cinema');
+      MAIN.classList.add('main--cinema');
+      VIDEO.focus();
+    }, 250);
   } else {
-    if (deltaY > 0) {
-      direction = 'down';
-    } else {
-      direction = 'up';
+    cinemaButton.classList.remove('control__button--active');
+    cinemaButton.setAttribute('aria-label', 'Режим кінотеатру');
+    cinemaButton.setAttribute('title', 'Режим кінотеатру (t)');
+    HEADER.style.display = 'flex';
+    FOOTER.style.display = 'flex';
+    if (seriesCheckbox.checked) {
+      SERIESLIST.classList.remove('series--off');
     }
+    setTimeout(() => {
+      HEADER.classList.remove('header--hide');
+      FOOTER.classList.remove('footer--hide');
+    }, 150);
+    BODY.removeAttribute('style');
+    WRAPPER.classList.remove('video__wrapper--cinema');
+    MAIN.classList.remove('main--cinema');
+    VIDEO.blur();
   }
+}
 
-  if (direction === 'up') {
-    VIDEO.style.objectFit = 'contain';
-  } else if (direction === 'down') {
-    VIDEO.style.objectFit = 'cover';
-  }
-
-  startX = currentX;
-  startY = currentY;
-};
-
-function handleTouchEnd() {
-  startX = null;
-  startY = null;
-};
-
-VIDEO.addEventListener('touchstart', handleTouchStart);
-VIDEO.addEventListener('touchmove', handleTouchMove);
-VIDEO.addEventListener('touchend', handleTouchEnd);
+cinemaButton.addEventListener('click', setCinema);
 
 // Full screen
 const fullButton = CONTROLS.querySelector('.control__button--size');
@@ -565,23 +614,20 @@ function playCurrentVideo() {
   resetDuration();
   updateActiveButton();
 
-
   if (selectedVideos.length > 0) {
     currentVideo = selectedVideos[currentVideoIndex];
   } else {
     currentVideo = data[currentCategory][currentSubcategory][currentVideoIndex];
   }
 
-  VIDEO.setAttribute('src', currentVideo.url);
+  VIDEO.setAttribute('src', currentVideo.src);
   VIDEO.setAttribute('alt', currentVideo.description);
 
-  // const uaSubtitles = currentVideo.subtitles.ua;
-
-  // if (uaSubtitles) {
-  //   subtitle.src = uaSubtitles.src;
-  //   subtitle.srclang = uaSubtitles.srclang;
-  //   subtitle.label = uaSubtitles.label;
-  // }
+  if (currentVideo.subtitles) {
+    subtitleButton.classList.remove('control__button--off');
+  } else {
+    subtitleButton.classList.add('control__button--off');
+  }
 
   VIDEO.addEventListener('error', function() {
     showError('Не вдалось завантажити відео &#128531;');
@@ -737,7 +783,7 @@ VIDEO.addEventListener('keyup', (event) => {
 });
 
 // Other
-BODY.addEventListener('keyup', (event) => {
+window.addEventListener('keydown', (event) => {
   videoKey = event.key;
 
   switch (videoKey) {
@@ -766,6 +812,14 @@ BODY.addEventListener('keyup', (event) => {
     case 'a':
       setScheme('auto');
       setupSwitcher();
+      break;
+
+    case 't':
+      setCinema();
+      break;
+
+    case '`':
+      openConsole();
       break;
   }
 });
@@ -1121,8 +1175,9 @@ function startVideo() {
     stayFocus();
 
     VIDEO.play();
+    VIDEO.focus();
 
-    if (autoplayFlag && selectedVideos.length > 0) {
+    if (autoplayFlag) {
       VIDEO.addEventListener('loadeddata', startVideo);
     } else {
       VIDEO.removeEventListener('loadeddata', startVideo);
@@ -1222,7 +1277,7 @@ function getEndTime() {
 
 // Subtitle
 const subtitle = VIDEO.querySelector('.video__subtitle');
-const subtitleTrack = VIDEO.querySelector('.video__subtitle').track;
+const subtitleTrack = subtitle.track;
 const subtitleButton = CONTROLS.querySelector('.control__button--subtitle');
 const subtitleInfo = subtitleButton.querySelector('.control__info');
 
@@ -1253,7 +1308,6 @@ function changeSubtitle() {
   subtitleButton.setAttribute('aria-label', 'Вимкнути субтитри');
   subtitleButton.setAttribute('title', 'Вимкнути субтитри (c)');
   subtitleButton.classList.add('control__button--active');
-
   subtitleInfo.classList.remove('control__info--hide');
   subtitleInfo.innerHTML = nextSubtitle.srclang;
 }
@@ -1361,7 +1415,7 @@ function stayFocus() {
 VIDEO.addEventListener('play', startProgress);
 VIDEO.addEventListener('pause', stopProgress);
 VIDEO.addEventListener('ended', stopProgress);
-VIDEO.addEventListener('blur', stayFocus);
+// VIDEO.addEventListener('blur', stayFocus);
 
 // Video handler
 // Waiting
