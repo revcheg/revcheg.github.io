@@ -21,6 +21,7 @@ const ERROR = document.querySelector('.error');
 // Console
 const consoleContainer = document.querySelector('.console');
 const consoleInput = consoleContainer.querySelector('.console__input');
+const consoleBackground = consoleContainer.querySelector('.console__background');
 
 let consoleFlag = false;
 
@@ -32,6 +33,7 @@ function openConsole() {
     VIDEO.blur();
     consoleInput.value = '';
     consoleInput.focus();
+    consoleBackground.play();
   } else {
     consoleContainer.classList.add('console--hide');
     VIDEO.focus();
@@ -45,31 +47,31 @@ function stopPropagation(event) {
 
 function checkBonus(event) {
   if (event.key === 'Enter') {
-    let clientText = consoleInput.value;
 
-    switch (clientText) {
+    switch (consoleInput.value) {
       case 'unlimited spider man':
         VIDEO.src = 'video/USP-intro.mp4';
-        if (autoplayFlag) {
-          VIDEO.addEventListener('loadeddata', startVideo);
-        } else {
-          VIDEO.removeEventListener('loadeddata', startVideo);
-        }
+        openConsole();
+        showError('Відкрито бонусне відео &#128375;');
         break;
 
       case 'spider man':
         VIDEO.src = 'video/SP-intro.mp4';
-        if (autoplayFlag) {
-          VIDEO.addEventListener('loadeddata', startVideo);
-        } else {
-          VIDEO.removeEventListener('loadeddata', startVideo);
-        }
+        openConsole();
+        showError('Відкрито бонусне відео &#128375;');
         break;
+
+      default:
+        showError('Команда неможлива &#128126;');
+    }
+
+    if (autoplayFlag) {
+      VIDEO.addEventListener('loadeddata', startVideo);
+    } else {
+      VIDEO.removeEventListener('loadeddata', startVideo);
     }
 
     consoleInput.value = '';
-    openConsole();
-    showError('Відкрито бонусне відео &#128521;');
   }
 }
 
@@ -356,7 +358,16 @@ function changeFitscreen() {
   }
 };
 
+function checkFitscreen() {
+  if (videoWidth === WRAPPER.clientWidth) {
+    fitButton.classList.add('control__button--hide');
+  } else {
+    fitButton.classList.remove('control__button--hide');
+  }
+};
+
 fitButton.addEventListener('click', changeFitscreen);
+window.addEventListener('fullscreenchange', checkFitscreen);
 
 // Cinema mode
 const cinemaButton = CONTROLS.querySelector('.control__button--cinema');
@@ -718,11 +729,11 @@ VIDEO.addEventListener('ended', nextVideo);
 // Keyboard
 let videoKey;
 
-// Video
-VIDEO.addEventListener('keyup', (event) => {
+window.addEventListener('keyup', (event) => {
   videoKey = event.key;
 
   switch (videoKey) {
+    // Video
     case ' ':
       pauseVideo();
       changePauseIcon();
@@ -780,20 +791,15 @@ VIDEO.addEventListener('keyup', (event) => {
     case '.':
       nextVideo();
       break;
-  }
-});
 
-// Other
-window.addEventListener('keyup', (event) => {
-  videoKey = event.key;
-
-  switch (videoKey) {
+    // Other
     case 'i':
       openSettings();
       break;
 
     case 'Escape':
       closeSettings();
+      openConsole();
       break;
 
     case 'p':
@@ -979,12 +985,22 @@ function resetVideo() {
 const openButton = document.querySelector('.header__menu');
 const closeButton = SETTINGS.querySelector('.settings__close');
 
+let settingsOpen = false;
+
 function openSettings() {
-  SETTINGS.classList.remove('settings--hide');
-  SETTINGS.focus();
+  if (settingsOpen) {
+    settingsOpen = false;
+    SETTINGS.classList.add('settings--hide');
+    SETTINGS.blur();
+  } else {
+    settingsOpen = true;
+    SETTINGS.classList.remove('settings--hide');
+    SETTINGS.focus();
+  }
 }
 
 function closeSettings() {
+  settingsOpen = false;
   SETTINGS.classList.add('settings--hide');
   SETTINGS.blur();
 }
@@ -1120,8 +1136,10 @@ function showAddControls() {
   additionalControls.forEach(control => {
     if (controlsCheckbox.checked) {
       control.classList.remove('control__button--hide');
+      control.removeAttribute('disabled');
     } else {
       control.classList.add('control__button--hide');
+      control.setAttribute('disabled', 'disabled');
     }
   });
 };
@@ -1172,17 +1190,17 @@ function startVideo() {
     STARTBUTTON.classList.add('video__start--hide');
     CONTROLS.classList.remove('control--off', 'control--hide');
 
-    getStatistics();
-    stayFocus();
-
-    VIDEO.play();
-    VIDEO.focus();
-
     if (autoplayFlag) {
       VIDEO.addEventListener('loadeddata', startVideo);
     } else {
       VIDEO.removeEventListener('loadeddata', startVideo);
     }
+
+    VIDEO.play();
+    VIDEO.focus();
+
+    getStatistics();
+    stayFocus();
   }
 }
 
@@ -1222,6 +1240,7 @@ function getStatistics() {
   videoDuration = Math.round(VIDEO.duration);
   VIDEORANGE.setAttribute('max', videoDuration);
 
+  checkFitscreen();
   setStatistics();
 }
 
@@ -1352,18 +1371,23 @@ tabButtons.forEach(button => {
 });
 
 function updateSettingsHeight() {
-  const settingsButtonHeight = SETTINGS.querySelector('.settings__control').clientHeight;
+  let settingsButtonHeight = SETTINGS.querySelector('.settings__control').clientHeight;
   const settingsWrapper = SETTINGS.querySelector('.settings__wrapper');
-  const settingsWrapperHeight = settingsWrapper.clientHeight;
-  const activeTab = document.querySelector('.settings__tab--active');
-  const activeTabHeight = activeTab.clientHeight;
+  let settingsWrapperHeight = settingsWrapper.clientHeight;
+  const activeTab = SETTINGS.querySelector('.settings__tab--active');
+  let activeTabHeight = activeTab.clientHeight;
+  let blockOffset = 90;
 
-  settingsWrapper.style.height = `calc(100vh - ${settingsButtonHeight}px - 90px)`;
+  if (windowWidth > 768) {
+    blockOffset = 0;
+  }
 
-  if (activeTabHeight >= settingsWrapperHeight) {
-    activeTab.style.height = settingsWrapperHeight + 'px';
+  settingsWrapper.style.height = `calc(100vh - ${settingsButtonHeight}px - ${blockOffset}px)`;
+
+  if (activeTabHeight > settingsWrapperHeight) {
     activeTab.classList.add('settings__tab--scroll');
-    activeTab.style.height = settingsWrapperHeight + 'px';
+  } else {
+    activeTab.classList.remove('settings__tab--scroll');
   }
 }
 
