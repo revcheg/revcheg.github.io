@@ -762,6 +762,38 @@ VIDEO_RANGE.addEventListener('mousedown', pauseVideo);
 VIDEO_RANGE.addEventListener('input', setDuration);
 VIDEO_RANGE.addEventListener('change', playVideo);
 
+// Duration hover, show time preview
+const videoPreview = CONTROLS.querySelector('.control__time--preview');
+
+function updatePreviewPosition(event) {
+  const mouseX = event.clientX;
+  const previewWidth = videoPreview.clientWidth;
+  const rangeRect = VIDEO_RANGE.getBoundingClientRect();
+
+  let previewX = mouseX - rangeRect.left - previewWidth / 2;
+  previewX = Math.max(0, Math.min(previewX, rangeRect.width - previewWidth));
+
+  videoPreview.style.left = `${previewX}px`;
+}
+
+function showTimePreview(event) {
+  const percent = (event.clientX - VIDEO_RANGE.getBoundingClientRect().left) / VIDEO_RANGE.clientWidth;
+  const previewTime = percent * VIDEO_RANGE.max;
+
+  videoPreview.classList.remove('control__time--hide');
+  videoPreview.innerText = formatTime(previewTime);
+
+  updatePreviewPosition(event);
+}
+
+function hideTimePreview() {
+  videoPreview.classList.add('control__time--hide');
+}
+
+VIDEO_RANGE.addEventListener('mouseenter', showTimePreview);
+VIDEO_RANGE.addEventListener('mousemove', showTimePreview);
+VIDEO_RANGE.addEventListener('mouseleave', hideTimePreview);
+
 // Wheel duration
 function wheelDuration(event) {
   event.preventDefault();
