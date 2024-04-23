@@ -199,65 +199,6 @@ function setBackgroundSubtitle() {
 
 subtitleCheckbox.addEventListener('change', setBackgroundSubtitle);
 
-// Auto scheme
-const autoschemeCheckbox = SETTINGS.querySelector('.settings__checkbox--autoscheme');
-
-function setAutoScheme() {
-  if (autoschemeCheckbox.checked) {
-    let lastScheme = localStorage.getItem('selected-scheme') || systemScheme;
-    localStorage.setItem('last-scheme', lastScheme);
-    setScheme('auto');
-    hideSchemeButtons();
-  } else {
-    setScheme(localStorage.getItem('last-scheme'));
-    showSchemeButtons();
-  }
-}
-
-function hideSchemeButtons() {
-  let schemeLabels = document.querySelectorAll('.footer__label');
-  let schemeAutoLabel = document.querySelector('.footer__scheme[value=auto]').parentNode;
-
-  [...schemeLabels].forEach((element) => {
-    element.classList.add('footer__label--hide');
-  });
-
-  setTimeout(() => {
-    [...schemeLabels].forEach((element) => {
-      element.classList.add('footer__label--off');
-    });
-
-    schemeAutoLabel.classList.remove('footer__label--off');
-
-    setTimeout(() => {
-      schemeAutoLabel.classList.remove('footer__label--hide');
-    }, 200);
-  }, 100);
-}
-
-function showSchemeButtons() {
-  let schemeLabels = document.querySelectorAll('.footer__label');
-  let schemeAutoLabel = document.querySelector('.footer__scheme[value=auto]').parentNode;
-
-  schemeAutoLabel.classList.add('footer__label--hide');
-
-  setTimeout(() => {
-    [...schemeLabels].forEach((element) => {
-      element.classList.remove('footer__label--off');
-    });
-
-    setTimeout(() => {
-      [...schemeLabels].forEach((element) => {
-        element.classList.remove('footer__label--hide');
-      });
-    }, 200);
-
-    schemeAutoLabel.classList.add('footer__label--off');
-  }, 100);
-}
-
-autoschemeCheckbox.addEventListener('change', setAutoScheme);
-
 // Blur
 const blurCheckbox = SETTINGS.querySelector('.settings__checkbox--blur');
 
@@ -322,9 +263,6 @@ function setupScheme() {
 
   if (savedScheme === 'light') {
     switchMedia('light');
-  } else if (savedScheme === 'auto') {
-    hideSchemeButtons();
-    autoschemeCheckbox.checked = true;
   } else if (savedScheme === 'dark') {
     switchMedia('dark');
   } else if (savedScheme === 'vice') {
@@ -381,10 +319,6 @@ function switchMedia(scheme) {
   if (scheme === 'light') {
     lightMedia = 'all';
     darkMedia = 'not all';
-    schemeMedia = 'not all';
-  } else if (scheme === 'auto') {
-    lightMedia = '(prefers-color-scheme: light)';
-    darkMedia = '(prefers-color-scheme: dark)';
     schemeMedia = 'not all';
   } else if (scheme === 'dark') {
     lightMedia = 'not all';
@@ -535,34 +469,34 @@ const consoleCommands = {
 
 function executeCommand(event) {
   if (event.key === 'Enter') {
-    resetVideo();
-
     let command = consoleInput.value.trim().toLowerCase();
     let commandDescription = consoleCommands[command];
 
     if (commandDescription) {
       deepLabel.classList.add('settings__label--hide');
+
       currentCategory = commandDescription.currentCategory;
       currentSubcategory = commandDescription.currentSubcategory;
       currentVideo = data[currentCategory][currentSubcategory][currentVideoIndex];
-      if (commandDescription.scheme) {
-        createScheme(commandDescription.scheme);
-      }
+
+      resetVideo();
       playCurrentVideo();
       closeConsole();
       showMessage(commandDescription.message);
+
+      if (autoplayFlag) {
+        startVideo();
+      }
+
+      if (commandDescription.scheme) {
+        createScheme(commandDescription.scheme);
+      }
     } else {
       showMessage('Команда неможлива &#128126;');
     }
 
     consoleInput.value = '';
     consoleInput.blur();
-
-    if (autoplayFlag) {
-      VIDEO.addEventListener('loadeddata', startVideo);
-    } else {
-      VIDEO.removeEventListener('loadeddata', startVideo);
-    }
   }
 }
 
@@ -1645,10 +1579,6 @@ function startVideo() {
   getStatistic();
 
   CONTROLS.classList.remove('control--off');
-
-  if (autoplayFlag) {
-    VIDEO.addEventListener('loadeddata', startVideo);
-  }
 }
 
 function emptyVideoError() {
@@ -1981,7 +1911,7 @@ function removeErrorVideo() {
 }
 
 VIDEO.addEventListener('error', errorVideo);
-VIDEO.addEventListener('loadeddata', removeErrorVideo);
+VIDEO.addEventListener('canplay', removeErrorVideo);
 
 // Pause
 function pauseAnimation() {
