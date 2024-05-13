@@ -1,0 +1,74 @@
+.body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Montserrat", "Roboto", "Arial", sans-serif;
+  line-height: 1.35em;
+  letter-spacing: 0.02em;
+  background-color: #F8F0FB;
+  transition: background-color 0.5s;
+}
+
+*::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #F8F0FB;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #6320EE;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.blur {
+
+  .background__overlay {
+    backdrop-filter: blur(1px);
+  }
+
+  .settings {
+    backdrop-filter: blur(1px);
+  }
+
+  .statistic {
+    backdrop-filter: blur(1px);
+  }
+
+  .control {
+    backdrop-filter: blur(1px);
+  }
+
+  .console {
+    backdrop-filter: blur(1px);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+	.body {
+		line-height: 2.15em;
+	}
+}

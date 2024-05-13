@@ -1,0 +1,12 @@
+@media only screen and (min-width: $desktop-width) {
+	.main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 15px;
+
+		&--cinema {
+			margin: 0;
+		}
+	}
+}
