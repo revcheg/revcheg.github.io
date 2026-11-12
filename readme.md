@@ -1,6 +1,6 @@
 # Personal Portfolio — Frontend & HTML/CSS Developer
 
-🔗 **Live Demo:** [revcheg.github.io](https://revcheg.github.io)
+🔗 **Portfolio:** [revcheg.github.io](https://revcheg.github.io)
 
 A personal portfolio website showcasing my commercial and pet projects, technical stack, and background as a Frontend / HTML & CSS Developer.
 
