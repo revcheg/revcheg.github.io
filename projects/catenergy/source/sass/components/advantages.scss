@@ -1,0 +1,139 @@
+.advantages {
+  padding: 0 20px 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding: 0 30px 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    @include container;
+    padding: 0;
+  }
+}
+
+.advantages__title {
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__title {
+    margin-bottom: 72px;
+  }
+}
+
+.advantages__list {
+  counter-reset: list;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 57px;
+    grid-row-gap: 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  padding: 2px 0 4px 80px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $green;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &:nth-child(1)::before {
+    background-image: url("../img/advantages-1.svg");
+  }
+
+  &:nth-child(2)::before {
+    background-image: url("../img/advantages-2.svg");
+  }
+
+  &:nth-child(3)::before {
+    background-image: url("../img/advantages-3.svg");
+  }
+
+  &:nth-child(4)::before {
+    background-image: url("../img/advantages-4.svg");
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .advantages__item {
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item {
+    max-width: 345px;
+    margin: 0 auto;
+    padding: 112px 80px 43px 0;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: counter(list);
+      counter-increment: list;
+      position: absolute;
+      top: calc(50% - 12px);
+      left: 115px;
+      color: $basic-grey;
+      font-size: 280px;
+      font-weight: 400;
+      font-family: "Oswald", "Arial", sans-serif;
+      line-height: 280px;
+      transform: translateY(-50%);
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item {
+    padding-right: 0;
+  }
+}

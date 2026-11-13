@@ -1,0 +1,164 @@
+.footer {
+  padding: 39px 20px 22px;
+  background-color: $basic-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    padding: 56px 30px 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding: 57px 0 58px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    display: grid;
+    grid-template-columns: 130px auto 165px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    @include container;
+  }
+}
+
+.footer__link {
+  transition: opacity 0.2s;
+
+  &:hover,
+  &:focus {
+    .footer__company {
+      opacity: 0.8;
+    }
+
+    .footer__icon {
+      fill: $green;
+    }
+
+    .footer__icon--facebook {
+      fill: none;
+      stroke: $green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .footer__company {
+      opacity: 0.6;
+    }
+  }
+}
+
+.footer__company {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  transition: opacity 0.2s;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__company {
+    margin: 7px 0 0;
+  }
+}
+
+.footer__divider {
+  height: 1px;
+  margin-top: 0;
+  margin-bottom: 18px;
+  border: none;
+  background-color: #d9d9d9;
+
+  &:last-of-type {
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer__divider {
+    display: none;
+  }
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 17px;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__social {
+    position: relative;
+    left: 12px;
+    margin: 0;
+  }
+}
+
+.footer__item {
+  &:not(:last-child) {
+    margin-right: 34px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer__item {
+    &:not(:last-child) {
+      margin-right: 27px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.footer__icon {
+  fill: #666666;
+  transition: fill 0.2s, stroke 0.2s, opacity 0.2s;
+
+  &--facebook {
+    fill: none;
+    stroke: #666666;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer__icon {
+    &--vkontakte {
+      width: 30px;
+      height: 22px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 28px;
+      height: 33px;
+    }
+  }
+}
+
+.footer__academy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $grey;
+  font-family: "Arial", sans-serif;
+  text-decoration: none;
+}

@@ -1,0 +1,14 @@
+.desc {
+  margin: 0;
+  color: $grey;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

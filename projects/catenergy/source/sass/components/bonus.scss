@@ -1,0 +1,112 @@
+.bonus {
+  position: relative;
+  box-sizing: border-box;
+  padding: 188px 55px 42px;
+  background-color: $green;
+  background-image: url("../img/bonus-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/bonus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($green, 0.85);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .bonus {
+    padding: 70px 0;
+    background-image: url("../img/bonus-bg-tablet.jpg");
+
+    &::before {
+      top: 50%;
+      left: 77px;
+      width: 80px;
+      height: 82px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bonus {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0 42px;
+    background-image: url("../img/bonus-bg.jpg");
+
+    &::before {
+      top: 55px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .bonus {
+    background-image: url("../img/bonus-bg@2x.jpg");
+  }
+}
+
+@media (min-resolution: 2dppx) and (min-width: $tablet-width) {
+  .bonus {
+    background-image: url("../img/bonus-bg-tablet@2x.jpg");
+  }
+}
+
+@media (min-resolution: 2dppx) and (min-width: $desktop-width) {
+  .bonus {
+    background-image: url("../img/bonus-bg@2x.jpg");
+  }
+}
+
+.bonus__text {
+  position: relative;
+  margin: 0;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  line-height: 20px;
+  text-align: center;
+  z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .bonus__text {
+    box-sizing: border-box;
+    width: 50%;
+    margin-left: auto;
+    padding-left: 68px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bonus__text {
+    width: 100%;
+    margin-top: auto;
+    padding-left: 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,63 @@
+.request {
+  padding: 25px 0 32px;
+  border-top: 1px solid #d9d9d9;
+}
+
+@media (min-width: $tablet-width) {
+  .request {
+    padding: 36px 0 72px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .request {
+    padding: 16px 0 82px;
+    border: none;
+  }
+}
+
+.request__title {
+  margin-bottom: 35px;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .request__title {
+    margin-bottom: 55px;
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .request__title {
+    @include container;
+    margin-bottom: 56px;
+    padding: 0;
+  }
+}
+
+.request__subtitle {
+  margin-bottom: 38px;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .request__subtitle {
+    margin-bottom: 66px;
+    padding: 0 70px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .request__subtitle {
+    @include container;
+    margin-bottom: 66px;
+    padding: 0;
+  }
+}
