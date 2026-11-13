@@ -11,42 +11,6 @@ body {
     width: 95%; } }
 
 @font-face {
-  font-family: 'SF UI Text';
-  src: local("SF UI Text Heavy Italic"), local("SFUIText-HeavyItalic"),
-       url("../fonts/SFUIText-HeavyItalic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: local("SF UI Text Light Italic"), local("SFUIText-LightItalic"),
-       url("../fonts/SFUIText-LightItalic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: local("SF UI Text Medium Italic"), local("SFUIText-MediumItalic"),
-       url("../fonts/SFUIText-MediumItalic.woff") format("woff");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SF UI Display';
-  src: local("SF UI Display Medium"), local("SFUIDisplay-Medium"),
-       url("../fonts/SFUIDisplay-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'SF UI Display';
   src: local("SF UI Display Regular"), local("SFUIDisplay-Regular"),
        url("../fonts/SFUIDisplay-Regular.woff") format("woff");
@@ -57,145 +21,10 @@ body {
 
 @font-face {
   font-family: 'SF UI Display';
-  src: local("SF UI Display Light"), local("SFUIDisplay-Light"),
-       url("../fonts/SFUIDisplay-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SF UI Display';
-  src: local("SF UI Display Thin"), local("SFUIDisplay-Thin"),
-       url("../fonts/SFUIDisplay-Thin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SF UI Display';
-  src: local("SF UI Display Ultralight"), local("SFUIDisplay-Ultralight"),
-       url("../fonts/SFUIDisplay-Ultralight.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: local("SF UI Text Semibold"), local("SFUIText-Semibold"),
-       url("../fonts/SFUIText-Semibold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SF UI Display';
-  src: local("SF UI Display Semibold"), local("SFUIDisplay-Semibold"),
-       url("../fonts/SFUIDisplay-Semibold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: local("SF UI Text Regular"), local("SFUIText-Regular"),
-       url("../fonts/SFUIText-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SF UI Display';
-  src: local("SF UI Display Black"), local("SFUIDisplay-Black"),
-       url("../fonts/SFUIDisplay-Black.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: local("SF UI Text Bold Italic"), local("SFUIText-BoldItalic"),
-       url("../fonts/SFUIText-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: local("SF UI Text Bold"), local("SFUIText-Bold"),
-       url("../fonts/SFUIText-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SF UI Display';
-  src: local("SF UI Display Heavy"), local("SFUIDisplay-Heavy"),
-       url("../fonts/SFUIDisplay-Heavy.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: local("SF UI Text Light"), local("SFUIText-Light"),
-       url("../fonts/SFUIText-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: local("SF UI Text Heavy"), local("SFUIText-Heavy"),
-       url("../fonts/SFUIText-Heavy.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: local("SF UI Text Medium"), local("SFUIText-Medium"),
-       url("../fonts/SFUIText-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SF UI Display';
   src: local("SF UI Display Bold"), local("SFUIDisplay-Bold"),
        url("../fonts/SFUIDisplay-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: local("SF UI Text Italic"), local("SFUIText-Italic"),
-       url("../fonts/SFUIText-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: local("SF UI Text Semibold Italic"), local("SFUIText-SemiboldItalic"),
-       url("../fonts/SFUIText-SemiboldItalic.woff") format("woff");
-  font-weight: 600;
-  font-style: italic;
   font-display: swap;
 }
 
@@ -216,6 +45,7 @@ body {
 .video__header {
   position: absolute;
   top: 0;
+  left: 0;
   width: 1180px; }
 
 @media screen and (max-width: 1200px) {
@@ -231,7 +61,8 @@ body {
 
 .slider__box--1 {
   padding: 101px 0;
-  background: url("../img/slide1.jpg") no-repeat center;
+  /* background: url("../img/slide1.jpg") no-repeat center; */
+  background: url("../img/slide1.webp") no-repeat center;
   background-size: cover; }
   .slider__box--1 p {
     margin-top: 0;
@@ -248,7 +79,8 @@ body {
 
 .slider__box--2 {
   padding: 117px 0;
-  background: url("../img/slide2.jpg") no-repeat center;
+  /* background: url("../img/slide2.jpg") no-repeat center; */
+  background: url("../img/slide2.webp") no-repeat center;
   background-size: cover; }
   .slider__box--2 b {
     color: #fff;
@@ -264,7 +96,8 @@ body {
 
 .slider__box--3 {
   padding: 91px 0;
-  background: url("../img/slide3.jpg") no-repeat left;
+  /* background: url("../img/slide3.jpg") no-repeat left; */
+  background: url("../img/slide3.webp") no-repeat left;
   background-size: cover; }
   .slider__box--3 b {
     display: block;
@@ -280,7 +113,8 @@ body {
 .slider__box--4 {
   padding-top: 114px;
   padding-bottom: 164px;
-  background: url("../img/slide4.jpg") no-repeat center;
+  /* background: url("../img/slide4.jpg") no-repeat center; */
+  background: url("../img/slide4.webp") no-repeat center;
   background-size: cover; }
   .slider__box--4 p {
     margin-bottom: 0;
@@ -558,6 +392,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding-top: 60px;
   padding-bottom: 60px; }
 
 .trading__flex--second {
@@ -698,7 +533,8 @@ body {
     margin: 0 0 30px 0; } }
 
 .edge {
-  background: url("../img/edge.png") no-repeat;
+  /* background: url("../img/edge.png") no-repeat; */
+  background: url("../img/edge.webp") no-repeat;
   background-attachment: fixed; }
 
 .edge__flex {
@@ -1030,32 +866,38 @@ body {
 
 .temp--about {
   height: 100vh;
-  background: #646464 url("../img/t-bg-2.png") no-repeat top;
+  /* background: #646464 url("../img/t-bg-2.png") no-repeat top; */
+  background: #646464 url("../img/t-bg-2.webp") no-repeat top;
   background-size: cover; }
 
 .temp--account {
-  background: #434341 url("../img/a-bg.png") no-repeat center;
+  /* background: #434341 url("../img/a-bg.png") no-repeat center; */
+  background: #434341 url("../img/a-bg.webp") no-repeat center;
   background-size: cover;
   background-attachment: fixed; }
 
 .temp--faq {
-  background: #646464 url("../img/a-bg.png") no-repeat top;
+  /* background: #646464 url("../img/a-bg.png") no-repeat top; */
+  background: #646464 url("../img/a-bg.webp") no-repeat top;
   background-size: cover; }
 
 .temp--glossary {
   background: #212121; }
 
 .temp--trader {
-  background: #646464 url("../img/a-bg.png") no-repeat top;
+  /* background: #646464 url("../img/a-bg.png") no-repeat top; */
+  background: #646464 url("../img/a-bg.webp") no-repeat top;
   background-size: cover; }
 
 .temp--signals {
   height: 100vh;
-  background: #646464 url("../img/t-bg-1.png") no-repeat top;
+  /* background: #646464 url("../img/t-bg-1.png") no-repeat top; */
+  background: #646464 url("../img/t-bg-1.webp") no-repeat top;
   background-size: cover; }
 
 .temp--info {
-  background: #646464 url("../img/edge.png") no-repeat top;
+  /* background: #646464 url("../img/edge.png") no-repeat top; */
+  background: #646464 url("../img/edge.webp") no-repeat top;
   background-size: cover; }
 
 .temp--gray {
@@ -1512,7 +1354,8 @@ body {
     flex-direction: column; } }
 
 .segregated {
-  background: #646464 url("../img/a-bg.png") no-repeat top;
+  /* background: #646464 url("../img/a-bg.png") no-repeat top; */
+  background: #646464 url("../img/a-bg.webp") no-repeat top;
   background-size: cover; }
   .segregated--islamic {
     background: url("../img/i-bg.jpg") no-repeat top; }
